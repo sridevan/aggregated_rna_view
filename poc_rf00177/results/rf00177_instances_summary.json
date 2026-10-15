@@ -1,0 +1,171 @@
+{
+ "total_pdb_entries": 1473,
+ "total_mapped_instances": 1817,
+ "unique_pdb_entity_pairs": 1494,
+ "unique_entity_sequences_md5": 233,
+ "unique_mapped_region_sequences": 210,
+ "mapped_length": {
+  "min": 60,
+  "q1": 1519.0,
+  "median": 1519,
+  "q3": 1540.0,
+  "max": 1808
+ },
+ "mapped_length_histogram_100nt_bins": {
+  "0-99": 4,
+  "100-199": 6,
+  "300-399": 8,
+  "400-499": 2,
+  "900-999": 105,
+  "1000-1099": 2,
+  "1300-1399": 1,
+  "1400-1499": 17,
+  "1500-1599": 1650,
+  "1600-1699": 12,
+  "1700-1799": 6,
+  "1800-1899": 4
+ },
+ "n_distinct_organisms": 58,
+ "top_organisms_by_instances": [
+  {
+   "organism": "Thermus thermophilus HB8",
+   "tax_id": 300852,
+   "instances": 620
+  },
+  {
+   "organism": "Escherichia coli",
+   "tax_id": 562,
+   "instances": 458
+  },
+  {
+   "organism": "Escherichia coli K-12",
+   "tax_id": 83333,
+   "instances": 195
+  },
+  {
+   "organism": "Homo sapiens",
+   "tax_id": 9606,
+   "instances": 90
+  },
+  {
+   "organism": "Thermus thermophilus",
+   "tax_id": 274,
+   "instances": 52
+  },
+  {
+   "organism": "Mycoplasma pneumoniae M129",
+   "tax_id": 272634,
+   "instances": 51
+  },
+  {
+   "organism": "Thermus thermophilus HB27",
+   "tax_id": 262724,
+   "instances": 42
+  },
+  {
+   "organism": "Escherichia coli BW25113",
+   "tax_id": 679895,
+   "instances": 29
+  },
+  {
+   "organism": "Staphylococcus aureus subsp. aureus NCTC 8325",
+   "tax_id": 93061,
+   "instances": 22
+  },
+  {
+   "organism": "Mycolicibacterium smegmatis MC2 155",
+   "tax_id": 246196,
+   "instances": 22
+  },
+  {
+   "organism": "Bacillus subtilis subsp. subtilis str. 168",
+   "tax_id": 224308,
+   "instances": 19
+  },
+  {
+   "organism": "Escherichia coli str. K-12 substr. MDS42",
+   "tax_id": 1110693,
+   "instances": 16
+  },
+  {
+   "organism": "Acinetobacter baumannii AB0057",
+   "tax_id": 480119,
+   "instances": 16
+  },
+  {
+   "organism": "Staphylococcus aureus",
+   "tax_id": 1280,
+   "instances": 15
+  },
+  {
+   "organism": "Sus scrofa",
+   "tax_id": 9823,
+   "instances": 14
+  },
+  {
+   "organism": "Saccharomyces cerevisiae",
+   "tax_id": 4932,
+   "instances": 12
+  },
+  {
+   "organism": "Enterococcus faecalis",
+   "tax_id": 1351,
+   "instances": 10
+  },
+  {
+   "organism": "Flavobacterium johnsoniae",
+   "tax_id": 986,
+   "instances": 8
+  },
+  {
+   "organism": "Mycobacterium tuberculosis H37Rv",
+   "tax_id": 83332,
+   "instances": 8
+  },
+  {
+   "organism": "Mycolicibacterium smegmatis",
+   "tax_id": 1772,
+   "instances": 7
+  },
+  {
+   "organism": "Spinacia oleracea",
+   "tax_id": 3562,
+   "instances": 6
+  },
+  {
+   "organism": "Pseudomonas aeruginosa PAO1",
+   "tax_id": 208964,
+   "instances": 6
+  },
+  {
+   "organism": "Polytomella magna",
+   "tax_id": 353565,
+   "instances": 6
+  },
+  {
+   "organism": "Cutibacterium acnes",
+   "tax_id": 1747,
+   "instances": 6
+  },
+  {
+   "organism": "Listeria innocua",
+   "tax_id": 1642,
+   "instances": 6
+  }
+ ],
+ "instances_missing_organism": 1,
+ "entities_with_multiple_mapped_chains": 316,
+ "entries_with_multiple_mapped_instances": 336,
+ "instances_where_entity_has_more_chains_than_mapped": 1,
+ "instances_with_modified_nucleotides_in_entity": 769,
+ "instances_with_author_insertion_codes_at_boundaries": 0,
+ "rfam_hit_absent": 0,
+ "rf00177_not_ssu_clan_best": 4,
+ "rfam_bits_distribution": {
+  "<100": 11,
+  "100-300": 123,
+  "300-600": 11,
+  "600-1200": 4,
+  ">=1200": 1668
+ }
+}

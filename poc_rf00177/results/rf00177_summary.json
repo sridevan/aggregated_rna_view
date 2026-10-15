@@ -1,0 +1,176 @@
+{
+ "CLEN": 1533,
+ "alignment_length": 2633,
+ "n_insert_columns": 84,
+ "n_local_end_columns": 1016,
+ "per_seq": {
+  "7k00_1_A_A/1-1542": {
+   "mapped_region_len": 1542,
+   "n_match": 1516,
+   "n_insert": 26,
+   "n_local_end": 0,
+   "cons_span": [
+    1,
+    1533
+   ],
+   "n_deleted_in_span": 17,
+   "n_uncovered_outside_span": 0,
+   "fraction_CLEN_matched": 0.9889,
+   "n_insertion_sites": 4,
+   "longest_insertion": 11,
+   "longest_insertion_anchor": 208,
+   "pp_star_fraction": 0.9578,
+   "pp_below_0.7_count": 13,
+   "n_mapped_with_coordinates": 1519,
+   "n_match_with_coordinates": 1500,
+   "n_modified_in_mapped": 11
+  },
+  "4y4o_32_1a_FA/1-1519": {
+   "mapped_region_len": 1519,
+   "n_match": 1512,
+   "n_insert": 7,
+   "n_local_end": 0,
+   "cons_span": [
+    1,
+    1533
+   ],
+   "n_deleted_in_span": 21,
+   "n_uncovered_outside_span": 0,
+   "fraction_CLEN_matched": 0.9863,
+   "n_insertion_sites": 4,
+   "longest_insertion": 4,
+   "longest_insertion_anchor": 1020,
+   "pp_star_fraction": 0.9315,
+   "pp_below_0.7_count": 14,
+   "n_mapped_with_coordinates": 1500,
+   "n_match_with_coordinates": 1494,
+   "n_modified_in_mapped": 12
+  },
+  "6eri_34_BA_HA/2-1481": {
+   "mapped_region_len": 1480,
+   "n_match": 1478,
+   "n_insert": 2,
+   "n_local_end": 0,
+   "cons_span": [
+    1,
+    1523
+   ],
+   "n_deleted_in_span": 45,
+   "n_uncovered_outside_span": 10,
+   "fraction_CLEN_matched": 0.9641,
+   "n_insertion_sites": 2,
+   "longest_insertion": 1,
+   "longest_insertion_anchor": 835,
+   "pp_star_fraction": 0.9581,
+   "pp_below_0.7_count": 26,
+   "n_mapped_with_coordinates": 1480,
+   "n_match_with_coordinates": 1478,
+   "n_modified_in_mapped": 0
+  },
+  "7p2e_1_A_A/4-949": {
+   "mapped_region_len": 946,
+   "n_match": 694,
+   "n_insert": 3,
+   "n_local_end": 249,
+   "cons_span": [
+    9,
+    1522
+   ],
+   "n_deleted_in_span": 820,
+   "n_uncovered_outside_span": 19,
+   "fraction_CLEN_matched": 0.4527,
+   "n_insertion_sites": 17,
+   "longest_insertion": 42,
+   "longest_insertion_anchor": 612,
+   "pp_star_fraction": 0.63,
+   "pp_below_0.7_count": 143,
+   "n_mapped_with_coordinates": 946,
+   "n_match_with_coordinates": 694,
+   "n_modified_in_mapped": 5
+  },
+  "5mrc_75_aa_WB/8-1634": {
+   "mapped_region_len": 1627,
+   "n_match": 1346,
+   "n_insert": 33,
+   "n_local_end": 248,
+   "cons_span": [
+    1,
+    1533
+   ],
+   "n_deleted_in_span": 187,
+   "n_uncovered_outside_span": 0,
+   "fraction_CLEN_matched": 0.878,
+   "n_insertion_sites": 21,
+   "longest_insertion": 102,
+   "longest_insertion_anchor": 464,
+   "pp_star_fraction": 0.6583,
+   "pp_below_0.7_count": 344,
+   "n_mapped_with_coordinates": 1486,
+   "n_match_with_coordinates": 1304,
+   "n_modified_in_mapped": 0
+  },
+  "6yw5_35_aa_KA/46-1853": {
+   "mapped_region_len": 1808,
+   "n_match": 1355,
+   "n_insert": 32,
+   "n_local_end": 421,
+   "cons_span": [
+    1,
+    1533
+   ],
+   "n_deleted_in_span": 178,
+   "n_uncovered_outside_span": 0,
+   "fraction_CLEN_matched": 0.8839,
+   "n_insertion_sites": 19,
+   "longest_insertion": 122,
+   "longest_insertion_anchor": 1022,
+   "pp_star_fraction": 0.7677,
+   "pp_below_0.7_count": 214,
+   "n_mapped_with_coordinates": 1424,
+   "n_match_with_coordinates": 1315,
+   "n_modified_in_mapped": 0
+  },
+  "9gyt_87_2_IC/7-1766": {
+   "mapped_region_len": 1760,
+   "n_match": 1399,
+   "n_insert": 8,
+   "n_local_end": 353,
+   "cons_span": [
+    1,
+    1528
+   ],
+   "n_deleted_in_span": 129,
+   "n_uncovered_outside_span": 5,
+   "fraction_CLEN_matched": 0.9126,
+   "n_insertion_sites": 6,
+   "longest_insertion": 225,
+   "longest_insertion_anchor": 1130,
+   "pp_star_fraction": 0.896,
+   "pp_below_0.7_count": 49,
+   "n_mapped_with_coordinates": 1760,
+   "n_match_with_coordinates": 1399,
+   "n_modified_in_mapped": 6
+  },
+  "8apn_62_B3_JB/1-379": {
+   "mapped_region_len": 379,
+   "n_match": 367,
+   "n_insert": 2,
+   "n_local_end": 10,
+   "cons_span": [
+    488,
+    980
+   ],
+   "n_deleted_in_span": 126,
+   "n_uncovered_outside_span": 1040,
+   "fraction_CLEN_matched": 0.2394,
+   "n_insertion_sites": 5,
+   "longest_insertion": 4,
+   "longest_insertion_anchor": 835,
+   "pp_star_fraction": 0.7282,
+   "pp_below_0.7_count": 31,
+   "n_mapped_with_coordinates": 379,
+   "n_match_with_coordinates": 367,
+   "n_modified_in_mapped": 0
+  }
+ }
+}

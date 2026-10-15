@@ -1,0 +1,90 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "FamilyOverview",
+ "type": "object",
+ "required": [
+  "rfam_acc",
+  "rfam_id",
+  "description",
+  "clen",
+  "consensus_sequence",
+  "ss_cons",
+  "counts",
+  "experimental_methods",
+  "representative",
+  "coverage_summary",
+  "provenance"
+ ],
+ "properties": {
+  "rfam_acc": {
+   "type": "string"
+  },
+  "rfam_id": {
+   "type": "string"
+  },
+  "description": {
+   "type": "string"
+  },
+  "clen": {
+   "type": "integer"
+  },
+  "consensus_sequence": {
+   "type": "string"
+  },
+  "ss_cons": {
+   "type": "string"
+  },
+  "counts": {
+   "type": "object",
+   "required": [
+    "pdb_entries",
+    "instances",
+    "unique_mapped_sequences",
+    "instances_clan_best",
+    "instances_validation_ok"
+   ]
+  },
+  "experimental_methods": {
+   "type": "object"
+  },
+  "representative": {
+   "type": [
+    "object",
+    "null"
+   ]
+  },
+  "coverage_summary": {
+   "type": "object",
+   "required": [
+    "sequence_coverage_mean",
+    "structural_coverage_mean",
+    "positions_with_structural_coverage",
+    "positions_with_sequence_coverage"
+   ]
+  },
+  "provenance": {
+   "type": "object",
+   "required": [
+    "rfam_release",
+    "cm_checksum",
+    "infernal_version",
+    "generated"
+   ]
+  },
+  "comment": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "rfam_url": {
+   "type": "string"
+  },
+  "display_representative": {
+   "type": [
+    "object",
+    "null"
+   ]
+  }
+ }
+}

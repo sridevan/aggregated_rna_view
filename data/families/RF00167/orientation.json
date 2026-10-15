@@ -1,0 +1,10579 @@
+{
+ "schema_version": "1.0",
+ "rfam_acc": "RF00167",
+ "reference": {
+  "seq_name": "4fe5_1_B_A",
+  "pdb_id": "4fe5",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "B",
+  "selection_rule": "x-ray; PDBe 2D topology available; natural species; >=95% matched residues with coordinates; model coverage >= family median; best resolution"
+ },
+ "method": {
+  "algorithm": "Kabsch (SVD) rigid-body superposition, rotation + translation, no scaling, reflections rejected (det R = +1)",
+  "atom_priority": [
+   "C4'",
+   "P",
+   "C1'"
+  ],
+  "atom_fallback": "per pair: first atom present in both residues in the order C4', P, C1'",
+  "coordinates": "first model (pdbx_PDB_model_num) and first alternate location of the PDBe updated mmCIF",
+  "pair_selection": "same Rfam consensus position, match state in both chains, coordinates in both, PP '*' (>= 0.95) in both; relaxed to PP >= '9' (>= 0.85) when fewer than 10 pairs; transform omitted below 6 pairs",
+  "quality_bands": "good: rmsd <= 2.0 A and >= 20 pairs; moderate: rmsd <= 4.0 A; poor: otherwise; insufficient: < 6 pairs",
+  "convention": "x_ref = R @ x_target + t (column vectors); rotation row-major 3x3; Mol*: Mat4.ofRows([[R00,R01,R02,t0],[R10,R11,R12,t1],[R20,R21,R22,t2],[0,0,0,1]]) with TransformStructureConformation (transpose false); the target structure is moved into the reference frame"
+ },
+ "transforms": {
+  "1y26_1_X_A": {
+   "target": {
+    "pdb_id": "1y26",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "X"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.9420252706862721,
+     -0.1867115387784314,
+     -0.2787959660315163
+    ],
+    [
+     -0.24041567984574053,
+     -0.9551936720255423,
+     -0.17264225961991705
+    ],
+    [
+     -0.23406984058773223,
+     0.22966029306205893,
+     -0.9447049589781368
+    ]
+   ],
+   "translation": [
+    -9.399133912770541,
+    -0.7792028835004441,
+    20.295711544927588
+   ],
+   "rmsd": 1.8984,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 3,
+    "atom": "C4'",
+    "original": [
+     10.008,
+     -1.881,
+     -5.42
+    ],
+    "transformed": [
+     1.890933536590719,
+     -0.4528426631766196,
+     22.641450446737334
+    ]
+   }
+  },
+  "1y27_1_X_A": {
+   "target": {
+    "pdb_id": "1y27",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "X"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.2773474431323718,
+     0.33436562798924113,
+     0.9007097327148729
+    ],
+    [
+     -0.8483794404446606,
+     -0.35476407568752844,
+     0.3929310061987716
+    ],
+    [
+     0.4509220784334493,
+     -0.873122028940362,
+     0.18527601507028482
+    ]
+   ],
+   "translation": [
+    -1.3845817591737628,
+    5.852249879945504,
+    -6.878597642280862
+   ],
+   "rmsd": 1.4438,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 2,
+    "atom": "C4'",
+    "original": [
+     17.509,
+     -23.589,
+     6.698
+    ],
+    "transformed": [
+     1.617097613716945,
+     1.99835591811242,
+     22.853651318625367
+    ]
+   }
+  },
+  "2b57_1_A_A": {
+   "target": {
+    "pdb_id": "2b57",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 65,
+   "n_shared_consensus": 65,
+   "n_shared_consensus_with_coords": 65,
+   "reference_coverage": 0.9701,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 65
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86
+   ],
+   "rotation": [
+    [
+     -0.9998969654909735,
+     0.0033047399927223697,
+     -0.013969147988458178
+    ],
+    [
+     -0.0033589456768881266,
+     -0.9999869138481337,
+     0.0038587065740071816
+    ],
+    [
+     -0.013956213164130704,
+     0.0039052306033151574,
+     0.9998949811295444
+    ]
+   ],
+   "translation": [
+    0.1595534423796039,
+    -1.933664178781088,
+    -0.27505272390753177
+   ],
+   "rmsd": 0.4279,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 20,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     -7.16,
+     0.847,
+     19.768
+    ],
+    "transformed": [
+     7.045472712632969,
+     -2.6803241322089644,
+     19.594105479637488
+    ]
+   }
+  },
+  "2ees_1_A_A": {
+   "target": {
+    "pdb_id": "2ees",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.9996994935748021,
+     0.010120897143580459,
+     -0.022326889333135192
+    ],
+    [
+     -0.009965421768509711,
+     -0.9999253930453982,
+     -0.007063902036488198
+    ],
+    [
+     -0.022396716617860052,
+     -0.0068392824195556146,
+     0.9997257680487809
+    ]
+   ],
+   "translation": [
+    0.1419165925663215,
+    -0.9020039196835761,
+    -0.6105508625539375
+   ],
+   "rmsd": 0.736,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     -5.553,
+     -5.995,
+     22.263
+    ],
+    "transformed": [
+     5.135509564787844,
+     4.990623147665784,
+     21.811714377000285
+    ]
+   }
+  },
+  "2eet_1_A_A": {
+   "target": {
+    "pdb_id": "2eet",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.999967451206532,
+     -0.003783384829146608,
+     -0.007126185988758912
+    ],
+    [
+     0.0037572843457506187,
+     0.9999861978684736,
+     -0.0036724497135829036
+    ],
+    [
+     0.007139981922734767,
+     0.0036455550727153008,
+     0.9999678647768409
+    ]
+   ],
+   "translation": [
+    0.3385725762520444,
+    1.805000809849398,
+    -20.99486138619025
+   ],
+   "rmsd": 0.3929,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     4.568,
+     1.228,
+     42.824
+    ],
+    "transformed": [
+     4.596606108010679,
+     2.892878149188798,
+     21.864854634065523
+    ]
+   }
+  },
+  "2eeu_1_A_A": {
+   "target": {
+    "pdb_id": "2eeu",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.9999784106410261,
+     0.0059836818093425585,
+     0.0027154748853632418
+    ],
+    [
+     -0.00598375612478286,
+     0.9999820969858993,
+     1.9243750632680764e-05
+    ],
+    [
+     -0.0027153111216972614,
+     -3.5492074649701166e-05,
+     0.9999963129061151
+    ]
+   ],
+   "translation": [
+    -0.20879544974367903,
+    -0.5611091160294226,
+    -0.12047679392230926
+   ],
+   "rmsd": 0.4902,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     4.861,
+     2.069,
+     23.263
+    ],
+    "transformed": [
+     4.727649934304083,
+     1.4792144714828015,
+     23.12916487274763
+    ]
+   }
+  },
+  "2eev_1_A_A": {
+   "target": {
+    "pdb_id": "2eev",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.9997220370594464,
+     -0.023536916695658272,
+     0.0013646135617391944
+    ],
+    [
+     0.02353949966260015,
+     -0.9997210855024338,
+     0.0019087057055310996
+    ],
+    [
+     0.0013193079040456912,
+     0.0019402974765566072,
+     0.9999972473323898
+    ]
+   ],
+   "translation": [
+    65.12303891987015,
+    -4.650987438885297,
+    -0.25721446128105185
+   ],
+   "rmsd": 0.6046,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     60.522,
+     -5.585,
+     22.131
+    ],
+    "transformed": [
+     4.779515735438444,
+     2.3993539881947905,
+     21.94273521099415
+    ]
+   }
+  },
+  "2eew_1_A_A": {
+   "target": {
+    "pdb_id": "2eew",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.9999669942925846,
+     0.007430702320507511,
+     0.0032855727778404904
+    ],
+    [
+     -0.00744072642411303,
+     0.9999676680933031,
+     0.0030493209609850744
+    ],
+    [
+     -0.0032628079526672016,
+     -0.003073667364176136,
+     0.9999899532761307
+    ]
+   ],
+   "translation": [
+    -0.10796036653458074,
+    -0.09801502103515425,
+    0.08083791571984378
+   ],
+   "rmsd": 0.4563,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     4.043,
+     2.359,
+     22.822
+    ],
+    "transformed": [
+     4.027418560100291,
+     2.3004174540358604,
+     22.882166315522973
+    ]
+   }
+  },
+  "2g9c_1_A_A": {
+   "target": {
+    "pdb_id": "2g9c",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.9999449971400254,
+     0.00862166713596416,
+     -0.005972399051605052
+    ],
+    [
+     -0.008600668152487606,
+     0.9999567729435037,
+     0.0035328107428642917
+    ],
+    [
+     0.006002599600653136,
+     -0.003481249805852127,
+     0.9999759245590982
+    ]
+   ],
+   "translation": [
+    0.06686613042457168,
+    -0.16304979710813505,
+    -0.126924754579532
+   ],
+   "rmsd": 0.4965,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     4.682,
+     2.905,
+     22.427
+    ],
+    "transformed": [
+     4.639711556533801,
+     2.7807866465330133,
+     22.317526446151625
+    ]
+   }
+  },
+  "2xnw_1_A_A": {
+   "target": {
+    "pdb_id": "2xnw",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 65,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 65,
+   "reference_coverage": 0.9701,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 64,
+    "P": 1
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 2,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86
+   ],
+   "rotation": [
+    [
+     0.999990737197413,
+     0.002755673330809462,
+     0.003306324827908038
+    ],
+    [
+     -0.002742963806342265,
+     0.9999888559935259,
+     -0.0038424000723242158
+    ],
+    [
+     -0.0033168763816083524,
+     0.003833295351595989,
+     0.9999871520063726
+    ]
+   ],
+   "translation": [
+    -0.058620934474056696,
+    13.196951034908734,
+    -0.1312240303563712
+   ],
+   "rmsd": 0.4559,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 20,
+    "label_seq_id": 2,
+    "atom": "C4'",
+    "original": [
+     5.796,
+     -16.17,
+     20.222
+    ],
+    "transformed": [
+     5.759626641232917,
+     -3.06646799899068,
+     20.00930715617339
+    ]
+   }
+  },
+  "2xnz_1_A_A": {
+   "target": {
+    "pdb_id": "2xnz",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 65,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 65,
+   "reference_coverage": 0.9701,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 65
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 2,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86
+   ],
+   "rotation": [
+    [
+     0.999974796317877,
+     -0.0009080485457659825,
+     0.0070414612729849885
+    ],
+    [
+     -0.0008744309937428706,
+     -0.9999882132948883,
+     -0.004775839374759581
+    ],
+    [
+     0.007045714971356504,
+     0.0047695617340439145,
+     -0.999963803935626
+    ]
+   ],
+   "translation": [
+    0.0016443544842843494,
+    12.93319015910017,
+    20.739419861883704
+   ],
+   "rmsd": 0.3258,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 20,
+    "label_seq_id": 2,
+    "atom": "C4'",
+    "original": [
+     7.113,
+     16.257,
+     1.013
+    ],
+    "transformed": [
+     7.1068359357543605,
+     -3.3346759773799537,
+     19.854111464198525
+    ]
+   }
+  },
+  "2xo0_1_A_A": {
+   "target": {
+    "pdb_id": "2xo0",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 65,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 65,
+   "reference_coverage": 0.9701,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 64,
+    "P": 1
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 2,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86
+   ],
+   "rotation": [
+    [
+     -0.9999497944635107,
+     -0.007554453215763674,
+     0.006583220260105822
+    ],
+    [
+     0.00755495520963367,
+     -0.9999714595982351,
+     5.1388288266549516e-05
+    ],
+    [
+     0.006582644161935103,
+     0.0001011216424902095,
+     0.9999783290503103
+    ]
+   ],
+   "translation": [
+    0.3132564293251292,
+    13.111096227336823,
+    20.98948369968182
+   ],
+   "rmsd": 0.5869,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 20,
+    "label_seq_id": 2,
+    "atom": "C4'",
+    "original": [
+     -6.51,
+     15.858,
+     -1.262
+    ],
+    "transformed": [
+     6.69482304821875,
+     -2.7956987894064973,
+     19.68626162193274
+    ]
+   }
+  },
+  "2xo1_1_A_A": {
+   "target": {
+    "pdb_id": "2xo1",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 63,
+   "n_shared_consensus": 63,
+   "n_shared_consensus_with_coords": 63,
+   "reference_coverage": 0.9403,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 63
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85
+   ],
+   "rotation": [
+    [
+     -0.9999758125192554,
+     0.005714960900421574,
+     0.00396403813832816
+    ],
+    [
+     0.005702686923448818,
+     0.9999789321202353,
+     -0.003100754348236041
+    ],
+    [
+     -0.003981675314311428,
+     -0.003078073680344684,
+     -0.9999873357818636
+    ]
+   ],
+   "translation": [
+    0.10426567891348881,
+    12.812077492553048,
+    -0.12698184774616017
+   ],
+   "rmsd": 0.2143,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 21,
+    "label_seq_id": 3,
+    "atom": "C4'",
+    "original": [
+     -7.399,
+     -19.069,
+     -14.613
+    ],
+    "transformed": [
+     7.336181637017932,
+     -6.253403621303544,
+     14.573989292695295
+    ]
+   }
+  },
+  "3ds7_1_A_A": {
+   "target": {
+    "pdb_id": "3ds7",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.03611849031520367,
+     -0.007074918641887657,
+     -0.9993224705687155
+    ],
+    [
+     -0.9989768484576569,
+     -0.0274886990763044,
+     -0.03591138633775655
+    ],
+    [
+     -0.02721600453699613,
+     0.9995970773013009,
+     -0.008060530239332203
+    ]
+   ],
+   "translation": [
+    -0.6507690535497943,
+    -0.10198775234450608,
+    -0.2192038769508855
+   ],
+   "rmsd": 1.6028,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     -6.331,
+     21.366,
+     -3.611
+    ],
+    "transformed": [
+     2.5779555137857115,
+     5.764887146842239,
+     21.33959837608666
+    ]
+   }
+  },
+  "3ds7_1_B_B": {
+   "target": {
+    "pdb_id": "3ds7",
+    "entity_id": 1,
+    "label_asym_id": "B",
+    "auth_asym_id": "B"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.005995316939617273,
+     0.07822351604049443,
+     0.9969178189364741
+    ],
+    [
+     -0.999318917307032,
+     -0.035831362989852386,
+     0.008821277605392093
+    ],
+    [
+     0.036410955591627936,
+     -0.9962917218187411,
+     0.07795541898003364
+    ]
+   ],
+   "translation": [
+    64.80230438384929,
+    -15.362744077848356,
+    45.12285828426628
+   ],
+   "rmsd": 2.4105,
+   "determinant": 1.0,
+   "fit_quality": "moderate",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     -14.271,
+     15.782,
+     -58.224
+    ],
+    "transformed": [
+     7.906725656197828,
+     -2.1805644469619025,
+     24.340885268581307
+    ]
+   }
+  },
+  "3fo4_1_A_A": {
+   "target": {
+    "pdb_id": "3fo4",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 63,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 63,
+   "reference_coverage": 0.9403,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 63
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 4,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85
+   ],
+   "rotation": [
+    [
+     -0.9999412207992291,
+     -0.0031676571024537178,
+     -0.010369228275515377
+    ],
+    [
+     0.0031267484127826457,
+     -0.9999872746506052,
+     0.003959037915802305
+    ],
+    [
+     -0.010381637198035643,
+     0.003926383238665482,
+     0.9999384006646366
+    ]
+   ],
+   "translation": [
+    -0.0077454530016218825,
+    -1.5223720478267513,
+    -0.20605153583926317
+   ],
+   "rmsd": 0.2765,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 21,
+    "label_seq_id": 3,
+    "atom": "C4'",
+    "original": [
+     -7.754,
+     4.743,
+     14.843
+    ],
+    "transformed": [
+     7.576864120145187,
+     -6.230792498903035,
+     14.735156195760496
+    ]
+   }
+  },
+  "3fo6_1_A_A": {
+   "target": {
+    "pdb_id": "3fo6",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.9998128276198657,
+     0.01769132434356055,
+     -0.007831141024190165
+    ],
+    [
+     -0.017662253992523524,
+     0.9998369181841373,
+     0.0037658757217245136
+    ],
+    [
+     0.007896487236322358,
+     -0.0036268552519820862,
+     0.9999622449924336
+    ]
+   ],
+   "translation": [
+    -0.22811986363169012,
+    -0.4058133913109536,
+    -0.27450381483100905
+   ],
+   "rmsd": 0.5126,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     4.753,
+     2.608,
+     22.927
+    ],
+    "transformed": [
+     4.390584909671929,
+     2.2041528307587903,
+     22.679703741447582
+    ]
+   }
+  },
+  "3g4m_1_A_A": {
+   "target": {
+    "pdb_id": "3g4m",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.9995843243819755,
+     0.024313483459825633,
+     0.015492997511115558
+    ],
+    [
+     -0.02453727823183072,
+     0.9995948770779827,
+     0.014422333251835643
+    ],
+    [
+     -0.015136063781722331,
+     -0.014796494230123303,
+     0.9997759565681175
+    ]
+   ],
+   "translation": [
+    -62.818838161620945,
+    2.874253534525094,
+    1.4292966880967395
+   ],
+   "rmsd": 0.8207,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     67.085,
+     1.576,
+     21.204
+    ],
+    "transformed": [
+     4.605107808702257,
+     3.109342904889554,
+     21.589823957463587
+    ]
+   }
+  },
+  "3gao_1_A_A": {
+   "target": {
+    "pdb_id": "3gao",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.9998783283792931,
+     0.01373272828107512,
+     0.007398689842714609
+    ],
+    [
+     -0.013712494672895379,
+     0.9999021187008685,
+     -0.0027785800976454795
+    ],
+    [
+     -0.007436123134829081,
+     0.002676787528247182,
+     0.9999687689529368
+    ]
+   ],
+   "translation": [
+    -0.0801533662129259,
+    0.10054140454595384,
+    -0.14937938919304372
+   ],
+   "rmsd": 0.6088,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     4.262,
+     2.917,
+     21.561
+    ],
+    "transformed": [
+     4.380909589434287,
+     2.898904267015173,
+     21.387062670620484
+    ]
+   }
+  },
+  "3ger_1_A_A": {
+   "target": {
+    "pdb_id": "3ger",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.9999444150700155,
+     0.007778194233461018,
+     -0.007118037984605634
+    ],
+    [
+     -0.007768054365760657,
+     0.9999687753737038,
+     0.0014510716678500103
+    ],
+    [
+     0.0071291024438086825,
+     -0.0013956977040907037,
+     0.9999736136150116
+    ]
+   ],
+   "translation": [
+    0.007178467212472839,
+    0.16520947111209594,
+    -0.16873339226295236
+   ],
+   "rmsd": 0.4553,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     5.216,
+     2.983,
+     21.187
+    ],
+    "transformed": [
+     5.095281018836248,
+     3.138342011906785,
+     21.050729591493905
+    ]
+   }
+  },
+  "3ges_1_A_A": {
+   "target": {
+    "pdb_id": "3ges",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.9998548161003731,
+     -0.017036077066126015,
+     -0.00034467243290985144
+    ],
+    [
+     0.01703642946230698,
+     -0.9998543216335691,
+     -0.001046700458617296
+    ],
+    [
+     -0.0003267905519147851,
+     -0.0010524204821536487,
+     0.9999993928093474
+    ]
+   ],
+   "translation": [
+    65.4351699053425,
+    -4.1059287571565,
+    -0.2355201200295305
+   ],
+   "rmsd": 0.575,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     60.608,
+     -5.052,
+     23.095
+    ],
+    "transformed": [
+     4.914075262631108,
+     1.9537056454960258,
+     22.844976563407734
+    ]
+   }
+  },
+  "3gog_1_A_A": {
+   "target": {
+    "pdb_id": "3gog",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 65,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 65,
+   "reference_coverage": 0.9701,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 65
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 2,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86
+   ],
+   "rotation": [
+    [
+     0.9999647448134167,
+     0.00669988114945906,
+     -0.005061691695626564
+    ],
+    [
+     -0.00672758411996146,
+     0.9999623757642372,
+     -0.00547600838680467
+    ],
+    [
+     0.005024812647979882,
+     0.005509868285778596,
+     0.9999721959181298
+    ]
+   ],
+   "translation": [
+    0.029569386182547674,
+    -2.0520816239165693,
+    -0.24214485551767062
+   ],
+   "rmsd": 0.3144,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 20,
+    "label_seq_id": 2,
+    "atom": "C4'",
+    "original": [
+     7.349,
+     -0.216,
+     19.899
+    ],
+    "transformed": [
+     7.276140518436791,
+     -2.4264816036682673,
+     19.69203908765747
+    ]
+   }
+  },
+  "3got_1_A_A": {
+   "target": {
+    "pdb_id": "3got",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.9999581208360281,
+     -0.006333027341694873,
+     -0.006606764621827612
+    ],
+    [
+     0.006317869539016057,
+     -0.9999773678571718,
+     0.002312638737532902
+    ],
+    [
+     -0.006621261100943243,
+     0.0022708012092002017,
+     0.9999755008815473
+    ]
+   ],
+   "translation": [
+    -0.0537695278590391,
+    0.9242065467878486,
+    -0.19116716101279962
+   ],
+   "rmsd": 0.4662,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     -5.29,
+     -2.183,
+     20.983
+    ],
+    "transformed": [
+     5.111204187990661,
+     3.1222617095883125,
+     20.821388086169012
+    ]
+   }
+  },
+  "3ivn_1_A_A": {
+   "target": {
+    "pdb_id": "3ivn",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 0.971,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.08565119569472204,
+     0.8976311413629526,
+     -0.43234500891245126
+    ],
+    [
+     0.6556011073606681,
+     -0.3775342648727548,
+     -0.653953413382371
+    ],
+    [
+     -0.7502340039637834,
+     -0.22743397482001595,
+     -0.6208242314810516
+    ]
+   ],
+   "translation": [
+    33.57552765398631,
+    28.677496362836365,
+    27.63132314115304
+   ],
+   "rmsd": 2.0341,
+   "determinant": 1.0,
+   "fit_quality": "moderate",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 2,
+    "atom": "C4'",
+    "original": [
+     -17.136,
+     -16.662,
+     35.863
+    ],
+    "transformed": [
+     1.6462896325448,
+     0.2808604442818279,
+     22.012218507922583
+    ]
+   }
+  },
+  "3ivn_1_B_B": {
+   "target": {
+    "pdb_id": "3ivn",
+    "entity_id": 1,
+    "label_asym_id": "B",
+    "auth_asym_id": "B"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 0.971,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.39714861869172874,
+     -0.8679284972582676,
+     -0.2982835870748805
+    ],
+    [
+     0.07664423519379597,
+     0.3552455926236029,
+     -0.9316255847351252
+    ],
+    [
+     0.9145483234268217,
+     0.3471320967132123,
+     0.20760701228204886
+    ]
+   ],
+   "translation": [
+    34.47646172597376,
+    29.68893509867454,
+    28.994449337066733
+   ],
+   "rmsd": 2.5502,
+   "determinant": 1.0,
+   "fit_quality": "moderate",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 2,
+    "atom": "C4'",
+    "original": [
+     -23.162,
+     17.877,
+     35.226
+    ],
+    "transformed": [
+     -0.7455899639498469,
+     1.4469839345684683,
+     21.33052617744424
+    ]
+   }
+  },
+  "3la5_1_A_A": {
+   "target": {
+    "pdb_id": "3la5",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.704941621418912,
+     0.6681235737491844,
+     0.2380508361503755
+    ],
+    [
+     -0.6630384321966057,
+     -0.7399565317959365,
+     0.11333299820792063
+    ],
+    [
+     0.2518677188953404,
+     -0.07794370566727793,
+     0.9646177641559947
+    ]
+   ],
+   "translation": [
+    11.12744959431942,
+    25.699556135016884,
+    5.38027038446625
+   ],
+   "rmsd": 1.8211,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 3,
+    "atom": "C4'",
+    "original": [
+     27.838,
+     8.593,
+     10.755
+    ],
+    "transformed": [
+     -0.19529265071622426,
+     2.1023421775314795,
+     22.09645773377354
+    ]
+   }
+  },
+  "3rkf_1_A_A": {
+   "target": {
+    "pdb_id": "3rkf",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.18617060584366074,
+     0.8015289962387604,
+     -0.5682356674024333
+    ],
+    [
+     -0.011713288595858027,
+     -0.580116176456027,
+     -0.8144495200344276
+    ],
+    [
+     -0.9824476089797737,
+     -0.14497065221114358,
+     0.11738912048141982
+    ]
+   ],
+   "translation": [
+    25.927889154417556,
+    -13.672355585420467,
+    21.95787917491009
+   ],
+   "rmsd": 1.0019,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     3.947,
+     -28.585,
+     0.08
+    ],
+    "transformed": [
+     2.2359085622754655,
+     2.7988770068844584,
+     22.233535685360977
+    ]
+   }
+  },
+  "3rkf_1_B_B": {
+   "target": {
+    "pdb_id": "3rkf",
+    "entity_id": 1,
+    "label_asym_id": "B",
+    "auth_asym_id": "B"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.599751664114907,
+     0.5170650210661192,
+     0.6106895327261577
+    ],
+    [
+     0.5031781859277309,
+     -0.349710254851248,
+     0.7902622671356351
+    ],
+    [
+     0.6221813679289002,
+     0.7812467610440184,
+     -0.05043653200164984
+    ]
+   ],
+   "translation": [
+    61.6248835533746,
+    18.027325125445756,
+    -9.304965108020607
+   ],
+   "rmsd": 1.0198,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     48.348,
+     -0.918,
+     -49.682
+    ],
+    "transformed": [
+     1.813147042507417,
+     3.4142081168005127,
+     22.56486292487342
+    ]
+   }
+  },
+  "3rkf_1_C_C": {
+   "target": {
+    "pdb_id": "3rkf",
+    "entity_id": 1,
+    "label_asym_id": "C",
+    "auth_asym_id": "C"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.7477986219518166,
+     0.26048839192169,
+     -0.6106906079849401
+    ],
+    [
+     0.5529659180140376,
+     -0.26472439851018137,
+     -0.7900314464300229
+    ],
+    [
+     -0.36745872492275405,
+     -0.928475519605915,
+     0.05391933763195958
+    ]
+   ],
+   "translation": [
+    4.968434148520302,
+    -55.31944010901402,
+    -4.359183737791261
+   ],
+   "rmsd": 1.0146,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     24.832,
+     -41.417,
+     -42.878
+    ],
+    "transformed": [
+     1.7956429291704197,
+     3.250868340233268,
+     22.658798441461926
+    ]
+   }
+  },
+  "3rkf_1_D_D": {
+   "target": {
+    "pdb_id": "3rkf",
+    "entity_id": 1,
+    "label_asym_id": "D",
+    "auth_asym_id": "D"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.786677102605018,
+     -0.2407118534808874,
+     0.5685041247262593
+    ],
+    [
+     0.49534180976894016,
+     0.30351588537074975,
+     0.8139499977409185
+    ],
+    [
+     -0.3684774453501944,
+     0.9219196878911987,
+     -0.11953435216199948
+    ]
+   ],
+   "translation": [
+    78.64678314553434,
+    61.8165519908496,
+    10.985443942580215
+   ],
+   "rmsd": 1.0086,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     26.859,
+     10.787,
+     -92.751
+    ],
+    "transformed": [
+     2.1915380106825495,
+     2.900287274459899,
+     22.120186608579317
+    ]
+   }
+  },
+  "4fe5_1_B_A": {
+   "target": {
+    "pdb_id": "4fe5",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "B"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.9999999999999999,
+     -1.406305585534372e-17,
+     -2.5878643446391583e-17
+    ],
+    [
+     8.274705019784871e-17,
+     1.0,
+     -1.1108670693321705e-17
+    ],
+    [
+     -5.551115123125783e-17,
+     1.1102230246251565e-16,
+     1.0000000000000002
+    ]
+   ],
+   "translation": [
+    3.552713678800501e-15,
+    -1.7763568394002505e-15,
+    -1.7763568394002505e-15
+   ],
+   "rmsd": 0.0,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": true,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     4.98,
+     2.276,
+     22.11
+    ],
+    "transformed": [
+     4.980000000000002,
+     2.275999999999998,
+     22.11
+    ]
+   }
+  },
+  "4fej_1_B_A": {
+   "target": {
+    "pdb_id": "4fej",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "B"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.9999108164398997,
+     0.013328854110185489,
+     0.0008371467028656214
+    ],
+    [
+     -0.013328872807998497,
+     0.9999111664886922,
+     1.6759782023266683e-05
+    ],
+    [
+     -0.0008368489474951668,
+     -2.7916509249936716e-05,
+     0.9999996494521922
+    ]
+   ],
+   "translation": [
+    -0.13313725767349638,
+    -0.2807865902222062,
+    0.060508428549184146
+   ],
+   "rmsd": 0.381,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     5.22,
+     3.328,
+     21.232
+    ],
+    "transformed": [
+     5.14852992941672,
+     2.9776968994863267,
+     21.28803972806942
+    ]
+   }
+  },
+  "4fel_1_B_A": {
+   "target": {
+    "pdb_id": "4fel",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "B"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.9998919505083715,
+     0.014150553788858641,
+     -0.00398109734023271
+    ],
+    [
+     -0.014132243078183516,
+     0.9998895971781075,
+     0.004590551228427157
+    ],
+    [
+     0.0040456166579305175,
+     -0.004533793386370555,
+     0.9999815386812833
+    ]
+   ],
+   "translation": [
+    -0.07571590891880575,
+    -0.8275860962551569,
+    -0.0004223289237383909
+   ],
+   "rmsd": 0.3953,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     4.669,
+     3.116,
+     21.81
+    ],
+    "transformed": [
+     4.55004500062039,
+     2.322206367911784,
+     21.813936713698993
+    ]
+   }
+  },
+  "4fen_1_B_A": {
+   "target": {
+    "pdb_id": "4fen",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "B"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.9998312739417766,
+     0.017943167904966643,
+     0.003932731048346853
+    ],
+    [
+     -0.017944628579099568,
+     0.9998389255837354,
+     0.00033644125835427736
+    ],
+    [
+     -0.003926060763999956,
+     -0.00040695588991129794,
+     0.9999922101865499
+    ]
+   ],
+   "translation": [
+    -0.30528351205669324,
+    -0.6813532535230884,
+    0.22672772583793055
+   ],
+   "rmsd": 0.5224,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     4.043,
+     2.737,
+     22.333
+    ],
+    "transformed": [
+     3.873974461548533,
+     1.9901694950771223,
+     22.542566853994607
+    ]
+   }
+  },
+  "4feo_1_B_A": {
+   "target": {
+    "pdb_id": "4feo",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "B"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.9998810210503247,
+     0.014920615181383757,
+     -0.003913947619655404
+    ],
+    [
+     -0.014895931918162216,
+     0.9998694432595239,
+     0.006261601087501381
+    ],
+    [
+     0.004006863567657559,
+     -0.006202554191506671,
+     0.9999727363112714
+    ]
+   ],
+   "translation": [
+    -0.11119611348487979,
+    -0.7906659623884149,
+    0.06697569010852966
+   ],
+   "rmsd": 0.4121,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     4.19,
+     2.519,
+     21.886
+    ],
+    "transformed": [
+     4.030229736754109,
+     1.8026326118462812,
+     21.95354352135709
+    ]
+   }
+  },
+  "4fep_1_B_A": {
+   "target": {
+    "pdb_id": "4fep",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "B"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.9998045386598612,
+     0.019708753539895246,
+     0.001565090746848221
+    ],
+    [
+     -0.0197172479140471,
+     0.9997898495556456,
+     0.0056113153712168485
+    ],
+    [
+     -0.0014541698106463607,
+     -0.0056410778582579035,
+     0.9999830316714172
+    ]
+   ],
+   "translation": [
+    -0.15786428102989447,
+    -0.7121603043286822,
+    0.09683212156804721
+   ],
+   "rmsd": 0.5454,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     3.759,
+     2.513,
+     22.564
+    ],
+    "transformed": [
+     3.685243785050164,
+     1.8528081727318892,
+     22.64080699522588
+    ]
+   }
+  },
+  "4lx5_1_A_A": {
+   "target": {
+    "pdb_id": "4lx5",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.9464319029347145,
+     0.17921946761068003,
+     -0.2686020021085443
+    ],
+    [
+     0.22968214952607524,
+     0.958326618085558,
+     -0.16987113721223598
+    ],
+    [
+     0.22696423351809383,
+     -0.2224645488567583,
+     -0.9481543973454447
+    ]
+   ],
+   "translation": [
+    14.50168542003237,
+    -6.1504755277625325,
+    13.947586988160909
+   ],
+   "rmsd": 1.9972,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 3,
+    "atom": "C4'",
+    "original": [
+     14.316,
+     1.499,
+     -5.824
+    ],
+    "transformed": [
+     2.785554339847568,
+     -0.43648477151292564,
+     22.385383806609532
+    ]
+   }
+  },
+  "4lx6_1_A_A": {
+   "target": {
+    "pdb_id": "4lx6",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.9490364271124893,
+     0.1729253925508777,
+     -0.26348940894215306
+    ],
+    [
+     0.21979534157605163,
+     0.9623192656528496,
+     -0.16009884064173135
+    ],
+    [
+     0.22587577965560446,
+     -0.209853376347593,
+     -0.951284233339588
+    ]
+   ],
+   "translation": [
+    41.21921360908735,
+    -10.186564193482353,
+    19.758080317098365
+   ],
+   "rmsd": 1.922,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 3,
+    "atom": "C4'",
+    "original": [
+     39.911,
+     1.785,
+     6.103
+    ],
+    "transformed": [
+     2.042816729530145,
+     -0.6736556510867047,
+     22.592732606081235
+    ]
+   }
+  },
+  "4tzx_1_X_A": {
+   "target": {
+    "pdb_id": "4tzx",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "X"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 0.971,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.9454710009713206,
+     0.18470959522277863,
+     0.268266568463026
+    ],
+    [
+     -0.23179256938232665,
+     0.9602091492425159,
+     0.15579022591325714
+    ],
+    [
+     -0.228816063905988,
+     -0.20947733801917987,
+     0.9506642171423985
+    ]
+   ],
+   "translation": [
+    40.99806840285647,
+    -10.319993788084746,
+    19.741111485470974
+   ],
+   "rmsd": 1.8819,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 3,
+    "atom": "C4'",
+    "original": [
+     -39.646,
+     1.263,
+     -5.744
+    ],
+    "transformed": [
+     2.2062901478622408,
+     -0.8124604845054755,
+     23.087568013903613
+    ]
+   }
+  },
+  "4tzy_1_X_A": {
+   "target": {
+    "pdb_id": "4tzy",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "X"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 0.971,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.9446166041115935,
+     0.18743896169556526,
+     0.2693809697717523
+    ],
+    [
+     -0.23476189339697376,
+     0.9595229942929802,
+     0.15557145249595877
+    ],
+    [
+     -0.22931708319562505,
+     -0.2101957636621699,
+     0.9503848779800359
+    ]
+   ],
+   "translation": [
+    40.7812906126245,
+    -10.292070142909518,
+    19.77488853960829
+   ],
+   "rmsd": 1.807,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 3,
+    "atom": "C4'",
+    "original": [
+     -39.132,
+     1.209,
+     -5.627
+    ],
+    "transformed": [
+     2.527360648313916,
+     -0.8207049935936883,
+     23.146582252558265
+    ]
+   }
+  },
+  "4xnr_1_X_A": {
+   "target": {
+    "pdb_id": "4xnr",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "X"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 0.971,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.9451593922194959,
+     0.19446997101953678,
+     -0.2624026556095296
+    ],
+    [
+     0.2404101077242482,
+     0.9580690027893616,
+     -0.1559062731201439
+    ],
+    [
+     0.22108076217366418,
+     -0.2104405290476577,
+     -0.9522804630626701
+    ]
+   ],
+   "translation": [
+    14.211399825114333,
+    -6.748147149280944,
+    13.534372234899458
+   ],
+   "rmsd": 1.8488,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 3,
+    "atom": "C4'",
+    "original": [
+     14.45839,
+     1.01422,
+     -7.35917
+    ],
+    "transformed": [
+     2.6742178053313115,
+     -1.1531705398951564,
+     23.525404937889736
+    ]
+   }
+  },
+  "5c7u_1_B_A": {
+   "target": {
+    "pdb_id": "5c7u",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "B"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.7677324818638819,
+     0.21989789138906574,
+     -0.601856921247706
+    ],
+    [
+     0.5371117800941376,
+     -0.29135642877230855,
+     -0.7915948250823487
+    ],
+    [
+     -0.34942491607673254,
+     -0.9309975020244095,
+     0.10557404628543306
+    ]
+   ],
+   "translation": [
+    21.38374667602287,
+    16.977741512619254,
+    -4.52997458268184
+   ],
+   "rmsd": 1.3303,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     -1.641,
+     -26.036,
+     27.691
+    ],
+    "transformed": [
+     0.2523141722855584,
+     1.762044759645283,
+     23.20633358299753
+    ]
+   }
+  },
+  "5c7w_1_C_A": {
+   "target": {
+    "pdb_id": "5c7w",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "C"
+   },
+   "n_pairs": 65,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 0.9701,
+   "target_coverage": 0.9701,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 65
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 2
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.7614236228838285,
+     0.23081093749780132,
+     -0.6057725461308486
+    ],
+    [
+     0.5452905481154943,
+     -0.2772920499999148,
+     -0.7910545727968128
+    ],
+    [
+     -0.35055995870944606,
+     -0.9326496824307774,
+     0.08527769468859162
+    ]
+   ],
+   "translation": [
+    22.396780758269944,
+    16.59710521410274,
+    -4.192934634382521
+   ],
+   "rmsd": 1.2468,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     -0.868,
+     -26.361,
+     26.979
+    ],
+    "transformed": [
+     0.6301518174894021,
+     2.0916274289010346,
+     22.997636613338514
+    ]
+   }
+  },
+  "5e54_1_A_A": {
+   "target": {
+    "pdb_id": "5e54",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 63,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 63,
+   "reference_coverage": 0.9403,
+   "target_coverage": 0.9844,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 63
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 4,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83
+   ],
+   "rotation": [
+    [
+     0.959892165337476,
+     0.12977499862657255,
+     0.24852661961086658
+    ],
+    [
+     -0.18755832027821395,
+     -0.36164476642730314,
+     0.9132551337989601
+    ],
+    [
+     0.2083960350346095,
+     -0.923239683206487,
+     -0.32279959717236234
+    ]
+   ],
+   "translation": [
+    19.029210171821493,
+    -13.709005575497226,
+    19.074290524707948
+   ],
+   "rmsd": 3.6605,
+   "determinant": 1.0,
+   "fit_quality": "moderate",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 3,
+    "atom": "C4'",
+    "original": [
+     -19.896,
+     -6.53,
+     4.179
+    ],
+    "transformed": [
+     0.12235765258936127,
+     -3.7993117063257387,
+     19.607818626414414
+    ]
+   }
+  },
+  "5e54_1_B_B": {
+   "target": {
+    "pdb_id": "5e54",
+    "entity_id": 1,
+    "label_asym_id": "B",
+    "auth_asym_id": "B"
+   },
+   "n_pairs": 66,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 66,
+   "reference_coverage": 0.9851,
+   "target_coverage": 0.9851,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 66
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 1,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86
+   ],
+   "rotation": [
+    [
+     0.9379093213837842,
+     0.08371498675237202,
+     0.3366272506117999
+    ],
+    [
+     -0.28171453969858345,
+     -0.38239150384398707,
+     0.8800077590057657
+    ],
+    [
+     0.20239323848346497,
+     -0.920200271017665,
+     -0.3350648269144209
+    ]
+   ],
+   "translation": [
+    9.222425121299649,
+    -14.178872392918114,
+    -3.8153358999392992
+   ],
+   "rmsd": 4.6286,
+   "determinant": 1.0,
+   "fit_quality": "poor",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 3,
+    "atom": "C4'",
+    "original": [
+     -8.549,
+     -30.011,
+     2.304
+    ],
+    "transformed": [
+     -0.5325429492261708,
+     1.7329945055762543,
+     21.29854527656588
+    ]
+   }
+  },
+  "5swd_1_A_A": {
+   "target": {
+    "pdb_id": "5swd",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 63,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 63,
+   "reference_coverage": 0.9403,
+   "target_coverage": 0.9844,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 63
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 4,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83
+   ],
+   "rotation": [
+    [
+     0.9605426389168926,
+     0.12507987746400562,
+     0.24842073801549183
+    ],
+    [
+     -0.1870122139029103,
+     -0.37067959449926713,
+     0.9097379128479758
+    ],
+    [
+     0.205874405096176,
+     -0.920299767725413,
+     -0.33266209109372075
+    ]
+   ],
+   "translation": [
+    18.965335926498877,
+    -13.906223612674836,
+    19.52288431493146
+   ],
+   "rmsd": 3.6548,
+   "determinant": 1.0,
+   "fit_quality": "moderate",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 3,
+    "atom": "C4'",
+    "original": [
+     -19.523,
+     -6.43,
+     4.26
+    ],
+    "transformed": [
+     0.46667071877682176,
+     -3.996230859285655,
+     20.00398530265397
+    ]
+   }
+  },
+  "5swd_1_B_B": {
+   "target": {
+    "pdb_id": "5swd",
+    "entity_id": 1,
+    "label_asym_id": "B",
+    "auth_asym_id": "B"
+   },
+   "n_pairs": 66,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 66,
+   "reference_coverage": 0.9851,
+   "target_coverage": 0.9851,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 66
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 1,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86
+   ],
+   "rotation": [
+    [
+     0.9400074180869027,
+     0.07998498760377522,
+     0.33164507489124506
+    ],
+    [
+     -0.2756305884149695,
+     -0.3947857175855459,
+     0.8764542292216312
+    ],
+    [
+     0.20103191953422067,
+     -0.9152850042191722,
+     -0.3490551938875811
+    ]
+   ],
+   "translation": [
+    9.47077170293231,
+    -14.507115797299006,
+    -3.1863572231527186
+   ],
+   "rmsd": 4.5892,
+   "determinant": 1.0,
+   "fit_quality": "poor",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 3,
+    "atom": "C4'",
+    "original": [
+     -8.904,
+     -29.838,
+     2.095
+    ],
+    "transformed": [
+     -0.5908499759377559,
+     1.5628868134847185,
+     21.60265789001176
+    ]
+   }
+  },
+  "5swe_1_X_A": {
+   "target": {
+    "pdb_id": "5swe",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "X"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 0.971,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.9460304527756543,
+     0.19785228835412155,
+     0.25667266004412725
+    ],
+    [
+     -0.24182804715292186,
+     0.958232010092448,
+     0.15267812693503516
+    ],
+    [
+     -0.21574424217414204,
+     -0.2065088056893072,
+     0.9543628948892982
+    ]
+   ],
+   "translation": [
+    14.044461023961693,
+    -6.543478721919795,
+    13.679488767150957
+   ],
+   "rmsd": 1.863,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 3,
+    "atom": "C4'",
+    "original": [
+     -14.594,
+     1.192,
+     6.976
+    ],
+    "transformed": [
+     2.264481000339739,
+     -0.8069450322410514,
+     23.239537295806475
+    ]
+   }
+  },
+  "5uza_1_X_A": {
+   "target": {
+    "pdb_id": "5uza",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "X"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 0.971,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.9424444466302448,
+     0.1883016734641548,
+     0.2762986514379142
+    ],
+    [
+     -0.23765043754884163,
+     0.958517665086967,
+     0.15737266360163144
+    ],
+    [
+     -0.23520360232924903,
+     -0.21397748827114227,
+     0.948099625548137
+    ]
+   ],
+   "translation": [
+    40.90808550381724,
+    -10.183536041042833,
+    19.679836115288
+   ],
+   "rmsd": 1.8915,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 3,
+    "atom": "C4'",
+    "original": [
+     -38.911,
+     0.897,
+     -5.394
+    ],
+    "transformed": [
+     2.9151813162290168,
+     -0.925397667464047,
+     23.525856298335544
+    ]
+   }
+  },
+  "6p2h_1_A_A": {
+   "target": {
+    "pdb_id": "6p2h",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 53,
+   "n_shared_consensus": 53,
+   "n_shared_consensus_with_coords": 53,
+   "reference_coverage": 0.791,
+   "target_coverage": 0.9636,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 53
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80
+   ],
+   "rotation": [
+    [
+     0.40122857514007476,
+     -0.9156712753432652,
+     0.0237011814537258
+    ],
+    [
+     0.804276811633751,
+     0.33979884739243116,
+     -0.48751979814057034
+    ],
+    [
+     0.43835424117865235,
+     0.21466918461207385,
+     0.8727901812111974
+    ]
+   ],
+   "translation": [
+    48.24146726470185,
+    -183.004751296006,
+    -112.0480209780805
+   ],
+   "rmsd": 2.7676,
+   "determinant": 1.0,
+   "fit_quality": "moderate",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 26,
+    "label_seq_id": 6,
+    "atom": "C4'",
+    "original": [
+     189.953,
+     119.946,
+     5.977
+    ],
+    "transformed": [
+     14.766593967510119,
+     7.613648620106261,
+     2.18405912710719
+    ]
+   }
+  },
+  "6ubu_1_B_A": {
+   "target": {
+    "pdb_id": "6ubu",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "B"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.9999116444242635,
+     0.007938356401947825,
+     0.010662356324953503
+    ],
+    [
+     -0.007894425019778679,
+     0.9999602019830947,
+     -0.00415602015577856
+    ],
+    [
+     -0.010694923953526503,
+     0.004071479775683451,
+     0.9999345186831309
+    ]
+   ],
+   "translation": [
+    -0.10965166594188247,
+    0.29303438932300274,
+    -0.0415107788076412
+   ],
+   "rmsd": 0.3338,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     4.237,
+     1.936,
+     22.384
+    ],
+    "transformed": [
+     4.381008813455653,
+     2.1024803063865245,
+     22.30359147945019
+    ]
+   }
+  },
+  "6uc7_1_B_A": {
+   "target": {
+    "pdb_id": "6uc7",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "B"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.9998817193520074,
+     0.015320442046731964,
+     0.0013532779337670983
+    ],
+    [
+     -0.015328500923326686,
+     0.9998635349411188,
+     0.0061602398080819135
+    ],
+    [
+     -0.0012587156616406248,
+     -0.006180254892982517,
+     0.9999801098443608
+    ]
+   ],
+   "translation": [
+    0.02478844148962267,
+    -0.14817175426341045,
+    0.18737577493947732
+   ],
+   "rmsd": 0.6909,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     4.232,
+     3.246,
+     21.345
+    ],
+    "transformed": [
+     4.3349037501672685,
+     3.164005382951451,
+     21.506563227504678
+    ]
+   }
+  },
+  "6uc8_1_B_A": {
+   "target": {
+    "pdb_id": "6uc8",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "B"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.9999628720953031,
+     0.008614410159740985,
+     -0.00021533349285845154
+    ],
+    [
+     -0.008614378551620202,
+     0.9999628847057502,
+     0.00014728586051248815
+    ],
+    [
+     0.0002165942815058608,
+     -0.00014542542787499002,
+     0.9999999659691804
+    ]
+   ],
+   "translation": [
+    -0.08233819974336853,
+    0.21059575039900835,
+    -0.12694363692936506
+   ],
+   "rmsd": 0.2748,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     4.842,
+     2.187,
+     22.232
+    ],
+    "transformed": [
+     4.773534447748213,
+     2.359078217554452,
+     22.10578631059774
+    ]
+   }
+  },
+  "6uc9_1_B_A": {
+   "target": {
+    "pdb_id": "6uc9",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "B"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 1.0,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.9999499730379015,
+     0.00974812427036802,
+     0.002241761519449283
+    ],
+    [
+     -0.009752694799363635,
+     0.9999503665594393,
+     0.0020369982310090872
+    ],
+    [
+     -0.002221793341217637,
+     -0.0020587595420881177,
+     0.999995412561226
+    ]
+   ],
+   "translation": [
+    -0.04147926197145679,
+    0.22351753508725558,
+    0.044960951548905115
+   ],
+   "rmsd": 0.3876,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     3.762,
+     2.128,
+     21.934
+    ],
+    "transformed": [
+     3.7902473422120724,
+     2.35940179648949,
+     21.966120903811614
+    ]
+   }
+  },
+  "6vwt_1_A_A": {
+   "target": {
+    "pdb_id": "6vwt",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 0.971,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.9469668380501712,
+     0.2624296067634678,
+     0.18543060461324049
+    ],
+    [
+     0.22971650644033673,
+     0.14937502492303545,
+     0.9617262752977526
+    ],
+    [
+     0.22468674705488778,
+     0.9533193606673547,
+     -0.20173760748724728
+    ]
+   ],
+   "translation": [
+    40.84695906362333,
+    -10.209208612332889,
+    20.208207754710642
+   ],
+   "rmsd": 1.8366,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 3,
+    "atom": "C4'",
+    "original": [
+     39.958,
+     -5.68,
+     1.176
+    ],
+    "transformed": [
+     1.7355243734232602,
+     -0.7476564898025977,
+     23.534143398534273
+    ]
+   }
+  },
+  "6vwt_1_B_B": {
+   "target": {
+    "pdb_id": "6vwt",
+    "entity_id": 1,
+    "label_asym_id": "B",
+    "auth_asym_id": "B"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 0.971,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.9469042001660064,
+     0.2647969961405925,
+     -0.1823594980879634
+    ],
+    [
+     -0.22743858816921933,
+     0.15077070398801592,
+     -0.9620498341720922
+    ],
+    [
+     -0.22725343632070202,
+     0.9524446155309385,
+     0.20299046782190439
+    ]
+   ],
+   "translation": [
+    -6.455641946490633,
+    0.8671181346803785,
+    31.556407034880905
+   ],
+   "rmsd": 1.8366,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 3,
+    "atom": "C4'",
+    "original": [
+     9.946,
+     -5.715,
+     -1.568
+    ],
+    "transformed": [
+     1.7348920884189063,
+     -0.7481464965603473,
+     23.534634325931144
+    ]
+   }
+  },
+  "6vwv_1_A_A": {
+   "target": {
+    "pdb_id": "6vwv",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 0.971,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.12081739598369245,
+     -0.29449306999474917,
+     0.9479857533490608
+    ],
+    [
+     -0.9550589053558813,
+     0.22591399376094112,
+     0.19189933486962796
+    ],
+    [
+     -0.2706762718232685,
+     -0.9285670138164765,
+     -0.25396388862160535
+    ]
+   ],
+   "translation": [
+    -12.887272939045229,
+    -3.1919813611419343,
+    7.829231452800906
+   ],
+   "rmsd": 1.4753,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 3,
+    "atom": "C4'",
+    "original": [
+     -6.661,
+     -16.642,
+     10.622
+    ],
+    "transformed": [
+     1.2784207292337335,
+     1.4483600582491967,
+     22.387813918410806
+    ]
+   }
+  },
+  "6vwv_1_B_B": {
+   "target": {
+    "pdb_id": "6vwv",
+    "entity_id": 1,
+    "label_asym_id": "B",
+    "auth_asym_id": "B"
+   },
+   "n_pairs": 67,
+   "n_shared_consensus": 67,
+   "n_shared_consensus_with_coords": 67,
+   "reference_coverage": 1.0,
+   "target_coverage": 0.971,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 67
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.28201994182001444,
+     -0.13807130528052786,
+     -0.9494214380737181
+    ],
+    [
+     0.8569471540913872,
+     -0.4812235972751747,
+     -0.18456821102295293
+    ],
+    [
+     -0.43140042595077327,
+     -0.8656559155251421,
+     0.2540344630277943
+    ]
+   ],
+   "translation": [
+    107.20861896492762,
+    15.679829785045113,
+    -23.621436008904496
+   ],
+   "rmsd": 1.4753,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 3,
+    "atom": "C4'",
+    "original": [
+     -2.17,
+     -18.353,
+     114.887
+    ],
+    "transformed": [
+     1.2784441485153195,
+     1.4476630816640927,
+     22.387343286915822
+    ]
+   }
+  },
+  "9iwf_1_A_A": {
+   "target": {
+    "pdb_id": "9iwf",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 62,
+   "n_shared_consensus": 65,
+   "n_shared_consensus_with_coords": 65,
+   "reference_coverage": 0.9254,
+   "target_coverage": 0.9254,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 62
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 3,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86
+   ],
+   "rotation": [
+    [
+     0.09344045886788938,
+     0.9484207706273656,
+     -0.30293055720602446
+    ],
+    [
+     0.6240973944371898,
+     0.1812697437772218,
+     0.7600287640922883
+    ],
+    [
+     0.7757392106263991,
+     -0.26007560791726414,
+     -0.5749690037412425
+    ]
+   ],
+   "translation": [
+    -48.056900458156825,
+    7.574976002618801,
+    18.6584337825306
+   ],
+   "rmsd": 2.204,
+   "determinant": 1.0,
+   "fit_quality": "moderate",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 20,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     0.849,
+     48.666,
+     -23.82
+    ],
+    "transformed": [
+     5.394081587420885,
+     -1.177377119520056,
+     20.355958506567234
+    ]
+   }
+  },
+  "9iwf_1_B_B": {
+   "target": {
+    "pdb_id": "9iwf",
+    "entity_id": 1,
+    "label_asym_id": "B",
+    "auth_asym_id": "B"
+   },
+   "n_pairs": 62,
+   "n_shared_consensus": 65,
+   "n_shared_consensus_with_coords": 65,
+   "reference_coverage": 0.9254,
+   "target_coverage": 0.9254,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 62
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 3,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86
+   ],
+   "rotation": [
+    [
+     -0.1340870830545886,
+     -0.8680129650695284,
+     -0.47809428633807827
+    ],
+    [
+     -0.4262404707826492,
+     -0.3850239506056033,
+     0.8185814672511456
+    ],
+    [
+     -0.8946170774274864,
+     0.3135443348734888,
+     -0.3183555164338197
+    ]
+   ],
+   "translation": [
+    26.686339387989683,
+    32.18109765259909,
+    -1.1002563325938457
+   ],
+   "rmsd": 2.1733,
+   "determinant": 1.0,
+   "fit_quality": "moderate",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 20,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     -2.206,
+     37.635,
+     -24.843
+    ],
+    "transformed": [
+     6.1917639083132805,
+     -1.7050116408164726,
+     20.582416077940323
+    ]
+   }
+  },
+  "9iwg_1_A_A": {
+   "target": {
+    "pdb_id": "9iwg",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 62,
+   "n_shared_consensus": 65,
+   "n_shared_consensus_with_coords": 65,
+   "reference_coverage": 0.9254,
+   "target_coverage": 0.9254,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 62
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 3,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86
+   ],
+   "rotation": [
+    [
+     -0.1711953961491746,
+     -0.8777812503853805,
+     -0.4474284443452437
+    ],
+    [
+     -0.36646823599195155,
+     -0.36481560759898557,
+     0.8559267518083139
+    ],
+    [
+     -0.9145453342214783,
+     0.3104990320823249,
+     -0.2592241939512291
+    ]
+   ],
+   "translation": [
+    26.172659201287566,
+    27.26288913595289,
+    -11.374634692510822
+   ],
+   "rmsd": 2.0446,
+   "determinant": 1.0,
+   "fit_quality": "moderate",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 20,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     -14.436,
+     38.668,
+     -24.227
+    ],
+    "transformed": [
+     5.54183947134738,
+     -2.2900027399648906,
+     20.11434287172621
+    ]
+   }
+  },
+  "9iwg_1_B_B": {
+   "target": {
+    "pdb_id": "9iwg",
+    "entity_id": 1,
+    "label_asym_id": "B",
+    "auth_asym_id": "B"
+   },
+   "n_pairs": 62,
+   "n_shared_consensus": 65,
+   "n_shared_consensus_with_coords": 65,
+   "reference_coverage": 0.9254,
+   "target_coverage": 0.9254,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 62
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 3,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86
+   ],
+   "rotation": [
+    [
+     0.0724003980090731,
+     0.9567426355363287,
+     -0.28178309338057667
+    ],
+    [
+     0.6318873343176002,
+     0.17458916972896907,
+     0.7551403965769196
+    ],
+    [
+     0.7716712895379263,
+     -0.23272763299691818,
+     -0.5919132282205943
+    ]
+   ],
+   "translation": [
+    -48.54924757514181,
+    15.921124348717758,
+    26.070474735690077
+   ],
+   "rmsd": 2.1726,
+   "determinant": 1.0,
+   "fit_quality": "moderate",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 20,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     -11.37,
+     49.412,
+     -23.943
+    ],
+    "transformed": [
+     4.648859611427248,
+     -0.7169611030667227,
+     19.969212795285827
+    ]
+   }
+  },
+  "9ljn_1_A_A": {
+   "target": {
+    "pdb_id": "9ljn",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 57,
+   "n_shared_consensus": 66,
+   "n_shared_consensus_with_coords": 66,
+   "reference_coverage": 0.8507,
+   "target_coverage": 0.8382,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 57
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 9,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.3737248125570743,
+     0.14636535347337293,
+     -0.9159186360052921
+    ],
+    [
+     0.8719964849766513,
+     -0.28113720395938196,
+     -0.4007293385045141
+    ],
+    [
+     -0.316151695658183,
+     -0.9484403280399434,
+     -0.022562124898606265
+    ]
+   ],
+   "translation": [
+    51.31874717536848,
+    16.67016719685375,
+    24.429074353669858
+   ],
+   "rmsd": 2.3838,
+   "determinant": 1.0,
+   "fit_quality": "moderate",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 2,
+    "atom": "C4'",
+    "original": [
+     6.866,
+     -2.232,
+     53.496
+    ],
+    "transformed": [
+     -0.5719182083400725,
+     1.8473766093032893,
+     23.168312189890088
+    ]
+   }
+  },
+  "9lkc_1_A_A": {
+   "target": {
+    "pdb_id": "9lkc",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 57,
+   "n_shared_consensus": 66,
+   "n_shared_consensus_with_coords": 66,
+   "reference_coverage": 0.8507,
+   "target_coverage": 0.8382,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 57
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 9,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.38190187673875975,
+     0.1566008896790889,
+     -0.9108386892831971
+    ],
+    [
+     0.8672865209700654,
+     -0.2797861584719373,
+     -0.4117448191187808
+    ],
+    [
+     -0.3193196628569167,
+     -0.9472042371522806,
+     -0.028966981784633174
+    ]
+   ],
+   "translation": [
+    51.24604859054271,
+    16.812944427246343,
+    24.5795051618975
+   ],
+   "rmsd": 2.551,
+   "determinant": 1.0,
+   "fit_quality": "moderate",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 2,
+    "atom": "C4'",
+    "original": [
+     7.821,
+     -2.949,
+     53.905
+    ],
+    "transformed": [
+     -1.301381556905504,
+     2.225977214489088,
+     23.31394622095498
+    ]
+   }
+  },
+  "9lke_1_A_A": {
+   "target": {
+    "pdb_id": "9lke",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 57,
+   "n_shared_consensus": 66,
+   "n_shared_consensus_with_coords": 66,
+   "reference_coverage": 0.8507,
+   "target_coverage": 0.8382,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 57
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 9,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.40157057999328066,
+     0.2739134470331579,
+     -0.8739064554162953
+    ],
+    [
+     0.8527958365414302,
+     -0.23604659198951555,
+     -0.46585541489579846
+    ],
+    [
+     -0.3338867030318246,
+     -0.9323376158584119,
+     -0.13880288035192156
+    ]
+   ],
+   "translation": [
+    -1.0958552289636287,
+    3.191149325533525,
+    -4.185452767632297
+   ],
+   "rmsd": 2.1306,
+   "determinant": 1.0,
+   "fit_quality": "moderate",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 1,
+    "atom": "C4'",
+    "original": [
+     -10.955,
+     -23.863,
+     -6.143
+    ],
+    "transformed": [
+     2.135361243932816,
+     2.343300574572857,
+     22.573314685312475
+    ]
+   }
+  },
+  "9lkf_1_A_A": {
+   "target": {
+    "pdb_id": "9lkf",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 57,
+   "n_shared_consensus": 66,
+   "n_shared_consensus_with_coords": 66,
+   "reference_coverage": 0.8507,
+   "target_coverage": 0.8382,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 57
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 9,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.36988980415423667,
+     0.1527334424434742,
+     -0.9164355014631997
+    ],
+    [
+     0.871541561281773,
+     -0.28468036157339655,
+     -0.3992147275501874
+    ],
+    [
+     -0.3218646295281143,
+     -0.9463770851483074,
+     -0.027813179698184382
+    ]
+   ],
+   "translation": [
+    51.32003271157731,
+    16.740962847894895,
+    24.66517650667084
+   ],
+   "rmsd": 2.4616,
+   "determinant": 1.0,
+   "fit_quality": "moderate",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 2,
+    "atom": "C4'",
+    "original": [
+     7.657,
+     -1.462,
+     52.985
+    ],
+    "transformed": [
+     -0.2928448567116746,
+     2.6781669320030588,
+     22.110581010552593
+    ]
+   }
+  },
+  "9lmc_1_A_A": {
+   "target": {
+    "pdb_id": "9lmc",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 57,
+   "n_shared_consensus": 66,
+   "n_shared_consensus_with_coords": 66,
+   "reference_coverage": 0.8507,
+   "target_coverage": 0.8382,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 57
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 9,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.9141312146642623,
+     -0.3768099491929815,
+     0.14959406594388433
+    ],
+    [
+     -0.40453153924867835,
+     0.8721601967590317,
+     -0.27511965568156543
+    ],
+    [
+     -0.026802166508240466,
+     -0.3120109827849508,
+     -0.9497003687964084
+    ]
+   ],
+   "translation": [
+    -5.908340476298207,
+    -0.2707266091925824,
+    -4.713513766725336
+   ],
+   "rmsd": 2.3348,
+   "determinant": 1.0,
+   "fit_quality": "moderate",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 2,
+    "atom": "C4'",
+    "original": [
+     -6.895,
+     -7.529,
+     -25.419
+    ],
+    "transformed": [
+     -0.5709352059417583,
+     2.945290760298017,
+     21.96085153517278
+    ]
+   }
+  },
+  "9lmc_1_B_B": {
+   "target": {
+    "pdb_id": "9lmc",
+    "entity_id": 1,
+    "label_asym_id": "B",
+    "auth_asym_id": "B"
+   },
+   "n_pairs": 57,
+   "n_shared_consensus": 66,
+   "n_shared_consensus_with_coords": 66,
+   "reference_coverage": 0.8507,
+   "target_coverage": 0.8382,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 57
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 9,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.9196088824797524,
+     0.36457771817269785,
+     -0.14629624286471044
+    ],
+    [
+     -0.39255224965398317,
+     -0.866977131111278,
+     0.30700714229746384
+    ],
+    [
+     -0.014907533529675346,
+     0.33975541429394057,
+     0.940395674119152
+    ]
+   ],
+   "translation": [
+    -15.119885385715119,
+    19.37615704772679,
+    38.4654168866799
+   ],
+   "rmsd": 2.3162,
+   "determinant": 1.0,
+   "fit_quality": "moderate",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 2,
+    "atom": "C4'",
+    "original": [
+     -8.238,
+     18.596,
+     -23.828
+    ],
+    "transformed": [
+     2.7214867102728917,
+     -0.8276704364329923,
+     22.498568709196327
+    ]
+   }
+  },
+  "9nbc_1_A_A": {
+   "target": {
+    "pdb_id": "9nbc",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 59,
+   "n_shared_consensus": 65,
+   "n_shared_consensus_with_coords": 63,
+   "reference_coverage": 0.8806,
+   "target_coverage": 0.9365,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 59
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 2,
+    "low_pp": 4,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86
+   ],
+   "rotation": [
+    [
+     -0.6917207971387012,
+     0.7056793678611858,
+     -0.15342414601631835
+    ],
+    [
+     0.707504878315631,
+     0.7047985744391178,
+     0.05192125410824384
+    ],
+    [
+     0.1447728771745055,
+     -0.07263332047775951,
+     -0.9867954270217261
+    ]
+   ],
+   "translation": [
+    -23.24218800705811,
+    -310.6999116371183,
+    233.22170796404836
+   ],
+   "rmsd": 1.9781,
+   "determinant": 1.0,
+   "fit_quality": "good",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 20,
+    "label_seq_id": 35,
+    "atom": "C4'",
+    "original": [
+     168.304,
+     250.846,
+     222.702
+    ],
+    "transformed": [
+     3.1874174956908234,
+     -3.2651402609152456,
+     19.606469186869816
+    ]
+   }
+  },
+  "9nbh_1_A_A": {
+   "target": {
+    "pdb_id": "9nbh",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 0,
+   "n_shared_consensus": 65,
+   "n_shared_consensus_with_coords": 0,
+   "reference_coverage": 0.0,
+   "target_coverage": 0.0,
+   "pp_filter_used": "9",
+   "atoms_used": {},
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 65,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [],
+   "rotation": null,
+   "translation": null,
+   "rmsd": null,
+   "determinant": null,
+   "fit_quality": "insufficient",
+   "is_identity": false,
+   "check": null
+  },
+  "9nbh_1_B_B": {
+   "target": {
+    "pdb_id": "9nbh",
+    "entity_id": 1,
+    "label_asym_id": "B",
+    "auth_asym_id": "B"
+   },
+   "n_pairs": 0,
+   "n_shared_consensus": 65,
+   "n_shared_consensus_with_coords": 0,
+   "reference_coverage": 0.0,
+   "target_coverage": 0.0,
+   "pp_filter_used": "9",
+   "atoms_used": {},
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 65,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [],
+   "rotation": null,
+   "translation": null,
+   "rmsd": null,
+   "determinant": null,
+   "fit_quality": "insufficient",
+   "is_identity": false,
+   "check": null
+  },
+  "9nbh_1_C_C": {
+   "target": {
+    "pdb_id": "9nbh",
+    "entity_id": 1,
+    "label_asym_id": "C",
+    "auth_asym_id": "C"
+   },
+   "n_pairs": 0,
+   "n_shared_consensus": 65,
+   "n_shared_consensus_with_coords": 0,
+   "reference_coverage": 0.0,
+   "target_coverage": 0.0,
+   "pp_filter_used": "9",
+   "atoms_used": {},
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 65,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [],
+   "rotation": null,
+   "translation": null,
+   "rmsd": null,
+   "determinant": null,
+   "fit_quality": "insufficient",
+   "is_identity": false,
+   "check": null
+  },
+  "9nbh_1_D_D": {
+   "target": {
+    "pdb_id": "9nbh",
+    "entity_id": 1,
+    "label_asym_id": "D",
+    "auth_asym_id": "D"
+   },
+   "n_pairs": 0,
+   "n_shared_consensus": 65,
+   "n_shared_consensus_with_coords": 0,
+   "reference_coverage": 0.0,
+   "target_coverage": 0.0,
+   "pp_filter_used": "9",
+   "atoms_used": {},
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 65,
+    "low_pp": 0,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [],
+   "rotation": null,
+   "translation": null,
+   "rmsd": null,
+   "determinant": null,
+   "fit_quality": "insufficient",
+   "is_identity": false,
+   "check": null
+  },
+  "9ndd_1_A_A": {
+   "target": {
+    "pdb_id": "9ndd",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 61,
+   "n_shared_consensus": 65,
+   "n_shared_consensus_with_coords": 65,
+   "reference_coverage": 0.9104,
+   "target_coverage": 0.6224,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 61
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 4,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.6467657212609286,
+     -0.7403138123426202,
+     -0.18338364446309313
+    ],
+    [
+     -0.722759773570701,
+     -0.6717032600311527,
+     0.162582410400234
+    ],
+    [
+     -0.2435413958855032,
+     0.027389591421867483,
+     -0.9695036868273806
+    ]
+   ],
+   "translation": [
+    6.311048825142706,
+    260.73377441363516,
+    291.5581093762071
+   ],
+   "rmsd": 2.3149,
+   "determinant": 1.0,
+   "fit_quality": "moderate",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 34,
+    "atom": "C4'",
+    "original": [
+     252.501,
+     171.011,
+     219.554
+    ],
+    "transformed": [
+     2.7556221702746626,
+     -0.9368188409148956,
+     21.889172334667876
+    ]
+   }
+  },
+  "9ndd_1_B_B": {
+   "target": {
+    "pdb_id": "9ndd",
+    "entity_id": 1,
+    "label_asym_id": "B",
+    "auth_asym_id": "B"
+   },
+   "n_pairs": 61,
+   "n_shared_consensus": 65,
+   "n_shared_consensus_with_coords": 65,
+   "reference_coverage": 0.9104,
+   "target_coverage": 0.6224,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 61
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 4,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.659758261997563,
+     0.733606181361602,
+     -0.16291410741247578
+    ],
+    [
+     0.7272573322532279,
+     0.6779055023321143,
+     0.10742859298977374
+    ],
+    [
+     0.18925064969472008,
+     -0.047603577343436294,
+     -0.9807742303987366
+    ]
+   ],
+   "translation": [
+    -34.173712130793255,
+    -319.35602564849984,
+    217.1869852026598
+   ],
+   "rmsd": 2.2884,
+   "determinant": 1.0,
+   "fit_quality": "moderate",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 34,
+    "atom": "C4'",
+    "original": [
+     170.332,
+     252.479,
+     219.603
+    ],
+    "transformed": [
+     2.892071920531869,
+     -0.7322851014998832,
+     22.022559944113652
+    ]
+   }
+  },
+  "9ndd_1_C_C": {
+   "target": {
+    "pdb_id": "9ndd",
+    "entity_id": 1,
+    "label_asym_id": "C",
+    "auth_asym_id": "C"
+   },
+   "n_pairs": 61,
+   "n_shared_consensus": 65,
+   "n_shared_consensus_with_coords": 65,
+   "reference_coverage": 0.9104,
+   "target_coverage": 0.6224,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 61
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 4,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.6701854599638495,
+     -0.7238020605303326,
+     0.16420117668606873
+    ],
+    [
+     0.7199315235552529,
+     -0.6877536965563913,
+     -0.09323869510258305
+    ],
+    [
+     0.18041632588116174,
+     0.05572638553741296,
+     0.9820104476585155
+    ]
+   ],
+   "translation": [
+    207.386025048342,
+    13.012826642584825,
+    -216.54240587582575
+   ],
+   "rmsd": 2.2688,
+   "determinant": 1.0,
+   "fit_quality": "moderate",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 34,
+    "atom": "C4'",
+    "original": [
+     170.671,
+     170.483,
+     201.644
+    ],
+    "transformed": [
+     2.719037797144779,
+     -0.167077186005125,
+     21.766344971866488
+    ]
+   }
+  },
+  "9ndd_1_D_D": {
+   "target": {
+    "pdb_id": "9ndd",
+    "entity_id": 1,
+    "label_asym_id": "D",
+    "auth_asym_id": "D"
+   },
+   "n_pairs": 61,
+   "n_shared_consensus": 65,
+   "n_shared_consensus_with_coords": 65,
+   "reference_coverage": 0.9104,
+   "target_coverage": 0.6224,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 61
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 4,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     0.639105642678326,
+     0.7455130308850806,
+     0.18908807016113965
+    ],
+    [
+     -0.7243459543617958,
+     0.6660850855578841,
+     -0.1779145783713191
+    ],
+    [
+     -0.2585863799515016,
+     -0.023258967687455653,
+     0.9657080845295287
+    ]
+   ],
+   "translation": [
+    -384.7718488930926,
+    49.785975757825106,
+    -102.1399067246141
+   ],
+   "rmsd": 2.3559,
+   "determinant": 1.0,
+   "fit_quality": "moderate",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 34,
+    "atom": "C4'",
+    "original": [
+     252.259,
+     253.097,
+     201.362
+    ],
+    "transformed": [
+     3.2105649850079203,
+     -0.17790877408888406,
+     21.199488027443053
+    ]
+   }
+  },
+  "9v4u_1_A_A": {
+   "target": {
+    "pdb_id": "9v4u",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 57,
+   "n_shared_consensus": 66,
+   "n_shared_consensus_with_coords": 66,
+   "reference_coverage": 0.8507,
+   "target_coverage": 0.8382,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 57
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 9,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.4071584961969936,
+     0.29253486593419725,
+     -0.8652429203336273
+    ],
+    [
+     0.8501559859633488,
+     -0.22488275810951772,
+     -0.4760908995514844
+    ],
+    [
+     -0.3338514018321449,
+     -0.9294359027484989,
+     -0.15713734176444002
+    ]
+   ],
+   "translation": [
+    -0.8832877973657567,
+    3.1410075393600145,
+    -4.305439468090457
+   ],
+   "rmsd": 2.1585,
+   "determinant": 1.0,
+   "fit_quality": "moderate",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 2,
+    "atom": "C4'",
+    "original": [
+     -10.31,
+     -23.698,
+     -6.44
+    ],
+    "transformed": [
+     1.9541894524652008,
+     2.771196318868798,
+     22.17430498909588
+    ]
+   }
+  },
+  "9v4v_1_A_A": {
+   "target": {
+    "pdb_id": "9v4v",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 57,
+   "n_shared_consensus": 66,
+   "n_shared_consensus_with_coords": 66,
+   "reference_coverage": 0.8507,
+   "target_coverage": 0.8382,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 57
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 9,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.37251306225211395,
+     0.14889210902618902,
+     -0.91600499907003
+    ],
+    [
+     0.8749309592077115,
+     -0.27273276596269874,
+     -0.40014079395908897
+    ],
+    [
+     -0.3094023837520107,
+     -0.9504988049650928,
+     -0.028673797943488784
+    ]
+   ],
+   "translation": [
+    51.24664594437477,
+    16.464494778414938,
+    24.39018499333636
+   ],
+   "rmsd": 2.3001,
+   "determinant": 1.0,
+   "fit_quality": "moderate",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 2,
+    "atom": "C4'",
+    "original": [
+     7.38,
+     -2.036,
+     52.848
+    ],
+    "transformed": [
+     -0.21467697987609569,
+     2.3301284897179713,
+     22.526658094437952
+    ]
+   }
+  },
+  "9v4x_1_A_A": {
+   "target": {
+    "pdb_id": "9v4x",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 57,
+   "n_shared_consensus": 66,
+   "n_shared_consensus_with_coords": 66,
+   "reference_coverage": 0.8507,
+   "target_coverage": 0.8382,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 57
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 9,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.3775923409976616,
+     0.1457155594516725,
+     -0.9144347979782878
+    ],
+    [
+     0.8720902666881271,
+     -0.27599336129275015,
+     -0.4040869105404931
+    ],
+    [
+     -0.3112596838135911,
+     -0.9500498093552855,
+     -0.022864141712475645
+    ]
+   ],
+   "translation": [
+    51.18167107790657,
+    16.651869896000747,
+    24.299728503637446
+   ],
+   "rmsd": 2.4415,
+   "determinant": 1.0,
+   "fit_quality": "moderate",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 2,
+    "atom": "C4'",
+    "original": [
+     6.918,
+     -2.337,
+     53.591
+    ],
+    "transformed": [
+     -0.7765252580082276,
+     1.6745652235148007,
+     23.141388196965043
+    ]
+   }
+  },
+  "9v4y_1_A_A": {
+   "target": {
+    "pdb_id": "9v4y",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 57,
+   "n_shared_consensus": 66,
+   "n_shared_consensus_with_coords": 66,
+   "reference_coverage": 0.8507,
+   "target_coverage": 0.8382,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 57
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 9,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.39431099302424155,
+     0.27627861721429764,
+     -0.8764638991141578
+    ],
+    [
+     0.8519076716175744,
+     -0.2477767630215442,
+     -0.46136752675680226
+    ],
+    [
+     -0.3446333701476974,
+     -0.9285886071758154,
+     -0.13766277203339808
+    ]
+   ],
+   "translation": [
+    -1.4898273367045078,
+    3.3122820598656038,
+    -4.260273676984607
+   ],
+   "rmsd": 2.1829,
+   "determinant": 1.0,
+   "fit_quality": "moderate",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 2,
+    "atom": "C4'",
+    "original": [
+     -11.954,
+     -23.795,
+     -6.105
+    ],
+    "transformed": [
+     2.0005286813849965,
+     1.8410745802970405,
+     22.79567076077339
+    ]
+   }
+  },
+  "9v4z_1_A_A": {
+   "target": {
+    "pdb_id": "9v4z",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 57,
+   "n_shared_consensus": 66,
+   "n_shared_consensus_with_coords": 66,
+   "reference_coverage": 0.8507,
+   "target_coverage": 0.8382,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 57
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 9,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.40223683362384977,
+     0.27256467595854805,
+     -0.8740217543607657
+    ],
+    [
+     0.8534232578248718,
+     -0.23401060278508543,
+     -0.4657335942228588
+    ],
+    [
+     -0.331472883777604,
+     -0.9332456992688327,
+     -0.13848534982584346
+    ]
+   ],
+   "translation": [
+    -1.2398230307881697,
+    3.1840833823820134,
+    -4.33958197585345
+   ],
+   "rmsd": 2.1546,
+   "determinant": 1.0,
+   "fit_quality": "moderate",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 2,
+    "atom": "C4'",
+    "original": [
+     -10.672,
+     -24.057,
+     -6.119
+    ],
+    "transformed": [
+     1.8438991630442896,
+     2.555767309125453,
+     22.496380282715783
+    ]
+   }
+  },
+  "9v50_1_A_A": {
+   "target": {
+    "pdb_id": "9v50",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 57,
+   "n_shared_consensus": 66,
+   "n_shared_consensus_with_coords": 66,
+   "reference_coverage": 0.8507,
+   "target_coverage": 0.8382,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 57
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 9,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.39150812868821516,
+     0.28486508265915345,
+     -0.8749704394164668
+    ],
+    [
+     0.8475063879114098,
+     -0.25873226164736784,
+     -0.46345500238123827
+    ],
+    [
+     -0.35840522822694315,
+     -0.9229894373525798,
+     -0.14012919365771365
+    ]
+   ],
+   "translation": [
+    -1.2743545125572844,
+    2.6734798558279476,
+    -4.643960767578884
+   ],
+   "rmsd": 2.2886,
+   "determinant": 1.0,
+   "fit_quality": "moderate",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 2,
+    "atom": "C4'",
+    "original": [
+     -10.526,
+     -23.778,
+     -5.554
+    ],
+    "transformed": [
+     0.9327239350645753,
+     2.4787924173489584,
+     21.853733047682503
+    ]
+   }
+  },
+  "9v51_1_A_A": {
+   "target": {
+    "pdb_id": "9v51",
+    "entity_id": 1,
+    "label_asym_id": "A",
+    "auth_asym_id": "A"
+   },
+   "n_pairs": 57,
+   "n_shared_consensus": 66,
+   "n_shared_consensus_with_coords": 66,
+   "reference_coverage": 0.8507,
+   "target_coverage": 0.8382,
+   "pp_filter_used": "*",
+   "atoms_used": {
+    "C4'": 57
+   },
+   "excluded": {
+    "no_coords_reference": 0,
+    "no_coords_target": 0,
+    "low_pp": 9,
+    "missing_atom": 0
+   },
+   "paired_consensus_positions": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "rotation": [
+    [
+     -0.40150867137943586,
+     0.28735466043868,
+     -0.8696080070533455
+    ],
+    [
+     0.8487863674365408,
+     -0.23991314914979492,
+     -0.47117234990914963
+    ],
+    [
+     -0.34402396611428376,
+     -0.9272912056032876,
+     -0.14757550863811733
+    ]
+   ],
+   "translation": [
+    -0.882229452625598,
+    2.951056639579967,
+    -4.044469465197141
+   ],
+   "rmsd": 2.1446,
+   "determinant": 1.0,
+   "fit_quality": "moderate",
+   "is_identity": false,
+   "check": {
+    "consensus_pos": 19,
+    "label_seq_id": 2,
+    "atom": "C4'",
+    "original": [
+     -9.993,
+     -23.292,
+     -6.071
+    ],
+    "transformed": [
+     1.716372160352229,
+     2.917678876082086,
+     21.887759702036682
+    ]
+   }
+  }
+ },
+ "provenance": {
+  "pipeline_version": "0.1.0",
+  "generated": "2026-10-15T04:25:53+00:00",
+  "mapping_provenance": {
+   "rfam_acc": "RF00167",
+   "rfam_release": "15.1",
+   "cm_name": "Purine",
+   "cm_checksum": "1292453307",
+   "cm_clen": 102,
+   "cm_build_date": "Thu Jul  4 23:20:44 2024",
+   "infernal_version": "INFERNAL 1.1.5 (Sep 2023)",
+   "cmalign_options": "--cpu 4",
+   "cmalign_mode": "local (default)",
+   "pipeline_version": "0.1.0",
+   "generated": "2026-10-15T03:48:01+00:00",
+   "pdbe_mapping_source": "PDBe API v2 nucleic_mappings/RF00167",
+   "rfam_hit_source": "rfam.org/family/RF00167/structures"
+  },
+  "numpy": "2.4.2"
+ }
+}

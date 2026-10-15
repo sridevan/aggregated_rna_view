@@ -1,0 +1,13 @@
+{"$schema": "https://json-schema.org/draft/2020-12/schema", "title": "ConsensusStatistics", "type": "object",
+ "required": ["rfam_acc", "clen", "rf", "ss_cons", "sequence_level", "structure_level", "pp_bins", "pp_display_thresholds", "provenance"],
+ "$defs": {"intArr": {"type": "array", "items": {"type": "integer"}}, "numArr": {"type": "array", "items": {"type": ["number", "null"]}}},
+ "properties": {
+  "rfam_acc": {"type": "string"}, "clen": {"type": "integer", "minimum": 1}, "rf": {"type": "array", "items": {"type": "string"}}, "ss_cons": {"type": "array", "items": {"type": "string"}},
+  "sequence_level": {"type": "object", "required": ["n_unique_sequences", "n_match", "n_deletion", "n_uncovered", "coverage", "pp_mean", "pp_n", "pp_min", "pp_high", "pp_medium", "pp_low"],
+     "properties": {"n_unique_sequences": {"type": "integer"}, "n_match": {"$ref": "#/$defs/intArr"}, "n_deletion": {"$ref": "#/$defs/intArr"}, "n_uncovered": {"$ref": "#/$defs/intArr"},
+                    "coverage": {"$ref": "#/$defs/numArr"}, "pp_mean": {"$ref": "#/$defs/numArr"}, "pp_n": {"$ref": "#/$defs/intArr"}, "pp_min": {"$ref": "#/$defs/numArr"},
+                    "pp_high": {"$ref": "#/$defs/intArr"}, "pp_medium": {"$ref": "#/$defs/intArr"}, "pp_low": {"$ref": "#/$defs/intArr"}}},
+  "structure_level": {"type": "object", "required": ["n_instances", "n_match", "n_match_with_coordinates", "coverage", "structural_coverage", "pp_mean", "pp_n"],
+     "properties": {"n_instances": {"type": "integer"}, "n_match": {"$ref": "#/$defs/intArr"}, "n_match_with_coordinates": {"$ref": "#/$defs/intArr"},
+                    "coverage": {"$ref": "#/$defs/numArr"}, "structural_coverage": {"$ref": "#/$defs/numArr"}, "pp_mean": {"$ref": "#/$defs/numArr"}, "pp_n": {"$ref": "#/$defs/intArr"}}},
+  "pp_bins": {"type": "object"}, "pp_display_thresholds": {"type": "object", "required": ["high", "medium"]}, "provenance": {"type": "object"}}}

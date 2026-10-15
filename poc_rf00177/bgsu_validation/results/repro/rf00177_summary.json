@@ -1,0 +1,50 @@
+{
+ "CLEN": 1533,
+ "alignment_length": 1566,
+ "n_insert_columns": 33,
+ "n_local_end_columns": 0,
+ "per_seq": {
+  "5j7l_1_AA_A/1-1534": {
+   "mapped_region_len": 1534,
+   "n_match": 1508,
+   "n_insert": 26,
+   "n_local_end": 0,
+   "cons_span": [
+    1,
+    1525
+   ],
+   "n_deleted_in_span": 17,
+   "n_uncovered_outside_span": 8,
+   "fraction_CLEN_matched": 0.9837,
+   "n_insertion_sites": 4,
+   "longest_insertion": 11,
+   "longest_insertion_anchor": 208,
+   "pp_star_fraction": 0.9576,
+   "pp_below_0.7_count": 13,
+   "n_mapped_with_coordinates": 1534,
+   "n_match_with_coordinates": 1508,
+   "n_modified_in_mapped": 11
+  },
+  "1j5e_1_A_A/2-1520": {
+   "mapped_region_len": 1519,
+   "n_match": 1512,
+   "n_insert": 7,
+   "n_local_end": 0,
+   "cons_span": [
+    1,
+    1533
+   ],
+   "n_deleted_in_span": 21,
+   "n_uncovered_outside_span": 0,
+   "fraction_CLEN_matched": 0.9863,
+   "n_insertion_sites": 4,
+   "longest_insertion": 4,
+   "longest_insertion_anchor": 1020,
+   "pp_star_fraction": 0.9315,
+   "pp_below_0.7_count": 14,
+   "n_mapped_with_coordinates": 1511,
+   "n_match_with_coordinates": 1504,
+   "n_modified_in_mapped": 0
+  }
+ }
+}

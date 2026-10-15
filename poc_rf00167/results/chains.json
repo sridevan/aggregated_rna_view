@@ -1,0 +1,3207 @@
+[
+ {
+  "pdb_id": "6p2h",
+  "entity_id": 1,
+  "auth_chain_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "6p2h_1_A_A",
+  "sequence": "GGGUGUAAUCUCCAAAAUAUGGUUGGGGAGCCUCCACCAGUGAACCGUAAAAUCGCUGUCACCACCCAG",
+  "pdb_sequence": "(GTP)GGUGUAAUCUCCAAAAUAUGGUUGGGGAGCCUCCACCAGUGAACCGUAAAAUCGCUGUCACCACCCAG",
+  "modified_positions": {
+   "1": {
+    "three_letter_code": "GTP",
+    "one_letter_code": "G",
+    "parent_chem_comp_ids": [
+     "G"
+    ]
+   }
+  },
+  "map_start": 6,
+  "map_end": 60,
+  "map_auth_start": 22,
+  "map_auth_end": 76,
+  "mapped_sequence": "UAAUCUCCAAAAUAUGGUUGGGGAGCCUCCACCAGUGAACCGUAAAAUCGCUGUC",
+  "molecule_name": [
+   "RNA (69-MER)"
+  ],
+  "sample_preparation": "Synthetically obtained",
+  "api_organism": "synthetic construct",
+  "api_tax_id": 32630,
+  "api_expression_host": null,
+  "cif_src_category": "_pdbx_entity_src_syn",
+  "cif_organism": "synthetic construct",
+  "cif_tax_id": "32630",
+  "residues": [
+   {
+    "residue_number": 1,
+    "residue_name": "GTP",
+    "author_residue_number": 17,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 2,
+    "residue_name": "G",
+    "author_residue_number": 18,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 3,
+    "residue_name": "G",
+    "author_residue_number": 19,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 4,
+    "residue_name": "U",
+    "author_residue_number": 20,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 5,
+    "residue_name": "G",
+    "author_residue_number": 21,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 6,
+    "residue_name": "U",
+    "author_residue_number": 22,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 7,
+    "residue_name": "A",
+    "author_residue_number": 23,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 8,
+    "residue_name": "A",
+    "author_residue_number": 24,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 9,
+    "residue_name": "U",
+    "author_residue_number": 25,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 10,
+    "residue_name": "C",
+    "author_residue_number": 26,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 11,
+    "residue_name": "U",
+    "author_residue_number": 27,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 12,
+    "residue_name": "C",
+    "author_residue_number": 28,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 13,
+    "residue_name": "C",
+    "author_residue_number": 29,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 14,
+    "residue_name": "A",
+    "author_residue_number": 30,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 15,
+    "residue_name": "A",
+    "author_residue_number": 31,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 16,
+    "residue_name": "A",
+    "author_residue_number": 32,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 17,
+    "residue_name": "A",
+    "author_residue_number": 33,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 18,
+    "residue_name": "U",
+    "author_residue_number": 34,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 19,
+    "residue_name": "A",
+    "author_residue_number": 35,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 20,
+    "residue_name": "U",
+    "author_residue_number": 36,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 21,
+    "residue_name": "G",
+    "author_residue_number": 37,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 22,
+    "residue_name": "G",
+    "author_residue_number": 38,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 23,
+    "residue_name": "U",
+    "author_residue_number": 39,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 24,
+    "residue_name": "U",
+    "author_residue_number": 40,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 25,
+    "residue_name": "G",
+    "author_residue_number": 41,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 26,
+    "residue_name": "G",
+    "author_residue_number": 42,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 27,
+    "residue_name": "G",
+    "author_residue_number": 43,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 28,
+    "residue_name": "G",
+    "author_residue_number": 44,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 29,
+    "residue_name": "A",
+    "author_residue_number": 45,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 30,
+    "residue_name": "G",
+    "author_residue_number": 46,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 31,
+    "residue_name": "C",
+    "author_residue_number": 47,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 32,
+    "residue_name": "C",
+    "author_residue_number": 48,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 33,
+    "residue_name": "U",
+    "author_residue_number": 49,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 34,
+    "residue_name": "C",
+    "author_residue_number": 50,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 35,
+    "residue_name": "C",
+    "author_residue_number": 51,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 36,
+    "residue_name": "A",
+    "author_residue_number": 52,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 37,
+    "residue_name": "C",
+    "author_residue_number": 53,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 38,
+    "residue_name": "C",
+    "author_residue_number": 54,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 39,
+    "residue_name": "A",
+    "author_residue_number": 55,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 40,
+    "residue_name": "G",
+    "author_residue_number": 56,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 41,
+    "residue_name": "U",
+    "author_residue_number": 57,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 42,
+    "residue_name": "G",
+    "author_residue_number": 58,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 43,
+    "residue_name": "A",
+    "author_residue_number": 59,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 44,
+    "residue_name": "A",
+    "author_residue_number": 60,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 45,
+    "residue_name": "C",
+    "author_residue_number": 61,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 46,
+    "residue_name": "C",
+    "author_residue_number": 62,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 47,
+    "residue_name": "G",
+    "author_residue_number": 63,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 48,
+    "residue_name": "U",
+    "author_residue_number": 64,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 49,
+    "residue_name": "A",
+    "author_residue_number": 65,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 50,
+    "residue_name": "A",
+    "author_residue_number": 66,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 51,
+    "residue_name": "A",
+    "author_residue_number": 67,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 52,
+    "residue_name": "A",
+    "author_residue_number": 68,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 53,
+    "residue_name": "U",
+    "author_residue_number": 69,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 54,
+    "residue_name": "C",
+    "author_residue_number": 70,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 55,
+    "residue_name": "G",
+    "author_residue_number": 71,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 56,
+    "residue_name": "C",
+    "author_residue_number": 72,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 57,
+    "residue_name": "U",
+    "author_residue_number": 73,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 58,
+    "residue_name": "G",
+    "author_residue_number": 74,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 59,
+    "residue_name": "U",
+    "author_residue_number": 75,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 60,
+    "residue_name": "C",
+    "author_residue_number": 76,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 61,
+    "residue_name": "A",
+    "author_residue_number": 77,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 62,
+    "residue_name": "C",
+    "author_residue_number": 78,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 63,
+    "residue_name": "C",
+    "author_residue_number": 79,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 64,
+    "residue_name": "A",
+    "author_residue_number": 80,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 65,
+    "residue_name": "C",
+    "author_residue_number": 81,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 66,
+    "residue_name": "C",
+    "author_residue_number": 82,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 67,
+    "residue_name": "C",
+    "author_residue_number": 83,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 68,
+    "residue_name": "A",
+    "author_residue_number": 84,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 69,
+    "residue_name": "G",
+    "author_residue_number": 85,
+    "author_insertion_code": "",
+    "observed_ratio": 0.958
+   }
+  ]
+ },
+ {
+  "pdb_id": "1y26",
+  "entity_id": 1,
+  "auth_chain_id": "X",
+  "label_asym_id": "A",
+  "seq_name": "1y26_1_X_A",
+  "sequence": "CGCUUCAUAUAAUCCUAAUGAUAUGGUUUGGGAGUUUCUACCAAGAGCCUUAAACUCUUGAUUAUGAAGUG",
+  "pdb_sequence": "CGCUUCAUAUAAUCCUAAUGAUAUGGUUUGGGAGUUUCUACCAAGAGCCUUAAACUCUUGAUUAUGAAGUG",
+  "modified_positions": {},
+  "map_start": 3,
+  "map_end": 69,
+  "map_auth_start": 15,
+  "map_auth_end": 81,
+  "mapped_sequence": "CUUCAUAUAAUCCUAAUGAUAUGGUUUGGGAGUUUCUACCAAGAGCCUUAAACUCUUGAUUAUGAAG",
+  "molecule_name": [
+   "Vibrio vulnificus A-riboswitch"
+  ],
+  "sample_preparation": "Genetically manipulated",
+  "api_organism": "Vibrio vulnificus",
+  "api_tax_id": 672,
+  "api_expression_host": "Escherichia coli",
+  "cif_src_category": "_entity_src_gen",
+  "cif_organism": "Vibrio vulnificus",
+  "cif_tax_id": "672",
+  "residues": [
+   {
+    "residue_number": 1,
+    "residue_name": "C",
+    "author_residue_number": 13,
+    "author_insertion_code": "",
+    "observed_ratio": 0.85
+   },
+   {
+    "residue_number": 2,
+    "residue_name": "G",
+    "author_residue_number": 14,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 3,
+    "residue_name": "C",
+    "author_residue_number": 15,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 4,
+    "residue_name": "U",
+    "author_residue_number": 16,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 5,
+    "residue_name": "U",
+    "author_residue_number": 17,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 6,
+    "residue_name": "C",
+    "author_residue_number": 18,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 7,
+    "residue_name": "A",
+    "author_residue_number": 19,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 8,
+    "residue_name": "U",
+    "author_residue_number": 20,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 9,
+    "residue_name": "A",
+    "author_residue_number": 21,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 10,
+    "residue_name": "U",
+    "author_residue_number": 22,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 11,
+    "residue_name": "A",
+    "author_residue_number": 23,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 12,
+    "residue_name": "A",
+    "author_residue_number": 24,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 13,
+    "residue_name": "U",
+    "author_residue_number": 25,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 14,
+    "residue_name": "C",
+    "author_residue_number": 26,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 15,
+    "residue_name": "C",
+    "author_residue_number": 27,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 16,
+    "residue_name": "U",
+    "author_residue_number": 28,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 17,
+    "residue_name": "A",
+    "author_residue_number": 29,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 18,
+    "residue_name": "A",
+    "author_residue_number": 30,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 19,
+    "residue_name": "U",
+    "author_residue_number": 31,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 20,
+    "residue_name": "G",
+    "author_residue_number": 32,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 21,
+    "residue_name": "A",
+    "author_residue_number": 33,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 22,
+    "residue_name": "U",
+    "author_residue_number": 34,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 23,
+    "residue_name": "A",
+    "author_residue_number": 35,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 24,
+    "residue_name": "U",
+    "author_residue_number": 36,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 25,
+    "residue_name": "G",
+    "author_residue_number": 37,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 26,
+    "residue_name": "G",
+    "author_residue_number": 38,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 27,
+    "residue_name": "U",
+    "author_residue_number": 39,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 28,
+    "residue_name": "U",
+    "author_residue_number": 40,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 29,
+    "residue_name": "U",
+    "author_residue_number": 41,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 30,
+    "residue_name": "G",
+    "author_residue_number": 42,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 31,
+    "residue_name": "G",
+    "author_residue_number": 43,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 32,
+    "residue_name": "G",
+    "author_residue_number": 44,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 33,
+    "residue_name": "A",
+    "author_residue_number": 45,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 34,
+    "residue_name": "G",
+    "author_residue_number": 46,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 35,
+    "residue_name": "U",
+    "author_residue_number": 47,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 36,
+    "residue_name": "U",
+    "author_residue_number": 48,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 37,
+    "residue_name": "U",
+    "author_residue_number": 49,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 38,
+    "residue_name": "C",
+    "author_residue_number": 50,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 39,
+    "residue_name": "U",
+    "author_residue_number": 51,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 40,
+    "residue_name": "A",
+    "author_residue_number": 52,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 41,
+    "residue_name": "C",
+    "author_residue_number": 53,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 42,
+    "residue_name": "C",
+    "author_residue_number": 54,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 43,
+    "residue_name": "A",
+    "author_residue_number": 55,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 44,
+    "residue_name": "A",
+    "author_residue_number": 56,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 45,
+    "residue_name": "G",
+    "author_residue_number": 57,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 46,
+    "residue_name": "A",
+    "author_residue_number": 58,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 47,
+    "residue_name": "G",
+    "author_residue_number": 59,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 48,
+    "residue_name": "C",
+    "author_residue_number": 60,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 49,
+    "residue_name": "C",
+    "author_residue_number": 61,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 50,
+    "residue_name": "U",
+    "author_residue_number": 62,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 51,
+    "residue_name": "U",
+    "author_residue_number": 63,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 52,
+    "residue_name": "A",
+    "author_residue_number": 64,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 53,
+    "residue_name": "A",
+    "author_residue_number": 65,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 54,
+    "residue_name": "A",
+    "author_residue_number": 66,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 55,
+    "residue_name": "C",
+    "author_residue_number": 67,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 56,
+    "residue_name": "U",
+    "author_residue_number": 68,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 57,
+    "residue_name": "C",
+    "author_residue_number": 69,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 58,
+    "residue_name": "U",
+    "author_residue_number": 70,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 59,
+    "residue_name": "U",
+    "author_residue_number": 71,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 60,
+    "residue_name": "G",
+    "author_residue_number": 72,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 61,
+    "residue_name": "A",
+    "author_residue_number": 73,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 62,
+    "residue_name": "U",
+    "author_residue_number": 74,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 63,
+    "residue_name": "U",
+    "author_residue_number": 75,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 64,
+    "residue_name": "A",
+    "author_residue_number": 76,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 65,
+    "residue_name": "U",
+    "author_residue_number": 77,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 66,
+    "residue_name": "G",
+    "author_residue_number": 78,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 67,
+    "residue_name": "A",
+    "author_residue_number": 79,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 68,
+    "residue_name": "A",
+    "author_residue_number": 80,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 69,
+    "residue_name": "G",
+    "author_residue_number": 81,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 70,
+    "residue_name": "U",
+    "author_residue_number": 82,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 71,
+    "residue_name": "G",
+    "author_residue_number": 83,
+    "author_insertion_code": "",
+    "observed_ratio": 0.958
+   }
+  ]
+ },
+ {
+  "pdb_id": "3ds7",
+  "entity_id": 1,
+  "auth_chain_id": "B",
+  "label_asym_id": "B",
+  "seq_name": "3ds7_1_B_B",
+  "sequence": "GGACAUACAAUCGCGUGGAUAUGGCACGCAAGAUCCCGCCGGGCACCGUAAAUGUCCGACUAUGUCC",
+  "pdb_sequence": "GGACAUACAAUCGCGUGGAUAUGGCACGCAAGAUCCCGCCGGGCACCGUAAAUGUCCGACUAUGUCC",
+  "modified_positions": {},
+  "map_start": 1,
+  "map_end": 67,
+  "map_auth_start": 215,
+  "map_auth_end": 281,
+  "mapped_sequence": "GGACAUACAAUCGCGUGGAUAUGGCACGCAAGAUCCCGCCGGGCACCGUAAAUGUCCGACUAUGUCC",
+  "molecule_name": [
+   "67-MER"
+  ],
+  "sample_preparation": "Synthetically obtained",
+  "api_organism": "synthetic construct",
+  "api_tax_id": 32630,
+  "api_expression_host": null,
+  "cif_src_category": "_pdbx_entity_src_syn",
+  "cif_organism": "?",
+  "cif_tax_id": "?",
+  "residues": [
+   {
+    "residue_number": 1,
+    "residue_name": "G",
+    "author_residue_number": 215,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 2,
+    "residue_name": "G",
+    "author_residue_number": 216,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 3,
+    "residue_name": "A",
+    "author_residue_number": 217,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 4,
+    "residue_name": "C",
+    "author_residue_number": 218,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 5,
+    "residue_name": "A",
+    "author_residue_number": 219,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 6,
+    "residue_name": "U",
+    "author_residue_number": 220,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 7,
+    "residue_name": "A",
+    "author_residue_number": 221,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 8,
+    "residue_name": "C",
+    "author_residue_number": 222,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 9,
+    "residue_name": "A",
+    "author_residue_number": 223,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 10,
+    "residue_name": "A",
+    "author_residue_number": 224,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 11,
+    "residue_name": "U",
+    "author_residue_number": 225,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 12,
+    "residue_name": "C",
+    "author_residue_number": 226,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 13,
+    "residue_name": "G",
+    "author_residue_number": 227,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 14,
+    "residue_name": "C",
+    "author_residue_number": 228,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 15,
+    "residue_name": "G",
+    "author_residue_number": 229,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 16,
+    "residue_name": "U",
+    "author_residue_number": 230,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 17,
+    "residue_name": "G",
+    "author_residue_number": 231,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 18,
+    "residue_name": "G",
+    "author_residue_number": 232,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 19,
+    "residue_name": "A",
+    "author_residue_number": 233,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 20,
+    "residue_name": "U",
+    "author_residue_number": 234,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 21,
+    "residue_name": "A",
+    "author_residue_number": 235,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 22,
+    "residue_name": "U",
+    "author_residue_number": 236,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 23,
+    "residue_name": "G",
+    "author_residue_number": 237,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 24,
+    "residue_name": "G",
+    "author_residue_number": 238,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 25,
+    "residue_name": "C",
+    "author_residue_number": 239,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 26,
+    "residue_name": "A",
+    "author_residue_number": 240,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 27,
+    "residue_name": "C",
+    "author_residue_number": 241,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 28,
+    "residue_name": "G",
+    "author_residue_number": 242,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 29,
+    "residue_name": "C",
+    "author_residue_number": 243,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 30,
+    "residue_name": "A",
+    "author_residue_number": 244,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 31,
+    "residue_name": "A",
+    "author_residue_number": 245,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 32,
+    "residue_name": "G",
+    "author_residue_number": 246,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 33,
+    "residue_name": "A",
+    "author_residue_number": 247,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 34,
+    "residue_name": "U",
+    "author_residue_number": 248,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 35,
+    "residue_name": "C",
+    "author_residue_number": 249,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 36,
+    "residue_name": "C",
+    "author_residue_number": 250,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 37,
+    "residue_name": "C",
+    "author_residue_number": 251,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 38,
+    "residue_name": "G",
+    "author_residue_number": 252,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 39,
+    "residue_name": "C",
+    "author_residue_number": 253,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 40,
+    "residue_name": "C",
+    "author_residue_number": 254,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 41,
+    "residue_name": "G",
+    "author_residue_number": 255,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 42,
+    "residue_name": "G",
+    "author_residue_number": 256,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 43,
+    "residue_name": "G",
+    "author_residue_number": 257,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 44,
+    "residue_name": "C",
+    "author_residue_number": 258,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 45,
+    "residue_name": "A",
+    "author_residue_number": 259,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 46,
+    "residue_name": "C",
+    "author_residue_number": 260,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 47,
+    "residue_name": "C",
+    "author_residue_number": 261,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 48,
+    "residue_name": "G",
+    "author_residue_number": 262,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 49,
+    "residue_name": "U",
+    "author_residue_number": 263,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 50,
+    "residue_name": "A",
+    "author_residue_number": 264,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 51,
+    "residue_name": "A",
+    "author_residue_number": 265,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 52,
+    "residue_name": "A",
+    "author_residue_number": 266,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 53,
+    "residue_name": "U",
+    "author_residue_number": 267,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 54,
+    "residue_name": "G",
+    "author_residue_number": 268,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 55,
+    "residue_name": "U",
+    "author_residue_number": 269,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 56,
+    "residue_name": "C",
+    "author_residue_number": 270,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 57,
+    "residue_name": "C",
+    "author_residue_number": 271,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 58,
+    "residue_name": "G",
+    "author_residue_number": 272,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 59,
+    "residue_name": "A",
+    "author_residue_number": 273,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 60,
+    "residue_name": "C",
+    "author_residue_number": 274,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 61,
+    "residue_name": "U",
+    "author_residue_number": 275,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 62,
+    "residue_name": "A",
+    "author_residue_number": 276,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 63,
+    "residue_name": "U",
+    "author_residue_number": 277,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 64,
+    "residue_name": "G",
+    "author_residue_number": 278,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 65,
+    "residue_name": "U",
+    "author_residue_number": 279,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 66,
+    "residue_name": "C",
+    "author_residue_number": 280,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 67,
+    "residue_name": "C",
+    "author_residue_number": 281,
+    "author_insertion_code": "",
+    "observed_ratio": 0.952
+   }
+  ]
+ },
+ {
+  "pdb_id": "4fe5",
+  "entity_id": 1,
+  "auth_chain_id": "B",
+  "label_asym_id": "A",
+  "seq_name": "4fe5_1_B_A",
+  "sequence": "GGACAUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUAUGUCC",
+  "pdb_sequence": "GGACAUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUAUGUCC",
+  "modified_positions": {},
+  "map_start": 1,
+  "map_end": 67,
+  "map_auth_start": 15,
+  "map_auth_end": 81,
+  "mapped_sequence": "GGACAUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUAUGUCC",
+  "molecule_name": [
+   "xpt-pbuX guanine riboswitch aptamer domain"
+  ],
+  "sample_preparation": "Synthetically obtained",
+  "api_organism": "Bacillus subtilis",
+  "api_tax_id": 1423,
+  "api_expression_host": null,
+  "cif_src_category": "_pdbx_entity_src_syn",
+  "cif_organism": "?",
+  "cif_tax_id": "?",
+  "residues": [
+   {
+    "residue_number": 1,
+    "residue_name": "G",
+    "author_residue_number": 15,
+    "author_insertion_code": "",
+    "observed_ratio": 0.869
+   },
+   {
+    "residue_number": 2,
+    "residue_name": "G",
+    "author_residue_number": 16,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 3,
+    "residue_name": "A",
+    "author_residue_number": 17,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 4,
+    "residue_name": "C",
+    "author_residue_number": 18,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 5,
+    "residue_name": "A",
+    "author_residue_number": 19,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 6,
+    "residue_name": "U",
+    "author_residue_number": 20,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 7,
+    "residue_name": "A",
+    "author_residue_number": 21,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 8,
+    "residue_name": "U",
+    "author_residue_number": 22,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 9,
+    "residue_name": "A",
+    "author_residue_number": 23,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 10,
+    "residue_name": "A",
+    "author_residue_number": 24,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 11,
+    "residue_name": "U",
+    "author_residue_number": 25,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 12,
+    "residue_name": "C",
+    "author_residue_number": 26,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 13,
+    "residue_name": "G",
+    "author_residue_number": 27,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 14,
+    "residue_name": "C",
+    "author_residue_number": 28,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 15,
+    "residue_name": "G",
+    "author_residue_number": 29,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 16,
+    "residue_name": "U",
+    "author_residue_number": 30,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 17,
+    "residue_name": "G",
+    "author_residue_number": 31,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 18,
+    "residue_name": "G",
+    "author_residue_number": 32,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 19,
+    "residue_name": "A",
+    "author_residue_number": 33,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 20,
+    "residue_name": "U",
+    "author_residue_number": 34,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 21,
+    "residue_name": "A",
+    "author_residue_number": 35,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 22,
+    "residue_name": "U",
+    "author_residue_number": 36,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 23,
+    "residue_name": "G",
+    "author_residue_number": 37,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 24,
+    "residue_name": "G",
+    "author_residue_number": 38,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 25,
+    "residue_name": "C",
+    "author_residue_number": 39,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 26,
+    "residue_name": "A",
+    "author_residue_number": 40,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 27,
+    "residue_name": "C",
+    "author_residue_number": 41,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 28,
+    "residue_name": "G",
+    "author_residue_number": 42,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 29,
+    "residue_name": "C",
+    "author_residue_number": 43,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 30,
+    "residue_name": "A",
+    "author_residue_number": 44,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 31,
+    "residue_name": "A",
+    "author_residue_number": 45,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 32,
+    "residue_name": "G",
+    "author_residue_number": 46,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 33,
+    "residue_name": "U",
+    "author_residue_number": 47,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 34,
+    "residue_name": "U",
+    "author_residue_number": 48,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 35,
+    "residue_name": "U",
+    "author_residue_number": 49,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 36,
+    "residue_name": "C",
+    "author_residue_number": 50,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 37,
+    "residue_name": "U",
+    "author_residue_number": 51,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 38,
+    "residue_name": "A",
+    "author_residue_number": 52,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 39,
+    "residue_name": "C",
+    "author_residue_number": 53,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 40,
+    "residue_name": "C",
+    "author_residue_number": 54,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 41,
+    "residue_name": "G",
+    "author_residue_number": 55,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 42,
+    "residue_name": "G",
+    "author_residue_number": 56,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 43,
+    "residue_name": "G",
+    "author_residue_number": 57,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 44,
+    "residue_name": "C",
+    "author_residue_number": 58,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 45,
+    "residue_name": "A",
+    "author_residue_number": 59,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 46,
+    "residue_name": "C",
+    "author_residue_number": 60,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 47,
+    "residue_name": "C",
+    "author_residue_number": 61,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 48,
+    "residue_name": "G",
+    "author_residue_number": 62,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 49,
+    "residue_name": "U",
+    "author_residue_number": 63,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 50,
+    "residue_name": "A",
+    "author_residue_number": 64,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 51,
+    "residue_name": "A",
+    "author_residue_number": 65,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 52,
+    "residue_name": "A",
+    "author_residue_number": 66,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 53,
+    "residue_name": "U",
+    "author_residue_number": 67,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 54,
+    "residue_name": "G",
+    "author_residue_number": 68,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 55,
+    "residue_name": "U",
+    "author_residue_number": 69,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 56,
+    "residue_name": "C",
+    "author_residue_number": 70,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 57,
+    "residue_name": "C",
+    "author_residue_number": 71,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 58,
+    "residue_name": "G",
+    "author_residue_number": 72,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 59,
+    "residue_name": "A",
+    "author_residue_number": 73,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 60,
+    "residue_name": "C",
+    "author_residue_number": 74,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 61,
+    "residue_name": "U",
+    "author_residue_number": 75,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 62,
+    "residue_name": "A",
+    "author_residue_number": 76,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 63,
+    "residue_name": "U",
+    "author_residue_number": 77,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 64,
+    "residue_name": "G",
+    "author_residue_number": 78,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 65,
+    "residue_name": "U",
+    "author_residue_number": 79,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 66,
+    "residue_name": "C",
+    "author_residue_number": 80,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 67,
+    "residue_name": "C",
+    "author_residue_number": 81,
+    "author_insertion_code": "",
+    "observed_ratio": 0.952
+   }
+  ]
+ },
+ {
+  "pdb_id": "9nbh",
+  "entity_id": 1,
+  "auth_chain_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "9nbh_1_A_A",
+  "sequence": "GGGCCACUGUUUCACUGUUGCGCUACAUCUCCUGUUCGUAUAACCCCGAUAAUCGGUUCGGGGGCUCUACUGGGGUCCGUAAAAUCCUAACUACGAACGGGAGGCCACACGAAAGUGUGGAGUGACCAGUGGCCCCACCCUGAAGGUAAACUUGUAGCGC",
+  "pdb_sequence": "GGGCCACUGUUUCACUGUUGCGCUACAUCUCCUGUUCGUAUAACCCCGAUAAUCGGUUCGGGGGCUCUACUGGGGUCCGUAAAAUCCUAACUACGAACGGGAGGCCACACGAAAGUGUGGAGUGACCAGUGGCCCCACCCUGAAGGUAAACUUGUAGCGC",
+  "modified_positions": {},
+  "map_start": 16,
+  "map_end": 113,
+  "map_auth_start": 16,
+  "map_auth_end": 113,
+  "mapped_sequence": "UGUUGCGCUACAUCUCCUGUUCGUAUAACCCCGAUAAUCGGUUCGGGGGCUCUACUGGGGUCCGUAAAAUCCUAACUACGAACGGGAGGCCACACGAA",
+  "molecule_name": [
+   "RNA (88-MER)"
+  ],
+  "sample_preparation": "Synthetically obtained",
+  "api_organism": "synthetic construct",
+  "api_tax_id": 32630,
+  "api_expression_host": null,
+  "cif_src_category": "_pdbx_entity_src_syn",
+  "cif_organism": "synthetic construct",
+  "cif_tax_id": "32630",
+  "residues": [
+   {
+    "residue_number": 1,
+    "residue_name": "G",
+    "author_residue_number": 1,
+    "author_insertion_code": "",
+    "observed_ratio": 0.869
+   },
+   {
+    "residue_number": 2,
+    "residue_name": "G",
+    "author_residue_number": 2,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 3,
+    "residue_name": "G",
+    "author_residue_number": 3,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 4,
+    "residue_name": "C",
+    "author_residue_number": 4,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 5,
+    "residue_name": "C",
+    "author_residue_number": 5,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 6,
+    "residue_name": "A",
+    "author_residue_number": 6,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 7,
+    "residue_name": "C",
+    "author_residue_number": 7,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 8,
+    "residue_name": "U",
+    "author_residue_number": 8,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 9,
+    "residue_name": "G",
+    "author_residue_number": 9,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 10,
+    "residue_name": "U",
+    "author_residue_number": 10,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 11,
+    "residue_name": "U",
+    "author_residue_number": 11,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 12,
+    "residue_name": "U",
+    "author_residue_number": 12,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 13,
+    "residue_name": "C",
+    "author_residue_number": 13,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 14,
+    "residue_name": "A",
+    "author_residue_number": 14,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 15,
+    "residue_name": "C",
+    "author_residue_number": 15,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 16,
+    "residue_name": "U",
+    "author_residue_number": 16,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 17,
+    "residue_name": "G",
+    "author_residue_number": 17,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 18,
+    "residue_name": "U",
+    "author_residue_number": 18,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 19,
+    "residue_name": "U",
+    "author_residue_number": 19,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 20,
+    "residue_name": "G",
+    "author_residue_number": 20,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 21,
+    "residue_name": "C",
+    "author_residue_number": 21,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 22,
+    "residue_name": "G",
+    "author_residue_number": 22,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 23,
+    "residue_name": "C",
+    "author_residue_number": 23,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 24,
+    "residue_name": "U",
+    "author_residue_number": 24,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 25,
+    "residue_name": "A",
+    "author_residue_number": 25,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 26,
+    "residue_name": "C",
+    "author_residue_number": 26,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 27,
+    "residue_name": "A",
+    "author_residue_number": 27,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 28,
+    "residue_name": "U",
+    "author_residue_number": 28,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 29,
+    "residue_name": "C",
+    "author_residue_number": 29,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 30,
+    "residue_name": "U",
+    "author_residue_number": 30,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 31,
+    "residue_name": "C",
+    "author_residue_number": 31,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 32,
+    "residue_name": "C",
+    "author_residue_number": 32,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 33,
+    "residue_name": "U",
+    "author_residue_number": 33,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 34,
+    "residue_name": "G",
+    "author_residue_number": 34,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 35,
+    "residue_name": "U",
+    "author_residue_number": 35,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 36,
+    "residue_name": "U",
+    "author_residue_number": 36,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 37,
+    "residue_name": "C",
+    "author_residue_number": 37,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 38,
+    "residue_name": "G",
+    "author_residue_number": 38,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 39,
+    "residue_name": "U",
+    "author_residue_number": 39,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 40,
+    "residue_name": "A",
+    "author_residue_number": 40,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 41,
+    "residue_name": "U",
+    "author_residue_number": 41,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 42,
+    "residue_name": "A",
+    "author_residue_number": 42,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 43,
+    "residue_name": "A",
+    "author_residue_number": 43,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 44,
+    "residue_name": "C",
+    "author_residue_number": 44,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 45,
+    "residue_name": "C",
+    "author_residue_number": 45,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 46,
+    "residue_name": "C",
+    "author_residue_number": 46,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 47,
+    "residue_name": "C",
+    "author_residue_number": 47,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 48,
+    "residue_name": "G",
+    "author_residue_number": 48,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 49,
+    "residue_name": "A",
+    "author_residue_number": 49,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 50,
+    "residue_name": "U",
+    "author_residue_number": 50,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 51,
+    "residue_name": "A",
+    "author_residue_number": 51,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 52,
+    "residue_name": "A",
+    "author_residue_number": 52,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 53,
+    "residue_name": "U",
+    "author_residue_number": 53,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 54,
+    "residue_name": "C",
+    "author_residue_number": 54,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 55,
+    "residue_name": "G",
+    "author_residue_number": 55,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 56,
+    "residue_name": "G",
+    "author_residue_number": 56,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 57,
+    "residue_name": "U",
+    "author_residue_number": 57,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 58,
+    "residue_name": "U",
+    "author_residue_number": 58,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 59,
+    "residue_name": "C",
+    "author_residue_number": 59,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 60,
+    "residue_name": "G",
+    "author_residue_number": 60,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 61,
+    "residue_name": "G",
+    "author_residue_number": 61,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 62,
+    "residue_name": "G",
+    "author_residue_number": 62,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 63,
+    "residue_name": "G",
+    "author_residue_number": 63,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 64,
+    "residue_name": "G",
+    "author_residue_number": 64,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 65,
+    "residue_name": "C",
+    "author_residue_number": 65,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 66,
+    "residue_name": "U",
+    "author_residue_number": 66,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 67,
+    "residue_name": "C",
+    "author_residue_number": 67,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 68,
+    "residue_name": "U",
+    "author_residue_number": 68,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 69,
+    "residue_name": "A",
+    "author_residue_number": 69,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 70,
+    "residue_name": "C",
+    "author_residue_number": 70,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 71,
+    "residue_name": "U",
+    "author_residue_number": 71,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 72,
+    "residue_name": "G",
+    "author_residue_number": 72,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 73,
+    "residue_name": "G",
+    "author_residue_number": 73,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 74,
+    "residue_name": "G",
+    "author_residue_number": 74,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 75,
+    "residue_name": "G",
+    "author_residue_number": 75,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 76,
+    "residue_name": "U",
+    "author_residue_number": 76,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 77,
+    "residue_name": "C",
+    "author_residue_number": 77,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 78,
+    "residue_name": "C",
+    "author_residue_number": 78,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 79,
+    "residue_name": "G",
+    "author_residue_number": 79,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 80,
+    "residue_name": "U",
+    "author_residue_number": 80,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 81,
+    "residue_name": "A",
+    "author_residue_number": 81,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 82,
+    "residue_name": "A",
+    "author_residue_number": 82,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 83,
+    "residue_name": "A",
+    "author_residue_number": 83,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 84,
+    "residue_name": "A",
+    "author_residue_number": 84,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 85,
+    "residue_name": "U",
+    "author_residue_number": 85,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 86,
+    "residue_name": "C",
+    "author_residue_number": 86,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 87,
+    "residue_name": "C",
+    "author_residue_number": 87,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 88,
+    "residue_name": "U",
+    "author_residue_number": 88,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 89,
+    "residue_name": "A",
+    "author_residue_number": 89,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 90,
+    "residue_name": "A",
+    "author_residue_number": 90,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 91,
+    "residue_name": "C",
+    "author_residue_number": 91,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 92,
+    "residue_name": "U",
+    "author_residue_number": 92,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 93,
+    "residue_name": "A",
+    "author_residue_number": 93,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 94,
+    "residue_name": "C",
+    "author_residue_number": 94,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 95,
+    "residue_name": "G",
+    "author_residue_number": 95,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 96,
+    "residue_name": "A",
+    "author_residue_number": 96,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 97,
+    "residue_name": "A",
+    "author_residue_number": 97,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 98,
+    "residue_name": "C",
+    "author_residue_number": 98,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 99,
+    "residue_name": "G",
+    "author_residue_number": 99,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 100,
+    "residue_name": "G",
+    "author_residue_number": 100,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 101,
+    "residue_name": "G",
+    "author_residue_number": 101,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 102,
+    "residue_name": "A",
+    "author_residue_number": 102,
+    "author_insertion_code": "",
+    "observed_ratio": 0.0
+   },
+   {
+    "residue_number": 103,
+    "residue_name": "G",
+    "author_residue_number": 103,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 104,
+    "residue_name": "G",
+    "author_residue_number": 104,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 105,
+    "residue_name": "C",
+    "author_residue_number": 105,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 106,
+    "residue_name": "C",
+    "author_residue_number": 106,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 107,
+    "residue_name": "A",
+    "author_residue_number": 107,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 108,
+    "residue_name": "C",
+    "author_residue_number": 108,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 109,
+    "residue_name": "A",
+    "author_residue_number": 109,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 110,
+    "residue_name": "C",
+    "author_residue_number": 110,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 111,
+    "residue_name": "G",
+    "author_residue_number": 111,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 112,
+    "residue_name": "A",
+    "author_residue_number": 112,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 113,
+    "residue_name": "A",
+    "author_residue_number": 113,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 114,
+    "residue_name": "A",
+    "author_residue_number": 114,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 115,
+    "residue_name": "G",
+    "author_residue_number": 115,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 116,
+    "residue_name": "U",
+    "author_residue_number": 116,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 117,
+    "residue_name": "G",
+    "author_residue_number": 117,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 118,
+    "residue_name": "U",
+    "author_residue_number": 118,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 119,
+    "residue_name": "G",
+    "author_residue_number": 119,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 120,
+    "residue_name": "G",
+    "author_residue_number": 120,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 121,
+    "residue_name": "A",
+    "author_residue_number": 121,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 122,
+    "residue_name": "G",
+    "author_residue_number": 122,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 123,
+    "residue_name": "U",
+    "author_residue_number": 123,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 124,
+    "residue_name": "G",
+    "author_residue_number": 124,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 125,
+    "residue_name": "A",
+    "author_residue_number": 125,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 126,
+    "residue_name": "C",
+    "author_residue_number": 126,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 127,
+    "residue_name": "C",
+    "author_residue_number": 127,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 128,
+    "residue_name": "A",
+    "author_residue_number": 128,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 129,
+    "residue_name": "G",
+    "author_residue_number": 129,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 130,
+    "residue_name": "U",
+    "author_residue_number": 130,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 131,
+    "residue_name": "G",
+    "author_residue_number": 131,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 132,
+    "residue_name": "G",
+    "author_residue_number": 132,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 133,
+    "residue_name": "C",
+    "author_residue_number": 133,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 134,
+    "residue_name": "C",
+    "author_residue_number": 134,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 135,
+    "residue_name": "C",
+    "author_residue_number": 135,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 136,
+    "residue_name": "C",
+    "author_residue_number": 136,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 137,
+    "residue_name": "A",
+    "author_residue_number": 137,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 138,
+    "residue_name": "C",
+    "author_residue_number": 138,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 139,
+    "residue_name": "C",
+    "author_residue_number": 139,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 140,
+    "residue_name": "C",
+    "author_residue_number": 140,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 141,
+    "residue_name": "U",
+    "author_residue_number": 141,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0,
+    "multiple_conformers": [
+     {
+      "residue_name": "U",
+      "alternate_conformers": 2
+     }
+    ]
+   },
+   {
+    "residue_number": 142,
+    "residue_name": "G",
+    "author_residue_number": 142,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0,
+    "multiple_conformers": [
+     {
+      "residue_name": "G",
+      "alternate_conformers": 2
+     }
+    ]
+   },
+   {
+    "residue_number": 143,
+    "residue_name": "A",
+    "author_residue_number": 143,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0,
+    "multiple_conformers": [
+     {
+      "residue_name": "A",
+      "alternate_conformers": 2
+     }
+    ]
+   },
+   {
+    "residue_number": 144,
+    "residue_name": "A",
+    "author_residue_number": 144,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0,
+    "multiple_conformers": [
+     {
+      "residue_name": "A",
+      "alternate_conformers": 2
+     }
+    ]
+   },
+   {
+    "residue_number": 145,
+    "residue_name": "G",
+    "author_residue_number": 145,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 146,
+    "residue_name": "G",
+    "author_residue_number": 146,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 147,
+    "residue_name": "U",
+    "author_residue_number": 147,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 148,
+    "residue_name": "A",
+    "author_residue_number": 148,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 149,
+    "residue_name": "A",
+    "author_residue_number": 149,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 150,
+    "residue_name": "A",
+    "author_residue_number": 150,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 151,
+    "residue_name": "C",
+    "author_residue_number": 151,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 152,
+    "residue_name": "U",
+    "author_residue_number": 152,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 153,
+    "residue_name": "U",
+    "author_residue_number": 153,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 154,
+    "residue_name": "G",
+    "author_residue_number": 154,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 155,
+    "residue_name": "U",
+    "author_residue_number": 155,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 156,
+    "residue_name": "A",
+    "author_residue_number": 156,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 157,
+    "residue_name": "G",
+    "author_residue_number": 157,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 158,
+    "residue_name": "C",
+    "author_residue_number": 158,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 159,
+    "residue_name": "G",
+    "author_residue_number": 159,
+    "author_insertion_code": "",
+    "observed_ratio": 1.0
+   },
+   {
+    "residue_number": 160,
+    "residue_name": "C",
+    "author_residue_number": 160,
+    "author_insertion_code": "",
+    "observed_ratio": 0.952
+   }
+  ]
+ }
+]

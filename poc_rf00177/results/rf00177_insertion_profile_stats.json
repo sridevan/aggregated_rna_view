@@ -1,0 +1,9 @@
+{
+ "seed_sequences": 99,
+ "seed_anchors_with_any_insertion": 112,
+ "seed_anchors_insertion_in_>=50%_seqs": 0,
+ "instance_anchors_total": 141,
+ "instance_anchors_shared_by_>=2": 17,
+ "instance_anchors_absent_from_seed": 29,
+ "instance_anchors_with_>=20_residues": 17
+}

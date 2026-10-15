@@ -1,0 +1,2 @@
+pdb-rna-viewer 0.3.0, built from https://github.com/PDBeurope/pdb-rna-viewer (commit of 2026-10-14 clone) with: npx tsc --incremental --skipLibCheck; NODE_OPTIONS=--openssl-legacy-provider npx webpack --mode production; npx gulp
+Licence: Apache-2.0 (see LICENSE). Copyright 2021 EMBL - European Bioinformatics Institute.

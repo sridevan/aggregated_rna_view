@@ -1,0 +1,813 @@
+source,loop_id,loop_type,motif_group,annotation_text,pdb_id,auth_asym_id,label_asym_id,unit_id,label_seq_id,status,rfam_consensus_pos,pp,confidence,n_nucleotides_in_loop,multi_chain_loop
+bgsu_loop,HL_1Y26_001,HL,HL_35704.1,No text annotation,1y26,X,A,1Y26|1|X|A|30,18,mapped,34,*,high,11,False
+bgsu_loop,HL_1Y26_001,HL,HL_35704.1,No text annotation,1y26,X,A,1Y26|1|X|U|31,19,mapped,35,*,high,11,False
+bgsu_loop,HL_1Y26_001,HL,HL_35704.1,No text annotation,1y26,X,A,1Y26|1|X|G|32,20,mapped,36,*,high,11,False
+bgsu_loop,HL_1Y26_001,HL,HL_35704.1,No text annotation,1y26,X,A,1Y26|1|X|A|33,21,mapped,37,*,high,11,False
+bgsu_loop,HL_1Y26_001,HL,HL_35704.1,No text annotation,1y26,X,A,1Y26|1|X|U|34,22,mapped,38,*,high,11,False
+bgsu_loop,HL_1Y26_001,HL,HL_35704.1,No text annotation,1y26,X,A,1Y26|1|X|A|35,23,mapped,39,*,high,11,False
+bgsu_loop,HL_1Y26_001,HL,HL_35704.1,No text annotation,1y26,X,A,1Y26|1|X|U|36,24,mapped,40,*,high,11,False
+bgsu_loop,HL_1Y26_001,HL,HL_35704.1,No text annotation,1y26,X,A,1Y26|1|X|G|37,25,mapped,41,*,high,11,False
+bgsu_loop,HL_1Y26_001,HL,HL_35704.1,No text annotation,1y26,X,A,1Y26|1|X|G|38,26,mapped,42,*,high,11,False
+bgsu_loop,HL_1Y26_001,HL,HL_35704.1,No text annotation,1y26,X,A,1Y26|1|X|U|39,27,mapped,43,*,high,11,False
+bgsu_loop,HL_1Y26_001,HL,HL_35704.1,No text annotation,1y26,X,A,1Y26|1|X|U|40,28,mapped,44,*,high,11,False
+bgsu_loop,HL_1Y26_002,HL,HL_56046.1,Purine riboswitch,1y26,X,A,1Y26|1|X|G|46,34,mapped,50,*,high,8,False
+bgsu_loop,HL_1Y26_002,HL,HL_56046.1,Purine riboswitch,1y26,X,A,1Y26|1|X|U|47,35,mapped,51,*,high,8,False
+bgsu_loop,HL_1Y26_002,HL,HL_56046.1,Purine riboswitch,1y26,X,A,1Y26|1|X|U|48,36,mapped,52,*,high,8,False
+bgsu_loop,HL_1Y26_002,HL,HL_56046.1,Purine riboswitch,1y26,X,A,1Y26|1|X|U|49,37,mapped,53,*,high,8,False
+bgsu_loop,HL_1Y26_002,HL,HL_56046.1,Purine riboswitch,1y26,X,A,1Y26|1|X|C|50,38,mapped,54,*,high,8,False
+bgsu_loop,HL_1Y26_002,HL,HL_56046.1,Purine riboswitch,1y26,X,A,1Y26|1|X|U|51,39,mapped,55,*,high,8,False
+bgsu_loop,HL_1Y26_002,HL,HL_56046.1,Purine riboswitch,1y26,X,A,1Y26|1|X|A|52,40,mapped,56,*,high,8,False
+bgsu_loop,HL_1Y26_002,HL,HL_56046.1,Purine riboswitch,1y26,X,A,1Y26|1|X|C|53,41,mapped,57,*,high,8,False
+bgsu_loop,HL_1Y26_003,HL,HL_09122.3,No text annotation,1y26,X,A,1Y26|1|X|G|59,47,mapped,63,*,high,9,False
+bgsu_loop,HL_1Y26_003,HL,HL_09122.3,No text annotation,1y26,X,A,1Y26|1|X|C|60,48,mapped,65,*,high,9,False
+bgsu_loop,HL_1Y26_003,HL,HL_09122.3,No text annotation,1y26,X,A,1Y26|1|X|C|61,49,mapped,66,*,high,9,False
+bgsu_loop,HL_1Y26_003,HL,HL_09122.3,No text annotation,1y26,X,A,1Y26|1|X|U|62,50,mapped,67,*,high,9,False
+bgsu_loop,HL_1Y26_003,HL,HL_09122.3,No text annotation,1y26,X,A,1Y26|1|X|U|63,51,mapped,68,*,high,9,False
+bgsu_loop,HL_1Y26_003,HL,HL_09122.3,No text annotation,1y26,X,A,1Y26|1|X|A|64,52,mapped,69,*,high,9,False
+bgsu_loop,HL_1Y26_003,HL,HL_09122.3,No text annotation,1y26,X,A,1Y26|1|X|A|65,53,mapped,70,*,high,9,False
+bgsu_loop,HL_1Y26_003,HL,HL_09122.3,No text annotation,1y26,X,A,1Y26|1|X|A|66,54,mapped,71,*,high,9,False
+bgsu_loop,HL_1Y26_003,HL,HL_09122.3,No text annotation,1y26,X,A,1Y26|1|X|C|67,55,mapped,73,*,high,9,False
+bgsu_loop,J3_1Y26_001,J3,J3_44163.4,No text annotation,1y26,X,A,1Y26|1|X|A|21,9,mapped,25,*,high,19,False
+bgsu_loop,J3_1Y26_001,J3,J3_44163.4,No text annotation,1y26,X,A,1Y26|1|X|U|22,10,mapped,26,*,high,19,False
+bgsu_loop,J3_1Y26_001,J3,J3_44163.4,No text annotation,1y26,X,A,1Y26|1|X|A|23,11,mapped,27,*,high,19,False
+bgsu_loop,J3_1Y26_001,J3,J3_44163.4,No text annotation,1y26,X,A,1Y26|1|X|A|24,12,mapped,28,*,high,19,False
+bgsu_loop,J3_1Y26_001,J3,J3_44163.4,No text annotation,1y26,X,A,1Y26|1|X|U|25,13,mapped,29,*,high,19,False
+bgsu_loop,J3_1Y26_001,J3,J3_44163.4,No text annotation,1y26,X,A,1Y26|1|X|A|45,33,mapped,49,*,high,19,False
+bgsu_loop,J3_1Y26_001,J3,J3_44163.4,No text annotation,1y26,X,A,1Y26|1|X|G|46,34,mapped,50,*,high,19,False
+bgsu_loop,J3_1Y26_001,J3,J3_44163.4,No text annotation,1y26,X,A,1Y26|1|X|U|47,35,mapped,51,*,high,19,False
+bgsu_loop,J3_1Y26_001,J3,J3_44163.4,No text annotation,1y26,X,A,1Y26|1|X|U|48,36,mapped,52,*,high,19,False
+bgsu_loop,J3_1Y26_001,J3,J3_44163.4,No text annotation,1y26,X,A,1Y26|1|X|U|49,37,mapped,53,*,high,19,False
+bgsu_loop,J3_1Y26_001,J3,J3_44163.4,No text annotation,1y26,X,A,1Y26|1|X|C|50,38,mapped,54,*,high,19,False
+bgsu_loop,J3_1Y26_001,J3,J3_44163.4,No text annotation,1y26,X,A,1Y26|1|X|U|51,39,mapped,55,*,high,19,False
+bgsu_loop,J3_1Y26_001,J3,J3_44163.4,No text annotation,1y26,X,A,1Y26|1|X|A|52,40,mapped,56,*,high,19,False
+bgsu_loop,J3_1Y26_001,J3,J3_44163.4,No text annotation,1y26,X,A,1Y26|1|X|C|53,41,mapped,57,*,high,19,False
+bgsu_loop,J3_1Y26_001,J3,J3_44163.4,No text annotation,1y26,X,A,1Y26|1|X|C|54,42,mapped,58,*,high,19,False
+bgsu_loop,J3_1Y26_001,J3,J3_44163.4,No text annotation,1y26,X,A,1Y26|1|X|G|72,60,mapped,78,*,high,19,False
+bgsu_loop,J3_1Y26_001,J3,J3_44163.4,No text annotation,1y26,X,A,1Y26|1|X|A|73,61,mapped,79,*,high,19,False
+bgsu_loop,J3_1Y26_001,J3,J3_44163.4,No text annotation,1y26,X,A,1Y26|1|X|U|74,62,mapped,80,*,high,19,False
+bgsu_loop,J3_1Y26_001,J3,J3_44163.4,No text annotation,1y26,X,A,1Y26|1|X|U|75,63,mapped,81,*,high,19,False
+bgsu_loop,J4_1Y26_001,J4,J4_07491.4,Purine riboswitch junction,1y26,X,A,1Y26|1|X|A|21,9,mapped,25,*,high,13,False
+bgsu_loop,J4_1Y26_001,J4,J4_07491.4,Purine riboswitch junction,1y26,X,A,1Y26|1|X|U|22,10,mapped,26,*,high,13,False
+bgsu_loop,J4_1Y26_001,J4,J4_07491.4,Purine riboswitch junction,1y26,X,A,1Y26|1|X|A|23,11,mapped,27,*,high,13,False
+bgsu_loop,J4_1Y26_001,J4,J4_07491.4,Purine riboswitch junction,1y26,X,A,1Y26|1|X|A|24,12,mapped,28,*,high,13,False
+bgsu_loop,J4_1Y26_001,J4,J4_07491.4,Purine riboswitch junction,1y26,X,A,1Y26|1|X|U|25,13,mapped,29,*,high,13,False
+bgsu_loop,J4_1Y26_001,J4,J4_07491.4,Purine riboswitch junction,1y26,X,A,1Y26|1|X|A|45,33,mapped,49,*,high,13,False
+bgsu_loop,J4_1Y26_001,J4,J4_07491.4,Purine riboswitch junction,1y26,X,A,1Y26|1|X|G|46,34,mapped,50,*,high,13,False
+bgsu_loop,J4_1Y26_001,J4,J4_07491.4,Purine riboswitch junction,1y26,X,A,1Y26|1|X|C|53,41,mapped,57,*,high,13,False
+bgsu_loop,J4_1Y26_001,J4,J4_07491.4,Purine riboswitch junction,1y26,X,A,1Y26|1|X|C|54,42,mapped,58,*,high,13,False
+bgsu_loop,J4_1Y26_001,J4,J4_07491.4,Purine riboswitch junction,1y26,X,A,1Y26|1|X|G|72,60,mapped,78,*,high,13,False
+bgsu_loop,J4_1Y26_001,J4,J4_07491.4,Purine riboswitch junction,1y26,X,A,1Y26|1|X|A|73,61,mapped,79,*,high,13,False
+bgsu_loop,J4_1Y26_001,J4,J4_07491.4,Purine riboswitch junction,1y26,X,A,1Y26|1|X|U|74,62,mapped,80,*,high,13,False
+bgsu_loop,J4_1Y26_001,J4,J4_07491.4,Purine riboswitch junction,1y26,X,A,1Y26|1|X|U|75,63,mapped,81,*,high,13,False
+bgsu_loop,HL_3RKF_001,HL,HL_59138.3,No text annotation,3rkf,A,A,3RKF|1|A|G|31,17,mapped,35,*,high,9,False
+bgsu_loop,HL_3RKF_001,HL,HL_59138.3,No text annotation,3rkf,A,A,3RKF|1|A|G|32,18,mapped,36,*,high,9,False
+bgsu_loop,HL_3RKF_001,HL,HL_59138.3,No text annotation,3rkf,A,A,3RKF|1|A|A|33,19,mapped,37,*,high,9,False
+bgsu_loop,HL_3RKF_001,HL,HL_59138.3,No text annotation,3rkf,A,A,3RKF|1|A|U|34,20,mapped,38,*,high,9,False
+bgsu_loop,HL_3RKF_001,HL,HL_59138.3,No text annotation,3rkf,A,A,3RKF|1|A|A|35,21,mapped,39,*,high,9,False
+bgsu_loop,HL_3RKF_001,HL,HL_59138.3,No text annotation,3rkf,A,A,3RKF|1|A|U|36,22,mapped,40,*,high,9,False
+bgsu_loop,HL_3RKF_001,HL,HL_59138.3,No text annotation,3rkf,A,A,3RKF|1|A|A|37,23,mapped,41,*,high,9,False
+bgsu_loop,HL_3RKF_001,HL,HL_59138.3,No text annotation,3rkf,A,A,3RKF|1|A|G|38,24,mapped,42,*,high,9,False
+bgsu_loop,HL_3RKF_001,HL,HL_59138.3,No text annotation,3rkf,A,A,3RKF|1|A|C|39,25,mapped,43,*,high,9,False
+bgsu_loop,HL_3RKF_002,HL,HL_56046.1,Purine riboswitch,3rkf,A,A,3RKF|1|A|G|46,32,mapped,50,*,high,8,False
+bgsu_loop,HL_3RKF_002,HL,HL_56046.1,Purine riboswitch,3rkf,A,A,3RKF|1|A|U|47,33,mapped,51,*,high,8,False
+bgsu_loop,HL_3RKF_002,HL,HL_56046.1,Purine riboswitch,3rkf,A,A,3RKF|1|A|U|48,34,mapped,52,*,high,8,False
+bgsu_loop,HL_3RKF_002,HL,HL_56046.1,Purine riboswitch,3rkf,A,A,3RKF|1|A|U|49,35,mapped,53,*,high,8,False
+bgsu_loop,HL_3RKF_002,HL,HL_56046.1,Purine riboswitch,3rkf,A,A,3RKF|1|A|C|50,36,mapped,54,*,high,8,False
+bgsu_loop,HL_3RKF_002,HL,HL_56046.1,Purine riboswitch,3rkf,A,A,3RKF|1|A|U|51,37,mapped,55,*,high,8,False
+bgsu_loop,HL_3RKF_002,HL,HL_56046.1,Purine riboswitch,3rkf,A,A,3RKF|1|A|A|52,38,mapped,56,*,high,8,False
+bgsu_loop,HL_3RKF_002,HL,HL_56046.1,Purine riboswitch,3rkf,A,A,3RKF|1|A|C|53,39,mapped,57,*,high,8,False
+bgsu_loop,HL_3RKF_003,HL,HL_09122.3,No text annotation,3rkf,A,A,3RKF|1|A|A|59,45,mapped,63,*,high,9,False
+bgsu_loop,HL_3RKF_003,HL,HL_09122.3,No text annotation,3rkf,A,A,3RKF|1|A|C|60,46,mapped,65,*,high,9,False
+bgsu_loop,HL_3RKF_003,HL,HL_09122.3,No text annotation,3rkf,A,A,3RKF|1|A|U|61,47,mapped,66,*,high,9,False
+bgsu_loop,HL_3RKF_003,HL,HL_09122.3,No text annotation,3rkf,A,A,3RKF|1|A|G|62,48,mapped,67,*,high,9,False
+bgsu_loop,HL_3RKF_003,HL,HL_09122.3,No text annotation,3rkf,A,A,3RKF|1|A|U|63,49,mapped,68,*,high,9,False
+bgsu_loop,HL_3RKF_003,HL,HL_09122.3,No text annotation,3rkf,A,A,3RKF|1|A|A|64,50,mapped,69,*,high,9,False
+bgsu_loop,HL_3RKF_003,HL,HL_09122.3,No text annotation,3rkf,A,A,3RKF|1|A|A|65,51,mapped,70,*,high,9,False
+bgsu_loop,HL_3RKF_003,HL,HL_09122.3,No text annotation,3rkf,A,A,3RKF|1|A|A|66,52,mapped,71,*,high,9,False
+bgsu_loop,HL_3RKF_003,HL,HL_09122.3,No text annotation,3rkf,A,A,3RKF|1|A|U|67,53,mapped,73,*,high,9,False
+bgsu_loop,HL_3RKF_004,HL,HL_59138.3,No text annotation,3rkf,B,B,3RKF|1|B|G|31,17,mapped,35,*,high,9,False
+bgsu_loop,HL_3RKF_004,HL,HL_59138.3,No text annotation,3rkf,B,B,3RKF|1|B|G|32,18,mapped,36,*,high,9,False
+bgsu_loop,HL_3RKF_004,HL,HL_59138.3,No text annotation,3rkf,B,B,3RKF|1|B|A|33,19,mapped,37,*,high,9,False
+bgsu_loop,HL_3RKF_004,HL,HL_59138.3,No text annotation,3rkf,B,B,3RKF|1|B|U|34,20,mapped,38,*,high,9,False
+bgsu_loop,HL_3RKF_004,HL,HL_59138.3,No text annotation,3rkf,B,B,3RKF|1|B|A|35,21,mapped,39,*,high,9,False
+bgsu_loop,HL_3RKF_004,HL,HL_59138.3,No text annotation,3rkf,B,B,3RKF|1|B|U|36,22,mapped,40,*,high,9,False
+bgsu_loop,HL_3RKF_004,HL,HL_59138.3,No text annotation,3rkf,B,B,3RKF|1|B|A|37,23,mapped,41,*,high,9,False
+bgsu_loop,HL_3RKF_004,HL,HL_59138.3,No text annotation,3rkf,B,B,3RKF|1|B|G|38,24,mapped,42,*,high,9,False
+bgsu_loop,HL_3RKF_004,HL,HL_59138.3,No text annotation,3rkf,B,B,3RKF|1|B|C|39,25,mapped,43,*,high,9,False
+bgsu_loop,HL_3RKF_005,HL,HL_56046.1,Purine riboswitch,3rkf,B,B,3RKF|1|B|G|46,32,mapped,50,*,high,8,False
+bgsu_loop,HL_3RKF_005,HL,HL_56046.1,Purine riboswitch,3rkf,B,B,3RKF|1|B|U|47,33,mapped,51,*,high,8,False
+bgsu_loop,HL_3RKF_005,HL,HL_56046.1,Purine riboswitch,3rkf,B,B,3RKF|1|B|U|48,34,mapped,52,*,high,8,False
+bgsu_loop,HL_3RKF_005,HL,HL_56046.1,Purine riboswitch,3rkf,B,B,3RKF|1|B|U|49,35,mapped,53,*,high,8,False
+bgsu_loop,HL_3RKF_005,HL,HL_56046.1,Purine riboswitch,3rkf,B,B,3RKF|1|B|C|50,36,mapped,54,*,high,8,False
+bgsu_loop,HL_3RKF_005,HL,HL_56046.1,Purine riboswitch,3rkf,B,B,3RKF|1|B|U|51,37,mapped,55,*,high,8,False
+bgsu_loop,HL_3RKF_005,HL,HL_56046.1,Purine riboswitch,3rkf,B,B,3RKF|1|B|A|52,38,mapped,56,*,high,8,False
+bgsu_loop,HL_3RKF_005,HL,HL_56046.1,Purine riboswitch,3rkf,B,B,3RKF|1|B|C|53,39,mapped,57,*,high,8,False
+bgsu_loop,HL_3RKF_006,HL,HL_09122.3,No text annotation,3rkf,B,B,3RKF|1|B|A|59,45,mapped,63,*,high,9,False
+bgsu_loop,HL_3RKF_006,HL,HL_09122.3,No text annotation,3rkf,B,B,3RKF|1|B|C|60,46,mapped,65,*,high,9,False
+bgsu_loop,HL_3RKF_006,HL,HL_09122.3,No text annotation,3rkf,B,B,3RKF|1|B|U|61,47,mapped,66,*,high,9,False
+bgsu_loop,HL_3RKF_006,HL,HL_09122.3,No text annotation,3rkf,B,B,3RKF|1|B|G|62,48,mapped,67,*,high,9,False
+bgsu_loop,HL_3RKF_006,HL,HL_09122.3,No text annotation,3rkf,B,B,3RKF|1|B|U|63,49,mapped,68,*,high,9,False
+bgsu_loop,HL_3RKF_006,HL,HL_09122.3,No text annotation,3rkf,B,B,3RKF|1|B|A|64,50,mapped,69,*,high,9,False
+bgsu_loop,HL_3RKF_006,HL,HL_09122.3,No text annotation,3rkf,B,B,3RKF|1|B|A|65,51,mapped,70,*,high,9,False
+bgsu_loop,HL_3RKF_006,HL,HL_09122.3,No text annotation,3rkf,B,B,3RKF|1|B|A|66,52,mapped,71,*,high,9,False
+bgsu_loop,HL_3RKF_006,HL,HL_09122.3,No text annotation,3rkf,B,B,3RKF|1|B|U|67,53,mapped,73,*,high,9,False
+bgsu_loop,HL_3RKF_007,HL,HL_59138.3,No text annotation,3rkf,C,C,3RKF|1|C|G|31,17,mapped,35,*,high,9,False
+bgsu_loop,HL_3RKF_007,HL,HL_59138.3,No text annotation,3rkf,C,C,3RKF|1|C|G|32,18,mapped,36,*,high,9,False
+bgsu_loop,HL_3RKF_007,HL,HL_59138.3,No text annotation,3rkf,C,C,3RKF|1|C|A|33,19,mapped,37,*,high,9,False
+bgsu_loop,HL_3RKF_007,HL,HL_59138.3,No text annotation,3rkf,C,C,3RKF|1|C|U|34,20,mapped,38,*,high,9,False
+bgsu_loop,HL_3RKF_007,HL,HL_59138.3,No text annotation,3rkf,C,C,3RKF|1|C|A|35,21,mapped,39,*,high,9,False
+bgsu_loop,HL_3RKF_007,HL,HL_59138.3,No text annotation,3rkf,C,C,3RKF|1|C|U|36,22,mapped,40,*,high,9,False
+bgsu_loop,HL_3RKF_007,HL,HL_59138.3,No text annotation,3rkf,C,C,3RKF|1|C|A|37,23,mapped,41,*,high,9,False
+bgsu_loop,HL_3RKF_007,HL,HL_59138.3,No text annotation,3rkf,C,C,3RKF|1|C|G|38,24,mapped,42,*,high,9,False
+bgsu_loop,HL_3RKF_007,HL,HL_59138.3,No text annotation,3rkf,C,C,3RKF|1|C|C|39,25,mapped,43,*,high,9,False
+bgsu_loop,HL_3RKF_008,HL,HL_56046.1,Purine riboswitch,3rkf,C,C,3RKF|1|C|G|46,32,mapped,50,*,high,8,False
+bgsu_loop,HL_3RKF_008,HL,HL_56046.1,Purine riboswitch,3rkf,C,C,3RKF|1|C|U|47,33,mapped,51,*,high,8,False
+bgsu_loop,HL_3RKF_008,HL,HL_56046.1,Purine riboswitch,3rkf,C,C,3RKF|1|C|U|48,34,mapped,52,*,high,8,False
+bgsu_loop,HL_3RKF_008,HL,HL_56046.1,Purine riboswitch,3rkf,C,C,3RKF|1|C|U|49,35,mapped,53,*,high,8,False
+bgsu_loop,HL_3RKF_008,HL,HL_56046.1,Purine riboswitch,3rkf,C,C,3RKF|1|C|C|50,36,mapped,54,*,high,8,False
+bgsu_loop,HL_3RKF_008,HL,HL_56046.1,Purine riboswitch,3rkf,C,C,3RKF|1|C|U|51,37,mapped,55,*,high,8,False
+bgsu_loop,HL_3RKF_008,HL,HL_56046.1,Purine riboswitch,3rkf,C,C,3RKF|1|C|A|52,38,mapped,56,*,high,8,False
+bgsu_loop,HL_3RKF_008,HL,HL_56046.1,Purine riboswitch,3rkf,C,C,3RKF|1|C|C|53,39,mapped,57,*,high,8,False
+bgsu_loop,HL_3RKF_009,HL,HL_09122.3,No text annotation,3rkf,C,C,3RKF|1|C|A|59,45,mapped,63,*,high,9,False
+bgsu_loop,HL_3RKF_009,HL,HL_09122.3,No text annotation,3rkf,C,C,3RKF|1|C|C|60,46,mapped,65,*,high,9,False
+bgsu_loop,HL_3RKF_009,HL,HL_09122.3,No text annotation,3rkf,C,C,3RKF|1|C|U|61,47,mapped,66,*,high,9,False
+bgsu_loop,HL_3RKF_009,HL,HL_09122.3,No text annotation,3rkf,C,C,3RKF|1|C|G|62,48,mapped,67,*,high,9,False
+bgsu_loop,HL_3RKF_009,HL,HL_09122.3,No text annotation,3rkf,C,C,3RKF|1|C|U|63,49,mapped,68,*,high,9,False
+bgsu_loop,HL_3RKF_009,HL,HL_09122.3,No text annotation,3rkf,C,C,3RKF|1|C|A|64,50,mapped,69,*,high,9,False
+bgsu_loop,HL_3RKF_009,HL,HL_09122.3,No text annotation,3rkf,C,C,3RKF|1|C|A|65,51,mapped,70,*,high,9,False
+bgsu_loop,HL_3RKF_009,HL,HL_09122.3,No text annotation,3rkf,C,C,3RKF|1|C|A|66,52,mapped,71,*,high,9,False
+bgsu_loop,HL_3RKF_009,HL,HL_09122.3,No text annotation,3rkf,C,C,3RKF|1|C|U|67,53,mapped,73,*,high,9,False
+bgsu_loop,HL_3RKF_010,HL,HL_59138.3,No text annotation,3rkf,D,D,3RKF|1|D|G|31,17,mapped,35,*,high,9,False
+bgsu_loop,HL_3RKF_010,HL,HL_59138.3,No text annotation,3rkf,D,D,3RKF|1|D|G|32,18,mapped,36,*,high,9,False
+bgsu_loop,HL_3RKF_010,HL,HL_59138.3,No text annotation,3rkf,D,D,3RKF|1|D|A|33,19,mapped,37,*,high,9,False
+bgsu_loop,HL_3RKF_010,HL,HL_59138.3,No text annotation,3rkf,D,D,3RKF|1|D|U|34,20,mapped,38,*,high,9,False
+bgsu_loop,HL_3RKF_010,HL,HL_59138.3,No text annotation,3rkf,D,D,3RKF|1|D|A|35,21,mapped,39,*,high,9,False
+bgsu_loop,HL_3RKF_010,HL,HL_59138.3,No text annotation,3rkf,D,D,3RKF|1|D|U|36,22,mapped,40,*,high,9,False
+bgsu_loop,HL_3RKF_010,HL,HL_59138.3,No text annotation,3rkf,D,D,3RKF|1|D|A|37,23,mapped,41,*,high,9,False
+bgsu_loop,HL_3RKF_010,HL,HL_59138.3,No text annotation,3rkf,D,D,3RKF|1|D|G|38,24,mapped,42,*,high,9,False
+bgsu_loop,HL_3RKF_010,HL,HL_59138.3,No text annotation,3rkf,D,D,3RKF|1|D|C|39,25,mapped,43,*,high,9,False
+bgsu_loop,HL_3RKF_011,HL,HL_56046.1,Purine riboswitch,3rkf,D,D,3RKF|1|D|G|46,32,mapped,50,*,high,8,False
+bgsu_loop,HL_3RKF_011,HL,HL_56046.1,Purine riboswitch,3rkf,D,D,3RKF|1|D|U|47,33,mapped,51,*,high,8,False
+bgsu_loop,HL_3RKF_011,HL,HL_56046.1,Purine riboswitch,3rkf,D,D,3RKF|1|D|U|48,34,mapped,52,*,high,8,False
+bgsu_loop,HL_3RKF_011,HL,HL_56046.1,Purine riboswitch,3rkf,D,D,3RKF|1|D|U|49,35,mapped,53,*,high,8,False
+bgsu_loop,HL_3RKF_011,HL,HL_56046.1,Purine riboswitch,3rkf,D,D,3RKF|1|D|C|50,36,mapped,54,*,high,8,False
+bgsu_loop,HL_3RKF_011,HL,HL_56046.1,Purine riboswitch,3rkf,D,D,3RKF|1|D|U|51,37,mapped,55,*,high,8,False
+bgsu_loop,HL_3RKF_011,HL,HL_56046.1,Purine riboswitch,3rkf,D,D,3RKF|1|D|A|52,38,mapped,56,*,high,8,False
+bgsu_loop,HL_3RKF_011,HL,HL_56046.1,Purine riboswitch,3rkf,D,D,3RKF|1|D|C|53,39,mapped,57,*,high,8,False
+bgsu_loop,HL_3RKF_012,HL,HL_09122.3,No text annotation,3rkf,D,D,3RKF|1|D|A|59,45,mapped,63,*,high,9,False
+bgsu_loop,HL_3RKF_012,HL,HL_09122.3,No text annotation,3rkf,D,D,3RKF|1|D|C|60,46,mapped,65,*,high,9,False
+bgsu_loop,HL_3RKF_012,HL,HL_09122.3,No text annotation,3rkf,D,D,3RKF|1|D|U|61,47,mapped,66,*,high,9,False
+bgsu_loop,HL_3RKF_012,HL,HL_09122.3,No text annotation,3rkf,D,D,3RKF|1|D|G|62,48,mapped,67,*,high,9,False
+bgsu_loop,HL_3RKF_012,HL,HL_09122.3,No text annotation,3rkf,D,D,3RKF|1|D|U|63,49,mapped,68,*,high,9,False
+bgsu_loop,HL_3RKF_012,HL,HL_09122.3,No text annotation,3rkf,D,D,3RKF|1|D|A|64,50,mapped,69,*,high,9,False
+bgsu_loop,HL_3RKF_012,HL,HL_09122.3,No text annotation,3rkf,D,D,3RKF|1|D|A|65,51,mapped,70,*,high,9,False
+bgsu_loop,HL_3RKF_012,HL,HL_09122.3,No text annotation,3rkf,D,D,3RKF|1|D|A|66,52,mapped,71,*,high,9,False
+bgsu_loop,HL_3RKF_012,HL,HL_09122.3,No text annotation,3rkf,D,D,3RKF|1|D|U|67,53,mapped,73,*,high,9,False
+bgsu_loop,J3_3RKF_001,J3,J3_44163.4,No text annotation,3rkf,A,A,3RKF|1|A|A|21,7,mapped,25,*,high,19,False
+bgsu_loop,J3_3RKF_001,J3,J3_44163.4,No text annotation,3rkf,A,A,3RKF|1|A|U|22,8,mapped,26,*,high,19,False
+bgsu_loop,J3_3RKF_001,J3,J3_44163.4,No text annotation,3rkf,A,A,3RKF|1|A|A|23,9,mapped,27,*,high,19,False
+bgsu_loop,J3_3RKF_001,J3,J3_44163.4,No text annotation,3rkf,A,A,3RKF|1|A|A|24,10,mapped,28,*,high,19,False
+bgsu_loop,J3_3RKF_001,J3,J3_44163.4,No text annotation,3rkf,A,A,3RKF|1|A|C|25,11,mapped,29,*,high,19,False
+bgsu_loop,J3_3RKF_001,J3,J3_44163.4,No text annotation,3rkf,A,A,3RKF|1|A|G|45,31,mapped,49,*,high,19,False
+bgsu_loop,J3_3RKF_001,J3,J3_44163.4,No text annotation,3rkf,A,A,3RKF|1|A|G|46,32,mapped,50,*,high,19,False
+bgsu_loop,J3_3RKF_001,J3,J3_44163.4,No text annotation,3rkf,A,A,3RKF|1|A|U|47,33,mapped,51,*,high,19,False
+bgsu_loop,J3_3RKF_001,J3,J3_44163.4,No text annotation,3rkf,A,A,3RKF|1|A|U|48,34,mapped,52,*,high,19,False
+bgsu_loop,J3_3RKF_001,J3,J3_44163.4,No text annotation,3rkf,A,A,3RKF|1|A|U|49,35,mapped,53,*,high,19,False
+bgsu_loop,J3_3RKF_001,J3,J3_44163.4,No text annotation,3rkf,A,A,3RKF|1|A|C|50,36,mapped,54,*,high,19,False
+bgsu_loop,J3_3RKF_001,J3,J3_44163.4,No text annotation,3rkf,A,A,3RKF|1|A|U|51,37,mapped,55,*,high,19,False
+bgsu_loop,J3_3RKF_001,J3,J3_44163.4,No text annotation,3rkf,A,A,3RKF|1|A|A|52,38,mapped,56,*,high,19,False
+bgsu_loop,J3_3RKF_001,J3,J3_44163.4,No text annotation,3rkf,A,A,3RKF|1|A|C|53,39,mapped,57,*,high,19,False
+bgsu_loop,J3_3RKF_001,J3,J3_44163.4,No text annotation,3rkf,A,A,3RKF|1|A|C|54,40,mapped,58,*,high,19,False
+bgsu_loop,J3_3RKF_001,J3,J3_44163.4,No text annotation,3rkf,A,A,3RKF|1|A|G|72,58,mapped,78,*,high,19,False
+bgsu_loop,J3_3RKF_001,J3,J3_44163.4,No text annotation,3rkf,A,A,3RKF|1|A|A|73,59,mapped,79,*,high,19,False
+bgsu_loop,J3_3RKF_001,J3,J3_44163.4,No text annotation,3rkf,A,A,3RKF|1|A|C|74,60,mapped,80,*,high,19,False
+bgsu_loop,J3_3RKF_001,J3,J3_44163.4,No text annotation,3rkf,A,A,3RKF|1|A|U|75,61,mapped,81,*,high,19,False
+bgsu_loop,J3_3RKF_002,J3,J3_44163.4,No text annotation,3rkf,B,B,3RKF|1|B|A|21,7,mapped,25,*,high,19,False
+bgsu_loop,J3_3RKF_002,J3,J3_44163.4,No text annotation,3rkf,B,B,3RKF|1|B|U|22,8,mapped,26,*,high,19,False
+bgsu_loop,J3_3RKF_002,J3,J3_44163.4,No text annotation,3rkf,B,B,3RKF|1|B|A|23,9,mapped,27,*,high,19,False
+bgsu_loop,J3_3RKF_002,J3,J3_44163.4,No text annotation,3rkf,B,B,3RKF|1|B|A|24,10,mapped,28,*,high,19,False
+bgsu_loop,J3_3RKF_002,J3,J3_44163.4,No text annotation,3rkf,B,B,3RKF|1|B|C|25,11,mapped,29,*,high,19,False
+bgsu_loop,J3_3RKF_002,J3,J3_44163.4,No text annotation,3rkf,B,B,3RKF|1|B|G|45,31,mapped,49,*,high,19,False
+bgsu_loop,J3_3RKF_002,J3,J3_44163.4,No text annotation,3rkf,B,B,3RKF|1|B|G|46,32,mapped,50,*,high,19,False
+bgsu_loop,J3_3RKF_002,J3,J3_44163.4,No text annotation,3rkf,B,B,3RKF|1|B|U|47,33,mapped,51,*,high,19,False
+bgsu_loop,J3_3RKF_002,J3,J3_44163.4,No text annotation,3rkf,B,B,3RKF|1|B|U|48,34,mapped,52,*,high,19,False
+bgsu_loop,J3_3RKF_002,J3,J3_44163.4,No text annotation,3rkf,B,B,3RKF|1|B|U|49,35,mapped,53,*,high,19,False
+bgsu_loop,J3_3RKF_002,J3,J3_44163.4,No text annotation,3rkf,B,B,3RKF|1|B|C|50,36,mapped,54,*,high,19,False
+bgsu_loop,J3_3RKF_002,J3,J3_44163.4,No text annotation,3rkf,B,B,3RKF|1|B|U|51,37,mapped,55,*,high,19,False
+bgsu_loop,J3_3RKF_002,J3,J3_44163.4,No text annotation,3rkf,B,B,3RKF|1|B|A|52,38,mapped,56,*,high,19,False
+bgsu_loop,J3_3RKF_002,J3,J3_44163.4,No text annotation,3rkf,B,B,3RKF|1|B|C|53,39,mapped,57,*,high,19,False
+bgsu_loop,J3_3RKF_002,J3,J3_44163.4,No text annotation,3rkf,B,B,3RKF|1|B|C|54,40,mapped,58,*,high,19,False
+bgsu_loop,J3_3RKF_002,J3,J3_44163.4,No text annotation,3rkf,B,B,3RKF|1|B|G|72,58,mapped,78,*,high,19,False
+bgsu_loop,J3_3RKF_002,J3,J3_44163.4,No text annotation,3rkf,B,B,3RKF|1|B|A|73,59,mapped,79,*,high,19,False
+bgsu_loop,J3_3RKF_002,J3,J3_44163.4,No text annotation,3rkf,B,B,3RKF|1|B|C|74,60,mapped,80,*,high,19,False
+bgsu_loop,J3_3RKF_002,J3,J3_44163.4,No text annotation,3rkf,B,B,3RKF|1|B|U|75,61,mapped,81,*,high,19,False
+bgsu_loop,J3_3RKF_003,J3,J3_44163.4,No text annotation,3rkf,C,C,3RKF|1|C|A|21,7,mapped,25,*,high,19,False
+bgsu_loop,J3_3RKF_003,J3,J3_44163.4,No text annotation,3rkf,C,C,3RKF|1|C|U|22,8,mapped,26,*,high,19,False
+bgsu_loop,J3_3RKF_003,J3,J3_44163.4,No text annotation,3rkf,C,C,3RKF|1|C|A|23,9,mapped,27,*,high,19,False
+bgsu_loop,J3_3RKF_003,J3,J3_44163.4,No text annotation,3rkf,C,C,3RKF|1|C|A|24,10,mapped,28,*,high,19,False
+bgsu_loop,J3_3RKF_003,J3,J3_44163.4,No text annotation,3rkf,C,C,3RKF|1|C|C|25,11,mapped,29,*,high,19,False
+bgsu_loop,J3_3RKF_003,J3,J3_44163.4,No text annotation,3rkf,C,C,3RKF|1|C|G|45,31,mapped,49,*,high,19,False
+bgsu_loop,J3_3RKF_003,J3,J3_44163.4,No text annotation,3rkf,C,C,3RKF|1|C|G|46,32,mapped,50,*,high,19,False
+bgsu_loop,J3_3RKF_003,J3,J3_44163.4,No text annotation,3rkf,C,C,3RKF|1|C|U|47,33,mapped,51,*,high,19,False
+bgsu_loop,J3_3RKF_003,J3,J3_44163.4,No text annotation,3rkf,C,C,3RKF|1|C|U|48,34,mapped,52,*,high,19,False
+bgsu_loop,J3_3RKF_003,J3,J3_44163.4,No text annotation,3rkf,C,C,3RKF|1|C|U|49,35,mapped,53,*,high,19,False
+bgsu_loop,J3_3RKF_003,J3,J3_44163.4,No text annotation,3rkf,C,C,3RKF|1|C|C|50,36,mapped,54,*,high,19,False
+bgsu_loop,J3_3RKF_003,J3,J3_44163.4,No text annotation,3rkf,C,C,3RKF|1|C|U|51,37,mapped,55,*,high,19,False
+bgsu_loop,J3_3RKF_003,J3,J3_44163.4,No text annotation,3rkf,C,C,3RKF|1|C|A|52,38,mapped,56,*,high,19,False
+bgsu_loop,J3_3RKF_003,J3,J3_44163.4,No text annotation,3rkf,C,C,3RKF|1|C|C|53,39,mapped,57,*,high,19,False
+bgsu_loop,J3_3RKF_003,J3,J3_44163.4,No text annotation,3rkf,C,C,3RKF|1|C|C|54,40,mapped,58,*,high,19,False
+bgsu_loop,J3_3RKF_003,J3,J3_44163.4,No text annotation,3rkf,C,C,3RKF|1|C|G|72,58,mapped,78,*,high,19,False
+bgsu_loop,J3_3RKF_003,J3,J3_44163.4,No text annotation,3rkf,C,C,3RKF|1|C|A|73,59,mapped,79,*,high,19,False
+bgsu_loop,J3_3RKF_003,J3,J3_44163.4,No text annotation,3rkf,C,C,3RKF|1|C|C|74,60,mapped,80,*,high,19,False
+bgsu_loop,J3_3RKF_003,J3,J3_44163.4,No text annotation,3rkf,C,C,3RKF|1|C|U|75,61,mapped,81,*,high,19,False
+bgsu_loop,J3_3RKF_004,J3,J3_44163.4,No text annotation,3rkf,D,D,3RKF|1|D|A|21,7,mapped,25,*,high,19,False
+bgsu_loop,J3_3RKF_004,J3,J3_44163.4,No text annotation,3rkf,D,D,3RKF|1|D|U|22,8,mapped,26,*,high,19,False
+bgsu_loop,J3_3RKF_004,J3,J3_44163.4,No text annotation,3rkf,D,D,3RKF|1|D|A|23,9,mapped,27,*,high,19,False
+bgsu_loop,J3_3RKF_004,J3,J3_44163.4,No text annotation,3rkf,D,D,3RKF|1|D|A|24,10,mapped,28,*,high,19,False
+bgsu_loop,J3_3RKF_004,J3,J3_44163.4,No text annotation,3rkf,D,D,3RKF|1|D|C|25,11,mapped,29,*,high,19,False
+bgsu_loop,J3_3RKF_004,J3,J3_44163.4,No text annotation,3rkf,D,D,3RKF|1|D|G|45,31,mapped,49,*,high,19,False
+bgsu_loop,J3_3RKF_004,J3,J3_44163.4,No text annotation,3rkf,D,D,3RKF|1|D|G|46,32,mapped,50,*,high,19,False
+bgsu_loop,J3_3RKF_004,J3,J3_44163.4,No text annotation,3rkf,D,D,3RKF|1|D|U|47,33,mapped,51,*,high,19,False
+bgsu_loop,J3_3RKF_004,J3,J3_44163.4,No text annotation,3rkf,D,D,3RKF|1|D|U|48,34,mapped,52,*,high,19,False
+bgsu_loop,J3_3RKF_004,J3,J3_44163.4,No text annotation,3rkf,D,D,3RKF|1|D|U|49,35,mapped,53,*,high,19,False
+bgsu_loop,J3_3RKF_004,J3,J3_44163.4,No text annotation,3rkf,D,D,3RKF|1|D|C|50,36,mapped,54,*,high,19,False
+bgsu_loop,J3_3RKF_004,J3,J3_44163.4,No text annotation,3rkf,D,D,3RKF|1|D|U|51,37,mapped,55,*,high,19,False
+bgsu_loop,J3_3RKF_004,J3,J3_44163.4,No text annotation,3rkf,D,D,3RKF|1|D|A|52,38,mapped,56,*,high,19,False
+bgsu_loop,J3_3RKF_004,J3,J3_44163.4,No text annotation,3rkf,D,D,3RKF|1|D|C|53,39,mapped,57,*,high,19,False
+bgsu_loop,J3_3RKF_004,J3,J3_44163.4,No text annotation,3rkf,D,D,3RKF|1|D|C|54,40,mapped,58,*,high,19,False
+bgsu_loop,J3_3RKF_004,J3,J3_44163.4,No text annotation,3rkf,D,D,3RKF|1|D|G|72,58,mapped,78,*,high,19,False
+bgsu_loop,J3_3RKF_004,J3,J3_44163.4,No text annotation,3rkf,D,D,3RKF|1|D|A|73,59,mapped,79,*,high,19,False
+bgsu_loop,J3_3RKF_004,J3,J3_44163.4,No text annotation,3rkf,D,D,3RKF|1|D|C|74,60,mapped,80,*,high,19,False
+bgsu_loop,J3_3RKF_004,J3,J3_44163.4,No text annotation,3rkf,D,D,3RKF|1|D|U|75,61,mapped,81,*,high,19,False
+bgsu_loop,J4_3RKF_001,J4,J4_07491.4,Purine riboswitch junction,3rkf,A,A,3RKF|1|A|A|21,7,mapped,25,*,high,13,False
+bgsu_loop,J4_3RKF_001,J4,J4_07491.4,Purine riboswitch junction,3rkf,A,A,3RKF|1|A|U|22,8,mapped,26,*,high,13,False
+bgsu_loop,J4_3RKF_001,J4,J4_07491.4,Purine riboswitch junction,3rkf,A,A,3RKF|1|A|A|23,9,mapped,27,*,high,13,False
+bgsu_loop,J4_3RKF_001,J4,J4_07491.4,Purine riboswitch junction,3rkf,A,A,3RKF|1|A|A|24,10,mapped,28,*,high,13,False
+bgsu_loop,J4_3RKF_001,J4,J4_07491.4,Purine riboswitch junction,3rkf,A,A,3RKF|1|A|C|25,11,mapped,29,*,high,13,False
+bgsu_loop,J4_3RKF_001,J4,J4_07491.4,Purine riboswitch junction,3rkf,A,A,3RKF|1|A|G|45,31,mapped,49,*,high,13,False
+bgsu_loop,J4_3RKF_001,J4,J4_07491.4,Purine riboswitch junction,3rkf,A,A,3RKF|1|A|G|46,32,mapped,50,*,high,13,False
+bgsu_loop,J4_3RKF_001,J4,J4_07491.4,Purine riboswitch junction,3rkf,A,A,3RKF|1|A|C|53,39,mapped,57,*,high,13,False
+bgsu_loop,J4_3RKF_001,J4,J4_07491.4,Purine riboswitch junction,3rkf,A,A,3RKF|1|A|C|54,40,mapped,58,*,high,13,False
+bgsu_loop,J4_3RKF_001,J4,J4_07491.4,Purine riboswitch junction,3rkf,A,A,3RKF|1|A|G|72,58,mapped,78,*,high,13,False
+bgsu_loop,J4_3RKF_001,J4,J4_07491.4,Purine riboswitch junction,3rkf,A,A,3RKF|1|A|A|73,59,mapped,79,*,high,13,False
+bgsu_loop,J4_3RKF_001,J4,J4_07491.4,Purine riboswitch junction,3rkf,A,A,3RKF|1|A|C|74,60,mapped,80,*,high,13,False
+bgsu_loop,J4_3RKF_001,J4,J4_07491.4,Purine riboswitch junction,3rkf,A,A,3RKF|1|A|U|75,61,mapped,81,*,high,13,False
+bgsu_loop,J4_3RKF_002,J4,J4_07491.4,Purine riboswitch junction,3rkf,B,B,3RKF|1|B|A|21,7,mapped,25,*,high,13,False
+bgsu_loop,J4_3RKF_002,J4,J4_07491.4,Purine riboswitch junction,3rkf,B,B,3RKF|1|B|U|22,8,mapped,26,*,high,13,False
+bgsu_loop,J4_3RKF_002,J4,J4_07491.4,Purine riboswitch junction,3rkf,B,B,3RKF|1|B|A|23,9,mapped,27,*,high,13,False
+bgsu_loop,J4_3RKF_002,J4,J4_07491.4,Purine riboswitch junction,3rkf,B,B,3RKF|1|B|A|24,10,mapped,28,*,high,13,False
+bgsu_loop,J4_3RKF_002,J4,J4_07491.4,Purine riboswitch junction,3rkf,B,B,3RKF|1|B|C|25,11,mapped,29,*,high,13,False
+bgsu_loop,J4_3RKF_002,J4,J4_07491.4,Purine riboswitch junction,3rkf,B,B,3RKF|1|B|G|45,31,mapped,49,*,high,13,False
+bgsu_loop,J4_3RKF_002,J4,J4_07491.4,Purine riboswitch junction,3rkf,B,B,3RKF|1|B|G|46,32,mapped,50,*,high,13,False
+bgsu_loop,J4_3RKF_002,J4,J4_07491.4,Purine riboswitch junction,3rkf,B,B,3RKF|1|B|C|53,39,mapped,57,*,high,13,False
+bgsu_loop,J4_3RKF_002,J4,J4_07491.4,Purine riboswitch junction,3rkf,B,B,3RKF|1|B|C|54,40,mapped,58,*,high,13,False
+bgsu_loop,J4_3RKF_002,J4,J4_07491.4,Purine riboswitch junction,3rkf,B,B,3RKF|1|B|G|72,58,mapped,78,*,high,13,False
+bgsu_loop,J4_3RKF_002,J4,J4_07491.4,Purine riboswitch junction,3rkf,B,B,3RKF|1|B|A|73,59,mapped,79,*,high,13,False
+bgsu_loop,J4_3RKF_002,J4,J4_07491.4,Purine riboswitch junction,3rkf,B,B,3RKF|1|B|C|74,60,mapped,80,*,high,13,False
+bgsu_loop,J4_3RKF_002,J4,J4_07491.4,Purine riboswitch junction,3rkf,B,B,3RKF|1|B|U|75,61,mapped,81,*,high,13,False
+bgsu_loop,J4_3RKF_003,J4,J4_07491.4,Purine riboswitch junction,3rkf,C,C,3RKF|1|C|A|21,7,mapped,25,*,high,13,False
+bgsu_loop,J4_3RKF_003,J4,J4_07491.4,Purine riboswitch junction,3rkf,C,C,3RKF|1|C|U|22,8,mapped,26,*,high,13,False
+bgsu_loop,J4_3RKF_003,J4,J4_07491.4,Purine riboswitch junction,3rkf,C,C,3RKF|1|C|A|23,9,mapped,27,*,high,13,False
+bgsu_loop,J4_3RKF_003,J4,J4_07491.4,Purine riboswitch junction,3rkf,C,C,3RKF|1|C|A|24,10,mapped,28,*,high,13,False
+bgsu_loop,J4_3RKF_003,J4,J4_07491.4,Purine riboswitch junction,3rkf,C,C,3RKF|1|C|C|25,11,mapped,29,*,high,13,False
+bgsu_loop,J4_3RKF_003,J4,J4_07491.4,Purine riboswitch junction,3rkf,C,C,3RKF|1|C|G|45,31,mapped,49,*,high,13,False
+bgsu_loop,J4_3RKF_003,J4,J4_07491.4,Purine riboswitch junction,3rkf,C,C,3RKF|1|C|G|46,32,mapped,50,*,high,13,False
+bgsu_loop,J4_3RKF_003,J4,J4_07491.4,Purine riboswitch junction,3rkf,C,C,3RKF|1|C|C|53,39,mapped,57,*,high,13,False
+bgsu_loop,J4_3RKF_003,J4,J4_07491.4,Purine riboswitch junction,3rkf,C,C,3RKF|1|C|C|54,40,mapped,58,*,high,13,False
+bgsu_loop,J4_3RKF_003,J4,J4_07491.4,Purine riboswitch junction,3rkf,C,C,3RKF|1|C|G|72,58,mapped,78,*,high,13,False
+bgsu_loop,J4_3RKF_003,J4,J4_07491.4,Purine riboswitch junction,3rkf,C,C,3RKF|1|C|A|73,59,mapped,79,*,high,13,False
+bgsu_loop,J4_3RKF_003,J4,J4_07491.4,Purine riboswitch junction,3rkf,C,C,3RKF|1|C|C|74,60,mapped,80,*,high,13,False
+bgsu_loop,J4_3RKF_003,J4,J4_07491.4,Purine riboswitch junction,3rkf,C,C,3RKF|1|C|U|75,61,mapped,81,*,high,13,False
+bgsu_loop,J4_3RKF_004,J4,J4_07491.4,Purine riboswitch junction,3rkf,D,D,3RKF|1|D|A|21,7,mapped,25,*,high,13,False
+bgsu_loop,J4_3RKF_004,J4,J4_07491.4,Purine riboswitch junction,3rkf,D,D,3RKF|1|D|U|22,8,mapped,26,*,high,13,False
+bgsu_loop,J4_3RKF_004,J4,J4_07491.4,Purine riboswitch junction,3rkf,D,D,3RKF|1|D|A|23,9,mapped,27,*,high,13,False
+bgsu_loop,J4_3RKF_004,J4,J4_07491.4,Purine riboswitch junction,3rkf,D,D,3RKF|1|D|A|24,10,mapped,28,*,high,13,False
+bgsu_loop,J4_3RKF_004,J4,J4_07491.4,Purine riboswitch junction,3rkf,D,D,3RKF|1|D|C|25,11,mapped,29,*,high,13,False
+bgsu_loop,J4_3RKF_004,J4,J4_07491.4,Purine riboswitch junction,3rkf,D,D,3RKF|1|D|G|45,31,mapped,49,*,high,13,False
+bgsu_loop,J4_3RKF_004,J4,J4_07491.4,Purine riboswitch junction,3rkf,D,D,3RKF|1|D|G|46,32,mapped,50,*,high,13,False
+bgsu_loop,J4_3RKF_004,J4,J4_07491.4,Purine riboswitch junction,3rkf,D,D,3RKF|1|D|C|53,39,mapped,57,*,high,13,False
+bgsu_loop,J4_3RKF_004,J4,J4_07491.4,Purine riboswitch junction,3rkf,D,D,3RKF|1|D|C|54,40,mapped,58,*,high,13,False
+bgsu_loop,J4_3RKF_004,J4,J4_07491.4,Purine riboswitch junction,3rkf,D,D,3RKF|1|D|G|72,58,mapped,78,*,high,13,False
+bgsu_loop,J4_3RKF_004,J4,J4_07491.4,Purine riboswitch junction,3rkf,D,D,3RKF|1|D|A|73,59,mapped,79,*,high,13,False
+bgsu_loop,J4_3RKF_004,J4,J4_07491.4,Purine riboswitch junction,3rkf,D,D,3RKF|1|D|C|74,60,mapped,80,*,high,13,False
+bgsu_loop,J4_3RKF_004,J4,J4_07491.4,Purine riboswitch junction,3rkf,D,D,3RKF|1|D|U|75,61,mapped,81,*,high,13,False
+bgsu_loop,HL_4FE5_001,HL,HL_59138.3,No text annotation,4fe5,B,A,4FE5|1|B|G|31,17,mapped,35,*,high,9,False
+bgsu_loop,HL_4FE5_001,HL,HL_59138.3,No text annotation,4fe5,B,A,4FE5|1|B|G|32,18,mapped,36,*,high,9,False
+bgsu_loop,HL_4FE5_001,HL,HL_59138.3,No text annotation,4fe5,B,A,4FE5|1|B|A|33,19,mapped,37,*,high,9,False
+bgsu_loop,HL_4FE5_001,HL,HL_59138.3,No text annotation,4fe5,B,A,4FE5|1|B|U|34,20,mapped,38,*,high,9,False
+bgsu_loop,HL_4FE5_001,HL,HL_59138.3,No text annotation,4fe5,B,A,4FE5|1|B|A|35,21,mapped,39,*,high,9,False
+bgsu_loop,HL_4FE5_001,HL,HL_59138.3,No text annotation,4fe5,B,A,4FE5|1|B|U|36,22,mapped,40,*,high,9,False
+bgsu_loop,HL_4FE5_001,HL,HL_59138.3,No text annotation,4fe5,B,A,4FE5|1|B|G|37,23,mapped,41,*,high,9,False
+bgsu_loop,HL_4FE5_001,HL,HL_59138.3,No text annotation,4fe5,B,A,4FE5|1|B|G|38,24,mapped,42,*,high,9,False
+bgsu_loop,HL_4FE5_001,HL,HL_59138.3,No text annotation,4fe5,B,A,4FE5|1|B|C|39,25,mapped,43,*,high,9,False
+bgsu_loop,HL_4FE5_002,HL,HL_56046.1,Purine riboswitch,4fe5,B,A,4FE5|1|B|G|46,32,mapped,50,*,high,8,False
+bgsu_loop,HL_4FE5_002,HL,HL_56046.1,Purine riboswitch,4fe5,B,A,4FE5|1|B|U|47,33,mapped,51,*,high,8,False
+bgsu_loop,HL_4FE5_002,HL,HL_56046.1,Purine riboswitch,4fe5,B,A,4FE5|1|B|U|48,34,mapped,52,*,high,8,False
+bgsu_loop,HL_4FE5_002,HL,HL_56046.1,Purine riboswitch,4fe5,B,A,4FE5|1|B|U|49,35,mapped,53,*,high,8,False
+bgsu_loop,HL_4FE5_002,HL,HL_56046.1,Purine riboswitch,4fe5,B,A,4FE5|1|B|C|50,36,mapped,54,*,high,8,False
+bgsu_loop,HL_4FE5_002,HL,HL_56046.1,Purine riboswitch,4fe5,B,A,4FE5|1|B|U|51,37,mapped,55,*,high,8,False
+bgsu_loop,HL_4FE5_002,HL,HL_56046.1,Purine riboswitch,4fe5,B,A,4FE5|1|B|A|52,38,mapped,56,*,high,8,False
+bgsu_loop,HL_4FE5_002,HL,HL_56046.1,Purine riboswitch,4fe5,B,A,4FE5|1|B|C|53,39,mapped,57,*,high,8,False
+bgsu_loop,HL_4FE5_003,HL,HL_09122.3,No text annotation,4fe5,B,A,4FE5|1|B|A|59,45,mapped,63,*,high,9,False
+bgsu_loop,HL_4FE5_003,HL,HL_09122.3,No text annotation,4fe5,B,A,4FE5|1|B|C|60,46,mapped,65,*,high,9,False
+bgsu_loop,HL_4FE5_003,HL,HL_09122.3,No text annotation,4fe5,B,A,4FE5|1|B|C|61,47,mapped,66,*,high,9,False
+bgsu_loop,HL_4FE5_003,HL,HL_09122.3,No text annotation,4fe5,B,A,4FE5|1|B|G|62,48,mapped,67,*,high,9,False
+bgsu_loop,HL_4FE5_003,HL,HL_09122.3,No text annotation,4fe5,B,A,4FE5|1|B|U|63,49,mapped,68,*,high,9,False
+bgsu_loop,HL_4FE5_003,HL,HL_09122.3,No text annotation,4fe5,B,A,4FE5|1|B|A|64,50,mapped,69,*,high,9,False
+bgsu_loop,HL_4FE5_003,HL,HL_09122.3,No text annotation,4fe5,B,A,4FE5|1|B|A|65,51,mapped,70,*,high,9,False
+bgsu_loop,HL_4FE5_003,HL,HL_09122.3,No text annotation,4fe5,B,A,4FE5|1|B|A|66,52,mapped,71,*,high,9,False
+bgsu_loop,HL_4FE5_003,HL,HL_09122.3,No text annotation,4fe5,B,A,4FE5|1|B|U|67,53,mapped,73,*,high,9,False
+bgsu_loop,IL_4FE5_001,IL,IL_01003.7,Isolated non-canonical cWW pair,4fe5,B,A,4FE5|1|B|U|25,11,mapped,29,*,high,6,False
+bgsu_loop,IL_4FE5_001,IL,IL_01003.7,Isolated non-canonical cWW pair,4fe5,B,A,4FE5|1|B|C|26,12,mapped,30,*,high,6,False
+bgsu_loop,IL_4FE5_001,IL,IL_01003.7,Isolated non-canonical cWW pair,4fe5,B,A,4FE5|1|B|G|27,13,mapped,31,*,high,6,False
+bgsu_loop,IL_4FE5_001,IL,IL_01003.7,Isolated non-canonical cWW pair,4fe5,B,A,4FE5|1|B|C|43,29,mapped,47,*,high,6,False
+bgsu_loop,IL_4FE5_001,IL,IL_01003.7,Isolated non-canonical cWW pair,4fe5,B,A,4FE5|1|B|A|44,30,mapped,48,*,high,6,False
+bgsu_loop,IL_4FE5_001,IL,IL_01003.7,Isolated non-canonical cWW pair,4fe5,B,A,4FE5|1|B|A|45,31,mapped,49,*,high,6,False
+bgsu_loop,J3_4FE5_001,J3,J3_44163.4,No text annotation,4fe5,B,A,4FE5|1|B|A|21,7,mapped,25,*,high,19,False
+bgsu_loop,J3_4FE5_001,J3,J3_44163.4,No text annotation,4fe5,B,A,4FE5|1|B|U|22,8,mapped,26,*,high,19,False
+bgsu_loop,J3_4FE5_001,J3,J3_44163.4,No text annotation,4fe5,B,A,4FE5|1|B|A|23,9,mapped,27,*,high,19,False
+bgsu_loop,J3_4FE5_001,J3,J3_44163.4,No text annotation,4fe5,B,A,4FE5|1|B|A|24,10,mapped,28,*,high,19,False
+bgsu_loop,J3_4FE5_001,J3,J3_44163.4,No text annotation,4fe5,B,A,4FE5|1|B|U|25,11,mapped,29,*,high,19,False
+bgsu_loop,J3_4FE5_001,J3,J3_44163.4,No text annotation,4fe5,B,A,4FE5|1|B|A|45,31,mapped,49,*,high,19,False
+bgsu_loop,J3_4FE5_001,J3,J3_44163.4,No text annotation,4fe5,B,A,4FE5|1|B|G|46,32,mapped,50,*,high,19,False
+bgsu_loop,J3_4FE5_001,J3,J3_44163.4,No text annotation,4fe5,B,A,4FE5|1|B|U|47,33,mapped,51,*,high,19,False
+bgsu_loop,J3_4FE5_001,J3,J3_44163.4,No text annotation,4fe5,B,A,4FE5|1|B|U|48,34,mapped,52,*,high,19,False
+bgsu_loop,J3_4FE5_001,J3,J3_44163.4,No text annotation,4fe5,B,A,4FE5|1|B|U|49,35,mapped,53,*,high,19,False
+bgsu_loop,J3_4FE5_001,J3,J3_44163.4,No text annotation,4fe5,B,A,4FE5|1|B|C|50,36,mapped,54,*,high,19,False
+bgsu_loop,J3_4FE5_001,J3,J3_44163.4,No text annotation,4fe5,B,A,4FE5|1|B|U|51,37,mapped,55,*,high,19,False
+bgsu_loop,J3_4FE5_001,J3,J3_44163.4,No text annotation,4fe5,B,A,4FE5|1|B|A|52,38,mapped,56,*,high,19,False
+bgsu_loop,J3_4FE5_001,J3,J3_44163.4,No text annotation,4fe5,B,A,4FE5|1|B|C|53,39,mapped,57,*,high,19,False
+bgsu_loop,J3_4FE5_001,J3,J3_44163.4,No text annotation,4fe5,B,A,4FE5|1|B|C|54,40,mapped,58,*,high,19,False
+bgsu_loop,J3_4FE5_001,J3,J3_44163.4,No text annotation,4fe5,B,A,4FE5|1|B|G|72,58,mapped,78,*,high,19,False
+bgsu_loop,J3_4FE5_001,J3,J3_44163.4,No text annotation,4fe5,B,A,4FE5|1|B|A|73,59,mapped,79,*,high,19,False
+bgsu_loop,J3_4FE5_001,J3,J3_44163.4,No text annotation,4fe5,B,A,4FE5|1|B|C|74,60,mapped,80,*,high,19,False
+bgsu_loop,J3_4FE5_001,J3,J3_44163.4,No text annotation,4fe5,B,A,4FE5|1|B|U|75,61,mapped,81,*,high,19,False
+bgsu_loop,J4_4FE5_001,J4,J4_07491.4,Purine riboswitch junction,4fe5,B,A,4FE5|1|B|A|21,7,mapped,25,*,high,13,False
+bgsu_loop,J4_4FE5_001,J4,J4_07491.4,Purine riboswitch junction,4fe5,B,A,4FE5|1|B|U|22,8,mapped,26,*,high,13,False
+bgsu_loop,J4_4FE5_001,J4,J4_07491.4,Purine riboswitch junction,4fe5,B,A,4FE5|1|B|A|23,9,mapped,27,*,high,13,False
+bgsu_loop,J4_4FE5_001,J4,J4_07491.4,Purine riboswitch junction,4fe5,B,A,4FE5|1|B|A|24,10,mapped,28,*,high,13,False
+bgsu_loop,J4_4FE5_001,J4,J4_07491.4,Purine riboswitch junction,4fe5,B,A,4FE5|1|B|U|25,11,mapped,29,*,high,13,False
+bgsu_loop,J4_4FE5_001,J4,J4_07491.4,Purine riboswitch junction,4fe5,B,A,4FE5|1|B|A|45,31,mapped,49,*,high,13,False
+bgsu_loop,J4_4FE5_001,J4,J4_07491.4,Purine riboswitch junction,4fe5,B,A,4FE5|1|B|G|46,32,mapped,50,*,high,13,False
+bgsu_loop,J4_4FE5_001,J4,J4_07491.4,Purine riboswitch junction,4fe5,B,A,4FE5|1|B|C|53,39,mapped,57,*,high,13,False
+bgsu_loop,J4_4FE5_001,J4,J4_07491.4,Purine riboswitch junction,4fe5,B,A,4FE5|1|B|C|54,40,mapped,58,*,high,13,False
+bgsu_loop,J4_4FE5_001,J4,J4_07491.4,Purine riboswitch junction,4fe5,B,A,4FE5|1|B|G|72,58,mapped,78,*,high,13,False
+bgsu_loop,J4_4FE5_001,J4,J4_07491.4,Purine riboswitch junction,4fe5,B,A,4FE5|1|B|A|73,59,mapped,79,*,high,13,False
+bgsu_loop,J4_4FE5_001,J4,J4_07491.4,Purine riboswitch junction,4fe5,B,A,4FE5|1|B|C|74,60,mapped,80,*,high,13,False
+bgsu_loop,J4_4FE5_001,J4,J4_07491.4,Purine riboswitch junction,4fe5,B,A,4FE5|1|B|U|75,61,mapped,81,*,high,13,False
+bgsu_loop,HL_6P2H_001,HL,HL_59138.3,No text annotation,6p2h,A,A,6P2H|1|A|A|31,15,mapped,35,*,high,9,False
+bgsu_loop,HL_6P2H_001,HL,HL_59138.3,No text annotation,6p2h,A,A,6P2H|1|A|A|32,16,mapped,36,*,high,9,False
+bgsu_loop,HL_6P2H_001,HL,HL_59138.3,No text annotation,6p2h,A,A,6P2H|1|A|A|33,17,mapped,37,*,high,9,False
+bgsu_loop,HL_6P2H_001,HL,HL_59138.3,No text annotation,6p2h,A,A,6P2H|1|A|U|34,18,mapped,38,*,high,9,False
+bgsu_loop,HL_6P2H_001,HL,HL_59138.3,No text annotation,6p2h,A,A,6P2H|1|A|A|35,19,mapped,39,*,high,9,False
+bgsu_loop,HL_6P2H_001,HL,HL_59138.3,No text annotation,6p2h,A,A,6P2H|1|A|U|36,20,mapped,40,*,high,9,False
+bgsu_loop,HL_6P2H_001,HL,HL_59138.3,No text annotation,6p2h,A,A,6P2H|1|A|G|37,21,mapped,41,*,high,9,False
+bgsu_loop,HL_6P2H_001,HL,HL_59138.3,No text annotation,6p2h,A,A,6P2H|1|A|G|38,22,mapped,42,*,high,9,False
+bgsu_loop,HL_6P2H_001,HL,HL_59138.3,No text annotation,6p2h,A,A,6P2H|1|A|U|39,23,mapped,43,*,high,9,False
+bgsu_loop,HL_6P2H_002,HL,HL_98821.2,No text annotation,6p2h,A,A,6P2H|1|A|A|59,43,mapped,63,*,high,11,False
+bgsu_loop,HL_6P2H_002,HL,HL_98821.2,No text annotation,6p2h,A,A,6P2H|1|A|A|60,44,mapped,64,*,high,11,False
+bgsu_loop,HL_6P2H_002,HL,HL_98821.2,No text annotation,6p2h,A,A,6P2H|1|A|C|61,45,mapped,65,*,high,11,False
+bgsu_loop,HL_6P2H_002,HL,HL_98821.2,No text annotation,6p2h,A,A,6P2H|1|A|C|62,46,mapped,66,*,high,11,False
+bgsu_loop,HL_6P2H_002,HL,HL_98821.2,No text annotation,6p2h,A,A,6P2H|1|A|G|63,47,mapped,67,*,high,11,False
+bgsu_loop,HL_6P2H_002,HL,HL_98821.2,No text annotation,6p2h,A,A,6P2H|1|A|U|64,48,mapped,68,*,high,11,False
+bgsu_loop,HL_6P2H_002,HL,HL_98821.2,No text annotation,6p2h,A,A,6P2H|1|A|A|65,49,mapped,69,*,high,11,False
+bgsu_loop,HL_6P2H_002,HL,HL_98821.2,No text annotation,6p2h,A,A,6P2H|1|A|A|66,50,mapped,70,*,high,11,False
+bgsu_loop,HL_6P2H_002,HL,HL_98821.2,No text annotation,6p2h,A,A,6P2H|1|A|A|67,51,mapped,71,*,high,11,False
+bgsu_loop,HL_6P2H_002,HL,HL_98821.2,No text annotation,6p2h,A,A,6P2H|1|A|A|68,52,mapped,72,*,high,11,False
+bgsu_loop,HL_6P2H_002,HL,HL_98821.2,No text annotation,6p2h,A,A,6P2H|1|A|U|69,53,mapped,73,*,high,11,False
+bgsu_loop,IL_6P2H_001,IL,IL_38906.1,No text annotation,6p2h,A,A,6P2H|1|A|U|22,6,mapped,26,*,high,12,False
+bgsu_loop,IL_6P2H_001,IL,IL_38906.1,No text annotation,6p2h,A,A,6P2H|1|A|A|23,7,mapped,27,*,high,12,False
+bgsu_loop,IL_6P2H_001,IL,IL_38906.1,No text annotation,6p2h,A,A,6P2H|1|A|A|24,8,mapped,28,*,high,12,False
+bgsu_loop,IL_6P2H_001,IL,IL_38906.1,No text annotation,6p2h,A,A,6P2H|1|A|U|25,9,mapped,29,*,high,12,False
+bgsu_loop,IL_6P2H_001,IL,IL_38906.1,No text annotation,6p2h,A,A,6P2H|1|A|A|45,29,mapped,49,*,high,12,False
+bgsu_loop,IL_6P2H_001,IL,IL_38906.1,No text annotation,6p2h,A,A,6P2H|1|A|G|46,30,mapped,50,*,high,12,False
+bgsu_loop,IL_6P2H_001,IL,IL_38906.1,No text annotation,6p2h,A,A,6P2H|1|A|C|47,31,mapped,51,*,high,12,False
+bgsu_loop,IL_6P2H_001,IL,IL_38906.1,No text annotation,6p2h,A,A,6P2H|1|A|C|48,32,mapped,52,*,high,12,False
+bgsu_loop,IL_6P2H_001,IL,IL_38906.1,No text annotation,6p2h,A,A,6P2H|1|A|U|49,33,mapped,53,*,high,12,False
+bgsu_loop,IL_6P2H_001,IL,IL_38906.1,No text annotation,6p2h,A,A,6P2H|1|A|C|50,34,mapped,54,*,high,12,False
+bgsu_loop,IL_6P2H_001,IL,IL_38906.1,No text annotation,6p2h,A,A,6P2H|1|A|C|51,35,mapped,55,*,high,12,False
+bgsu_loop,IL_6P2H_001,IL,IL_38906.1,No text annotation,6p2h,A,A,6P2H|1|A|A|52,36,mapped,56,*,high,12,False
+bgsu_loop,J3_6P2H_001,J3,J3_12765.1,No text annotation,6p2h,A,A,6P2H|1|A|G|21,5,outside_mapped_region,,,,11,False
+bgsu_loop,J3_6P2H_001,J3,J3_12765.1,No text annotation,6p2h,A,A,6P2H|1|A|U|22,6,mapped,26,*,high,11,False
+bgsu_loop,J3_6P2H_001,J3,J3_12765.1,No text annotation,6p2h,A,A,6P2H|1|A|A|52,36,mapped,56,*,high,11,False
+bgsu_loop,J3_6P2H_001,J3,J3_12765.1,No text annotation,6p2h,A,A,6P2H|1|A|C|53,37,mapped,57,*,high,11,False
+bgsu_loop,J3_6P2H_001,J3,J3_12765.1,No text annotation,6p2h,A,A,6P2H|1|A|C|54,38,mapped,58,*,high,11,False
+bgsu_loop,J3_6P2H_001,J3,J3_12765.1,No text annotation,6p2h,A,A,6P2H|1|A|G|74,58,mapped,78,*,high,11,False
+bgsu_loop,J3_6P2H_001,J3,J3_12765.1,No text annotation,6p2h,A,A,6P2H|1|A|U|75,59,mapped,79,*,high,11,False
+bgsu_loop,J3_6P2H_001,J3,J3_12765.1,No text annotation,6p2h,A,A,6P2H|1|A|C|76,60,mapped,80,*,high,11,False
+bgsu_loop,J3_6P2H_001,J3,J3_12765.1,No text annotation,6p2h,A,A,6P2H|1|A|A|77,61,outside_mapped_region,,,,11,False
+bgsu_loop,J3_6P2H_001,J3,J3_12765.1,No text annotation,6p2h,A,A,6P2H|1|A|C|78,62,outside_mapped_region,,,,11,False
+bgsu_loop,J3_6P2H_001,J3,J3_12765.1,No text annotation,6p2h,A,A,6P2H|1|A|C|79,63,outside_mapped_region,,,,11,False
+bgsu_loop,J3_6P2H_002,J3,J3_60857.1,No text annotation,6p2h,A,A,6P2H|1|A|G|21,5,outside_mapped_region,,,,21,False
+bgsu_loop,J3_6P2H_002,J3,J3_60857.1,No text annotation,6p2h,A,A,6P2H|1|A|U|22,6,mapped,26,*,high,21,False
+bgsu_loop,J3_6P2H_002,J3,J3_60857.1,No text annotation,6p2h,A,A,6P2H|1|A|A|23,7,mapped,27,*,high,21,False
+bgsu_loop,J3_6P2H_002,J3,J3_60857.1,No text annotation,6p2h,A,A,6P2H|1|A|A|24,8,mapped,28,*,high,21,False
+bgsu_loop,J3_6P2H_002,J3,J3_60857.1,No text annotation,6p2h,A,A,6P2H|1|A|U|25,9,mapped,29,*,high,21,False
+bgsu_loop,J3_6P2H_002,J3,J3_60857.1,No text annotation,6p2h,A,A,6P2H|1|A|A|45,29,mapped,49,*,high,21,False
+bgsu_loop,J3_6P2H_002,J3,J3_60857.1,No text annotation,6p2h,A,A,6P2H|1|A|G|46,30,mapped,50,*,high,21,False
+bgsu_loop,J3_6P2H_002,J3,J3_60857.1,No text annotation,6p2h,A,A,6P2H|1|A|C|47,31,mapped,51,*,high,21,False
+bgsu_loop,J3_6P2H_002,J3,J3_60857.1,No text annotation,6p2h,A,A,6P2H|1|A|C|48,32,mapped,52,*,high,21,False
+bgsu_loop,J3_6P2H_002,J3,J3_60857.1,No text annotation,6p2h,A,A,6P2H|1|A|U|49,33,mapped,53,*,high,21,False
+bgsu_loop,J3_6P2H_002,J3,J3_60857.1,No text annotation,6p2h,A,A,6P2H|1|A|C|50,34,mapped,54,*,high,21,False
+bgsu_loop,J3_6P2H_002,J3,J3_60857.1,No text annotation,6p2h,A,A,6P2H|1|A|C|51,35,mapped,55,*,high,21,False
+bgsu_loop,J3_6P2H_002,J3,J3_60857.1,No text annotation,6p2h,A,A,6P2H|1|A|A|52,36,mapped,56,*,high,21,False
+bgsu_loop,J3_6P2H_002,J3,J3_60857.1,No text annotation,6p2h,A,A,6P2H|1|A|C|53,37,mapped,57,*,high,21,False
+bgsu_loop,J3_6P2H_002,J3,J3_60857.1,No text annotation,6p2h,A,A,6P2H|1|A|C|54,38,mapped,58,*,high,21,False
+bgsu_loop,J3_6P2H_002,J3,J3_60857.1,No text annotation,6p2h,A,A,6P2H|1|A|G|74,58,mapped,78,*,high,21,False
+bgsu_loop,J3_6P2H_002,J3,J3_60857.1,No text annotation,6p2h,A,A,6P2H|1|A|U|75,59,mapped,79,*,high,21,False
+bgsu_loop,J3_6P2H_002,J3,J3_60857.1,No text annotation,6p2h,A,A,6P2H|1|A|C|76,60,mapped,80,*,high,21,False
+bgsu_loop,J3_6P2H_002,J3,J3_60857.1,No text annotation,6p2h,A,A,6P2H|1|A|A|77,61,outside_mapped_region,,,,21,False
+bgsu_loop,J3_6P2H_002,J3,J3_60857.1,No text annotation,6p2h,A,A,6P2H|1|A|C|78,62,outside_mapped_region,,,,21,False
+bgsu_loop,J3_6P2H_002,J3,J3_60857.1,No text annotation,6p2h,A,A,6P2H|1|A|C|79,63,outside_mapped_region,,,,21,False
+bgsu_loop,HL_9NDD_001,HL,,No text annotation,9ndd,A,A,9NDD|1|A|A|49,49,mapped,34,*,high,10,False
+bgsu_loop,HL_9NDD_001,HL,,No text annotation,9ndd,A,A,9NDD|1|A|U|50,50,mapped,35,*,high,10,False
+bgsu_loop,HL_9NDD_001,HL,,No text annotation,9ndd,A,A,9NDD|1|A|A|51,51,mapped,36,*,high,10,False
+bgsu_loop,HL_9NDD_001,HL,,No text annotation,9ndd,A,A,9NDD|1|A|A|52,52,mapped,37,*,high,10,False
+bgsu_loop,HL_9NDD_001,HL,,No text annotation,9ndd,A,A,9NDD|1|A|U|53,53,mapped,38,*,high,10,False
+bgsu_loop,HL_9NDD_001,HL,,No text annotation,9ndd,A,A,9NDD|1|A|C|54,54,mapped,40,*,high,10,False
+bgsu_loop,HL_9NDD_001,HL,,No text annotation,9ndd,A,A,9NDD|1|A|G|55,55,mapped,41,*,high,10,False
+bgsu_loop,HL_9NDD_001,HL,,No text annotation,9ndd,A,A,9NDD|1|A|G|56,56,mapped,42,*,high,10,False
+bgsu_loop,HL_9NDD_001,HL,,No text annotation,9ndd,A,A,9NDD|1|A|U|57,57,mapped,43,*,high,10,False
+bgsu_loop,HL_9NDD_001,HL,,No text annotation,9ndd,A,A,9NDD|1|A|U|58,58,mapped,44,*,high,10,False
+bgsu_loop,HL_9NDD_002,HL,,GNRA variation,9ndd,A,A,9NDD|1|A|G|64,64,mapped,50,9,medium,7,False
+bgsu_loop,HL_9NDD_002,HL,,GNRA variation,9ndd,A,A,9NDD|1|A|C|65,65,mapped,52,8,medium,7,False
+bgsu_loop,HL_9NDD_002,HL,,GNRA variation,9ndd,A,A,9NDD|1|A|U|66,66,mapped,53,9,medium,7,False
+bgsu_loop,HL_9NDD_002,HL,,GNRA variation,9ndd,A,A,9NDD|1|A|C|67,67,mapped,54,*,high,7,False
+bgsu_loop,HL_9NDD_002,HL,,GNRA variation,9ndd,A,A,9NDD|1|A|U|68,68,mapped,55,*,high,7,False
+bgsu_loop,HL_9NDD_002,HL,,GNRA variation,9ndd,A,A,9NDD|1|A|A|69,69,mapped,56,*,high,7,False
+bgsu_loop,HL_9NDD_002,HL,,GNRA variation,9ndd,A,A,9NDD|1|A|C|70,70,mapped,57,*,high,7,False
+bgsu_loop,HL_9NDD_003,HL,,No text annotation,9ndd,A,A,9NDD|1|A|U|76,76,mapped,63,*,high,9,False
+bgsu_loop,HL_9NDD_003,HL,,No text annotation,9ndd,A,A,9NDD|1|A|C|77,77,mapped,65,*,high,9,False
+bgsu_loop,HL_9NDD_003,HL,,No text annotation,9ndd,A,A,9NDD|1|A|C|78,78,mapped,66,*,high,9,False
+bgsu_loop,HL_9NDD_003,HL,,No text annotation,9ndd,A,A,9NDD|1|A|G|79,79,mapped,67,*,high,9,False
+bgsu_loop,HL_9NDD_003,HL,,No text annotation,9ndd,A,A,9NDD|1|A|U|80,80,mapped,68,*,high,9,False
+bgsu_loop,HL_9NDD_003,HL,,No text annotation,9ndd,A,A,9NDD|1|A|A|81,81,mapped,69,*,high,9,False
+bgsu_loop,HL_9NDD_003,HL,,No text annotation,9ndd,A,A,9NDD|1|A|A|82,82,mapped,70,*,high,9,False
+bgsu_loop,HL_9NDD_003,HL,,No text annotation,9ndd,A,A,9NDD|1|A|A|83,83,mapped,71,*,high,9,False
+bgsu_loop,HL_9NDD_003,HL,,No text annotation,9ndd,A,A,9NDD|1|A|A|84,84,mapped,73,*,high,9,False
+bgsu_loop,HL_9NDD_004,HL,,GNRA,9ndd,A,A,9NDD|1|A|C|110,110,mapped,99,*,high,6,False
+bgsu_loop,HL_9NDD_004,HL,,GNRA,9ndd,A,A,9NDD|1|A|G|111,111,mapped,100,*,high,6,False
+bgsu_loop,HL_9NDD_004,HL,,GNRA,9ndd,A,A,9NDD|1|A|A|112,112,mapped,101,*,high,6,False
+bgsu_loop,HL_9NDD_004,HL,,GNRA,9ndd,A,A,9NDD|1|A|A|113,113,mapped,102,*,high,6,False
+bgsu_loop,HL_9NDD_004,HL,,GNRA,9ndd,A,A,9NDD|1|A|A|114,114,outside_mapped_region,,,,6,False
+bgsu_loop,HL_9NDD_004,HL,,GNRA,9ndd,A,A,9NDD|1|A|G|115,115,outside_mapped_region,,,,6,False
+bgsu_loop,HL_9NDD_005,HL,,No text annotation,9ndd,B,B,9NDD|1|B|A|49,49,mapped,34,*,high,10,False
+bgsu_loop,HL_9NDD_005,HL,,No text annotation,9ndd,B,B,9NDD|1|B|U|50,50,mapped,35,*,high,10,False
+bgsu_loop,HL_9NDD_005,HL,,No text annotation,9ndd,B,B,9NDD|1|B|A|51,51,mapped,36,*,high,10,False
+bgsu_loop,HL_9NDD_005,HL,,No text annotation,9ndd,B,B,9NDD|1|B|A|52,52,mapped,37,*,high,10,False
+bgsu_loop,HL_9NDD_005,HL,,No text annotation,9ndd,B,B,9NDD|1|B|U|53,53,mapped,38,*,high,10,False
+bgsu_loop,HL_9NDD_005,HL,,No text annotation,9ndd,B,B,9NDD|1|B|C|54,54,mapped,40,*,high,10,False
+bgsu_loop,HL_9NDD_005,HL,,No text annotation,9ndd,B,B,9NDD|1|B|G|55,55,mapped,41,*,high,10,False
+bgsu_loop,HL_9NDD_005,HL,,No text annotation,9ndd,B,B,9NDD|1|B|G|56,56,mapped,42,*,high,10,False
+bgsu_loop,HL_9NDD_005,HL,,No text annotation,9ndd,B,B,9NDD|1|B|U|57,57,mapped,43,*,high,10,False
+bgsu_loop,HL_9NDD_005,HL,,No text annotation,9ndd,B,B,9NDD|1|B|U|58,58,mapped,44,*,high,10,False
+bgsu_loop,HL_9NDD_006,HL,,GNRA variation,9ndd,B,B,9NDD|1|B|G|64,64,mapped,50,9,medium,7,False
+bgsu_loop,HL_9NDD_006,HL,,GNRA variation,9ndd,B,B,9NDD|1|B|C|65,65,mapped,52,8,medium,7,False
+bgsu_loop,HL_9NDD_006,HL,,GNRA variation,9ndd,B,B,9NDD|1|B|U|66,66,mapped,53,9,medium,7,False
+bgsu_loop,HL_9NDD_006,HL,,GNRA variation,9ndd,B,B,9NDD|1|B|C|67,67,mapped,54,*,high,7,False
+bgsu_loop,HL_9NDD_006,HL,,GNRA variation,9ndd,B,B,9NDD|1|B|U|68,68,mapped,55,*,high,7,False
+bgsu_loop,HL_9NDD_006,HL,,GNRA variation,9ndd,B,B,9NDD|1|B|A|69,69,mapped,56,*,high,7,False
+bgsu_loop,HL_9NDD_006,HL,,GNRA variation,9ndd,B,B,9NDD|1|B|C|70,70,mapped,57,*,high,7,False
+bgsu_loop,HL_9NDD_007,HL,,No text annotation,9ndd,B,B,9NDD|1|B|U|76,76,mapped,63,*,high,9,False
+bgsu_loop,HL_9NDD_007,HL,,No text annotation,9ndd,B,B,9NDD|1|B|C|77,77,mapped,65,*,high,9,False
+bgsu_loop,HL_9NDD_007,HL,,No text annotation,9ndd,B,B,9NDD|1|B|C|78,78,mapped,66,*,high,9,False
+bgsu_loop,HL_9NDD_007,HL,,No text annotation,9ndd,B,B,9NDD|1|B|G|79,79,mapped,67,*,high,9,False
+bgsu_loop,HL_9NDD_007,HL,,No text annotation,9ndd,B,B,9NDD|1|B|U|80,80,mapped,68,*,high,9,False
+bgsu_loop,HL_9NDD_007,HL,,No text annotation,9ndd,B,B,9NDD|1|B|A|81,81,mapped,69,*,high,9,False
+bgsu_loop,HL_9NDD_007,HL,,No text annotation,9ndd,B,B,9NDD|1|B|A|82,82,mapped,70,*,high,9,False
+bgsu_loop,HL_9NDD_007,HL,,No text annotation,9ndd,B,B,9NDD|1|B|A|83,83,mapped,71,*,high,9,False
+bgsu_loop,HL_9NDD_007,HL,,No text annotation,9ndd,B,B,9NDD|1|B|A|84,84,mapped,73,*,high,9,False
+bgsu_loop,HL_9NDD_008,HL,,GNRA,9ndd,B,B,9NDD|1|B|C|110,110,mapped,99,*,high,6,False
+bgsu_loop,HL_9NDD_008,HL,,GNRA,9ndd,B,B,9NDD|1|B|G|111,111,mapped,100,*,high,6,False
+bgsu_loop,HL_9NDD_008,HL,,GNRA,9ndd,B,B,9NDD|1|B|A|112,112,mapped,101,*,high,6,False
+bgsu_loop,HL_9NDD_008,HL,,GNRA,9ndd,B,B,9NDD|1|B|A|113,113,mapped,102,*,high,6,False
+bgsu_loop,HL_9NDD_008,HL,,GNRA,9ndd,B,B,9NDD|1|B|A|114,114,outside_mapped_region,,,,6,False
+bgsu_loop,HL_9NDD_008,HL,,GNRA,9ndd,B,B,9NDD|1|B|G|115,115,outside_mapped_region,,,,6,False
+bgsu_loop,HL_9NDD_009,HL,,No text annotation,9ndd,C,C,9NDD|1|C|A|49,49,mapped,34,*,high,10,False
+bgsu_loop,HL_9NDD_009,HL,,No text annotation,9ndd,C,C,9NDD|1|C|U|50,50,mapped,35,*,high,10,False
+bgsu_loop,HL_9NDD_009,HL,,No text annotation,9ndd,C,C,9NDD|1|C|A|51,51,mapped,36,*,high,10,False
+bgsu_loop,HL_9NDD_009,HL,,No text annotation,9ndd,C,C,9NDD|1|C|A|52,52,mapped,37,*,high,10,False
+bgsu_loop,HL_9NDD_009,HL,,No text annotation,9ndd,C,C,9NDD|1|C|U|53,53,mapped,38,*,high,10,False
+bgsu_loop,HL_9NDD_009,HL,,No text annotation,9ndd,C,C,9NDD|1|C|C|54,54,mapped,40,*,high,10,False
+bgsu_loop,HL_9NDD_009,HL,,No text annotation,9ndd,C,C,9NDD|1|C|G|55,55,mapped,41,*,high,10,False
+bgsu_loop,HL_9NDD_009,HL,,No text annotation,9ndd,C,C,9NDD|1|C|G|56,56,mapped,42,*,high,10,False
+bgsu_loop,HL_9NDD_009,HL,,No text annotation,9ndd,C,C,9NDD|1|C|U|57,57,mapped,43,*,high,10,False
+bgsu_loop,HL_9NDD_009,HL,,No text annotation,9ndd,C,C,9NDD|1|C|U|58,58,mapped,44,*,high,10,False
+bgsu_loop,HL_9NDD_010,HL,,GNRA variation,9ndd,C,C,9NDD|1|C|G|64,64,mapped,50,9,medium,7,False
+bgsu_loop,HL_9NDD_010,HL,,GNRA variation,9ndd,C,C,9NDD|1|C|C|65,65,mapped,52,8,medium,7,False
+bgsu_loop,HL_9NDD_010,HL,,GNRA variation,9ndd,C,C,9NDD|1|C|U|66,66,mapped,53,9,medium,7,False
+bgsu_loop,HL_9NDD_010,HL,,GNRA variation,9ndd,C,C,9NDD|1|C|C|67,67,mapped,54,*,high,7,False
+bgsu_loop,HL_9NDD_010,HL,,GNRA variation,9ndd,C,C,9NDD|1|C|U|68,68,mapped,55,*,high,7,False
+bgsu_loop,HL_9NDD_010,HL,,GNRA variation,9ndd,C,C,9NDD|1|C|A|69,69,mapped,56,*,high,7,False
+bgsu_loop,HL_9NDD_010,HL,,GNRA variation,9ndd,C,C,9NDD|1|C|C|70,70,mapped,57,*,high,7,False
+bgsu_loop,HL_9NDD_011,HL,,No text annotation,9ndd,C,C,9NDD|1|C|U|76,76,mapped,63,*,high,9,False
+bgsu_loop,HL_9NDD_011,HL,,No text annotation,9ndd,C,C,9NDD|1|C|C|77,77,mapped,65,*,high,9,False
+bgsu_loop,HL_9NDD_011,HL,,No text annotation,9ndd,C,C,9NDD|1|C|C|78,78,mapped,66,*,high,9,False
+bgsu_loop,HL_9NDD_011,HL,,No text annotation,9ndd,C,C,9NDD|1|C|G|79,79,mapped,67,*,high,9,False
+bgsu_loop,HL_9NDD_011,HL,,No text annotation,9ndd,C,C,9NDD|1|C|U|80,80,mapped,68,*,high,9,False
+bgsu_loop,HL_9NDD_011,HL,,No text annotation,9ndd,C,C,9NDD|1|C|A|81,81,mapped,69,*,high,9,False
+bgsu_loop,HL_9NDD_011,HL,,No text annotation,9ndd,C,C,9NDD|1|C|A|82,82,mapped,70,*,high,9,False
+bgsu_loop,HL_9NDD_011,HL,,No text annotation,9ndd,C,C,9NDD|1|C|A|83,83,mapped,71,*,high,9,False
+bgsu_loop,HL_9NDD_011,HL,,No text annotation,9ndd,C,C,9NDD|1|C|A|84,84,mapped,73,*,high,9,False
+bgsu_loop,HL_9NDD_012,HL,,GNRA,9ndd,C,C,9NDD|1|C|C|110,110,mapped,99,*,high,6,False
+bgsu_loop,HL_9NDD_012,HL,,GNRA,9ndd,C,C,9NDD|1|C|G|111,111,mapped,100,*,high,6,False
+bgsu_loop,HL_9NDD_012,HL,,GNRA,9ndd,C,C,9NDD|1|C|A|112,112,mapped,101,*,high,6,False
+bgsu_loop,HL_9NDD_012,HL,,GNRA,9ndd,C,C,9NDD|1|C|A|113,113,mapped,102,*,high,6,False
+bgsu_loop,HL_9NDD_012,HL,,GNRA,9ndd,C,C,9NDD|1|C|A|114,114,outside_mapped_region,,,,6,False
+bgsu_loop,HL_9NDD_012,HL,,GNRA,9ndd,C,C,9NDD|1|C|G|115,115,outside_mapped_region,,,,6,False
+bgsu_loop,HL_9NDD_013,HL,,No text annotation,9ndd,D,D,9NDD|1|D|A|49,49,mapped,34,*,high,10,False
+bgsu_loop,HL_9NDD_013,HL,,No text annotation,9ndd,D,D,9NDD|1|D|U|50,50,mapped,35,*,high,10,False
+bgsu_loop,HL_9NDD_013,HL,,No text annotation,9ndd,D,D,9NDD|1|D|A|51,51,mapped,36,*,high,10,False
+bgsu_loop,HL_9NDD_013,HL,,No text annotation,9ndd,D,D,9NDD|1|D|A|52,52,mapped,37,*,high,10,False
+bgsu_loop,HL_9NDD_013,HL,,No text annotation,9ndd,D,D,9NDD|1|D|U|53,53,mapped,38,*,high,10,False
+bgsu_loop,HL_9NDD_013,HL,,No text annotation,9ndd,D,D,9NDD|1|D|C|54,54,mapped,40,*,high,10,False
+bgsu_loop,HL_9NDD_013,HL,,No text annotation,9ndd,D,D,9NDD|1|D|G|55,55,mapped,41,*,high,10,False
+bgsu_loop,HL_9NDD_013,HL,,No text annotation,9ndd,D,D,9NDD|1|D|G|56,56,mapped,42,*,high,10,False
+bgsu_loop,HL_9NDD_013,HL,,No text annotation,9ndd,D,D,9NDD|1|D|U|57,57,mapped,43,*,high,10,False
+bgsu_loop,HL_9NDD_013,HL,,No text annotation,9ndd,D,D,9NDD|1|D|U|58,58,mapped,44,*,high,10,False
+bgsu_loop,HL_9NDD_014,HL,,GNRA variation,9ndd,D,D,9NDD|1|D|G|64,64,mapped,50,9,medium,7,False
+bgsu_loop,HL_9NDD_014,HL,,GNRA variation,9ndd,D,D,9NDD|1|D|C|65,65,mapped,52,8,medium,7,False
+bgsu_loop,HL_9NDD_014,HL,,GNRA variation,9ndd,D,D,9NDD|1|D|U|66,66,mapped,53,9,medium,7,False
+bgsu_loop,HL_9NDD_014,HL,,GNRA variation,9ndd,D,D,9NDD|1|D|C|67,67,mapped,54,*,high,7,False
+bgsu_loop,HL_9NDD_014,HL,,GNRA variation,9ndd,D,D,9NDD|1|D|U|68,68,mapped,55,*,high,7,False
+bgsu_loop,HL_9NDD_014,HL,,GNRA variation,9ndd,D,D,9NDD|1|D|A|69,69,mapped,56,*,high,7,False
+bgsu_loop,HL_9NDD_014,HL,,GNRA variation,9ndd,D,D,9NDD|1|D|C|70,70,mapped,57,*,high,7,False
+bgsu_loop,HL_9NDD_015,HL,,No text annotation,9ndd,D,D,9NDD|1|D|U|76,76,mapped,63,*,high,9,False
+bgsu_loop,HL_9NDD_015,HL,,No text annotation,9ndd,D,D,9NDD|1|D|C|77,77,mapped,65,*,high,9,False
+bgsu_loop,HL_9NDD_015,HL,,No text annotation,9ndd,D,D,9NDD|1|D|C|78,78,mapped,66,*,high,9,False
+bgsu_loop,HL_9NDD_015,HL,,No text annotation,9ndd,D,D,9NDD|1|D|G|79,79,mapped,67,*,high,9,False
+bgsu_loop,HL_9NDD_015,HL,,No text annotation,9ndd,D,D,9NDD|1|D|U|80,80,mapped,68,*,high,9,False
+bgsu_loop,HL_9NDD_015,HL,,No text annotation,9ndd,D,D,9NDD|1|D|A|81,81,mapped,69,*,high,9,False
+bgsu_loop,HL_9NDD_015,HL,,No text annotation,9ndd,D,D,9NDD|1|D|A|82,82,mapped,70,*,high,9,False
+bgsu_loop,HL_9NDD_015,HL,,No text annotation,9ndd,D,D,9NDD|1|D|A|83,83,mapped,71,*,high,9,False
+bgsu_loop,HL_9NDD_015,HL,,No text annotation,9ndd,D,D,9NDD|1|D|A|84,84,mapped,73,*,high,9,False
+bgsu_loop,HL_9NDD_016,HL,,GNRA,9ndd,D,D,9NDD|1|D|C|110,110,mapped,99,*,high,6,False
+bgsu_loop,HL_9NDD_016,HL,,GNRA,9ndd,D,D,9NDD|1|D|G|111,111,mapped,100,*,high,6,False
+bgsu_loop,HL_9NDD_016,HL,,GNRA,9ndd,D,D,9NDD|1|D|A|112,112,mapped,101,*,high,6,False
+bgsu_loop,HL_9NDD_016,HL,,GNRA,9ndd,D,D,9NDD|1|D|A|113,113,mapped,102,*,high,6,False
+bgsu_loop,HL_9NDD_016,HL,,GNRA,9ndd,D,D,9NDD|1|D|A|114,114,outside_mapped_region,,,,6,False
+bgsu_loop,HL_9NDD_016,HL,,GNRA,9ndd,D,D,9NDD|1|D|G|115,115,outside_mapped_region,,,,6,False
+bgsu_loop,IL_9NDD_001,IL,IL_48076.11,Major groove platform,9ndd,A,A,9NDD|1|A|G|3,3,outside_mapped_region,,,,5,False
+bgsu_loop,IL_9NDD_001,IL,IL_48076.11,Major groove platform,9ndd,A,A,9NDD|1|A|C|4,4,outside_mapped_region,,,,5,False
+bgsu_loop,IL_9NDD_001,IL,IL_48076.11,Major groove platform,9ndd,A,A,9NDD|1|A|G|132,132,outside_mapped_region,,,,5,False
+bgsu_loop,IL_9NDD_001,IL,IL_48076.11,Major groove platform,9ndd,A,A,9NDD|1|A|C|133,133,outside_mapped_region,,,,5,False
+bgsu_loop,IL_9NDD_001,IL,IL_48076.11,Major groove platform,9ndd,A,A,9NDD|1|A|C|134,134,outside_mapped_region,,,,5,False
+bgsu_loop,IL_9NDD_002,IL,IL_49140.3,No text annotation,9ndd,A,A,9NDD|1|A|G|9,9,outside_mapped_region,,,,7,False
+bgsu_loop,IL_9NDD_002,IL,IL_49140.3,No text annotation,9ndd,A,A,9NDD|1|A|U|10,10,outside_mapped_region,,,,7,False
+bgsu_loop,IL_9NDD_002,IL,IL_49140.3,No text annotation,9ndd,A,A,9NDD|1|A|U|11,11,outside_mapped_region,,,,7,False
+bgsu_loop,IL_9NDD_002,IL,IL_49140.3,No text annotation,9ndd,A,A,9NDD|1|A|U|12,12,outside_mapped_region,,,,7,False
+bgsu_loop,IL_9NDD_002,IL,IL_49140.3,No text annotation,9ndd,A,A,9NDD|1|A|A|125,125,outside_mapped_region,,,,7,False
+bgsu_loop,IL_9NDD_002,IL,IL_49140.3,No text annotation,9ndd,A,A,9NDD|1|A|C|126,126,outside_mapped_region,,,,7,False
+bgsu_loop,IL_9NDD_002,IL,IL_49140.3,No text annotation,9ndd,A,A,9NDD|1|A|C|127,127,outside_mapped_region,,,,7,False
+bgsu_loop,IL_9NDD_003,IL,,No text annotation,9ndd,A,A,9NDD|1|A|U|141||A,141,outside_mapped_region,,,,8,True
+bgsu_loop,IL_9NDD_003,IL,,No text annotation,9ndd,A,A,9NDD|1|A|G|142||A,142,outside_mapped_region,,,,8,True
+bgsu_loop,IL_9NDD_003,IL,,No text annotation,9ndd,A,A,9NDD|1|A|A|143||A,143,outside_mapped_region,,,,8,True
+bgsu_loop,IL_9NDD_003,IL,,No text annotation,9ndd,A,A,9NDD|1|A|A|144||A,144,outside_mapped_region,,,,8,True
+bgsu_loop,IL_9NDD_003,IL,,No text annotation,9ndd,C,C,9NDD|1|C|U|141||A,141,outside_mapped_region,,,,8,True
+bgsu_loop,IL_9NDD_003,IL,,No text annotation,9ndd,C,C,9NDD|1|C|G|142||A,142,outside_mapped_region,,,,8,True
+bgsu_loop,IL_9NDD_003,IL,,No text annotation,9ndd,C,C,9NDD|1|C|A|143||A,143,outside_mapped_region,,,,8,True
+bgsu_loop,IL_9NDD_003,IL,,No text annotation,9ndd,C,C,9NDD|1|C|A|144||A,144,outside_mapped_region,,,,8,True
+bgsu_loop,IL_9NDD_004,IL,IL_48076.11,Major groove platform,9ndd,B,B,9NDD|1|B|G|3,3,outside_mapped_region,,,,5,False
+bgsu_loop,IL_9NDD_004,IL,IL_48076.11,Major groove platform,9ndd,B,B,9NDD|1|B|C|4,4,outside_mapped_region,,,,5,False
+bgsu_loop,IL_9NDD_004,IL,IL_48076.11,Major groove platform,9ndd,B,B,9NDD|1|B|G|132,132,outside_mapped_region,,,,5,False
+bgsu_loop,IL_9NDD_004,IL,IL_48076.11,Major groove platform,9ndd,B,B,9NDD|1|B|C|133,133,outside_mapped_region,,,,5,False
+bgsu_loop,IL_9NDD_004,IL,IL_48076.11,Major groove platform,9ndd,B,B,9NDD|1|B|C|134,134,outside_mapped_region,,,,5,False
+bgsu_loop,IL_9NDD_005,IL,IL_49140.3,No text annotation,9ndd,B,B,9NDD|1|B|G|9,9,outside_mapped_region,,,,7,False
+bgsu_loop,IL_9NDD_005,IL,IL_49140.3,No text annotation,9ndd,B,B,9NDD|1|B|U|10,10,outside_mapped_region,,,,7,False
+bgsu_loop,IL_9NDD_005,IL,IL_49140.3,No text annotation,9ndd,B,B,9NDD|1|B|U|11,11,outside_mapped_region,,,,7,False
+bgsu_loop,IL_9NDD_005,IL,IL_49140.3,No text annotation,9ndd,B,B,9NDD|1|B|U|12,12,outside_mapped_region,,,,7,False
+bgsu_loop,IL_9NDD_005,IL,IL_49140.3,No text annotation,9ndd,B,B,9NDD|1|B|A|125,125,outside_mapped_region,,,,7,False
+bgsu_loop,IL_9NDD_005,IL,IL_49140.3,No text annotation,9ndd,B,B,9NDD|1|B|C|126,126,outside_mapped_region,,,,7,False
+bgsu_loop,IL_9NDD_005,IL,IL_49140.3,No text annotation,9ndd,B,B,9NDD|1|B|C|127,127,outside_mapped_region,,,,7,False
+bgsu_loop,IL_9NDD_006,IL,,No text annotation,9ndd,B,B,9NDD|1|B|U|141||A,141,outside_mapped_region,,,,8,True
+bgsu_loop,IL_9NDD_006,IL,,No text annotation,9ndd,B,B,9NDD|1|B|G|142||A,142,outside_mapped_region,,,,8,True
+bgsu_loop,IL_9NDD_006,IL,,No text annotation,9ndd,B,B,9NDD|1|B|A|143||A,143,outside_mapped_region,,,,8,True
+bgsu_loop,IL_9NDD_006,IL,,No text annotation,9ndd,B,B,9NDD|1|B|A|144||A,144,outside_mapped_region,,,,8,True
+bgsu_loop,IL_9NDD_006,IL,,No text annotation,9ndd,D,D,9NDD|1|D|U|141||A,141,outside_mapped_region,,,,8,True
+bgsu_loop,IL_9NDD_006,IL,,No text annotation,9ndd,D,D,9NDD|1|D|G|142||A,142,outside_mapped_region,,,,8,True
+bgsu_loop,IL_9NDD_006,IL,,No text annotation,9ndd,D,D,9NDD|1|D|A|143||A,143,outside_mapped_region,,,,8,True
+bgsu_loop,IL_9NDD_006,IL,,No text annotation,9ndd,D,D,9NDD|1|D|A|144||A,144,outside_mapped_region,,,,8,True
+bgsu_loop,IL_9NDD_007,IL,IL_48076.11,Major groove platform,9ndd,C,C,9NDD|1|C|G|3,3,outside_mapped_region,,,,5,False
+bgsu_loop,IL_9NDD_007,IL,IL_48076.11,Major groove platform,9ndd,C,C,9NDD|1|C|C|4,4,outside_mapped_region,,,,5,False
+bgsu_loop,IL_9NDD_007,IL,IL_48076.11,Major groove platform,9ndd,C,C,9NDD|1|C|G|132,132,outside_mapped_region,,,,5,False
+bgsu_loop,IL_9NDD_007,IL,IL_48076.11,Major groove platform,9ndd,C,C,9NDD|1|C|C|133,133,outside_mapped_region,,,,5,False
+bgsu_loop,IL_9NDD_007,IL,IL_48076.11,Major groove platform,9ndd,C,C,9NDD|1|C|C|134,134,outside_mapped_region,,,,5,False
+bgsu_loop,IL_9NDD_008,IL,IL_49140.3,No text annotation,9ndd,C,C,9NDD|1|C|G|9,9,outside_mapped_region,,,,7,False
+bgsu_loop,IL_9NDD_008,IL,IL_49140.3,No text annotation,9ndd,C,C,9NDD|1|C|U|10,10,outside_mapped_region,,,,7,False
+bgsu_loop,IL_9NDD_008,IL,IL_49140.3,No text annotation,9ndd,C,C,9NDD|1|C|U|11,11,outside_mapped_region,,,,7,False
+bgsu_loop,IL_9NDD_008,IL,IL_49140.3,No text annotation,9ndd,C,C,9NDD|1|C|U|12,12,outside_mapped_region,,,,7,False
+bgsu_loop,IL_9NDD_008,IL,IL_49140.3,No text annotation,9ndd,C,C,9NDD|1|C|A|125,125,outside_mapped_region,,,,7,False
+bgsu_loop,IL_9NDD_008,IL,IL_49140.3,No text annotation,9ndd,C,C,9NDD|1|C|C|126,126,outside_mapped_region,,,,7,False
+bgsu_loop,IL_9NDD_008,IL,IL_49140.3,No text annotation,9ndd,C,C,9NDD|1|C|C|127,127,outside_mapped_region,,,,7,False
+bgsu_loop,IL_9NDD_009,IL,IL_48076.11,Major groove platform,9ndd,D,D,9NDD|1|D|G|3,3,outside_mapped_region,,,,5,False
+bgsu_loop,IL_9NDD_009,IL,IL_48076.11,Major groove platform,9ndd,D,D,9NDD|1|D|C|4,4,outside_mapped_region,,,,5,False
+bgsu_loop,IL_9NDD_009,IL,IL_48076.11,Major groove platform,9ndd,D,D,9NDD|1|D|G|132,132,outside_mapped_region,,,,5,False
+bgsu_loop,IL_9NDD_009,IL,IL_48076.11,Major groove platform,9ndd,D,D,9NDD|1|D|C|133,133,outside_mapped_region,,,,5,False
+bgsu_loop,IL_9NDD_009,IL,IL_48076.11,Major groove platform,9ndd,D,D,9NDD|1|D|C|134,134,outside_mapped_region,,,,5,False
+bgsu_loop,IL_9NDD_010,IL,IL_49140.3,No text annotation,9ndd,D,D,9NDD|1|D|G|9,9,outside_mapped_region,,,,7,False
+bgsu_loop,IL_9NDD_010,IL,IL_49140.3,No text annotation,9ndd,D,D,9NDD|1|D|U|10,10,outside_mapped_region,,,,7,False
+bgsu_loop,IL_9NDD_010,IL,IL_49140.3,No text annotation,9ndd,D,D,9NDD|1|D|U|11,11,outside_mapped_region,,,,7,False
+bgsu_loop,IL_9NDD_010,IL,IL_49140.3,No text annotation,9ndd,D,D,9NDD|1|D|U|12,12,outside_mapped_region,,,,7,False
+bgsu_loop,IL_9NDD_010,IL,IL_49140.3,No text annotation,9ndd,D,D,9NDD|1|D|A|125,125,outside_mapped_region,,,,7,False
+bgsu_loop,IL_9NDD_010,IL,IL_49140.3,No text annotation,9ndd,D,D,9NDD|1|D|C|126,126,outside_mapped_region,,,,7,False
+bgsu_loop,IL_9NDD_010,IL,IL_49140.3,No text annotation,9ndd,D,D,9NDD|1|D|C|127,127,outside_mapped_region,,,,7,False
+bgsu_loop,J3_9NDD_001,J3,J3_21426.1,No text annotation,9ndd,A,A,9NDD|1|A|U|16,16,mapped,1,9,medium,19,False
+bgsu_loop,J3_9NDD_001,J3,J3_21426.1,No text annotation,9ndd,A,A,9NDD|1|A|G|17,17,mapped,2,9,medium,19,False
+bgsu_loop,J3_9NDD_001,J3,J3_21426.1,No text annotation,9ndd,A,A,9NDD|1|A|U|18,18,mapped,3,9,medium,19,False
+bgsu_loop,J3_9NDD_001,J3,J3_21426.1,No text annotation,9ndd,A,A,9NDD|1|A|U|19,19,mapped,4,9,medium,19,False
+bgsu_loop,J3_9NDD_001,J3,J3_21426.1,No text annotation,9ndd,A,A,9NDD|1|A|G|20,20,mapped,5,9,medium,19,False
+bgsu_loop,J3_9NDD_001,J3,J3_21426.1,No text annotation,9ndd,A,A,9NDD|1|A|C|21,21,mapped,6,9,medium,19,False
+bgsu_loop,J3_9NDD_001,J3,J3_21426.1,No text annotation,9ndd,A,A,9NDD|1|A|G|22,22,mapped,7,9,medium,19,False
+bgsu_loop,J3_9NDD_001,J3,J3_21426.1,No text annotation,9ndd,A,A,9NDD|1|A|C|23,23,mapped,8,*,high,19,False
+bgsu_loop,J3_9NDD_001,J3,J3_21426.1,No text annotation,9ndd,A,A,9NDD|1|A|U|24,24,mapped,9,*,high,19,False
+bgsu_loop,J3_9NDD_001,J3,J3_21426.1,No text annotation,9ndd,A,A,9NDD|1|A|A|25,25,mapped,10,*,high,19,False
+bgsu_loop,J3_9NDD_001,J3,J3_21426.1,No text annotation,9ndd,A,A,9NDD|1|A|C|26,26,mapped,11,*,high,19,False
+bgsu_loop,J3_9NDD_001,J3,J3_21426.1,No text annotation,9ndd,A,A,9NDD|1|A|A|27,27,mapped,12,*,high,19,False
+bgsu_loop,J3_9NDD_001,J3,J3_21426.1,No text annotation,9ndd,A,A,9NDD|1|A|U|28,28,mapped,13,*,high,19,False
+bgsu_loop,J3_9NDD_001,J3,J3_21426.1,No text annotation,9ndd,A,A,9NDD|1|A|C|29,29,mapped,14,*,high,19,False
+bgsu_loop,J3_9NDD_001,J3,J3_21426.1,No text annotation,9ndd,A,A,9NDD|1|A|G|103,103,mapped,92,*,high,19,False
+bgsu_loop,J3_9NDD_001,J3,J3_21426.1,No text annotation,9ndd,A,A,9NDD|1|A|G|104,104,mapped,93,*,high,19,False
+bgsu_loop,J3_9NDD_001,J3,J3_21426.1,No text annotation,9ndd,A,A,9NDD|1|A|C|105,105,mapped,94,*,high,19,False
+bgsu_loop,J3_9NDD_001,J3,J3_21426.1,No text annotation,9ndd,A,A,9NDD|1|A|G|120,120,outside_mapped_region,,,,19,False
+bgsu_loop,J3_9NDD_001,J3,J3_21426.1,No text annotation,9ndd,A,A,9NDD|1|A|A|121,121,outside_mapped_region,,,,19,False
+bgsu_loop,J3_9NDD_002,J3,,No text annotation,9ndd,A,A,9NDD|1|A|A|40,40,mapped,25,*,high,18,False
+bgsu_loop,J3_9NDD_002,J3,,No text annotation,9ndd,A,A,9NDD|1|A|U|41,41,mapped,26,*,high,18,False
+bgsu_loop,J3_9NDD_002,J3,,No text annotation,9ndd,A,A,9NDD|1|A|A|42,42,mapped,27,*,high,18,False
+bgsu_loop,J3_9NDD_002,J3,,No text annotation,9ndd,A,A,9NDD|1|A|A|43,43,mapped,28,*,high,18,False
+bgsu_loop,J3_9NDD_002,J3,,No text annotation,9ndd,A,A,9NDD|1|A|C|44,44,mapped,29,*,high,18,False
+bgsu_loop,J3_9NDD_002,J3,,No text annotation,9ndd,A,A,9NDD|1|A|G|63,63,mapped,49,9,medium,18,False
+bgsu_loop,J3_9NDD_002,J3,,No text annotation,9ndd,A,A,9NDD|1|A|G|64,64,mapped,50,9,medium,18,False
+bgsu_loop,J3_9NDD_002,J3,,No text annotation,9ndd,A,A,9NDD|1|A|C|65,65,mapped,52,8,medium,18,False
+bgsu_loop,J3_9NDD_002,J3,,No text annotation,9ndd,A,A,9NDD|1|A|U|66,66,mapped,53,9,medium,18,False
+bgsu_loop,J3_9NDD_002,J3,,No text annotation,9ndd,A,A,9NDD|1|A|C|67,67,mapped,54,*,high,18,False
+bgsu_loop,J3_9NDD_002,J3,,No text annotation,9ndd,A,A,9NDD|1|A|U|68,68,mapped,55,*,high,18,False
+bgsu_loop,J3_9NDD_002,J3,,No text annotation,9ndd,A,A,9NDD|1|A|A|69,69,mapped,56,*,high,18,False
+bgsu_loop,J3_9NDD_002,J3,,No text annotation,9ndd,A,A,9NDD|1|A|C|70,70,mapped,57,*,high,18,False
+bgsu_loop,J3_9NDD_002,J3,,No text annotation,9ndd,A,A,9NDD|1|A|U|71,71,mapped,58,*,high,18,False
+bgsu_loop,J3_9NDD_002,J3,,No text annotation,9ndd,A,A,9NDD|1|A|A|89,89,mapped,78,*,high,18,False
+bgsu_loop,J3_9NDD_002,J3,,No text annotation,9ndd,A,A,9NDD|1|A|A|90,90,mapped,79,*,high,18,False
+bgsu_loop,J3_9NDD_002,J3,,No text annotation,9ndd,A,A,9NDD|1|A|C|91,91,mapped,80,*,high,18,False
+bgsu_loop,J3_9NDD_002,J3,,No text annotation,9ndd,A,A,9NDD|1|A|U|92,92,mapped,81,*,high,18,False
+bgsu_loop,J3_9NDD_003,J3,J3_21426.1,No text annotation,9ndd,B,B,9NDD|1|B|U|16,16,mapped,1,9,medium,19,False
+bgsu_loop,J3_9NDD_003,J3,J3_21426.1,No text annotation,9ndd,B,B,9NDD|1|B|G|17,17,mapped,2,9,medium,19,False
+bgsu_loop,J3_9NDD_003,J3,J3_21426.1,No text annotation,9ndd,B,B,9NDD|1|B|U|18,18,mapped,3,9,medium,19,False
+bgsu_loop,J3_9NDD_003,J3,J3_21426.1,No text annotation,9ndd,B,B,9NDD|1|B|U|19,19,mapped,4,9,medium,19,False
+bgsu_loop,J3_9NDD_003,J3,J3_21426.1,No text annotation,9ndd,B,B,9NDD|1|B|G|20,20,mapped,5,9,medium,19,False
+bgsu_loop,J3_9NDD_003,J3,J3_21426.1,No text annotation,9ndd,B,B,9NDD|1|B|C|21,21,mapped,6,9,medium,19,False
+bgsu_loop,J3_9NDD_003,J3,J3_21426.1,No text annotation,9ndd,B,B,9NDD|1|B|G|22,22,mapped,7,9,medium,19,False
+bgsu_loop,J3_9NDD_003,J3,J3_21426.1,No text annotation,9ndd,B,B,9NDD|1|B|C|23,23,mapped,8,*,high,19,False
+bgsu_loop,J3_9NDD_003,J3,J3_21426.1,No text annotation,9ndd,B,B,9NDD|1|B|U|24,24,mapped,9,*,high,19,False
+bgsu_loop,J3_9NDD_003,J3,J3_21426.1,No text annotation,9ndd,B,B,9NDD|1|B|A|25,25,mapped,10,*,high,19,False
+bgsu_loop,J3_9NDD_003,J3,J3_21426.1,No text annotation,9ndd,B,B,9NDD|1|B|C|26,26,mapped,11,*,high,19,False
+bgsu_loop,J3_9NDD_003,J3,J3_21426.1,No text annotation,9ndd,B,B,9NDD|1|B|A|27,27,mapped,12,*,high,19,False
+bgsu_loop,J3_9NDD_003,J3,J3_21426.1,No text annotation,9ndd,B,B,9NDD|1|B|U|28,28,mapped,13,*,high,19,False
+bgsu_loop,J3_9NDD_003,J3,J3_21426.1,No text annotation,9ndd,B,B,9NDD|1|B|C|29,29,mapped,14,*,high,19,False
+bgsu_loop,J3_9NDD_003,J3,J3_21426.1,No text annotation,9ndd,B,B,9NDD|1|B|G|103,103,mapped,92,*,high,19,False
+bgsu_loop,J3_9NDD_003,J3,J3_21426.1,No text annotation,9ndd,B,B,9NDD|1|B|G|104,104,mapped,93,*,high,19,False
+bgsu_loop,J3_9NDD_003,J3,J3_21426.1,No text annotation,9ndd,B,B,9NDD|1|B|C|105,105,mapped,94,*,high,19,False
+bgsu_loop,J3_9NDD_003,J3,J3_21426.1,No text annotation,9ndd,B,B,9NDD|1|B|G|120,120,outside_mapped_region,,,,19,False
+bgsu_loop,J3_9NDD_003,J3,J3_21426.1,No text annotation,9ndd,B,B,9NDD|1|B|A|121,121,outside_mapped_region,,,,19,False
+bgsu_loop,J3_9NDD_004,J3,,No text annotation,9ndd,B,B,9NDD|1|B|A|40,40,mapped,25,*,high,18,False
+bgsu_loop,J3_9NDD_004,J3,,No text annotation,9ndd,B,B,9NDD|1|B|U|41,41,mapped,26,*,high,18,False
+bgsu_loop,J3_9NDD_004,J3,,No text annotation,9ndd,B,B,9NDD|1|B|A|42,42,mapped,27,*,high,18,False
+bgsu_loop,J3_9NDD_004,J3,,No text annotation,9ndd,B,B,9NDD|1|B|A|43,43,mapped,28,*,high,18,False
+bgsu_loop,J3_9NDD_004,J3,,No text annotation,9ndd,B,B,9NDD|1|B|C|44,44,mapped,29,*,high,18,False
+bgsu_loop,J3_9NDD_004,J3,,No text annotation,9ndd,B,B,9NDD|1|B|G|63,63,mapped,49,9,medium,18,False
+bgsu_loop,J3_9NDD_004,J3,,No text annotation,9ndd,B,B,9NDD|1|B|G|64,64,mapped,50,9,medium,18,False
+bgsu_loop,J3_9NDD_004,J3,,No text annotation,9ndd,B,B,9NDD|1|B|C|65,65,mapped,52,8,medium,18,False
+bgsu_loop,J3_9NDD_004,J3,,No text annotation,9ndd,B,B,9NDD|1|B|U|66,66,mapped,53,9,medium,18,False
+bgsu_loop,J3_9NDD_004,J3,,No text annotation,9ndd,B,B,9NDD|1|B|C|67,67,mapped,54,*,high,18,False
+bgsu_loop,J3_9NDD_004,J3,,No text annotation,9ndd,B,B,9NDD|1|B|U|68,68,mapped,55,*,high,18,False
+bgsu_loop,J3_9NDD_004,J3,,No text annotation,9ndd,B,B,9NDD|1|B|A|69,69,mapped,56,*,high,18,False
+bgsu_loop,J3_9NDD_004,J3,,No text annotation,9ndd,B,B,9NDD|1|B|C|70,70,mapped,57,*,high,18,False
+bgsu_loop,J3_9NDD_004,J3,,No text annotation,9ndd,B,B,9NDD|1|B|U|71,71,mapped,58,*,high,18,False
+bgsu_loop,J3_9NDD_004,J3,,No text annotation,9ndd,B,B,9NDD|1|B|A|89,89,mapped,78,*,high,18,False
+bgsu_loop,J3_9NDD_004,J3,,No text annotation,9ndd,B,B,9NDD|1|B|A|90,90,mapped,79,*,high,18,False
+bgsu_loop,J3_9NDD_004,J3,,No text annotation,9ndd,B,B,9NDD|1|B|C|91,91,mapped,80,*,high,18,False
+bgsu_loop,J3_9NDD_004,J3,,No text annotation,9ndd,B,B,9NDD|1|B|U|92,92,mapped,81,*,high,18,False
+bgsu_loop,J3_9NDD_005,J3,J3_21426.1,No text annotation,9ndd,C,C,9NDD|1|C|U|16,16,mapped,1,9,medium,19,False
+bgsu_loop,J3_9NDD_005,J3,J3_21426.1,No text annotation,9ndd,C,C,9NDD|1|C|G|17,17,mapped,2,9,medium,19,False
+bgsu_loop,J3_9NDD_005,J3,J3_21426.1,No text annotation,9ndd,C,C,9NDD|1|C|U|18,18,mapped,3,9,medium,19,False
+bgsu_loop,J3_9NDD_005,J3,J3_21426.1,No text annotation,9ndd,C,C,9NDD|1|C|U|19,19,mapped,4,9,medium,19,False
+bgsu_loop,J3_9NDD_005,J3,J3_21426.1,No text annotation,9ndd,C,C,9NDD|1|C|G|20,20,mapped,5,9,medium,19,False
+bgsu_loop,J3_9NDD_005,J3,J3_21426.1,No text annotation,9ndd,C,C,9NDD|1|C|C|21,21,mapped,6,9,medium,19,False
+bgsu_loop,J3_9NDD_005,J3,J3_21426.1,No text annotation,9ndd,C,C,9NDD|1|C|G|22,22,mapped,7,9,medium,19,False
+bgsu_loop,J3_9NDD_005,J3,J3_21426.1,No text annotation,9ndd,C,C,9NDD|1|C|C|23,23,mapped,8,*,high,19,False
+bgsu_loop,J3_9NDD_005,J3,J3_21426.1,No text annotation,9ndd,C,C,9NDD|1|C|U|24,24,mapped,9,*,high,19,False
+bgsu_loop,J3_9NDD_005,J3,J3_21426.1,No text annotation,9ndd,C,C,9NDD|1|C|A|25,25,mapped,10,*,high,19,False
+bgsu_loop,J3_9NDD_005,J3,J3_21426.1,No text annotation,9ndd,C,C,9NDD|1|C|C|26,26,mapped,11,*,high,19,False
+bgsu_loop,J3_9NDD_005,J3,J3_21426.1,No text annotation,9ndd,C,C,9NDD|1|C|A|27,27,mapped,12,*,high,19,False
+bgsu_loop,J3_9NDD_005,J3,J3_21426.1,No text annotation,9ndd,C,C,9NDD|1|C|U|28,28,mapped,13,*,high,19,False
+bgsu_loop,J3_9NDD_005,J3,J3_21426.1,No text annotation,9ndd,C,C,9NDD|1|C|C|29,29,mapped,14,*,high,19,False
+bgsu_loop,J3_9NDD_005,J3,J3_21426.1,No text annotation,9ndd,C,C,9NDD|1|C|G|103,103,mapped,92,*,high,19,False
+bgsu_loop,J3_9NDD_005,J3,J3_21426.1,No text annotation,9ndd,C,C,9NDD|1|C|G|104,104,mapped,93,*,high,19,False
+bgsu_loop,J3_9NDD_005,J3,J3_21426.1,No text annotation,9ndd,C,C,9NDD|1|C|C|105,105,mapped,94,*,high,19,False
+bgsu_loop,J3_9NDD_005,J3,J3_21426.1,No text annotation,9ndd,C,C,9NDD|1|C|G|120,120,outside_mapped_region,,,,19,False
+bgsu_loop,J3_9NDD_005,J3,J3_21426.1,No text annotation,9ndd,C,C,9NDD|1|C|A|121,121,outside_mapped_region,,,,19,False
+bgsu_loop,J3_9NDD_006,J3,,No text annotation,9ndd,C,C,9NDD|1|C|A|40,40,mapped,25,*,high,18,False
+bgsu_loop,J3_9NDD_006,J3,,No text annotation,9ndd,C,C,9NDD|1|C|U|41,41,mapped,26,*,high,18,False
+bgsu_loop,J3_9NDD_006,J3,,No text annotation,9ndd,C,C,9NDD|1|C|A|42,42,mapped,27,*,high,18,False
+bgsu_loop,J3_9NDD_006,J3,,No text annotation,9ndd,C,C,9NDD|1|C|A|43,43,mapped,28,*,high,18,False
+bgsu_loop,J3_9NDD_006,J3,,No text annotation,9ndd,C,C,9NDD|1|C|C|44,44,mapped,29,*,high,18,False
+bgsu_loop,J3_9NDD_006,J3,,No text annotation,9ndd,C,C,9NDD|1|C|G|63,63,mapped,49,9,medium,18,False
+bgsu_loop,J3_9NDD_006,J3,,No text annotation,9ndd,C,C,9NDD|1|C|G|64,64,mapped,50,9,medium,18,False
+bgsu_loop,J3_9NDD_006,J3,,No text annotation,9ndd,C,C,9NDD|1|C|C|65,65,mapped,52,8,medium,18,False
+bgsu_loop,J3_9NDD_006,J3,,No text annotation,9ndd,C,C,9NDD|1|C|U|66,66,mapped,53,9,medium,18,False
+bgsu_loop,J3_9NDD_006,J3,,No text annotation,9ndd,C,C,9NDD|1|C|C|67,67,mapped,54,*,high,18,False
+bgsu_loop,J3_9NDD_006,J3,,No text annotation,9ndd,C,C,9NDD|1|C|U|68,68,mapped,55,*,high,18,False
+bgsu_loop,J3_9NDD_006,J3,,No text annotation,9ndd,C,C,9NDD|1|C|A|69,69,mapped,56,*,high,18,False
+bgsu_loop,J3_9NDD_006,J3,,No text annotation,9ndd,C,C,9NDD|1|C|C|70,70,mapped,57,*,high,18,False
+bgsu_loop,J3_9NDD_006,J3,,No text annotation,9ndd,C,C,9NDD|1|C|U|71,71,mapped,58,*,high,18,False
+bgsu_loop,J3_9NDD_006,J3,,No text annotation,9ndd,C,C,9NDD|1|C|A|89,89,mapped,78,*,high,18,False
+bgsu_loop,J3_9NDD_006,J3,,No text annotation,9ndd,C,C,9NDD|1|C|A|90,90,mapped,79,*,high,18,False
+bgsu_loop,J3_9NDD_006,J3,,No text annotation,9ndd,C,C,9NDD|1|C|C|91,91,mapped,80,*,high,18,False
+bgsu_loop,J3_9NDD_006,J3,,No text annotation,9ndd,C,C,9NDD|1|C|U|92,92,mapped,81,*,high,18,False
+bgsu_loop,J3_9NDD_007,J3,J3_21426.1,No text annotation,9ndd,D,D,9NDD|1|D|U|16,16,mapped,1,9,medium,19,False
+bgsu_loop,J3_9NDD_007,J3,J3_21426.1,No text annotation,9ndd,D,D,9NDD|1|D|G|17,17,mapped,2,9,medium,19,False
+bgsu_loop,J3_9NDD_007,J3,J3_21426.1,No text annotation,9ndd,D,D,9NDD|1|D|U|18,18,mapped,3,9,medium,19,False
+bgsu_loop,J3_9NDD_007,J3,J3_21426.1,No text annotation,9ndd,D,D,9NDD|1|D|U|19,19,mapped,4,9,medium,19,False
+bgsu_loop,J3_9NDD_007,J3,J3_21426.1,No text annotation,9ndd,D,D,9NDD|1|D|G|20,20,mapped,5,9,medium,19,False
+bgsu_loop,J3_9NDD_007,J3,J3_21426.1,No text annotation,9ndd,D,D,9NDD|1|D|C|21,21,mapped,6,9,medium,19,False
+bgsu_loop,J3_9NDD_007,J3,J3_21426.1,No text annotation,9ndd,D,D,9NDD|1|D|G|22,22,mapped,7,9,medium,19,False
+bgsu_loop,J3_9NDD_007,J3,J3_21426.1,No text annotation,9ndd,D,D,9NDD|1|D|C|23,23,mapped,8,*,high,19,False
+bgsu_loop,J3_9NDD_007,J3,J3_21426.1,No text annotation,9ndd,D,D,9NDD|1|D|U|24,24,mapped,9,*,high,19,False
+bgsu_loop,J3_9NDD_007,J3,J3_21426.1,No text annotation,9ndd,D,D,9NDD|1|D|A|25,25,mapped,10,*,high,19,False
+bgsu_loop,J3_9NDD_007,J3,J3_21426.1,No text annotation,9ndd,D,D,9NDD|1|D|C|26,26,mapped,11,*,high,19,False
+bgsu_loop,J3_9NDD_007,J3,J3_21426.1,No text annotation,9ndd,D,D,9NDD|1|D|A|27,27,mapped,12,*,high,19,False
+bgsu_loop,J3_9NDD_007,J3,J3_21426.1,No text annotation,9ndd,D,D,9NDD|1|D|U|28,28,mapped,13,*,high,19,False
+bgsu_loop,J3_9NDD_007,J3,J3_21426.1,No text annotation,9ndd,D,D,9NDD|1|D|C|29,29,mapped,14,*,high,19,False
+bgsu_loop,J3_9NDD_007,J3,J3_21426.1,No text annotation,9ndd,D,D,9NDD|1|D|G|103,103,mapped,92,*,high,19,False
+bgsu_loop,J3_9NDD_007,J3,J3_21426.1,No text annotation,9ndd,D,D,9NDD|1|D|G|104,104,mapped,93,*,high,19,False
+bgsu_loop,J3_9NDD_007,J3,J3_21426.1,No text annotation,9ndd,D,D,9NDD|1|D|C|105,105,mapped,94,*,high,19,False
+bgsu_loop,J3_9NDD_007,J3,J3_21426.1,No text annotation,9ndd,D,D,9NDD|1|D|G|120,120,outside_mapped_region,,,,19,False
+bgsu_loop,J3_9NDD_007,J3,J3_21426.1,No text annotation,9ndd,D,D,9NDD|1|D|A|121,121,outside_mapped_region,,,,19,False
+bgsu_loop,J3_9NDD_008,J3,,No text annotation,9ndd,D,D,9NDD|1|D|A|40,40,mapped,25,*,high,18,False
+bgsu_loop,J3_9NDD_008,J3,,No text annotation,9ndd,D,D,9NDD|1|D|U|41,41,mapped,26,*,high,18,False
+bgsu_loop,J3_9NDD_008,J3,,No text annotation,9ndd,D,D,9NDD|1|D|A|42,42,mapped,27,*,high,18,False
+bgsu_loop,J3_9NDD_008,J3,,No text annotation,9ndd,D,D,9NDD|1|D|A|43,43,mapped,28,*,high,18,False
+bgsu_loop,J3_9NDD_008,J3,,No text annotation,9ndd,D,D,9NDD|1|D|C|44,44,mapped,29,*,high,18,False
+bgsu_loop,J3_9NDD_008,J3,,No text annotation,9ndd,D,D,9NDD|1|D|G|63,63,mapped,49,9,medium,18,False
+bgsu_loop,J3_9NDD_008,J3,,No text annotation,9ndd,D,D,9NDD|1|D|G|64,64,mapped,50,9,medium,18,False
+bgsu_loop,J3_9NDD_008,J3,,No text annotation,9ndd,D,D,9NDD|1|D|C|65,65,mapped,52,8,medium,18,False
+bgsu_loop,J3_9NDD_008,J3,,No text annotation,9ndd,D,D,9NDD|1|D|U|66,66,mapped,53,9,medium,18,False
+bgsu_loop,J3_9NDD_008,J3,,No text annotation,9ndd,D,D,9NDD|1|D|C|67,67,mapped,54,*,high,18,False
+bgsu_loop,J3_9NDD_008,J3,,No text annotation,9ndd,D,D,9NDD|1|D|U|68,68,mapped,55,*,high,18,False
+bgsu_loop,J3_9NDD_008,J3,,No text annotation,9ndd,D,D,9NDD|1|D|A|69,69,mapped,56,*,high,18,False
+bgsu_loop,J3_9NDD_008,J3,,No text annotation,9ndd,D,D,9NDD|1|D|C|70,70,mapped,57,*,high,18,False
+bgsu_loop,J3_9NDD_008,J3,,No text annotation,9ndd,D,D,9NDD|1|D|U|71,71,mapped,58,*,high,18,False
+bgsu_loop,J3_9NDD_008,J3,,No text annotation,9ndd,D,D,9NDD|1|D|A|89,89,mapped,78,*,high,18,False
+bgsu_loop,J3_9NDD_008,J3,,No text annotation,9ndd,D,D,9NDD|1|D|A|90,90,mapped,79,*,high,18,False
+bgsu_loop,J3_9NDD_008,J3,,No text annotation,9ndd,D,D,9NDD|1|D|C|91,91,mapped,80,*,high,18,False
+bgsu_loop,J3_9NDD_008,J3,,No text annotation,9ndd,D,D,9NDD|1|D|U|92,92,mapped,81,*,high,18,False
+bgsu_loop,J4_9NDD_001,J4,,Purine riboswitch junction,9ndd,A,A,9NDD|1|A|A|40,40,mapped,25,*,high,13,False
+bgsu_loop,J4_9NDD_001,J4,,Purine riboswitch junction,9ndd,A,A,9NDD|1|A|U|41,41,mapped,26,*,high,13,False
+bgsu_loop,J4_9NDD_001,J4,,Purine riboswitch junction,9ndd,A,A,9NDD|1|A|A|42,42,mapped,27,*,high,13,False
+bgsu_loop,J4_9NDD_001,J4,,Purine riboswitch junction,9ndd,A,A,9NDD|1|A|A|43,43,mapped,28,*,high,13,False
+bgsu_loop,J4_9NDD_001,J4,,Purine riboswitch junction,9ndd,A,A,9NDD|1|A|C|44,44,mapped,29,*,high,13,False
+bgsu_loop,J4_9NDD_001,J4,,Purine riboswitch junction,9ndd,A,A,9NDD|1|A|G|63,63,mapped,49,9,medium,13,False
+bgsu_loop,J4_9NDD_001,J4,,Purine riboswitch junction,9ndd,A,A,9NDD|1|A|G|64,64,mapped,50,9,medium,13,False
+bgsu_loop,J4_9NDD_001,J4,,Purine riboswitch junction,9ndd,A,A,9NDD|1|A|C|70,70,mapped,57,*,high,13,False
+bgsu_loop,J4_9NDD_001,J4,,Purine riboswitch junction,9ndd,A,A,9NDD|1|A|U|71,71,mapped,58,*,high,13,False
+bgsu_loop,J4_9NDD_001,J4,,Purine riboswitch junction,9ndd,A,A,9NDD|1|A|A|89,89,mapped,78,*,high,13,False
+bgsu_loop,J4_9NDD_001,J4,,Purine riboswitch junction,9ndd,A,A,9NDD|1|A|A|90,90,mapped,79,*,high,13,False
+bgsu_loop,J4_9NDD_001,J4,,Purine riboswitch junction,9ndd,A,A,9NDD|1|A|C|91,91,mapped,80,*,high,13,False
+bgsu_loop,J4_9NDD_001,J4,,Purine riboswitch junction,9ndd,A,A,9NDD|1|A|U|92,92,mapped,81,*,high,13,False
+bgsu_loop,J4_9NDD_002,J4,,Purine riboswitch junction,9ndd,B,B,9NDD|1|B|A|40,40,mapped,25,*,high,13,False
+bgsu_loop,J4_9NDD_002,J4,,Purine riboswitch junction,9ndd,B,B,9NDD|1|B|U|41,41,mapped,26,*,high,13,False
+bgsu_loop,J4_9NDD_002,J4,,Purine riboswitch junction,9ndd,B,B,9NDD|1|B|A|42,42,mapped,27,*,high,13,False
+bgsu_loop,J4_9NDD_002,J4,,Purine riboswitch junction,9ndd,B,B,9NDD|1|B|A|43,43,mapped,28,*,high,13,False
+bgsu_loop,J4_9NDD_002,J4,,Purine riboswitch junction,9ndd,B,B,9NDD|1|B|C|44,44,mapped,29,*,high,13,False
+bgsu_loop,J4_9NDD_002,J4,,Purine riboswitch junction,9ndd,B,B,9NDD|1|B|G|63,63,mapped,49,9,medium,13,False
+bgsu_loop,J4_9NDD_002,J4,,Purine riboswitch junction,9ndd,B,B,9NDD|1|B|G|64,64,mapped,50,9,medium,13,False
+bgsu_loop,J4_9NDD_002,J4,,Purine riboswitch junction,9ndd,B,B,9NDD|1|B|C|70,70,mapped,57,*,high,13,False
+bgsu_loop,J4_9NDD_002,J4,,Purine riboswitch junction,9ndd,B,B,9NDD|1|B|U|71,71,mapped,58,*,high,13,False
+bgsu_loop,J4_9NDD_002,J4,,Purine riboswitch junction,9ndd,B,B,9NDD|1|B|A|89,89,mapped,78,*,high,13,False
+bgsu_loop,J4_9NDD_002,J4,,Purine riboswitch junction,9ndd,B,B,9NDD|1|B|A|90,90,mapped,79,*,high,13,False
+bgsu_loop,J4_9NDD_002,J4,,Purine riboswitch junction,9ndd,B,B,9NDD|1|B|C|91,91,mapped,80,*,high,13,False
+bgsu_loop,J4_9NDD_002,J4,,Purine riboswitch junction,9ndd,B,B,9NDD|1|B|U|92,92,mapped,81,*,high,13,False
+bgsu_loop,J4_9NDD_003,J4,,Purine riboswitch junction,9ndd,C,C,9NDD|1|C|A|40,40,mapped,25,*,high,13,False
+bgsu_loop,J4_9NDD_003,J4,,Purine riboswitch junction,9ndd,C,C,9NDD|1|C|U|41,41,mapped,26,*,high,13,False
+bgsu_loop,J4_9NDD_003,J4,,Purine riboswitch junction,9ndd,C,C,9NDD|1|C|A|42,42,mapped,27,*,high,13,False
+bgsu_loop,J4_9NDD_003,J4,,Purine riboswitch junction,9ndd,C,C,9NDD|1|C|A|43,43,mapped,28,*,high,13,False
+bgsu_loop,J4_9NDD_003,J4,,Purine riboswitch junction,9ndd,C,C,9NDD|1|C|C|44,44,mapped,29,*,high,13,False
+bgsu_loop,J4_9NDD_003,J4,,Purine riboswitch junction,9ndd,C,C,9NDD|1|C|G|63,63,mapped,49,9,medium,13,False
+bgsu_loop,J4_9NDD_003,J4,,Purine riboswitch junction,9ndd,C,C,9NDD|1|C|G|64,64,mapped,50,9,medium,13,False
+bgsu_loop,J4_9NDD_003,J4,,Purine riboswitch junction,9ndd,C,C,9NDD|1|C|C|70,70,mapped,57,*,high,13,False
+bgsu_loop,J4_9NDD_003,J4,,Purine riboswitch junction,9ndd,C,C,9NDD|1|C|U|71,71,mapped,58,*,high,13,False
+bgsu_loop,J4_9NDD_003,J4,,Purine riboswitch junction,9ndd,C,C,9NDD|1|C|A|89,89,mapped,78,*,high,13,False
+bgsu_loop,J4_9NDD_003,J4,,Purine riboswitch junction,9ndd,C,C,9NDD|1|C|A|90,90,mapped,79,*,high,13,False
+bgsu_loop,J4_9NDD_003,J4,,Purine riboswitch junction,9ndd,C,C,9NDD|1|C|C|91,91,mapped,80,*,high,13,False
+bgsu_loop,J4_9NDD_003,J4,,Purine riboswitch junction,9ndd,C,C,9NDD|1|C|U|92,92,mapped,81,*,high,13,False
+bgsu_loop,J4_9NDD_004,J4,,Purine riboswitch junction,9ndd,D,D,9NDD|1|D|A|40,40,mapped,25,*,high,13,False
+bgsu_loop,J4_9NDD_004,J4,,Purine riboswitch junction,9ndd,D,D,9NDD|1|D|U|41,41,mapped,26,*,high,13,False
+bgsu_loop,J4_9NDD_004,J4,,Purine riboswitch junction,9ndd,D,D,9NDD|1|D|A|42,42,mapped,27,*,high,13,False
+bgsu_loop,J4_9NDD_004,J4,,Purine riboswitch junction,9ndd,D,D,9NDD|1|D|A|43,43,mapped,28,*,high,13,False
+bgsu_loop,J4_9NDD_004,J4,,Purine riboswitch junction,9ndd,D,D,9NDD|1|D|C|44,44,mapped,29,*,high,13,False
+bgsu_loop,J4_9NDD_004,J4,,Purine riboswitch junction,9ndd,D,D,9NDD|1|D|G|63,63,mapped,49,9,medium,13,False
+bgsu_loop,J4_9NDD_004,J4,,Purine riboswitch junction,9ndd,D,D,9NDD|1|D|G|64,64,mapped,50,9,medium,13,False
+bgsu_loop,J4_9NDD_004,J4,,Purine riboswitch junction,9ndd,D,D,9NDD|1|D|C|70,70,mapped,57,*,high,13,False
+bgsu_loop,J4_9NDD_004,J4,,Purine riboswitch junction,9ndd,D,D,9NDD|1|D|U|71,71,mapped,58,*,high,13,False
+bgsu_loop,J4_9NDD_004,J4,,Purine riboswitch junction,9ndd,D,D,9NDD|1|D|A|89,89,mapped,78,*,high,13,False
+bgsu_loop,J4_9NDD_004,J4,,Purine riboswitch junction,9ndd,D,D,9NDD|1|D|A|90,90,mapped,79,*,high,13,False
+bgsu_loop,J4_9NDD_004,J4,,Purine riboswitch junction,9ndd,D,D,9NDD|1|D|C|91,91,mapped,80,*,high,13,False
+bgsu_loop,J4_9NDD_004,J4,,Purine riboswitch junction,9ndd,D,D,9NDD|1|D|U|92,92,mapped,81,*,high,13,False

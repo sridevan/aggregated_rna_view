@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>RNA 2D/3D sync experiment: 1y26 (RF00167)</title>
+<link rel="stylesheet" href="vendor/pdb-rna-viewer/build/pdb-rna-viewer-0.3.0.css">
+<link rel="stylesheet" href="node_modules/pdbe-molstar/build/pdbe-molstar.css">
+<style>
+  body { font-family: system-ui, sans-serif; margin: 16px; color: #0b0b0b; background: #fcfcfb; }
+  .row { display: flex; gap: 16px; }
+  #rna2d { width: 520px; height: 520px; border: 1px solid #ddd; }
+  #mol3d { width: 520px; height: 520px; position: relative; border: 1px solid #ddd; }
+  #log { font-family: ui-monospace, monospace; font-size: 12px; white-space: pre-wrap; background: #f3f2ef; padding: 8px; margin-top: 12px; max-height: 260px; overflow: auto; }
+  input { width: 5em; }
+</style>
+</head>
+<body>
+<h3>1y26 chain X: PDBe RNA viewer (2D) + PDBe Mol* (3D) driven by Rfam RF00167 consensus positions</h3>
+<p>
+  Consensus position <input id="cons" type="number" min="1" max="102" value="50">
+  <button id="go">Select via consensus mapping</button>
+  <button id="clear">Clear both</button>
+  <span id="status"></span>
+</p>
+<div class="row">
+  <div id="rna2d"></div>
+  <div id="mol3d"></div>
+</div>
+<div id="log"></div>
+<script src="vendor/pdb-rna-viewer/build/pdb-rna-viewer-plugin-0.3.0.js"></script>
+<script src="node_modules/pdbe-molstar/build/pdbe-molstar-plugin.js"></script>
+<script>
+const log = (...a) => { const el = document.getElementById('log'); el.textContent += a.map(x => typeof x === 'string' ? x : JSON.stringify(x)).join(' ') + '\n'; el.scrollTop = el.scrollHeight; console.log('[poc]', ...a); };
+window.__poc = { events: [] };
+const MAPPING_URL = '/data/families/RF00167/mappings/1y26_1_X_A.json';
+let mapping, byCons, byPolymer;
+
+// --- 2D: PDBe RNA viewer (label_seq_id based API) ---
+const rna = new PdbRnaViewerPlugin();
+rna.render(document.getElementById('rna2d'), { pdbId: '1y26', entityId: '1', chainId: 'X', subscribeEvents: false });
+
+// --- 3D: PDBe Mol* (label_asym_id + label_seq_id selection API) ---
+const mol = new PDBeMolstarPlugin();
+const molReady = mol.render(document.getElementById('mol3d'), { moleculeId: '1y26', subscribeEvents: true, hideControls: true, bgColor: { r: 252, g: 252, b: 251 } });
+
+fetch(MAPPING_URL).then(r => r.json()).then(m => {
+  mapping = m;
+  byCons = new Map(m.consensus_columns.map(c => [c.rfam_consensus_pos, c]));
+  byPolymer = new Map(m.residues.map(r => [r.polymer_seq_position, r]));
+  log('mapping loaded', { pdb: m.pdb_id, label_asym: m.label_asym_id, auth_asym: m.auth_asym_id, region: m.mapped_region });
+});
+
+function consensusToResidue(pos) {
+  const c = byCons.get(pos);
+  if (!c) return { pos, state: 'missing' };
+  if (c.state !== 'match') return { pos, state: c.state };
+  const r = byPolymer.get(c.polymer_seq_position);
+  return { pos, state: r.has_coordinates ? 'match' : 'unobserved', residue: r };
+}
+function residueToConsensus(label_seq_id) {
+  const r = byPolymer.get(label_seq_id);
+  return r ? { state: r.alignment_state, cons: r.rfam_consensus_pos, anchor: r.insertion_anchor, offset: r.insertion_offset } : null;
+}
+
+async function select(pos, source) {
+  const t = consensusToResidue(pos);
+  document.getElementById('status').textContent = JSON.stringify(t.residue ? { state: t.state, label_seq_id: t.residue.polymer_seq_position, auth: t.residue.author_residue_number, nt: t.residue.nucleotide_parent } : t);
+  log('select consensus', pos, '->', t.state, t.residue ? `label_seq_id ${t.residue.polymer_seq_position} auth ${t.residue.author_residue_number} ${t.residue.nucleotide_parent}` : '');
+  if (t.state !== 'match') return;      // deletion / uncovered / unobserved: nothing highlighted
+  const id = t.residue.polymer_seq_position;
+  if (source !== '2d') { rna.clearSelection(undefined, true); rna.selectResidue(id, undefined, true); }   // doNotReport=true avoids echo
+  if (source !== '3d') {
+    await molReady;
+    await mol.visual.clearSelection();
+    await mol.visual.select({ data: [{ label_asym_id: mapping.label_asym_id, label_seq_id: id, color: { r: 98, g: 80, b: 214 }, focus: true }] });
+  }
+}
+document.getElementById('go').onclick = () => select(+document.getElementById('cons').value, 'ui');
+document.getElementById('clear').onclick = async () => { rna.clearSelection(undefined, true); await mol.visual.clearSelection(); log('cleared'); };
+
+// --- 2D -> consensus -> 3D ---
+document.addEventListener('PDB.RNA.viewer.click', e => {
+  const ids = e.eventData && e.eventData.label_seq_ids;
+  window.__poc.events.push({ type: '2d-click', data: e.eventData });
+  if (!ids || !ids.length) return;
+  const back = residueToConsensus(ids[0]);
+  log('2D click label_seq_ids', ids, '-> consensus', back);
+  if (back && back.state === 'match') { document.getElementById('cons').value = back.cons; select(back.cons, '2d'); }
+});
+// --- 3D -> consensus -> 2D ---
+document.addEventListener('PDB.molstar.click', e => {
+  const d = e.eventData || {};
+  window.__poc.events.push({ type: '3d-click', data: { seq_id: d.seq_id, auth_seq_id: d.auth_seq_id, auth_asym_id: d.auth_asym_id, entity_id: d.entity_id } });
+  if (d.auth_asym_id !== mapping.auth_asym_id || d.seq_id === undefined) return;
+  const back = residueToConsensus(d.seq_id);
+  log('3D click label_seq_id', d.seq_id, 'auth', d.auth_seq_id, '-> consensus', back);
+  if (back && back.state === 'match') { document.getElementById('cons').value = back.cons; select(back.cons, '3d'); }
+});
+window.__poc.select = select; window.__poc.consensusToResidue = consensusToResidue; window.__poc.residueToConsensus = residueToConsensus;
+</script>
+</body>
+</html>

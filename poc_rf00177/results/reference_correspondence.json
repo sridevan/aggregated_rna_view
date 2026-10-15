@@ -1,0 +1,636 @@
+{
+ "motifs": {
+  "530_loop": {
+   "found_in_7k00": true,
+   "ecoli_range": [
+    515,
+    533
+   ],
+   "consensus_positions": [
+    "505",
+    "523"
+   ],
+   "all_match_cols": true,
+   "per_instance": {
+    "4y4o": {
+     "sequence_at_same_consensus": "GUGCCAGCAGCCGCGGUAA",
+     "identity": 1.0,
+     "mean_pp": 1.0
+    },
+    "5mrc": {
+     "sequence_at_same_consensus": "GUGCCAGCAGUCGCGGUAA",
+     "identity": 0.947,
+     "mean_pp": 1.0
+    },
+    "6eri": {
+     "sequence_at_same_consensus": "GUGCCAGCAGCCGCGGUAA",
+     "identity": 1.0,
+     "mean_pp": 1.0
+    },
+    "6yw5": {
+     "sequence_at_same_consensus": "GUGCCAGCAGUCGCGGCAA",
+     "identity": 0.895,
+     "mean_pp": 1.0
+    },
+    "7k00": {
+     "sequence_at_same_consensus": "GUGCCAGCAGCCGCGGUAA",
+     "identity": 1.0,
+     "mean_pp": 1.0
+    },
+    "7p2e": {
+     "sequence_at_same_consensus": "GUGCCAGCCACCGCGGUCA",
+     "identity": 0.842,
+     "mean_pp": 1.0
+    },
+    "8apn": {
+     "sequence_at_same_consensus": "GUGCCAGCAGCCGCGGGAA",
+     "identity": 0.947,
+     "mean_pp": 1.0
+    },
+    "9gyt": {
+     "sequence_at_same_consensus": "GUGCCAGCAGCCGCGGUAA",
+     "identity": 1.0,
+     "mean_pp": 1.0
+    }
+   }
+  },
+  "790_loop": {
+   "found_in_7k00": true,
+   "ecoli_range": [
+    785,
+    797
+   ],
+   "consensus_positions": [
+    "775",
+    "787"
+   ],
+   "all_match_cols": true,
+   "per_instance": {
+    "4y4o": {
+     "sequence_at_same_consensus": "GGAUUAGAUACCC",
+     "identity": 1.0,
+     "mean_pp": 1.0
+    },
+    "5mrc": {
+     "sequence_at_same_consensus": "GGAUUCGAUACCC",
+     "identity": 0.923,
+     "mean_pp": 1.0
+    },
+    "6eri": {
+     "sequence_at_same_consensus": "GGAUUAGAUACCC",
+     "identity": 1.0,
+     "mean_pp": 1.0
+    },
+    "6yw5": {
+     "sequence_at_same_consensus": "GGAUUAGAUACCC",
+     "identity": 1.0,
+     "mean_pp": 1.0
+    },
+    "7k00": {
+     "sequence_at_same_consensus": "GGAUUAGAUACCC",
+     "identity": 1.0,
+     "mean_pp": 1.0
+    },
+    "7p2e": {
+     "sequence_at_same_consensus": "GGAUUAGAUACCC",
+     "identity": 1.0,
+     "mean_pp": 1.0
+    },
+    "8apn": {
+     "sequence_at_same_consensus": "GGAUUAGAUACCC",
+     "identity": 1.0,
+     "mean_pp": 1.0
+    },
+    "9gyt": {
+     "sequence_at_same_consensus": "GGAUUAGAUACCC",
+     "identity": 1.0,
+     "mean_pp": 1.0
+    }
+   }
+  },
+  "1400_region": {
+   "found_in_7k00": true,
+   "ecoli_range": [
+    1489,
+    1505
+   ],
+   "consensus_positions": [
+    "1480",
+    "1496"
+   ],
+   "all_match_cols": true,
+   "per_instance": {
+    "4y4o": {
+     "sequence_at_same_consensus": "GCGAAGUCGUAACAAGG",
+     "identity": 0.941,
+     "mean_pp": 1.0
+    },
+    "5mrc": {
+     "sequence_at_same_consensus": "GCGAAGUUGAAAUACAG",
+     "identity": 0.647,
+     "mean_pp": 1.0
+    },
+    "6eri": {
+     "sequence_at_same_consensus": "GUGAAGUCGUAACAAGG",
+     "identity": 1.0,
+     "mean_pp": 1.0
+    },
+    "6yw5": {
+     "sequence_at_same_consensus": "GUUAAGUCGAAAUACGG",
+     "identity": 0.765,
+     "mean_pp": 1.0
+    },
+    "7k00": {
+     "sequence_at_same_consensus": "GUGAAGUCGUAACAAGG",
+     "identity": 1.0,
+     "mean_pp": 1.0
+    },
+    "7p2e": {
+     "sequence_at_same_consensus": "GACAAGUCGUAACAUGG",
+     "identity": 0.824,
+     "mean_pp": 1.0
+    },
+    "8apn": {
+     "sequence_at_same_consensus": "-----------------",
+     "identity": 0.0,
+     "mean_pp": 0.0
+    },
+    "9gyt": {
+     "sequence_at_same_consensus": "GUGAAGUCGUAACAAGG",
+     "identity": 1.0,
+     "mean_pp": 1.0
+    }
+   }
+  },
+  "anti_SD_3prime": {
+   "found_in_7k00": true,
+   "ecoli_range": [
+    1530,
+    1542
+   ],
+   "consensus_positions": [
+    "1521",
+    "1533"
+   ],
+   "all_match_cols": true,
+   "per_instance": {
+    "4y4o": {
+     "sequence_at_same_consensus": "GAUCACCUCCUUU",
+     "identity": 0.923,
+     "mean_pp": 1.0
+    },
+    "5mrc": {
+     "sequence_at_same_consensus": "GCUUAUAAAUAUC",
+     "identity": 0.308,
+     "mean_pp": 1.0
+    },
+    "6eri": {
+     "sequence_at_same_consensus": "GAU----------",
+     "identity": 0.231,
+     "mean_pp": 1.0
+    },
+    "6yw5": {
+     "sequence_at_same_consensus": "ACUUAUCAAUGUU",
+     "identity": 0.308,
+     "mean_pp": 1.0
+    },
+    "7k00": {
+     "sequence_at_same_consensus": "GAUCACCUCCUUA",
+     "identity": 1.0,
+     "mean_pp": 1.0
+    },
+    "7p2e": {
+     "sequence_at_same_consensus": "GA-----------",
+     "identity": 0.154,
+     "mean_pp": 1.0
+    },
+    "8apn": {
+     "sequence_at_same_consensus": "-------------",
+     "identity": 0.0,
+     "mean_pp": 0.0
+    },
+    "9gyt": {
+     "sequence_at_same_consensus": "GAUUAUCC-----",
+     "identity": 0.385,
+     "mean_pp": 0.981
+    }
+   }
+  },
+  "h44_decoding_1492_1493": {
+   "found_in_7k00": true,
+   "ecoli_range": [
+    1494,
+    1507
+   ],
+   "consensus_positions": [
+    "1485",
+    "1498"
+   ],
+   "all_match_cols": true,
+   "per_instance": {
+    "4y4o": {
+     "sequence_at_same_consensus": "GUCGUAACAAGGUA",
+     "identity": 1.0,
+     "mean_pp": 1.0
+    },
+    "5mrc": {
+     "sequence_at_same_consensus": "GUUGAAAUACAGUU",
+     "identity": 0.571,
+     "mean_pp": 1.0
+    },
+    "6eri": {
+     "sequence_at_same_consensus": "GUCGUAACAAGGUA",
+     "identity": 1.0,
+     "mean_pp": 1.0
+    },
+    "6yw5": {
+     "sequence_at_same_consensus": "GUCGAAAUACGGUU",
+     "identity": 0.714,
+     "mean_pp": 1.0
+    },
+    "7k00": {
+     "sequence_at_same_consensus": "GUCGUAACAAGGUA",
+     "identity": 1.0,
+     "mean_pp": 1.0
+    },
+    "7p2e": {
+     "sequence_at_same_consensus": "GUCGUAACAUGGUA",
+     "identity": 0.929,
+     "mean_pp": 1.0
+    },
+    "8apn": {
+     "sequence_at_same_consensus": "--------------",
+     "identity": 0.0,
+     "mean_pp": 0.0
+    },
+    "9gyt": {
+     "sequence_at_same_consensus": "GUCGUAACAAGGUA",
+     "identity": 1.0,
+     "mean_pp": 1.0
+    }
+   }
+  }
+ },
+ "per_instance": {
+  "4y4o": {
+   "identity_to_ecoli_overall": 0.763,
+   "pair_consistency_overall": 0.95,
+   "n_pairs_evaluable": 457,
+   "flagged_windows": []
+  },
+  "5mrc": {
+   "identity_to_ecoli_overall": 0.518,
+   "pair_consistency_overall": 0.922,
+   "n_pairs_evaluable": 395,
+   "flagged_windows": [
+    [
+     51,
+     100,
+     "low_posterior"
+    ],
+    [
+     101,
+     150,
+     "low_identity_to_ecoli"
+    ],
+    [
+     151,
+     200,
+     "low_identity_to_ecoli;low_posterior"
+    ],
+    [
+     201,
+     250,
+     "low_identity_to_ecoli"
+    ],
+    [
+     301,
+     350,
+     "low_identity_to_ecoli"
+    ],
+    [
+     401,
+     450,
+     "sparse_coverage;low_identity_to_ecoli;low_posterior;long_insertion"
+    ],
+    [
+     451,
+     500,
+     "low_identity_to_ecoli;low_posterior;long_insertion"
+    ],
+    [
+     601,
+     650,
+     "sparse_coverage;low_identity_to_ecoli"
+    ],
+    [
+     651,
+     700,
+     "low_identity_to_ecoli"
+    ],
+    [
+     701,
+     750,
+     "low_identity_to_ecoli"
+    ],
+    [
+     801,
+     850,
+     "low_identity_to_ecoli"
+    ],
+    [
+     1001,
+     1050,
+     "low_identity_to_ecoli;low_posterior"
+    ],
+    [
+     1101,
+     1150,
+     "low_identity_to_ecoli;low_posterior"
+    ],
+    [
+     1201,
+     1250,
+     "low_identity_to_ecoli"
+    ],
+    [
+     1251,
+     1300,
+     "low_identity_to_ecoli;low_posterior;long_insertion"
+    ],
+    [
+     1401,
+     1450,
+     "low_identity_to_ecoli;low_posterior;long_insertion"
+    ],
+    [
+     1451,
+     1500,
+     "low_identity_to_ecoli"
+    ]
+   ]
+  },
+  "6eri": {
+   "identity_to_ecoli_overall": 0.761,
+   "pair_consistency_overall": 0.937,
+   "n_pairs_evaluable": 446,
+   "flagged_windows": [
+    [
+     51,
+     100,
+     "low_posterior"
+    ],
+    [
+     801,
+     850,
+     "low_identity_to_ecoli"
+    ]
+   ]
+  },
+  "6yw5": {
+   "identity_to_ecoli_overall": 0.574,
+   "pair_consistency_overall": 0.916,
+   "n_pairs_evaluable": 403,
+   "flagged_windows": [
+    [
+     51,
+     100,
+     "long_insertion"
+    ],
+    [
+     101,
+     150,
+     "low_identity_to_ecoli"
+    ],
+    [
+     151,
+     200,
+     "low_identity_to_ecoli;low_posterior;pairing_inconsistent"
+    ],
+    [
+     201,
+     250,
+     "low_identity_to_ecoli"
+    ],
+    [
+     401,
+     450,
+     "low_identity_to_ecoli;long_insertion"
+    ],
+    [
+     451,
+     500,
+     "low_identity_to_ecoli;low_posterior"
+    ],
+    [
+     601,
+     650,
+     "sparse_coverage;low_identity_to_ecoli"
+    ],
+    [
+     801,
+     850,
+     "low_identity_to_ecoli"
+    ],
+    [
+     1001,
+     1050,
+     "long_insertion"
+    ],
+    [
+     1101,
+     1150,
+     "low_identity_to_ecoli;low_posterior"
+    ],
+    [
+     1251,
+     1300,
+     "low_identity_to_ecoli"
+    ],
+    [
+     1401,
+     1450,
+     "low_identity_to_ecoli;long_insertion"
+    ],
+    [
+     1501,
+     1533,
+     "low_identity_to_ecoli"
+    ]
+   ]
+  },
+  "7k00": {
+   "identity_to_ecoli_overall": 1.0,
+   "pair_consistency_overall": 0.952,
+   "n_pairs_evaluable": 455,
+   "flagged_windows": []
+  },
+  "7p2e": {
+   "identity_to_ecoli_overall": 0.548,
+   "pair_consistency_overall": 0.917,
+   "n_pairs_evaluable": 204,
+   "flagged_windows": [
+    [
+     1,
+     50,
+     "low_identity_to_ecoli"
+    ],
+    [
+     51,
+     100,
+     "sparse_coverage"
+    ],
+    [
+     201,
+     250,
+     "long_insertion"
+    ],
+    [
+     251,
+     300,
+     "long_insertion"
+    ],
+    [
+     301,
+     350,
+     "sparse_coverage;long_insertion"
+    ],
+    [
+     401,
+     450,
+     "sparse_coverage;low_identity_to_ecoli"
+    ],
+    [
+     451,
+     500,
+     "sparse_coverage;low_identity_to_ecoli"
+    ],
+    [
+     551,
+     600,
+     "sparse_coverage"
+    ],
+    [
+     601,
+     650,
+     "long_insertion"
+    ],
+    [
+     651,
+     700,
+     "long_insertion"
+    ],
+    [
+     701,
+     750,
+     "sparse_coverage;low_identity_to_ecoli;low_posterior;long_insertion"
+    ],
+    [
+     801,
+     850,
+     "sparse_coverage;low_identity_to_ecoli"
+    ],
+    [
+     1001,
+     1050,
+     "sparse_coverage;low_identity_to_ecoli"
+    ],
+    [
+     1051,
+     1100,
+     "low_posterior"
+    ],
+    [
+     1101,
+     1150,
+     "sparse_coverage;low_identity_to_ecoli;low_posterior"
+    ],
+    [
+     1251,
+     1300,
+     "sparse_coverage;low_identity_to_ecoli"
+    ],
+    [
+     1301,
+     1350,
+     "low_identity_to_ecoli"
+    ],
+    [
+     1401,
+     1450,
+     "sparse_coverage;low_identity_to_ecoli;low_posterior"
+    ]
+   ]
+  },
+  "8apn": {
+   "identity_to_ecoli_overall": 0.569,
+   "pair_consistency_overall": 0.897,
+   "n_pairs_evaluable": 78,
+   "flagged_windows": [
+    [
+     451,
+     500,
+     "sparse_coverage"
+    ],
+    [
+     551,
+     600,
+     "low_identity_to_ecoli"
+    ],
+    [
+     601,
+     650,
+     "sparse_coverage;low_identity_to_ecoli;low_posterior;pairing_inconsistent"
+    ],
+    [
+     701,
+     750,
+     "low_identity_to_ecoli"
+    ],
+    [
+     801,
+     850,
+     "sparse_coverage"
+    ]
+   ]
+  },
+  "9gyt": {
+   "identity_to_ecoli_overall": 0.737,
+   "pair_consistency_overall": 0.924,
+   "n_pairs_evaluable": 423,
+   "flagged_windows": [
+    [
+     51,
+     100,
+     "long_insertion"
+    ],
+    [
+     151,
+     200,
+     "sparse_coverage"
+    ],
+    [
+     601,
+     650,
+     "low_identity_to_ecoli"
+    ],
+    [
+     801,
+     850,
+     "low_identity_to_ecoli"
+    ],
+    [
+     1101,
+     1150,
+     "long_insertion"
+    ],
+    [
+     1401,
+     1450,
+     "long_insertion"
+    ]
+   ]
+  }
+ },
+ "n_consensus_pairs_in_SS_cons": 462
+}

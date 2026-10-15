@@ -1,0 +1,421 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "type": "object",
+ "properties": {
+  "schema_version": {
+   "const": "1.0"
+  },
+  "rfam_acc": {
+   "type": "string"
+  },
+  "clen": {
+   "type": "integer"
+  },
+  "provenance": {
+   "type": "object",
+   "properties": {
+    "rfam_acc": {
+     "type": "string"
+    },
+    "rfam_release": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "cm_checksum": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "cm_clen": {
+     "type": "integer"
+    },
+    "annotation_pipeline_version": {
+     "type": "string"
+    },
+    "generated": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "rfam_acc",
+    "generated"
+   ]
+  },
+  "source": {
+   "type": "object",
+   "properties": {
+    "name": {
+     "type": "string"
+    },
+    "loops_url_template": {
+     "type": "string"
+    },
+    "motifs_url_template": {
+     "type": "string"
+    },
+    "motif_atlas_release": {
+     "type": "object",
+     "properties": {}
+    }
+   },
+   "required": [
+    "loops_url_template",
+    "motifs_url_template"
+   ]
+  },
+  "counting_rules": {
+   "type": "object",
+   "properties": {}
+  },
+  "counts": {
+   "type": "object",
+   "properties": {
+    "n_loops": {
+     "type": "integer"
+    },
+    "n_with_motif_group": {
+     "type": "integer"
+    },
+    "n_distinct_motif_groups": {
+     "type": "integer"
+    },
+    "by_type": {
+     "type": "object",
+     "properties": {}
+    },
+    "n_pdb_entries_evaluated": {
+     "type": "integer"
+    },
+    "n_pdb_entries_unavailable": {
+     "type": "integer"
+    }
+   },
+   "required": [
+    "n_loops",
+    "n_with_motif_group",
+    "n_distinct_motif_groups",
+    "by_type"
+   ]
+  },
+  "entry_sources": {
+   "type": "object",
+   "properties": {}
+  },
+  "motif_page_only": {
+   "type": "array",
+   "items": {}
+  },
+  "loops": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "loop_id": {
+      "type": "string"
+     },
+     "pdb_id": {
+      "type": "string"
+     },
+     "loop_type": {
+      "type": "string"
+     },
+     "loop_url": {
+      "type": "string"
+     },
+     "atlas_status": {
+      "enum": [
+       "valid",
+       "problematic",
+       "not_listed"
+      ]
+     },
+     "motif_group": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "motif_group_url": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "annotation_text": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "problem": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "location": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "n_nucleotides": {
+      "type": "integer"
+     },
+     "chains": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "auth_asym_id": {
+         "type": "string"
+        },
+        "label_asym_id": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "seq_name": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "entity_id": {
+         "type": [
+          "integer",
+          "null"
+         ]
+        },
+        "in_family": {
+         "type": "boolean"
+        }
+       },
+       "required": [
+        "auth_asym_id",
+        "in_family"
+       ]
+      }
+     },
+     "multi_chain": {
+      "type": "boolean"
+     },
+     "instances": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "strands": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "auth_asym_id": {
+         "type": "string"
+        },
+        "start_unit_id": {
+         "type": "string"
+        },
+        "end_unit_id": {
+         "type": "string"
+        },
+        "nucleotide_indices": {
+         "type": "array",
+         "items": {
+          "type": "integer"
+         }
+        },
+        "n_nucleotides": {
+         "type": "integer"
+        }
+       }
+      }
+     },
+     "nucleotides": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "unit_id": {
+         "type": "string"
+        },
+        "seq_name": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "pdb_id": {
+         "type": "string"
+        },
+        "label_asym_id": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "auth_asym_id": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "label_seq_id": {
+         "type": [
+          "integer",
+          "null"
+         ]
+        },
+        "author_residue_number": {
+         "type": [
+          "integer",
+          "null"
+         ]
+        },
+        "insertion_code": {
+         "type": "string"
+        },
+        "residue_name": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "alignment_state": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "rfam_consensus_pos": {
+         "type": [
+          "integer",
+          "null"
+         ]
+        },
+        "pp_char": {
+         "type": "string"
+        },
+        "pp_category": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "has_coordinates": {
+         "type": [
+          "boolean",
+          "null"
+         ]
+        },
+        "mapping_status": {
+         "type": "string",
+         "enum": [
+          "mapped",
+          "mapped_no_coordinates",
+          "insert",
+          "local_end",
+          "outside_mapped_region",
+          "unresolved_identifier"
+         ]
+        },
+        "resolution": {
+         "enum": [
+          "resolved",
+          "chain_not_in_family",
+          "residue_not_found"
+         ]
+        }
+       },
+       "required": [
+        "unit_id",
+        "mapping_status",
+        "rfam_consensus_pos",
+        "resolution"
+       ]
+      }
+     },
+     "consensus_positions": {
+      "type": "array",
+      "items": {
+       "type": "integer"
+      }
+     },
+     "mapping_status_counts": {
+      "type": "object",
+      "properties": {}
+     },
+     "pp_category_counts": {
+      "type": "object",
+      "properties": {}
+     },
+     "source": {
+      "type": "object",
+      "properties": {
+       "loops_url": {
+        "type": "string"
+       },
+       "motifs_url": {
+        "type": "string"
+       },
+       "retrieved": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "motif_atlas_release": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     },
+     "motif_group_assignment": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "motif_group_via_loop_id": {
+      "type": [
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "loop_id",
+     "pdb_id",
+     "loop_type",
+     "atlas_status",
+     "motif_group",
+     "n_nucleotides",
+     "chains",
+     "multi_chain",
+     "instances",
+     "strands",
+     "nucleotides",
+     "consensus_positions"
+    ]
+   }
+  }
+ },
+ "required": [
+  "schema_version",
+  "rfam_acc",
+  "clen",
+  "provenance",
+  "source",
+  "counts",
+  "entry_sources",
+  "loops"
+ ],
+ "title": "MotifAtlasLoops"
+}

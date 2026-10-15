@@ -1,0 +1,146 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "FamilyInstances",
+ "type": "array",
+ "items": {
+  "type": "object",
+  "required": [
+   "pdb_id",
+   "entity_id",
+   "label_asym_id",
+   "auth_asym_id",
+   "seq_name",
+   "sequence_key",
+   "mapping_file",
+   "map_start",
+   "map_end",
+   "mapped_length",
+   "n_match",
+   "n_insert",
+   "n_local_end",
+   "n_match_with_coordinates",
+   "fraction_clen_matched",
+   "is_clan_best"
+  ],
+  "properties": {
+   "pdb_id": {
+    "type": "string"
+   },
+   "entity_id": {
+    "type": "integer"
+   },
+   "label_asym_id": {
+    "type": "string"
+   },
+   "auth_asym_id": {
+    "type": "string"
+   },
+   "seq_name": {
+    "type": "string"
+   },
+   "sequence_key": {
+    "type": "string"
+   },
+   "mapping_file": {
+    "type": "string"
+   },
+   "organism": {
+    "type": [
+     "string",
+     "null"
+    ]
+   },
+   "tax_id": {
+    "type": [
+     "integer",
+     "string",
+     "null"
+    ]
+   },
+   "experimental_method": {
+    "type": [
+     "string",
+     "null"
+    ]
+   },
+   "resolution": {
+    "type": [
+     "number",
+     "null"
+    ]
+   },
+   "release_year": {
+    "type": [
+     "integer",
+     "null"
+    ]
+   },
+   "map_start": {
+    "type": "integer"
+   },
+   "map_end": {
+    "type": "integer"
+   },
+   "mapped_length": {
+    "type": "integer"
+   },
+   "rfam_bit_score": {
+    "type": [
+     "number",
+     "null"
+    ]
+   },
+   "is_clan_best": {
+    "type": [
+     "boolean",
+     "null"
+    ]
+   },
+   "n_match": {
+    "type": "integer"
+   },
+   "n_insert": {
+    "type": "integer"
+   },
+   "n_local_end": {
+    "type": "integer"
+   },
+   "n_match_with_coordinates": {
+    "type": "integer"
+   },
+   "fraction_clen_matched": {
+    "type": "number"
+   },
+   "validation_ok": {
+    "type": [
+     "boolean",
+     "null"
+    ]
+   },
+   "organism_species": {
+    "type": [
+     "string",
+     "null"
+    ]
+   },
+   "species_tax_id": {
+    "type": [
+     "string",
+     "null"
+    ]
+   },
+   "organism_rank": {
+    "type": [
+     "string",
+     "null"
+    ]
+   },
+   "pdbe_2d_available": {
+    "type": [
+     "boolean",
+     "null"
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,72 @@
+{
+ "CLEN": 102,
+ "alignment_length": 102,
+ "n_insert_columns": 0,
+ "n_local_end_columns": 0,
+ "per_seq": {
+  "6p2h_1_A_A/6-60": {
+   "n_residues_aligned": 55,
+   "n_match": 55,
+   "cons_min": 26,
+   "cons_max": 80,
+   "n_insert": 0,
+   "n_local_end": 0,
+   "n_deletions_within_span": 0,
+   "deleted_cons_positions": []
+  },
+  "1y26_1_X_A/3-69": {
+   "n_residues_aligned": 67,
+   "n_match": 67,
+   "cons_min": 19,
+   "cons_max": 87,
+   "n_insert": 0,
+   "n_local_end": 0,
+   "n_deletions_within_span": 2,
+   "deleted_cons_positions": [
+    64,
+    72
+   ]
+  },
+  "3ds7_1_B_B/1-67": {
+   "n_residues_aligned": 67,
+   "n_match": 67,
+   "cons_min": 19,
+   "cons_max": 87,
+   "n_insert": 0,
+   "n_local_end": 0,
+   "n_deletions_within_span": 2,
+   "deleted_cons_positions": [
+    64,
+    72
+   ]
+  },
+  "4fe5_1_B_A/1-67": {
+   "n_residues_aligned": 67,
+   "n_match": 67,
+   "cons_min": 19,
+   "cons_max": 87,
+   "n_insert": 0,
+   "n_local_end": 0,
+   "n_deletions_within_span": 2,
+   "deleted_cons_positions": [
+    64,
+    72
+   ]
+  },
+  "9nbh_1_A_A/16-113": {
+   "n_residues_aligned": 98,
+   "n_match": 98,
+   "cons_min": 1,
+   "cons_max": 102,
+   "n_insert": 0,
+   "n_local_end": 0,
+   "n_deletions_within_span": 4,
+   "deleted_cons_positions": [
+    39,
+    51,
+    64,
+    72
+   ]
+  }
+ }
+}

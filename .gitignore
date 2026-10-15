@@ -1,0 +1,58 @@
+
+# macOS
+.DS_Store
+.AppleDouble
+
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+*.pyc
+
+
+# Downloaded API caches
+cache/
+**/cache/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# Research scratch outputs
+experiments/**/tmp/
+experiments/**/scratch/
+
+# Frontend dependencies and generated outputs
+node_modules/
+dist/
+playwright-report/
+test-results/
+coverage/
+.vite/
+
+# Cached API downloads
+cache/
+**/cache/
+
+# macOS
+.DS_Store
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Experimental upstream RNA viewer repository
+/experiments/rna2d_poc/vendor/pdb-rna-viewer/
+

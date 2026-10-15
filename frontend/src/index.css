@@ -1,0 +1,7 @@
+@import "tailwindcss";
+:root { color-scheme: light; }
+body { @apply bg-stone-50 text-stone-900 antialiased; }
+.msp-plugin { position: absolute; inset: 0; }
+/* 20-column grid for the 65/35 split (Tailwind only ships up to 12) */
+.lg\:grid-cols-20 { }
+@media (min-width: 64rem) { .lg\:grid-cols-20 { grid-template-columns: repeat(20, minmax(0, 1fr)); } .lg\:col-span-13 { grid-column: span 13 / span 13; } }

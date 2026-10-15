@@ -1,0 +1,321 @@
+{
+ "mmcif_lookup": {
+  "7K00|1|A": {
+   "scheme_rows": 1542,
+   "asym_ids_for_strand": {
+    "A": 1542
+   },
+   "ambiguous_keys": 0
+  },
+  "5J7L|1|AA": {
+   "scheme_rows": 1534,
+   "asym_ids_for_strand": {
+    "A": 1534
+   },
+   "ambiguous_keys": 0
+  },
+  "1J5E|1|A": {
+   "scheme_rows": 1522,
+   "asym_ids_for_strand": {
+    "A": 1522
+   },
+   "ambiguous_keys": 0
+  },
+  "4Y4O|1|1a": {
+   "scheme_rows": 1521,
+   "asym_ids_for_strand": {
+    "FA": 1521
+   },
+   "ambiguous_keys": 0
+  },
+  "6ERI|1|BA": {
+   "scheme_rows": 1481,
+   "asym_ids_for_strand": {
+    "HA": 1481
+   },
+   "ambiguous_keys": 0
+  },
+  "7P2E|1|A": {
+   "scheme_rows": 955,
+   "asym_ids_for_strand": {
+    "A": 955
+   },
+   "ambiguous_keys": 0
+  },
+  "5MRC|1|aa": {
+   "scheme_rows": 1649,
+   "asym_ids_for_strand": {
+    "WB": 1649
+   },
+   "ambiguous_keys": 0
+  },
+  "6YW5|1|aa": {
+   "scheme_rows": 1864,
+   "asym_ids_for_strand": {
+    "KA": 1864
+   },
+   "ambiguous_keys": 0
+  },
+  "9GYT|1|2": {
+   "scheme_rows": 1766,
+   "asym_ids_for_strand": {
+    "IC": 1766
+   },
+   "ambiguous_keys": 0
+  },
+  "8APN|1|B3": {
+   "scheme_rows": 379,
+   "asym_ids_for_strand": {
+    "JB": 379
+   },
+   "ambiguous_keys": 0
+  }
+ },
+ "seq2unit_crosscheck": {
+  "7K00|1|A": {
+   "seqpos_equals_mmcif_seq_id": 1519,
+   "differs": 0,
+   "unobserved_NULL": 23,
+   "unresolved": 0,
+   "examples_differ": []
+  },
+  "5J7L|1|AA": {
+   "seqpos_equals_mmcif_seq_id": 1534,
+   "differs": 0,
+   "unobserved_NULL": 0,
+   "unresolved": 0,
+   "examples_differ": []
+  },
+  "1J5E|1|A": {
+   "seqpos_equals_mmcif_seq_id": 1513,
+   "differs": 0,
+   "unobserved_NULL": 9,
+   "unresolved": 0,
+   "examples_differ": []
+  },
+  "4Y4O|1|1a": {
+   "seqpos_equals_mmcif_seq_id": 1500,
+   "differs": 0,
+   "unobserved_NULL": 21,
+   "unresolved": 0,
+   "examples_differ": []
+  },
+  "6ERI|1|BA": {
+   "seqpos_equals_mmcif_seq_id": 1481,
+   "differs": 0,
+   "unobserved_NULL": 0,
+   "unresolved": 0,
+   "examples_differ": []
+  },
+  "7P2E|1|A": {
+   "seqpos_equals_mmcif_seq_id": 964,
+   "differs": 0,
+   "unobserved_NULL": 0,
+   "unresolved": 0,
+   "examples_differ": []
+  },
+  "5MRC|1|aa": {
+   "seqpos_equals_mmcif_seq_id": 1501,
+   "differs": 0,
+   "unobserved_NULL": 148,
+   "unresolved": 0,
+   "examples_differ": []
+  },
+  "6YW5|1|aa": {
+   "seqpos_equals_mmcif_seq_id": 1435,
+   "differs": 0,
+   "unobserved_NULL": 429,
+   "unresolved": 0,
+   "examples_differ": []
+  },
+  "9GYT|1|2": {
+   "seqpos_equals_mmcif_seq_id": 1766,
+   "differs": 0,
+   "unobserved_NULL": 0,
+   "unresolved": 0,
+   "examples_differ": []
+  },
+  "8APN|1|B3": {
+   "seqpos_equals_mmcif_seq_id": 379,
+   "differs": 0,
+   "unobserved_NULL": 0,
+   "unresolved": 0,
+   "examples_differ": []
+  }
+ },
+ "files": {
+  "pair_5MRC_1_aa~6YW5_1_aa.txt": {
+   "rows": 1648,
+   "chains": [
+    "5MRC|1|aa",
+    "6YW5|1|aa"
+   ],
+   "unit_resolution": {
+    "NULL": 386,
+    "ok": 2910
+   }
+  },
+  "pair_6ERI_1_BA~9GYT_1_2.txt": {
+   "rows": 1852,
+   "chains": [
+    "6ERI|1|BA",
+    "9GYT|1|2"
+   ],
+   "unit_resolution": {
+    "ok": 3240,
+    "NULL": 464
+   }
+  },
+  "pair_7K00_A__1J5E_1_A.txt": {
+   "rows": 1551,
+   "chains": [
+    "7K00|1|A",
+    "1J5E|1|A"
+   ],
+   "unit_resolution": {
+    "ok": 3030,
+    "NULL": 72
+   }
+  },
+  "pair_7K00_A__4Y4O_1_1a.txt": {
+   "rows": 1546,
+   "chains": [
+    "7K00|1|A",
+    "4Y4O|1|1a"
+   ],
+   "unit_resolution": {
+    "ok": 3019,
+    "NULL": 73
+   }
+  },
+  "pair_7K00_A__5J7L_1_AA.txt": {
+   "rows": 1534,
+   "chains": [
+    "7K00|1|A",
+    "5J7L|1|AA"
+   ],
+   "unit_resolution": {
+    "NULL": 15,
+    "ok": 3053
+   }
+  },
+  "pair_7K00_A__5MRC_1_aa.txt": {
+   "rows": 1722,
+   "chains": [
+    "7K00|1|A",
+    "5MRC|1|aa"
+   ],
+   "unit_resolution": {
+    "ok": 3005,
+    "NULL": 439
+   }
+  },
+  "pair_7K00_A__6ERI_1_BA.txt": {
+   "rows": 1530,
+   "chains": [
+    "7K00|1|A",
+    "6ERI|1|BA"
+   ],
+   "unit_resolution": {
+    "NULL": 61,
+    "ok": 2999
+   }
+  },
+  "pair_7K00_A__6YW5_1_aa.txt": {
+   "rows": 1648,
+   "chains": [
+    "7K00|1|A",
+    "6YW5|1|aa"
+   ],
+   "unit_resolution": {
+    "ok": 2943,
+    "NULL": 353
+   }
+  },
+  "pair_7K00_A__7P2E_1_A.txt": {
+   "rows": 1771,
+   "chains": [
+    "7K00|1|A",
+    "7P2E|1|A"
+   ],
+   "unit_resolution": {
+    "ok": 2465,
+    "NULL": 1077
+   }
+  },
+  "pair_7K00_A__8APN_1_B3.txt": {
+   "rows": 1531,
+   "chains": [
+    "7K00|1|A",
+    "8APN|1|B3"
+   ],
+   "unit_resolution": {
+    "ok": 1898,
+    "NULL": 1164
+   }
+  },
+  "pair_7K00_A__9GYT_1_2.txt": {
+   "rows": 1888,
+   "chains": [
+    "7K00|1|A",
+    "9GYT|1|2"
+   ],
+   "unit_resolution": {
+    "NULL": 497,
+    "ok": 3279
+   }
+  },
+  "pair_7P2E_1_A~9GYT_1_2.txt": {
+   "rows": 1994,
+   "chains": [
+    "7P2E|1|A",
+    "9GYT|1|2"
+   ],
+   "unit_resolution": {
+    "NULL": 1282,
+    "ok": 2706
+   }
+  },
+  "pair_9GYT_1_2~6YW5_1_aa.txt": {
+   "rows": 1829,
+   "chains": [
+    "9GYT|1|2",
+    "6YW5|1|aa"
+   ],
+   "unit_resolution": {
+    "ok": 3184,
+    "NULL": 474
+   }
+  },
+  "multi_all10_column.txt": {
+   "rows": 2319,
+   "chains": [
+    "7K00|1|A",
+    "5J7L|1|AA",
+    "1J5E|1|A",
+    "4Y4O|1|1a",
+    "6ERI|1|BA",
+    "7P2E|1|A",
+    "5MRC|1|aa",
+    "6YW5|1|aa",
+    "9GYT|1|2",
+    "8APN|1|B3"
+   ],
+   "unit_resolution": {
+    "NULL": 9651,
+    "ok": 13539
+   }
+  },
+  "bgsu_column_5J7L_1J5E.txt": {
+   "rows": 1561,
+   "chains": [
+    "5J7L|1|AA",
+    "1J5E|1|A"
+   ],
+   "unit_resolution": {
+    "ok": 3045,
+    "NULL": 77
+   }
+  }
+ }
+}

@@ -1,0 +1,733 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "type": "object",
+ "properties": {
+  "schema_version": {
+   "const": "1.0"
+  },
+  "rfam_acc": {
+   "type": "string"
+  },
+  "clen": {
+   "type": "integer"
+  },
+  "provenance": {
+   "type": "object",
+   "properties": {
+    "rfam_acc": {
+     "type": "string"
+    },
+    "rfam_release": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "cm_checksum": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "cm_clen": {
+     "type": "integer"
+    },
+    "annotation_pipeline_version": {
+     "type": "string"
+    },
+    "generated": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "rfam_acc",
+    "generated"
+   ]
+  },
+  "n_instances": {
+   "type": "integer"
+  },
+  "n_entries": {
+   "type": "integer"
+  },
+  "n_entry_entities": {
+   "type": "integer"
+  },
+  "source_availability": {
+   "type": "object",
+   "properties": {}
+  },
+  "terminology": {
+   "type": "object",
+   "properties": {}
+  },
+  "tracks": {
+   "type": "object",
+   "properties": {}
+  },
+  "positions": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "rfam_consensus_pos": {
+      "type": "integer"
+     },
+     "observable": {
+      "type": "object",
+      "properties": {
+       "n_instances": {
+        "type": "integer"
+       },
+       "n_entries": {
+        "type": "integer"
+       },
+       "n_entry_entities": {
+        "type": "integer"
+       }
+      },
+      "required": [
+       "n_instances",
+       "n_entries",
+       "n_entry_entities"
+      ]
+     },
+     "reference_structural_elements": {
+      "type": "object",
+      "properties": {
+       "element": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "reference": {
+        "type": "string"
+       },
+       "instance_transfer": {
+        "type": "object",
+        "properties": {
+         "n_instances_with_label": {
+          "type": "integer"
+         },
+         "n_instances_evaluated": {
+          "type": "integer"
+         },
+         "n_instances_unavailable": {
+          "type": "integer"
+         },
+         "n_observable_instances": {
+          "type": "integer"
+         }
+        }
+       }
+      },
+      "required": [
+       "element",
+       "reference"
+      ]
+     },
+     "hairpin_loops": {
+      "type": "object",
+      "properties": {
+       "n_loop_observations": {
+        "type": "integer"
+       },
+       "n_instances": {
+        "type": "integer"
+       },
+       "n_entries": {
+        "type": "integer"
+       },
+       "n_distinct_motif_groups": {
+        "type": "integer"
+       },
+       "by_motif_group": {
+        "type": "object",
+        "properties": {}
+       },
+       "n_loops_without_motif_group": {
+        "type": "integer"
+       },
+       "loop_ids": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "confidence": {
+        "type": "object",
+        "properties": {
+         "high": {
+          "type": "integer"
+         },
+         "medium": {
+          "type": "integer"
+         },
+         "low": {
+          "type": "integer"
+         }
+        },
+        "required": [
+         "high",
+         "medium",
+         "low"
+        ]
+       },
+       "denominators": {
+        "type": "object",
+        "properties": {
+         "n_observable_instances": {
+          "type": "integer"
+         },
+         "n_source_evaluated_instances": {
+          "type": "integer"
+         },
+         "n_observable_and_evaluated": {
+          "type": "integer"
+         },
+         "n_positive": {
+          "type": "integer"
+         },
+         "n_positive_observable_and_evaluated": {
+          "type": "integer"
+         },
+         "n_not_annotated_by_source": {
+          "type": "integer"
+         },
+         "n_source_unavailable": {
+          "type": "integer"
+         },
+         "n_positive_not_observable": {
+          "type": "integer"
+         }
+        },
+        "required": [
+         "n_observable_and_evaluated",
+         "n_positive_observable_and_evaluated",
+         "n_not_annotated_by_source",
+         "n_source_unavailable"
+        ]
+       },
+       "frequency": {
+        "type": [
+         "number",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "n_loop_observations",
+       "n_instances",
+       "n_entries",
+       "n_distinct_motif_groups",
+       "by_motif_group",
+       "n_loops_without_motif_group",
+       "loop_ids",
+       "confidence",
+       "denominators",
+       "frequency"
+      ]
+     },
+     "internal_loops": {
+      "type": "object",
+      "properties": {
+       "n_loop_observations": {
+        "type": "integer"
+       },
+       "n_instances": {
+        "type": "integer"
+       },
+       "n_entries": {
+        "type": "integer"
+       },
+       "n_distinct_motif_groups": {
+        "type": "integer"
+       },
+       "by_motif_group": {
+        "type": "object",
+        "properties": {}
+       },
+       "n_loops_without_motif_group": {
+        "type": "integer"
+       },
+       "loop_ids": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "confidence": {
+        "type": "object",
+        "properties": {
+         "high": {
+          "type": "integer"
+         },
+         "medium": {
+          "type": "integer"
+         },
+         "low": {
+          "type": "integer"
+         }
+        },
+        "required": [
+         "high",
+         "medium",
+         "low"
+        ]
+       },
+       "denominators": {
+        "type": "object",
+        "properties": {
+         "n_observable_instances": {
+          "type": "integer"
+         },
+         "n_source_evaluated_instances": {
+          "type": "integer"
+         },
+         "n_observable_and_evaluated": {
+          "type": "integer"
+         },
+         "n_positive": {
+          "type": "integer"
+         },
+         "n_positive_observable_and_evaluated": {
+          "type": "integer"
+         },
+         "n_not_annotated_by_source": {
+          "type": "integer"
+         },
+         "n_source_unavailable": {
+          "type": "integer"
+         },
+         "n_positive_not_observable": {
+          "type": "integer"
+         }
+        },
+        "required": [
+         "n_observable_and_evaluated",
+         "n_positive_observable_and_evaluated",
+         "n_not_annotated_by_source",
+         "n_source_unavailable"
+        ]
+       },
+       "frequency": {
+        "type": [
+         "number",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "n_loop_observations",
+       "n_instances",
+       "n_entries",
+       "n_distinct_motif_groups",
+       "by_motif_group",
+       "n_loops_without_motif_group",
+       "loop_ids",
+       "confidence",
+       "denominators",
+       "frequency"
+      ]
+     },
+     "junction_loops_J3": {
+      "type": "object",
+      "properties": {
+       "n_loop_observations": {
+        "type": "integer"
+       },
+       "n_instances": {
+        "type": "integer"
+       },
+       "n_entries": {
+        "type": "integer"
+       },
+       "n_distinct_motif_groups": {
+        "type": "integer"
+       },
+       "by_motif_group": {
+        "type": "object",
+        "properties": {}
+       },
+       "n_loops_without_motif_group": {
+        "type": "integer"
+       },
+       "loop_ids": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "confidence": {
+        "type": "object",
+        "properties": {
+         "high": {
+          "type": "integer"
+         },
+         "medium": {
+          "type": "integer"
+         },
+         "low": {
+          "type": "integer"
+         }
+        },
+        "required": [
+         "high",
+         "medium",
+         "low"
+        ]
+       },
+       "denominators": {
+        "type": "object",
+        "properties": {
+         "n_observable_instances": {
+          "type": "integer"
+         },
+         "n_source_evaluated_instances": {
+          "type": "integer"
+         },
+         "n_observable_and_evaluated": {
+          "type": "integer"
+         },
+         "n_positive": {
+          "type": "integer"
+         },
+         "n_positive_observable_and_evaluated": {
+          "type": "integer"
+         },
+         "n_not_annotated_by_source": {
+          "type": "integer"
+         },
+         "n_source_unavailable": {
+          "type": "integer"
+         },
+         "n_positive_not_observable": {
+          "type": "integer"
+         }
+        },
+        "required": [
+         "n_observable_and_evaluated",
+         "n_positive_observable_and_evaluated",
+         "n_not_annotated_by_source",
+         "n_source_unavailable"
+        ]
+       },
+       "frequency": {
+        "type": [
+         "number",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "n_loop_observations",
+       "n_instances",
+       "n_entries",
+       "n_distinct_motif_groups",
+       "by_motif_group",
+       "n_loops_without_motif_group",
+       "loop_ids",
+       "confidence",
+       "denominators",
+       "frequency"
+      ]
+     },
+     "junction_loops_J4": {
+      "type": "object",
+      "properties": {
+       "n_loop_observations": {
+        "type": "integer"
+       },
+       "n_instances": {
+        "type": "integer"
+       },
+       "n_entries": {
+        "type": "integer"
+       },
+       "n_distinct_motif_groups": {
+        "type": "integer"
+       },
+       "by_motif_group": {
+        "type": "object",
+        "properties": {}
+       },
+       "n_loops_without_motif_group": {
+        "type": "integer"
+       },
+       "loop_ids": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "confidence": {
+        "type": "object",
+        "properties": {
+         "high": {
+          "type": "integer"
+         },
+         "medium": {
+          "type": "integer"
+         },
+         "low": {
+          "type": "integer"
+         }
+        },
+        "required": [
+         "high",
+         "medium",
+         "low"
+        ]
+       },
+       "denominators": {
+        "type": "object",
+        "properties": {
+         "n_observable_instances": {
+          "type": "integer"
+         },
+         "n_source_evaluated_instances": {
+          "type": "integer"
+         },
+         "n_observable_and_evaluated": {
+          "type": "integer"
+         },
+         "n_positive": {
+          "type": "integer"
+         },
+         "n_positive_observable_and_evaluated": {
+          "type": "integer"
+         },
+         "n_not_annotated_by_source": {
+          "type": "integer"
+         },
+         "n_source_unavailable": {
+          "type": "integer"
+         },
+         "n_positive_not_observable": {
+          "type": "integer"
+         }
+        },
+        "required": [
+         "n_observable_and_evaluated",
+         "n_positive_observable_and_evaluated",
+         "n_not_annotated_by_source",
+         "n_source_unavailable"
+        ]
+       },
+       "frequency": {
+        "type": [
+         "number",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "n_loop_observations",
+       "n_instances",
+       "n_entries",
+       "n_distinct_motif_groups",
+       "by_motif_group",
+       "n_loops_without_motif_group",
+       "loop_ids",
+       "confidence",
+       "denominators",
+       "frequency"
+      ]
+     },
+     "junction_loops_union": {
+      "type": "object",
+      "properties": {
+       "n_loop_observations": {
+        "type": "integer"
+       },
+       "n_instances": {
+        "type": "integer"
+       },
+       "n_entries": {
+        "type": "integer"
+       },
+       "denominators": {
+        "type": "object",
+        "properties": {
+         "n_observable_instances": {
+          "type": "integer"
+         },
+         "n_source_evaluated_instances": {
+          "type": "integer"
+         },
+         "n_observable_and_evaluated": {
+          "type": "integer"
+         },
+         "n_positive": {
+          "type": "integer"
+         },
+         "n_positive_observable_and_evaluated": {
+          "type": "integer"
+         },
+         "n_not_annotated_by_source": {
+          "type": "integer"
+         },
+         "n_source_unavailable": {
+          "type": "integer"
+         },
+         "n_positive_not_observable": {
+          "type": "integer"
+         }
+        },
+        "required": [
+         "n_observable_and_evaluated",
+         "n_positive_observable_and_evaluated",
+         "n_not_annotated_by_source",
+         "n_source_unavailable"
+        ]
+       },
+       "frequency": {
+        "type": [
+         "number",
+         "null"
+        ]
+       },
+       "rule": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "n_instances",
+       "n_entries",
+       "denominators",
+       "rule"
+      ]
+     },
+     "ligand_binding_sites": {
+      "type": "object",
+      "properties": {
+       "n_entry_entities": {
+        "type": "integer"
+       },
+       "n_entries": {
+        "type": "integer"
+       },
+       "entry_entities": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "by_ccd_n_entry_entities": {
+        "type": "object",
+        "properties": {}
+       },
+       "by_class_n_entry_entities": {
+        "type": "object",
+        "properties": {}
+       },
+       "n_entry_entities_excluded_from_default": {
+        "type": "integer"
+       },
+       "confidence": {
+        "type": "object",
+        "properties": {
+         "high": {
+          "type": "integer"
+         },
+         "medium": {
+          "type": "integer"
+         },
+         "low": {
+          "type": "integer"
+         }
+        },
+        "required": [
+         "high",
+         "medium",
+         "low"
+        ]
+       },
+       "denominators": {
+        "type": "object",
+        "properties": {
+         "counting_unit": {
+          "const": "pdb_entry_entity"
+         },
+         "n_observable_entry_entities": {
+          "type": "integer"
+         },
+         "n_source_evaluated_entry_entities": {
+          "type": "integer"
+         },
+         "n_observable_and_evaluated": {
+          "type": "integer"
+         },
+         "n_positive": {
+          "type": "integer"
+         },
+         "n_positive_observable_and_evaluated": {
+          "type": "integer"
+         },
+         "n_not_annotated_by_source": {
+          "type": "integer"
+         },
+         "n_source_unavailable": {
+          "type": "integer"
+         },
+         "n_positive_not_observable": {
+          "type": "integer"
+         }
+        },
+        "required": [
+         "counting_unit",
+         "n_observable_and_evaluated",
+         "n_positive_observable_and_evaluated",
+         "n_not_annotated_by_source",
+         "n_source_unavailable"
+        ]
+       },
+       "frequency": {
+        "type": [
+         "number",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "n_entry_entities",
+       "n_entries",
+       "entry_entities",
+       "by_ccd_n_entry_entities",
+       "by_class_n_entry_entities",
+       "confidence",
+       "denominators",
+       "frequency"
+      ]
+     }
+    },
+    "required": [
+     "rfam_consensus_pos",
+     "observable",
+     "reference_structural_elements",
+     "hairpin_loops",
+     "internal_loops",
+     "junction_loops_J3",
+     "junction_loops_J4",
+     "junction_loops_union",
+     "ligand_binding_sites"
+    ]
+   }
+  }
+ },
+ "required": [
+  "schema_version",
+  "rfam_acc",
+  "clen",
+  "provenance",
+  "n_instances",
+  "n_entries",
+  "n_entry_entities",
+  "source_availability",
+  "terminology",
+  "tracks",
+  "positions"
+ ],
+ "title": "ConsensusTracks"
+}

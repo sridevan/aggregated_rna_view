@@ -1,0 +1,752 @@
+{
+ "chains": {
+  "6p2h/A": {
+   "mmcif_scheme_rows": 69,
+   "chain_length_api": 69,
+   "mmcif_mismatches": [],
+   "unobserved_residues_mmcif": [],
+   "unobserved_residues_api": [],
+   "partially_observed_api": [
+    [
+     69,
+     "0.958"
+    ]
+   ],
+   "modified_residues": [
+    [
+     1,
+     "GTP"
+    ]
+   ],
+   "mapped_region_contains_unobserved": [],
+   "mapped_region_contains_modified": [],
+   "consensus_monotonic": true,
+   "offset_changes": [],
+   "n_insert": 0,
+   "n_local_end": 0,
+   "n_unexpected": 0,
+   "mapped_region_len": 55,
+   "residues_in_match_cols": 55,
+   "fraction_mapped_residues_in_consensus": 1.0,
+   "consensus_span": [
+    26,
+    80
+   ],
+   "consensus_positions_covered": 55,
+   "fraction_of_CLEN_covered": 0.5392,
+   "deleted_consensus_positions": [],
+   "cmalign": {
+    "cm_from": 26,
+    "cm_to": 80,
+    "trunc": "no",
+    "bit_score": 36.27,
+    "avg_pp": 1.0
+   },
+   "cmalign_span_equals_parsed_span": true,
+   "residues_with_pp_below_0.85": [],
+   "residues_assigned_differently_when_full_chain_aligned": 2,
+   "examples_of_differences": [
+    {
+     "polymer_pos": 59,
+     "nt": "U",
+     "mapped_aln": [
+      "match",
+      "79"
+     ],
+     "full_aln": [
+      "insert",
+      ""
+     ]
+    },
+    {
+     "polymer_pos": 60,
+     "nt": "C",
+     "mapped_aln": [
+      "match",
+      "80"
+     ],
+     "full_aln": [
+      "insert",
+      ""
+     ]
+    }
+   ],
+   "species": {
+    "api": [
+     "synthetic construct",
+     32630
+    ],
+    "mmcif": [
+     "synthetic construct",
+     "32630"
+    ],
+    "agree": true
+   },
+   "label_vs_auth_chain_differ": false,
+   "author_numbering_offset": 16
+  },
+  "1y26/X": {
+   "mmcif_scheme_rows": 71,
+   "chain_length_api": 71,
+   "mmcif_mismatches": [],
+   "unobserved_residues_mmcif": [],
+   "unobserved_residues_api": [],
+   "partially_observed_api": [
+    [
+     1,
+     "0.85"
+    ],
+    [
+     71,
+     "0.958"
+    ]
+   ],
+   "modified_residues": [],
+   "mapped_region_contains_unobserved": [],
+   "mapped_region_contains_modified": [],
+   "consensus_monotonic": true,
+   "offset_changes": [
+    {
+     "between_polymer": [
+      47,
+      48
+     ],
+     "consensus": [
+      63,
+      65
+     ],
+     "deleted_consensus_positions": 1
+    },
+    {
+     "between_polymer": [
+      54,
+      55
+     ],
+     "consensus": [
+      71,
+      73
+     ],
+     "deleted_consensus_positions": 1
+    }
+   ],
+   "n_insert": 0,
+   "n_local_end": 0,
+   "n_unexpected": 0,
+   "mapped_region_len": 67,
+   "residues_in_match_cols": 67,
+   "fraction_mapped_residues_in_consensus": 1.0,
+   "consensus_span": [
+    19,
+    87
+   ],
+   "consensus_positions_covered": 67,
+   "fraction_of_CLEN_covered": 0.6569,
+   "deleted_consensus_positions": [
+    64,
+    72
+   ],
+   "cmalign": {
+    "cm_from": 19,
+    "cm_to": 87,
+    "trunc": "no",
+    "bit_score": 63.37,
+    "avg_pp": 0.999
+   },
+   "cmalign_span_equals_parsed_span": true,
+   "residues_with_pp_below_0.85": [],
+   "residues_assigned_differently_when_full_chain_aligned": 0,
+   "examples_of_differences": [],
+   "species": {
+    "api": [
+     "Vibrio vulnificus",
+     672
+    ],
+    "mmcif": [
+     "Vibrio vulnificus",
+     "672"
+    ],
+    "agree": true
+   },
+   "label_vs_auth_chain_differ": true,
+   "author_numbering_offset": 12
+  },
+  "3ds7/B": {
+   "mmcif_scheme_rows": 67,
+   "chain_length_api": 67,
+   "mmcif_mismatches": [],
+   "unobserved_residues_mmcif": [],
+   "unobserved_residues_api": [],
+   "partially_observed_api": [
+    [
+     67,
+     "0.952"
+    ]
+   ],
+   "modified_residues": [],
+   "mapped_region_contains_unobserved": [],
+   "mapped_region_contains_modified": [],
+   "consensus_monotonic": true,
+   "offset_changes": [
+    {
+     "between_polymer": [
+      45,
+      46
+     ],
+     "consensus": [
+      63,
+      65
+     ],
+     "deleted_consensus_positions": 1
+    },
+    {
+     "between_polymer": [
+      52,
+      53
+     ],
+     "consensus": [
+      71,
+      73
+     ],
+     "deleted_consensus_positions": 1
+    }
+   ],
+   "n_insert": 0,
+   "n_local_end": 0,
+   "n_unexpected": 0,
+   "mapped_region_len": 67,
+   "residues_in_match_cols": 67,
+   "fraction_mapped_residues_in_consensus": 1.0,
+   "consensus_span": [
+    19,
+    87
+   ],
+   "consensus_positions_covered": 67,
+   "fraction_of_CLEN_covered": 0.6569,
+   "deleted_consensus_positions": [
+    64,
+    72
+   ],
+   "cmalign": {
+    "cm_from": 19,
+    "cm_to": 87,
+    "trunc": "no",
+    "bit_score": 42.55,
+    "avg_pp": 0.999
+   },
+   "cmalign_span_equals_parsed_span": true,
+   "residues_with_pp_below_0.85": [],
+   "residues_assigned_differently_when_full_chain_aligned": 0,
+   "examples_of_differences": [],
+   "species": {
+    "api": [
+     "synthetic construct",
+     32630
+    ],
+    "mmcif": [
+     "?",
+     "?"
+    ],
+    "agree": false
+   },
+   "label_vs_auth_chain_differ": false,
+   "author_numbering_offset": 214
+  },
+  "4fe5/B": {
+   "mmcif_scheme_rows": 67,
+   "chain_length_api": 67,
+   "mmcif_mismatches": [],
+   "unobserved_residues_mmcif": [],
+   "unobserved_residues_api": [],
+   "partially_observed_api": [
+    [
+     1,
+     "0.869"
+    ],
+    [
+     67,
+     "0.952"
+    ]
+   ],
+   "modified_residues": [],
+   "mapped_region_contains_unobserved": [],
+   "mapped_region_contains_modified": [],
+   "consensus_monotonic": true,
+   "offset_changes": [
+    {
+     "between_polymer": [
+      45,
+      46
+     ],
+     "consensus": [
+      63,
+      65
+     ],
+     "deleted_consensus_positions": 1
+    },
+    {
+     "between_polymer": [
+      52,
+      53
+     ],
+     "consensus": [
+      71,
+      73
+     ],
+     "deleted_consensus_positions": 1
+    }
+   ],
+   "n_insert": 0,
+   "n_local_end": 0,
+   "n_unexpected": 0,
+   "mapped_region_len": 67,
+   "residues_in_match_cols": 67,
+   "fraction_mapped_residues_in_consensus": 1.0,
+   "consensus_span": [
+    19,
+    87
+   ],
+   "consensus_positions_covered": 67,
+   "fraction_of_CLEN_covered": 0.6569,
+   "deleted_consensus_positions": [
+    64,
+    72
+   ],
+   "cmalign": {
+    "cm_from": 19,
+    "cm_to": 87,
+    "trunc": "no",
+    "bit_score": 64.85,
+    "avg_pp": 0.999
+   },
+   "cmalign_span_equals_parsed_span": true,
+   "residues_with_pp_below_0.85": [],
+   "residues_assigned_differently_when_full_chain_aligned": 0,
+   "examples_of_differences": [],
+   "species": {
+    "api": [
+     "Bacillus subtilis",
+     1423
+    ],
+    "mmcif": [
+     "?",
+     "?"
+    ],
+    "agree": false
+   },
+   "label_vs_auth_chain_differ": true,
+   "author_numbering_offset": 14
+  },
+  "9nbh/A": {
+   "mmcif_scheme_rows": 160,
+   "chain_length_api": 160,
+   "mmcif_mismatches": [],
+   "unobserved_residues_mmcif": [
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102
+   ],
+   "unobserved_residues_api": [
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102
+   ],
+   "partially_observed_api": [
+    [
+     1,
+     "0.869"
+    ],
+    [
+     160,
+     "0.952"
+    ]
+   ],
+   "modified_residues": [],
+   "mapped_region_contains_unobserved": [
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102
+   ],
+   "mapped_region_contains_modified": [],
+   "consensus_monotonic": true,
+   "offset_changes": [
+    {
+     "between_polymer": [
+      53,
+      54
+     ],
+     "consensus": [
+      38,
+      40
+     ],
+     "deleted_consensus_positions": 1
+    },
+    {
+     "between_polymer": [
+      64,
+      65
+     ],
+     "consensus": [
+      50,
+      52
+     ],
+     "deleted_consensus_positions": 1
+    },
+    {
+     "between_polymer": [
+      76,
+      77
+     ],
+     "consensus": [
+      63,
+      65
+     ],
+     "deleted_consensus_positions": 1
+    },
+    {
+     "between_polymer": [
+      83,
+      84
+     ],
+     "consensus": [
+      71,
+      73
+     ],
+     "deleted_consensus_positions": 1
+    }
+   ],
+   "n_insert": 0,
+   "n_local_end": 0,
+   "n_unexpected": 0,
+   "mapped_region_len": 98,
+   "residues_in_match_cols": 98,
+   "fraction_mapped_residues_in_consensus": 1.0,
+   "consensus_span": [
+    1,
+    102
+   ],
+   "consensus_positions_covered": 98,
+   "fraction_of_CLEN_covered": 0.9608,
+   "deleted_consensus_positions": [
+    39,
+    51,
+    64,
+    72
+   ],
+   "cmalign": {
+    "cm_from": 1,
+    "cm_to": 102,
+    "trunc": "no",
+    "bit_score": 40.94,
+    "avg_pp": 0.986
+   },
+   "cmalign_span_equals_parsed_span": true,
+   "residues_with_pp_below_0.85": [
+    [
+     65,
+     "8"
+    ]
+   ],
+   "residues_assigned_differently_when_full_chain_aligned": 80,
+   "examples_of_differences": [
+    {
+     "polymer_pos": 16,
+     "nt": "U",
+     "mapped_aln": [
+      "match",
+      "1"
+     ],
+     "full_aln": [
+      "local_end",
+      ""
+     ]
+    },
+    {
+     "polymer_pos": 17,
+     "nt": "G",
+     "mapped_aln": [
+      "match",
+      "2"
+     ],
+     "full_aln": [
+      "local_end",
+      ""
+     ]
+    },
+    {
+     "polymer_pos": 18,
+     "nt": "U",
+     "mapped_aln": [
+      "match",
+      "3"
+     ],
+     "full_aln": [
+      "local_end",
+      ""
+     ]
+    },
+    {
+     "polymer_pos": 19,
+     "nt": "U",
+     "mapped_aln": [
+      "match",
+      "4"
+     ],
+     "full_aln": [
+      "local_end",
+      ""
+     ]
+    },
+    {
+     "polymer_pos": 20,
+     "nt": "G",
+     "mapped_aln": [
+      "match",
+      "5"
+     ],
+     "full_aln": [
+      "local_end",
+      ""
+     ]
+    },
+    {
+     "polymer_pos": 21,
+     "nt": "C",
+     "mapped_aln": [
+      "match",
+      "6"
+     ],
+     "full_aln": [
+      "local_end",
+      ""
+     ]
+    }
+   ],
+   "species": {
+    "api": [
+     "synthetic construct",
+     32630
+    ],
+    "mmcif": [
+     "synthetic construct",
+     "32630"
+    ],
+    "agree": true
+   },
+   "label_vs_auth_chain_differ": false,
+   "author_numbering_offset": 0
+  }
+ },
+ "global": {
+  "consensus_positions_with_any_residue": 102,
+  "consensus_positions_with_all_5_chains": 51,
+  "consensus_positions_never_covered": [],
+  "total_mmcif_mismatches": 0
+ }
+}

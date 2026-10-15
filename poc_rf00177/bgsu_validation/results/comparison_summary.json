@@ -1,0 +1,20 @@
+{
+ "bgsu_pairs": 17171,
+ "our_pairs_all": 17264,
+ "our_pairs_observed": 17019,
+ "matching_pairs": 17019,
+ "our_observed_pairs_not_in_bgsu": 0,
+ "bgsu_pairs_not_ours": 152,
+ "high_conf_pairs(PP* both)": 14761,
+ "low_conf_pairs": 2258,
+ "pairs_in_flagged_windows": 2785,
+ "bgsu_only_by_category": {
+  "bgsu_pairs_insert_residue": 26,
+  "bgsu_pairs_local_end_residue": 126
+ },
+ "ours_only_by_category": {},
+ "precision_overall": 1.0,
+ "recall_overall": 0.9911,
+ "identifier_mapping_failures": 0,
+ "pairs_files": 14
+}

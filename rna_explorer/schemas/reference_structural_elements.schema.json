@@ -1,0 +1,314 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "type": "object",
+ "properties": {
+  "schema_version": {
+   "const": "1.0"
+  },
+  "rfam_acc": {
+   "type": "string"
+  },
+  "clen": {
+   "type": "integer"
+  },
+  "provenance": {
+   "type": "object",
+   "properties": {
+    "rfam_acc": {
+     "type": "string"
+    },
+    "rfam_release": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "cm_checksum": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "cm_clen": {
+     "type": "integer"
+    },
+    "annotation_pipeline_version": {
+     "type": "string"
+    },
+    "generated": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "rfam_acc",
+    "generated"
+   ]
+  },
+  "track_name": {
+   "const": "reference_structural_elements"
+  },
+  "track_kind": {
+   "const": "categorical_reference_transfer"
+  },
+  "interpretation": {
+   "type": "string"
+  },
+  "reference": {
+   "type": "object",
+   "properties": {
+    "pdb_id": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "auth_asym_id": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "label_asym_id": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "entity_id": {
+     "type": [
+      "integer",
+      "null"
+     ]
+    },
+    "seq_name": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "model": {
+     "type": "integer"
+    },
+    "n_annotated_nucleotides": {
+     "type": "integer"
+    },
+    "citation": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "pdb_id",
+    "auth_asym_id",
+    "n_annotated_nucleotides"
+   ]
+  },
+  "source": {
+   "type": "object",
+   "properties": {
+    "name": {
+     "type": "string"
+    },
+    "url": {
+     "type": "string"
+    },
+    "retrieved": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "status": {
+     "type": "string"
+    },
+    "annotation_identifier": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "url",
+    "annotation_identifier"
+   ]
+  },
+  "transfer_method": {
+   "type": "string"
+  },
+  "elements": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "element": {
+      "type": "string"
+     },
+     "spans": {
+      "type": "array",
+      "items": {
+       "type": "array",
+       "items": {
+        "type": "integer"
+       }
+      }
+     },
+     "n_positions": {
+      "type": "integer"
+     }
+    },
+    "required": [
+     "element",
+     "spans"
+    ]
+   }
+  },
+  "positions": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "rfam_consensus_pos": {
+      "type": "integer"
+     },
+     "element": {
+      "type": "string"
+     },
+     "all_labels": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "reference_unit_id": {
+      "type": "string"
+     },
+     "reference_label_seq_id": {
+      "type": "integer"
+     },
+     "reference_pp_char": {
+      "type": "string"
+     },
+     "reference_pp_category": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "reference_has_coordinates": {
+      "type": [
+       "boolean",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "rfam_consensus_pos",
+     "element",
+     "reference_unit_id",
+     "reference_label_seq_id"
+    ]
+   }
+  },
+  "track": {
+   "type": "array",
+   "items": {
+    "type": [
+     "string",
+     "null"
+    ]
+   }
+  },
+  "n_consensus_positions_annotated": {
+   "type": "integer"
+  },
+  "reference_nucleotides_not_on_consensus": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "unit_id": {
+      "type": "string"
+     },
+     "labels": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "mapping_status": {
+      "type": "string",
+      "enum": [
+       "mapped",
+       "mapped_no_coordinates",
+       "insert",
+       "local_end",
+       "outside_mapped_region",
+       "unresolved_identifier"
+      ]
+     }
+    }
+   }
+  },
+  "conflicts": {
+   "type": "array",
+   "items": {}
+  },
+  "instance_transfer": {
+   "type": "object",
+   "properties": {
+    "n_instances": {
+     "type": "integer"
+    },
+    "n_instances_evaluated": {
+     "type": "integer"
+    },
+    "n_instances_unavailable": {
+     "type": "integer"
+    },
+    "unavailable_instances": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "n_nucleotide_labels": {
+     "type": "integer"
+    },
+    "mapping_status_counts": {
+     "type": "object",
+     "properties": {}
+    },
+    "n_labels_agree_with_family_track": {
+     "type": "integer"
+    },
+    "n_labels_disagree": {
+     "type": "integer"
+    },
+    "disagreements": {
+     "type": "array",
+     "items": {}
+    }
+   },
+   "required": [
+    "n_instances_evaluated",
+    "n_instances_unavailable",
+    "n_labels_agree_with_family_track",
+    "n_labels_disagree"
+   ]
+  }
+ },
+ "required": [
+  "schema_version",
+  "rfam_acc",
+  "clen",
+  "provenance",
+  "track_name",
+  "reference",
+  "source",
+  "elements",
+  "positions",
+  "track",
+  "instance_transfer"
+ ],
+ "title": "ReferenceStructuralElements"
+}

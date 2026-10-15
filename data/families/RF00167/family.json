@@ -1,0 +1,195 @@
+{
+ "rfam_acc": "RF00167",
+ "rfam_id": "Purine",
+ "description": "Purine riboswitch aptamer",
+ "comment": "Riboswitches are metabolite binding domains within certain messenger RNAs that serve as precision sensors for their corresponding targets. Allosteric rearrangement of mRNA structure is mediated by ligand binding, and this results in modulation of gene expression. A class of riboswitches that selectively recognises guanine and becomes saturated at concentrations as low as 5 nM. In Bacillus subtilis, this mRNA motif is located on at least five separate transcriptional units that together encode 17 genes that are mostly involved in purine transport and purine nucleotide biosynthesis. It has also been shown that some members of this family are specific for adenine instead. Hence this family are termed purine riboswitches.",
+ "rfam_url": "https://rfam.org/family/RF00167",
+ "clen": 102,
+ "consensus_sequence": "aaaaaaaaaaaaaaauucccuCgUAUAAucccgggAAUAUGGcccgggaGUUUCUACCaggcaaCCGUAAAuugccuGACUAcGagggaauuuuuuuuuuuu",
+ "ss_cons": ":::::::::::::::::((((((((,,,<<<<<<<_______>>>>>>>,,,,,,,,<<<<<<<_______>>>>>>>,,))))))))::::::::::::::",
+ "clan_members": [
+  "RF00167",
+  "RF01510",
+  "RF03165"
+ ],
+ "curation": {
+  "author": "Boese B, Barrick JE, Breaker RR",
+  "seed_source": "Boese B, Barrick JE",
+  "num_seed": 133,
+  "num_full": 4097,
+  "num_species": 1411,
+  "type": "Cis-reg; riboswitch;",
+  "structure_source": "Published; PMID:12787499"
+ },
+ "counts": {
+  "pdb_entries": 66,
+  "instances": 84,
+  "unique_mapped_sequences": 29,
+  "instances_clan_best": 84,
+  "instances_validation_ok": 84,
+  "skipped_segments": 0
+ },
+ "experimental_methods": {
+  "X-ray diffraction": 75,
+  "Electron Microscopy": 9
+ },
+ "representative": {
+  "pdb_id": "9ndd",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "seq_name": "9ndd_1_A_A",
+  "sequence_key": "e5c3e849a91244dfe04b20c74b796d21",
+  "mapping_file": "mappings/9ndd_1_A_A.json",
+  "organism": "synthetic construct",
+  "tax_id": 32630,
+  "organism_source": "pdbe_search",
+  "molecule_name": "RNA (160-MER)",
+  "experimental_method": "Electron Microscopy",
+  "resolution": 2.67,
+  "release_year": 2026,
+  "title": "RNA scaffold attached to 8-oxoguanine riboswitch aptamer, combined core plus aptamer",
+  "chain_length": 160,
+  "map_start": 16,
+  "map_end": 113,
+  "map_auth_start": 16,
+  "map_auth_end": 113,
+  "mapped_length": 98,
+  "n_modified_in_mapped": 0,
+  "rfam_bit_score": 53.2,
+  "rfam_evalue": "3.8e-09",
+  "rfam_cm_start": 1,
+  "rfam_cm_end": 102,
+  "clan_families_hit": [
+   {
+    "acc": "RF00167",
+    "bits": 53.2
+   }
+  ],
+  "clan_best_family": "RF00167",
+  "is_clan_best": true,
+  "cmalign": {
+   "name": "seq_e5c3e849a91244dfe04b20c74b796d21",
+   "length": 98,
+   "cm_from": 1,
+   "cm_to": 102,
+   "trunc": "no",
+   "bit_score": 40.94,
+   "avg_pp": 0.986
+  },
+  "n_match": 98,
+  "n_insert": 0,
+  "n_local_end": 0,
+  "n_deleted_in_span": 4,
+  "n_uncovered": 0,
+  "consensus_span": [
+   1,
+   102
+  ],
+  "fraction_clen_matched": 0.9608,
+  "n_mapped_with_coordinates": 98,
+  "n_match_with_coordinates": 98,
+  "pp_star_fraction": 0.8878,
+  "pp_category_counts": {
+   "medium": 11,
+   "high": 87
+  },
+  "validation_ok": true,
+  "organism_species": "synthetic construct",
+  "species_tax_id": "32630",
+  "organism_rank": "species",
+  "pdbe_2d_available": false
+ },
+ "display_representative": {
+  "pdb_id": "4fe5",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "B",
+  "seq_name": "4fe5_1_B_A",
+  "sequence_key": "54983aa4145ea2d4bd08c364aa3d6912",
+  "mapping_file": "mappings/4fe5_1_B_A.json",
+  "organism": "Bacillus subtilis",
+  "tax_id": 1423,
+  "organism_source": "pdbe_search",
+  "molecule_name": "xpt-pbuX guanine riboswitch aptamer domain",
+  "experimental_method": "X-ray diffraction",
+  "resolution": 1.32,
+  "release_year": 2012,
+  "title": "Crystal structure of the xpt-pbuX guanine riboswitch aptamer domain in complex with hypoxanthine",
+  "chain_length": 67,
+  "map_start": 1,
+  "map_end": 67,
+  "map_auth_start": 15,
+  "map_auth_end": 81,
+  "mapped_length": 67,
+  "n_modified_in_mapped": 0,
+  "rfam_bit_score": 66.6,
+  "rfam_evalue": "9.5e-13",
+  "rfam_cm_start": 19,
+  "rfam_cm_end": 87,
+  "clan_families_hit": [
+   {
+    "acc": "RF00167",
+    "bits": 66.6
+   }
+  ],
+  "clan_best_family": "RF00167",
+  "is_clan_best": true,
+  "cmalign": {
+   "name": "seq_54983aa4145ea2d4bd08c364aa3d6912",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 64.85,
+   "avg_pp": 0.999
+  },
+  "n_match": 67,
+  "n_insert": 0,
+  "n_local_end": 0,
+  "n_deleted_in_span": 2,
+  "n_uncovered": 33,
+  "consensus_span": [
+   19,
+   87
+  ],
+  "fraction_clen_matched": 0.6569,
+  "n_mapped_with_coordinates": 67,
+  "n_match_with_coordinates": 67,
+  "pp_star_fraction": 1.0,
+  "pp_category_counts": {
+   "high": 67
+  },
+  "validation_ok": true,
+  "organism_species": "Bacillus subtilis",
+  "species_tax_id": "1423",
+  "organism_rank": "species",
+  "pdbe_2d_available": true,
+  "selection_rule": "x-ray; PDBe 2D topology available; natural species; >=95% matched residues with coordinates; model coverage >= family median; best resolution",
+  "eligible_count": 53,
+  "min_clen_fraction_used": 0.6569
+ },
+ "coverage_summary": {
+  "sequence_coverage_mean": 0.6629,
+  "structural_coverage_mean": 0.6516,
+  "positions_with_sequence_coverage": 102,
+  "positions_with_structural_coverage": 102,
+  "positions_clen": 102
+ },
+ "skipped": [],
+ "provenance": {
+  "rfam_acc": "RF00167",
+  "rfam_release": "15.1",
+  "cm_name": "Purine",
+  "cm_checksum": "1292453307",
+  "cm_clen": 102,
+  "cm_build_date": "Thu Jul  4 23:20:44 2024",
+  "infernal_version": "INFERNAL 1.1.5 (Sep 2023)",
+  "cmalign_options": "--cpu 4",
+  "cmalign_mode": "local (default)",
+  "pipeline_version": "0.1.0",
+  "generated": "2026-10-15T03:48:01+00:00",
+  "pdbe_mapping_source": "PDBe API v2 nucleic_mappings/RF00167",
+  "rfam_hit_source": "rfam.org/family/RF00167/structures"
+ }
+}

@@ -1,0 +1,27 @@
+# Aggregated RNA 3D View
+
+PDBe-KB-style aggregation of experimentally determined RNA structures per Rfam family, using Rfam CM match-state positions as the family coordinate system. Development family: RF00167 (purine riboswitch).
+
+Full status, decisions, commands and open questions: **`PROJECT_HANDOVER.md`** (read it first). Milestone reports: `MILESTONE1_REVIEW.md`, `MILESTONE2*_VALIDATION.md`, `annotation_assessment/ANNOTATION_ASSESSMENT.md`, `MILESTONE3B_VALIDATION.md`.
+
+## Layout
+- `rna_explorer/` Python backend (`build`, `orient`, `annotate` commands; JSON schemas in `rna_explorer/schemas/`; ligand classification in `annotation_config.json`).
+- `data/families/<ACC>/` generated JSON consumed by the frontend (symlinked from `frontend/public/families`).
+- `frontend/` React 19 + TypeScript + Vite + Tailwind; pdbe-molstar (3D) and vendored PDBe RNA Viewer (2D).
+- `tests/` pytest; `frontend/tests/` Playwright; vitest beside the sources.
+- `annotation_assessment/` Milestone 3A assessment and the raw source cache that seeds `annotate`.
+
+## Commands
+    python3 -m rna_explorer build RF00167 --cpu 4 -v
+    python3 -m rna_explorer orient RF00167
+    python3 -m rna_explorer annotate RF00167 --raw-dir annotation_assessment/cache
+    python3 -m pytest -q
+    cd frontend && npm run dev   # npm test, npm run test:e2e
+
+## Rules
+- Consensus positions come only from the validated mappings in `data/families/<ACC>/mappings/`; never re-align or force insertions, local ends or unmapped residues onto consensus positions.
+- Every aggregated number carries an explicit numerator and denominator; distinguish "not annotated by the source" and "source unavailable" from biological absence; never divide by the total instance count indiscriminately.
+- Keep provenance (source URL, retrieval date, Rfam/CM/Motif Atlas releases, pipeline and config versions) on every output; retain flagged or excluded observations in the data.
+- Internal identifiers are `label_asym_id` + `label_seq_id`; author numbering is for display and BGSU unit ids only.
+- Stay within the requested milestone scope; backend changes need tests and schema validation, frontend changes need Playwright/vitest coverage.
+- Not a git repository yet (see handover §7).

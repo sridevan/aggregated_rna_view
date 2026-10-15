@@ -1,0 +1,4536 @@
+[
+ {
+  "seq_name": "1y26_1_X_A",
+  "pdb_id": "1y26",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "X",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 71,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 4,
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Vibrio vulnificus",
+   "mmcif": "Vibrio vulnificus",
+   "mmcif_tax_id": "672"
+  },
+  "cmalign": {
+   "name": "seq_b66180e500a475b49e939c8b564a2040",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 63.37,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 65.1,
+   "evalue_score": "2.3e-12",
+   "pdb_start": 3,
+   "pdb_end": 69
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "1y27_1_X_A",
+  "pdb_id": "1y27",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "X",
+  "chain_length": 68,
+  "scheme_rows": 68,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 68,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 1,
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "68": "CCC"
+  },
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": "Bacillus subtilis",
+   "mmcif_tax_id": "1423"
+  },
+  "cmalign": {
+   "name": "seq_745a81329e90a611721a34a4b351f048",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 64.49,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 66.2,
+   "evalue_score": "1.2e-12",
+   "pdb_start": 2,
+   "pdb_end": 68
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "2b57_1_A_A",
+  "pdb_id": "2b57",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 65,
+  "scheme_rows": 65,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 65,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 65
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_9627613c77df7a37f6d81fb8167d4103",
+   "length": 65,
+   "cm_from": 20,
+   "cm_to": 86,
+   "trunc": "no",
+   "bit_score": 61.69,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 20,
+   "cm_end": 86,
+   "bit_score": 63.4,
+   "evalue_score": "5.3e-12",
+   "pdb_start": 1,
+   "pdb_end": 65
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "2ees_1_A_A",
+  "pdb_id": "2ees",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_ca69adae2af479674eaa77cbb8084caa",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 61.94,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 63.7,
+   "evalue_score": "4.8e-12",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "2eet_1_A_A",
+  "pdb_id": "2eet",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_a9b161eab14d7249b8e431d7b4aff4e7",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 61.94,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 63.7,
+   "evalue_score": "4.8e-12",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "2eeu_1_A_A",
+  "pdb_id": "2eeu",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_739951ae9ee57e055b2627388f3120e1",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 55.24,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 57.0,
+   "evalue_score": "2e-10",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "2eev_1_A_A",
+  "pdb_id": "2eev",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_b35a5bbc767b2e41c70703f2d758a0e6",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 55.58,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 57.3,
+   "evalue_score": "1.6e-10",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "2eew_1_A_A",
+  "pdb_id": "2eew",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_9577b48d791bc9bb4750ef8046d8f895",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 60.57,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 62.3,
+   "evalue_score": "1e-11",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "2g9c_1_A_A",
+  "pdb_id": "2g9c",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_60421d8670ce711351da2f4059a583d9",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 62.69,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 64.4,
+   "evalue_score": "3.2e-12",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "2xnw_1_A_A",
+  "pdb_id": "2xnw",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 65,
+  "mapped_residues_without_coordinates": 2,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1,
+    1
+   ],
+   [
+    67,
+    67
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": "BACILLUS SUBTILIS",
+   "mmcif_tax_id": "1423"
+  },
+  "cmalign": {
+   "name": "seq_60421d8670ce711351da2f4059a583d9",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 62.69,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 64.4,
+   "evalue_score": "3.2e-12",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "2xnz_1_A_A",
+  "pdb_id": "2xnz",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 65,
+  "mapped_residues_without_coordinates": 2,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1,
+    1
+   ],
+   [
+    67,
+    67
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": "BACILLUS SUBTILIS",
+   "mmcif_tax_id": "1423"
+  },
+  "cmalign": {
+   "name": "seq_60421d8670ce711351da2f4059a583d9",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 62.69,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 64.4,
+   "evalue_score": "3.2e-12",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "2xo0_1_A_A",
+  "pdb_id": "2xo0",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 65,
+  "mapped_residues_without_coordinates": 2,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1,
+    1
+   ],
+   [
+    67,
+    67
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": "BACILLUS SUBTILIS",
+   "mmcif_tax_id": "1423"
+  },
+  "cmalign": {
+   "name": "seq_60421d8670ce711351da2f4059a583d9",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 62.69,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 64.4,
+   "evalue_score": "3.2e-12",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "2xo1_1_A_A",
+  "pdb_id": "2xo1",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 65,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 4,
+   "match": 63
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": "BACILLUS SUBTILIS",
+   "mmcif_tax_id": "1423"
+  },
+  "cmalign": {
+   "name": "seq_1855406397c243365492459d56014bc6",
+   "length": 63,
+   "cm_from": 21,
+   "cm_to": 85,
+   "trunc": "no",
+   "bit_score": 60.86,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 21,
+   "cm_end": 85,
+   "bit_score": 62.6,
+   "evalue_score": "8.7e-12",
+   "pdb_start": 3,
+   "pdb_end": 65
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "3ds7_1_A_A",
+  "pdb_id": "3ds7",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "synthetic construct",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_80e8a3397276d02fb46b60ea69997c1b",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 42.55,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 44.3,
+   "evalue_score": "2.3e-07",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "3ds7_1_B_B",
+  "pdb_id": "3ds7",
+  "entity_id": 1,
+  "label_asym_id": "B",
+  "auth_asym_id": "B",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "synthetic construct",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_80e8a3397276d02fb46b60ea69997c1b",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 42.55,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 44.3,
+   "evalue_score": "2.3e-07",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "3fo4_1_A_A",
+  "pdb_id": "3fo4",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 68,
+  "scheme_rows": 68,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 63,
+  "mapped_residues_without_coordinates": 4,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1,
+    2
+   ],
+   [
+    66,
+    67
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67,
+   "not_submitted_flank": 1
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_60421d8670ce711351da2f4059a583d9",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 62.69,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 64.4,
+   "evalue_score": "3.2e-12",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "3fo6_1_A_A",
+  "pdb_id": "3fo6",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 68,
+  "scheme_rows": 68,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67,
+   "not_submitted_flank": 1
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_54983aa4145ea2d4bd08c364aa3d6912",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 64.85,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 66.6,
+   "evalue_score": "9.6e-13",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "3g4m_1_A_A",
+  "pdb_id": "3g4m",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_54983aa4145ea2d4bd08c364aa3d6912",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 64.85,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 66.6,
+   "evalue_score": "9.5e-13",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "3gao_1_A_A",
+  "pdb_id": "3gao",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_54983aa4145ea2d4bd08c364aa3d6912",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 64.85,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 66.6,
+   "evalue_score": "9.5e-13",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "3ger_1_A_A",
+  "pdb_id": "3ger",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_54983aa4145ea2d4bd08c364aa3d6912",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 64.85,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 66.6,
+   "evalue_score": "9.5e-13",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "3ges_1_A_A",
+  "pdb_id": "3ges",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_60421d8670ce711351da2f4059a583d9",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 62.69,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 64.4,
+   "evalue_score": "3.2e-12",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "3gog_1_A_A",
+  "pdb_id": "3gog",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 65,
+  "mapped_residues_without_coordinates": 2,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1,
+    1
+   ],
+   [
+    67,
+    67
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_a9b161eab14d7249b8e431d7b4aff4e7",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 61.94,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 63.7,
+   "evalue_score": "4.8e-12",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "3got_1_A_A",
+  "pdb_id": "3got",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_60421d8670ce711351da2f4059a583d9",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 62.69,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 64.4,
+   "evalue_score": "3.2e-12",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "3ivn_1_A_A",
+  "pdb_id": "3ivn",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 70,
+  "scheme_rows": 70,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 69,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 69,
+   "not_submitted_flank": 1
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": "Bacillus subtilis",
+   "mmcif_tax_id": "1423"
+  },
+  "cmalign": {
+   "name": "seq_b2fc59aedbee2a69ef851ab1fc0db8dc",
+   "length": 69,
+   "cm_from": 18,
+   "cm_to": 88,
+   "trunc": "3'",
+   "bit_score": 63.49,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 18,
+   "cm_end": 88,
+   "bit_score": 61.5,
+   "evalue_score": "1.7e-11",
+   "pdb_start": 1,
+   "pdb_end": 69
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "3ivn_1_B_B",
+  "pdb_id": "3ivn",
+  "entity_id": 1,
+  "label_asym_id": "B",
+  "auth_asym_id": "B",
+  "chain_length": 70,
+  "scheme_rows": 70,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 69,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 69,
+   "not_submitted_flank": 1
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": "Bacillus subtilis",
+   "mmcif_tax_id": "1423"
+  },
+  "cmalign": {
+   "name": "seq_b2fc59aedbee2a69ef851ab1fc0db8dc",
+   "length": 69,
+   "cm_from": 18,
+   "cm_to": 88,
+   "trunc": "3'",
+   "bit_score": 63.49,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 18,
+   "cm_end": 88,
+   "bit_score": 61.5,
+   "evalue_score": "1.7e-11",
+   "pdb_start": 1,
+   "pdb_end": 69
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "3la5_1_A_A",
+  "pdb_id": "3la5",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 71,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 4,
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": "Bacillus subtilis",
+   "mmcif_tax_id": "1423"
+  },
+  "cmalign": {
+   "name": "seq_5de1a14cc6e11107bc92db0244797344",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 55.88,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 57.6,
+   "evalue_score": "1.5e-10",
+   "pdb_start": 3,
+   "pdb_end": 69
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "3rkf_1_A_A",
+  "pdb_id": "3rkf",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_173ac151d815437bc45d00fe2434e5e0",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 56.89,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 58.6,
+   "evalue_score": "7.9e-11",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "3rkf_1_B_B",
+  "pdb_id": "3rkf",
+  "entity_id": 1,
+  "label_asym_id": "B",
+  "auth_asym_id": "B",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_173ac151d815437bc45d00fe2434e5e0",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 56.89,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 58.6,
+   "evalue_score": "7.9e-11",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "3rkf_1_C_C",
+  "pdb_id": "3rkf",
+  "entity_id": 1,
+  "label_asym_id": "C",
+  "auth_asym_id": "C",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_173ac151d815437bc45d00fe2434e5e0",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 56.89,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 58.6,
+   "evalue_score": "7.9e-11",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "3rkf_1_D_D",
+  "pdb_id": "3rkf",
+  "entity_id": 1,
+  "label_asym_id": "D",
+  "auth_asym_id": "D",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_173ac151d815437bc45d00fe2434e5e0",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 56.89,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 58.6,
+   "evalue_score": "7.9e-11",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "4fe5_1_B_A",
+  "pdb_id": "4fe5",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "B",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_54983aa4145ea2d4bd08c364aa3d6912",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 64.85,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 66.6,
+   "evalue_score": "9.5e-13",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "4fej_1_B_A",
+  "pdb_id": "4fej",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "B",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_c1e318adbc0788dcbdbfa847c3eb4c7c",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 63.96,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 65.7,
+   "evalue_score": "1.6e-12",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "4fel_1_B_A",
+  "pdb_id": "4fel",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "B",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_f7c954d984f312fcc0a281c2b29a8e0a",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 64.02,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 65.8,
+   "evalue_score": "1.5e-12",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "4fen_1_B_A",
+  "pdb_id": "4fen",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "B",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_d496565908a8cd59d3e4ad19f6906208",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 63.13,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 64.9,
+   "evalue_score": "2.5e-12",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "4feo_1_B_A",
+  "pdb_id": "4feo",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "B",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_7b537c5724bec20113efc8d8ed7effeb",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 61.85,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 63.6,
+   "evalue_score": "5e-12",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "4fep_1_B_A",
+  "pdb_id": "4fep",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "B",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_193f2b5dfec2fc7a9713591e03efa3c5",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 60.96,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 62.7,
+   "evalue_score": "8.2e-12",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "4lx5_1_A_A",
+  "pdb_id": "4lx5",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 71,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 4,
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Vibrio vulnificus",
+   "mmcif": "Vibrio vulnificus",
+   "mmcif_tax_id": "672"
+  },
+  "cmalign": {
+   "name": "seq_60e947ff7adbf223d0fc5ea632de924a",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 55.7,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 57.5,
+   "evalue_score": "1.6e-10",
+   "pdb_start": 3,
+   "pdb_end": 69
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "4lx6_1_A_A",
+  "pdb_id": "4lx6",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 71,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 4,
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Vibrio vulnificus",
+   "mmcif": "Vibrio vulnificus",
+   "mmcif_tax_id": "672"
+  },
+  "cmalign": {
+   "name": "seq_1f425b7c151dc9455345e3b7eb2664a2",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 57.87,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 59.6,
+   "evalue_score": "4.9e-11",
+   "pdb_start": 3,
+   "pdb_end": 69
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "4tzx_1_X_A",
+  "pdb_id": "4tzx",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "X",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 71,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 2,
+   "match": 69
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Vibrio vulnificus",
+   "mmcif": "Vibrio vulnificus",
+   "mmcif_tax_id": "672"
+  },
+  "cmalign": {
+   "name": "seq_d491d5585cdbd37912090b3812e01398",
+   "length": 69,
+   "cm_from": 18,
+   "cm_to": 88,
+   "trunc": "3'",
+   "bit_score": 61.51,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 18,
+   "cm_end": 88,
+   "bit_score": 59.5,
+   "evalue_score": "5.2e-11",
+   "pdb_start": 2,
+   "pdb_end": 70
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "4tzy_1_X_A",
+  "pdb_id": "4tzy",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "X",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 71,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 2,
+   "match": 69
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Vibrio vulnificus",
+   "mmcif": "Vibrio vulnificus",
+   "mmcif_tax_id": "672"
+  },
+  "cmalign": {
+   "name": "seq_d491d5585cdbd37912090b3812e01398",
+   "length": 69,
+   "cm_from": 18,
+   "cm_to": 88,
+   "trunc": "3'",
+   "bit_score": 61.51,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 18,
+   "cm_end": 88,
+   "bit_score": 59.5,
+   "evalue_score": "5.2e-11",
+   "pdb_start": 2,
+   "pdb_end": 70
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "4xnr_1_X_A",
+  "pdb_id": "4xnr",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "X",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 71,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 2,
+   "match": 69
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Vibrio vulnificus",
+   "mmcif": "Vibrio vulnificus",
+   "mmcif_tax_id": "672"
+  },
+  "cmalign": {
+   "name": "seq_d491d5585cdbd37912090b3812e01398",
+   "length": 69,
+   "cm_from": 18,
+   "cm_to": 88,
+   "trunc": "3'",
+   "bit_score": 61.51,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 18,
+   "cm_end": 88,
+   "bit_score": 59.5,
+   "evalue_score": "5.2e-11",
+   "pdb_start": 2,
+   "pdb_end": 70
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "5c7u_1_B_A",
+  "pdb_id": "5c7u",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "B",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis subsp. subtilis str. 168",
+   "mmcif": "Bacillus subtilis subsp. subtilis str. 168",
+   "mmcif_tax_id": "224308"
+  },
+  "cmalign": {
+   "name": "seq_54983aa4145ea2d4bd08c364aa3d6912",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 64.85,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 66.6,
+   "evalue_score": "9.5e-13",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "5c7w_1_C_A",
+  "pdb_id": "5c7w",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "C",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "4": "50N",
+   "64": "50L"
+  },
+  "species": {
+   "api": "synthetic construct",
+   "mmcif": "synthetic construct",
+   "mmcif_tax_id": "32630"
+  },
+  "cmalign": {
+   "name": "seq_13b583600efbfa6e1fea217b0d0f9b6d",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 59.22,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 61.0,
+   "evalue_score": "2.2e-11",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "5e54_1_A_A",
+  "pdb_id": "5e54",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 65,
+  "mapped_residues_without_coordinates": 5,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    66,
+    70
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 2,
+   "match": 69
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Vibrio vulnificus",
+   "mmcif": "Vibrio vulnificus",
+   "mmcif_tax_id": "672"
+  },
+  "cmalign": {
+   "name": "seq_d491d5585cdbd37912090b3812e01398",
+   "length": 69,
+   "cm_from": 18,
+   "cm_to": 88,
+   "trunc": "3'",
+   "bit_score": 61.51,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 18,
+   "cm_end": 88,
+   "bit_score": 59.5,
+   "evalue_score": "5.2e-11",
+   "pdb_start": 2,
+   "pdb_end": 70
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "5e54_1_B_B",
+  "pdb_id": "5e54",
+  "entity_id": 1,
+  "label_asym_id": "B",
+  "auth_asym_id": "B",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 68,
+  "mapped_residues_without_coordinates": 2,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    69,
+    70
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 2,
+   "match": 69
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Vibrio vulnificus",
+   "mmcif": "Vibrio vulnificus",
+   "mmcif_tax_id": "672"
+  },
+  "cmalign": {
+   "name": "seq_d491d5585cdbd37912090b3812e01398",
+   "length": 69,
+   "cm_from": 18,
+   "cm_to": 88,
+   "trunc": "3'",
+   "bit_score": 61.51,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 18,
+   "cm_end": 88,
+   "bit_score": 59.5,
+   "evalue_score": "5.2e-11",
+   "pdb_start": 2,
+   "pdb_end": 70
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "5swd_1_A_A",
+  "pdb_id": "5swd",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 65,
+  "mapped_residues_without_coordinates": 5,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    66,
+    70
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 2,
+   "match": 69
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Vibrio vulnificus",
+   "mmcif": "Vibrio vulnificus",
+   "mmcif_tax_id": "672"
+  },
+  "cmalign": {
+   "name": "seq_d491d5585cdbd37912090b3812e01398",
+   "length": 69,
+   "cm_from": 18,
+   "cm_to": 88,
+   "trunc": "3'",
+   "bit_score": 61.51,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 18,
+   "cm_end": 88,
+   "bit_score": 59.5,
+   "evalue_score": "5.2e-11",
+   "pdb_start": 2,
+   "pdb_end": 70
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "5swd_1_B_B",
+  "pdb_id": "5swd",
+  "entity_id": 1,
+  "label_asym_id": "B",
+  "auth_asym_id": "B",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 68,
+  "mapped_residues_without_coordinates": 2,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    69,
+    70
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 2,
+   "match": 69
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Vibrio vulnificus",
+   "mmcif": "Vibrio vulnificus",
+   "mmcif_tax_id": "672"
+  },
+  "cmalign": {
+   "name": "seq_d491d5585cdbd37912090b3812e01398",
+   "length": 69,
+   "cm_from": 18,
+   "cm_to": 88,
+   "trunc": "3'",
+   "bit_score": 61.51,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 18,
+   "cm_end": 88,
+   "bit_score": 59.5,
+   "evalue_score": "5.2e-11",
+   "pdb_start": 2,
+   "pdb_end": 70
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "5swe_1_X_A",
+  "pdb_id": "5swe",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "X",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 71,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 2,
+   "match": 69
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Vibrio vulnificus",
+   "mmcif": "Vibrio vulnificus",
+   "mmcif_tax_id": "672"
+  },
+  "cmalign": {
+   "name": "seq_d491d5585cdbd37912090b3812e01398",
+   "length": 69,
+   "cm_from": 18,
+   "cm_to": 88,
+   "trunc": "3'",
+   "bit_score": 61.51,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 18,
+   "cm_end": 88,
+   "bit_score": 59.5,
+   "evalue_score": "5.2e-11",
+   "pdb_start": 2,
+   "pdb_end": 70
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "5uza_1_X_A",
+  "pdb_id": "5uza",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "X",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 71,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 2,
+   "match": 69
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "16": "IU",
+   "19": "IU"
+  },
+  "species": {
+   "api": "Vibrio vulnificus",
+   "mmcif": "Vibrio vulnificus",
+   "mmcif_tax_id": "672"
+  },
+  "cmalign": {
+   "name": "seq_d491d5585cdbd37912090b3812e01398",
+   "length": 69,
+   "cm_from": 18,
+   "cm_to": 88,
+   "trunc": "3'",
+   "bit_score": 61.51,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 18,
+   "cm_end": 88,
+   "bit_score": 59.5,
+   "evalue_score": "5.2e-11",
+   "pdb_start": 2,
+   "pdb_end": 70
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "6p2h_1_A_A",
+  "pdb_id": "6p2h",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 69,
+  "scheme_rows": 69,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 69,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 14,
+   "match": 55
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "synthetic construct",
+   "mmcif": "synthetic construct",
+   "mmcif_tax_id": "32630"
+  },
+  "cmalign": {
+   "name": "seq_b62bb48d7253e75154af433c9cefb68e",
+   "length": 55,
+   "cm_from": 26,
+   "cm_to": 80,
+   "trunc": "no",
+   "bit_score": 36.27,
+   "avg_pp": 1.0
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 26,
+   "cm_end": 80,
+   "bit_score": 38.0,
+   "evalue_score": "7.7e-06",
+   "pdb_start": 6,
+   "pdb_end": 60
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "6ubu_1_B_A",
+  "pdb_id": "6ubu",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "B",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": "Bacillus subtilis",
+   "mmcif_tax_id": "1423"
+  },
+  "cmalign": {
+   "name": "seq_54983aa4145ea2d4bd08c364aa3d6912",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 64.85,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 66.6,
+   "evalue_score": "9.5e-13",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "6uc7_1_B_A",
+  "pdb_id": "6uc7",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "B",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": "Bacillus subtilis",
+   "mmcif_tax_id": "1423"
+  },
+  "cmalign": {
+   "name": "seq_54983aa4145ea2d4bd08c364aa3d6912",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 64.85,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 66.6,
+   "evalue_score": "9.5e-13",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "6uc8_1_B_A",
+  "pdb_id": "6uc8",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "B",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": "Bacillus subtilis",
+   "mmcif_tax_id": "1423"
+  },
+  "cmalign": {
+   "name": "seq_54983aa4145ea2d4bd08c364aa3d6912",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 64.85,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 66.6,
+   "evalue_score": "9.5e-13",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "6uc9_1_B_A",
+  "pdb_id": "6uc9",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "B",
+  "chain_length": 67,
+  "scheme_rows": 67,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 67,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Bacillus subtilis",
+   "mmcif": "Bacillus subtilis",
+   "mmcif_tax_id": "1423"
+  },
+  "cmalign": {
+   "name": "seq_54983aa4145ea2d4bd08c364aa3d6912",
+   "length": 67,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 64.85,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 66.6,
+   "evalue_score": "9.5e-13",
+   "pdb_start": 1,
+   "pdb_end": 67
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "6vwt_1_A_A",
+  "pdb_id": "6vwt",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 71,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 2,
+   "match": 69
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Vibrio vulnificus",
+   "mmcif": "Vibrio vulnificus",
+   "mmcif_tax_id": "672"
+  },
+  "cmalign": {
+   "name": "seq_d491d5585cdbd37912090b3812e01398",
+   "length": 69,
+   "cm_from": 18,
+   "cm_to": 88,
+   "trunc": "3'",
+   "bit_score": 61.51,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 18,
+   "cm_end": 88,
+   "bit_score": 59.5,
+   "evalue_score": "5.2e-11",
+   "pdb_start": 2,
+   "pdb_end": 70
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "6vwt_1_B_B",
+  "pdb_id": "6vwt",
+  "entity_id": 1,
+  "label_asym_id": "B",
+  "auth_asym_id": "B",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 71,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 2,
+   "match": 69
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Vibrio vulnificus",
+   "mmcif": "Vibrio vulnificus",
+   "mmcif_tax_id": "672"
+  },
+  "cmalign": {
+   "name": "seq_d491d5585cdbd37912090b3812e01398",
+   "length": 69,
+   "cm_from": 18,
+   "cm_to": 88,
+   "trunc": "3'",
+   "bit_score": 61.51,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 18,
+   "cm_end": 88,
+   "bit_score": 59.5,
+   "evalue_score": "5.2e-11",
+   "pdb_start": 2,
+   "pdb_end": 70
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "6vwv_1_A_A",
+  "pdb_id": "6vwv",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 71,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 2,
+   "match": 69
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Vibrio vulnificus",
+   "mmcif": "Vibrio vulnificus",
+   "mmcif_tax_id": "672"
+  },
+  "cmalign": {
+   "name": "seq_d491d5585cdbd37912090b3812e01398",
+   "length": 69,
+   "cm_from": 18,
+   "cm_to": 88,
+   "trunc": "3'",
+   "bit_score": 61.51,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 18,
+   "cm_end": 88,
+   "bit_score": 59.5,
+   "evalue_score": "5.2e-11",
+   "pdb_start": 2,
+   "pdb_end": 70
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "6vwv_1_B_B",
+  "pdb_id": "6vwv",
+  "entity_id": 1,
+  "label_asym_id": "B",
+  "auth_asym_id": "B",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 71,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 2,
+   "match": 69
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Vibrio vulnificus",
+   "mmcif": "Vibrio vulnificus",
+   "mmcif_tax_id": "672"
+  },
+  "cmalign": {
+   "name": "seq_d491d5585cdbd37912090b3812e01398",
+   "length": 69,
+   "cm_from": 18,
+   "cm_to": 88,
+   "trunc": "3'",
+   "bit_score": 61.51,
+   "avg_pp": 0.999
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 18,
+   "cm_end": 88,
+   "bit_score": 59.5,
+   "evalue_score": "5.2e-11",
+   "pdb_start": 2,
+   "pdb_end": 70
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9iwf_1_A_A",
+  "pdb_id": "9iwf",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 69,
+  "scheme_rows": 69,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 69,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67,
+   "insert": 2
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Paenibacillus",
+   "mmcif": "Paenibacillus beijingensis",
+   "mmcif_tax_id": "1126833"
+  },
+  "cmalign": {
+   "name": "seq_1408eddb7528ead1faac8070414867a4",
+   "length": 69,
+   "cm_from": 20,
+   "cm_to": 86,
+   "trunc": "no",
+   "bit_score": 41.06,
+   "avg_pp": 0.977
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 20,
+   "cm_end": 86,
+   "bit_score": 42.8,
+   "evalue_score": "5.5e-07",
+   "pdb_start": 1,
+   "pdb_end": 69
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9iwf_1_B_B",
+  "pdb_id": "9iwf",
+  "entity_id": 1,
+  "label_asym_id": "B",
+  "auth_asym_id": "B",
+  "chain_length": 69,
+  "scheme_rows": 69,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 69,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67,
+   "insert": 2
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Paenibacillus",
+   "mmcif": "Paenibacillus beijingensis",
+   "mmcif_tax_id": "1126833"
+  },
+  "cmalign": {
+   "name": "seq_1408eddb7528ead1faac8070414867a4",
+   "length": 69,
+   "cm_from": 20,
+   "cm_to": 86,
+   "trunc": "no",
+   "bit_score": 41.06,
+   "avg_pp": 0.977
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 20,
+   "cm_end": 86,
+   "bit_score": 42.8,
+   "evalue_score": "5.5e-07",
+   "pdb_start": 1,
+   "pdb_end": 69
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9iwg_1_A_A",
+  "pdb_id": "9iwg",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 69,
+  "scheme_rows": 69,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 69,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67,
+   "insert": 2
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Paenibacillus",
+   "mmcif": "Paenibacillus beijingensis",
+   "mmcif_tax_id": "1126833"
+  },
+  "cmalign": {
+   "name": "seq_60928ccc4b68334b92bdae4e95e3ce62",
+   "length": 69,
+   "cm_from": 20,
+   "cm_to": 86,
+   "trunc": "no",
+   "bit_score": 45.33,
+   "avg_pp": 0.977
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 20,
+   "cm_end": 86,
+   "bit_score": 47.1,
+   "evalue_score": "5.1e-08",
+   "pdb_start": 1,
+   "pdb_end": 69
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9iwg_1_B_B",
+  "pdb_id": "9iwg",
+  "entity_id": 1,
+  "label_asym_id": "B",
+  "auth_asym_id": "B",
+  "chain_length": 69,
+  "scheme_rows": 69,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 69,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 67,
+   "insert": 2
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Paenibacillus",
+   "mmcif": "Paenibacillus beijingensis",
+   "mmcif_tax_id": "1126833"
+  },
+  "cmalign": {
+   "name": "seq_60928ccc4b68334b92bdae4e95e3ce62",
+   "length": 69,
+   "cm_from": 20,
+   "cm_to": 86,
+   "trunc": "no",
+   "bit_score": 45.33,
+   "avg_pp": 0.977
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 20,
+   "cm_end": 86,
+   "bit_score": 47.1,
+   "evalue_score": "5.1e-08",
+   "pdb_start": 1,
+   "pdb_end": 69
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9ljn_1_A_A",
+  "pdb_id": "9ljn",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 71,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 1,
+   "match": 68,
+   "insert": 2
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "unclassified Paenibacillus",
+   "mmcif": "Paenibacillus sp. FSL E2-0178",
+   "mmcif_tax_id": "2921361"
+  },
+  "cmalign": {
+   "name": "seq_5fe93c8eee0073b6e41d1ecdb41bf13b",
+   "length": 70,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 41.92,
+   "avg_pp": 0.96
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 43.7,
+   "evalue_score": "3.5e-07",
+   "pdb_start": 2,
+   "pdb_end": 71
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9lkc_1_A_A",
+  "pdb_id": "9lkc",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 71,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 1,
+   "match": 68,
+   "insert": 2
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "unclassified Paenibacillus",
+   "mmcif": "Paenibacillus sp. FSL E2-0178",
+   "mmcif_tax_id": "2921361"
+  },
+  "cmalign": {
+   "name": "seq_5fe93c8eee0073b6e41d1ecdb41bf13b",
+   "length": 70,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 41.92,
+   "avg_pp": 0.96
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 43.7,
+   "evalue_score": "3.5e-07",
+   "pdb_start": 2,
+   "pdb_end": 71
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9lke_1_A_A",
+  "pdb_id": "9lke",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 70,
+  "scheme_rows": 70,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 70,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 68,
+   "insert": 2
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "unclassified Paenibacillus",
+   "mmcif": "Paenibacillus sp. FSL E2-0178",
+   "mmcif_tax_id": "2921361"
+  },
+  "cmalign": {
+   "name": "seq_5fe93c8eee0073b6e41d1ecdb41bf13b",
+   "length": 70,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 41.92,
+   "avg_pp": 0.96
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 43.7,
+   "evalue_score": "3.4e-07",
+   "pdb_start": 1,
+   "pdb_end": 70
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9lkf_1_A_A",
+  "pdb_id": "9lkf",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 71,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 1,
+   "match": 68,
+   "insert": 2
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "unclassified Paenibacillus",
+   "mmcif": "Paenibacillus sp. FSL E2-0178",
+   "mmcif_tax_id": "2921361"
+  },
+  "cmalign": {
+   "name": "seq_5fe93c8eee0073b6e41d1ecdb41bf13b",
+   "length": 70,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 41.92,
+   "avg_pp": 0.96
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 43.7,
+   "evalue_score": "3.5e-07",
+   "pdb_start": 2,
+   "pdb_end": 71
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9lmc_1_A_A",
+  "pdb_id": "9lmc",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 71,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 1,
+   "match": 68,
+   "insert": 2
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "unclassified Paenibacillus",
+   "mmcif": "Paenibacillus sp. FSL E2-0178",
+   "mmcif_tax_id": "2921361"
+  },
+  "cmalign": {
+   "name": "seq_5fe93c8eee0073b6e41d1ecdb41bf13b",
+   "length": 70,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 41.92,
+   "avg_pp": 0.96
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 43.7,
+   "evalue_score": "3.5e-07",
+   "pdb_start": 2,
+   "pdb_end": 71
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9lmc_1_B_B",
+  "pdb_id": "9lmc",
+  "entity_id": 1,
+  "label_asym_id": "B",
+  "auth_asym_id": "B",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 70,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 1,
+   "match": 68,
+   "insert": 2
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "unclassified Paenibacillus",
+   "mmcif": "Paenibacillus sp. FSL E2-0178",
+   "mmcif_tax_id": "2921361"
+  },
+  "cmalign": {
+   "name": "seq_5fe93c8eee0073b6e41d1ecdb41bf13b",
+   "length": 70,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 41.92,
+   "avg_pp": 0.96
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 43.7,
+   "evalue_score": "3.5e-07",
+   "pdb_start": 2,
+   "pdb_end": 71
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9nbc_1_A_A",
+  "pdb_id": "9nbc",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 160,
+  "scheme_rows": 160,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 63,
+  "mapped_residues_without_coordinates": 35,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    16,
+    34
+   ],
+   [
+    98,
+    113
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 62,
+   "match": 98
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "synthetic construct",
+   "mmcif": "synthetic construct",
+   "mmcif_tax_id": "32630"
+  },
+  "cmalign": {
+   "name": "seq_e5c3e849a91244dfe04b20c74b796d21",
+   "length": 98,
+   "cm_from": 1,
+   "cm_to": 102,
+   "trunc": "no",
+   "bit_score": 40.94,
+   "avg_pp": 0.986
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 102,
+   "bit_score": 53.2,
+   "evalue_score": "3.8e-09",
+   "pdb_start": 16,
+   "pdb_end": 113
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9nbh_1_A_A",
+  "pdb_id": "9nbh",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 160,
+  "scheme_rows": 160,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 88,
+  "mapped_residues_without_coordinates": 72,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    31,
+    102
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 62,
+   "match": 98
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "synthetic construct",
+   "mmcif": "synthetic construct",
+   "mmcif_tax_id": "32630"
+  },
+  "cmalign": {
+   "name": "seq_e5c3e849a91244dfe04b20c74b796d21",
+   "length": 98,
+   "cm_from": 1,
+   "cm_to": 102,
+   "trunc": "no",
+   "bit_score": 40.94,
+   "avg_pp": 0.986
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 102,
+   "bit_score": 53.2,
+   "evalue_score": "3.8e-09",
+   "pdb_start": 16,
+   "pdb_end": 113
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9nbh_1_B_B",
+  "pdb_id": "9nbh",
+  "entity_id": 1,
+  "label_asym_id": "B",
+  "auth_asym_id": "B",
+  "chain_length": 160,
+  "scheme_rows": 160,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 88,
+  "mapped_residues_without_coordinates": 72,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    31,
+    102
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 62,
+   "match": 98
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "synthetic construct",
+   "mmcif": "synthetic construct",
+   "mmcif_tax_id": "32630"
+  },
+  "cmalign": {
+   "name": "seq_e5c3e849a91244dfe04b20c74b796d21",
+   "length": 98,
+   "cm_from": 1,
+   "cm_to": 102,
+   "trunc": "no",
+   "bit_score": 40.94,
+   "avg_pp": 0.986
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 102,
+   "bit_score": 53.2,
+   "evalue_score": "3.8e-09",
+   "pdb_start": 16,
+   "pdb_end": 113
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9nbh_1_C_C",
+  "pdb_id": "9nbh",
+  "entity_id": 1,
+  "label_asym_id": "C",
+  "auth_asym_id": "C",
+  "chain_length": 160,
+  "scheme_rows": 160,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 88,
+  "mapped_residues_without_coordinates": 72,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    31,
+    102
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 62,
+   "match": 98
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "synthetic construct",
+   "mmcif": "synthetic construct",
+   "mmcif_tax_id": "32630"
+  },
+  "cmalign": {
+   "name": "seq_e5c3e849a91244dfe04b20c74b796d21",
+   "length": 98,
+   "cm_from": 1,
+   "cm_to": 102,
+   "trunc": "no",
+   "bit_score": 40.94,
+   "avg_pp": 0.986
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 102,
+   "bit_score": 53.2,
+   "evalue_score": "3.8e-09",
+   "pdb_start": 16,
+   "pdb_end": 113
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9nbh_1_D_D",
+  "pdb_id": "9nbh",
+  "entity_id": 1,
+  "label_asym_id": "D",
+  "auth_asym_id": "D",
+  "chain_length": 160,
+  "scheme_rows": 160,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 88,
+  "mapped_residues_without_coordinates": 72,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    31,
+    102
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 62,
+   "match": 98
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "synthetic construct",
+   "mmcif": "synthetic construct",
+   "mmcif_tax_id": "32630"
+  },
+  "cmalign": {
+   "name": "seq_e5c3e849a91244dfe04b20c74b796d21",
+   "length": 98,
+   "cm_from": 1,
+   "cm_to": 102,
+   "trunc": "no",
+   "bit_score": 40.94,
+   "avg_pp": 0.986
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 102,
+   "bit_score": 53.2,
+   "evalue_score": "3.8e-09",
+   "pdb_start": 16,
+   "pdb_end": 113
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9ndd_1_A_A",
+  "pdb_id": "9ndd",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 160,
+  "scheme_rows": 160,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 160,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 62,
+   "match": 98
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "synthetic construct",
+   "mmcif": "synthetic construct",
+   "mmcif_tax_id": "32630"
+  },
+  "cmalign": {
+   "name": "seq_e5c3e849a91244dfe04b20c74b796d21",
+   "length": 98,
+   "cm_from": 1,
+   "cm_to": 102,
+   "trunc": "no",
+   "bit_score": 40.94,
+   "avg_pp": 0.986
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 102,
+   "bit_score": 53.2,
+   "evalue_score": "3.8e-09",
+   "pdb_start": 16,
+   "pdb_end": 113
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9ndd_1_B_B",
+  "pdb_id": "9ndd",
+  "entity_id": 1,
+  "label_asym_id": "B",
+  "auth_asym_id": "B",
+  "chain_length": 160,
+  "scheme_rows": 160,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 160,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 62,
+   "match": 98
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "synthetic construct",
+   "mmcif": "synthetic construct",
+   "mmcif_tax_id": "32630"
+  },
+  "cmalign": {
+   "name": "seq_e5c3e849a91244dfe04b20c74b796d21",
+   "length": 98,
+   "cm_from": 1,
+   "cm_to": 102,
+   "trunc": "no",
+   "bit_score": 40.94,
+   "avg_pp": 0.986
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 102,
+   "bit_score": 53.2,
+   "evalue_score": "3.8e-09",
+   "pdb_start": 16,
+   "pdb_end": 113
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9ndd_1_C_C",
+  "pdb_id": "9ndd",
+  "entity_id": 1,
+  "label_asym_id": "C",
+  "auth_asym_id": "C",
+  "chain_length": 160,
+  "scheme_rows": 160,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 160,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 62,
+   "match": 98
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "synthetic construct",
+   "mmcif": "synthetic construct",
+   "mmcif_tax_id": "32630"
+  },
+  "cmalign": {
+   "name": "seq_e5c3e849a91244dfe04b20c74b796d21",
+   "length": 98,
+   "cm_from": 1,
+   "cm_to": 102,
+   "trunc": "no",
+   "bit_score": 40.94,
+   "avg_pp": 0.986
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 102,
+   "bit_score": 53.2,
+   "evalue_score": "3.8e-09",
+   "pdb_start": 16,
+   "pdb_end": 113
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9ndd_1_D_D",
+  "pdb_id": "9ndd",
+  "entity_id": 1,
+  "label_asym_id": "D",
+  "auth_asym_id": "D",
+  "chain_length": 160,
+  "scheme_rows": 160,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 160,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 62,
+   "match": 98
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "synthetic construct",
+   "mmcif": "synthetic construct",
+   "mmcif_tax_id": "32630"
+  },
+  "cmalign": {
+   "name": "seq_e5c3e849a91244dfe04b20c74b796d21",
+   "length": 98,
+   "cm_from": 1,
+   "cm_to": 102,
+   "trunc": "no",
+   "bit_score": 40.94,
+   "avg_pp": 0.986
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 102,
+   "bit_score": 53.2,
+   "evalue_score": "3.8e-09",
+   "pdb_start": 16,
+   "pdb_end": 113
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9v4u_1_A_A",
+  "pdb_id": "9v4u",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 71,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 1,
+   "match": 68,
+   "insert": 2
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Staphylococcus aureus",
+   "mmcif": "Staphylococcus aureus",
+   "mmcif_tax_id": "1280"
+  },
+  "cmalign": {
+   "name": "seq_5fe93c8eee0073b6e41d1ecdb41bf13b",
+   "length": 70,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 41.92,
+   "avg_pp": 0.96
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 43.7,
+   "evalue_score": "3.5e-07",
+   "pdb_start": 2,
+   "pdb_end": 71
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9v4v_1_A_A",
+  "pdb_id": "9v4v",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 71,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 1,
+   "match": 68,
+   "insert": 2
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Staphylococcus aureus",
+   "mmcif": "Staphylococcus aureus",
+   "mmcif_tax_id": "1280"
+  },
+  "cmalign": {
+   "name": "seq_5fe93c8eee0073b6e41d1ecdb41bf13b",
+   "length": 70,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 41.92,
+   "avg_pp": 0.96
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 43.7,
+   "evalue_score": "3.5e-07",
+   "pdb_start": 2,
+   "pdb_end": 71
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9v4x_1_A_A",
+  "pdb_id": "9v4x",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 71,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 1,
+   "match": 68,
+   "insert": 2
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Staphylococcus aureus",
+   "mmcif": "Staphylococcus aureus",
+   "mmcif_tax_id": "1280"
+  },
+  "cmalign": {
+   "name": "seq_5fe93c8eee0073b6e41d1ecdb41bf13b",
+   "length": 70,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 41.92,
+   "avg_pp": 0.96
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 43.7,
+   "evalue_score": "3.5e-07",
+   "pdb_start": 2,
+   "pdb_end": 71
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9v4y_1_A_A",
+  "pdb_id": "9v4y",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 71,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 1,
+   "match": 68,
+   "insert": 2
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Staphylococcus aureus",
+   "mmcif": "Staphylococcus aureus",
+   "mmcif_tax_id": "1280"
+  },
+  "cmalign": {
+   "name": "seq_5fe93c8eee0073b6e41d1ecdb41bf13b",
+   "length": 70,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 41.92,
+   "avg_pp": 0.96
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 43.7,
+   "evalue_score": "3.5e-07",
+   "pdb_start": 2,
+   "pdb_end": 71
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9v4z_1_A_A",
+  "pdb_id": "9v4z",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 71,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 1,
+   "match": 68,
+   "insert": 2
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Staphylococcus aureus",
+   "mmcif": "Staphylococcus aureus",
+   "mmcif_tax_id": "1280"
+  },
+  "cmalign": {
+   "name": "seq_5fe93c8eee0073b6e41d1ecdb41bf13b",
+   "length": 70,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 41.92,
+   "avg_pp": 0.96
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 43.7,
+   "evalue_score": "3.5e-07",
+   "pdb_start": 2,
+   "pdb_end": 71
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9v50_1_A_A",
+  "pdb_id": "9v50",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 71,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 1,
+   "match": 68,
+   "insert": 2
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Staphylococcus aureus",
+   "mmcif": "Staphylococcus aureus",
+   "mmcif_tax_id": "1280"
+  },
+  "cmalign": {
+   "name": "seq_5fe93c8eee0073b6e41d1ecdb41bf13b",
+   "length": 70,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 41.92,
+   "avg_pp": 0.96
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 43.7,
+   "evalue_score": "3.5e-07",
+   "pdb_start": 2,
+   "pdb_end": 71
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9v51_1_A_A",
+  "pdb_id": "9v51",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 71,
+  "scheme_rows": 71,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 71,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "not_submitted_flank": 1,
+   "match": 68,
+   "insert": 2
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {
+   "71": "CCC"
+  },
+  "species": {
+   "api": "Staphylococcus aureus",
+   "mmcif": "Staphylococcus aureus",
+   "mmcif_tax_id": "1280"
+  },
+  "cmalign": {
+   "name": "seq_5fe93c8eee0073b6e41d1ecdb41bf13b",
+   "length": 70,
+   "cm_from": 19,
+   "cm_to": 87,
+   "trunc": "no",
+   "bit_score": 41.92,
+   "avg_pp": 0.96
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 19,
+   "cm_end": 87,
+   "bit_score": 43.7,
+   "evalue_score": "3.5e-07",
+   "pdb_start": 2,
+   "pdb_end": 71
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ }
+]

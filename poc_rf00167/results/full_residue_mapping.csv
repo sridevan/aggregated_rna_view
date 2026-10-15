@@ -1,0 +1,435 @@
+pdb_id,entity_id,label_asym_id,auth_chain_id,polymer_seq_position,author_residue_number,author_insertion_code,residue_name,nucleotide,aligned_char,rfam_consensus_pos,status,insertion_info,aln_column,rf,ss_cons,posterior_prob,observed_ratio,in_pdbe_mapped_region,organism_api,tax_id_api,organism_mmcif,tax_id_mmcif,rfam_acc,seq_name
+1y26,1,A,X,1,13,,C,C,C,17,match,,17,u,:,*,0.85,0,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,2,14,,G,G,G,18,match,,18,c,(,*,1.0,0,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,3,15,,C,C,C,19,match,,19,c,(,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,4,16,,U,U,U,20,match,,20,c,(,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,5,17,,U,U,U,21,match,,21,u,(,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,6,18,,C,C,C,22,match,,22,C,(,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,7,19,,A,A,A,23,match,,23,g,(,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,8,20,,U,U,U,24,match,,24,U,(,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,9,21,,A,A,A,25,match,,25,A,(,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,10,22,,U,U,U,26,match,,26,U,",",*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,11,23,,A,A,A,27,match,,27,A,",",*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,12,24,,A,A,A,28,match,,28,A,",",*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,13,25,,U,U,U,29,match,,29,u,<,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,14,26,,C,C,C,30,match,,30,c,<,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,15,27,,C,C,C,31,match,,31,c,<,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,16,28,,U,U,U,32,match,,32,c,<,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,17,29,,A,A,A,33,match,,33,g,<,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,18,30,,A,A,A,34,match,,34,g,<,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,19,31,,U,U,U,35,match,,35,g,<,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,20,32,,G,G,G,36,match,,36,A,_,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,21,33,,A,A,A,37,match,,37,A,_,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,22,34,,U,U,U,38,match,,38,U,_,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,23,35,,A,A,A,39,match,,39,A,_,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,24,36,,U,U,U,40,match,,40,U,_,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,25,37,,G,G,G,41,match,,41,G,_,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,26,38,,G,G,G,42,match,,42,G,_,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,27,39,,U,U,U,43,match,,96,c,>,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,28,40,,U,U,U,44,match,,97,c,>,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,29,41,,U,U,U,45,match,,98,c,>,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,30,42,,G,G,G,46,match,,99,g,>,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,31,43,,G,G,G,47,match,,100,g,>,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,32,44,,G,G,G,48,match,,101,g,>,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,33,45,,A,A,A,49,match,,102,a,>,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,34,46,,G,G,G,50,match,,103,G,",",*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,35,47,,U,U,U,51,match,,104,U,",",*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,36,48,,U,U,U,52,match,,105,U,",",*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,37,49,,U,U,U,53,match,,106,U,",",*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,38,50,,C,C,C,54,match,,107,C,",",*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,39,51,,U,U,U,55,match,,108,U,",",*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,40,52,,A,A,A,56,match,,109,A,",",*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,41,53,,C,C,C,57,match,,110,C,",",*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,42,54,,C,C,C,58,match,,111,C,<,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,43,55,,A,A,A,59,match,,112,a,<,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,44,56,,A,A,A,60,match,,113,g,<,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,45,57,,G,G,G,61,match,,114,g,<,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,46,58,,A,A,A,62,match,,115,c,<,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,47,59,,G,G,G,63,match,,116,a,<,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,48,60,,C,C,C,65,match,,118,C,_,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,49,61,,C,C,C,66,match,,119,C,_,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,50,62,,U,U,U,67,match,,120,G,_,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,51,63,,U,U,U,68,match,,121,U,_,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,52,64,,A,A,A,69,match,,122,A,_,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,53,65,,A,A,A,70,match,,123,A,_,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,54,66,,A,A,A,71,match,,124,A,_,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,55,67,,C,C,C,73,match,,175,u,>,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,56,68,,U,U,U,74,match,,176,g,>,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,57,69,,C,C,C,75,match,,177,c,>,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,58,70,,U,U,U,76,match,,178,c,>,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,59,71,,U,U,U,77,match,,179,u,>,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,60,72,,G,G,G,78,match,,180,G,>,*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,61,73,,A,A,A,79,match,,183,A,",",*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,62,74,,U,U,U,80,match,,184,C,",",*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,63,75,,U,U,U,81,match,,185,U,),*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,64,76,,A,A,A,82,match,,186,A,),*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,65,77,,U,U,U,83,match,,187,c,),*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,66,78,,G,G,G,84,match,,188,G,),*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,67,79,,A,A,A,85,match,,189,a,),*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,68,80,,A,A,A,86,match,,190,g,),*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,69,81,,G,G,G,87,match,,191,g,),*,1.0,1,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,70,82,,U,U,U,88,match,,192,g,),*,1.0,0,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+1y26,1,A,X,71,83,,G,G,G,89,match,,193,a,:,*,0.958,0,Vibrio vulnificus,672,Vibrio vulnificus,672,RF00167,1y26_1_X_A/1-71
+3ds7,1,B,B,1,215,,G,G,G,19,match,,19,c,(,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,2,216,,G,G,G,20,match,,20,c,(,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,3,217,,A,A,A,21,match,,21,u,(,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,4,218,,C,C,C,22,match,,22,C,(,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,5,219,,A,A,A,23,match,,23,g,(,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,6,220,,U,U,U,24,match,,24,U,(,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,7,221,,A,A,A,25,match,,25,A,(,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,8,222,,C,C,C,26,match,,26,U,",",*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,9,223,,A,A,A,27,match,,27,A,",",*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,10,224,,A,A,A,28,match,,28,A,",",*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,11,225,,U,U,U,29,match,,29,u,<,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,12,226,,C,C,C,30,match,,30,c,<,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,13,227,,G,G,G,31,match,,31,c,<,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,14,228,,C,C,C,32,match,,32,c,<,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,15,229,,G,G,G,33,match,,33,g,<,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,16,230,,U,U,U,34,match,,34,g,<,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,17,231,,G,G,G,35,match,,35,g,<,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,18,232,,G,G,G,36,match,,36,A,_,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,19,233,,A,A,A,37,match,,37,A,_,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,20,234,,U,U,U,38,match,,38,U,_,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,21,235,,A,A,A,39,match,,39,A,_,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,22,236,,U,U,U,40,match,,40,U,_,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,23,237,,G,G,G,41,match,,41,G,_,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,24,238,,G,G,G,42,match,,42,G,_,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,25,239,,C,C,C,43,match,,96,c,>,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,26,240,,A,A,A,44,match,,97,c,>,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,27,241,,C,C,C,45,match,,98,c,>,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,28,242,,G,G,G,46,match,,99,g,>,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,29,243,,C,C,C,47,match,,100,g,>,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,30,244,,A,A,A,48,match,,101,g,>,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,31,245,,A,A,A,49,match,,102,a,>,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,32,246,,G,G,G,50,match,,103,G,",",*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,33,247,,A,A,A,51,match,,104,U,",",*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,34,248,,U,U,U,52,match,,105,U,",",*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,35,249,,C,C,C,53,match,,106,U,",",*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,36,250,,C,C,C,54,match,,107,C,",",*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,37,251,,C,C,C,55,match,,108,U,",",*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,38,252,,G,G,G,56,match,,109,A,",",*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,39,253,,C,C,C,57,match,,110,C,",",*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,40,254,,C,C,C,58,match,,111,C,<,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,41,255,,G,G,G,59,match,,112,a,<,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,42,256,,G,G,G,60,match,,113,g,<,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,43,257,,G,G,G,61,match,,114,g,<,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,44,258,,C,C,C,62,match,,115,c,<,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,45,259,,A,A,A,63,match,,116,a,<,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,46,260,,C,C,C,65,match,,118,C,_,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,47,261,,C,C,C,66,match,,119,C,_,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,48,262,,G,G,G,67,match,,120,G,_,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,49,263,,U,U,U,68,match,,121,U,_,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,50,264,,A,A,A,69,match,,122,A,_,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,51,265,,A,A,A,70,match,,123,A,_,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,52,266,,A,A,A,71,match,,124,A,_,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,53,267,,U,U,U,73,match,,175,u,>,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,54,268,,G,G,G,74,match,,176,g,>,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,55,269,,U,U,U,75,match,,177,c,>,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,56,270,,C,C,C,76,match,,178,c,>,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,57,271,,C,C,C,77,match,,179,u,>,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,58,272,,G,G,G,78,match,,180,G,>,*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,59,273,,A,A,A,79,match,,183,A,",",*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,60,274,,C,C,C,80,match,,184,C,",",*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,61,275,,U,U,U,81,match,,185,U,),*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,62,276,,A,A,A,82,match,,186,A,),*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,63,277,,U,U,U,83,match,,187,c,),*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,64,278,,G,G,G,84,match,,188,G,),*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,65,279,,U,U,U,85,match,,189,a,),*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,66,280,,C,C,C,86,match,,190,g,),*,1.0,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+3ds7,1,B,B,67,281,,C,C,C,87,match,,191,g,),*,0.952,1,synthetic construct,32630,?,?,RF00167,3ds7_1_B_B/1-67
+4fe5,1,A,B,1,15,,G,G,G,19,match,,19,c,(,*,0.869,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,2,16,,G,G,G,20,match,,20,c,(,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,3,17,,A,A,A,21,match,,21,u,(,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,4,18,,C,C,C,22,match,,22,C,(,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,5,19,,A,A,A,23,match,,23,g,(,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,6,20,,U,U,U,24,match,,24,U,(,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,7,21,,A,A,A,25,match,,25,A,(,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,8,22,,U,U,U,26,match,,26,U,",",*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,9,23,,A,A,A,27,match,,27,A,",",*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,10,24,,A,A,A,28,match,,28,A,",",*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,11,25,,U,U,U,29,match,,29,u,<,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,12,26,,C,C,C,30,match,,30,c,<,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,13,27,,G,G,G,31,match,,31,c,<,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,14,28,,C,C,C,32,match,,32,c,<,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,15,29,,G,G,G,33,match,,33,g,<,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,16,30,,U,U,U,34,match,,34,g,<,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,17,31,,G,G,G,35,match,,35,g,<,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,18,32,,G,G,G,36,match,,36,A,_,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,19,33,,A,A,A,37,match,,37,A,_,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,20,34,,U,U,U,38,match,,38,U,_,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,21,35,,A,A,A,39,match,,39,A,_,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,22,36,,U,U,U,40,match,,40,U,_,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,23,37,,G,G,G,41,match,,41,G,_,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,24,38,,G,G,G,42,match,,42,G,_,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,25,39,,C,C,C,43,match,,96,c,>,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,26,40,,A,A,A,44,match,,97,c,>,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,27,41,,C,C,C,45,match,,98,c,>,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,28,42,,G,G,G,46,match,,99,g,>,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,29,43,,C,C,C,47,match,,100,g,>,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,30,44,,A,A,A,48,match,,101,g,>,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,31,45,,A,A,A,49,match,,102,a,>,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,32,46,,G,G,G,50,match,,103,G,",",*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,33,47,,U,U,U,51,match,,104,U,",",*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,34,48,,U,U,U,52,match,,105,U,",",*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,35,49,,U,U,U,53,match,,106,U,",",*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,36,50,,C,C,C,54,match,,107,C,",",*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,37,51,,U,U,U,55,match,,108,U,",",*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,38,52,,A,A,A,56,match,,109,A,",",*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,39,53,,C,C,C,57,match,,110,C,",",*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,40,54,,C,C,C,58,match,,111,C,<,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,41,55,,G,G,G,59,match,,112,a,<,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,42,56,,G,G,G,60,match,,113,g,<,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,43,57,,G,G,G,61,match,,114,g,<,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,44,58,,C,C,C,62,match,,115,c,<,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,45,59,,A,A,A,63,match,,116,a,<,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,46,60,,C,C,C,65,match,,118,C,_,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,47,61,,C,C,C,66,match,,119,C,_,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,48,62,,G,G,G,67,match,,120,G,_,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,49,63,,U,U,U,68,match,,121,U,_,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,50,64,,A,A,A,69,match,,122,A,_,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,51,65,,A,A,A,70,match,,123,A,_,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,52,66,,A,A,A,71,match,,124,A,_,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,53,67,,U,U,U,73,match,,175,u,>,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,54,68,,G,G,G,74,match,,176,g,>,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,55,69,,U,U,U,75,match,,177,c,>,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,56,70,,C,C,C,76,match,,178,c,>,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,57,71,,C,C,C,77,match,,179,u,>,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,58,72,,G,G,G,78,match,,180,G,>,*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,59,73,,A,A,A,79,match,,183,A,",",*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,60,74,,C,C,C,80,match,,184,C,",",*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,61,75,,U,U,U,81,match,,185,U,),*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,62,76,,A,A,A,82,match,,186,A,),*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,63,77,,U,U,U,83,match,,187,c,),*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,64,78,,G,G,G,84,match,,188,G,),*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,65,79,,U,U,U,85,match,,189,a,),*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,66,80,,C,C,C,86,match,,190,g,),*,1.0,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+4fe5,1,A,B,67,81,,C,C,C,87,match,,191,g,),*,0.952,1,Bacillus subtilis,1423,?,?,RF00167,4fe5_1_B_A/1-67
+6p2h,1,A,A,1,17,,GTP,G,G,21,match,,21,u,(,9,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,2,18,,G,G,G,22,match,,22,C,(,9,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,3,19,,G,G,G,23,match,,23,g,(,9,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,4,20,,U,U,U,24,match,,24,U,(,9,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,5,21,,G,G,G,25,match,,25,A,(,9,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,6,22,,U,U,U,26,match,,26,U,",",*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,7,23,,A,A,A,27,match,,27,A,",",*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,8,24,,A,A,A,28,match,,28,A,",",*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,9,25,,U,U,U,29,match,,29,u,<,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,10,26,,C,C,C,30,match,,30,c,<,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,11,27,,U,U,U,31,match,,31,c,<,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,12,28,,C,C,C,32,match,,32,c,<,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,13,29,,C,C,C,33,match,,33,g,<,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,14,30,,A,A,A,34,match,,34,g,<,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,15,31,,A,A,A,35,match,,35,g,<,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,16,32,,A,A,A,36,match,,36,A,_,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,17,33,,A,A,A,37,match,,37,A,_,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,18,34,,U,U,U,38,match,,38,U,_,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,19,35,,A,A,A,39,match,,39,A,_,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,20,36,,U,U,U,40,match,,40,U,_,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,21,37,,G,G,G,41,match,,41,G,_,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,22,38,,G,G,G,42,match,,42,G,_,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,23,39,,U,U,U,43,match,,96,c,>,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,24,40,,U,U,U,44,match,,97,c,>,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,25,41,,G,G,G,45,match,,98,c,>,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,26,42,,G,G,G,46,match,,99,g,>,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,27,43,,G,G,G,47,match,,100,g,>,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,28,44,,G,G,G,48,match,,101,g,>,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,29,45,,A,A,A,49,match,,102,a,>,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,30,46,,G,G,G,50,match,,103,G,",",*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,31,47,,C,C,C,51,match,,104,U,",",*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,32,48,,C,C,C,52,match,,105,U,",",*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,33,49,,U,U,U,53,match,,106,U,",",*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,34,50,,C,C,C,54,match,,107,C,",",*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,35,51,,C,C,C,55,match,,108,U,",",*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,36,52,,A,A,A,56,match,,109,A,",",*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,37,53,,C,C,C,57,match,,110,C,",",*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,38,54,,C,C,C,58,match,,111,C,<,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,39,55,,A,A,A,59,match,,112,a,<,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,40,56,,G,G,G,60,match,,113,g,<,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,41,57,,U,U,U,61,match,,114,g,<,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,42,58,,G,G,G,62,match,,115,c,<,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,43,59,,A,A,A,63,match,,116,a,<,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,44,60,,A,A,A,64,match,,117,a,<,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,45,61,,C,C,C,65,match,,118,C,_,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,46,62,,C,C,C,66,match,,119,C,_,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,47,63,,G,G,G,67,match,,120,G,_,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,48,64,,U,U,U,68,match,,121,U,_,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,49,65,,A,A,A,69,match,,122,A,_,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,50,66,,A,A,A,70,match,,123,A,_,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,51,67,,A,A,A,71,match,,124,A,_,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,52,68,,A,A,A,72,match,,174,u,>,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,53,69,,U,U,U,73,match,,175,u,>,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,54,70,,C,C,C,74,match,,176,g,>,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,55,71,,G,G,G,75,match,,177,c,>,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,56,72,,C,C,C,76,match,,178,c,>,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,57,73,,U,U,U,77,match,,179,u,>,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,58,74,,G,G,G,78,match,,180,G,>,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,59,75,,U,U,u,,insert,insert:after_cons_78:#1,181,.,.,6,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,60,76,,C,C,c,,insert,insert:after_cons_78:#2,182,.,.,6,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,61,77,,A,A,A,79,match,,183,A,",",6,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,62,78,,C,C,C,80,match,,184,C,",",7,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,63,79,,C,C,C,81,match,,185,U,),9,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,64,80,,A,A,A,82,match,,186,A,),9,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,65,81,,C,C,C,83,match,,187,c,),9,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,66,82,,C,C,C,84,match,,188,G,),9,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,67,83,,C,C,C,85,match,,189,a,),9,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,68,84,,A,A,A,86,match,,190,g,),9,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+6p2h,1,A,A,69,85,,G,G,G,87,match,,191,g,),9,0.958,0,synthetic construct,32630,synthetic construct,32630,RF00167,6p2h_1_A_A/1-69
+9nbh,1,A,A,1,1,,G,G,G,32,match,,32,c,<,4,0.869,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,2,2,,G,G,G,33,match,,33,g,<,4,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,3,3,,G,G,G,34,match,,34,g,<,4,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,4,4,,C,C,c,,local_end,local_end:after_cons_42:#1,43,~,~,4,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,5,5,,C,C,c,,local_end,local_end:after_cons_42:#2,44,~,~,5,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,6,6,,A,A,a,,local_end,local_end:after_cons_42:#3,45,~,~,5,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,7,7,,C,C,c,,local_end,local_end:after_cons_42:#4,46,~,~,7,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,8,8,,U,U,u,,local_end,local_end:after_cons_42:#5,47,~,~,7,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,9,9,,G,G,g,,local_end,local_end:after_cons_42:#6,48,~,~,7,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,10,10,,U,U,u,,local_end,local_end:after_cons_42:#7,49,~,~,8,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,11,11,,U,U,u,,local_end,local_end:after_cons_42:#8,50,~,~,8,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,12,12,,U,U,u,,local_end,local_end:after_cons_42:#9,51,~,~,8,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,13,13,,C,C,c,,local_end,local_end:after_cons_42:#10,52,~,~,8,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,14,14,,A,A,a,,local_end,local_end:after_cons_42:#11,53,~,~,8,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,15,15,,C,C,c,,local_end,local_end:after_cons_42:#12,54,~,~,8,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,16,16,,U,U,u,,local_end,local_end:after_cons_42:#13,55,~,~,8,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,17,17,,G,G,g,,local_end,local_end:after_cons_42:#14,56,~,~,8,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,18,18,,U,U,u,,local_end,local_end:after_cons_42:#15,57,~,~,8,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,19,19,,U,U,u,,local_end,local_end:after_cons_42:#16,58,~,~,8,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,20,20,,G,G,g,,local_end,local_end:after_cons_42:#17,59,~,~,8,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,21,21,,C,C,c,,local_end,local_end:after_cons_42:#18,60,~,~,8,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,22,22,,G,G,g,,local_end,local_end:after_cons_42:#19,61,~,~,8,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,23,23,,C,C,c,,local_end,local_end:after_cons_42:#20,62,~,~,8,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,24,24,,U,U,u,,local_end,local_end:after_cons_42:#21,63,~,~,8,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,25,25,,A,A,a,,local_end,local_end:after_cons_42:#22,64,~,~,8,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,26,26,,C,C,c,,local_end,local_end:after_cons_42:#23,65,~,~,8,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,27,27,,A,A,a,,local_end,local_end:after_cons_42:#24,66,~,~,8,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,28,28,,U,U,u,,local_end,local_end:after_cons_42:#25,67,~,~,8,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,29,29,,C,C,c,,local_end,local_end:after_cons_42:#26,68,~,~,8,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,30,30,,U,U,u,,local_end,local_end:after_cons_42:#27,69,~,~,8,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,31,31,,C,C,c,,local_end,local_end:after_cons_42:#28,70,~,~,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,32,32,,C,C,c,,local_end,local_end:after_cons_42:#29,71,~,~,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,33,33,,U,U,u,,local_end,local_end:after_cons_42:#30,72,~,~,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,34,34,,G,G,g,,local_end,local_end:after_cons_42:#31,73,~,~,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,35,35,,U,U,u,,local_end,local_end:after_cons_42:#32,74,~,~,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,36,36,,U,U,u,,local_end,local_end:after_cons_42:#33,75,~,~,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,37,37,,C,C,c,,local_end,local_end:after_cons_42:#34,76,~,~,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,38,38,,G,G,g,,local_end,local_end:after_cons_42:#35,77,~,~,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,39,39,,U,U,u,,local_end,local_end:after_cons_42:#36,78,~,~,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,40,40,,A,A,a,,local_end,local_end:after_cons_42:#37,79,~,~,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,41,41,,U,U,u,,local_end,local_end:after_cons_42:#38,80,~,~,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,42,42,,A,A,a,,local_end,local_end:after_cons_42:#39,81,~,~,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,43,43,,A,A,a,,local_end,local_end:after_cons_42:#40,82,~,~,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,44,44,,C,C,c,,local_end,local_end:after_cons_42:#41,83,~,~,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,45,45,,C,C,c,,local_end,local_end:after_cons_42:#42,84,~,~,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,46,46,,C,C,c,,local_end,local_end:after_cons_42:#43,85,~,~,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,47,47,,C,C,c,,local_end,local_end:after_cons_42:#44,86,~,~,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,48,48,,G,G,g,,local_end,local_end:after_cons_42:#45,87,~,~,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,49,49,,A,A,a,,local_end,local_end:after_cons_42:#46,88,~,~,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,50,50,,U,U,u,,local_end,local_end:after_cons_42:#47,89,~,~,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,51,51,,A,A,a,,local_end,local_end:after_cons_42:#48,90,~,~,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,52,52,,A,A,a,,local_end,local_end:after_cons_42:#49,91,~,~,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,53,53,,U,U,u,,local_end,local_end:after_cons_42:#50,92,~,~,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,54,54,,C,C,c,,local_end,local_end:after_cons_42:#51,93,~,~,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,55,55,,G,G,g,,local_end,local_end:after_cons_42:#52,94,~,~,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,56,56,,G,G,g,,local_end,local_end:after_cons_42:#53,95,~,~,3,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,57,57,,U,U,U,44,match,,97,c,>,4,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,58,58,,U,U,U,45,match,,98,c,>,4,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,59,59,,C,C,C,46,match,,99,g,>,5,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,60,60,,G,G,G,47,match,,100,g,>,7,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,61,61,,G,G,G,48,match,,101,g,>,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,62,62,,G,G,G,49,match,,102,a,>,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,63,63,,G,G,G,50,match,,103,G,",",9,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,64,64,,G,G,G,51,match,,104,U,",",9,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,65,65,,C,C,C,52,match,,105,U,",",*,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,66,66,,U,U,U,53,match,,106,U,",",*,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,67,67,,C,C,C,54,match,,107,C,",",*,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,68,68,,U,U,U,55,match,,108,U,",",*,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,69,69,,A,A,A,56,match,,109,A,",",*,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,70,70,,C,C,C,57,match,,110,C,",",*,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,71,71,,U,U,U,58,match,,111,C,<,9,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,72,72,,G,G,G,59,match,,112,a,<,9,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,73,73,,G,G,G,60,match,,113,g,<,9,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,74,74,,G,G,G,61,match,,114,g,<,9,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,75,75,,G,G,G,62,match,,115,c,<,9,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,76,76,,U,U,U,63,match,,116,a,<,9,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,77,77,,C,C,C,65,match,,118,C,_,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,78,78,,C,C,C,66,match,,119,C,_,9,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,79,79,,G,G,G,67,match,,120,G,_,9,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,80,80,,U,U,U,68,match,,121,U,_,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,81,81,,A,A,A,69,match,,122,A,_,8,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,82,82,,A,A,A,70,match,,123,A,_,6,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,83,83,,A,A,a,,local_end,local_end:after_cons_71:#1,125,~,~,*,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,84,84,,A,A,a,,local_end,local_end:after_cons_71:#2,126,~,~,*,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,85,85,,U,U,u,,local_end,local_end:after_cons_71:#3,127,~,~,*,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,86,86,,C,C,c,,local_end,local_end:after_cons_71:#4,128,~,~,*,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,87,87,,C,C,c,,local_end,local_end:after_cons_71:#5,129,~,~,*,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,88,88,,U,U,u,,local_end,local_end:after_cons_71:#6,130,~,~,*,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,89,89,,A,A,a,,local_end,local_end:after_cons_71:#7,131,~,~,*,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,90,90,,A,A,a,,local_end,local_end:after_cons_71:#8,132,~,~,*,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,91,91,,C,C,c,,local_end,local_end:after_cons_71:#9,133,~,~,*,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,92,92,,U,U,u,,local_end,local_end:after_cons_71:#10,134,~,~,*,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,93,93,,A,A,a,,local_end,local_end:after_cons_71:#11,135,~,~,*,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,94,94,,C,C,c,,local_end,local_end:after_cons_71:#12,136,~,~,*,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,95,95,,G,G,g,,local_end,local_end:after_cons_71:#13,137,~,~,*,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,96,96,,A,A,a,,local_end,local_end:after_cons_71:#14,138,~,~,*,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,97,97,,A,A,a,,local_end,local_end:after_cons_71:#15,139,~,~,*,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,98,98,,C,C,c,,local_end,local_end:after_cons_71:#16,140,~,~,*,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,99,99,,G,G,g,,local_end,local_end:after_cons_71:#17,141,~,~,*,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,100,100,,G,G,g,,local_end,local_end:after_cons_71:#18,142,~,~,*,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,101,101,,G,G,g,,local_end,local_end:after_cons_71:#19,143,~,~,*,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,102,102,,A,A,a,,local_end,local_end:after_cons_71:#20,144,~,~,*,0.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,103,103,,G,G,g,,local_end,local_end:after_cons_71:#21,145,~,~,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,104,104,,G,G,g,,local_end,local_end:after_cons_71:#22,146,~,~,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,105,105,,C,C,c,,local_end,local_end:after_cons_71:#23,147,~,~,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,106,106,,C,C,c,,local_end,local_end:after_cons_71:#24,148,~,~,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,107,107,,A,A,a,,local_end,local_end:after_cons_71:#25,149,~,~,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,108,108,,C,C,c,,local_end,local_end:after_cons_71:#26,150,~,~,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,109,109,,A,A,a,,local_end,local_end:after_cons_71:#27,151,~,~,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,110,110,,C,C,c,,local_end,local_end:after_cons_71:#28,152,~,~,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,111,111,,G,G,g,,local_end,local_end:after_cons_71:#29,153,~,~,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,112,112,,A,A,a,,local_end,local_end:after_cons_71:#30,154,~,~,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,113,113,,A,A,a,,local_end,local_end:after_cons_71:#31,155,~,~,*,1.0,1,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,114,114,,A,A,a,,local_end,local_end:after_cons_71:#32,156,~,~,*,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,115,115,,G,G,g,,local_end,local_end:after_cons_71:#33,157,~,~,*,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,116,116,,U,U,u,,local_end,local_end:after_cons_71:#34,158,~,~,*,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,117,117,,G,G,g,,local_end,local_end:after_cons_71:#35,159,~,~,*,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,118,118,,U,U,u,,local_end,local_end:after_cons_71:#36,160,~,~,*,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,119,119,,G,G,g,,local_end,local_end:after_cons_71:#37,161,~,~,*,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,120,120,,G,G,g,,local_end,local_end:after_cons_71:#38,162,~,~,*,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,121,121,,A,A,a,,local_end,local_end:after_cons_71:#39,163,~,~,*,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,122,122,,G,G,g,,local_end,local_end:after_cons_71:#40,164,~,~,*,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,123,123,,U,U,u,,local_end,local_end:after_cons_71:#41,165,~,~,*,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,124,124,,G,G,g,,local_end,local_end:after_cons_71:#42,166,~,~,*,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,125,125,,A,A,a,,local_end,local_end:after_cons_71:#43,167,~,~,*,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,126,126,,C,C,c,,local_end,local_end:after_cons_71:#44,168,~,~,*,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,127,127,,C,C,c,,local_end,local_end:after_cons_71:#45,169,~,~,*,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,128,128,,A,A,a,,local_end,local_end:after_cons_71:#46,170,~,~,*,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,129,129,,G,G,g,,local_end,local_end:after_cons_71:#47,171,~,~,*,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,130,130,,U,U,u,,local_end,local_end:after_cons_71:#48,172,~,~,*,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,131,131,,G,G,g,,local_end,local_end:after_cons_71:#49,173,~,~,7,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,132,132,,G,G,G,73,match,,175,u,>,7,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,133,133,,C,C,C,74,match,,176,g,>,7,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,134,134,,C,C,C,75,match,,177,c,>,7,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,135,135,,C,C,C,76,match,,178,c,>,7,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,136,136,,C,C,C,77,match,,179,u,>,7,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,137,137,,A,A,A,78,match,,180,G,>,6,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,138,138,,C,C,C,79,match,,183,A,",",5,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,139,139,,C,C,C,80,match,,184,C,",",4,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,140,140,,C,C,C,82,match,,186,A,),5,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,141,141,,U,U,U,83,match,,187,c,),7,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,142,142,,G,G,G,84,match,,188,G,),8,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,143,143,,A,A,A,85,match,,189,a,),8,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,144,144,,A,A,A,86,match,,190,g,),8,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,145,145,,G,G,G,87,match,,191,g,),8,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,146,146,,G,G,G,88,match,,192,g,),8,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,147,147,,U,U,U,89,match,,193,a,:,8,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,148,148,,A,A,A,90,match,,194,a,:,8,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,149,149,,A,A,A,91,match,,195,u,:,8,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,150,150,,A,A,A,92,match,,196,u,:,8,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,151,151,,C,C,C,93,match,,197,u,:,8,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,152,152,,U,U,U,94,match,,198,u,:,8,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,153,153,,U,U,U,95,match,,199,u,:,8,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,154,154,,G,G,G,96,match,,200,u,:,8,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,155,155,,U,U,U,97,match,,201,u,:,8,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,156,156,,A,A,A,98,match,,202,u,:,8,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,157,157,,G,G,G,99,match,,203,u,:,8,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,158,158,,C,C,C,100,match,,204,u,:,8,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,159,159,,G,G,G,101,match,,205,u,:,9,1.0,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160
+9nbh,1,A,A,160,160,,C,C,C,102,match,,206,u,:,9,0.952,0,synthetic construct,32630,synthetic construct,32630,RF00167,9nbh_1_A_A/1-160

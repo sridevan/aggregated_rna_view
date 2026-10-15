@@ -1,0 +1,15 @@
+file,chainA,chainB,bgsu_pairs,our_pairs_all,our_pairs_observed,matching_pairs,precision_vs_bgsu(observed),recall_vs_bgsu,our_observed_pairs_not_in_bgsu,bgsu_pairs_not_ours,high_conf_pairs(PP* both),high_conf_agreement,low_conf_pairs,low_conf_agreement,pairs_in_flagged_windows,flagged_window_agreement,disc:bgsu_pairs_insert_residue,disc:bgsu_pairs_local_end_residue
+bgsu_column_5J7L_1J5E.txt,5j7l/AA,1j5e/A,1484,1488,1484,1484,1.0,1.0,0,0,1368,1.0,116,1.0,0,,,
+pair_5MRC_1_aa~6YW5_1_aa.txt,5mrc/aa,6yw5/aa,1262,1279,1220,1220,1.0,0.9667,0,42,860,1.0,360,1.0,385,1.0,2,40
+pair_6ERI_1_BA~9GYT_1_2.txt,6eri/BA,9gyt/2,1388,1388,1388,1388,1.0,1.0,0,0,1266,1.0,122,1.0,200,1.0,,
+pair_7K00_A__1J5E_1_A.txt,7k00/A,1j5e/A,1479,1496,1479,1479,1.0,1.0,0,0,1368,1.0,111,1.0,0,,,
+pair_7K00_A__4Y4O_1_1a.txt,7k00/A,4y4o/1a,1473,1496,1473,1473,1.0,1.0,0,0,1368,1.0,105,1.0,0,,,
+pair_7K00_A__5J7L_1_AA.txt,7k00/A,5j7l/AA,1519,1508,1500,1500,1.0,0.9875,0,19,1459,1.0,41,1.0,0,,19,
+pair_7K00_A__5MRC_1_aa.txt,7k00/A,5mrc/aa,1283,1331,1279,1279,1.0,0.9969,0,4,920,1.0,359,1.0,649,1.0,4,
+pair_7K00_A__6ERI_1_BA.txt,7k00/A,6eri/BA,1469,1476,1469,1469,1.0,1.0,0,0,1412,1.0,57,1.0,85,1.0,,
+pair_7K00_A__6YW5_1_aa.txt,7k00/A,6yw5/aa,1295,1339,1295,1295,1.0,1.0,0,0,1035,1.0,260,1.0,429,1.0,,
+pair_7K00_A__7P2E_1_A.txt,7k00/A,7p2e/A,694,694,694,694,1.0,1.0,0,0,568,1.0,126,1.0,251,1.0,,
+pair_7K00_A__8APN_1_B3.txt,7k00/A,8apn/B3,367,367,367,367,1.0,1.0,0,0,276,1.0,91,1.0,106,1.0,,
+pair_7K00_A__9GYT_1_2.txt,7k00/A,9gyt/2,1391,1398,1391,1391,1.0,1.0,0,0,1267,1.0,124,1.0,204,1.0,,
+pair_7P2E_1_A~9GYT_1_2.txt,7p2e/A,9gyt/2,712,694,694,694,1.0,0.9747,0,18,568,1.0,126,1.0,56,1.0,,18
+pair_9GYT_1_2~6YW5_1_aa.txt,9gyt/2,6yw5/aa,1355,1310,1286,1286,1.0,0.9491,0,69,1026,1.0,260,1.0,420,1.0,1,68

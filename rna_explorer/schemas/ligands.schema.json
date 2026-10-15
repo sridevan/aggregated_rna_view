@@ -1,0 +1,411 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "type": "object",
+ "properties": {
+  "schema_version": {
+   "const": "1.0"
+  },
+  "rfam_acc": {
+   "type": "string"
+  },
+  "clen": {
+   "type": "integer"
+  },
+  "provenance": {
+   "type": "object",
+   "properties": {
+    "rfam_acc": {
+     "type": "string"
+    },
+    "rfam_release": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "cm_checksum": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "cm_clen": {
+     "type": "integer"
+    },
+    "annotation_pipeline_version": {
+     "type": "string"
+    },
+    "generated": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "rfam_acc",
+    "generated"
+   ]
+  },
+  "source": {
+   "type": "object",
+   "properties": {
+    "name": {
+     "type": "string"
+    },
+    "url_template": {
+     "type": "string"
+    },
+    "observation_level": {
+     "const": "entity"
+    },
+    "index_type": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "url_template"
+   ]
+  },
+  "classification": {
+   "type": "object",
+   "properties": {
+    "config_version": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "default_track_classes": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "exclude_flagged_from_default_track": {
+     "type": "boolean"
+    },
+    "artefact_rules": {
+     "type": "array",
+     "items": {}
+    },
+    "classes": {
+     "type": "object",
+     "properties": {}
+    }
+   },
+   "required": [
+    "default_track_classes",
+    "artefact_rules",
+    "classes"
+   ]
+  },
+  "counting_rules": {
+   "type": "object",
+   "properties": {}
+  },
+  "counts": {
+   "type": "object",
+   "properties": {
+    "n_entry_entities_evaluated": {
+     "type": "integer"
+    },
+    "n_entry_entities_unavailable": {
+     "type": "integer"
+    },
+    "n_bound_molecule_records": {
+     "type": "integer"
+    },
+    "n_distinct_ccd_ids": {
+     "type": "integer"
+    },
+    "by_class": {
+     "type": "object",
+     "properties": {}
+    },
+    "n_records_in_default_track": {
+     "type": "integer"
+    },
+    "n_entries_in_default_track": {
+     "type": "integer"
+    },
+    "n_records_flagged": {
+     "type": "integer"
+    },
+    "flag_counts": {
+     "type": "object",
+     "properties": {}
+    },
+    "chain_attribution": {
+     "type": "object",
+     "properties": {}
+    },
+    "contact_mapping_status_counts": {
+     "type": "object",
+     "properties": {}
+    }
+   },
+   "required": [
+    "n_entry_entities_evaluated",
+    "n_bound_molecule_records",
+    "n_distinct_ccd_ids",
+    "by_class"
+   ]
+  },
+  "entry_entity_sources": {
+   "type": "object",
+   "properties": {}
+  },
+  "by_ccd": {
+   "type": "object",
+   "properties": {}
+  },
+  "bound_molecules": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "pdb_id": {
+      "type": "string"
+     },
+     "entity_id": {
+      "type": "integer"
+     },
+     "ccd_id": {
+      "type": "string"
+     },
+     "name": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "ligand_class": {
+      "enum": [
+       "ligand",
+       "metal_ion",
+       "additive",
+       "water"
+      ]
+     },
+     "class_rule": {
+      "type": "string"
+     },
+     "scaffold_id": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "cofactor_id": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "residue_count_reported": {
+      "type": [
+       "integer",
+       "null"
+      ]
+     },
+     "observation_level": {
+      "const": "entity"
+     },
+     "best_chain_label_asym_id": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "best_chain_seq_name": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "n_entity_chains": {
+      "type": "integer"
+     },
+     "entity_chains": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "chain_attribution": {
+      "enum": [
+       "resolved",
+       "unresolved"
+      ]
+     },
+     "attribution_note": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "bound_molecule_ids": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "n_bound_molecule_instances": {
+      "type": "integer"
+     },
+     "contacts": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "label_seq_id": {
+         "type": "integer"
+        },
+        "sequence_code": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "index_type": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "bound_molecule_ids": {
+         "type": "array",
+         "items": {
+          "type": "string"
+         }
+        },
+        "residue_name": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "rfam_consensus_pos": {
+         "type": [
+          "integer",
+          "null"
+         ]
+        },
+        "alignment_state": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "mapping_status": {
+         "type": "string",
+         "enum": [
+          "mapped",
+          "mapped_no_coordinates",
+          "insert",
+          "local_end",
+          "outside_mapped_region",
+          "unresolved_identifier"
+         ]
+        },
+        "pp_char": {
+         "type": "string"
+        },
+        "pp_category": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "chains_with_coordinates": {
+         "type": "array",
+         "items": {
+          "type": "string"
+         }
+        }
+       },
+       "required": [
+        "label_seq_id",
+        "bound_molecule_ids",
+        "rfam_consensus_pos",
+        "mapping_status"
+       ]
+      }
+     },
+     "n_contact_positions": {
+      "type": "integer"
+     },
+     "consensus_positions": {
+      "type": "array",
+      "items": {
+       "type": "integer"
+      }
+     },
+     "flags": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "in_default_track": {
+      "type": "boolean"
+     },
+     "exclusion_reason": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "source": {
+      "type": "object",
+      "properties": {
+       "url": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "retrieved": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "status": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "required": [
+     "pdb_id",
+     "entity_id",
+     "ccd_id",
+     "ligand_class",
+     "observation_level",
+     "n_entity_chains",
+     "chain_attribution",
+     "bound_molecule_ids",
+     "contacts",
+     "consensus_positions",
+     "flags",
+     "in_default_track"
+    ]
+   }
+  }
+ },
+ "required": [
+  "schema_version",
+  "rfam_acc",
+  "clen",
+  "provenance",
+  "source",
+  "classification",
+  "counts",
+  "entry_entity_sources",
+  "by_ccd",
+  "bound_molecules"
+ ],
+ "title": "BoundMolecules"
+}
