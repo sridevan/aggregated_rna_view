@@ -7,7 +7,7 @@ test('Rfam badge and structures-table links point to Rfam / PDBe and never selec
   await page.goto('/RF00167')
   const badge = page.getByTestId('family-badge')
   await expect(badge).toHaveAttribute('href', 'https://rfam.org/family/RF00167'); await expect(badge).toHaveAttribute('target', '_blank')
-  await page.getByTestId('tab-structures').click()
+  await page.getByTestId('tab-structures').click(); await page.getByTestId('view-clustering').click()
   await expect(page.getByTestId('groups-card')).toBeVisible(); await expect(page.locator('[data-testid^="group-badge-"]').first()).toBeVisible()   // rows are in their final (group) order
   const instances = await (await page.request.get('/families/RF00167/instances.json')).json()
   const rows = page.locator('[data-testid="instance-table"] tbody tr[data-testid^="row-"]')

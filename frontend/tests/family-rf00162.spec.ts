@@ -33,7 +33,7 @@ test('Family Overview: heading, links, counts, representative, local-end marker,
 test('Structures: groups from structure_clustering.json, representative on top, no floor line, TM groups', async ({ page }) => {
   const sc = await J(page, 'structure_clustering.json')
   const disc = sc.metrics.discrepancy.clustering, tm = sc.metrics.tm.clustering
-  await page.goto('/RF00162'); await page.getByTestId('tab-structures').click()
+  await page.goto('/RF00162'); await page.getByTestId('tab-structures').click(); await page.getByTestId('view-clustering').click()
   await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-status', 'ready', { timeout: 90_000 })
   for (const g of disc.groups) await expect(page.getByTestId(`group-chip-${g.group_id}`)).toContainText(`${g.n_instances} RNA instance`)
   expect(disc.groups.map((g: { n_instances: number }) => g.n_instances)).toEqual([26, 2, 1])

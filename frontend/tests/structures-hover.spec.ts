@@ -5,7 +5,7 @@ const viewer = (page: Page) => page.getByTestId('alignment-viewer')
 type Probe = { x: number; y: number; label: string } | null
 
 async function hoverResidue(page: Page, acc: string, target?: string) {
-  await page.goto(`/${acc}`); await page.getByTestId('tab-structures').click()
+  await page.goto(`/${acc}`); await page.getByTestId('tab-structures').click(); await page.getByTestId('view-clustering').click()
   await expect(viewer(page)).toHaveAttribute('data-status', 'ready', { timeout: 120_000 })
   if (target) {   // bring a specific chain into the view (table row click), then probe that chain
     await page.getByTestId('instance-search').fill(target.split('_')[0])

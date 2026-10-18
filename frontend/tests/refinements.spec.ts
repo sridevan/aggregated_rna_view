@@ -61,7 +61,7 @@ test('display structure follows the documented rule and loads first (4fe5/B, Rfa
 
 test('structures table: columns, titles, author chains, italic species, tooltips, search and pagination', async ({ page }) => {
   await page.goto('/RF00167')
-  await page.getByTestId('tab-structures').click()
+  await page.getByTestId('tab-structures').click(); await page.getByTestId('view-clustering').click()
   const inst = await (await page.request.get('/families/RF00167/instances.json')).json()
   const headers = await page.locator('[data-testid="instance-table"] thead th > button').allTextContents()
   expect(headers.map((h) => h.replace(/[▲▼]/g, '').trim())).toEqual(['PDB ID', 'Chain', 'Structural group', 'Title', 'Method', 'Res. (Å)'])   // compact mode beside the Structural groups panel

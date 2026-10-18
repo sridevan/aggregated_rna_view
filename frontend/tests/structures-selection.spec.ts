@@ -9,7 +9,7 @@ test('first visit: display representative is selected by full identity, its page
   const inst: Inst[] = await (await page.request.get('/families/RF00167/instances.json')).json()
   const rep = fam.display_representative
   expect(rep.seq_name).toBe(`${rep.pdb_id}_${rep.entity_id}_${rep.auth_asym_id}_${rep.label_asym_id}`)
-  await page.getByTestId('tab-structures').click()
+  await page.getByTestId('tab-structures').click(); await page.getByTestId('view-clustering').click()
   await expect(page.getByTestId('page-info')).toHaveText(`Page 1 of ${Math.ceil(inst.length / 10)}`)       // default order: page 1, the active group's representative on top
   await page.getByTestId('instance-search').fill(rep.pdb_id)
   await expect(page.getByTestId(`row-${rep.seq_name}`)).toHaveAttribute('aria-selected', 'true')            // the shared selection (4FE5 B) is unchanged
@@ -24,7 +24,7 @@ test('first visit: display representative is selected by full identity, its page
 
 test('manual selection persists across pages and tabs; hidden-by-search indication; no reset to the representative', async ({ page }) => {
   await page.goto('/RF00167')
-  await page.getByTestId('tab-structures').click()
+  await page.getByTestId('tab-structures').click(); await page.getByTestId('view-clustering').click()
   const inst: Inst[] = await (await page.request.get('/families/RF00167/instances.json')).json()
   await page.getByTestId('instance-search').fill('1y26')
   await page.getByTestId('row-1y26_1_X_A').click()
@@ -35,7 +35,7 @@ test('manual selection persists across pages and tabs; hidden-by-search indicati
   await page.getByTestId('tab-overview').click()
   await expect(page.getByTestId('instance-select')).toHaveValue('1y26_1_X_A')
   await expect(page.getByTestId('overview-current')).toContainText('1Y26 chain X')
-  await page.getByTestId('tab-structures').click()
+  await page.getByTestId('tab-structures').click(); await page.getByTestId('view-clustering').click()
   await expect(page.getByTestId('page-info')).toHaveText(/^Page 1 of/)                             // the tab opens on page 1 (active group representative on top)
   await expect(page.getByTestId('structures-current')).toContainText('1Y26 chain X')                // still selected (not reset to 4FE5)
   await page.getByTestId('instance-search').fill('1y26'); await expect(page.getByTestId('row-1y26_1_X_A')).toHaveAttribute('aria-selected', 'true'); await page.getByTestId('instance-search').fill('')
@@ -52,7 +52,7 @@ test('manual selection persists across pages and tabs; hidden-by-search indicati
 test('viewer never stays blank: repeated tab switching always reaches ready, with the white background and orientation applied', async ({ page }) => {
   await page.goto('/RF00167')
   for (let i = 0; i < 3; i++) {
-    await page.getByTestId('tab-structures').click(); await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-status', 'ready', { timeout: 60_000 })
+    await page.getByTestId('tab-structures').click(); await page.getByTestId('view-clustering').click(); await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-status', 'ready', { timeout: 60_000 })
     await page.getByTestId('tab-annotations').click(); await expect(page.getByTestId('category-ligands')).toBeVisible()
     await page.getByTestId('tab-overview').click(); await ready(page, '4fe5')
     const h = await page.evaluate(() => { const x = (window as unknown as { __rnaExplorer: { bgColor?: number; orientationApplied?: { fit_quality: string } | null } }).__rnaExplorer; return { bg: x.bgColor, q: x.orientationApplied?.fit_quality } })

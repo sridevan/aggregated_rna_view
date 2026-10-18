@@ -85,7 +85,7 @@ test('screenshots of several structures in the common reference orientation', as
   }
   await page.setViewportSize({ width: 1400, height: 1000 })
   await page.getByTestId('tab-overview').click()
-  await page.getByTestId('tab-structures').click(); await page.getByTestId('instance-search').fill('4fe5'); await page.getByTestId('row-4fe5_1_B_A').click()
+  await page.getByTestId('tab-structures').click(); await page.getByTestId('view-clustering').click(); await page.getByTestId('instance-search').fill('4fe5'); await page.getByTestId('row-4fe5_1_B_A').click()
   await page.getByTestId('tab-overview').click()
   await ready(page, '4fe5')
   await page.waitForTimeout(800)

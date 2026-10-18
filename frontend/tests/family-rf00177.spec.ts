@@ -28,7 +28,7 @@ test('Family Overview: 60 chains, reference 4V9D BA, 1,533-position overview, lo
 test('Structures: head-rotation groups 50 + 10 (provisional), no floor line; table opens with the representative of group 1', async ({ page }) => {
   const sc = await J(page, 'structure_clustering.json'), c = sc.metrics.discrepancy.clustering
   expect(c.groups.map((g: { n_instances: number }) => g.n_instances)).toEqual([50, 10]); expect(c.validation).toBe('provisional'); expect(c.floor.value).toBeNull()
-  await page.goto('/RF00177'); await page.getByTestId('tab-structures').click()
+  await page.goto('/RF00177'); await page.getByTestId('tab-structures').click(); await page.getByTestId('view-clustering').click()
   await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-status', 'ready', { timeout: 120_000 })
   await expect(page.getByTestId('group-chip-2')).toContainText('10 RNA instances')
   await expect.poll(() => page.locator('[data-testid="instance-table"] tbody tr').first().getAttribute('data-testid')).toBe(`row-${c.groups[0].representative}`)

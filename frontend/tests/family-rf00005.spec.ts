@@ -28,7 +28,7 @@ test('Structures: provisional groups 56 + 2 + 1 + 1 (discrepancy), no floor; the
   expect(disc.groups.map((g: { n_instances: number }) => g.n_instances)).toEqual([56, 2, 1, 1]); expect(disc.validation).toBe('provisional'); expect(disc.floor.value).toBeNull()
   expect(tm.groups.map((g: { n_instances: number }) => g.n_instances)).toEqual([55, 2, 1, 1, 1]); expect(tm.validation).toBe('provisional')
   expect(disc.groups[3].members).toEqual(['1j2b_1_C_A'])
-  await page.goto('/RF00005'); await page.getByTestId('tab-structures').click()
+  await page.goto('/RF00005'); await page.getByTestId('tab-structures').click(); await page.getByTestId('view-clustering').click()
   await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-status', 'ready', { timeout: 90_000 })
   await expect(page.getByTestId('dendro-floor')).toHaveCount(0); await expect(page.getByTestId('overview-floor')).toHaveCount(0)
   await page.getByTestId('group-chip-4').click()
@@ -57,7 +57,7 @@ test('Annotations: J5 junctions in the junction track, nonstandard nucleotides, 
 test('Structures: group 1 representative has no internal gaps (6UFG B); the gapped overall medoid 9TNL Y is named', async ({ page }) => {
   const g1 = (await J(page, 'structure_clustering.json')).metrics.discrepancy.clustering.groups[0]
   expect(g1.representative).toBe('6ufg_1_B_A'); expect(g1.medoid).toBe('9tnl_6_Y_F'); expect(g1.representative_internal_gaps).toEqual([])
-  await page.goto('/RF00005'); await page.getByTestId('tab-structures').click()
+  await page.goto('/RF00005'); await page.getByTestId('tab-structures').click(); await page.getByTestId('view-clustering').click()
   await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-status', 'ready', { timeout: 90_000 })
   await expect(page.getByTestId('group-representative')).toHaveText('6UFG B')
   await expect(page.getByTestId('group-medoid-note')).toContainText('9TNL Y')

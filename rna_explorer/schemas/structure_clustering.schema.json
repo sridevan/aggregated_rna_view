@@ -88,7 +88,8 @@
       "values_layout",
       "value_range",
       "distance_range",
-      "clustering"
+      "clustering",
+      "seriation"
      ],
      "properties": {
       "kind": {
@@ -298,6 +299,49 @@
          "required": [
           "value",
           "definition"
+         ]
+        }
+       }
+      },
+      "seriation": {
+       "type": "object",
+       "description": "TPPL seriation order of the discrepancy matrix (Structural Dissimilarity mode); rows and columns share the order",
+       "required": [
+        "method",
+        "repetitions",
+        "seed",
+        "order",
+        "missing_pairs",
+        "reference"
+       ],
+       "properties": {
+        "method": {
+         "type": "string"
+        },
+        "repetitions": {
+         "type": "integer",
+         "minimum": 1
+        },
+        "seed": {
+         "type": "integer"
+        },
+        "order": {
+         "type": "array",
+         "items": {
+          "type": "string"
+         },
+         "uniqueItems": true
+        },
+        "missing_pairs": {
+         "type": "integer",
+         "minimum": 0
+        },
+        "reference": {
+         "type": "object",
+         "required": [
+          "repository",
+          "commit",
+          "vendored_sha256"
          ]
         }
        }

@@ -165,7 +165,10 @@ export interface StructureMetricClustering {
 export interface StructureMetric {
   label: string; short: string; kind: 'dissimilarity' | 'similarity'; stored_quantity: string; distance: string; higher_is_more_similar: boolean; unit: string; definition: string
   values_upper: number[]; values_layout: string; value_range: { min: number; max: number }; distance_range: { min: number; max: number }; clustering: StructureMetricClustering
+  /** TPPL seriation of this metric's matrix (discrepancy only; Structural Dissimilarity mode), computed by the backend */
+  seriation?: StructureSeriation
 }
+export interface StructureSeriation { method: string; repetitions: number; seed: number; order: string[]; missing_pairs: number; missing_values?: string; reference: Record<string, string> }
 export interface StructureClusteringDataset {
   schema_version: string; rfam_acc: string; visualisation: { detail_max: number; small_group: number }
   dataset: { n_mapped_instances: number; n_mapped_entries: number; n_clustered_instances: number; n_clustered_entries: number; n_excluded_instances: number; inclusion_rule: string

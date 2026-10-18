@@ -1087,6 +1087,53 @@
       }
      }
     }
+   },
+   "seriation": {
+    "method": "tree-penalized path length (TPPL) seriation",
+    "repetitions": 10,
+    "seed": 39873,
+    "input_order": "instance identifiers sorted lexicographically before the call",
+    "order": [
+     "5fjc_1_A_A",
+     "2ygh_1_A_A",
+     "4b5r_1_A_A",
+     "5fk4_1_A_A",
+     "5fk5_1_A_A",
+     "5fkg_1_A_A",
+     "3iqr_1_A_A",
+     "3iqn_1_A_A",
+     "3gx7_1_A_A",
+     "3gx6_1_A_A",
+     "3gx2_1_A_A",
+     "3gx3_1_A_A",
+     "3gx5_1_A_A",
+     "2gis_1_A_A",
+     "2ydh_1_A_A",
+     "7eaf_1_A_A",
+     "4aob_1_A_A",
+     "5fke_1_A_A",
+     "5fk6_1_A_A",
+     "5fkd_1_A_A",
+     "5fkh_1_A_A",
+     "5fkf_1_A_A",
+     "5fk1_1_A_A",
+     "5fk3_1_A_A",
+     "5fk2_1_A_A",
+     "3iqp_1_A_A",
+     "4kqy_1_A_A",
+     "3v7e_2_D_D",
+     "3v7e_2_C_C"
+    ],
+    "missing_pairs": 0,
+    "missing_values": "none: the matrix must be complete (missing comparisons are never imputed as maximal differences)",
+    "reference": {
+     "repository": "https://github.com/sridevan/ordering_analysis",
+     "commit": "37f63c930e3b75e5cf450ad7be8ad6f76d227990",
+     "file": "ordering_similarity.py",
+     "function": "treePenalizedPathLength (tree penalty from average linkage, multiple greedy insertion, orientPath)",
+     "citation": "Aliyev, D. A. & Zirbel, C. L. (2023) Seriation using tree-penalized path length. EJOR 305(2), 617-629. doi:10.1016/j.ejor.2022.06.026",
+     "vendored_sha256": "1215f5802987ecc118bf6bf0b45a5a07ca46c93946774e86f71bd164d1f8ebc2"
+    }
    }
   },
   "tm": {
@@ -2000,7 +2047,7 @@
   "mapping_pipeline_version": "0.1.0",
   "mapping_generated": "2026-10-17T15:09:20+00:00",
   "pipeline_version": "0.1.0",
-  "generated": "2026-10-18T08:24:38+00:00",
+  "generated": "2026-10-18T19:17:56+00:00",
   "note": "pairwise values copied from the research run; no structural comparison was recomputed"
  }
 }

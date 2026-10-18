@@ -1,6 +1,6 @@
 import { readFileSync, existsSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
-import { buildTree, clusteringFor, defaultDisplayed, GROUP_COLORS, groupCount, OVERLAY_MAX, squareMatrix, UNPLACED, viridis, instanceLabel } from './structureGroups'
+import { buildTree, clusteringFor, GROUP_COLORS, squareMatrix, UNPLACED, viridis, instanceLabel } from './structureGroups'
 import { categoricalRows, medianOf } from '../components/structures/AssociatedFeatures'
 import { parseAtomSite, toPdb } from '../components/structures/AlignmentViewer'
 import type { StructureClusteringDataset } from '../types/backend'
@@ -12,11 +12,6 @@ describe('tree and matrix helpers', () => {
   })
   it('expands the upper triangle with the right diagonal', () => {
     expect(squareMatrix([0.5, 0.7, 0.9], 3, 1)).toEqual([[1, 0.5, 0.7], [0.5, 1, 0.9], [0.7, 0.9, 1]])
-  })
-  it('default 3D content: all members up to the cap, else the representative', () => {
-    expect(defaultDisplayed({ members: ['a', 'b', 'c'], representative: 'b' })).toEqual(['b', 'a', 'c'])
-    expect(defaultDisplayed({ members: Array.from({ length: OVERLAY_MAX + 1 }, (_, i) => `m${i}`), representative: 'm3' })).toEqual(['m3'])
-    expect(defaultDisplayed({ members: ['x'], representative: 'x' })).toEqual(['x'])
   })
   it('viridis ends and labels', () => {
     expect(viridis(0)).toBe('rgb(68,1,84)'); expect(viridis(1)).toBe('rgb(253,231,37)'); expect(instanceLabel('4fe5_1_B_A')).toBe('4FE5 B')
@@ -79,12 +74,3 @@ describe('comparison route and structure colours', () => {
   })
 })
 
-describe('overlay limit per structural group', () => {
-  it('is 5, counted per group; non-clustered instances count together', () => {
-    expect(OVERLAY_MAX).toBe(5)
-    const groupOf: Record<string, number | undefined> = { a: 1, b: 1, c: 1, d: 2, e: 2 }
-    expect(groupCount(['a', 'b', 'd'], 'c', groupOf)).toBe(2); expect(groupCount(['a', 'b', 'd'], 'e', groupOf)).toBe(1)
-    expect(groupCount(['x', 'a'], 'y', groupOf)).toBe(1)
-    expect(defaultDisplayed({ members: ['m0', 'm1', 'm2', 'm3', 'm4'], representative: 'm2' })).toEqual(['m2', 'm0', 'm1', 'm3', 'm4'])   // 5: all shown
-  })
-})

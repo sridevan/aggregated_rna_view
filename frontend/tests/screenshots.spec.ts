@@ -26,7 +26,7 @@ test('screenshots of the three tabs', async ({ page }) => {
   await page.waitForTimeout(2000)
   expect(await bgHex(page)).toBe('#ffffff')
   await page.screenshot({ path: `${OUT}/m3c_family_overview_1y26_selection.png`, fullPage: true })
-  await page.getByTestId('tab-structures').click()
+  await page.getByTestId('tab-structures').click(); await page.getByTestId('view-clustering').click()
   await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-status', 'ready', { timeout: 60_000 })
   await page.waitForTimeout(1000)
   await page.screenshot({ path: `${OUT}/m3c_structures.png`, fullPage: true })
@@ -78,7 +78,7 @@ test('screenshots of the three tabs', async ({ page }) => {
 
 test('screenshots of the Structures tab (RF00167 structural clustering)', async ({ page }) => {
   const ready = () => expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-status', 'ready', { timeout: 60_000 })
-  await page.goto('/RF00167'); await page.getByTestId('tab-structures').click(); await ready(); await page.waitForTimeout(800)
+  await page.goto('/RF00167'); await page.getByTestId('tab-structures').click(); await page.getByTestId('view-clustering').click(); await ready(); await page.waitForTimeout(800)
   await page.screenshot({ path: `${OUT}/m4_structures_default.png`, fullPage: true })
   await page.getByTestId('structures-section-b').screenshot({ path: `${OUT}/m4_structures_panels_aligned.png` })
   await page.getByTestId('table-mode-toggle').click(); await page.waitForTimeout(300)
@@ -95,10 +95,9 @@ test('screenshots of the Structures tab (RF00167 structural clustering)', async 
 test('screenshots: group colours in 3D and representative comparison paths', async ({ page }) => {
   const ready = () => expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-status', 'ready', { timeout: 60_000 })
   const shot = async (name: string) => { await ready(); await page.waitForTimeout(700); await page.getByTestId('structures-section-b').screenshot({ path: `${OUT}/${name}` }) }
-  await page.goto('/RF00167'); await page.getByTestId('tab-structures').click()
+  await page.goto('/RF00167'); await page.getByTestId('tab-structures').click(); await page.getByTestId('view-clustering').click()
   await shot('m4_compare_g1_rep_alone.png')
   await page.getByTestId('group-chip-2').click(); await ready()
-  for (const sn of ['5e54_1_A_A', '5swd_1_A_A', '5swd_1_B_B']) await page.getByTestId(`remove-${sn}`).click()
   await shot('m4_compare_g2_rep_alone.png')
   await page.getByTestId('group-chip-1').click(); await page.getByTestId('compare-on').click()
   await shot('m4_compare_g1_vs_g2.png')
@@ -108,7 +107,7 @@ test('screenshots: group colours in 3D and representative comparison paths', asy
 })
 
 test('screenshots: associated features (both metrics)', async ({ page }) => {
-  await page.goto('/RF00167'); await page.getByTestId('tab-structures').click(); await expect(page.getByTestId('associated-features')).toBeVisible()
+  await page.goto('/RF00167'); await page.getByTestId('tab-structures').click(); await page.getByTestId('view-clustering').click(); await expect(page.getByTestId('associated-features')).toBeVisible()
   const shot = async (name: string) => { await page.waitForTimeout(300); await page.getByTestId('associated-features').screenshot({ path: `${OUT}/${name}` }) }
   await shot('m4_features_collapsed.png')
   await page.getByTestId('features-toggle').click()
@@ -289,16 +288,16 @@ test('screenshots: Family Overview viewers without footer; Viewer details with 3
 test('screenshots: Structures tab follows the selected instance into 3D', async ({ page }) => {
   const d = await (await page.request.get('/families/RF00167/structure_clustering.json')).json()
   const g1 = d.metrics.discrepancy.clustering.groups[0], a = g1.members.find((m: string) => m !== g1.representative)
-  await page.goto('/RF00167'); await page.getByTestId('tab-structures').click()
+  await page.goto('/RF00167'); await page.getByTestId('tab-structures').click(); await page.getByTestId('view-clustering').click()
   await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-status', 'ready', { timeout: 90_000 })
   await page.getByTestId('instance-search').fill(a.split('_')[0]); await page.getByTestId(`row-${a}`).locator('[data-testid="cell-title"]').click()
-  await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-emphasis', a); await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-status', 'ready', { timeout: 90_000 })
+  await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-structures', a); await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-status', 'ready', { timeout: 90_000 })
   await page.waitForTimeout(800)
   await page.getByTestId('alignment-panel').screenshot({ path: `${OUT}/m14_structures_selected_instance_in_3d.png` })
 })
 
 test('screenshots: Structures table opens with the active group representative on top', async ({ page }) => {
-  await page.goto('/RF00167'); await page.getByTestId('tab-structures').click()
+  await page.goto('/RF00167'); await page.getByTestId('tab-structures').click(); await page.getByTestId('view-clustering').click()
   await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-status', 'ready', { timeout: 90_000 }); await page.waitForTimeout(500)
   await page.getByTestId('instance-table').screenshot({ path: `${OUT}/m15_table_default_group_order.png` })
   await page.getByTestId('group-chip-2').click(); await page.waitForTimeout(800)

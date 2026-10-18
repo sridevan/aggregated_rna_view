@@ -28,7 +28,7 @@ test.describe('family overview and structures', () => {
   })
   test('structures table rows correspond to instances.json and show pending panels', async ({ page }) => {
     await page.goto('/RF00167')
-    await page.getByTestId('tab-structures').click()
+    await page.getByTestId('tab-structures').click(); await page.getByTestId('view-clustering').click()
     const inst = await (await page.request.get('/families/RF00167/instances.json')).json()
     await expect(page.locator('[data-testid="instance-table"] tbody tr')).toHaveCount(10)   // paginated, 10 per page
     await expect(page.getByTestId('table-count')).toContainText(`of ${inst.length} instances`)
@@ -38,9 +38,8 @@ test.describe('family overview and structures', () => {
     await page.getByTestId(`row-${INSTANCE_1Y26}`).click()
     await expect(page.getByTestId('structures-current')).toContainText('1Y26 chain X')
     await expect(page.getByTestId('current-group')).toHaveText('Structural group 1')
-    // the selected row follows into the 3D alignment view (shown and emphasised), so there is nothing left to add
-    await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-structures', new RegExp(`(^|,)${INSTANCE_1Y26}(,|$)`))
-    await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-emphasis', INSTANCE_1Y26)
+    // the selected row is shown alone in the 3D view
+    await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-structures', INSTANCE_1Y26)
     await expect(page.getByTestId('add-selected')).toHaveCount(0)
   })
 })

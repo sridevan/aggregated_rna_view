@@ -194,20 +194,20 @@ test('compact comparison header: one stored metric line; alignment details in th
   const f3 = (v: number) => (Math.abs(v) >= 1 ? v.toFixed(2) : v.toFixed(3))
   const info = async () => { await page.getByRole('button', { name: 'About the 3D alignment' }).click(); const t = (await page.getByTestId('info-popover').innerText()); await page.keyboard.press('Escape'); return t }
   const fitLine = (sn: string) => { const t = orient.transforms[sn]; return `• ${label(sn)}: ${t.fit_quality} fit, RMSD ${t.rmsd.toFixed(2)} Å` }
-  await page.goto('/RF00167'); await page.getByTestId('tab-structures').click()
+  await page.goto('/RF00167'); await page.getByTestId('tab-structures').click(); await page.getByTestId('view-clustering').click()
   await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-status', 'ready', { timeout: 60_000 })
-  // single group: the caption stays, no comparison line
-  await expect(page.getByTestId('compare-summary')).toHaveCount(0); await expect(page.getByTestId('alignment-caption')).toBeVisible()
+  // single group: its caption, no comparison line
+  await expect(page.getByTestId('compare-summary')).toHaveCount(0); await expect(page.getByTestId('alignment-caption')).toHaveText('Structural group 1 · Showing representative')
   expect(await info()).toContain(fitLine(rep('discrepancy', 1)))
   // groups 1 and 2 (discrepancy): only the metric line under the heading; representatives stay named by the controls and chips
   await page.getByTestId('compare-on').click()
   const [a, b] = [rep('discrepancy', 1), rep('discrepancy', 2)]
-  await expect(page.getByTestId('alignment-caption')).toHaveCount(0)
+  await expect(page.getByTestId('alignment-caption')).toHaveText('Comparing representatives of structural groups 1 and 2')
   await expect(page.getByTestId('compare-summary')).toHaveText(`Geometric discrepancy ${f3(stored('discrepancy', a, b))} · ${sc.dataset.n_shared_positions} shared Rfam positions`)
   expect(+(await page.getByTestId('compare-summary').getAttribute('data-value'))!).toBeCloseTo(stored('discrepancy', a, b), 6)
   await expect(page.getByTestId('alignment-panel')).not.toContainText(`${label(a)} (Group 1) vs`)
   await expect(page.getByTestId('compare-box')).toContainText(label(a)); await expect(page.getByTestId('compare-select')).toContainText(label(b))
-  await expect(page.getByTestId(`legend-${a}`)).toBeVisible(); await expect(page.getByTestId(`legend-${b}`)).toBeVisible()
+  await expect(page.getByTestId(`viewer-label-${a}`)).toBeVisible(); await expect(page.getByTestId(`viewer-label-${b}`)).toBeVisible()
   // good and poor overlays: the poor fit stays flagged on its chip; the ⓘ gives the reference, every fit and the metric distinction
   expect([orient.transforms[a].fit_quality, orient.transforms[b].fit_quality]).toEqual(['good', 'poor'])
   await expect(page.getByTestId(`fit-warning-${b}`)).toHaveText('poor fit'); await expect(page.getByTestId(`fit-warning-${a}`)).toHaveCount(0)
@@ -215,9 +215,9 @@ test('compact comparison header: one stored metric line; alignment details in th
   expect(t).toContain(`fitted onto ${label(orient.reference.seq_name)} using C4′ atoms`)
   expect(t).toContain(`${fitLine(a)}\n${fitLine(b)}`)
   expect(t).toContain('may differ from the alignment used to calculate the geometric discrepancy')
-  // the header is one short line: heading + metric line sit within 62 px above the comparison controls
+  // the header is one short line: title, caption and metric line sit within 80 px above the comparison controls
   const head = (await page.getByTestId('alignment-panel').boundingBox())!, box = (await page.getByTestId('compare-box').boundingBox())!
-  expect(box.y - head.y).toBeLessThan(62)
+  expect(box.y - head.y).toBeLessThan(80)   // title, the caption naming the compared groups, and the metric line
   await page.getByTestId('compare-off').click(); await expect(page.getByTestId('compare-summary')).toHaveCount(0)
   // TM-score: group 1 vs 3, then vs 4; the line follows the chosen pair and metric, the ⓘ names the TM-score
   await page.getByTestId('metric-tm').click()

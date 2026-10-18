@@ -14,12 +14,20 @@ export interface TableGroups {
 }
 const COMPACT = ['pdb_id', 'chain', 'group', 'title', 'method', 'resolution']
 
-export function InstanceTable({ rows, selected, onSelect, clen, groups, compact = false, toolbar, restrict = null }: { rows: InstanceRow[]; selected: string | null; onSelect: (seqName: string) => void; clen: number; groups?: TableGroups; compact?: boolean; toolbar?: ReactNode; restrict?: ((r: InstanceRow) => boolean) | null }) {
+export function InstanceTable({ rows, selected, onSelect, clen, groups, compact = false, toolbar, restrict = null, seriation = null, marked = [], jumpOnSelect = true }: { rows: InstanceRow[]; selected: string | null; onSelect: (seqName: string) => void; clen: number; groups?: TableGroups; compact?: boolean; toolbar?: ReactNode; restrict?: ((r: InstanceRow) => boolean) | null
+  /** Structural Dissimilarity mode: the stored TPPL order (seq_names) is the table's default order ("Seriation (default)"); instances
+   *  without a seriation position (not clustered) follow it, by PDB ID and chain. A column sort replaces it; "Order by" restores it. */
+  seriation?: string[] | null
+  /** a new selection shows its page (false: keep the page, e.g. on Reset) */
+  jumpOnSelect?: boolean
+  /** further rows shown as selected (both instances of a compared pair) */
+  marked?: string[] }) {
   // `selected` is the complete instance identity (seq_name = pdb_entity_authChain_labelAsym), never the PDB id alone
   const [q, setQ] = useState('')
   // null = the default order: by structural group (active group first, its representative at the top) when groups exist, else by PDB ID
   const [userSort, setUserSort] = useState<{ key: string; dir: 1 | -1 } | null>(null)
-  const sort = userSort ?? (groups ? { key: 'group', dir: 1 as const } : { key: 'pdb_id', dir: 1 as const })
+  const serIdx = useMemo(() => (seriation ? new Map(seriation.map((sn, i) => [sn, i])) : null), [seriation])
+  const sort = userSort ?? (groups ? { key: 'group', dir: 1 as const } : serIdx ? { key: 'seriation', dir: 1 as const } : { key: 'pdb_id', dir: 1 as const })
   // sorting the Structural group column ascending again is the default order itself (page 1, representative on top)
   const backToDefault = useRef(false)
   const setSort = (f: (s: { key: string; dir: 1 | -1 }) => { key: string; dir: 1 | -1 }) => { const n = f(sort); const d = !!groups && n.key === 'group' && n.dir === 1; backToDefault.current = d; setUserSort(d ? null : n) }
@@ -27,7 +35,7 @@ export function InstanceTable({ rows, selected, onSelect, clen, groups, compact 
   const [page, setPage] = useState(1)
   const allCols = useMemo<Col[]>(() => [
     { key: 'pdb_id', label: 'PDB ID', get: (r) => r.pdb_id.toUpperCase(),
-      render: (r) => <ExtLink href={`https://pdbe.org/${r.pdb_id.toLowerCase()}`} title={`Open PDB entry ${r.pdb_id.toUpperCase()} at PDBe`} testId={`link-pdb-${r.seq_name}`}>{r.pdb_id.toUpperCase()}</ExtLink> },
+      render: (r) => <><ExtLink href={`https://pdbe.org/${r.pdb_id.toLowerCase()}`} title={`Open PDB entry ${r.pdb_id.toUpperCase()} at PDBe`} testId={`link-pdb-${r.seq_name}`}>{r.pdb_id.toUpperCase()}</ExtLink>{serIdx && !serIdx.has(r.seq_name) && <span className="ml-1 rounded border border-stone-300 px-0.5 text-[9px] text-stone-500" title="Not clustered: no pairwise geometric discrepancy, so not in the matrix and without a seriation position; listed after the ordered instances" data-testid="not-in-matrix">not in matrix</span>}</> },
     { key: 'chain', label: 'Chain', get: (r) => r.auth_asym_id, tip: 'Author chain identifier. The label (mmCIF) asym id is kept internally for Mol* selections.',
       render: (r) => <ExtLink href={`https://www.ebi.ac.uk/pdbe/entry/pdb/${r.pdb_id.toLowerCase()}?activeTab=macromolecules&entity=${r.entity_id}`} title={`Open molecule (entity ${r.entity_id}) of ${r.pdb_id.toUpperCase()} at PDBe`} testId={`link-chain-${r.seq_name}`}>{r.auth_asym_id}</ExtLink> },
     ...(groups ? [{ key: 'group', label: 'Structural group', tip: 'Structural group of the RNA instance under the selected comparison metric (descriptive; not a biological state). Default order: the selected group first with its representative (medoid) at the top, then dendrogram order. Click a badge to select its group. Instances without enough observed core positions are not clustered.',
@@ -49,13 +57,17 @@ export function InstanceTable({ rows, selected, onSelect, clen, groups, compact 
     { key: 'strcov', label: 'Struct. cov. %', get: (r) => +((r.n_match_with_coordinates / clen) * 100).toFixed(1), num: true, tip: `Match-state residues that have experimental coordinates in this chain, divided by the model length (${clen}). Lower than sequence coverage when parts of the chain are unmodelled.` },
     { key: 'avgpp', label: 'Avg PP', get: (r) => r.cmalign?.avg_pp ?? null, num: true, tip: 'Average Infernal (cmalign) posterior probability of the aligned residues of the mapped region, as reported by cmalign; 1.0 means every residue placement is near-certain under the model.' },
     { key: 'bits', label: 'Rfam bits', get: (r) => r.rfam_bit_score, num: true, tip: 'Rfam cmsearch bit score of this chain against the family covariance model (from the Rfam structures endpoint). Higher = closer to the family model; it is not a resolution or quality measure.' },
-  ], [clen, groups])
+  ], [clen, groups, serIdx])
   const cols = useMemo(() => (compact ? allCols.filter((c) => COMPACT.includes(c.key)) : allCols), [allCols, compact])
   const filtered = useMemo(() => {
     const needle = q.trim().toLowerCase()
     const base = restrict ? rows.filter(restrict) : rows
     const f = needle ? base.filter((r) => [r.pdb_id, r.auth_asym_id, r.label_asym_id, r.organism, r.organism_species, r.experimental_method, r.title, r.molecule_name].join(' ').toLowerCase().includes(needle)) : base.slice()
     const col = cols.find((c) => c.key === sort.key) ?? allCols.find((c) => c.key === sort.key) ?? cols[0]
+    if (!userSort && !groups && serIdx) {   // seriation order on the whole list before paging; instances without a position after it
+      const key = (r: InstanceRow) => [serIdx.get(r.seq_name) ?? Number.MAX_SAFE_INTEGER, r.pdb_id.toUpperCase(), r.auth_asym_id] as const
+      return f.sort((a, b) => { const x = key(a), y = key(b); return x[0] - y[0] || x[1].localeCompare(y[1]) || x[2].localeCompare(y[2]) })
+    }
     return f.sort((a, b) => {
       const va = col.get(a), vb = col.get(b)
       if (va == null && vb == null) return 0
@@ -63,7 +75,7 @@ export function InstanceTable({ rows, selected, onSelect, clen, groups, compact 
       if (vb == null) return -1
       return (col.num ? (va as number) - (vb as number) : String(va).localeCompare(String(vb))) * sort.dir
     })
-  }, [rows, q, sort, cols, allCols, restrict])
+  }, [rows, q, sort, cols, allCols, restrict, userSort, groups, serIdx])
   const pages = Math.max(1, Math.ceil(filtered.length / PAGE))
   const selectedIndex = selected ? filtered.findIndex((r) => r.seq_name === selected) : -1
   const selectedHidden = !!selected && rows.some((r) => r.seq_name === selected) && selectedIndex < 0
@@ -74,8 +86,11 @@ export function InstanceTable({ rows, selected, onSelect, clen, groups, compact 
   // another active group in the default order: its representative is now first -> page 1 (a selection made in the same step wins below)
   useEffect(() => { if (mounted.current && defaultOrder) setPage(1) }, [groups?.selectedId])   // eslint-disable-line react-hooks/exhaustive-deps
   // selection changes ("Use as selected instance", heatmap/dendrogram, Annotations selector): navigate to its page; user paging never alters the selection
-  useEffect(() => { if (!mounted.current) return; if (selectedIndex >= 0) setPage(Math.floor(selectedIndex / PAGE) + 1) }, [selected])   // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => { if (!mounted.current || !jumpOnSelect) return; if (selectedIndex >= 0) setPage(Math.floor(selectedIndex / PAGE) + 1) }, [selected])   // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => { if (!groups && selectedIndex >= 0) setPage(Math.floor(selectedIndex / PAGE) + 1); mounted.current = true }, [])   // eslint-disable-line react-hooks/exhaustive-deps
+  // the pinned representative appears or goes (Structural Dissimilarity mode, or the data arriving after the first render): show the selected row's page
+  // (back to the group order instead: page 1, the active group's representative on top, as on a first visit)
+  useEffect(() => { if (!mounted.current || userSort) return; if (!serIdx && defaultOrder) setPage(1); else if (selectedIndex >= 0) setPage(Math.floor(selectedIndex / PAGE) + 1) }, [serIdx])   // eslint-disable-line react-hooks/exhaustive-deps
   const cur = Math.min(page, pages)
   const shown = filtered.slice((cur - 1) * PAGE, cur * PAGE)
   const from = filtered.length ? (cur - 1) * PAGE + 1 : 0, to = Math.min(cur * PAGE, filtered.length)
@@ -83,6 +98,19 @@ export function InstanceTable({ rows, selected, onSelect, clen, groups, compact 
     <div className="rounded border border-stone-200 bg-white">
       <div className="flex flex-wrap items-center gap-2 border-b border-stone-200 p-2">
         <input data-testid="instance-search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search PDB id, chain, organism, method, title…" className="w-full max-w-md flex-1 rounded border border-stone-300 px-2 py-1 text-sm" />
+        {serIdx && (() => {
+          // one sort state: the select shows Seriation or the active column sort (the same state as the header arrows)
+          const colLabel = userSort ? (allCols.find((c) => c.key === userSort.key)?.label ?? userSort.key) : null
+          return <>
+            <label className="flex items-center gap-1 text-xs text-stone-600">Order by
+              <select className="rounded border border-stone-300 bg-white px-1 py-0.5 text-xs text-stone-800" value={userSort ? 'column' : 'seriation'} onChange={(e) => { if (e.target.value === 'seriation') setUserSort(null) }} data-testid="order-by">
+                <option value="seriation">Seriation (default)</option>
+                {userSort && <option value="column">{colLabel} {userSort.dir === 1 ? '▲' : '▼'}</option>}
+              </select>
+            </label>
+            {userSort && <span className="text-xs text-stone-500" data-testid="sort-note">Table sorted by {colLabel} · Heatmap ordered by structural similarity</span>}
+          </>
+        })()}
         {toolbar}
       </div>
       <div className="overflow-x-auto">
@@ -98,11 +126,11 @@ export function InstanceTable({ rows, selected, onSelect, clen, groups, compact 
           </thead>
           <tbody>
             {shown.map((r) => (
-              <tr key={r.seq_name} data-testid={`row-${r.seq_name}`} data-selected={r.seq_name === selected ? 'true' : 'false'} onClick={() => onSelect(r.seq_name)} aria-selected={r.seq_name === selected} tabIndex={0}
+              <tr key={r.seq_name} data-testid={`row-${r.seq_name}`} data-selected={r.seq_name === selected || marked.includes(r.seq_name) ? 'true' : 'false'} onClick={() => onSelect(r.seq_name)} aria-selected={r.seq_name === selected || marked.includes(r.seq_name)} tabIndex={0}
                 data-in-group={(() => { const g = groups?.of(r.seq_name); return g?.kind === 'group' && g.id === groups?.selectedId ? 'true' : undefined })()}
                 style={(() => { const g = groups?.of(r.seq_name); return g?.kind === 'group' && g.id === groups?.selectedId ? { boxShadow: `inset 3px 0 0 ${g.color}` } : undefined })()}
                 onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onSelect(r.seq_name) } }}
-                className={`cursor-pointer border-t border-stone-100 hover:bg-blue-50 focus:bg-blue-50 focus:outline-none ${r.seq_name === selected ? 'bg-blue-100 font-medium ring-1 ring-inset ring-blue-300' : ''}`}>
+                className={`cursor-pointer border-t border-stone-100 hover:bg-blue-50 focus:bg-blue-50 focus:outline-none ${r.seq_name === selected || marked.includes(r.seq_name) ? 'bg-blue-100 font-medium ring-1 ring-inset ring-blue-300' : ''}`}>
                 {cols.map((c) => <td key={c.key} className="whitespace-nowrap px-1.5 py-1">{c.render ? c.render(r) : (c.get(r) ?? '–')}</td>)}
               </tr>))}
             {shown.length === 0 && <tr><td colSpan={cols.length} className="px-2 py-3 text-stone-500">No instances match the search.</td></tr>}

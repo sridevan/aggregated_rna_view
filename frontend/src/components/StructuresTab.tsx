@@ -4,8 +4,8 @@ import { useSelection } from '../state/selection'
 import { useStructures } from '../state/structures'
 import { displayOrganism } from '../lib/format'
 import { familyFileUrl, loadLigands, loadModifications, loadStructureClustering } from '../api/data'
-import { clusteringFor, defaultDisplayed, fmt, groupCount, instanceLabel, OVERLAY_MAX, structureColours, type Clustering } from '../lib/structureGroups'
-import type { LigandsDataset, ModificationsDataset, StructureClusteringDataset, StructureMetricId } from '../types/backend'
+import { clusteringFor, dissimilarityMatrix, fmt, instanceLabel, structureColours, type Clustering } from '../lib/structureGroups'
+import type { InstanceRow, LigandsDataset, ModificationsDataset, StructureClusteringDataset, StructureMetricId } from '../types/backend'
 import { InstanceTable, type TableGroups } from './InstanceTable'
 import { InfoTip } from './InfoTip'
 import { GroupsCard } from './structures/GroupsCard'
@@ -13,6 +13,7 @@ import { GroupOverview } from './structures/GroupOverview'
 import { PairwiseHeatmap } from './structures/PairwiseHeatmap'
 import { AlignmentViewer, type ViewerEntry } from './structures/AlignmentViewer'
 import { AssociatedFeatures } from './structures/AssociatedFeatures'
+import { DissimilarityHeatmap } from './structures/DissimilarityHeatmap'
 
 /*
  * Structures tab (layout of the PDBe-KB Complexes "Structural groups" prototype, antibody_antigen_interface/app-react/src/groups/
@@ -20,6 +21,10 @@ import { AssociatedFeatures } from './structures/AssociatedFeatures'
  * structural comparison (metric selector; collapsed group dendrogram above detail_max instances, with drill-down into groups of
  * <= detail_max) + 3D alignment view; C = associated features. Groups, cut, medoids and statistics come precomputed from
  * structure_clustering.json; switching metric switches to that metric's own groups.
+ * Two modes (segmented control): Structural Dissimilarity (default; no groups panel, full-width table without the group column,
+ * the geometric discrepancy matrix in the stored TPPL seriation order instead of the dendrogram/heatmap, the same 3D alignment view; a
+ * click below the diagonal displays that pair through the existing displayed-structures state) and Clustering (all of the above).
+ * Without a stored seriation the tab falls back to Clustering.
  */
 const METRIC_IDS: StructureMetricId[] = ['discrepancy', 'tm']
 
@@ -39,9 +44,29 @@ export function StructuresTab() {
   const st = useStructures()
   const { data, ligands, mods, ready } = useClusteringData(acc)
   const current = instances.find((i) => i.seq_name === sel.instance) ?? family.display_representative ?? family.representative
-  const o = current ? displayOrganism(current) : null
   const clusterings = useMemo(() => (data ? Object.fromEntries(METRIC_IDS.map((m) => [m, clusteringFor(data, m)])) as Record<StructureMetricId, Clustering> : null), [data])
   const c = clusterings?.[st.metric] ?? null
+  // built once per loaded dataset (not on mode switches or renders); counted for the tests
+  const dm = useMemo(() => {
+    if (!data) return null
+    if (typeof window !== 'undefined') { const w = window.__rnaExplorer ?? (window.__rnaExplorer = {}); w.dissimilarityBuilds = ((w.dissimilarityBuilds as number) ?? 0) + 1 }
+    return dissimilarityMatrix(data)
+  }, [data])
+  const dissim = st.view === 'dissimilarity' && !!dm
+  // Structural Dissimilarity mode has its own 3D content (st.dissimDisplayed), never the Clustering one: by default the first instance
+  // of the stored TPPL order (also the table's first row and the first diagonal cell), one instance chosen in the table or on the
+  // diagonal, or exactly one pair chosen below the diagonal. Selections are seq_names, never row or matrix positions.
+  const rep = family.display_representative?.seq_name ?? null                      // the family's designated representative (label tag only)
+  const first = dm?.ids[0] ?? null
+  const dissimShown = st.dissimDisplayed ?? (first ? [first] : [])
+  const pair: [string, string] | null = dissimShown.length === 2 ? [dissimShown[0], dissimShown[1]] : null
+  const [holdPage, setHoldPage] = useState(false)                                  // Reset keeps the table page
+  const selectPair = (a: string, b: string) => { setHoldPage(false); st.setDissimDisplayed([a, b]) }
+  const showOne = (sn: string) => { setHoldPage(false); sel.setInstance(sn); st.setDissimDisplayed([sn]) }
+  // the "Selected:" line names what is displayed in Structural Dissimilarity mode (one instance or the pair; no structural groups there)
+  const hdr = dissim ? (pair ? null : instances.find((r) => r.seq_name === dissimShown[0]) ?? null) : current
+  const ho = hdr ? displayOrganism(hdr) : null
+  const resetDissim = () => { setHoldPage(true); st.setDissimDisplayed(null); if (first) sel.setInstance(first) }
   const groupId = c ? (st.groupByMetric[st.metric] ?? c.groups[0].group_id) : null
   const group = c?.groups.find((g) => g.group_id === groupId) ?? c?.groups[0] ?? null
   const excluded = useMemo(() => new Map((data?.dataset.excluded ?? []).map((e) => [e.seq_name, e.reason_text])), [data])
@@ -49,38 +74,61 @@ export function StructuresTab() {
     of: (sn) => { const g = c.groupOf[sn]; if (g != null) { const gr = c.groups.find((x) => x.group_id === g)!; return { kind: 'group', id: g, label: gr.label, color: gr.color, representative: gr.representative === sn, order: c.order.indexOf(sn) } } return excluded.has(sn) ? { kind: 'excluded', reason: excluded.get(sn)! } : null },
     selectedId: groupId, onSelectGroup: (id) => st.selectGroup(st.metric, id),
   } : undefined
-  const expanded = st.tableMode === 'expanded'
+  const expanded = st.tableMode === 'expanded' || dissim   // Structural Dissimilarity: the table takes the groups panel's space
   const [groupOnly, setGroupOnly] = useState(false)
   const restrict = useMemo(() => (groupOnly && c && group ? (r: { seq_name: string }) => c.groupOf[r.seq_name] === group.group_id : null), [groupOnly, c, group])
   const curGroup = current && c ? c.groupOf[current.seq_name] : undefined
   /**
-   * Selecting an instance in the Structures tab (table row, heatmap or dendrogram leaf) also brings it into the 3D alignment view:
-   * already displayed -> unchanged (it is emphasised); in another group -> that group is selected and shows its representative with the
-   * instance; same group -> the instance is added to the overlay (or shown with the representative when the overlay is full);
-   * not clustered -> shown on its own.
+   * Clustering mode: selecting an instance (table row, heatmap or dendrogram leaf) shows that RNA alone in the 3D view. Its structural
+   * group becomes the selected group (membership and the displayed instance stay separate states); any representative comparison ends.
+   * A group's own representative is shown as "the representative" (displayed = null).
    */
   const followInstance = (sn: string) => {
     sel.setInstance(sn)
     if (!c || !group) return
-    const compare = st.compareGroup != null ? c.groups.find((g) => g.group_id === st.compareGroup) ?? null : null
-    const shown = st.displayed ?? (compare ? [group.representative, compare.representative] : defaultDisplayed(group))
-    if (shown.includes(sn)) return
     const gid = c.groupOf[sn]
-    if (gid == null) { if (st.compareGroup != null) st.setCompareGroup(null); st.setDisplayed([sn]); return }
-    const g = c.groups.find((x) => x.group_id === gid)!
-    if (gid !== group.group_id) { st.selectGroup(st.metric, gid); if (!defaultDisplayed(g).includes(sn)) st.setDisplayed([g.representative, sn]); return }
-    if (compare) { st.setCompareGroup(null); if (!defaultDisplayed(g).includes(sn)) st.setDisplayed([g.representative, sn]); return }
-    st.setDisplayed(groupCount(shown, sn, c.groupOf) < OVERLAY_MAX ? [...shown, sn] : [g.representative, sn])   // at most OVERLAY_MAX per group
+    if (gid != null && gid !== group.group_id) st.selectGroup(st.metric, gid)   // also ends a comparison
+    else if (st.compareGroup != null) st.setCompareGroup(null)
+    st.setDisplayed(gid != null && c.groups.find((g) => g.group_id === gid)!.representative === sn ? null : [sn])
   }
+  // what the one 3D viewer shows, in either mode: one structure or exactly two, a caption, the stored pair value, and what Reset restores
+  const viewerModel = ((): ViewerModel | null => {
+    if (!c || !group || !data) return null
+    if (dissim) {
+      const pairLine = pair ? comparisonSummary(clusterings!.discrepancy, pair[0], pair[1], data.dataset.n_shared_positions) : null
+      return { displayed: dissimShown, caption: pair ? `Comparing ${instanceLabel(pair[0])} and ${instanceLabel(pair[1])}` : 'Select a pair from the heatmap to compare structures.',
+        metric: pairLine && { ...pairLine, testId: 'pair-summary' }, isRep: (sn) => sn === rep, onReset: resetDissim, notClustered: null }
+    }
+    const compare = st.compareGroup != null ? c.groups.find((g) => g.group_id === st.compareGroup) ?? null : null
+    if (compare) {
+      const line = comparisonSummary(c, group.representative, compare.representative, data.dataset.n_shared_positions)
+      return { displayed: [group.representative, compare.representative], caption: `Comparing representatives of structural groups ${group.group_id} and ${compare.group_id}`,
+        metric: { ...line, testId: 'compare-summary' }, isRep: () => false, onReset: () => st.setCompareGroup(null), notClustered: null }
+    }
+    const one = st.displayed?.[0] ?? group.representative
+    const gid = c.groupOf[one], og = gid != null ? c.groups.find((g) => g.group_id === gid)! : null
+    const caption = !og ? `${instanceLabel(one)} is not clustered; shown on its own` : og.representative === one ? `${og.label} · Showing representative` : `${og.label} · Showing member ${instanceLabel(one)}`
+    return { displayed: [one], caption, metric: null, isRep: (sn) => c.groups.some((g) => g.representative === sn), onReset: () => { st.setCompareGroup(null); st.setDisplayed(null) },
+      notClustered: !og && excluded.has(one) ? `${instanceLabel(one)} is not clustered (${excluded.get(one)}).` : null }
+  })()
   const table = (
-    <InstanceTable rows={instances} selected={current?.seq_name ?? null} onSelect={followInstance} clen={family.clen} groups={tableGroups} compact={!!c && !expanded} restrict={restrict}
-      toolbar={c && <>{c.ids.length > (data?.visualisation.detail_max ?? 50) && <label className="ml-auto flex items-center gap-1 text-xs text-stone-700"><input type="checkbox" checked={groupOnly} onChange={(e) => setGroupOnly(e.target.checked)} data-testid="group-only" />selected group only</label>}<button type="button" className="rounded border border-stone-300 px-2 py-1 text-xs hover:bg-stone-50 first:ml-auto" onClick={() => st.setTableMode(expanded ? 'compact' : 'expanded')} data-testid="table-mode-toggle">{expanded ? 'Compact view' : 'Expand table'}</button></>} />
+    <InstanceTable rows={instances} selected={dissim ? (pair ? null : dissimShown[0] ?? null) : current?.seq_name ?? null} onSelect={dissim ? showOne : followInstance}
+      seriation={dissim ? dm!.ids : null} marked={dissim && pair ? pair : []} jumpOnSelect={!(dissim && holdPage)} clen={family.clen} groups={dissim ? undefined : tableGroups} compact={!!c && !expanded} restrict={restrict}
+      toolbar={c && <>{dissim && pair && <span className="ml-auto text-xs text-stone-600" data-testid="table-pair-note">Comparing <b className="font-mono">{instanceLabel(pair[0])}</b> ↔ <b className="font-mono">{instanceLabel(pair[1])}</b> (rows marked)</span>}{!dissim && c.ids.length > (data?.visualisation.detail_max ?? 50) && <label className="ml-auto flex items-center gap-1 text-xs text-stone-700"><input type="checkbox" checked={groupOnly} onChange={(e) => setGroupOnly(e.target.checked)} data-testid="group-only" />selected group only</label>}{!dissim && <button type="button" className="rounded border border-stone-300 px-2 py-1 text-xs hover:bg-stone-50 first:ml-auto" onClick={() => st.setTableMode(expanded ? 'compact' : 'expanded')} data-testid="table-mode-toggle">{expanded ? 'Compact view' : 'Expand table'}</button>}</>} />
   )
   return (
-    <div className="space-y-4" data-testid="structures-tab">
+    <div className="space-y-4" data-testid="structures-tab" data-view={st.view}>
+      {dm && (
+        <div className="inline-flex overflow-hidden rounded border border-stone-300 text-sm" role="radiogroup" aria-label="Structures view" data-testid="view-selector">
+          {([['dissimilarity', 'Structural Dissimilarity'], ['clustering', 'Clustering']] as const).map(([v, label]) => (
+            <button key={v} type="button" role="radio" aria-checked={st.view === v} onClick={() => st.setView(v)} data-testid={`view-${v}`}
+              className={`px-3 py-1 ${st.view === v ? 'bg-stone-800 text-white' : 'bg-white text-stone-700 hover:bg-stone-50'}`}>{label}</button>))}
+        </div>
+      )}
       <div className="flex flex-wrap items-baseline justify-between gap-2">
-        <p className="text-sm" data-testid="structures-current">Selected: <span className="font-mono">{current?.pdb_id.toUpperCase()}</span> chain {current?.auth_asym_id} · <span className={o?.isSpecies ? 'italic' : ''}>{o?.name}</span> · {current?.experimental_method}{current?.resolution != null ? ` ${current.resolution} Å` : ''}
-          {c && current && <> · {curGroup != null ? <span data-testid="current-group">{c.groups.find((g) => g.group_id === curGroup)?.label}</span> : <span className="text-stone-500" data-testid="current-group">not clustered</span>}</>}</p>
+        {dissim && pair ? <p className="text-sm" data-testid="structures-current">Selected: <span className="font-mono">{instanceLabel(pair[0])}</span> ↔ <span className="font-mono">{instanceLabel(pair[1])}</span></p>
+        : <p className="text-sm" data-testid="structures-current">Selected: <span className="font-mono">{hdr?.pdb_id.toUpperCase()}</span> chain {hdr?.auth_asym_id} · <span className={ho?.isSpecies ? 'italic' : ''}>{ho?.name}</span> · {hdr?.experimental_method}{hdr?.resolution != null ? ` ${hdr.resolution} Å` : ''}
+          {!dissim && c && current && <> · {curGroup != null ? <span data-testid="current-group">{c.groups.find((g) => g.group_id === curGroup)?.label}</span> : <span className="text-stone-500" data-testid="current-group">not clustered</span>}</>}</p>}
         {data && <p className="text-xs text-stone-600" data-testid="structures-summary">{data.dataset.n_mapped_instances} RNA instances from {data.dataset.n_mapped_entries} PDB entries · {data.dataset.n_clustered_instances} clustered ({data.dataset.n_clustered_entries} PDB entries) · {data.dataset.n_excluded_instances} not clustered<InfoTip label="About clustering coverage" text={`${data.dataset.n_clustered_instances} of ${data.dataset.n_mapped_instances} RNA instances were clustered. Inclusion requires at least ${data.dataset.coverage_threshold} core positions with complete base, C4′ and C3′ coordinates. Comparisons use ${data.dataset.n_shared_positions} positions shared by all included instances.`} /></p>}
       </div>
 
@@ -94,13 +142,29 @@ export function StructuresTab() {
       {c && group && data && (
         <>
           <div className="grid items-stretch gap-4 lg:grid-cols-2" data-testid="structures-section-b">
-            <PairwisePanel c={c} data={data} groupId={group.group_id} onSelectGroup={(id) => st.selectGroup(st.metric, id)} metric={st.metric} setMetric={st.setMetric} selectedInstance={current?.seq_name ?? null} onSelectInstance={followInstance} />
-            <AlignmentPanel c={c} group={group} acc={acc} nShared={data.dataset.n_shared_positions} frameReference={orientation?.reference ? instanceLabel(orientation.reference.seq_name) : null} instanceRow={(sn) => instances.find((r) => r.seq_name === sn)} transforms={orientation?.transforms ?? {}} selectedInstance={current?.seq_name ?? null} excludedReason={current ? excluded.get(current.seq_name) ?? null : null} />
+            {dissim ? <DissimilarityPanel m={dm!} nShared={data.dataset.n_shared_positions} rowOf={(sn) => instances.find((r) => r.seq_name === sn)} shown={dissimShown} onSelectPair={selectPair} onSelectOne={showOne} />
+              : <PairwisePanel c={c} data={data} groupId={group.group_id} onSelectGroup={(id) => st.selectGroup(st.metric, id)} metric={st.metric} setMetric={st.setMetric} selectedInstance={current?.seq_name ?? null} onSelectInstance={followInstance} />}
+            <AlignmentPanel model={viewerModel!} compareControl={!dissim} c={c} group={group} acc={acc} frameReference={orientation?.reference ? instanceLabel(orientation.reference.seq_name) : null} instanceRow={(sn) => instances.find((r) => r.seq_name === sn)} transforms={orientation?.transforms ?? {}} />
           </div>
-          <AssociatedFeatures c={c} group={group} compared={st.compareGroup != null ? c.groups.find((g) => g.group_id === st.compareGroup) ?? null : null} instances={instances} ligands={ligands} mods={mods} clen={family.clen} />
+          {!dissim && <AssociatedFeatures c={c} group={group} compared={st.compareGroup != null ? c.groups.find((g) => g.group_id === st.compareGroup) ?? null : null} instances={instances} ligands={ligands} mods={mods} clen={family.clen} />}
         </>
       )}
     </div>
+  )
+}
+
+/** Structural Dissimilarity mode: the discrepancy matrix in TPPL seriation order (no groups, no dendrogram). */
+function DissimilarityPanel({ m, nShared, rowOf, shown, onSelectPair, onSelectOne }: { m: NonNullable<ReturnType<typeof dissimilarityMatrix>>; nShared: number; rowOf: (sn: string) => InstanceRow | undefined; shown: string[]; onSelectPair: (a: string, b: string) => void; onSelectOne: (sn: string) => void }) {
+  const info = `Pairwise geometric discrepancy between all ${m.ids.length} clustered RNA instances (${nShared} shared Rfam positions; lower values mean more similar structures). `
+    + `Rows and columns are ordered by tree-penalized path length seriation (TPPL; Aliyev & Zirbel 2023; ${m.seriation.repetitions} repetitions, seed ${m.seriation.seed}), so similar structures sit next to each other; `
+    + 'the order uses the matrix only, not the structural groups.'
+  return (
+    <section className="flex min-w-0 flex-col rounded border border-stone-200 bg-white p-3" data-testid="dissimilarity-panel">
+      <h2 className="flex items-center text-base font-semibold text-stone-900">Structural dissimilarity<InfoTip label="About the structural dissimilarity matrix" text={info} /></h2>
+      <p className="text-xs text-stone-600" data-testid="dissimilarity-caption">{m.ids.length} RNA instances · geometric discrepancy · ordered by similarity (TPPL seriation)</p>
+      <div className="mt-2 min-w-0"><DissimilarityHeatmap m={m} nShared={nShared} rowOf={rowOf} shown={shown} onSelectPair={onSelectPair} onSelectOne={onSelectOne} /></div>
+      <p className="mt-2 text-xs text-stone-500" data-testid="dissimilarity-hint">Click a diagonal cell to show that structure, or a cell below the diagonal to superpose the pair in 3D.</p>
+    </section>
   )
 }
 
@@ -202,75 +266,75 @@ export function alignmentInfo(displayed: string[], fit: (sn: string) => { qualit
     `This visual superposition may differ from the alignment used to calculate the ${metricKind === 'similarity' ? 'TM-score' : 'geometric discrepancy'}. Poor fits are flagged on the structure chips.`].join('\n')
 }
 
-function AlignmentPanel({ c, group, acc, nShared, frameReference, instanceRow, transforms, selectedInstance, excludedReason }: {
-  c: Clustering; group: Clustering['groups'][number]; acc: string; nShared: number; frameReference: string | null; instanceRow: (sn: string) => { pdb_id: string; label_asym_id: string } | undefined
-  transforms: Record<string, import('../types/backend').OrientationTransform>; selectedInstance: string | null; excludedReason: string | null
+/** What the 3D viewer shows (Clustering or Structural Dissimilarity): never more than two structures. */
+interface ViewerModel {
+  displayed: string[]
+  caption: string
+  /** the stored pairwise value of the two displayed structures (null for one structure) */
+  metric: { metric: string; value: number | null; testId: 'compare-summary' | 'pair-summary' } | null
+  isRep: (seqName: string) => boolean
+  onReset: () => void
+  notClustered: string | null
+}
+
+/**
+ * The one 3D panel of both modes: title (3D structure / 3D superposition), caption and stored pair value, the Compare representatives
+ * control (Clustering only), the shared viewer and superposition, and read-only colour-coded labels with Reset. No member, visibility or
+ * remove controls: the content is always one structure or exactly two.
+ */
+function AlignmentPanel({ model, compareControl, c, group, acc, frameReference, instanceRow, transforms }: {
+  model: ViewerModel; compareControl: boolean
+  c: Clustering; group: Clustering['groups'][number]; acc: string; frameReference: string | null; instanceRow: (sn: string) => { pdb_id: string; label_asym_id: string; auth_asym_id: string } | undefined
+  transforms: Record<string, import('../types/backend').OrientationTransform>
 }) {
   const st = useStructures()
-  const compare = st.compareGroup != null ? c.groups.find((g) => g.group_id === st.compareGroup) ?? null : null
   const [pick, setPick] = useState<number | ''>('')
-  const base = compare ? [group.representative, compare.representative] : defaultDisplayed(group)
-  const displayed = st.displayed ?? base
+  const displayed = model.displayed.slice(0, 2)
+  const pairShown = displayed.length === 2
   // a group's representative always takes its group colour (as in the dendrogram, groups panel and table); other members take shades of their group colour
   const colours = structureColours(displayed, c)
   const entries: ViewerEntry[] = displayed.map((sn) => { const r = instanceRow(sn)!; return { seqName: sn, label: instanceLabel(sn), color: colours[sn], pdbId: r.pdb_id, labelAsymId: r.label_asym_id, transform: transforms[sn] ?? null } })
-  const addable = c.ids.filter((sn) => !displayed.includes(sn))
-  const canAdd = (sn: string) => !displayed.includes(sn) && groupCount(displayed, sn, c.groupOf) < OVERLAY_MAX   // per structural group
-  const add = (sn: string) => { if (canAdd(sn)) st.setDisplayed([...displayed, sn]) }
-  const groupFull = groupCount(displayed, group.representative, c.groupOf) >= OVERLAY_MAX
-  const groupMembersAddable = group.members.filter((m) => !displayed.includes(m))
   const quality = (sn: string): string => transforms[sn]?.fit_quality ?? 'missing'
   const others = c.groups.filter((g) => g.group_id !== group.group_id)
-  const lone = displayed.length === 1 && c.groupOf[displayed[0]] == null ? displayed[0] : null   // a non-clustered instance shown on its own
-  const sub = lone ? `${instanceLabel(lone)} is not clustered; shown on its own` : displayed.length === group.n_instances && group.n_instances > 1 ? `All ${group.n_instances} RNA instances of ${group.label} aligned` : `${group.label} has ${group.n_instances} RNA instances. Showing ${displayed.length === 1 ? 'its representative' : `${displayed.length} structures`}`
+  const comparing = compareControl && st.compareGroup != null
   return (
-    <section className="flex min-w-0 flex-col rounded border border-stone-200 bg-white p-3" data-testid="alignment-panel">
-      <h2 className="flex items-center text-base font-semibold text-stone-900">3D alignment view<InfoTip label="About the 3D alignment" title="3D alignment"
+    <section className="flex min-w-0 flex-col rounded border border-stone-200 bg-white p-3" data-testid="alignment-panel" data-state={pairShown ? 'pair' : 'single'}>
+      <h2 className="flex items-center text-base font-semibold text-stone-900"><span data-testid="alignment-title">{pairShown ? '3D superposition' : '3D structure'}</span><InfoTip label="About the 3D alignment" title="3D alignment"
         text={alignmentInfo(displayed, (sn) => (transforms[sn] ? { quality: transforms[sn].fit_quality, rmsd: transforms[sn].rmsd } : null), frameReference, c.metric.kind)} /></h2>
-      {compare ? (() => {
-        const sm = comparisonSummary(c, group.representative, compare.representative, nShared)
-        return <p className="text-xs font-medium text-stone-800" data-testid="compare-summary" data-value={sm.value ?? ''}><span data-testid="compare-summary-metric">{sm.metric}</span></p>
-      })() : <p className="text-xs text-stone-600" data-testid="alignment-caption">{sub}</p>}
-      {others.length > 0 && (
+      <p className="text-xs text-stone-600" data-testid="alignment-caption">{model.caption}</p>
+      {model.metric && <p className="text-xs font-medium text-stone-800" data-testid={model.metric.testId} data-value={model.metric.value ?? ''}><span data-testid={`${model.metric.testId}-metric`}>{model.metric.metric}</span></p>}
+      {compareControl && others.length > 0 && (
         <div className="mt-1.5 flex flex-wrap items-center gap-x-2 gap-y-1 rounded border border-stone-200 bg-stone-50 px-2 py-1 text-xs" data-testid="compare-box">
           <span className="text-[10px] font-semibold uppercase tracking-wide text-stone-500">Compare representatives</span>
           <span className="inline-flex items-center gap-1"><span className="inline-block h-2 w-2 rounded-full" style={{ background: group.color }} />{group.label.replace('Structural group', 'Group')} · {instanceLabel(group.representative)}</span>
           <select className="rounded border border-stone-300 bg-white px-1 py-0.5" value={pick === '' ? others[0].group_id : pick} onChange={(e) => setPick(+e.target.value)} data-testid="compare-select" aria-label="Compare with">
             {others.map((g) => <option key={g.group_id} value={g.group_id}>{g.label.replace('Structural group', 'Group')} · {instanceLabel(g.representative)}</option>)}
           </select>
-          {compare ? <button type="button" className="rounded bg-stone-700 px-2 py-0.5 text-white" onClick={() => st.setCompareGroup(null)} data-testid="compare-off">Back to {group.label.replace('Structural group', 'group')}</button>
-            : <button type="button" className="rounded bg-blue-700 px-2 py-0.5 text-white" onClick={() => st.setCompareGroup(pick === '' ? others[0].group_id : pick)} data-testid="compare-on" title="Overlay the two group representatives">Compare</button>}
+          {comparing ? <button type="button" className="rounded bg-stone-700 px-2 py-0.5 text-white" onClick={() => st.setCompareGroup(null)} data-testid="compare-off">Back to {group.label.replace('Structural group', 'group')}</button>
+            : <button type="button" className="rounded bg-blue-700 px-2 py-0.5 text-white" onClick={() => st.setCompareGroup(pick === '' ? others[0].group_id : pick)} data-testid="compare-on" title="Superpose the two group representatives">Compare</button>}
         </div>
       )}
       {/* the viewer takes the vertical space the shared grid row gives the panel (equal outer heights with the pairwise panel) */}
-      <div className="mt-1.5 flex min-h-[320px] flex-1 flex-col lg:min-h-[340px]"><AlignmentViewer key={acc} entries={entries} hidden={st.hidden} emphasis={selectedInstance} /></div>
-      {/* compact footer: one wrapping row of structure chips (visibility, colour, label, medoid, fit warning, remove) and the add controls */}
-      <div className="mt-1.5 flex flex-wrap items-center gap-1.5 text-[11px]" data-testid="viewer-legend">
-        <span className="font-semibold text-stone-600">Displayed:</span>
-        {entries.map((e) => {
-          const qy = quality(e.seqName), isRep = e.seqName === group.representative || e.seqName === compare?.representative
-          const gl = c.groups.find((g) => g.group_id === c.groupOf[e.seqName])?.label
+      <div className="mt-1.5 flex min-h-[320px] flex-1 flex-col lg:min-h-[340px]"><AlignmentViewer key={acc} entries={entries} hidden={[]} /></div>
+      {/* read-only labels of what is displayed (colours as in the viewer) and Reset */}
+      <div className="mt-1.5 flex flex-wrap items-center gap-1.5 text-[11px]" data-testid="viewer-labels" data-state={pairShown ? 'pair' : 'single'}>
+        <span className="font-semibold text-stone-600">{pairShown ? 'Comparing:' : 'Displayed:'}</span>
+        {entries.map((e, k) => {
+          const r = instanceRow(e.seqName), qy = quality(e.seqName)
           return (
-            <span key={e.seqName} className={`inline-flex items-center gap-1 rounded border bg-white px-1 py-px ${e.seqName === selectedInstance ? 'border-blue-500 ring-1 ring-blue-400' : 'border-stone-200'}`} data-testid={`legend-${e.seqName}`} data-selected={String(e.seqName === selectedInstance)} title={`${e.seqName}${gl ? ` · ${gl}` : ''}${isRep ? ' · representative (medoid)' : ''}`}>
-              <input type="checkbox" className="h-3 w-3" checked={!st.hidden.includes(e.seqName)} onChange={() => st.toggleHidden(e.seqName)} aria-label={`Show ${e.label}`} data-testid={`visible-${e.seqName}`} />
-              <span className="inline-block h-2.5 w-2.5 rounded-sm ring-1 ring-inset ring-black/10" style={{ background: e.color }} data-testid={`swatch-${e.seqName}`} data-color={e.color} />
-              <span className="font-mono">{e.label}</span>
-              {isRep && <span className="text-stone-500" aria-label="medoid">◆</span>}
-              {compare && gl && <span className="text-stone-500">{gl.replace('Structural group', 'G')}</span>}
-              {(qy === 'poor' || qy === 'insufficient' || qy === 'missing') && <span className="rounded border border-amber-400 bg-amber-50 px-0.5 text-[10px] text-amber-800" title="The superposition onto the family frame is poor for this chain (C4′ RMSD > 4 Å) or unavailable; its placement may look offset." data-testid={`fit-warning-${e.seqName}`}>{qy === 'missing' ? 'no alignment' : `${qy} fit`}</span>}
-              {displayed.length > 1 && <button type="button" className="text-stone-400 hover:text-stone-700" onClick={() => st.setDisplayed(displayed.filter((x) => x !== e.seqName))} aria-label={`Remove ${e.label}`} data-testid={`remove-${e.seqName}`}>×</button>}
+            <span key={e.seqName} className="inline-flex items-center gap-1">
+              {k === 1 && <span className="px-0.5 text-stone-500" aria-hidden>↔</span>}
+              <span className="inline-flex items-center gap-1 rounded border border-stone-200 bg-white px-1 py-px" data-testid={`viewer-label-${e.seqName}`} title={e.seqName}>
+                <span className="inline-block h-2.5 w-2.5 rounded-sm ring-1 ring-inset ring-black/10" style={{ background: e.color }} data-testid={`swatch-${e.seqName}`} data-color={e.color} />
+                <span className="font-mono">{r ? `${r.pdb_id.toUpperCase()} ${r.auth_asym_id}` : e.label}</span>
+                {!pairShown && model.isRep(e.seqName) && <span className="text-stone-500" data-testid="viewer-rep-label">· Representative</span>}
+                {(qy === 'poor' || qy === 'insufficient' || qy === 'missing') && <span className="rounded border border-amber-400 bg-amber-50 px-0.5 text-[10px] text-amber-800" title="The superposition onto the family frame is poor for this chain (C4′ RMSD > 4 Å) or unavailable; its placement may look offset." data-testid={`fit-warning-${e.seqName}`}>{qy === 'missing' ? 'no alignment' : `${qy} fit`}</span>}
+              </span>
             </span>
           )
         })}
-        {groupMembersAddable.length > 0 && !compare && (
-          <select className="rounded border border-stone-300 px-1 py-px" value="" onChange={(e) => e.target.value && add(e.target.value)} disabled={groupFull} data-testid="add-member" aria-label="Add a group member">
-            <option value="">{groupFull ? `Max ${OVERLAY_MAX} per group` : '+ member…'}</option>
-            {groupMembersAddable.map((m) => <option key={m} value={m}>{instanceLabel(m)}</option>)}
-          </select>
-        )}
-        {selectedInstance && addable.includes(selectedInstance) && canAdd(selectedInstance) && <button type="button" className="rounded border border-stone-300 px-1.5 py-px hover:bg-stone-50" onClick={() => add(selectedInstance)} data-testid="add-selected" title="Add the instance selected in the table">+ {instanceLabel(selectedInstance)} (selected)</button>}
-        {st.displayed && <button type="button" className="text-blue-700 underline" onClick={() => st.setDisplayed(null)} data-testid="reset-displayed">Reset</button>}
-        {selectedInstance && excludedReason && <span className="basis-full text-stone-500" data-testid="selected-not-clustered">Selected instance {instanceLabel(selectedInstance)} is not clustered ({excludedReason}).</span>}
+        <button type="button" className="ml-auto rounded border border-stone-300 px-1.5 py-px text-stone-700 hover:bg-stone-50" onClick={model.onReset} data-testid="viewer-reset" title="Show the representative alone">Reset</button>
+        {model.notClustered && <span className="basis-full text-stone-500" data-testid="selected-not-clustered">{model.notClustered}</span>}
       </div>
     </section>
   )

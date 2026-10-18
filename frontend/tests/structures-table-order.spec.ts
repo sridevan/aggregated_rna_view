@@ -9,7 +9,7 @@ const groupHeader = (page: Page) => page.locator('[data-testid="instance-table"]
 let D: { metrics: Record<'discrepancy' | 'tm', M> }
 const open = async (page: Page) => {
   D = await (await page.request.get('/families/RF00167/structure_clustering.json')).json()
-  await page.goto('/RF00167'); await page.getByTestId('tab-structures').click()
+  await page.goto('/RF00167'); await page.getByTestId('tab-structures').click(); await page.getByTestId('view-clustering').click()
   await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-status', 'ready', { timeout: 90_000 })
 }
 

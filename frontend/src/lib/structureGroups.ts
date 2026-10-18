@@ -1,4 +1,4 @@
-import type { StructureClusteringDataset, StructureGroupRecord, StructureMetric, StructureMetricId } from '../types/backend'
+import type { StructureClusteringDataset, StructureGroupRecord, StructureMetric, StructureMetricId, StructureSeriation } from '../types/backend'
 
 /*
  * Structural groups for the Structures tab. Adapted from antibody_antigen_interface/app-react/src/groups/clustering.js: the tree, the
@@ -17,11 +17,6 @@ export const GROUP_COLORS = ['#E8685A', '#B0327A', '#8C4A1E', '#3FA7D6']
 export const UNPLACED = '#6b7480'
 /** Per-structure colours of the 3D overlay (Okabe-Ito first; reference demo). The representative always takes the first. */
 export const SERIES = ['#0072B2', '#D55E00', '#009E73', '#CC79A7', '#56B4E9', '#E69F00', '#9F3960', '#815C0A']
-/** Maximum number of structures of one structural group in the 3D overlay (representative included). Same-group structures are told
- *  apart by shades of the group colour, which stay distinguishable for about five. */
-export const OVERLAY_MAX = 5
-/** Number of displayed structures that belong to the same structural group as `sn` (non-clustered instances count together). */
-export const groupCount = (displayed: string[], sn: string, groupOf: Record<string, number | undefined>) => displayed.filter((x) => groupOf[x] === groupOf[sn]).length
 
 export function buildTree(linkage: [number, number, number, number][], n: number): TreeNode {
   const nodes = new Map<number, TreeNode>()
@@ -63,12 +58,6 @@ export function clusteringFor(data: StructureClusteringDataset, metricId: Struct
 
 /** Largest group (groups are numbered by size, so group 1). */
 export const largestGroup = (c: Clustering) => c.groups[0]
-
-/** Default 3D content of a group: every member when the group has 2..OVERLAY_MAX members (representative first), else the representative alone. */
-export function defaultDisplayed(g: Pick<StructureGroupRecord, 'members' | 'representative'>): string[] {
-  if (g.members.length > 1 && g.members.length <= OVERLAY_MAX) return [g.representative, ...g.members.filter((m) => m !== g.representative)]
-  return [g.representative]
-}
 
 /** Viridis (matplotlib control points, linear in sRGB), as in the reference demo's heatmap. */
 const VIRIDIS = ['#440154', '#482878', '#3e4a89', '#31688e', '#26828e', '#1f9e89', '#35b779', '#6dcd59', '#b4de2c', '#fde725'].map((h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16)))
@@ -124,4 +113,26 @@ export function structureColours(displayed: string[], c: Pick<Clustering, 'group
     out[sn] = groupShade(g.color, k)
   }
   return out
+}
+
+/** The geometric discrepancy matrix in the stored TPPL seriation order (Structural Dissimilarity mode). Built from the stored upper triangle
+ *  only: `values[r][c]` is the pair (ids[r], ids[c]) and the same order applies to rows and columns. A missing or non-finite stored value
+ *  stays null (shown as "not measured"), never a maximal difference. Null when the dataset has no seriation. */
+export interface DissimilarityMatrix { ids: string[]; values: (number | null)[][]; max: number; nMissing: number; seriation: StructureSeriation }
+export function dissimilarityMatrix(data: StructureClusteringDataset): DissimilarityMatrix | null {
+  const m = data.metrics.discrepancy, s = m.seriation
+  if (!s) return null
+  const ids = data.dataset.instances, n = ids.length
+  const at = new Map(ids.map((sn, i) => [sn, i]))
+  if (s.order.length !== n || new Set(s.order).size !== n || s.order.some((sn) => !at.has(sn))) throw new Error('seriation order does not list every clustered instance exactly once')
+  const raw = (i: number, j: number): number | null => {
+    if (i === j) return 0
+    const [a, b] = i < j ? [i, j] : [j, i]
+    const v = m.values_upper[a * n - (a * (a + 1)) / 2 + (b - a - 1)]
+    return typeof v === 'number' && Number.isFinite(v) ? v : null
+  }
+  const idx = s.order.map((sn) => at.get(sn)!)
+  let nMissing = 0
+  const values = idx.map((i, r) => idx.map((j, c) => { const v = raw(i, j); if (v == null && c > r) nMissing++; return v }))
+  return { ids: s.order, values, max: m.distance_range.max, nMissing, seriation: s }
 }

@@ -2,7 +2,7 @@ import { expect, test, type Page } from '@playwright/test'
 
 /* RF00167 structural clustering in the Structures tab: totals and exclusions, fixed metric-specific groups and medoids, metric switching,
    the 50-instance rule with drill-down, compact/expanded table, coordinated group selection, 3D alignment and associated features. */
-const open = async (page: Page) => { await page.goto('/RF00167'); await page.getByTestId('tab-structures').click(); await expect(page.getByTestId('groups-card')).toBeVisible() }
+const open = async (page: Page) => { await page.goto('/RF00167'); await page.getByTestId('tab-structures').click(); await page.getByTestId('view-clustering').click(); await expect(page.getByTestId('groups-card')).toBeVisible() }
 const viewerReady = (page: Page) => expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-status', 'ready', { timeout: 60_000 })
 type Data = { dataset: { instances: string[]; excluded: { seq_name: string; reason_text: string }[]; n_mapped_entries: number; n_clustered_entries: number }; metrics: Record<string, { clustering: { groups: { group_id: number; n_instances: number; n_entries: number; representative: string; members: string[]; within: { mean: number } }[]; assignments: Record<string, number>; leaf_order: number[] } }> }
 
@@ -63,18 +63,15 @@ test('50-instance rule: collapsed group view for 76 instances; drill-down only f
   const ids = d.dataset.instances
   const order = d.metrics.discrepancy.clustering.leaf_order.map((i) => ids[i]).filter((s) => d.metrics.discrepancy.clustering.assignments[s] === 2)
   expect(labels.length).toBe(4); expect(await hm.locator('text[data-testid^="hm-row-"]').evaluateAll((es) => es.map((e) => e.getAttribute('data-testid')!.replace('hm-row-', '')))).toEqual(order)
-  // 3D: all four members, representative first, distinct colours, poor-fit warnings from the existing alignment
-  await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-structures', ['5e54_1_B_B', ...order.filter((s) => s !== '5e54_1_B_B')].join(','))
+  // 3D: the group's representative alone, with its poor-fit warning from the existing alignment; a member shown from the table keeps its own
+  await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-structures', '5e54_1_B_B')
   await viewerReady(page)
-  await expect(page.getByTestId('fit-warning-5e54_1_B_B')).toHaveText('poor fit'); await expect(page.getByTestId('fit-warning-5swd_1_B_B')).toHaveText('poor fit')
+  await expect(page.getByTestId('fit-warning-5e54_1_B_B')).toHaveText('poor fit')
+  await page.getByTestId('instance-search').fill('5e54'); await page.getByTestId('row-5e54_1_A_A').locator('[data-testid="cell-title"]').click(); await page.getByTestId('instance-search').fill('')
+  await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-structures', '5e54_1_A_A'); await viewerReady(page)
   await expect(page.getByTestId('fit-warning-5e54_1_A_A')).toHaveCount(0)
-  // visibility toggle hides a structure without removing it from the legend
-  await page.getByTestId('visible-5swd_1_A_A').uncheck()
-  await expect(page.getByTestId('alignment-viewer')).not.toHaveAttribute('data-structures', /5swd_1_A_A/)
-  await expect(page.getByTestId('legend-5swd_1_A_A')).toBeVisible()
-  await viewerReady(page)
   const loaded = await page.evaluate(() => (window as unknown as { __rnaExplorer: { alignment: { loaded: string[]; transformed: boolean[] } } }).__rnaExplorer.alignment)
-  expect(loaded.loaded.length).toBe(3); expect(loaded.transformed.every(Boolean)).toBe(true)
+  expect(loaded.loaded.length).toBe(1); expect(loaded.transformed.every(Boolean)).toBe(true)
 })
 
 test('metric switching: TM-score uses its own groups, 1 − TM dendrogram and medoids; the selection falls back to its largest group', async ({ page }) => {
@@ -134,20 +131,16 @@ test('compact/expanded table keeps metric, group, selection, search and sort; ba
   await expect(page.getByTestId('overview-instance-mark')).toHaveCount(1)
 })
 
-test('representative comparison, member adding with a cap, not-clustered selection, associated features with counts', async ({ page }) => {
+test('representative comparison, Reset, not-clustered selection, associated features with counts', async ({ page }) => {
   await open(page)
   await viewerReady(page)
   await page.getByTestId('compare-on').click()
-  await expect(page.getByTestId('alignment-caption')).toHaveCount(0)   // the representatives are named by the comparison controls and chips; one metric line instead
+  await expect(page.getByTestId('alignment-caption')).toHaveText('Comparing representatives of structural groups 1 and 2')
   await expect(page.getByTestId('compare-summary')).toHaveText(/^Geometric discrepancy [\d.]+ · 57 shared Rfam positions$/)
   await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-structures', '6uc8_1_B_A,5e54_1_B_B')
   await viewerReady(page)
-  await page.getByTestId('compare-off').click()
-  for (let k = 0; k < 4; k++) { const opt = page.getByTestId('add-member').locator('option').nth(1); await page.getByTestId('add-member').selectOption(await opt.getAttribute('value')) }
-  await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-structures', /^([^,]+,){4}[^,]+$/)   // 5 = cap per structural group
-  await expect(page.getByTestId('add-member')).toBeDisabled()
-  await page.getByTestId('reset-displayed').click()
-  await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-structures', '6uc8_1_B_A')
+  await page.getByTestId('viewer-reset').click()
+  await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-structures', '6uc8_1_B_A'); await expect(page.getByTestId('compare-summary')).toHaveCount(0)
   // a not-clustered instance is explained, never added to a group
   await page.getByTestId('instance-search').fill('9nbh'); await page.getByTestId('row-9nbh_1_A_A').click()
   await expect(page.getByTestId('current-group')).toHaveText('not clustered')
@@ -165,7 +158,7 @@ test('representative comparison, member adding with a cap, not-clustered selecti
 test('missing clustering file: the table and the rest of the app still work', async ({ page }) => {
   await page.route('**/families/*/structure_clustering.json', (r) => r.fulfill({ status: 404, body: 'not found' }))
   await page.goto('/RF00167'); await page.getByTestId('tab-structures').click()
-  await expect(page.getByTestId('no-clustering')).toBeVisible()
+  await expect(page.getByTestId('no-clustering')).toBeVisible(); await expect(page.getByTestId('view-selector')).toHaveCount(0)   // no data: no view switch
   await expect(page.locator('[data-testid="instance-table"] tbody tr')).toHaveCount(10)
   await expect(page.locator('[data-testid="instance-table"] thead')).toContainText('Rfam bits')
   await expect(page.getByTestId('groups-card')).toHaveCount(0)
@@ -210,8 +203,8 @@ test('panel layout: one-line caption, short note, details in the popover; equal-
   await expect(page.getByTestId('pairwise-note')).toHaveText('Pairwise 1 − TM-score within Structural group 2, in dendrogram order.')
   // representative comparison and displayed-structure controls keep the layout
   await page.getByTestId('compare-on').click(); await viewerReady(page); await equal()
-  await expect(page.getByTestId('viewer-legend')).toBeVisible()
-  const legend = (await page.getByTestId('viewer-legend').boundingBox())!, panel = (await right.boundingBox())!
+  await expect(page.getByTestId('viewer-labels')).toBeVisible()
+  const legend = (await page.getByTestId('viewer-labels').boundingBox())!, panel = (await right.boundingBox())!
   expect(legend.y + legend.height).toBeLessThanOrEqual(panel.y + panel.height + 1)                             // controls never clipped
   // fullscreen and centre keep working
   await page.getByTestId('viewer-fullscreen').click()
@@ -299,7 +292,7 @@ test('tooltips: short, metric-specific wording for both metrics; details moved t
   expect(await tip('About the 3D alignment')).toBe('3D alignmentSuperposition: each chain is fitted onto 4FE5 B using C4′ atoms at shared Rfam positions. Fit to the reference (C4′ RMSD): • 6UC8 B: good fit, RMSD 0.27 Å This visual superposition may differ from the alignment used to calculate the geometric discrepancy. Poor fits are flagged on the structure chips.')
   await page.getByRole('button', { name: 'About the 3D alignment' }).click()
   const pb = (await page.getByTestId('info-popover').boundingBox())!, panel = (await page.getByTestId('alignment-panel').boundingBox())!
-  expect(pb.width).toBeLessThanOrEqual(340); expect(pb.x).toBeGreaterThanOrEqual(panel.x - 1)                    // compact, kept over its own panel
+  expect(pb.width).toBeLessThanOrEqual(340); expect(pb.x + pb.width).toBeLessThanOrEqual(panel.x + panel.width + 1)   // compact; centred on its icon (the short "3D structure" title puts it near the panel's left edge)
   await page.keyboard.press('Escape')
   for (const label of ['About within-group dissimilarity', 'About across-group dissimilarity', 'About the comparison metric', 'About the representative']) {
     const t = await tip(label); expect(t).not.toMatch(/\bD\b/); expect(t).not.toMatch(/pairs|statistical test/)
@@ -339,23 +332,23 @@ test('representative comparison highlights the stored dendrogram route; 3D colou
   expect(hex(await page.getByTestId('group-badge-6uc8_1_B_A').evaluate((e) => getComputedStyle(e).borderColor))).toBe(g1)
   await page.getByTestId('instance-search').fill('')
   await expect(page.getByTestId('overview-route')).toHaveCount(0)
-  // 2. Group 2 (4 members): representative exact colour, the others distinguishable shades of it
+  // 2. Group 2: its representative alone in the exact group colour; a member of it in a distinguishable shade
   await page.getByTestId('group-chip-2').click(); await viewerReady(page)
-  const c2 = await colours(); expect(c2[0]).toBe(g2); expect(new Set(c2).size).toBe(4)
-  expect((await page.getByTestId('alignment-viewer').getAttribute('data-structures'))!.split(',')[0]).toBe('5e54_1_B_B')
+  expect(await colours()).toEqual([g2]); await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-structures', '5e54_1_B_B')
   // 3-4. compare group 2 with group 1: both representatives in their group colours, the stored route highlighted
   await page.getByTestId('compare-select').selectOption('1'); await page.getByTestId('compare-on').click(); await viewerReady(page)
   expect(await colours()).toEqual([g2, g1])
   await expect(page.getByTestId('overview-route')).toHaveAttribute('data-nodes', route('discrepancy', 2, 1))
   await expect(page.getByTestId('overview-compare-mark-1')).toBeVisible(); await expect(page.getByTestId('overview-compare-mark-2')).toBeVisible()
   await expect(page.getByTestId('group-chip-2')).toHaveAttribute('aria-pressed', 'true')                   // comparison does not change the selected group
-  // 5. exit: route removed, group 2 and its default display restored
+  // 5. exit: route removed, group 2 and its representative restored
   await page.getByTestId('compare-off').click(); await viewerReady(page)
   await expect(page.getByTestId('overview-route')).toHaveCount(0); await expect(page.getByTestId('group-chip-2')).toHaveAttribute('aria-pressed', 'true')
-  expect((await colours())[0]).toBe(g2); expect((await colours()).length).toBe(4)
-  // 9. visibility, removal and camera still work with the new colours
-  await page.getByTestId('visible-5swd_1_A_A').uncheck(); await expect(page.getByTestId('alignment-viewer')).not.toHaveAttribute('data-structures', /5swd_1_A_A/)
-  await page.getByTestId('remove-5e54_1_A_A').click(); await viewerReady(page); expect((await colours())[0]).toBe(g2)
+  expect(await colours()).toEqual([g2])
+  await page.getByTestId('instance-search').fill('5swd'); await page.getByTestId('row-5swd_1_A_A').locator('[data-testid="cell-title"]').click(); await page.getByTestId('instance-search').fill('')
+  await viewerReady(page); const shade = (await colours())[0]; expect(shade).not.toBe(g2)
+  expect((await page.getByTestId('swatch-5swd_1_A_A').getAttribute('data-color'))!.toLowerCase()).toBe(shade)
+  // 9. camera still works
   await page.getByTestId('viewer-centre').click(); await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-status', 'ready')
   // 6-7. TM-score: four groups, arbitrary comparisons follow the TM tree and TM group colours
   await page.getByTestId('metric-tm').click(); await viewerReady(page)
@@ -466,7 +459,7 @@ test('associated features: collapsed by default, keyboard toggle, state kept acr
   await expect(toggle).toHaveAttribute('aria-controls', (await page.getByTestId('features-body').getAttribute('id'))!)
   await page.getByTestId('group-chip-3').click(); await expect(panel).toHaveAttribute('data-open', 'true')
   await page.getByTestId('metric-discrepancy').click(); await expect(panel).toHaveAttribute('data-open', 'true')
-  await page.getByTestId('tab-overview').click(); await page.getByTestId('tab-structures').click(); await expect(page.getByTestId('associated-features')).toHaveAttribute('data-open', 'true')
+  await page.getByTestId('tab-overview').click(); await page.getByTestId('tab-structures').click(); await page.getByTestId('view-clustering').click(); await expect(page.getByTestId('associated-features')).toHaveAttribute('data-open', 'true')
   // five rows by default; more only through the category's own control; others unaffected
   const rows = (id: string) => page.getByTestId(`features-${id}`).locator('tbody tr')
   await page.getByTestId('group-chip-1').click()                                                     // discrepancy group 1 (group 2 was selected earlier in this metric)

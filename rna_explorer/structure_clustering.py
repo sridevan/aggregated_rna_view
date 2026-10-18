@@ -29,6 +29,7 @@ from . import __version__
 from .annotation_mapping import InstanceIndex
 from .config import PROJECT_ROOT
 from .export import validate_json
+from .seriation import seriation_record
 
 log = logging.getLogger("rna_explorer.structure_clustering")
 SCHEMA_VERSION = "1.0"
@@ -329,6 +330,8 @@ def build_structure_clustering(acc: str, out_dir: Path, research_root: Path, wri
                                      + (f". Not shown: {cfg['floor_note']}" if cfg.get("omit_floor") and cfg.get("floor_note") else ""),
                                      "n_pairs": ev.get("noise_floor_n_pairs"), "source": "research clustering_summary.json"},
                            "research_evidence": ev}}
+        if key == "discrepancy":   # Structural Dissimilarity mode: the discrepancy matrix in TPPL order (matrix only, independent of the clustering)
+            metrics[key]["seriation"] = seriation_record(ids, dist)
         sources[key] = src
     mp = idx.mapping(ids[0])["provenance"]
     out = {"schema_version": SCHEMA_VERSION, "rfam_acc": acc, "visualisation": {"detail_max": DETAIL_MAX, "small_group": SMALL_GROUP},
