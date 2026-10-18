@@ -71,6 +71,9 @@ experiments/**/*.cif
 experiments/**/*.bcif
 experiments/**/*.pdb
 experiments/**/*.pse
+# proof-of-concept raw downloads (mmCIF, PDBe/Rfam API dumps, CMs); re-fetch with the POC scripts
+poc_rf00167/data/
+poc_rf00177/data/
 
 # Large regenerable RF00177 outputs (> 10 MB): rebuild with `build`, `annotate`, `sasa` (see PROJECT_HANDOVER.md)
 data/families/RF00177/loops.json

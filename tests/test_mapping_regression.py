@@ -40,6 +40,10 @@ def test_regression_against_poc(acc: str) -> None:
     sto, chains_json, cif_dir, poc_csv, flavour = CASES[acc]
     if not (sto.exists() and chains_json.exists() and poc_csv.exists()):
         pytest.skip("POC files not present")
+    # the POC mmCIFs are raw downloads and are not in git (re-fetch with the POC scripts); without them coordinates cannot be checked
+    missing = [c["pdb_id"] for c in json.load(open(chains_json)) if not (cif_dir / f"{c['pdb_id']}_updated.cif").exists()]
+    if missing:
+        pytest.skip(f"POC mmCIF files not present ({len(missing)} missing, e.g. {missing[0]}); see {cif_dir}")
     aln = parse_stockholm(sto)
     cm = type_columns(aln.gc["RF"], aln.gc.get("SS_cons", ""))
     poc = _poc_rows(poc_csv, flavour)
