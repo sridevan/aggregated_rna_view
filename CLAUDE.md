@@ -2,7 +2,7 @@
 
 PDBe-KB-style aggregation of experimentally determined RNA structures per Rfam family, using Rfam CM match-state positions as the family coordinate system. Development family: RF00167 (purine riboswitch).
 
-Full status, decisions, commands and open questions: **`PROJECT_HANDOVER.md`** (read it first). Milestone reports: `MILESTONE1_REVIEW.md`, `MILESTONE2*_VALIDATION.md`, `annotation_assessment/ANNOTATION_ASSESSMENT.md`, `MILESTONE3B_VALIDATION.md`, `MILESTONE3C_VALIDATION.md`, `MILESTONE3D_VALIDATION.md`, `MILESTONE3E_VALIDATION.md`, `MILESTONE3F_VALIDATION.md` (nonstandard nucleotides; completes the Annotations milestone), `MILESTONE4_STRUCTURES_VALIDATION.md` (RF00167 structural clustering, Structures tab; plan in `experiments/structures_clustering_integration/REPORT.md`).
+Full status, decisions, commands and open questions: **`PROJECT_HANDOVER.md`** (read it first). Milestone reports: `MILESTONE1_REVIEW.md`, `MILESTONE2*_VALIDATION.md`, `annotation_assessment/ANNOTATION_ASSESSMENT.md`, `MILESTONE3B_VALIDATION.md`, `MILESTONE3C_VALIDATION.md`, `MILESTONE3D_VALIDATION.md`, `MILESTONE3E_VALIDATION.md`, `MILESTONE3F_VALIDATION.md` (nonstandard nucleotides; completes the Annotations milestone), `MILESTONE4_STRUCTURES_VALIDATION.md` (RF00167 structural clustering, Structures tab; plan in `experiments/structures_clustering_integration/REPORT.md`). How chains are mapped to Rfam positions, with limitations: `docs/RFAM_PDB_MAPPING.md`.
 
 ## Layout
 - `rna_explorer/` Python backend (`build`, `orient`, `annotate` commands; JSON schemas in `rna_explorer/schemas/`; ligand classification in `annotation_config.json`).
@@ -28,4 +28,4 @@ Full status, decisions, commands and open questions: **`PROJECT_HANDOVER.md`** (
 - Keep provenance (source URL, retrieval date, Rfam/CM/Motif Atlas releases, pipeline and config versions) on every output; retain flagged or excluded observations in the data.
 - Internal identifiers are `label_asym_id` + `label_seq_id`; author numbering is for display and BGSU unit ids only.
 - Stay within the requested milestone scope; backend changes need tests and schema validation, frontend changes need Playwright/vitest coverage.
-- Not a git repository yet (see handover §7).
+- Git repository on `main` (no remote yet). Commit only when asked. `.gitignore` excludes scratch `work/` folders, downloaded structure files under `experiments/` (never store full mmCIFs) and regenerable RF00177 outputs over 10 MB plus its per-chain `annotations/`.
