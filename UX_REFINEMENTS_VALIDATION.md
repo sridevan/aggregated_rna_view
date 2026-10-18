@@ -139,7 +139,7 @@ Code: `comparisonSummary` in `StructuresTab.tsx`, with a vitest file.
   - `annotations-ui.spec.ts`: legend "Not observed";
   - `family-rf00005.spec.ts`: pockets named as not available.
 
-Screenshots: `docs/screenshots/m18_overview_summary.png`, `m18_overview_from_annotations.png` (the annotation-details and comparison screenshots of this round were superseded by the `m19_*` screenshots in section 6).
+Screenshots: the final UI is shown by the `m19_*` screenshots listed in section 6.
 
 ## 6. Follow-up: ligand denominator correction and compact comparison header
 
