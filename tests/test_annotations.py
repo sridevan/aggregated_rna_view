@@ -262,6 +262,48 @@ def test_ligand_track_entry_level_counts_and_denominators(built):
     assert p3["ligand_binding_sites"]["by_class_n_entry_entities"] == {"ligand": 1}
 
 
+def _by_ccd_entries(d, pos):
+    return json.load(open(d / "tracks.json"))["positions"][pos - 1]["ligand_binding_sites"]["by_ccd_entries"]
+
+
+def test_ligand_per_ccd_entry_denominators(built):
+    b, d, _ = built
+    # ADE is bound in 1abc (one chain) and 2xyz (two chains, one entity) -> 2 entries; 3nnn has no ligand data and never enters the denominator
+    lig = json.load(open(d / "ligands.json"))
+    assert lig["by_ccd"]["ADE"]["n_entries_in_default_track"] == 2
+    # consensus 4: contact in both entries; the two 2xyz chains count once
+    assert _by_ccd_entries(d, 4)["ADE"] == {"n_positive": 2, "n_positive_observable_and_evaluated": 2, "n_observable_and_evaluated": 2, "n_not_observable": 0,
+                                            "n_source_unavailable": 0, "frequency": 1.0}
+    # consensus 3: contact in 1abc only; 2xyz has an observed nucleotide and no recorded contact -> a counted negative
+    assert _by_ccd_entries(d, 3)["ADE"] == {"n_positive": 1, "n_positive_observable_and_evaluated": 1, "n_observable_and_evaluated": 2, "n_not_observable": 0,
+                                            "n_source_unavailable": 0, "frequency": 0.5}
+    # no entry is listed for a ligand without a contact at the position
+    assert "ADE" not in _by_ccd_entries(d, 7)
+
+
+def test_ligand_entries_without_observed_nucleotide_are_not_negatives(fam_dir):
+    # remove coordinates: 2xyz residue 1 (consensus 3) in both chains; 1abc residue 4 and 2xyz residue 3 in both chains (consensus 5)
+    for sn, residues in (("2xyz_1_A_A", (1, 3)), ("2xyz_1_B_B", (1, 3)), ("1abc_1_A_A", (4,))):
+        f = fam_dir / "mappings" / f"{sn}.json"; m = json.load(open(f))
+        for r in m["residues"]:
+            if r["polymer_seq_position"] in residues:
+                r["has_coordinates"] = False
+        json.dump(m, open(f, "w"))
+    AnnotationBuilder(fam_dir, FakeFetcher(), load_config()).run()
+    validate_json(json.load(open(fam_dir / "tracks.json")), "tracks")
+    # consensus 3: 2xyz has no observed nucleotide in any chain -> not counted (was 1 of 2, now 1 of 1)
+    assert _by_ccd_entries(fam_dir, 3)["ADE"] == {"n_positive": 1, "n_positive_observable_and_evaluated": 1, "n_observable_and_evaluated": 1, "n_not_observable": 1,
+                                                  "n_source_unavailable": 0, "frequency": 1.0}
+    # consensus 5: both entries record a contact but neither has an observed nucleotide -> zero eligible entries, no frequency
+    assert _by_ccd_entries(fam_dir, 5)["ADE"] == {"n_positive": 2, "n_positive_observable_and_evaluated": 0, "n_observable_and_evaluated": 0, "n_not_observable": 2,
+                                                  "n_source_unavailable": 0, "frequency": None}
+    # every position: the buckets partition the entries with bound ADE, and the numerator never exceeds the denominator
+    for p in json.load(open(fam_dir / "tracks.json"))["positions"]:
+        for c, e in p["ligand_binding_sites"]["by_ccd_entries"].items():
+            assert e["n_observable_and_evaluated"] + e["n_not_observable"] + e["n_source_unavailable"] == 2
+            assert e["n_positive_observable_and_evaluated"] <= min(e["n_positive"], e["n_observable_and_evaluated"])
+
+
 # ----------------------------------------------------------------------------- denominators / missing sources
 def test_loop_denominators_and_missing_source(built):
     b, d, _ = built

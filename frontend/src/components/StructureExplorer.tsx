@@ -10,6 +10,7 @@ import { useFamily } from '../state/family'
 import { useSelection } from '../state/selection'
 import { useMapping } from '../state/useMapping'
 import { NumberingSelect, useNumbering } from '../state/numbering'
+import { useNavigation } from '../state/navigation'
 import { indexMapping, positionStates, residueToConsensus, translateConsensus, type ResidueTarget } from '../lib/consensus'
 import { ConsensusTracks, type Tip } from './ConsensusTracks'
 import { authorResidueId, chainAt, residueValue, STATUS_TEXT } from '../lib/numbering'
@@ -40,6 +41,7 @@ export function StructureExplorer() {
   // Position numbering (display only): Rfam consensus by default, or the author numbering of a chosen chain, independent of the active instance.
   // Its mapping is the chain's validated mapping file (the active chain's own mapping is reused when it is the same chain).
   const { numbering } = useNumbering()
+  const origin = useNavigation()?.origin ?? null
   const chainLabel = current ? `${current.pdb_id.toUpperCase()} ${current.auth_asym_id}` : ''
   /** selected-chain tooltip: Rfam position, the active chain's author residue, the reference residue (when another chain numbers the axis), status */
   const chainTipFor = useCallback((pos: number, st: PositionState): Tip => {
@@ -144,8 +146,12 @@ export function StructureExplorer() {
           {instances.map((i) => <option key={i.seq_name} value={i.seq_name}>{i.pdb_id.toUpperCase()} {i.auth_asym_id} · {displayOrganism(i).name} · {i.experimental_method?.split(' ')[0]} {i.resolution ?? ''}{i.pdbe_2d_available === false ? ' · no 2D' : ''}</option>)}
         </select></label>
         <button data-testid="clear-selection" onClick={sel.clear} disabled={!sel.active} className="rounded border border-stone-300 px-2 py-0.5 disabled:cursor-default disabled:opacity-40">Clear selection</button>
-        {/* concise summary of the active selection only (no usage instructions when nothing is selected) */}
+        {/* one short hint while nothing is selected; the concise summary of the active selection replaces it */}
+        {!status && <span className="text-xs text-stone-500" data-testid="selection-hint">Click a nucleotide or loop to highlight it in 2D and 3D.</span>}
         {status && <span className={`text-xs ${status.ok ? 'text-stone-600' : 'text-amber-700'}`} data-testid="selection-status" data-ok={String(status.ok)} title={'title' in status ? (status as { title?: string }).title : undefined}>{status.text}</span>}
+        {/* a position transferred from the Annotations tab: the evidence there is family-level, not an observation in this chain */}
+        {origin && sel.active?.kind === 'position' && sel.active.pos === origin.pos && (
+          <span className="basis-full text-[11px] text-stone-500" data-testid="selection-origin">Opened from Annotations ({origin.label}). Family-level evidence: not necessarily observed in {chainLabel}.</span>)}
       </div>
       <ConsensusTracks stats={stats} selected={sel.positions} onToggle={onToggle} instanceStates={states} insertionMarkers={insMarkers} openInsertion={insOpen?.id ?? null} selectedInsertionRun={activeInsRun?.id ?? null} onInsertionClick={onInsertionClick} instanceLabel={current ? `${current.pdb_id.toUpperCase()} ${current.auth_asym_id}` : undefined}
         reference={{ rfamAcc: family.rfam_acc, rfamId: family.rfam_id, rf: family.consensus_sequence, ssCons: family.ss_cons, clanMembers: family.clan_members }}

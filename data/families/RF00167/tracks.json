@@ -98,7 +98,8 @@
     "ligand"
    ],
    "exclude_flagged_from_default_track": true,
-   "denominator": "observable and source-evaluated (pdb_id, entity_id) pairs"
+   "denominator": "observable and source-evaluated (pdb_id, entity_id) pairs",
+   "by_ccd_entries": "per bound ccd in contact at the position, counted per PDB entry: n_positive_observable_and_evaluated / n_observable_and_evaluated = entries with a recorded contact / entries with the bound ccd that have an observed nucleotide here in a chain of a source-evaluated entity; n_not_observable entries (no observed nucleotide in any chain) and n_source_unavailable entries are not counted as negatives. An observed-contact frequency among coordinate-observable entries, not a binding probability"
   },
   "motif_atlas_release": {
    "HL": {
@@ -291,6 +292,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -475,6 +477,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -659,6 +662,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -843,6 +847,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -1027,6 +1032,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -1211,6 +1217,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -1395,6 +1402,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -1579,6 +1587,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -1763,6 +1772,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -1947,6 +1957,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -2131,6 +2142,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -2315,6 +2327,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -2499,6 +2512,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -2683,6 +2697,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -2852,6 +2867,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -3021,6 +3037,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -3190,6 +3207,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -3359,6 +3377,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 1
     },
@@ -3533,6 +3552,16 @@
     ],
     "by_ccd_n_entry_entities": {
      "ANG": 1
+    },
+    "by_ccd_entries": {
+     "ANG": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 2,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 0.5
+     }
     },
     "by_class_n_entry_entities": {
      "ligand": 3,
@@ -3714,6 +3743,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "ligand": 2,
      "metal_ion": 1
@@ -3894,6 +3924,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -4071,6 +4102,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -4240,6 +4272,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 2
     },
@@ -4411,6 +4444,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 4
     },
@@ -4903,6 +4937,240 @@
      "XAN": 3,
      "ZZR": 1,
      "ZZS": 1
+    },
+    "by_ccd_entries": {
+     "29G": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "29H": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "2BP": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "3AW": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "3AY": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "5AZ": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "6AP": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "6GO": {
+      "n_positive": 2,
+      "n_positive_observable_and_evaluated": 2,
+      "n_observable_and_evaluated": 2,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "6GU": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "7PD": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "9QC": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "A1LXN": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "A2F": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "ADE": {
+      "n_positive": 9,
+      "n_positive_observable_and_evaluated": 9,
+      "n_observable_and_evaluated": 9,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "ANG": {
+      "n_positive": 2,
+      "n_positive_observable_and_evaluated": 2,
+      "n_observable_and_evaluated": 2,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "CMG": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "DX4": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "GMP": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "GNG": {
+      "n_positive": 2,
+      "n_positive_observable_and_evaluated": 2,
+      "n_observable_and_evaluated": 2,
+      "n_not_observable": 1,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "GUN": {
+      "n_positive": 4,
+      "n_positive_observable_and_evaluated": 4,
+      "n_observable_and_evaluated": 4,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "H4B": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "HPA": {
+      "n_positive": 12,
+      "n_positive_observable_and_evaluated": 12,
+      "n_observable_and_evaluated": 12,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "N6M": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "NPR": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "OXG": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "Q44": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "XAN": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "ZZR": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "ZZS": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     }
     },
     "by_class_n_entry_entities": {
      "ligand": 62,
@@ -5429,6 +5697,232 @@
      "XAN": 3,
      "ZZR": 1
     },
+    "by_ccd_entries": {
+     "29G": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "29H": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "2BP": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "3AW": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "3AY": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "5AZ": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "6AP": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "6GO": {
+      "n_positive": 2,
+      "n_positive_observable_and_evaluated": 2,
+      "n_observable_and_evaluated": 2,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "6GU": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "7PD": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "9QC": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "A1LXN": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "A2F": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "ADE": {
+      "n_positive": 9,
+      "n_positive_observable_and_evaluated": 9,
+      "n_observable_and_evaluated": 9,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "ANG": {
+      "n_positive": 2,
+      "n_positive_observable_and_evaluated": 2,
+      "n_observable_and_evaluated": 2,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "CMG": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "DX4": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "GMP": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "GNG": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "GUN": {
+      "n_positive": 4,
+      "n_positive_observable_and_evaluated": 4,
+      "n_observable_and_evaluated": 4,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "H4B": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "HPA": {
+      "n_positive": 12,
+      "n_positive_observable_and_evaluated": 12,
+      "n_observable_and_evaluated": 12,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "N6M": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "NPR": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "OXG": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "Q44": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "XAN": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "ZZR": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     }
+    },
     "by_class_n_entry_entities": {
      "ligand": 62,
      "metal_ion": 16
@@ -5842,6 +6336,16 @@
     ],
     "by_ccd_n_entry_entities": {
      "CMG": 1
+    },
+    "by_ccd_entries": {
+     "CMG": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     }
     },
     "by_class_n_entry_entities": {
      "additive": 1,
@@ -6257,6 +6761,16 @@
     ],
     "by_ccd_n_entry_entities": {
      "CMG": 1
+    },
+    "by_ccd_entries": {
+     "CMG": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     }
     },
     "by_class_n_entry_entities": {
      "ligand": 1,
@@ -6713,6 +7227,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "additive": 3,
      "metal_ion": 2
@@ -6954,6 +7469,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "additive": 2,
      "metal_ion": 9
@@ -7187,6 +7703,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 8
     },
@@ -7374,6 +7891,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "additive": 1,
      "metal_ion": 5
@@ -7569,6 +8087,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "additive": 1,
      "metal_ion": 1
@@ -7786,6 +8305,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 9
     },
@@ -8059,6 +8579,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 35
     },
@@ -8332,6 +8853,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "additive": 27,
      "metal_ion": 36
@@ -8606,6 +9128,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "additive": 23,
      "metal_ion": 11
@@ -8880,6 +9403,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 1
     },
@@ -9143,6 +9667,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 1
     },
@@ -9416,6 +9941,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 2
     },
@@ -9689,6 +10215,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 32
     },
@@ -9962,6 +10489,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "additive": 27,
      "metal_ion": 35
@@ -10236,6 +10764,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "additive": 13,
      "metal_ion": 27
@@ -10453,6 +10982,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 3
     },
@@ -10647,6 +11177,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "additive": 1,
      "metal_ion": 20
@@ -10835,6 +11366,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 1
     },
@@ -11067,6 +11599,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 4
     },
@@ -11307,6 +11840,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 3
     },
@@ -11761,6 +12295,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 4
     },
@@ -12254,6 +12789,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 29
     },
@@ -12739,6 +13275,208 @@
      "XAN": 3,
      "ZZR": 1
     },
+    "by_ccd_entries": {
+     "29G": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "29H": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "2BP": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "3AW": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "3AY": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "6AP": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "6GO": {
+      "n_positive": 2,
+      "n_positive_observable_and_evaluated": 2,
+      "n_observable_and_evaluated": 2,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "6GU": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "7PD": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "9QC": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "A1LXN": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "A2F": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "ADE": {
+      "n_positive": 8,
+      "n_positive_observable_and_evaluated": 8,
+      "n_observable_and_evaluated": 9,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 0.8889
+     },
+     "ANG": {
+      "n_positive": 2,
+      "n_positive_observable_and_evaluated": 2,
+      "n_observable_and_evaluated": 2,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "CMG": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "DX4": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "GMP": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "GNG": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 0.3333
+     },
+     "GUN": {
+      "n_positive": 4,
+      "n_positive_observable_and_evaluated": 4,
+      "n_observable_and_evaluated": 4,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "HPA": {
+      "n_positive": 12,
+      "n_positive_observable_and_evaluated": 12,
+      "n_observable_and_evaluated": 12,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "N6M": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "NPR": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "Q44": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "XAN": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "ZZR": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     }
+    },
     "by_class_n_entry_entities": {
      "ligand": 54,
      "metal_ion": 30
@@ -13161,6 +13899,32 @@
      "ADE": 1,
      "GNG": 1,
      "OXG": 1
+    },
+    "by_ccd_entries": {
+     "ADE": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 9,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 0.1111
+     },
+     "GNG": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 0.3333
+     },
+     "OXG": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 0.3333
+     }
     },
     "by_class_n_entry_entities": {
      "ligand": 3,
@@ -13585,6 +14349,32 @@
      "ADE": 1,
      "GMP": 1,
      "GNG": 2
+    },
+    "by_ccd_entries": {
+     "ADE": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 9,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 0.1111
+     },
+     "GMP": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "GNG": {
+      "n_positive": 2,
+      "n_positive_observable_and_evaluated": 2,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 0.6667
+     }
     },
     "by_class_n_entry_entities": {
      "ligand": 4,
@@ -14014,6 +14804,48 @@
      "GUN": 1,
      "NPR": 1,
      "OXG": 1
+    },
+    "by_ccd_entries": {
+     "GMP": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "GNG": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "GUN": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 4,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 0.25
+     },
+     "NPR": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "OXG": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 0.3333
+     }
     },
     "by_class_n_entry_entities": {
      "ligand": 7,
@@ -14522,6 +15354,240 @@
      "XAN": 3,
      "ZZR": 1,
      "ZZS": 1
+    },
+    "by_ccd_entries": {
+     "29G": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "29H": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "2BP": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "3AW": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "3AY": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "5AZ": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "6AP": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "6GO": {
+      "n_positive": 2,
+      "n_positive_observable_and_evaluated": 2,
+      "n_observable_and_evaluated": 2,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "6GU": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "7PD": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "9QC": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "A1LXN": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "A2F": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "ADE": {
+      "n_positive": 8,
+      "n_positive_observable_and_evaluated": 8,
+      "n_observable_and_evaluated": 9,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 0.8889
+     },
+     "ANG": {
+      "n_positive": 2,
+      "n_positive_observable_and_evaluated": 2,
+      "n_observable_and_evaluated": 2,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "CMG": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "DX4": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "GMP": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "GNG": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "GUN": {
+      "n_positive": 4,
+      "n_positive_observable_and_evaluated": 4,
+      "n_observable_and_evaluated": 4,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "H4B": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "HPA": {
+      "n_positive": 12,
+      "n_positive_observable_and_evaluated": 12,
+      "n_observable_and_evaluated": 12,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "N6M": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "NPR": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "OXG": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "Q44": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "XAN": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "ZZR": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "ZZS": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     }
     },
     "by_class_n_entry_entities": {
      "ligand": 62,
@@ -15050,6 +16116,224 @@
      "ZZR": 1,
      "ZZS": 1
     },
+    "by_ccd_entries": {
+     "29G": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "29H": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "2BP": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "3AW": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "3AY": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "6AP": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "6GO": {
+      "n_positive": 2,
+      "n_positive_observable_and_evaluated": 2,
+      "n_observable_and_evaluated": 2,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "6GU": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "7PD": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "9QC": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "A1LXN": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "A2F": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "ADE": {
+      "n_positive": 8,
+      "n_positive_observable_and_evaluated": 8,
+      "n_observable_and_evaluated": 9,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 0.8889
+     },
+     "ANG": {
+      "n_positive": 2,
+      "n_positive_observable_and_evaluated": 2,
+      "n_observable_and_evaluated": 2,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "CMG": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "GMP": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "GNG": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "GUN": {
+      "n_positive": 4,
+      "n_positive_observable_and_evaluated": 4,
+      "n_observable_and_evaluated": 4,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "H4B": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "HPA": {
+      "n_positive": 12,
+      "n_positive_observable_and_evaluated": 12,
+      "n_observable_and_evaluated": 12,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "N6M": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "NPR": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "OXG": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "Q44": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "XAN": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "ZZR": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "ZZS": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     }
+    },
     "by_class_n_entry_entities": {
      "ligand": 60,
      "metal_ion": 3
@@ -15567,6 +16851,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 16
     },
@@ -15937,6 +17222,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 20
     },
@@ -16161,6 +17447,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 4
     },
@@ -16385,6 +17672,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 35
     },
@@ -16556,6 +17844,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "additive": 1,
      "metal_ion": 11
@@ -16737,6 +18026,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -16986,6 +18276,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -17185,6 +18476,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -17451,6 +18743,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -17717,6 +19010,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -17983,6 +19277,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 3
     },
@@ -18251,6 +19546,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 1
     },
@@ -18519,6 +19815,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -18785,6 +20082,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 24
     },
@@ -19053,6 +20351,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "additive": 21,
      "metal_ion": 33
@@ -19255,6 +20554,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 1
     },
@@ -19506,6 +20806,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "additive": 23,
      "metal_ion": 30
@@ -19687,6 +20988,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 9
     },
@@ -19858,6 +21160,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "additive": 1,
      "metal_ion": 33
@@ -20083,6 +21386,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "additive": 1
     },
@@ -20307,6 +21611,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 20
     },
@@ -20743,6 +22048,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 29
     },
@@ -21196,6 +22502,136 @@
      "OXG": 2,
      "Q44": 1,
      "XAN": 1
+    },
+    "by_ccd_entries": {
+     "29G": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "29H": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "2BP": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "3AW": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "3AY": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "6AP": {
+      "n_positive": 2,
+      "n_positive_observable_and_evaluated": 2,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 0.6667
+     },
+     "6GO": {
+      "n_positive": 2,
+      "n_positive_observable_and_evaluated": 2,
+      "n_observable_and_evaluated": 2,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "6GU": {
+      "n_positive": 2,
+      "n_positive_observable_and_evaluated": 2,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 0.6667
+     },
+     "ADE": {
+      "n_positive": 2,
+      "n_positive_observable_and_evaluated": 2,
+      "n_observable_and_evaluated": 9,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 0.2222
+     },
+     "ANG": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 2,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 0.5
+     },
+     "CMG": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "GUN": {
+      "n_positive": 2,
+      "n_positive_observable_and_evaluated": 2,
+      "n_observable_and_evaluated": 4,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 0.5
+     },
+     "HPA": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 12,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 0.25
+     },
+     "OXG": {
+      "n_positive": 2,
+      "n_positive_observable_and_evaluated": 2,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 0.6667
+     },
+     "Q44": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "XAN": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 0.3333
+     }
     },
     "by_class_n_entry_entities": {
      "ligand": 24,
@@ -21701,6 +23137,232 @@
      "ZZR": 1,
      "ZZS": 1
     },
+    "by_ccd_entries": {
+     "29G": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "29H": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "2BP": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "3AW": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "3AY": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "5AZ": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "6AP": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "6GO": {
+      "n_positive": 2,
+      "n_positive_observable_and_evaluated": 2,
+      "n_observable_and_evaluated": 2,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "6GU": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "7PD": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "9QC": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "A1LXN": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "A2F": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "ADE": {
+      "n_positive": 9,
+      "n_positive_observable_and_evaluated": 9,
+      "n_observable_and_evaluated": 9,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "ANG": {
+      "n_positive": 2,
+      "n_positive_observable_and_evaluated": 2,
+      "n_observable_and_evaluated": 2,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "CMG": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "DX4": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "GMP": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "GNG": {
+      "n_positive": 2,
+      "n_positive_observable_and_evaluated": 2,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 0.6667
+     },
+     "GUN": {
+      "n_positive": 4,
+      "n_positive_observable_and_evaluated": 4,
+      "n_observable_and_evaluated": 4,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "H4B": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "HPA": {
+      "n_positive": 12,
+      "n_positive_observable_and_evaluated": 12,
+      "n_observable_and_evaluated": 12,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "N6M": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "NPR": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "OXG": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "XAN": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "ZZR": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "ZZS": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     }
+    },
     "by_class_n_entry_entities": {
      "ligand": 61,
      "metal_ion": 2
@@ -22193,6 +23855,240 @@
      "ZZR": 1,
      "ZZS": 1
     },
+    "by_ccd_entries": {
+     "29G": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "29H": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "2BP": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "3AW": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "3AY": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "5AZ": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "6AP": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "6GO": {
+      "n_positive": 2,
+      "n_positive_observable_and_evaluated": 2,
+      "n_observable_and_evaluated": 2,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "6GU": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "7PD": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "9QC": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "A1LXN": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "A2F": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "ADE": {
+      "n_positive": 7,
+      "n_positive_observable_and_evaluated": 7,
+      "n_observable_and_evaluated": 9,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 0.7778
+     },
+     "ANG": {
+      "n_positive": 2,
+      "n_positive_observable_and_evaluated": 2,
+      "n_observable_and_evaluated": 2,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "CMG": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "DX4": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "GMP": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "GNG": {
+      "n_positive": 2,
+      "n_positive_observable_and_evaluated": 2,
+      "n_observable_and_evaluated": 2,
+      "n_not_observable": 1,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "GUN": {
+      "n_positive": 4,
+      "n_positive_observable_and_evaluated": 4,
+      "n_observable_and_evaluated": 4,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "H4B": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "HPA": {
+      "n_positive": 12,
+      "n_positive_observable_and_evaluated": 12,
+      "n_observable_and_evaluated": 12,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "N6M": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "NPR": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "OXG": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "Q44": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "XAN": {
+      "n_positive": 3,
+      "n_positive_observable_and_evaluated": 3,
+      "n_observable_and_evaluated": 3,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "ZZR": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     },
+     "ZZS": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 1,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 1.0
+     }
+    },
     "by_class_n_entry_entities": {
      "ligand": 60,
      "metal_ion": 1
@@ -22369,6 +24265,16 @@
     "by_ccd_n_entry_entities": {
      "GNG": 1
     },
+    "by_ccd_entries": {
+     "GNG": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 2,
+      "n_not_observable": 1,
+      "n_source_unavailable": 0,
+      "frequency": 0.5
+     }
+    },
     "by_class_n_entry_entities": {
      "ligand": 1,
      "metal_ion": 1
@@ -22541,6 +24447,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 2
     },
@@ -22720,6 +24627,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -22897,6 +24805,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 1
     },
@@ -23076,6 +24985,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {
      "metal_ion": 4
     },
@@ -23251,6 +25161,16 @@
     "by_ccd_n_entry_entities": {
      "ANG": 1
     },
+    "by_ccd_entries": {
+     "ANG": {
+      "n_positive": 1,
+      "n_positive_observable_and_evaluated": 1,
+      "n_observable_and_evaluated": 2,
+      "n_not_observable": 0,
+      "n_source_unavailable": 0,
+      "frequency": 0.5
+     }
+    },
     "by_class_n_entry_entities": {
      "ligand": 1,
      "metal_ion": 8
@@ -23423,6 +25343,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -23592,6 +25513,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -23761,6 +25683,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -23930,6 +25853,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -24114,6 +26038,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -24298,6 +26223,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -24482,6 +26408,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -24651,6 +26578,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -24820,6 +26748,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -24989,6 +26918,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -25158,6 +27088,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -25347,6 +27278,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -25536,6 +27468,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -25725,6 +27658,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -25914,6 +27848,7 @@
     "n_entries": 0,
     "entry_entities": [],
     "by_ccd_n_entry_entities": {},
+    "by_ccd_entries": {},
     "by_class_n_entry_entities": {},
     "n_entry_entities_excluded_from_default": 0,
     "confidence": {
@@ -25945,6 +27880,6 @@
   "mapping_generated": "2026-10-15T03:48:01+00:00",
   "annotation_pipeline_version": "0.1.0",
   "annotation_config_version": "1.1",
-  "generated": "2026-10-18T08:10:20+00:00"
+  "generated": "2026-10-18T17:56:45+00:00"
  }
 }

@@ -1,8 +1,9 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { FamilyProvider, useFamilyStatus } from './state/family'
 import { SelectionProvider, useSelection } from './state/selection'
 import { NumberingProvider } from './state/numbering'
 import { StructuresProvider } from './state/structures'
+import { NavigationProvider, type NavigationOrigin } from './state/navigation'
 import { Tabs, type TabId } from './components/Tabs'
 import { FamilyOverview } from './components/FamilyOverview'
 import { StructuresTab } from './components/StructuresTab'
@@ -23,6 +24,14 @@ function Shell({ acc }: { acc: string }) {
   const status = useFamilyStatus()
   const sel = useSelection()
   const [tab, setTab] = useState<TabId>('overview')
+  // explicit "View in Family Overview" from the Annotations tab: select the Rfam position (current instance and numbering kept), open the tab
+  const [origin, setOrigin] = useState<NavigationOrigin | null>(null)
+  const { select } = sel
+  const viewInOverview = useCallback((pos: number, label: string) => { select(pos); setOrigin({ from: 'annotations', pos, label }); setTab('overview') }, [select])
+  // the origin note belongs to that transferred selection only: any other selection (or clearing it) drops it
+  const active = sel.active
+  useEffect(() => { if (origin && !(active?.kind === 'position' && active.pos === origin.pos)) setOrigin(null) }, [active, origin])
+  const nav = useMemo(() => ({ viewInOverview, origin }), [viewInOverview, origin])
   useEffect(() => {   // default instance = backend representative
     if (status.state === 'ready' && sel.instance === null) { const d = status.data.family.display_representative ?? status.data.family.representative; if (d) sel.setInstance(d.seq_name) }
   }, [status, sel])
@@ -58,9 +67,11 @@ function Shell({ acc }: { acc: string }) {
       <main className="mt-4">
         {/* Position numbering is shared by the Family Overview and Annotations tabs (kept across tab switches) */}
         <NumberingProvider>
+        <NavigationProvider value={nav}>
         {tab === 'overview' && <FamilyOverview />}
         {tab === 'structures' && <StructuresTab />}
         {tab === 'annotations' && <AnnotationsTab />}
+        </NavigationProvider>
         </NumberingProvider>
       </main>
       <footer className="mt-8 border-t border-stone-200 pt-3 text-xs text-stone-500">

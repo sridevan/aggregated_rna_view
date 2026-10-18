@@ -4,7 +4,7 @@ import { useSelection } from '../state/selection'
 import { useStructures } from '../state/structures'
 import { displayOrganism } from '../lib/format'
 import { familyFileUrl, loadLigands, loadModifications, loadStructureClustering } from '../api/data'
-import { clusteringFor, defaultDisplayed, groupCount, instanceLabel, OVERLAY_MAX, structureColours, type Clustering } from '../lib/structureGroups'
+import { clusteringFor, defaultDisplayed, fmt, groupCount, instanceLabel, OVERLAY_MAX, structureColours, type Clustering } from '../lib/structureGroups'
 import type { LigandsDataset, ModificationsDataset, StructureClusteringDataset, StructureMetricId } from '../types/backend'
 import { InstanceTable, type TableGroups } from './InstanceTable'
 import { InfoTip } from './InfoTip'
@@ -95,7 +95,7 @@ export function StructuresTab() {
         <>
           <div className="grid items-stretch gap-4 lg:grid-cols-2" data-testid="structures-section-b">
             <PairwisePanel c={c} data={data} groupId={group.group_id} onSelectGroup={(id) => st.selectGroup(st.metric, id)} metric={st.metric} setMetric={st.setMetric} selectedInstance={current?.seq_name ?? null} onSelectInstance={followInstance} />
-            <AlignmentPanel c={c} group={group} acc={acc} instanceRow={(sn) => instances.find((r) => r.seq_name === sn)} transforms={orientation?.transforms ?? {}} selectedInstance={current?.seq_name ?? null} excludedReason={current ? excluded.get(current.seq_name) ?? null : null} />
+            <AlignmentPanel c={c} group={group} acc={acc} nShared={data.dataset.n_shared_positions} frameReference={orientation?.reference ? instanceLabel(orientation.reference.seq_name) : null} instanceRow={(sn) => instances.find((r) => r.seq_name === sn)} transforms={orientation?.transforms ?? {}} selectedInstance={current?.seq_name ?? null} excludedReason={current ? excluded.get(current.seq_name) ?? null : null} />
           </div>
           <AssociatedFeatures c={c} group={group} compared={st.compareGroup != null ? c.groups.find((g) => g.group_id === st.compareGroup) ?? null : null} instances={instances} ligands={ligands} mods={mods} clen={family.clen} />
         </>
@@ -184,8 +184,26 @@ function PairwisePanel({ c, data, groupId, onSelectGroup, metric, setMetric, sel
   )
 }
 
-function AlignmentPanel({ c, group, acc, instanceRow, transforms, selectedInstance, excludedReason }: {
-  c: Clustering; group: Clustering['groups'][number]; acc: string; instanceRow: (sn: string) => { pdb_id: string; label_asym_id: string } | undefined
+/**
+ * The one-line representative comparison: the active metric's stored pairwise value (structure_clustering.json, never recomputed) and the
+ * shared positions it was computed on. The chains and groups are already named by the comparison controls and the structure chips.
+ */
+export function comparisonSummary(c: Pick<Clustering, 'ids' | 'value' | 'metric'>, a: string, b: string, nShared: number) {
+  const i = c.ids.indexOf(a), j = c.ids.indexOf(b)
+  const v = i >= 0 && j >= 0 ? c.value[i][j] : null
+  const metric = v == null ? 'pairwise value not available' : c.metric.kind === 'similarity' ? `TM-score ${fmt(v)} (1 − TM-score ${fmt(1 - v)})` : `${c.metric.label} ${fmt(v)}`
+  return { metric: `${metric} · ${nShared} shared Rfam positions`, value: v }
+}
+
+/** The 3D alignment ⓘ: the visual superposition onto the family frame with each displayed chain's fit (orientation.json), kept apart from the metric's alignment */
+export function alignmentInfo(displayed: string[], fit: (sn: string) => { quality: string; rmsd: number | null } | null, frameReference: string | null, metricKind: string) {
+  const fits = displayed.map((sn) => { const f = fit(sn); return `• ${instanceLabel(sn)}: ${f ? `${f.quality} fit${f.rmsd != null ? `, RMSD ${f.rmsd.toFixed(2)} Å` : ''}` : 'no alignment'}` })
+  return [`Superposition: each chain is fitted onto ${frameReference ?? 'the family reference'} using C4′ atoms at shared Rfam positions.`, '', 'Fit to the reference (C4′ RMSD):', ...fits, '',
+    `This visual superposition may differ from the alignment used to calculate the ${metricKind === 'similarity' ? 'TM-score' : 'geometric discrepancy'}. Poor fits are flagged on the structure chips.`].join('\n')
+}
+
+function AlignmentPanel({ c, group, acc, nShared, frameReference, instanceRow, transforms, selectedInstance, excludedReason }: {
+  c: Clustering; group: Clustering['groups'][number]; acc: string; nShared: number; frameReference: string | null; instanceRow: (sn: string) => { pdb_id: string; label_asym_id: string } | undefined
   transforms: Record<string, import('../types/backend').OrientationTransform>; selectedInstance: string | null; excludedReason: string | null
 }) {
   const st = useStructures()
@@ -204,11 +222,15 @@ function AlignmentPanel({ c, group, acc, instanceRow, transforms, selectedInstan
   const quality = (sn: string): string => transforms[sn]?.fit_quality ?? 'missing'
   const others = c.groups.filter((g) => g.group_id !== group.group_id)
   const lone = displayed.length === 1 && c.groupOf[displayed[0]] == null ? displayed[0] : null   // a non-clustered instance shown on its own
-  const sub = lone ? `${instanceLabel(lone)} is not clustered; shown on its own` : compare ? `Representatives of ${group.label} and ${compare.label}` : displayed.length === group.n_instances && group.n_instances > 1 ? `All ${group.n_instances} RNA instances of ${group.label} aligned` : `${group.label} has ${group.n_instances} RNA instances. Showing ${displayed.length === 1 ? 'its representative' : `${displayed.length} structures`}`
+  const sub = lone ? `${instanceLabel(lone)} is not clustered; shown on its own` : displayed.length === group.n_instances && group.n_instances > 1 ? `All ${group.n_instances} RNA instances of ${group.label} aligned` : `${group.label} has ${group.n_instances} RNA instances. Showing ${displayed.length === 1 ? 'its representative' : `${displayed.length} structures`}`
   return (
     <section className="flex min-w-0 flex-col rounded border border-stone-200 bg-white p-3" data-testid="alignment-panel">
-      <h2 className="flex items-center text-base font-semibold text-stone-900">3D alignment view<InfoTip label="About the 3D alignment" text="RNA structures are superposed using C4′ atoms at shared Rfam positions. This visual alignment differs from that used to calculate geometric discrepancy. Poor-quality alignments are flagged." /></h2>
-      <p className="text-xs text-stone-600" data-testid="alignment-caption">{sub}</p>
+      <h2 className="flex items-center text-base font-semibold text-stone-900">3D alignment view<InfoTip label="About the 3D alignment" title="3D alignment"
+        text={alignmentInfo(displayed, (sn) => (transforms[sn] ? { quality: transforms[sn].fit_quality, rmsd: transforms[sn].rmsd } : null), frameReference, c.metric.kind)} /></h2>
+      {compare ? (() => {
+        const sm = comparisonSummary(c, group.representative, compare.representative, nShared)
+        return <p className="text-xs font-medium text-stone-800" data-testid="compare-summary" data-value={sm.value ?? ''}><span data-testid="compare-summary-metric">{sm.metric}</span></p>
+      })() : <p className="text-xs text-stone-600" data-testid="alignment-caption">{sub}</p>}
       {others.length > 0 && (
         <div className="mt-1.5 flex flex-wrap items-center gap-x-2 gap-y-1 rounded border border-stone-200 bg-stone-50 px-2 py-1 text-xs" data-testid="compare-box">
           <span className="text-[10px] font-semibold uppercase tracking-wide text-stone-500">Compare representatives</span>

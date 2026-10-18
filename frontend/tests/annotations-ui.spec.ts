@@ -65,7 +65,8 @@ test('compact legend: shared frequency, SASA, nonstandard presence, no data vs n
   const t = await (await page.request.get('/families/RF00167/sasa_tracks.json')).json()
   await expect(page.getByTestId('legend-sasa-median')).toContainText(`Median SASA (Å²):0 Å²≥ ${t.colour_domain_suggestion_A2.max} Å²`)
   await expect(page.getByTestId('legend-nonstandard-presence')).toHaveText('Nonstandard nucleotide observed')
-  await expect(page.getByTestId('legend-no-data')).toHaveText('No data'); await expect(page.getByTestId('legend-no-annotation')).toHaveText('No annotation')
+  await expect(page.getByTestId('legend-no-data')).toHaveText('No data'); await expect(page.getByTestId('legend-no-annotation')).toHaveText('Not observed')
+  await expect(page.getByTestId('legend-no-annotation')).toHaveAttribute('title', /not a confirmed absence/)
   await expect(page.getByTestId('legend-no-data')).toHaveAttribute('title', /SASA: no qualifying measurement/)
   // legend is secondary: small text, at most two rows on desktop
   expect(await legend.evaluate((e) => parseFloat(getComputedStyle(e).fontSize))).toBeLessThanOrEqual(11)

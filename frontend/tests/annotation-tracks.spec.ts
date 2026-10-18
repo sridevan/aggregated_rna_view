@@ -60,7 +60,9 @@ test('concise tooltips with correct counts (overlapping classes at 53 kept); hea
   await expect(tip).toHaveText(`Rfam residue 37Hairpin loop (HL)Observed in ${tr.positions[36].hairpin_loops.denominators.n_positive_observable_and_evaluated} of ${tr.positions[36].hairpin_loops.denominators.n_observable_and_evaluated} RNA instances (${Math.round(1000 * tr.positions[36].hairpin_loops.frequency) / 10}%)`)
   const hpa = new Set(lig.bound_molecules.filter((b: { ccd_id: string; in_default_track: boolean; consensus_positions: number[] }) => b.ccd_id === 'HPA' && b.in_default_track && b.consensus_positions.includes(26)).map((b: { pdb_id: string }) => b.pdb_id))
   await page.getByTestId('track-lig-HPA').locator('rect[data-pos="26"]').hover()
-  await expect(tip).toHaveText(`Rfam residue 26HPA — HypoxanthineObserved in ${hpa.size} of ${lig.by_ccd.HPA.n_entries_in_default_track} PDB entries (${Math.round(1000 * hpa.size / lig.by_ccd.HPA.n_entries_in_default_track) / 10}%)`)
+  const e26 = tr.positions[25].ligand_binding_sites.by_ccd_entries.HPA   // denominator: entries with bound HPA and an observed nucleotide here
+  expect(e26.n_positive_observable_and_evaluated).toBe(hpa.size)
+  await expect(tip).toHaveText(`Rfam residue 26HPA — HypoxanthineRecorded contact in ${hpa.size} of ${e26.n_observable_and_evaluated} observable PDB entries (${Math.round(1000 * hpa.size / e26.n_observable_and_evaluated) / 10}%)`)
   for (const banned of ['HL_', 'J3', 'J4', 'motif', 'PP', '/ ']) expect(await tip.textContent()).not.toContain(banned)
   // header popovers: visible when collapsed, do not toggle, not clipped
   await page.getByTestId('category-header-loops').getByTestId('info-tip').click()

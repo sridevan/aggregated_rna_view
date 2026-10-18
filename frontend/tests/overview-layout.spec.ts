@@ -7,7 +7,7 @@ const view = (page: Page) => page.evaluate(() => (window as unknown as Hook).__r
 const ready = async (page: Page, pdb: string) => { await expect(page.getByTestId('molstar-viewer')).toHaveAttribute('data-pdb', pdb); await expect(page.getByTestId('molstar-viewer')).toHaveAttribute('data-status', 'ready', { timeout: 60_000 }) }
 const dirOf = (c: { position: number[]; target: number[] }) => { const d = c.target.map((t, i) => t - c.position[i]); const l = Math.hypot(...d); return d.map((x) => +(x / l).toFixed(6)) }
 
-test('desktop layout: rows in order, six stat cards in one row, 40/60 top-aligned metadata row, chips and headings', async ({ page }) => {
+test('desktop layout: rows in order, compact family summary, 40/60 top-aligned metadata row, chips and headings', async ({ page }) => {
   await page.setViewportSize({ width: 1400, height: 1000 })
   await page.goto('/RF00167')
   await ready(page, '4fe5')
@@ -15,15 +15,24 @@ test('desktop layout: rows in order, six stat cards in one row, 40/60 top-aligne
   const about = await box('family-description'), stats = await box('stat-pdb-entries'), viewer = await box('viewer-card'), meta = await box('metadata-panel'), species = await box('species-chart')
   expect(about.y).toBeLessThan(stats.y); expect(stats.y).toBeLessThan(viewer.y); expect(viewer.y).toBeLessThan(meta.y)
   await expect(page.getByTestId('consensus-model')).toHaveCount(0)                                  // consensus model now lives (collapsed) in the track area, not as its own card
-  // six stat cards on one row
-  const ids = ['stat-pdb-entries', 'stat-rna-instances', 'stat-unique-sequences', 'stat-model-length', 'stat-sequence-occupancy', 'stat-structural-occupancy']
-  const statBoxes = await Promise.all(ids.map(async (id) => (await page.getByTestId(`${id}-card`).boundingBox())!))
-  expect(new Set(statBoxes.map((b) => Math.round(b.y))).size).toBe(1)
-  expect(new Set(statBoxes.map((b) => Math.round(b.height))).size).toBe(1)                       // equal card heights
-  const valueTops = await Promise.all(ids.map(async (id) => Math.round((await page.getByTestId(id).boundingBox())!.y)))
-  expect(new Set(valueTops).size).toBe(1)                                                           // all primary values start at the same y
-  const valueFonts = await Promise.all(ids.map((id) => page.getByTestId(id).evaluate((e) => `${getComputedStyle(e).fontSize}/${getComputedStyle(e).fontWeight}/${getComputedStyle(e).lineHeight}`)))
-  expect(new Set(valueFonts).size).toBe(1)
+  // compact family summary (one card): three primary counts in one row, then the other statistics in a lightweight row, all values unchanged
+  const fam = await (await page.request.get('/families/RF00167/family.json')).json()
+  const primary = ['stat-pdb-entries', 'stat-rna-instances', 'stat-model-length']
+  const pBoxes = await Promise.all(primary.map(async (id) => (await page.getByTestId(id).boundingBox())!))
+  expect(new Set(pBoxes.map((b) => Math.round(b.y))).size).toBe(1)                                // one row
+  const pFonts = await Promise.all(primary.map((id) => page.getByTestId(id).evaluate((e) => getComputedStyle(e).fontSize)))
+  expect(new Set(pFonts).size).toBe(1)
+  await expect(page.getByTestId('stat-model-length-card')).toContainText('Rfam consensus positions')
+  await expect(page.getByTestId('stat-rna-instances-card')).toContainText(`RNA chain instances · ${fam.counts.instances_validation_ok} validated`)
+  for (const id of ['stat-unique-sequences', 'stat-sequence-occupancy', 'stat-structural-occupancy']) {
+    await expect(page.getByTestId(id)).toBeVisible()
+    expect(await page.getByTestId(id).evaluate((e) => parseFloat(getComputedStyle(e).fontSize))).toBeLessThan(parseFloat(pFonts[0]))   // secondary row is lighter
+  }
+  await page.getByTestId('stat-secondary').getByTestId('info-tip').hover()
+  await expect(page.getByRole('tooltip')).toContainText('Mean structural occupancy: mean over 102 positions of the fraction of 84 instances with coordinates')
+  await page.mouse.move(0, 0)
+  // the molecular view starts much higher than with the previous About card + six stat cards (~500 px at this width)
+  expect(viewer.y - about.y).toBeLessThan(260)
   // viewer: full width, 500-600 px tall
   expect(viewer.width).toBeGreaterThan(about.width * 0.98)
   const canvasBox = await box('molstar-viewer'); expect(canvasBox.height).toBeGreaterThanOrEqual(500); expect(canvasBox.height).toBeLessThanOrEqual(600)

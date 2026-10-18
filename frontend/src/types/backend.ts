@@ -83,7 +83,10 @@ export interface JunctionUnionPosition { n_loop_observations: number; n_instance
   /** junction types in the union and instances per type (absent in files built before J5 support) */
   loop_types?: string[]; by_type_n_instances?: Record<string, number> }
 export interface LigandTrackPosition {
-  n_entry_entities: number; n_entries: number; entry_entities: string[]; by_ccd_n_entry_entities: Record<string, number>; by_class_n_entry_entities: Record<string, number>
+  n_entry_entities: number; n_entries: number; entry_entities: string[]; by_ccd_n_entry_entities: Record<string, number>
+  /** per bound ccd in contact here, counted per PDB entry; denominator = entries with the bound ccd and an observed nucleotide here */
+  by_ccd_entries: Record<string, { n_positive: number; n_positive_observable_and_evaluated: number; n_observable_and_evaluated: number; n_not_observable: number; n_source_unavailable: number; frequency: number | null }>
+  by_class_n_entry_entities: Record<string, number>
   n_entry_entities_excluded_from_default: number; confidence: { high: number; medium: number; low: number }
   denominators: { counting_unit: string; n_observable_entry_entities: number; n_source_evaluated_entry_entities: number; n_observable_and_evaluated: number; n_positive: number; n_positive_observable_and_evaluated: number; n_not_annotated_by_source: number; n_source_unavailable: number; n_positive_not_observable: number }
   frequency: number | null

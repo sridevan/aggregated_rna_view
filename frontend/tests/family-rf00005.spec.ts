@@ -43,7 +43,9 @@ test('Annotations: J5 junctions in the junction track, nonstandard nucleotides, 
   await page.goto('/RF00005'); await page.getByTestId('tab-annotations').click()
   await expect(page.getByText('Ligand binding sites').first()).toBeVisible({ timeout: 30_000 })
   for (const t of ['Median SASA', 'hairpin loops', 'junction loops', 'PSU', 'Bottromycin A2']) await expect(page.getByText(t, { exact: false }).first()).toBeVisible()
-  await expect(page.getByText('Predicted binding pockets')).toHaveCount(0)
+  // pockets are not shown for tRNA (user decision): no category, but the page says the data are not available rather than dropping them silently
+  await expect(page.getByTestId('category-pockets')).toHaveCount(0)
+  await expect(page.getByTestId('categories-unavailable')).toHaveText('Not available for RF00005: Predicted binding pockets.')
   // the junction mark at consensus 7 counts the union and names J5 in its details
   await page.getByTestId('track-JL').locator('rect[data-pos="7"]').click()
   await expect(page.getByTestId('annotation-inspect')).toContainText(`J5: ${p7.by_type_n_instances.J5} instances`)

@@ -138,7 +138,8 @@ test('representative comparison, member adding with a cap, not-clustered selecti
   await open(page)
   await viewerReady(page)
   await page.getByTestId('compare-on').click()
-  await expect(page.getByTestId('alignment-caption')).toHaveText('Representatives of Structural group 1 and Structural group 2')
+  await expect(page.getByTestId('alignment-caption')).toHaveCount(0)   // the representatives are named by the comparison controls and chips; one metric line instead
+  await expect(page.getByTestId('compare-summary')).toHaveText(/^Geometric discrepancy [\d.]+ · 57 shared Rfam positions$/)
   await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-structures', '6uc8_1_B_A,5e54_1_B_B')
   await viewerReady(page)
   await page.getByTestId('compare-off').click()
@@ -295,7 +296,7 @@ test('tooltips: short, metric-specific wording for both metrics; details moved t
   expect(await tip('About within-group dissimilarity')).toBe('Mean pairwise geometric discrepancy between RNA instances in this group. Lower values indicate greater structural similarity.')
   expect(await tip('About across-group dissimilarity')).toBe("Mean pairwise geometric discrepancy between this group's RNA instances and all other clustered instances.")
   expect(await tip('About structural groups')).toContain('do not necessarily correspond to biological conformational states')
-  expect(await tip('About the 3D alignment')).toBe('RNA structures are superposed using C4′ atoms at shared Rfam positions. This visual alignment differs from that used to calculate geometric discrepancy. Poor-quality alignments are flagged.')
+  expect(await tip('About the 3D alignment')).toBe('3D alignmentSuperposition: each chain is fitted onto 4FE5 B using C4′ atoms at shared Rfam positions. Fit to the reference (C4′ RMSD): • 6UC8 B: good fit, RMSD 0.27 Å This visual superposition may differ from the alignment used to calculate the geometric discrepancy. Poor fits are flagged on the structure chips.')
   await page.getByRole('button', { name: 'About the 3D alignment' }).click()
   const pb = (await page.getByTestId('info-popover').boundingBox())!, panel = (await page.getByTestId('alignment-panel').boundingBox())!
   expect(pb.width).toBeLessThanOrEqual(340); expect(pb.x).toBeGreaterThanOrEqual(panel.x - 1)                    // compact, kept over its own panel

@@ -42,7 +42,9 @@ test('Annotations: readable axis (labels every 100), antibiotic rows without put
   expect(labels.length).toBeLessThanOrEqual(17); expect(labels.slice(1).every((v) => v % 100 === 0)).toBe(true)
   await expect(page.getByText('Apramycin · 3 entries')).toBeVisible()
   await expect(page.getByText('1,4-DIAMINOBUTANE', { exact: false })).toHaveCount(0)                     // putrescine: additive, not a ligand row
-  await expect(page.getByText('Predicted binding pockets')).toHaveCount(0)
+  // no pocket category (user decision), but the missing data are named rather than dropped silently
+  await expect(page.getByTestId('category-pockets')).toHaveCount(0)
+  await expect(page.getByTestId('categories-unavailable')).toHaveText('Not available for RF00177: Predicted binding pockets.')
   await page.getByTestId('download-button').click()
   await expect(page.getByTestId('download-pockets')).toHaveAttribute('aria-disabled', 'true')
   await expect(page.getByTestId('download-loops')).toHaveAttribute('href', /\/families\/RF00177\/loops\.json$/)

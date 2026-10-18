@@ -467,6 +467,17 @@ class AnnotationBuilder:
         elem_eval = {sn for sn, s in self.inst_element_source.items() if s["status"] == "evaluated"}
         lig_eval = {k for k, v in self.ligand_source.items() if v["status"] == "evaluated"}
         entity_chains = {f"{p}:{e}": [c["seq_name"] for c in cs] for (p, e), cs in self.idx.by_entity.items()}
+        # per-ligand entry-level denominators: PDB entries with the bound ccd in the default track, and each entry's chains split by ligand-source status
+        ccd_entries: dict[str, set[str]] = defaultdict(set)
+        for r in self.ligands:
+            if r["in_default_track"]:
+                ccd_entries[r["ccd_id"]].add(r["pdb_id"])
+        entry_chains_eval: dict[str, list[str]] = defaultdict(list)
+        entry_chains_all: dict[str, list[str]] = defaultdict(list)
+        for k, cs in entity_chains.items():
+            entry_chains_all[k.split(":")[0]] += cs
+            if k in lig_eval:
+                entry_chains_eval[k.split(":")[0]] += cs
         positions: list[dict[str, Any]] = []
         for pos in range(1, self.clen + 1):
             observable = {i["seq_name"] for i in self.idx.instances if self.idx.observable(i["seq_name"], pos)}
@@ -500,8 +511,21 @@ class AnnotationBuilder:
                     by_ccd[r["ccd_id"]].add(f"{r['pdb_id']}:{r['entity_id']}")
             conf = Counter(c["pp_category"] for r in default for c in r["contacts"] if c["rfam_consensus_pos"] == pos)
             obs_eval = obs_entities & lig_eval
+            # entries (not entities: the chains of one entry count once) with each contacting ccd; an entry is eligible when a chain of a
+            # ligand-source-evaluated entity has an observed nucleotide here; entries without one are not counted as negatives
+            pos_entries: dict[str, set[str]] = defaultdict(set)
+            for r in default:
+                pos_entries[r["ccd_id"]].add(r["pdb_id"])
+            by_ccd_entries = {}
+            for c, pe in sorted(pos_entries.items()):
+                elig = {e for e in ccd_entries[c] if any(sn in observable for sn in entry_chains_eval[e])}
+                unobs = {e for e in ccd_entries[c] - elig if not any(sn in observable for sn in entry_chains_all[e])}
+                by_ccd_entries[c] = {"n_positive": len(pe), "n_positive_observable_and_evaluated": len(pe & elig), "n_observable_and_evaluated": len(elig),
+                                     "n_not_observable": len(unobs), "n_source_unavailable": len(ccd_entries[c]) - len(elig) - len(unobs),
+                                     "frequency": _frac(len(pe & elig), len(elig))}
             lig = {"n_entry_entities": len(pos_ent), "n_entries": len({r["pdb_id"] for r in default}), "entry_entities": sorted(pos_ent),
                    "by_ccd_n_entry_entities": {c: len(s) for c, s in sorted(by_ccd.items())},
+                   "by_ccd_entries": by_ccd_entries,
                    "by_class_n_entry_entities": {c: len(s) for c, s in sorted(by_class.items())},
                    "n_entry_entities_excluded_from_default": len({f"{r['pdb_id']}:{r['entity_id']}" for r in recs if not r["in_default_track"]}),
                    "confidence": {"high": conf.get("high", 0), "medium": conf.get("medium", 0), "low": conf.get("low", 0)},
@@ -522,7 +546,12 @@ class AnnotationBuilder:
             "junction_loops_union": {"kind": "derived_union", "loop_types": list(jtypes), "rule": f"set union of all junction loop types present ({', '.join(jtypes)}); never the sum of the per-type counts"},
             "ligand_binding_sites": {"kind": "entity_level_contacts", "counting_unit": "pdb_entry_entity", "default_classes": self.config["default_track_classes"],
                                      "exclude_flagged_from_default_track": self.config.get("exclude_flagged_from_default_track", True),
-                                     "denominator": "observable and source-evaluated (pdb_id, entity_id) pairs"},
+                                     "denominator": "observable and source-evaluated (pdb_id, entity_id) pairs",
+                                     "by_ccd_entries": "per bound ccd in contact at the position, counted per PDB entry: n_positive_observable_and_evaluated / "
+                                                       "n_observable_and_evaluated = entries with a recorded contact / entries with the bound ccd that have an observed "
+                                                       "nucleotide here in a chain of a source-evaluated entity; n_not_observable entries (no observed nucleotide in any "
+                                                       "chain) and n_source_unavailable entries are not counted as negatives. An observed-contact frequency among "
+                                                       "coordinate-observable entries, not a binding probability"},
             "motif_atlas_release": self.atlas_release}
         return {"schema_version": SCHEMA_VERSION, "rfam_acc": self.acc, "clen": self.clen, "n_instances": n_inst, "n_entries": len(self.idx.by_pdb), "n_entry_entities": len(self.idx.by_entity),
                 "source_availability": {"reference_structural_elements": {"n_instances_evaluated": len(elem_eval), "n_instances_unavailable": n_inst - len(elem_eval)},

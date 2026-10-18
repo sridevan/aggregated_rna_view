@@ -704,6 +704,50 @@
          "number",
          "null"
         ]
+       },
+       "by_ccd_entries": {
+        "type": "object",
+        "description": "per bound ccd in contact at this position, counted per PDB entry (default track)",
+        "additionalProperties": {
+         "type": "object",
+         "properties": {
+          "n_positive": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "n_positive_observable_and_evaluated": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "n_observable_and_evaluated": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "n_not_observable": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "n_source_unavailable": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "frequency": {
+           "type": [
+            "number",
+            "null"
+           ]
+          }
+         },
+         "required": [
+          "n_positive",
+          "n_positive_observable_and_evaluated",
+          "n_observable_and_evaluated",
+          "n_not_observable",
+          "n_source_unavailable",
+          "frequency"
+         ],
+         "additionalProperties": false
+        }
        }
       },
       "required": [
@@ -711,6 +755,7 @@
        "n_entries",
        "entry_entities",
        "by_ccd_n_entry_entities",
+       "by_ccd_entries",
        "by_class_n_entry_entities",
        "confidence",
        "denominators",

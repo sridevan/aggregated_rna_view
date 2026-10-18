@@ -5,6 +5,7 @@ import { familyFileUrl } from '../api/data'
 import { SectionCard } from './SectionCard'
 import { InfoTip } from './InfoTip'
 import { NumberingSelect, useNumbering } from '../state/numbering'
+import { useNavigation } from '../state/navigation'
 import { chainAt, referenceTicks, residueValue } from '../lib/numbering'
 import type { LigandsDataset, LoopTrackPosition, ModificationTracksDataset, PocketTracksDataset, SasaTracksDataset, TracksDataset } from '../types/backend'
 
@@ -33,7 +34,9 @@ export function visibleRange(scrollX: number, viewW: number, cellPx: number, cle
 /** Colour scale of a track. `frequency`: discretised light->dark bins of a fraction 0..1. `quantity`: continuous light->dark over [domainMin, domainMax] in `unit`.
  *  `presence`: one fixed colour (`dark`) wherever the track has a mark, whatever the value (for sparse data; the exact value is in the tooltip). */
 export interface ScaleDef { id: string; kind: 'frequency' | 'quantity' | 'presence'; label: string; light: string; dark: string; bins: number; binLabels: string[]; unit?: string; domainMin?: number; domainMax?: number }
-interface Mark { value: number | null; tip: { title: string; lines: string[] }; details: string[] }
+/** `summary`: rows of the pinned details panel (measured quantity, result with numerator / denominator / unit, absence wording, what was not
+ *  counted and why). `details`: the longer evidence and provenance lines shown under "Evidence details". */
+interface Mark { value: number | null; tip: { title: string; lines: string[] }; summary: [string, string][]; details: string[] }
 interface TrackDef { id: string; label: string; sub: string; scale: ScaleDef; at: (pos: number) => Mark | 'unevaluable' | null }
 
 const FREQ_BINS = ['<20%', '20–40%', '40–60%', '60–80%', '≥80%']
@@ -73,6 +76,10 @@ const CATEGORY_INFO = {
   ligands: 'Ligand-binding residues from PDBe annotations, mapped to Rfam residue positions and aggregated across PDB entries. Colours indicate contact frequency. Annotations are entity-level and may not represent contacts in every RNA chain.',
 }
 
+/** "4 RNA instances: no observed nucleotide here; 1 RNA instance: source unavailable" (only non-zero parts), or "None" */
+const notCounted = (parts: [number, string][], unit: [string, string]) => parts.filter(([n]) => n > 0).map(([n, why]) => `${plural(n, unit[0], unit[1])}: ${why}`).join('; ') || 'None'
+const INSTANCE: [string, string] = ['RNA instance', 'RNA instances'], ENTRY: [string, string] = ['PDB entry', 'PDB entries']
+
 function loopTrack(id: 'HL' | 'IL' | 'JL', typeName: string, tracks: TracksDataset): TrackDef {
   const pick = (t: TracksDataset['positions'][number]): LoopTrackPosition | TracksDataset['positions'][number]['junction_loops_union'] => id === 'HL' ? t.hairpin_loops : id === 'IL' ? t.internal_loops : t.junction_loops_union
   return {
@@ -88,13 +95,24 @@ function loopTrack(id: 'HL' | 'IL' | 'JL', typeName: string, tracks: TracksDatas
         details.push(`${Object.entries(bt).map(([k, v]) => `${k}: ${v} instances`).join(', ')} (union, never summed)`) }
       if ('by_motif_group' in p) details.push(`Motif groups: ${Object.entries(p.by_motif_group).map(([g, v]) => `${g} (${v.n_loops})`).join(', ') || 'none'}`)
       details.push(`${DETERMINABLE} BGSU loop classifications can overlap.`)
-      return { value: p.frequency ?? 0, tip: { title: `Rfam residue ${pos}`, lines: [`${typeName} (${id})`, `Observed in ${k} of ${n} RNA instances (${pct(k, n)})`] }, details }
+      // RNA instances that are not in n: no observed nucleotide at this position (deleted, outside the aligned region or no coordinates), or
+      // an observed nucleotide whose instance has no record from the source; both counts come from the unchanged backend denominators
+      const noObs = tracks.n_instances - d.n_observable_instances, unavailable = d.n_observable_instances - n
+      const summary: [string, string][] = [
+        ['Annotation', `${typeName} (${id}), BGSU RNA 3D Motif Atlas`],
+        ['Observed', `Observed in ${k} of ${n} RNA instances (${pct(k, n)})`],
+        ['Not annotated', `${plural(n - k, 'RNA instance', 'RNA instances')} (not annotated by the source; not a confirmed absence)`],
+        ['Not counted', notCounted([[noObs, 'no observed nucleotide at this position'], [unavailable, 'source unavailable']], INSTANCE)],
+        ['Counting unit', 'RNA chain instance'],
+      ]
+      return { value: p.frequency ?? 0, tip: { title: `Rfam residue ${pos}`, lines: [`${typeName} (${id})`, `Observed in ${k} of ${n} RNA instances (${pct(k, n)})`] }, summary, details }
     },
   }
 }
 
 /** Solvent accessibility: one quantitative track (median SASA, Å²). Colour domain = 0 .. max median rounded up to 50 Å² (from the dataset, documented in sasa_tracks.json). */
 function sasaTrack(sasa: SasaTracksDataset): TrackDef {
+  const measured = sasa.summary.n_instances_measured ?? 0
   const medians = sasa.positions.map((p) => p.median_sasa_A2).filter((v): v is number => v != null)
   const max = sasa.colour_domain_suggestion_A2?.max ?? (medians.length ? Math.ceil(Math.max(...medians) / 50) * 50 : 1)
   const scale: ScaleDef = { id: 'sasa-median', kind: 'quantity', label: 'Median SASA (Å²)', light: '#fdf0d5', dark: '#8a2a0b', bins: 5, binLabels: [], unit: 'Å²', domainMin: 0, domainMax: max }
@@ -105,7 +123,13 @@ function sasaTrack(sasa: SasaTracksDataset): TrackDef {
       if (!p.n_mapped_instances_with_coordinates) return 'unevaluable'          // no observed nucleotide at this position in any instance
       if (p.median_sasa_A2 == null) return 'unevaluable'                        // observed but no complete nucleotide qualified
       const n = p.n_contributing_instances
-      return { value: p.median_sasa_A2, tip: { title: `Rfam residue ${pos}`, lines: [`Median SASA: ${p.median_sasa_A2.toFixed(1)} Å²`, `Based on ${n} RNA ${n === 1 ? 'instance' : 'instances'}`] },
+      const summary: [string, string][] = [
+        ['Measurement', 'Solvent-accessible surface area of the nucleotide in the isolated RNA chain (Å²)'],
+        ['Median', `${p.median_sasa_A2.toFixed(1)} Å² (interquartile range ${p.q1_sasa_A2?.toFixed(1)}–${p.q3_sasa_A2?.toFixed(1)} Å²) over ${plural(n, 'RNA instance', 'RNA instances')}`],
+        ['Not counted', notCounted([[measured - p.n_mapped_instances_with_coordinates, 'no observed nucleotide at this position'], [p.n_excluded_incomplete, 'incomplete nucleotide'], [p.n_excluded_unsupported, 'unsupported nucleotide']], INSTANCE)],
+        ['Counting unit', 'RNA chain instance'],
+      ]
+      return { value: p.median_sasa_A2, tip: { title: `Rfam residue ${pos}`, lines: [`Median SASA: ${p.median_sasa_A2.toFixed(1)} Å²`, `Based on ${n} RNA ${n === 1 ? 'instance' : 'instances'}`] }, summary,
         details: [`Mean ${p.mean_sasa_A2?.toFixed(1)} Å², min ${p.min_sasa_A2?.toFixed(1)}, Q1 ${p.q1_sasa_A2?.toFixed(1)}, Q3 ${p.q3_sasa_A2?.toFixed(1)}, max ${p.max_sasa_A2?.toFixed(1)}${p.sd_sasa_A2 != null ? `, sd ${p.sd_sasa_A2.toFixed(1)}` : ''}`,
                   `${p.n_mapped_instances_with_coordinates} instances with an observed nucleotide here; excluded: ${p.n_excluded_incomplete} incomplete, ${p.n_excluded_unsupported} unsupported`,
                   `Nucleotide identity among contributing instances: ${Object.entries(p.nucleotide_identity).map(([k, v]) => `${k} ${v}`).join(', ')}`] }
@@ -124,7 +148,15 @@ function pocketTrack(pt: PocketTracksDataset): TrackDef | null {
       if (!p.n_evaluable_instances) return 'unevaluable'
       if (!p.n_supporting_instances) return null
       const n = p.n_supporting_instances, d = p.n_evaluable_instances
-      return { value: p.frequency ?? n / d, tip: { title: `Rfam residue ${pos}`, lines: [`Pocket occurrence: ${n} of ${d} RNA instances (${pct(n, d)})`] },
+      const reasons = Object.entries(p.unevaluable_reasons ?? {}).map(([k, v]) => [v, MISSING_REASON[k] ?? k.replace(/_/g, ' ')] as [number, string])
+      const summary: [string, string][] = [
+        ['Prediction', `Predicted binding pocket (fpocketR, ${pt.filters[POCKET_DEFAULT_FILTER] ?? POCKET_DEFAULT_FILTER})`],
+        ['Observed', `In a predicted pocket in ${n} of ${d} RNA instances (${pct(n, d)})`],
+        ['No pocket', `${plural(d - n, 'RNA instance', 'RNA instances')} (prediction ran, no pocket here; not a confirmed absence of binding)`],
+        ['Not counted', notCounted(reasons.length ? reasons : [[p.n_unevaluable_instances ?? 0, 'prediction not available']], INSTANCE)],
+        ['Counting unit', 'RNA chain instance'],
+      ]
+      return { value: p.frequency ?? n / d, tip: { title: `Rfam residue ${pos}`, lines: [`Pocket occurrence: ${n} of ${d} RNA instances (${pct(n, d)})`] }, summary,
         details: [`${p.n_supporting_entries} PDB entries; ${p.n_distinct_pockets} distinct predicted pockets${p.score_summary ? ` (fpocket Score ${p.score_summary.min.toFixed(2)}–${p.score_summary.max.toFixed(2)}, median ${p.score_summary.median.toFixed(2)})` : ''}`,
                   ...(p.n_unevaluable_instances ? [`Not counted: ${plural(p.n_unevaluable_instances, 'RNA instance', 'RNA instances')}${p.unevaluable_reasons && Object.keys(p.unevaluable_reasons).length ? ` (${Object.entries(p.unevaluable_reasons).map(([k, v]) => `${MISSING_REASON[k] ?? k.replace(/_/g, ' ')}: ${v}`).join(', ')})` : ''}`] : []),
                   `Pocket filter: ${pt.filters[POCKET_DEFAULT_FILTER] ?? POCKET_DEFAULT_FILTER}`,
@@ -157,7 +189,15 @@ function modificationTracks(md: ModificationTracksDataset): TrackDef[] {
           ...(p.n_denominator_without_coordinates ? [`${p.n_denominator_without_coordinates} of the ${n} RNA instances have no coordinates for this nucleotide; its identity comes from the deposited sequence`] : []),
           ...(p.n_missing_identity ? [`Not counted: ${plural(p.n_missing_identity, 'RNA instance', 'RNA instances')} with undetermined component identity`] : []),
           `${DETERMINABLE} Instances without a residue at this position are not counted.${offAxis ? ` ${plural(offAxis, `further ${ccd} residue lies`, `further ${ccd} residues lie`)} outside the mapped Rfam region (downloadable data only).` : ''}`]
-        return { value: k / n, tip: { title: `Rfam residue ${pos}`, lines: [`${ccd} — ${titleCase(ci.chem_comp_name)}`, `Observed in ${k} of ${n} RNA instances (${pct(k, n)})`] }, details }
+        const others = p.n_positive - k
+        const summary: [string, string][] = [
+          ['Component', `${ccd} — ${titleCase(ci.chem_comp_name) || 'name not available'} (deposited polymer sequence; ${par})`],
+          ['Observed', `Observed in ${k} of ${n} RNA instances (${pct(k, n)})`],
+          ['Other identities', [`${plural(p.n_negative, 'RNA instance', 'RNA instances')} with a standard nucleotide`, ...(others > 0 ? [`${others} with another nonstandard component`] : [])].join('; ')],
+          ['Not counted', notCounted([[p.n_no_residue, 'no residue at this position (deleted or outside the aligned region)'], [p.n_missing_identity, 'component identity undetermined'], [p.n_source_unavailable, 'source unavailable']], INSTANCE)],
+          ['Counting unit', 'RNA chain instance'],
+        ]
+        return { value: k / n, tip: { title: `Rfam residue ${pos}`, lines: [`${ccd} — ${titleCase(ci.chem_comp_name)}`, `Observed in ${k} of ${n} RNA instances (${pct(k, n)})`] }, summary, details }
       },
     }
   })
@@ -175,15 +215,27 @@ function buildTracks(tracks: TracksDataset, ligands: LigandsDataset) {
   const ligandTracks: TrackDef[] = ccds.map(([ccd, v]) => ({
     id: `lig-${ccd}`, label: ccd, sub: `${titleCase(v.name)} · ${v.n_entries_in_default_track} ${v.n_entries_in_default_track === 1 ? 'entry' : 'entries'}`, scale: LIGAND_SCALE,
     at: (pos) => {
-      const d = tracks.positions[pos - 1].ligand_binding_sites.denominators
-      if (!d.n_observable_and_evaluated) return 'unevaluable'
+      const lp = tracks.positions[pos - 1].ligand_binding_sites
+      if (!lp.denominators.n_observable_and_evaluated) return 'unevaluable'
       const entries = perCcdPos.get(ccd)?.get(pos)
-      if (!entries?.size) return null
-      return { value: entries.size / Math.max(v.n_entries_in_default_track, 1),
-        tip: { title: `Rfam residue ${pos}`, lines: [`${ccd} — ${titleCase(v.name)}`, `Observed in ${entries.size} of ${plural(v.n_entries_in_default_track, 'PDB entry', 'PDB entries')} (${pct(entries.size, v.n_entries_in_default_track)})`] },
-        details: [`Supporting entries: ${[...entries].sort().map((e) => e.toUpperCase()).join(', ')}`,
-                  `Counted per PDB entry: entries with ${ccd} in contact at this position, of all PDB entries containing bound ${ccd}`,
-                  `Ligand-contact presence or absence can be determined at this position for ${d.n_observable_and_evaluated} PDB entry entities (all ligands)`] }
+      const e = lp.by_ccd_entries[ccd]
+      if (!entries?.size || !e) return null
+      // counted per PDB entry among the entries with bound ccd that have an observed nucleotide here (backend by_ccd_entries); entries without one are not negatives
+      if (!e.n_observable_and_evaluated) return 'unevaluable'
+      const k = e.n_positive_observable_and_evaluated, n = e.n_observable_and_evaluated
+      const summary: [string, string][] = [
+        ['Annotation', `${ccd} — ${titleCase(v.name)} in contact (PDBe binding-site annotation, entity level)`],
+        ['Recorded contact', `${k} of ${plural(n, 'observable PDB entry', 'observable PDB entries')} with bound ${ccd} (${pct(k, n)})`],
+        ['No contact', `${plural(n - k, 'PDB entry', 'PDB entries')} with bound ${ccd} and an observed nucleotide: no contact at this position recorded by PDBe (not a confirmed absence)`],
+        ['Not counted', notCounted([[e.n_not_observable, 'no observed nucleotide at this position'], [e.n_source_unavailable, 'ligand annotation unavailable for the chains observed here']], ENTRY)],
+        ['Counting unit', 'PDB entry (chains of one entry counted once)'],
+      ]
+      return { summary, value: k / n,
+        tip: { title: `Rfam residue ${pos}`, lines: [`${ccd} — ${titleCase(v.name)}`, `Recorded contact in ${k} of ${plural(n, 'observable PDB entry', 'observable PDB entries')} (${pct(k, n)})`] },
+        details: [`Supporting entries: ${[...entries].sort().map((x) => x.toUpperCase()).join(', ')}`,
+                  `Counted per PDB entry: entries with ${ccd} in contact at this position, of the ${n} (of ${v.n_entries_in_default_track}) PDB entries containing bound ${ccd} that have an observed nucleotide here. An observed-contact frequency, not a binding probability`,
+                  ...(e.n_positive > k ? [`${plural(e.n_positive - k, 'PDB entry', 'PDB entries')} with a recorded contact but no observed nucleotide here: not counted`] : []),
+                  `Ligand-contact presence or absence can be determined at this position for ${lp.denominators.n_observable_and_evaluated} PDB entry entities (all ligands)`] }
     },
   }))
   return { structure, ligandTracks }
@@ -194,7 +246,8 @@ function buildTracks(tracks: TracksDataset, ligands: LigandsDataset) {
 export function AnnotationsTab() {
   const { acc, family } = useFamily()
   const st = useAnnotations(acc)
-  const [inspect, setInspect] = useState<{ trackId: string; pos: number; title: string; lines: string[]; details: string[] } | null>(null)
+  const [inspect, setInspect] = useState<{ trackId: string; label: string; pos: number; title: string; summary: [string, string][]; details: string[] } | null>(null)
+  const nav = useNavigation()
   const [tip, setTip] = useState<{ x: number; y: number; title: string; lines: string[] } | null>(null)
   const clen = family.clen
   const x = (pos: number) => (pos - 1) * CELL
@@ -255,7 +308,7 @@ export function AnnotationsTab() {
         if (m === 'unevaluable') return <rect key={pos} x={x(pos) + pad} y={y} width={CELL - 2 * pad} height={MARK_H} fill={UNEVAL} data-pos={pos} data-state="unevaluable" />
         return <rect key={pos} x={x(pos) + pad} y={y} width={CELL - 2 * pad} height={MARK_H} fill={scaleColor(t.scale, m.value ?? 0)} data-pos={pos} data-value={(m.value ?? 0).toFixed(3)} className="cursor-pointer"
           onMouseEnter={(e) => setTip({ x: e.clientX, y: e.clientY, title: m.tip.title, lines: [...m.tip.lines, ...refLine(pos)] })} onMouseMove={(e) => setTip((s) => (s ? { ...s, x: e.clientX, y: e.clientY } : s))} onMouseLeave={() => setTip(null)}
-          onClick={() => setInspect((cur) => (cur && cur.trackId === t.id && cur.pos === pos ? null : { trackId: t.id, pos, title: `${t.label} · ${m.tip.title}`, lines: m.tip.lines, details: m.details }))} />
+          onClick={() => setInspect((cur) => (cur && cur.trackId === t.id && cur.pos === pos ? null : { trackId: t.id, label: t.label, pos, title: `${t.label} · ${m.tip.title}`, summary: m.summary, details: m.details }))} />
       })}
     </svg>
   )
@@ -330,8 +383,8 @@ export function AnnotationsTab() {
           {Array.from({ length: s.bins }, (_, i) => <span key={i} className="inline-flex items-center gap-0.5"><span className={SW} style={{ background: scaleColor(s, (i + 0.5) / s.bins) }} /><span>{s.binLabels[i]}</span></span>)}
         </div>
       ))}
-      <div className="flex items-center gap-1" data-testid="legend-no-data" title="Annotation status cannot be determined, or the required data are unavailable (SASA: no qualifying measurement)"><span className={SW} style={{ background: UNEVAL }} /> No data</div>
-      <div className="flex items-center gap-1" data-testid="legend-no-annotation" title="The position was assessed and the annotation is not present"><span className={`${SW} bg-white ring-stone-300`} /> No annotation</div>
+      <div className="flex items-center gap-1" data-testid="legend-no-data" title="No RNA instance can be assessed at this position: no observed nucleotide, or the source data are unavailable (SASA: no qualifying measurement)"><span className={SW} style={{ background: UNEVAL }} /> No data</div>
+      <div className="flex items-center gap-1" data-testid="legend-no-annotation" title="Assessed, but nothing recorded at this position: no loop annotated by the source, no PDBe ligand contact, no predicted pocket, or a standard nucleotide. For loops, ligands and pockets this is not a confirmed absence."><span className={`${SW} bg-white ring-stone-300`} /> Not observed</div>
     </div>
   )
   // labels without "(JSON)" (the button says it); each description sits behind an info icon (checked against the files' contents)
@@ -358,7 +411,17 @@ export function AnnotationsTab() {
             {inspect && (
               <div className="rounded border border-violet-200 bg-violet-50 px-2 py-1.5 text-xs text-stone-800" data-testid="annotation-inspect">
                 <div className="flex items-start justify-between gap-2"><p className="font-semibold">{inspect.title}</p><button type="button" className="rounded border border-stone-300 bg-white px-1.5 text-xs" onClick={() => setInspect(null)} data-testid="annotations-clear">Close</button></div>
-                {[...inspect.lines, ...refLine(inspect.pos)].map((l, i) => <p key={i} className="leading-4">{l}</p>)}
+                {/* measured quantity, numerator / denominator / unit, absence wording and what was not counted (all from the unchanged backend fields) */}
+                <dl className="mt-0.5 grid grid-cols-[auto_1fr] gap-x-3 gap-y-0.5 leading-4" data-testid="annotation-summary">
+                  {[...inspect.summary, ...(numbering ? [['Reference residue', `${numbering.label} reference residue: ${residueValue(chainAt(numbering.idx, inspect.pos))}`] as [string, string]] : [])].map(([k, v]) => (
+                    <div key={k} className="contents" data-testid={`annotation-summary-${k.toLowerCase().replace(/[^a-z]+/g, '-')}`}><dt className="text-stone-500">{k}</dt><dd>{v}</dd></div>))}
+                </dl>
+                {nav && (
+                  <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-0.5">
+                    <button type="button" className="rounded border border-violet-300 bg-white px-1.5 py-px text-[11px] text-violet-800 hover:bg-violet-100" onClick={() => nav.viewInOverview(inspect.pos, `${inspect.label} at Rfam position ${inspect.pos}`)} data-testid="view-in-overview"
+                      title="Select this Rfam position for the RNA instance shown in the Family Overview">View in Family Overview</button>
+                    <span className="text-[10px] text-stone-500">Highlights Rfam position {inspect.pos} in the selected RNA instance; the annotation may not be present in that chain.</span>
+                  </div>)}
                 <details className="mt-1"><summary className="cursor-pointer text-[11px] text-stone-600">Evidence details</summary>{inspect.details.map((l, i) => <p key={i} className="mt-0.5 text-[11px] leading-4 text-stone-700">{l}</p>)}</details>
               </div>
             )}
@@ -371,6 +434,12 @@ export function AnnotationsTab() {
             <Category id="ligands" title="Ligand binding sites" count={built.ligandTracks.length} info={CATEGORY_INFO.ligands}>{built.ligandTracks.map(row)}</Category>
             {pockets && <Category id="pockets" title="Predicted binding pockets" count={1} info={CATEGORY_INFO.pockets}>{row(pockets)}</Category>}
             </div>
+            {/* categories without data for this family are named, never silently dropped */}
+            {(() => { const missing = [!sasa && 'Solvent accessibility', !mods && 'Nonstandard nucleotides', !pockets && 'Predicted binding pockets'].filter(Boolean)
+              return <>
+                {missing.length > 0 && <p className="text-[11px] text-stone-500" data-testid="categories-unavailable">Not available for {acc}: {missing.join(', ')}.</p>}
+                {mods && mods.length === 0 && <p className="text-[11px] text-stone-500" data-testid="modifications-none">Nonstandard nucleotides: none observed at Rfam positions.</p>}
+              </> })()}
           </div>
         )}
       </SectionCard>
