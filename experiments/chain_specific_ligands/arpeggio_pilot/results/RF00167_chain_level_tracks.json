@@ -1,0 +1,6212 @@
+{
+ "coordinate_context": {
+  "coordinate_source": "wwPDB archive mmCIF, deposited coordinates (https://files.rcsb.org/download/{PDB}.cif)",
+  "model": 1,
+  "assembly": "none: asymmetric unit as deposited",
+  "symmetry_expansion": false,
+  "hydrogens": "added at run time by Arpeggio/OpenBabel; not deposited",
+  "software": "pdbe-arpeggio 1.4.4, openbabel-wheel 3.1.1.23, gemmi 0.7.5",
+  "contact_definition": {
+   "any": "Arpeggio INTER contact (includes 'proximal' atom pairs within the 5 A interacting cutoff)",
+   "specific": "at least one non-proximal class (hbond, polar, weak_hbond, weak_polar, vdw, vdw_clash, ionic, metal_complex, aromatic, carbonyl, xbond, ...)"
+  }
+ },
+ "n_entries": 66,
+ "n_chain_instances": 84,
+ "n_instances_evaluated": 84,
+ "n_instances_skipped": [],
+ "entry_level_note": "entry counts are distinct PDB ids with >=1 contacting chain; chain counts are distinct Rfam-mapped chain instances; never summed",
+ "positions": [
+  {
+   "rfam_consensus_pos": 1,
+   "n_observable_instances": 8,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 4,
+     "n_entries": 1,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 4,
+      "n_not_contacted": 4,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.5
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "MG": 4
+   }
+  },
+  {
+   "rfam_consensus_pos": 2,
+   "n_observable_instances": 8,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 3,
+   "n_observable_instances": 8,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 4,
+   "n_observable_instances": 8,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 5,
+   "n_observable_instances": 8,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 6,
+   "n_observable_instances": 8,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 7,
+   "n_observable_instances": 8,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 8,
+   "n_observable_instances": 8,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 9,
+   "n_observable_instances": 8,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 10,
+   "n_observable_instances": 8,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 11,
+   "n_observable_instances": 8,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 12,
+   "n_observable_instances": 8,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 13,
+   "n_observable_instances": 8,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 14,
+   "n_observable_instances": 8,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 15,
+   "n_observable_instances": 8,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 16,
+   "n_observable_instances": 4,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 4,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 4,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 4,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 4,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 4,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 4,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 4,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 4,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 4,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 17,
+   "n_observable_instances": 4,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 4,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 4,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 4,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 4,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 4,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 4,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 4,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 4,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 4,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 18,
+   "n_observable_instances": 19,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 19,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 19,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 19,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 2,
+     "n_entries": 1,
+     "n_instances_specific": 2,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 19,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 19,
+      "n_positive_observable_and_evaluated": 2,
+      "n_not_contacted": 17,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.1053
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 19,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 19,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 19,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "MG": 2
+   }
+  },
+  {
+   "rfam_consensus_pos": 19,
+   "n_observable_instances": 67,
+   "tracks": {
+    "ligand": {
+     "n_instances": 3,
+     "n_entries": 3,
+     "n_instances_specific": 3,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 67,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 67,
+      "n_positive_observable_and_evaluated": 3,
+      "n_not_contacted": 64,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0448
+    },
+    "metal_ion": {
+     "n_instances": 7,
+     "n_entries": 4,
+     "n_instances_specific": 5,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 67,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 67,
+      "n_positive_observable_and_evaluated": 7,
+      "n_not_contacted": 60,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.1045
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 67,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 67,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 67,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "ANG": 1,
+    "GTP": 2,
+    "MG": 4,
+    "NCO": 3
+   }
+  },
+  {
+   "rfam_consensus_pos": 20,
+   "n_observable_instances": 77,
+   "tracks": {
+    "ligand": {
+     "n_instances": 4,
+     "n_entries": 2,
+     "n_instances_specific": 4,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 77,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 77,
+      "n_positive_observable_and_evaluated": 4,
+      "n_not_contacted": 73,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0519
+    },
+    "metal_ion": {
+     "n_instances": 8,
+     "n_entries": 4,
+     "n_instances_specific": 5,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 77,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 77,
+      "n_positive_observable_and_evaluated": 8,
+      "n_not_contacted": 69,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.1039
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 77,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 77,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 77,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "GTP": 4,
+    "MG": 5,
+    "NCO": 3
+   }
+  },
+  {
+   "rfam_consensus_pos": 21,
+   "n_observable_instances": 79,
+   "tracks": {
+    "ligand": {
+     "n_instances": 1,
+     "n_entries": 1,
+     "n_instances_specific": 1,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 79,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 79,
+      "n_positive_observable_and_evaluated": 1,
+      "n_not_contacted": 78,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0127
+    },
+    "metal_ion": {
+     "n_instances": 6,
+     "n_entries": 3,
+     "n_instances_specific": 2,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 79,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 79,
+      "n_positive_observable_and_evaluated": 6,
+      "n_not_contacted": 73,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0759
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 79,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 79,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 79,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "GTP": 1,
+    "MG": 3,
+    "NCO": 3
+   }
+  },
+  {
+   "rfam_consensus_pos": 22,
+   "n_observable_instances": 79,
+   "tracks": {
+    "ligand": {
+     "n_instances": 1,
+     "n_entries": 1,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 79,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 79,
+      "n_positive_observable_and_evaluated": 1,
+      "n_not_contacted": 78,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0127
+    },
+    "metal_ion": {
+     "n_instances": 31,
+     "n_entries": 29,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 79,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 79,
+      "n_positive_observable_and_evaluated": 31,
+      "n_not_contacted": 48,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.3924
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 79,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 79,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 79,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "GTP": 1,
+    "MG": 3,
+    "MN": 1,
+    "NCO": 27
+   }
+  },
+  {
+   "rfam_consensus_pos": 23,
+   "n_observable_instances": 79,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 79,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 79,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 79,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 7,
+     "n_entries": 6,
+     "n_instances_specific": 3,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 79,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 79,
+      "n_positive_observable_and_evaluated": 7,
+      "n_not_contacted": 72,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0886
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 79,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 79,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 79,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "MG": 3,
+    "MN": 1,
+    "NCO": 2,
+    "SR": 1
+   }
+  },
+  {
+   "rfam_consensus_pos": 24,
+   "n_observable_instances": 79,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 79,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 79,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 79,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 21,
+     "n_entries": 17,
+     "n_instances_specific": 5,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 79,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 79,
+      "n_positive_observable_and_evaluated": 21,
+      "n_not_contacted": 58,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.2658
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 79,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 79,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 79,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "K": 2,
+    "MG": 6,
+    "MN": 1,
+    "NCO": 11,
+    "SR": 1
+   }
+  },
+  {
+   "rfam_consensus_pos": 25,
+   "n_observable_instances": 79,
+   "tracks": {
+    "ligand": {
+     "n_instances": 74,
+     "n_entries": 62,
+     "n_instances_specific": 73,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 79,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 79,
+      "n_positive_observable_and_evaluated": 74,
+      "n_not_contacted": 5,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.9367
+    },
+    "metal_ion": {
+     "n_instances": 33,
+     "n_entries": 29,
+     "n_instances_specific": 29,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 79,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 79,
+      "n_positive_observable_and_evaluated": 33,
+      "n_not_contacted": 46,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.4177
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 79,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 79,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 79,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "29G": 1,
+    "29H": 1,
+    "2BP": 1,
+    "3AW": 1,
+    "3AY": 1,
+    "5AZ": 1,
+    "6AP": 3,
+    "6GO": 2,
+    "6GU": 3,
+    "7PD": 1,
+    "9QC": 1,
+    "A1LXN": 1,
+    "A2F": 1,
+    "ADE": 11,
+    "ANG": 2,
+    "CMG": 1,
+    "DX4": 4,
+    "GMP": 1,
+    "GNG": 3,
+    "GUN": 5,
+    "H4B": 1,
+    "HPA": 12,
+    "K": 1,
+    "MG": 15,
+    "MN": 1,
+    "N6M": 1,
+    "NCO": 17,
+    "NPR": 1,
+    "OXG": 6,
+    "Q44": 1,
+    "SR": 1,
+    "XAN": 5,
+    "ZZR": 1,
+    "ZZS": 1
+   }
+  },
+  {
+   "rfam_consensus_pos": 26,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 75,
+     "n_entries": 63,
+     "n_instances_specific": 73,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 75,
+      "n_not_contacted": 5,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.9375
+    },
+    "metal_ion": {
+     "n_instances": 41,
+     "n_entries": 33,
+     "n_instances_specific": 39,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 41,
+      "n_not_contacted": 39,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.5125
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "29G": 1,
+    "29H": 1,
+    "2BP": 1,
+    "3AW": 1,
+    "3AY": 1,
+    "5AZ": 1,
+    "6AP": 3,
+    "6GO": 2,
+    "6GU": 3,
+    "7PD": 1,
+    "9QC": 1,
+    "A1LXN": 1,
+    "A2F": 1,
+    "ADE": 11,
+    "ANG": 2,
+    "CMG": 1,
+    "DX4": 4,
+    "GMP": 1,
+    "GNG": 4,
+    "GUN": 5,
+    "H4B": 1,
+    "HPA": 12,
+    "K": 1,
+    "MG": 23,
+    "MN": 1,
+    "N6M": 1,
+    "NCO": 18,
+    "NPR": 1,
+    "OXG": 6,
+    "Q44": 1,
+    "SR": 1,
+    "XAN": 5,
+    "ZZR": 1,
+    "ZZS": 1
+   }
+  },
+  {
+   "rfam_consensus_pos": 27,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 6,
+     "n_entries": 6,
+     "n_instances_specific": 1,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 6,
+      "n_not_contacted": 74,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.075
+    },
+    "metal_ion": {
+     "n_instances": 55,
+     "n_entries": 45,
+     "n_instances_specific": 26,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 55,
+      "n_not_contacted": 25,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.6875
+    },
+    "additive": {
+     "n_instances": 3,
+     "n_entries": 3,
+     "n_instances_specific": 3,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 3,
+      "n_not_contacted": 77,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0375
+    }
+   },
+   "by_ccd_n_instances": {
+    "A1LXN": 1,
+    "ACT": 3,
+    "ADE": 1,
+    "CMG": 1,
+    "HPA": 1,
+    "MG": 26,
+    "MN": 2,
+    "N6M": 1,
+    "NCO": 28,
+    "NPR": 1,
+    "SR": 1
+   }
+  },
+  {
+   "rfam_consensus_pos": 28,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 2,
+     "n_entries": 2,
+     "n_instances_specific": 1,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 2,
+      "n_not_contacted": 78,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.025
+    },
+    "metal_ion": {
+     "n_instances": 48,
+     "n_entries": 42,
+     "n_instances_specific": 37,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 48,
+      "n_not_contacted": 32,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.6
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "ADE": 1,
+    "CMG": 1,
+    "K": 1,
+    "MG": 23,
+    "MN": 2,
+    "NCO": 21,
+    "SR": 1
+   }
+  },
+  {
+   "rfam_consensus_pos": 29,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 9,
+     "n_entries": 8,
+     "n_instances_specific": 2,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 9,
+      "n_not_contacted": 71,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.1125
+    },
+    "additive": {
+     "n_instances": 3,
+     "n_entries": 3,
+     "n_instances_specific": 3,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 3,
+      "n_not_contacted": 77,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0375
+    }
+   },
+   "by_ccd_n_instances": {
+    "ACT": 3,
+    "K": 2,
+    "NCO": 7
+   }
+  },
+  {
+   "rfam_consensus_pos": 30,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 18,
+     "n_entries": 17,
+     "n_instances_specific": 10,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 18,
+      "n_not_contacted": 62,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.225
+    },
+    "additive": {
+     "n_instances": 3,
+     "n_entries": 3,
+     "n_instances_specific": 2,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 3,
+      "n_not_contacted": 77,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0375
+    }
+   },
+   "by_ccd_n_instances": {
+    "ACT": 3,
+    "K": 2,
+    "MG": 2,
+    "NCO": 14
+   }
+  },
+  {
+   "rfam_consensus_pos": 31,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 39,
+     "n_entries": 37,
+     "n_instances_specific": 12,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 39,
+      "n_not_contacted": 41,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.4875
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "MG": 5,
+    "NCO": 34
+   }
+  },
+  {
+   "rfam_consensus_pos": 32,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 36,
+     "n_entries": 32,
+     "n_instances_specific": 7,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 36,
+      "n_not_contacted": 44,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.45
+    },
+    "additive": {
+     "n_instances": 1,
+     "n_entries": 1,
+     "n_instances_specific": 1,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 1,
+      "n_not_contacted": 79,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0125
+    }
+   },
+   "by_ccd_n_instances": {
+    "ACT": 1,
+    "MG": 1,
+    "NCO": 35
+   }
+  },
+  {
+   "rfam_consensus_pos": 33,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 36,
+     "n_entries": 31,
+     "n_instances_specific": 4,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 36,
+      "n_not_contacted": 44,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.45
+    },
+    "additive": {
+     "n_instances": 1,
+     "n_entries": 1,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 1,
+      "n_not_contacted": 79,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0125
+    }
+   },
+   "by_ccd_n_instances": {
+    "ACT": 1,
+    "MG": 3,
+    "NCO": 33
+   }
+  },
+  {
+   "rfam_consensus_pos": 34,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 39,
+     "n_entries": 34,
+     "n_instances_specific": 11,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 39,
+      "n_not_contacted": 41,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.4875
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "MG": 2,
+    "NCO": 37
+   }
+  },
+  {
+   "rfam_consensus_pos": 35,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 41,
+     "n_entries": 36,
+     "n_instances_specific": 39,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 41,
+      "n_not_contacted": 39,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.5125
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "MG": 3,
+    "NCO": 37,
+    "SR": 1
+   }
+  },
+  {
+   "rfam_consensus_pos": 36,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 41,
+     "n_entries": 37,
+     "n_instances_specific": 40,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 41,
+      "n_not_contacted": 39,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.5125
+    },
+    "additive": {
+     "n_instances": 28,
+     "n_entries": 27,
+     "n_instances_specific": 28,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 28,
+      "n_not_contacted": 52,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.35
+    }
+   },
+   "by_ccd_n_instances": {
+    "ACT": 28,
+    "MG": 4,
+    "NCO": 37,
+    "SR": 1
+   }
+  },
+  {
+   "rfam_consensus_pos": 37,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 16,
+     "n_entries": 15,
+     "n_instances_specific": 12,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 16,
+      "n_not_contacted": 64,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.2
+    },
+    "additive": {
+     "n_instances": 28,
+     "n_entries": 27,
+     "n_instances_specific": 28,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 28,
+      "n_not_contacted": 52,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.35
+    }
+   },
+   "by_ccd_n_instances": {
+    "ACT": 28,
+    "MG": 5,
+    "NCO": 11
+   }
+  },
+  {
+   "rfam_consensus_pos": 38,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 13,
+     "n_entries": 12,
+     "n_instances_specific": 2,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 13,
+      "n_not_contacted": 67,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.1625
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "MG": 2,
+    "NCO": 11
+   }
+  },
+  {
+   "rfam_consensus_pos": 39,
+   "n_observable_instances": 75,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 75,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 75,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 75,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 8,
+     "n_entries": 5,
+     "n_instances_specific": 2,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 75,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 75,
+      "n_positive_observable_and_evaluated": 8,
+      "n_not_contacted": 67,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.1067
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 75,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 75,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 75,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "K": 2,
+    "MN": 2,
+    "NCO": 4
+   }
+  },
+  {
+   "rfam_consensus_pos": 40,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 35,
+     "n_entries": 32,
+     "n_instances_specific": 3,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 35,
+      "n_not_contacted": 45,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.4375
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "K": 1,
+    "MG": 2,
+    "MN": 2,
+    "NCO": 31
+   }
+  },
+  {
+   "rfam_consensus_pos": 41,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 42,
+     "n_entries": 39,
+     "n_instances_specific": 35,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 42,
+      "n_not_contacted": 38,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.525
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "K": 1,
+    "MG": 4,
+    "MN": 2,
+    "NCO": 34,
+    "SR": 1
+   }
+  },
+  {
+   "rfam_consensus_pos": 42,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 46,
+     "n_entries": 43,
+     "n_instances_specific": 38,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 46,
+      "n_not_contacted": 34,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.575
+    },
+    "additive": {
+     "n_instances": 28,
+     "n_entries": 27,
+     "n_instances_specific": 28,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 28,
+      "n_not_contacted": 52,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.35
+    }
+   },
+   "by_ccd_n_instances": {
+    "ACT": 28,
+    "K": 1,
+    "MG": 9,
+    "MN": 2,
+    "NCO": 34,
+    "SR": 1
+   }
+  },
+  {
+   "rfam_consensus_pos": 43,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 42,
+     "n_entries": 38,
+     "n_instances_specific": 30,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 42,
+      "n_not_contacted": 38,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.525
+    },
+    "additive": {
+     "n_instances": 28,
+     "n_entries": 27,
+     "n_instances_specific": 28,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 28,
+      "n_not_contacted": 52,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.35
+    }
+   },
+   "by_ccd_n_instances": {
+    "ACT": 28,
+    "MG": 4,
+    "NCO": 38
+   }
+  },
+  {
+   "rfam_consensus_pos": 44,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 29,
+     "n_entries": 28,
+     "n_instances_specific": 7,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 29,
+      "n_not_contacted": 51,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.3625
+    },
+    "additive": {
+     "n_instances": 1,
+     "n_entries": 1,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 1,
+      "n_not_contacted": 79,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0125
+    }
+   },
+   "by_ccd_n_instances": {
+    "ACT": 1,
+    "K": 1,
+    "MG": 5,
+    "NCO": 23
+   }
+  },
+  {
+   "rfam_consensus_pos": 45,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 24,
+     "n_entries": 24,
+     "n_instances_specific": 21,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 24,
+      "n_not_contacted": 56,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.3
+    },
+    "additive": {
+     "n_instances": 1,
+     "n_entries": 1,
+     "n_instances_specific": 1,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 1,
+      "n_not_contacted": 79,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0125
+    }
+   },
+   "by_ccd_n_instances": {
+    "ACT": 1,
+    "K": 2,
+    "MG": 3,
+    "NCO": 19
+   }
+  },
+  {
+   "rfam_consensus_pos": 46,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 23,
+     "n_entries": 23,
+     "n_instances_specific": 1,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 23,
+      "n_not_contacted": 57,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.2875
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "K": 1,
+    "MG": 2,
+    "NCO": 20
+   }
+  },
+  {
+   "rfam_consensus_pos": 47,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 9,
+     "n_entries": 9,
+     "n_instances_specific": 4,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 9,
+      "n_not_contacted": 71,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.1125
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "MG": 6,
+    "NCO": 2,
+    "SR": 1
+   }
+  },
+  {
+   "rfam_consensus_pos": 48,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 8,
+     "n_entries": 8,
+     "n_instances_specific": 3,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 8,
+      "n_not_contacted": 72,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.1
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "MG": 6,
+    "NCO": 1,
+    "SR": 1
+   }
+  },
+  {
+   "rfam_consensus_pos": 49,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 34,
+     "n_entries": 31,
+     "n_instances_specific": 5,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 34,
+      "n_not_contacted": 46,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.425
+    },
+    "additive": {
+     "n_instances": 3,
+     "n_entries": 3,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 3,
+      "n_not_contacted": 77,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0375
+    }
+   },
+   "by_ccd_n_instances": {
+    "ACT": 3,
+    "MG": 8,
+    "NCO": 26
+   }
+  },
+  {
+   "rfam_consensus_pos": 50,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 43,
+     "n_entries": 39,
+     "n_instances_specific": 31,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 43,
+      "n_not_contacted": 37,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.5375
+    },
+    "additive": {
+     "n_instances": 3,
+     "n_entries": 3,
+     "n_instances_specific": 1,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 3,
+      "n_not_contacted": 77,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0375
+    }
+   },
+   "by_ccd_n_instances": {
+    "ACT": 3,
+    "MG": 12,
+    "NCO": 30,
+    "SR": 1
+   }
+  },
+  {
+   "rfam_consensus_pos": 51,
+   "n_observable_instances": 75,
+   "tracks": {
+    "ligand": {
+     "n_instances": 67,
+     "n_entries": 59,
+     "n_instances_specific": 55,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 75,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 75,
+      "n_positive_observable_and_evaluated": 67,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.8933
+    },
+    "metal_ion": {
+     "n_instances": 44,
+     "n_entries": 39,
+     "n_instances_specific": 37,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 75,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 75,
+      "n_positive_observable_and_evaluated": 44,
+      "n_not_contacted": 31,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.5867
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 75,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 75,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 75,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "29G": 1,
+    "29H": 1,
+    "2BP": 1,
+    "3AW": 1,
+    "3AY": 1,
+    "6AP": 3,
+    "6GO": 2,
+    "6GU": 3,
+    "7PD": 1,
+    "9QC": 1,
+    "A1LXN": 1,
+    "A2F": 1,
+    "ADE": 10,
+    "ANG": 2,
+    "CMG": 1,
+    "DX4": 4,
+    "GMP": 1,
+    "GNG": 3,
+    "GUN": 5,
+    "H4B": 1,
+    "HPA": 12,
+    "MG": 13,
+    "N6M": 1,
+    "NCO": 30,
+    "NPR": 1,
+    "OXG": 1,
+    "Q44": 1,
+    "SR": 1,
+    "XAN": 5,
+    "ZZR": 1,
+    "ZZS": 1
+   }
+  },
+  {
+   "rfam_consensus_pos": 52,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 9,
+     "n_entries": 6,
+     "n_instances_specific": 2,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 9,
+      "n_not_contacted": 71,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.1125
+    },
+    "metal_ion": {
+     "n_instances": 13,
+     "n_entries": 12,
+     "n_instances_specific": 9,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 13,
+      "n_not_contacted": 67,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.1625
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "ADE": 1,
+    "GMP": 1,
+    "GNG": 2,
+    "K": 2,
+    "MG": 7,
+    "MN": 1,
+    "NCO": 3,
+    "OXG": 5
+   }
+  },
+  {
+   "rfam_consensus_pos": 53,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 14,
+     "n_entries": 9,
+     "n_instances_specific": 5,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 14,
+      "n_not_contacted": 66,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.175
+    },
+    "metal_ion": {
+     "n_instances": 11,
+     "n_entries": 10,
+     "n_instances_specific": 6,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 11,
+      "n_not_contacted": 69,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.1375
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "A1LXN": 1,
+    "ADE": 1,
+    "DX4": 3,
+    "GMP": 1,
+    "GNG": 3,
+    "K": 2,
+    "MG": 4,
+    "NCO": 5,
+    "OXG": 5
+   }
+  },
+  {
+   "rfam_consensus_pos": 54,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 74,
+     "n_entries": 62,
+     "n_instances_specific": 20,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 74,
+      "n_not_contacted": 6,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.925
+    },
+    "metal_ion": {
+     "n_instances": 38,
+     "n_entries": 35,
+     "n_instances_specific": 15,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 38,
+      "n_not_contacted": 42,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.475
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "29G": 1,
+    "29H": 1,
+    "2BP": 1,
+    "3AW": 1,
+    "3AY": 1,
+    "5AZ": 1,
+    "6AP": 3,
+    "6GO": 2,
+    "6GU": 3,
+    "7PD": 1,
+    "9QC": 1,
+    "A1LXN": 1,
+    "A2F": 1,
+    "ADE": 10,
+    "ANG": 2,
+    "CMG": 1,
+    "DX4": 4,
+    "GMP": 1,
+    "GNG": 4,
+    "GUN": 5,
+    "H4B": 1,
+    "HPA": 12,
+    "K": 2,
+    "MG": 5,
+    "N6M": 1,
+    "NCO": 30,
+    "NPR": 1,
+    "OXG": 6,
+    "Q44": 1,
+    "SR": 1,
+    "XAN": 5,
+    "ZZR": 1,
+    "ZZS": 1
+   }
+  },
+  {
+   "rfam_consensus_pos": 55,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 74,
+     "n_entries": 62,
+     "n_instances_specific": 74,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 74,
+      "n_not_contacted": 6,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.925
+    },
+    "metal_ion": {
+     "n_instances": 36,
+     "n_entries": 33,
+     "n_instances_specific": 35,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 36,
+      "n_not_contacted": 44,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.45
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "29G": 1,
+    "29H": 1,
+    "2BP": 1,
+    "3AW": 1,
+    "3AY": 1,
+    "5AZ": 1,
+    "6AP": 3,
+    "6GO": 2,
+    "6GU": 3,
+    "7PD": 1,
+    "9QC": 1,
+    "A1LXN": 1,
+    "A2F": 1,
+    "ADE": 10,
+    "ANG": 2,
+    "CMG": 1,
+    "DX4": 4,
+    "GMP": 1,
+    "GNG": 4,
+    "GUN": 5,
+    "H4B": 1,
+    "HPA": 12,
+    "K": 2,
+    "MG": 5,
+    "N6M": 1,
+    "NCO": 29,
+    "NPR": 1,
+    "OXG": 6,
+    "Q44": 1,
+    "XAN": 5,
+    "ZZR": 1,
+    "ZZS": 1
+   }
+  },
+  {
+   "rfam_consensus_pos": 56,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 74,
+     "n_entries": 62,
+     "n_instances_specific": 64,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 74,
+      "n_not_contacted": 6,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.925
+    },
+    "metal_ion": {
+     "n_instances": 34,
+     "n_entries": 31,
+     "n_instances_specific": 27,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 34,
+      "n_not_contacted": 46,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.425
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "29G": 1,
+    "29H": 1,
+    "2BP": 1,
+    "3AW": 1,
+    "3AY": 1,
+    "5AZ": 1,
+    "6AP": 3,
+    "6GO": 2,
+    "6GU": 3,
+    "7PD": 1,
+    "9QC": 1,
+    "A1LXN": 1,
+    "A2F": 1,
+    "ADE": 10,
+    "ANG": 2,
+    "CMG": 1,
+    "DX4": 4,
+    "GMP": 1,
+    "GNG": 4,
+    "GUN": 5,
+    "H4B": 1,
+    "HPA": 12,
+    "K": 1,
+    "MG": 4,
+    "N6M": 1,
+    "NCO": 28,
+    "NPR": 1,
+    "OXG": 6,
+    "Q44": 1,
+    "SR": 1,
+    "XAN": 5,
+    "ZZR": 1,
+    "ZZS": 1
+   }
+  },
+  {
+   "rfam_consensus_pos": 57,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 33,
+     "n_entries": 31,
+     "n_instances_specific": 16,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 33,
+      "n_not_contacted": 47,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.4125
+    },
+    "additive": {
+     "n_instances": 1,
+     "n_entries": 1,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 1,
+      "n_not_contacted": 79,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0125
+    }
+   },
+   "by_ccd_n_instances": {
+    "ACT": 1,
+    "K": 2,
+    "MG": 2,
+    "NCO": 28,
+    "SR": 1
+   }
+  },
+  {
+   "rfam_consensus_pos": 58,
+   "n_observable_instances": 67,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 67,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 67,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 67,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 23,
+     "n_entries": 22,
+     "n_instances_specific": 20,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 67,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 67,
+      "n_positive_observable_and_evaluated": 23,
+      "n_not_contacted": 44,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.3433
+    },
+    "additive": {
+     "n_instances": 1,
+     "n_entries": 1,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 67,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 67,
+      "n_positive_observable_and_evaluated": 1,
+      "n_not_contacted": 66,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0149
+    }
+   },
+   "by_ccd_n_instances": {
+    "ACT": 1,
+    "K": 2,
+    "MG": 2,
+    "NCO": 19
+   }
+  },
+  {
+   "rfam_consensus_pos": 59,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 45,
+     "n_entries": 40,
+     "n_instances_specific": 6,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 45,
+      "n_not_contacted": 35,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.5625
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "MG": 5,
+    "MN": 2,
+    "NCO": 38
+   }
+  },
+  {
+   "rfam_consensus_pos": 60,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 44,
+     "n_entries": 37,
+     "n_instances_specific": 40,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 44,
+      "n_not_contacted": 36,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.55
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "MG": 4,
+    "MN": 2,
+    "NCO": 38
+   }
+  },
+  {
+   "rfam_consensus_pos": 61,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 44,
+     "n_entries": 37,
+     "n_instances_specific": 12,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 44,
+      "n_not_contacted": 36,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.55
+    },
+    "additive": {
+     "n_instances": 1,
+     "n_entries": 1,
+     "n_instances_specific": 1,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 1,
+      "n_not_contacted": 79,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0125
+    }
+   },
+   "by_ccd_n_instances": {
+    "BR": 1,
+    "MG": 5,
+    "MN": 2,
+    "NCO": 38
+   }
+  },
+  {
+   "rfam_consensus_pos": 62,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 40,
+     "n_entries": 35,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 40,
+      "n_not_contacted": 40,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.5
+    },
+    "additive": {
+     "n_instances": 1,
+     "n_entries": 1,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 1,
+      "n_not_contacted": 79,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0125
+    }
+   },
+   "by_ccd_n_instances": {
+    "BR": 1,
+    "MG": 3,
+    "NCO": 37
+   }
+  },
+  {
+   "rfam_consensus_pos": 63,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 30,
+     "n_entries": 30,
+     "n_instances_specific": 1,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 30,
+      "n_not_contacted": 50,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.375
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "MG": 1,
+    "NCO": 29
+   }
+  },
+  {
+   "rfam_consensus_pos": 64,
+   "n_observable_instances": 18,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 18,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 18,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 18,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 18,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 18,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 18,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 18,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 18,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 18,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 65,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 31,
+     "n_entries": 30,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 31,
+      "n_not_contacted": 49,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.3875
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "NCO": 30,
+    "SR": 1
+   }
+  },
+  {
+   "rfam_consensus_pos": 66,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 4,
+     "n_entries": 3,
+     "n_instances_specific": 2,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 4,
+      "n_not_contacted": 76,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.05
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "NCO": 4
+   }
+  },
+  {
+   "rfam_consensus_pos": 67,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 6,
+     "n_entries": 4,
+     "n_instances_specific": 6,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 6,
+      "n_not_contacted": 74,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.075
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "K": 2,
+    "NCO": 4
+   }
+  },
+  {
+   "rfam_consensus_pos": 68,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 3,
+     "n_entries": 2,
+     "n_instances_specific": 2,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 3,
+      "n_not_contacted": 77,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0375
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "K": 2,
+    "NCO": 1
+   }
+  },
+  {
+   "rfam_consensus_pos": 69,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 70,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 39,
+     "n_entries": 34,
+     "n_instances_specific": 25,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 39,
+      "n_not_contacted": 41,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.4875
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "MG": 2,
+    "NCO": 37
+   }
+  },
+  {
+   "rfam_consensus_pos": 71,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 41,
+     "n_entries": 37,
+     "n_instances_specific": 37,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 41,
+      "n_not_contacted": 39,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.5125
+    },
+    "additive": {
+     "n_instances": 28,
+     "n_entries": 27,
+     "n_instances_specific": 28,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 28,
+      "n_not_contacted": 52,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.35
+    }
+   },
+   "by_ccd_n_instances": {
+    "ACT": 28,
+    "MG": 4,
+    "NCO": 37,
+    "SR": 1
+   }
+  },
+  {
+   "rfam_consensus_pos": 72,
+   "n_observable_instances": 18,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 18,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 18,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 18,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 2,
+     "n_entries": 1,
+     "n_instances_specific": 2,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 18,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 18,
+      "n_positive_observable_and_evaluated": 2,
+      "n_not_contacted": 16,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.1111
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 18,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 18,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 18,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "MG": 2
+   }
+  },
+  {
+   "rfam_consensus_pos": 73,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 43,
+     "n_entries": 39,
+     "n_instances_specific": 33,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 43,
+      "n_not_contacted": 37,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.5375
+    },
+    "additive": {
+     "n_instances": 28,
+     "n_entries": 27,
+     "n_instances_specific": 28,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 28,
+      "n_not_contacted": 52,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.35
+    }
+   },
+   "by_ccd_n_instances": {
+    "ACT": 28,
+    "MG": 6,
+    "NCO": 37
+   }
+  },
+  {
+   "rfam_consensus_pos": 74,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 46,
+     "n_entries": 40,
+     "n_instances_specific": 12,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 46,
+      "n_not_contacted": 34,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.575
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "K": 1,
+    "MG": 9,
+    "NCO": 37
+   }
+  },
+  {
+   "rfam_consensus_pos": 75,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 40,
+     "n_entries": 35,
+     "n_instances_specific": 37,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 40,
+      "n_not_contacted": 40,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.5
+    },
+    "additive": {
+     "n_instances": 1,
+     "n_entries": 1,
+     "n_instances_specific": 1,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 1,
+      "n_not_contacted": 79,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0125
+    }
+   },
+   "by_ccd_n_instances": {
+    "BR": 1,
+    "K": 2,
+    "MG": 3,
+    "NCO": 37
+   }
+  },
+  {
+   "rfam_consensus_pos": 76,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 38,
+     "n_entries": 34,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 38,
+      "n_not_contacted": 42,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.475
+    },
+    "additive": {
+     "n_instances": 1,
+     "n_entries": 1,
+     "n_instances_specific": 1,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 1,
+      "n_not_contacted": 79,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0125
+    }
+   },
+   "by_ccd_n_instances": {
+    "BR": 1,
+    "MG": 1,
+    "NCO": 37
+   }
+  },
+  {
+   "rfam_consensus_pos": 77,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 37,
+     "n_entries": 34,
+     "n_instances_specific": 21,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 37,
+      "n_not_contacted": 43,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.4625
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "K": 1,
+    "MG": 15,
+    "NCO": 21
+   }
+  },
+  {
+   "rfam_consensus_pos": 78,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 54,
+     "n_entries": 48,
+     "n_instances_specific": 32,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 54,
+      "n_not_contacted": 26,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.675
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "MG": 22,
+    "MN": 2,
+    "NCO": 29,
+    "SR": 1
+   }
+  },
+  {
+   "rfam_consensus_pos": 79,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 74,
+     "n_entries": 62,
+     "n_instances_specific": 22,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 74,
+      "n_not_contacted": 6,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.925
+    },
+    "metal_ion": {
+     "n_instances": 37,
+     "n_entries": 34,
+     "n_instances_specific": 16,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 37,
+      "n_not_contacted": 43,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.4625
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "29G": 1,
+    "29H": 1,
+    "2BP": 1,
+    "3AW": 1,
+    "3AY": 1,
+    "5AZ": 1,
+    "6AP": 3,
+    "6GO": 2,
+    "6GU": 3,
+    "7PD": 1,
+    "9QC": 1,
+    "A1LXN": 1,
+    "A2F": 1,
+    "ADE": 11,
+    "ANG": 2,
+    "CMG": 1,
+    "DX4": 4,
+    "GMP": 1,
+    "GNG": 3,
+    "GUN": 5,
+    "H4B": 1,
+    "HPA": 12,
+    "MG": 10,
+    "MN": 1,
+    "N6M": 1,
+    "NCO": 26,
+    "NPR": 1,
+    "OXG": 6,
+    "Q44": 1,
+    "XAN": 5,
+    "ZZR": 1,
+    "ZZS": 1
+   }
+  },
+  {
+   "rfam_consensus_pos": 80,
+   "n_observable_instances": 80,
+   "tracks": {
+    "ligand": {
+     "n_instances": 73,
+     "n_entries": 61,
+     "n_instances_specific": 71,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 73,
+      "n_not_contacted": 7,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.9125
+    },
+    "metal_ion": {
+     "n_instances": 7,
+     "n_entries": 6,
+     "n_instances_specific": 6,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 7,
+      "n_not_contacted": 73,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0875
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 80,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 80,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 80,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "29G": 1,
+    "29H": 1,
+    "2BP": 1,
+    "3AW": 1,
+    "3AY": 1,
+    "5AZ": 1,
+    "6AP": 3,
+    "6GO": 2,
+    "6GU": 3,
+    "7PD": 1,
+    "9QC": 1,
+    "A1LXN": 1,
+    "A2F": 1,
+    "ADE": 11,
+    "ANG": 2,
+    "CMG": 1,
+    "DX4": 4,
+    "GMP": 1,
+    "GNG": 3,
+    "GUN": 5,
+    "H4B": 1,
+    "HPA": 12,
+    "K": 1,
+    "MG": 5,
+    "N6M": 1,
+    "NCO": 1,
+    "NPR": 1,
+    "OXG": 6,
+    "XAN": 5,
+    "ZZR": 1,
+    "ZZS": 1
+   }
+  },
+  {
+   "rfam_consensus_pos": 81,
+   "n_observable_instances": 79,
+   "tracks": {
+    "ligand": {
+     "n_instances": 74,
+     "n_entries": 62,
+     "n_instances_specific": 61,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 79,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 79,
+      "n_positive_observable_and_evaluated": 74,
+      "n_not_contacted": 5,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.9367
+    },
+    "metal_ion": {
+     "n_instances": 7,
+     "n_entries": 7,
+     "n_instances_specific": 7,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 79,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 79,
+      "n_positive_observable_and_evaluated": 7,
+      "n_not_contacted": 72,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0886
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 79,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 79,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 79,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "29G": 1,
+    "29H": 1,
+    "2BP": 1,
+    "3AW": 1,
+    "3AY": 1,
+    "5AZ": 1,
+    "6AP": 3,
+    "6GO": 2,
+    "6GU": 3,
+    "7PD": 1,
+    "9QC": 1,
+    "A1LXN": 1,
+    "A2F": 1,
+    "ADE": 11,
+    "ANG": 2,
+    "CMG": 1,
+    "DX4": 4,
+    "GMP": 1,
+    "GNG": 3,
+    "GUN": 5,
+    "H4B": 1,
+    "HPA": 12,
+    "K": 1,
+    "MG": 4,
+    "MN": 1,
+    "N6M": 1,
+    "NPR": 1,
+    "OXG": 6,
+    "Q44": 1,
+    "SR": 1,
+    "XAN": 5,
+    "ZZR": 1,
+    "ZZS": 1
+   }
+  },
+  {
+   "rfam_consensus_pos": 82,
+   "n_observable_instances": 79,
+   "tracks": {
+    "ligand": {
+     "n_instances": 5,
+     "n_entries": 4,
+     "n_instances_specific": 1,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 79,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 79,
+      "n_positive_observable_and_evaluated": 5,
+      "n_not_contacted": 74,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0633
+    },
+    "metal_ion": {
+     "n_instances": 7,
+     "n_entries": 6,
+     "n_instances_specific": 2,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 79,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 79,
+      "n_positive_observable_and_evaluated": 7,
+      "n_not_contacted": 72,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0886
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 79,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 79,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 79,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "GMP": 1,
+    "GNG": 3,
+    "GTP": 1,
+    "MG": 6,
+    "SR": 1
+   }
+  },
+  {
+   "rfam_consensus_pos": 83,
+   "n_observable_instances": 79,
+   "tracks": {
+    "ligand": {
+     "n_instances": 1,
+     "n_entries": 1,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 79,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 79,
+      "n_positive_observable_and_evaluated": 1,
+      "n_not_contacted": 78,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0127
+    },
+    "metal_ion": {
+     "n_instances": 7,
+     "n_entries": 7,
+     "n_instances_specific": 2,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 79,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 79,
+      "n_positive_observable_and_evaluated": 7,
+      "n_not_contacted": 72,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0886
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 79,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 79,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 79,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "GTP": 1,
+    "MG": 5,
+    "NCO": 1,
+    "SR": 1
+   }
+  },
+  {
+   "rfam_consensus_pos": 84,
+   "n_observable_instances": 77,
+   "tracks": {
+    "ligand": {
+     "n_instances": 1,
+     "n_entries": 1,
+     "n_instances_specific": 1,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 77,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 77,
+      "n_positive_observable_and_evaluated": 1,
+      "n_not_contacted": 76,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.013
+    },
+    "metal_ion": {
+     "n_instances": 6,
+     "n_entries": 4,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 77,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 77,
+      "n_positive_observable_and_evaluated": 6,
+      "n_not_contacted": 71,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0779
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 77,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 77,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 77,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "GTP": 1,
+    "MG": 2,
+    "NCO": 3,
+    "SR": 1
+   }
+  },
+  {
+   "rfam_consensus_pos": 85,
+   "n_observable_instances": 77,
+   "tracks": {
+    "ligand": {
+     "n_instances": 3,
+     "n_entries": 2,
+     "n_instances_specific": 1,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 77,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 77,
+      "n_positive_observable_and_evaluated": 3,
+      "n_not_contacted": 74,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.039
+    },
+    "metal_ion": {
+     "n_instances": 5,
+     "n_entries": 3,
+     "n_instances_specific": 3,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 77,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 77,
+      "n_positive_observable_and_evaluated": 5,
+      "n_not_contacted": 72,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0649
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 77,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 77,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 77,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "GTP": 3,
+    "MG": 2,
+    "NCO": 3
+   }
+  },
+  {
+   "rfam_consensus_pos": 86,
+   "n_observable_instances": 75,
+   "tracks": {
+    "ligand": {
+     "n_instances": 4,
+     "n_entries": 2,
+     "n_instances_specific": 4,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 75,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 75,
+      "n_positive_observable_and_evaluated": 4,
+      "n_not_contacted": 71,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0533
+    },
+    "metal_ion": {
+     "n_instances": 9,
+     "n_entries": 4,
+     "n_instances_specific": 8,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 75,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 75,
+      "n_positive_observable_and_evaluated": 9,
+      "n_not_contacted": 66,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.12
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 75,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 75,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 75,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "GTP": 4,
+    "MG": 6,
+    "NCO": 3
+   }
+  },
+  {
+   "rfam_consensus_pos": 87,
+   "n_observable_instances": 63,
+   "tracks": {
+    "ligand": {
+     "n_instances": 3,
+     "n_entries": 3,
+     "n_instances_specific": 3,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 63,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 63,
+      "n_positive_observable_and_evaluated": 3,
+      "n_not_contacted": 60,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0476
+    },
+    "metal_ion": {
+     "n_instances": 12,
+     "n_entries": 9,
+     "n_instances_specific": 9,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 63,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 63,
+      "n_positive_observable_and_evaluated": 12,
+      "n_not_contacted": 51,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.1905
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 63,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 63,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 63,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "ANG": 1,
+    "GTP": 2,
+    "MG": 9,
+    "NCO": 3
+   }
+  },
+  {
+   "rfam_consensus_pos": 88,
+   "n_observable_instances": 15,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 15,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 15,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 15,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 3,
+     "n_entries": 2,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 15,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 15,
+      "n_positive_observable_and_evaluated": 3,
+      "n_not_contacted": 12,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.2
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 15,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 15,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 15,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "MG": 3
+   }
+  },
+  {
+   "rfam_consensus_pos": 89,
+   "n_observable_instances": 4,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 4,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 4,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 4,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 4,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 4,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 4,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 4,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 4,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 4,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 90,
+   "n_observable_instances": 4,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 4,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 4,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 4,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 4,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 4,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 4,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 4,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 4,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 4,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 91,
+   "n_observable_instances": 4,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 4,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 4,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 4,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 4,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 4,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 4,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 4,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 4,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 4,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 92,
+   "n_observable_instances": 8,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 93,
+   "n_observable_instances": 8,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 94,
+   "n_observable_instances": 8,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 2,
+     "n_entries": 1,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 2,
+      "n_not_contacted": 6,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.25
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {
+    "MG": 2
+   }
+  },
+  {
+   "rfam_consensus_pos": 95,
+   "n_observable_instances": 8,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 96,
+   "n_observable_instances": 8,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 97,
+   "n_observable_instances": 8,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 98,
+   "n_observable_instances": 8,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 99,
+   "n_observable_instances": 8,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 100,
+   "n_observable_instances": 8,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 101,
+   "n_observable_instances": 8,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  },
+  {
+   "rfam_consensus_pos": 102,
+   "n_observable_instances": 8,
+   "tracks": {
+    "ligand": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "metal_ion": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    },
+    "additive": {
+     "n_instances": 0,
+     "n_entries": 0,
+     "n_instances_specific": 0,
+     "denominators": {
+      "counting_unit": "rna_chain_instance",
+      "n_observable_instances": 8,
+      "n_evaluated_instances": 84,
+      "n_observable_and_evaluated": 8,
+      "n_positive_observable_and_evaluated": 0,
+      "n_not_contacted": 8,
+      "n_not_evaluated": 0,
+      "n_positive_not_observable": 0
+     },
+     "frequency": 0.0
+    }
+   },
+   "by_ccd_n_instances": {}
+  }
+ ]
+}

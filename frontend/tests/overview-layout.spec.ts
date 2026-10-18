@@ -1,18 +1,20 @@
 import { expect, test, type Page } from '@playwright/test'
+import { selectColumn } from './helpers'
 
 type View = { occupancy: { width: number; height: number }; aspect: number; atoms: number; dir: number[] }
-type Hook = { __rnaExplorer: { lastView?: View; getCamera: () => { position: number[]; target: number[] } } }
+type Hook = { __rnaExplorer: { lastView?: View; getCamera: () => { position: number[]; target: number[]; up: number[]; radius: number } } }
 const view = (page: Page) => page.evaluate(() => (window as unknown as Hook).__rnaExplorer.lastView!)
 const ready = async (page: Page, pdb: string) => { await expect(page.getByTestId('molstar-viewer')).toHaveAttribute('data-pdb', pdb); await expect(page.getByTestId('molstar-viewer')).toHaveAttribute('data-status', 'ready', { timeout: 60_000 }) }
 const dirOf = (c: { position: number[]; target: number[] }) => { const d = c.target.map((t, i) => t - c.position[i]); const l = Math.hypot(...d); return d.map((x) => +(x / l).toFixed(6)) }
 
 test('desktop layout: rows in order, six stat cards in one row, 40/60 top-aligned metadata row, chips and headings', async ({ page }) => {
   await page.setViewportSize({ width: 1400, height: 1000 })
-  await page.goto('/')
+  await page.goto('/RF00167')
   await ready(page, '4fe5')
   const box = async (id: string) => (await page.getByTestId(id).boundingBox())!
-  const about = await box('family-description'), stats = await box('stat-pdb-entries'), viewer = await box('viewer-card'), meta = await box('metadata-panel'), species = await box('species-chart'), cons = await box('consensus-model')
-  expect(about.y).toBeLessThan(stats.y); expect(stats.y).toBeLessThan(viewer.y); expect(viewer.y).toBeLessThan(meta.y); expect(meta.y).toBeLessThan(cons.y)
+  const about = await box('family-description'), stats = await box('stat-pdb-entries'), viewer = await box('viewer-card'), meta = await box('metadata-panel'), species = await box('species-chart')
+  expect(about.y).toBeLessThan(stats.y); expect(stats.y).toBeLessThan(viewer.y); expect(viewer.y).toBeLessThan(meta.y)
+  await expect(page.getByTestId('consensus-model')).toHaveCount(0)                                  // consensus model now lives (collapsed) in the track area, not as its own card
   // six stat cards on one row
   const ids = ['stat-pdb-entries', 'stat-rna-instances', 'stat-unique-sequences', 'stat-model-length', 'stat-sequence-occupancy', 'stat-structural-occupancy']
   const statBoxes = await Promise.all(ids.map(async (id) => (await page.getByTestId(`${id}-card`).boundingBox())!))
@@ -34,7 +36,7 @@ test('desktop layout: rows in order, six stat cards in one row, 40/60 top-aligne
   await expect(page.getByTestId('methods-list').locator('li span').first()).toHaveText('X-ray diffraction')
   // chips and heading sizes
   const chips = await page.getByTestId('section-eyebrow').allTextContents()
-  for (const c of ['Molecular view', 'Structure', 'Statistics', 'Diversity', 'Reference']) expect(chips).toContain(c)
+  for (const c of ['Molecular view', 'Structure', 'Statistics', 'Diversity']) expect(chips).toContain(c)   // the Reference card moved into the track area
   const h = page.getByTestId('viewer-card').locator('h2').first()
   await expect(h).toContainText('Representative RNA — 4FE5 chain B')
   const size = await h.evaluate((e) => parseFloat(getComputedStyle(e).fontSize)); expect(size).toBeGreaterThanOrEqual(17); expect(size).toBeLessThanOrEqual(21)
@@ -51,7 +53,7 @@ test('desktop layout: rows in order, six stat cards in one row, 40/60 top-aligne
 
 test('mobile layout: cards stack, no horizontal overflow, labels readable', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 })
-  await page.goto('/')
+  await page.goto('/RF00167')
   await ready(page, '4fe5')
   const meta = (await page.getByTestId('metadata-panel').boundingBox())!, species = (await page.getByTestId('species-chart').boundingBox())!
   expect(species.y).toBeGreaterThanOrEqual(meta.y + meta.height - 1)   // stacked
@@ -61,9 +63,9 @@ test('mobile layout: cards stack, no horizontal overflow, labels readable', asyn
   await expect(label).toBeVisible()
 })
 
-test('camera framing: tight fit of the visible region, fixed direction across instances, reset restores it, selection does not move it', async ({ page }) => {
+test('camera framing: tight fit of the visible region, fixed direction across instances, selection centres the camera, reset restores the fit', async ({ page }) => {
   await page.setViewportSize({ width: 1400, height: 1000 })
-  await page.goto('/')
+  await page.goto('/RF00167')
   await ready(page, '4fe5')
   const v0 = await view(page)
   expect(v0.atoms).toBeGreaterThan(1000)
@@ -71,7 +73,6 @@ test('camera framing: tight fit of the visible region, fixed direction across in
   expect(occ0).toBeGreaterThanOrEqual(0.6); expect(occ0).toBeLessThanOrEqual(0.95)   // the larger projected extent fills 60-95 % of the canvas
   expect(v0.occupancy.width).toBeLessThanOrEqual(0.95); expect(v0.occupancy.height).toBeLessThanOrEqual(0.95)
   const d0 = dirOf(await page.evaluate(() => (window as unknown as Hook).__rnaExplorer.getCamera()))
-  await page.getByTestId('tab-annotations').click()
   for (const s of ['1y26_1_X_A', '1y27_1_X_A']) {
     await page.getByTestId('instance-select').selectOption(s)
     await ready(page, s.slice(0, 4))
@@ -79,16 +80,25 @@ test('camera framing: tight fit of the visible region, fixed direction across in
     expect(occ).toBeGreaterThanOrEqual(0.6); expect(occ).toBeLessThanOrEqual(0.95)
     expect(dirOf(await page.evaluate(() => (window as unknown as Hook).__rnaExplorer.getCamera()))).toEqual(d0)
   }
-  // selection does not move the camera; reset restores the fit after a user rotation
+  // selecting a nucleotide centres the camera on it (target = residue centre, direction kept); reset restores the fit after a user rotation
   const camBefore = JSON.stringify(await page.evaluate(() => (window as unknown as Hook).__rnaExplorer.getCamera()))
-  await page.getByTestId('goto-input').fill('50'); await page.getByTestId('goto-button').click()
+  await selectColumn(page, 50)
   await expect(page.getByTestId('sel-highlightable')).toContainText('50 →')
-  await page.waitForTimeout(600)
-  expect(JSON.stringify(await page.evaluate(() => (window as unknown as Hook).__rnaExplorer.getCamera()))).toBe(camBefore)
+  await expect.poll(async () => JSON.stringify(await page.evaluate(() => (window as unknown as Hook).__rnaExplorer.getCamera()))).not.toBe(camBefore)
+  await page.waitForTimeout(500)
+  const camSel = await page.evaluate(() => (window as unknown as Hook).__rnaExplorer.getCamera())
+  const center = await page.evaluate(() => (window as unknown as { __rnaExplorer: { lastFocusCenter: number[] } }).__rnaExplorer.lastFocusCenter)
+  expect(Math.hypot(...camSel.target.map((t, i) => t - center[i]))).toBeLessThan(1.5)
+  expect(dirOf(camSel)).toEqual(d0)
   await page.getByTestId('molstar-viewer').scrollIntoViewIfNeeded()
   const vb = (await page.getByTestId('molstar-viewer').boundingBox())!
   await page.mouse.move(vb.x + vb.width * 0.5, vb.y + vb.height * 0.6); await page.mouse.down(); await page.mouse.move(vb.x + vb.width * 0.65, vb.y + vb.height * 0.75, { steps: 10 }); await page.mouse.up()
   await page.waitForTimeout(400)
   await page.getByTestId('reset-orientation').click()
-  await expect.poll(async () => JSON.stringify(await page.evaluate(() => (window as unknown as Hook).__rnaExplorer.getCamera()))).toBe(camBefore)
+  // position, target and up restored exactly; Mol* re-derives the clipping radius from the visible scene bounds (the selection's focus
+  // representation is still shown), so the radius is compared within 1 %
+  const pose = (c: { position: number[]; target: number[]; up: number[] }) => JSON.stringify({ position: c.position, target: c.target, up: c.up })
+  const before = JSON.parse(camBefore)
+  await expect.poll(async () => pose(await page.evaluate(() => (window as unknown as Hook).__rnaExplorer.getCamera()))).toBe(pose(before))
+  expect(Math.abs((await page.evaluate(() => (window as unknown as Hook).__rnaExplorer.getCamera())).radius - before.radius)).toBeLessThan(0.01 * before.radius)
 })

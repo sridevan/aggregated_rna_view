@@ -1,0 +1,29 @@
+/* Adapted from antibody_antigen_interface/app-react/src/styles.css (structural-groups page): dendrogram, collapsed group overview. */
+.sg-dendro { display: block; overflow: visible; }
+.sg-dendro line { shape-rendering: crispEdges; }
+.sg-dendro-axis line { stroke: #a9b0ba; stroke-width: 1; }
+.sg-dendro-axis text { font-size: 9px; fill: #78716c; font-variant-numeric: tabular-nums; }
+.sg-dendro-cut { stroke: #6b7480; stroke-width: 1; stroke-dasharray: 3 3; }
+.sg-dendro-floor { stroke: #c2410c; stroke-width: 1; stroke-dasharray: 1 3; }
+.sg-dendro-bar { cursor: pointer; outline: none; }
+.sg-dendro-bar text { font-size: 10px; font-weight: 600; fill: #fff; pointer-events: none; }
+.sg-dendro-bar rect { opacity: .78; }
+.sg-dendro-bar:hover rect, .sg-dendro-bar:focus-visible rect, .sg-dendro-bar.on rect { opacity: 1; }
+.sg-dendro-dim { opacity: .45; }
+.sg-dendro-route line { stroke: #15191f; stroke-width: 2.4; stroke-linecap: square; }
+.sg-dendro-mark { stroke: #fff; stroke-width: 1.5; }
+.sg-ov { width: 100%; border: 1px solid #e7e5e4; border-radius: 4px; }
+.sg-ov svg { display: block; }
+.sg-ov-wedge { fill: #e3e6ea; stroke: #9aa2ad; stroke-width: 1; stroke-linejoin: round; }
+.sg-ov-wedge.on { fill: #c4c9d1; stroke: #15191f; stroke-width: 1.6; }
+.sg-ov-sel { fill: color-mix(in srgb, var(--g) 14%, #fff); stroke: var(--g); stroke-width: 1.5; }
+.sg-ov-cmp { fill: none; stroke: var(--g); stroke-width: 1.5; stroke-dasharray: 5 3; }
+.sg-ov-row { cursor: pointer; outline: none; }
+.sg-ov-name { font-size: 13px; font-weight: 700; fill: #1c1917; }
+.sg-ov-n { font-weight: 400; fill: #78716c; }
+.sg-ov-track { fill: #e6e9ee; }
+.sg-ov-hit { fill: transparent; }
+.sg-ov-row:hover .sg-ov-hit, .sg-ov-row:focus-visible .sg-ov-hit { fill: rgba(21, 25, 31, .045); }
+.sg-ov-cut { font-size: 9.5px; fill: #78716c; }
+.sg-ov-rep { font-size: 11px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; fill: #44403c; }
+.sg-ov-inst { fill: #1d4ed8; stroke: #fff; stroke-width: 1.5; }

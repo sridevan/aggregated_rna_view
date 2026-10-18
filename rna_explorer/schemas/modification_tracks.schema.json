@@ -1,0 +1,167 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "type": "object",
+ "required": [
+  "schema_version",
+  "rfam_acc",
+  "clen",
+  "track_id",
+  "category",
+  "measurement",
+  "aggregation_rules",
+  "summary",
+  "components",
+  "positions",
+  "method",
+  "provenance"
+ ],
+ "properties": {
+  "schema_version": {
+   "const": "1.0"
+  },
+  "rfam_acc": {
+   "type": "string"
+  },
+  "clen": {
+   "type": "integer"
+  },
+  "track_id": {
+   "type": "string"
+  },
+  "category": {
+   "type": "string"
+  },
+  "measurement": {
+   "type": "object",
+   "required": [
+    "name",
+    "definition"
+   ]
+  },
+  "aggregation_rules": {
+   "type": "object"
+  },
+  "summary": {
+   "type": "object",
+   "required": [
+    "n_instances",
+    "n_nonstandard",
+    "n_on_consensus_axis",
+    "n_off_axis",
+    "off_axis_observations"
+   ]
+  },
+  "components": {
+   "type": "object"
+  },
+  "positions": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "rfam_consensus_pos",
+     "n_positive",
+     "n_negative",
+     "n_missing_identity",
+     "missing_reasons",
+     "n_no_residue",
+     "n_source_unavailable",
+     "denominator",
+     "frequency",
+     "n_supporting_entries",
+     "n_denominator_without_coordinates",
+     "ccd",
+     "supporting_observations"
+    ],
+    "properties": {
+     "rfam_consensus_pos": {
+      "type": "integer",
+      "minimum": 1
+     },
+     "n_positive": {
+      "type": "integer"
+     },
+     "n_negative": {
+      "type": "integer"
+     },
+     "n_missing_identity": {
+      "type": "integer"
+     },
+     "missing_reasons": {
+      "type": "object",
+      "additionalProperties": {
+       "type": "integer"
+      }
+     },
+     "n_no_residue": {
+      "type": "integer"
+     },
+     "n_source_unavailable": {
+      "type": "integer"
+     },
+     "denominator": {
+      "type": "integer"
+     },
+     "frequency": {
+      "type": [
+       "number",
+       "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+     },
+     "n_supporting_entries": {
+      "type": "integer"
+     },
+     "n_denominator_without_coordinates": {
+      "type": "integer"
+     },
+     "ccd": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "required": [
+        "ccd_id",
+        "n_instances",
+        "n_entries"
+       ],
+       "properties": {
+        "ccd_id": {
+         "type": "string"
+        },
+        "n_instances": {
+         "type": "integer"
+        },
+        "n_entries": {
+         "type": "integer"
+        }
+       }
+      }
+     },
+     "supporting_observations": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     }
+    }
+   }
+  },
+  "method": {
+   "type": "object"
+  },
+  "provenance": {
+   "type": "object",
+   "required": [
+    "rfam_acc",
+    "rfam_release",
+    "cm_checksum",
+    "pipeline_version",
+    "generated",
+    "mmcif_source",
+    "pdbe_modified_AA_or_NA",
+    "nakb"
+   ]
+  }
+ }
+}

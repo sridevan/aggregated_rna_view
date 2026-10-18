@@ -1,0 +1,2486 @@
+{
+ "schema_version": "1.0",
+ "rfam_acc": "RF00167",
+ "clen": 102,
+ "track_id": "sasa_median",
+ "category": "Solvent accessibility",
+ "measurement": {
+  "name": "Median SASA",
+  "unit": "A^2",
+  "statistic": "median over contributing RNA chain instances",
+  "context": "isolated RNA chain (RNA-only accessibility)"
+ },
+ "aggregation_rules": {
+  "contribution": "one nucleotide measurement per RNA chain instance per Rfam consensus match position",
+  "eligibility": "status 'complete' (all CCD heavy atoms observed; leaving atoms excluded)",
+  "excluded": "incomplete and unsupported nucleotides are counted but not aggregated; insert/local-end/flank residues never aggregated; residues without coordinates never counted as zero",
+  "normalisation": "none (absolute A^2)"
+ },
+ "colour_domain_suggestion_A2": {
+  "min": 0.0,
+  "max": 350.0,
+  "rule": "0 to the maximum median rounded up to the next 50 A^2"
+ },
+ "summary": {
+  "n_positions_with_value": 100,
+  "median_of_medians_A2": 171.81,
+  "max_median_A2": 303.15,
+  "n_instances_measured": 6
+ },
+ "positions": [
+  {
+   "rfam_consensus_pos": 1,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 141.03,
+   "mean_sasa_A2": 141.03,
+   "min_sasa_A2": 141.03,
+   "max_sasa_A2": 141.03,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 141.03,
+   "q3_sasa_A2": 141.03
+  },
+  {
+   "rfam_consensus_pos": 2,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "G": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 148.94,
+   "mean_sasa_A2": 148.94,
+   "min_sasa_A2": 148.94,
+   "max_sasa_A2": 148.94,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 148.94,
+   "q3_sasa_A2": 148.94
+  },
+  {
+   "rfam_consensus_pos": 3,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 163.92,
+   "mean_sasa_A2": 163.92,
+   "min_sasa_A2": 163.92,
+   "max_sasa_A2": 163.92,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 163.92,
+   "q3_sasa_A2": 163.92
+  },
+  {
+   "rfam_consensus_pos": 4,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 182.08,
+   "mean_sasa_A2": 182.08,
+   "min_sasa_A2": 182.08,
+   "max_sasa_A2": 182.08,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 182.08,
+   "q3_sasa_A2": 182.08
+  },
+  {
+   "rfam_consensus_pos": 5,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "G": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 262.02,
+   "mean_sasa_A2": 262.02,
+   "min_sasa_A2": 262.02,
+   "max_sasa_A2": 262.02,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 262.02,
+   "q3_sasa_A2": 262.02
+  },
+  {
+   "rfam_consensus_pos": 6,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "C": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 135.8,
+   "mean_sasa_A2": 135.8,
+   "min_sasa_A2": 135.8,
+   "max_sasa_A2": 135.8,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 135.8,
+   "q3_sasa_A2": 135.8
+  },
+  {
+   "rfam_consensus_pos": 7,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "G": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 173.1,
+   "mean_sasa_A2": 173.1,
+   "min_sasa_A2": 173.1,
+   "max_sasa_A2": 173.1,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 173.1,
+   "q3_sasa_A2": 173.1
+  },
+  {
+   "rfam_consensus_pos": 8,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "C": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 178.46,
+   "mean_sasa_A2": 178.46,
+   "min_sasa_A2": 178.46,
+   "max_sasa_A2": 178.46,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 178.46,
+   "q3_sasa_A2": 178.46
+  },
+  {
+   "rfam_consensus_pos": 9,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 177.66,
+   "mean_sasa_A2": 177.66,
+   "min_sasa_A2": 177.66,
+   "max_sasa_A2": 177.66,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 177.66,
+   "q3_sasa_A2": 177.66
+  },
+  {
+   "rfam_consensus_pos": 10,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "A": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 173.38,
+   "mean_sasa_A2": 173.38,
+   "min_sasa_A2": 173.38,
+   "max_sasa_A2": 173.38,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 173.38,
+   "q3_sasa_A2": 173.38
+  },
+  {
+   "rfam_consensus_pos": 11,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "C": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 176.61,
+   "mean_sasa_A2": 176.61,
+   "min_sasa_A2": 176.61,
+   "max_sasa_A2": 176.61,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 176.61,
+   "q3_sasa_A2": 176.61
+  },
+  {
+   "rfam_consensus_pos": 12,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "A": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 170.39,
+   "mean_sasa_A2": 170.39,
+   "min_sasa_A2": 170.39,
+   "max_sasa_A2": 170.39,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 170.39,
+   "q3_sasa_A2": 170.39
+  },
+  {
+   "rfam_consensus_pos": 13,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 188.14,
+   "mean_sasa_A2": 188.14,
+   "min_sasa_A2": 188.14,
+   "max_sasa_A2": 188.14,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 188.14,
+   "q3_sasa_A2": 188.14
+  },
+  {
+   "rfam_consensus_pos": 14,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "C": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 190.18,
+   "mean_sasa_A2": 190.18,
+   "min_sasa_A2": 190.18,
+   "max_sasa_A2": 190.18,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 190.18,
+   "q3_sasa_A2": 190.18
+  },
+  {
+   "rfam_consensus_pos": 15,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 162.86,
+   "mean_sasa_A2": 162.86,
+   "min_sasa_A2": 162.86,
+   "max_sasa_A2": 162.86,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 162.86,
+   "q3_sasa_A2": 162.86
+  },
+  {
+   "rfam_consensus_pos": 16,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "C": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 174.98,
+   "mean_sasa_A2": 174.98,
+   "min_sasa_A2": 174.98,
+   "max_sasa_A2": 174.98,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 174.98,
+   "q3_sasa_A2": 174.98
+  },
+  {
+   "rfam_consensus_pos": 17,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "C": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 162.15,
+   "mean_sasa_A2": 162.15,
+   "min_sasa_A2": 162.15,
+   "max_sasa_A2": 162.15,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 162.15,
+   "q3_sasa_A2": 162.15
+  },
+  {
+   "rfam_consensus_pos": 18,
+   "n_contributing_instances": 2,
+   "n_mapped_instances_with_coordinates": 2,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "G": 1,
+    "U": 1
+   },
+   "contributing_instances": [
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 203.15,
+   "mean_sasa_A2": 203.15,
+   "min_sasa_A2": 177.78,
+   "max_sasa_A2": 228.52,
+   "sd_sasa_A2": 35.88,
+   "q1_sasa_A2": 190.47,
+   "q3_sasa_A2": 215.84
+  },
+  {
+   "rfam_consensus_pos": 19,
+   "n_contributing_instances": 5,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 1,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "C": 1,
+    "G": 4
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 179.25,
+   "mean_sasa_A2": 214.72,
+   "min_sasa_A2": 161.88,
+   "max_sasa_A2": 329.9,
+   "sd_sasa_A2": 69.65,
+   "q1_sasa_A2": 171.87,
+   "q3_sasa_A2": 230.68
+  },
+  {
+   "rfam_consensus_pos": 20,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 2,
+    "A": 2,
+    "G": 2
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 172.44,
+   "mean_sasa_A2": 181.22,
+   "min_sasa_A2": 167.62,
+   "max_sasa_A2": 220.42,
+   "sd_sasa_A2": 20.08,
+   "q1_sasa_A2": 170.24,
+   "q3_sasa_A2": 181.79
+  },
+  {
+   "rfam_consensus_pos": 21,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 3,
+    "A": 3
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 175.76,
+   "mean_sasa_A2": 181.65,
+   "min_sasa_A2": 159.3,
+   "max_sasa_A2": 232.62,
+   "sd_sasa_A2": 26.1,
+   "q1_sasa_A2": 168.38,
+   "q3_sasa_A2": 179.33
+  },
+  {
+   "rfam_consensus_pos": 22,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "C": 4,
+    "50N": 1,
+    "G": 1
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 178.67,
+   "mean_sasa_A2": 188.4,
+   "min_sasa_A2": 164.07,
+   "max_sasa_A2": 236.72,
+   "sd_sasa_A2": 27.41,
+   "q1_sasa_A2": 170.58,
+   "q3_sasa_A2": 197.98
+  },
+  {
+   "rfam_consensus_pos": 23,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "A": 5,
+    "G": 1
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 169.78,
+   "mean_sasa_A2": 173.27,
+   "min_sasa_A2": 162.64,
+   "max_sasa_A2": 186.81,
+   "sd_sasa_A2": 9.41,
+   "q1_sasa_A2": 168.06,
+   "q3_sasa_A2": 179.77
+  },
+  {
+   "rfam_consensus_pos": 24,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 6
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 166.84,
+   "mean_sasa_A2": 166.84,
+   "min_sasa_A2": 155.56,
+   "max_sasa_A2": 179.16,
+   "sd_sasa_A2": 7.68,
+   "q1_sasa_A2": 164.31,
+   "q3_sasa_A2": 168.61
+  },
+  {
+   "rfam_consensus_pos": 25,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "A": 6
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 99.12,
+   "mean_sasa_A2": 102.78,
+   "min_sasa_A2": 83.21,
+   "max_sasa_A2": 138.33,
+   "sd_sasa_A2": 18.87,
+   "q1_sasa_A2": 94.0,
+   "q3_sasa_A2": 103.23
+  },
+  {
+   "rfam_consensus_pos": 26,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 6
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 76.42,
+   "mean_sasa_A2": 95.71,
+   "min_sasa_A2": 39.94,
+   "max_sasa_A2": 223.84,
+   "sd_sasa_A2": 64.62,
+   "q1_sasa_A2": 74.88,
+   "q3_sasa_A2": 81.58
+  },
+  {
+   "rfam_consensus_pos": 27,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "A": 6
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 197.06,
+   "mean_sasa_A2": 204.75,
+   "min_sasa_A2": 193.67,
+   "max_sasa_A2": 232.55,
+   "sd_sasa_A2": 15.18,
+   "q1_sasa_A2": 196.0,
+   "q3_sasa_A2": 208.65
+  },
+  {
+   "rfam_consensus_pos": 28,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "A": 6
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 82.81,
+   "mean_sasa_A2": 82.91,
+   "min_sasa_A2": 61.05,
+   "max_sasa_A2": 104.07,
+   "sd_sasa_A2": 14.05,
+   "q1_sasa_A2": 78.96,
+   "q3_sasa_A2": 87.48
+  },
+  {
+   "rfam_consensus_pos": 29,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 5,
+    "C": 1
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 87.68,
+   "mean_sasa_A2": 85.33,
+   "min_sasa_A2": 63.34,
+   "max_sasa_A2": 106.36,
+   "sd_sasa_A2": 14.55,
+   "q1_sasa_A2": 78.61,
+   "q3_sasa_A2": 90.44
+  },
+  {
+   "rfam_consensus_pos": 30,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "C": 6
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 171.54,
+   "mean_sasa_A2": 168.78,
+   "min_sasa_A2": 142.18,
+   "max_sasa_A2": 193.24,
+   "sd_sasa_A2": 17.96,
+   "q1_sasa_A2": 159.17,
+   "q3_sasa_A2": 177.24
+  },
+  {
+   "rfam_consensus_pos": 31,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "C": 3,
+    "G": 3
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 178.08,
+   "mean_sasa_A2": 178.67,
+   "min_sasa_A2": 160.91,
+   "max_sasa_A2": 205.24,
+   "sd_sasa_A2": 17.63,
+   "q1_sasa_A2": 163.54,
+   "q3_sasa_A2": 187.79
+  },
+  {
+   "rfam_consensus_pos": 32,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 2,
+    "C": 4
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 173.26,
+   "mean_sasa_A2": 175.68,
+   "min_sasa_A2": 167.87,
+   "max_sasa_A2": 187.8,
+   "sd_sasa_A2": 8.51,
+   "q1_sasa_A2": 168.73,
+   "q3_sasa_A2": 181.82
+  },
+  {
+   "rfam_consensus_pos": 33,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "A": 2,
+    "G": 4
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 173.67,
+   "mean_sasa_A2": 173.48,
+   "min_sasa_A2": 168.24,
+   "max_sasa_A2": 178.47,
+   "sd_sasa_A2": 4.6,
+   "q1_sasa_A2": 169.42,
+   "q3_sasa_A2": 177.54
+  },
+  {
+   "rfam_consensus_pos": 34,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "A": 3,
+    "U": 3
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 175.72,
+   "mean_sasa_A2": 174.76,
+   "min_sasa_A2": 165.59,
+   "max_sasa_A2": 180.63,
+   "sd_sasa_A2": 5.4,
+   "q1_sasa_A2": 172.76,
+   "q3_sasa_A2": 178.28
+  },
+  {
+   "rfam_consensus_pos": 35,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 3,
+    "G": 3
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 173.88,
+   "mean_sasa_A2": 164.79,
+   "min_sasa_A2": 115.04,
+   "max_sasa_A2": 182.24,
+   "sd_sasa_A2": 24.89,
+   "q1_sasa_A2": 168.39,
+   "q3_sasa_A2": 176.32
+  },
+  {
+   "rfam_consensus_pos": 36,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "G": 5,
+    "A": 1
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 177.4,
+   "mean_sasa_A2": 175.09,
+   "min_sasa_A2": 126.47,
+   "max_sasa_A2": 197.93,
+   "sd_sasa_A2": 26.27,
+   "q1_sasa_A2": 173.44,
+   "q3_sasa_A2": 193.76
+  },
+  {
+   "rfam_consensus_pos": 37,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "A": 6
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 136.39,
+   "mean_sasa_A2": 138.75,
+   "min_sasa_A2": 125.57,
+   "max_sasa_A2": 157.91,
+   "sd_sasa_A2": 12.36,
+   "q1_sasa_A2": 129.77,
+   "q3_sasa_A2": 145.6
+  },
+  {
+   "rfam_consensus_pos": 38,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 6
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 129.75,
+   "mean_sasa_A2": 126.94,
+   "min_sasa_A2": 100.47,
+   "max_sasa_A2": 138.95,
+   "sd_sasa_A2": 13.85,
+   "q1_sasa_A2": 126.84,
+   "q3_sasa_A2": 135.05
+  },
+  {
+   "rfam_consensus_pos": 39,
+   "n_contributing_instances": 5,
+   "n_mapped_instances_with_coordinates": 5,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "A": 5
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A"
+   ],
+   "median_sasa_A2": 102.73,
+   "mean_sasa_A2": 104.72,
+   "min_sasa_A2": 97.26,
+   "max_sasa_A2": 117.52,
+   "sd_sasa_A2": 7.88,
+   "q1_sasa_A2": 99.93,
+   "q3_sasa_A2": 106.17
+  },
+  {
+   "rfam_consensus_pos": 40,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 5,
+    "C": 1
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 303.15,
+   "mean_sasa_A2": 292.16,
+   "min_sasa_A2": 214.4,
+   "max_sasa_A2": 316.96,
+   "sd_sasa_A2": 38.86,
+   "q1_sasa_A2": 299.57,
+   "q3_sasa_A2": 313.47
+  },
+  {
+   "rfam_consensus_pos": 41,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "G": 6
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 109.73,
+   "mean_sasa_A2": 115.34,
+   "min_sasa_A2": 103.35,
+   "max_sasa_A2": 149.65,
+   "sd_sasa_A2": 17.35,
+   "q1_sasa_A2": 105.68,
+   "q3_sasa_A2": 113.87
+  },
+  {
+   "rfam_consensus_pos": 42,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "G": 6
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 112.01,
+   "mean_sasa_A2": 110.73,
+   "min_sasa_A2": 102.47,
+   "max_sasa_A2": 119.26,
+   "sd_sasa_A2": 7.11,
+   "q1_sasa_A2": 104.3,
+   "q3_sasa_A2": 115.7
+  },
+  {
+   "rfam_consensus_pos": 43,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 3,
+    "C": 3
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 163.35,
+   "mean_sasa_A2": 161.19,
+   "min_sasa_A2": 143.27,
+   "max_sasa_A2": 174.56,
+   "sd_sasa_A2": 14.19,
+   "q1_sasa_A2": 150.03,
+   "q3_sasa_A2": 173.61
+  },
+  {
+   "rfam_consensus_pos": 44,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 3,
+    "A": 3
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 171.37,
+   "mean_sasa_A2": 167.83,
+   "min_sasa_A2": 151.17,
+   "max_sasa_A2": 182.69,
+   "sd_sasa_A2": 13.01,
+   "q1_sasa_A2": 157.31,
+   "q3_sasa_A2": 176.15
+  },
+  {
+   "rfam_consensus_pos": 45,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 2,
+    "C": 4
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 184.93,
+   "mean_sasa_A2": 184.99,
+   "min_sasa_A2": 171.72,
+   "max_sasa_A2": 195.54,
+   "sd_sasa_A2": 9.18,
+   "q1_sasa_A2": 179.78,
+   "q3_sasa_A2": 192.3
+  },
+  {
+   "rfam_consensus_pos": 46,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "G": 6
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 190.01,
+   "mean_sasa_A2": 187.89,
+   "min_sasa_A2": 174.72,
+   "max_sasa_A2": 198.42,
+   "sd_sasa_A2": 11.17,
+   "q1_sasa_A2": 177.92,
+   "q3_sasa_A2": 197.72
+  },
+  {
+   "rfam_consensus_pos": 47,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "G": 3,
+    "C": 3
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 180.78,
+   "mean_sasa_A2": 181.85,
+   "min_sasa_A2": 171.75,
+   "max_sasa_A2": 196.58,
+   "sd_sasa_A2": 8.22,
+   "q1_sasa_A2": 178.69,
+   "q3_sasa_A2": 182.6
+  },
+  {
+   "rfam_consensus_pos": 48,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "G": 3,
+    "A": 3
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 180.14,
+   "mean_sasa_A2": 180.46,
+   "min_sasa_A2": 175.41,
+   "max_sasa_A2": 186.02,
+   "sd_sasa_A2": 3.92,
+   "q1_sasa_A2": 177.93,
+   "q3_sasa_A2": 182.93
+  },
+  {
+   "rfam_consensus_pos": 49,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "A": 5,
+    "G": 1
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 165.02,
+   "mean_sasa_A2": 160.03,
+   "min_sasa_A2": 138.52,
+   "max_sasa_A2": 167.36,
+   "sd_sasa_A2": 11.13,
+   "q1_sasa_A2": 159.2,
+   "q3_sasa_A2": 166.52
+  },
+  {
+   "rfam_consensus_pos": 50,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "G": 6
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 138.26,
+   "mean_sasa_A2": 136.83,
+   "min_sasa_A2": 108.12,
+   "max_sasa_A2": 154.8,
+   "sd_sasa_A2": 16.97,
+   "q1_sasa_A2": 131.29,
+   "q3_sasa_A2": 149.01
+  },
+  {
+   "rfam_consensus_pos": 51,
+   "n_contributing_instances": 5,
+   "n_mapped_instances_with_coordinates": 5,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 5
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A"
+   ],
+   "median_sasa_A2": 105.7,
+   "mean_sasa_A2": 112.5,
+   "min_sasa_A2": 101.19,
+   "max_sasa_A2": 142.4,
+   "sd_sasa_A2": 16.98,
+   "q1_sasa_A2": 103.86,
+   "q3_sasa_A2": 109.35
+  },
+  {
+   "rfam_consensus_pos": 52,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 5,
+    "C": 1
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 281.91,
+   "mean_sasa_A2": 234.94,
+   "min_sasa_A2": 113.75,
+   "max_sasa_A2": 308.82,
+   "sd_sasa_A2": 94.07,
+   "q1_sasa_A2": 153.23,
+   "q3_sasa_A2": 305.16
+  },
+  {
+   "rfam_consensus_pos": 53,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 6
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 132.27,
+   "mean_sasa_A2": 129.09,
+   "min_sasa_A2": 106.38,
+   "max_sasa_A2": 141.02,
+   "sd_sasa_A2": 11.93,
+   "q1_sasa_A2": 128.93,
+   "q3_sasa_A2": 134.17
+  },
+  {
+   "rfam_consensus_pos": 54,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "C": 6
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 157.39,
+   "mean_sasa_A2": 161.96,
+   "min_sasa_A2": 150.45,
+   "max_sasa_A2": 190.03,
+   "sd_sasa_A2": 14.36,
+   "q1_sasa_A2": 154.57,
+   "q3_sasa_A2": 161.5
+  },
+  {
+   "rfam_consensus_pos": 55,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 6
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 144.31,
+   "mean_sasa_A2": 172.2,
+   "min_sasa_A2": 138.29,
+   "max_sasa_A2": 313.68,
+   "sd_sasa_A2": 69.42,
+   "q1_sasa_A2": 142.61,
+   "q3_sasa_A2": 149.0
+  },
+  {
+   "rfam_consensus_pos": 56,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "A": 6
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 139.9,
+   "mean_sasa_A2": 140.63,
+   "min_sasa_A2": 132.11,
+   "max_sasa_A2": 149.63,
+   "sd_sasa_A2": 6.14,
+   "q1_sasa_A2": 137.64,
+   "q3_sasa_A2": 143.99
+  },
+  {
+   "rfam_consensus_pos": 57,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "C": 6
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 118.4,
+   "mean_sasa_A2": 116.9,
+   "min_sasa_A2": 107.33,
+   "max_sasa_A2": 121.41,
+   "sd_sasa_A2": 5.12,
+   "q1_sasa_A2": 116.11,
+   "q3_sasa_A2": 120.01
+  },
+  {
+   "rfam_consensus_pos": 58,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "C": 5,
+    "U": 1
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 160.62,
+   "mean_sasa_A2": 155.02,
+   "min_sasa_A2": 136.05,
+   "max_sasa_A2": 165.58,
+   "sd_sasa_A2": 11.87,
+   "q1_sasa_A2": 148.4,
+   "q3_sasa_A2": 162.35
+  },
+  {
+   "rfam_consensus_pos": 59,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "A": 2,
+    "G": 4
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 173.94,
+   "mean_sasa_A2": 165.15,
+   "min_sasa_A2": 133.83,
+   "max_sasa_A2": 177.21,
+   "sd_sasa_A2": 17.08,
+   "q1_sasa_A2": 160.82,
+   "q3_sasa_A2": 175.12
+  },
+  {
+   "rfam_consensus_pos": 60,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "A": 2,
+    "G": 4
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 184.64,
+   "mean_sasa_A2": 179.45,
+   "min_sasa_A2": 152.51,
+   "max_sasa_A2": 191.43,
+   "sd_sasa_A2": 14.07,
+   "q1_sasa_A2": 178.47,
+   "q3_sasa_A2": 186.45
+  },
+  {
+   "rfam_consensus_pos": 61,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "G": 6
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 183.09,
+   "mean_sasa_A2": 182.19,
+   "min_sasa_A2": 175.7,
+   "max_sasa_A2": 187.74,
+   "sd_sasa_A2": 4.26,
+   "q1_sasa_A2": 179.88,
+   "q3_sasa_A2": 184.31
+  },
+  {
+   "rfam_consensus_pos": 62,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "A": 2,
+    "C": 3,
+    "G": 1
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 175.31,
+   "mean_sasa_A2": 175.29,
+   "min_sasa_A2": 167.91,
+   "max_sasa_A2": 183.18,
+   "sd_sasa_A2": 6.0,
+   "q1_sasa_A2": 171.03,
+   "q3_sasa_A2": 179.14
+  },
+  {
+   "rfam_consensus_pos": 63,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "G": 2,
+    "A": 3,
+    "U": 1
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 154.95,
+   "mean_sasa_A2": 154.76,
+   "min_sasa_A2": 145.89,
+   "max_sasa_A2": 163.1,
+   "sd_sasa_A2": 6.42,
+   "q1_sasa_A2": 150.63,
+   "q3_sasa_A2": 159.12
+  },
+  {
+   "rfam_consensus_pos": 64,
+   "n_contributing_instances": 0,
+   "n_mapped_instances_with_coordinates": 0,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {},
+   "contributing_instances": [],
+   "median_sasa_A2": null,
+   "mean_sasa_A2": null,
+   "min_sasa_A2": null,
+   "max_sasa_A2": null,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": null,
+   "q3_sasa_A2": null
+  },
+  {
+   "rfam_consensus_pos": 65,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "C": 6
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 161.68,
+   "mean_sasa_A2": 160.29,
+   "min_sasa_A2": 148.35,
+   "max_sasa_A2": 166.41,
+   "sd_sasa_A2": 6.2,
+   "q1_sasa_A2": 160.78,
+   "q3_sasa_A2": 162.79
+  },
+  {
+   "rfam_consensus_pos": 66,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "C": 6
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 118.51,
+   "mean_sasa_A2": 117.86,
+   "min_sasa_A2": 109.74,
+   "max_sasa_A2": 127.73,
+   "sd_sasa_A2": 6.22,
+   "q1_sasa_A2": 114.2,
+   "q3_sasa_A2": 119.56
+  },
+  {
+   "rfam_consensus_pos": 67,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 2,
+    "G": 4
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 255.76,
+   "mean_sasa_A2": 257.77,
+   "min_sasa_A2": 241.32,
+   "max_sasa_A2": 277.54,
+   "sd_sasa_A2": 13.24,
+   "q1_sasa_A2": 249.77,
+   "q3_sasa_A2": 265.29
+  },
+  {
+   "rfam_consensus_pos": 68,
+   "n_contributing_instances": 5,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 1,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 5
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A"
+   ],
+   "median_sasa_A2": 175.2,
+   "mean_sasa_A2": 171.78,
+   "min_sasa_A2": 153.69,
+   "max_sasa_A2": 179.15,
+   "sd_sasa_A2": 10.26,
+   "q1_sasa_A2": 174.61,
+   "q3_sasa_A2": 176.24
+  },
+  {
+   "rfam_consensus_pos": 69,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "A": 6
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 173.09,
+   "mean_sasa_A2": 176.25,
+   "min_sasa_A2": 148.39,
+   "max_sasa_A2": 218.44,
+   "sd_sasa_A2": 22.91,
+   "q1_sasa_A2": 170.31,
+   "q3_sasa_A2": 174.62
+  },
+  {
+   "rfam_consensus_pos": 70,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "A": 6
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 156.92,
+   "mean_sasa_A2": 150.42,
+   "min_sasa_A2": 106.36,
+   "max_sasa_A2": 165.52,
+   "sd_sasa_A2": 21.94,
+   "q1_sasa_A2": 155.13,
+   "q3_sasa_A2": 160.93
+  },
+  {
+   "rfam_consensus_pos": 71,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "A": 6
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 176.25,
+   "mean_sasa_A2": 170.45,
+   "min_sasa_A2": 131.01,
+   "max_sasa_A2": 183.76,
+   "sd_sasa_A2": 19.71,
+   "q1_sasa_A2": 173.91,
+   "q3_sasa_A2": 180.77
+  },
+  {
+   "rfam_consensus_pos": 72,
+   "n_contributing_instances": 0,
+   "n_mapped_instances_with_coordinates": 0,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {},
+   "contributing_instances": [],
+   "median_sasa_A2": null,
+   "mean_sasa_A2": null,
+   "min_sasa_A2": null,
+   "max_sasa_A2": null,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": null,
+   "q3_sasa_A2": null
+  },
+  {
+   "rfam_consensus_pos": 73,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "C": 2,
+    "U": 3,
+    "A": 1
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 161.66,
+   "mean_sasa_A2": 159.56,
+   "min_sasa_A2": 152.19,
+   "max_sasa_A2": 166.27,
+   "sd_sasa_A2": 5.78,
+   "q1_sasa_A2": 154.84,
+   "q3_sasa_A2": 162.65
+  },
+  {
+   "rfam_consensus_pos": 74,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 3,
+    "G": 3
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 172.55,
+   "mean_sasa_A2": 170.87,
+   "min_sasa_A2": 148.83,
+   "max_sasa_A2": 180.65,
+   "sd_sasa_A2": 11.45,
+   "q1_sasa_A2": 171.67,
+   "q3_sasa_A2": 177.6
+  },
+  {
+   "rfam_consensus_pos": 75,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "C": 3,
+    "U": 3
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 168.7,
+   "mean_sasa_A2": 165.12,
+   "min_sasa_A2": 149.76,
+   "max_sasa_A2": 171.51,
+   "sd_sasa_A2": 8.38,
+   "q1_sasa_A2": 162.98,
+   "q3_sasa_A2": 170.39
+  },
+  {
+   "rfam_consensus_pos": 76,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 2,
+    "C": 4
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 168.05,
+   "mean_sasa_A2": 167.17,
+   "min_sasa_A2": 156.75,
+   "max_sasa_A2": 174.12,
+   "sd_sasa_A2": 6.42,
+   "q1_sasa_A2": 164.32,
+   "q3_sasa_A2": 171.73
+  },
+  {
+   "rfam_consensus_pos": 77,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 3,
+    "C": 3
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 174.37,
+   "mean_sasa_A2": 171.73,
+   "min_sasa_A2": 157.17,
+   "max_sasa_A2": 179.01,
+   "sd_sasa_A2": 7.83,
+   "q1_sasa_A2": 170.34,
+   "q3_sasa_A2": 175.96
+  },
+  {
+   "rfam_consensus_pos": 78,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "G": 5,
+    "A": 1
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 185.16,
+   "mean_sasa_A2": 184.85,
+   "min_sasa_A2": 167.8,
+   "max_sasa_A2": 197.82,
+   "sd_sasa_A2": 10.35,
+   "q1_sasa_A2": 181.64,
+   "q3_sasa_A2": 190.82
+  },
+  {
+   "rfam_consensus_pos": 79,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "A": 6
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 181.53,
+   "mean_sasa_A2": 177.63,
+   "min_sasa_A2": 156.27,
+   "max_sasa_A2": 188.52,
+   "sd_sasa_A2": 11.51,
+   "q1_sasa_A2": 175.55,
+   "q3_sasa_A2": 183.64
+  },
+  {
+   "rfam_consensus_pos": 80,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 2,
+    "C": 4
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 169.5,
+   "mean_sasa_A2": 170.63,
+   "min_sasa_A2": 161.77,
+   "max_sasa_A2": 181.03,
+   "sd_sasa_A2": 7.1,
+   "q1_sasa_A2": 166.26,
+   "q3_sasa_A2": 174.99
+  },
+  {
+   "rfam_consensus_pos": 81,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 6
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 135.83,
+   "mean_sasa_A2": 138.7,
+   "min_sasa_A2": 131.72,
+   "max_sasa_A2": 155.53,
+   "sd_sasa_A2": 8.72,
+   "q1_sasa_A2": 133.8,
+   "q3_sasa_A2": 139.1
+  },
+  {
+   "rfam_consensus_pos": 82,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "A": 6
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 114.26,
+   "mean_sasa_A2": 126.16,
+   "min_sasa_A2": 106.75,
+   "max_sasa_A2": 185.91,
+   "sd_sasa_A2": 29.77,
+   "q1_sasa_A2": 112.57,
+   "q3_sasa_A2": 121.4
+  },
+  {
+   "rfam_consensus_pos": 83,
+   "n_contributing_instances": 6,
+   "n_mapped_instances_with_coordinates": 6,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "U": 5,
+    "C": 1
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "5e54_1_A_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 173.51,
+   "mean_sasa_A2": 185.91,
+   "min_sasa_A2": 156.06,
+   "max_sasa_A2": 272.33,
+   "sd_sasa_A2": 43.0,
+   "q1_sasa_A2": 166.14,
+   "q3_sasa_A2": 175.63
+  },
+  {
+   "rfam_consensus_pos": 84,
+   "n_contributing_instances": 5,
+   "n_mapped_instances_with_coordinates": 5,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "G": 4,
+    "50L": 1
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 179.97,
+   "mean_sasa_A2": 178.49,
+   "min_sasa_A2": 173.84,
+   "max_sasa_A2": 182.05,
+   "sd_sasa_A2": 3.85,
+   "q1_sasa_A2": 174.92,
+   "q3_sasa_A2": 181.66
+  },
+  {
+   "rfam_consensus_pos": 85,
+   "n_contributing_instances": 5,
+   "n_mapped_instances_with_coordinates": 5,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "A": 2,
+    "G": 1,
+    "U": 2
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 181.42,
+   "mean_sasa_A2": 178.63,
+   "min_sasa_A2": 170.59,
+   "max_sasa_A2": 184.34,
+   "sd_sasa_A2": 5.79,
+   "q1_sasa_A2": 174.6,
+   "q3_sasa_A2": 182.2
+  },
+  {
+   "rfam_consensus_pos": 86,
+   "n_contributing_instances": 5,
+   "n_mapped_instances_with_coordinates": 5,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "A": 2,
+    "U": 1,
+    "C": 2
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 174.07,
+   "mean_sasa_A2": 173.45,
+   "min_sasa_A2": 169.28,
+   "max_sasa_A2": 176.31,
+   "sd_sasa_A2": 2.74,
+   "q1_sasa_A2": 172.41,
+   "q3_sasa_A2": 175.19
+  },
+  {
+   "rfam_consensus_pos": 87,
+   "n_contributing_instances": 5,
+   "n_mapped_instances_with_coordinates": 5,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "G": 1,
+    "CCC": 1,
+    "C": 3
+   },
+   "contributing_instances": [
+    "1y26_1_X_A",
+    "1y27_1_X_A",
+    "4fe5_1_B_A",
+    "5c7w_1_C_A",
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 267.74,
+   "mean_sasa_A2": 244.03,
+   "min_sasa_A2": 169.54,
+   "max_sasa_A2": 319.95,
+   "sd_sasa_A2": 65.93,
+   "q1_sasa_A2": 180.49,
+   "q3_sasa_A2": 282.42
+  },
+  {
+   "rfam_consensus_pos": 88,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "G": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 160.27,
+   "mean_sasa_A2": 160.27,
+   "min_sasa_A2": 160.27,
+   "max_sasa_A2": 160.27,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 160.27,
+   "q3_sasa_A2": 160.27
+  },
+  {
+   "rfam_consensus_pos": 89,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "G": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 173.3,
+   "mean_sasa_A2": 173.3,
+   "min_sasa_A2": 173.3,
+   "max_sasa_A2": 173.3,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 173.3,
+   "q3_sasa_A2": 173.3
+  },
+  {
+   "rfam_consensus_pos": 90,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "G": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 176.78,
+   "mean_sasa_A2": 176.78,
+   "min_sasa_A2": 176.78,
+   "max_sasa_A2": 176.78,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 176.78,
+   "q3_sasa_A2": 176.78
+  },
+  {
+   "rfam_consensus_pos": 91,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "A": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 172.09,
+   "mean_sasa_A2": 172.09,
+   "min_sasa_A2": 172.09,
+   "max_sasa_A2": 172.09,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 172.09,
+   "q3_sasa_A2": 172.09
+  },
+  {
+   "rfam_consensus_pos": 92,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "G": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 133.57,
+   "mean_sasa_A2": 133.57,
+   "min_sasa_A2": 133.57,
+   "max_sasa_A2": 133.57,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 133.57,
+   "q3_sasa_A2": 133.57
+  },
+  {
+   "rfam_consensus_pos": 93,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "G": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 150.88,
+   "mean_sasa_A2": 150.88,
+   "min_sasa_A2": 150.88,
+   "max_sasa_A2": 150.88,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 150.88,
+   "q3_sasa_A2": 150.88
+  },
+  {
+   "rfam_consensus_pos": 94,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "C": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 121.83,
+   "mean_sasa_A2": 121.83,
+   "min_sasa_A2": 121.83,
+   "max_sasa_A2": 121.83,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 121.83,
+   "q3_sasa_A2": 121.83
+  },
+  {
+   "rfam_consensus_pos": 95,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "C": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 137.27,
+   "mean_sasa_A2": 137.27,
+   "min_sasa_A2": 137.27,
+   "max_sasa_A2": 137.27,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 137.27,
+   "q3_sasa_A2": 137.27
+  },
+  {
+   "rfam_consensus_pos": 96,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "A": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 170.95,
+   "mean_sasa_A2": 170.95,
+   "min_sasa_A2": 170.95,
+   "max_sasa_A2": 170.95,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 170.95,
+   "q3_sasa_A2": 170.95
+  },
+  {
+   "rfam_consensus_pos": 97,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "C": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 180.2,
+   "mean_sasa_A2": 180.2,
+   "min_sasa_A2": 180.2,
+   "max_sasa_A2": 180.2,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 180.2,
+   "q3_sasa_A2": 180.2
+  },
+  {
+   "rfam_consensus_pos": 98,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "A": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 168.67,
+   "mean_sasa_A2": 168.67,
+   "min_sasa_A2": 168.67,
+   "max_sasa_A2": 168.67,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 168.67,
+   "q3_sasa_A2": 168.67
+  },
+  {
+   "rfam_consensus_pos": 99,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "C": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 161.35,
+   "mean_sasa_A2": 161.35,
+   "min_sasa_A2": 161.35,
+   "max_sasa_A2": 161.35,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 161.35,
+   "q3_sasa_A2": 161.35
+  },
+  {
+   "rfam_consensus_pos": 100,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "G": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 170.26,
+   "mean_sasa_A2": 170.26,
+   "min_sasa_A2": 170.26,
+   "max_sasa_A2": 170.26,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 170.26,
+   "q3_sasa_A2": 170.26
+  },
+  {
+   "rfam_consensus_pos": 101,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "A": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 262.84,
+   "mean_sasa_A2": 262.84,
+   "min_sasa_A2": 262.84,
+   "max_sasa_A2": 262.84,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 262.84,
+   "q3_sasa_A2": 262.84
+  },
+  {
+   "rfam_consensus_pos": 102,
+   "n_contributing_instances": 1,
+   "n_mapped_instances_with_coordinates": 1,
+   "n_excluded_incomplete": 0,
+   "n_excluded_unsupported": 0,
+   "nucleotide_identity": {
+    "A": 1
+   },
+   "contributing_instances": [
+    "9ndd_1_A_A"
+   ],
+   "median_sasa_A2": 151.51,
+   "mean_sasa_A2": 151.51,
+   "min_sasa_A2": 151.51,
+   "max_sasa_A2": 151.51,
+   "sd_sasa_A2": null,
+   "q1_sasa_A2": 151.51,
+   "q3_sasa_A2": 151.51
+  }
+ ],
+ "method": {
+  "software": {
+   "freesasa": "2.2.1",
+   "gemmi": "0.6.7",
+   "numpy": "2.4.2",
+   "rna_explorer": "0.1.0"
+  },
+  "algorithm": "Shrake-Rupley (FreeSASA calcCoord)",
+  "probe_radius_A": 1.4,
+  "n_test_points": 1000,
+  "radii_A": {
+   "C": 1.7,
+   "N": 1.55,
+   "O": 1.52,
+   "P": 1.8,
+   "S": 1.8,
+   "SE": 1.9,
+   "F": 1.47,
+   "CL": 1.75,
+   "BR": 1.85,
+   "I": 1.98
+  },
+  "radii_source": "Bondi (1964) van der Waals radii; P 1.80 (NACCESS)",
+  "hydrogens": "excluded",
+  "altloc_policy": "per atom name within a residue keep the highest-occupancy alternate location (ties: first altloc label); other copies dropped",
+  "chain_isolation": "polymer atoms of the selected label_asym_id only (gemmi subchain); no other chains, ligands, ions or water",
+  "model": "first model of the deposited/updated mmCIF",
+  "completeness_reference": "wwPDB CCD heavy atoms minus pdbx_leaving_atom_flag=Y atoms (RCSB ligand CIF)",
+  "coordinate_source": "PDBe updated mmCIF (same files as the mapping pipeline)"
+ },
+ "provenance": {
+  "rfam_acc": "RF00167",
+  "rfam_release": "15.1",
+  "cm_checksum": "1292453307",
+  "cm_clen": 102,
+  "mapping_pipeline_version": "0.1.0",
+  "mapping_generated": "2026-10-15T03:48:01+00:00",
+  "generated": "2026-10-16T14:04:24+00:00",
+  "subset": [
+   "1y26_1_X_A",
+   "1y27_1_X_A",
+   "4fe5_1_B_A",
+   "5c7w_1_C_A",
+   "5e54_1_A_A",
+   "9ndd_1_A_A"
+  ]
+ }
+}

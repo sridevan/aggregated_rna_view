@@ -1,0 +1,205 @@
+{
+ "rfam_acc": "RF00177",
+ "rfam_id": "SSU_rRNA_bacteria",
+ "description": "Bacterial small subunit ribosomal RNA",
+ "comment": null,
+ "rfam_url": "https://rfam.org/family/RF00177",
+ "clen": 1533,
+ "consensus_sequence": "uuuauggAGaGuuUGAUCcUggCuCAGggcGaaCGCuGGCGGcgcGcuUaAcaCAuGCAAGuCGAgccccacggggccuuaaggccccgagguggcGgCGaAcGGGuGAGUAAcgCGcgggcAAccUacCcccgggugcgggAUAccccccgGAAAcggggggUAAUAccgcAUaaugccccgggccguauggcccggggcuAAAGgcauuuagcCGcccgggGAugggcccgCGccccAUcAGcuaGuuGGuggGGUAAuGGCccaCCaaggCgAuGAggggUAGccGgccuGAGAgggcGauCggCCaCAcuGGgaCUGAGAcACGgcCCagACuCCUACGGGaGGCAGCaGugggGAAUauUgcgCAAugGgcGaAAgcCugAcgcaGCgAcgCCGCGUGgggGAuGAAggccUUcGggccGUAAAcccCUuUccccgGgGAagAaaaaccgauauauuaucgguuUGAcgGUAcCcggggAagAAGcccCGGCUAAcuccGUGCCAGCAGCCGCGGUAAuACggagGgggCaaGCGuugccCGGAaUuAuUGGGcGUAAAGgGcgcGcAgGcGGcccggcAaGucgggcgcgAAAucccgcgGCUcAACcgcgggaucgcgcccgaaACugccgggCUuGaGuccggccGagGggggcggAAcucccgguGuAGcgGUGAAAugCGUAGAuaucgggagGAacaCCacugGCGAAGGCggccccCuGggccgguaCuGACgCugAggcgCGAAAGCguGGGgAgCaAAcgGGAUUAGAUACCCcgGUAGuCCacGCcgUAAACGAUGggcgCUaGgcgccggggggauuaaccccccggcgcCgaAGcuAAcgCauUAAGcgccCCgCCUGgGGAgUACggcCGCAAGgcugAAACuCAAAGGAAUuGaCgGgGgCCCGCaCAAGCGguGgaGcauGuGGuUUAAuuCGAuGcaAcgCGaaGAACCUUACCcgggcUUGAcgugccgggaaccccccgGAaAcgggggggccccuuaaggggcccggacacAGGUGcugCAuGgcuGuCGUCAGCuCGuguCGUGAGauGUcgGGUUAAGUCCcgcAaCGaGCGCAACCCccgcccccagUUgCcAucgguuaaugccggGaACUcuggggggACcgCCggcGauAAgccGGagGAAGGuggGGAuGACGuCAaguCauCauggCCCUUAugcccgGGGCuaCACaCgugCuaCAAUGgccggcACAaaggGuaGCaAagccGcGAggcggAGCaAAUCccaaAAAgccggcCucAGUUCGGAcuGgaGgCUGcAAcUCGcCucCagGAAGuuGGAauCGCUAGUAaucGcggcUCAGcAugccgCgguGAAUACGuUCcCGGGcCuuGuACaCACCGcCCGUCAcgcCacggaAgccggccccgcCuGAAGccgccgcgccAAccuuaaggaggcgggcggCuAaGgcggggccggcgAccggGgcgAAGUCGUAaCAAGGuagCcguaccGGAAggugcgGcugGAUcACCUCCUUu",
+ "ss_cons": "::::::::<<<<<_______>>>>>,{{{{-{{{{{{,{{{{{{{{{----{{{-{{{,,<<<--<<<<<-<<<<<<<____>>>>>>>->>->>>>>>,,,,,,[[[,,,,,,((((((((--((---(((((((,<<<<----<<<<<<<____>>>>>>>----->>>>,,,,,<<<<<<<<<<____>>>>>>>>>>,,,,<<<_____>>>,)))))))--))))))))))<<<--<-<<<--<<<<<<<<_______>>>>>>>>>>>----->>>>,,<<<<<<<<____>>>>--->>>>]]],<<<<<<__________>>>>>>,<<<<____>>>>,,,}}}}}}-},,,,,<-<<<---<<<<<____>>>>>->>>>,}}-}}}}}},,<<<<------<<<<____>>>>----->>>>,,,<<<<<<<---<-----<<<_________>>>----->---->>>>>>--->,,<<<<<------<<<<<-----<<____>>------->>>>>>>>>>,}}}}}}}}}},,,,,,,,,,{{{-----{,[[[[-[-[[[,<<<<<<<-<<<<<<<<<<<----<<<<<<<_____>>>>>>>-->>>>>>>>>-->>>>>>>>>,,,(((((((((--(((((((<<--<<<<<<<<---<<<______>>>------>>>>>>>>-->>,,,,<--<<____>>>)))))))-))))))-))),,,]]]]--]]]],,,,<<<<<<---<<---<<<<_________>>>>--->>>>>>>>,,,,,,,,,,((((((,,<<<<<<<<<<<<_____>>>>>>>>>>>>,,,<<____>>,,,,,))))))}}}},<<<------<<<<____>>>>---->>>,,,,,,,,{{{{{-{{{{{{{-{{,,{{{{{{{{{{{{{{{{{,,,,<<<<________>>>>,,,,,,,,{{{{{{{,,,,,((((((((,,<<<<<<<____>>>>>>>,<<<<____>>>>)))))-))),[[-[[[[--[[[[[[[[[,,,((((((<<<____>>>,,<<<<______>>>>,,)))))),,,,,((((,<<<<<<<---<<--<<<______>>>>>---->>>>>>>,,<<<<<<<<_____>>>>>>>>,,,,,)))),,,,]]]]-]]]---]]]]]]]],,,,}}}}}}},,,}}-}}}}}}}}}},,,<<<<<<<-----<<<--<<---<<<____>>>--->>---->>>----->>>>>>>,,,,,,<---<<<<<<<<________>>>>>>>>--->,,,,,}}}}},,,,,<<<<<<<<_______>>>>>>>>,,,,,,}}---}}}}}}}}}}-}},,<-<<-<<---<<<<<<<<--<<<<<<<<<<<<----<<<<<<-<<<<--<<____>>->>>>>>>>>>--->>>>>>>>>>>>-->>>>>>>>---->>-->>-->,<<<<<<<<<<____>>>>>>>>>>:::::::::::::",
+ "clan_members": [
+  "RF00177",
+  "RF01959",
+  "RF01960",
+  "RF02542",
+  "RF02545"
+ ],
+ "curation": {
+  "author": "Gutell RR, Nawrocki E",
+  "seed_source": "Published; PMID:11869452",
+  "num_seed": 99,
+  "num_full": 42628,
+  "num_species": 10626,
+  "type": "Gene; rRNA;",
+  "structure_source": "Published; PMID:11869452"
+ },
+ "counts": {
+  "pdb_entries": 58,
+  "instances": 60,
+  "unique_mapped_sequences": 15,
+  "instances_clan_best": 60,
+  "instances_validation_ok": 60,
+  "skipped_segments": 0
+ },
+ "experimental_methods": {
+  "X-ray diffraction": 20,
+  "Electron Microscopy": 40
+ },
+ "representative": {
+  "pdb_id": "7pjs",
+  "entity_id": 34,
+  "label_asym_id": "HA",
+  "auth_asym_id": "a",
+  "seq_name": "7pjs_34_a_HA",
+  "sequence_key": "f553b61c5e0d678449dba5832d3c4229",
+  "mapping_file": "mappings/7pjs_34_a_HA.json",
+  "organism": "Escherichia coli",
+  "tax_id": 562,
+  "organism_source": "pdbe_search",
+  "molecule_name": "16S ribosomal RNA",
+  "experimental_method": "Electron Microscopy",
+  "resolution": 2.35,
+  "release_year": 2021,
+  "title": "Structure of the 70S ribosome with tRNAs in the classical pre-translocation state and apramycin (C)",
+  "chain_length": 1542,
+  "map_start": 1,
+  "map_end": 1542,
+  "map_auth_start": 1,
+  "map_auth_end": 1542,
+  "mapped_length": 1542,
+  "n_modified_in_mapped": 11,
+  "rfam_bit_score": 1577.5,
+  "rfam_evalue": "0",
+  "rfam_cm_start": 1,
+  "rfam_cm_end": 1533,
+  "clan_families_hit": [
+   {
+    "acc": "RF00177",
+    "bits": 1577.5
+   }
+  ],
+  "clan_best_family": "RF00177",
+  "is_clan_best": true,
+  "cmalign": {
+   "name": "seq_f553b61c5e0d678449dba5832d3c4229",
+   "length": 1542,
+   "cm_from": 1,
+   "cm_to": 1533,
+   "trunc": "no",
+   "bit_score": 1571.54,
+   "avg_pp": 0.99
+  },
+  "n_match": 1516,
+  "n_insert": 26,
+  "n_local_end": 0,
+  "n_deleted_in_span": 17,
+  "n_uncovered": 0,
+  "consensus_span": [
+   1,
+   1533
+  ],
+  "fraction_clen_matched": 0.9889,
+  "n_mapped_with_coordinates": 1540,
+  "n_match_with_coordinates": 1514,
+  "pp_star_fraction": 0.9578,
+  "pp_category_counts": {
+   "high": 1477,
+   "medium": 45,
+   "low": 20
+  },
+  "validation_ok": true,
+  "organism_species": "Escherichia coli",
+  "species_tax_id": "562",
+  "organism_rank": "species",
+  "pdbe_2d_available": false
+ },
+ "display_representative": {
+  "pdb_id": "4v9d",
+  "entity_id": 1,
+  "label_asym_id": "Y",
+  "auth_asym_id": "BA",
+  "seq_name": "4v9d_1_BA_Y",
+  "sequence_key": "e828e26ba784992fa59c82964cd1da29",
+  "mapping_file": "mappings/4v9d_1_BA_Y.json",
+  "organism": "Escherichia coli",
+  "tax_id": 562,
+  "organism_source": "pdbe_search",
+  "molecule_name": "16S ribosomal RNA",
+  "experimental_method": "X-ray diffraction",
+  "resolution": 3.0,
+  "release_year": 2014,
+  "title": "Structures of the bacterial ribosome in classical and hybrid states of tRNA binding",
+  "chain_length": 1539,
+  "map_start": 1,
+  "map_end": 1539,
+  "map_auth_start": 2,
+  "map_auth_end": 1540,
+  "mapped_length": 1539,
+  "n_modified_in_mapped": 0,
+  "rfam_bit_score": 1564.7,
+  "rfam_evalue": "0",
+  "rfam_cm_start": 1,
+  "rfam_cm_end": 1533,
+  "clan_families_hit": [
+   {
+    "acc": "RF00177",
+    "bits": 1564.7
+   }
+  ],
+  "clan_best_family": "RF00177",
+  "is_clan_best": true,
+  "cmalign": {
+   "name": "seq_e828e26ba784992fa59c82964cd1da29",
+   "length": 1539,
+   "cm_from": 2,
+   "cm_to": 1531,
+   "trunc": "3'",
+   "bit_score": 1570.48,
+   "avg_pp": 0.99
+  },
+  "n_match": 1513,
+  "n_insert": 26,
+  "n_local_end": 0,
+  "n_deleted_in_span": 17,
+  "n_uncovered": 3,
+  "consensus_span": [
+   2,
+   1531
+  ],
+  "fraction_clen_matched": 0.987,
+  "n_mapped_with_coordinates": 1539,
+  "n_match_with_coordinates": 1513,
+  "pp_star_fraction": 0.9578,
+  "pp_category_counts": {
+   "high": 1474,
+   "medium": 45,
+   "low": 20
+  },
+  "validation_ok": true,
+  "organism_species": "Escherichia coli",
+  "species_tax_id": "562",
+  "organism_rank": "species",
+  "pdbe_2d_available": true,
+  "selection_rule": "override (user, 2026-10-17): RAD reference structure used by the research head-rotation analysis (head rotation 0.0 deg, classical tRNA state); all 1513 matched positions observed; PDBe 2D available. The automatic rule picks 4V9O PG, whose head is rotated by 10.7 deg, which would make a rotated state the orientation frame.",
+  "automatic_choice": "4v9o_35_HA_PG"
+ },
+ "coverage_summary": {
+  "sequence_coverage_mean": 0.9859,
+  "structural_coverage_mean": 0.9816,
+  "positions_with_sequence_coverage": 1516,
+  "positions_with_structural_coverage": 1515,
+  "positions_clen": 1533
+ },
+ "skipped": [],
+ "provenance": {
+  "rfam_acc": "RF00177",
+  "rfam_release": "15.1",
+  "cm_name": "SSU_rRNA_bacteria",
+  "cm_checksum": "2093381478",
+  "cm_clen": 1533,
+  "cm_build_date": "Wed Jul 10 13:00:50 2024",
+  "infernal_version": "INFERNAL 1.1.5 (Sep 2023)",
+  "cmalign_options": "--cpu 4",
+  "cmalign_mode": "local (default)",
+  "pipeline_version": "0.1.0",
+  "generated": "2026-10-17T17:56:53+00:00",
+  "pdbe_mapping_source": "PDBe API v2 nucleic_mappings/{pdb_id} (per entry)",
+  "rfam_hit_source": "rfam.org/family/RF00177/structures",
+  "selection": {
+   "file": "data/selections/RF00177_60_chains.csv",
+   "sha256": "66ee43f2ea6b2664efec03bb522b5bd74525ffb306d95682c59e6e0b878b55b0",
+   "n_chains": 60
+  },
+  "coordinate_source": "PDBe ModelServer per chain (first model); validation residue scheme from the PDBe residue_listing API"
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "seq_name": "1y26_1_X_A",
+ "n_atoms": 1499,
+ "freesasa_total_A2": 11933.2,
+ "numpy_total_A2": 11926.08,
+ "total_relative_difference": 0.0006,
+ "per_nucleotide_max_abs_diff_A2": 2.022,
+ "per_nucleotide_median_rel_diff": 0.00422,
+ "per_nucleotide_max_rel_diff": 0.01064,
+ "n_points_numpy": 2000,
+ "worst": [
+  [
+   2.02,
+   71,
+   299.687,
+   297.66
+  ],
+  [
+   1.43,
+   37,
+   134.664,
+   133.23
+  ],
+  [
+   1.4,
+   53,
+   156.118,
+   154.72
+  ]
+ ]
+}

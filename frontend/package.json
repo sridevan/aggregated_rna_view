@@ -6,11 +6,13 @@
   "scripts": {
     "dev": "vite --port 5173 --strictPort",
     "build": "tsc -b && vite build && npm run copy-data",
-    "copy-data": "rm -rf dist/families && cp -RL public/families dist/families",
+    "copy-data": "rm -rf dist/families && cp -RL public/families dist/families && rm -rf dist/families/*/work dist/families/*/annotations dist/families/*/*.csv && node scripts/sanitize-dist-paths.mjs dist/families",
     "preview": "vite preview --port 4173 --strictPort",
     "test": "vitest run",
     "test:e2e": "playwright test",
-    "lint": "oxlint"
+    "lint": "oxlint",
+    "deploy": "npm run build && npx --yes netlify-cli@17 deploy --prod --dir dist",
+    "thumbnails": "node scripts/make-thumbnails.mjs"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",

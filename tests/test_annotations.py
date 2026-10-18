@@ -184,10 +184,14 @@ def test_loop_membership_strands_and_insertions(built):
     assert hl["nucleotides"][1]["rfam_consensus_pos"] is None and hl["nucleotides"][1]["label_seq_id"] == 3
     assert loops["J4_1ABC_001"]["motif_group"] is None and loops["J4_1ABC_001"]["atlas_status"] == "valid"
     assert loops["IL_2XYZ_001"]["atlas_status"] == "problematic" and loops["IL_2XYZ_001"]["problem"] == "poor quality numbers"
-    # loop on a chain that is not a family instance: retained, nucleotides unresolved, reported
-    z = loops["HL_2XYZ_002"]
-    assert z["instances"] == [] and all(n["resolution"] == "chain_not_in_family" for n in z["nucleotides"]) and z["consensus_positions"] == []
-    assert any(u["identifier"] == "2XYZ|1|Z|U|13" for u in b.unresolved)
+    # loop with no nucleotide in a family chain: retained as a compact record (no nucleotide-level data), not counted as unresolved
+    assert "HL_2XYZ_002" not in loops
+    out = {L["loop_id"]: L for L in b.loops_outside}
+    assert out["HL_2XYZ_002"] == {"loop_id": "HL_2XYZ_002", "pdb_id": "2xyz", "loop_type": "HL", "auth_asym_ids": ["Z"], "n_nucleotides": 2, "motif_group": "HL_9.9",
+                                  "atlas_status": out["HL_2XYZ_002"]["atlas_status"], "loop_url": out["HL_2XYZ_002"]["loop_url"], "reason": "no nucleotide in a family chain"}
+    assert not any(u["identifier"] == "2XYZ|1|Z|U|13" for u in b.unresolved) and b.loop_source["2xyz"]["n_loops_outside_family_chains"] == 1
+    # an inter-chain loop touching a family chain is unchanged (full record)
+    assert "IL_2XYZ_001" in loops
 
 
 def test_multi_chain_loop_is_one_observation(built):
@@ -290,4 +294,90 @@ def test_schemas_and_traceability(built):
             ids = p[track]["loop_ids"]
             assert all(p["rfam_consensus_pos"] in loops[i]["consensus_positions"] for i in ids)
             assert p[track]["n_loop_observations"] == len(ids)
-    assert summary["n_unresolved_identifiers"] == 2 and all(u["source"] == "bgsu_motif_atlas_loop" for u in summary["unresolved_identifiers"])
+    assert summary["n_unresolved_identifiers"] == 0     # the only unresolved units belonged to a loop with no family-chain nucleotide (kept as a compact record)
+
+
+# ----------------------------------------------------------------------------- overlapping loop classes (regression for RF00167 consensus 53 semantics)
+LOOPS_OVERLAP = ('"HL_1ABC_002","1ABC|1|A|G|12,1ABC|1|A|A|13,1ABC|1|A|U|14"\n'          # hairpin inside the junction strand (consensus 4, insert, 5)
+                 '"J3_1ABC_002","1ABC|1|A|G|11,1ABC|1|A|G|12,1ABC|1|A|A|13,1ABC|1|A|U|14,1ABC|1|A|C|15"\n'   # J3 strand covering the hairpin
+                 '"J3_1ABC_003","1ABC|1|A|G|11,1ABC|1|A|G|12,1ABC|1|A|A|13,1ABC|1|A|U|14"\n'                 # second J3 of the same chain (alternative boundaries)
+                 '"J4_1ABC_002","1ABC|1|A|G|11,1ABC|1|A|C|15"\n')                                              # J4 excluding the hairpin strand
+MOTIFS_OVERLAP = _page([_row("HL_1ABC_002", "1/A/12:14", "Purine riboswitch", "HL_9.1"), _row("J3_1ABC_002", "1/A/11:15", "No text annotation", "J3_9.1"),
+                        _row("J3_1ABC_003", "1/A/11:14", "No text annotation", "J3_8.1"), _row("J4_1ABC_002", "1/A/11, 1/A/15", "No text annotation", "J4_9.1")])
+
+
+class OverlapFetcher(FakeFetcher):
+    def text(self, url, suffix, seed_name=None):
+        if "loops/download/1ABC" in url:
+            return LOOPS_OVERLAP, SourceMeta(url, "ok", "2026-10-16")
+        if "pdb/1ABC/motifs" in url:
+            return MOTIFS_OVERLAP, SourceMeta(url, "ok", "2026-10-16")
+        return super().text(url, suffix, seed_name)
+
+
+def test_overlapping_hl_and_j3_are_both_kept_and_counted_per_instance(fam_dir):
+    b = AnnotationBuilder(fam_dir, OverlapFetcher(), load_config())
+    b.run()
+    tr = json.load(open(fam_dir / "tracks.json"))
+    p4 = tr["positions"][3]      # consensus 4 = residue 12: in HL_1ABC_002, J3_1ABC_002, J3_1ABC_003 (2 J3 loops, one chain)
+    assert p4["hairpin_loops"]["n_instances"] == 1 and p4["junction_loops_J3"]["n_instances"] == 1 and p4["junction_loops_J4"]["n_instances"] == 0
+    assert p4["junction_loops_J3"]["n_loop_observations"] == 2            # two J3 loops, still one instance
+    assert p4["junction_loops_union"]["n_instances"] == 1 and p4["junction_loops_union"]["n_loop_observations"] == 2
+    p3 = tr["positions"][2]      # consensus 3 = residue 11: J3 ×2 and J4 -> union counts the instance once, loops 3
+    assert p3["junction_loops_J3"]["n_instances"] == 1 and p3["junction_loops_J4"]["n_instances"] == 1 and p3["junction_loops_union"]["n_instances"] == 1
+    assert p3["junction_loops_union"]["n_loop_observations"] == 3 and p3["hairpin_loops"]["n_instances"] == 0
+    # overlapping classes are preserved: both loops remain in loops.json with their original types and the insertion kept in the hairpin membership
+    loops = {L["loop_id"]: L for L in json.load(open(fam_dir / "loops.json"))["loops"]}
+    assert loops["HL_1ABC_002"]["loop_type"] == "HL" and loops["J3_1ABC_002"]["loop_type"] == "J3"
+    assert set(loops["HL_1ABC_002"]["consensus_positions"]) <= set(loops["J3_1ABC_002"]["consensus_positions"])
+    assert [n["mapping_status"] for n in loops["HL_1ABC_002"]["nucleotides"]] == ["mapped", "insert", "mapped"]
+    inst = json.load(open(fam_dir / "annotations" / "1abc_1_A_A.json"))
+    assert sorted(x["loop_type"] for x in inst["residues"][1]["loops"]) == ["HL", "J3", "J3"]
+
+
+# --- BGSU per-chain annotations for a family without a BGSU annotation file (RF00162, 2026-10-17) ---
+from rna_explorer.annotation_sources import fetch_chain_annotations  # noqa: E402
+
+
+class _MessageFetcher:
+    """BGSU replies HTTP 200 with a plain-text message (no unit_id, label rows)."""
+    def __init__(self, body):
+        self.body = body
+
+    def text(self, url, suffix, seed_name=None):
+        return self.body, SourceMeta(url, "ok", "2026-10-17")
+
+
+def test_reference_parser_skips_lines_without_separator():
+    rows, comments = parse_reference_annotations("# c\nCould not find annotation file RF00162_annotations.txt\nX|1|A|G|1\tHelix P1\n")
+    assert [r.unit_id for r in rows] == ["X|1|A|G|1"] and rows[0].labels == ["Helix P1"] and comments == ["c"]
+
+
+def test_chain_annotations_bgsu_message_is_source_not_available():
+    rows, meta = fetch_chain_annotations(_MessageFetcher("Could not find annotation file RF00162_annotations.txt"), "5fjc", "A")
+    assert rows == [] and meta.status == "not_available" and meta.detail.startswith("Could not find annotation file")
+    assert "chain=5FJC%7C1%7CA" in meta.url and meta.retrieved == "2026-10-17"
+
+
+def test_chain_annotations_unparseable_reply_is_parse_error_and_valid_rows_still_parse():
+    rows, meta = fetch_chain_annotations(_MessageFetcher("<html>maintenance</html>"), "5fjc", "A")
+    assert rows == [] and meta.status == "parse_error"
+    rows, meta = fetch_chain_annotations(_MessageFetcher("5FJC|1|A|G|1\tHelix P1\n"), "5fjc", "A")
+    assert len(rows) == 1 and meta.status == "ok"
+
+
+def test_loops_by_instance_files(built):
+    b, fam_dir, summary = built
+    loops = json.load(open(fam_dir / "loops.json"))["loops"]
+    for sn in ["1abc_1_A_A", "2xyz_1_A_A", "2xyz_1_B_B"]:
+        f = fam_dir / "loops_by_instance" / f"{sn}.json"
+        if not f.exists():
+            continue
+        d = json.load(open(f)); validate_json(d, "loops_instance")
+        assert d["seq_name"] == sn and sorted(L["loop_id"] for L in d["loops"]) == sorted(L["loop_id"] for L in loops if sn in L["instances"])
+    files = sorted(p.stem for p in (fam_dir / "loops_by_instance").glob("*.json"))
+    assert files == sorted(i["seq_name"] for i in b.idx.instances)          # one file per chain instance
+    # the inter-chain internal loop appears in both chains' files
+    a, bb = (json.load(open(fam_dir / "loops_by_instance" / f"2xyz_1_{c}_{c}.json"))["loops"] for c in "AB")
+    assert "IL_2XYZ_001" in {L["loop_id"] for L in a} and "IL_2XYZ_001" in {L["loop_id"] for L in bb}
+    assert summary["file_sizes_bytes"]["loops_by_instance/ (total)"] > 0

@@ -1,0 +1,82 @@
+{
+ "counts": {
+  "loops": 496,
+  "nts": 5655,
+  "status:mapped": 5419,
+  "state:match": 5419,
+  "coords:True": 5655,
+  "status:outside_mapped_region": 168,
+  "state:not_submitted_flank": 168,
+  "status:insert": 68,
+  "state:insert": 68,
+  "multi_chain": 4
+ },
+ "loop_types": {
+  "HL": 234,
+  "J3": 114,
+  "J4": 66,
+  "IL": 82
+ },
+ "issues": [],
+ "n_issues": 0,
+ "annotation_vs_loops_mismatched_instances": 0,
+ "same_track_overlaps_by_type": {
+  "JL": 1079
+ },
+ "overlap_examples": [
+  [
+   "1y26_1_X_A",
+   "JL",
+   25,
+   [
+    "J3_1Y26_001",
+    "J4_1Y26_001"
+   ]
+  ],
+  [
+   "1y26_1_X_A",
+   "JL",
+   26,
+   [
+    "J3_1Y26_001",
+    "J4_1Y26_001"
+   ]
+  ],
+  [
+   "1y26_1_X_A",
+   "JL",
+   27,
+   [
+    "J3_1Y26_001",
+    "J4_1Y26_001"
+   ]
+  ],
+  [
+   "1y26_1_X_A",
+   "JL",
+   28,
+   [
+    "J3_1Y26_001",
+    "J4_1Y26_001"
+   ]
+  ],
+  [
+   "1y26_1_X_A",
+   "JL",
+   29,
+   [
+    "J3_1Y26_001",
+    "J4_1Y26_001"
+   ]
+  ],
+  [
+   "1y26_1_X_A",
+   "JL",
+   49,
+   [
+    "J3_1Y26_001",
+    "J4_1Y26_001"
+   ]
+  ]
+ ]
+}

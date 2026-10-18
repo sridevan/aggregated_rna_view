@@ -1,0 +1,192 @@
+{
+ "rfam_acc": "RF00059",
+ "rfam_id": "TPP",
+ "description": "TPP riboswitch aptamer (THI element)",
+ "comment": "Vitamin B(1) in its active form thiamin pyrophosphate (TPP) is an essential coenzyme that is synthesised by coupling of pyrimidine and thiazole moieties in bacteria. The previously detected thiamin-regulatory element, thi box [1] was extended, resulting in a new, highly conserved RNA secondary structure, the THI element, which is widely distributed in eubacteria and also occurs in some archaea. Analysis of operon structures identified a large number of new candidate thiamin-regulated genes, mostly transporters, in various prokaryotic organisms [2]. The THI element is a riboswitch [3] that directly binds to TPP to regulate gene expression through a variety of mechanisms in archaea, bacteria and eukaryotes [4,5]. through a variety of mechanisms in archaea, bacteria and eukaryotes [4,5]. Tandem TPP riboswitches have been reported [6] where both TPP riboswitches respond independently to TPP. The structure of TPP riboswitch has been reported for Escherichia coli and Arabidopsis thaliana [7-12].",
+ "rfam_url": "https://rfam.org/family/RF00059",
+ "clen": 105,
+ "consensus_sequence": "aaauaccacuaGGGGuGCcccuaaaagggGCUGAGAugggccuggcccaaACCCuUuGAACCUgAUccGGuUAAUaCCggCGuAGGGAaguggauauuuuuuuuu",
+ "ss_cons": ":::::[[[[[((((-(<<<<<_____>>>>>,,,,,,<<<<<_>>>>>)--)))),,,,,<<<<--<<<<______>>>>-->>>>,,]]]]]::::::::::::",
+ "clan_members": [],
+ "curation": {
+  "author": "Rodionov DA, Vitreshchak AG, Mironov AA, Gelfand MS, Bateman A, Moxon SJ, Ontiveros-Palacios N",
+  "seed_source": "Vitreshchak A",
+  "num_seed": 115,
+  "num_full": 16130,
+  "num_species": 8693,
+  "type": "Cis-reg; riboswitch;",
+  "structure_source": "Published; PMID:12376536;"
+ },
+ "counts": {
+  "pdb_entries": 28,
+  "instances": 38,
+  "unique_mapped_sequences": 5,
+  "instances_clan_best": 38,
+  "instances_validation_ok": 38,
+  "skipped_segments": 0
+ },
+ "experimental_methods": {
+  "X-ray diffraction": 36,
+  "Electron Microscopy": 2
+ },
+ "representative": {
+  "pdb_id": "2gdi",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "X",
+  "seq_name": "2gdi_1_X_A",
+  "sequence_key": "51ac695c5a2dc4415031ba4b45a480aa",
+  "mapping_file": "mappings/2gdi_1_X_A.json",
+  "organism": "Escherichia coli",
+  "tax_id": 562,
+  "organism_source": "pdbe_search",
+  "molecule_name": "TPP riboswitch",
+  "experimental_method": "X-ray diffraction",
+  "resolution": 2.05,
+  "release_year": 2006,
+  "title": "Crystal structure of thiamine pyrophosphate-specific riboswitch in complex with thiamine pyrophosphate",
+  "chain_length": 80,
+  "map_start": 1,
+  "map_end": 80,
+  "map_auth_start": 10,
+  "map_auth_end": 89,
+  "mapped_length": 80,
+  "n_modified_in_mapped": 2,
+  "rfam_bit_score": 63.7,
+  "rfam_evalue": "2.3e-13",
+  "rfam_cm_start": 6,
+  "rfam_cm_end": 93,
+  "clan_families_hit": [
+   {
+    "acc": "RF00059",
+    "bits": 63.7
+   }
+  ],
+  "clan_best_family": "RF00059",
+  "is_clan_best": true,
+  "cmalign": {
+   "name": "seq_51ac695c5a2dc4415031ba4b45a480aa",
+   "length": 80,
+   "cm_from": 6,
+   "cm_to": 93,
+   "trunc": "3'",
+   "bit_score": 65.32,
+   "avg_pp": 0.986
+  },
+  "n_match": 77,
+  "n_insert": 3,
+  "n_local_end": 0,
+  "n_deleted_in_span": 11,
+  "n_uncovered": 17,
+  "consensus_span": [
+   6,
+   93
+  ],
+  "fraction_clen_matched": 0.7333,
+  "n_mapped_with_coordinates": 80,
+  "n_match_with_coordinates": 77,
+  "pp_star_fraction": 0.9,
+  "pp_category_counts": {
+   "high": 72,
+   "medium": 8
+  },
+  "validation_ok": true,
+  "organism_species": "Escherichia coli",
+  "species_tax_id": "562",
+  "organism_rank": "species",
+  "pdbe_2d_available": true
+ },
+ "display_representative": {
+  "pdb_id": "2gdi",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "X",
+  "seq_name": "2gdi_1_X_A",
+  "sequence_key": "51ac695c5a2dc4415031ba4b45a480aa",
+  "mapping_file": "mappings/2gdi_1_X_A.json",
+  "organism": "Escherichia coli",
+  "tax_id": 562,
+  "organism_source": "pdbe_search",
+  "molecule_name": "TPP riboswitch",
+  "experimental_method": "X-ray diffraction",
+  "resolution": 2.05,
+  "release_year": 2006,
+  "title": "Crystal structure of thiamine pyrophosphate-specific riboswitch in complex with thiamine pyrophosphate",
+  "chain_length": 80,
+  "map_start": 1,
+  "map_end": 80,
+  "map_auth_start": 10,
+  "map_auth_end": 89,
+  "mapped_length": 80,
+  "n_modified_in_mapped": 2,
+  "rfam_bit_score": 63.7,
+  "rfam_evalue": "2.3e-13",
+  "rfam_cm_start": 6,
+  "rfam_cm_end": 93,
+  "clan_families_hit": [
+   {
+    "acc": "RF00059",
+    "bits": 63.7
+   }
+  ],
+  "clan_best_family": "RF00059",
+  "is_clan_best": true,
+  "cmalign": {
+   "name": "seq_51ac695c5a2dc4415031ba4b45a480aa",
+   "length": 80,
+   "cm_from": 6,
+   "cm_to": 93,
+   "trunc": "3'",
+   "bit_score": 65.32,
+   "avg_pp": 0.986
+  },
+  "n_match": 77,
+  "n_insert": 3,
+  "n_local_end": 0,
+  "n_deleted_in_span": 11,
+  "n_uncovered": 17,
+  "consensus_span": [
+   6,
+   93
+  ],
+  "fraction_clen_matched": 0.7333,
+  "n_mapped_with_coordinates": 80,
+  "n_match_with_coordinates": 77,
+  "pp_star_fraction": 0.9,
+  "pp_category_counts": {
+   "high": 72,
+   "medium": 8
+  },
+  "validation_ok": true,
+  "organism_species": "Escherichia coli",
+  "species_tax_id": "562",
+  "organism_rank": "species",
+  "pdbe_2d_available": true,
+  "selection_rule": "x-ray; PDBe 2D topology available; natural species; >=95% matched residues with coordinates; model coverage >= family median; best resolution",
+  "eligible_count": 23,
+  "min_clen_fraction_used": 0.7333
+ },
+ "coverage_summary": {
+  "sequence_coverage_mean": 0.7486,
+  "structural_coverage_mean": 0.683,
+  "positions_with_sequence_coverage": 94,
+  "positions_with_structural_coverage": 90,
+  "positions_clen": 105
+ },
+ "skipped": [],
+ "provenance": {
+  "rfam_acc": "RF00059",
+  "rfam_release": "15.1",
+  "cm_name": "TPP",
+  "cm_checksum": "1022067997",
+  "cm_clen": 105,
+  "cm_build_date": "Sun Jul  7 08:21:34 2024",
+  "infernal_version": "INFERNAL 1.1.5 (Sep 2023)",
+  "cmalign_options": "--cpu 4",
+  "cmalign_mode": "local (default)",
+  "pipeline_version": "0.1.0",
+  "generated": "2026-10-17T16:05:41+00:00",
+  "pdbe_mapping_source": "PDBe API v2 nucleic_mappings/RF00059",
+  "rfam_hit_source": "rfam.org/family/RF00059/structures"
+ }
+}

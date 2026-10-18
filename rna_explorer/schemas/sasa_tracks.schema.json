@@ -1,0 +1,185 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "type": "object",
+ "properties": {
+  "schema_version": {
+   "const": "1.0"
+  },
+  "rfam_acc": {
+   "type": "string"
+  },
+  "clen": {
+   "type": "integer"
+  },
+  "track_id": {
+   "type": "string"
+  },
+  "category": {
+   "type": "string"
+  },
+  "measurement": {
+   "type": "object",
+   "properties": {
+    "name": {
+     "type": "string"
+    },
+    "unit": {
+     "type": "string"
+    },
+    "statistic": {
+     "type": "string"
+    },
+    "context": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "name",
+    "unit"
+   ]
+  },
+  "aggregation_rules": {
+   "type": "object",
+   "properties": {}
+  },
+  "colour_domain_suggestion_A2": {
+   "type": "object",
+   "properties": {
+    "min": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "max": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "rule": {
+     "type": "string"
+    }
+   }
+  },
+  "summary": {
+   "type": "object",
+   "properties": {
+    "n_positions_with_value": {
+     "type": "integer"
+    },
+    "n_instances_measured": {
+     "type": "integer"
+    }
+   },
+   "required": [
+    "n_positions_with_value"
+   ]
+  },
+  "positions": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "rfam_consensus_pos": {
+      "type": "integer"
+     },
+     "n_contributing_instances": {
+      "type": "integer"
+     },
+     "n_mapped_instances_with_coordinates": {
+      "type": "integer"
+     },
+     "n_excluded_incomplete": {
+      "type": "integer"
+     },
+     "n_excluded_unsupported": {
+      "type": "integer"
+     },
+     "nucleotide_identity": {
+      "type": "object",
+      "properties": {}
+     },
+     "contributing_instances": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "median_sasa_A2": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "mean_sasa_A2": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "min_sasa_A2": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "max_sasa_A2": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "sd_sasa_A2": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "q1_sasa_A2": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "q3_sasa_A2": {
+      "type": [
+       "number",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "rfam_consensus_pos",
+     "n_contributing_instances",
+     "n_mapped_instances_with_coordinates",
+     "n_excluded_incomplete",
+     "n_excluded_unsupported",
+     "median_sasa_A2",
+     "mean_sasa_A2",
+     "q1_sasa_A2",
+     "q3_sasa_A2"
+    ]
+   }
+  },
+  "method": {
+   "type": "object",
+   "properties": {}
+  },
+  "provenance": {
+   "type": "object",
+   "properties": {}
+  }
+ },
+ "required": [
+  "schema_version",
+  "rfam_acc",
+  "clen",
+  "track_id",
+  "measurement",
+  "positions",
+  "method",
+  "provenance"
+ ],
+ "title": "RnaSasaTracks"
+}

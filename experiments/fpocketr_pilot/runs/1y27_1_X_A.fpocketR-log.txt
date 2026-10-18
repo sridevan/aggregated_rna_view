@@ -1,0 +1,1 @@
+ Ray: render time: 0.12 sec. = 30827.8 frames/hour (0.19 sec. accum.).

@@ -1,0 +1,9 @@
+HTTP/2 200 
+date: Fri, 16 Oct 2026 17:30:04 GMT
+server: Apache
+accept-ranges: bytes
+vary: Accept-Encoding
+content-type: text/html
+strict-transport-security: max-age=16000000; includeSubDomains; preload;
+alt-svc: h3=":443";ma=60;
+

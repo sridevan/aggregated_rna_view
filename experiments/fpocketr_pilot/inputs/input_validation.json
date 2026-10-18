@@ -1,0 +1,212 @@
+[
+ {
+  "seq_name": "4fe5_1_B_A",
+  "file": "4fe5_1_B_A.pdb",
+  "n_residues": 67,
+  "n_heavy_atoms": 1422,
+  "altloc_copies_dropped": 0,
+  "modified_residues": [],
+  "resnum_range": [
+   15,
+   81
+  ],
+  "label_seq_range": [
+   1,
+   67
+  ],
+  "roundtrip_ok": true,
+  "ligand": null
+ },
+ {
+  "seq_name": "1y26_1_X_A",
+  "file": "1y26_1_X_A.pdb",
+  "n_residues": 71,
+  "n_heavy_atoms": 1499,
+  "altloc_copies_dropped": 0,
+  "modified_residues": [],
+  "resnum_range": [
+   13,
+   83
+  ],
+  "label_seq_range": [
+   1,
+   71
+  ],
+  "roundtrip_ok": true,
+  "ligand": null
+ },
+ {
+  "seq_name": "5e54_1_A_A",
+  "file": "5e54_1_A_A.pdb",
+  "n_residues": 65,
+  "n_heavy_atoms": 1383,
+  "altloc_copies_dropped": 0,
+  "modified_residues": [],
+  "resnum_range": [
+   13,
+   77
+  ],
+  "label_seq_range": [
+   1,
+   65
+  ],
+  "roundtrip_ok": true,
+  "ligand": null
+ },
+ {
+  "seq_name": "3ivn_1_A_A",
+  "file": "3ivn_1_A_A.pdb",
+  "n_residues": 69,
+  "n_heavy_atoms": 1466,
+  "altloc_copies_dropped": 0,
+  "modified_residues": [],
+  "resnum_range": [
+   5,
+   73
+  ],
+  "label_seq_range": [
+   1,
+   69
+  ],
+  "roundtrip_ok": true,
+  "ligand": null
+ },
+ {
+  "seq_name": "9ndd_1_A_A",
+  "file": "9ndd_1_A_A.pdb",
+  "n_residues": 160,
+  "n_heavy_atoms": 3394,
+  "altloc_copies_dropped": 87,
+  "modified_residues": [],
+  "resnum_range": [
+   1,
+   160
+  ],
+  "label_seq_range": [
+   1,
+   160
+  ],
+  "roundtrip_ok": true,
+  "ligand": null
+ },
+ {
+  "seq_name": "1y27_1_X_A",
+  "file": "1y27_1_X_A.pdb",
+  "n_residues": 68,
+  "n_heavy_atoms": 1456,
+  "altloc_copies_dropped": 0,
+  "modified_residues": [
+   "CCC",
+   "GDP"
+  ],
+  "resnum_range": [
+   14,
+   81
+  ],
+  "label_seq_range": [
+   1,
+   68
+  ],
+  "roundtrip_ok": true,
+  "ligand": null
+ },
+ {
+  "seq_name": "4fe5_1_B_A",
+  "file": "4fe5_1_B_A_holo_HPA.pdb",
+  "n_residues": 67,
+  "n_heavy_atoms": 1422,
+  "altloc_copies_dropped": 0,
+  "modified_residues": [],
+  "resnum_range": [
+   15,
+   81
+  ],
+  "label_seq_range": [
+   1,
+   67
+  ],
+  "roundtrip_ok": true,
+  "ligand": {
+   "ccd": "HPA",
+   "n_copies_in_entry": 1,
+   "copy_used": "B/101",
+   "min_distance_to_chain_A": 2.69,
+   "n_copies_added": 1
+  }
+ },
+ {
+  "seq_name": "1y26_1_X_A",
+  "file": "1y26_1_X_A_holo_ADE.pdb",
+  "n_residues": 71,
+  "n_heavy_atoms": 1499,
+  "altloc_copies_dropped": 0,
+  "modified_residues": [],
+  "resnum_range": [
+   13,
+   83
+  ],
+  "label_seq_range": [
+   1,
+   71
+  ],
+  "roundtrip_ok": true,
+  "ligand": {
+   "ccd": "ADE",
+   "n_copies_in_entry": 1,
+   "copy_used": "X/90",
+   "min_distance_to_chain_A": 2.65,
+   "n_copies_added": 1
+  }
+ },
+ {
+  "seq_name": "9ndd_1_A_A",
+  "file": "9ndd_1_A_A_holo_OXG.pdb",
+  "n_residues": 160,
+  "n_heavy_atoms": 3394,
+  "altloc_copies_dropped": 87,
+  "modified_residues": [],
+  "resnum_range": [
+   1,
+   160
+  ],
+  "label_seq_range": [
+   1,
+   160
+  ],
+  "roundtrip_ok": true,
+  "ligand": {
+   "ccd": "OXG",
+   "n_copies_in_entry": 4,
+   "copy_used": "A/201",
+   "min_distance_to_chain_A": 2.22,
+   "n_copies_added": 1
+  }
+ },
+ {
+  "seq_name": "1y27_1_X_A",
+  "file": "1y27_1_X_A_holo_GUN.pdb",
+  "n_residues": 68,
+  "n_heavy_atoms": 1456,
+  "altloc_copies_dropped": 0,
+  "modified_residues": [
+   "CCC",
+   "GDP"
+  ],
+  "resnum_range": [
+   14,
+   81
+  ],
+  "label_seq_range": [
+   1,
+   68
+  ],
+  "roundtrip_ok": true,
+  "ligand": {
+   "ccd": "GUN",
+   "n_copies_in_entry": 1,
+   "copy_used": "X/101",
+   "min_distance_to_chain_A": 2.62,
+   "n_copies_added": 1
+  }
+ }
+]

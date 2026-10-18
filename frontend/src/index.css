@@ -5,3 +5,9 @@ body { @apply bg-stone-50 text-stone-900 antialiased; }
 /* 20-column grid for the 65/35 split (Tailwind only ships up to 12) */
 .lg\:grid-cols-20 { }
 @media (min-width: 64rem) { .lg\:grid-cols-20 { grid-template-columns: repeat(20, minmax(0, 1fr)); } .lg\:col-span-13 { grid-column: span 13 / span 13; } }
+
+/* Annotations tab: the shared horizontal scrollbar stays visible when zoomed (macOS overlay scrollbars would hide it) */
+.annotations-hscroll::-webkit-scrollbar { height: 8px; }
+.annotations-hscroll::-webkit-scrollbar-track { background: #f5f5f4; border-radius: 4px; }
+.annotations-hscroll::-webkit-scrollbar-thumb { background: #a8a29e; border-radius: 4px; }
+.annotations-hscroll::-webkit-scrollbar-thumb:hover { background: #78716c; }

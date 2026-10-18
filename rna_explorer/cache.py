@@ -3,8 +3,14 @@ from __future__ import annotations
 import hashlib, json, re
 from pathlib import Path
 from typing import Any, Optional
+import time
+
 import requests
 
+
+
+RETRIES = 3
+RETRY_WAIT_S = 2.0
 
 class Cache:
     def __init__(self, root: Path, timeout: int = 300) -> None:
@@ -25,7 +31,15 @@ class Cache:
         if p.exists() and not force:
             return p
         headers = {"Content-Type": "application/x-www-form-urlencoded"} if data is not None else None
-        r = requests.request(method, url, data=data, headers=headers, timeout=self.timeout)
+        # transient transport failures (connection reset, response cut short) are retried; HTTP errors are not
+        for attempt in range(RETRIES):
+            try:
+                r = requests.request(method, url, data=data, headers=headers, timeout=self.timeout)
+                break
+            except (requests.ConnectionError, requests.exceptions.ChunkedEncodingError, requests.Timeout):
+                if attempt == RETRIES - 1:
+                    raise
+                time.sleep(RETRY_WAIT_S * (attempt + 1))
         r.raise_for_status()
         tmp = p.with_suffix(p.suffix + ".part")
         tmp.write_bytes(r.content)

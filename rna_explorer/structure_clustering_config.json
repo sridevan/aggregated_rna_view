@@ -1,0 +1,90 @@
+{
+ "_comment": "Fixed structural-group cuts per family and metric (Structures tab). A cut is a scientific choice; each entry records why. The code recomputes the tree from the research matrices and stores the numbers it can verify (merge heights, gap, silhouette) next to the research evidence cited here. Groups are descriptive and carry no state labels.",
+ "RF00167": {
+  "research_run": "experiments/rna_structural_clustering/results/rf00167/T64",
+  "research_summary": "experiments/rna_structural_clustering/results/rf00167/clustering/clustering_summary.json",
+  "research_reports": [
+   "CLUSTERING_RESULTS.md",
+   "CLUSTERING_RECOMMENDATIONS.md",
+   "ORIENTATION_CONTRIBUTION.md",
+   "RF00167_OUTLIER_ANALYSIS.md"
+  ],
+  "metrics": {
+   "discrepancy": {
+    "k": 2,
+    "validation": "stable",
+    "rationale": "First split of the average-linkage tree: 4 vs 72 instances. Largest merge-height gap of the tree; best silhouette for k = 2-10; reproduced at coverage thresholds T = 63/65/67 (ARI 1.00), under every structural-element jackknife (ARI 1.00) and in 100 position bootstraps (median and 5th percentile ARI 1.00); the only split the research reports as stable (CLUSTERING_RECOMMENDATIONS.md section 7). Lower splits are provisional (bootstrap ARI 0.2-0.7) and are not used."
+   },
+   "tm": {
+    "k": 4,
+    "validation": "provisional",
+    "rationale": "TM-score was recommended as a sequence/fold-level descriptor, not a conformational one. k = 4 cuts the largest merge-height gap of the whole 1 - TM tree (0.283 to 0.372) and its partition is unchanged at coverage thresholds T = 63/65/67 (ARI 1.00; k = 2 is not stable at T = 67). No position bootstrap or element jackknife was run for TM, so these groups are less validated than the discrepancy groups."
+   }
+  }
+ },
+ "RF00162": {
+  "research_run": "experiments/rna_structural_clustering/results/rf00162/T91",
+  "research_summary": "experiments/rna_structural_clustering/results/rf00162/clustering/clustering_summary.json",
+  "research_reports": [
+   "RF00162_SAMI_RESULTS.md",
+   "MULTIFAMILY_CLUSTERING_BENCHMARK.md"
+  ],
+  "omit_floor": true,
+  "floor_note": "the research has only two duplicate pairs for RF00162 (3V7E C/D NCS copies, 2GIS vs 3IQR; D 0.048 and 0.061) and judges a floor from them too small to be useful (RF00162_SAMI_RESULTS.md)",
+  "metrics": {
+   "discrepancy": {
+    "k": 3,
+    "validation": "stable",
+    "rationale": "k = 3 cuts by far the largest merge-height gap of the average-linkage tree (0.139 to 0.247; the next gaps are about 10 times smaller); silhouette 0.564 (k = 2: 0.565); position bootstrap ARI median 1.0 and 5th percentile 1.0 at k = 3 (k = 2: 5th percentile -0.05; k = 4: 0.44) and every structural-element jackknife ARI 1.0 at k = 3. The groups separate the engineered-P3 construct 3V7E C/D and the B. subtilis chain 4KQY A from the 26 T. tengcongensis chains: they are construct/species groups, not conformational states, and they disappear when only T. tengcongensis chains are clustered (run sensitivity ARI 0.0, research Tte_only run). Chosen by the user on 2026-10-17."
+   },
+   "tm": {
+    "k": 4,
+    "validation": "provisional",
+    "rationale": "TM-score is a sequence/fold-level descriptor. k = 4 cuts the largest merge-height gap of the 1 - TM tree (0.088 to 0.146) and has the best silhouette for k = 2-6 (0.580): the k = 3 discrepancy groups plus a 4-chain T. tengcongensis subgroup (2YGH, 4B5R, 5FJC, 5FK4). No position bootstrap or jackknife exists for TM, and against the research Tte_only run its k = 4 partition agrees only weakly (ARI 0.33); provisional. Chosen by the user on 2026-10-17."
+   }
+  }
+ },
+ "RF00059": {
+  "research_run": "experiments/rna_structural_clustering/results/rf00059/T64",
+  "research_summary": "experiments/rna_structural_clustering/results/rf00059/clustering/clustering_summary.json",
+  "research_reports": [
+   "RF00059_TPP_RESULTS.md",
+   "MULTIFAMILY_CLUSTERING_BENCHMARK.md",
+   "COVERAGE_ASSESSMENT.md"
+  ],
+  "metrics": {
+   "discrepancy": {
+    "k": 2,
+    "validation": "stable",
+    "rationale": "First split of the average-linkage tree: the ligand-free structure 8F4O (chains A, B) vs the 35 ligand-bound chains. By far the largest merge-height gap (0.257 to 1.085) and the best silhouette for k = 2-6 (0.843); position bootstrap ARI median and 5th percentile 1.0 and run sensitivity T64 vs T68 ARI 1.0. The research attributes it to the apo conformation (P5 displaced by 12-25 A, P3 by 5-10 A; Lee et al. 2023). The apo group is two chains of a single entry. k = 3 (A. thaliana thiC homologs) rests on a gap of 0.027 with bootstrap 5th percentile 0.18 and is not used. Chosen by the user on 2026-10-17."
+   },
+   "tm": {
+    "k": 2,
+    "validation": "provisional",
+    "rationale": "TM-score (fixed correspondence, normalised by the shared positions) gives the same first split, apo 8F4O A/B vs the 35 bound chains, with the largest merge-height gap of its tree (0.357 to 0.478) and the best silhouette for k = 2-6 (0.540); unchanged at T68 (run sensitivity ARI 1.0). No position bootstrap or jackknife exists for TM: provisional. Chosen by the user on 2026-10-17."
+   }
+  }
+ },
+ "RF00177": {
+  "research_run": "experiments/rna_structural_clustering/results/rf00177_expanded/T1481",
+  "research_reports": [
+   "RF00177_EXPANDED_60_RESULTS.md",
+   "results/rf00177/dataset_expansion_investigation/investigation_report.md",
+   "RF00177_16S_RAD_RESULTS.md"
+  ],
+  "omit_floor": true,
+  "floor_note": "the research computed no duplicate-pair floor for the 60-chain run (its expanded summary reports a near-duplicate threshold, disc 0.016, which is a different quantity)",
+  "metrics": {
+   "discrepancy": {
+    "k": 2,
+    "validation": "provisional",
+    "rationale": "k = 2 cuts the largest merge-height gap of the average-linkage tree (0.103 to 0.131) and has the best silhouette for k = 2-7 (0.538): 50 chains (computed head swivel -1.0 to 14.4 deg) vs the 10 most rotated chains (12.7 to 20.7 deg), the first split reported by the research (RF00177_EXPANDED_60_RESULTS.md). The tree is a continuum of head rotation with gaps of similar size (k = 3-5: 0.012-0.016) and no bootstrap or jackknife was run for the 60-chain set: provisional. The groups describe head rotation (eta^2 swivel 0.59) and agree only weakly with the curated state categories (ARI 0.04) and not with antibiotic site or publication (ARI ~0). Chosen by the user on 2026-10-17."
+   },
+   "tm": {
+    "k": 2,
+    "validation": "provisional",
+    "rationale": "TM-score (fixed correspondence over the 1469 shared positions) gives the same 50 / 10 split at k = 2, with the largest merge-height gap (0.034 to 0.053) and the best silhouette for k = 2-7 (0.727). No bootstrap or jackknife: provisional. Chosen by the user on 2026-10-17."
+   }
+  }
+ }
+}

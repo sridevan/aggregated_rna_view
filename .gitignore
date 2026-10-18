@@ -56,3 +56,25 @@ cache/
 # Experimental upstream RNA viewer repository
 /experiments/rna2d_poc/vendor/pdb-rna-viewer/
 
+
+# Isolated fpocketR execution environment (2 GB, reproducible from experiments/fpocketr_pilot/environment/ENVIRONMENT.md)
+tools/fpocketr-env/
+tools/micromamba/
+
+# Local Netlify folder
+.netlify
+
+# Generated scratch and downloaded structure files (re-downloadable; full mmCIFs are not stored)
+data/families/*/work/
+experiments/**/work/
+experiments/**/*.cif
+experiments/**/*.bcif
+experiments/**/*.pdb
+experiments/**/*.pse
+
+# Large regenerable RF00177 outputs (> 10 MB): rebuild with `build`, `annotate`, `sasa` (see PROJECT_HANDOVER.md)
+data/families/RF00177/loops.json
+data/families/RF00177/sasa.json
+data/families/RF00177/residue_mapping.csv
+# per-chain annotation records (not loaded by the app; regenerable with `annotate`)
+data/families/RF00177/annotations/

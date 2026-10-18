@@ -5,9 +5,11 @@ import { StateTransforms } from 'molstar/lib/mol-plugin-state/transforms'
 import { createStructureRepresentationParams } from 'molstar/lib/mol-plugin-state/helpers/structure-representation-params'
 import { PluginCommands } from 'molstar/lib/mol-plugin/commands'
 import { setSubtreeVisibility } from 'molstar/lib/mol-plugin/behavior/static/state'
+import { StructureFocusRepresentation } from 'molstar/lib/mol-plugin/behavior/dynamic/selection/structure-focus-representation'
 import { Script } from 'molstar/lib/mol-script/script'
-import { StructureSelection, StructureElement } from 'molstar/lib/mol-model/structure'
+import { StructureSelection, StructureElement, StructureProperties } from 'molstar/lib/mol-model/structure'
 import { Vec3 } from 'molstar/lib/mol-math/linear-algebra'
+import { Color } from 'molstar/lib/mol-util/color'
 import { OrderedSet } from 'molstar/lib/mol-data/int'
 import type { Structure } from 'molstar/lib/mol-model/structure'
 import type { OrientationTransform } from '../types/backend'
@@ -22,26 +24,42 @@ interface Props {
   authAsymId: string
   region?: { start: number; end: number }
   selection: MolstarSelectionItem[]
+  /** centre the camera on the selection whenever it changes (single-residue / group exploration); the view direction is kept */
+  focusOnSelection?: boolean
   /** precomputed rigid-body transform into the family reference frame (orientation.json); null/insufficient = shown as deposited */
   orientation?: OrientationTransform | null
   onResidueClick?: (labelSeqId: number) => void
+  /** changes on every explicit deselection: clear highlight and focus, restore the default whole-structure (region) camera */
+  resetKey?: number
+  /** one fixed colour (hex) for the polymer / Rfam-region representation of every structure; undefined = PDBe Mol* default colouring */
+  structureColor?: number
+  /** "Clear selection" in the viewer controls: clears the shared selection (the parent then restores the default 2D and 3D views) */
+  onClearSelection?: () => void
+  canClear?: boolean
   className?: string
   initialMode?: ViewMode
 }
 interface MolstarClickEvent extends Event { eventData?: { seq_id?: number; auth_seq_id?: number; auth_asym_id?: string; entity_id?: string; ins_code?: string } }
-const SELECT_COLOR = { r: 98, g: 80, b: 214 }
+/** selection (nucleotide or whole loop): violet #7C3AED, distinct from the slate structure colour; identical for every instance */
+const SELECT_HEX = 0x7c3aed
+const SELECT_COLOR = { r: 0x7c, g: 0x3a, b: 0xed }
 const WHITE = { r: 255, g: 255, b: 255 }
 const REGION_LABEL = 'Rfam-mapped region'
 const ORIENT_TAG = 'rna-explorer-orientation'
+/** simplified display: the focus representation shows only the selected nucleotides (ball-and-stick); no 5 A surroundings, no contact lines */
+const FOCUS_COMPONENTS = ['target'] as const
+/** water is hidden (visibility only: the component and the coordinates stay in the structure) */
+const isWater = (c: { key?: string; cell: { obj?: { label?: string } } }) => c.key === 'water' || c.cell.obj?.label === 'Water'
 const VIEW_UP = Vec3.create(0, 1, 0), VIEW_DIR = Vec3.create(0, 0, -1)   // fixed camera orientation in the reference frame
 
 /**
  * Reusable PDBe Mol* wrapper. One plugin per mount; structures are switched with `visual.update(..., fullLoad=false)` (load the new
  * entry, then remove the old one) so the canvas and its white background are never re-initialised. A precomputed rigid-body transform
  * (TransformStructureConformation, inserted below the structure node) moves each structure into the family reference frame; the
- * camera is then set from a fixed view direction, so all instances appear in the same orientation. Selection never moves the camera.
+ * camera is then set from a fixed view direction, so all instances appear in the same orientation. Selection colours residues; with
+ * `focusOnSelection` the camera is also centred on them (direction kept, context margin), and clearing never moves the camera.
  */
-export function PdbeMolstarViewer({ pdbId, labelAsymId, authAsymId, region, selection, orientation, onResidueClick, className = '', initialMode = 'region' }: Props) {
+export function PdbeMolstarViewer({ pdbId, labelAsymId, authAsymId, region, selection, focusOnSelection = false, orientation, onResidueClick, resetKey = 0, structureColor, onClearSelection, canClear = false, className = '', initialMode = 'region' }: Props) {
   const host = useRef<HTMLDivElement>(null)
   const outer = useRef<HTMLDivElement>(null)
   const plugin = useRef<PDBeMolstarPlugin | null>(null)
@@ -86,6 +104,7 @@ export function PdbeMolstarViewer({ pdbId, labelAsymId, authAsymId, region, sele
     const s = structureOf(p)
     if (!s) return
     const comps = () => ctx.managers.structure.hierarchy.current.structures.flatMap((x) => x.components)
+    if (regionRef.current && !ctx.state.data.cells.has(regionRef.current)) regionRef.current = null   // region of a structure that has been removed
     if (m === 'region' && region) {
       if (!regionRef.current) {
         const expr = MS.struct.generator.atomGroups({
@@ -93,21 +112,32 @@ export function PdbeMolstarViewer({ pdbId, labelAsymId, authAsymId, region, sele
           'residue-test': MS.core.rel.inRange([MS.struct.atomProperty.macromolecular.label_seq_id(), region.start, region.end]),
         })
         const parentRef = s.transform?.cell.transform.ref ?? s.cell.transform.ref   // below the orientation transform so the region is transformed too
-        const structureData = visibleStructureData(p)
+        // the structure (or its transformed copy) may not have resolved yet right after a switch: wait for it rather than skipping the region
+        let structureData = visibleStructureData(p)
+        for (let i = 0; i < 60 && !structureData; i++) { await new Promise((r) => setTimeout(r, 50)); structureData = visibleStructureData(p) }
         if (structureData) {
           const update = ctx.build()
           const sel = update.to(parentRef).apply(StateTransforms.Model.StructureSelectionFromExpression, { expression: expr, label: REGION_LABEL })
-          sel.apply(StateTransforms.Representation.StructureRepresentation3D, createStructureRepresentationParams(ctx, structureData, { type: 'cartoon' }))
-          sel.apply(StateTransforms.Representation.StructureRepresentation3D, createStructureRepresentationParams(ctx, structureData, { type: 'ball-and-stick', typeParams: { sizeFactor: 0.2 } }))
+          // cartoon only (Mol* draws the bases as rings/ladders): the selected nucleotide then stands out in its atom-level focus representation
+          sel.apply(StateTransforms.Representation.StructureRepresentation3D, createStructureRepresentationParams(ctx, structureData, { type: 'cartoon', ...uniformColor() }))
           await update.commit()
           regionRef.current = sel.ref
+        } else {
+          console.warn('[PdbeMolstarViewer] region component could not be built; showing the complete structure')
         }
       }
-      for (const c of comps()) setSubtreeVisibility(ctx.state.data, c.cell.transform.ref, c.cell.transform.ref !== regionRef.current)
+      // never leave an empty scene: without a region component the default components stay visible (Mol* drops camera updates when nothing is visible)
+      for (const c of comps()) setSubtreeVisibility(ctx.state.data, c.cell.transform.ref, regionRef.current ? c.cell.transform.ref !== regionRef.current : isWater(c))
     } else {
-      for (const c of comps()) setSubtreeVisibility(ctx.state.data, c.cell.transform.ref, c.cell.transform.ref === regionRef.current)
+      for (const c of comps()) setSubtreeVisibility(ctx.state.data, c.cell.transform.ref, c.cell.transform.ref === regionRef.current || isWater(c))
+    }
+    // the same fixed colour on the polymer component (Complete structure) for every instance; ligands, ions and other components keep their colouring
+    if (structureColor != null) {
+      const polymers = comps().filter((c) => c.key === 'polymer' || c.cell.obj?.label === 'Polymer')
+      if (polymers.length) await ctx.managers.structure.component.updateRepresentationsTheme(polymers, { color: 'uniform', colorParams: { value: Color(structureColor) } })
     }
     const regionCell = regionRef.current ? ctx.state.data.cells.get(regionRef.current) : undefined
+    window.__rnaExplorer = { ...(window.__rnaExplorer ?? {}), molstarColours: representationColours(p) }
     window.__rnaExplorer = { ...(window.__rnaExplorer ?? {}), molstarComponents: [...comps().map((c) => ({ label: c.cell.obj?.label, hidden: c.cell.state.isHidden })), { label: REGION_LABEL, hidden: regionCell?.state.isHidden ?? null, present: !!regionCell }] }
     await resetView(p, m)
   }
@@ -213,20 +243,22 @@ export function PdbeMolstarViewer({ pdbId, labelAsymId, authAsymId, region, sele
     if (!p || !el) return
     let alive = true
     setStatus('loading'); setErrorMsg(null)
-    regionRef.current = null
     // watchdog: never leave an indefinite blank viewer
     const watchdog = window.setTimeout(() => { if (alive) { setErrorMsg(`Loading ${pdbId.toUpperCase()} timed out after 60 s`); setStatus('error') } }, 60_000)
     queue.current = queue.current.catch(() => undefined).then(async () => {
       if (!alive || plugin.current !== p) return
+      regionRef.current = null   // reset inside the queue: a still-running previous load must not leave its region ref behind
       if (loadedPdb === null && !el.querySelector('canvas')) {
         await p.render(el, { moleculeId: pdbId, subscribeEvents: true, hideControls: true, sequencePanel: false, bgColor: WHITE, pdbeLink: false, expanded: false, loadingOverlay: false,
           hideCanvasControls: ['expand', 'controlToggle', 'controlInfo', 'animation', 'trajectory'] })
         await p.canvas.setBgColor(WHITE)
         p.plugin.canvas3d?.setProps({ camera: { manualReset: true } })   // no automatic camera resets on state changes: the view is set explicitly below
         await p.canvas.setBgColor(WHITE)                                   // setProps may re-derive renderer defaults: re-assert the white background
+        await setFocusComponents(p)
       } else {
         const ctx = p.plugin
         const old = ctx.managers.structure.hierarchy.current.trajectories.map((t) => t.cell.transform.ref)
+        p.plugin.managers.structure.focus.clear()                     // no focus representation of the previous structure survives the switch
         await p.visual.update({ moleculeId: pdbId }, false)          // fullLoad=false: no plugin.clear(), canvas settings untouched
         const oldRefs = ctx.managers.structure.hierarchy.current.trajectories.filter((t) => old.includes(t.cell.transform.ref))
         if (oldRefs.length) await ctx.managers.structure.hierarchy.remove(oldRefs, false)
@@ -259,18 +291,84 @@ export function PdbeMolstarViewer({ pdbId, labelAsymId, authAsymId, region, sele
       await p.visual.clearSelection()
       const data = key ? key.split(',').map((n) => ({ label_asym_id: labelAsymId, label_seq_id: +n, color: SELECT_COLOR })) : []
       selRef.current = data
+      // atom-level close-up: Mol*'s structure focus restricted to the selected nucleotides (ball-and-stick, no surroundings or contact lines; see
+      // FOCUS_COMPONENTS) replaces any previous focus, so repeated selections never accumulate representations; cleared when nothing is selected
+      const loci = data.length ? lociFor(p, data) : null
+      if (loci) p.plugin.managers.structure.focus.setFromLoci(loci); else p.plugin.managers.structure.focus.clear()
       if (data.length) await p.visual.select({ data })
-      window.__rnaExplorer = { ...(window.__rnaExplorer ?? {}), lastMolstarSelection: { pdbId, labelAsymId, labelSeqIds: data.map((d) => d.label_seq_id) }, molstarMode: mode }
+      window.__rnaExplorer = { ...(window.__rnaExplorer ?? {}), lastMolstarSelection: { pdbId, labelAsymId, labelSeqIds: data.map((d) => d.label_seq_id), color: SELECT_HEX }, molstarMode: mode, focusRepresentation: focusedSeqIds(p) }
+      if (loci && focusOnSelection) await focusOn(p, data)   // clearing never touches the camera
     }).catch((err: unknown) => console.error('[PdbeMolstarViewer] selection', err))
     return () => { alive = false }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [key, labelAsymId, pdbId, status, loadedPdb])
 
-  const focusSelection = () => {
+  // explicit deselection (same nucleotide/loop clicked again, Clear selection): no highlight, no focus, default camera of the current mode
+  const lastReset = useRef(resetKey)
+  useEffect(() => {
+    if (resetKey === lastReset.current) return
+    lastReset.current = resetKey
     const p = plugin.current
-    if (!p || !selRef.current.length) return
-    window.__rnaExplorer = { ...(window.__rnaExplorer ?? {}), lastFocus: selRef.current.map((d) => d.label_seq_id) }
-    queue.current = queue.current.catch(() => undefined).then(() => p.visual.focus(selRef.current))
+    if (!p || status !== 'ready' || loadedPdb !== pdbId) return
+    queue.current = queue.current.catch(() => undefined).then(async () => {
+      if (plugin.current !== p) return
+      p.plugin.managers.structure.focus.clear()
+      await p.visual.clearSelection()
+      selRef.current = []
+      await resetView(p, region ? mode : 'complete')
+      window.__rnaExplorer = { ...(window.__rnaExplorer ?? {}), focusRepresentation: focusedSeqIds(p), molstarReset: Number(window.__rnaExplorer?.molstarReset ?? 0) + 1 }
+    }).catch((err: unknown) => console.error('[PdbeMolstarViewer] reset', err))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [resetKey])
+
+  const uniformColor = () => (structureColor != null ? { color: 'uniform' as const, colorParams: { value: Color(structureColor) } } : {})
+  /** colour theme of every representation in the scene (test hook): parent component label, theme name, uniform value, visibility */
+  const representationColours = (p: PDBeMolstarPlugin) => p.plugin.managers.structure.hierarchy.current.structures.flatMap((st) => st.components.flatMap((c) => c.representations.map((r) => {
+    const ct = (r.cell.transform.params as { colorTheme?: { name: string; params?: { value?: number } } } | undefined)?.colorTheme
+    return { component: c.cell.obj?.label ?? '', theme: ct?.name ?? null, value: ct?.params?.value ?? null, hidden: !!c.cell.state.isHidden }
+  })))
+
+  /** Restrict Mol*'s focus representation to the target (selected nucleotides, heavy atoms): no surroundings, no non-covalent contact lines. */
+  const setFocusComponents = async (p: PDBeMolstarPlugin) => {
+    const ctx = p.plugin
+    const cell = ctx.state.behaviors.selectQ((q) => q.ofTransformer(StructureFocusRepresentation))[0]
+    if (cell) await ctx.state.updateBehavior(StructureFocusRepresentation, (old) => {
+      old.components = [...FOCUS_COMPONENTS]; old.ignoreHydrogens = true            // heavy atoms only: less clutter on large loops
+      // contrasting target: uniform dark selection colour, slightly thicker ball-and-stick than Mol*'s default
+      old.targetParams = createStructureRepresentationParams(ctx, undefined, { type: 'ball-and-stick', typeParams: { sizeFactor: 0.32 }, color: 'uniform', colorParams: { value: Color(SELECT_HEX) } })
+    })
+    const now = ctx.state.behaviors.selectQ((q) => q.ofTransformer(StructureFocusRepresentation))[0]
+    window.__rnaExplorer = { ...(window.__rnaExplorer ?? {}), focusComponents: (now?.transform.params as { components?: string[] } | undefined)?.components ?? null, focusIgnoreHydrogens: (now?.transform.params as { ignoreHydrogens?: boolean } | undefined)?.ignoreHydrogens ?? null }
+  }
+
+  /** Loci of the given residues in the displayed (transformed) structure; null when none of them is present (no coordinates). */
+  const lociFor = (p: PDBeMolstarPlugin, items: { label_asym_id: string; label_seq_id: number }[]) => {
+    const data = visibleStructureData(p)
+    if (!data || !items.length) return null
+    const expr = MS.struct.generator.atomGroups({
+      'chain-test': MS.core.rel.eq([MS.struct.atomProperty.macromolecular.label_asym_id(), items[0].label_asym_id]),
+      'residue-test': MS.core.set.has([MS.set(...items.map((i) => i.label_seq_id)), MS.struct.atomProperty.macromolecular.label_seq_id()]),
+    })
+    const loci = StructureSelection.toLociWithSourceUnits(Script.getStructureSelection(expr, data))
+    return StructureElement.Loci.isEmpty(loci) ? null : loci
+  }
+  /** label_seq_ids of the residues in Mol*'s current focus representation (test hook). */
+  const focusedSeqIds = (p: PDBeMolstarPlugin): number[] => {
+    const cur = p.plugin.managers.structure.focus.current
+    if (!cur) return []
+    const ids = new Set<number>()
+    StructureElement.Loci.forEachLocation(cur.loci, (l) => { ids.add(StructureProperties.residue.label_seq_id(l)) })
+    return [...ids].sort((a, b) => a - b)
+  }
+  /** Close-up of the selected residues, keeping the current view direction: the nucleotide fills the view with its immediate neighbours as context. */
+  const focusOn = async (p: PDBeMolstarPlugin, items: { label_asym_id: string; label_seq_id: number }[]) => {
+    const ctx = p.plugin
+    const loci = lociFor(p, items)
+    if (!loci || !ctx.canvas3d) return
+    const sphere = StructureElement.Loci.getBoundary(loci).sphere
+    // focusLoci keeps the camera direction/up and moves target + distance (smooth transition); the margin keeps the 5 A surroundings in view
+    ctx.managers.camera.focusLoci(loci, { extraRadius: 7, minRadius: 12, durationMs: 250 })
+    window.__rnaExplorer = { ...(window.__rnaExplorer ?? {}), lastFocus: items.map((d) => d.label_seq_id), lastFocusCenter: [...sphere.center], lastFocusRadius: sphere.radius }
   }
   const retryLoad = () => {
     const p = plugin.current
@@ -292,14 +390,9 @@ export function PdbeMolstarViewer({ pdbId, labelAsymId, authAsymId, region, sele
           </div>
         )}
         <button data-testid="reset-orientation" onClick={resetOrientation} className="rounded border border-stone-300 bg-white/90 px-2 py-0.5 text-stone-700">Reset orientation / Fit</button>
-        <button data-testid="focus-selection" onClick={focusSelection} disabled={!selection.length} className="rounded border border-stone-300 bg-white/90 px-2 py-0.5 text-stone-700 disabled:opacity-40">Focus selection</button>
+        {onClearSelection && <button data-testid="molstar-clear-selection" onClick={onClearSelection} disabled={!canClear} className="rounded border border-stone-300 bg-white/90 px-2 py-0.5 text-stone-700 disabled:opacity-40">Clear selection</button>}
         {status === 'loading' && <span className="rounded bg-white/90 px-2 py-0.5 text-stone-600">Loading {pdbId.toUpperCase()}…</span>}
         {status === 'error' && <span className="flex items-center gap-2 rounded bg-red-50 px-2 py-0.5 text-red-700" data-testid="molstar-error">{errorMsg ?? `Could not load ${pdbId.toUpperCase()}`}<button data-testid="molstar-retry" onClick={retryLoad} className="rounded border border-red-300 bg-white px-1.5 py-0.5 text-red-700">Retry</button></span>}
-      </div>
-      <div className="absolute bottom-2 left-2 z-10 rounded bg-white/90 px-2 py-0.5 text-[11px] text-stone-600" data-testid="orientation-badge">
-        {orientation == null ? 'Orientation: as deposited (no transform available)'
-          : applied ? `Reference frame: superposed on the family reference, RMSD ${applied.rmsd?.toFixed(2)} Å over ${applied.n_pairs} C4′ pairs (${applied.fit_quality})${applied.is_identity ? ' · reference structure' : ''}`
-          : `Orientation: as deposited (fit ${orientation.fit_quality}: ${orientation.n_pairs} shared positions with coordinates)`}
       </div>
     </div>
   )

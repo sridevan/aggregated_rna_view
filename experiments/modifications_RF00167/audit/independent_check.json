@@ -1,0 +1,32 @@
+{
+ "n_nonstandard_residue_observations": 13,
+ "n_instances_with_nonstandard": 9,
+ "n_entries_with_nonstandard": 8,
+ "n_distinct_ccd": 7,
+ "n_on_match": 6,
+ "n_on_insert": 0,
+ "n_outside_mapped_region": 7,
+ "distinct_positions": [
+  22,
+  32,
+  35,
+  84,
+  87
+ ],
+ "n_pdbe_records": 11,
+ "pdbe_minus_mmcif": [],
+ "mmcif_minus_pdbe": [
+  [
+   "5c7w",
+   "A",
+   4,
+   "50N"
+  ],
+  [
+   "5c7w",
+   "A",
+   64,
+   "50L"
+  ]
+ ]
+}

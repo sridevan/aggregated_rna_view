@@ -1,0 +1,4946 @@
+{
+ "execution": {
+  "n_instances": 84,
+  "status_counts": {
+   "pockets": 65,
+   "no_pockets": 19
+  },
+  "failures": [],
+  "warnings": [],
+  "total_seconds": 426.5,
+  "seconds_per_run": {
+   "min": 4.6,
+   "median": 5.0,
+   "max": 7.9
+  },
+  "input_checks": {
+   "roundtrip_ok": 84,
+   "altloc_copies_dropped_total": 738,
+   "modified_residues": {
+    "CCC": 2,
+    "GDP": 1,
+    "50L": 1,
+    "50N": 1,
+    "IU": 1,
+    "GTP": 4
+   },
+   "insertion_codes": 0
+  }
+ },
+ "pockets": {
+  "n_pockets": 70,
+  "pockets_per_instance": {
+   "0": 19,
+   "1": 60,
+   "2": 5
+  },
+  "score": {
+   "min": 0.11,
+   "q1": 0.455,
+   "median": 0.53,
+   "q3": 0.5575000000000001,
+   "max": 0.62
+  },
+  "volume_A3": {
+   "min": 130.0,
+   "median": 190.0,
+   "max": 700.0
+  },
+  "nucleotides_per_pocket": {
+   "min": 4,
+   "median": 9.0,
+   "max": 16
+  },
+  "n_pockets_score_ge_0.4": 59,
+  "n_pockets_score_lt_0.4": 11,
+  "pockets_with_flags": {
+   "includes_non_consensus_nucleotide": 6,
+   "includes_incomplete_nucleotide": 4,
+   "touches_chain_terminus": 4
+  },
+  "pockets_entirely_non_consensus": 4,
+  "mapping_checks": {
+   "nt_match_csv_all": true,
+   "map_consistent_all": true,
+   "unresolved_nucleotides": 0
+  },
+  "shape": {
+   "Balanced": 47,
+   "Disc-like": 8,
+   "Rod-like": 15
+  },
+  "most_frequent_positions_by_pocket_count": [
+   [
+    56,
+    62
+   ],
+   [
+    26,
+    59
+   ],
+   [
+    51,
+    59
+   ],
+   [
+    79,
+    59
+   ],
+   [
+    55,
+    57
+   ],
+   [
+    25,
+    56
+   ],
+   [
+    80,
+    56
+   ],
+   [
+    81,
+    56
+   ],
+   [
+    54,
+    54
+   ],
+   [
+    27,
+    23
+   ],
+   [
+    28,
+    23
+   ],
+   [
+    57,
+    21
+   ],
+   [
+    53,
+    13
+   ],
+   [
+    29,
+    13
+   ],
+   [
+    50,
+    9
+   ]
+  ]
+ },
+ "filters": {
+  "all_score_ge_0": {
+   "n_positions_nonzero": 36,
+   "n_positions_evaluable": 102,
+   "profile": {
+    "21": "1/79=0.0127",
+    "23": "1/79=0.0127",
+    "25": "56/79=0.7089",
+    "26": "58/80=0.725",
+    "27": "23/80=0.2875",
+    "28": "23/80=0.2875",
+    "29": "13/80=0.1625",
+    "30": "2/80=0.025",
+    "31": "2/80=0.025",
+    "32": "1/80=0.0125",
+    "35": "1/80=0.0125",
+    "36": "1/80=0.0125",
+    "37": "1/80=0.0125",
+    "38": "1/80=0.0125",
+    "46": "2/80=0.025",
+    "47": "2/80=0.025",
+    "48": "2/80=0.025",
+    "49": "3/80=0.0375",
+    "50": "9/80=0.1125",
+    "51": "59/75=0.7867",
+    "52": "3/80=0.0375",
+    "53": "13/80=0.1625",
+    "54": "54/80=0.675",
+    "55": "57/80=0.7125",
+    "56": "61/80=0.7625",
+    "57": "21/80=0.2625",
+    "58": "8/67=0.1194",
+    "59": "3/80=0.0375",
+    "70": "1/80=0.0125",
+    "71": "1/80=0.0125",
+    "78": "5/80=0.0625",
+    "79": "58/80=0.725",
+    "80": "56/80=0.7",
+    "81": "56/79=0.7089",
+    "83": "1/79=0.0127",
+    "85": "1/77=0.013"
+   },
+   "known_site": {
+    "25": [
+     56,
+     79,
+     0.7089
+    ],
+    "26": [
+     58,
+     80,
+     0.725
+    ],
+    "51": [
+     59,
+     75,
+     0.7867
+    ],
+    "54": [
+     54,
+     80,
+     0.675
+    ],
+    "55": [
+     57,
+     80,
+     0.7125
+    ],
+    "56": [
+     61,
+     80,
+     0.7625
+    ],
+    "79": [
+     58,
+     80,
+     0.725
+    ],
+    "80": [
+     56,
+     80,
+     0.7
+    ],
+    "81": [
+     56,
+     79,
+     0.7089
+    ]
+   },
+   "positions_ge_0.5": [
+    25,
+    26,
+    51,
+    54,
+    55,
+    56,
+    79,
+    80,
+    81
+   ],
+   "positions_0.1_0.5": [
+    27,
+    28,
+    29,
+    50,
+    53,
+    57,
+    58
+   ],
+   "positions_lt_0.1_nonzero": [
+    21,
+    23,
+    30,
+    31,
+    32,
+    35,
+    36,
+    37,
+    38,
+    46,
+    47,
+    48,
+    49,
+    52,
+    59,
+    70,
+    71,
+    78,
+    83,
+    85
+   ],
+   "n_instances_with_qualifying_pocket": 65,
+   "total_qualifying_pockets": 70,
+   "pockets_per_instance": {
+    "0": 19,
+    "1": 60,
+    "2": 5
+   },
+   "outside_known_positions_nonzero": [
+    21,
+    23,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    35,
+    36,
+    37,
+    38,
+    46,
+    47,
+    48,
+    49,
+    50,
+    52,
+    53,
+    57,
+    58,
+    59,
+    70,
+    71,
+    78,
+    83,
+    85
+   ]
+  },
+  "top1": {
+   "n_positions_nonzero": 20,
+   "n_positions_evaluable": 102,
+   "profile": {
+    "25": "56/79=0.7089",
+    "26": "58/80=0.725",
+    "27": "20/80=0.25",
+    "28": "20/80=0.25",
+    "29": "10/80=0.125",
+    "49": "1/80=0.0125",
+    "50": "9/80=0.1125",
+    "51": "59/75=0.7867",
+    "52": "3/80=0.0375",
+    "53": "13/80=0.1625",
+    "54": "54/80=0.675",
+    "55": "57/80=0.7125",
+    "56": "61/80=0.7625",
+    "57": "18/80=0.225",
+    "58": "5/67=0.0746",
+    "59": "3/80=0.0375",
+    "78": "5/80=0.0625",
+    "79": "58/80=0.725",
+    "80": "56/80=0.7",
+    "81": "56/79=0.7089"
+   },
+   "known_site": {
+    "25": [
+     56,
+     79,
+     0.7089
+    ],
+    "26": [
+     58,
+     80,
+     0.725
+    ],
+    "51": [
+     59,
+     75,
+     0.7867
+    ],
+    "54": [
+     54,
+     80,
+     0.675
+    ],
+    "55": [
+     57,
+     80,
+     0.7125
+    ],
+    "56": [
+     61,
+     80,
+     0.7625
+    ],
+    "79": [
+     58,
+     80,
+     0.725
+    ],
+    "80": [
+     56,
+     80,
+     0.7
+    ],
+    "81": [
+     56,
+     79,
+     0.7089
+    ]
+   },
+   "positions_ge_0.5": [
+    25,
+    26,
+    51,
+    54,
+    55,
+    56,
+    79,
+    80,
+    81
+   ],
+   "positions_0.1_0.5": [
+    27,
+    28,
+    29,
+    50,
+    53,
+    57
+   ],
+   "positions_lt_0.1_nonzero": [
+    49,
+    52,
+    58,
+    59,
+    78
+   ],
+   "n_instances_with_qualifying_pocket": 65,
+   "total_qualifying_pockets": 65,
+   "pockets_per_instance": {
+    "0": 19,
+    "1": 65
+   },
+   "outside_known_positions_nonzero": [
+    27,
+    28,
+    29,
+    49,
+    50,
+    52,
+    53,
+    57,
+    58,
+    59,
+    78
+   ]
+  },
+  "score_ge_0.4": {
+   "n_positions_nonzero": 26,
+   "n_positions_evaluable": 102,
+   "profile": {
+    "25": "51/79=0.6456",
+    "26": "52/80=0.65",
+    "27": "21/80=0.2625",
+    "28": "20/80=0.25",
+    "29": "12/80=0.15",
+    "30": "2/80=0.025",
+    "31": "2/80=0.025",
+    "32": "1/80=0.0125",
+    "46": "2/80=0.025",
+    "47": "2/80=0.025",
+    "48": "2/80=0.025",
+    "49": "2/80=0.025",
+    "50": "6/80=0.075",
+    "51": "52/75=0.6933",
+    "52": "2/80=0.025",
+    "53": "10/80=0.125",
+    "54": "48/80=0.6",
+    "55": "51/80=0.6375",
+    "56": "54/80=0.675",
+    "57": "18/80=0.225",
+    "58": "8/67=0.1194",
+    "59": "2/80=0.025",
+    "78": "4/80=0.05",
+    "79": "52/80=0.65",
+    "80": "51/80=0.6375",
+    "81": "51/79=0.6456"
+   },
+   "known_site": {
+    "25": [
+     51,
+     79,
+     0.6456
+    ],
+    "26": [
+     52,
+     80,
+     0.65
+    ],
+    "51": [
+     52,
+     75,
+     0.6933
+    ],
+    "54": [
+     48,
+     80,
+     0.6
+    ],
+    "55": [
+     51,
+     80,
+     0.6375
+    ],
+    "56": [
+     54,
+     80,
+     0.675
+    ],
+    "79": [
+     52,
+     80,
+     0.65
+    ],
+    "80": [
+     51,
+     80,
+     0.6375
+    ],
+    "81": [
+     51,
+     79,
+     0.6456
+    ]
+   },
+   "positions_ge_0.5": [
+    25,
+    26,
+    51,
+    54,
+    55,
+    56,
+    79,
+    80,
+    81
+   ],
+   "positions_0.1_0.5": [
+    27,
+    28,
+    29,
+    53,
+    57,
+    58
+   ],
+   "positions_lt_0.1_nonzero": [
+    30,
+    31,
+    32,
+    46,
+    47,
+    48,
+    49,
+    50,
+    52,
+    59,
+    78
+   ],
+   "n_instances_with_qualifying_pocket": 56,
+   "total_qualifying_pockets": 59,
+   "pockets_per_instance": {
+    "0": 28,
+    "1": 53,
+    "2": 3
+   },
+   "outside_known_positions_nonzero": [
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    46,
+    47,
+    48,
+    49,
+    50,
+    52,
+    53,
+    57,
+    58,
+    59,
+    78
+   ]
+  }
+ },
+ "reconstruction_matches_tracks": true,
+ "holo": {
+  "n": 75,
+  "n_with_pocket_overlapping_site": 58,
+  "n_top1_overlaps": 58,
+  "n_without_any_pocket": 17,
+  "recall_specific": {
+   "n": 58,
+   "median": 1.0,
+   "min": 0.25,
+   "max": 1.0
+  },
+  "precision_any": {
+   "n": 58,
+   "median": 1.0,
+   "min": 0.444,
+   "max": 1.0
+  },
+  "jaccard_any": {
+   "n": 58,
+   "median": 1.0,
+   "min": 0.286,
+   "max": 1.0
+  },
+  "best_score": {
+   "n": 58,
+   "median": 0.54,
+   "min": 0.25,
+   "max": 0.62
+  },
+  "best_volume": {
+   "n": 58,
+   "median": 175.0,
+   "min": 130.0,
+   "max": 700.0
+  },
+  "no_pocket_cases": [
+   [
+    "2eet_1_A_A",
+    "X-ray diffraction",
+    1.95,
+    67,
+    [
+     "HPA"
+    ]
+   ],
+   [
+    "2xnz_1_A_A",
+    "X-ray diffraction",
+    1.59,
+    67,
+    [
+     "3AW"
+    ]
+   ],
+   [
+    "3fo6_1_A_A",
+    "X-ray diffraction",
+    1.9,
+    68,
+    [
+     "6GO"
+    ]
+   ],
+   [
+    "3gog_1_A_A",
+    "X-ray diffraction",
+    2.1,
+    67,
+    [
+     "6GU"
+    ]
+   ],
+   [
+    "4fej_1_B_A",
+    "X-ray diffraction",
+    1.5,
+    67,
+    [
+     "HPA"
+    ]
+   ],
+   [
+    "4tzx_1_X_A",
+    "X-ray diffraction",
+    2.01,
+    71,
+    [
+     "ADE"
+    ]
+   ],
+   [
+    "5c7u_1_B_A",
+    "X-ray diffraction",
+    3.05,
+    67,
+    [
+     "HPA"
+    ]
+   ],
+   [
+    "6uc9_1_B_A",
+    "X-ray diffraction",
+    1.941,
+    67,
+    [
+     "CMG"
+    ]
+   ],
+   [
+    "6vwt_1_A_A",
+    "X-ray diffraction",
+    3.03,
+    71,
+    [
+     "ADE"
+    ]
+   ],
+   [
+    "6vwt_1_B_B",
+    "X-ray diffraction",
+    3.03,
+    71,
+    [
+     "ADE"
+    ]
+   ],
+   [
+    "6vwv_1_A_A",
+    "X-ray diffraction",
+    3.0,
+    71,
+    [
+     "ADE"
+    ]
+   ],
+   [
+    "6vwv_1_B_B",
+    "X-ray diffraction",
+    3.0,
+    71,
+    [
+     "ADE"
+    ]
+   ],
+   [
+    "9ndd_1_A_A",
+    "Electron Microscopy",
+    2.67,
+    160,
+    [
+     "OXG"
+    ]
+   ],
+   [
+    "9ndd_1_B_B",
+    "Electron Microscopy",
+    2.67,
+    160,
+    [
+     "OXG"
+    ]
+   ],
+   [
+    "9ndd_1_C_C",
+    "Electron Microscopy",
+    2.67,
+    160,
+    [
+     "OXG"
+    ]
+   ],
+   [
+    "9ndd_1_D_D",
+    "Electron Microscopy",
+    2.67,
+    160,
+    [
+     "OXG"
+    ]
+   ],
+   [
+    "9v4v_1_A_A",
+    "X-ray diffraction",
+    3.12,
+    71,
+    [
+     "7PD"
+    ]
+   ]
+  ],
+  "rows": [
+   {
+    "seq_name": "1y26_1_X_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.1,
+    "chain_length": 71,
+    "ccds": [
+     "ADE"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.53,
+     "volume_A3": 150.0,
+     "n_alpha_spheres": 48,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "1y27_1_X_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.4,
+    "chain_length": 68,
+    "ccds": [
+     "GUN"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.53,
+     "volume_A3": 150.0,
+     "n_alpha_spheres": 46,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "2b57_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.15,
+    "chain_length": 65,
+    "ccds": [
+     "6AP"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.57,
+     "volume_A3": 140.0,
+     "n_alpha_spheres": 43,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "2ees_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 1.75,
+    "chain_length": 67,
+    "ccds": [
+     "HPA"
+    ],
+    "contacts_specific": [
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.57,
+     "volume_A3": 170.0,
+     "n_alpha_spheres": 51,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "2eet_1_A_A",
+    "status": "no_pockets",
+    "n_pockets": 0,
+    "method": "X-ray diffraction",
+    "resolution": 1.95,
+    "chain_length": 67,
+    "ccds": [
+     "HPA"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": null,
+    "top1_is_best": false,
+    "n_pockets_overlapping_site": 0
+   },
+   {
+    "seq_name": "2eeu_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 1.95,
+    "chain_length": 67,
+    "ccds": [
+     "HPA"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     27,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.54,
+     "volume_A3": 160.0,
+     "n_alpha_spheres": 45,
+     "shape": "Disc-like",
+     "positions": [
+      25,
+      26,
+      27,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "2eev_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 1.95,
+    "chain_length": 67,
+    "ccds": [
+     "HPA"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.59,
+     "volume_A3": 130.0,
+     "n_alpha_spheres": 46,
+     "shape": "Disc-like",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "2eew_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.25,
+    "chain_length": 67,
+    "ccds": [
+     "HPA"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.59,
+     "volume_A3": 220.0,
+     "n_alpha_spheres": 63,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      27,
+      28,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 0.818,
+     "jaccard_any": 0.818
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "2g9c_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 1.7,
+    "chain_length": 67,
+    "ccds": [
+     "3AY"
+    ],
+    "contacts_specific": [
+     25,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.61,
+     "volume_A3": 230.0,
+     "n_alpha_spheres": 58,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      27,
+      28,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 0.818,
+     "jaccard_any": 0.818
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "2xnw_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 1.5,
+    "chain_length": 67,
+    "ccds": [
+     "ZZR"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.54,
+     "volume_A3": 150.0,
+     "n_alpha_spheres": 43,
+     "shape": "Disc-like",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "2xnz_1_A_A",
+    "status": "no_pockets",
+    "n_pockets": 0,
+    "method": "X-ray diffraction",
+    "resolution": 1.59,
+    "chain_length": 67,
+    "ccds": [
+     "3AW"
+    ],
+    "contacts_specific": [
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": null,
+    "top1_is_best": false,
+    "n_pockets_overlapping_site": 0
+   },
+   {
+    "seq_name": "2xo0_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 1.7,
+    "chain_length": 67,
+    "ccds": [
+     "ZZS"
+    ],
+    "contacts_specific": [
+     25,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.53,
+     "volume_A3": 160.0,
+     "n_alpha_spheres": 47,
+     "shape": "Disc-like",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "2xo1_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 1.6,
+    "chain_length": 67,
+    "ccds": [
+     "N6M"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     27,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.55,
+     "volume_A3": 220.0,
+     "n_alpha_spheres": 57,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      27,
+      28,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 0.909,
+     "jaccard_any": 0.909
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "3ds7_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 1.85,
+    "chain_length": 67,
+    "ccds": [
+     "GNG"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     54,
+     55,
+     80,
+     82
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     53,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81,
+     82
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.48,
+     "volume_A3": 220.0,
+     "n_alpha_spheres": 51,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 0.833,
+     "precision_any": 1.0,
+     "jaccard_any": 0.818
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "3ds7_1_B_B",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 1.85,
+    "chain_length": 67,
+    "ccds": [
+     "GNG"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     54,
+     55,
+     80
+    ],
+    "contacts_any": [
+     25,
+     26,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81,
+     82
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.39,
+     "volume_A3": 250.0,
+     "n_alpha_spheres": 52,
+     "shape": "Rod-like",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 0.889,
+     "jaccard_any": 0.8
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "3fo4_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 1.9,
+    "chain_length": 68,
+    "ccds": [
+     "6GU"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.53,
+     "volume_A3": 160.0,
+     "n_alpha_spheres": 44,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "3fo6_1_A_A",
+    "status": "no_pockets",
+    "n_pockets": 0,
+    "method": "X-ray diffraction",
+    "resolution": 1.9,
+    "chain_length": 68,
+    "ccds": [
+     "6GO"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": null,
+    "top1_is_best": false,
+    "n_pockets_overlapping_site": 0
+   },
+   {
+    "seq_name": "3g4m_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.4,
+    "chain_length": 67,
+    "ccds": [
+     "2BP"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     80
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.55,
+     "volume_A3": 150.0,
+     "n_alpha_spheres": 45,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 0.889
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "3gao_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 1.9,
+    "chain_length": 67,
+    "ccds": [
+     "XAN"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.55,
+     "volume_A3": 160.0,
+     "n_alpha_spheres": 47,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      53,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 0.9,
+     "jaccard_any": 0.9
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "3ger_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 1.7,
+    "chain_length": 67,
+    "ccds": [
+     "6GU"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.55,
+     "volume_A3": 150.0,
+     "n_alpha_spheres": 42,
+     "shape": "Disc-like",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "3ges_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.15,
+    "chain_length": 67,
+    "ccds": [
+     "6GO"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.56,
+     "volume_A3": 150.0,
+     "n_alpha_spheres": 47,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "3gog_1_A_A",
+    "status": "no_pockets",
+    "n_pockets": 0,
+    "method": "X-ray diffraction",
+    "resolution": 2.1,
+    "chain_length": 67,
+    "ccds": [
+     "6GU"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": null,
+    "top1_is_best": false,
+    "n_pockets_overlapping_site": 0
+   },
+   {
+    "seq_name": "3got_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 1.95,
+    "chain_length": 67,
+    "ccds": [
+     "A2F"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.55,
+     "volume_A3": 140.0,
+     "n_alpha_spheres": 42,
+     "shape": "Disc-like",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "3la5_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 1.7,
+    "chain_length": 71,
+    "ccds": [
+     "5AZ"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     55,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.56,
+     "volume_A3": 270.0,
+     "n_alpha_spheres": 63,
+     "shape": "Rod-like",
+     "positions": [
+      25,
+      26,
+      27,
+      28,
+      51,
+      53,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 0.667,
+     "jaccard_any": 0.667
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "3rkf_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.5,
+    "chain_length": 67,
+    "ccds": [
+     "DX4"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     80
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     53,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.58,
+     "volume_A3": 440.0,
+     "n_alpha_spheres": 111,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      27,
+      28,
+      51,
+      54,
+      55,
+      56,
+      57,
+      58,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 0.692,
+     "jaccard_any": 0.643
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "3rkf_1_B_B",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.5,
+    "chain_length": 67,
+    "ccds": [
+     "DX4"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.5,
+     "volume_A3": 180.0,
+     "n_alpha_spheres": 59,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "3rkf_1_C_C",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.5,
+    "chain_length": 67,
+    "ccds": [
+     "DX4"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     80
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     53,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.51,
+     "volume_A3": 170.0,
+     "n_alpha_spheres": 48,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 0.9
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "3rkf_1_D_D",
+    "status": "pockets",
+    "n_pockets": 2,
+    "method": "X-ray diffraction",
+    "resolution": 2.5,
+    "chain_length": 67,
+    "ccds": [
+     "DX4"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     53,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.47,
+     "volume_A3": 180.0,
+     "n_alpha_spheres": 51,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 0.9
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 2
+   },
+   {
+    "seq_name": "4fe5_1_B_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 1.32,
+    "chain_length": 67,
+    "ccds": [
+     "HPA"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.55,
+     "volume_A3": 140.0,
+     "n_alpha_spheres": 43,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "4fej_1_B_A",
+    "status": "no_pockets",
+    "n_pockets": 0,
+    "method": "X-ray diffraction",
+    "resolution": 1.5,
+    "chain_length": 67,
+    "ccds": [
+     "HPA"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": null,
+    "top1_is_best": false,
+    "n_pockets_overlapping_site": 0
+   },
+   {
+    "seq_name": "4fel_1_B_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 1.6,
+    "chain_length": 67,
+    "ccds": [
+     "HPA"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.56,
+     "volume_A3": 150.0,
+     "n_alpha_spheres": 45,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "4fen_1_B_A",
+    "status": "pockets",
+    "n_pockets": 2,
+    "method": "X-ray diffraction",
+    "resolution": 1.35,
+    "chain_length": 67,
+    "ccds": [
+     "HPA"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.54,
+     "volume_A3": 150.0,
+     "n_alpha_spheres": 48,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "4feo_1_B_A",
+    "status": "pockets",
+    "n_pockets": 2,
+    "method": "X-ray diffraction",
+    "resolution": 1.6,
+    "chain_length": 67,
+    "ccds": [
+     "6AP"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.55,
+     "volume_A3": 160.0,
+     "n_alpha_spheres": 44,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "4fep_1_B_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 1.65,
+    "chain_length": 67,
+    "ccds": [
+     "6AP"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.53,
+     "volume_A3": 150.0,
+     "n_alpha_spheres": 43,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "4lx5_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.13,
+    "chain_length": 71,
+    "ccds": [
+     "29G"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     55,
+     56,
+     80
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.54,
+     "volume_A3": 180.0,
+     "n_alpha_spheres": 51,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "4lx6_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.15,
+    "chain_length": 71,
+    "ccds": [
+     "29H"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.51,
+     "volume_A3": 170.0,
+     "n_alpha_spheres": 45,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "4tzx_1_X_A",
+    "status": "no_pockets",
+    "n_pockets": 0,
+    "method": "X-ray diffraction",
+    "resolution": 2.01,
+    "chain_length": 71,
+    "ccds": [
+     "ADE"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": null,
+    "top1_is_best": false,
+    "n_pockets_overlapping_site": 0
+   },
+   {
+    "seq_name": "4tzy_1_X_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.57,
+    "chain_length": 71,
+    "ccds": [
+     "ADE"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.54,
+     "volume_A3": 150.0,
+     "n_alpha_spheres": 52,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "4xnr_1_X_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.21,
+    "chain_length": 71,
+    "ccds": [
+     "ADE"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.57,
+     "volume_A3": 150.0,
+     "n_alpha_spheres": 52,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "5c7u_1_B_A",
+    "status": "no_pockets",
+    "n_pockets": 0,
+    "method": "X-ray diffraction",
+    "resolution": 3.05,
+    "chain_length": 67,
+    "ccds": [
+     "HPA"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     55,
+     56,
+     80
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": null,
+    "top1_is_best": false,
+    "n_pockets_overlapping_site": 0
+   },
+   {
+    "seq_name": "5c7w_1_C_A",
+    "status": "pockets",
+    "n_pockets": 2,
+    "method": "X-ray diffraction",
+    "resolution": 3.22,
+    "chain_length": 67,
+    "ccds": [
+     "HPA"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.33,
+     "volume_A3": 160.0,
+     "n_alpha_spheres": 47,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "5swd_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.5,
+    "chain_length": 71,
+    "ccds": [
+     "ADE"
+    ],
+    "contacts_specific": [
+     25,
+     52,
+     53,
+     80
+    ],
+    "contacts_any": [
+     25,
+     26,
+     27,
+     28,
+     52,
+     53,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.48,
+     "volume_A3": 200.0,
+     "n_alpha_spheres": 57,
+     "shape": "Rod-like",
+     "positions": [
+      27,
+      28,
+      29,
+      50,
+      51,
+      53,
+      56,
+      57,
+      79
+     ],
+     "recall_specific": 0.25,
+     "precision_any": 0.444,
+     "jaccard_any": 0.286
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "5swe_1_X_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 3.0,
+    "chain_length": 71,
+    "ccds": [
+     "ADE"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.53,
+     "volume_A3": 190.0,
+     "n_alpha_spheres": 48,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "5uza_1_X_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.22,
+    "chain_length": 71,
+    "ccds": [
+     "ADE"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.57,
+     "volume_A3": 150.0,
+     "n_alpha_spheres": 50,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "6p2h_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.803,
+    "chain_length": 69,
+    "ccds": [
+     "GNG"
+    ],
+    "contacts_specific": [
+     26,
+     53,
+     54,
+     55,
+     56
+    ],
+    "contacts_any": [
+     26,
+     51,
+     52,
+     53,
+     54,
+     55,
+     56
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.36,
+     "volume_A3": 290.0,
+     "n_alpha_spheres": 88,
+     "shape": "Balanced",
+     "positions": [
+      26,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "6ubu_1_B_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 1.6,
+    "chain_length": 67,
+    "ccds": [
+     "GUN"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.54,
+     "volume_A3": 150.0,
+     "n_alpha_spheres": 44,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "6uc7_1_B_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 1.798,
+    "chain_length": 67,
+    "ccds": [
+     "Q44"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     79,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.37,
+     "volume_A3": 310.0,
+     "n_alpha_spheres": 93,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 0.889,
+     "jaccard_any": 0.889
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "6uc8_1_B_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 1.898,
+    "chain_length": 67,
+    "ccds": [
+     "ANG"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.57,
+     "volume_A3": 160.0,
+     "n_alpha_spheres": 47,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "6uc9_1_B_A",
+    "status": "no_pockets",
+    "n_pockets": 0,
+    "method": "X-ray diffraction",
+    "resolution": 1.941,
+    "chain_length": 67,
+    "ccds": [
+     "CMG"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     27,
+     28,
+     51,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     27,
+     28,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": null,
+    "top1_is_best": false,
+    "n_pockets_overlapping_site": 0
+   },
+   {
+    "seq_name": "6vwt_1_A_A",
+    "status": "no_pockets",
+    "n_pockets": 0,
+    "method": "X-ray diffraction",
+    "resolution": 3.03,
+    "chain_length": 71,
+    "ccds": [
+     "ADE"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": null,
+    "top1_is_best": false,
+    "n_pockets_overlapping_site": 0
+   },
+   {
+    "seq_name": "6vwt_1_B_B",
+    "status": "no_pockets",
+    "n_pockets": 0,
+    "method": "X-ray diffraction",
+    "resolution": 3.03,
+    "chain_length": 71,
+    "ccds": [
+     "ADE"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": null,
+    "top1_is_best": false,
+    "n_pockets_overlapping_site": 0
+   },
+   {
+    "seq_name": "6vwv_1_A_A",
+    "status": "no_pockets",
+    "n_pockets": 0,
+    "method": "X-ray diffraction",
+    "resolution": 3.0,
+    "chain_length": 71,
+    "ccds": [
+     "ADE"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": null,
+    "top1_is_best": false,
+    "n_pockets_overlapping_site": 0
+   },
+   {
+    "seq_name": "6vwv_1_B_B",
+    "status": "no_pockets",
+    "n_pockets": 0,
+    "method": "X-ray diffraction",
+    "resolution": 3.0,
+    "chain_length": 71,
+    "ccds": [
+     "ADE"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": null,
+    "top1_is_best": false,
+    "n_pockets_overlapping_site": 0
+   },
+   {
+    "seq_name": "9iwf_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.06,
+    "chain_length": 69,
+    "ccds": [
+     "GTP",
+     "XAN"
+    ],
+    "contacts_specific": [
+     20,
+     25,
+     26,
+     55,
+     56,
+     80,
+     81,
+     86
+    ],
+    "contacts_any": [
+     20,
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81,
+     82,
+     85,
+     86
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.61,
+     "volume_A3": 320.0,
+     "n_alpha_spheres": 86,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      51,
+      54,
+      55,
+      56,
+      57,
+      58,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 0.75,
+     "precision_any": 0.643,
+     "jaccard_any": 0.5
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "9iwf_1_B_B",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.06,
+    "chain_length": 69,
+    "ccds": [
+     "GTP",
+     "XAN"
+    ],
+    "contacts_specific": [
+     20,
+     25,
+     26,
+     55,
+     56,
+     80,
+     81,
+     86
+    ],
+    "contacts_any": [
+     20,
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81,
+     85,
+     86
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.62,
+     "volume_A3": 340.0,
+     "n_alpha_spheres": 96,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      51,
+      54,
+      55,
+      56,
+      57,
+      58,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 0.75,
+     "precision_any": 0.643,
+     "jaccard_any": 0.529
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "9iwg_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.48,
+    "chain_length": 69,
+    "ccds": [
+     "GTP",
+     "XAN"
+    ],
+    "contacts_specific": [
+     20,
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81,
+     86
+    ],
+    "contacts_any": [
+     20,
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81,
+     86
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.6,
+     "volume_A3": 200.0,
+     "n_alpha_spheres": 43,
+     "shape": "Rod-like",
+     "positions": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      55,
+      56,
+      57,
+      58,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 0.667,
+     "precision_any": 0.583,
+     "jaccard_any": 0.438
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "9iwg_1_B_B",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.48,
+    "chain_length": 69,
+    "ccds": [
+     "GTP",
+     "XAN"
+    ],
+    "contacts_specific": [
+     20,
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81,
+     84,
+     85,
+     86
+    ],
+    "contacts_any": [
+     20,
+     21,
+     22,
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81,
+     83,
+     84,
+     85,
+     86
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.57,
+     "volume_A3": 220.0,
+     "n_alpha_spheres": 64,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      57,
+      58,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 0.636,
+     "precision_any": 0.818,
+     "jaccard_any": 0.5
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "9ljn_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.75,
+    "chain_length": 71,
+    "ccds": [
+     "GUN"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.56,
+     "volume_A3": 580.0,
+     "n_alpha_spheres": 111,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      50,
+      51,
+      54,
+      55,
+      56,
+      57,
+      59,
+      78,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 0.562,
+     "jaccard_any": 0.562
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "9lkc_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.61,
+    "chain_length": 71,
+    "ccds": [
+     "GNG"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     53,
+     54,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     52,
+     53,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81,
+     82
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.37,
+     "volume_A3": 600.0,
+     "n_alpha_spheres": 98,
+     "shape": "Disc-like",
+     "positions": [
+      25,
+      26,
+      27,
+      28,
+      50,
+      51,
+      53,
+      54,
+      55,
+      56,
+      57,
+      78,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 0.667,
+     "jaccard_any": 0.588
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "9lke_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.26,
+    "chain_length": 70,
+    "ccds": [
+     "GTP",
+     "HPA"
+    ],
+    "contacts_specific": [
+     19,
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     19,
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81,
+     87
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.49,
+     "volume_A3": 320.0,
+     "n_alpha_spheres": 75,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      27,
+      28,
+      51,
+      54,
+      55,
+      56,
+      57,
+      78,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 0.875,
+     "precision_any": 0.692,
+     "jaccard_any": 0.6
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "9lkf_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.83,
+    "chain_length": 71,
+    "ccds": [
+     "GMP"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     53,
+     54,
+     55,
+     80
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     52,
+     53,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81,
+     82
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.41,
+     "volume_A3": 350.0,
+     "n_alpha_spheres": 80,
+     "shape": "Rod-like",
+     "positions": [
+      25,
+      26,
+      27,
+      28,
+      51,
+      53,
+      54,
+      55,
+      56,
+      57,
+      78,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 0.714,
+     "jaccard_any": 0.625
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "9lmc_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.97,
+    "chain_length": 71,
+    "ccds": [
+     "GUN"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.48,
+     "volume_A3": 380.0,
+     "n_alpha_spheres": 76,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      50,
+      51,
+      54,
+      55,
+      56,
+      57,
+      78,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 0.6,
+     "jaccard_any": 0.6
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "9lmc_1_B_B",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.97,
+    "chain_length": 71,
+    "ccds": [
+     "GTP",
+     "GUN"
+    ],
+    "contacts_specific": [
+     19,
+     25,
+     26,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     19,
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81,
+     87
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.45,
+     "volume_A3": 270.0,
+     "n_alpha_spheres": 63,
+     "shape": "Rod-like",
+     "positions": [
+      25,
+      26,
+      51,
+      53,
+      54,
+      55,
+      56,
+      57,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 0.857,
+     "precision_any": 0.818,
+     "jaccard_any": 0.692
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "9nbc_1_A_A",
+    "status": "pockets",
+    "n_pockets": 2,
+    "method": "Electron Microscopy",
+    "resolution": 2.87,
+    "chain_length": 160,
+    "ccds": [
+     "OXG"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     55,
+     56,
+     80
+    ],
+    "contacts_any": [
+     25,
+     26,
+     52,
+     53,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.51,
+     "volume_A3": 210.0,
+     "n_alpha_spheres": 61,
+     "shape": "Rod-like",
+     "positions": [
+      25,
+      26,
+      52,
+      53,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "9ndd_1_A_A",
+    "status": "no_pockets",
+    "n_pockets": 0,
+    "method": "Electron Microscopy",
+    "resolution": 2.67,
+    "chain_length": 160,
+    "ccds": [
+     "OXG"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     52,
+     53,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": null,
+    "top1_is_best": false,
+    "n_pockets_overlapping_site": 0
+   },
+   {
+    "seq_name": "9ndd_1_B_B",
+    "status": "no_pockets",
+    "n_pockets": 0,
+    "method": "Electron Microscopy",
+    "resolution": 2.67,
+    "chain_length": 160,
+    "ccds": [
+     "OXG"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     52,
+     53,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": null,
+    "top1_is_best": false,
+    "n_pockets_overlapping_site": 0
+   },
+   {
+    "seq_name": "9ndd_1_C_C",
+    "status": "no_pockets",
+    "n_pockets": 0,
+    "method": "Electron Microscopy",
+    "resolution": 2.67,
+    "chain_length": 160,
+    "ccds": [
+     "OXG"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     52,
+     53,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": null,
+    "top1_is_best": false,
+    "n_pockets_overlapping_site": 0
+   },
+   {
+    "seq_name": "9ndd_1_D_D",
+    "status": "no_pockets",
+    "n_pockets": 0,
+    "method": "Electron Microscopy",
+    "resolution": 2.67,
+    "chain_length": 160,
+    "ccds": [
+     "OXG"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     53,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     52,
+     53,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": null,
+    "top1_is_best": false,
+    "n_pockets_overlapping_site": 0
+   },
+   {
+    "seq_name": "9v4u_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.54,
+    "chain_length": 71,
+    "ccds": [
+     "NPR"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     27,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.42,
+     "volume_A3": 610.0,
+     "n_alpha_spheres": 127,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      50,
+      51,
+      53,
+      54,
+      55,
+      56,
+      57,
+      59,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 0.625,
+     "jaccard_any": 0.625
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "9v4v_1_A_A",
+    "status": "no_pockets",
+    "n_pockets": 0,
+    "method": "X-ray diffraction",
+    "resolution": 3.12,
+    "chain_length": 71,
+    "ccds": [
+     "7PD"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     80
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": null,
+    "top1_is_best": false,
+    "n_pockets_overlapping_site": 0
+   },
+   {
+    "seq_name": "9v4x_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.92,
+    "chain_length": 71,
+    "ccds": [
+     "9QC"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.52,
+     "volume_A3": 170.0,
+     "n_alpha_spheres": 58,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 1.0
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "9v4y_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.79,
+    "chain_length": 71,
+    "ccds": [
+     "ANG"
+    ],
+    "contacts_specific": [
+     19,
+     25,
+     26,
+     55,
+     56,
+     80,
+     81,
+     87
+    ],
+    "contacts_any": [
+     19,
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81,
+     87
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.58,
+     "volume_A3": 190.0,
+     "n_alpha_spheres": 59,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      53,
+      54,
+      55,
+      56,
+      80,
+      81
+     ],
+     "recall_specific": 0.75,
+     "precision_any": 0.889,
+     "jaccard_any": 0.667
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "9v4z_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.74,
+    "chain_length": 71,
+    "ccds": [
+     "OXG"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.48,
+     "volume_A3": 250.0,
+     "n_alpha_spheres": 70,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      27,
+      28,
+      51,
+      54,
+      55,
+      56,
+      57,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 0.75,
+     "jaccard_any": 0.75
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "9v50_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 3.25,
+    "chain_length": 71,
+    "ccds": [
+     "A1LXN"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     51,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     27,
+     51,
+     53,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.53,
+     "volume_A3": 160.0,
+     "n_alpha_spheres": 58,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      51,
+      55,
+      56,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 1.0,
+     "jaccard_any": 0.636
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   },
+   {
+    "seq_name": "9v51_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 3.23,
+    "chain_length": 71,
+    "ccds": [
+     "H4B"
+    ],
+    "contacts_specific": [
+     25,
+     26,
+     55,
+     56,
+     80,
+     81
+    ],
+    "contacts_any": [
+     25,
+     26,
+     51,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    "best_pocket": {
+     "rank": 1,
+     "score": 0.25,
+     "volume_A3": 700.0,
+     "n_alpha_spheres": 148,
+     "shape": "Balanced",
+     "positions": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      49,
+      50,
+      51,
+      54,
+      55,
+      56,
+      57,
+      59,
+      79,
+      80,
+      81
+     ],
+     "recall_specific": 1.0,
+     "precision_any": 0.562,
+     "jaccard_any": 0.562
+    },
+    "top1_is_best": true,
+    "n_pockets_overlapping_site": 1
+   }
+  ]
+ },
+ "apo": {
+  "n": 9,
+  "rows": [
+   {
+    "seq_name": "3ivn_1_A_A",
+    "status": "no_pockets",
+    "n_pockets": 0,
+    "method": "X-ray diffraction",
+    "resolution": 2.8,
+    "chain_length": 70,
+    "pockets": [],
+    "known_overlap_top1": 0
+   },
+   {
+    "seq_name": "3ivn_1_B_B",
+    "status": "no_pockets",
+    "n_pockets": 0,
+    "method": "X-ray diffraction",
+    "resolution": 2.8,
+    "chain_length": 70,
+    "pockets": [],
+    "known_overlap_top1": 0
+   },
+   {
+    "seq_name": "5e54_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.3,
+    "chain_length": 71,
+    "pockets": [
+     [
+      1,
+      0.5,
+      [
+       27,
+       28,
+       29,
+       50,
+       51,
+       53,
+       56,
+       57,
+       79
+      ]
+     ]
+    ],
+    "known_overlap_top1": 3
+   },
+   {
+    "seq_name": "5e54_1_B_B",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.3,
+    "chain_length": 71,
+    "pockets": [
+     [
+      1,
+      0.39,
+      [
+       28,
+       50,
+       51,
+       53,
+       56,
+       57,
+       79
+      ]
+     ]
+    ],
+    "known_overlap_top1": 3
+   },
+   {
+    "seq_name": "5swd_1_B_B",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "X-ray diffraction",
+    "resolution": 2.5,
+    "chain_length": 71,
+    "pockets": [
+     [
+      1,
+      0.42,
+      [
+       26,
+       27,
+       28,
+       29,
+       50,
+       51,
+       52,
+       53,
+       56,
+       57,
+       79
+      ]
+     ]
+    ],
+    "known_overlap_top1": 4
+   },
+   {
+    "seq_name": "9nbh_1_A_A",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "Electron Microscopy",
+    "resolution": 2.52,
+    "chain_length": 160,
+    "pockets": [
+     [
+      1,
+      0.38,
+      []
+     ]
+    ],
+    "known_overlap_top1": 0
+   },
+   {
+    "seq_name": "9nbh_1_B_B",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "Electron Microscopy",
+    "resolution": 2.52,
+    "chain_length": 160,
+    "pockets": [
+     [
+      1,
+      0.47,
+      []
+     ]
+    ],
+    "known_overlap_top1": 0
+   },
+   {
+    "seq_name": "9nbh_1_C_C",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "Electron Microscopy",
+    "resolution": 2.52,
+    "chain_length": 160,
+    "pockets": [
+     [
+      1,
+      0.39,
+      []
+     ]
+    ],
+    "known_overlap_top1": 0
+   },
+   {
+    "seq_name": "9nbh_1_D_D",
+    "status": "pockets",
+    "n_pockets": 1,
+    "method": "Electron Microscopy",
+    "resolution": 2.52,
+    "chain_length": 160,
+    "pockets": [
+     [
+      1,
+      0.47,
+      []
+     ]
+    ],
+    "known_overlap_top1": 0
+   }
+  ]
+ },
+ "no_contact_data": [],
+ "variability": {
+  "by_method": {
+   "Electron Microscopy": {
+    "n": 9,
+    "with_pockets": 5,
+    "mean_pockets": 0.67
+   },
+   "X-ray diffraction": {
+    "n": 75,
+    "with_pockets": 60,
+    "mean_pockets": 0.85
+   }
+  },
+  "by_resolution_band": {
+   "2.0-2.5": {
+    "n": 25,
+    "with_pockets": 23,
+    "mean_pockets": 0.96
+   },
+   "2.5-3.0": {
+    "n": 25,
+    "with_pockets": 17,
+    "mean_pockets": 0.72
+   },
+   "<=2.0": {
+    "n": 27,
+    "with_pockets": 22,
+    "mean_pockets": 0.89
+   },
+   ">3.0": {
+    "n": 7,
+    "with_pockets": 3,
+    "mean_pockets": 0.57
+   }
+  },
+  "by_length_band": {
+   "<=72": {
+    "n": 75,
+    "with_pockets": 60,
+    "mean_pockets": 0.85
+   },
+   ">110 (scaffold)": {
+    "n": 9,
+    "with_pockets": 5,
+    "mean_pockets": 0.67
+   }
+  },
+  "by_modified": {
+   "False": {
+    "n": 77,
+    "with_pockets": 59,
+    "mean_pockets": 0.82
+   },
+   "True": {
+    "n": 7,
+    "with_pockets": 6,
+    "mean_pockets": 1.0
+   }
+  },
+  "flagged_pockets": {
+   "includes_non_consensus_nucleotide": 6,
+   "includes_incomplete_nucleotide": 4,
+   "touches_chain_terminus": 4
+  },
+  "scaffold_instances": [
+   "9nbc_1_A_A",
+   "9nbh_1_A_A",
+   "9nbh_1_B_B",
+   "9nbh_1_C_C",
+   "9nbh_1_D_D",
+   "9ndd_1_A_A",
+   "9ndd_1_B_B",
+   "9ndd_1_C_C",
+   "9ndd_1_D_D"
+  ],
+  "pockets_on_scaffold_instances": [
+   [
+    "9nbc_1_A_A",
+    1,
+    0.51,
+    [
+     25,
+     26,
+     52,
+     53,
+     54,
+     55,
+     56,
+     79,
+     80,
+     81
+    ],
+    0
+   ],
+   [
+    "9nbc_1_A_A",
+    2,
+    0.2,
+    [
+     35,
+     36,
+     37,
+     38,
+     70,
+     71
+    ],
+    0
+   ],
+   [
+    "9nbh_1_A_A",
+    1,
+    0.38,
+    [],
+    11
+   ],
+   [
+    "9nbh_1_B_B",
+    1,
+    0.47,
+    [],
+    9
+   ],
+   [
+    "9nbh_1_C_C",
+    1,
+    0.39,
+    [],
+    9
+   ],
+   [
+    "9nbh_1_D_D",
+    1,
+    0.47,
+    [],
+    11
+   ]
+  ],
+  "aptamer_only_subset_known_site": {
+   "n_instances": 75,
+   "profile": {
+    "25": "55/74=0.743",
+    "26": "57/75=0.76",
+    "51": "59/75=0.787",
+    "54": "53/75=0.707",
+    "55": "56/75=0.747",
+    "56": "60/75=0.8",
+    "79": "57/75=0.76",
+    "80": "55/75=0.733",
+    "81": "55/74=0.743"
+   }
+  }
+ },
+ "reproducibility": [
+  {
+   "seq_name": "1y26_1_X_A",
+   "n_pockets": [
+    1,
+    1
+   ],
+   "scores_identical": true,
+   "alpha_spheres_identical": true,
+   "lining_nucleotides_identical": true,
+   "volume_rel_diff_max": 0.0
+  },
+  {
+   "seq_name": "3rkf_1_A_A",
+   "n_pockets": [
+    1,
+    1
+   ],
+   "scores_identical": true,
+   "alpha_spheres_identical": true,
+   "lining_nucleotides_identical": true,
+   "volume_rel_diff_max": 0.0
+  },
+  {
+   "seq_name": "4fe5_1_B_A",
+   "n_pockets": [
+    1,
+    1
+   ],
+   "scores_identical": true,
+   "alpha_spheres_identical": true,
+   "lining_nucleotides_identical": true,
+   "volume_rel_diff_max": 0.0
+  },
+  {
+   "seq_name": "5e54_1_A_A",
+   "n_pockets": [
+    1,
+    1
+   ],
+   "scores_identical": true,
+   "alpha_spheres_identical": true,
+   "lining_nucleotides_identical": true,
+   "volume_rel_diff_max": 0.0
+  },
+  {
+   "seq_name": "6p2h_1_A_A",
+   "n_pockets": [
+    1,
+    1
+   ],
+   "scores_identical": true,
+   "alpha_spheres_identical": true,
+   "lining_nucleotides_identical": true,
+   "volume_rel_diff_max": 0.0345
+  },
+  {
+   "seq_name": "9ndd_1_A_A",
+   "n_pockets": [
+    0,
+    0
+   ],
+   "scores_identical": true,
+   "alpha_spheres_identical": true,
+   "lining_nucleotides_identical": true,
+   "volume_rel_diff_max": 0.0
+  }
+ ]
+}

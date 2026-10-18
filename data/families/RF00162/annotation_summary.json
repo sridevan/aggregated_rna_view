@@ -1,0 +1,283 @@
+{
+ "rfam_acc": "RF00162",
+ "generated": "2026-10-17T15:16:45+00:00",
+ "n_instances": 29,
+ "n_entries": 28,
+ "reference_structural_elements": {
+  "n_consensus_positions_annotated": 0,
+  "reference": null,
+  "instance_transfer": {
+   "source": "BGSU correspondence/nucleotide_annotation per chain (labels transferred by BGSU)",
+   "n_instances": 29,
+   "n_instances_evaluated": 0,
+   "n_instances_unavailable": 29,
+   "unavailable_instances": [
+    "2gis_1_A_A",
+    "2ydh_1_A_A",
+    "2ygh_1_A_A",
+    "3gx2_1_A_A",
+    "3gx3_1_A_A",
+    "3gx5_1_A_A",
+    "3gx6_1_A_A",
+    "3gx7_1_A_A",
+    "3iqn_1_A_A",
+    "3iqp_1_A_A",
+    "3iqr_1_A_A",
+    "3v7e_2_C_C",
+    "3v7e_2_D_D",
+    "4aob_1_A_A",
+    "4b5r_1_A_A",
+    "4kqy_1_A_A",
+    "5fjc_1_A_A",
+    "5fk1_1_A_A",
+    "5fk2_1_A_A",
+    "5fk3_1_A_A",
+    "5fk4_1_A_A",
+    "5fk5_1_A_A",
+    "5fk6_1_A_A",
+    "5fkd_1_A_A",
+    "5fke_1_A_A",
+    "5fkf_1_A_A",
+    "5fkg_1_A_A",
+    "5fkh_1_A_A",
+    "7eaf_1_A_A"
+   ],
+   "n_nucleotide_labels": 0,
+   "mapping_status_counts": {},
+   "n_labels_agree_with_family_track": 0,
+   "n_labels_disagree": 0
+  },
+  "n_conflicts": 0,
+  "n_reference_nucleotides_not_on_consensus": 0
+ },
+ "loops": {
+  "n_loops": 351,
+  "n_with_motif_group": 269,
+  "motif_group_assignment_counts": {
+   "geometric": 123,
+   "homologous": 114,
+   "none": 82,
+   "member": 32
+  },
+  "n_problematic": 9,
+  "n_distinct_motif_groups": 17,
+  "by_type": {
+   "HL": {
+    "n_loops": 129,
+    "n_with_motif_group": 106,
+    "n_without_motif_group": 23,
+    "motif_group_assignment_counts": {
+     "geometric": 52,
+     "homologous": 42,
+     "none": 23,
+     "member": 12
+    },
+    "n_problematic": 2,
+    "n_distinct_motif_groups": 4,
+    "motif_groups": {
+     "HL_30680.5": {
+      "n_loops": 40,
+      "annotation_text": "Pseudoknot geometry",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_30680.5"
+     },
+     "HL_34789.7": {
+      "n_loops": 64,
+      "annotation_text": "GNRA",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_34789.7"
+     },
+     "HL_61337.7": {
+      "n_loops": 1,
+      "annotation_text": "UNCG",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_61337.7"
+     },
+     "HL_98423.6": {
+      "n_loops": 1,
+      "annotation_text": "GNRA with tandem sheared",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_98423.6"
+     }
+    },
+    "n_multi_chain_loops": 0,
+    "n_pdb_entries": 28,
+    "n_instances": 29
+   },
+   "IL": {
+    "n_loops": 175,
+    "n_with_motif_group": 144,
+    "n_without_motif_group": 31,
+    "motif_group_assignment_counts": {
+     "geometric": 71,
+     "homologous": 56,
+     "none": 31,
+     "member": 17
+    },
+    "n_problematic": 5,
+    "n_distinct_motif_groups": 12,
+    "motif_groups": {
+     "IL_01003.7": {
+      "n_loops": 1,
+      "annotation_text": "Isolated non-canonical cWW pair",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_01003.7"
+     },
+     "IL_14190.5": {
+      "n_loops": 21,
+      "annotation_text": "Single bulged A",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_14190.5"
+     },
+     "IL_37129.1": {
+      "n_loops": 4,
+      "annotation_text": "Minor groove platform",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_37129.1"
+     },
+     "IL_48076.11": {
+      "n_loops": 2,
+      "annotation_text": "Major groove platform",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_48076.11"
+     },
+     "IL_51265.4": {
+      "n_loops": 2,
+      "annotation_text": "Kink-turn from U4",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_51265.4"
+     },
+     "IL_52075.1": {
+      "n_loops": 38,
+      "annotation_text": "Major groove platform with extra pair",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_52075.1"
+     },
+     "IL_53180.1": {
+      "n_loops": 1,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_53180.1"
+     },
+     "IL_69145.4": {
+      "n_loops": 41,
+      "annotation_text": "Pseudoknot",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_69145.4"
+     },
+     "IL_71972.2": {
+      "n_loops": 2,
+      "annotation_text": "Kink-turn",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_71972.2"
+     },
+     "IL_90775.4": {
+      "n_loops": 22,
+      "annotation_text": "Kink-turn",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_90775.4"
+     },
+     "IL_94910.1": {
+      "n_loops": 9,
+      "annotation_text": "Kink-turn",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_94910.1"
+     },
+     "IL_94991.4": {
+      "n_loops": 1,
+      "annotation_text": "Minor groove platform",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_94991.4"
+     }
+    },
+    "n_multi_chain_loops": 0,
+    "n_pdb_entries": 28,
+    "n_instances": 29
+   },
+   "J3": {
+    "n_loops": 0,
+    "n_with_motif_group": 0,
+    "n_without_motif_group": 0,
+    "motif_group_assignment_counts": {},
+    "n_problematic": 0,
+    "n_distinct_motif_groups": 0,
+    "motif_groups": {},
+    "n_multi_chain_loops": 0,
+    "n_pdb_entries": 0,
+    "n_instances": 0
+   },
+   "J4": {
+    "n_loops": 47,
+    "n_with_motif_group": 19,
+    "n_without_motif_group": 28,
+    "motif_group_assignment_counts": {
+     "homologous": 16,
+     "none": 28,
+     "member": 3
+    },
+    "n_problematic": 2,
+    "n_distinct_motif_groups": 1,
+    "motif_groups": {
+     "J4_40439.2": {
+      "n_loops": 19,
+      "annotation_text": "SAM-I riboswitch junction",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/J4_40439.2"
+     }
+    },
+    "n_multi_chain_loops": 0,
+    "n_pdb_entries": 28,
+    "n_instances": 29
+   }
+  },
+  "n_pdb_entries_evaluated": 28,
+  "n_pdb_entries_unavailable": 0,
+  "nucleotide_mapping_status_counts": {
+   "mapped": 2996,
+   "local_end": 93,
+   "insert": 12
+  },
+  "n_motif_page_loops_missing_from_download": 0
+ },
+ "ligands": {
+  "n_entry_entities_evaluated": 28,
+  "n_entry_entities_unavailable": 0,
+  "n_bound_molecule_records": 81,
+  "n_distinct_ccd_ids": 10,
+  "by_class": {
+   "metal_ion": 7,
+   "ligand": 3
+  },
+  "n_records_in_default_track": 27,
+  "n_entries_in_default_track": 27,
+  "n_records_flagged": 0,
+  "flag_counts": {},
+  "chain_attribution": {
+   "resolved": 78,
+   "unresolved": 3
+  },
+  "contact_mapping_status_counts": {
+   "mapped": 937,
+   "local_end": 22,
+   "outside_mapped_region": 8
+  },
+  "default_track_pocket_positions_n_entries": {
+   "6": 8,
+   "7": 27,
+   "8": 7,
+   "10": 1,
+   "11": 27,
+   "46": 27,
+   "47": 2,
+   "48": 27,
+   "69": 27,
+   "70": 27,
+   "71": 25,
+   "103": 27,
+   "104": 26
+  }
+ },
+ "unresolved_identifiers": [],
+ "n_unresolved_identifiers": 0,
+ "file_sizes_bytes": {
+  "reference_structural_elements.json": 3308,
+  "loops.json": 2316165,
+  "ligands.json": 460082,
+  "tracks.json": 552810,
+  "annotations/ (total)": 1858547
+ },
+ "provenance": {
+  "rfam_acc": "RF00162",
+  "rfam_release": "15.1",
+  "cm_checksum": "4205982682",
+  "cm_clen": 108,
+  "mapping_pipeline_version": "0.1.0",
+  "mapping_generated": "2026-10-17T15:09:20+00:00",
+  "annotation_pipeline_version": "0.1.0",
+  "annotation_config_version": "1.0",
+  "generated": "2026-10-17T15:16:45+00:00"
+ }
+}

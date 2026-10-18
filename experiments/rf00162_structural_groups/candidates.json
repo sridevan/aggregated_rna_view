@@ -1,0 +1,288 @@
+{
+ "discrepancy": {
+  "top_merge_heights": [
+   0.0854,
+   0.0879,
+   0.0944,
+   0.1137,
+   0.1279,
+   0.1392,
+   0.2472,
+   0.2578
+  ],
+  "k": {
+   "2": {
+    "gap": 0.0106,
+    "silhouette": 0.5645,
+    "sizes": [
+     27,
+     2
+    ],
+    "small_groups": [
+     [
+      "3V7E C [Caldanaerobacter; SAM]",
+      "3V7E D [Caldanaerobacter; SAM]"
+     ]
+    ]
+   },
+   "3": {
+    "gap": 0.108,
+    "silhouette": 0.5636,
+    "sizes": [
+     26,
+     2,
+     1
+    ],
+    "small_groups": [
+     [
+      "3V7E C [Caldanaerobacter; SAM]",
+      "3V7E D [Caldanaerobacter; SAM]"
+     ],
+     [
+      "4KQY A [Bacillus; SAM]"
+     ]
+    ]
+   },
+   "4": {
+    "gap": 0.0113,
+    "silhouette": 0.3479,
+    "sizes": [
+     22,
+     4,
+     2,
+     1
+    ],
+    "small_groups": [
+     [
+      "2YGH A [Caldanaerobacter; SAM]",
+      "4B5R A [Caldanaerobacter; SAM]",
+      "5FJC A [Caldanaerobacter; SAM]",
+      "5FK4 A [Caldanaerobacter; SAM]"
+     ],
+     [
+      "3V7E C [Caldanaerobacter; SAM]",
+      "3V7E D [Caldanaerobacter; SAM]"
+     ],
+     [
+      "4KQY A [Bacillus; SAM]"
+     ]
+    ]
+   },
+   "5": {
+    "gap": 0.0142,
+    "silhouette": 0.2979,
+    "sizes": [
+     21,
+     4,
+     2,
+     1,
+     1
+    ],
+    "small_groups": [
+     [
+      "2YGH A [Caldanaerobacter; SAM]",
+      "4B5R A [Caldanaerobacter; SAM]",
+      "5FJC A [Caldanaerobacter; SAM]",
+      "5FK4 A [Caldanaerobacter; SAM]"
+     ],
+     [
+      "3V7E C [Caldanaerobacter; SAM]",
+      "3V7E D [Caldanaerobacter; SAM]"
+     ],
+     [
+      "3IQP A [Caldanaerobacter; apo]"
+     ],
+     [
+      "4KQY A [Bacillus; SAM]"
+     ]
+    ]
+   },
+   "6": {
+    "gap": 0.0192,
+    "silhouette": 0.3582,
+    "sizes": [
+     13,
+     8,
+     4,
+     2,
+     1,
+     1
+    ],
+    "small_groups": [
+     [
+      "5FK1 A [Caldanaerobacter; SAM]",
+      "5FK2 A [Caldanaerobacter; SAM]",
+      "5FK3 A [Caldanaerobacter; SAM]",
+      "5FK6 A [Caldanaerobacter; SAM]",
+      "5FKD A [Caldanaerobacter; SAM]",
+      "5FKE A [Caldanaerobacter; SAM]",
+      "5FKF A [Caldanaerobacter; SAM]",
+      "5FKH A [Caldanaerobacter; SAM]"
+     ],
+     [
+      "2YGH A [Caldanaerobacter; SAM]",
+      "4B5R A [Caldanaerobacter; SAM]",
+      "5FJC A [Caldanaerobacter; SAM]",
+      "5FK4 A [Caldanaerobacter; SAM]"
+     ],
+     [
+      "3V7E C [Caldanaerobacter; SAM]",
+      "3V7E D [Caldanaerobacter; SAM]"
+     ],
+     [
+      "3IQP A [Caldanaerobacter; apo]"
+     ],
+     [
+      "4KQY A [Bacillus; SAM]"
+     ]
+    ]
+   }
+  }
+ },
+ "tm": {
+  "top_merge_heights": [
+   0.0452,
+   0.0492,
+   0.0662,
+   0.0671,
+   0.0882,
+   0.1456,
+   0.178,
+   0.2045
+  ],
+  "k": {
+   "2": {
+    "gap": 0.0265,
+    "silhouette": 0.51,
+    "sizes": [
+     28,
+     1
+    ],
+    "small_groups": [
+     [
+      "4KQY A [Bacillus; SAM]"
+     ]
+    ]
+   },
+   "3": {
+    "gap": 0.0324,
+    "silhouette": 0.533,
+    "sizes": [
+     26,
+     2,
+     1
+    ],
+    "small_groups": [
+     [
+      "3V7E C [Caldanaerobacter; SAM]",
+      "3V7E D [Caldanaerobacter; SAM]"
+     ],
+     [
+      "4KQY A [Bacillus; SAM]"
+     ]
+    ]
+   },
+   "4": {
+    "gap": 0.0574,
+    "silhouette": 0.5802,
+    "sizes": [
+     22,
+     4,
+     2,
+     1
+    ],
+    "small_groups": [
+     [
+      "2YGH A [Caldanaerobacter; SAM]",
+      "4B5R A [Caldanaerobacter; SAM]",
+      "5FJC A [Caldanaerobacter; SAM]",
+      "5FK4 A [Caldanaerobacter; SAM]"
+     ],
+     [
+      "3V7E C [Caldanaerobacter; SAM]",
+      "3V7E D [Caldanaerobacter; SAM]"
+     ],
+     [
+      "4KQY A [Bacillus; SAM]"
+     ]
+    ]
+   },
+   "5": {
+    "gap": 0.0211,
+    "silhouette": 0.5782,
+    "sizes": [
+     14,
+     8,
+     4,
+     2,
+     1
+    ],
+    "small_groups": [
+     [
+      "5FK1 A [Caldanaerobacter; SAM]",
+      "5FK2 A [Caldanaerobacter; SAM]",
+      "5FK3 A [Caldanaerobacter; SAM]",
+      "5FK6 A [Caldanaerobacter; SAM]",
+      "5FKD A [Caldanaerobacter; SAM]",
+      "5FKE A [Caldanaerobacter; SAM]",
+      "5FKF A [Caldanaerobacter; SAM]",
+      "5FKH A [Caldanaerobacter; SAM]"
+     ],
+     [
+      "2YGH A [Caldanaerobacter; SAM]",
+      "4B5R A [Caldanaerobacter; SAM]",
+      "5FJC A [Caldanaerobacter; SAM]",
+      "5FK4 A [Caldanaerobacter; SAM]"
+     ],
+     [
+      "3V7E C [Caldanaerobacter; SAM]",
+      "3V7E D [Caldanaerobacter; SAM]"
+     ],
+     [
+      "4KQY A [Bacillus; SAM]"
+     ]
+    ]
+   },
+   "6": {
+    "gap": 0.0009,
+    "silhouette": 0.5134,
+    "sizes": [
+     13,
+     8,
+     4,
+     2,
+     1,
+     1
+    ],
+    "small_groups": [
+     [
+      "5FK1 A [Caldanaerobacter; SAM]",
+      "5FK2 A [Caldanaerobacter; SAM]",
+      "5FK3 A [Caldanaerobacter; SAM]",
+      "5FK6 A [Caldanaerobacter; SAM]",
+      "5FKD A [Caldanaerobacter; SAM]",
+      "5FKE A [Caldanaerobacter; SAM]",
+      "5FKF A [Caldanaerobacter; SAM]",
+      "5FKH A [Caldanaerobacter; SAM]"
+     ],
+     [
+      "2YGH A [Caldanaerobacter; SAM]",
+      "4B5R A [Caldanaerobacter; SAM]",
+      "5FJC A [Caldanaerobacter; SAM]",
+      "5FK4 A [Caldanaerobacter; SAM]"
+     ],
+     [
+      "3V7E C [Caldanaerobacter; SAM]",
+      "3V7E D [Caldanaerobacter; SAM]"
+     ],
+     [
+      "3IQP A [Caldanaerobacter; apo]"
+     ],
+     [
+      "4KQY A [Bacillus; SAM]"
+     ]
+    ]
+   }
+  }
+ }
+}

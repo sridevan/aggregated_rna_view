@@ -1,4 +1,4 @@
-import type { ChainMapping, ConsensusStats, FamilyOverview, InstanceRow, OrientationDataset } from '../types/backend'
+import type { ChainMapping, ConsensusStats, FamilyOverview, InstanceRow, LigandsDataset, OrientationDataset, PocketTracksDataset, SasaTracksDataset, TracksDataset, ModificationTracksDataset, StructureClusteringDataset, ModificationsDataset, LoopsDataset } from '../types/backend'
 
 const BASE = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/families`
 
@@ -26,3 +26,32 @@ export function loadMapping(acc: string, mappingFile: string): Promise<ChainMapp
   return p
 }
 export const mappingCacheSize = () => mappingCache.size
+
+/** Annotation datasets (Milestone 3B) are loaded only when the Annotations tab is opened, and memoised. */
+const annotationCache = new Map<string, Promise<unknown>>()
+function memo<T>(key: string, make: () => Promise<T>): Promise<T> {
+  let p = annotationCache.get(key) as Promise<T> | undefined
+  if (!p) { p = make(); annotationCache.set(key, p); p.catch(() => annotationCache.delete(key)) }
+  return p
+}
+export const loadTracks = (acc: string) => memo(`${acc}/tracks`, () => getJson<TracksDataset>(`${BASE}/${acc}/tracks.json`))
+export const loadLigands = (acc: string) => memo(`${acc}/ligands`, () => getJson<LigandsDataset>(`${BASE}/${acc}/ligands.json`))
+/** Optional dataset: a family without SASA shows no Solvent accessibility category. */
+export const loadSasaTracks = (acc: string) => memo(`${acc}/sasa_tracks`, () => getJson<SasaTracksDataset>(`${BASE}/${acc}/sasa_tracks.json`).catch(() => null))
+
+/** URL of a file of the family data directory (used for download links). */
+export const familyFileUrl = (acc: string, file: string) => `${BASE}/${acc}/${file}`
+/** Optional dataset: a family without nonstandard-nucleotide data shows no Nonstandard nucleotides category. */
+export const loadModificationTracks = (acc: string) => memo(`${acc}/modification_tracks`, () => getJson<ModificationTracksDataset>(`${BASE}/${acc}/modification_tracks.json`).catch(() => null))
+/** Optional dataset: a family without pocket predictions shows no Predicted binding pockets category. */
+export const loadPocketTracks = (acc: string) => memo(`${acc}/pocket_tracks`, () => getJson<PocketTracksDataset>(`${BASE}/${acc}/pocket_tracks.json`).catch(() => null))
+
+/** Optional datasets of the Structures tab: a family without structure_clustering.json shows the table without structural groups. */
+export const loadStructureClustering = (acc: string) => memo(`${acc}/structure_clustering`, () => getJson<StructureClusteringDataset>(`${BASE}/${acc}/structure_clustering.json`).catch(() => null))
+export const loadModifications = (acc: string) => memo(`${acc}/modifications`, () => getJson<ModificationsDataset>(`${BASE}/${acc}/modifications.json`).catch(() => null))
+/** BGSU loops with complete membership (Family Overview loop tracks); loaded on first use. */
+export const loadLoops = (acc: string) => memo(`${acc}/loops`, () => getJson<LoopsDataset>(`${BASE}/${acc}/loops.json`))
+/** Loops touching one chain: its own small file (loops_by_instance/<seq_name>.json); families annotated before that file existed fall back to
+ *  the family-wide loops.json. */
+export const loadInstanceLoops = (acc: string, seqName: string) => memo(`${acc}/loops/${seqName}`, () =>
+  getJson<{ loops: LoopsDataset['loops'] }>(`${BASE}/${acc}/loops_by_instance/${seqName}.json`).then((d) => d.loops).catch(() => loadLoops(acc).then((d) => d.loops)))

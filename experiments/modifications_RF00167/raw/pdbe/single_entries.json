@@ -1,0 +1,812 @@
+{
+ "1y26": {
+  "request_ids": [
+   "1y26"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:07+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "1y27": {
+  "request_ids": [
+   "1y27"
+  ],
+  "http_status": 200,
+  "retrieved_utc": "2026-10-16T17:28:08+00:00",
+  "body": {
+   "1y27": [
+    {
+     "chain_id": "X",
+     "author_residue_number": 14,
+     "author_insertion_code": "",
+     "chem_comp_id": "GDP",
+     "alternate_conformers": 0,
+     "entity_id": 1,
+     "struct_asym_id": "A",
+     "residue_number": 1,
+     "chem_comp_name": "GUANOSINE-5'-DIPHOSPHATE",
+     "description": "Bacillus subtilis xpt",
+     "weight": 21994.916
+    },
+    {
+     "chain_id": "X",
+     "author_residue_number": 81,
+     "author_insertion_code": "",
+     "chem_comp_id": "CCC",
+     "alternate_conformers": 0,
+     "entity_id": 1,
+     "struct_asym_id": "A",
+     "residue_number": 68,
+     "chem_comp_name": "CYTIDINE-5'-PHOSPHATE-2',3'-CYCLIC PHOSPHATE",
+     "description": "Bacillus subtilis xpt",
+     "weight": 21994.916
+    }
+   ]
+  }
+ },
+ "2b57": {
+  "request_ids": [
+   "2b57"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:08+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "2ees": {
+  "request_ids": [
+   "2ees"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:08+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "2eet": {
+  "request_ids": [
+   "2eet"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:08+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "2eeu": {
+  "request_ids": [
+   "2eeu"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:09+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "2eev": {
+  "request_ids": [
+   "2eev"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:09+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "2eew": {
+  "request_ids": [
+   "2eew"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:09+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "2g9c": {
+  "request_ids": [
+   "2g9c"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:09+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "2xnw": {
+  "request_ids": [
+   "2xnw"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:09+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "2xnz": {
+  "request_ids": [
+   "2xnz"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:09+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "2xo0": {
+  "request_ids": [
+   "2xo0"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:10+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "2xo1": {
+  "request_ids": [
+   "2xo1"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:10+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "3ds7": {
+  "request_ids": [
+   "3ds7"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:10+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "3fo4": {
+  "request_ids": [
+   "3fo4"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:10+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "3fo6": {
+  "request_ids": [
+   "3fo6"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:10+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "3g4m": {
+  "request_ids": [
+   "3g4m"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:11+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "3gao": {
+  "request_ids": [
+   "3gao"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:11+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "3ger": {
+  "request_ids": [
+   "3ger"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:11+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "3ges": {
+  "request_ids": [
+   "3ges"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:11+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "3gog": {
+  "request_ids": [
+   "3gog"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:11+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "3got": {
+  "request_ids": [
+   "3got"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:12+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "3ivn": {
+  "request_ids": [
+   "3ivn"
+  ],
+  "http_status": 200,
+  "retrieved_utc": "2026-10-16T17:28:12+00:00",
+  "body": {
+   "3ivn": [
+    {
+     "chain_id": "A",
+     "author_residue_number": 74,
+     "author_insertion_code": "",
+     "chem_comp_id": "23G",
+     "alternate_conformers": 0,
+     "entity_id": 1,
+     "struct_asym_id": "A",
+     "residue_number": 70,
+     "chem_comp_name": "GUANOSINE-5'-PHOSPHATE-2',3'-CYCLIC PHOSPHATE",
+     "description": "A-riboswitch",
+     "weight": 22574.332
+    },
+    {
+     "chain_id": "B",
+     "author_residue_number": 74,
+     "author_insertion_code": "",
+     "chem_comp_id": "23G",
+     "alternate_conformers": 0,
+     "entity_id": 1,
+     "struct_asym_id": "B",
+     "residue_number": 70,
+     "chem_comp_name": "GUANOSINE-5'-PHOSPHATE-2',3'-CYCLIC PHOSPHATE",
+     "description": "A-riboswitch",
+     "weight": 22574.332
+    }
+   ]
+  }
+ },
+ "3la5": {
+  "request_ids": [
+   "3la5"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:12+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "3rkf": {
+  "request_ids": [
+   "3rkf"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:12+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "4fe5": {
+  "request_ids": [
+   "4fe5"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:12+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "4fej": {
+  "request_ids": [
+   "4fej"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:13+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "4fel": {
+  "request_ids": [
+   "4fel"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:13+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "4fen": {
+  "request_ids": [
+   "4fen"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:13+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "4feo": {
+  "request_ids": [
+   "4feo"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:13+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "4fep": {
+  "request_ids": [
+   "4fep"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:13+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "4lx5": {
+  "request_ids": [
+   "4lx5"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:14+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "4lx6": {
+  "request_ids": [
+   "4lx6"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:14+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "4tzx": {
+  "request_ids": [
+   "4tzx"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:14+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "4tzy": {
+  "request_ids": [
+   "4tzy"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:14+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "4xnr": {
+  "request_ids": [
+   "4xnr"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:14+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "5c7u": {
+  "request_ids": [
+   "5c7u"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:14+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "5c7w": {
+  "request_ids": [
+   "5c7w"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:15+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "5e54": {
+  "request_ids": [
+   "5e54"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:15+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "5swd": {
+  "request_ids": [
+   "5swd"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:15+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "5swe": {
+  "request_ids": [
+   "5swe"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:16+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "5uza": {
+  "request_ids": [
+   "5uza"
+  ],
+  "http_status": 200,
+  "retrieved_utc": "2026-10-16T17:28:16+00:00",
+  "body": {
+   "5uza": [
+    {
+     "chain_id": "X",
+     "author_residue_number": 28,
+     "author_insertion_code": "",
+     "chem_comp_id": "IU",
+     "alternate_conformers": 0,
+     "entity_id": 1,
+     "struct_asym_id": "A",
+     "residue_number": 16,
+     "chem_comp_name": "5-IODOURIDINE-5'-MONOPHOSPHATE",
+     "description": "RNA (71-MER)",
+     "weight": 22939.178
+    },
+    {
+     "chain_id": "X",
+     "author_residue_number": 31,
+     "author_insertion_code": "",
+     "chem_comp_id": "IU",
+     "alternate_conformers": 0,
+     "entity_id": 1,
+     "struct_asym_id": "A",
+     "residue_number": 19,
+     "chem_comp_name": "5-IODOURIDINE-5'-MONOPHOSPHATE",
+     "description": "RNA (71-MER)",
+     "weight": 22939.178
+    }
+   ]
+  }
+ },
+ "6p2h": {
+  "request_ids": [
+   "6p2h"
+  ],
+  "http_status": 200,
+  "retrieved_utc": "2026-10-16T17:28:17+00:00",
+  "body": {
+   "6p2h": [
+    {
+     "chain_id": "A",
+     "author_residue_number": 17,
+     "author_insertion_code": "",
+     "chem_comp_id": "GTP",
+     "alternate_conformers": 0,
+     "entity_id": 1,
+     "struct_asym_id": "A",
+     "residue_number": 1,
+     "chem_comp_name": "GUANOSINE-5'-TRIPHOSPHATE",
+     "description": "RNA (69-MER)",
+     "weight": 22323.186
+    }
+   ]
+  }
+ },
+ "6ubu": {
+  "request_ids": [
+   "6ubu"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:17+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "6uc7": {
+  "request_ids": [
+   "6uc7"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:17+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "6uc8": {
+  "request_ids": [
+   "6uc8"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:17+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "6uc9": {
+  "request_ids": [
+   "6uc9"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:18+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "6vwt": {
+  "request_ids": [
+   "6vwt"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:18+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "6vwv": {
+  "request_ids": [
+   "6vwv"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:18+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "9iwf": {
+  "request_ids": [
+   "9iwf"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:18+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "9iwg": {
+  "request_ids": [
+   "9iwg"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:18+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "9ljn": {
+  "request_ids": [
+   "9ljn"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:19+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "9lkc": {
+  "request_ids": [
+   "9lkc"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:19+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "9lke": {
+  "request_ids": [
+   "9lke"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:19+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "9lkf": {
+  "request_ids": [
+   "9lkf"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:19+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "9lmc": {
+  "request_ids": [
+   "9lmc"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:19+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "9nbc": {
+  "request_ids": [
+   "9nbc"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:19+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "9nbh": {
+  "request_ids": [
+   "9nbh"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:20+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "9ndd": {
+  "request_ids": [
+   "9ndd"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:20+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "9v4u": {
+  "request_ids": [
+   "9v4u"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:20+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "9v4v": {
+  "request_ids": [
+   "9v4v"
+  ],
+  "http_status": 200,
+  "retrieved_utc": "2026-10-16T17:28:20+00:00",
+  "body": {
+   "9v4v": [
+    {
+     "chain_id": "A",
+     "author_residue_number": 1,
+     "author_insertion_code": "",
+     "chem_comp_id": "GTP",
+     "alternate_conformers": 0,
+     "entity_id": 1,
+     "struct_asym_id": "A",
+     "residue_number": 1,
+     "chem_comp_name": "GUANOSINE-5'-TRIPHOSPHATE",
+     "description": "RNA (71-MER)",
+     "weight": 22962.49
+    }
+   ]
+  }
+ },
+ "9v4x": {
+  "request_ids": [
+   "9v4x"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:20+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "9v4y": {
+  "request_ids": [
+   "9v4y"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:21+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "9v4z": {
+  "request_ids": [
+   "9v4z"
+  ],
+  "http_status": 200,
+  "retrieved_utc": "2026-10-16T17:28:21+00:00",
+  "body": {
+   "9v4z": [
+    {
+     "chain_id": "A",
+     "author_residue_number": 1,
+     "author_insertion_code": "",
+     "chem_comp_id": "GTP",
+     "alternate_conformers": 0,
+     "entity_id": 1,
+     "struct_asym_id": "A",
+     "residue_number": 1,
+     "chem_comp_name": "GUANOSINE-5'-TRIPHOSPHATE",
+     "description": "RNA (71-MER)",
+     "weight": 22962.49
+    }
+   ]
+  }
+ },
+ "9v50": {
+  "request_ids": [
+   "9v50"
+  ],
+  "http_status": 404,
+  "retrieved_utc": "2026-10-16T17:28:21+00:00",
+  "body": {
+   "message": "Requested endpoint does not contain any data"
+  }
+ },
+ "9v51": {
+  "request_ids": [
+   "9v51"
+  ],
+  "http_status": 200,
+  "retrieved_utc": "2026-10-16T17:28:21+00:00",
+  "body": {
+   "9v51": [
+    {
+     "chain_id": "A",
+     "author_residue_number": 1,
+     "author_insertion_code": "",
+     "chem_comp_id": "GTP",
+     "alternate_conformers": 0,
+     "entity_id": 1,
+     "struct_asym_id": "A",
+     "residue_number": 1,
+     "chem_comp_name": "GUANOSINE-5'-TRIPHOSPHATE",
+     "description": "RNA (71-MER)",
+     "weight": 23024.453
+    },
+    {
+     "chain_id": "A",
+     "author_residue_number": 71,
+     "author_insertion_code": "",
+     "chem_comp_id": "CCC",
+     "alternate_conformers": 0,
+     "entity_id": 1,
+     "struct_asym_id": "A",
+     "residue_number": 71,
+     "chem_comp_name": "CYTIDINE-5'-PHOSPHATE-2',3'-CYCLIC PHOSPHATE",
+     "description": "RNA (71-MER)",
+     "weight": 23024.453
+    }
+   ]
+  }
+ }
+}

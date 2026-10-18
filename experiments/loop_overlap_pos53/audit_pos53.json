@@ -1,0 +1,721 @@
+{
+ "tracks_json": {
+  "hairpin_loops": {
+   "n_instances": 66,
+   "n_loop_observations": 66,
+   "n_entries": 52,
+   "denominators": {
+    "n_observable_instances": 80,
+    "n_source_evaluated_instances": 84,
+    "n_observable_and_evaluated": 80,
+    "n_positive": 66,
+    "n_positive_observable_and_evaluated": 66,
+    "n_not_annotated_by_source": 14,
+    "n_source_unavailable": 0,
+    "n_positive_not_observable": 0
+   }
+  },
+  "internal_loops": {
+   "n_instances": 13,
+   "n_loop_observations": 13,
+   "n_entries": 12,
+   "denominators": {
+    "n_observable_instances": 80,
+    "n_source_evaluated_instances": 84,
+    "n_observable_and_evaluated": 80,
+    "n_positive": 13,
+    "n_positive_observable_and_evaluated": 13,
+    "n_not_annotated_by_source": 67,
+    "n_source_unavailable": 0,
+    "n_positive_not_observable": 0
+   }
+  },
+  "junction_loops_J3": {
+   "n_instances": 76,
+   "n_loop_observations": 93,
+   "n_entries": 63,
+   "denominators": {
+    "n_observable_instances": 80,
+    "n_source_evaluated_instances": 84,
+    "n_observable_and_evaluated": 80,
+    "n_positive": 76,
+    "n_positive_observable_and_evaluated": 76,
+    "n_not_annotated_by_source": 4,
+    "n_source_unavailable": 0,
+    "n_positive_not_observable": 0
+   }
+  },
+  "junction_loops_J4": {
+   "n_instances": 0,
+   "n_loop_observations": 0,
+   "n_entries": 0,
+   "denominators": {
+    "n_observable_instances": 80,
+    "n_source_evaluated_instances": 84,
+    "n_observable_and_evaluated": 80,
+    "n_positive": 0,
+    "n_positive_observable_and_evaluated": 0,
+    "n_not_annotated_by_source": 80,
+    "n_source_unavailable": 0,
+    "n_positive_not_observable": 0
+   }
+  },
+  "junction_loops_union": {
+   "n_instances": 76,
+   "n_loop_observations": 93,
+   "n_entries": 63,
+   "denominators": {
+    "n_observable_instances": 80,
+    "n_source_evaluated_instances": 84,
+    "n_observable_and_evaluated": 80,
+    "n_positive": 76,
+    "n_positive_observable_and_evaluated": 76,
+    "n_not_annotated_by_source": 4,
+    "n_source_unavailable": 0,
+    "n_positive_not_observable": 0
+   }
+  }
+ },
+ "recomputed_from_loops_json": {
+  "HL": 66,
+  "IL": 13,
+  "J3": 76,
+  "J4": 0,
+  "JL_union": 76,
+  "J3_plus_J4_sum": 76,
+  "HL_and_JL_overlap": 62,
+  "HL_only": 4,
+  "JL_only": 14,
+  "any_loop": 80,
+  "no_loop_but_observable": 0,
+  "observable_instances": 80,
+  "total_instances": 84,
+  "loop_observations": {
+   "HL": 66,
+   "J3": 93,
+   "IL": 13
+  },
+  "memberships_per_instance_HL": 1
+ },
+ "instances_without_any_loop_at_pos": [],
+ "overlap_instances": [
+  "1y26_1_X_A",
+  "1y27_1_X_A",
+  "2b57_1_A_A",
+  "2ees_1_A_A",
+  "2eet_1_A_A",
+  "2eeu_1_A_A",
+  "2eev_1_A_A",
+  "2eew_1_A_A",
+  "2g9c_1_A_A",
+  "2xnw_1_A_A",
+  "2xnz_1_A_A",
+  "2xo0_1_A_A",
+  "2xo1_1_A_A",
+  "3ds7_1_A_A",
+  "3ds7_1_B_B",
+  "3fo4_1_A_A",
+  "3fo6_1_A_A",
+  "3g4m_1_A_A",
+  "3gao_1_A_A",
+  "3ger_1_A_A",
+  "3ges_1_A_A",
+  "3gog_1_A_A",
+  "3got_1_A_A",
+  "3ivn_1_A_A",
+  "3ivn_1_B_B",
+  "3la5_1_A_A",
+  "3rkf_1_A_A",
+  "3rkf_1_B_B",
+  "3rkf_1_C_C",
+  "3rkf_1_D_D",
+  "4fe5_1_B_A",
+  "4fej_1_B_A",
+  "4fel_1_B_A",
+  "4fen_1_B_A",
+  "4feo_1_B_A",
+  "4fep_1_B_A",
+  "4lx5_1_A_A",
+  "4lx6_1_A_A",
+  "4tzx_1_X_A",
+  "4tzy_1_X_A",
+  "4xnr_1_X_A",
+  "5c7u_1_B_A",
+  "5c7w_1_C_A",
+  "5swe_1_X_A",
+  "5uza_1_X_A",
+  "6ubu_1_B_A",
+  "6uc7_1_B_A",
+  "6uc8_1_B_A",
+  "6uc9_1_B_A",
+  "6vwt_1_A_A",
+  "6vwt_1_B_B",
+  "6vwv_1_A_A",
+  "6vwv_1_B_B",
+  "9iwf_1_A_A",
+  "9iwf_1_B_B",
+  "9iwg_1_A_A",
+  "9iwg_1_B_B",
+  "9nbc_1_A_A",
+  "9ndd_1_A_A",
+  "9ndd_1_B_B",
+  "9ndd_1_C_C",
+  "9ndd_1_D_D"
+ ],
+ "positive_not_observable": [],
+ "samples": [
+  {
+   "seq_name": "1y26_1_X_A",
+   "pdb_id": "1y26",
+   "auth_asym_id": "X",
+   "label_asym_id": "A",
+   "residue_at_pos": {
+    "label_seq_id": 37,
+    "author_residue_number": 49,
+    "nucleotide": "U",
+    "pp": "*"
+   },
+   "loops": [
+    {
+     "loop_id": "HL_1Y26_002",
+     "type": "HL",
+     "motif_group": "HL_56046.1",
+     "annotation_text": "Purine riboswitch",
+     "raw_bgsu_units": [
+      "1Y26|1|X|G|46",
+      "1Y26|1|X|U|47",
+      "1Y26|1|X|U|48",
+      "1Y26|1|X|U|49",
+      "1Y26|1|X|C|50",
+      "1Y26|1|X|U|51",
+      "1Y26|1|X|A|52",
+      "1Y26|1|X|C|53"
+     ],
+     "n_raw_units": 8,
+     "n_nucleotides_in_loops_json": 8,
+     "consensus_positions": [
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57
+     ],
+     "strands": [
+      [
+       "1Y26|1|X|G|46",
+       "1Y26|1|X|C|53",
+       8
+      ]
+     ],
+     "unit_at_pos": [
+      "1Y26|1|X|U|49"
+     ]
+    },
+    {
+     "loop_id": "J3_1Y26_001",
+     "type": "J3",
+     "motif_group": "J3_44163.4",
+     "annotation_text": null,
+     "raw_bgsu_units": [
+      "1Y26|1|X|A|21",
+      "1Y26|1|X|U|22",
+      "1Y26|1|X|A|23",
+      "1Y26|1|X|A|24",
+      "1Y26|1|X|U|25",
+      "1Y26|1|X|A|45",
+      "1Y26|1|X|G|46",
+      "1Y26|1|X|U|47",
+      "1Y26|1|X|U|48",
+      "1Y26|1|X|U|49",
+      "1Y26|1|X|C|50",
+      "1Y26|1|X|U|51",
+      "1Y26|1|X|A|52",
+      "1Y26|1|X|C|53",
+      "1Y26|1|X|C|54",
+      "1Y26|1|X|G|72",
+      "1Y26|1|X|A|73",
+      "1Y26|1|X|U|74",
+      "1Y26|1|X|U|75"
+     ],
+     "n_raw_units": 19,
+     "n_nucleotides_in_loops_json": 19,
+     "consensus_positions": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      78,
+      79,
+      80,
+      81
+     ],
+     "strands": [
+      [
+       "1Y26|1|X|A|21",
+       "1Y26|1|X|U|25",
+       5
+      ],
+      [
+       "1Y26|1|X|A|45",
+       "1Y26|1|X|C|54",
+       10
+      ],
+      [
+       "1Y26|1|X|G|72",
+       "1Y26|1|X|U|75",
+       4
+      ]
+     ],
+     "unit_at_pos": [
+      "1Y26|1|X|U|49"
+     ]
+    }
+   ]
+  },
+  {
+   "seq_name": "4fe5_1_B_A",
+   "pdb_id": "4fe5",
+   "auth_asym_id": "B",
+   "label_asym_id": "A",
+   "residue_at_pos": {
+    "label_seq_id": 35,
+    "author_residue_number": 49,
+    "nucleotide": "U",
+    "pp": "*"
+   },
+   "loops": [
+    {
+     "loop_id": "HL_4FE5_002",
+     "type": "HL",
+     "motif_group": "HL_56046.1",
+     "annotation_text": "Purine riboswitch",
+     "raw_bgsu_units": [
+      "4FE5|1|B|G|46",
+      "4FE5|1|B|U|47",
+      "4FE5|1|B|U|48",
+      "4FE5|1|B|U|49",
+      "4FE5|1|B|C|50",
+      "4FE5|1|B|U|51",
+      "4FE5|1|B|A|52",
+      "4FE5|1|B|C|53"
+     ],
+     "n_raw_units": 8,
+     "n_nucleotides_in_loops_json": 8,
+     "consensus_positions": [
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57
+     ],
+     "strands": [
+      [
+       "4FE5|1|B|G|46",
+       "4FE5|1|B|C|53",
+       8
+      ]
+     ],
+     "unit_at_pos": [
+      "4FE5|1|B|U|49"
+     ]
+    },
+    {
+     "loop_id": "J3_4FE5_001",
+     "type": "J3",
+     "motif_group": "J3_44163.4",
+     "annotation_text": null,
+     "raw_bgsu_units": [
+      "4FE5|1|B|A|21",
+      "4FE5|1|B|U|22",
+      "4FE5|1|B|A|23",
+      "4FE5|1|B|A|24",
+      "4FE5|1|B|U|25",
+      "4FE5|1|B|A|45",
+      "4FE5|1|B|G|46",
+      "4FE5|1|B|U|47",
+      "4FE5|1|B|U|48",
+      "4FE5|1|B|U|49",
+      "4FE5|1|B|C|50",
+      "4FE5|1|B|U|51",
+      "4FE5|1|B|A|52",
+      "4FE5|1|B|C|53",
+      "4FE5|1|B|C|54",
+      "4FE5|1|B|G|72",
+      "4FE5|1|B|A|73",
+      "4FE5|1|B|C|74",
+      "4FE5|1|B|U|75"
+     ],
+     "n_raw_units": 19,
+     "n_nucleotides_in_loops_json": 19,
+     "consensus_positions": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      78,
+      79,
+      80,
+      81
+     ],
+     "strands": [
+      [
+       "4FE5|1|B|A|21",
+       "4FE5|1|B|U|25",
+       5
+      ],
+      [
+       "4FE5|1|B|A|45",
+       "4FE5|1|B|C|54",
+       10
+      ],
+      [
+       "4FE5|1|B|G|72",
+       "4FE5|1|B|U|75",
+       4
+      ]
+     ],
+     "unit_at_pos": [
+      "4FE5|1|B|U|49"
+     ]
+    }
+   ]
+  },
+  {
+   "seq_name": "3rkf_1_A_A",
+   "pdb_id": "3rkf",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "residue_at_pos": {
+    "label_seq_id": 35,
+    "author_residue_number": 49,
+    "nucleotide": "U",
+    "pp": "*"
+   },
+   "loops": [
+    {
+     "loop_id": "HL_3RKF_002",
+     "type": "HL",
+     "motif_group": "HL_56046.1",
+     "annotation_text": "Purine riboswitch",
+     "raw_bgsu_units": [
+      "3RKF|1|A|G|46",
+      "3RKF|1|A|U|47",
+      "3RKF|1|A|U|48",
+      "3RKF|1|A|U|49",
+      "3RKF|1|A|C|50",
+      "3RKF|1|A|U|51",
+      "3RKF|1|A|A|52",
+      "3RKF|1|A|C|53"
+     ],
+     "n_raw_units": 8,
+     "n_nucleotides_in_loops_json": 8,
+     "consensus_positions": [
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57
+     ],
+     "strands": [
+      [
+       "3RKF|1|A|G|46",
+       "3RKF|1|A|C|53",
+       8
+      ]
+     ],
+     "unit_at_pos": [
+      "3RKF|1|A|U|49"
+     ]
+    },
+    {
+     "loop_id": "J3_3RKF_001",
+     "type": "J3",
+     "motif_group": "J3_44163.4",
+     "annotation_text": null,
+     "raw_bgsu_units": [
+      "3RKF|1|A|A|21",
+      "3RKF|1|A|U|22",
+      "3RKF|1|A|A|23",
+      "3RKF|1|A|A|24",
+      "3RKF|1|A|C|25",
+      "3RKF|1|A|G|45",
+      "3RKF|1|A|G|46",
+      "3RKF|1|A|U|47",
+      "3RKF|1|A|U|48",
+      "3RKF|1|A|U|49",
+      "3RKF|1|A|C|50",
+      "3RKF|1|A|U|51",
+      "3RKF|1|A|A|52",
+      "3RKF|1|A|C|53",
+      "3RKF|1|A|C|54",
+      "3RKF|1|A|G|72",
+      "3RKF|1|A|A|73",
+      "3RKF|1|A|C|74",
+      "3RKF|1|A|U|75"
+     ],
+     "n_raw_units": 19,
+     "n_nucleotides_in_loops_json": 19,
+     "consensus_positions": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      78,
+      79,
+      80,
+      81
+     ],
+     "strands": [
+      [
+       "3RKF|1|A|A|21",
+       "3RKF|1|A|C|25",
+       5
+      ],
+      [
+       "3RKF|1|A|G|45",
+       "3RKF|1|A|C|54",
+       10
+      ],
+      [
+       "3RKF|1|A|G|72",
+       "3RKF|1|A|U|75",
+       4
+      ]
+     ],
+     "unit_at_pos": [
+      "3RKF|1|A|U|49"
+     ]
+    }
+   ]
+  },
+  {
+   "seq_name": "9ndd_1_A_A",
+   "pdb_id": "9ndd",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "residue_at_pos": {
+    "label_seq_id": 66,
+    "author_residue_number": 66,
+    "nucleotide": "U",
+    "pp": "9"
+   },
+   "loops": [
+    {
+     "loop_id": "HL_9NDD_002",
+     "type": "HL",
+     "motif_group": null,
+     "annotation_text": "GNRA variation",
+     "raw_bgsu_units": [
+      "9NDD|1|A|G|64",
+      "9NDD|1|A|C|65",
+      "9NDD|1|A|U|66",
+      "9NDD|1|A|C|67",
+      "9NDD|1|A|U|68",
+      "9NDD|1|A|A|69",
+      "9NDD|1|A|C|70"
+     ],
+     "n_raw_units": 7,
+     "n_nucleotides_in_loops_json": 7,
+     "consensus_positions": [
+      50,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57
+     ],
+     "strands": [
+      [
+       "9NDD|1|A|G|64",
+       "9NDD|1|A|C|70",
+       7
+      ]
+     ],
+     "unit_at_pos": [
+      "9NDD|1|A|U|66"
+     ]
+    },
+    {
+     "loop_id": "J3_9NDD_002",
+     "type": "J3",
+     "motif_group": null,
+     "annotation_text": null,
+     "raw_bgsu_units": [
+      "9NDD|1|A|A|40",
+      "9NDD|1|A|U|41",
+      "9NDD|1|A|A|42",
+      "9NDD|1|A|A|43",
+      "9NDD|1|A|C|44",
+      "9NDD|1|A|G|63",
+      "9NDD|1|A|G|64",
+      "9NDD|1|A|C|65",
+      "9NDD|1|A|U|66",
+      "9NDD|1|A|C|67",
+      "9NDD|1|A|U|68",
+      "9NDD|1|A|A|69",
+      "9NDD|1|A|C|70",
+      "9NDD|1|A|U|71",
+      "9NDD|1|A|A|89",
+      "9NDD|1|A|A|90",
+      "9NDD|1|A|C|91",
+      "9NDD|1|A|U|92"
+     ],
+     "n_raw_units": 18,
+     "n_nucleotides_in_loops_json": 18,
+     "consensus_positions": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      49,
+      50,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      78,
+      79,
+      80,
+      81
+     ],
+     "strands": [
+      [
+       "9NDD|1|A|A|40",
+       "9NDD|1|A|C|44",
+       5
+      ],
+      [
+       "9NDD|1|A|G|63",
+       "9NDD|1|A|U|71",
+       9
+      ],
+      [
+       "9NDD|1|A|A|89",
+       "9NDD|1|A|U|92",
+       4
+      ]
+     ],
+     "unit_at_pos": [
+      "9NDD|1|A|U|66"
+     ]
+    }
+   ]
+  }
+ ],
+ "mapping_checks": {
+  "loops_with_duplicated_units": [],
+  "units_mapped_to_more_than_one_consensus_pos": 0,
+  "raw_vs_json_membership_mismatch": []
+ },
+ "HL_groups_at_pos": {
+  "HL_11447.1": {
+   "n_loops": 1,
+   "n_instances": 1,
+   "n_entries": 1
+  },
+  "HL_26934.1": {
+   "n_loops": 2,
+   "n_instances": 2,
+   "n_entries": 1
+  },
+  "HL_56046.1": {
+   "n_loops": 53,
+   "n_instances": 53,
+   "n_entries": 46
+  },
+  "HL_90436.7": {
+   "n_loops": 4,
+   "n_instances": 4,
+   "n_entries": 2
+  },
+  "unassigned": {
+   "n_loops": 6,
+   "n_instances": 6,
+   "n_entries": 3
+  }
+ },
+ "J3_groups_at_pos": {
+  "J3_44163.4": {
+   "n_loops": 53,
+   "n_instances": 53,
+   "n_entries": 45
+  },
+  "J3_58525.1": {
+   "n_loops": 4,
+   "n_instances": 4,
+   "n_entries": 4
+  },
+  "J3_60857.1": {
+   "n_loops": 1,
+   "n_instances": 1,
+   "n_entries": 1
+  },
+  "J3_61367.1": {
+   "n_loops": 9,
+   "n_instances": 9,
+   "n_entries": 7
+  },
+  "J3_79739.1": {
+   "n_loops": 8,
+   "n_instances": 8,
+   "n_entries": 7
+  },
+  "J3_89880.1": {
+   "n_loops": 13,
+   "n_instances": 13,
+   "n_entries": 12
+  },
+  "unassigned": {
+   "n_loops": 5,
+   "n_instances": 5,
+   "n_entries": 2
+  }
+ }
+}

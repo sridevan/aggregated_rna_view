@@ -1,4 +1,5 @@
 import { expect, test, type Page } from '@playwright/test'
+import { selectColumn } from './helpers'
 
 /** Browser tests for the synchronised consensus / 2D / 3D selection (Milestone 2). Needs network access to PDBe for coordinates and 2D topology. */
 const INSTANCE_1Y26 = '1y26_1_X_A'
@@ -9,13 +10,13 @@ const waitViewers = async (page: Page, pdb: string, need2d = true) => {
   await expect(page.getByTestId('rna2d-viewer')).toHaveAttribute('data-pdb', pdb)
   await expect(page.getByTestId('molstar-viewer')).toHaveAttribute('data-pdb', pdb)
 }
-const toggle = async (page: Page, pos: number) => { await page.getByTestId('goto-input').fill(String(pos)); await page.getByTestId('goto-button').click() }
+const toggle = async (page: Page, pos: number) => { await selectColumn(page, pos) }
 const rna2dSelectedIds = (page: Page) => page.evaluate(() => [...document.querySelectorAll('[data-testid="rna2d-viewer"] text.rnaviewEle')]
-  .filter((e) => { const f = (e as SVGElement).getAttribute('fill') || ''; return f !== '' && f !== 'none' && f !== 'black' && f !== '#000000' }).map((e) => +(e.className as unknown as SVGAnimatedString).baseVal.split('_').pop()!))
+  .filter((e) => { const f = (e as SVGElement).getAttribute('fill') || ''; return f !== '' && f !== 'none' && f !== 'black' && f !== '#000000' && f !== '#323232' }).map((e) => +(e.className as unknown as SVGAnimatedString).baseVal.split('_').pop()!))
 
 test.describe('family overview and structures', () => {
   test('family statistics match the backend JSON', async ({ page }) => {
-    await page.goto('/')
+    await page.goto('/RF00167')
     const fam = await (await page.request.get('/families/RF00167/family.json')).json()
     await expect(page.getByTestId('stat-pdb-entries')).toHaveText(String(fam.counts.pdb_entries))
     await expect(page.getByTestId('stat-rna-instances')).toHaveText(String(fam.counts.instances))
@@ -26,26 +27,28 @@ test.describe('family overview and structures', () => {
     await expect(page.getByTestId('molstar-viewer')).toHaveAttribute('data-status', 'ready')
   })
   test('structures table rows correspond to instances.json and show pending panels', async ({ page }) => {
-    await page.goto('/')
+    await page.goto('/RF00167')
     await page.getByTestId('tab-structures').click()
     const inst = await (await page.request.get('/families/RF00167/instances.json')).json()
     await expect(page.locator('[data-testid="instance-table"] tbody tr')).toHaveCount(10)   // paginated, 10 per page
     await expect(page.getByTestId('table-count')).toContainText(`of ${inst.length} instances`)
-    await expect(page.getByTestId('pending-panel')).toHaveCount(3)
+    await expect(page.getByTestId('pending-panel')).toHaveCount(0); await expect(page.getByTestId('groups-card')).toBeVisible()
     await page.getByTestId('instance-search').fill('1y26')
     await expect(page.locator('[data-testid="instance-table"] tbody tr')).toHaveCount(inst.filter((r: { pdb_id: string }) => r.pdb_id === '1y26').length)
     await page.getByTestId(`row-${INSTANCE_1Y26}`).click()
     await expect(page.getByTestId('structures-current')).toContainText('1Y26 chain X')
-    await expect(page.getByTestId('molstar-viewer')).toHaveAttribute('data-pdb', '1y26')
-    await expect(page.getByTestId('molstar-viewer')).toHaveAttribute('data-status', 'ready')
+    await expect(page.getByTestId('current-group')).toHaveText('Structural group 1')
+    // the selected row follows into the 3D alignment view (shown and emphasised), so there is nothing left to add
+    await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-structures', new RegExp(`(^|,)${INSTANCE_1Y26}(,|$)`))
+    await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-emphasis', INSTANCE_1Y26)
+    await expect(page.getByTestId('add-selected')).toHaveCount(0)
   })
 })
 
-test.describe('annotations: synchronised selection', () => {
+test.describe('family overview: synchronised selection', () => {
   test.beforeEach(async ({ page }) => {
     page.on('pageerror', (e) => console.log('PAGEERROR', e.message, e.stack?.split('\n').slice(0, 4).join(' | ')))
-    await page.goto('/')
-    await page.getByTestId('tab-annotations').click()
+    await page.goto('/RF00167')   // the structure explorer (selector, tracks, 2D, 3D) lives in Family Overview
     await page.getByTestId('instance-select').selectOption(INSTANCE_1Y26)
   })
 
@@ -55,14 +58,14 @@ test.describe('annotations: synchronised selection', () => {
     await toggle(page, 50)
     await expect(page.getByTestId('sel-highlightable')).toContainText('50 → G34 (auth 46')
     await expect.poll(() => rna2dSelectedIds(page)).toEqual([34])
-    await expect.poll(async () => (await state(page)).lastMolstarSelection).toEqual({ pdbId: '1y26', labelAsymId: 'A', labelSeqIds: [34] })
+    await expect.poll(async () => (await state(page)).lastMolstarSelection).toMatchObject({ pdbId: '1y26', labelAsymId: 'A', labelSeqIds: [34] })
   })
 
   test('clicking a nucleotide in 2D updates consensus state and the 3D selection', async ({ page }) => {
     await waitViewers(page, '1y26')
     await page.locator('[data-testid="rna2d-viewer"] text.rnaview_1y26_20').dispatchEvent('click')
     await expect.poll(async () => (await state(page)).selection).toMatchObject({ positions: [36] })
-    await expect.poll(async () => (await state(page)).lastMolstarSelection).toEqual({ pdbId: '1y26', labelAsymId: 'A', labelSeqIds: [20] })
+    await expect.poll(async () => (await state(page)).lastMolstarSelection).toMatchObject({ pdbId: '1y26', labelAsymId: 'A', labelSeqIds: [20] })
     await expect(page.getByTestId('sel-highlightable')).toContainText('36 → G20 (auth 32')
   })
 
@@ -87,31 +90,41 @@ test.describe('annotations: synchronised selection', () => {
 
   test('switching instances preserves the consensus selection and re-translates it', async ({ page }) => {
     await waitViewers(page, '1y26')
-    await toggle(page, 50); await toggle(page, 36)
+    await toggle(page, 36); await toggle(page, 50)   // the second selection replaces the first (single selection)
     await expect(page.getByTestId('sel-highlightable')).toContainText('50 → G34')
+    expect((await state(page)).selection).toMatchObject({ positions: [50] })
     await page.getByTestId('instance-select').selectOption('4tzx_1_X_A')   // 69-nt adenine riboswitch, polymer 2-70 (consensus 50 -> polymer 34 here too)
     await waitViewers(page, '4tzx', false)
-    expect((await state(page)).selection).toMatchObject({ positions: [50, 36], instance: '4tzx_1_X_A' })
+    expect((await state(page)).selection).toMatchObject({ positions: [50], instance: '4tzx_1_X_A' })
     await expect(page.getByTestId('molstar-viewer')).toHaveAttribute('data-pdb', '4tzx')
     await expect(page.getByTestId('sel-highlightable')).toContainText('50 → G34 (auth 46')
-    await expect.poll(async () => (await state(page)).lastMolstarSelection).toEqual({ pdbId: '4tzx', labelAsymId: 'A', labelSeqIds: [20, 34] })
+    await expect.poll(async () => (await state(page)).lastMolstarSelection).toMatchObject({ pdbId: '4tzx', labelAsymId: 'A', labelSeqIds: [34] })
   })
 
   test('deleted, uncovered and unobserved positions are reported and never highlighted', async ({ page }) => {
     await page.getByTestId('instance-select').selectOption('9nbh_1_A_A')   // consensus 39,51,64,72 deleted; polymer 31-102 without coordinates
     await waitViewers(page, '9nbh', false)
-    await toggle(page, 39); await toggle(page, 50); await toggle(page, 1)
+    await toggle(page, 39)
     await expect(page.getByTestId('sel-deleted')).toHaveText('39')
+    await expect(page.getByTestId('selection-status')).toHaveAttribute('data-ok', 'false')
+    await expect(page.getByTestId('selection-status')).toContainText('Rfam position 39 is deleted in 9NBH A: nothing highlighted')
+    await expect.poll(async () => (await state(page)).lastMolstarSelection).toMatchObject({ pdbId: '9nbh', labelAsymId: 'A', labelSeqIds: [] })
+    await toggle(page, 50)
     await expect(page.getByTestId('sel-unobserved')).toContainText('50 → ')
+    await expect(page.getByTestId('selection-status')).toContainText('no experimental coordinates: nothing highlighted')
+    await toggle(page, 1)
     await expect(page.getByTestId('sel-highlightable')).toContainText('1 → U16')
-    await expect.poll(async () => (await state(page)).lastMolstarSelection).toEqual({ pdbId: '9nbh', labelAsymId: 'A', labelSeqIds: [16] })
-    await page.getByTestId('instance-select').selectOption('6p2h_1_A_A')   // covers consensus 26-80 only
+    await expect(page.getByTestId('selection-status')).toHaveAttribute('data-ok', 'true')
+    await expect.poll(async () => (await state(page)).lastMolstarSelection).toMatchObject({ pdbId: '9nbh', labelAsymId: 'A', labelSeqIds: [16] })
+    await page.getByTestId('instance-select').selectOption('6p2h_1_A_A')   // covers consensus 26-80 only: consensus 1 is uncovered here
     await waitViewers(page, '6p2h', false)
     await expect(page.getByTestId('sel-uncovered')).toHaveText('1')
-    await expect(page.getByTestId('sel-highlightable')).toContainText('39 → ')
-    await expect(page.getByTestId('sel-highlightable')).toContainText('50 → ')
+    await expect(page.getByTestId('selection-status')).toContainText('not covered by the alignment of 6P2H A')
     const s = await state(page)
-    expect(s.selection).toMatchObject({ positions: [39, 50, 1] })
-    expect((s.lastMolstarSelection as { labelSeqIds: number[] }).labelSeqIds).toHaveLength(2)
+    expect(s.selection).toMatchObject({ positions: [1] })
+    expect((s.lastMolstarSelection as { labelSeqIds: number[] }).labelSeqIds).toHaveLength(0)
+    await toggle(page, 50)
+    await expect(page.getByTestId('sel-highlightable')).toContainText('50 → ')
+    await expect.poll(async () => ((await state(page)).lastMolstarSelection as { labelSeqIds: number[] }).labelSeqIds).toHaveLength(1)
   })
 })

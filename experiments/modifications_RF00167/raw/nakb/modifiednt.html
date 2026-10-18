@@ -1,0 +1,567 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modified Nucleotides</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0K2RSNBJTZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0K2RSNBJTZ'); 
+</script>
+
+<meta property="og:title" content="Nucleic Acid Knowledge Base" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://nakb.org" />
+<meta property="og:image" content="/images/nakb-logo-500px.png" />
+
+
+<link rel="icon"          href="/favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+
+<link href="/css/bootstrap4.1.3.min.css" type="text/css" rel="stylesheet" media="screen, projection, print"/>
+<link href="/css/extra-styles.css"       type="text/css" rel="stylesheet" media="screen, projection, print"/>
+
+<script src="/js/jquery-3.3.1.min.js"      type="text/javascript"></script>
+<script src="/js/popper1.12.9.min.js"      type="text/javascript"></script>
+<script src="/js/bootstrap4.1.3.min.js"    type="text/javascript"></script>
+
+<script src="/js/share.js"           type="text/javascript"></script>
+<script src="/js/NAKBprotdict.js"    type="text/javascript"></script>
+<script src="/js/NAKBnadict.js"      type="text/javascript"></script>
+<script src="/js/NAKBliganddict.js"  type="text/javascript"></script>
+<script src="/js/PPCdict.js"         type="text/javascript"></script>
+
+<script type="text/javascript" src="/js/bootstrap3-typeahead.min.js"></script>
+
+
+<script>
+var sitebanner="";
+if (location.hostname.search("dev")  != -1) {sitebanner = "DEVELOPMENT SITE"; }
+//else if (location.hostname.search("beta") != -1) {sitebanner = "BETA TESTING SITE"; }
+</script>
+
+<script> $(function () { $('[data-toggle="tooltip"]').tooltip({ trigger : 'hover' }) }) </script>
+
+
+
+<!--extras for dataTables -->
+<link href="/css/dataTables.bootstrap4.min.css" rel="stylesheet"/>
+<link href="/css/pagination.css" rel="stylesheet"/>
+<script src="/js/jquery.dataTables.min.js"></script>
+<script src="/js/dataTables.bootstrap4.min.js"></script>
+
+</head>
+  <body>
+<div class="container-fluid">
+<div class="row" style="background-color: #CCC;">
+<div class="col-md-6" style="margin-top: 8px; margin-bottom: 8px;"> <b><span id="siteid"></span></b></div>
+
+<script> document.getElementById("siteid").innerHTML = sitebanner;</script>
+
+<div class="col-md-6" style="margin-top: 8px; margin-bottom: 8px;"> <div class="float-right"><span id='update_date'>2026-10-14</span> : 22629 3D structures containing nucleic acids | RNAEQ <a target='_blank' href='http://rna.bgsu.edu/rna3dhub/nrlist/release/4.61/all'>v4.61all</a> </div>
+ </div>
+</div>
+</div> <!--end row-->
+
+<div class="row" >
+<div class="col-lg-2" style="margin-top: 4px; margin-bottom: 0px;">
+<a href="/"><img src="/images/nakb-logo.svg" alt="nakb.org" height="65" style="margin-left: 10px; margin-right: 10px;" /></a></div>
+<div class="col-lg-4" style="margin-top: 30px; margin-bottom: 10px;"><center><!--a class='badge badge-external' href="/annotations.html"><i>June 2023: New NA, Protein Annotation Trees</i></a--></center></div>
+
+<div class="col-lg-6" style="margin-top: 24px; "> <div class="float-right">
+    <form class="form-inline">
+    <div class="input-group mb-3">
+      <a href="/nakblist=all"  target="_blank" id="searchall" class="btn btn-primary" ><b>Full Search</b></a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <input id="homequery" class="form-control typeahead" data-show-hint-on-focus="true" 
+        data-provide="typeahead" autocomplete="off" data-autoselect="false" 
+        type="search" placeholder="Quick Search: enter PDB/NDB id, author or keyword" size="48"  aria-label="Search NAKB">
+      <button id="btnSearch" class="btn btn-secondary" type="submit" 
+         style="background-color: #CCC; margin-right: 10px;" ><img src="/images/search_icon.svg" alt="search" /></button>
+    </div></form><br/>
+<!--h3>Portal for 3D structural information about Nucleic Acids </h3--></div>
+</div>
+</div>
+</div>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="nav navbar-nav mr-auto">
+
+         <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+
+
+	 <li class="nav-item dropdown"> <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" 
+            role="button" aria-haspopup="true" aria-expanded="false">Tools</a>
+
+       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+         <a class="dropdown-item"  href="/nakblist=all" >Full Search</a>
+         <a class="dropdown-item"  href="/annotations.html">Explore Annotations: Tree Views</a>
+         <a class="dropdown-item"  href="/searchterms.html">Explore Annotations: Table Views</a>
+         <a class="dropdown-item"  href="/statistics.html" >Custom Charts</a>
+         <a class="dropdown-item"  href="/modifiednt.html" >Modified Nucleotide Browser</a>
+		 <a class="dropdown-item"  href="/natools.html">External Resources</a>
+       </div>
+	 </li>
+
+
+         <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
+             role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Education</a>
+
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		 <a class="dropdown-item"  href="/basics/intro.html">Introduction to Nucleic Acids</a>
+		 <a class="dropdown-item"  href="/ndbmodule/bp-catalog/">RNA Basepair Catalog</a>
+		 <a class="dropdown-item"  href="/basics/pdb101.html">NA Molecules of the Month</a>
+		 <a class="dropdown-item"  href="/basics/rnaj.html"><i>RNA Journal</i> Cover Images</a>
+		 <a class="dropdown-item"  href="/ndbmodule/music/">DNA Music Atlas</a>
+         </div> </li>
+
+         <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
+             role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Standards</a>
+
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		 <a class="dropdown-item"  href="/basics/valencegeometry.html">Valence Geometry <span style="color:red"><b>2026 Update!</b></span></a>
+		 <a class="dropdown-item"  href="/basics/nucleotides.html">Nucleotides</a>
+		 <a class="dropdown-item"  href="/basics/basepairs.html">Base Pairs</a>
+         </div> </li>
+
+         <li class="nav-item"><a class="nav-link"  href="/download.html">Download</a></li>
+
+         <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+
+   </ul>
+
+    </div><!-- navbar header-->
+   </nav>
+
+<div class="card-body"> <!-- start overall panel body for front page -->
+<div class="row">
+<div class="col-md-12">
+<h2>Modified Nucleotides with Mappings to Standard DNA and RNA Residues</h2>
+ <p>The table below shows each of the non-standard residues found in nucleic acids present in the PDB alongside the closest Parent standard nucleotide, as of February 2025. The table can be filtered by Parent NT, by modification location (base, sugar, and/or phosphate), by chirality change present (e.g., base, 2'OH, 3'OH or 5'C position change from below/above sugar ring, or phosphate location change), and by designation of full racemate of the Parent.  Click on the non-standard nucleotide PDB chemical component dictionary id (_ccdid_) to view its full description at RCSB.org. Turn on atom mapping details to see change details in terms of atom additions, deletions, and substitutions. <i>Please note that each menu selection/option change will fully reset the displayed table.</i> <a href="https://rna.bgsu.edu/modified/modified_to_change_data.json" target="_blank">View/Download raw data source file (json)</a>. Comments/Questions/Corrections? -- please let us know at <a href="mailto:help@nakb.org">help@nakb.org</a>.</p>
+
+<a id="reset" class="btn btn-sm" style="background-color: #333399; color: white; " onclick="reset()">Reset All</a>
+<br/>
+<br/>
+<table class="table">
+<tr><td> <b>Filter by Parent NT</b></td><td>
+<form onchange=on_select()>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="all" name="radiont" value="*" checked="checked">
+    <label class="custom-control-label" for="all">Show All</label> </div>
+
+&nbsp;<b>DNA:</b>&nbsp;
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="da" name="radiont" value="DA">
+    <label class="custom-control-label" for="da">DA</label> </div>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="dc" name="radiont" value="DC">
+    <label class="custom-control-label" for="dc">DC</label> </div>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="dg" name="radiont" value="DG">
+    <label class="custom-control-label" for="dg">DG</label> </div>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="dt" name="radiont" value="DT">
+    <label class="custom-control-label" for="dt">DT</label> </div>
+
+&nbsp;<b>RNA:</b>&nbsp;
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="ra" name="radiont" value="A">
+    <label class="custom-control-label" for="ra">A</label> </div>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="rc" name="radiont" value="C">
+    <label class="custom-control-label" for="rc">C</label> </div>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="rg" name="radiont" value="G">
+    <label class="custom-control-label" for="rg">G</label> </div>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="ru" name="radiont" value="U">
+    <label class="custom-control-label" for="ru">U</label> </div>
+&nbsp;<b>Mapping Status:</b>&nbsp;
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="any" name="radiont" value="mapped">
+    <label class="custom-control-label" for="any">Any Parent</label> </div>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="unmapped" name="radiont" value="unmapped">
+    <label class="custom-control-label" for="unmapped">Unmapped</label> </div>
+
+</form>
+</td></tr>
+<tr><td> <b>Filter by Modification Location</b></td><td>
+<form onchange=on_select()>
+<b>Base:</b>&nbsp;
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="baseincl" name="radiobase" value="1" >
+    <label class="custom-control-label" for="baseincl">+</label> </div>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="baseomit" name="radiobase" value="0">
+    <label class="custom-control-label" for="baseomit">-</label> </div>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="baseany" name="radiobase" value="100" checked="checked"></div>
+<b>Sugar:</b>&nbsp;
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="sugarincl" name="radiosugar" value="1" >
+    <label class="custom-control-label" for="sugarincl">+</label> </div>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="sugaromit" name="radiosugar" value="0">
+    <label class="custom-control-label" for="sugaromit">-</label> </div>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="sugarany" name="radiosugar" value="100" checked="checked"></div>
+<b>Phosphate:</b>&nbsp;
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="phosincl" name="radiophos" value="1" >
+    <label class="custom-control-label" for="phosincl">+</label> </div>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="phosomit" name="radiophos" value="0">
+    <label class="custom-control-label" for="phosomit">-</label> </div>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="phosany" name="radiophos" value="100" checked="checked"></div>
+</form>
+</td></tr>
+<tr><td> <b>Filter by Modification Type</b></td><td>
+<form onchange=on_select()>
+<b>Chirality:</b>&nbsp;
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="chiralincl" name="radiochiral" value="1" >
+    <label class="custom-control-label" for="chiralincl">+</label> </div>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="chiralomit" name="radiochiral" value="0">
+    <label class="custom-control-label" for="chiralomit">-</label> </div>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="chiralany" name="radiochiral" value="100" checked="checked"></div>
+
+<b>Full Racemate:</b>&nbsp;
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="racemateincl" name="radioracemate" value="1" >
+    <label class="custom-control-label" for="racemateincl">+</label> </div>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="racemateomit" name="radioracemate" value="0">
+    <label class="custom-control-label" for="racemateomit">-</label> </div>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="racemateany" name="radioracemate" value="100" checked="checked"></div>
+</form>
+</td></tr>
+<tr><td> <b>Image Type</b></td><td>
+<form onchange=on_select()>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="imagercsb" name="radioimage" value="RCSB" checked="checked">
+    <label class="custom-control-label" for="imagercsb">RCSB</label> </div>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="imagebase" name="radioimage" value="Base">
+    <label class="custom-control-label" for="imagebase">Base</label> </div>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="imagefull" name="radioimage" value="Full">
+    <label class="custom-control-label" for="imagefull">Full</label> </div>
+</form>
+</td></tr>
+
+<tr><td> <b>Show Atom Mapping Details</b></td><td>
+<form onchange=on_select()>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="detailsyes" name="showdetails" value="1">
+    <label class="custom-control-label" for="detailsyes">+</label> </div>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="detailsno" name="showdetails" value="0" checked="checked">
+    <label class="custom-control-label" for="detailsno">-</label> </div>
+</form>
+</td></tr>
+
+</table>
+
+
+<br/>
+    <div id="results"> </div>
+<div id="test"></div>
+<div id="sourcetable"></div>
+
+</div>  
+</div>
+</div>  <!--end overall panel body-->
+
+<footer class="page-footer">
+    <div class="container-fluid">
+
+<div class="row" style="color:#FFF; background-color: #3FAFEF; background-image: linear-gradient(to right, #2E3192, #3FAFEF); padding-top: 3px; padding-bottom: 8px;">
+<div class="col-sm-2">
+</div>
+<div class="col-sm-10">
+<div class="small float-right text-right" style="margin-top: 8px;" > 
+Supported by NIH National Institute of General Medical Sciences, &copy; 2022-2026 NAKB</div>
+</div>
+</div>
+</div>
+</footer>
+<!--/div--><!-- end of panel started in header.html -->
+</div> <!--end of container started in header.html-->
+
+<script>
+
+$.get("/js/nakbauto.json", function(data){ $("#homequery").typeahead({ 
+     source: data,
+     items: 8,
+     minLength: 1,
+     delay: 60,
+     //autoSelect: true,
+     autoSelect: false,
+        }); 
+        },'json');
+
+$('#btnSearch').on('click', function () {
+    var url;
+    var searchInput = $('#homequery').val();
+    //minimum of 3 characters
+    var regex0 = new RegExp ( "(.){3,}" );
+    var results0 = regex0.exec( searchInput );
+    if (results0 !== null) {
+       var results1 = ndbidregex.exec( searchInput );
+       var results2 = pdbidregex.exec( searchInput );
+       var results3 = extpdbidregex.exec( searchInput );
+       if (results1 !== null) { url = "/atlas=" + searchInput.toUpperCase(); window.open(url);  }
+       else if (results2 !== null) { url = "/atlas=" + searchInput.toUpperCase(); window.open(url);  }
+       else if (results3 !== null) { url = "/atlas=" + searchInput; window.open(url);  }
+       else { url = "/?nakblist=" + searchInput; window.open(url);  }
+}
+});
+
+</script>
+
+
+</body>
+
+<script> 
+let searchvar = "";
+/*
+var urlregex = new RegExp( "[?].+" ); 
+var urlresults = urlregex.exec( window.location.href ); alert(urlresults);
+if ( urlresults !== null ) { searchvar = urlresults[0].slice(1); alert(searchvar); }  */
+let url = window.location.href; 
+// alert(url); 
+if (url.indexOf("#") != -1 ) { searchvar = url.split("#")[1];}
+else if (url.indexOf("?") != -1 ) { searchvar = url.split("?")[1];}
+
+const ntname= { "A": "adenosine-5'-monophosphate", "C": "cytosine-5'-monophosphate", "G": "guanosine-5'-monophosphate", "U": "uridine-5'-monophosphate", "DA": "2'-deoxyadenosine-5'-monophosphate", "DC": "2'-deoxycytosine-5'-monophosphate", "DG": "2'-deoxyguanosine-5'-monophosphate", "DT": "thymidine-5'-monophosphate"};const ntformula= { "A": "C10 H14 N5 O7 P", "C": "C9 H14 N3 O8 P", "G": "C10 H14 N5 O6 P", "U": "C9 H13 N2 O9 P", "DA": "C10 H14 N5 O6 P", "DC": "C9 H14 N3 O7 P", "DG": "C10 H14 N5 O7 P", "DT": "C10 H15 N2 O8 P"};
+
+
+let ntcounts = {};
+
+get_stats();
+//on_select();
+
+function getchangecounts(simplearray) { simplearray.sort();
+let simplearraycount = {}; for (let z in simplearray) { if (!simplearraycount[simplearray[z]]) { simplearraycount[simplearray[z]] = 0;} ++simplearraycount[simplearray[z]]; }
+let simplearraytxt = []; 
+//for (z in simplearraycount) {simplearraytxt.push( z + "(" + simplearraycount[z] + ")"); }
+for (z in simplearraycount) {simplearraytxt.push(z); }
+return simplearraytxt;
+}
+
+function on_select(){
+//alert(ntcounts["DG"]);
+const getbgsujson = new XMLHttpRequest(); 
+getbgsujson.onload = function() 
+{const ntMods = JSON.parse(this.responseText);
+var filtstdnt= $('input[name="radiont"]:checked').val();
+let inclbase= $('input[name="radiobase"]:checked').val();
+let inclsuga= $('input[name="radiosugar"]:checked').val();
+let inclphos= $('input[name="radiophos"]:checked').val();
+let inclchir= $('input[name="radiochiral"]:checked').val();
+let inclracm= $('input[name="radioracemate"]:checked').val();
+let incladdi=100
+let incladbo=100
+let inclrepl=100
+let inclremo=100
+let imagetype= $('input[name="radioimage"]:checked').val();
+//let imagetype= "RCSB";
+let detailstoggle = $('input[name="showdetails"]:checked').val();
+
+let text = "<table class='table table-sm' id='sort' style='width:100%'><thead><tr> <th style='width:35%' scope='col'>Parent NT</th><th style='width:35%' scope='col'>Modified NT</th><th scope='col'>Modification Location(s)</th>"
+ + "<th scope='col'>Modified NT Atom Count</th>" ;
+if (detailstoggle == 1) { text += "<th scope='col'>Atom Mapping Details</th>" ; }
+ text += "<th scope='col'>#NAKB entries</th></tr></thead> <tbody>";
+
+for (let x in ntMods) {  
+
+let stdnt = ntMods[x].standard_base[0]; 
+
+//run through filter conditions
+if (filtstdnt != "mapped" && filtstdnt != "unmapped") { if (filtstdnt != "*"  && stdnt != filtstdnt ) {continue;} }
+else if (ntMods[x].standard_base.length == 0 && filtstdnt=="mapped") {continue;}
+else if (ntMods[x].standard_base.length > 0 && filtstdnt=="unmapped") {continue;}
+
+//process change info for next set of filters
+let changeloc=[];
+for (let y in ntMods[x].changes) { changeloc.push(ntMods[x].changes[y].change_location); }
+let loctxt=  getchangecounts(changeloc).join(", ")  ;
+
+let changetype=[];
+for (let y in ntMods[x].changes) { changetype.push(ntMods[x].changes[y].change_type); }
+let typtxt= getchangecounts(changetype).join(" ")  ;
+
+if (inclbase==0 && loctxt.search("base")>-1) {continue;}
+if (inclbase==1 && loctxt.search("base")==-1) {continue;}
+if (inclsuga==0 && loctxt.search("ribose")>-1) {continue;}
+if (inclsuga==1 && loctxt.search("ribose")==-1) {continue;}
+if (inclphos==0 && loctxt.search("phosphate")>-1) {continue;}
+if (inclphos==1 && loctxt.search("phosphate")==-1) {continue;}
+if (inclchir==0 && typtxt.search("over_under")>-1) {continue;}
+if (inclchir==1 && typtxt.search("over_under")==-1) {continue;}
+if (inclracm==0 && typtxt.search("chirality_reversal")>-1) {continue;}
+if (inclracm==1 && typtxt.search("chirality_reversal")==-1) {continue;}
+/*if (inclremo==0 && typtxt.search("removal")>-1) {continue;}
+if (inclremo==1 && typtxt.search("removal")==-1) {continue;}
+if (incladdi==0 && typtxt.search("addition")>-1) {continue;}
+if (incladdi==1 && typtxt.search("addition")==-1) {continue;}
+if (incladbo==0 && typtxt.search("added_bond")>-1) {continue;}
+if (incladbo==1 && typtxt.search("added_bond")==-1) {continue;}
+if (inclrepl==0 && typtxt.search("replacement")>-1) {continue;}
+if (inclrepl==1 && typtxt.search("replacement")==-1) {continue;} */
+
+text += "<tr><td>";
+
+//standard NT
+if (ntMods[x].standard_base.length > 0) {
+text += "<a href='https://rcsb.org/ligand/" + stdnt + "' target='_blank' >" + stdnt + "</a><br/>";
+if (imagetype == "RCSB") { let stdstem = stdnt.substring(0,1) + "/"; 
+text +=  "<img style='height: 350px;' src='https://cdn.rcsb.org/images/ccd/labeled/" + stdstem + stdnt  + ".svg'>"; }
+else if (imagetype == "Base") {
+text += "<img style='height: 350px;' src='https://rna.bgsu.edu/modified/img/base_" + stdnt + "_" + stdnt + ".gif'>"; }
+else if (imagetype == "Full") {
+text += "<img style='height: 350px;' src='https://rna.bgsu.edu/modified/img/backbone_" + stdnt + "_" + stdnt + ".gif'>"; }
+text += "<br/>" + ntname[stdnt] ;
+text += "<br/>" + format_elems(ntformula[stdnt]) ;
+}
+else {text += "Not Mapped";}
+
+text += "</td><td>";
+
+//modified NT
+text += "<a href='https://rcsb.org/ligand/" + x    + "' target='_blank' >" + x + "</a><br/>";
+if (imagetype == "RCSB") { let xstem = x.substring(0,1) + "/"; 
+text += "<img style='height: 350px;' src='https://cdn.rcsb.org/images/ccd/labeled/" + xstem    + x     + ".svg'>"; }
+else if (imagetype == "Base") {
+text += "<img style='height: 350px;' src='https://rna.bgsu.edu/modified/img/base_" + stdnt + "_" + x + ".gif'>"; }
+else if (imagetype == "Full") {
+text += "<img style='height: 350px;' src='https://rna.bgsu.edu/modified/img/backbone_" + stdnt + "_" + x + ".gif'>"; }
+text += "<br/>" + ntMods[x].pdb.name  ;
+text += "<br/>" + format_elems(ntMods[x].pdb.formula)  ;
+let unusualelem = get_elems(ntMods[x].pdb.formula);
+if (unusualelem.length > 0){ text += "<br/>Nonstandard Element(s): " + unusualelem.join() ;}
+if (ntMods[x].modomics != undefined) { text += "<br/>Modomics: <a href='https://genesilico.pl/modomics/modifications/" +
++ ntMods[x].modomics.id +"/' target='_blank'>" + ntMods[x].modomics.short_name + "</a>" ; }
+
+text += "</td><td>" + loctxt  + "<br/><span style='color:white'>_" + x +  "_</td>";  //whited-out ligand id with "_" padding for exact filtering
+
+let chgtxt = "<ul>";
+if (ntMods[x].changes.length > 0) { for (let y in  ntMods[x].changes) {
+
+if (ntMods[x].changes[y].change_type == "addition") {
+chgtxt += "<li>" + ntMods[x].changes[y].modified_atom + "(" + ntMods[x].changes[y].modified_element + ")" +
+         "==>" + ntMods[x].changes[y].new_modified_atom + "(" + ntMods[x].changes[y].new_modified_element + ")" +
+         "|" + ntMods[x].changes[y].change_type + "|" + ntMods[x].changes[y].change_location + "</li>";}
+
+else if (ntMods[x].changes[y].change_type == "added_bond") {
+chgtxt += "<li>" + ntMods[x].changes[y].parent_atom_1 +  "--" + ntMods[x].changes[y].parent_atom_2 + 
+         "<=>" + ntMods[x].changes[y].modified_atom_1 + "--" + ntMods[x].changes[y].modified_atom_2 +
+        "|" + ntMods[x].changes[y].change_type + "|" + ntMods[x].changes[y].change_location + "</li>";}
+
+else if (ntMods[x].changes[y].change_type == "replacement") {
+chgtxt += "<li>" + ntMods[x].changes[y].parent_atom +  "(" + ntMods[x].changes[y].parent_element + ")" +
+         "<=>" + ntMods[x].changes[y].modified_atom + "(" + ntMods[x].changes[y].modified_element + ")" +
+        "|" + ntMods[x].changes[y].change_type + "|" + ntMods[x].changes[y].change_location + "</li>";}
+
+else if (ntMods[x].changes[y].change_type == "removal") {
+chgtxt += "<li>" + ntMods[x].changes[y].parent_atom + "(" + ntMods[x].changes[y].parent_element + ")|" 
+      + ntMods[x].changes[y].change_type + "|" + ntMods[x].changes[y].change_location + "</li>";}
+
+else if (ntMods[x].changes[y].change_type == "chirality") {
+chgtxt += "<li>" + ntMods[x].changes[y].parent_atom + "(" + ntMods[x].changes[y].parent_chirality + ")" +
+    "<=>" + ntMods[x].changes[y].modified_atom + "(" + ntMods[x].changes[y].modified_chirality +
+     ")|" + ntMods[x].changes[y].change_type + "|" + ntMods[x].changes[y].change_location + "</li>";}
+
+} }
+if (chgtxt == "")  {chgtxt += "<li>no changes listed</li>";}
+chgtxt += "</ul>"
+
+text += "<td>" + ntMods[x].atom_count + "</td>";
+
+if (detailstoggle == 1) {text += "<td>" +  chgtxt + "</td>";}
+
+//text += "<td>" + "<a href='/nakblist=allnts:" + x + "' target='_blank'>" + ntMods[x].count  + "</a></td>";
+
+if (ntcounts[x] === undefined) { text += "<td>0</td>";}
+else { text += "<td>" + "<a href='/nakblist=allnts:" + x + "' target='_blank'>" + ntcounts[x]  + "</a></td>";}
+
+text += "</tr>";  } //end for loop for ntMods
+
+text += "</tbody></table>";
+
+document.getElementById("sourcetable").innerHTML = text; 
+$('#sort').DataTable( { "lengthMenu": [[1, 10, 50, -1], [1, 10, 50, "All"]] , 
+       "oLanguage": { "sSearch": "Filter Table:"  },
+       "columnDefs": [{"orderData": [1, 0], "targets": 1}, 
+                     {"orderData": 0, "targets": 0}],
+      "oSearch": { "sSearch": searchvar }  } );
+}  //end getbgsujson.onload
+
+getbgsujson.open("GET", "https://rna.bgsu.edu/modified/modified_to_change_data.json", true);  
+//getbgsujson.open("GET", "js/modified_to_change_data.json", true);  //local copy, may not be up to date
+getbgsujson.send();
+
+
+} //end on_select
+
+function get_stats() {
+const getstats = new XMLHttpRequest(); 
+getstats.onload = function() {const ntdata = JSON.parse(this.responseText); 
+//alert(ntdata.facet_counts.facet_fields.allnts[1]);
+var icount = 0;
+var listvalue; 
+$.each(ntdata.facet_counts.facet_fields.allnts, function(i, item) { icount = icount +1;
+if (icount % 2 == 1) {listvalue=item; } else {ntcounts[listvalue]=item; }; 
+});
+on_select();
+} //end getstats.onload
+getstats.open("GET", "/node/solr/nakb/select?q=status:REL&facet=true&facet.field=allnts&facet.limit=100000&rows=0", true);
+getstats.send();
+}; //end function get_status
+
+const commonelem = ["C", "N", "O", "H", "P"];
+function get_elems(formula) {
+let elemarray = []; let elems = formula.split(" "); 
+$.each(elems, function(i, eid) {
+let elemid = eid.replace(/\d/g,""); if (commonelem.indexOf(elemid)==-1) { elemarray.push(elemid); } 
+});
+return elemarray;
+}; //end function get_elems
+
+function format_elems(formula) {
+let elemstring = ""; let elems = formula.split(" ");
+$.each(elems, function(i, eid) {
+let elemid = eid.replace(/\d/g,"");
+let elemnum = eid.replace(/\D/g,"");
+elemstring += elemid + "<sub>" + elemnum + "</sub>";
+});
+return elemstring;
+}; //end of function format_elems
+
+</script>
+<script>
+var elementhref = location.href.split("?");
+function reset() { 
+location.href = elementhref[0]; }
+</script>
+
+</html>
+

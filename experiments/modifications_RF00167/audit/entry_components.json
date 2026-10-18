@@ -1,0 +1,5254 @@
+{
+ "1y26": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Vibrio vulnificus A-riboswitch",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "ADENINE",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ADE": {
+    "type": "non-polymer",
+    "name": "ADENINE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "MG": {
+    "non-polymer entity 2 asym B": 1,
+    "non-polymer entity 2 asym C": 1,
+    "non-polymer entity 2 asym D": 1,
+    "non-polymer entity 2 asym E": 1,
+    "non-polymer entity 2 asym F": 1
+   },
+   "ADE": {
+    "non-polymer entity 3 asym G": 1
+   },
+   "HOH": {
+    "non-polymer entity 4 asym H": 94
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "1y27": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Bacillus subtilis xpt",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "GUANINE",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "CCC": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-PHOSPHATE-2',3'-CYCLIC PHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "GDP": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-DIPHOSPHATE"
+   },
+   "GUN": {
+    "type": "non-polymer",
+    "name": "GUANINE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "GDP": {
+    "polymer entity 1 (polyribonucleotide) asym A": 1
+   },
+   "CCC": {
+    "polymer entity 1 (polyribonucleotide) asym A": 1
+   },
+   "GUN": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "HOH": {
+    "non-polymer entity 3 asym C": 18
+   }
+  },
+  "has_pdbx_struct_mod_residue": true
+ },
+ "2b57": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "65-MER",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "ACETATE ION",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "9H-PURINE-2,6-DIAMINE",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "6AP": {
+    "type": "non-polymer",
+    "name": "9H-PURINE-2,6-DIAMINE"
+   },
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ACT": {
+    "type": "non-polymer",
+    "name": "ACETATE ION"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "ACT": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "NCO": {
+    "non-polymer entity 3 asym C": 1,
+    "non-polymer entity 3 asym D": 1,
+    "non-polymer entity 3 asym E": 1,
+    "non-polymer entity 3 asym F": 1,
+    "non-polymer entity 3 asym G": 1,
+    "non-polymer entity 3 asym H": 1,
+    "non-polymer entity 3 asym I": 1,
+    "non-polymer entity 3 asym J": 1,
+    "non-polymer entity 3 asym K": 1
+   },
+   "6AP": {
+    "non-polymer entity 4 asym L": 1
+   },
+   "HOH": {
+    "non-polymer entity 5 asym M": 185
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "2ees": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Guanine riboswitch",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "ACETATE ION",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "HYPOXANTHINE",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ACT": {
+    "type": "non-polymer",
+    "name": "ACETATE ION"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "HPA": {
+    "type": "non-polymer",
+    "name": "HYPOXANTHINE"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "ACT": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "NCO": {
+    "non-polymer entity 3 asym C": 1,
+    "non-polymer entity 3 asym D": 1,
+    "non-polymer entity 3 asym E": 1,
+    "non-polymer entity 3 asym F": 1,
+    "non-polymer entity 3 asym G": 1,
+    "non-polymer entity 3 asym H": 1,
+    "non-polymer entity 3 asym I": 1,
+    "non-polymer entity 3 asym J": 1,
+    "non-polymer entity 3 asym K": 1,
+    "non-polymer entity 3 asym L": 1,
+    "non-polymer entity 3 asym M": 1,
+    "non-polymer entity 3 asym N": 1
+   },
+   "HPA": {
+    "non-polymer entity 4 asym O": 1
+   },
+   "HOH": {
+    "non-polymer entity 5 asym P": 261
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "2eet": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Guanine Riboswitch",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "ACETATE ION",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "HYPOXANTHINE",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ACT": {
+    "type": "non-polymer",
+    "name": "ACETATE ION"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "HPA": {
+    "type": "non-polymer",
+    "name": "HYPOXANTHINE"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "ACT": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "NCO": {
+    "non-polymer entity 3 asym C": 1,
+    "non-polymer entity 3 asym D": 1,
+    "non-polymer entity 3 asym E": 1,
+    "non-polymer entity 3 asym F": 1,
+    "non-polymer entity 3 asym G": 1,
+    "non-polymer entity 3 asym H": 1,
+    "non-polymer entity 3 asym I": 1,
+    "non-polymer entity 3 asym J": 1,
+    "non-polymer entity 3 asym K": 1,
+    "non-polymer entity 3 asym L": 1,
+    "non-polymer entity 3 asym M": 1,
+    "non-polymer entity 3 asym N": 1
+   },
+   "HPA": {
+    "non-polymer entity 4 asym O": 1
+   },
+   "HOH": {
+    "non-polymer entity 5 asym P": 260
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "2eeu": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Guanine riboswitch",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "ACETATE ION",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "HYPOXANTHINE",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ACT": {
+    "type": "non-polymer",
+    "name": "ACETATE ION"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "HPA": {
+    "type": "non-polymer",
+    "name": "HYPOXANTHINE"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "ACT": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "NCO": {
+    "non-polymer entity 3 asym C": 1,
+    "non-polymer entity 3 asym D": 1,
+    "non-polymer entity 3 asym E": 1,
+    "non-polymer entity 3 asym F": 1,
+    "non-polymer entity 3 asym G": 1,
+    "non-polymer entity 3 asym H": 1,
+    "non-polymer entity 3 asym I": 1,
+    "non-polymer entity 3 asym J": 1,
+    "non-polymer entity 3 asym K": 1,
+    "non-polymer entity 3 asym L": 1,
+    "non-polymer entity 3 asym M": 1,
+    "non-polymer entity 3 asym N": 1
+   },
+   "HPA": {
+    "non-polymer entity 4 asym O": 1
+   },
+   "HOH": {
+    "non-polymer entity 5 asym P": 212
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "2eev": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "guanine riboswitch",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "ACETATE ION",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "HYPOXANTHINE",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ACT": {
+    "type": "non-polymer",
+    "name": "ACETATE ION"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "HPA": {
+    "type": "non-polymer",
+    "name": "HYPOXANTHINE"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "ACT": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "NCO": {
+    "non-polymer entity 3 asym C": 1,
+    "non-polymer entity 3 asym D": 1,
+    "non-polymer entity 3 asym E": 1,
+    "non-polymer entity 3 asym F": 1,
+    "non-polymer entity 3 asym G": 1,
+    "non-polymer entity 3 asym H": 1,
+    "non-polymer entity 3 asym I": 1,
+    "non-polymer entity 3 asym J": 1,
+    "non-polymer entity 3 asym K": 1,
+    "non-polymer entity 3 asym L": 1,
+    "non-polymer entity 3 asym M": 1,
+    "non-polymer entity 3 asym N": 1
+   },
+   "HPA": {
+    "non-polymer entity 4 asym O": 1
+   },
+   "HOH": {
+    "non-polymer entity 5 asym P": 299
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "2eew": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Guanine riboswitch",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "ACETATE ION",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "HYPOXANTHINE",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ACT": {
+    "type": "non-polymer",
+    "name": "ACETATE ION"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "HPA": {
+    "type": "non-polymer",
+    "name": "HYPOXANTHINE"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "ACT": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "NCO": {
+    "non-polymer entity 3 asym C": 1,
+    "non-polymer entity 3 asym D": 1,
+    "non-polymer entity 3 asym E": 1,
+    "non-polymer entity 3 asym F": 1,
+    "non-polymer entity 3 asym G": 1,
+    "non-polymer entity 3 asym H": 1,
+    "non-polymer entity 3 asym I": 1,
+    "non-polymer entity 3 asym J": 1
+   },
+   "HPA": {
+    "non-polymer entity 4 asym K": 1
+   },
+   "HOH": {
+    "non-polymer entity 5 asym L": 237
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "2g9c": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "guanine riboswitch",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "ACETATE ION",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "PYRIMIDINE-2,4,6-TRIAMINE",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "3AY": {
+    "type": "non-polymer",
+    "name": "PYRIMIDINE-2,4,6-TRIAMINE"
+   },
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ACT": {
+    "type": "non-polymer",
+    "name": "ACETATE ION"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "ACT": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "NCO": {
+    "non-polymer entity 3 asym C": 1,
+    "non-polymer entity 3 asym D": 1,
+    "non-polymer entity 3 asym E": 1,
+    "non-polymer entity 3 asym F": 1,
+    "non-polymer entity 3 asym G": 1,
+    "non-polymer entity 3 asym H": 1,
+    "non-polymer entity 3 asym I": 1,
+    "non-polymer entity 3 asym J": 1,
+    "non-polymer entity 3 asym K": 1,
+    "non-polymer entity 3 asym L": 1,
+    "non-polymer entity 3 asym M": 1,
+    "non-polymer entity 3 asym N": 1
+   },
+   "3AY": {
+    "non-polymer entity 4 asym O": 1
+   },
+   "HOH": {
+    "non-polymer entity 5 asym P": 353
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "2xnw": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "GUANINE RIBOSWITCH",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "ACETATE ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "3,6-diamino-1,5-dihydro[1,2,4]triazolo[4,3-b][1,2,4]triazol-4-ium",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "non-polymer",
+    "description": "POTASSIUM ION",
+    "polymer_type": null
+   },
+   "6": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ACT": {
+    "type": "non-polymer",
+    "name": "ACETATE ION"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "K": {
+    "type": "non-polymer",
+    "name": "POTASSIUM ION"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   },
+   "ZZR": {
+    "type": "non-polymer",
+    "name": "3,6-diamino-1,5-dihydro[1,2,4]triazolo[4,3-b][1,2,4]triazol-4-ium"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "NCO": {
+    "non-polymer entity 2 asym B": 1,
+    "non-polymer entity 2 asym C": 1,
+    "non-polymer entity 2 asym D": 1,
+    "non-polymer entity 2 asym E": 1,
+    "non-polymer entity 2 asym F": 1,
+    "non-polymer entity 2 asym G": 1,
+    "non-polymer entity 2 asym H": 1
+   },
+   "ACT": {
+    "non-polymer entity 3 asym I": 1
+   },
+   "ZZR": {
+    "non-polymer entity 4 asym J": 1
+   },
+   "K": {
+    "non-polymer entity 5 asym K": 1
+   },
+   "HOH": {
+    "non-polymer entity 6 asym L": 329
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "2xnz": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Guanine riboswitch",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "ACETATE ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "6-METHYL-1,3,5-TRIAZINE-2,4-DIAMINE",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "non-polymer",
+    "description": "POTASSIUM ION",
+    "polymer_type": null
+   },
+   "6": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "3AW": {
+    "type": "non-polymer",
+    "name": "6-METHYL-1,3,5-TRIAZINE-2,4-DIAMINE"
+   },
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ACT": {
+    "type": "non-polymer",
+    "name": "ACETATE ION"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "K": {
+    "type": "non-polymer",
+    "name": "POTASSIUM ION"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "NCO": {
+    "non-polymer entity 2 asym B": 1,
+    "non-polymer entity 2 asym C": 1,
+    "non-polymer entity 2 asym D": 1,
+    "non-polymer entity 2 asym E": 1,
+    "non-polymer entity 2 asym F": 1,
+    "non-polymer entity 2 asym G": 1
+   },
+   "ACT": {
+    "non-polymer entity 3 asym H": 1
+   },
+   "3AW": {
+    "non-polymer entity 4 asym I": 1
+   },
+   "K": {
+    "non-polymer entity 5 asym J": 1,
+    "non-polymer entity 5 asym K": 1,
+    "non-polymer entity 5 asym L": 1,
+    "non-polymer entity 5 asym M": 1,
+    "non-polymer entity 5 asym N": 1,
+    "non-polymer entity 5 asym O": 1
+   },
+   "HOH": {
+    "non-polymer entity 6 asym P": 216
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "2xo0": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Guanine riboswitch",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "ACETATE ION",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "POTASSIUM ION",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "non-polymer",
+    "description": "1,3,5-TRIAZINE-2,4-DIAMINE",
+    "polymer_type": null
+   },
+   "6": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ACT": {
+    "type": "non-polymer",
+    "name": "ACETATE ION"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "K": {
+    "type": "non-polymer",
+    "name": "POTASSIUM ION"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   },
+   "ZZS": {
+    "type": "non-polymer",
+    "name": "1,3,5-TRIAZINE-2,4-DIAMINE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "ACT": {
+    "non-polymer entity 2 asym B": 1,
+    "non-polymer entity 2 asym C": 1
+   },
+   "NCO": {
+    "non-polymer entity 3 asym D": 1,
+    "non-polymer entity 3 asym E": 1,
+    "non-polymer entity 3 asym F": 1,
+    "non-polymer entity 3 asym G": 1,
+    "non-polymer entity 3 asym H": 1,
+    "non-polymer entity 3 asym L": 1
+   },
+   "K": {
+    "non-polymer entity 4 asym I": 1,
+    "non-polymer entity 4 asym J": 1,
+    "non-polymer entity 4 asym M": 1,
+    "non-polymer entity 4 asym N": 1,
+    "non-polymer entity 4 asym O": 1
+   },
+   "ZZS": {
+    "non-polymer entity 5 asym K": 1
+   },
+   "HOH": {
+    "non-polymer entity 6 asym P": 151
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "2xo1": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Guanine riboswitch",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "N-METHYL-9H-PURIN-6-AMINE",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "ACETATE ION",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "non-polymer",
+    "description": "POTASSIUM ION",
+    "polymer_type": null
+   },
+   "6": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ACT": {
+    "type": "non-polymer",
+    "name": "ACETATE ION"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "K": {
+    "type": "non-polymer",
+    "name": "POTASSIUM ION"
+   },
+   "N6M": {
+    "type": "non-polymer",
+    "name": "N-METHYL-9H-PURIN-6-AMINE"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "N6M": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "NCO": {
+    "non-polymer entity 3 asym C": 1,
+    "non-polymer entity 3 asym D": 1,
+    "non-polymer entity 3 asym E": 1,
+    "non-polymer entity 3 asym F": 1,
+    "non-polymer entity 3 asym G": 1,
+    "non-polymer entity 3 asym H": 1,
+    "non-polymer entity 3 asym I": 1
+   },
+   "ACT": {
+    "non-polymer entity 4 asym J": 1
+   },
+   "K": {
+    "non-polymer entity 5 asym K": 1,
+    "non-polymer entity 5 asym L": 1,
+    "non-polymer entity 5 asym M": 1
+   },
+   "HOH": {
+    "non-polymer entity 6 asym N": 226
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "3ds7": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "67-MER",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "ACETATE ION",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "2'-DEOXY-GUANOSINE",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ACT": {
+    "type": "non-polymer",
+    "name": "ACETATE ION"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "GNG": {
+    "type": "RNA OH 5 prime terminus",
+    "name": "2'-DEOXY-GUANOSINE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "ACT": {
+    "non-polymer entity 2 asym C": 1,
+    "non-polymer entity 2 asym J": 1
+   },
+   "NCO": {
+    "non-polymer entity 3 asym D": 1,
+    "non-polymer entity 3 asym E": 1,
+    "non-polymer entity 3 asym F": 1,
+    "non-polymer entity 3 asym G": 1,
+    "non-polymer entity 3 asym H": 1,
+    "non-polymer entity 3 asym K": 1,
+    "non-polymer entity 3 asym L": 1,
+    "non-polymer entity 3 asym M": 1,
+    "non-polymer entity 3 asym N": 1,
+    "non-polymer entity 3 asym O": 1,
+    "non-polymer entity 3 asym P": 1
+   },
+   "GNG": {
+    "non-polymer entity 4 asym I": 1,
+    "non-polymer entity 4 asym Q": 1
+   },
+   "HOH": {
+    "non-polymer entity 5 asym R": 317,
+    "non-polymer entity 5 asym S": 305
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "3fo4": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Guanine riboswitch C74U mutant",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "6-chloroguanine",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "ACETATE ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "6GU": {
+    "type": "non-polymer",
+    "name": "6-chloroguanine"
+   },
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ACT": {
+    "type": "non-polymer",
+    "name": "ACETATE ION"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "6GU": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "ACT": {
+    "non-polymer entity 3 asym C": 1
+   },
+   "NCO": {
+    "non-polymer entity 4 asym D": 1,
+    "non-polymer entity 4 asym E": 1,
+    "non-polymer entity 4 asym F": 1,
+    "non-polymer entity 4 asym G": 1,
+    "non-polymer entity 4 asym H": 1,
+    "non-polymer entity 4 asym I": 1,
+    "non-polymer entity 4 asym J": 1,
+    "non-polymer entity 4 asym K": 1,
+    "non-polymer entity 4 asym L": 1,
+    "non-polymer entity 4 asym M": 1,
+    "non-polymer entity 4 asym N": 1,
+    "non-polymer entity 4 asym O": 1
+   },
+   "HOH": {
+    "non-polymer entity 5 asym P": 203
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "3fo6": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Guanine riboswitch",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "6-O-methylguanine",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "ACETATE ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "6GO": {
+    "type": "non-polymer",
+    "name": "6-O-methylguanine"
+   },
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ACT": {
+    "type": "non-polymer",
+    "name": "ACETATE ION"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "6GO": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "ACT": {
+    "non-polymer entity 3 asym C": 1
+   },
+   "NCO": {
+    "non-polymer entity 4 asym D": 1,
+    "non-polymer entity 4 asym E": 1,
+    "non-polymer entity 4 asym F": 1,
+    "non-polymer entity 4 asym G": 1,
+    "non-polymer entity 4 asym H": 1,
+    "non-polymer entity 4 asym I": 1,
+    "non-polymer entity 4 asym J": 1,
+    "non-polymer entity 4 asym K": 1,
+    "non-polymer entity 4 asym L": 1
+   },
+   "HOH": {
+    "non-polymer entity 5 asym M": 229
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "3g4m": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Guanine riboswitch",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "9H-purin-2-amine",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "ACETATE ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "2BP": {
+    "type": "non-polymer",
+    "name": "9H-purin-2-amine"
+   },
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ACT": {
+    "type": "non-polymer",
+    "name": "ACETATE ION"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "2BP": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "ACT": {
+    "non-polymer entity 3 asym C": 1
+   },
+   "NCO": {
+    "non-polymer entity 4 asym D": 1,
+    "non-polymer entity 4 asym E": 1,
+    "non-polymer entity 4 asym F": 1,
+    "non-polymer entity 4 asym G": 1,
+    "non-polymer entity 4 asym H": 1,
+    "non-polymer entity 4 asym I": 1,
+    "non-polymer entity 4 asym J": 1,
+    "non-polymer entity 4 asym K": 1,
+    "non-polymer entity 4 asym L": 1,
+    "non-polymer entity 4 asym M": 1,
+    "non-polymer entity 4 asym N": 1
+   },
+   "HOH": {
+    "non-polymer entity 5 asym O": 64
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "3gao": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Guanine riboswitch",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "XANTHINE",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "ACETATE ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "6": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ACT": {
+    "type": "non-polymer",
+    "name": "ACETATE ION"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   },
+   "XAN": {
+    "type": "non-polymer",
+    "name": "XANTHINE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "XAN": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "ACT": {
+    "non-polymer entity 3 asym C": 1
+   },
+   "NCO": {
+    "non-polymer entity 4 asym D": 1,
+    "non-polymer entity 4 asym E": 1,
+    "non-polymer entity 4 asym F": 1,
+    "non-polymer entity 4 asym G": 1,
+    "non-polymer entity 4 asym H": 1,
+    "non-polymer entity 4 asym I": 1,
+    "non-polymer entity 4 asym J": 1,
+    "non-polymer entity 4 asym K": 1,
+    "non-polymer entity 4 asym L": 1,
+    "non-polymer entity 4 asym M": 1,
+    "non-polymer entity 4 asym N": 1,
+    "non-polymer entity 4 asym O": 1,
+    "non-polymer entity 4 asym P": 1
+   },
+   "MG": {
+    "non-polymer entity 5 asym Q": 1
+   },
+   "HOH": {
+    "non-polymer entity 6 asym R": 251
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "3ger": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Guanine riboswitch",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "6-chloroguanine",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "ACETATE ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "6GU": {
+    "type": "non-polymer",
+    "name": "6-chloroguanine"
+   },
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ACT": {
+    "type": "non-polymer",
+    "name": "ACETATE ION"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "6GU": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "ACT": {
+    "non-polymer entity 3 asym C": 1
+   },
+   "NCO": {
+    "non-polymer entity 4 asym D": 1,
+    "non-polymer entity 4 asym E": 1,
+    "non-polymer entity 4 asym F": 1,
+    "non-polymer entity 4 asym G": 1,
+    "non-polymer entity 4 asym H": 1,
+    "non-polymer entity 4 asym I": 1,
+    "non-polymer entity 4 asym J": 1,
+    "non-polymer entity 4 asym K": 1,
+    "non-polymer entity 4 asym L": 1,
+    "non-polymer entity 4 asym M": 1,
+    "non-polymer entity 4 asym N": 1,
+    "non-polymer entity 4 asym O": 1
+   },
+   "HOH": {
+    "non-polymer entity 5 asym P": 242
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "3ges": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Guanine riboswitch",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "6-O-methylguanine",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "ACETATE ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "6GO": {
+    "type": "non-polymer",
+    "name": "6-O-methylguanine"
+   },
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ACT": {
+    "type": "non-polymer",
+    "name": "ACETATE ION"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "6GO": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "ACT": {
+    "non-polymer entity 3 asym C": 1
+   },
+   "NCO": {
+    "non-polymer entity 4 asym D": 1,
+    "non-polymer entity 4 asym E": 1,
+    "non-polymer entity 4 asym F": 1,
+    "non-polymer entity 4 asym G": 1,
+    "non-polymer entity 4 asym H": 1,
+    "non-polymer entity 4 asym I": 1,
+    "non-polymer entity 4 asym J": 1,
+    "non-polymer entity 4 asym K": 1
+   },
+   "HOH": {
+    "non-polymer entity 5 asym L": 110
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "3gog": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Guanine riboswitch",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "6-chloroguanine",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "ACETATE ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "6GU": {
+    "type": "non-polymer",
+    "name": "6-chloroguanine"
+   },
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ACT": {
+    "type": "non-polymer",
+    "name": "ACETATE ION"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "6GU": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "ACT": {
+    "non-polymer entity 3 asym C": 1
+   },
+   "NCO": {
+    "non-polymer entity 4 asym D": 1,
+    "non-polymer entity 4 asym E": 1,
+    "non-polymer entity 4 asym F": 1,
+    "non-polymer entity 4 asym G": 1,
+    "non-polymer entity 4 asym H": 1,
+    "non-polymer entity 4 asym I": 1,
+    "non-polymer entity 4 asym J": 1,
+    "non-polymer entity 4 asym K": 1
+   },
+   "HOH": {
+    "non-polymer entity 5 asym L": 253
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "3got": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Guanine riboswitch",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "2-fluoroadenine",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "ACETATE ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "A2F": {
+    "type": "non-polymer",
+    "name": "2-fluoroadenine"
+   },
+   "ACT": {
+    "type": "non-polymer",
+    "name": "ACETATE ION"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "A2F": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "ACT": {
+    "non-polymer entity 3 asym C": 1
+   },
+   "NCO": {
+    "non-polymer entity 4 asym D": 1,
+    "non-polymer entity 4 asym E": 1,
+    "non-polymer entity 4 asym F": 1,
+    "non-polymer entity 4 asym G": 1,
+    "non-polymer entity 4 asym H": 1,
+    "non-polymer entity 4 asym I": 1,
+    "non-polymer entity 4 asym J": 1,
+    "non-polymer entity 4 asym K": 1,
+    "non-polymer entity 4 asym L": 1,
+    "non-polymer entity 4 asym M": 1,
+    "non-polymer entity 4 asym N": 1
+   },
+   "HOH": {
+    "non-polymer entity 5 asym O": 202
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "3ivn": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "A-riboswitch",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "BROMIDE ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "23G": {
+    "type": "RNA OH 3 prime terminus",
+    "name": "GUANOSINE-5'-PHOSPHATE-2',3'-CYCLIC PHOSPHATE"
+   },
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "BR": {
+    "type": "non-polymer",
+    "name": "BROMIDE ION"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "23G": {
+    "polymer entity 1 (polyribonucleotide) asym A": 1,
+    "polymer entity 1 (polyribonucleotide) asym B": 1
+   },
+   "MG": {
+    "non-polymer entity 2 asym C": 1,
+    "non-polymer entity 2 asym D": 1,
+    "non-polymer entity 2 asym E": 1,
+    "non-polymer entity 2 asym F": 1,
+    "non-polymer entity 2 asym G": 1,
+    "non-polymer entity 2 asym J": 1,
+    "non-polymer entity 2 asym K": 1,
+    "non-polymer entity 2 asym L": 1,
+    "non-polymer entity 2 asym M": 1
+   },
+   "BR": {
+    "non-polymer entity 3 asym H": 1,
+    "non-polymer entity 3 asym I": 1
+   },
+   "HOH": {
+    "non-polymer entity 4 asym N": 47,
+    "non-polymer entity 4 asym O": 41
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "3la5": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Adenosine RIboswitch",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "6-amino-1,3,5-triazin-2(1H)-one",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "5AZ": {
+    "type": "non-polymer",
+    "name": "6-amino-1,3,5-triazin-2(1H)-one"
+   },
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "MG": {
+    "non-polymer entity 2 asym B": 1,
+    "non-polymer entity 2 asym C": 1,
+    "non-polymer entity 2 asym D": 1,
+    "non-polymer entity 2 asym E": 1,
+    "non-polymer entity 2 asym F": 1,
+    "non-polymer entity 2 asym G": 1,
+    "non-polymer entity 2 asym H": 1,
+    "non-polymer entity 2 asym I": 1,
+    "non-polymer entity 2 asym J": 1,
+    "non-polymer entity 2 asym K": 1
+   },
+   "5AZ": {
+    "non-polymer entity 3 asym L": 1
+   },
+   "HOH": {
+    "non-polymer entity 4 asym M": 382
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "3rkf": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Guanine riboswitch",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "2-amino-1,9-dihydro-6H-purine-6-thione",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "DX4": {
+    "type": "non-polymer",
+    "name": "2-amino-1,9-dihydro-6H-purine-6-thione"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "DX4": {
+    "non-polymer entity 2 asym E": 1,
+    "non-polymer entity 2 asym O": 1,
+    "non-polymer entity 2 asym U": 1,
+    "non-polymer entity 2 asym AA": 1
+   },
+   "NCO": {
+    "non-polymer entity 3 asym F": 1,
+    "non-polymer entity 3 asym G": 1,
+    "non-polymer entity 3 asym H": 1,
+    "non-polymer entity 3 asym I": 1,
+    "non-polymer entity 3 asym J": 1,
+    "non-polymer entity 3 asym K": 1,
+    "non-polymer entity 3 asym L": 1,
+    "non-polymer entity 3 asym M": 1,
+    "non-polymer entity 3 asym N": 1,
+    "non-polymer entity 3 asym P": 1,
+    "non-polymer entity 3 asym Q": 1,
+    "non-polymer entity 3 asym R": 1,
+    "non-polymer entity 3 asym S": 1,
+    "non-polymer entity 3 asym T": 1,
+    "non-polymer entity 3 asym V": 1,
+    "non-polymer entity 3 asym W": 1,
+    "non-polymer entity 3 asym X": 1,
+    "non-polymer entity 3 asym Y": 1,
+    "non-polymer entity 3 asym Z": 1,
+    "non-polymer entity 3 asym BA": 1,
+    "non-polymer entity 3 asym CA": 1,
+    "non-polymer entity 3 asym DA": 1,
+    "non-polymer entity 3 asym EA": 1,
+    "non-polymer entity 3 asym FA": 1,
+    "non-polymer entity 3 asym GA": 1,
+    "non-polymer entity 3 asym HA": 1
+   },
+   "HOH": {
+    "non-polymer entity 4 asym IA": 4,
+    "non-polymer entity 4 asym JA": 2,
+    "non-polymer entity 4 asym KA": 3,
+    "non-polymer entity 4 asym LA": 3
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "4fe5": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "xpt-pbuX guanine riboswitch aptamer domain",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "HYPOXANTHINE",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "ACETATE ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ACT": {
+    "type": "non-polymer",
+    "name": "ACETATE ION"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "HPA": {
+    "type": "non-polymer",
+    "name": "HYPOXANTHINE"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "HPA": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "ACT": {
+    "non-polymer entity 3 asym C": 1,
+    "non-polymer entity 3 asym D": 1
+   },
+   "NCO": {
+    "non-polymer entity 4 asym E": 1,
+    "non-polymer entity 4 asym F": 1,
+    "non-polymer entity 4 asym G": 1,
+    "non-polymer entity 4 asym H": 1,
+    "non-polymer entity 4 asym I": 1,
+    "non-polymer entity 4 asym J": 1
+   },
+   "HOH": {
+    "non-polymer entity 5 asym K": 538
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "4fej": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "A24U mutant of the B. subtilis xpt-pbuX guanine riboswitch aptamer domain",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "HYPOXANTHINE",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "ACETATE ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ACT": {
+    "type": "non-polymer",
+    "name": "ACETATE ION"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "HPA": {
+    "type": "non-polymer",
+    "name": "HYPOXANTHINE"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "HPA": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "ACT": {
+    "non-polymer entity 3 asym C": 1,
+    "non-polymer entity 3 asym D": 1
+   },
+   "NCO": {
+    "non-polymer entity 4 asym E": 1,
+    "non-polymer entity 4 asym F": 1,
+    "non-polymer entity 4 asym G": 1,
+    "non-polymer entity 4 asym H": 1,
+    "non-polymer entity 4 asym I": 1,
+    "non-polymer entity 4 asym J": 1,
+    "non-polymer entity 4 asym K": 1
+   },
+   "HOH": {
+    "non-polymer entity 5 asym L": 592
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "4fel": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "U25A/A46G mutant of the B. subtilis xpt-pbuX guanine riboswitch aptamer domain",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "HYPOXANTHINE",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "ACETATE ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ACT": {
+    "type": "non-polymer",
+    "name": "ACETATE ION"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "HPA": {
+    "type": "non-polymer",
+    "name": "HYPOXANTHINE"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "HPA": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "ACT": {
+    "non-polymer entity 3 asym C": 1
+   },
+   "NCO": {
+    "non-polymer entity 4 asym D": 1,
+    "non-polymer entity 4 asym E": 1,
+    "non-polymer entity 4 asym F": 1,
+    "non-polymer entity 4 asym G": 1,
+    "non-polymer entity 4 asym H": 1,
+    "non-polymer entity 4 asym I": 1,
+    "non-polymer entity 4 asym J": 1,
+    "non-polymer entity 4 asym K": 1,
+    "non-polymer entity 4 asym L": 1
+   },
+   "HOH": {
+    "non-polymer entity 5 asym M": 611
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "4fen": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "A24U/U25A/A46G mutant of the B. subtilis xpt-pbuX guanine riboswitch aptamer domain",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "HYPOXANTHINE",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "ACETATE ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ACT": {
+    "type": "non-polymer",
+    "name": "ACETATE ION"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "HPA": {
+    "type": "non-polymer",
+    "name": "HYPOXANTHINE"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "HPA": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "ACT": {
+    "non-polymer entity 3 asym C": 1
+   },
+   "NCO": {
+    "non-polymer entity 4 asym D": 1,
+    "non-polymer entity 4 asym E": 1,
+    "non-polymer entity 4 asym F": 1,
+    "non-polymer entity 4 asym G": 1,
+    "non-polymer entity 4 asym H": 1,
+    "non-polymer entity 4 asym I": 1,
+    "non-polymer entity 4 asym J": 1
+   },
+   "HOH": {
+    "non-polymer entity 5 asym K": 598
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "4feo": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "U25A/A46G/C74U mutant of the B. subtilis xpt-pbuX guanine riboswitch aptamer domain",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "9H-PURINE-2,6-DIAMINE",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "6AP": {
+    "type": "non-polymer",
+    "name": "9H-PURINE-2,6-DIAMINE"
+   },
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "6AP": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "NCO": {
+    "non-polymer entity 3 asym C": 1,
+    "non-polymer entity 3 asym D": 1,
+    "non-polymer entity 3 asym E": 1,
+    "non-polymer entity 3 asym F": 1,
+    "non-polymer entity 3 asym G": 1,
+    "non-polymer entity 3 asym H": 1,
+    "non-polymer entity 3 asym I": 1,
+    "non-polymer entity 3 asym J": 1,
+    "non-polymer entity 3 asym K": 1
+   },
+   "HOH": {
+    "non-polymer entity 4 asym L": 689
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "4fep": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "A24U/U25A/A46G/C74U mutant of the B. subtilis xpt-pbuX guanine riboswitch aptamer domain",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "9H-PURINE-2,6-DIAMINE",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "6AP": {
+    "type": "non-polymer",
+    "name": "9H-PURINE-2,6-DIAMINE"
+   },
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "6AP": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "NCO": {
+    "non-polymer entity 3 asym C": 1,
+    "non-polymer entity 3 asym D": 1,
+    "non-polymer entity 3 asym E": 1,
+    "non-polymer entity 3 asym F": 1,
+    "non-polymer entity 3 asym G": 1,
+    "non-polymer entity 3 asym H": 1,
+    "non-polymer entity 3 asym I": 1,
+    "non-polymer entity 3 asym J": 1,
+    "non-polymer entity 3 asym K": 1
+   },
+   "HOH": {
+    "non-polymer entity 4 asym L": 571
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "4lx5": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Mutated adenine riboswitch aptamer",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "pyrimido[4,5-d]pyrimidine-2,4-diamine",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "29G": {
+    "type": "non-polymer",
+    "name": "pyrimido[4,5-d]pyrimidine-2,4-diamine"
+   },
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "29G": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "MG": {
+    "non-polymer entity 3 asym C": 1,
+    "non-polymer entity 3 asym D": 1,
+    "non-polymer entity 3 asym E": 1,
+    "non-polymer entity 3 asym F": 1
+   },
+   "HOH": {
+    "non-polymer entity 4 asym G": 17
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "4lx6": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Mutated adenine riboswitch aptamer",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "2-aminopyrimido[4,5-d]pyrimidin-4(3H)-one",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "29H": {
+    "type": "non-polymer",
+    "name": "2-aminopyrimido[4,5-d]pyrimidin-4(3H)-one"
+   },
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "29H": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "MG": {
+    "non-polymer entity 3 asym C": 1,
+    "non-polymer entity 3 asym D": 1,
+    "non-polymer entity 3 asym E": 1,
+    "non-polymer entity 3 asym F": 1,
+    "non-polymer entity 3 asym G": 1
+   },
+   "HOH": {
+    "non-polymer entity 4 asym H": 22
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "4tzx": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Vibrio vulnificus Adenine Riboswitch",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "ADENINE",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ADE": {
+    "type": "non-polymer",
+    "name": "ADENINE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "ADE": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "MG": {
+    "non-polymer entity 3 asym C": 1,
+    "non-polymer entity 3 asym D": 1,
+    "non-polymer entity 3 asym E": 1,
+    "non-polymer entity 3 asym F": 1,
+    "non-polymer entity 3 asym G": 1,
+    "non-polymer entity 3 asym H": 1,
+    "non-polymer entity 3 asym I": 1,
+    "non-polymer entity 3 asym J": 1,
+    "non-polymer entity 3 asym K": 1
+   },
+   "HOH": {
+    "non-polymer entity 4 asym L": 111
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "4tzy": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Vibrio vulnificus Adenine Riboswitch",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "ADENINE",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "STRONTIUM ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ADE": {
+    "type": "non-polymer",
+    "name": "ADENINE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "SR": {
+    "type": "non-polymer",
+    "name": "STRONTIUM ION"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "ADE": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "SR": {
+    "non-polymer entity 3 asym C": 1,
+    "non-polymer entity 3 asym D": 1,
+    "non-polymer entity 3 asym E": 1,
+    "non-polymer entity 3 asym F": 1,
+    "non-polymer entity 3 asym G": 1,
+    "non-polymer entity 3 asym J": 1,
+    "non-polymer entity 3 asym K": 1
+   },
+   "MG": {
+    "non-polymer entity 4 asym H": 1,
+    "non-polymer entity 4 asym I": 1
+   },
+   "HOH": {
+    "non-polymer entity 5 asym L": 21
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "4xnr": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Vibrio Vulnificus Adenine Riboswitch",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "ADENINE",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ADE": {
+    "type": "non-polymer",
+    "name": "ADENINE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "ADE": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "MG": {
+    "non-polymer entity 3 asym C": 1,
+    "non-polymer entity 3 asym D": 1,
+    "non-polymer entity 3 asym E": 1,
+    "non-polymer entity 3 asym F": 1,
+    "non-polymer entity 3 asym G": 1,
+    "non-polymer entity 3 asym H": 1
+   },
+   "HOH": {
+    "non-polymer entity 4 asym I": 64
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "5c7u": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "5'-monophosphate wt guanine riboswitch",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "HYPOXANTHINE",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HPA": {
+    "type": "non-polymer",
+    "name": "HYPOXANTHINE"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "NCO": {
+    "non-polymer entity 2 asym B": 1,
+    "non-polymer entity 2 asym C": 1,
+    "non-polymer entity 2 asym D": 1,
+    "non-polymer entity 2 asym E": 1,
+    "non-polymer entity 2 asym F": 1,
+    "non-polymer entity 2 asym G": 1,
+    "non-polymer entity 2 asym H": 1
+   },
+   "HPA": {
+    "non-polymer entity 3 asym I": 1
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "5c7w": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "5'-monophosphate Z:P guanine riboswitch",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "HYPOXANTHINE",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "50L": {
+    "type": "RNA linking",
+    "name": "(5S)-2-amino-8-(5-O-phosphono-beta-D-ribofuranosyl)imidazo[1,2-a][1,3,5]triazin-4(8H)-one"
+   },
+   "50N": {
+    "type": "RNA linking",
+    "name": "(1S)-1-(6-amino-2-hydroxy-5-nitropyridin-3-yl)-1,4-anhydro-5-O-phosphono-D-ribitol"
+   },
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HPA": {
+    "type": "non-polymer",
+    "name": "HYPOXANTHINE"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "50N": {
+    "polymer entity 1 (polyribonucleotide) asym A": 1
+   },
+   "50L": {
+    "polymer entity 1 (polyribonucleotide) asym A": 1
+   },
+   "NCO": {
+    "non-polymer entity 2 asym B": 1,
+    "non-polymer entity 2 asym C": 1,
+    "non-polymer entity 2 asym D": 1,
+    "non-polymer entity 2 asym E": 1,
+    "non-polymer entity 2 asym F": 1,
+    "non-polymer entity 2 asym G": 1,
+    "non-polymer entity 2 asym H": 1,
+    "non-polymer entity 2 asym I": 1
+   },
+   "HPA": {
+    "non-polymer entity 3 asym J": 1
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "5e54": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Vibrio vulnificus strain 93U204 chromosome II, adenine riboswitch aptamer domain",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "MG": {
+    "non-polymer entity 2 asym C": 1,
+    "non-polymer entity 2 asym D": 1,
+    "non-polymer entity 2 asym E": 1,
+    "non-polymer entity 2 asym F": 1
+   },
+   "HOH": {
+    "non-polymer entity 3 asym G": 5,
+    "non-polymer entity 3 asym H": 9
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "5swd": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Vibrio vulnificus strain 93U204 chromosome II, adenine riboswitch aptamer domain",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "ADENINE",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ADE": {
+    "type": "non-polymer",
+    "name": "ADENINE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "ADE": {
+    "non-polymer entity 2 asym C": 1
+   },
+   "MG": {
+    "non-polymer entity 3 asym D": 1,
+    "non-polymer entity 3 asym E": 1,
+    "non-polymer entity 3 asym F": 1
+   },
+   "HOH": {
+    "non-polymer entity 4 asym G": 7,
+    "non-polymer entity 4 asym H": 8
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "5swe": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Vibrio vulnificus strain 93U204 chromosome II, adenine riboswitch aptamer domain",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "ADENINE",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ADE": {
+    "type": "non-polymer",
+    "name": "ADENINE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "ADE": {
+    "non-polymer entity 2 asym B": 1
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "5uza": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "RNA (71-MER)",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "ADENINE",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ADE": {
+    "type": "non-polymer",
+    "name": "ADENINE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "IU": {
+    "type": "RNA linking",
+    "name": "5-IODOURIDINE-5'-MONOPHOSPHATE"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "IU": {
+    "polymer entity 1 (polyribonucleotide) asym A": 2
+   },
+   "ADE": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "MG": {
+    "non-polymer entity 3 asym C": 1,
+    "non-polymer entity 3 asym D": 1,
+    "non-polymer entity 3 asym E": 1
+   },
+   "HOH": {
+    "non-polymer entity 4 asym F": 55
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "6p2h": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "RNA (69-MER)",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "2'-DEOXY-GUANOSINE",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "GNG": {
+    "type": "RNA OH 5 prime terminus",
+    "name": "2'-DEOXY-GUANOSINE"
+   },
+   "GTP": {
+    "type": "non-polymer",
+    "name": "GUANOSINE-5'-TRIPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "GTP": {
+    "polymer entity 1 (polyribonucleotide) asym A": 1
+   },
+   "GNG": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "NCO": {
+    "non-polymer entity 3 asym C": 1,
+    "non-polymer entity 3 asym D": 1,
+    "non-polymer entity 3 asym E": 1,
+    "non-polymer entity 3 asym F": 1,
+    "non-polymer entity 3 asym G": 1
+   },
+   "MG": {
+    "non-polymer entity 4 asym H": 1,
+    "non-polymer entity 4 asym I": 1,
+    "non-polymer entity 4 asym J": 1,
+    "non-polymer entity 4 asym K": 1,
+    "non-polymer entity 4 asym L": 1
+   },
+   "HOH": {
+    "non-polymer entity 5 asym M": 12
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "6ubu": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Guanine riboswitch aptamer domain",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "ACETATE ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "GUANINE",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ACT": {
+    "type": "non-polymer",
+    "name": "ACETATE ION"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "GUN": {
+    "type": "non-polymer",
+    "name": "GUANINE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "NCO": {
+    "non-polymer entity 2 asym B": 1,
+    "non-polymer entity 2 asym C": 1,
+    "non-polymer entity 2 asym D": 1,
+    "non-polymer entity 2 asym E": 1,
+    "non-polymer entity 2 asym F": 1,
+    "non-polymer entity 2 asym G": 1,
+    "non-polymer entity 2 asym H": 1
+   },
+   "ACT": {
+    "non-polymer entity 3 asym I": 1,
+    "non-polymer entity 3 asym J": 1,
+    "non-polymer entity 3 asym K": 1
+   },
+   "GUN": {
+    "non-polymer entity 4 asym L": 1
+   },
+   "HOH": {
+    "non-polymer entity 5 asym M": 240
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "6uc7": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "guanine riboswitch",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "N-(6-oxo-6,9-dihydro-3H-purin-2-yl)acetamide",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "Q44": {
+    "type": "non-polymer",
+    "name": "N-(6-oxo-6,9-dihydro-3H-purin-2-yl)acetamide"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "NCO": {
+    "non-polymer entity 2 asym B": 1,
+    "non-polymer entity 2 asym C": 1,
+    "non-polymer entity 2 asym D": 1,
+    "non-polymer entity 2 asym E": 1,
+    "non-polymer entity 2 asym F": 1,
+    "non-polymer entity 2 asym G": 1,
+    "non-polymer entity 2 asym H": 1,
+    "non-polymer entity 2 asym I": 1
+   },
+   "Q44": {
+    "non-polymer entity 3 asym J": 1
+   },
+   "HOH": {
+    "non-polymer entity 4 asym K": 224
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "6uc8": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Guanine riboswitch",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "8-AMINOGUANINE",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "ACETATE ION",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ACT": {
+    "type": "non-polymer",
+    "name": "ACETATE ION"
+   },
+   "ANG": {
+    "type": "non-polymer",
+    "name": "8-AMINOGUANINE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "ANG": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "NCO": {
+    "non-polymer entity 3 asym C": 1,
+    "non-polymer entity 3 asym D": 1,
+    "non-polymer entity 3 asym E": 1,
+    "non-polymer entity 3 asym F": 1,
+    "non-polymer entity 3 asym G": 1,
+    "non-polymer entity 3 asym H": 1,
+    "non-polymer entity 3 asym I": 1,
+    "non-polymer entity 3 asym J": 1
+   },
+   "ACT": {
+    "non-polymer entity 4 asym K": 1
+   },
+   "HOH": {
+    "non-polymer entity 5 asym L": 231
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "6uc9": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "Guanine riboswitch",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "COBALT HEXAMMINE(III)",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "ACETATE ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "6-O-CYCLOHEXYLMETHYL GUANINE",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ACT": {
+    "type": "non-polymer",
+    "name": "ACETATE ION"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "CMG": {
+    "type": "non-polymer",
+    "name": "6-O-CYCLOHEXYLMETHYL GUANINE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "NCO": {
+    "type": "non-polymer",
+    "name": "COBALT HEXAMMINE(III)"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "NCO": {
+    "non-polymer entity 2 asym B": 1,
+    "non-polymer entity 2 asym C": 1,
+    "non-polymer entity 2 asym D": 1,
+    "non-polymer entity 2 asym E": 1,
+    "non-polymer entity 2 asym F": 1,
+    "non-polymer entity 2 asym G": 1,
+    "non-polymer entity 2 asym H": 1
+   },
+   "ACT": {
+    "non-polymer entity 3 asym I": 1
+   },
+   "CMG": {
+    "non-polymer entity 4 asym J": 1
+   },
+   "HOH": {
+    "non-polymer entity 5 asym K": 197
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "6vwt": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "adenine riboswitch aptamer variant",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "ADENINE",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ADE": {
+    "type": "non-polymer",
+    "name": "ADENINE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "ADE": {
+    "non-polymer entity 2 asym C": 1,
+    "non-polymer entity 2 asym H": 1
+   },
+   "MG": {
+    "non-polymer entity 3 asym D": 1,
+    "non-polymer entity 3 asym E": 1,
+    "non-polymer entity 3 asym F": 1,
+    "non-polymer entity 3 asym G": 1,
+    "non-polymer entity 3 asym I": 1,
+    "non-polymer entity 3 asym J": 1,
+    "non-polymer entity 3 asym K": 1,
+    "non-polymer entity 3 asym L": 1
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "6vwv": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "adenine riboswitch aptamer variant",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "ADENINE",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "POTASSIUM ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ADE": {
+    "type": "non-polymer",
+    "name": "ADENINE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "K": {
+    "type": "non-polymer",
+    "name": "POTASSIUM ION"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "ADE": {
+    "non-polymer entity 2 asym C": 1,
+    "non-polymer entity 2 asym F": 1
+   },
+   "K": {
+    "non-polymer entity 3 asym D": 1
+   },
+   "MG": {
+    "non-polymer entity 4 asym E": 1,
+    "non-polymer entity 4 asym G": 1
+   },
+   "HOH": {
+    "non-polymer entity 5 asym H": 1,
+    "non-polymer entity 5 asym I": 1
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "9iwf": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "P. beijingensis xanthine-II riboswitch (70-MER)",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "GUANOSINE-5'-TRIPHOSPHATE",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "XANTHINE",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "GTP": {
+    "type": "non-polymer",
+    "name": "GUANOSINE-5'-TRIPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   },
+   "XAN": {
+    "type": "non-polymer",
+    "name": "XANTHINE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "GTP": {
+    "non-polymer entity 2 asym C": 1,
+    "non-polymer entity 2 asym M": 1
+   },
+   "MG": {
+    "non-polymer entity 3 asym D": 1,
+    "non-polymer entity 3 asym E": 1,
+    "non-polymer entity 3 asym F": 1,
+    "non-polymer entity 3 asym G": 1,
+    "non-polymer entity 3 asym H": 1,
+    "non-polymer entity 3 asym I": 1,
+    "non-polymer entity 3 asym J": 1,
+    "non-polymer entity 3 asym K": 1,
+    "non-polymer entity 3 asym N": 1,
+    "non-polymer entity 3 asym O": 1,
+    "non-polymer entity 3 asym P": 1,
+    "non-polymer entity 3 asym Q": 1,
+    "non-polymer entity 3 asym R": 1,
+    "non-polymer entity 3 asym S": 1,
+    "non-polymer entity 3 asym T": 1
+   },
+   "XAN": {
+    "non-polymer entity 4 asym L": 1,
+    "non-polymer entity 4 asym U": 1
+   },
+   "HOH": {
+    "non-polymer entity 5 asym V": 43,
+    "non-polymer entity 5 asym W": 67
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "9iwg": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "xanthine-II ML2/3",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "GUANOSINE-5'-TRIPHOSPHATE",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "XANTHINE",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "GTP": {
+    "type": "non-polymer",
+    "name": "GUANOSINE-5'-TRIPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   },
+   "XAN": {
+    "type": "non-polymer",
+    "name": "XANTHINE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "GTP": {
+    "non-polymer entity 2 asym C": 1,
+    "non-polymer entity 2 asym Q": 1
+   },
+   "MG": {
+    "non-polymer entity 3 asym D": 1,
+    "non-polymer entity 3 asym E": 1,
+    "non-polymer entity 3 asym F": 1,
+    "non-polymer entity 3 asym G": 1,
+    "non-polymer entity 3 asym H": 1,
+    "non-polymer entity 3 asym I": 1,
+    "non-polymer entity 3 asym J": 1,
+    "non-polymer entity 3 asym K": 1,
+    "non-polymer entity 3 asym L": 1,
+    "non-polymer entity 3 asym M": 1,
+    "non-polymer entity 3 asym N": 1,
+    "non-polymer entity 3 asym O": 1,
+    "non-polymer entity 3 asym R": 1,
+    "non-polymer entity 3 asym S": 1,
+    "non-polymer entity 3 asym T": 1,
+    "non-polymer entity 3 asym U": 1,
+    "non-polymer entity 3 asym V": 1,
+    "non-polymer entity 3 asym W": 1,
+    "non-polymer entity 3 asym X": 1,
+    "non-polymer entity 3 asym Y": 1,
+    "non-polymer entity 3 asym Z": 1,
+    "non-polymer entity 3 asym AA": 1,
+    "non-polymer entity 3 asym BA": 1,
+    "non-polymer entity 3 asym CA": 1
+   },
+   "XAN": {
+    "non-polymer entity 4 asym P": 1,
+    "non-polymer entity 4 asym DA": 1
+   },
+   "HOH": {
+    "non-polymer entity 5 asym EA": 43,
+    "non-polymer entity 5 asym FA": 42
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "9ljn": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "PRTg (71-MER)",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "GUANINE",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "GUN": {
+    "type": "non-polymer",
+    "name": "GUANINE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "GUN": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "MG": {
+    "non-polymer entity 3 asym C": 1
+   },
+   "HOH": {
+    "non-polymer entity 4 asym D": 19
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "9lkc": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "PRTg (71-MER)",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "2'-DEOXY-GUANOSINE",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "GNG": {
+    "type": "non-polymer",
+    "name": "2'-DEOXY-GUANOSINE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "MG": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "GNG": {
+    "non-polymer entity 3 asym C": 1
+   },
+   "HOH": {
+    "non-polymer entity 4 asym D": 5
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "9lke": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "PRTg (70-MER)",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "HYPOXANTHINE",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "GUANOSINE-5'-TRIPHOSPHATE",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "GTP": {
+    "type": "non-polymer",
+    "name": "GUANOSINE-5'-TRIPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "HPA": {
+    "type": "non-polymer",
+    "name": "HYPOXANTHINE"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "HPA": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "GTP": {
+    "non-polymer entity 3 asym C": 1
+   },
+   "MG": {
+    "non-polymer entity 4 asym D": 1,
+    "non-polymer entity 4 asym E": 1,
+    "non-polymer entity 4 asym F": 1
+   },
+   "HOH": {
+    "non-polymer entity 5 asym G": 13
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "9lkf": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "PRTg (71-MER)",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "GUANOSINE",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "GMP": {
+    "type": "non-polymer",
+    "name": "GUANOSINE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "GMP": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "MG": {
+    "non-polymer entity 3 asym C": 1,
+    "non-polymer entity 3 asym D": 1
+   },
+   "HOH": {
+    "non-polymer entity 4 asym E": 12
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "9lmc": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "PRTg (71-MER)",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "GUANINE",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "MANGANESE (II) ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "non-polymer",
+    "description": "GUANOSINE-5'-TRIPHOSPHATE",
+    "polymer_type": null
+   },
+   "5": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "6": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "GTP": {
+    "type": "non-polymer",
+    "name": "GUANOSINE-5'-TRIPHOSPHATE"
+   },
+   "GUN": {
+    "type": "non-polymer",
+    "name": "GUANINE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "MN": {
+    "type": "non-polymer",
+    "name": "MANGANESE (II) ION"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "GUN": {
+    "non-polymer entity 2 asym C": 1,
+    "non-polymer entity 2 asym J": 1
+   },
+   "MN": {
+    "non-polymer entity 3 asym D": 1,
+    "non-polymer entity 3 asym E": 1,
+    "non-polymer entity 3 asym F": 1,
+    "non-polymer entity 3 asym G": 1,
+    "non-polymer entity 3 asym H": 1,
+    "non-polymer entity 3 asym I": 1,
+    "non-polymer entity 3 asym L": 1,
+    "non-polymer entity 3 asym M": 1,
+    "non-polymer entity 3 asym N": 1
+   },
+   "GTP": {
+    "non-polymer entity 4 asym K": 1
+   },
+   "MG": {
+    "non-polymer entity 5 asym O": 1
+   },
+   "HOH": {
+    "non-polymer entity 6 asym P": 22,
+    "non-polymer entity 6 asym Q": 9
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "9nbc": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "RNA (63-MER)",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "8-OXOGUANINE",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "OXG": {
+    "type": "non-polymer",
+    "name": "8-OXOGUANINE"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "MG": {
+    "non-polymer entity 2 asym B": 1,
+    "non-polymer entity 2 asym C": 1
+   },
+   "OXG": {
+    "non-polymer entity 3 asym D": 1
+   },
+   "HOH": {
+    "non-polymer entity 4 asym E": 13
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "9nbh": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "RNA (88-MER)",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "MG": {
+    "non-polymer entity 2 asym E": 1,
+    "non-polymer entity 2 asym F": 1,
+    "non-polymer entity 2 asym G": 1,
+    "non-polymer entity 2 asym H": 1,
+    "non-polymer entity 2 asym I": 1,
+    "non-polymer entity 2 asym J": 1,
+    "non-polymer entity 2 asym K": 1,
+    "non-polymer entity 2 asym L": 1,
+    "non-polymer entity 2 asym M": 1,
+    "non-polymer entity 2 asym N": 1,
+    "non-polymer entity 2 asym O": 1,
+    "non-polymer entity 2 asym P": 1,
+    "non-polymer entity 2 asym Q": 1,
+    "non-polymer entity 2 asym R": 1,
+    "non-polymer entity 2 asym S": 1,
+    "non-polymer entity 2 asym T": 1,
+    "non-polymer entity 2 asym U": 1,
+    "non-polymer entity 2 asym V": 1
+   },
+   "HOH": {
+    "non-polymer entity 3 asym W": 100,
+    "non-polymer entity 3 asym X": 106,
+    "non-polymer entity 3 asym Y": 104,
+    "non-polymer entity 3 asym Z": 101
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "9ndd": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "RNA (160-MER)",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "8-OXOGUANINE",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "OXG": {
+    "type": "non-polymer",
+    "name": "8-OXOGUANINE"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "OXG": {
+    "non-polymer entity 2 asym E": 1,
+    "non-polymer entity 2 asym F": 1,
+    "non-polymer entity 2 asym G": 1,
+    "non-polymer entity 2 asym H": 1
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "9v4u": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "RNA (71-MER)",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "2-AMINO-7,8-DIHYDRO-6-(1,2,3-TRIHYDROXYPROPYL)-4(1H)-PTERIDINONE",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "NPR": {
+    "type": "non-polymer",
+    "name": "2-AMINO-7,8-DIHYDRO-6-(1,2,3-TRIHYDROXYPROPYL)-4(1H)-PTERIDINONE"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "NPR": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "MG": {
+    "non-polymer entity 3 asym C": 1,
+    "non-polymer entity 3 asym D": 1
+   },
+   "HOH": {
+    "non-polymer entity 4 asym E": 36
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "9v4v": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "RNA (71-MER)",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "2-aminopteridine-4,7(3H,8H)-dione",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "7PD": {
+    "type": "non-polymer",
+    "name": "2-aminopteridine-4,7(3H,8H)-dione"
+   },
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "GTP": {
+    "type": "non-polymer",
+    "name": "GUANOSINE-5'-TRIPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "GTP": {
+    "polymer entity 1 (polyribonucleotide) asym A": 1
+   },
+   "7PD": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "MG": {
+    "non-polymer entity 3 asym C": 1
+   },
+   "HOH": {
+    "non-polymer entity 4 asym D": 18
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "9v4x": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "RNA (71-MER)",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "5-azanyl-3,6-dihydro-[1,2,3]triazolo[4,5-d]pyrimidin-7-one",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "9QC": {
+    "type": "non-polymer",
+    "name": "5-azanyl-3,6-dihydro-[1,2,3]triazolo[4,5-d]pyrimidin-7-one"
+   },
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "9QC": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "HOH": {
+    "non-polymer entity 3 asym C": 9
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "9v4y": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "RNA (71-MER)",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "8-AMINOGUANINE",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "ANG": {
+    "type": "non-polymer",
+    "name": "8-AMINOGUANINE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "ANG": {
+    "non-polymer entity 2 asym B": 1,
+    "non-polymer entity 2 asym C": 1
+   },
+   "MG": {
+    "non-polymer entity 3 asym D": 1
+   },
+   "HOH": {
+    "non-polymer entity 4 asym E": 32
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "9v4z": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "RNA (71-MER)",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "8-OXOGUANINE",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "GTP": {
+    "type": "non-polymer",
+    "name": "GUANOSINE-5'-TRIPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "OXG": {
+    "type": "non-polymer",
+    "name": "8-OXOGUANINE"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "GTP": {
+    "polymer entity 1 (polyribonucleotide) asym A": 1
+   },
+   "OXG": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "MG": {
+    "non-polymer entity 3 asym C": 1,
+    "non-polymer entity 3 asym D": 1
+   },
+   "HOH": {
+    "non-polymer entity 4 asym E": 19
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "9v50": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "RNA (71-MER)",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "2-azanyl-8-methyl-1,9-dihydropurin-6-one",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "A1LXN": {
+    "type": "non-polymer",
+    "name": "2-azanyl-8-methyl-1,9-dihydropurin-6-one"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "A1LXN": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "MG": {
+    "non-polymer entity 3 asym C": 1
+   },
+   "HOH": {
+    "non-polymer entity 4 asym D": 36
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ },
+ "9v51": {
+  "entities": {
+   "1": {
+    "type": "polymer",
+    "description": "RNA (71-MER)",
+    "polymer_type": "polyribonucleotide"
+   },
+   "2": {
+    "type": "non-polymer",
+    "description": "5,6,7,8-TETRAHYDROBIOPTERIN",
+    "polymer_type": null
+   },
+   "3": {
+    "type": "non-polymer",
+    "description": "MAGNESIUM ION",
+    "polymer_type": null
+   },
+   "4": {
+    "type": "water",
+    "description": "water",
+    "polymer_type": null
+   }
+  },
+  "chem_comp": {
+   "A": {
+    "type": "RNA linking",
+    "name": "ADENOSINE-5'-MONOPHOSPHATE"
+   },
+   "C": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-MONOPHOSPHATE"
+   },
+   "CCC": {
+    "type": "RNA linking",
+    "name": "CYTIDINE-5'-PHOSPHATE-2',3'-CYCLIC PHOSPHATE"
+   },
+   "G": {
+    "type": "RNA linking",
+    "name": "GUANOSINE-5'-MONOPHOSPHATE"
+   },
+   "GTP": {
+    "type": "non-polymer",
+    "name": "GUANOSINE-5'-TRIPHOSPHATE"
+   },
+   "H4B": {
+    "type": "non-polymer",
+    "name": "5,6,7,8-TETRAHYDROBIOPTERIN"
+   },
+   "HOH": {
+    "type": "non-polymer",
+    "name": "WATER"
+   },
+   "MG": {
+    "type": "non-polymer",
+    "name": "MAGNESIUM ION"
+   },
+   "U": {
+    "type": "RNA linking",
+    "name": "URIDINE-5'-MONOPHOSPHATE"
+   }
+  },
+  "nonstandard_or_nonpolymer_components": {
+   "GTP": {
+    "polymer entity 1 (polyribonucleotide) asym A": 1
+   },
+   "CCC": {
+    "polymer entity 1 (polyribonucleotide) asym A": 1
+   },
+   "H4B": {
+    "non-polymer entity 2 asym B": 1
+   },
+   "MG": {
+    "non-polymer entity 3 asym C": 1,
+    "non-polymer entity 3 asym D": 1
+   },
+   "HOH": {
+    "non-polymer entity 4 asym E": 19
+   }
+  },
+  "has_pdbx_struct_mod_residue": false
+ }
+}

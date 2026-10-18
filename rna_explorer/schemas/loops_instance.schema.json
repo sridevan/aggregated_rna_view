@@ -1,0 +1,14 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "BGSU loops touching one RNA chain instance (loops_by_instance/<seq_name>.json): the full loop records of loops.json for that chain, inter-chain loops included",
+ "type": "object",
+ "required": ["schema_version", "rfam_acc", "seq_name", "description", "loops", "provenance"],
+ "properties": {
+  "schema_version": {"type": "string"},
+  "rfam_acc": {"type": "string"},
+  "seq_name": {"type": "string"},
+  "description": {"type": "string"},
+  "loops": {"type": "array", "items": {"type": "object", "required": ["loop_id", "loop_type", "strands", "nucleotides", "instances"]}},
+  "provenance": {"type": "object"}
+ }
+}

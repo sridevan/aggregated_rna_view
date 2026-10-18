@@ -1,0 +1,358 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "type": "object",
+ "properties": {
+  "schema_version": {
+   "const": "1.0"
+  },
+  "rfam_acc": {
+   "type": "string"
+  },
+  "clen": {
+   "type": "integer"
+  },
+  "method": {
+   "type": "object",
+   "properties": {
+    "software": {
+     "type": "object",
+     "properties": {}
+    },
+    "fpocket_parameters": {
+     "type": "object",
+     "properties": {}
+    },
+    "pocket_nucleotides": {
+     "type": "string"
+    },
+    "filters": {
+     "type": "object",
+     "properties": {}
+    }
+   },
+   "required": [
+    "software",
+    "fpocket_parameters"
+   ]
+  },
+  "counts": {
+   "type": "object",
+   "properties": {
+    "n_instances": {
+     "type": "integer"
+    },
+    "status_counts": {
+     "type": "object",
+     "properties": {}
+    },
+    "n_pockets_total": {
+     "type": "integer"
+    },
+    "n_pockets_by_filter": {
+     "type": "object",
+     "properties": {}
+    }
+   },
+   "required": [
+    "n_instances",
+    "status_counts",
+    "n_pockets_total"
+   ]
+  },
+  "instances": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "seq_name": {
+      "type": "string"
+     },
+     "pdb_id": {
+      "type": "string"
+     },
+     "entity_id": {
+      "type": "integer"
+     },
+     "label_asym_id": {
+      "type": "string"
+     },
+     "auth_asym_id": {
+      "type": "string"
+     },
+     "status": {
+      "enum": [
+       "pockets",
+       "no_pockets",
+       "failed"
+      ]
+     },
+     "failure_reason": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "warnings": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "input": {
+      "type": "object",
+      "properties": {}
+     },
+     "run": {
+      "type": "object",
+      "properties": {}
+     },
+     "pockets": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "pocket_id": {
+         "type": "string"
+        },
+        "rank": {
+         "type": "integer"
+        },
+        "score": {
+         "type": [
+          "number",
+          "null"
+         ]
+        },
+        "drug_score": {
+         "type": [
+          "number",
+          "null"
+         ]
+        },
+        "volume_A3": {
+         "type": [
+          "number",
+          "null"
+         ]
+        },
+        "n_alpha_spheres": {
+         "type": [
+          "integer",
+          "null"
+         ]
+        },
+        "pocket_sasa_A2": {
+         "type": [
+          "number",
+          "null"
+         ]
+        },
+        "hydrophobicity_score": {
+         "type": [
+          "number",
+          "null"
+         ]
+        },
+        "polarity_score": {
+         "type": [
+          "number",
+          "null"
+         ]
+        },
+        "npr1": {
+         "type": [
+          "number",
+          "null"
+         ]
+        },
+        "npr2": {
+         "type": [
+          "number",
+          "null"
+         ]
+        },
+        "shape": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "filter_pass": {
+         "type": "boolean"
+        },
+        "pocket_nt_author_csv": {
+         "type": "array",
+         "items": {
+          "type": "integer"
+         }
+        },
+        "fpocket_info": {
+         "type": "object",
+         "properties": {}
+        },
+        "nucleotides": {
+         "type": "array",
+         "items": {
+          "type": "object",
+          "properties": {
+           "pdb_chain": {
+            "type": "string"
+           },
+           "pdb_resnum": {
+            "type": "integer"
+           },
+           "pdb_icode": {
+            "type": "string"
+           },
+           "resname": {
+            "type": "string"
+           },
+           "label_asym_id": {
+            "type": "string"
+           },
+           "label_seq_id": {
+            "type": [
+             "integer",
+             "null"
+            ]
+           },
+           "resolver_label_seq_id": {
+            "type": [
+             "integer",
+             "null"
+            ]
+           },
+           "rfam_consensus_pos": {
+            "type": [
+             "integer",
+             "null"
+            ]
+           },
+           "alignment_state": {
+            "type": [
+             "string",
+             "null"
+            ]
+           },
+           "mapping_status": {
+            "type": "string"
+           },
+           "n_lining_atoms": {
+            "type": "integer"
+           },
+           "lining_atoms": {
+            "type": "array",
+            "items": {
+             "type": "string"
+            }
+           },
+           "incomplete_nucleotide": {
+            "type": [
+             "boolean",
+             "null"
+            ]
+           },
+           "terminal": {
+            "type": "boolean"
+           }
+          },
+          "required": [
+           "pdb_chain",
+           "pdb_resnum",
+           "resname",
+           "label_seq_id",
+           "rfam_consensus_pos",
+           "mapping_status",
+           "n_lining_atoms",
+           "lining_atoms"
+          ]
+         }
+        },
+        "n_nucleotides": {
+         "type": "integer"
+        },
+        "consensus_positions": {
+         "type": "array",
+         "items": {
+          "type": "integer"
+         }
+        },
+        "n_non_consensus_nucleotides": {
+         "type": "integer"
+        },
+        "nt_match_csv": {
+         "type": "boolean"
+        },
+        "map_consistent": {
+         "type": "boolean"
+        },
+        "unresolved_nucleotides": {
+         "type": "integer"
+        },
+        "flags": {
+         "type": "array",
+         "items": {
+          "type": "string"
+         }
+        }
+       },
+       "required": [
+        "pocket_id",
+        "rank",
+        "score",
+        "volume_A3",
+        "n_alpha_spheres",
+        "nucleotides",
+        "consensus_positions",
+        "flags",
+        "nt_match_csv",
+        "map_consistent"
+       ]
+      }
+     },
+     "n_pockets": {
+      "type": "integer"
+     },
+     "n_pockets_by_filter": {
+      "type": "object",
+      "properties": {}
+     }
+    },
+    "required": [
+     "seq_name",
+     "pdb_id",
+     "label_asym_id",
+     "status",
+     "pockets",
+     "n_pockets",
+     "n_pockets_by_filter"
+    ]
+   }
+  },
+  "provenance": {
+   "type": "object",
+   "properties": {
+    "rfam_acc": {
+     "type": "string"
+    },
+    "generated": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "rfam_acc",
+    "generated"
+   ]
+  }
+ },
+ "required": [
+  "schema_version",
+  "rfam_acc",
+  "clen",
+  "method",
+  "counts",
+  "instances",
+  "provenance"
+ ],
+ "title": "PredictedPockets"
+}

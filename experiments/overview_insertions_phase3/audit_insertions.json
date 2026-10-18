@@ -1,0 +1,474 @@
+{
+ "rfam_acc": "RF00167",
+ "generated": "2026-10-17T11:09:22+00:00",
+ "n_mapping_files": 84,
+ "residue_alignment_states": {
+  "not_submitted_flank": 635,
+  "match": 5932,
+  "insert": 34
+ },
+ "consensus_column_states": {
+  "uncovered": 2473,
+  "match": 5932,
+  "deletion": 163
+ },
+ "flanks": {
+  "n": 635,
+  "with_coordinates": 562
+ },
+ "checks": {
+  "flank_has_no_anchor": 635,
+  "insert_has_no_consensus_pos": 34,
+  "next_match_after_anchor": 17
+ },
+ "n_insertion_runs": 17,
+ "n_instances_with_insertions": 17,
+ "distinct_events": {
+  "insert anchor 77 (77|78) CA": 17
+ },
+ "terminal_runs": [],
+ "runs": [
+  {
+   "seq_name": "9iwf_1_A_A",
+   "state": "insert",
+   "anchor": 77,
+   "left": 77,
+   "right": 78,
+   "residues": [
+    {
+     "label_seq_id": 59,
+     "author": "60",
+     "nt": "C",
+     "offset": 1,
+     "has_coordinates": true,
+     "pp": "6"
+    },
+    {
+     "label_seq_id": 60,
+     "author": "61",
+     "nt": "A",
+     "offset": 2,
+     "has_coordinates": true,
+     "pp": "6"
+    }
+   ],
+   "sequence": "CA"
+  },
+  {
+   "seq_name": "9iwf_1_B_B",
+   "state": "insert",
+   "anchor": 77,
+   "left": 77,
+   "right": 78,
+   "residues": [
+    {
+     "label_seq_id": 59,
+     "author": "60",
+     "nt": "C",
+     "offset": 1,
+     "has_coordinates": true,
+     "pp": "6"
+    },
+    {
+     "label_seq_id": 60,
+     "author": "61",
+     "nt": "A",
+     "offset": 2,
+     "has_coordinates": true,
+     "pp": "6"
+    }
+   ],
+   "sequence": "CA"
+  },
+  {
+   "seq_name": "9iwg_1_A_A",
+   "state": "insert",
+   "anchor": 77,
+   "left": 77,
+   "right": 78,
+   "residues": [
+    {
+     "label_seq_id": 59,
+     "author": "60",
+     "nt": "C",
+     "offset": 1,
+     "has_coordinates": true,
+     "pp": "6"
+    },
+    {
+     "label_seq_id": 60,
+     "author": "61",
+     "nt": "A",
+     "offset": 2,
+     "has_coordinates": true,
+     "pp": "6"
+    }
+   ],
+   "sequence": "CA"
+  },
+  {
+   "seq_name": "9iwg_1_B_B",
+   "state": "insert",
+   "anchor": 77,
+   "left": 77,
+   "right": 78,
+   "residues": [
+    {
+     "label_seq_id": 59,
+     "author": "60",
+     "nt": "C",
+     "offset": 1,
+     "has_coordinates": true,
+     "pp": "6"
+    },
+    {
+     "label_seq_id": 60,
+     "author": "61",
+     "nt": "A",
+     "offset": 2,
+     "has_coordinates": true,
+     "pp": "6"
+    }
+   ],
+   "sequence": "CA"
+  },
+  {
+   "seq_name": "9ljn_1_A_A",
+   "state": "insert",
+   "anchor": 77,
+   "left": 77,
+   "right": 78,
+   "residues": [
+    {
+     "label_seq_id": 60,
+     "author": "60",
+     "nt": "C",
+     "offset": 1,
+     "has_coordinates": true,
+     "pp": "6"
+    },
+    {
+     "label_seq_id": 61,
+     "author": "61",
+     "nt": "A",
+     "offset": 2,
+     "has_coordinates": true,
+     "pp": "6"
+    }
+   ],
+   "sequence": "CA"
+  },
+  {
+   "seq_name": "9lkc_1_A_A",
+   "state": "insert",
+   "anchor": 77,
+   "left": 77,
+   "right": 78,
+   "residues": [
+    {
+     "label_seq_id": 60,
+     "author": "60",
+     "nt": "C",
+     "offset": 1,
+     "has_coordinates": true,
+     "pp": "6"
+    },
+    {
+     "label_seq_id": 61,
+     "author": "61",
+     "nt": "A",
+     "offset": 2,
+     "has_coordinates": true,
+     "pp": "6"
+    }
+   ],
+   "sequence": "CA"
+  },
+  {
+   "seq_name": "9lke_1_A_A",
+   "state": "insert",
+   "anchor": 77,
+   "left": 77,
+   "right": 78,
+   "residues": [
+    {
+     "label_seq_id": 59,
+     "author": "60",
+     "nt": "C",
+     "offset": 1,
+     "has_coordinates": true,
+     "pp": "6"
+    },
+    {
+     "label_seq_id": 60,
+     "author": "61",
+     "nt": "A",
+     "offset": 2,
+     "has_coordinates": true,
+     "pp": "6"
+    }
+   ],
+   "sequence": "CA"
+  },
+  {
+   "seq_name": "9lkf_1_A_A",
+   "state": "insert",
+   "anchor": 77,
+   "left": 77,
+   "right": 78,
+   "residues": [
+    {
+     "label_seq_id": 60,
+     "author": "60",
+     "nt": "C",
+     "offset": 1,
+     "has_coordinates": true,
+     "pp": "6"
+    },
+    {
+     "label_seq_id": 61,
+     "author": "61",
+     "nt": "A",
+     "offset": 2,
+     "has_coordinates": true,
+     "pp": "6"
+    }
+   ],
+   "sequence": "CA"
+  },
+  {
+   "seq_name": "9lmc_1_A_A",
+   "state": "insert",
+   "anchor": 77,
+   "left": 77,
+   "right": 78,
+   "residues": [
+    {
+     "label_seq_id": 60,
+     "author": "60",
+     "nt": "C",
+     "offset": 1,
+     "has_coordinates": true,
+     "pp": "6"
+    },
+    {
+     "label_seq_id": 61,
+     "author": "61",
+     "nt": "A",
+     "offset": 2,
+     "has_coordinates": true,
+     "pp": "6"
+    }
+   ],
+   "sequence": "CA"
+  },
+  {
+   "seq_name": "9lmc_1_B_B",
+   "state": "insert",
+   "anchor": 77,
+   "left": 77,
+   "right": 78,
+   "residues": [
+    {
+     "label_seq_id": 60,
+     "author": "60",
+     "nt": "C",
+     "offset": 1,
+     "has_coordinates": true,
+     "pp": "6"
+    },
+    {
+     "label_seq_id": 61,
+     "author": "61",
+     "nt": "A",
+     "offset": 2,
+     "has_coordinates": true,
+     "pp": "6"
+    }
+   ],
+   "sequence": "CA"
+  },
+  {
+   "seq_name": "9v4u_1_A_A",
+   "state": "insert",
+   "anchor": 77,
+   "left": 77,
+   "right": 78,
+   "residues": [
+    {
+     "label_seq_id": 60,
+     "author": "60",
+     "nt": "C",
+     "offset": 1,
+     "has_coordinates": true,
+     "pp": "6"
+    },
+    {
+     "label_seq_id": 61,
+     "author": "61",
+     "nt": "A",
+     "offset": 2,
+     "has_coordinates": true,
+     "pp": "6"
+    }
+   ],
+   "sequence": "CA"
+  },
+  {
+   "seq_name": "9v4v_1_A_A",
+   "state": "insert",
+   "anchor": 77,
+   "left": 77,
+   "right": 78,
+   "residues": [
+    {
+     "label_seq_id": 60,
+     "author": "60",
+     "nt": "C",
+     "offset": 1,
+     "has_coordinates": true,
+     "pp": "6"
+    },
+    {
+     "label_seq_id": 61,
+     "author": "61",
+     "nt": "A",
+     "offset": 2,
+     "has_coordinates": true,
+     "pp": "6"
+    }
+   ],
+   "sequence": "CA"
+  },
+  {
+   "seq_name": "9v4x_1_A_A",
+   "state": "insert",
+   "anchor": 77,
+   "left": 77,
+   "right": 78,
+   "residues": [
+    {
+     "label_seq_id": 60,
+     "author": "60",
+     "nt": "C",
+     "offset": 1,
+     "has_coordinates": true,
+     "pp": "6"
+    },
+    {
+     "label_seq_id": 61,
+     "author": "61",
+     "nt": "A",
+     "offset": 2,
+     "has_coordinates": true,
+     "pp": "6"
+    }
+   ],
+   "sequence": "CA"
+  },
+  {
+   "seq_name": "9v4y_1_A_A",
+   "state": "insert",
+   "anchor": 77,
+   "left": 77,
+   "right": 78,
+   "residues": [
+    {
+     "label_seq_id": 60,
+     "author": "60",
+     "nt": "C",
+     "offset": 1,
+     "has_coordinates": true,
+     "pp": "6"
+    },
+    {
+     "label_seq_id": 61,
+     "author": "61",
+     "nt": "A",
+     "offset": 2,
+     "has_coordinates": true,
+     "pp": "6"
+    }
+   ],
+   "sequence": "CA"
+  },
+  {
+   "seq_name": "9v4z_1_A_A",
+   "state": "insert",
+   "anchor": 77,
+   "left": 77,
+   "right": 78,
+   "residues": [
+    {
+     "label_seq_id": 60,
+     "author": "60",
+     "nt": "C",
+     "offset": 1,
+     "has_coordinates": true,
+     "pp": "6"
+    },
+    {
+     "label_seq_id": 61,
+     "author": "61",
+     "nt": "A",
+     "offset": 2,
+     "has_coordinates": true,
+     "pp": "6"
+    }
+   ],
+   "sequence": "CA"
+  },
+  {
+   "seq_name": "9v50_1_A_A",
+   "state": "insert",
+   "anchor": 77,
+   "left": 77,
+   "right": 78,
+   "residues": [
+    {
+     "label_seq_id": 60,
+     "author": "60",
+     "nt": "C",
+     "offset": 1,
+     "has_coordinates": true,
+     "pp": "6"
+    },
+    {
+     "label_seq_id": 61,
+     "author": "61",
+     "nt": "A",
+     "offset": 2,
+     "has_coordinates": true,
+     "pp": "6"
+    }
+   ],
+   "sequence": "CA"
+  },
+  {
+   "seq_name": "9v51_1_A_A",
+   "state": "insert",
+   "anchor": 77,
+   "left": 77,
+   "right": 78,
+   "residues": [
+    {
+     "label_seq_id": 60,
+     "author": "60",
+     "nt": "C",
+     "offset": 1,
+     "has_coordinates": true,
+     "pp": "6"
+    },
+    {
+     "label_seq_id": 61,
+     "author": "61",
+     "nt": "A",
+     "offset": 2,
+     "has_coordinates": true,
+     "pp": "6"
+    }
+   ],
+   "sequence": "CA"
+  }
+ ]
+}

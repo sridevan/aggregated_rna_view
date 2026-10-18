@@ -89,3 +89,20 @@ def test_denominators_distinguish_missing_from_negative(data):
         assert d["n_observable_and_evaluated"] == d["n_positive_observable_and_evaluated"] + d["n_not_annotated_by_source"]
     scaffold = tr["positions"][0]      # consensus 1 is only observed in the 9NBH/9NDD scaffold constructs
     assert scaffold["observable"]["n_instances"] == 8 and scaffold["hairpin_loops"]["frequency"] == 0.0
+
+
+def test_consensus_53_overlapping_loop_classes(data):
+    """Validated audit values (experiments/loop_overlap_pos53): HL 66, IL 13, J3 76, J4 0, JL 76, HL∩JL 62, any 80, evaluable 80 of 84."""
+    p = data["tracks"]["positions"][52]
+    assert p["hairpin_loops"]["n_instances"] == 66 and p["internal_loops"]["n_instances"] == 13
+    assert p["junction_loops_J3"]["n_instances"] == 76 and p["junction_loops_J4"]["n_instances"] == 0 and p["junction_loops_union"]["n_instances"] == 76
+    assert p["hairpin_loops"]["denominators"]["n_observable_and_evaluated"] == 80 and data["tracks"]["n_instances"] == 84
+    by = {"HL": set(), "IL": set(), "J3": set(), "J4": set()}
+    for L in data["loops"]["loops"]:
+        for n in L["nucleotides"]:
+            if n["rfam_consensus_pos"] == 53 and n["mapping_status"] == "mapped" and L["loop_type"] in by:
+                by[L["loop_type"]].add(n["seq_name"])
+    assert {k: len(v) for k, v in by.items()} == {"HL": 66, "IL": 13, "J3": 76, "J4": 0}
+    jl = by["J3"] | by["J4"]
+    assert len(by["HL"] & jl) == 62 and len(by["HL"] | by["IL"] | jl) == 80
+    assert p["junction_loops_J3"]["n_loop_observations"] == 93    # alternative J3 boundaries in the same chain: observations > instances

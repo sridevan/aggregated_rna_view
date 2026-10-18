@@ -1,0 +1,14 @@
+seq_name,pdb_id,entity_id,label_asym_id,auth_asym_id,label_seq_id,auth_seq_id,ins_code,comp_poly_seq_scheme,comp_entity_poly_seq,hetero,comp_atom_site,atom_site_group,has_coordinates_mmcif,mod_residue_comp,mod_residue_parent,mapping_residue_name,mapping_parent,mapping_is_modified,mapping_has_coordinates,alignment_state,rfam_consensus_pos,insertion_anchor,pdbe_comp,pdbe_n_records,pdbe_author_residue_number,pdbe_chain_id,pdbe_entity_id,nonstandard,is_terminal
+1y27_1_X_A,1y27,1,A,X,1,14,,GDP,GDP,False,GDP,HETATM,True,GDP,G,GDP,G,True,True,not_submitted_flank,,,GDP,1,14,X,1,True,5prime
+1y27_1_X_A,1y27,1,A,X,68,81,,CCC,CCC,False,CCC,HETATM,True,,,CCC,C,True,True,match,87,,CCC,1,81,X,1,True,3prime
+3ivn_1_A_A,3ivn,1,A,A,70,74,,23G,23G,False,,,False,,,23G,G,True,False,not_submitted_flank,,,23G,1,74,A,1,True,3prime
+3ivn_1_B_B,3ivn,1,B,B,70,74,,23G,23G,False,,,False,,,23G,G,True,False,not_submitted_flank,,,23G,1,74,B,1,True,3prime
+5c7w_1_C_A,5c7w,1,A,C,4,18,,50N,50N,False,50N,HETATM,True,,,50N,X,True,True,match,22,,,0,,,,True,
+5c7w_1_C_A,5c7w,1,A,C,64,78,,50L,50L,False,50L,HETATM,True,,,50L,X,True,True,match,84,,,0,,,,True,
+5uza_1_X_A,5uza,1,A,X,16,28,,IU,IU,False,IU,HETATM,True,,,IU,U,True,True,match,32,,IU,1,28,X,1,True,
+5uza_1_X_A,5uza,1,A,X,19,31,,IU,IU,False,IU,HETATM,True,,,IU,U,True,True,match,35,,IU,1,31,X,1,True,
+6p2h_1_A_A,6p2h,1,A,A,1,17,,GTP,GTP,False,GTP,HETATM,True,,,GTP,G,True,True,not_submitted_flank,,,GTP,1,17,A,1,True,5prime
+9v4v_1_A_A,9v4v,1,A,A,1,1,,GTP,GTP,False,GTP,HETATM,True,,,GTP,G,True,True,not_submitted_flank,,,GTP,1,1,A,1,True,5prime
+9v4z_1_A_A,9v4z,1,A,A,1,1,,GTP,GTP,False,GTP,HETATM,True,,,GTP,G,True,True,not_submitted_flank,,,GTP,1,1,A,1,True,5prime
+9v51_1_A_A,9v51,1,A,A,1,1,,GTP,GTP,False,GTP,HETATM,True,,,GTP,G,True,True,not_submitted_flank,,,GTP,1,1,A,1,True,5prime
+9v51_1_A_A,9v51,1,A,A,71,71,,CCC,CCC,False,CCC,HETATM,True,,,CCC,C,True,True,match,87,,CCC,1,71,A,1,True,3prime

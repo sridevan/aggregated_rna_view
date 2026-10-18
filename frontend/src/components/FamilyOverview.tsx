@@ -1,7 +1,7 @@
 import { useFamily } from '../state/family'
 import { useSelection } from '../state/selection'
 import { displayOrganism, pct } from '../lib/format'
-import { PdbeMolstarViewer } from './PdbeMolstarViewer'
+import { StructureExplorer } from './StructureExplorer'
 import { Stat } from './Stat'
 import { SpeciesChart } from './SpeciesChart'
 import { SectionCard } from './SectionCard'
@@ -32,7 +32,7 @@ function RepCard({ rep, rule, testId, className = '' }: { rep: InstanceRow | nul
 }
 
 export function FamilyOverview() {
-  const { family, stats, instances, orientation } = useFamily()
+  const { family, stats, instances } = useFamily()
   const sel = useSelection()
   const display = family.display_representative ?? family.representative
   const current = instances.find((i) => i.seq_name === sel.instance) ?? display
@@ -51,11 +51,11 @@ export function FamilyOverview() {
         <Stat label="Mean sequence occupancy" value={pct(family.coverage_summary.sequence_coverage_mean)} hint={`mean over ${family.clen} positions of the fraction of ${stats.sequence_level.n_unique_sequences} unique sequences with a residue`} testId="stat-sequence-occupancy" />
         <Stat label="Mean structural occupancy" value={pct(family.coverage_summary.structural_coverage_mean)} hint={`mean over ${family.clen} positions of the fraction of ${stats.structure_level.n_instances} instances with coordinates`} testId="stat-structural-occupancy" />
       </section>
-      {/* Row 3: representative 3D structure, full width */}
+      {/* Row 3: structure explorer (shared instance selector, coverage tracks, 2D + 3D viewers), full width */}
       <SectionCard eyebrow="Molecular view" testId="viewer-card"
-        title={current ? <>{current.seq_name === display?.seq_name ? 'Representative RNA' : 'Selected RNA'} — <span className="font-mono">{current.pdb_id.toUpperCase()}</span> chain {current.auth_asym_id}</> : 'RNA 3D structure'}
-        description={current ? <span data-testid="overview-current">{current.pdb_id.toUpperCase()} chain {current.auth_asym_id}, Rfam-mapped region {current.map_start}–{current.map_end} shown in the family reference orientation; white background, Structure Tools hidden.</span> : undefined}>
-        {current ? <PdbeMolstarViewer pdbId={current.pdb_id} labelAsymId={current.label_asym_id} authAsymId={current.auth_asym_id} region={{ start: current.map_start, end: current.map_end }} orientation={orientation?.transforms[current.seq_name] ?? null} selection={[]} className="h-[560px]" /> : <p>No structure.</p>}
+        title={current ? <>{current.seq_name === display?.seq_name ? 'Representative RNA' : 'Selected RNA'} — <span className="font-mono">{current.pdb_id.toUpperCase()}</span> chain {current.auth_asym_id}</> : 'RNA structure'}
+        description={current ? <span data-testid="overview-current">{current.pdb_id.toUpperCase()} chain {current.auth_asym_id}: explore RNA sequence and structure using synchronised consensus-position selections across the coverage tracks, 2D viewer and Mol*.</span> : undefined}>
+        <StructureExplorer />
       </SectionCard>
       {/* Row 4: metadata (40 %) and species diversity (60 %), equal overall height */}
       <div className="grid gap-4 lg:grid-cols-5 lg:items-start" data-testid="metadata-row">
@@ -77,10 +77,6 @@ export function FamilyOverview() {
         </div>
         <div className="lg:col-span-3"><SpeciesChart instances={instances} /></div>
       </div>
-      <SectionCard eyebrow="Reference" title={`Consensus model (${family.clen} match positions)`} collapsible defaultOpen={false} testId="consensus-model"
-        description={<>RF line: upper case = conserved consensus nucleotide. SS_cons: WUSS secondary-structure annotation of the Rfam seed. Clan: {family.clan_members.join(', ') || 'none'}.</>}>
-        <pre className="overflow-x-auto text-[11px] leading-4">{family.consensus_sequence}{'\n'}{family.ss_cons}</pre>
-      </SectionCard>
     </div>
   )
 }

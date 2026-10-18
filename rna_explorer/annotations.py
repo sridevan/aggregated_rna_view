@@ -63,6 +63,7 @@ class AnnotationBuilder:
         self.inst_elements: dict[str, dict[int, dict[str, Any]]] = {}      # seq_name -> label_seq_id -> {labels, unit_id, status}
         self.inst_element_source: dict[str, dict[str, Any]] = {}           # seq_name -> source meta/status
         self.loops: list[dict[str, Any]] = []
+        self.loops_outside: list[dict[str, Any]] = []     # loops of the same entries with no nucleotide in a family chain (compact records)
         self.loop_source: dict[str, dict[str, Any]] = {}                   # pdb_id -> source status
         self.atlas_release: dict[str, Any] = {}
         self.ligands: list[dict[str, Any]] = []
@@ -203,12 +204,21 @@ class AnnotationBuilder:
             self.loop_source[pdb] = {"status": "evaluated" if evaluated else "unavailable", "loops": lmeta.to_dict(), "motifs": mmeta.to_dict(), "n_loops": len(loops)}
             by_id = {m.loop_id: m for m in motifs}
             seen = set()
+            n_outside = 0
             for L in loops:
                 seen.add(L.loop_id)
                 m = by_id.get(L.loop_id)
+                refs = [(u, self.idx.resolve_unit(u)) for u in L.units]
+                # a loop with no nucleotide in any family chain (e.g. 23S, 5S or tRNA loops of a ribosome entry) is kept as a compact record,
+                # without nucleotide-level data and without counting its nucleotides as unresolved; loops touching a family chain are unchanged
+                if not any(ref.seq_name for _, ref in refs):
+                    n_outside += 1
+                    self.loops_outside.append({"loop_id": L.loop_id, "pdb_id": pdb, "loop_type": L.loop_type, "auth_asym_ids": sorted({UnitId.parse(u).auth_asym_id for u in L.units}),
+                                               "n_nucleotides": len(L.units), "motif_group": m.motif_group if m else None, "atlas_status": m.atlas_status if m else "not_listed",
+                                               "loop_url": BGSU_LOOP_URL.format(loop_id=L.loop_id), "reason": "no nucleotide in a family chain"})
+                    continue
                 nts: list[dict[str, Any]] = []
-                for u in L.units:
-                    ref = self.idx.resolve_unit(u)
+                for u, ref in refs:
                     self._note_unresolved("bgsu_motif_atlas_loop", ref, L.loop_id)
                     d = ref.to_dict(); d["unit_id"] = u
                     d["resolution"] = ("chain_not_in_family" if ref.seq_name is None else "residue_not_found" if ref.mapping_status == "unresolved_identifier" else "resolved")
@@ -233,6 +243,7 @@ class AnnotationBuilder:
                        "source": {"loops_url": lmeta.url, "motifs_url": mmeta.url, "retrieved": lmeta.retrieved,
                                   "motif_atlas_release": self.atlas_release.get(L.loop_type, {}).get("release")}}
                 self.loops.append(rec)
+            self.loop_source[pdb]["n_loops_outside_family_chains"] = n_outside
             for m in motifs:
                 if m.loop_id not in seen:
                     motif_page_only.append({"pdb_id": pdb, "loop_id": m.loop_id, "atlas_status": m.atlas_status, "motif_group": m.motif_group})
@@ -262,8 +273,11 @@ class AnnotationBuilder:
                            "n_pdb_entries_evaluated": sum(1 for v in self.loop_source.values() if v["status"] == "evaluated"),
                            "n_pdb_entries_unavailable": sum(1 for v in self.loop_source.values() if v["status"] != "evaluated"),
                            "nucleotide_mapping_status_counts": dict(Counter(n["mapping_status"] for L in self.loops for n in L["nucleotides"])),
-                           "n_motif_page_loops_missing_from_download": len(motif_page_only)},
-                "entry_sources": self.loop_source, "motif_page_only": motif_page_only, "loops": self.loops, "provenance": self._provenance()}
+                           "n_motif_page_loops_missing_from_download": len(motif_page_only), "n_loops_outside_family_chains": len(self.loops_outside)},
+                "entry_sources": self.loop_source, "motif_page_only": motif_page_only, "loops": self.loops,
+                "loops_outside_family_chains": {"description": "loops of the same PDB entries with no nucleotide in a family chain (other molecules of the entry); "
+                                                               "kept as compact records without nucleotide-level data", "loops": self.loops_outside},
+                "provenance": self._provenance()}
 
     # ------------------------------------------------------------------ 3. PDBe bound molecules
     def _classify(self, ccd: str) -> tuple[str, str]:
@@ -531,7 +545,15 @@ class AnnotationBuilder:
         log.info("tracks")
         tracks = self.build_tracks()
         validate_json(self.reference, "reference_structural_elements"); validate_json(loops, "loops"); validate_json(ligands, "ligands"); validate_json(tracks, "tracks")
-        sizes = {"reference_structural_elements.json": _dump(out / "reference_structural_elements.json", self.reference), "loops.json": _dump(out / "loops.json", loops),
+        # per-chain loop files: what the Family Overview loads for the selected chain (the family-wide loops.json can be tens of MB for ribosomes)
+        by_inst = 0
+        for inst in self.idx.instances:
+            sn = inst["seq_name"]
+            rec = {"schema_version": SCHEMA_VERSION, "rfam_acc": self.acc, "seq_name": sn, "description": "full records of every BGSU loop with at least one nucleotide "
+                   "in this chain (from loops.json; inter-chain loops included)", "loops": [L for L in self.loops if sn in L["instances"]], "provenance": self._provenance()}
+            validate_json(rec, "loops_instance")
+            by_inst += _dump(out / "loops_by_instance" / f"{sn}.json", rec)
+        sizes = {"reference_structural_elements.json": _dump(out / "reference_structural_elements.json", self.reference), "loops.json": _dump(out / "loops.json", loops), "loops_by_instance/ (total)": by_inst,
                  "ligands.json": _dump(out / "ligands.json", ligands), "tracks.json": _dump(out / "tracks.json", tracks), "annotations/ (total)": inst_sizes}
         summary = {"rfam_acc": self.acc, "generated": self.generated, "n_instances": len(self.idx.instances), "n_entries": len(self.idx.by_pdb),
                    "reference_structural_elements": {k: self.reference[k] for k in ("n_consensus_positions_annotated",)} | {"reference": self.reference["reference"]["seq_name"],

@@ -1,0 +1,291 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "type": "object",
+ "properties": {
+  "schema_version": {
+   "const": "1.0"
+  },
+  "rfam_acc": {
+   "type": "string"
+  },
+  "clen": {
+   "type": "integer"
+  },
+  "measurement": {
+   "type": "object",
+   "properties": {
+    "name": {
+     "type": "string"
+    },
+    "unit": {
+     "type": "string"
+    },
+    "level": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "unit"
+   ]
+  },
+  "method": {
+   "type": "object",
+   "properties": {
+    "software": {
+     "type": "object",
+     "properties": {}
+    },
+    "algorithm": {
+     "type": "string"
+    },
+    "probe_radius_A": {
+     "type": "number"
+    },
+    "n_test_points": {
+     "type": "integer"
+    },
+    "radii_A": {
+     "type": "object",
+     "properties": {}
+    },
+    "altloc_policy": {
+     "type": "string"
+    },
+    "chain_isolation": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "algorithm",
+    "probe_radius_A",
+    "radii_A"
+   ]
+  },
+  "ccd_components": {
+   "type": "object",
+   "properties": {}
+  },
+  "counts": {
+   "type": "object",
+   "properties": {
+    "n_instances_measured": {
+     "type": "integer"
+    },
+    "n_failed": {
+     "type": "integer"
+    },
+    "nucleotide_status_counts": {
+     "type": "object",
+     "properties": {}
+    }
+   },
+   "required": [
+    "n_instances_measured",
+    "nucleotide_status_counts"
+   ]
+  },
+  "failures": {
+   "type": "array",
+   "items": {}
+  },
+  "instances": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "seq_name": {
+      "type": "string"
+     },
+     "pdb_id": {
+      "type": "string"
+     },
+     "entity_id": {
+      "type": "integer"
+     },
+     "label_asym_id": {
+      "type": "string"
+     },
+     "auth_asym_id": {
+      "type": "string"
+     },
+     "source_file": {
+      "type": "string"
+     },
+     "n_models_in_file": {
+      "type": "integer"
+     },
+     "polymer_type": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "n_atoms_used": {
+      "type": "integer"
+     },
+     "chain_total_sasa_A2": {
+      "type": "number"
+     },
+     "sum_nucleotide_sasa_A2": {
+      "type": "number"
+     },
+     "status_counts": {
+      "type": "object",
+      "properties": {}
+     },
+     "warnings": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "nucleotides": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "label_seq_id": {
+         "type": "integer"
+        },
+        "author_residue_number": {
+         "type": [
+          "integer",
+          "string",
+          "null"
+         ]
+        },
+        "insertion_code": {
+         "type": "string"
+        },
+        "residue_name": {
+         "type": "string"
+        },
+        "nucleotide_parent": {
+         "type": "string"
+        },
+        "is_modified": {
+         "type": "boolean"
+        },
+        "alignment_state": {
+         "type": "string"
+        },
+        "rfam_consensus_pos": {
+         "type": [
+          "integer",
+          "null"
+         ]
+        },
+        "pp_char": {
+         "type": "string"
+        },
+        "status": {
+         "enum": [
+          "complete",
+          "incomplete",
+          "unsupported",
+          "no_coordinates"
+         ]
+        },
+        "sasa_A2": {
+         "type": [
+          "number",
+          "null"
+         ]
+        },
+        "n_observed_heavy_atoms": {
+         "type": "integer"
+        },
+        "n_expected_heavy_atoms": {
+         "type": [
+          "integer",
+          "null"
+         ]
+        },
+        "missing_atoms": {
+         "type": [
+          "array",
+          "null"
+         ],
+         "items": {
+          "type": "string"
+         }
+        },
+        "extra_atoms": {
+         "type": [
+          "array",
+          "null"
+         ],
+         "items": {
+          "type": "string"
+         }
+        },
+        "incomplete_reason": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "unsupported_reason": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "ccd_type": {
+         "type": [
+          "string",
+          "null"
+         ]
+        }
+       },
+       "required": [
+        "label_seq_id",
+        "residue_name",
+        "alignment_state",
+        "rfam_consensus_pos",
+        "status",
+        "sasa_A2",
+        "n_observed_heavy_atoms"
+       ]
+      }
+     }
+    },
+    "required": [
+     "seq_name",
+     "pdb_id",
+     "label_asym_id",
+     "chain_total_sasa_A2",
+     "sum_nucleotide_sasa_A2",
+     "status_counts",
+     "nucleotides"
+    ]
+   }
+  },
+  "provenance": {
+   "type": "object",
+   "properties": {
+    "rfam_acc": {
+     "type": "string"
+    },
+    "generated": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "rfam_acc",
+    "generated"
+   ]
+  }
+ },
+ "required": [
+  "schema_version",
+  "rfam_acc",
+  "clen",
+  "measurement",
+  "method",
+  "counts",
+  "instances",
+  "provenance"
+ ],
+ "title": "RnaSasaMeasurements"
+}

@@ -20,7 +20,7 @@ import io
 import json
 import re
 import shutil
-from dataclasses import dataclass, asdict
+from dataclasses import replace, dataclass, asdict
 from pathlib import Path
 from typing import Any, Optional
 import requests
@@ -34,7 +34,7 @@ LOOP_TYPES = ("HL", "IL", "J3", "J4")
 @dataclass
 class SourceMeta:
     url: str
-    status: str            # ok | empty | http_error | parse_error
+    status: str            # ok | empty | http_error | parse_error | not_available (the source states it has no data)
     retrieved: Optional[str]
     detail: str = ""
 
@@ -98,8 +98,11 @@ def parse_reference_annotations(text: str) -> tuple[list[ReferenceAnnotation], l
             continue
         if "\t" in line:
             unit, label = line.split("\t", 1)
-        else:
+        elif "," in line:
             unit, label = line.split(",", 1)
+        else:
+            # not a ``unit_id, label`` row (e.g. BGSU's plain-text "Could not find annotation file ..." reply): never a label
+            continue
         rows.append(ReferenceAnnotation(unit.strip(), _split_labels(label)))
     return rows, comments
 
@@ -120,6 +123,12 @@ def fetch_chain_annotations(fetcher: AnnotationFetcher, pdb_id: str, auth_asym_i
     if txt is None or not txt.strip():
         return [], meta
     rows, _ = parse_reference_annotations(txt)
+    if not rows:
+        # BGSU answers HTTP 200 with a plain-text message when it has no annotation file for the family (e.g. RF00162): the source
+        # is unavailable for this chain, which is recorded as such (never as "no structural elements")
+        first = txt.strip().splitlines()[0][:200]
+        status = "not_available" if first.lower().startswith("could not find annotation file") else "parse_error"
+        return [], replace(meta, status=status, detail=first)
     return rows, meta
 
 

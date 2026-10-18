@@ -7,6 +7,7 @@ dependencies = ["requests>=2.28", "jsonschema>=4"]
 
 [project.optional-dependencies]
 test = ["pytest>=7"]
+sasa = ["freesasa>=2.2", "gemmi>=0.6", "numpy>=1.24"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

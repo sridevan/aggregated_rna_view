@@ -1,0 +1,564 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "type": "object",
+ "required": [
+  "schema_version",
+  "rfam_acc",
+  "clen",
+  "method",
+  "counts",
+  "components",
+  "observations",
+  "instances",
+  "provenance"
+ ],
+ "properties": {
+  "schema_version": {
+   "const": "1.0"
+  },
+  "rfam_acc": {
+   "type": "string"
+  },
+  "clen": {
+   "type": "integer"
+  },
+  "method": {
+   "type": "object"
+  },
+  "counts": {
+   "type": "object",
+   "required": [
+    "n_instances",
+    "n_entries",
+    "n_nonstandard",
+    "n_on_consensus_axis",
+    "n_off_axis",
+    "n_distinct_ccd"
+   ]
+  },
+  "components": {
+   "type": "object",
+   "additionalProperties": {
+    "type": "object",
+    "required": [
+     "chem_comp_name",
+     "parent",
+     "parent_source",
+     "n_observations",
+     "n_instances",
+     "n_entries"
+    ]
+   }
+  },
+  "observations": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "observation_id",
+     "seq_name",
+     "pdb_id",
+     "entity_id",
+     "label_asym_id",
+     "auth_asym_id",
+     "label_seq_id",
+     "auth_seq_id",
+     "auth_ins_code",
+     "ccd_id",
+     "chem_comp_name",
+     "chem_comp_type",
+     "alignment_state",
+     "rfam_consensus_pos",
+     "on_consensus_axis",
+     "outside_mapped_region",
+     "has_coordinates",
+     "is_5prime_terminal",
+     "is_3prime_terminal",
+     "pdbe",
+     "ccd_parent",
+     "nakb_parent",
+     "parent",
+     "parent_source"
+    ],
+    "properties": {
+     "observation_id": {
+      "type": "string"
+     },
+     "seq_name": {
+      "type": "string"
+     },
+     "pdb_id": {
+      "type": "string"
+     },
+     "entity_id": {
+      "type": "integer"
+     },
+     "label_asym_id": {
+      "type": "string"
+     },
+     "auth_asym_id": {
+      "type": "string"
+     },
+     "label_seq_id": {
+      "type": "integer",
+      "minimum": 1
+     },
+     "auth_seq_id": {
+      "type": "string"
+     },
+     "auth_ins_code": {
+      "type": "string"
+     },
+     "ccd_id": {
+      "type": "string"
+     },
+     "chem_comp_name": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "chem_comp_type": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "alignment_state": {
+      "enum": [
+       "match",
+       "insert",
+       "local_end",
+       "not_submitted_flank",
+       null
+      ]
+     },
+     "rfam_consensus_pos": {
+      "type": [
+       "integer",
+       "null"
+      ]
+     },
+     "insertion_anchor": {
+      "type": [
+       "integer",
+       "null"
+      ]
+     },
+     "on_consensus_axis": {
+      "type": "boolean"
+     },
+     "outside_mapped_region": {
+      "type": "boolean"
+     },
+     "has_coordinates": {
+      "type": "boolean"
+     },
+     "is_5prime_terminal": {
+      "type": "boolean"
+     },
+     "is_3prime_terminal": {
+      "type": "boolean"
+     },
+     "mapping_nucleotide_parent": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "pdbe": {
+      "type": "object",
+      "properties": {
+       "status": {
+        "enum": [
+         "reported",
+         "not_reported",
+         "not_checked"
+        ]
+       },
+       "chem_comp_id": {
+        "type": "string"
+       },
+       "agrees": {
+        "type": "boolean"
+       },
+       "n_records": {
+        "type": "integer"
+       }
+      },
+      "required": [
+       "status"
+      ]
+     },
+     "ccd_parent": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "nakb_parent": {
+      "type": [
+       "array",
+       "null"
+      ],
+      "items": {
+       "type": "string"
+      }
+     },
+     "nakb_change_locations": {
+      "type": [
+       "array",
+       "null"
+      ],
+      "items": {
+       "type": "string"
+      }
+     },
+     "parent": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "parent_source": {
+      "enum": [
+       "CCD",
+       "NAKB",
+       null
+      ]
+     }
+    },
+    "allOf": [
+     {
+      "if": {
+       "properties": {
+        "on_consensus_axis": {
+         "const": true
+        }
+       }
+      },
+      "then": {
+       "properties": {
+        "rfam_consensus_pos": {
+         "type": "integer"
+        },
+        "alignment_state": {
+         "const": "match"
+        }
+       }
+      },
+      "else": {
+       "properties": {
+        "rfam_consensus_pos": {
+         "type": "null"
+        }
+       }
+      }
+     }
+    ]
+   }
+  },
+  "instances": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "seq_name",
+     "pdb_id",
+     "entity_id",
+     "label_asym_id",
+     "auth_asym_id",
+     "status",
+     "observations",
+     "missing_identity"
+    ],
+    "properties": {
+     "seq_name": {
+      "type": "string"
+     },
+     "pdb_id": {
+      "type": "string"
+     },
+     "entity_id": {
+      "type": "integer"
+     },
+     "label_asym_id": {
+      "type": "string"
+     },
+     "auth_asym_id": {
+      "type": "string"
+     },
+     "status": {
+      "enum": [
+       "ok",
+       "source_unavailable"
+      ]
+     },
+     "error": {
+      "type": "string"
+     },
+     "entity_poly_type": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "n_polymer_residues": {
+      "type": "integer"
+     },
+     "n_standard": {
+      "type": "integer"
+     },
+     "n_nonstandard": {
+      "type": "integer"
+     },
+     "n_missing_identity": {
+      "type": "integer"
+     },
+     "n_without_coordinates": {
+      "type": "integer"
+     },
+     "deposited_components": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "label_seq_ids_without_coordinates": {
+      "type": "array",
+      "items": {
+       "type": "integer"
+      }
+     },
+     "observations": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "required": [
+        "observation_id",
+        "seq_name",
+        "pdb_id",
+        "entity_id",
+        "label_asym_id",
+        "auth_asym_id",
+        "label_seq_id",
+        "auth_seq_id",
+        "auth_ins_code",
+        "ccd_id",
+        "chem_comp_name",
+        "chem_comp_type",
+        "alignment_state",
+        "rfam_consensus_pos",
+        "on_consensus_axis",
+        "outside_mapped_region",
+        "has_coordinates",
+        "is_5prime_terminal",
+        "is_3prime_terminal",
+        "pdbe",
+        "ccd_parent",
+        "nakb_parent",
+        "parent",
+        "parent_source"
+       ],
+       "properties": {
+        "observation_id": {
+         "type": "string"
+        },
+        "seq_name": {
+         "type": "string"
+        },
+        "pdb_id": {
+         "type": "string"
+        },
+        "entity_id": {
+         "type": "integer"
+        },
+        "label_asym_id": {
+         "type": "string"
+        },
+        "auth_asym_id": {
+         "type": "string"
+        },
+        "label_seq_id": {
+         "type": "integer",
+         "minimum": 1
+        },
+        "auth_seq_id": {
+         "type": "string"
+        },
+        "auth_ins_code": {
+         "type": "string"
+        },
+        "ccd_id": {
+         "type": "string"
+        },
+        "chem_comp_name": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "chem_comp_type": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "alignment_state": {
+         "enum": [
+          "match",
+          "insert",
+          "local_end",
+          "not_submitted_flank",
+          null
+         ]
+        },
+        "rfam_consensus_pos": {
+         "type": [
+          "integer",
+          "null"
+         ]
+        },
+        "insertion_anchor": {
+         "type": [
+          "integer",
+          "null"
+         ]
+        },
+        "on_consensus_axis": {
+         "type": "boolean"
+        },
+        "outside_mapped_region": {
+         "type": "boolean"
+        },
+        "has_coordinates": {
+         "type": "boolean"
+        },
+        "is_5prime_terminal": {
+         "type": "boolean"
+        },
+        "is_3prime_terminal": {
+         "type": "boolean"
+        },
+        "mapping_nucleotide_parent": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "pdbe": {
+         "type": "object",
+         "properties": {
+          "status": {
+           "enum": [
+            "reported",
+            "not_reported",
+            "not_checked"
+           ]
+          },
+          "chem_comp_id": {
+           "type": "string"
+          },
+          "agrees": {
+           "type": "boolean"
+          },
+          "n_records": {
+           "type": "integer"
+          }
+         },
+         "required": [
+          "status"
+         ]
+        },
+        "ccd_parent": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "nakb_parent": {
+         "type": [
+          "array",
+          "null"
+         ],
+         "items": {
+          "type": "string"
+         }
+        },
+        "nakb_change_locations": {
+         "type": [
+          "array",
+          "null"
+         ],
+         "items": {
+          "type": "string"
+         }
+        },
+        "parent": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "parent_source": {
+         "enum": [
+          "CCD",
+          "NAKB",
+          null
+         ]
+        }
+       },
+       "allOf": [
+        {
+         "if": {
+          "properties": {
+           "on_consensus_axis": {
+            "const": true
+           }
+          }
+         },
+         "then": {
+          "properties": {
+           "rfam_consensus_pos": {
+            "type": "integer"
+           },
+           "alignment_state": {
+            "const": "match"
+           }
+          }
+         },
+         "else": {
+          "properties": {
+           "rfam_consensus_pos": {
+            "type": "null"
+           }
+          }
+         }
+        }
+       ]
+      }
+     },
+     "missing_identity": {
+      "type": "array"
+     },
+     "mmcif_source": {
+      "type": "object"
+     }
+    }
+   }
+  },
+  "provenance": {
+   "type": "object",
+   "required": [
+    "rfam_acc",
+    "rfam_release",
+    "cm_checksum",
+    "pipeline_version",
+    "generated",
+    "mmcif_source",
+    "pdbe_modified_AA_or_NA",
+    "nakb"
+   ]
+  }
+ }
+}

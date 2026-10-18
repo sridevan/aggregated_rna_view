@@ -1,0 +1,2282 @@
+{
+ "method": {
+  "fpocketR": "1.3.6",
+  "fpocket": "4.0.3 (conda-forge h8a118fb_2, x86_64 under Rosetta 2)",
+  "parameters": "-m 3.0 -M 5.7 -i 42 -D 1.65 -A 3 -p 0.0 (published RNA-optimised set; fpocketR defaults)",
+  "pocket_nucleotides": "residues of fpocket pockets/pocketN_atm.pdb (atoms contacted by the pocket's Voronoi vertices); no extra distance cut-off",
+  "known_site_reference": "chain-level Arpeggio contacts on deposited coordinates (experiments/chain_specific_ligands/arpeggio_pilot) and the family-level PDBe pocket positions 25,26,51,55,56,80,81"
+ },
+ "runs": [
+  {
+   "run": "4fe5_1_B_A",
+   "seq_name": "4fe5_1_B_A",
+   "variant": "apo_input",
+   "n_pockets": 1,
+   "pockets": [
+    {
+     "pocket_id": "4fe5_1_B_A:apo_input:pocket1",
+     "rank": 1,
+     "score": 0.55,
+     "drug_score": 0.001,
+     "volume_A3": 140.0,
+     "n_alpha_spheres": 43,
+     "pocket_sasa_A2": 34.0,
+     "hydrophobicity_score": 1.6,
+     "polarity_score": 3.0,
+     "npr1": 0.59,
+     "npr2": 0.76,
+     "shape": "Balanced",
+     "filter_pass": true,
+     "type": "Novel",
+     "ligand_id": null,
+     "pocket_overlap": null,
+     "ligand_overlap": null,
+     "center_criteria_A": null,
+     "fpocket_info": {
+      "Score": 0.55,
+      "Druggability Score": 0.001,
+      "Number of Alpha Spheres": 43.0,
+      "Total SASA": 33.705,
+      "Polar SASA": 21.628,
+      "Apolar SASA": 12.076,
+      "Volume": 139.56,
+      "Mean local hydrophobic density": 0.0,
+      "Mean alpha sphere radius": 3.396,
+      "Mean alp. sph. solvent access": 0.428,
+      "Apolar alpha sphere proportion": 0.0,
+      "Hydrophobicity score": 1.556,
+      "Volume score": 1.667,
+      "Polarity score": 3.0,
+      "Charge score": 0.0,
+      "Proportion of polar atoms": 80.769,
+      "Alpha sphere density": 2.564,
+      "Cent. of mass - Alpha Sphere max dist": 5.901,
+      "Flexibility": 0.394
+     },
+     "pocket_nt_author": [
+      21,
+      22,
+      47,
+      50,
+      51,
+      52,
+      73,
+      74,
+      75
+     ],
+     "pocket_nt_from_atm_pdb": [
+      21,
+      22,
+      47,
+      50,
+      51,
+      52,
+      73,
+      74,
+      75
+     ],
+     "nt_match": true,
+     "consensus_positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "n_insert_or_flank_nt": 0,
+     "nucleotides": [
+      {
+       "pdb_chain": "B",
+       "pdb_resnum": 21,
+       "icode": "",
+       "resname": "A",
+       "label_asym_id": "A",
+       "label_seq_id": 7,
+       "resolver_label_seq_id": 7,
+       "rfam_consensus_pos": 25,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 7,
+       "lining_atoms": [
+        "N1",
+        "C2",
+        "C6",
+        "C2'",
+        "O2'",
+        "N3",
+        "N6"
+       ]
+      },
+      {
+       "pdb_chain": "B",
+       "pdb_resnum": 22,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 8,
+       "resolver_label_seq_id": 8,
+       "rfam_consensus_pos": 26,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 5,
+       "lining_atoms": [
+        "O2",
+        "O2'",
+        "N1",
+        "C2",
+        "N3"
+       ]
+      },
+      {
+       "pdb_chain": "B",
+       "pdb_resnum": 47,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 33,
+       "resolver_label_seq_id": 33,
+       "rfam_consensus_pos": 51,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 1,
+       "lining_atoms": [
+        "O2"
+       ]
+      },
+      {
+       "pdb_chain": "B",
+       "pdb_resnum": 50,
+       "icode": "",
+       "resname": "C",
+       "label_asym_id": "A",
+       "label_seq_id": 36,
+       "resolver_label_seq_id": 36,
+       "rfam_consensus_pos": 54,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 1,
+       "lining_atoms": [
+        "N4"
+       ]
+      },
+      {
+       "pdb_chain": "B",
+       "pdb_resnum": 51,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 37,
+       "resolver_label_seq_id": 37,
+       "rfam_consensus_pos": 55,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 3,
+       "lining_atoms": [
+        "O4",
+        "N3",
+        "O2"
+       ]
+      },
+      {
+       "pdb_chain": "B",
+       "pdb_resnum": 52,
+       "icode": "",
+       "resname": "A",
+       "label_asym_id": "A",
+       "label_seq_id": 38,
+       "resolver_label_seq_id": 38,
+       "rfam_consensus_pos": 56,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 3,
+       "lining_atoms": [
+        "C2",
+        "N1",
+        "N3"
+       ]
+      },
+      {
+       "pdb_chain": "B",
+       "pdb_resnum": 73,
+       "icode": "",
+       "resname": "A",
+       "label_asym_id": "A",
+       "label_seq_id": 59,
+       "resolver_label_seq_id": 59,
+       "rfam_consensus_pos": 79,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 2,
+       "lining_atoms": [
+        "N6",
+        "N1"
+       ]
+      },
+      {
+       "pdb_chain": "B",
+       "pdb_resnum": 74,
+       "icode": "",
+       "resname": "C",
+       "label_asym_id": "A",
+       "label_seq_id": 60,
+       "resolver_label_seq_id": 60,
+       "rfam_consensus_pos": 80,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 3,
+       "lining_atoms": [
+        "N4",
+        "N3",
+        "O2"
+       ]
+      },
+      {
+       "pdb_chain": "B",
+       "pdb_resnum": 75,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 61,
+       "resolver_label_seq_id": 61,
+       "rfam_consensus_pos": 81,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 1,
+       "lining_atoms": [
+        "O2"
+       ]
+      }
+     ],
+     "map_consistent": true
+    }
+   ]
+  },
+  {
+   "run": "4fe5_1_B_A_holo_HPA",
+   "seq_name": "4fe5_1_B_A",
+   "variant": "holo_input_HPA",
+   "n_pockets": 1,
+   "pockets": [
+    {
+     "pocket_id": "4fe5_1_B_A:holo_input_HPA:pocket1",
+     "rank": 1,
+     "score": 0.55,
+     "drug_score": 0.001,
+     "volume_A3": 140.0,
+     "n_alpha_spheres": 43,
+     "pocket_sasa_A2": 34.0,
+     "hydrophobicity_score": 1.6,
+     "polarity_score": 3.0,
+     "npr1": 0.59,
+     "npr2": 0.76,
+     "shape": "Balanced",
+     "filter_pass": true,
+     "type": "Known",
+     "ligand_id": "HPA",
+     "pocket_overlap": 1.0,
+     "ligand_overlap": 1.0,
+     "center_criteria_A": 0.47,
+     "fpocket_info": {
+      "Score": 0.55,
+      "Druggability Score": 0.001,
+      "Number of Alpha Spheres": 43.0,
+      "Total SASA": 33.705,
+      "Polar SASA": 21.628,
+      "Apolar SASA": 12.076,
+      "Volume": 140.946,
+      "Mean local hydrophobic density": 0.0,
+      "Mean alpha sphere radius": 3.396,
+      "Mean alp. sph. solvent access": 0.428,
+      "Apolar alpha sphere proportion": 0.0,
+      "Hydrophobicity score": 1.556,
+      "Volume score": 1.667,
+      "Polarity score": 3.0,
+      "Charge score": 0.0,
+      "Proportion of polar atoms": 80.769,
+      "Alpha sphere density": 2.564,
+      "Cent. of mass - Alpha Sphere max dist": 5.901,
+      "Flexibility": 0.394
+     },
+     "pocket_nt_author": [
+      21,
+      22,
+      47,
+      50,
+      51,
+      52,
+      73,
+      74,
+      75
+     ],
+     "pocket_nt_from_atm_pdb": [
+      21,
+      22,
+      47,
+      50,
+      51,
+      52,
+      73,
+      74,
+      75
+     ],
+     "nt_match": true,
+     "consensus_positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "n_insert_or_flank_nt": 0,
+     "nucleotides": [
+      {
+       "pdb_chain": "B",
+       "pdb_resnum": 21,
+       "icode": "",
+       "resname": "A",
+       "label_asym_id": "A",
+       "label_seq_id": 7,
+       "resolver_label_seq_id": 7,
+       "rfam_consensus_pos": 25,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 7,
+       "lining_atoms": [
+        "N1",
+        "C2",
+        "C6",
+        "C2'",
+        "O2'",
+        "N3",
+        "N6"
+       ]
+      },
+      {
+       "pdb_chain": "B",
+       "pdb_resnum": 22,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 8,
+       "resolver_label_seq_id": 8,
+       "rfam_consensus_pos": 26,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 5,
+       "lining_atoms": [
+        "O2",
+        "O2'",
+        "N1",
+        "C2",
+        "N3"
+       ]
+      },
+      {
+       "pdb_chain": "B",
+       "pdb_resnum": 47,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 33,
+       "resolver_label_seq_id": 33,
+       "rfam_consensus_pos": 51,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 1,
+       "lining_atoms": [
+        "O2"
+       ]
+      },
+      {
+       "pdb_chain": "B",
+       "pdb_resnum": 50,
+       "icode": "",
+       "resname": "C",
+       "label_asym_id": "A",
+       "label_seq_id": 36,
+       "resolver_label_seq_id": 36,
+       "rfam_consensus_pos": 54,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 1,
+       "lining_atoms": [
+        "N4"
+       ]
+      },
+      {
+       "pdb_chain": "B",
+       "pdb_resnum": 51,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 37,
+       "resolver_label_seq_id": 37,
+       "rfam_consensus_pos": 55,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 3,
+       "lining_atoms": [
+        "O4",
+        "N3",
+        "O2"
+       ]
+      },
+      {
+       "pdb_chain": "B",
+       "pdb_resnum": 52,
+       "icode": "",
+       "resname": "A",
+       "label_asym_id": "A",
+       "label_seq_id": 38,
+       "resolver_label_seq_id": 38,
+       "rfam_consensus_pos": 56,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 3,
+       "lining_atoms": [
+        "C2",
+        "N1",
+        "N3"
+       ]
+      },
+      {
+       "pdb_chain": "B",
+       "pdb_resnum": 73,
+       "icode": "",
+       "resname": "A",
+       "label_asym_id": "A",
+       "label_seq_id": 59,
+       "resolver_label_seq_id": 59,
+       "rfam_consensus_pos": 79,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 2,
+       "lining_atoms": [
+        "N6",
+        "N1"
+       ]
+      },
+      {
+       "pdb_chain": "B",
+       "pdb_resnum": 74,
+       "icode": "",
+       "resname": "C",
+       "label_asym_id": "A",
+       "label_seq_id": 60,
+       "resolver_label_seq_id": 60,
+       "rfam_consensus_pos": 80,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 3,
+       "lining_atoms": [
+        "N4",
+        "N3",
+        "O2"
+       ]
+      },
+      {
+       "pdb_chain": "B",
+       "pdb_resnum": 75,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 61,
+       "resolver_label_seq_id": 61,
+       "rfam_consensus_pos": 81,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 1,
+       "lining_atoms": [
+        "O2"
+       ]
+      }
+     ],
+     "map_consistent": true
+    }
+   ]
+  },
+  {
+   "run": "1y26_1_X_A",
+   "seq_name": "1y26_1_X_A",
+   "variant": "apo_input",
+   "n_pockets": 1,
+   "pockets": [
+    {
+     "pocket_id": "1y26_1_X_A:apo_input:pocket1",
+     "rank": 1,
+     "score": 0.53,
+     "drug_score": 0.001,
+     "volume_A3": 150.0,
+     "n_alpha_spheres": 48,
+     "pocket_sasa_A2": 39.0,
+     "hydrophobicity_score": -3.9,
+     "polarity_score": 3.0,
+     "npr1": 0.59,
+     "npr2": 0.76,
+     "shape": "Balanced",
+     "filter_pass": true,
+     "type": "Novel",
+     "ligand_id": null,
+     "pocket_overlap": null,
+     "ligand_overlap": null,
+     "center_criteria_A": null,
+     "fpocket_info": {
+      "Score": 0.53,
+      "Druggability Score": 0.001,
+      "Number of Alpha Spheres": 48.0,
+      "Total SASA": 39.128,
+      "Polar SASA": 27.052,
+      "Apolar SASA": 12.076,
+      "Volume": 146.158,
+      "Mean local hydrophobic density": 0.0,
+      "Mean alpha sphere radius": 3.387,
+      "Mean alp. sph. solvent access": 0.436,
+      "Apolar alpha sphere proportion": 0.0,
+      "Hydrophobicity score": -3.889,
+      "Volume score": 1.333,
+      "Polarity score": 3.0,
+      "Charge score": 0.0,
+      "Proportion of polar atoms": 75.862,
+      "Alpha sphere density": 2.559,
+      "Cent. of mass - Alpha Sphere max dist": 6.064,
+      "Flexibility": 0.124
+     },
+     "pocket_nt_author": [
+      21,
+      22,
+      47,
+      50,
+      51,
+      52,
+      73,
+      74,
+      75
+     ],
+     "pocket_nt_from_atm_pdb": [
+      21,
+      22,
+      47,
+      50,
+      51,
+      52,
+      73,
+      74,
+      75
+     ],
+     "nt_match": true,
+     "consensus_positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "n_insert_or_flank_nt": 0,
+     "nucleotides": [
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 21,
+       "icode": "",
+       "resname": "A",
+       "label_asym_id": "A",
+       "label_seq_id": 9,
+       "resolver_label_seq_id": 9,
+       "rfam_consensus_pos": 25,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 7,
+       "lining_atoms": [
+        "O2'",
+        "N3",
+        "C2'",
+        "N6",
+        "C6",
+        "C2",
+        "N1"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 22,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 10,
+       "resolver_label_seq_id": 10,
+       "rfam_consensus_pos": 26,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 7,
+       "lining_atoms": [
+        "O2'",
+        "C2",
+        "N1",
+        "N3",
+        "C6",
+        "C4",
+        "O2"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 47,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 35,
+       "resolver_label_seq_id": 35,
+       "rfam_consensus_pos": 51,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 1,
+       "lining_atoms": [
+        "O2"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 50,
+       "icode": "",
+       "resname": "C",
+       "label_asym_id": "A",
+       "label_seq_id": 38,
+       "resolver_label_seq_id": 38,
+       "rfam_consensus_pos": 54,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 1,
+       "lining_atoms": [
+        "N4"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 51,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 39,
+       "resolver_label_seq_id": 39,
+       "rfam_consensus_pos": 55,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 3,
+       "lining_atoms": [
+        "O4",
+        "N3",
+        "O2"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 52,
+       "icode": "",
+       "resname": "A",
+       "label_asym_id": "A",
+       "label_seq_id": 40,
+       "resolver_label_seq_id": 40,
+       "rfam_consensus_pos": 56,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 3,
+       "lining_atoms": [
+        "N3",
+        "C2",
+        "N1"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 73,
+       "icode": "",
+       "resname": "A",
+       "label_asym_id": "A",
+       "label_seq_id": 61,
+       "resolver_label_seq_id": 61,
+       "rfam_consensus_pos": 79,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 2,
+       "lining_atoms": [
+        "N6",
+        "N1"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 74,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 62,
+       "resolver_label_seq_id": 62,
+       "rfam_consensus_pos": 80,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 3,
+       "lining_atoms": [
+        "O4",
+        "N3",
+        "O2"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 75,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 63,
+       "resolver_label_seq_id": 63,
+       "rfam_consensus_pos": 81,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 2,
+       "lining_atoms": [
+        "O2",
+        "N3"
+       ]
+      }
+     ],
+     "map_consistent": true
+    }
+   ]
+  },
+  {
+   "run": "1y26_1_X_A_holo_ADE",
+   "seq_name": "1y26_1_X_A",
+   "variant": "holo_input_ADE",
+   "n_pockets": 1,
+   "pockets": [
+    {
+     "pocket_id": "1y26_1_X_A:holo_input_ADE:pocket1",
+     "rank": 1,
+     "score": 0.53,
+     "drug_score": 0.001,
+     "volume_A3": 150.0,
+     "n_alpha_spheres": 48,
+     "pocket_sasa_A2": 39.0,
+     "hydrophobicity_score": -3.9,
+     "polarity_score": 3.0,
+     "npr1": 0.59,
+     "npr2": 0.76,
+     "shape": "Balanced",
+     "filter_pass": true,
+     "type": "Known",
+     "ligand_id": "ADE",
+     "pocket_overlap": 1.0,
+     "ligand_overlap": 1.0,
+     "center_criteria_A": 0.55,
+     "fpocket_info": {
+      "Score": 0.53,
+      "Druggability Score": 0.001,
+      "Number of Alpha Spheres": 48.0,
+      "Total SASA": 39.128,
+      "Polar SASA": 27.052,
+      "Apolar SASA": 12.076,
+      "Volume": 151.677,
+      "Mean local hydrophobic density": 0.0,
+      "Mean alpha sphere radius": 3.387,
+      "Mean alp. sph. solvent access": 0.436,
+      "Apolar alpha sphere proportion": 0.0,
+      "Hydrophobicity score": -3.889,
+      "Volume score": 1.333,
+      "Polarity score": 3.0,
+      "Charge score": 0.0,
+      "Proportion of polar atoms": 75.862,
+      "Alpha sphere density": 2.559,
+      "Cent. of mass - Alpha Sphere max dist": 6.064,
+      "Flexibility": 0.124
+     },
+     "pocket_nt_author": [
+      21,
+      22,
+      47,
+      50,
+      51,
+      52,
+      73,
+      74,
+      75
+     ],
+     "pocket_nt_from_atm_pdb": [
+      21,
+      22,
+      47,
+      50,
+      51,
+      52,
+      73,
+      74,
+      75
+     ],
+     "nt_match": true,
+     "consensus_positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "n_insert_or_flank_nt": 0,
+     "nucleotides": [
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 21,
+       "icode": "",
+       "resname": "A",
+       "label_asym_id": "A",
+       "label_seq_id": 9,
+       "resolver_label_seq_id": 9,
+       "rfam_consensus_pos": 25,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 7,
+       "lining_atoms": [
+        "O2'",
+        "N3",
+        "C2'",
+        "N6",
+        "C6",
+        "C2",
+        "N1"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 22,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 10,
+       "resolver_label_seq_id": 10,
+       "rfam_consensus_pos": 26,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 7,
+       "lining_atoms": [
+        "O2'",
+        "C2",
+        "N1",
+        "N3",
+        "C6",
+        "C4",
+        "O2"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 47,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 35,
+       "resolver_label_seq_id": 35,
+       "rfam_consensus_pos": 51,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 1,
+       "lining_atoms": [
+        "O2"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 50,
+       "icode": "",
+       "resname": "C",
+       "label_asym_id": "A",
+       "label_seq_id": 38,
+       "resolver_label_seq_id": 38,
+       "rfam_consensus_pos": 54,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 1,
+       "lining_atoms": [
+        "N4"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 51,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 39,
+       "resolver_label_seq_id": 39,
+       "rfam_consensus_pos": 55,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 3,
+       "lining_atoms": [
+        "O4",
+        "N3",
+        "O2"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 52,
+       "icode": "",
+       "resname": "A",
+       "label_asym_id": "A",
+       "label_seq_id": 40,
+       "resolver_label_seq_id": 40,
+       "rfam_consensus_pos": 56,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 3,
+       "lining_atoms": [
+        "N3",
+        "C2",
+        "N1"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 73,
+       "icode": "",
+       "resname": "A",
+       "label_asym_id": "A",
+       "label_seq_id": 61,
+       "resolver_label_seq_id": 61,
+       "rfam_consensus_pos": 79,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 2,
+       "lining_atoms": [
+        "N6",
+        "N1"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 74,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 62,
+       "resolver_label_seq_id": 62,
+       "rfam_consensus_pos": 80,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 3,
+       "lining_atoms": [
+        "O4",
+        "N3",
+        "O2"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 75,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 63,
+       "resolver_label_seq_id": 63,
+       "rfam_consensus_pos": 81,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 2,
+       "lining_atoms": [
+        "O2",
+        "N3"
+       ]
+      }
+     ],
+     "map_consistent": true
+    }
+   ]
+  },
+  {
+   "run": "5e54_1_A_A",
+   "seq_name": "5e54_1_A_A",
+   "variant": "apo_input",
+   "n_pockets": 1,
+   "pockets": [
+    {
+     "pocket_id": "5e54_1_A_A:apo_input:pocket1",
+     "rank": 1,
+     "score": 0.5,
+     "drug_score": 0.13,
+     "volume_A3": 190.0,
+     "n_alpha_spheres": 50,
+     "pocket_sasa_A2": 62.0,
+     "hydrophobicity_score": -8.1,
+     "polarity_score": 5.0,
+     "npr1": 0.38,
+     "npr2": 0.89,
+     "shape": "Rod-like",
+     "filter_pass": true,
+     "type": "Novel",
+     "ligand_id": null,
+     "pocket_overlap": null,
+     "ligand_overlap": null,
+     "center_criteria_A": null,
+     "fpocket_info": {
+      "Score": 0.504,
+      "Druggability Score": 0.133,
+      "Number of Alpha Spheres": 50.0,
+      "Total SASA": 61.672,
+      "Polar SASA": 38.727,
+      "Apolar SASA": 22.945,
+      "Volume": 190.665,
+      "Mean local hydrophobic density": 2.0,
+      "Mean alpha sphere radius": 3.431,
+      "Mean alp. sph. solvent access": 0.447,
+      "Apolar alpha sphere proportion": 0.06,
+      "Hydrophobicity score": -8.111,
+      "Volume score": 2.111,
+      "Polarity score": 5.0,
+      "Charge score": 0.0,
+      "Proportion of polar atoms": 58.065,
+      "Alpha sphere density": 3.218,
+      "Cent. of mass - Alpha Sphere max dist": 8.0,
+      "Flexibility": 0.257
+     },
+     "pocket_nt_author": [
+      23,
+      24,
+      25,
+      46,
+      47,
+      49,
+      52,
+      53,
+      73
+     ],
+     "pocket_nt_from_atm_pdb": [
+      23,
+      24,
+      25,
+      46,
+      47,
+      49,
+      52,
+      53,
+      73
+     ],
+     "nt_match": true,
+     "consensus_positions": [
+      27,
+      28,
+      29,
+      50,
+      51,
+      53,
+      56,
+      57,
+      79
+     ],
+     "n_insert_or_flank_nt": 0,
+     "nucleotides": [
+      {
+       "pdb_chain": "A",
+       "pdb_resnum": 23,
+       "icode": "",
+       "resname": "A",
+       "label_asym_id": "A",
+       "label_seq_id": 11,
+       "resolver_label_seq_id": 11,
+       "rfam_consensus_pos": 27,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 1,
+       "lining_atoms": [
+        "OP1"
+       ]
+      },
+      {
+       "pdb_chain": "A",
+       "pdb_resnum": 24,
+       "icode": "",
+       "resname": "A",
+       "label_asym_id": "A",
+       "label_seq_id": 12,
+       "resolver_label_seq_id": 12,
+       "rfam_consensus_pos": 28,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 7,
+       "lining_atoms": [
+        "C1'",
+        "N3",
+        "O2'",
+        "O4'",
+        "C5'",
+        "C4'",
+        "O3'"
+       ]
+      },
+      {
+       "pdb_chain": "A",
+       "pdb_resnum": 25,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 13,
+       "resolver_label_seq_id": 13,
+       "rfam_consensus_pos": 29,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 3,
+       "lining_atoms": [
+        "N1",
+        "C6",
+        "O4'"
+       ]
+      },
+      {
+       "pdb_chain": "A",
+       "pdb_resnum": 46,
+       "icode": "",
+       "resname": "G",
+       "label_asym_id": "A",
+       "label_seq_id": 34,
+       "resolver_label_seq_id": 34,
+       "rfam_consensus_pos": 50,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 1,
+       "lining_atoms": [
+        "N2"
+       ]
+      },
+      {
+       "pdb_chain": "A",
+       "pdb_resnum": 47,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 35,
+       "resolver_label_seq_id": 35,
+       "rfam_consensus_pos": 51,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 1,
+       "lining_atoms": [
+        "O2"
+       ]
+      },
+      {
+       "pdb_chain": "A",
+       "pdb_resnum": 49,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 37,
+       "resolver_label_seq_id": 37,
+       "rfam_consensus_pos": 53,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 9,
+       "lining_atoms": [
+        "O2",
+        "C6",
+        "N3",
+        "N1",
+        "O2'",
+        "C2",
+        "C4",
+        "C5",
+        "O4"
+       ]
+      },
+      {
+       "pdb_chain": "A",
+       "pdb_resnum": 52,
+       "icode": "",
+       "resname": "A",
+       "label_asym_id": "A",
+       "label_seq_id": 40,
+       "resolver_label_seq_id": 40,
+       "rfam_consensus_pos": 56,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 3,
+       "lining_atoms": [
+        "C2",
+        "O2'",
+        "N3"
+       ]
+      },
+      {
+       "pdb_chain": "A",
+       "pdb_resnum": 53,
+       "icode": "",
+       "resname": "C",
+       "label_asym_id": "A",
+       "label_seq_id": 41,
+       "resolver_label_seq_id": 41,
+       "rfam_consensus_pos": 57,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 5,
+       "lining_atoms": [
+        "O2",
+        "O4'",
+        "C5'",
+        "C1'",
+        "C4'"
+       ]
+      },
+      {
+       "pdb_chain": "A",
+       "pdb_resnum": 73,
+       "icode": "",
+       "resname": "A",
+       "label_asym_id": "A",
+       "label_seq_id": 61,
+       "resolver_label_seq_id": 61,
+       "rfam_consensus_pos": 79,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 1,
+       "lining_atoms": [
+        "C2"
+       ]
+      }
+     ],
+     "map_consistent": true
+    }
+   ]
+  },
+  {
+   "run": "3ivn_1_A_A",
+   "seq_name": "3ivn_1_A_A",
+   "variant": "apo_input",
+   "n_pockets": 0,
+   "pockets": []
+  },
+  {
+   "run": "1y27_1_X_A",
+   "seq_name": "1y27_1_X_A",
+   "variant": "apo_input",
+   "n_pockets": 1,
+   "pockets": [
+    {
+     "pocket_id": "1y27_1_X_A:apo_input:pocket1",
+     "rank": 1,
+     "score": 0.53,
+     "drug_score": 0.001,
+     "volume_A3": 150.0,
+     "n_alpha_spheres": 46,
+     "pocket_sasa_A2": 40.0,
+     "hydrophobicity_score": 1.6,
+     "polarity_score": 3.0,
+     "npr1": 0.56,
+     "npr2": 0.79,
+     "shape": "Balanced",
+     "filter_pass": true,
+     "type": "Novel",
+     "ligand_id": null,
+     "pocket_overlap": null,
+     "ligand_overlap": null,
+     "center_criteria_A": null,
+     "fpocket_info": {
+      "Score": 0.532,
+      "Druggability Score": 0.001,
+      "Number of Alpha Spheres": 46.0,
+      "Total SASA": 39.832,
+      "Polar SASA": 32.586,
+      "Apolar SASA": 7.246,
+      "Volume": 150.827,
+      "Mean local hydrophobic density": 0.0,
+      "Mean alpha sphere radius": 3.406,
+      "Mean alp. sph. solvent access": 0.429,
+      "Apolar alpha sphere proportion": 0.0,
+      "Hydrophobicity score": 1.556,
+      "Volume score": 1.667,
+      "Polarity score": 3.0,
+      "Charge score": 0.0,
+      "Proportion of polar atoms": 81.481,
+      "Alpha sphere density": 2.607,
+      "Cent. of mass - Alpha Sphere max dist": 6.347,
+      "Flexibility": 0.298
+     },
+     "pocket_nt_author": [
+      21,
+      22,
+      47,
+      50,
+      51,
+      52,
+      73,
+      74,
+      75
+     ],
+     "pocket_nt_from_atm_pdb": [
+      21,
+      22,
+      47,
+      50,
+      51,
+      52,
+      73,
+      74,
+      75
+     ],
+     "nt_match": true,
+     "consensus_positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "n_insert_or_flank_nt": 0,
+     "nucleotides": [
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 21,
+       "icode": "",
+       "resname": "A",
+       "label_asym_id": "A",
+       "label_seq_id": 8,
+       "resolver_label_seq_id": 8,
+       "rfam_consensus_pos": 25,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 6,
+       "lining_atoms": [
+        "N6",
+        "C6",
+        "N1",
+        "N3",
+        "O2'",
+        "C2"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 22,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 9,
+       "resolver_label_seq_id": 9,
+       "rfam_consensus_pos": 26,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 6,
+       "lining_atoms": [
+        "O2'",
+        "O2",
+        "N3",
+        "C2",
+        "N1",
+        "C6"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 47,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 34,
+       "resolver_label_seq_id": 34,
+       "rfam_consensus_pos": 51,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 1,
+       "lining_atoms": [
+        "O2"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 50,
+       "icode": "",
+       "resname": "C",
+       "label_asym_id": "A",
+       "label_seq_id": 37,
+       "resolver_label_seq_id": 37,
+       "rfam_consensus_pos": 54,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 1,
+       "lining_atoms": [
+        "N4"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 51,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 38,
+       "resolver_label_seq_id": 38,
+       "rfam_consensus_pos": 55,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 3,
+       "lining_atoms": [
+        "O2",
+        "N3",
+        "O4"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 52,
+       "icode": "",
+       "resname": "A",
+       "label_asym_id": "A",
+       "label_seq_id": 39,
+       "resolver_label_seq_id": 39,
+       "rfam_consensus_pos": 56,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 3,
+       "lining_atoms": [
+        "N3",
+        "N1",
+        "C2"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 73,
+       "icode": "",
+       "resname": "A",
+       "label_asym_id": "A",
+       "label_seq_id": 60,
+       "resolver_label_seq_id": 60,
+       "rfam_consensus_pos": 79,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 2,
+       "lining_atoms": [
+        "N1",
+        "N6"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 74,
+       "icode": "",
+       "resname": "C",
+       "label_asym_id": "A",
+       "label_seq_id": 61,
+       "resolver_label_seq_id": 61,
+       "rfam_consensus_pos": 80,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 3,
+       "lining_atoms": [
+        "O2",
+        "N3",
+        "N4"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 75,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 62,
+       "resolver_label_seq_id": 62,
+       "rfam_consensus_pos": 81,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 2,
+       "lining_atoms": [
+        "O2",
+        "N3"
+       ]
+      }
+     ],
+     "map_consistent": true
+    }
+   ]
+  },
+  {
+   "run": "1y27_1_X_A_holo_GUN",
+   "seq_name": "1y27_1_X_A",
+   "variant": "holo_input_GUN",
+   "n_pockets": 1,
+   "pockets": [
+    {
+     "pocket_id": "1y27_1_X_A:holo_input_GUN:pocket1",
+     "rank": 1,
+     "score": 0.53,
+     "drug_score": 0.001,
+     "volume_A3": 150.0,
+     "n_alpha_spheres": 46,
+     "pocket_sasa_A2": 40.0,
+     "hydrophobicity_score": 1.6,
+     "polarity_score": 3.0,
+     "npr1": 0.56,
+     "npr2": 0.79,
+     "shape": "Balanced",
+     "filter_pass": true,
+     "type": "Known",
+     "ligand_id": "GUN",
+     "pocket_overlap": 1.0,
+     "ligand_overlap": 1.0,
+     "center_criteria_A": 0.54,
+     "fpocket_info": {
+      "Score": 0.532,
+      "Druggability Score": 0.001,
+      "Number of Alpha Spheres": 46.0,
+      "Total SASA": 39.832,
+      "Polar SASA": 32.586,
+      "Apolar SASA": 7.246,
+      "Volume": 150.36,
+      "Mean local hydrophobic density": 0.0,
+      "Mean alpha sphere radius": 3.406,
+      "Mean alp. sph. solvent access": 0.429,
+      "Apolar alpha sphere proportion": 0.0,
+      "Hydrophobicity score": 1.556,
+      "Volume score": 1.667,
+      "Polarity score": 3.0,
+      "Charge score": 0.0,
+      "Proportion of polar atoms": 81.481,
+      "Alpha sphere density": 2.607,
+      "Cent. of mass - Alpha Sphere max dist": 6.347,
+      "Flexibility": 0.298
+     },
+     "pocket_nt_author": [
+      21,
+      22,
+      47,
+      50,
+      51,
+      52,
+      73,
+      74,
+      75
+     ],
+     "pocket_nt_from_atm_pdb": [
+      21,
+      22,
+      47,
+      50,
+      51,
+      52,
+      73,
+      74,
+      75
+     ],
+     "nt_match": true,
+     "consensus_positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "n_insert_or_flank_nt": 0,
+     "nucleotides": [
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 21,
+       "icode": "",
+       "resname": "A",
+       "label_asym_id": "A",
+       "label_seq_id": 8,
+       "resolver_label_seq_id": 8,
+       "rfam_consensus_pos": 25,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 6,
+       "lining_atoms": [
+        "N6",
+        "C6",
+        "N1",
+        "N3",
+        "O2'",
+        "C2"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 22,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 9,
+       "resolver_label_seq_id": 9,
+       "rfam_consensus_pos": 26,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 6,
+       "lining_atoms": [
+        "O2'",
+        "O2",
+        "N3",
+        "C2",
+        "N1",
+        "C6"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 47,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 34,
+       "resolver_label_seq_id": 34,
+       "rfam_consensus_pos": 51,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 1,
+       "lining_atoms": [
+        "O2"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 50,
+       "icode": "",
+       "resname": "C",
+       "label_asym_id": "A",
+       "label_seq_id": 37,
+       "resolver_label_seq_id": 37,
+       "rfam_consensus_pos": 54,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 1,
+       "lining_atoms": [
+        "N4"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 51,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 38,
+       "resolver_label_seq_id": 38,
+       "rfam_consensus_pos": 55,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 3,
+       "lining_atoms": [
+        "O2",
+        "N3",
+        "O4"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 52,
+       "icode": "",
+       "resname": "A",
+       "label_asym_id": "A",
+       "label_seq_id": 39,
+       "resolver_label_seq_id": 39,
+       "rfam_consensus_pos": 56,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 3,
+       "lining_atoms": [
+        "N3",
+        "N1",
+        "C2"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 73,
+       "icode": "",
+       "resname": "A",
+       "label_asym_id": "A",
+       "label_seq_id": 60,
+       "resolver_label_seq_id": 60,
+       "rfam_consensus_pos": 79,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 2,
+       "lining_atoms": [
+        "N1",
+        "N6"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 74,
+       "icode": "",
+       "resname": "C",
+       "label_asym_id": "A",
+       "label_seq_id": 61,
+       "resolver_label_seq_id": 61,
+       "rfam_consensus_pos": 80,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 3,
+       "lining_atoms": [
+        "O2",
+        "N3",
+        "N4"
+       ]
+      },
+      {
+       "pdb_chain": "X",
+       "pdb_resnum": 75,
+       "icode": "",
+       "resname": "U",
+       "label_asym_id": "A",
+       "label_seq_id": 62,
+       "resolver_label_seq_id": 62,
+       "rfam_consensus_pos": 81,
+       "alignment_state": "match",
+       "mapping_status": "mapped",
+       "n_lining_atoms": 2,
+       "lining_atoms": [
+        "O2",
+        "N3"
+       ]
+      }
+     ],
+     "map_consistent": true
+    }
+   ]
+  },
+  {
+   "run": "9ndd_1_A_A",
+   "seq_name": "9ndd_1_A_A",
+   "variant": "apo_input",
+   "n_pockets": 0,
+   "pockets": []
+  },
+  {
+   "run": "9ndd_1_A_A_holo_OXG",
+   "seq_name": "9ndd_1_A_A",
+   "variant": "holo_input_OXG",
+   "n_pockets": 0,
+   "pockets": []
+  }
+ ],
+ "comparison_with_contacts": [
+  {
+   "seq_name": "4fe5_1_B_A",
+   "pocket": 1,
+   "score": 0.55,
+   "pocket_positions": [
+    25,
+    26,
+    51,
+    54,
+    55,
+    56,
+    79,
+    80,
+    81
+   ],
+   "contacts_specific": [
+    25,
+    26,
+    51,
+    55,
+    56,
+    80,
+    81
+   ],
+   "contacts_any": [
+    25,
+    26,
+    51,
+    54,
+    55,
+    56,
+    79,
+    80,
+    81
+   ],
+   "jaccard_specific": 0.778,
+   "recall_specific": 1.0,
+   "precision_vs_any": 1.0
+  },
+  {
+   "seq_name": "1y26_1_X_A",
+   "pocket": 1,
+   "score": 0.53,
+   "pocket_positions": [
+    25,
+    26,
+    51,
+    54,
+    55,
+    56,
+    79,
+    80,
+    81
+   ],
+   "contacts_specific": [
+    25,
+    26,
+    51,
+    55,
+    56,
+    80,
+    81
+   ],
+   "contacts_any": [
+    25,
+    26,
+    51,
+    54,
+    55,
+    56,
+    79,
+    80,
+    81
+   ],
+   "jaccard_specific": 0.778,
+   "recall_specific": 1.0,
+   "precision_vs_any": 1.0
+  },
+  {
+   "seq_name": "5e54_1_A_A",
+   "pocket": 1,
+   "score": 0.5,
+   "pocket_positions": [
+    27,
+    28,
+    29,
+    50,
+    51,
+    53,
+    56,
+    57,
+    79
+   ],
+   "contacts_specific": null,
+   "note": "apo structure (no default-track ligand)"
+  },
+  {
+   "seq_name": "3ivn_1_A_A",
+   "pocket": null,
+   "note": "no pocket predicted",
+   "contacts_specific": null
+  },
+  {
+   "seq_name": "1y27_1_X_A",
+   "pocket": 1,
+   "score": 0.53,
+   "pocket_positions": [
+    25,
+    26,
+    51,
+    54,
+    55,
+    56,
+    79,
+    80,
+    81
+   ],
+   "contacts_specific": [
+    25,
+    26,
+    51,
+    55,
+    56,
+    80,
+    81
+   ],
+   "contacts_any": [
+    25,
+    26,
+    51,
+    54,
+    55,
+    56,
+    79,
+    80,
+    81
+   ],
+   "jaccard_specific": 0.778,
+   "recall_specific": 1.0,
+   "precision_vs_any": 1.0
+  },
+  {
+   "seq_name": "9ndd_1_A_A",
+   "pocket": null,
+   "note": "no pocket predicted",
+   "contacts_specific": [
+    25,
+    26,
+    55,
+    56,
+    79,
+    80,
+    81
+   ]
+  }
+ ],
+ "sensitivity": {
+  "all_score>=0": {
+   "per_instance": {
+    "4fe5_1_B_A": {
+     "n_pockets_retained": 1,
+     "n_consensus_positions": 9,
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "overlap_with_known_site": 7
+    },
+    "1y26_1_X_A": {
+     "n_pockets_retained": 1,
+     "n_consensus_positions": 9,
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "overlap_with_known_site": 7
+    },
+    "5e54_1_A_A": {
+     "n_pockets_retained": 1,
+     "n_consensus_positions": 9,
+     "positions": [
+      27,
+      28,
+      29,
+      50,
+      51,
+      53,
+      56,
+      57,
+      79
+     ],
+     "overlap_with_known_site": 2
+    },
+    "3ivn_1_A_A": {
+     "n_pockets_retained": 0,
+     "n_consensus_positions": 0,
+     "positions": [],
+     "overlap_with_known_site": 0
+    },
+    "1y27_1_X_A": {
+     "n_pockets_retained": 1,
+     "n_consensus_positions": 9,
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "overlap_with_known_site": 7
+    },
+    "9ndd_1_A_A": {
+     "n_pockets_retained": 0,
+     "n_consensus_positions": 0,
+     "positions": [],
+     "overlap_with_known_site": 0
+    }
+   },
+   "positions_with_any_occurrence": [
+    25,
+    26,
+    27,
+    28,
+    29,
+    50,
+    51,
+    53,
+    54,
+    55,
+    56,
+    57,
+    79,
+    80,
+    81
+   ],
+   "occurrence_counts": {
+    "25": "3/6",
+    "26": "3/6",
+    "27": "1/6",
+    "28": "1/6",
+    "29": "1/6",
+    "50": "1/6",
+    "51": "4/5",
+    "53": "1/6",
+    "54": "3/6",
+    "55": "3/6",
+    "56": "4/6",
+    "57": "1/6",
+    "79": "4/6",
+    "80": "3/6",
+    "81": "3/6"
+   }
+  },
+  "top1": {
+   "per_instance": {
+    "4fe5_1_B_A": {
+     "n_pockets_retained": 1,
+     "n_consensus_positions": 9,
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "overlap_with_known_site": 7
+    },
+    "1y26_1_X_A": {
+     "n_pockets_retained": 1,
+     "n_consensus_positions": 9,
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "overlap_with_known_site": 7
+    },
+    "5e54_1_A_A": {
+     "n_pockets_retained": 1,
+     "n_consensus_positions": 9,
+     "positions": [
+      27,
+      28,
+      29,
+      50,
+      51,
+      53,
+      56,
+      57,
+      79
+     ],
+     "overlap_with_known_site": 2
+    },
+    "3ivn_1_A_A": {
+     "n_pockets_retained": 0,
+     "n_consensus_positions": 0,
+     "positions": [],
+     "overlap_with_known_site": 0
+    },
+    "1y27_1_X_A": {
+     "n_pockets_retained": 1,
+     "n_consensus_positions": 9,
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "overlap_with_known_site": 7
+    },
+    "9ndd_1_A_A": {
+     "n_pockets_retained": 0,
+     "n_consensus_positions": 0,
+     "positions": [],
+     "overlap_with_known_site": 0
+    }
+   },
+   "positions_with_any_occurrence": [
+    25,
+    26,
+    27,
+    28,
+    29,
+    50,
+    51,
+    53,
+    54,
+    55,
+    56,
+    57,
+    79,
+    80,
+    81
+   ],
+   "occurrence_counts": {
+    "25": "3/6",
+    "26": "3/6",
+    "27": "1/6",
+    "28": "1/6",
+    "29": "1/6",
+    "50": "1/6",
+    "51": "4/5",
+    "53": "1/6",
+    "54": "3/6",
+    "55": "3/6",
+    "56": "4/6",
+    "57": "1/6",
+    "79": "4/6",
+    "80": "3/6",
+    "81": "3/6"
+   }
+  },
+  "score>=0.4": {
+   "per_instance": {
+    "4fe5_1_B_A": {
+     "n_pockets_retained": 1,
+     "n_consensus_positions": 9,
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "overlap_with_known_site": 7
+    },
+    "1y26_1_X_A": {
+     "n_pockets_retained": 1,
+     "n_consensus_positions": 9,
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "overlap_with_known_site": 7
+    },
+    "5e54_1_A_A": {
+     "n_pockets_retained": 1,
+     "n_consensus_positions": 9,
+     "positions": [
+      27,
+      28,
+      29,
+      50,
+      51,
+      53,
+      56,
+      57,
+      79
+     ],
+     "overlap_with_known_site": 2
+    },
+    "3ivn_1_A_A": {
+     "n_pockets_retained": 0,
+     "n_consensus_positions": 0,
+     "positions": [],
+     "overlap_with_known_site": 0
+    },
+    "1y27_1_X_A": {
+     "n_pockets_retained": 1,
+     "n_consensus_positions": 9,
+     "positions": [
+      25,
+      26,
+      51,
+      54,
+      55,
+      56,
+      79,
+      80,
+      81
+     ],
+     "overlap_with_known_site": 7
+    },
+    "9ndd_1_A_A": {
+     "n_pockets_retained": 0,
+     "n_consensus_positions": 0,
+     "positions": [],
+     "overlap_with_known_site": 0
+    }
+   },
+   "positions_with_any_occurrence": [
+    25,
+    26,
+    27,
+    28,
+    29,
+    50,
+    51,
+    53,
+    54,
+    55,
+    56,
+    57,
+    79,
+    80,
+    81
+   ],
+   "occurrence_counts": {
+    "25": "3/6",
+    "26": "3/6",
+    "27": "1/6",
+    "28": "1/6",
+    "29": "1/6",
+    "50": "1/6",
+    "51": "4/5",
+    "53": "1/6",
+    "54": "3/6",
+    "55": "3/6",
+    "56": "4/6",
+    "57": "1/6",
+    "79": "4/6",
+    "80": "3/6",
+    "81": "3/6"
+   }
+  }
+ }
+}

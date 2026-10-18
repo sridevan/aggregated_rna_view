@@ -28,6 +28,8 @@ Status: **Milestone 1 (data preparation), Milestone 2 (three-tab frontend with s
     python3 -m rna_explorer build RF00167 --cpu 4 -v
     python3 -m rna_explorer orient RF00167      # orientation.json: Kabsch superposition onto the display representative
     python3 -m rna_explorer annotate RF00167 --raw-dir annotation_assessment/cache   # annotations/, reference_structural_elements.json, loops.json, ligands.json, tracks.json
+    pip install freesasa gemmi numpy && python3 -m rna_explorer sasa RF00167         # sasa.json, sasa_tracks.json (isolated-chain SASA, Milestone 3D)
+    python3 -m rna_explorer pockets RF00167 --experiment-dir experiments/fpocketr_full_RF00167   # fpocketR pockets (needs tools/fpocketr-env, see experiments/fpocketr_pilot/environment)
     python3 -m pytest -q
 
 `cmalign` is found via `RNA_EXPLORER_CMALIGN`, then `tools/infernal-1.1.5/bin/cmalign`, then `PATH`.

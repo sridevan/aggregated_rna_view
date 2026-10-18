@@ -1,0 +1,247 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "type": "object",
+ "properties": {
+  "schema_version": {
+   "const": "1.0"
+  },
+  "rfam_acc": {
+   "type": "string"
+  },
+  "clen": {
+   "type": "integer"
+  },
+  "track_id": {
+   "type": "string"
+  },
+  "category": {
+   "type": "string"
+  },
+  "measurement": {
+   "type": "object",
+   "properties": {
+    "name": {
+     "type": "string"
+    },
+    "definition": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "name",
+    "definition"
+   ]
+  },
+  "filters": {
+   "type": "object",
+   "properties": {}
+  },
+  "n_instances": {
+   "type": "integer"
+  },
+  "status_counts": {
+   "type": "object",
+   "properties": {}
+  },
+  "tracks": {
+   "type": "object",
+   "properties": {
+    "all_score_ge_0": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "rfam_consensus_pos": {
+        "type": "integer"
+       },
+       "n_supporting_instances": {
+        "type": "integer"
+       },
+       "n_evaluable_instances": {
+        "type": "integer"
+       },
+       "frequency": {
+        "type": [
+         "number",
+         "null"
+        ]
+       },
+       "n_unevaluable_instances": {
+        "type": "integer"
+       },
+       "unevaluable_reasons": {
+        "type": "object",
+        "properties": {}
+       },
+       "n_supporting_entries": {
+        "type": "integer"
+       },
+       "n_distinct_pockets": {
+        "type": "integer"
+       },
+       "pocket_ids": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "score_summary": {
+        "type": [
+         "object",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "rfam_consensus_pos",
+       "n_supporting_instances",
+       "n_evaluable_instances",
+       "frequency",
+       "n_unevaluable_instances",
+       "n_supporting_entries",
+       "n_distinct_pockets"
+      ]
+     }
+    },
+    "top1": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "rfam_consensus_pos": {
+        "type": "integer"
+       },
+       "n_supporting_instances": {
+        "type": "integer"
+       },
+       "n_evaluable_instances": {
+        "type": "integer"
+       },
+       "frequency": {
+        "type": [
+         "number",
+         "null"
+        ]
+       },
+       "n_unevaluable_instances": {
+        "type": "integer"
+       },
+       "unevaluable_reasons": {
+        "type": "object",
+        "properties": {}
+       },
+       "n_supporting_entries": {
+        "type": "integer"
+       },
+       "n_distinct_pockets": {
+        "type": "integer"
+       },
+       "pocket_ids": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "score_summary": {
+        "type": [
+         "object",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "rfam_consensus_pos",
+       "n_supporting_instances",
+       "n_evaluable_instances",
+       "frequency",
+       "n_unevaluable_instances",
+       "n_supporting_entries",
+       "n_distinct_pockets"
+      ]
+     }
+    },
+    "score_ge_0.4": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "rfam_consensus_pos": {
+        "type": "integer"
+       },
+       "n_supporting_instances": {
+        "type": "integer"
+       },
+       "n_evaluable_instances": {
+        "type": "integer"
+       },
+       "frequency": {
+        "type": [
+         "number",
+         "null"
+        ]
+       },
+       "n_unevaluable_instances": {
+        "type": "integer"
+       },
+       "unevaluable_reasons": {
+        "type": "object",
+        "properties": {}
+       },
+       "n_supporting_entries": {
+        "type": "integer"
+       },
+       "n_distinct_pockets": {
+        "type": "integer"
+       },
+       "pocket_ids": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "score_summary": {
+        "type": [
+         "object",
+         "null"
+        ]
+       }
+      },
+      "required": [
+       "rfam_consensus_pos",
+       "n_supporting_instances",
+       "n_evaluable_instances",
+       "frequency",
+       "n_unevaluable_instances",
+       "n_supporting_entries",
+       "n_distinct_pockets"
+      ]
+     }
+    }
+   },
+   "required": [
+    "all_score_ge_0",
+    "top1",
+    "score_ge_0.4"
+   ]
+  },
+  "method": {
+   "type": "object",
+   "properties": {}
+  },
+  "provenance": {
+   "type": "object",
+   "properties": {}
+  }
+ },
+ "required": [
+  "schema_version",
+  "rfam_acc",
+  "clen",
+  "track_id",
+  "measurement",
+  "tracks",
+  "method",
+  "provenance"
+ ],
+ "title": "PocketOccurrenceTracks"
+}

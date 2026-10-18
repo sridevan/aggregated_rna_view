@@ -1,0 +1,7698 @@
+{
+ "pdb_id": "9v4z",
+ "coordinate_context": {
+  "coordinate_source": "wwPDB archive mmCIF, deposited coordinates (https://files.rcsb.org/download/{PDB}.cif)",
+  "model": 1,
+  "assembly": "none: asymmetric unit as deposited",
+  "symmetry_expansion": false,
+  "hydrogens": "added at run time by Arpeggio/OpenBabel; not deposited",
+  "software": "pdbe-arpeggio 1.4.4, openbabel-wheel 3.1.1.23, gemmi 0.7.5",
+  "contact_definition": {
+   "any": "Arpeggio INTER contact (includes 'proximal' atom pairs within the 5 A interacting cutoff)",
+   "specific": "at least one non-proximal class (hbond, polar, weak_hbond, weak_polar, vdw, vdw_clash, ionic, metal_complex, aromatic, carbonyl, xbond, ...)"
+  },
+  "file": "9V4Z.cif",
+  "n_models_in_file": 1,
+  "experimental_method": "X-RAY DIFFRACTION",
+  "spacegroup": "C 2 2 21",
+  "cell": [
+   37.82,
+   50.408,
+   219.758
+  ]
+ },
+ "target_chains": [
+  {
+   "seq_name": "9v4z_1_A_A",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "entity_id": 1
+  }
+ ],
+ "ligand_instances": [
+  {
+   "ccd_id": "OXG",
+   "ligand_class": "ligand",
+   "auth_asym_id": "A",
+   "auth_seq_num": 101,
+   "ins_code": "",
+   "label_asym_id": "B",
+   "entity_id": "2",
+   "n_atoms": 12,
+   "altlocs": []
+  },
+  {
+   "ccd_id": "MG",
+   "ligand_class": "metal_ion",
+   "auth_asym_id": "A",
+   "auth_seq_num": 102,
+   "ins_code": "",
+   "label_asym_id": "C",
+   "entity_id": "3",
+   "n_atoms": 1,
+   "altlocs": []
+  },
+  {
+   "ccd_id": "MG",
+   "ligand_class": "metal_ion",
+   "auth_asym_id": "A",
+   "auth_seq_num": 103,
+   "ins_code": "",
+   "label_asym_id": "D",
+   "entity_id": "3",
+   "n_atoms": 1,
+   "altlocs": []
+  }
+ ],
+ "arpeggio": {
+  "status": "ok",
+  "seconds": 0.52,
+  "n_contacts_total": 1044,
+  "selection_file": "work/9v4z/selection.txt",
+  "output": "work/9v4z/9V4Z.json"
+ },
+ "atom_contacts": [
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "O2'",
+   "distance": 4.84,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 64,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "C2",
+   "distance": 3.64,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 64,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "C2",
+   "distance": 4.18,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2",
+   "distance": 3.46,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2",
+   "distance": 3.51,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O4'",
+   "distance": 4.49,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C6",
+   "distance": 4.49,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C6",
+   "distance": 5.0,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N1",
+   "distance": 3.62,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N1",
+   "distance": 4.11,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 64,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "O2",
+   "distance": 2.88,
+   "contact_classes": [
+    "vdw_clash"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 64,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "O2",
+   "distance": 3.73,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 64,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "N1",
+   "distance": 4.93,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 64,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "N3",
+   "distance": 3.71,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 64,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "N3",
+   "distance": 3.8,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 64,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "C4",
+   "distance": 4.96,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 64,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "C4",
+   "distance": 4.9,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "D",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 103,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 71,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "O2'",
+   "distance": 1.99,
+   "contact_classes": [
+    "clash",
+    "metal_complex"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "D",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 103,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 71,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "C2'",
+   "distance": 2.53,
+   "contact_classes": [
+    "vdw_clash"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "D",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 103,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 71,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "O3'",
+   "distance": 1.56,
+   "contact_classes": [
+    "covalent",
+    "metal_complex"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "D",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 103,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 71,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "C1'",
+   "distance": 3.53,
+   "contact_classes": [
+    "vdw"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "D",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 103,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 71,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "C3'",
+   "distance": 2.26,
+   "contact_classes": [
+    "vdw_clash"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "D",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 103,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 71,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "C4'",
+   "distance": 3.66,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "D",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 103,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 71,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "C5'",
+   "distance": 4.82,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "D",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 103,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 71,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "O4'",
+   "distance": 4.21,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "D",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 103,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 71,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "O2",
+   "distance": 4.96,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "D",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 103,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 71,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "N1",
+   "distance": 4.73,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N3",
+   "distance": 4.24,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C4",
+   "distance": 4.92,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N3",
+   "distance": 4.0,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 63,
+   "rna_ins_code": "",
+   "rna_comp_id": "G",
+   "rna_atom": "C6",
+   "distance": 4.74,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 63,
+   "rna_ins_code": "",
+   "rna_comp_id": "G",
+   "rna_atom": "O6",
+   "distance": 4.35,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N6",
+   "distance": 4.39,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C6",
+   "distance": 4.03,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N6",
+   "distance": 3.87,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C6",
+   "distance": 3.81,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2'",
+   "distance": 4.27,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2'",
+   "distance": 3.93,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N1",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N1",
+   "distance": 4.14,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N1",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C2",
+   "distance": 4.46,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C5",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N1",
+   "distance": 3.58,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N7",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N1",
+   "distance": 3.78,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C5",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C2",
+   "distance": 3.38,
+   "contact_classes": [
+    "vdw_clash"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N7",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C2",
+   "distance": 3.4,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C5",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2",
+   "distance": 3.82,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N7",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2",
+   "distance": 3.45,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C5",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2",
+   "distance": 4.01,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C5",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N1",
+   "distance": 4.63,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C5",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2'",
+   "distance": 4.82,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C5",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C1'",
+   "distance": 4.99,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N7",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2",
+   "distance": 3.37,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N7",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N1",
+   "distance": 3.68,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N7",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2'",
+   "distance": 3.67,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N7",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C1'",
+   "distance": 4.0,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N1",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C6",
+   "distance": 4.85,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N1",
+   "distance": 3.59,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N1",
+   "distance": 3.76,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C2",
+   "distance": 3.91,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C2",
+   "distance": 4.35,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C5",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N6",
+   "distance": 4.88,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C5",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C6",
+   "distance": 4.13,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N7",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N6",
+   "distance": 4.94,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N7",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C6",
+   "distance": 4.05,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2",
+   "distance": 4.32,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2",
+   "distance": 4.44,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C5",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2'",
+   "distance": 3.73,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N7",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2'",
+   "distance": 2.68,
+   "contact_classes": [
+    "vdw_clash"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2",
+   "distance": 4.86,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C5",
+   "distance": 4.7,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C5",
+   "distance": 4.47,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C5",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C5",
+   "distance": 4.45,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N7",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C5",
+   "distance": 3.96,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N7",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N7",
+   "distance": 4.79,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N7",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C8",
+   "distance": 4.88,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C4",
+   "distance": 4.89,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C4",
+   "distance": 4.95,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C5",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C4",
+   "distance": 4.23,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N7",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C4",
+   "distance": 3.59,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N7",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N9",
+   "distance": 4.25,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 64,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "N3",
+   "distance": 3.68,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 64,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "N3",
+   "distance": 3.63,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 64,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "C4",
+   "distance": 4.25,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 64,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "N4",
+   "distance": 3.83,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 64,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "C4",
+   "distance": 3.84,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 63,
+   "rna_ins_code": "",
+   "rna_comp_id": "G",
+   "rna_atom": "N1",
+   "distance": 4.43,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 64,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "N4",
+   "distance": 3.12,
+   "contact_classes": [
+    "vdw"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N1",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 63,
+   "rna_ins_code": "",
+   "rna_comp_id": "G",
+   "rna_atom": "N2",
+   "distance": 4.9,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N1",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 64,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "N3",
+   "distance": 2.91,
+   "contact_classes": [
+    "vdw_clash"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N1",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 64,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "C4",
+   "distance": 3.84,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N1",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 63,
+   "rna_ins_code": "",
+   "rna_comp_id": "G",
+   "rna_atom": "N1",
+   "distance": 4.88,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N1",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 64,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "N4",
+   "distance": 3.87,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 64,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "O2",
+   "distance": 4.86,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 64,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "C2",
+   "distance": 4.72,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2",
+   "distance": 4.42,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 64,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "C2",
+   "distance": 4.86,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N1",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C6",
+   "distance": 4.93,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N1",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N1",
+   "distance": 4.35,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N1",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 64,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "O2",
+   "distance": 3.61,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N1",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 64,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "C2",
+   "distance": 3.68,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N1",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2",
+   "distance": 3.68,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N1",
+   "distance": 4.64,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C2",
+   "distance": 4.64,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C5",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2",
+   "distance": 4.86,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O4",
+   "distance": 4.95,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C4",
+   "distance": 4.76,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N3",
+   "distance": 4.1,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O4",
+   "distance": 4.72,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C4",
+   "distance": 4.81,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N3",
+   "distance": 4.45,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N1",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O4",
+   "distance": 4.87,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N1",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C5",
+   "distance": 4.95,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N1",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C4",
+   "distance": 4.37,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N1",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N3",
+   "distance": 3.7,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C5",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N3",
+   "distance": 4.71,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N3",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2",
+   "distance": 3.35,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C4",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2",
+   "distance": 3.94,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2",
+   "distance": 4.74,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N3",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 37,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "N4",
+   "distance": 3.96,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N3",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N3",
+   "distance": 2.77,
+   "contact_classes": [
+    "vdw_clash"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N3",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O4",
+   "distance": 3.69,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N3",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C4",
+   "distance": 3.69,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N3",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 37,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "C4",
+   "distance": 4.91,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N3",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C5",
+   "distance": 5.0,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C4",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 37,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "N4",
+   "distance": 4.24,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 37,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "N4",
+   "distance": 4.15,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C4",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N3",
+   "distance": 3.57,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N3",
+   "distance": 3.7,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C4",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O4",
+   "distance": 3.71,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O4",
+   "distance": 3.04,
+   "contact_classes": [
+    "vdw_clash",
+    "hbond",
+    "polar"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C4",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C4",
+   "distance": 4.11,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C4",
+   "distance": 3.79,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N3",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2",
+   "distance": 3.34,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N3",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C1'",
+   "distance": 4.79,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C4",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2",
+   "distance": 4.59,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N3",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N9",
+   "distance": 4.14,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N3",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C4",
+   "distance": 3.43,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N3",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N3",
+   "distance": 3.28,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N3",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C2",
+   "distance": 3.32,
+   "contact_classes": [
+    "vdw"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N3",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N1",
+   "distance": 3.61,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C4",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C4",
+   "distance": 4.12,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C4",
+   "distance": 4.65,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C4",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N3",
+   "distance": 3.76,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N3",
+   "distance": 4.47,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C4",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C2",
+   "distance": 3.31,
+   "contact_classes": [
+    "vdw_clash"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C2",
+   "distance": 3.77,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C4",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N1",
+   "distance": 3.35,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N1",
+   "distance": 3.33,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N3",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N1",
+   "distance": 4.84,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N3",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2",
+   "distance": 3.49,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C4",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2",
+   "distance": 4.56,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2",
+   "distance": 4.93,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N3",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C8",
+   "distance": 4.68,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N3",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N7",
+   "distance": 4.51,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N3",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C5",
+   "distance": 3.72,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N3",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C6",
+   "distance": 3.81,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N3",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N6",
+   "distance": 4.67,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C4",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C5",
+   "distance": 4.2,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C5",
+   "distance": 4.34,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C4",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C6",
+   "distance": 3.82,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C6",
+   "distance": 3.65,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C4",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N6",
+   "distance": 4.5,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N6",
+   "distance": 3.95,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 34,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2",
+   "distance": 3.85,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N3",
+   "distance": 3.32,
+   "contact_classes": [
+    "vdw"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O4",
+   "distance": 4.16,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C4",
+   "distance": 3.58,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 34,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2",
+   "distance": 3.42,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N3",
+   "distance": 3.29,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O4",
+   "distance": 3.82,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C4",
+   "distance": 3.16,
+   "contact_classes": [
+    "vdw_clash",
+    "carbonyl"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C5",
+   "distance": 3.86,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C6",
+   "distance": 3.89,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C5",
+   "distance": 3.05,
+   "contact_classes": [
+    "vdw_clash"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C6",
+   "distance": 3.13,
+   "contact_classes": [
+    "vdw_clash"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 34,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O4'",
+   "distance": 4.17,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 34,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2",
+   "distance": 4.38,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 34,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2",
+   "distance": 3.88,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 34,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C1'",
+   "distance": 4.42,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 34,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N3",
+   "distance": 4.76,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 34,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N3",
+   "distance": 4.53,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 34,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N1",
+   "distance": 4.4,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C1'",
+   "distance": 3.45,
+   "contact_classes": [
+    "vdw"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "O2'",
+   "distance": 4.82,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C2'",
+   "distance": 4.66,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "O4'",
+   "distance": 2.66,
+   "contact_classes": [
+    "vdw_clash",
+    "metal_complex"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C3'",
+   "distance": 4.81,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C4'",
+   "distance": 3.54,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C5'",
+   "distance": 4.01,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 36,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O4",
+   "distance": 2.11,
+   "contact_classes": [
+    "covalent",
+    "metal_complex"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 36,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C4",
+   "distance": 3.07,
+   "contact_classes": [
+    "vdw_clash"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 36,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N3",
+   "distance": 4.24,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 35,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "OP1",
+   "distance": 3.76,
+   "contact_classes": [
+    "proximal",
+    "ionic"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 36,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C5",
+   "distance": 3.62,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 35,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "P",
+   "distance": 4.96,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 36,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C6",
+   "distance": 4.93,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N3",
+   "distance": 3.35,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C1'",
+   "distance": 4.58,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "O2'",
+   "distance": 4.11,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C2'",
+   "distance": 4.07,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N3",
+   "distance": 3.56,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C1'",
+   "distance": 3.93,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "O2'",
+   "distance": 3.03,
+   "contact_classes": [
+    "vdw_clash"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C2'",
+   "distance": 3.15,
+   "contact_classes": [
+    "vdw_clash"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C3'",
+   "distance": 4.5,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "O3'",
+   "distance": 4.87,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C2",
+   "distance": 4.26,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N1",
+   "distance": 3.84,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N1",
+   "distance": 4.46,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C6",
+   "distance": 4.49,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N6",
+   "distance": 4.7,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N6",
+   "distance": 4.99,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C4",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 34,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2",
+   "distance": 4.82,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 34,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2",
+   "distance": 3.59,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C4",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N3",
+   "distance": 4.27,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N3",
+   "distance": 3.74,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O4",
+   "distance": 4.19,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C4",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C4",
+   "distance": 4.86,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C4",
+   "distance": 3.99,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C5",
+   "distance": 4.64,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C6",
+   "distance": 4.95,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 34,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2",
+   "distance": 4.11,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 34,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N3",
+   "distance": 4.17,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O4",
+   "distance": 4.24,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O4",
+   "distance": 4.66,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C4",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N3",
+   "distance": 4.1,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N3",
+   "distance": 3.89,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 66,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C2",
+   "distance": 4.84,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "O4'",
+   "distance": 4.26,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2",
+   "distance": 2.69,
+   "contact_classes": [
+    "vdw_clash"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C2'",
+   "distance": 4.83,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C1'",
+   "distance": 3.64,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2",
+   "distance": 3.45,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C1'",
+   "distance": 4.43,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N9",
+   "distance": 3.73,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C4",
+   "distance": 3.66,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N3",
+   "distance": 3.49,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C2",
+   "distance": 4.25,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N9",
+   "distance": 4.18,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C4",
+   "distance": 3.65,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N3",
+   "distance": 3.24,
+   "contact_classes": [
+    "vdw_clash"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C2",
+   "distance": 3.58,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N1",
+   "distance": 4.29,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N1",
+   "distance": 4.91,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2",
+   "distance": 3.58,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2",
+   "distance": 4.02,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C8",
+   "distance": 4.6,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C5",
+   "distance": 4.53,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C5",
+   "distance": 4.36,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C6",
+   "distance": 4.65,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N3",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N1",
+   "distance": 4.87,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N3",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 64,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "O2",
+   "distance": 4.99,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N3",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2",
+   "distance": 4.06,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2'",
+   "distance": 4.68,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C1'",
+   "distance": 3.61,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2",
+   "distance": 3.29,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C1'",
+   "distance": 4.42,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2",
+   "distance": 3.19,
+   "contact_classes": [
+    "vdw_clash"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C4",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2",
+   "distance": 4.66,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2'",
+   "distance": 4.81,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N3",
+   "distance": 3.72,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 37,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "rna_atom": "N4",
+   "distance": 4.79,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N3",
+   "distance": 3.69,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O4",
+   "distance": 4.97,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C2",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C4",
+   "distance": 4.81,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N3",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N3",
+   "distance": 4.62,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C4",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N3",
+   "distance": 4.92,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N3",
+   "distance": 4.26,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C2",
+   "distance": 3.99,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N1",
+   "distance": 4.69,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C2",
+   "distance": 4.78,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N1",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2",
+   "distance": 4.77,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N1",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C4",
+   "distance": 4.52,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N1",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N3",
+   "distance": 3.73,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N1",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C2",
+   "distance": 3.89,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N1",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N1",
+   "distance": 4.76,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C5",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C4",
+   "distance": 4.98,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C5",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N3",
+   "distance": 4.24,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C5",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C2",
+   "distance": 3.65,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C5",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N1",
+   "distance": 3.93,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N7",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C2",
+   "distance": 4.23,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N7",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N1",
+   "distance": 4.24,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C5",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C6",
+   "distance": 4.78,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2",
+   "distance": 4.37,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C4",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2'",
+   "distance": 4.95,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2'",
+   "distance": 4.89,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N1",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2",
+   "distance": 3.7,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N3",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N1",
+   "distance": 4.7,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N3",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C2",
+   "distance": 4.33,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C5",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2",
+   "distance": 4.45,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C4",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N1",
+   "distance": 4.2,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N1",
+   "distance": 4.71,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C4",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C2",
+   "distance": 3.68,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C2",
+   "distance": 3.87,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C4",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2",
+   "distance": 4.48,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2",
+   "distance": 4.53,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C4",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2",
+   "distance": 4.47,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2",
+   "distance": 4.17,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N1",
+   "distance": 4.78,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C4",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C4",
+   "distance": 4.93,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N9",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C4",
+   "distance": 4.79,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C6",
+   "distance": 4.96,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2'",
+   "distance": 3.61,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2'",
+   "distance": 3.57,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N1",
+   "distance": 4.47,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C2",
+   "distance": 3.67,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C2",
+   "distance": 4.24,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C5",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N3",
+   "distance": 4.27,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N7",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N3",
+   "distance": 3.79,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N7",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C4",
+   "distance": 4.45,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2",
+   "distance": 3.9,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2",
+   "distance": 4.21,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N7",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C5",
+   "distance": 4.66,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N7",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C6",
+   "distance": 4.29,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2",
+   "distance": 3.42,
+   "contact_classes": [
+    "vdw"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2",
+   "distance": 3.43,
+   "contact_classes": [
+    "proximal",
+    "carbonyl"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N1",
+   "distance": 3.71,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N1",
+   "distance": 3.33,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2'",
+   "distance": 4.23,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2'",
+   "distance": 3.85,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C1'",
+   "distance": 4.47,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C1'",
+   "distance": 4.17,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N3",
+   "distance": 4.61,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O6",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N3",
+   "distance": 4.99,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C5",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N3",
+   "distance": 3.78,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N7",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N3",
+   "distance": 3.34,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N7",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C1'",
+   "distance": 4.8,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N7",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "O2'",
+   "distance": 4.91,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "N7",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C2'",
+   "distance": 4.44,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C5",
+   "distance": 4.73,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C5",
+   "distance": 4.96,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C4",
+   "distance": 3.94,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C4",
+   "distance": 3.99,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "C8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N9",
+   "distance": 4.47,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "ligand_ins_code": "",
+   "ligand_atom": "O8",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N9",
+   "distance": 4.16,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 7,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2",
+   "distance": 4.09,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 7,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "N1",
+   "distance": 4.52,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C8",
+   "distance": 4.82,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 7,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C3'",
+   "distance": 4.71,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 7,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C1'",
+   "distance": 3.95,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "O5'",
+   "distance": 4.83,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 7,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "C2'",
+   "distance": 3.29,
+   "contact_classes": [
+    "vdw_clash"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "C4",
+   "distance": 4.94,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "rna_atom": "N9",
+   "distance": 4.2,
+   "contact_classes": [
+    "proximal"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 7,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2",
+   "distance": 3.1,
+   "contact_classes": [
+    "vdw_clash"
+   ],
+   "type": "atom-atom"
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "ligand_ins_code": "",
+   "ligand_atom": "MG",
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 7,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "rna_atom": "O2'",
+   "distance": 2.77,
+   "contact_classes": [
+    "vdw_clash",
+    "metal_complex"
+   ],
+   "type": "atom-atom"
+  }
+ ],
+ "residue_contacts": [
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 39,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "n_atom_pairs": 64,
+   "min_distance": 3.24,
+   "contact_classes": [
+    "proximal",
+    "vdw",
+    "vdw_clash"
+   ],
+   "ligand_atoms": [
+    "C2",
+    "C4",
+    "C5",
+    "C6",
+    "C8",
+    "N1",
+    "N2",
+    "N3",
+    "N7",
+    "N9",
+    "O6",
+    "O8"
+   ],
+   "rna_atoms": [
+    "C1'",
+    "C2",
+    "C2'",
+    "C4",
+    "C5",
+    "C6",
+    "C8",
+    "N1",
+    "N3",
+    "N6",
+    "N7",
+    "N9",
+    "O2'",
+    "O4'"
+   ],
+   "seq_name": "9v4z_1_A_A",
+   "label_asym_id": "A",
+   "label_seq_id": 39,
+   "residue_name": "A",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 56,
+   "pp_char": "*",
+   "pp_category": "high",
+   "has_coordinates": true,
+   "mapping_status": "mapped",
+   "specific": true
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 64,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "n_atom_pairs": 24,
+   "min_distance": 2.88,
+   "contact_classes": [
+    "proximal",
+    "vdw",
+    "vdw_clash"
+   ],
+   "ligand_atoms": [
+    "C2",
+    "C6",
+    "N1",
+    "N2",
+    "N3",
+    "O6"
+   ],
+   "rna_atoms": [
+    "C2",
+    "C4",
+    "N1",
+    "N3",
+    "N4",
+    "O2"
+   ],
+   "seq_name": "9v4z_1_A_A",
+   "label_asym_id": "A",
+   "label_seq_id": 64,
+   "residue_name": "C",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 80,
+   "pp_char": "*",
+   "pp_category": "high",
+   "has_coordinates": true,
+   "mapping_status": "mapped",
+   "specific": true
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 65,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "n_atom_pairs": 43,
+   "min_distance": 3.19,
+   "contact_classes": [
+    "proximal",
+    "vdw_clash"
+   ],
+   "ligand_atoms": [
+    "C2",
+    "C4",
+    "C5",
+    "C6",
+    "N1",
+    "N2",
+    "N3",
+    "N9",
+    "O6"
+   ],
+   "rna_atoms": [
+    "C1'",
+    "C2",
+    "C2'",
+    "C4",
+    "C5",
+    "C6",
+    "N1",
+    "N3",
+    "O2",
+    "O2'",
+    "O4",
+    "O4'"
+   ],
+   "seq_name": "9v4z_1_A_A",
+   "label_asym_id": "A",
+   "label_seq_id": 65,
+   "residue_name": "U",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 81,
+   "pp_char": "*",
+   "pp_category": "high",
+   "has_coordinates": true,
+   "mapping_status": "mapped",
+   "specific": true
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "D",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 103,
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 71,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "n_atom_pairs": 10,
+   "min_distance": 1.56,
+   "contact_classes": [
+    "clash",
+    "covalent",
+    "metal_complex",
+    "proximal",
+    "vdw",
+    "vdw_clash"
+   ],
+   "ligand_atoms": [
+    "MG"
+   ],
+   "rna_atoms": [
+    "C1'",
+    "C2'",
+    "C3'",
+    "C4'",
+    "C5'",
+    "N1",
+    "O2",
+    "O2'",
+    "O3'",
+    "O4'"
+   ],
+   "seq_name": "9v4z_1_A_A",
+   "label_asym_id": "A",
+   "label_seq_id": 71,
+   "residue_name": "C",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 87,
+   "pp_char": "*",
+   "pp_category": "high",
+   "has_coordinates": true,
+   "mapping_status": "mapped",
+   "specific": true
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 63,
+   "rna_ins_code": "",
+   "rna_comp_id": "G",
+   "n_atom_pairs": 5,
+   "min_distance": 4.35,
+   "contact_classes": [
+    "proximal"
+   ],
+   "ligand_atoms": [
+    "N1",
+    "O6"
+   ],
+   "rna_atoms": [
+    "C6",
+    "N1",
+    "N2",
+    "O6"
+   ],
+   "seq_name": "9v4z_1_A_A",
+   "label_asym_id": "A",
+   "label_seq_id": 63,
+   "residue_name": "G",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 79,
+   "pp_char": "9",
+   "pp_category": "medium",
+   "has_coordinates": true,
+   "mapping_status": "mapped",
+   "specific": false
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "n_atom_pairs": 69,
+   "min_distance": 3.03,
+   "contact_classes": [
+    "proximal",
+    "vdw_clash"
+   ],
+   "ligand_atoms": [
+    "C2",
+    "C4",
+    "C5",
+    "C6",
+    "C8",
+    "N1",
+    "N3",
+    "N7",
+    "N9",
+    "O6",
+    "O8"
+   ],
+   "rna_atoms": [
+    "C1'",
+    "C2",
+    "C2'",
+    "C3'",
+    "C4",
+    "C5",
+    "C6",
+    "C8",
+    "N1",
+    "N3",
+    "N6",
+    "N7",
+    "N9",
+    "O2'",
+    "O3'"
+   ],
+   "seq_name": "9v4z_1_A_A",
+   "label_asym_id": "A",
+   "label_seq_id": 8,
+   "residue_name": "A",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 25,
+   "pp_char": "*",
+   "pp_category": "high",
+   "has_coordinates": true,
+   "mapping_status": "mapped",
+   "specific": true
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 9,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "n_atom_pairs": 58,
+   "min_distance": 2.68,
+   "contact_classes": [
+    "carbonyl",
+    "proximal",
+    "vdw",
+    "vdw_clash"
+   ],
+   "ligand_atoms": [
+    "C4",
+    "C5",
+    "C6",
+    "C8",
+    "N7",
+    "N9",
+    "O6",
+    "O8"
+   ],
+   "rna_atoms": [
+    "C1'",
+    "C2",
+    "C2'",
+    "C4",
+    "C5",
+    "C6",
+    "N1",
+    "N3",
+    "O2",
+    "O2'",
+    "O4"
+   ],
+   "seq_name": "9v4z_1_A_A",
+   "label_asym_id": "A",
+   "label_seq_id": 9,
+   "residue_name": "U",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 26,
+   "pp_char": "*",
+   "pp_category": "high",
+   "has_coordinates": true,
+   "mapping_status": "mapped",
+   "specific": true
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 37,
+   "rna_ins_code": "",
+   "rna_comp_id": "C",
+   "n_atom_pairs": 5,
+   "min_distance": 3.96,
+   "contact_classes": [
+    "proximal"
+   ],
+   "ligand_atoms": [
+    "C2",
+    "C4",
+    "N3",
+    "N9"
+   ],
+   "rna_atoms": [
+    "C4",
+    "N4"
+   ],
+   "seq_name": "9v4z_1_A_A",
+   "label_asym_id": "A",
+   "label_seq_id": 37,
+   "residue_name": "C",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 54,
+   "pp_char": "*",
+   "pp_category": "high",
+   "has_coordinates": true,
+   "mapping_status": "mapped",
+   "specific": false
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 38,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "n_atom_pairs": 28,
+   "min_distance": 2.69,
+   "contact_classes": [
+    "hbond",
+    "polar",
+    "proximal",
+    "vdw_clash"
+   ],
+   "ligand_atoms": [
+    "C2",
+    "C4",
+    "C8",
+    "N1",
+    "N2",
+    "N3",
+    "N9",
+    "O8"
+   ],
+   "rna_atoms": [
+    "C2",
+    "C4",
+    "C5",
+    "N1",
+    "N3",
+    "O2",
+    "O4"
+   ],
+   "seq_name": "9v4z_1_A_A",
+   "label_asym_id": "A",
+   "label_seq_id": 38,
+   "residue_name": "U",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 55,
+   "pp_char": "*",
+   "pp_category": "high",
+   "has_coordinates": true,
+   "mapping_status": "mapped",
+   "specific": true
+  },
+  {
+   "ligand_ccd": "OXG",
+   "ligand_class": "ligand",
+   "ligand_label_asym_id": "B",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 101,
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 34,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "n_atom_pairs": 13,
+   "min_distance": 3.42,
+   "contact_classes": [
+    "proximal"
+   ],
+   "ligand_atoms": [
+    "C4",
+    "C8",
+    "N9",
+    "O8"
+   ],
+   "rna_atoms": [
+    "C1'",
+    "C2",
+    "N1",
+    "N3",
+    "O2",
+    "O4'"
+   ],
+   "seq_name": "9v4z_1_A_A",
+   "label_asym_id": "A",
+   "label_seq_id": 34,
+   "residue_name": "U",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 51,
+   "pp_char": "*",
+   "pp_category": "high",
+   "has_coordinates": true,
+   "mapping_status": "mapped",
+   "specific": false
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 8,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "n_atom_pairs": 11,
+   "min_distance": 2.66,
+   "contact_classes": [
+    "metal_complex",
+    "proximal",
+    "vdw",
+    "vdw_clash"
+   ],
+   "ligand_atoms": [
+    "MG"
+   ],
+   "rna_atoms": [
+    "C1'",
+    "C2'",
+    "C3'",
+    "C4",
+    "C4'",
+    "C5'",
+    "C8",
+    "N9",
+    "O2'",
+    "O4'",
+    "O5'"
+   ],
+   "seq_name": "9v4z_1_A_A",
+   "label_asym_id": "A",
+   "label_seq_id": 8,
+   "residue_name": "A",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 25,
+   "pp_char": "*",
+   "pp_category": "high",
+   "has_coordinates": true,
+   "mapping_status": "mapped",
+   "specific": true
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 36,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "n_atom_pairs": 5,
+   "min_distance": 2.11,
+   "contact_classes": [
+    "covalent",
+    "metal_complex",
+    "proximal",
+    "vdw_clash"
+   ],
+   "ligand_atoms": [
+    "MG"
+   ],
+   "rna_atoms": [
+    "C4",
+    "C5",
+    "C6",
+    "N3",
+    "O4"
+   ],
+   "seq_name": "9v4z_1_A_A",
+   "label_asym_id": "A",
+   "label_seq_id": 36,
+   "residue_name": "U",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 53,
+   "pp_char": "*",
+   "pp_category": "high",
+   "has_coordinates": true,
+   "mapping_status": "mapped",
+   "specific": true
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 35,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "n_atom_pairs": 2,
+   "min_distance": 3.76,
+   "contact_classes": [
+    "ionic",
+    "proximal"
+   ],
+   "ligand_atoms": [
+    "MG"
+   ],
+   "rna_atoms": [
+    "OP1",
+    "P"
+   ],
+   "seq_name": "9v4z_1_A_A",
+   "label_asym_id": "A",
+   "label_seq_id": 35,
+   "residue_name": "A",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 52,
+   "pp_char": "*",
+   "pp_category": "high",
+   "has_coordinates": true,
+   "mapping_status": "mapped",
+   "specific": true
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 66,
+   "rna_ins_code": "",
+   "rna_comp_id": "A",
+   "n_atom_pairs": 1,
+   "min_distance": 4.84,
+   "contact_classes": [
+    "proximal"
+   ],
+   "ligand_atoms": [
+    "MG"
+   ],
+   "rna_atoms": [
+    "C2"
+   ],
+   "seq_name": "9v4z_1_A_A",
+   "label_asym_id": "A",
+   "label_seq_id": 66,
+   "residue_name": "A",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 82,
+   "pp_char": "*",
+   "pp_category": "high",
+   "has_coordinates": true,
+   "mapping_status": "mapped",
+   "specific": false
+  },
+  {
+   "ligand_ccd": "MG",
+   "ligand_class": "metal_ion",
+   "ligand_label_asym_id": "C",
+   "ligand_auth_asym_id": "A",
+   "ligand_auth_seq_num": 102,
+   "rna_auth_asym_id": "A",
+   "rna_auth_seq_num": 7,
+   "rna_ins_code": "",
+   "rna_comp_id": "U",
+   "n_atom_pairs": 7,
+   "min_distance": 2.77,
+   "contact_classes": [
+    "metal_complex",
+    "proximal",
+    "vdw_clash"
+   ],
+   "ligand_atoms": [
+    "MG"
+   ],
+   "rna_atoms": [
+    "C1'",
+    "C2",
+    "C2'",
+    "C3'",
+    "N1",
+    "O2",
+    "O2'"
+   ],
+   "seq_name": "9v4z_1_A_A",
+   "label_asym_id": "A",
+   "label_seq_id": 7,
+   "residue_name": "U",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 24,
+   "pp_char": "*",
+   "pp_category": "high",
+   "has_coordinates": true,
+   "mapping_status": "mapped",
+   "specific": true
+  }
+ ],
+ "per_chain": {
+  "9v4z_1_A_A": {
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "n_residue_contacts": 15,
+   "n_residue_contacts_on_consensus": 15,
+   "mapping_status_counts": {
+    "mapped": 15
+   },
+   "positions": {
+    "24": {
+     "n_ligand_instances": 1,
+     "ligand_instances": [
+      "MG:C"
+     ],
+     "by_class": {
+      "metal_ion": [
+       "MG:C"
+      ]
+     },
+     "by_ccd": {
+      "MG": 1
+     },
+     "n_specific_ligand_instances": 1,
+     "min_distance": 2.77
+    },
+    "25": {
+     "n_ligand_instances": 2,
+     "ligand_instances": [
+      "MG:C",
+      "OXG:B"
+     ],
+     "by_class": {
+      "ligand": [
+       "OXG:B"
+      ],
+      "metal_ion": [
+       "MG:C"
+      ]
+     },
+     "by_ccd": {
+      "OXG": 1,
+      "MG": 1
+     },
+     "n_specific_ligand_instances": 2,
+     "min_distance": 2.66
+    },
+    "26": {
+     "n_ligand_instances": 1,
+     "ligand_instances": [
+      "OXG:B"
+     ],
+     "by_class": {
+      "ligand": [
+       "OXG:B"
+      ]
+     },
+     "by_ccd": {
+      "OXG": 1
+     },
+     "n_specific_ligand_instances": 1,
+     "min_distance": 2.68
+    },
+    "51": {
+     "n_ligand_instances": 1,
+     "ligand_instances": [
+      "OXG:B"
+     ],
+     "by_class": {
+      "ligand": [
+       "OXG:B"
+      ]
+     },
+     "by_ccd": {
+      "OXG": 1
+     },
+     "n_specific_ligand_instances": 0,
+     "min_distance": 3.42
+    },
+    "52": {
+     "n_ligand_instances": 1,
+     "ligand_instances": [
+      "MG:C"
+     ],
+     "by_class": {
+      "metal_ion": [
+       "MG:C"
+      ]
+     },
+     "by_ccd": {
+      "MG": 1
+     },
+     "n_specific_ligand_instances": 1,
+     "min_distance": 3.76
+    },
+    "53": {
+     "n_ligand_instances": 1,
+     "ligand_instances": [
+      "MG:C"
+     ],
+     "by_class": {
+      "metal_ion": [
+       "MG:C"
+      ]
+     },
+     "by_ccd": {
+      "MG": 1
+     },
+     "n_specific_ligand_instances": 1,
+     "min_distance": 2.11
+    },
+    "54": {
+     "n_ligand_instances": 1,
+     "ligand_instances": [
+      "OXG:B"
+     ],
+     "by_class": {
+      "ligand": [
+       "OXG:B"
+      ]
+     },
+     "by_ccd": {
+      "OXG": 1
+     },
+     "n_specific_ligand_instances": 0,
+     "min_distance": 3.96
+    },
+    "55": {
+     "n_ligand_instances": 1,
+     "ligand_instances": [
+      "OXG:B"
+     ],
+     "by_class": {
+      "ligand": [
+       "OXG:B"
+      ]
+     },
+     "by_ccd": {
+      "OXG": 1
+     },
+     "n_specific_ligand_instances": 1,
+     "min_distance": 2.69
+    },
+    "56": {
+     "n_ligand_instances": 1,
+     "ligand_instances": [
+      "OXG:B"
+     ],
+     "by_class": {
+      "ligand": [
+       "OXG:B"
+      ]
+     },
+     "by_ccd": {
+      "OXG": 1
+     },
+     "n_specific_ligand_instances": 1,
+     "min_distance": 3.24
+    },
+    "79": {
+     "n_ligand_instances": 1,
+     "ligand_instances": [
+      "OXG:B"
+     ],
+     "by_class": {
+      "ligand": [
+       "OXG:B"
+      ]
+     },
+     "by_ccd": {
+      "OXG": 1
+     },
+     "n_specific_ligand_instances": 0,
+     "min_distance": 4.35
+    },
+    "80": {
+     "n_ligand_instances": 1,
+     "ligand_instances": [
+      "OXG:B"
+     ],
+     "by_class": {
+      "ligand": [
+       "OXG:B"
+      ]
+     },
+     "by_ccd": {
+      "OXG": 1
+     },
+     "n_specific_ligand_instances": 1,
+     "min_distance": 2.88
+    },
+    "81": {
+     "n_ligand_instances": 1,
+     "ligand_instances": [
+      "OXG:B"
+     ],
+     "by_class": {
+      "ligand": [
+       "OXG:B"
+      ]
+     },
+     "by_ccd": {
+      "OXG": 1
+     },
+     "n_specific_ligand_instances": 1,
+     "min_distance": 3.19
+    },
+    "82": {
+     "n_ligand_instances": 1,
+     "ligand_instances": [
+      "MG:C"
+     ],
+     "by_class": {
+      "metal_ion": [
+       "MG:C"
+      ]
+     },
+     "by_ccd": {
+      "MG": 1
+     },
+     "n_specific_ligand_instances": 0,
+     "min_distance": 4.84
+    },
+    "87": {
+     "n_ligand_instances": 1,
+     "ligand_instances": [
+      "MG:D"
+     ],
+     "by_class": {
+      "metal_ion": [
+       "MG:D"
+      ]
+     },
+     "by_ccd": {
+      "MG": 1
+     },
+     "n_specific_ligand_instances": 1,
+     "min_distance": 1.56
+    }
+   }
+  }
+ },
+ "entry": {
+  "n_ligand_instances": 3,
+  "ligand_instances_by_class": {
+   "ligand": 1,
+   "metal_ion": 2
+  },
+  "n_target_chains": 1,
+  "n_chains_with_any_contact": 1,
+  "positions": {
+   "24": {
+    "n_chains": 1,
+    "by_class_n_chains": {
+     "metal_ion": 1
+    },
+    "by_ccd_n_chains": {
+     "MG": 1
+    }
+   },
+   "25": {
+    "n_chains": 1,
+    "by_class_n_chains": {
+     "ligand": 1,
+     "metal_ion": 1
+    },
+    "by_ccd_n_chains": {
+     "OXG": 1,
+     "MG": 1
+    }
+   },
+   "26": {
+    "n_chains": 1,
+    "by_class_n_chains": {
+     "ligand": 1
+    },
+    "by_ccd_n_chains": {
+     "OXG": 1
+    }
+   },
+   "51": {
+    "n_chains": 1,
+    "by_class_n_chains": {
+     "ligand": 1
+    },
+    "by_ccd_n_chains": {
+     "OXG": 1
+    }
+   },
+   "52": {
+    "n_chains": 1,
+    "by_class_n_chains": {
+     "metal_ion": 1
+    },
+    "by_ccd_n_chains": {
+     "MG": 1
+    }
+   },
+   "53": {
+    "n_chains": 1,
+    "by_class_n_chains": {
+     "metal_ion": 1
+    },
+    "by_ccd_n_chains": {
+     "MG": 1
+    }
+   },
+   "54": {
+    "n_chains": 1,
+    "by_class_n_chains": {
+     "ligand": 1
+    },
+    "by_ccd_n_chains": {
+     "OXG": 1
+    }
+   },
+   "55": {
+    "n_chains": 1,
+    "by_class_n_chains": {
+     "ligand": 1
+    },
+    "by_ccd_n_chains": {
+     "OXG": 1
+    }
+   },
+   "56": {
+    "n_chains": 1,
+    "by_class_n_chains": {
+     "ligand": 1
+    },
+    "by_ccd_n_chains": {
+     "OXG": 1
+    }
+   },
+   "79": {
+    "n_chains": 1,
+    "by_class_n_chains": {
+     "ligand": 1
+    },
+    "by_ccd_n_chains": {
+     "OXG": 1
+    }
+   },
+   "80": {
+    "n_chains": 1,
+    "by_class_n_chains": {
+     "ligand": 1
+    },
+    "by_ccd_n_chains": {
+     "OXG": 1
+    }
+   },
+   "81": {
+    "n_chains": 1,
+    "by_class_n_chains": {
+     "ligand": 1
+    },
+    "by_ccd_n_chains": {
+     "OXG": 1
+    }
+   },
+   "82": {
+    "n_chains": 1,
+    "by_class_n_chains": {
+     "metal_ion": 1
+    },
+    "by_ccd_n_chains": {
+     "MG": 1
+    }
+   },
+   "87": {
+    "n_chains": 1,
+    "by_class_n_chains": {
+     "metal_ion": 1
+    },
+    "by_ccd_n_chains": {
+     "MG": 1
+    }
+   }
+  }
+ }
+}

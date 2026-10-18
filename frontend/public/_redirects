@@ -1,0 +1,8 @@
+# Netlify (also used by drag-and-drop deploys, which ignore netlify.toml).
+# Existing files (assets, /families data, /vendor) are always served first. Missing data or vendor files are real 404s,
+# never the app page; every other path (/RF00167, /) is the single-page app, which picks the family from the path.
+/families/*   /404.html     404
+/vendor/*     /404.html     404
+/assets/*     /404.html     404
+/thumbnails/* /404.html     404
+/*            /index.html   200

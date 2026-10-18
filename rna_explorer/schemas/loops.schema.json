@@ -405,6 +405,32 @@
      "consensus_positions"
     ]
    }
+  },
+  "loops_outside_family_chains": {
+   "type": "object",
+   "required": [
+    "description",
+    "loops"
+   ],
+   "properties": {
+    "description": {
+     "type": "string"
+    },
+    "loops": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "required": [
+       "loop_id",
+       "pdb_id",
+       "loop_type",
+       "auth_asym_ids",
+       "n_nucleotides",
+       "reason"
+      ]
+     }
+    }
+   }
   }
  },
  "required": [

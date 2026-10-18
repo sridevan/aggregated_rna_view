@@ -1,0 +1,522 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "type": "object",
+ "required": [
+  "schema_version",
+  "rfam_acc",
+  "visualisation",
+  "dataset",
+  "default_metric",
+  "metrics",
+  "provenance"
+ ],
+ "properties": {
+  "schema_version": {
+   "const": "1.0"
+  },
+  "rfam_acc": {
+   "type": "string"
+  },
+  "visualisation": {
+   "type": "object",
+   "required": [
+    "detail_max",
+    "small_group"
+   ]
+  },
+  "dataset": {
+   "type": "object",
+   "required": [
+    "n_mapped_instances",
+    "n_mapped_entries",
+    "n_clustered_instances",
+    "n_clustered_entries",
+    "n_excluded_instances",
+    "inclusion_rule",
+    "shared_positions",
+    "instances",
+    "excluded"
+   ],
+   "properties": {
+    "instances": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     },
+     "uniqueItems": true
+    },
+    "excluded": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "required": [
+       "seq_name",
+       "pdb_id",
+       "n_observed",
+       "reason",
+       "reason_text"
+      ]
+     }
+    }
+   }
+  },
+  "default_metric": {
+   "enum": [
+    "discrepancy",
+    "tm"
+   ]
+  },
+  "metrics": {
+   "type": "object",
+   "required": [
+    "discrepancy",
+    "tm"
+   ],
+   "properties": {
+    "discrepancy": {
+     "type": "object",
+     "required": [
+      "label",
+      "short",
+      "kind",
+      "stored_quantity",
+      "distance",
+      "higher_is_more_similar",
+      "unit",
+      "definition",
+      "values_upper",
+      "values_layout",
+      "value_range",
+      "distance_range",
+      "clustering"
+     ],
+     "properties": {
+      "kind": {
+       "enum": [
+        "dissimilarity",
+        "similarity"
+       ]
+      },
+      "values_upper": {
+       "type": "array",
+       "items": {
+        "type": "number"
+       }
+      },
+      "clustering": {
+       "type": "object",
+       "required": [
+        "method",
+        "linkage_method",
+        "distance",
+        "linkage",
+        "leaf_order",
+        "cophenetic_correlation",
+        "cut",
+        "groups",
+        "assignments",
+        "validation",
+        "rationale",
+        "floor"
+       ],
+       "properties": {
+        "linkage": {
+         "type": "array",
+         "items": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4
+         }
+        },
+        "leaf_order": {
+         "type": "array",
+         "items": {
+          "type": "integer"
+         }
+        },
+        "cut": {
+         "type": "object",
+         "required": [
+          "k",
+          "height",
+          "rule",
+          "lowest_merge_undone",
+          "highest_merge_kept"
+         ]
+        },
+        "groups": {
+         "type": "array",
+         "items": {
+          "type": "object",
+          "required": [
+           "group_id",
+           "label",
+           "node",
+           "members",
+           "n_instances",
+           "n_entries",
+           "representative",
+           "leaf_range",
+           "within",
+           "across",
+           "small",
+           "instance_level_view"
+          ],
+          "properties": {
+           "group_id": {
+            "type": "integer",
+            "minimum": 1
+           },
+           "label": {
+            "type": "string",
+            "pattern": "^Structural group [0-9]+$"
+           },
+           "node": {
+            "type": "integer"
+           },
+           "members": {
+            "type": "array",
+            "items": {
+             "type": "string"
+            },
+            "minItems": 1
+           },
+           "n_instances": {
+            "type": "integer"
+           },
+           "n_entries": {
+            "type": "integer"
+           },
+           "representative": {
+            "type": "string"
+           },
+           "representative_rule": {
+            "const": "medoid"
+           },
+           "representative_mean_dissimilarity": {
+            "type": "number"
+           },
+           "leaf_range": {
+            "type": "array",
+            "items": {
+             "type": "integer"
+            },
+            "minItems": 2,
+            "maxItems": 2
+           },
+           "within": {
+            "type": "object",
+            "required": [
+             "mean",
+             "max",
+             "n_pairs"
+            ],
+            "properties": {
+             "mean": {
+              "type": [
+               "number",
+               "null"
+              ]
+             },
+             "max": {
+              "type": [
+               "number",
+               "null"
+              ]
+             },
+             "n_pairs": {
+              "type": "integer"
+             }
+            }
+           },
+           "across": {
+            "type": "object",
+            "required": [
+             "mean",
+             "n_pairs"
+            ],
+            "properties": {
+             "mean": {
+              "type": [
+               "number",
+               "null"
+              ]
+             },
+             "n_pairs": {
+              "type": "integer"
+             }
+            }
+           },
+           "across_to_within_ratio": {
+            "type": [
+             "number",
+             "null"
+            ]
+           },
+           "small": {
+            "type": "boolean"
+           },
+           "instance_level_view": {
+            "type": "boolean"
+           }
+          }
+         },
+         "minItems": 1
+        },
+        "assignments": {
+         "type": "object",
+         "additionalProperties": {
+          "type": "integer"
+         }
+        },
+        "validation": {
+         "enum": [
+          "stable",
+          "provisional"
+         ]
+        },
+        "rationale": {
+         "type": "string"
+        },
+        "floor": {
+         "type": "object",
+         "required": [
+          "value",
+          "definition"
+         ]
+        }
+       }
+      }
+     }
+    },
+    "tm": {
+     "type": "object",
+     "required": [
+      "label",
+      "short",
+      "kind",
+      "stored_quantity",
+      "distance",
+      "higher_is_more_similar",
+      "unit",
+      "definition",
+      "values_upper",
+      "values_layout",
+      "value_range",
+      "distance_range",
+      "clustering"
+     ],
+     "properties": {
+      "kind": {
+       "enum": [
+        "dissimilarity",
+        "similarity"
+       ]
+      },
+      "values_upper": {
+       "type": "array",
+       "items": {
+        "type": "number"
+       }
+      },
+      "clustering": {
+       "type": "object",
+       "required": [
+        "method",
+        "linkage_method",
+        "distance",
+        "linkage",
+        "leaf_order",
+        "cophenetic_correlation",
+        "cut",
+        "groups",
+        "assignments",
+        "validation",
+        "rationale",
+        "floor"
+       ],
+       "properties": {
+        "linkage": {
+         "type": "array",
+         "items": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4
+         }
+        },
+        "leaf_order": {
+         "type": "array",
+         "items": {
+          "type": "integer"
+         }
+        },
+        "cut": {
+         "type": "object",
+         "required": [
+          "k",
+          "height",
+          "rule",
+          "lowest_merge_undone",
+          "highest_merge_kept"
+         ]
+        },
+        "groups": {
+         "type": "array",
+         "items": {
+          "type": "object",
+          "required": [
+           "group_id",
+           "label",
+           "node",
+           "members",
+           "n_instances",
+           "n_entries",
+           "representative",
+           "leaf_range",
+           "within",
+           "across",
+           "small",
+           "instance_level_view"
+          ],
+          "properties": {
+           "group_id": {
+            "type": "integer",
+            "minimum": 1
+           },
+           "label": {
+            "type": "string",
+            "pattern": "^Structural group [0-9]+$"
+           },
+           "node": {
+            "type": "integer"
+           },
+           "members": {
+            "type": "array",
+            "items": {
+             "type": "string"
+            },
+            "minItems": 1
+           },
+           "n_instances": {
+            "type": "integer"
+           },
+           "n_entries": {
+            "type": "integer"
+           },
+           "representative": {
+            "type": "string"
+           },
+           "representative_rule": {
+            "const": "medoid"
+           },
+           "representative_mean_dissimilarity": {
+            "type": "number"
+           },
+           "leaf_range": {
+            "type": "array",
+            "items": {
+             "type": "integer"
+            },
+            "minItems": 2,
+            "maxItems": 2
+           },
+           "within": {
+            "type": "object",
+            "required": [
+             "mean",
+             "max",
+             "n_pairs"
+            ],
+            "properties": {
+             "mean": {
+              "type": [
+               "number",
+               "null"
+              ]
+             },
+             "max": {
+              "type": [
+               "number",
+               "null"
+              ]
+             },
+             "n_pairs": {
+              "type": "integer"
+             }
+            }
+           },
+           "across": {
+            "type": "object",
+            "required": [
+             "mean",
+             "n_pairs"
+            ],
+            "properties": {
+             "mean": {
+              "type": [
+               "number",
+               "null"
+              ]
+             },
+             "n_pairs": {
+              "type": "integer"
+             }
+            }
+           },
+           "across_to_within_ratio": {
+            "type": [
+             "number",
+             "null"
+            ]
+           },
+           "small": {
+            "type": "boolean"
+           },
+           "instance_level_view": {
+            "type": "boolean"
+           }
+          }
+         },
+         "minItems": 1
+        },
+        "assignments": {
+         "type": "object",
+         "additionalProperties": {
+          "type": "integer"
+         }
+        },
+        "validation": {
+         "enum": [
+          "stable",
+          "provisional"
+         ]
+        },
+        "rationale": {
+         "type": "string"
+        },
+        "floor": {
+         "type": "object",
+         "required": [
+          "value",
+          "definition"
+         ]
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "provenance": {
+   "type": "object",
+   "required": [
+    "research_run",
+    "matrix_sources",
+    "rfam_release",
+    "cm_checksum",
+    "pipeline_version",
+    "generated"
+   ]
+  }
+ }
+}

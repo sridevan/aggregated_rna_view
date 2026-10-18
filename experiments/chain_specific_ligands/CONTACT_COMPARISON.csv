@@ -1,0 +1,500 @@
+pdb_id,source,ligand_ccd,ligand_auth_chain,ligand_auth_resnum,ligand_label_asym_id,bound_molecule_id,attribution,rna_seq_name,rna_label_asym_id,rna_auth_asym_id,rna_label_seq_id,rna_auth_resnum,rna_ins_code,rna_residue,mapping_status,rfam_consensus_pos,pp_char,interaction_types,distance,ligand_atoms,rna_atoms,note
+1y26,pdbe_binding_sites_v2,ADE,,,,bm6,entity,,,,9,21,,A,mapped,25,*,,,,,entity-level; bestChainId=A; bms=bm6
+1y26,pdbe_binding_sites_v2,ADE,,,,bm6,entity,,,,10,22,,U,mapped,26,*,,,,,entity-level; bestChainId=A; bms=bm6
+1y26,pdbe_binding_sites_v2,ADE,,,,bm6,entity,,,,35,47,,U,mapped,51,*,,,,,entity-level; bestChainId=A; bms=bm6
+1y26,pdbe_binding_sites_v2,ADE,,,,bm6,entity,,,,39,51,,U,mapped,55,*,,,,,entity-level; bestChainId=A; bms=bm6
+1y26,pdbe_binding_sites_v2,ADE,,,,bm6,entity,,,,40,52,,A,mapped,56,*,,,,,entity-level; bestChainId=A; bms=bm6
+1y26,pdbe_binding_sites_v2,ADE,,,,bm6,entity,,,,62,74,,U,mapped,80,*,,,,,entity-level; bestChainId=A; bms=bm6
+1y26,pdbe_binding_sites_v2,ADE,,,,bm6,entity,,,,63,75,,U,mapped,81,*,,,,,entity-level; bestChainId=A; bms=bm6
+1y26,arpeggio_local,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,9,21,,A,mapped,25,*,polar;proximal;vdw;vdw_clash,3.19,C2;C4;C5;C6;C8;N1;N3;N6;N7;N9,C1';C2;C2';C4;C5;C6;C8;N1;N3;N6;N7;N9;O2',62 atom pairs; asymmetric unit; specific=yes
+1y26,arpeggio_local,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,10,22,,U,mapped,26,*,proximal;vdw;vdw_clash,2.78,C4;C5;C6;C8;N1;N6;N7;N9,C1';C2;C2';C4;C5;C6;N1;N3;O2;O2';O4,47 atom pairs; asymmetric unit; specific=yes
+1y26,arpeggio_local,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,35,47,,U,mapped,51,*,hbond;polar;proximal;vdw,3.26,C4;C8;N7;N9,C2;N3;O2,8 atom pairs; asymmetric unit; specific=yes
+1y26,arpeggio_local,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,38,50,,C,mapped,54,*,proximal,3.92,C2;C4;N3;N9,C4;N4,5 atom pairs; asymmetric unit; specific=proximal-only
+1y26,arpeggio_local,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,39,51,,U,mapped,55,*,hbond;polar;proximal;vdw_clash,2.77,C2;C4;C5;C8;N3;N9,C2;C4;N1;N3;O2;O4,22 atom pairs; asymmetric unit; specific=yes
+1y26,arpeggio_local,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,40,52,,A,mapped,56,*,proximal;vdw,3.28,C2;C4;C5;C6;C8;N1;N3;N7;N9,C1';C2;C4;C5;C6;N1;N3;N6;N7;N9,45 atom pairs; asymmetric unit; specific=yes
+1y26,arpeggio_local,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,61,73,,A,mapped,79,*,proximal,3.51,C2;C6;N1;N6,C6;N1;N6,9 atom pairs; asymmetric unit; specific=proximal-only
+1y26,arpeggio_local,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,62,74,,U,mapped,80,*,hbond;polar;proximal;vdw;vdw_clash,2.65,C2;C5;C6;N1;N3;N6,C2;C4;C5;N1;N3;O2;O4,25 atom pairs; asymmetric unit; specific=yes
+1y26,arpeggio_local,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,63,75,,U,mapped,81,*,proximal;vdw_clash,3.2,C2;C4;C5;C6;N1;N3;N6;N7;N9,C1';C2;C4;C5;C6;N1;N3;O2;O4,37 atom pairs; asymmetric unit; specific=yes
+1y26,pdbe_graphapi_bm_interactions,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,9,21,,A,mapped,25,*,CARBONPI;CATIONPI;OF;aromatic;vdw;vdw_clash;weak_hbond;weak_polar,,,,residue-level Arpeggio; preferred assembly only
+1y26,pdbe_graphapi_bm_interactions,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,10,22,,U,mapped,26,*,FF;OF;aromatic;polar;vdw;vdw_clash;weak_polar,,,,residue-level Arpeggio; preferred assembly only
+1y26,pdbe_graphapi_bm_interactions,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,35,47,,U,mapped,51,*,hbond;polar;vdw;weak_polar,,,,residue-level Arpeggio; preferred assembly only
+1y26,pdbe_graphapi_bm_interactions,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,39,51,,U,mapped,55,*,EE;aromatic;hbond;polar;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+1y26,pdbe_graphapi_bm_interactions,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,40,52,,A,mapped,56,*,vdw,,,,residue-level Arpeggio; preferred assembly only
+1y26,pdbe_graphapi_bm_interactions,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,62,74,,U,mapped,80,*,hbond;polar;vdw;vdw_clash;weak_hbond;weak_polar,,,,residue-level Arpeggio; preferred assembly only
+1y26,pdbe_graphapi_bm_interactions,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,63,75,,U,mapped,81,*,vdw_clash;weak_polar,,,,residue-level Arpeggio; preferred assembly only
+1y26,pdbe_graphapi_ligand_interactions,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,9,21,,A,mapped,25,*,CARBONPI;CATIONPI;OF;aromatic;vdw;vdw_clash;weak_hbond;weak_polar,3.19,C4;C5;C8;N7;N9,C2;C4;C5;C8;N3;N7;N9;O2',"atom-level Arpeggio, 11 atom pairs; preferred assembly only"
+1y26,pdbe_graphapi_ligand_interactions,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,10,22,,U,mapped,26,*,FF;OF;aromatic;polar;vdw;vdw_clash;weak_polar,2.78,C4;C5;C8;N7;N9,C2;C4;C5;C6;N1;N3;O2;O2',"atom-level Arpeggio, 13 atom pairs; preferred assembly only"
+1y26,pdbe_graphapi_ligand_interactions,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,35,47,,U,mapped,51,*,hbond;polar;vdw;weak_polar,3.26,C8;N9,O2,"atom-level Arpeggio, 2 atom pairs; preferred assembly only"
+1y26,pdbe_graphapi_ligand_interactions,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,39,51,,U,mapped,55,*,EE;aromatic;hbond;polar;vdw_clash,2.77,C4;C5;C8;N3;N7;N9,C2;C4;C5;C6;N1;N3;O4,"atom-level Arpeggio, 6 atom pairs; preferred assembly only"
+1y26,pdbe_graphapi_ligand_interactions,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,40,52,,A,mapped,56,*,vdw,3.28,C4;N3,C2,"atom-level Arpeggio, 2 atom pairs; preferred assembly only"
+1y26,pdbe_graphapi_ligand_interactions,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,62,74,,U,mapped,80,*,hbond;polar;vdw;vdw_clash;weak_hbond;weak_polar,2.65,C2;N1;N6,N3;O2;O4,"atom-level Arpeggio, 4 atom pairs; preferred assembly only"
+1y26,pdbe_graphapi_ligand_interactions,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,63,75,,U,mapped,81,*,vdw_clash;weak_polar,3.2,C2,O2,"atom-level Arpeggio, 1 atom pairs; preferred assembly only"
+1y26,rcsb_ligand_neighbors,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,9,21,,A,mapped,25,*,proximity<=5A,3.192,N7,N3,1 atom pairs; asymmetric unit
+1y26,rcsb_ligand_neighbors,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,10,22,,U,mapped,26,*,proximity<=5A,2.78,N7,O2',1 atom pairs; asymmetric unit
+1y26,rcsb_ligand_neighbors,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,35,47,,U,mapped,51,*,proximity<=5A,3.255,N9,O2,1 atom pairs; asymmetric unit
+1y26,rcsb_ligand_neighbors,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,39,51,,U,mapped,55,*,proximity<=5A,2.769,N3,N3,1 atom pairs; asymmetric unit
+1y26,rcsb_ligand_neighbors,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,40,52,,A,mapped,56,*,proximity<=5A,3.283,N3,C2,1 atom pairs; asymmetric unit
+1y26,rcsb_ligand_neighbors,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,61,73,,A,mapped,79,*,proximity<=5A,3.505,N6,N6,1 atom pairs; asymmetric unit
+1y26,rcsb_ligand_neighbors,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,62,74,,U,mapped,80,*,proximity<=5A,2.649,N1,N3,1 atom pairs; asymmetric unit
+1y26,rcsb_ligand_neighbors,ADE,X,90,G,bm6,chain,1y26_1_X_A,A,X,63,75,,U,mapped,81,*,proximity<=5A,3.195,C2,O2,1 atom pairs; asymmetric unit
+1y26,pdbe_binding_sites_v2,MG,,,,bm5,entity,,,,11,23,,A,mapped,27,*,,,,,"entity-level; bestChainId=A; bms=bm2,bm5"
+1y26,pdbe_binding_sites_v2,MG,,,,bm2,entity,,,,12,24,,A,mapped,28,*,,,,,"entity-level; bestChainId=A; bms=bm2,bm5"
+1y26,rcsb_ligand_neighbors,MG,X,101,B,bm1,chain,1y26_1_X_A,A,X,33,45,,A,mapped,49,*,proximity<=5A,4.149,MG,OP2,1 atom pairs; asymmetric unit
+1y26,rcsb_ligand_neighbors,MG,X,101,B,bm1,chain,1y26_1_X_A,A,X,34,46,,G,mapped,50,*,proximity<=5A,4.29,MG,N7,1 atom pairs; asymmetric unit
+1y26,rcsb_ligand_neighbors,MG,X,101,B,bm1,chain,1y26_1_X_A,A,X,35,47,,U,mapped,51,*,proximity<=5A,4.071,MG,O4,1 atom pairs; asymmetric unit
+1y26,pdbe_graphapi_bm_interactions,MG,X,102,C,bm2,chain,1y26_1_X_A,A,X,12,24,,A,mapped,28,*,covalent;metal_complex;vdw,,,,residue-level Arpeggio; preferred assembly only
+1y26,rcsb_ligand_neighbors,MG,X,102,C,bm2,chain,1y26_1_X_A,A,X,12,24,,A,mapped,28,*,proximity<=5A,2.103,MG,OP1,1 atom pairs; asymmetric unit
+1y26,rcsb_ligand_neighbors,MG,X,103,D,bm3,chain,1y26_1_X_A,A,X,32,44,,G,mapped,48,*,proximity<=5A,4.213,MG,OP1,1 atom pairs; asymmetric unit
+1y26,rcsb_ligand_neighbors,MG,X,104,E,bm4,chain,1y26_1_X_A,A,X,31,43,,G,mapped,47,*,proximity<=5A,4.211,MG,N7,1 atom pairs; asymmetric unit
+1y26,rcsb_ligand_neighbors,MG,X,104,E,bm4,chain,1y26_1_X_A,A,X,32,44,,G,mapped,48,*,proximity<=5A,4.524,MG,N7,1 atom pairs; asymmetric unit
+1y26,pdbe_graphapi_bm_interactions,MG,X,105,F,bm5,chain,1y26_1_X_A,A,X,11,23,,A,mapped,27,*,metal_complex;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+1y26,rcsb_ligand_neighbors,MG,X,105,F,bm5,chain,1y26_1_X_A,A,X,9,21,,A,mapped,25,*,proximity<=5A,4.268,MG,N7,1 atom pairs; asymmetric unit
+1y26,rcsb_ligand_neighbors,MG,X,105,F,bm5,chain,1y26_1_X_A,A,X,10,22,,U,mapped,26,*,proximity<=5A,3.841,MG,O3',1 atom pairs; asymmetric unit
+1y26,rcsb_ligand_neighbors,MG,X,105,F,bm5,chain,1y26_1_X_A,A,X,11,23,,A,mapped,27,*,proximity<=5A,2.436,MG,OP2,1 atom pairs; asymmetric unit
+3rkf,arpeggio_local,DX4,A,91,E,,chain,3rkf_1_A_A,A,A,7,21,,A,mapped,25,*,proximal;vdw_clash,3.27,C2;C4;C5;C6;C8;N1;N3;N7;N9;S6,C1';C2;C2';C4;C5;C6;C8;N1;N3;N6;N7;N9;O2',56 atom pairs; asymmetric unit; specific=yes
+3rkf,arpeggio_local,DX4,A,91,E,,chain,3rkf_1_A_A,A,A,8,22,,U,mapped,26,*,proximal;vdw;vdw_clash,2.98,C4;C5;C6;C8;N1;N7;N9;S6,C1';C2;C2';C4;C5;C6;N1;N3;O2;O2';O3';O4,53 atom pairs; asymmetric unit; specific=yes
+3rkf,arpeggio_local,DX4,A,91,E,,chain,3rkf_1_A_A,A,A,33,47,,U,mapped,51,*,proximal;vdw;vdw_clash,2.82,C4;C5;C8;N7;N9,C2;C4;N1;N3;O2;O4,16 atom pairs; asymmetric unit; specific=yes
+3rkf,arpeggio_local,DX4,A,91,E,,chain,3rkf_1_A_A,A,A,35,49,,U,mapped,53,*,proximal,4.87,N9,O2',1 atom pairs; asymmetric unit; specific=proximal-only
+3rkf,arpeggio_local,DX4,A,91,E,,chain,3rkf_1_A_A,A,A,36,50,,C,mapped,54,*,proximal,3.6,C2;C4;C5;C8;N2;N3;N9,C4;C5;N4,11 atom pairs; asymmetric unit; specific=proximal-only
+3rkf,arpeggio_local,DX4,A,91,E,,chain,3rkf_1_A_A,A,A,37,51,,U,mapped,55,*,hbond;polar;proximal;vdw_clash,2.64,C2;C4;C5;C8;N1;N2;N3;N9,C2;C4;N1;N3;O2;O4,28 atom pairs; asymmetric unit; specific=yes
+3rkf,arpeggio_local,DX4,A,91,E,,chain,3rkf_1_A_A,A,A,38,52,,A,mapped,56,*,proximal,3.35,C2;C4;C5;C6;C8;N1;N2;N3;N7;N9,C1';C2;C4;C5;C6;N1;N3;N6;N9;O4',51 atom pairs; asymmetric unit; specific=proximal-only
+3rkf,arpeggio_local,DX4,A,91,E,,chain,3rkf_1_A_A,A,A,59,73,,A,mapped,79,*,proximal,3.52,C6;N1;N2;S6,C6;N1;N6,7 atom pairs; asymmetric unit; specific=proximal-only
+3rkf,arpeggio_local,DX4,A,91,E,,chain,3rkf_1_A_A,A,A,60,74,,C,mapped,80,*,proximal;vdw_clash,2.98,C2;C6;N1;N2;S6,C2;C4;N1;N3;N4;O2,22 atom pairs; asymmetric unit; specific=yes
+3rkf,arpeggio_local,DX4,A,91,E,,chain,3rkf_1_A_A,A,A,61,75,,U,mapped,81,*,proximal,3.44,C2;C4;C5;C6;N1;N2;N3,C1';C2;C2';C4;C5;C6;N1;N3;O2;O4',31 atom pairs; asymmetric unit; specific=proximal-only
+3rkf,rcsb_ligand_neighbors,DX4,A,91,E,,chain,3rkf_1_A_A,A,A,7,21,,A,mapped,25,*,proximity<=5A,3.265,N7,N3,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,DX4,A,91,E,,chain,3rkf_1_A_A,A,A,8,22,,U,mapped,26,*,proximity<=5A,2.979,S6,O2',1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,DX4,A,91,E,,chain,3rkf_1_A_A,A,A,33,47,,U,mapped,51,*,proximity<=5A,2.824,C8,O2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,DX4,A,91,E,,chain,3rkf_1_A_A,A,A,37,51,,U,mapped,55,*,proximity<=5A,2.637,N2,O2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,DX4,A,91,E,,chain,3rkf_1_A_A,A,A,38,52,,A,mapped,56,*,proximity<=5A,3.353,C2,N3,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,DX4,A,91,E,,chain,3rkf_1_A_A,A,A,59,73,,A,mapped,79,*,proximity<=5A,3.522,S6,N6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,DX4,A,91,E,,chain,3rkf_1_A_A,A,A,60,74,,C,mapped,80,*,proximity<=5A,2.984,N2,O2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,DX4,A,91,E,,chain,3rkf_1_A_A,A,A,61,75,,U,mapped,81,*,proximity<=5A,3.464,C2,O2,1 atom pairs; asymmetric unit
+3rkf,arpeggio_local,DX4,B,91,O,bm1,chain,3rkf_1_B_B,B,B,7,21,,A,mapped,25,*,polar;proximal;vdw_clash,3.34,C2;C4;C5;C6;C8;N1;N3;N7;N9;S6,C1';C2;C2';C4;C5;C6;C8;N1;N3;N6;N7;N9;O2',64 atom pairs; asymmetric unit; specific=yes
+3rkf,arpeggio_local,DX4,B,91,O,bm1,chain,3rkf_1_B_B,B,B,8,22,,U,mapped,26,*,proximal;vdw;vdw_clash,2.64,C4;C5;C6;C8;N3;N7;N9;S6,C1';C2;C2';C3';C4;C5;C6;N1;N3;O2;O2';O3';O4,52 atom pairs; asymmetric unit; specific=yes
+3rkf,arpeggio_local,DX4,B,91,O,bm1,chain,3rkf_1_B_B,B,B,33,47,,U,mapped,51,*,proximal,3.38,C4;C8;N7;N9,C2;N3;O2,8 atom pairs; asymmetric unit; specific=proximal-only
+3rkf,arpeggio_local,DX4,B,91,O,bm1,chain,3rkf_1_B_B,B,B,36,50,,C,mapped,54,*,proximal,4.22,C4;N3;N9,N4,3 atom pairs; asymmetric unit; specific=proximal-only
+3rkf,arpeggio_local,DX4,B,91,O,bm1,chain,3rkf_1_B_B,B,B,37,51,,U,mapped,55,*,proximal,3.65,C2;C4;C8;N2;N3;N9,C2;C4;N3;O2;O4,19 atom pairs; asymmetric unit; specific=proximal-only
+3rkf,arpeggio_local,DX4,B,91,O,bm1,chain,3rkf_1_B_B,B,B,38,52,,A,mapped,56,*,proximal,3.55,C2;C4;C5;C8;N1;N2;N3;N9,C1';C2;C4;C5;C6;N1;N3;N6;N9,31 atom pairs; asymmetric unit; specific=proximal-only
+3rkf,arpeggio_local,DX4,B,91,O,bm1,chain,3rkf_1_B_B,B,B,59,73,,A,mapped,79,*,proximal,3.8,C2;C6;N1;N2;S6,C2;C6;N1;N6,12 atom pairs; asymmetric unit; specific=proximal-only
+3rkf,arpeggio_local,DX4,B,91,O,bm1,chain,3rkf_1_B_B,B,B,60,74,,C,mapped,80,*,proximal;vdw;vdw_clash,2.6,C2;C6;N1;N2;N3;S6,C2;C4;N1;N3;N4;O2,24 atom pairs; asymmetric unit; specific=yes
+3rkf,arpeggio_local,DX4,B,91,O,bm1,chain,3rkf_1_B_B,B,B,61,75,,U,mapped,81,*,proximal;vdw,3.26,C2;C4;C5;C6;N1;N2;N3;S6,C1';C2;C4;C5;C6;N1;N3;O2;O4;O4',38 atom pairs; asymmetric unit; specific=yes
+3rkf,pdbe_graphapi_bm_interactions,DX4,B,91,O,bm1,chain,3rkf_1_B_B,B,B,7,21,,A,mapped,25,*,CARBONPI;CATIONPI;OF;aromatic;polar;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+3rkf,pdbe_graphapi_bm_interactions,DX4,B,91,O,bm1,chain,3rkf_1_B_B,B,B,8,22,,U,mapped,26,*,FF;OF;aromatic;hbond;polar;vdw;vdw_clash;weak_polar,,,,residue-level Arpeggio; preferred assembly only
+3rkf,pdbe_graphapi_bm_interactions,DX4,B,91,O,bm1,chain,3rkf_1_B_B,B,B,33,47,,U,mapped,51,*,weak_polar,,,,residue-level Arpeggio; preferred assembly only
+3rkf,pdbe_graphapi_bm_interactions,DX4,B,91,O,bm1,chain,3rkf_1_B_B,B,B,37,51,,U,mapped,55,*,hbond,,,,residue-level Arpeggio; preferred assembly only
+3rkf,pdbe_graphapi_bm_interactions,DX4,B,91,O,bm1,chain,3rkf_1_B_B,B,B,60,74,,C,mapped,80,*,hbond;polar;vdw;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+3rkf,pdbe_graphapi_bm_interactions,DX4,B,91,O,bm1,chain,3rkf_1_B_B,B,B,61,75,,U,mapped,81,*,CATIONPI;DONORPI;hbond;polar;vdw,,,,residue-level Arpeggio; preferred assembly only
+3rkf,pdbe_graphapi_ligand_interactions,DX4,B,91,O,bm1,chain,3rkf_1_B_B,B,B,7,21,,A,mapped,25,*,CARBONPI;CATIONPI;OF;aromatic;polar;vdw_clash,3.34,C4;C5;C8;N7;N9;S6,C2;C4;C5;C6;C8;N3;N6;N7;N9,"atom-level Arpeggio, 6 atom pairs; preferred assembly only"
+3rkf,pdbe_graphapi_ligand_interactions,DX4,B,91,O,bm1,chain,3rkf_1_B_B,B,B,8,22,,U,mapped,26,*,FF;OF;aromatic;hbond;polar;vdw;vdw_clash;weak_polar,2.64,C4;C5;C8;N7;N9;S6,C2;C2';C4;C5;C6;N1;N3;O2;O2',"atom-level Arpeggio, 18 atom pairs; preferred assembly only"
+3rkf,pdbe_graphapi_ligand_interactions,DX4,B,91,O,bm1,chain,3rkf_1_B_B,B,B,33,47,,U,mapped,51,*,weak_polar,3.38,C8,O2,"atom-level Arpeggio, 1 atom pairs; preferred assembly only"
+3rkf,pdbe_graphapi_ligand_interactions,DX4,B,91,O,bm1,chain,3rkf_1_B_B,B,B,37,51,,U,mapped,55,*,hbond,3.71,N9,O4,"atom-level Arpeggio, 1 atom pairs; preferred assembly only"
+3rkf,pdbe_graphapi_ligand_interactions,DX4,B,91,O,bm1,chain,3rkf_1_B_B,B,B,60,74,,C,mapped,80,*,hbond;polar;vdw;vdw_clash,2.6,N1;N2;S6,C2;N3;N4;O2,"atom-level Arpeggio, 6 atom pairs; preferred assembly only"
+3rkf,pdbe_graphapi_ligand_interactions,DX4,B,91,O,bm1,chain,3rkf_1_B_B,B,B,61,75,,U,mapped,81,*,CATIONPI;DONORPI;hbond;polar;vdw,3.26,N2,C2;C4;C5;C6;N1;N3;O2,"atom-level Arpeggio, 5 atom pairs; preferred assembly only"
+3rkf,rcsb_ligand_neighbors,DX4,B,91,O,bm1,chain,3rkf_1_B_B,B,B,7,21,,A,mapped,25,*,proximity<=5A,3.342,S6,N6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,DX4,B,91,O,bm1,chain,3rkf_1_B_B,B,B,8,22,,U,mapped,26,*,proximity<=5A,2.639,N7,O2',1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,DX4,B,91,O,bm1,chain,3rkf_1_B_B,B,B,33,47,,U,mapped,51,*,proximity<=5A,3.375,C8,O2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,DX4,B,91,O,bm1,chain,3rkf_1_B_B,B,B,37,51,,U,mapped,55,*,proximity<=5A,3.647,N3,N3,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,DX4,B,91,O,bm1,chain,3rkf_1_B_B,B,B,38,52,,A,mapped,56,*,proximity<=5A,3.548,N3,C2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,DX4,B,91,O,bm1,chain,3rkf_1_B_B,B,B,60,74,,C,mapped,80,*,proximity<=5A,2.6,N2,O2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,DX4,B,91,O,bm1,chain,3rkf_1_B_B,B,B,61,75,,U,mapped,81,*,proximity<=5A,3.355,C2,N3,1 atom pairs; asymmetric unit
+3rkf,arpeggio_local,DX4,C,91,U,,chain,3rkf_1_C_C,C,C,7,21,,A,mapped,25,*,proximal;vdw,3.21,C2;C4;C5;C6;C8;N1;N3;N7;N9;S6,C1';C2;C2';C4;C5;C6;N1;N3;N6;N7;N9;O2',47 atom pairs; asymmetric unit; specific=yes
+3rkf,arpeggio_local,DX4,C,91,U,,chain,3rkf_1_C_C,C,C,8,22,,U,mapped,26,*,proximal;vdw;vdw_clash,3.28,C4;C5;C6;C8;N1;N7;N9;S6,C1';C2;C2';C4;C5;C6;N1;N3;O2;O2';O4,44 atom pairs; asymmetric unit; specific=yes
+3rkf,arpeggio_local,DX4,C,91,U,,chain,3rkf_1_C_C,C,C,33,47,,U,mapped,51,*,proximal;vdw;vdw_clash,2.79,C4;C5;C8;N7;N9,C2;C4;N1;N3;O2;O4,16 atom pairs; asymmetric unit; specific=yes
+3rkf,arpeggio_local,DX4,C,91,U,,chain,3rkf_1_C_C,C,C,35,49,,U,mapped,53,*,proximal,4.61,C8;N9,O2',2 atom pairs; asymmetric unit; specific=proximal-only
+3rkf,arpeggio_local,DX4,C,91,U,,chain,3rkf_1_C_C,C,C,36,50,,C,mapped,54,*,proximal,3.52,C2;C4;C5;C8;N3;N9,C4;C5;N4,10 atom pairs; asymmetric unit; specific=proximal-only
+3rkf,arpeggio_local,DX4,C,91,U,,chain,3rkf_1_C_C,C,C,37,51,,U,mapped,55,*,hbond;polar;proximal;vdw;vdw_clash,2.64,C2;C4;C5;C8;N1;N2;N3;N7;N9,C2;C4;C5;N1;N3;O2;O4,34 atom pairs; asymmetric unit; specific=yes
+3rkf,arpeggio_local,DX4,C,91,U,,chain,3rkf_1_C_C,C,C,38,52,,A,mapped,56,*,proximal;vdw,3.26,C2;C4;C5;C6;C8;N1;N2;N3;N7;N9,C1';C2;C2';C4;C5;C6;C8;N1;N3;N6;N7;N9;O2';O4',59 atom pairs; asymmetric unit; specific=yes
+3rkf,arpeggio_local,DX4,C,91,U,,chain,3rkf_1_C_C,C,C,59,73,,A,mapped,79,*,proximal,3.77,C6;N1;N2;S6,C6;N1;N6,7 atom pairs; asymmetric unit; specific=proximal-only
+3rkf,arpeggio_local,DX4,C,91,U,,chain,3rkf_1_C_C,C,C,60,74,,C,mapped,80,*,proximal;vdw_clash,2.82,C2;C6;N1;N2;S6,C2;C4;N1;N3;N4;O2,18 atom pairs; asymmetric unit; specific=yes
+3rkf,arpeggio_local,DX4,C,91,U,,chain,3rkf_1_C_C,C,C,61,75,,U,mapped,81,*,proximal,3.83,C2;C4;C5;C6;N1;N2;N3;N9;S6,C1';C2;C4;C5;C6;N1;N3;O2;O4;O4',38 atom pairs; asymmetric unit; specific=proximal-only
+3rkf,rcsb_ligand_neighbors,DX4,C,91,U,,chain,3rkf_1_C_C,C,C,7,21,,A,mapped,25,*,proximity<=5A,3.214,N7,N3,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,DX4,C,91,U,,chain,3rkf_1_C_C,C,C,8,22,,U,mapped,26,*,proximity<=5A,3.278,N7,C2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,DX4,C,91,U,,chain,3rkf_1_C_C,C,C,33,47,,U,mapped,51,*,proximity<=5A,2.791,C8,O2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,DX4,C,91,U,,chain,3rkf_1_C_C,C,C,36,50,,C,mapped,54,*,proximity<=5A,3.612,C4,N4,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,DX4,C,91,U,,chain,3rkf_1_C_C,C,C,37,51,,U,mapped,55,*,proximity<=5A,2.641,N3,N3,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,DX4,C,91,U,,chain,3rkf_1_C_C,C,C,38,52,,A,mapped,56,*,proximity<=5A,3.262,C2,N3,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,DX4,C,91,U,,chain,3rkf_1_C_C,C,C,60,74,,C,mapped,80,*,proximity<=5A,2.817,N2,O2,1 atom pairs; asymmetric unit
+3rkf,arpeggio_local,DX4,D,91,AA,,chain,3rkf_1_D_D,D,D,7,21,,A,mapped,25,*,polar;proximal;vdw;vdw_clash,3.05,C2;C4;C5;C6;C8;N1;N3;N7;N9;S6,C1';C2;C2';C4;C5;C6;C8;N1;N3;N6;N7;N9;O2',59 atom pairs; asymmetric unit; specific=yes
+3rkf,arpeggio_local,DX4,D,91,AA,,chain,3rkf_1_D_D,D,D,8,22,,U,mapped,26,*,proximal;vdw;vdw_clash,3.22,C4;C5;C6;C8;N7;N9;S6,C1';C2;C2';C4;C5;C6;N1;N3;O2;O2';O4,53 atom pairs; asymmetric unit; specific=yes
+3rkf,arpeggio_local,DX4,D,91,AA,,chain,3rkf_1_D_D,D,D,33,47,,U,mapped,51,*,proximal;vdw;vdw_clash,2.87,C4;C5;C8;N7;N9,C2;C4;N1;N3;O2,14 atom pairs; asymmetric unit; specific=yes
+3rkf,arpeggio_local,DX4,D,91,AA,,chain,3rkf_1_D_D,D,D,35,49,,U,mapped,53,*,proximal,4.68,N9,O2',1 atom pairs; asymmetric unit; specific=proximal-only
+3rkf,arpeggio_local,DX4,D,91,AA,,chain,3rkf_1_D_D,D,D,36,50,,C,mapped,54,*,proximal,3.71,C2;C4;C5;N2;N3;N9,C4;N4,9 atom pairs; asymmetric unit; specific=proximal-only
+3rkf,arpeggio_local,DX4,D,91,AA,,chain,3rkf_1_D_D,D,D,37,51,,U,mapped,55,*,hbond;polar;proximal;vdw;vdw_clash,2.65,C2;C4;C5;C8;N1;N2;N3;N9,C2;C4;C5;N1;N3;O2;O4,31 atom pairs; asymmetric unit; specific=yes
+3rkf,arpeggio_local,DX4,D,91,AA,,chain,3rkf_1_D_D,D,D,38,52,,A,mapped,56,*,polar;proximal;vdw;vdw_clash,3.09,C2;C4;C5;C6;C8;N1;N2;N3;N7;N9,C1';C2;C2';C4;C5;C6;C8;N1;N3;N6;N9;O2';O4',53 atom pairs; asymmetric unit; specific=yes
+3rkf,arpeggio_local,DX4,D,91,AA,,chain,3rkf_1_D_D,D,D,59,73,,A,mapped,79,*,proximal,3.66,C6;N1;S6,C6;N1;N6,6 atom pairs; asymmetric unit; specific=proximal-only
+3rkf,arpeggio_local,DX4,D,91,AA,,chain,3rkf_1_D_D,D,D,60,74,,C,mapped,80,*,proximal,3.32,C2;C6;N1;N2;S6,C2;C4;N3;N4;O2,17 atom pairs; asymmetric unit; specific=proximal-only
+3rkf,arpeggio_local,DX4,D,91,AA,,chain,3rkf_1_D_D,D,D,61,75,,U,mapped,81,*,proximal,3.48,C2;C4;C5;C6;N1;N2;N3;S6,C1';C2;C4;C6;N1;N3;O2;O4',25 atom pairs; asymmetric unit; specific=proximal-only
+3rkf,rcsb_ligand_neighbors,DX4,D,91,AA,,chain,3rkf_1_D_D,D,D,7,21,,A,mapped,25,*,proximity<=5A,3.045,N7,N3,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,DX4,D,91,AA,,chain,3rkf_1_D_D,D,D,8,22,,U,mapped,26,*,proximity<=5A,3.217,N7,O2',1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,DX4,D,91,AA,,chain,3rkf_1_D_D,D,D,33,47,,U,mapped,51,*,proximity<=5A,2.867,C8,O2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,DX4,D,91,AA,,chain,3rkf_1_D_D,D,D,37,51,,U,mapped,55,*,proximity<=5A,2.645,N3,N3,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,DX4,D,91,AA,,chain,3rkf_1_D_D,D,D,38,52,,A,mapped,56,*,proximity<=5A,3.088,C2,N3,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,DX4,D,91,AA,,chain,3rkf_1_D_D,D,D,60,74,,C,mapped,80,*,proximity<=5A,3.319,N2,O2,1 atom pairs; asymmetric unit
+3rkf,pdbe_binding_sites_v2,DX4,,,,bm1,entity,,,,7,21,,A,mapped,25,*,,,,,entity-level; bestChainId=A; bms=bm1
+3rkf,pdbe_binding_sites_v2,DX4,,,,bm1,entity,,,,8,22,,U,mapped,26,*,,,,,entity-level; bestChainId=A; bms=bm1
+3rkf,pdbe_binding_sites_v2,DX4,,,,bm1,entity,,,,33,47,,U,mapped,51,*,,,,,entity-level; bestChainId=A; bms=bm1
+3rkf,pdbe_binding_sites_v2,DX4,,,,bm1,entity,,,,37,51,,U,mapped,55,*,,,,,entity-level; bestChainId=A; bms=bm1
+3rkf,pdbe_binding_sites_v2,DX4,,,,bm1,entity,,,,60,74,,C,mapped,80,*,,,,,entity-level; bestChainId=A; bms=bm1
+3rkf,pdbe_binding_sites_v2,DX4,,,,bm1,entity,,,,61,75,,U,mapped,81,*,,,,,entity-level; bestChainId=A; bms=bm1
+3rkf,rcsb_ligand_neighbors,NCO,A,101,F,,chain,3rkf_1_A_A,A,A,31,45,,G,mapped,49,*,proximity<=5A,4.521,N5,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,101,F,,chain,3rkf_1_A_A,A,A,32,46,,G,mapped,50,*,proximity<=5A,2.998,N3,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,101,F,,chain,3rkf_1_A_A,A,A,33,47,,U,mapped,51,*,proximity<=5A,2.894,N2,O4,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,101,F,,chain,3rkf_1_A_A,A,A,36,50,,C,mapped,54,*,proximity<=5A,2.989,N6,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,101,F,,chain,3rkf_1_A_A,A,A,37,51,,U,mapped,55,*,proximity<=5A,3.208,N6,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,101,F,,chain,3rkf_1_A_A,A,A,38,52,,A,mapped,56,*,proximity<=5A,3.842,N3,N6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,102,G,,chain,3rkf_1_A_A,A,A,16,30,,U,mapped,34,*,proximity<=5A,4.331,N6,O4,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,102,G,,chain,3rkf_1_A_A,A,A,17,31,,G,mapped,35,*,proximity<=5A,3.132,N1,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,102,G,,chain,3rkf_1_A_A,A,A,18,32,,G,mapped,36,*,proximity<=5A,2.892,N4,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,102,G,,chain,3rkf_1_A_A,A,A,51,65,,A,mapped,70,*,proximity<=5A,3.761,N4,O2',1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,102,G,,chain,3rkf_1_A_A,A,A,52,66,,A,mapped,71,*,proximity<=5A,2.911,N3,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,103,H,,chain,3rkf_1_A_A,A,A,25,39,,C,mapped,43,*,proximity<=5A,4.008,N1,OP1,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,103,H,,chain,3rkf_1_A_A,A,A,41,55,,G,mapped,59,*,proximity<=5A,3.051,N3,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,103,H,,chain,3rkf_1_A_A,A,A,42,56,,G,mapped,60,*,proximity<=5A,2.86,N3,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,103,H,,chain,3rkf_1_A_A,A,A,43,57,,G,mapped,61,*,proximity<=5A,3.288,N4,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,103,H,,chain,3rkf_1_A_A,A,A,54,68,,G,mapped,74,*,proximity<=5A,3.568,N5,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,103,H,,chain,3rkf_1_A_A,A,A,55,69,,U,mapped,75,*,proximity<=5A,2.694,N5,O4,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,104,I,,chain,3rkf_1_A_A,A,A,1,15,,G,mapped,19,*,proximity<=5A,2.966,N6,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,104,I,,chain,3rkf_1_A_A,A,A,2,16,,G,mapped,20,*,proximity<=5A,2.694,N3,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,104,I,,chain,3rkf_1_A_A,A,A,3,17,,C,mapped,21,*,proximity<=5A,3.668,N5,N4,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,104,I,,chain,3rkf_1_A_A,A,A,64,78,,G,mapped,84,*,proximity<=5A,3.515,N5,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,104,I,,chain,3rkf_1_A_A,A,A,65,79,,G,mapped,85,*,proximity<=5A,2.696,N5,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,104,I,,chain,3rkf_1_A_A,A,A,66,80,,U,mapped,86,*,proximity<=5A,2.616,N3,O4,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,105,K,,chain,3rkf_1_A_A,A,A,46,60,,C,mapped,65,*,proximity<=5A,3.337,N3,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,105,K,,chain,3rkf_1_A_A,A,A,47,61,,U,mapped,66,*,proximity<=5A,2.602,N2,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,105,K,,chain,3rkf_1_A_A,A,A,48,62,,G,mapped,67,*,proximity<=5A,2.569,N6,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,106,L,,chain,3rkf_1_A_A,A,A,7,21,,A,mapped,25,*,proximity<=5A,3.015,N3,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,106,L,,chain,3rkf_1_A_A,A,A,8,22,,U,mapped,26,*,proximity<=5A,2.835,N6,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,106,L,,chain,3rkf_1_A_A,A,A,9,23,,A,mapped,27,*,proximity<=5A,3.359,N4,OP1,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,106,L,,chain,3rkf_1_B_B,B,B,14,28,,C,mapped,32,*,proximity<=5A,2.905,N1,O3',1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,106,L,,chain,3rkf_1_B_B,B,B,15,29,,G,mapped,33,*,proximity<=5A,2.834,N5,OP1,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,108,M,,chain,3rkf_1_A_A,A,A,13,27,,G,mapped,31,*,proximity<=5A,2.792,N2,OP1,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,108,M,,chain,3rkf_1_A_A,A,A,52,66,,A,mapped,71,*,proximity<=5A,3.84,N4,O2',1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,108,M,,chain,3rkf_1_A_A,A,A,53,67,,U,mapped,73,*,proximity<=5A,3.236,N4,OP1,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,108,M,,chain,3rkf_1_A_A,A,A,54,68,,G,mapped,74,*,proximity<=5A,3.206,N3,OP1,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,108,M,,chain,3rkf_1_B_B,B,B,9,23,,A,mapped,27,*,proximity<=5A,4.696,N1,O2',1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,108,M,,chain,3rkf_1_B_B,B,B,11,25,,C,mapped,29,*,proximity<=5A,4.127,N2,O3',1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,108,M,,chain,3rkf_1_B_B,B,B,12,26,,U,mapped,30,*,proximity<=5A,3.939,N2,OP1,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,108,M,,chain,3rkf_1_B_B,B,B,55,69,,U,mapped,75,*,proximity<=5A,3.172,N5,OP1,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,110,N,,chain,3rkf_1_A_A,A,A,22,36,,U,mapped,40,*,proximity<=5A,3.575,N4,O3',1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,110,N,,chain,3rkf_1_A_A,A,A,23,37,,A,mapped,41,*,proximity<=5A,3.447,N6,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,110,N,,chain,3rkf_1_A_A,A,A,24,38,,G,mapped,42,*,proximity<=5A,3.373,N6,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,110,N,,chain,3rkf_1_A_A,A,A,43,57,,G,mapped,61,*,proximity<=5A,3.627,N3,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,82,J,,chain,3rkf_1_A_A,A,A,48,62,,G,mapped,67,*,proximity<=5A,2.623,N6,O2',1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,A,82,J,,chain,3rkf_1_A_A,A,A,49,63,,U,mapped,68,*,proximity<=5A,3.607,N6,OP2,1 atom pairs; asymmetric unit
+3rkf,pdbe_graphapi_bm_interactions,NCO,B,101,P,bm2,chain,3rkf_1_B_B,B,B,33,47,,U,mapped,51,*,vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+3rkf,pdbe_graphapi_bm_interactions,NCO,B,101,P,bm2,chain,3rkf_1_B_B,B,B,36,50,,C,mapped,54,*,vdw;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+3rkf,pdbe_graphapi_bm_interactions,NCO,B,101,P,bm2,chain,3rkf_1_B_B,B,B,37,51,,U,mapped,55,*,vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+3rkf,rcsb_ligand_neighbors,NCO,B,101,P,bm2,chain,3rkf_1_B_B,B,B,31,45,,G,mapped,49,*,proximity<=5A,4.845,N6,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,B,101,P,bm2,chain,3rkf_1_B_B,B,B,32,46,,G,mapped,50,*,proximity<=5A,3.617,N3,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,B,101,P,bm2,chain,3rkf_1_B_B,B,B,33,47,,U,mapped,51,*,proximity<=5A,2.923,N5,O4,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,B,101,P,bm2,chain,3rkf_1_B_B,B,B,36,50,,C,mapped,54,*,proximity<=5A,2.872,N1,OP1,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,B,101,P,bm2,chain,3rkf_1_B_B,B,B,37,51,,U,mapped,55,*,proximity<=5A,2.955,N2,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,B,101,P,bm2,chain,3rkf_1_B_B,B,B,39,53,,C,mapped,57,*,proximity<=5A,4.841,N3,N4,1 atom pairs; asymmetric unit
+3rkf,pdbe_graphapi_bm_interactions,NCO,B,102,Q,bm3,chain,3rkf_1_B_B,B,B,16,30,,U,mapped,34,*,vdw,,,,residue-level Arpeggio; preferred assembly only
+3rkf,pdbe_graphapi_bm_interactions,NCO,B,102,Q,bm3,chain,3rkf_1_B_B,B,B,17,31,,G,mapped,35,*,vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+3rkf,pdbe_graphapi_bm_interactions,NCO,B,102,Q,bm3,chain,3rkf_1_B_B,B,B,18,32,,G,mapped,36,*,vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+3rkf,pdbe_graphapi_bm_interactions,NCO,B,102,Q,bm3,chain,3rkf_1_B_B,B,B,52,66,,A,mapped,71,*,vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+3rkf,rcsb_ligand_neighbors,NCO,B,102,Q,bm3,chain,3rkf_1_B_B,B,B,16,30,,U,mapped,34,*,proximity<=5A,3.259,N2,C5,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,B,102,Q,bm3,chain,3rkf_1_B_B,B,B,17,31,,G,mapped,35,*,proximity<=5A,2.783,N1,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,B,102,Q,bm3,chain,3rkf_1_B_B,B,B,18,32,,G,mapped,36,*,proximity<=5A,2.691,N4,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,B,102,Q,bm3,chain,3rkf_1_B_B,B,B,51,65,,A,mapped,70,*,proximity<=5A,3.733,N4,O2',1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,B,102,Q,bm3,chain,3rkf_1_B_B,B,B,52,66,,A,mapped,71,*,proximity<=5A,2.731,N3,OP2,1 atom pairs; asymmetric unit
+3rkf,pdbe_graphapi_bm_interactions,NCO,B,103,R,bm4,chain,3rkf_1_B_B,B,B,42,56,,G,mapped,60,*,vdw;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+3rkf,pdbe_graphapi_bm_interactions,NCO,B,103,R,bm4,chain,3rkf_1_B_B,B,B,55,69,,U,mapped,75,*,vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+3rkf,rcsb_ligand_neighbors,NCO,B,103,R,bm4,chain,3rkf_1_B_B,B,B,25,39,,C,mapped,43,*,proximity<=5A,4.031,N3,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,B,103,R,bm4,chain,3rkf_1_B_B,B,B,42,56,,G,mapped,60,*,proximity<=5A,2.756,N1,N7,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,B,103,R,bm4,chain,3rkf_1_B_B,B,B,43,57,,G,mapped,61,*,proximity<=5A,3.253,N6,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,B,103,R,bm4,chain,3rkf_1_B_B,B,B,44,58,,C,mapped,62,*,proximity<=5A,3.916,N4,N4,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,B,103,R,bm4,chain,3rkf_1_B_B,B,B,54,68,,G,mapped,74,*,proximity<=5A,3.355,N6,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,B,103,R,bm4,chain,3rkf_1_B_B,B,B,55,69,,U,mapped,75,*,proximity<=5A,2.56,N6,O4,1 atom pairs; asymmetric unit
+3rkf,pdbe_graphapi_bm_interactions,NCO,B,104,S,bm5,chain,3rkf_1_B_B,B,B,65,79,,G,mapped,85,*,vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+3rkf,pdbe_graphapi_bm_interactions,NCO,B,104,S,bm5,chain,3rkf_1_B_B,B,B,66,80,,U,mapped,86,*,vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+3rkf,rcsb_ligand_neighbors,NCO,B,104,S,bm5,chain,3rkf_1_B_B,B,B,1,15,,G,mapped,19,*,proximity<=5A,3.639,N1,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,B,104,S,bm5,chain,3rkf_1_B_B,B,B,2,16,,G,mapped,20,*,proximity<=5A,3.658,N4,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,B,104,S,bm5,chain,3rkf_1_B_B,B,B,3,17,,C,mapped,21,*,proximity<=5A,4.821,N5,N4,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,B,104,S,bm5,chain,3rkf_1_B_B,B,B,64,78,,G,mapped,84,*,proximity<=5A,3.56,N3,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,B,104,S,bm5,chain,3rkf_1_B_B,B,B,65,79,,G,mapped,85,*,proximity<=5A,2.742,N4,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,B,104,S,bm5,chain,3rkf_1_B_B,B,B,66,80,,U,mapped,86,*,proximity<=5A,2.936,N4,O4,1 atom pairs; asymmetric unit
+3rkf,pdbe_graphapi_bm_interactions,NCO,B,106,T,bm6,chain,3rkf_1_B_B,B,B,7,21,,A,mapped,25,*,vdw;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+3rkf,pdbe_graphapi_bm_interactions,NCO,B,106,T,bm6,chain,3rkf_1_B_B,B,B,8,22,,U,mapped,26,*,vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+3rkf,rcsb_ligand_neighbors,NCO,B,106,T,bm6,chain,3rkf_1_A_A,A,A,14,28,,C,mapped,32,*,proximity<=5A,3.58,N3,O3',1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,B,106,T,bm6,chain,3rkf_1_A_A,A,A,15,29,,G,mapped,33,*,proximity<=5A,2.934,N4,OP1,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,B,106,T,bm6,chain,3rkf_1_B_B,B,B,7,21,,A,mapped,25,*,proximity<=5A,2.804,N1,OP1,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,B,106,T,bm6,chain,3rkf_1_B_B,B,B,8,22,,U,mapped,26,*,proximity<=5A,2.731,N2,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,B,106,T,bm6,chain,3rkf_1_B_B,B,B,9,23,,A,mapped,27,*,proximity<=5A,3.273,N2,OP1,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,B,106,T,bm6,chain,3rkf_1_C_C,C,C,5,19,,A,mapped,23,*,proximity<=5A,3.328,N4,O3',1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,B,106,T,bm6,chain,3rkf_1_C_C,C,C,6,20,,U,mapped,24,*,proximity<=5A,2.915,N1,OP1,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,101,V,,chain,3rkf_1_C_C,C,C,31,45,,G,mapped,49,*,proximity<=5A,4.849,N2,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,101,V,,chain,3rkf_1_C_C,C,C,32,46,,G,mapped,50,*,proximity<=5A,3.317,N1,N7,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,101,V,,chain,3rkf_1_C_C,C,C,33,47,,U,mapped,51,*,proximity<=5A,3.064,N4,O4,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,101,V,,chain,3rkf_1_C_C,C,C,36,50,,C,mapped,54,*,proximity<=5A,2.872,N5,OP1,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,101,V,,chain,3rkf_1_C_C,C,C,37,51,,U,mapped,55,*,proximity<=5A,3.071,N3,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,102,W,,chain,3rkf_1_C_C,C,C,16,30,,U,mapped,34,*,proximity<=5A,3.295,N5,O4,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,102,W,,chain,3rkf_1_C_C,C,C,17,31,,G,mapped,35,*,proximity<=5A,2.809,N3,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,102,W,,chain,3rkf_1_C_C,C,C,18,32,,G,mapped,36,*,proximity<=5A,2.917,N4,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,102,W,,chain,3rkf_1_C_C,C,C,51,65,,A,mapped,70,*,proximity<=5A,3.923,N4,O2',1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,102,W,,chain,3rkf_1_C_C,C,C,52,66,,A,mapped,71,*,proximity<=5A,3.088,N6,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,103,X,,chain,3rkf_1_C_C,C,C,25,39,,C,mapped,43,*,proximity<=5A,3.637,N6,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,103,X,,chain,3rkf_1_C_C,C,C,41,55,,G,mapped,59,*,proximity<=5A,3.919,N2,N7,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,103,X,,chain,3rkf_1_C_C,C,C,42,56,,G,mapped,60,*,proximity<=5A,2.628,N5,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,103,X,,chain,3rkf_1_C_C,C,C,43,57,,G,mapped,61,*,proximity<=5A,3.299,N5,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,103,X,,chain,3rkf_1_C_C,C,C,44,58,,C,mapped,62,*,proximity<=5A,4.144,N4,N4,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,103,X,,chain,3rkf_1_C_C,C,C,54,68,,G,mapped,74,*,proximity<=5A,3.39,N4,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,103,X,,chain,3rkf_1_C_C,C,C,55,69,,U,mapped,75,*,proximity<=5A,2.687,N5,O4,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,106,Y,,chain,3rkf_1_B_B,B,B,5,19,,A,mapped,23,*,proximity<=5A,3.966,N5,O3',1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,106,Y,,chain,3rkf_1_B_B,B,B,6,20,,U,mapped,24,*,proximity<=5A,3.586,N5,OP1,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,106,Y,,chain,3rkf_1_C_C,C,C,7,21,,A,mapped,25,*,proximity<=5A,2.622,N2,OP1,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,106,Y,,chain,3rkf_1_C_C,C,C,8,22,,U,mapped,26,*,proximity<=5A,2.714,N6,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,106,Y,,chain,3rkf_1_C_C,C,C,9,23,,A,mapped,27,*,proximity<=5A,3.534,N6,OP1,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,106,Y,,chain,3rkf_1_D_D,D,D,14,28,,C,mapped,32,*,proximity<=5A,3.487,N4,O3',1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,106,Y,,chain,3rkf_1_D_D,D,D,15,29,,G,mapped,33,*,proximity<=5A,2.948,N5,OP1,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,110,Z,,chain,3rkf_1_C_C,C,C,22,36,,U,mapped,40,*,proximity<=5A,4.445,N6,O3',1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,110,Z,,chain,3rkf_1_C_C,C,C,23,37,,A,mapped,41,*,proximity<=5A,3.961,N6,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,110,Z,,chain,3rkf_1_C_C,C,C,24,38,,G,mapped,42,*,proximity<=5A,2.793,N1,N7,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,110,Z,,chain,3rkf_1_C_C,C,C,43,57,,G,mapped,61,*,proximity<=5A,3.722,N3,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,110,Z,,chain,3rkf_1_C_C,C,C,44,58,,C,mapped,62,*,proximity<=5A,3.273,N5,N4,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,C,110,Z,,chain,3rkf_1_C_C,C,C,45,59,,A,mapped,63,*,proximity<=5A,3.961,N5,N6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,101,BA,,chain,3rkf_1_D_D,D,D,31,45,,G,mapped,49,*,proximity<=5A,4.506,N3,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,101,BA,,chain,3rkf_1_D_D,D,D,32,46,,G,mapped,50,*,proximity<=5A,3.09,N4,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,101,BA,,chain,3rkf_1_D_D,D,D,33,47,,U,mapped,51,*,proximity<=5A,3.177,N4,O4,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,101,BA,,chain,3rkf_1_D_D,D,D,36,50,,C,mapped,54,*,proximity<=5A,3.067,N1,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,101,BA,,chain,3rkf_1_D_D,D,D,37,51,,U,mapped,55,*,proximity<=5A,3.48,N5,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,101,BA,,chain,3rkf_1_D_D,D,D,38,52,,A,mapped,56,*,proximity<=5A,3.715,N4,N6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,102,CA,,chain,3rkf_1_D_D,D,D,16,30,,U,mapped,34,*,proximity<=5A,4.167,N2,O4,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,102,CA,,chain,3rkf_1_D_D,D,D,17,31,,G,mapped,35,*,proximity<=5A,2.623,N1,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,102,CA,,chain,3rkf_1_D_D,D,D,18,32,,G,mapped,36,*,proximity<=5A,3.155,N1,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,102,CA,,chain,3rkf_1_D_D,D,D,51,65,,A,mapped,70,*,proximity<=5A,4.324,N4,O2',1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,102,CA,,chain,3rkf_1_D_D,D,D,52,66,,A,mapped,71,*,proximity<=5A,3.01,N3,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,103,DA,,chain,3rkf_1_D_D,D,D,25,39,,C,mapped,43,*,proximity<=5A,3.725,N3,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,103,DA,,chain,3rkf_1_D_D,D,D,41,55,,G,mapped,59,*,proximity<=5A,3.924,N5,N7,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,103,DA,,chain,3rkf_1_D_D,D,D,42,56,,G,mapped,60,*,proximity<=5A,2.718,N1,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,103,DA,,chain,3rkf_1_D_D,D,D,43,57,,G,mapped,61,*,proximity<=5A,4.141,N4,N7,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,103,DA,,chain,3rkf_1_D_D,D,D,54,68,,G,mapped,74,*,proximity<=5A,3.271,N6,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,103,DA,,chain,3rkf_1_D_D,D,D,55,69,,U,mapped,75,*,proximity<=5A,2.695,N6,O4,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,104,EA,,chain,3rkf_1_D_D,D,D,1,15,,G,mapped,19,*,proximity<=5A,2.999,N2,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,104,EA,,chain,3rkf_1_D_D,D,D,2,16,,G,mapped,20,*,proximity<=5A,3.047,N2,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,104,EA,,chain,3rkf_1_D_D,D,D,3,17,,C,mapped,21,*,proximity<=5A,3.446,N6,N4,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,104,EA,,chain,3rkf_1_D_D,D,D,64,78,,G,mapped,84,*,proximity<=5A,3.248,N6,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,104,EA,,chain,3rkf_1_D_D,D,D,65,79,,G,mapped,85,*,proximity<=5A,2.72,N6,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,104,EA,,chain,3rkf_1_D_D,D,D,66,80,,U,mapped,86,*,proximity<=5A,3.452,N3,O4,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,105,FA,,chain,3rkf_1_D_D,D,D,46,60,,C,mapped,65,*,proximity<=5A,3.752,N6,OP1,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,105,FA,,chain,3rkf_1_D_D,D,D,47,61,,U,mapped,66,*,proximity<=5A,3.068,N6,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,105,FA,,chain,3rkf_1_D_D,D,D,48,62,,G,mapped,67,*,proximity<=5A,2.742,N5,O6,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,106,GA,,chain,3rkf_1_C_C,C,C,14,28,,C,mapped,32,*,proximity<=5A,3.028,N3,O3',1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,106,GA,,chain,3rkf_1_C_C,C,C,15,29,,G,mapped,33,*,proximity<=5A,3.63,N6,OP1,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,106,GA,,chain,3rkf_1_D_D,D,D,7,21,,A,mapped,25,*,proximity<=5A,2.832,N1,OP1,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,106,GA,,chain,3rkf_1_D_D,D,D,8,22,,U,mapped,26,*,proximity<=5A,2.687,N5,OP2,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,108,HA,,chain,3rkf_1_C_C,C,C,11,25,,C,mapped,29,*,proximity<=5A,4.444,N2,O3',1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,108,HA,,chain,3rkf_1_C_C,C,C,12,26,,U,mapped,30,*,proximity<=5A,3.083,N6,OP1,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,108,HA,,chain,3rkf_1_C_C,C,C,55,69,,U,mapped,75,*,proximity<=5A,3.128,N4,OP1,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,108,HA,,chain,3rkf_1_D_D,D,D,13,27,,G,mapped,31,*,proximity<=5A,3.202,N2,OP1,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,108,HA,,chain,3rkf_1_D_D,D,D,52,66,,A,mapped,71,*,proximity<=5A,4.318,N5,O3',1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,108,HA,,chain,3rkf_1_D_D,D,D,53,67,,U,mapped,73,*,proximity<=5A,2.938,N5,OP1,1 atom pairs; asymmetric unit
+3rkf,rcsb_ligand_neighbors,NCO,D,108,HA,,chain,3rkf_1_D_D,D,D,54,68,,G,mapped,74,*,proximity<=5A,3.242,N1,OP1,1 atom pairs; asymmetric unit
+3rkf,pdbe_binding_sites_v2,NCO,,,,bm6,entity,,,,7,21,,A,mapped,25,*,,,,,"entity-level; bestChainId=A; bms=bm2,bm3,bm4,bm5,bm6"
+3rkf,pdbe_binding_sites_v2,NCO,,,,bm6,entity,,,,8,22,,U,mapped,26,*,,,,,"entity-level; bestChainId=A; bms=bm2,bm3,bm4,bm5,bm6"
+3rkf,pdbe_binding_sites_v2,NCO,,,,bm3,entity,,,,16,30,,U,mapped,34,*,,,,,"entity-level; bestChainId=A; bms=bm2,bm3,bm4,bm5,bm6"
+3rkf,pdbe_binding_sites_v2,NCO,,,,bm3,entity,,,,17,31,,G,mapped,35,*,,,,,"entity-level; bestChainId=A; bms=bm2,bm3,bm4,bm5,bm6"
+3rkf,pdbe_binding_sites_v2,NCO,,,,bm3,entity,,,,18,32,,G,mapped,36,*,,,,,"entity-level; bestChainId=A; bms=bm2,bm3,bm4,bm5,bm6"
+3rkf,pdbe_binding_sites_v2,NCO,,,,bm2,entity,,,,33,47,,U,mapped,51,*,,,,,"entity-level; bestChainId=A; bms=bm2,bm3,bm4,bm5,bm6"
+3rkf,pdbe_binding_sites_v2,NCO,,,,bm2,entity,,,,36,50,,C,mapped,54,*,,,,,"entity-level; bestChainId=A; bms=bm2,bm3,bm4,bm5,bm6"
+3rkf,pdbe_binding_sites_v2,NCO,,,,bm2,entity,,,,37,51,,U,mapped,55,*,,,,,"entity-level; bestChainId=A; bms=bm2,bm3,bm4,bm5,bm6"
+3rkf,pdbe_binding_sites_v2,NCO,,,,bm4,entity,,,,42,56,,G,mapped,60,*,,,,,"entity-level; bestChainId=A; bms=bm2,bm3,bm4,bm5,bm6"
+3rkf,pdbe_binding_sites_v2,NCO,,,,bm3,entity,,,,52,66,,A,mapped,71,*,,,,,"entity-level; bestChainId=A; bms=bm2,bm3,bm4,bm5,bm6"
+3rkf,pdbe_binding_sites_v2,NCO,,,,bm4,entity,,,,55,69,,U,mapped,75,*,,,,,"entity-level; bestChainId=A; bms=bm2,bm3,bm4,bm5,bm6"
+3rkf,pdbe_binding_sites_v2,NCO,,,,bm5,entity,,,,65,79,,G,mapped,85,*,,,,,"entity-level; bestChainId=A; bms=bm2,bm3,bm4,bm5,bm6"
+3rkf,pdbe_binding_sites_v2,NCO,,,,bm5,entity,,,,66,80,,U,mapped,86,*,,,,,"entity-level; bestChainId=A; bms=bm2,bm3,bm4,bm5,bm6"
+9nbh,rcsb_ligand_neighbors,MG,A,201,E,bm1,chain,9nbh_1_A_A,A,A,138,138,,C,outside_mapped_region,,,proximity<=5A,4.434,MG,O2,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,A,201,E,bm1,chain,9nbh_1_A_A,A,A,141,141,,U,outside_mapped_region,,,proximity<=5A,4.568,MG,O4,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,A,201,E,bm1,chain,9nbh_1_B_B,B,B,143,143,,A,outside_mapped_region,,,proximity<=5A,4.437,MG,N1,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,A,201,E,bm1,chain,9nbh_1_C_C,C,C,143,143,,A,outside_mapped_region,,,proximity<=5A,4.375,MG,N1,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,A,201,E,bm1,chain,9nbh_1_D_D,D,D,138,138,,C,outside_mapped_region,,,proximity<=5A,4.446,MG,O2,1 atom pairs; asymmetric unit
+9nbh,pdbe_graphapi_bm_interactions,MG,A,202,F,bm2,chain,9nbh_1_A_A,A,A,137,137,,A,outside_mapped_region,,,covalent;metal_complex;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+9nbh,rcsb_ligand_neighbors,MG,A,202,F,bm2,chain,9nbh_1_A_A,A,A,137,137,,A,outside_mapped_region,,,proximity<=5A,1.782,MG,OP1,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,A,202,F,bm2,chain,9nbh_1_A_A,A,A,138,138,,C,outside_mapped_region,,,proximity<=5A,3.732,MG,N4,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,A,202,F,bm2,chain,9nbh_1_B_B,B,B,146,146,,G,outside_mapped_region,,,proximity<=5A,4.061,MG,O6,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,A,203,G,bm3,chain,9nbh_1_A_A,A,A,135,135,,C,outside_mapped_region,,,proximity<=5A,4.294,MG,O2',1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,A,203,G,bm3,chain,9nbh_1_A_A,A,A,138,138,,C,outside_mapped_region,,,proximity<=5A,4.042,MG,O2,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,A,203,G,bm3,chain,9nbh_1_A_A,A,A,140,140,,C,outside_mapped_region,,,proximity<=5A,4.134,MG,OP1,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,A,203,G,bm3,chain,9nbh_1_A_A,A,A,141,141,,U,outside_mapped_region,,,proximity<=5A,4.393,MG,OP2,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,A,203,G,bm3,chain,9nbh_1_B_B,B,B,143,143,,A,outside_mapped_region,,,proximity<=5A,3.981,MG,O2',1 atom pairs; asymmetric unit
+9nbh,pdbe_graphapi_bm_interactions,MG,A,204,H,bm4,chain,9nbh_1_A_A,A,A,148,148,,A,outside_mapped_region,,,metal_complex;vdw;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+9nbh,rcsb_ligand_neighbors,MG,A,204,H,bm4,chain,9nbh_1_A_A,A,A,148,148,,A,outside_mapped_region,,,proximity<=5A,2.257,MG,OP2,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,A,204,H,bm4,chain,9nbh_1_A_A,A,A,149,149,,A,outside_mapped_region,,,proximity<=5A,4.269,MG,N7,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,A,205,I,bm5,chain,9nbh_1_A_A,A,A,16,16,,U,mapped,1,9,proximity<=5A,4.712,MG,O4,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,A,205,I,bm5,chain,9nbh_1_A_A,A,A,119,119,,G,outside_mapped_region,,,proximity<=5A,4.039,MG,O6,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,A,205,I,bm5,chain,9nbh_1_A_A,A,A,120,120,,G,outside_mapped_region,,,proximity<=5A,4.042,MG,O6,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,B,201,J,bm6,chain,9nbh_1_A_A,A,A,143,143,,A,outside_mapped_region,,,proximity<=5A,4.426,MG,N1,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,B,201,J,bm6,chain,9nbh_1_B_B,B,B,138,138,,C,outside_mapped_region,,,proximity<=5A,4.452,MG,O2,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,B,201,J,bm6,chain,9nbh_1_B_B,B,B,141,141,,U,outside_mapped_region,,,proximity<=5A,4.603,MG,O4,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,B,201,J,bm6,chain,9nbh_1_C_C,C,C,138,138,,C,outside_mapped_region,,,proximity<=5A,4.442,MG,O2,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,B,201,J,bm6,chain,9nbh_1_D_D,D,D,143,143,,A,outside_mapped_region,,,proximity<=5A,4.363,MG,N1,1 atom pairs; asymmetric unit
+9nbh,pdbe_graphapi_bm_interactions,MG,B,202,K,bm7,chain,9nbh_1_B_B,B,B,137,137,,A,outside_mapped_region,,,covalent;metal_complex;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+9nbh,rcsb_ligand_neighbors,MG,B,202,K,bm7,chain,9nbh_1_A_A,A,A,146,146,,G,outside_mapped_region,,,proximity<=5A,4.055,MG,O6,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,B,202,K,bm7,chain,9nbh_1_B_B,B,B,137,137,,A,outside_mapped_region,,,proximity<=5A,1.798,MG,OP1,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,B,202,K,bm7,chain,9nbh_1_B_B,B,B,138,138,,C,outside_mapped_region,,,proximity<=5A,3.718,MG,N4,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,B,203,L,bm8,chain,9nbh_1_A_A,A,A,143,143,,A,outside_mapped_region,,,proximity<=5A,3.962,MG,O2',1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,B,203,L,bm8,chain,9nbh_1_B_B,B,B,135,135,,C,outside_mapped_region,,,proximity<=5A,4.286,MG,O2',1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,B,203,L,bm8,chain,9nbh_1_B_B,B,B,138,138,,C,outside_mapped_region,,,proximity<=5A,4.194,MG,O2,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,B,203,L,bm8,chain,9nbh_1_B_B,B,B,140,140,,C,outside_mapped_region,,,proximity<=5A,4.174,MG,OP1,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,B,203,L,bm8,chain,9nbh_1_B_B,B,B,141,141,,U,outside_mapped_region,,,proximity<=5A,4.366,MG,OP2,1 atom pairs; asymmetric unit
+9nbh,pdbe_graphapi_bm_interactions,MG,B,204,M,bm9,chain,9nbh_1_B_B,B,B,148,148,,A,outside_mapped_region,,,metal_complex;vdw;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+9nbh,rcsb_ligand_neighbors,MG,B,204,M,bm9,chain,9nbh_1_B_B,B,B,148,148,,A,outside_mapped_region,,,proximity<=5A,2.261,MG,OP2,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,B,204,M,bm9,chain,9nbh_1_B_B,B,B,149,149,,A,outside_mapped_region,,,proximity<=5A,4.258,MG,N7,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,B,205,N,bm10,chain,9nbh_1_B_B,B,B,16,16,,U,mapped,1,9,proximity<=5A,4.736,MG,O4,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,B,205,N,bm10,chain,9nbh_1_B_B,B,B,119,119,,G,outside_mapped_region,,,proximity<=5A,3.977,MG,O6,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,B,205,N,bm10,chain,9nbh_1_B_B,B,B,120,120,,G,outside_mapped_region,,,proximity<=5A,4.031,MG,O6,1 atom pairs; asymmetric unit
+9nbh,pdbe_graphapi_bm_interactions,MG,C,201,O,bm11,chain,9nbh_1_C_C,C,C,137,137,,A,outside_mapped_region,,,covalent;metal_complex;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+9nbh,rcsb_ligand_neighbors,MG,C,201,O,bm11,chain,9nbh_1_C_C,C,C,137,137,,A,outside_mapped_region,,,proximity<=5A,1.825,MG,OP1,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,C,201,O,bm11,chain,9nbh_1_C_C,C,C,138,138,,C,outside_mapped_region,,,proximity<=5A,3.72,MG,N4,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,C,201,O,bm11,chain,9nbh_1_D_D,D,D,146,146,,G,outside_mapped_region,,,proximity<=5A,4.036,MG,O6,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,C,201,O,bm11,chain,9nbh_1_D_D,D,D,147,147,,U,outside_mapped_region,,,proximity<=5A,4.038,MG,O4,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,C,202,P,bm12,chain,9nbh_1_C_C,C,C,135,135,,C,outside_mapped_region,,,proximity<=5A,4.261,MG,O2',1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,C,202,P,bm12,chain,9nbh_1_C_C,C,C,138,138,,C,outside_mapped_region,,,proximity<=5A,4.37,MG,O2,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,C,202,P,bm12,chain,9nbh_1_C_C,C,C,140,140,,C,outside_mapped_region,,,proximity<=5A,4.237,MG,OP1,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,C,202,P,bm12,chain,9nbh_1_C_C,C,C,141,141,,U,outside_mapped_region,,,proximity<=5A,4.314,MG,OP2,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,C,202,P,bm12,chain,9nbh_1_D_D,D,D,143,143,,A,outside_mapped_region,,,proximity<=5A,3.958,MG,O2',1 atom pairs; asymmetric unit
+9nbh,pdbe_graphapi_bm_interactions,MG,C,203,Q,bm13,chain,9nbh_1_C_C,C,C,148,148,,A,outside_mapped_region,,,metal_complex;vdw;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+9nbh,rcsb_ligand_neighbors,MG,C,203,Q,bm13,chain,9nbh_1_C_C,C,C,148,148,,A,outside_mapped_region,,,proximity<=5A,2.271,MG,OP2,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,C,203,Q,bm13,chain,9nbh_1_C_C,C,C,149,149,,A,outside_mapped_region,,,proximity<=5A,4.249,MG,N7,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,C,204,R,bm14,chain,9nbh_1_C_C,C,C,16,16,,U,mapped,1,9,proximity<=5A,4.793,MG,O4,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,C,204,R,bm14,chain,9nbh_1_C_C,C,C,119,119,,G,outside_mapped_region,,,proximity<=5A,3.883,MG,O6,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,C,204,R,bm14,chain,9nbh_1_C_C,C,C,120,120,,G,outside_mapped_region,,,proximity<=5A,4.098,MG,O6,1 atom pairs; asymmetric unit
+9nbh,pdbe_graphapi_bm_interactions,MG,D,201,S,bm15,chain,9nbh_1_D_D,D,D,137,137,,A,outside_mapped_region,,,covalent;metal_complex;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+9nbh,rcsb_ligand_neighbors,MG,D,201,S,bm15,chain,9nbh_1_C_C,C,C,147,147,,U,outside_mapped_region,,,proximity<=5A,4.06,MG,O4,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,D,201,S,bm15,chain,9nbh_1_D_D,D,D,137,137,,A,outside_mapped_region,,,proximity<=5A,1.823,MG,OP1,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,D,201,S,bm15,chain,9nbh_1_D_D,D,D,138,138,,C,outside_mapped_region,,,proximity<=5A,3.731,MG,N4,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,D,202,T,bm16,chain,9nbh_1_C_C,C,C,143,143,,A,outside_mapped_region,,,proximity<=5A,4.317,MG,O2',1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,D,202,T,bm16,chain,9nbh_1_D_D,D,D,135,135,,C,outside_mapped_region,,,proximity<=5A,4.022,MG,O2',1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,D,202,T,bm16,chain,9nbh_1_D_D,D,D,138,138,,C,outside_mapped_region,,,proximity<=5A,3.909,MG,O2,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,D,202,T,bm16,chain,9nbh_1_D_D,D,D,140,140,,C,outside_mapped_region,,,proximity<=5A,4.126,MG,OP1,1 atom pairs; asymmetric unit
+9nbh,pdbe_graphapi_bm_interactions,MG,D,203,U,bm17,chain,9nbh_1_D_D,D,D,148,148,,A,outside_mapped_region,,,metal_complex;vdw;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+9nbh,rcsb_ligand_neighbors,MG,D,203,U,bm17,chain,9nbh_1_D_D,D,D,148,148,,A,outside_mapped_region,,,proximity<=5A,2.246,MG,OP2,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,D,203,U,bm17,chain,9nbh_1_D_D,D,D,149,149,,A,outside_mapped_region,,,proximity<=5A,4.332,MG,N7,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,D,204,V,bm18,chain,9nbh_1_D_D,D,D,16,16,,U,mapped,1,9,proximity<=5A,4.725,MG,O4,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,D,204,V,bm18,chain,9nbh_1_D_D,D,D,119,119,,G,outside_mapped_region,,,proximity<=5A,3.916,MG,O6,1 atom pairs; asymmetric unit
+9nbh,rcsb_ligand_neighbors,MG,D,204,V,bm18,chain,9nbh_1_D_D,D,D,120,120,,G,outside_mapped_region,,,proximity<=5A,4.049,MG,O6,1 atom pairs; asymmetric unit
+9nbh,pdbe_binding_sites_v2,MG,,,,bm7,entity,,,,137,137,,A,outside_mapped_region,,,,,,,"entity-level; bestChainId=A; bms=bm11,bm13,bm15,bm17,bm2,bm4,bm7,bm9"
+9nbh,pdbe_binding_sites_v2,MG,,,,bm15,entity,,,,137,137,,A,outside_mapped_region,,,,,,,"entity-level; bestChainId=A; bms=bm11,bm13,bm15,bm17,bm2,bm4,bm7,bm9"
+9nbh,pdbe_binding_sites_v2,MG,,,,bm11,entity,,,,137,137,,A,outside_mapped_region,,,,,,,"entity-level; bestChainId=A; bms=bm11,bm13,bm15,bm17,bm2,bm4,bm7,bm9"
+9nbh,pdbe_binding_sites_v2,MG,,,,bm2,entity,,,,137,137,,A,outside_mapped_region,,,,,,,"entity-level; bestChainId=A; bms=bm11,bm13,bm15,bm17,bm2,bm4,bm7,bm9"
+9nbh,pdbe_binding_sites_v2,MG,,,,bm17,entity,,,,148,148,,A,outside_mapped_region,,,,,,,"entity-level; bestChainId=A; bms=bm11,bm13,bm15,bm17,bm2,bm4,bm7,bm9"
+9nbh,pdbe_binding_sites_v2,MG,,,,bm9,entity,,,,148,148,,A,outside_mapped_region,,,,,,,"entity-level; bestChainId=A; bms=bm11,bm13,bm15,bm17,bm2,bm4,bm7,bm9"
+9nbh,pdbe_binding_sites_v2,MG,,,,bm13,entity,,,,148,148,,A,outside_mapped_region,,,,,,,"entity-level; bestChainId=A; bms=bm11,bm13,bm15,bm17,bm2,bm4,bm7,bm9"
+9nbh,pdbe_binding_sites_v2,MG,,,,bm4,entity,,,,148,148,,A,outside_mapped_region,,,,,,,"entity-level; bestChainId=A; bms=bm11,bm13,bm15,bm17,bm2,bm4,bm7,bm9"
+9ndd,pdbe_graphapi_bm_interactions,OXG,A,201,E,bm1,chain,9ndd_1_A_A,A,A,40,40,,A,mapped,25,*,CATIONPI;polar;vdw_clash;weak_polar,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,A,201,E,bm1,chain,9ndd_1_A_A,A,A,41,41,,U,mapped,26,*,OF;aromatic;carbonyl;polar;vdw_clash;weak_polar,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,A,201,E,bm1,chain,9ndd_1_A_A,A,A,65,65,,C,mapped,52,8,polar;weak_hbond,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,A,201,E,bm1,chain,9ndd_1_A_A,A,A,68,68,,U,mapped,55,*,EE;aromatic;hbond;polar;vdw;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,A,201,E,bm1,chain,9ndd_1_A_A,A,A,69,69,,A,mapped,56,*,CARBONPI;CATIONPI;OF;polar;vdw;vdw_clash;weak_polar,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,A,201,E,bm1,chain,9ndd_1_A_A,A,A,90,90,,A,mapped,79,*,polar;vdw;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,A,201,E,bm1,chain,9ndd_1_A_A,A,A,91,91,,C,mapped,80,*,EE;aromatic;hbond;polar;vdw;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,A,201,E,bm1,chain,9ndd_1_A_A,A,A,92,92,,U,mapped,81,*,OF;aromatic;polar;vdw;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_ligand_interactions,OXG,A,201,E,bm1,chain,9ndd_1_A_A,A,A,40,40,,A,mapped,25,*,CATIONPI;polar;vdw_clash;weak_polar,3.01,C2;C4;C5;C6;C8;N1;N3;N7;O8,C2;C2';N1;N3;O2',"atom-level Arpeggio, 7 atom pairs; preferred assembly only"
+9ndd,pdbe_graphapi_ligand_interactions,OXG,A,201,E,bm1,chain,9ndd_1_A_A,A,A,41,41,,U,mapped,26,*,OF;aromatic;carbonyl;polar;vdw_clash;weak_polar,2.98,C2;C4;C5;C6;N1;N3;N7;O6;O8,C2;C4;C5;C6;N1;N3;O2',"atom-level Arpeggio, 8 atom pairs; preferred assembly only"
+9ndd,pdbe_graphapi_ligand_interactions,OXG,A,201,E,bm1,chain,9ndd_1_A_A,A,A,65,65,,C,mapped,52,8,polar;weak_hbond,3.49,O8,C4';O2',"atom-level Arpeggio, 2 atom pairs; preferred assembly only"
+9ndd,pdbe_graphapi_ligand_interactions,OXG,A,201,E,bm1,chain,9ndd_1_A_A,A,A,68,68,,U,mapped,55,*,EE;aromatic;hbond;polar;vdw;vdw_clash,2.78,C2;C4;C5;C6;N1;N2;N3;N9,C2;C4;C5;C6;N1;N3;O2;O4,"atom-level Arpeggio, 12 atom pairs; preferred assembly only"
+9ndd,pdbe_graphapi_ligand_interactions,OXG,A,201,E,bm1,chain,9ndd_1_A_A,A,A,69,69,,A,mapped,56,*,CARBONPI;CATIONPI;OF;polar;vdw;vdw_clash;weak_polar,2.97,C2;C4;C5;C6;N1;N3,C2;C4;C5;C8;N1;N3;N7;N9,"atom-level Arpeggio, 13 atom pairs; preferred assembly only"
+9ndd,pdbe_graphapi_ligand_interactions,OXG,A,201,E,bm1,chain,9ndd_1_A_A,A,A,90,90,,A,mapped,79,*,polar;vdw;vdw_clash,2.7,C6;N1;O6,N6,"atom-level Arpeggio, 3 atom pairs; preferred assembly only"
+9ndd,pdbe_graphapi_ligand_interactions,OXG,A,201,E,bm1,chain,9ndd_1_A_A,A,A,91,91,,C,mapped,80,*,EE;aromatic;hbond;polar;vdw;vdw_clash,2.22,C2;C4;C5;C6;N1;N2;N3;O6,C2;C4;C5;C6;N1;N3;N4;O2,"atom-level Arpeggio, 16 atom pairs; preferred assembly only"
+9ndd,pdbe_graphapi_ligand_interactions,OXG,A,201,E,bm1,chain,9ndd_1_A_A,A,A,92,92,,U,mapped,81,*,OF;aromatic;polar;vdw;vdw_clash,2.91,C2;C4;C5;C6;N1;N2;N3,C1';C2;C4;C5;C6;N1;N3;O2,"atom-level Arpeggio, 12 atom pairs; preferred assembly only"
+9ndd,rcsb_ligand_neighbors,OXG,A,201,E,bm1,chain,9ndd_1_A_A,A,A,40,40,,A,mapped,25,*,proximity<=5A,3.007,O8,O2',1 atom pairs; asymmetric unit
+9ndd,rcsb_ligand_neighbors,OXG,A,201,E,bm1,chain,9ndd_1_A_A,A,A,41,41,,U,mapped,26,*,proximity<=5A,2.976,N7,O2',1 atom pairs; asymmetric unit
+9ndd,rcsb_ligand_neighbors,OXG,A,201,E,bm1,chain,9ndd_1_A_A,A,A,66,66,,U,mapped,53,9,proximity<=5A,3.529,N9,O2',1 atom pairs; asymmetric unit
+9ndd,rcsb_ligand_neighbors,OXG,A,201,E,bm1,chain,9ndd_1_A_A,A,A,68,68,,U,mapped,55,*,proximity<=5A,2.783,N3,N3,1 atom pairs; asymmetric unit
+9ndd,rcsb_ligand_neighbors,OXG,A,201,E,bm1,chain,9ndd_1_A_A,A,A,69,69,,A,mapped,56,*,proximity<=5A,2.973,C4,N1,1 atom pairs; asymmetric unit
+9ndd,rcsb_ligand_neighbors,OXG,A,201,E,bm1,chain,9ndd_1_A_A,A,A,90,90,,A,mapped,79,*,proximity<=5A,2.697,O6,N6,1 atom pairs; asymmetric unit
+9ndd,rcsb_ligand_neighbors,OXG,A,201,E,bm1,chain,9ndd_1_A_A,A,A,91,91,,C,mapped,80,*,proximity<=5A,2.218,N2,O2,1 atom pairs; asymmetric unit
+9ndd,rcsb_ligand_neighbors,OXG,A,201,E,bm1,chain,9ndd_1_A_A,A,A,92,92,,U,mapped,81,*,proximity<=5A,2.914,N3,O2,1 atom pairs; asymmetric unit
+9ndd,pdbe_graphapi_bm_interactions,OXG,B,201,F,bm2,chain,9ndd_1_B_B,B,B,40,40,,A,mapped,25,*,CATIONPI;polar;vdw;vdw_clash;weak_polar,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,B,201,F,bm2,chain,9ndd_1_B_B,B,B,41,41,,U,mapped,26,*,OF;aromatic;carbonyl;polar;vdw_clash;weak_polar,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,B,201,F,bm2,chain,9ndd_1_B_B,B,B,65,65,,C,mapped,52,8,weak_hbond,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,B,201,F,bm2,chain,9ndd_1_B_B,B,B,67,67,,C,mapped,54,*,polar,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,B,201,F,bm2,chain,9ndd_1_B_B,B,B,68,68,,U,mapped,55,*,EE;aromatic;hbond;polar;vdw;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,B,201,F,bm2,chain,9ndd_1_B_B,B,B,69,69,,A,mapped,56,*,CARBONPI;CATIONPI;OF;aromatic;polar;vdw;vdw_clash;weak_polar,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,B,201,F,bm2,chain,9ndd_1_B_B,B,B,90,90,,A,mapped,79,*,hbond;polar;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,B,201,F,bm2,chain,9ndd_1_B_B,B,B,91,91,,C,mapped,80,*,EE;aromatic;hbond;polar;vdw;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,B,201,F,bm2,chain,9ndd_1_B_B,B,B,92,92,,U,mapped,81,*,OF;aromatic;polar;vdw;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+9ndd,rcsb_ligand_neighbors,OXG,B,201,F,bm2,chain,9ndd_1_B_B,B,B,40,40,,A,mapped,25,*,proximity<=5A,3.076,O8,C2',1 atom pairs; asymmetric unit
+9ndd,rcsb_ligand_neighbors,OXG,B,201,F,bm2,chain,9ndd_1_B_B,B,B,41,41,,U,mapped,26,*,proximity<=5A,3.025,N7,O2',1 atom pairs; asymmetric unit
+9ndd,rcsb_ligand_neighbors,OXG,B,201,F,bm2,chain,9ndd_1_B_B,B,B,68,68,,U,mapped,55,*,proximity<=5A,2.789,N9,O4,1 atom pairs; asymmetric unit
+9ndd,rcsb_ligand_neighbors,OXG,B,201,F,bm2,chain,9ndd_1_B_B,B,B,69,69,,A,mapped,56,*,proximity<=5A,2.965,C4,N1,1 atom pairs; asymmetric unit
+9ndd,rcsb_ligand_neighbors,OXG,B,201,F,bm2,chain,9ndd_1_B_B,B,B,90,90,,A,mapped,79,*,proximity<=5A,2.642,O6,N6,1 atom pairs; asymmetric unit
+9ndd,rcsb_ligand_neighbors,OXG,B,201,F,bm2,chain,9ndd_1_B_B,B,B,91,91,,C,mapped,80,*,proximity<=5A,2.243,N2,O2,1 atom pairs; asymmetric unit
+9ndd,rcsb_ligand_neighbors,OXG,B,201,F,bm2,chain,9ndd_1_B_B,B,B,92,92,,U,mapped,81,*,proximity<=5A,2.905,N3,O2,1 atom pairs; asymmetric unit
+9ndd,pdbe_graphapi_bm_interactions,OXG,C,201,G,bm3,chain,9ndd_1_C_C,C,C,40,40,,A,mapped,25,*,CATIONPI;polar;vdw;vdw_clash;weak_polar,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,C,201,G,bm3,chain,9ndd_1_C_C,C,C,41,41,,U,mapped,26,*,OF;aromatic;carbonyl;polar;vdw_clash;weak_polar,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,C,201,G,bm3,chain,9ndd_1_C_C,C,C,65,65,,C,mapped,52,8,weak_hbond,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,C,201,G,bm3,chain,9ndd_1_C_C,C,C,67,67,,C,mapped,54,*,polar,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,C,201,G,bm3,chain,9ndd_1_C_C,C,C,68,68,,U,mapped,55,*,EE;aromatic;hbond;polar;vdw;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,C,201,G,bm3,chain,9ndd_1_C_C,C,C,69,69,,A,mapped,56,*,CARBONPI;CATIONPI;OF;aromatic;polar;vdw;vdw_clash;weak_polar,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,C,201,G,bm3,chain,9ndd_1_C_C,C,C,90,90,,A,mapped,79,*,polar;vdw;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,C,201,G,bm3,chain,9ndd_1_C_C,C,C,91,91,,C,mapped,80,*,EE;aromatic;hbond;polar;vdw;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,C,201,G,bm3,chain,9ndd_1_C_C,C,C,92,92,,U,mapped,81,*,OF;aromatic;polar;vdw;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_ligand_interactions,OXG,C,201,G,bm3,chain,9ndd_1_C_C,C,C,40,40,,A,mapped,25,*,CATIONPI;polar;vdw;vdw_clash;weak_polar,3.07,C2;C4;C5;C6;C8;N1;N3;N7;O8,C2;C2';N1;N3;O2',"atom-level Arpeggio, 7 atom pairs; preferred assembly only"
+9ndd,pdbe_graphapi_ligand_interactions,OXG,C,201,G,bm3,chain,9ndd_1_C_C,C,C,41,41,,U,mapped,26,*,OF;aromatic;carbonyl;polar;vdw_clash;weak_polar,2.99,C2;C4;C5;C6;N1;N3;N7;O6;O8,C2;C4;C5;C6;N1;N3;O2',"atom-level Arpeggio, 8 atom pairs; preferred assembly only"
+9ndd,pdbe_graphapi_ligand_interactions,OXG,C,201,G,bm3,chain,9ndd_1_C_C,C,C,65,65,,C,mapped,52,8,weak_hbond,3.88,O8,C4',"atom-level Arpeggio, 1 atom pairs; preferred assembly only"
+9ndd,pdbe_graphapi_ligand_interactions,OXG,C,201,G,bm3,chain,9ndd_1_C_C,C,C,67,67,,C,mapped,54,*,polar,3.43,N3,N4,"atom-level Arpeggio, 1 atom pairs; preferred assembly only"
+9ndd,pdbe_graphapi_ligand_interactions,OXG,C,201,G,bm3,chain,9ndd_1_C_C,C,C,68,68,,U,mapped,55,*,EE;aromatic;hbond;polar;vdw;vdw_clash,2.76,C2;C4;C5;C6;N1;N2;N3;N9,C2;C4;C5;C6;N1;N3;O2;O4,"atom-level Arpeggio, 12 atom pairs; preferred assembly only"
+9ndd,pdbe_graphapi_ligand_interactions,OXG,C,201,G,bm3,chain,9ndd_1_C_C,C,C,69,69,,A,mapped,56,*,CARBONPI;CATIONPI;OF;aromatic;polar;vdw;vdw_clash;weak_polar,2.98,C2;C4;C5;C6;N1;N3,C2;C4;C5;C8;N1;N3;N7;N9,"atom-level Arpeggio, 16 atom pairs; preferred assembly only"
+9ndd,pdbe_graphapi_ligand_interactions,OXG,C,201,G,bm3,chain,9ndd_1_C_C,C,C,90,90,,A,mapped,79,*,polar;vdw;vdw_clash,2.63,C6;N1;O6,N6,"atom-level Arpeggio, 3 atom pairs; preferred assembly only"
+9ndd,pdbe_graphapi_ligand_interactions,OXG,C,201,G,bm3,chain,9ndd_1_C_C,C,C,91,91,,C,mapped,80,*,EE;aromatic;hbond;polar;vdw;vdw_clash,2.26,C2;C4;C5;C6;N1;N2;N3;O6,C2;C4;C5;C6;N1;N3;N4;O2,"atom-level Arpeggio, 16 atom pairs; preferred assembly only"
+9ndd,pdbe_graphapi_ligand_interactions,OXG,C,201,G,bm3,chain,9ndd_1_C_C,C,C,92,92,,U,mapped,81,*,OF;aromatic;polar;vdw;vdw_clash,2.88,C2;C4;C5;C6;N1;N2;N3,C1';C2;C4;C5;C6;N1;N3;O2,"atom-level Arpeggio, 12 atom pairs; preferred assembly only"
+9ndd,rcsb_ligand_neighbors,OXG,C,201,G,bm3,chain,9ndd_1_C_C,C,C,40,40,,A,mapped,25,*,proximity<=5A,3.067,O8,C2',1 atom pairs; asymmetric unit
+9ndd,rcsb_ligand_neighbors,OXG,C,201,G,bm3,chain,9ndd_1_C_C,C,C,41,41,,U,mapped,26,*,proximity<=5A,2.995,N7,O2',1 atom pairs; asymmetric unit
+9ndd,rcsb_ligand_neighbors,OXG,C,201,G,bm3,chain,9ndd_1_C_C,C,C,68,68,,U,mapped,55,*,proximity<=5A,2.761,N9,O4,1 atom pairs; asymmetric unit
+9ndd,rcsb_ligand_neighbors,OXG,C,201,G,bm3,chain,9ndd_1_C_C,C,C,69,69,,A,mapped,56,*,proximity<=5A,2.98,C4,N1,1 atom pairs; asymmetric unit
+9ndd,rcsb_ligand_neighbors,OXG,C,201,G,bm3,chain,9ndd_1_C_C,C,C,90,90,,A,mapped,79,*,proximity<=5A,2.63,O6,N6,1 atom pairs; asymmetric unit
+9ndd,rcsb_ligand_neighbors,OXG,C,201,G,bm3,chain,9ndd_1_C_C,C,C,91,91,,C,mapped,80,*,proximity<=5A,2.263,N2,O2,1 atom pairs; asymmetric unit
+9ndd,rcsb_ligand_neighbors,OXG,C,201,G,bm3,chain,9ndd_1_C_C,C,C,92,92,,U,mapped,81,*,proximity<=5A,2.88,N3,O2,1 atom pairs; asymmetric unit
+9ndd,pdbe_graphapi_bm_interactions,OXG,D,201,H,bm4,chain,9ndd_1_D_D,D,D,40,40,,A,mapped,25,*,CATIONPI;polar;vdw;vdw_clash;weak_polar,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,D,201,H,bm4,chain,9ndd_1_D_D,D,D,41,41,,U,mapped,26,*,OF;aromatic;carbonyl;polar;vdw;vdw_clash;weak_polar,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,D,201,H,bm4,chain,9ndd_1_D_D,D,D,65,65,,C,mapped,52,8,polar;weak_hbond,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,D,201,H,bm4,chain,9ndd_1_D_D,D,D,68,68,,U,mapped,55,*,EE;aromatic;hbond;polar;vdw;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,D,201,H,bm4,chain,9ndd_1_D_D,D,D,69,69,,A,mapped,56,*,CARBONPI;CATIONPI;OF;polar;vdw;vdw_clash;weak_polar,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,D,201,H,bm4,chain,9ndd_1_D_D,D,D,90,90,,A,mapped,79,*,polar;vdw;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,D,201,H,bm4,chain,9ndd_1_D_D,D,D,91,91,,C,mapped,80,*,EE;aromatic;hbond;polar;vdw;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+9ndd,pdbe_graphapi_bm_interactions,OXG,D,201,H,bm4,chain,9ndd_1_D_D,D,D,92,92,,U,mapped,81,*,OF;aromatic;polar;vdw;vdw_clash,,,,residue-level Arpeggio; preferred assembly only
+9ndd,rcsb_ligand_neighbors,OXG,D,201,H,bm4,chain,9ndd_1_D_D,D,D,40,40,,A,mapped,25,*,proximity<=5A,2.916,O8,O2',1 atom pairs; asymmetric unit
+9ndd,rcsb_ligand_neighbors,OXG,D,201,H,bm4,chain,9ndd_1_D_D,D,D,41,41,,U,mapped,26,*,proximity<=5A,3.022,N7,O2',1 atom pairs; asymmetric unit
+9ndd,rcsb_ligand_neighbors,OXG,D,201,H,bm4,chain,9ndd_1_D_D,D,D,65,65,,C,mapped,52,8,proximity<=5A,3.324,O8,O2',1 atom pairs; asymmetric unit
+9ndd,rcsb_ligand_neighbors,OXG,D,201,H,bm4,chain,9ndd_1_D_D,D,D,66,66,,U,mapped,53,9,proximity<=5A,3.4,N9,O2',1 atom pairs; asymmetric unit
+9ndd,rcsb_ligand_neighbors,OXG,D,201,H,bm4,chain,9ndd_1_D_D,D,D,68,68,,U,mapped,55,*,proximity<=5A,2.775,N9,O4,1 atom pairs; asymmetric unit
+9ndd,rcsb_ligand_neighbors,OXG,D,201,H,bm4,chain,9ndd_1_D_D,D,D,69,69,,A,mapped,56,*,proximity<=5A,2.97,C4,N1,1 atom pairs; asymmetric unit
+9ndd,rcsb_ligand_neighbors,OXG,D,201,H,bm4,chain,9ndd_1_D_D,D,D,90,90,,A,mapped,79,*,proximity<=5A,2.753,O6,N6,1 atom pairs; asymmetric unit
+9ndd,rcsb_ligand_neighbors,OXG,D,201,H,bm4,chain,9ndd_1_D_D,D,D,91,91,,C,mapped,80,*,proximity<=5A,2.21,N2,O2,1 atom pairs; asymmetric unit
+9ndd,rcsb_ligand_neighbors,OXG,D,201,H,bm4,chain,9ndd_1_D_D,D,D,92,92,,U,mapped,81,*,proximity<=5A,2.909,N3,O2,1 atom pairs; asymmetric unit
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm1,entity,,,,40,40,,A,mapped,25,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm2,entity,,,,40,40,,A,mapped,25,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm3,entity,,,,40,40,,A,mapped,25,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm4,entity,,,,40,40,,A,mapped,25,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm1,entity,,,,41,41,,U,mapped,26,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm2,entity,,,,41,41,,U,mapped,26,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm3,entity,,,,41,41,,U,mapped,26,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm4,entity,,,,41,41,,U,mapped,26,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm1,entity,,,,65,65,,C,mapped,52,8,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm2,entity,,,,65,65,,C,mapped,52,8,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm3,entity,,,,65,65,,C,mapped,52,8,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm4,entity,,,,65,65,,C,mapped,52,8,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm2,entity,,,,67,67,,C,mapped,54,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm3,entity,,,,67,67,,C,mapped,54,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm2,entity,,,,68,68,,U,mapped,55,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm3,entity,,,,68,68,,U,mapped,55,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm1,entity,,,,68,68,,U,mapped,55,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm4,entity,,,,68,68,,U,mapped,55,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm2,entity,,,,69,69,,A,mapped,56,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm3,entity,,,,69,69,,A,mapped,56,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm1,entity,,,,69,69,,A,mapped,56,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm4,entity,,,,69,69,,A,mapped,56,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm1,entity,,,,90,90,,A,mapped,79,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm2,entity,,,,90,90,,A,mapped,79,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm3,entity,,,,90,90,,A,mapped,79,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm4,entity,,,,90,90,,A,mapped,79,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm1,entity,,,,91,91,,C,mapped,80,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm2,entity,,,,91,91,,C,mapped,80,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm3,entity,,,,91,91,,C,mapped,80,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm4,entity,,,,91,91,,C,mapped,80,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm1,entity,,,,92,92,,U,mapped,81,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm2,entity,,,,92,92,,U,mapped,81,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm3,entity,,,,92,92,,U,mapped,81,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"
+9ndd,pdbe_binding_sites_v2,OXG,,,,bm4,entity,,,,92,92,,U,mapped,81,*,,,,,"entity-level; bestChainId=D; bms=bm1,bm2,bm3,bm4"

@@ -144,7 +144,8 @@ def orient_instance(ref_map: dict[str, Any], tgt_map: dict[str, Any], ref_xyz: d
 
 
 def build_orientation(fam_dir: Path, cif_for: Any, out_path: Optional[Path] = None) -> dict[str, Any]:
-    """Compute transforms for every instance of a built family onto its display representative. `cif_for(pdb_id) -> Path`."""
+    """Compute transforms for every instance of a built family onto its display representative. `cif_for(instance row) -> Path`
+    (whole-entry mmCIF, or the instance's own chain file for selection builds)."""
     from .mmcif import atom_site_coords
     family = json.load(open(fam_dir / "family.json"))
     instances = json.load(open(fam_dir / "instances.json"))
@@ -152,13 +153,13 @@ def build_orientation(fam_dir: Path, cif_for: Any, out_path: Optional[Path] = No
     if not ref:
         raise RuntimeError("no representative to use as reference")
     ref_map = json.load(open(fam_dir / ref["mapping_file"]))
-    ref_xyz = atom_site_coords(cif_for(ref["pdb_id"]), ref["label_asym_id"], ref["entity_id"])
+    ref_xyz = atom_site_coords(cif_for(ref), ref["label_asym_id"], ref["entity_id"])
     transforms: dict[str, Any] = {}
     xyz_cache: dict[tuple[str, str, int], dict[int, dict[str, tuple[float, float, float]]]] = {}
     for inst in instances:
         key = (inst["pdb_id"], inst["label_asym_id"], inst["entity_id"])
         if key not in xyz_cache:
-            xyz_cache[key] = atom_site_coords(cif_for(inst["pdb_id"]), inst["label_asym_id"], inst["entity_id"])
+            xyz_cache[key] = atom_site_coords(cif_for(inst), inst["label_asym_id"], inst["entity_id"])
         tgt_map = json.load(open(fam_dir / inst["mapping_file"]))
         transforms[inst["seq_name"]] = orient_instance(ref_map, tgt_map, ref_xyz, xyz_cache[key], ref["n_match_with_coordinates"], inst["n_match_with_coordinates"])
     out = {

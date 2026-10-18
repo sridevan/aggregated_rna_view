@@ -1,4 +1,5 @@
 import { expect, test, type Page } from '@playwright/test'
+import { selectColumn } from './helpers'
 import { mkdirSync } from 'node:fs'
 
 type Hook = { __rnaExplorer: { bgColor?: number; structuresLoaded?: number; orientationApplied?: { pdbId: string; rmsd: number; n_pairs: number; fit_quality: string } | null; lastMolstarSelection?: { labelSeqIds: number[] }; lastView?: { dir: number[]; up: number[] }; getCamera: () => { position: number[]; target: number[]; up: number[] } | null; selection: { positions: number[] } } }
@@ -7,16 +8,14 @@ const ready = async (page: Page, pdb: string) => { await expect(page.getByTestId
 const dirOf = (cam: { position: number[]; target: number[] }) => { const d = cam.target.map((t, i) => t - cam.position[i]); const l = Math.hypot(...d); return d.map((x) => x / l) }
 
 test('single representative card; switching structures keeps a white canvas and a white overlay while loading', async ({ page }) => {
-  await page.goto('/')
+  await page.goto('/RF00167')
   await expect(page.getByTestId('display-representative')).toContainText('4FE5 chain B')
   await expect(page.getByTestId('representative')).toHaveCount(0)
   await ready(page, '4fe5')
   expect((await hook(page)).bg).toBe(0xffffff)
-  await page.getByTestId('tab-structures').click()
   const seq = ['1y26_1_X_A', '1y27_1_X_A', '3rkf_1_A_A']
   for (const s of seq) {
-    await page.getByTestId('instance-search').fill(s.slice(0, 4))
-    await page.getByTestId(`row-${s}`).click()
+    await page.getByTestId('instance-select').selectOption(s)                         // the single-instance Mol* view is in the Family Overview
     // while loading: overlay present and container white; after: renderer background white, exactly one structure loaded
     await expect(page.getByTestId('molstar-loading-overlay')).toBeVisible()
     expect(await page.getByTestId('molstar-loading-overlay').evaluate((e) => getComputedStyle(e).backgroundColor)).toBe('rgb(255, 255, 255)')
@@ -28,17 +27,19 @@ test('single representative card; switching structures keeps a white canvas and 
 })
 
 test('precomputed orientation is applied (not for insufficient fits), camera direction is fixed, selection still maps after the transform', async ({ page }) => {
-  await page.goto('/')
-  await page.getByTestId('tab-annotations').click()
+  await page.goto('/RF00167')
   await page.getByTestId('instance-select').selectOption('1y26_1_X_A')
   await ready(page, '1y26')
   let h = await hook(page)
   expect(h.orient).toMatchObject({ pdbId: '1y26', fit_quality: 'good', n_pairs: 67 }); expect(h.orient!.rmsd).toBeCloseTo(1.8984, 3)
   await expect(page.getByTestId('molstar-viewer')).toHaveAttribute('data-oriented', 'true')
-  await expect(page.getByTestId('orientation-badge')).toContainText('RMSD 1.90 Å over 67 C4′ pairs (good)')
+  await expect(page.getByTestId('orientation-badge')).toHaveCount(0)                                         // no metadata footer under Mol*
+  await page.getByTestId('viewer-details-toggle').click()                                                     // alignment metadata lives in Viewer details
+  await expect(page.getByTestId('alignment-rmsd')).toHaveText('1.90 Å'); await expect(page.getByTestId('alignment-matched-atom-pairs')).toHaveText('67 (67 C4′)')
+  await expect(page.getByTestId('alignment-alignment-quality')).toHaveText('good'); await expect(page.getByTestId('alignment-reference-structure')).toHaveText('4FE5 B')
   const d1 = dirOf(h.cam!)
   // selection after the transform: consensus 50 -> label_seq_id 34 highlighted, camera unchanged
-  await page.getByTestId('goto-input').fill('50'); await page.getByTestId('goto-button').click()
+  await selectColumn(page, 50)
   await expect(page.getByTestId('sel-highlightable')).toContainText('50 → G34 (auth 46')
   await expect.poll(() => page.evaluate(() => (window as unknown as Hook).__rnaExplorer.lastMolstarSelection?.labelSeqIds)).toEqual([34])
   await page.waitForTimeout(500)
@@ -54,11 +55,11 @@ test('precomputed orientation is applied (not for insufficient fits), camera dir
   // reference: identity; insufficient fit (9nbh): shown as deposited
   await page.getByTestId('instance-select').selectOption('4fe5_1_B_A')
   await ready(page, '4fe5')
-  await expect(page.getByTestId('orientation-badge')).toContainText('reference structure')
+  await expect(page.getByTestId('alignment-reference-structure')).toHaveText('4FE5 B (this structure)'); await expect(page.getByTestId('alignment-rmsd')).toHaveText('0.00 Å')
   await page.getByTestId('instance-select').selectOption('9nbh_1_A_A')
   await ready(page, '9nbh')
   await expect(page.getByTestId('molstar-viewer')).toHaveAttribute('data-oriented', 'false')
-  await expect(page.getByTestId('orientation-badge')).toContainText('as deposited (fit insufficient')
+  await expect(page.getByTestId('alignment-superposition')).toHaveText('Shown as deposited (fit insufficient)'); await expect(page.getByTestId('alignment-alignment-quality')).toHaveText('insufficient')
   // reset orientation restores the fixed direction after the user rotates the camera
   await page.getByTestId('instance-select').selectOption('1y26_1_X_A')
   await ready(page, '1y26')
@@ -75,8 +76,7 @@ test('precomputed orientation is applied (not for insufficient fits), camera dir
 test('screenshots of several structures in the common reference orientation', async ({ page }) => {
   mkdirSync('../docs/screenshots', { recursive: true })
   await page.setViewportSize({ width: 1400, height: 1000 })
-  await page.goto('/')
-  await page.getByTestId('tab-annotations').click()
+  await page.goto('/RF00167')
   for (const s of ['4fe5_1_B_A', '1y26_1_X_A', '1y27_1_X_A', '3rkf_1_A_A', '2xnw_1_A_A']) {
     await page.getByTestId('instance-select').selectOption(s)
     await ready(page, s.slice(0, 4))

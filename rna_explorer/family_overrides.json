@@ -1,0 +1,11 @@
+{
+ "_comment": "Per-family choices that replace an automatic rule. Each records who chose it, when and why; the automatic result is kept in the output for comparison.",
+ "RF00177": {
+  "display_representative": {
+   "seq_name": "4v9d_1_BA_Y",
+   "reason": "RAD reference structure used by the research head-rotation analysis (head rotation 0.0 deg, classical tRNA state); all 1513 matched positions observed; PDBe 2D available. The automatic rule picks 4V9O PG, whose head is rotated by 10.7 deg, which would make a rotated state the orientation frame.",
+   "chosen_by": "user",
+   "date": "2026-10-17"
+  }
+ }
+}

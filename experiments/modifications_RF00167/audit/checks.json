@@ -1,0 +1,13 @@
+{
+ "pdbe_records_not_on_mapped_instance": [
+  0,
+  []
+ ],
+ "entity_poly_types": {
+  "polyribonucleotide": 84
+ },
+ "n_instances": 84,
+ "n_entries": 66,
+ "n_polymer_positions": 6601,
+ "mmcif_source": "PDBe updated mmCIF (https://www.ebi.ac.uk/pdbe/entry-files/download/<pdb>_updated.cif), pipeline cache"
+}

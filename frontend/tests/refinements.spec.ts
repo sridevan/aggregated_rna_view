@@ -1,4 +1,5 @@
 import { expect, test, type Page } from '@playwright/test'
+import { selectColumn } from './helpers'
 
 /** Milestone 2.1 refinements: representative display structure, table, tooltips, viewer framing, legends. Needs PDBe network access. */
 const waitMolstar = async (page: Page, pdb?: string) => {
@@ -7,7 +8,7 @@ const waitMolstar = async (page: Page, pdb?: string) => {
 }
 
 test('display structure follows the documented rule and loads first (4fe5/B, Rfam region, white background, no control panel)', async ({ page }) => {
-  await page.goto('/')
+  await page.goto('/RF00167')
   const fam = await (await page.request.get('/families/RF00167/family.json')).json()
   const d = fam.display_representative
   expect(d.experimental_method).toMatch(/x-ray/i); expect(d.pdbe_2d_available).toBe(true); expect(d.organism_species).not.toBe('synthetic construct')
@@ -59,18 +60,19 @@ test('display structure follows the documented rule and loads first (4fe5/B, Rfa
 })
 
 test('structures table: columns, titles, author chains, italic species, tooltips, search and pagination', async ({ page }) => {
-  await page.goto('/')
+  await page.goto('/RF00167')
   await page.getByTestId('tab-structures').click()
   const inst = await (await page.request.get('/families/RF00167/instances.json')).json()
   const headers = await page.locator('[data-testid="instance-table"] thead th > button').allTextContents()
-  expect(headers.map((h) => h.replace(/[▲▼]/g, '').trim())).toEqual(['PDB ID', 'Chain', 'Title', 'Organism', 'Method', 'Res. (Å)', 'Region', 'Seq. cov. %', 'Struct. cov. %', 'Avg PP', 'Rfam bits'])
+  expect(headers.map((h) => h.replace(/[▲▼]/g, '').trim())).toEqual(['PDB ID', 'Chain', 'Structural group', 'Title', 'Method', 'Res. (Å)'])   // compact mode beside the Structural groups panel
+  await page.getByTestId('table-mode-toggle').click()
+  const all = await page.locator('[data-testid="instance-table"] thead th > button').allTextContents()
+  expect(all.map((h) => h.replace(/[▲▼]/g, '').trim())).toEqual(['PDB ID', 'Chain', 'Structural group', 'Title', 'Organism', 'Method', 'Res. (Å)', 'Length (nt)', 'Seq. cov. %', 'Struct. cov. %', 'Avg PP', 'Rfam bits'])   // every existing column kept
+  await page.getByTestId('table-mode-toggle').click()
   await expect(page.locator('[data-testid="instance-table"] tbody tr')).toHaveCount(10)
-  // first visit opens the page holding the display representative (4FE5/B)
-  const fam = await (await page.request.get('/families/RF00167/family.json')).json()
-  const sorted = inst.slice().sort((a: { pdb_id: string }, b: { pdb_id: string }) => a.pdb_id.toUpperCase().localeCompare(b.pdb_id.toUpperCase()))
-  const repPage = Math.floor(sorted.findIndex((r: { seq_name: string }) => r.seq_name === fam.display_representative.seq_name) / 10) + 1
-  await expect(page.getByTestId('table-count')).toHaveText(`Showing ${(repPage - 1) * 10 + 1}–${Math.min(repPage * 10, inst.length)} of ${inst.length} instances`)
-  await expect(page.getByTestId('page-info')).toHaveText(`Page ${repPage} of ${Math.ceil(inst.length / 10)}`)
+  // first visit opens page 1 in the default order: the active structural group's representative on top (structures-table-order.spec.ts)
+  await expect(page.getByTestId('table-count')).toHaveText(`Showing 1–10 of ${inst.length} instances`)
+  await expect(page.getByTestId('page-info')).toHaveText(`Page 1 of ${Math.ceil(inst.length / 10)}`)
   // footer layout: count bottom-left, compact Previous / Page / Next group bottom-right, nothing beside the search field
   const footer = await page.getByTestId('table-footer').boundingBox(); const count = await page.getByTestId('table-count').boundingBox(); const nav = await page.getByTestId('pagination').boundingBox()
   expect(count!.x).toBeLessThan(footer!.x + 24); expect(nav!.x + nav!.width).toBeGreaterThan(footer!.x + footer!.width - 24)
@@ -78,7 +80,8 @@ test('structures table: columns, titles, author chains, italic species, tooltips
   const g1 = info!.x - (prev!.x + prev!.width), g2 = next!.x - (info!.x + info!.width)
   expect(Math.abs(g1 - g2)).toBeLessThan(2); expect(g1).toBeLessThan(24)
   expect(await page.locator('[data-testid="instance-table"]').locator('..').locator('..').getByTestId('table-count').count()).toBe(1)
-  // author chain only, title truncated with full title on hover
+  // author chain only, title truncated with full title on hover; organism is an expanded-mode column
+  await page.getByTestId('table-mode-toggle').click()
   const row = page.getByTestId('row-1y26_1_X_A')
   await page.getByTestId('instance-search').fill('1y26')
   await expect(row.locator('td').nth(1)).toHaveText('X')
@@ -101,10 +104,10 @@ test('structures table: columns, titles, author chains, italic species, tooltips
   expect(await tips.count()).toBeGreaterThanOrEqual(6)
   // whole table fits the 1400px viewport (no horizontal overflow hiding the last columns)
   const tbl = await page.getByTestId('instance-table').boundingBox(); expect(tbl!.x + tbl!.width).toBeLessThanOrEqual(1400)
-  await tips.nth(3).hover()
+  await page.getByRole('button', { name: 'About Seq. cov. %' }).hover()
   await expect(page.getByRole('tooltip')).toContainText(/model length \(102\)/)
   await page.mouse.move(0, 0)
-  await tips.nth(5).focus()
+  await page.getByRole('button', { name: 'About Avg PP' }).focus()
   await expect(page.getByRole('tooltip')).toContainText(/posterior probability/i)
   await page.keyboard.press('Escape')
   await expect(page.getByRole('tooltip')).toHaveCount(0)
@@ -113,10 +116,10 @@ test('structures table: columns, titles, author chains, italic species, tooltips
   await page.getByTestId('row-1y26_1_X_A').click()
   await page.getByTestId('instance-search').fill('')
   await expect(page.getByTestId('row-1y26_1_X_A')).toHaveAttribute('aria-selected', 'true')
-  await expect(page.getByTestId('page-info')).toHaveText(`Page 1 of ${Math.ceil(inst.length / 10)}`)   // 1Y26 sorts onto page 1
+  const p = Number((await page.getByTestId('page-info').textContent())!.match(/Page (\d+)/)![1])           // the selected row's page in the default group order
   await page.getByTestId('page-next').click()
-  await expect(page.getByTestId('page-info')).toHaveText(`Page 2 of ${Math.ceil(inst.length / 10)}`)
-  await expect(page.getByTestId('table-count')).toHaveText(`Showing 11–20 of ${inst.length} instances`)
+  await expect(page.getByTestId('page-info')).toHaveText(`Page ${p + 1} of ${Math.ceil(inst.length / 10)}`)
+  await expect(page.getByTestId('table-count')).toHaveText(`Showing ${p * 10 + 1}–${Math.min((p + 1) * 10, inst.length)} of ${inst.length} instances`)
   await expect(page.getByTestId('structures-current')).toContainText('1Y26 chain X')
   await page.getByTestId('page-prev').click()
   await expect(page.getByTestId('row-1y26_1_X_A')).toHaveAttribute('aria-selected', 'true')
@@ -124,40 +127,45 @@ test('structures table: columns, titles, author chains, italic species, tooltips
   await page.getByTestId('instance-search').fill('vulnificus')
   await expect(page.getByTestId('page-info')).toHaveText('Page 1 of 2')
   await expect(page.getByTestId('table-count')).toContainText('(filtered from 84)')
+  await page.getByTestId('tab-overview').click()                                   // the selected instance drives the Family Overview Mol* view
   await waitMolstar(page, '1y26')
   await expect(page.getByTestId('molstar-viewer')).toHaveAttribute('data-mode', 'region')
 })
 
-test('annotations: legend, tooltips with numerators, 2D fully visible, 3D not re-focused on selection, selection preserved across instances', async ({ page }) => {
-  await page.goto('/')
-  await page.getByTestId('tab-annotations').click()
+test('overview explorer: legend, tooltips with numerators, 2D fully visible, 3D not re-focused on selection, selection preserved across instances', async ({ page }) => {
+  await page.goto('/RF00167')
   await page.getByTestId('instance-select').selectOption('1y26_1_X_A')
+  await expect(page.getByTestId('rna2d-viewer')).toHaveAttribute('data-pdb', '1y26')   // the previous (4FE5) viewer is still 'ready' for a moment
   await expect(page.getByTestId('rna2d-viewer')).toHaveAttribute('data-status', 'ready')
   await waitMolstar(page, '1y26')
+  await expect(page.getByTestId('track-legend')).toBeHidden()   // collapsed by default
+  await page.getByTestId('legend-toggle').click()
   await expect(page.getByTestId('track-legend')).toContainText('fraction of the 29 unique mapped RNA sequences')
   await expect(page.getByTestId('track-legend')).toContainText('fraction of the 84 RNA structural instances')
   await expect(page.getByTestId('track-legend')).toContainText('provisional display classifications')
-  const titles = await page.locator('[data-testid="consensus-tracks"] rect title').allTextContents()
-  expect(titles.find((t) => t.startsWith('Consensus 50: sequence coverage'))).toMatch(/29 \/ 29 unique sequences = 100\.0 %/)
-  expect(titles.find((t) => t.startsWith('Consensus 50: structural coverage'))).toMatch(/\/ 84 instances with observed coordinates/)
-  expect(titles.find((t) => t.startsWith('Consensus 50: mean Infernal posterior'))).toMatch(/over 29 aligned unique sequences/)
+  await page.getByTestId('reference-toggle').click()                                                   // alignment confidence lives in the reference section
+  // structured tooltips with numerator / denominator (wording in overview-tooltips.spec.ts)
+  const tipAt = async (strip: string, row: string) => { await page.getByTestId(strip).locator(`[data-row="${row}"][data-tip-pos="50"]`).hover(); return page.getByTestId('track-tooltip-main').textContent() }
+  expect(await tipAt('consensus-tracks', 'seq')).toBe('29/29 unique sequences (100%)')
+  expect(await tipAt('consensus-tracks', 'str')).toMatch(/^\d+\/84 RNA instances \(/)
+  await tipAt('reference-tracks', 'pp'); await expect(page.getByTestId('track-tooltip-secondary')).toHaveText('29 aligned unique sequences')
+  await page.mouse.move(5, 5)
   // 2D topology inside its panel, not clipped
   const panel = await page.getByTestId('rna2d-viewer').boundingBox()
   const bb = await page.evaluate(() => { const rs = [...document.querySelectorAll('[data-testid="rna2d-viewer"] text.rnaviewEle')].map((e) => e.getBoundingClientRect()); return { l: Math.min(...rs.map((r) => r.left)), t: Math.min(...rs.map((r) => r.top)), r: Math.max(...rs.map((r) => r.right)), b: Math.max(...rs.map((r) => r.bottom)), n: rs.length } })
   expect(bb.n).toBe(71)
   expect(bb.l).toBeGreaterThanOrEqual(panel!.x - 1); expect(bb.r).toBeLessThanOrEqual(panel!.x + panel!.width + 1); expect(bb.t).toBeGreaterThanOrEqual(panel!.y - 1); expect(bb.b).toBeLessThanOrEqual(panel!.y + panel!.height + 1)
-  // selection colours but does not move the camera; Focus selection does
-  type W = { __rnaExplorer: { getCamera: () => unknown; lastMolstarSelection: { labelSeqIds: number[] }; selection: { positions: number[] } } }
+  // selection colours the residue and centres the camera on it
+  type W = { __rnaExplorer: { getCamera: () => unknown; lastMolstarSelection: { labelSeqIds: number[] }; selection: { positions: number[] }; lastFocus?: number[] } }
   const camera = () => page.evaluate(() => JSON.stringify((window as unknown as W).__rnaExplorer.getCamera()))
   const camBefore = await camera()
-  await page.getByTestId('goto-input').fill('50'); await page.getByTestId('goto-button').click()
+  await selectColumn(page, 50)
   await expect(page.getByTestId('sel-highlightable')).toContainText('50 → G34 (auth 46')
   await expect.poll(() => page.evaluate(() => (window as unknown as W).__rnaExplorer.lastMolstarSelection.labelSeqIds)).toEqual([34])
-  await page.waitForTimeout(800)
-  expect(await camera()).toBe(camBefore)
-  await expect(page.getByTestId('focus-selection')).toBeEnabled()
-  await page.getByTestId('focus-selection').click()   // explicit focus action sends the selection to Mol*'s camera focus
-  await expect.poll(() => page.evaluate(() => (window as unknown as { __rnaExplorer: { lastFocus?: number[] } }).__rnaExplorer.lastFocus)).toEqual([34])
+  await expect.poll(() => page.evaluate(() => (window as unknown as W).__rnaExplorer.lastFocus)).toEqual([34])
+  await expect.poll(camera).not.toBe(camBefore)
+  await expect(page.getByTestId('focus-selection')).toHaveCount(0)                                  // replaced by Clear selection in the 3D controls
+  await expect(page.getByTestId('molstar-clear-selection')).toBeEnabled()
   // switch instance: selection preserved
   await page.getByTestId('instance-select').selectOption('4fe5_1_B_A')
   await waitMolstar(page, '4fe5')

@@ -1,0 +1,4058 @@
+[
+ {
+  "seq_name": "4u20_1_CA_BB",
+  "pdb_id": "4u20",
+  "entity_id": 1,
+  "label_asym_id": "BB",
+  "auth_asym_id": "CA",
+  "chain_length": 1539,
+  "scheme_rows": 1539,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1539,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1513,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_e828e26ba784992fa59c82964cd1da29",
+   "length": 1539,
+   "cm_from": 2,
+   "cm_to": 1531,
+   "trunc": "3'",
+   "bit_score": 1570.48,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1564.7,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1539
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "4u27_1_AA_A",
+  "pdb_id": "4u27",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "AA",
+  "chain_length": 1539,
+  "scheme_rows": 1539,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1538,
+  "mapped_residues_without_coordinates": 1,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1539,
+    1539
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1513,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_e828e26ba784992fa59c82964cd1da29",
+   "length": 1539,
+   "cm_from": 2,
+   "cm_to": 1531,
+   "trunc": "3'",
+   "bit_score": 1570.48,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1564.7,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1539
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "4v4q_1_CA_AB",
+  "pdb_id": "4v4q",
+  "entity_id": 1,
+  "label_asym_id": "AB",
+  "auth_asym_id": "CA",
+  "chain_length": 1542,
+  "scheme_rows": 1542,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1530,
+  "mapped_residues_without_coordinates": 12,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1,
+    4
+   ],
+   [
+    1535,
+    1542
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1516,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_f553b61c5e0d678449dba5832d3c4229",
+   "length": 1542,
+   "cm_from": 1,
+   "cm_to": 1533,
+   "trunc": "no",
+   "bit_score": 1571.54,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1577.5,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1542
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "4v85_1_AA_A",
+  "pdb_id": "4v85",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "AA",
+  "chain_length": 1533,
+  "scheme_rows": 1533,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1532,
+  "mapped_residues_without_coordinates": 1,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1533,
+    1533
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1507,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_55187c0f44fc3024dac768ef6ef871fc",
+   "length": 1533,
+   "cm_from": 2,
+   "cm_to": 1525,
+   "trunc": "3'",
+   "bit_score": 1564.16,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1553.3,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1533
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "4v9d_1_AA_A",
+  "pdb_id": "4v9d",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "AA",
+  "chain_length": 1539,
+  "scheme_rows": 1539,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1538,
+  "mapped_residues_without_coordinates": 1,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1539,
+    1539
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1513,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_e828e26ba784992fa59c82964cd1da29",
+   "length": 1539,
+   "cm_from": 2,
+   "cm_to": 1531,
+   "trunc": "3'",
+   "bit_score": 1570.48,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1564.7,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1539
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "4v9d_1_BA_Y",
+  "pdb_id": "4v9d",
+  "entity_id": 1,
+  "label_asym_id": "Y",
+  "auth_asym_id": "BA",
+  "chain_length": 1539,
+  "scheme_rows": 1539,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1539,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1513,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_e828e26ba784992fa59c82964cd1da29",
+   "length": 1539,
+   "cm_from": 2,
+   "cm_to": 1531,
+   "trunc": "3'",
+   "bit_score": 1570.48,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1564.7,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1539
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "4v9o_35_HA_PG",
+  "pdb_id": "4v9o",
+  "entity_id": 35,
+  "label_asym_id": "PG",
+  "auth_asym_id": "HA",
+  "chain_length": 1542,
+  "scheme_rows": 1542,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1533,
+  "mapped_residues_without_coordinates": 9,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1,
+    1
+   ],
+   [
+    1535,
+    1542
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1516,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Escherichia coli K-12",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_f553b61c5e0d678449dba5832d3c4229",
+   "length": 1542,
+   "cm_from": 1,
+   "cm_to": 1533,
+   "trunc": "no",
+   "bit_score": 1571.54,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1577.5,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1542
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "4v9p_33_DA_IC",
+  "pdb_id": "4v9p",
+  "entity_id": 33,
+  "label_asym_id": "IC",
+  "auth_asym_id": "DA",
+  "chain_length": 1542,
+  "scheme_rows": 1542,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1533,
+  "mapped_residues_without_coordinates": 9,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1,
+    1
+   ],
+   [
+    1535,
+    1542
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1516,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Escherichia coli K-12",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_f553b61c5e0d678449dba5832d3c4229",
+   "length": 1542,
+   "cm_from": 1,
+   "cm_to": 1533,
+   "trunc": "no",
+   "bit_score": 1571.54,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1577.5,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1542
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "4ybb_1_AA_A",
+  "pdb_id": "4ybb",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "AA",
+  "chain_length": 1534,
+  "scheme_rows": 1534,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1534,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1508,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1207": "2MG",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_77962f26463805659860eb82bbded27a",
+   "length": 1534,
+   "cm_from": 1,
+   "cm_to": 1525,
+   "trunc": "3'",
+   "bit_score": 1564.33,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1558.3,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1534
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "4ybb_1_BA_V",
+  "pdb_id": "4ybb",
+  "entity_id": 1,
+  "label_asym_id": "V",
+  "auth_asym_id": "BA",
+  "chain_length": 1534,
+  "scheme_rows": 1534,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1533,
+  "mapped_residues_without_coordinates": 1,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1,
+    1
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1508,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1207": "2MG",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_77962f26463805659860eb82bbded27a",
+   "length": 1534,
+   "cm_from": 1,
+   "cm_to": 1525,
+   "trunc": "3'",
+   "bit_score": 1564.33,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1558.3,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1534
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "6lkq_51_s_BB",
+  "pdb_id": "6lkq",
+  "entity_id": 51,
+  "label_asym_id": "BB",
+  "auth_asym_id": "s",
+  "chain_length": 1532,
+  "scheme_rows": 1532,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1532,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1506,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_f6d187681fb7ab382390e368de319bf7",
+   "length": 1532,
+   "cm_from": 2,
+   "cm_to": 1524,
+   "trunc": "3'",
+   "bit_score": 1562.84,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1551.5,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1532
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "7acr_2_2_B",
+  "pdb_id": "7acr",
+  "entity_id": 2,
+  "label_asym_id": "B",
+  "auth_asym_id": "2",
+  "chain_length": 1534,
+  "scheme_rows": 1534,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1534,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1508,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1207": "2MG",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": "Escherichia coli K-12",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_4073935ffcf2681be6174a18ac412f7b",
+   "length": 1534,
+   "cm_from": 1,
+   "cm_to": 1525,
+   "trunc": "3'",
+   "bit_score": 1564.4,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1558.7,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1534
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "7k00_1_A_A",
+  "pdb_id": "7k00",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 1542,
+  "scheme_rows": 1542,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1519,
+  "mapped_residues_without_coordinates": 23,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1,
+    1
+   ],
+   [
+    205,
+    213
+   ],
+   [
+    841,
+    845
+   ],
+   [
+    1535,
+    1542
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1516,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1207": "2MG",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_f553b61c5e0d678449dba5832d3c4229",
+   "length": 1542,
+   "cm_from": 1,
+   "cm_to": 1533,
+   "trunc": "no",
+   "bit_score": 1571.54,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1577.5,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1542
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "7k54_53_3_AB",
+  "pdb_id": "7k54",
+  "entity_id": 53,
+  "label_asym_id": "AB",
+  "auth_asym_id": "3",
+  "chain_length": 1539,
+  "scheme_rows": 1539,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1539,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1513,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Escherichia coli K-12",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_e828e26ba784992fa59c82964cd1da29",
+   "length": 1539,
+   "cm_from": 2,
+   "cm_to": 1531,
+   "trunc": "3'",
+   "bit_score": 1570.48,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1564.7,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1539
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "7n2c_1_16_A",
+  "pdb_id": "7n2c",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "16",
+  "chain_length": 1534,
+  "scheme_rows": 1534,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1534,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1508,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_77962f26463805659860eb82bbded27a",
+   "length": 1534,
+   "cm_from": 1,
+   "cm_to": 1525,
+   "trunc": "3'",
+   "bit_score": 1564.33,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1558.3,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1534
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "7n30_1_16_A",
+  "pdb_id": "7n30",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "16",
+  "chain_length": 1534,
+  "scheme_rows": 1534,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1526,
+  "mapped_residues_without_coordinates": 8,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    81,
+    88
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1508,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1207": "2MG",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": "Escherichia coli K-12",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_77962f26463805659860eb82bbded27a",
+   "length": 1534,
+   "cm_from": 1,
+   "cm_to": 1525,
+   "trunc": "3'",
+   "bit_score": 1564.33,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1558.3,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1534
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "7otc_1_a_A",
+  "pdb_id": "7otc",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "a",
+  "chain_length": 1533,
+  "scheme_rows": 1533,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1533,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1507,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": "Escherichia coli BL21(DE3)",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_6262ecff41ec9100c8511224d0c6a188",
+   "length": 1533,
+   "cm_from": 1,
+   "cm_to": 1524,
+   "trunc": "3'",
+   "bit_score": 1563.01,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1524,
+   "bit_score": 1556.9,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1533
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "8b0x_5_A_E",
+  "pdb_id": "8b0x",
+  "entity_id": 5,
+  "label_asym_id": "E",
+  "auth_asym_id": "A",
+  "chain_length": 1554,
+  "scheme_rows": 1554,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1500,
+  "mapped_residues_without_coordinates": 42,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1,
+    1
+   ],
+   [
+    79,
+    90
+   ],
+   [
+    205,
+    213
+   ],
+   [
+    841,
+    845
+   ],
+   [
+    1028,
+    1033
+   ],
+   [
+    1534,
+    1542
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1516,
+   "insert": 26,
+   "not_submitted_flank": 12
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1207": "2MG",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_42ab8894d5a01b33728558e2e7802b1e",
+   "length": 1542,
+   "cm_from": 1,
+   "cm_to": 1533,
+   "trunc": "no",
+   "bit_score": 1573.76,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1578.9,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1542
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "8bf7_52_2_ZA",
+  "pdb_id": "8bf7",
+  "entity_id": 52,
+  "label_asym_id": "ZA",
+  "auth_asym_id": "2",
+  "chain_length": 1542,
+  "scheme_rows": 1542,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1534,
+  "mapped_residues_without_coordinates": 8,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1535,
+    1542
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1516,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Escherichia coli K-12",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_f553b61c5e0d678449dba5832d3c4229",
+   "length": 1542,
+   "cm_from": 1,
+   "cm_to": 1533,
+   "trunc": "no",
+   "bit_score": 1571.54,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1577.5,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1542
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "8r8m_33_A_GA",
+  "pdb_id": "8r8m",
+  "entity_id": 33,
+  "label_asym_id": "GA",
+  "auth_asym_id": "A",
+  "chain_length": 1534,
+  "scheme_rows": 1534,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1519,
+  "mapped_residues_without_coordinates": 15,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1,
+    1
+   ],
+   [
+    205,
+    213
+   ],
+   [
+    841,
+    845
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1508,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1207": "2MG",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG"
+  },
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_77962f26463805659860eb82bbded27a",
+   "length": 1534,
+   "cm_from": 1,
+   "cm_to": 1525,
+   "trunc": "3'",
+   "bit_score": 1564.33,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1558.3,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1534
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "8uz3_2_2_B",
+  "pdb_id": "8uz3",
+  "entity_id": 2,
+  "label_asym_id": "B",
+  "auth_asym_id": "2",
+  "chain_length": 1540,
+  "scheme_rows": 1540,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1539,
+  "mapped_residues_without_coordinates": 1,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1,
+    1
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1514,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_5be8e971a0d574a0c095dce1ef022857",
+   "length": 1540,
+   "cm_from": 1,
+   "cm_to": 1531,
+   "trunc": "3'",
+   "bit_score": 1570.65,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1569.7,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1540
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "9gha_8_A_H",
+  "pdb_id": "9gha",
+  "entity_id": 8,
+  "label_asym_id": "H",
+  "auth_asym_id": "A",
+  "chain_length": 1554,
+  "scheme_rows": 1554,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1526,
+  "mapped_residues_without_coordinates": 16,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1,
+    1
+   ],
+   [
+    840,
+    846
+   ],
+   [
+    1535,
+    1542
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1516,
+   "insert": 26,
+   "not_submitted_flank": 12
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1207": "2MG",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_3d96167ad6f9f117f12ff0db594409b0",
+   "length": 1542,
+   "cm_from": 1,
+   "cm_to": 1533,
+   "trunc": "no",
+   "bit_score": 1567.2,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1573.6,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1542
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "4v4h_1_AA_A",
+  "pdb_id": "4v4h",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "AA",
+  "chain_length": 1542,
+  "scheme_rows": 1542,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1530,
+  "mapped_residues_without_coordinates": 12,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1,
+    4
+   ],
+   [
+    1535,
+    1542
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1516,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_f553b61c5e0d678449dba5832d3c4229",
+   "length": 1542,
+   "cm_from": 1,
+   "cm_to": 1533,
+   "trunc": "no",
+   "bit_score": 1571.54,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1577.5,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1542
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "4v53_1_AA_A",
+  "pdb_id": "4v53",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "AA",
+  "chain_length": 1542,
+  "scheme_rows": 1542,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1530,
+  "mapped_residues_without_coordinates": 12,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1,
+    4
+   ],
+   [
+    1535,
+    1542
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1516,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_f553b61c5e0d678449dba5832d3c4229",
+   "length": 1542,
+   "cm_from": 1,
+   "cm_to": 1533,
+   "trunc": "no",
+   "bit_score": 1571.54,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1577.5,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1542
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "4v64_1_AA_A",
+  "pdb_id": "4v64",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "AA",
+  "chain_length": 1542,
+  "scheme_rows": 1542,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1530,
+  "mapped_residues_without_coordinates": 12,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1,
+    4
+   ],
+   [
+    1535,
+    1542
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1516,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_f553b61c5e0d678449dba5832d3c4229",
+   "length": 1542,
+   "cm_from": 1,
+   "cm_to": 1533,
+   "trunc": "no",
+   "bit_score": 1571.54,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1577.5,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1542
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "4v7t_1_AA_A",
+  "pdb_id": "4v7t",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "AA",
+  "chain_length": 1533,
+  "scheme_rows": 1533,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1533,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1507,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_55187c0f44fc3024dac768ef6ef871fc",
+   "length": 1533,
+   "cm_from": 2,
+   "cm_to": 1525,
+   "trunc": "3'",
+   "bit_score": 1564.16,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1553.3,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1533
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "4v9c_1_AA_A",
+  "pdb_id": "4v9c",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "AA",
+  "chain_length": 1542,
+  "scheme_rows": 1542,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1539,
+  "mapped_residues_without_coordinates": 3,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1,
+    1
+   ],
+   [
+    1541,
+    1542
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1516,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_f553b61c5e0d678449dba5832d3c4229",
+   "length": 1542,
+   "cm_from": 1,
+   "cm_to": 1533,
+   "trunc": "no",
+   "bit_score": 1571.54,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1577.5,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1542
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "4wf1_1_CA_BB",
+  "pdb_id": "4wf1",
+  "entity_id": 1,
+  "label_asym_id": "BB",
+  "auth_asym_id": "CA",
+  "chain_length": 1539,
+  "scheme_rows": 1539,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1539,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1513,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_e828e26ba784992fa59c82964cd1da29",
+   "length": 1539,
+   "cm_from": 2,
+   "cm_to": 1531,
+   "trunc": "3'",
+   "bit_score": 1570.48,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1564.7,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1539
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "4woi_1_AA_A",
+  "pdb_id": "4woi",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "AA",
+  "chain_length": 1542,
+  "scheme_rows": 1542,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1538,
+  "mapped_residues_without_coordinates": 4,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1,
+    1
+   ],
+   [
+    1540,
+    1542
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1516,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Escherichia coli str. K-12 substr. MDS42",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_f553b61c5e0d678449dba5832d3c4229",
+   "length": 1542,
+   "cm_from": 1,
+   "cm_to": 1533,
+   "trunc": "no",
+   "bit_score": 1571.54,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1577.5,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1542
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "5afi_1_a_A",
+  "pdb_id": "5afi",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "a",
+  "chain_length": 1539,
+  "scheme_rows": 1539,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1539,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1513,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "515": "PSU",
+   "526": "7MG",
+   "965": "2MG",
+   "966": "5MC",
+   "1206": "2MG",
+   "1401": "4OC",
+   "1406": "5MC",
+   "1497": "UR3",
+   "1515": "2MG",
+   "1517": "MA6",
+   "1518": "MA6"
+  },
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_e828e26ba784992fa59c82964cd1da29",
+   "length": 1539,
+   "cm_from": 2,
+   "cm_to": 1531,
+   "trunc": "3'",
+   "bit_score": 1570.48,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1564.7,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1539
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "5j5b_1_AA_A",
+  "pdb_id": "5j5b",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "AA",
+  "chain_length": 1534,
+  "scheme_rows": 1534,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1534,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1508,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1207": "2MG",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_77962f26463805659860eb82bbded27a",
+   "length": 1534,
+   "cm_from": 1,
+   "cm_to": 1525,
+   "trunc": "3'",
+   "bit_score": 1564.33,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1558.3,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1534
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "5j91_1_AA_A",
+  "pdb_id": "5j91",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "AA",
+  "chain_length": 1534,
+  "scheme_rows": 1534,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1534,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1508,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1207": "2MG",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_77962f26463805659860eb82bbded27a",
+   "length": 1534,
+   "cm_from": 1,
+   "cm_to": 1525,
+   "trunc": "3'",
+   "bit_score": 1564.33,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1558.3,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1534
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "7b5k_32_a_FA",
+  "pdb_id": "7b5k",
+  "entity_id": 32,
+  "label_asym_id": "FA",
+  "auth_asym_id": "a",
+  "chain_length": 1533,
+  "scheme_rows": 1533,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1533,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1507,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1207": "2MG",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": "Escherichia coli K-12",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_ae757eb4919b2d25c54dc10bbe533961",
+   "length": 1533,
+   "cm_from": 1,
+   "cm_to": 1524,
+   "trunc": "3'",
+   "bit_score": 1565.44,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1524,
+   "bit_score": 1559.2,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1533
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "7n2v_1_16_A",
+  "pdb_id": "7n2v",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "16",
+  "chain_length": 1534,
+  "scheme_rows": 1534,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1534,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1508,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "7MG",
+   "966": "2MG",
+   "967": "5MC",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": "Escherichia coli K-12",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_77962f26463805659860eb82bbded27a",
+   "length": 1534,
+   "cm_from": 1,
+   "cm_to": 1525,
+   "trunc": "3'",
+   "bit_score": 1564.33,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1558.3,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1534
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "7nso_35_a_IA",
+  "pdb_id": "7nso",
+  "entity_id": 35,
+  "label_asym_id": "IA",
+  "auth_asym_id": "a",
+  "chain_length": 1540,
+  "scheme_rows": 1540,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1540,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1514,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_5be8e971a0d574a0c095dce1ef022857",
+   "length": 1540,
+   "cm_from": 1,
+   "cm_to": 1531,
+   "trunc": "3'",
+   "bit_score": 1570.65,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1569.7,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1540
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "7pjs_34_a_HA",
+  "pdb_id": "7pjs",
+  "entity_id": 34,
+  "label_asym_id": "HA",
+  "auth_asym_id": "a",
+  "chain_length": 1542,
+  "scheme_rows": 1542,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1540,
+  "mapped_residues_without_coordinates": 2,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1541,
+    1542
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1516,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1207": "2MG",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": "Escherichia coli",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_f553b61c5e0d678449dba5832d3c4229",
+   "length": 1542,
+   "cm_from": 1,
+   "cm_to": 1533,
+   "trunc": "no",
+   "bit_score": 1571.54,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1577.5,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1542
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "7pjv_34_a_HA",
+  "pdb_id": "7pjv",
+  "entity_id": 34,
+  "label_asym_id": "HA",
+  "auth_asym_id": "a",
+  "chain_length": 1542,
+  "scheme_rows": 1542,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1540,
+  "mapped_residues_without_coordinates": 2,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1541,
+    1542
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1516,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1207": "2MG",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": "Escherichia coli K-12",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_f553b61c5e0d678449dba5832d3c4229",
+   "length": 1542,
+   "cm_from": 1,
+   "cm_to": 1533,
+   "trunc": "no",
+   "bit_score": 1571.54,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1577.5,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1542
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "7pjy_34_a_HA",
+  "pdb_id": "7pjy",
+  "entity_id": 34,
+  "label_asym_id": "HA",
+  "auth_asym_id": "a",
+  "chain_length": 1542,
+  "scheme_rows": 1542,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1540,
+  "mapped_residues_without_coordinates": 2,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1541,
+    1542
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1516,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1207": "2MG",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": "Escherichia coli K-12",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_f553b61c5e0d678449dba5832d3c4229",
+   "length": 1542,
+   "cm_from": 1,
+   "cm_to": 1533,
+   "trunc": "no",
+   "bit_score": 1571.54,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1577.5,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1542
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "7s1h_4_C_D",
+  "pdb_id": "7s1h",
+  "entity_id": 4,
+  "label_asym_id": "D",
+  "auth_asym_id": "C",
+  "chain_length": 1540,
+  "scheme_rows": 1540,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1540,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1514,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_5be8e971a0d574a0c095dce1ef022857",
+   "length": 1540,
+   "cm_from": 1,
+   "cm_to": 1531,
+   "trunc": "3'",
+   "bit_score": 1570.65,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1569.7,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1540
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "7ssd_1_3_A",
+  "pdb_id": "7ssd",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "3",
+  "chain_length": 1539,
+  "scheme_rows": 1539,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1539,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1513,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": "Escherichia coli K-12",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_e828e26ba784992fa59c82964cd1da29",
+   "length": 1539,
+   "cm_from": 2,
+   "cm_to": 1531,
+   "trunc": "3'",
+   "bit_score": 1570.48,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1564.7,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1539
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "7st7_41_3_OA",
+  "pdb_id": "7st7",
+  "entity_id": 41,
+  "label_asym_id": "OA",
+  "auth_asym_id": "3",
+  "chain_length": 1539,
+  "scheme_rows": 1539,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1539,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1513,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {},
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_e828e26ba784992fa59c82964cd1da29",
+   "length": 1539,
+   "cm_from": 2,
+   "cm_to": 1531,
+   "trunc": "3'",
+   "bit_score": 1570.48,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1564.7,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1539
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "8aye_7_A_G",
+  "pdb_id": "8aye",
+  "entity_id": 7,
+  "label_asym_id": "G",
+  "auth_asym_id": "A",
+  "chain_length": 1542,
+  "scheme_rows": 1542,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1519,
+  "mapped_residues_without_coordinates": 23,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1,
+    1
+   ],
+   [
+    205,
+    213
+   ],
+   [
+    841,
+    845
+   ],
+   [
+    1535,
+    1542
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1516,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1207": "2MG",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_f553b61c5e0d678449dba5832d3c4229",
+   "length": 1542,
+   "cm_from": 1,
+   "cm_to": 1533,
+   "trunc": "no",
+   "bit_score": 1571.54,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1577.5,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1542
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "8fzi_1_a_A",
+  "pdb_id": "8fzi",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "a",
+  "chain_length": 1542,
+  "scheme_rows": 1542,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1528,
+  "mapped_residues_without_coordinates": 14,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1,
+    1
+   ],
+   [
+    841,
+    845
+   ],
+   [
+    1535,
+    1542
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1516,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1207": "2MG",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_f553b61c5e0d678449dba5832d3c4229",
+   "length": 1542,
+   "cm_from": 1,
+   "cm_to": 1533,
+   "trunc": "no",
+   "bit_score": 1571.54,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1577.5,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1542
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "8ifb_1_A_A",
+  "pdb_id": "8ifb",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 1542,
+  "scheme_rows": 1542,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1519,
+  "mapped_residues_without_coordinates": 23,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1,
+    1
+   ],
+   [
+    205,
+    213
+   ],
+   [
+    841,
+    845
+   ],
+   [
+    1535,
+    1542
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1516,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1207": "2MG",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_f553b61c5e0d678449dba5832d3c4229",
+   "length": 1542,
+   "cm_from": 1,
+   "cm_to": 1533,
+   "trunc": "no",
+   "bit_score": 1571.54,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1577.5,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1542
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "8r6c_7_A_G",
+  "pdb_id": "8r6c",
+  "entity_id": 7,
+  "label_asym_id": "G",
+  "auth_asym_id": "A",
+  "chain_length": 1534,
+  "scheme_rows": 1534,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1519,
+  "mapped_residues_without_coordinates": 15,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1,
+    1
+   ],
+   [
+    205,
+    213
+   ],
+   [
+    841,
+    845
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1508,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1207": "2MG",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG"
+  },
+  "species": {
+   "api": "Escherichia coli BW25113",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_77962f26463805659860eb82bbded27a",
+   "length": 1534,
+   "cm_from": 1,
+   "cm_to": 1525,
+   "trunc": "3'",
+   "bit_score": 1564.33,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1558.3,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1534
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "8syl_1_a_A",
+  "pdb_id": "8syl",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "a",
+  "chain_length": 1542,
+  "scheme_rows": 1542,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1528,
+  "mapped_residues_without_coordinates": 14,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    841,
+    845
+   ],
+   [
+    1534,
+    1542
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1516,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1207": "2MG",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_f553b61c5e0d678449dba5832d3c4229",
+   "length": 1542,
+   "cm_from": 1,
+   "cm_to": 1533,
+   "trunc": "no",
+   "bit_score": 1571.54,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1577.5,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1542
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9b4z_1_AA_A",
+  "pdb_id": "9b4z",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "AA",
+  "chain_length": 1539,
+  "scheme_rows": 1539,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1539,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1513,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "1407": "1MA"
+  },
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_e828e26ba784992fa59c82964cd1da29",
+   "length": 1539,
+   "cm_from": 2,
+   "cm_to": 1531,
+   "trunc": "3'",
+   "bit_score": 1570.48,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1564.7,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1539
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "9b51_1_AA_A",
+  "pdb_id": "9b51",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "AA",
+  "chain_length": 1539,
+  "scheme_rows": 1539,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1539,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1513,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "1407": "1MA"
+  },
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_e828e26ba784992fa59c82964cd1da29",
+   "length": 1539,
+   "cm_from": 2,
+   "cm_to": 1531,
+   "trunc": "3'",
+   "bit_score": 1570.48,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1564.7,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1539
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "9g06_21_B_U",
+  "pdb_id": "9g06",
+  "entity_id": 21,
+  "label_asym_id": "U",
+  "auth_asym_id": "B",
+  "chain_length": 1545,
+  "scheme_rows": 1545,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1504,
+  "mapped_residues_without_coordinates": 41,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    79,
+    92
+   ],
+   [
+    205,
+    213
+   ],
+   [
+    841,
+    845
+   ],
+   [
+    1083,
+    1085
+   ],
+   [
+    1171,
+    1171
+   ],
+   [
+    1537,
+    1545
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1516,
+   "insert": 29
+  },
+  "author_numbering_continuous": false,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1210": "2MG",
+   "1405": "4OC",
+   "1410": "5MC",
+   "1501": "UR3",
+   "1519": "2MG",
+   "1521": "MA6",
+   "1522": "MA6"
+  },
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_82e8f1a9cad07e3526003d9408b297de",
+   "length": 1545,
+   "cm_from": 1,
+   "cm_to": 1533,
+   "trunc": "no",
+   "bit_score": 1553.99,
+   "avg_pp": 0.988
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1560.5,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1545
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9gup_1_A_A",
+  "pdb_id": "9gup",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 1541,
+  "scheme_rows": 1541,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1539,
+  "mapped_residues_without_coordinates": 2,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1492,
+    1493
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1515,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1207": "2MG",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_53b4dd9804041de45d2f300dc8bb5249",
+   "length": 1541,
+   "cm_from": 1,
+   "cm_to": 1532,
+   "trunc": "3'",
+   "bit_score": 1571.68,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1572.8,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1541
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "9guv_1_A_A",
+  "pdb_id": "9guv",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 1541,
+  "scheme_rows": 1541,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1539,
+  "mapped_residues_without_coordinates": 2,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1492,
+    1493
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1515,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1207": "2MG",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_53b4dd9804041de45d2f300dc8bb5249",
+   "length": 1541,
+   "cm_from": 1,
+   "cm_to": 1532,
+   "trunc": "3'",
+   "bit_score": 1571.68,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1572.8,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1541
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "9o2y_1_A_A",
+  "pdb_id": "9o2y",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "chain_length": 1542,
+  "scheme_rows": 1542,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1519,
+  "mapped_residues_without_coordinates": 23,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1,
+    1
+   ],
+   [
+    205,
+    213
+   ],
+   [
+    841,
+    845
+   ],
+   [
+    1535,
+    1542
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1516,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": false,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1207": "2MG",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_f553b61c5e0d678449dba5832d3c4229",
+   "length": 1542,
+   "cm_from": 1,
+   "cm_to": 1533,
+   "trunc": "no",
+   "bit_score": 1571.54,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1577.5,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1542
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9pih_6_A_F",
+  "pdb_id": "9pih",
+  "entity_id": 6,
+  "label_asym_id": "F",
+  "auth_asym_id": "A",
+  "chain_length": 1542,
+  "scheme_rows": 1542,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1500,
+  "mapped_residues_without_coordinates": 42,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1,
+    1
+   ],
+   [
+    79,
+    90
+   ],
+   [
+    205,
+    213
+   ],
+   [
+    841,
+    845
+   ],
+   [
+    1028,
+    1033
+   ],
+   [
+    1534,
+    1542
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1516,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1207": "2MG",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_f553b61c5e0d678449dba5832d3c4229",
+   "length": 1542,
+   "cm_from": 1,
+   "cm_to": 1533,
+   "trunc": "no",
+   "bit_score": 1571.54,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1577.5,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1542
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9pii_6_A_F",
+  "pdb_id": "9pii",
+  "entity_id": 6,
+  "label_asym_id": "F",
+  "auth_asym_id": "A",
+  "chain_length": 1542,
+  "scheme_rows": 1542,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1500,
+  "mapped_residues_without_coordinates": 42,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1,
+    1
+   ],
+   [
+    79,
+    90
+   ],
+   [
+    205,
+    213
+   ],
+   [
+    841,
+    845
+   ],
+   [
+    1028,
+    1033
+   ],
+   [
+    1534,
+    1542
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1516,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1207": "2MG",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_f553b61c5e0d678449dba5832d3c4229",
+   "length": 1542,
+   "cm_from": 1,
+   "cm_to": 1533,
+   "trunc": "no",
+   "bit_score": 1571.54,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1577.5,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1542
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9pij_6_A_F",
+  "pdb_id": "9pij",
+  "entity_id": 6,
+  "label_asym_id": "F",
+  "auth_asym_id": "A",
+  "chain_length": 1542,
+  "scheme_rows": 1542,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1500,
+  "mapped_residues_without_coordinates": 42,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1,
+    1
+   ],
+   [
+    79,
+    90
+   ],
+   [
+    205,
+    213
+   ],
+   [
+    841,
+    845
+   ],
+   [
+    1028,
+    1033
+   ],
+   [
+    1534,
+    1542
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1516,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1207": "2MG",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_f553b61c5e0d678449dba5832d3c4229",
+   "length": 1542,
+   "cm_from": 1,
+   "cm_to": 1533,
+   "trunc": "no",
+   "bit_score": 1571.54,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1577.5,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1542
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9qqq_7_A_G",
+  "pdb_id": "9qqq",
+  "entity_id": 7,
+  "label_asym_id": "G",
+  "auth_asym_id": "A",
+  "chain_length": 1541,
+  "scheme_rows": 1541,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1502,
+  "mapped_residues_without_coordinates": 39,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    1,
+    1
+   ],
+   [
+    81,
+    89
+   ],
+   [
+    204,
+    212
+   ],
+   [
+    464,
+    466
+   ],
+   [
+    840,
+    844
+   ],
+   [
+    1028,
+    1031
+   ],
+   [
+    1534,
+    1541
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 1,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1514,
+   "insert": 27
+  },
+  "author_numbering_continuous": false,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "515": "PSU",
+   "526": "G7M",
+   "965": "2MG",
+   "966": "5MC",
+   "1401": "4OC",
+   "1406": "5MC",
+   "1497": "UR3",
+   "1515": "2MG",
+   "1517": "MA6",
+   "1518": "MA6"
+  },
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_e5ab0b57a5612c0b727ee339e4b83bff",
+   "length": 1541,
+   "cm_from": 1,
+   "cm_to": 1533,
+   "trunc": "no",
+   "bit_score": 1566.56,
+   "avg_pp": 0.982
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1572.2,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1541
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9sro_6_A_F",
+  "pdb_id": "9sro",
+  "entity_id": 6,
+  "label_asym_id": "F",
+  "auth_asym_id": "A",
+  "chain_length": 1532,
+  "scheme_rows": 1532,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1501,
+  "mapped_residues_without_coordinates": 31,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    80,
+    89
+   ],
+   [
+    204,
+    212
+   ],
+   [
+    464,
+    466
+   ],
+   [
+    840,
+    844
+   ],
+   [
+    1028,
+    1031
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1506,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "515": "PSU",
+   "526": "G7M",
+   "965": "2MG",
+   "966": "5MC",
+   "1401": "4OC",
+   "1406": "5MC",
+   "1497": "UR3",
+   "1515": "2MG",
+   "1517": "MA6",
+   "1518": "MA6"
+  },
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_f6d187681fb7ab382390e368de319bf7",
+   "length": 1532,
+   "cm_from": 2,
+   "cm_to": 1524,
+   "trunc": "3'",
+   "bit_score": 1562.84,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1551.5,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1532
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "9sx2_2_A_B",
+  "pdb_id": "9sx2",
+  "entity_id": 2,
+  "label_asym_id": "B",
+  "auth_asym_id": "A",
+  "chain_length": 1534,
+  "scheme_rows": 1534,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1534,
+  "mapped_residues_without_coordinates": 0,
+  "unmodelled_runs_in_mapped_region": [],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1508,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "967": "5MC",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": "Escherichia coli BL21(DE3)",
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_ccce86a16627646bb8c0ddfd54e84e95",
+   "length": 1534,
+   "cm_from": 1,
+   "cm_to": 1525,
+   "trunc": "3'",
+   "bit_score": 1566.44,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1559.7,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1534
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": false,
+  "ok": true
+ },
+ {
+  "seq_name": "9tmi_52_A_ZA",
+  "pdb_id": "9tmi",
+  "entity_id": 52,
+  "label_asym_id": "ZA",
+  "auth_asym_id": "A",
+  "chain_length": 1542,
+  "scheme_rows": 1542,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1519,
+  "mapped_residues_without_coordinates": 23,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    205,
+    213
+   ],
+   [
+    841,
+    845
+   ],
+   [
+    1534,
+    1542
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1516,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1207": "2MG",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_f553b61c5e0d678449dba5832d3c4229",
+   "length": 1542,
+   "cm_from": 1,
+   "cm_to": 1533,
+   "trunc": "no",
+   "bit_score": 1571.54,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1577.5,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1542
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ },
+ {
+  "seq_name": "9tnl_2_A_B",
+  "pdb_id": "9tnl",
+  "entity_id": 2,
+  "label_asym_id": "B",
+  "auth_asym_id": "A",
+  "chain_length": 1542,
+  "scheme_rows": 1542,
+  "n_mmcif_mismatches": 0,
+  "mmcif_mismatches": [],
+  "n_observed_conflicts": 0,
+  "observed_conflicts": [],
+  "n_modelled_residues": 1519,
+  "mapped_residues_without_coordinates": 23,
+  "unmodelled_runs_in_mapped_region": [
+   [
+    205,
+    213
+   ],
+   [
+    841,
+    845
+   ],
+   [
+    1534,
+    1542
+   ]
+  ],
+  "consensus_monotonic": true,
+  "insertion_offsets_consistent": true,
+  "insertion_anchors_not_before_last_match": true,
+  "insertion_sites_whose_anchor_follows_deleted_consensus": 0,
+  "consensus_columns_complete_and_unique": true,
+  "states": {
+   "match": 1516,
+   "insert": 26
+  },
+  "author_numbering_continuous": true,
+  "label_vs_auth_chain_differ": true,
+  "modified_in_mapped_region": {
+   "516": "PSU",
+   "527": "G7M",
+   "966": "2MG",
+   "967": "5MC",
+   "1207": "2MG",
+   "1402": "4OC",
+   "1407": "5MC",
+   "1498": "UR3",
+   "1516": "2MG",
+   "1518": "MA6",
+   "1519": "MA6"
+  },
+  "species": {
+   "api": null,
+   "mmcif": null,
+   "mmcif_tax_id": null
+  },
+  "cmalign": {
+   "name": "seq_f553b61c5e0d678449dba5832d3c4229",
+   "length": 1542,
+   "cm_from": 1,
+   "cm_to": 1533,
+   "trunc": "no",
+   "bit_score": 1571.54,
+   "avg_pp": 0.99
+  },
+  "rfam_structures_endpoint": {
+   "cm_start": 1,
+   "cm_end": 1533,
+   "bit_score": 1577.5,
+   "evalue_score": "0",
+   "pdb_start": 1,
+   "pdb_end": 1542
+  },
+  "pdbe_region_agrees_with_rfam": true,
+  "cm_span_agrees_with_rfam": true,
+  "ok": true
+ }
+]
