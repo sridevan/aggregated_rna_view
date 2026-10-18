@@ -1,6 +1,6 @@
 # Aggregated RNA 3D View: project handover
 
-Last updated: 2026-10-16 (Milestone 3C UI reorganisation done; chain-specific ligand investigation and Arpeggio pilot done). Owner: asridevan86@gmail.com. Working directory `/Users/sria/Desktop/aggregated_rna_view` (macOS arm64, Python 3.11.9 via pyenv, Node 20.14 via nvm). Git repository on `main` since 2026-10-18 (no remote yet; see §7). **Sections 2–6 describe the state on 2026-10-16; see §0 for what changed since.**
+Last updated: 2026-10-16 (Milestone 3C UI reorganisation done; chain-specific ligand investigation and Arpeggio pilot done). Owner: asridevan86@gmail.com. Working directory `/Users/sria/Desktop/aggregated_rna_view` (macOS arm64, Python 3.11.9 via pyenv, Node 20.14 via nvm). Git repository on `main` since 2026-10-18, pushed to https://github.com/sridevan/aggregated_rna_view (see §7). **Sections 2–6 describe the state on 2026-10-16; see §0 for what changed since.**
 
 Goal: a PDBe-KB-style aggregated view of experimentally determined RNA structures per Rfam family, using Rfam covariance-model (CM) match-state positions as the family coordinate system. RF00167 (purine riboswitch) is the development family; RF00177 (16S rRNA) was used in the proofs of concept.
 
@@ -114,7 +114,7 @@ Structures tab still shows `PendingPanel` placeholders for similarity matrix, cl
 - Do this in a separate git worktree (§7) so the main app stays stable.
 
 ## 7. Pending technical tasks
-- Git: done 2026-10-18 (initial commit + `3b25c42`, on `main`, no remote). `.gitignore` excludes caches, scratch `work/` folders, downloaded structure files under `experiments/` (full mmCIFs are never stored), the regenerable RF00177 outputs over 10 MB (`loops.json`, `sasa.json`, `residue_mapping.csv`) and RF00177 `annotations/`. Still open: add a remote; optionally untrack files from the initial commit that the new rules exclude (RF00167 `work/`, POC mmCIFs under `poc_rf00167/`, `poc_rf00177/`).
+- Git: done 2026-10-18 (`main`, pushed to GitHub `sridevan/aggregated_rna_view`). Before the first push the history was cleaned of raw downloads (POC mmCIFs/API dumps, RF00167 `work/`); these stay on disk and are ignored. `.gitignore` excludes caches, scratch `work/` folders, downloaded structure files under `experiments/` (full mmCIFs are never stored), the regenerable RF00177 outputs over 10 MB (`loops.json`, `sasa.json`, `residue_mapping.csv`) and RF00177 `annotations/`.
 - `frontend/ARCHITECTURE.md` refresh (pdbe-molstar, PdbRnaViewer2D, SelectionContext details).
 
 ## 8. Important constraints
