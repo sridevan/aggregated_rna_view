@@ -1,0 +1,2143 @@
+{
+ "schema_version": "1.0",
+ "rfam_acc": "RF00005",
+ "clen": 71,
+ "track_name": "reference_structural_elements",
+ "track_kind": "categorical_reference_transfer",
+ "interpretation": "Element labels of one curated reference chain transferred to Rfam consensus positions through the validated residue mapping. They are not independent observations of helices or loops in each RNA instance.",
+ "reference": {
+  "pdb_id": "8p7d",
+  "auth_asym_id": "R",
+  "label_asym_id": null,
+  "entity_id": null,
+  "seq_name": null,
+  "model": 1,
+  "reference_chains_in_file": [
+   "8P7D|1|R"
+  ],
+  "n_annotated_nucleotides": 76,
+  "citation": []
+ },
+ "source": {
+  "name": "BGSU nucleotide annotations (family file)",
+  "url": "https://rna.bgsu.edu/data/nucleotide_annotations/RF00005_annotations.txt",
+  "retrieved": "2026-10-18",
+  "status": "ok",
+  "annotation_identifier": "RF00005_annotations.txt"
+ },
+ "transfer_method": "reference unit id -> (pdb_id, label_asym_id, label_seq_id) by author number + insertion code -> rfam_consensus_pos of the reference chain mapping (rna_explorer mapping pipeline)",
+ "elements": [],
+ "positions": [],
+ "track": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "n_consensus_positions_annotated": 0,
+ "reference_nucleotides_not_on_consensus": [
+  {
+   "unit_id": "8P7D|1|R|G|1",
+   "labels": [
+    "Helix ACC"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|C|2",
+   "labels": [
+    "Helix ACC"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|A|3",
+   "labels": [
+    "Helix ACC"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|G|4",
+   "labels": [
+    "Helix ACC"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|U|5",
+   "labels": [
+    "Helix ACC"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|G|6",
+   "labels": [
+    "Helix ACC"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|G|7",
+   "labels": [
+    "Helix ACC"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|G|10",
+   "labels": [
+    "Helix D"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|C|11",
+   "labels": [
+    "Helix D"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|4AC|12",
+   "labels": [
+    "Helix D"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|G|13",
+   "labels": [
+    "Helix D"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|A|14",
+   "labels": [
+    "Helix D"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|G|15",
+   "labels": [
+    "Helix D"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|U|16",
+   "labels": [
+    "Helix D"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|OMG|18",
+   "labels": [
+    "Helix D"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|G|19",
+   "labels": [
+    "Helix D"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|H2U|20",
+   "labels": [
+    "Helix D"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|A|21",
+   "labels": [
+    "Helix D"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|A|22",
+   "labels": [
+    "Helix D"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|G|23",
+   "labels": [
+    "Helix D"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|G|24",
+   "labels": [
+    "Helix D"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|C|25",
+   "labels": [
+    "Helix D"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|M2G|26",
+   "labels": [
+    "Helix ACL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|U|27",
+   "labels": [
+    "Helix ACL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|C|28",
+   "labels": [
+    "Helix ACL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|G|29",
+   "labels": [
+    "Helix ACL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|G|30",
+   "labels": [
+    "Helix ACL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|A|31",
+   "labels": [
+    "Helix ACL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|JMH|32",
+   "labels": [
+    "Helix ACL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|U|33",
+   "labels": [
+    "Helix ACL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|U|34",
+   "labels": [
+    "Helix ACL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|G|35",
+   "labels": [
+    "Helix ACL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|A|36",
+   "labels": [
+    "Helix ACL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|6IA|37",
+   "labels": [
+    "Helix ACL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|A|38",
+   "labels": [
+    "Helix ACL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|PSU|39",
+   "labels": [
+    "Helix ACL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|C|40",
+   "labels": [
+    "Helix ACL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|C|41",
+   "labels": [
+    "Helix ACL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|G|42",
+   "labels": [
+    "Helix ACL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|A|43",
+   "labels": [
+    "Helix ACL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|OMU|44",
+   "labels": [
+    "Helix ACL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|U|45",
+   "labels": [
+    "Helix VL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|C|46",
+   "labels": [
+    "Helix VL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|G|47",
+   "labels": [
+    "Helix VL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|C|47|||A",
+   "labels": [
+    "Helix VL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|U|47|||B",
+   "labels": [
+    "Helix VL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|C|47|||C",
+   "labels": [
+    "Helix VL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|U|47|||D",
+   "labels": [
+    "Helix VL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|G|47|||E",
+   "labels": [
+    "Helix VL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|C|47|||F",
+   "labels": [
+    "Helix VL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|G|47|||G",
+   "labels": [
+    "Helix VL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|A|47|||H",
+   "labels": [
+    "Helix VL"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|G|49",
+   "labels": [
+    "Helix T"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|U|50",
+   "labels": [
+    "Helix T"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|G|51",
+   "labels": [
+    "Helix T"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|G|52",
+   "labels": [
+    "Helix T"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|G|53",
+   "labels": [
+    "Helix T"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|5MU|54",
+   "labels": [
+    "Helix T"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|PSU|55",
+   "labels": [
+    "Helix T"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|C|56",
+   "labels": [
+    "Helix T"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|G|57",
+   "labels": [
+    "Helix T"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|1MA|58",
+   "labels": [
+    "Helix T"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|A|59",
+   "labels": [
+    "Helix T"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|U|60",
+   "labels": [
+    "Helix T"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|C|61",
+   "labels": [
+    "Helix T"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|C|62",
+   "labels": [
+    "Helix T"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|C|63",
+   "labels": [
+    "Helix T"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|A|64",
+   "labels": [
+    "Helix T"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|C|65",
+   "labels": [
+    "Helix T"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|C|66",
+   "labels": [
+    "Helix ACC"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|C|67",
+   "labels": [
+    "Helix ACC"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|A|68",
+   "labels": [
+    "Helix ACC"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|C|69",
+   "labels": [
+    "Helix ACC"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|U|70",
+   "labels": [
+    "Helix ACC"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|G|71",
+   "labels": [
+    "Helix ACC"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  },
+  {
+   "unit_id": "8P7D|1|R|C|72",
+   "labels": [
+    "Helix ACC"
+   ],
+   "mapping_status": "unresolved_identifier",
+   "label_seq_id": null
+  }
+ ],
+ "conflicts": [],
+ "instance_transfer": {
+  "source": "BGSU correspondence/nucleotide_annotation per chain (labels transferred by BGSU)",
+  "n_instances": 60,
+  "n_instances_evaluated": 60,
+  "n_instances_unavailable": 0,
+  "unavailable_instances": [],
+  "n_nucleotide_labels": 3884,
+  "mapping_status_counts": {
+   "mapped": 3840,
+   "insert": 44
+  },
+  "n_labels_agree_with_family_track": 0,
+  "n_labels_disagree": 3840,
+  "disagreements": [
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|G|1",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 1
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|C|2",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 2
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|G|3",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 3
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|G|4",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 4
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|A|5",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 5
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|U|6",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 6
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|U|7",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 7
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|2MG|10",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 10
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|C|11",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 11
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|U|12",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 12
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|C|13",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 13
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|A|14",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 14
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|G|15",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 15
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|H2U|16",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 16
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|G|18",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 17
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|G|19",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 18
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|G|20",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 19
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|A|21",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 20
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|G|22",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 21
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|A|23",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 22
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|G|24",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 23
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|C|25",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 24
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|M2G|26",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 25
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|C|27",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 26
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|C|28",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 27
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|A|29",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 28
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|G|30",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 29
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|A|31",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 30
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|OMC|32",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 31
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|U|33",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 32
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|OMG|34",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 33
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|A|35",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 34
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|A|36",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 35
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|YYG|37",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 36
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|A|38",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 37
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|PSU|39",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 38
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|5MC|40",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 39
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|U|41",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 40
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|G|42",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 41
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|G|43",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 42
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|A|44",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 43
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|5MC|49",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 47
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|U|50",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 48
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|G|51",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 49
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|U|52",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 50
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|G|53",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 51
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|5MU|54",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 52
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|PSU|55",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 53
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|C|56",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 54
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|G|57",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 55
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|1MA|58",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 56
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|U|59",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 57
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|C|60",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 58
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|C|61",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 59
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|A|62",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 60
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|C|63",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 61
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|A|64",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 62
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|G|65",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 63
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|A|66",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 64
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|A|67",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 65
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|U|68",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 66
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|U|69",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 67
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|C|70",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 68
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|G|71",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 69
+   },
+   {
+    "seq_name": "1ehz_1_A_A",
+    "unit_id": "1EHZ|1|A|C|72",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 70
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|G|1",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 1
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|C|2",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 2
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|C|3",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 3
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|C|4",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 4
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|G|5",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 5
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|2MG|6",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 6
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|A|7",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 7
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|2MG|10",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 10
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|C|11",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 11
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|U|12",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 12
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|C|13",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 13
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|A|14",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 14
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|G|15",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 15
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|H2U|16",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 16
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|G|18",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 17
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|G|19||A",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 18
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|H2U|20||A",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 19
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|A|21",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 20
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|G|22",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 21
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|A|23",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 22
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|G|24",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 23
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|C|25",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 24
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|A|26",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 25
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|PSU|27",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 26
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|C|28",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 27
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|A|29",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 28
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|G|30",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 29
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|A|31",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 30
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|C|32",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 31
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|U|33",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 32
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|70U|34",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 33
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|U|35",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 34
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|U|36",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 35
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|12A|37",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 36
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|A|38",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 37
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|PSU|39",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 38
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|C|40",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 39
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|U|41",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 40
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|G|42",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 41
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|A|43",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 42
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|G|44",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 43
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|5MC|49",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 47
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|A|50",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 48
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|G|51",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 49
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|G|52",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 50
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|G|53",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 51
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|2MU|54",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 52
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|PSU|55",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 53
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|C|56",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 54
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|A|57",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 55
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|1MA|58",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 56
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|G|59",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 57
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|U|60",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 58
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|C|61",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 59
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|C|62",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 60
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|C|63",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 61
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|U|64",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 62
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|G|65",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 63
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|U|66",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 64
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|U|67",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 65
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|C|68",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 66
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|G|69",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 67
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|G|70",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 68
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|G|71",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 69
+   },
+   {
+    "seq_name": "1fir_1_A_A",
+    "unit_id": "1FIR|1|A|C|72",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 70
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|G|1",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 1
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|G|2",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 2
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|G|3",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 3
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|U|4",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 4
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|G|5",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 5
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|A|6",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 6
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|U|7",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 7
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|G|10",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 10
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|C|11",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 11
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|U|12",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 12
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|C|13",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 13
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|A|14",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 14
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|G|15",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 15
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|C|16",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 16
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|G|18",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 17
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|G|19",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 18
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|G|20",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 19
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|A|21",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 20
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|G|22",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 21
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|A|23",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 22
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|G|24",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 23
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|C|25",
+    "instance_label": "Helix D",
+    "family_track_label": null,
+    "rfam_consensus_pos": 24
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|A|26",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 25
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|C|27",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 26
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|C|28",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 27
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|U|29",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 28
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|C|30",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 29
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|C|31",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 30
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|C|32",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 31
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|U|33",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 32
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|U|34",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 33
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|A|35",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 34
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|C|36",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 35
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|A|37",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 36
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|A|38",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 37
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|G|39",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 38
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|G|40",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 39
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|A|41",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 40
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|G|42",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 41
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|G|43",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 42
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|G|44",
+    "instance_label": "Helix ACL",
+    "family_track_label": null,
+    "rfam_consensus_pos": 43
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|G|49",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 47
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|G|50",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 48
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|C|51",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 49
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|G|52",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 50
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|G|53",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 51
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|U|54",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 52
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|U|55",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 53
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|C|56",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 54
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|G|57",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 55
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|A|58",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 56
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|U|59",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 57
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|C|60",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 58
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|C|61",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 59
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|C|62",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 60
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|G|63",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 61
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|U|64",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 62
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|C|65",
+    "instance_label": "Helix T",
+    "family_track_label": null,
+    "rfam_consensus_pos": 63
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|A|66",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 64
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|U|67",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 65
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|C|68",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 66
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|A|69",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 67
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|C|70",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 68
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|C|71",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 69
+   },
+   {
+    "seq_name": "2k4c_1_A_A",
+    "unit_id": "2K4C|1|A|C|72",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 70
+   },
+   {
+    "seq_name": "2tra_1_A_A",
+    "unit_id": "2TRA|1|A|U|1",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 1
+   },
+   {
+    "seq_name": "2tra_1_A_A",
+    "unit_id": "2TRA|1|A|C|2",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 2
+   },
+   {
+    "seq_name": "2tra_1_A_A",
+    "unit_id": "2TRA|1|A|C|3",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 3
+   },
+   {
+    "seq_name": "2tra_1_A_A",
+    "unit_id": "2TRA|1|A|G|4",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 4
+   },
+   {
+    "seq_name": "2tra_1_A_A",
+    "unit_id": "2TRA|1|A|U|5",
+    "instance_label": "Helix ACC",
+    "family_track_label": null,
+    "rfam_consensus_pos": 5
+   }
+  ]
+ },
+ "provenance": {
+  "rfam_acc": "RF00005",
+  "rfam_release": "15.1",
+  "cm_checksum": "1403477983",
+  "cm_clen": 71,
+  "mapping_pipeline_version": "0.1.0",
+  "mapping_generated": "2026-10-18T08:02:51+00:00",
+  "annotation_pipeline_version": "0.1.0",
+  "annotation_config_version": "1.1",
+  "generated": "2026-10-18T08:10:13+00:00"
+ }
+}

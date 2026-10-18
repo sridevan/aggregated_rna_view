@@ -1,0 +1,209 @@
+{
+ "rfam_acc": "RF00005",
+ "rfam_id": "tRNA",
+ "description": "tRNA",
+ "comment": "Transfer RNA (tRNA) molecules are approximately 80 nucleotides in length. Their secondary structure includes four short double-helical elements and three loops (D, anti-codon, and T loops). Further hydrogen bonds mediate the characteristic L-shaped molecular structure. tRNAs have two regions of fundamental functional importance: the anti-codon, which is responsible for specific mRNA codon recognition, and the 3' end, to which the tRNAs corresponding amino acid is attached (by aminoacyl-tRNA synthetases). tRNAs cope with the degeneracy of the genetic code in two manners: having more than one tRNA (with a specific anti-codon) for a particular amino acid; and 'wobble' base-pairing, i.e. permitting non-standard base-pairing at the 3rd anti-codon position.",
+ "rfam_url": "https://rfam.org/family/RF00005",
+ "clen": 71,
+ "consensus_sequence": "ggggaugUAGCuuAaUGGUAaaGCauugGaCUuauAAuCcaaAggcgcgGGUUCgAaUCCcgccauccccA",
+ "ss_cons": "(((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))):",
+ "clan_members": [
+  "RF00005",
+  "RF00023",
+  "RF01849",
+  "RF01850",
+  "RF01851",
+  "RF01852",
+  "RF02544"
+ ],
+ "curation": {
+  "author": "Eddy SR, Griffiths-Jones SR, Mifsud W",
+  "seed_source": "Eddy SR",
+  "num_seed": 954,
+  "num_full": 5335975,
+  "num_species": 14413,
+  "type": "Gene; tRNA;",
+  "structure_source": "Published; PMID:8256282"
+ },
+ "counts": {
+  "pdb_entries": 59,
+  "instances": 60,
+  "unique_mapped_sequences": 43,
+  "instances_clan_best": 60,
+  "instances_validation_ok": 60,
+  "skipped_segments": 0
+ },
+ "experimental_methods": {
+  "X-ray diffraction": 31,
+  "Solution NMR": 1,
+  "Electron Microscopy": 28
+ },
+ "representative": {
+  "pdb_id": "9h3g",
+  "entity_id": 3,
+  "label_asym_id": "C",
+  "auth_asym_id": "i2",
+  "seq_name": "9h3g_3_i2_C",
+  "sequence_key": "a46966f90654fc869c185a86d629cd0e",
+  "mapping_file": "mappings/9h3g_3_i2_C.json",
+  "organism": "Arabidopsis thaliana",
+  "tax_id": 3702,
+  "organism_source": "pdbe_search",
+  "molecule_name": "Transfer RNA Phe",
+  "experimental_method": "Electron Microscopy",
+  "resolution": 1.82,
+  "release_year": 2026,
+  "title": "Structure of the Arabidopsis thaliana 80S ribosome in complex with P- and E-site tRNAs and mRNA",
+  "chain_length": 76,
+  "map_start": 1,
+  "map_end": 73,
+  "map_auth_start": 1,
+  "map_auth_end": 73,
+  "mapped_length": 73,
+  "n_modified_in_mapped": 0,
+  "rfam_bit_score": 66.1,
+  "rfam_evalue": "2.2e-15",
+  "rfam_cm_start": 1,
+  "rfam_cm_end": 71,
+  "clan_families_hit": [
+   {
+    "acc": "RF00005",
+    "bits": 66.1
+   }
+  ],
+  "clan_best_family": "RF00005",
+  "is_clan_best": true,
+  "cmalign": {
+   "name": "seq_a46966f90654fc869c185a86d629cd0e",
+   "length": 73,
+   "cm_from": 1,
+   "cm_to": 71,
+   "trunc": "no",
+   "bit_score": 54.78,
+   "avg_pp": 0.983
+  },
+  "n_match": 71,
+  "n_insert": 2,
+  "n_local_end": 0,
+  "n_deleted_in_span": 0,
+  "n_uncovered": 0,
+  "consensus_span": [
+   1,
+   71
+  ],
+  "fraction_clen_matched": 1.0,
+  "n_mapped_with_coordinates": 73,
+  "n_match_with_coordinates": 71,
+  "pp_star_fraction": 0.9452,
+  "pp_category_counts": {
+   "high": 69,
+   "medium": 1,
+   "low": 3
+  },
+  "validation_ok": true,
+  "organism_species": "Arabidopsis thaliana",
+  "species_tax_id": "3702",
+  "organism_rank": "species",
+  "pdbe_2d_available": false
+ },
+ "display_representative": {
+  "pdb_id": "1ehz",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "seq_name": "1ehz_1_A_A",
+  "sequence_key": "231f5a1c23f2f5539122a7a2c0c0f1de",
+  "mapping_file": "mappings/1ehz_1_A_A.json",
+  "organism": "Saccharomyces cerevisiae",
+  "tax_id": 4932,
+  "organism_source": "pdbe_search",
+  "molecule_name": "TRANSFER RNA (PHE)",
+  "experimental_method": "X-ray diffraction",
+  "resolution": 1.93,
+  "release_year": 2000,
+  "title": "The crystal structure of yeast phenylalanine tRNA at 1.93 A resolution",
+  "chain_length": 76,
+  "map_start": 1,
+  "map_end": 73,
+  "map_auth_start": 1,
+  "map_auth_end": 73,
+  "mapped_length": 73,
+  "n_modified_in_mapped": 14,
+  "rfam_bit_score": 67.7,
+  "rfam_evalue": "8.1e-16",
+  "rfam_cm_start": 1,
+  "rfam_cm_end": 71,
+  "clan_families_hit": [
+   {
+    "acc": "RF00005",
+    "bits": 67.7
+   }
+  ],
+  "clan_best_family": "RF00005",
+  "is_clan_best": true,
+  "cmalign": {
+   "name": "seq_231f5a1c23f2f5539122a7a2c0c0f1de",
+   "length": 73,
+   "cm_from": 1,
+   "cm_to": 71,
+   "trunc": "no",
+   "bit_score": 56.36,
+   "avg_pp": 0.983
+  },
+  "n_match": 71,
+  "n_insert": 2,
+  "n_local_end": 0,
+  "n_deleted_in_span": 0,
+  "n_uncovered": 0,
+  "consensus_span": [
+   1,
+   71
+  ],
+  "fraction_clen_matched": 1.0,
+  "n_mapped_with_coordinates": 73,
+  "n_match_with_coordinates": 71,
+  "pp_star_fraction": 0.9452,
+  "pp_category_counts": {
+   "high": 69,
+   "medium": 1,
+   "low": 3
+  },
+  "validation_ok": true,
+  "organism_species": "Saccharomyces cerevisiae",
+  "species_tax_id": "4932",
+  "organism_rank": "species",
+  "pdbe_2d_available": true,
+  "selection_rule": "x-ray; PDBe 2D topology available; natural species; >=95% matched residues with coordinates; model coverage >= family median; best resolution",
+  "eligible_count": 25,
+  "min_clen_fraction_used": 1.0
+ },
+ "coverage_summary": {
+  "sequence_coverage_mean": 0.9872,
+  "structural_coverage_mean": 0.9838,
+  "positions_with_sequence_coverage": 71,
+  "positions_with_structural_coverage": 71,
+  "positions_clen": 71
+ },
+ "skipped": [],
+ "provenance": {
+  "rfam_acc": "RF00005",
+  "rfam_release": "15.1",
+  "cm_name": "tRNA",
+  "cm_checksum": "1403477983",
+  "cm_clen": 71,
+  "cm_build_date": "Thu Aug  1 15:47:01 2024",
+  "infernal_version": "INFERNAL 1.1.5 (Sep 2023)",
+  "cmalign_options": "--cpu 4",
+  "cmalign_mode": "local (default)",
+  "pipeline_version": "0.1.0",
+  "generated": "2026-10-18T08:02:51+00:00",
+  "pdbe_mapping_source": "PDBe API v2 nucleic_mappings/{pdb_id} (per entry)",
+  "rfam_hit_source": "rfam.org/family/RF00005/structures",
+  "selection": {
+   "file": "data/selections/RF00005_60_chains.csv",
+   "sha256": "6958581ed76e91912ce1056964f1bf8bd6f54e9528097d893f339a6d4ccacfed",
+   "n_chains": 60
+  },
+  "coordinate_source": "PDBe ModelServer per chain (first model); validation residue scheme from the PDBe residue_listing API"
+ }
+}

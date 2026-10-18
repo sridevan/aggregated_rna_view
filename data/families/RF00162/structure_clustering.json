@@ -844,7 +844,9 @@
       "n_instances": 26,
       "n_entries": 26,
       "representative": "3gx3_1_A_A",
+      "medoid": "3gx3_1_A_A",
       "representative_rule": "medoid",
+      "representative_internal_gaps": [],
       "representative_mean_dissimilarity": 0.092082,
       "leaf_range": [
        0,
@@ -874,7 +876,9 @@
       "n_instances": 2,
       "n_entries": 1,
       "representative": "3v7e_2_C_C",
+      "medoid": "3v7e_2_C_C",
       "representative_rule": "medoid",
+      "representative_internal_gaps": [],
       "representative_mean_dissimilarity": 0.047808,
       "leaf_range": [
        27,
@@ -903,7 +907,9 @@
       "n_instances": 1,
       "n_entries": 1,
       "representative": "4kqy_1_A_A",
+      "medoid": "4kqy_1_A_A",
       "representative_rule": "medoid",
+      "representative_internal_gaps": [],
       "representative_mean_dissimilarity": 0.0,
       "leaf_range": [
        26,
@@ -1780,7 +1786,9 @@
       "n_instances": 22,
       "n_entries": 22,
       "representative": "5fkg_1_A_A",
+      "medoid": "5fkg_1_A_A",
       "representative_rule": "medoid",
+      "representative_internal_gaps": [],
       "representative_mean_dissimilarity": 0.048671,
       "leaf_range": [
        0,
@@ -1812,7 +1820,9 @@
       "n_instances": 4,
       "n_entries": 4,
       "representative": "4b5r_1_A_A",
+      "medoid": "4b5r_1_A_A",
       "representative_rule": "medoid",
+      "representative_internal_gaps": [],
       "representative_mean_dissimilarity": 0.03432,
       "leaf_range": [
        22,
@@ -1842,7 +1852,9 @@
       "n_instances": 2,
       "n_entries": 1,
       "representative": "3v7e_2_C_C",
+      "medoid": "3v7e_2_C_C",
       "representative_rule": "medoid",
+      "representative_internal_gaps": [],
       "representative_mean_dissimilarity": 0.02378,
       "leaf_range": [
        26,
@@ -1871,7 +1883,9 @@
       "n_instances": 1,
       "n_entries": 1,
       "representative": "4kqy_1_A_A",
+      "medoid": "4kqy_1_A_A",
       "representative_rule": "medoid",
+      "representative_internal_gaps": [],
       "representative_mean_dissimilarity": 0.0,
       "leaf_range": [
        28,
@@ -1986,7 +2000,7 @@
   "mapping_pipeline_version": "0.1.0",
   "mapping_generated": "2026-10-17T15:09:20+00:00",
   "pipeline_version": "0.1.0",
-  "generated": "2026-10-17T16:07:42+00:00",
+  "generated": "2026-10-18T08:24:38+00:00",
   "note": "pairwise values copied from the research run; no structural comparison was recomputed"
  }
 }

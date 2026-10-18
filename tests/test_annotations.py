@@ -381,3 +381,31 @@ def test_loops_by_instance_files(built):
     a, bb = (json.load(open(fam_dir / "loops_by_instance" / f"2xyz_1_{c}_{c}.json"))["loops"] for c in "AB")
     assert "IL_2XYZ_001" in {L["loop_id"] for L in a} and "IL_2XYZ_001" in {L["loop_id"] for L in bb}
     assert summary["file_sizes_bytes"]["loops_by_instance/ (total)"] > 0
+
+
+# ----------------------------------------------------------------------------- higher-order junctions (J5) are part of the junction union
+LOOPS_J5 = LOOPS_OVERLAP + '"J5_1ABC_001","1ABC|1|A|G|11,1ABC|1|A|C|15,1ABC|1|A|G|16"\n'
+MOTIFS_J5 = _page([_row("HL_1ABC_002", "1/A/12:14", "Purine riboswitch", "HL_9.1"), _row("J3_1ABC_002", "1/A/11:15", "No text annotation", "J3_9.1"),
+                   _row("J3_1ABC_003", "1/A/11:14", "No text annotation", "J3_8.1"), _row("J4_1ABC_002", "1/A/11, 1/A/15", "No text annotation", "J4_9.1"),
+                   _row("J5_1ABC_001", "1/A/11, 1/A/15:16", "No text annotation", "J5_9.1")])
+
+
+class J5Fetcher(FakeFetcher):
+    def text(self, url, suffix, seed_name=None):
+        if "loops/download/1ABC" in url:
+            return LOOPS_J5, SourceMeta(url, "ok", "2026-10-18")
+        if "pdb/1ABC/motifs" in url:
+            return MOTIFS_J5, SourceMeta(url, "ok", "2026-10-18")
+        return super().text(url, suffix, seed_name)
+
+
+def test_j5_junction_loops_are_in_the_junction_union(fam_dir):
+    AnnotationBuilder(fam_dir, J5Fetcher(), load_config()).run()
+    tr = json.load(open(fam_dir / "tracks.json"))
+    assert tr["tracks"]["junction_loops_union"]["loop_types"] == ["J3", "J4", "J5"]
+    p3 = tr["positions"][2]      # consensus 3 = residue 11: J3 x2, J4 and J5, one chain
+    u = p3["junction_loops_union"]
+    assert u["n_loop_observations"] == 4 and u["n_instances"] == 1            # the J5 loop counted; the instance once (union, not a sum)
+    assert u["by_type_n_instances"] == {"J3": 1, "J4": 1, "J5": 1} and u["loop_types"] == ["J3", "J4", "J5"]
+    assert "J5" in u["rule"]
+    assert "J5_1ABC_001" in {L["loop_id"] for L in json.load(open(fam_dir / "loops.json"))["loops"]}

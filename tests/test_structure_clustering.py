@@ -169,3 +169,38 @@ def test_rf00177_head_rotation_groups():
         assert [g["n_instances"] for g in c["groups"]] == [50, 10] and c["floor"]["value"] is None and "Not shown" in c["floor"]["definition"]
         groups[key] = sorted(c["groups"][1]["members"])
     assert groups["discrepancy"] == groups["tm"]                                        # both metrics: the same 10 most rotated chains
+
+
+from rna_explorer.structure_clustering import internal_gaps  # noqa: E402
+
+
+def test_internal_gaps_and_gap_free_medoid():
+    res = lambda p, num, obs: {"polymer_seq_position": p, "author_residue_number": num, "author_insertion_code": "", "has_coordinates": obs}
+    # unmodelled at the ends are not breaks; inside they are
+    assert internal_gaps({"residues": [res(1, 10, False), res(2, 11, True), res(3, 12, False), res(4, 13, True), res(5, 14, False)]}) == ["12"]
+    assert internal_gaps({"residues": [res(1, 10, False), res(2, 11, True), res(3, 12, True)]}) == []
+    D = np.array([[0, .1, .2, .3], [.1, 0, .2, .3], [.2, .2, 0, .4], [.3, .3, .4, 0]], dtype=float)
+    assert medoid([0, 1, 2, 3], D)[0] == 0                       # plain medoid
+    assert medoid([0, 1, 2, 3], D, candidates=[2, 3])[0] == 2     # restricted choice, mean still over all members
+    ids, entries = ["a", "b", "c", "d"], {"a": "1", "b": "1", "c": "2", "d": "3"}
+    g = cluster_metric(ids, entries, D, 1, gaps={"a": ["5"], "b": ["7"], "c": [], "d": []})["groups"][0]
+    assert g["representative"] == "c" and g["medoid"] == "a" and g["representative_rule"] == "medoid among members without internal coordinate gaps" and g["representative_internal_gaps"] == []
+    g = cluster_metric(ids, entries, D, 1, gaps={k: ["1"] for k in ids})["groups"][0]
+    assert g["representative"] == "a" and g["representative_rule"] == "medoid (every member has internal coordinate gaps)" and g["representative_internal_gaps"] == ["1"]
+    assert cluster_metric(ids, entries, D, 1)["groups"][0]["representative_rule"] == "medoid"   # no gap information: plain medoid
+
+
+FAM005 = Path(__file__).resolve().parents[1] / "data/families/RF00005"
+
+
+@pytest.mark.skipif(not (FAM005 / "structure_clustering.json").exists(), reason="RF00005 clustering not built")
+def test_rf00005_groups_and_gap_free_representatives():
+    d = json.load(open(FAM005 / "structure_clustering.json"))
+    validate_json(d, "structure_clustering")
+    for key, sizes in (("discrepancy", [56, 2, 1, 1]), ("tm", [55, 2, 1, 1, 1])):
+        c = d["metrics"][key]["clustering"]
+        assert c["validation"] == "provisional" and [g["n_instances"] for g in c["groups"]] == sizes and c["floor"]["value"] is None
+        for g in c["groups"]:                                                         # every representative has a continuous backbone
+            assert internal_gaps(json.load(open(FAM005 / "mappings" / f"{g['representative']}.json"))) == []
+    g1 = d["metrics"]["discrepancy"]["clustering"]["groups"][0]
+    assert g1["medoid"] == "9tnl_6_Y_F" and g1["representative"] == "6ufg_1_B_A"     # plain medoid lacks 4 internal nucleotides

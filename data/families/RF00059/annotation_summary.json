@@ -1,6 +1,6 @@
 {
  "rfam_acc": "RF00059",
- "generated": "2026-10-17T16:06:57+00:00",
+ "generated": "2026-10-18T08:10:10+00:00",
  "n_instances": 38,
  "n_entries": 28,
  "reference_structural_elements": {
@@ -314,7 +314,8 @@
    "outside_mapped_region": 247,
    "insert": 76
   },
-  "n_motif_page_loops_missing_from_download": 0
+  "n_motif_page_loops_missing_from_download": 0,
+  "n_loops_outside_family_chains": 0
  },
  "ligands": {
   "n_entry_entities_evaluated": 28,
@@ -360,9 +361,10 @@
  "n_unresolved_identifiers": 0,
  "file_sizes_bytes": {
   "reference_structural_elements.json": 3437,
-  "loops.json": 2052286,
-  "ligands.json": 291647,
-  "tracks.json": 523301,
+  "loops.json": 2053641,
+  "loops_by_instance/ (total)": 2054667,
+  "ligands.json": 291658,
+  "tracks.json": 537760,
   "annotations/ (total)": 2162909
  },
  "provenance": {
@@ -373,7 +375,7 @@
   "mapping_pipeline_version": "0.1.0",
   "mapping_generated": "2026-10-17T16:05:41+00:00",
   "annotation_pipeline_version": "0.1.0",
-  "annotation_config_version": "1.0",
-  "generated": "2026-10-17T16:06:57+00:00"
+  "annotation_config_version": "1.1",
+  "generated": "2026-10-18T08:10:10+00:00"
  }
 }

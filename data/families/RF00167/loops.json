@@ -274,7 +274,8 @@
    "outside_mapped_region": 168,
    "insert": 68
   },
-  "n_motif_page_loops_missing_from_download": 0
+  "n_motif_page_loops_missing_from_download": 0,
+  "n_loops_outside_family_chains": 0
  },
  "entry_sources": {
   "1y26": {
@@ -291,7 +292,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 5
+   "n_loops": 5,
+   "n_loops_outside_family_chains": 0
   },
   "1y27": {
    "status": "evaluated",
@@ -307,7 +309,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "2b57": {
    "status": "evaluated",
@@ -323,7 +326,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "2ees": {
    "status": "evaluated",
@@ -339,7 +343,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "2eet": {
    "status": "evaluated",
@@ -355,7 +360,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "2eeu": {
    "status": "evaluated",
@@ -371,7 +377,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "2eev": {
    "status": "evaluated",
@@ -387,7 +394,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "2eew": {
    "status": "evaluated",
@@ -403,7 +411,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "2g9c": {
    "status": "evaluated",
@@ -419,7 +428,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "2xnw": {
    "status": "evaluated",
@@ -435,7 +445,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "2xnz": {
    "status": "evaluated",
@@ -451,7 +462,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "2xo0": {
    "status": "evaluated",
@@ -467,7 +479,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "2xo1": {
    "status": "evaluated",
@@ -483,7 +496,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "3ds7": {
    "status": "evaluated",
@@ -499,7 +513,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 12
+   "n_loops": 12,
+   "n_loops_outside_family_chains": 0
   },
   "3fo4": {
    "status": "evaluated",
@@ -515,7 +530,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "3fo6": {
    "status": "evaluated",
@@ -531,7 +547,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "3g4m": {
    "status": "evaluated",
@@ -547,7 +564,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "3gao": {
    "status": "evaluated",
@@ -563,7 +581,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "3ger": {
    "status": "evaluated",
@@ -579,7 +598,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "3ges": {
    "status": "evaluated",
@@ -595,7 +615,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "3gog": {
    "status": "evaluated",
@@ -611,7 +632,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "3got": {
    "status": "evaluated",
@@ -627,7 +649,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "3ivn": {
    "status": "evaluated",
@@ -643,7 +666,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 10
+   "n_loops": 10,
+   "n_loops_outside_family_chains": 0
   },
   "3la5": {
    "status": "evaluated",
@@ -659,7 +683,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "3rkf": {
    "status": "evaluated",
@@ -675,7 +700,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 20
+   "n_loops": 20,
+   "n_loops_outside_family_chains": 0
   },
   "4fe5": {
    "status": "evaluated",
@@ -691,7 +717,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "4fej": {
    "status": "evaluated",
@@ -707,7 +734,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "4fel": {
    "status": "evaluated",
@@ -723,7 +751,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 5
+   "n_loops": 5,
+   "n_loops_outside_family_chains": 0
   },
   "4fen": {
    "status": "evaluated",
@@ -739,7 +768,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 5
+   "n_loops": 5,
+   "n_loops_outside_family_chains": 0
   },
   "4feo": {
    "status": "evaluated",
@@ -755,7 +785,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 5
+   "n_loops": 5,
+   "n_loops_outside_family_chains": 0
   },
   "4fep": {
    "status": "evaluated",
@@ -771,7 +802,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 5
+   "n_loops": 5,
+   "n_loops_outside_family_chains": 0
   },
   "4lx5": {
    "status": "evaluated",
@@ -787,7 +819,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 5
+   "n_loops": 5,
+   "n_loops_outside_family_chains": 0
   },
   "4lx6": {
    "status": "evaluated",
@@ -803,7 +836,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 5
+   "n_loops": 5,
+   "n_loops_outside_family_chains": 0
   },
   "4tzx": {
    "status": "evaluated",
@@ -819,7 +853,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 5
+   "n_loops": 5,
+   "n_loops_outside_family_chains": 0
   },
   "4tzy": {
    "status": "evaluated",
@@ -835,7 +870,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 5
+   "n_loops": 5,
+   "n_loops_outside_family_chains": 0
   },
   "4xnr": {
    "status": "evaluated",
@@ -851,7 +887,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 5
+   "n_loops": 5,
+   "n_loops_outside_family_chains": 0
   },
   "5c7u": {
    "status": "evaluated",
@@ -867,7 +904,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "5c7w": {
    "status": "evaluated",
@@ -883,7 +921,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "5e54": {
    "status": "evaluated",
@@ -899,7 +938,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 8
+   "n_loops": 8,
+   "n_loops_outside_family_chains": 0
   },
   "5swd": {
    "status": "evaluated",
@@ -915,7 +955,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 8
+   "n_loops": 8,
+   "n_loops_outside_family_chains": 0
   },
   "5swe": {
    "status": "evaluated",
@@ -931,7 +972,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 5
+   "n_loops": 5,
+   "n_loops_outside_family_chains": 0
   },
   "5uza": {
    "status": "evaluated",
@@ -947,7 +989,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "6p2h": {
    "status": "evaluated",
@@ -963,7 +1006,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 5
+   "n_loops": 5,
+   "n_loops_outside_family_chains": 0
   },
   "6ubu": {
    "status": "evaluated",
@@ -979,7 +1023,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "6uc7": {
    "status": "evaluated",
@@ -995,7 +1040,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "6uc8": {
    "status": "evaluated",
@@ -1011,7 +1057,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "6uc9": {
    "status": "evaluated",
@@ -1027,7 +1074,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 6
+   "n_loops": 6,
+   "n_loops_outside_family_chains": 0
   },
   "6vwt": {
    "status": "evaluated",
@@ -1043,7 +1091,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 10
+   "n_loops": 10,
+   "n_loops_outside_family_chains": 0
   },
   "6vwv": {
    "status": "evaluated",
@@ -1059,7 +1108,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 10
+   "n_loops": 10,
+   "n_loops_outside_family_chains": 0
   },
   "9iwf": {
    "status": "evaluated",
@@ -1075,7 +1125,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 14
+   "n_loops": 14,
+   "n_loops_outside_family_chains": 0
   },
   "9iwg": {
    "status": "evaluated",
@@ -1091,7 +1142,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 14
+   "n_loops": 14,
+   "n_loops_outside_family_chains": 0
   },
   "9ljn": {
    "status": "evaluated",
@@ -1107,7 +1159,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 7
+   "n_loops": 7,
+   "n_loops_outside_family_chains": 0
   },
   "9lkc": {
    "status": "evaluated",
@@ -1123,7 +1176,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 7
+   "n_loops": 7,
+   "n_loops_outside_family_chains": 0
   },
   "9lke": {
    "status": "evaluated",
@@ -1139,7 +1193,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 7
+   "n_loops": 7,
+   "n_loops_outside_family_chains": 0
   },
   "9lkf": {
    "status": "evaluated",
@@ -1155,7 +1210,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 7
+   "n_loops": 7,
+   "n_loops_outside_family_chains": 0
   },
   "9lmc": {
    "status": "evaluated",
@@ -1171,7 +1227,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 14
+   "n_loops": 14,
+   "n_loops_outside_family_chains": 0
   },
   "9nbc": {
    "status": "evaluated",
@@ -1187,7 +1244,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 5
+   "n_loops": 5,
+   "n_loops_outside_family_chains": 0
   },
   "9nbh": {
    "status": "evaluated",
@@ -1203,7 +1261,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 18
+   "n_loops": 18,
+   "n_loops_outside_family_chains": 0
   },
   "9ndd": {
    "status": "evaluated",
@@ -1219,7 +1278,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 38
+   "n_loops": 38,
+   "n_loops_outside_family_chains": 0
   },
   "9v4u": {
    "status": "evaluated",
@@ -1235,7 +1295,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 7
+   "n_loops": 7,
+   "n_loops_outside_family_chains": 0
   },
   "9v4v": {
    "status": "evaluated",
@@ -1251,7 +1312,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 7
+   "n_loops": 7,
+   "n_loops_outside_family_chains": 0
   },
   "9v4x": {
    "status": "evaluated",
@@ -1267,7 +1329,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 7
+   "n_loops": 7,
+   "n_loops_outside_family_chains": 0
   },
   "9v4y": {
    "status": "evaluated",
@@ -1283,7 +1346,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 7
+   "n_loops": 7,
+   "n_loops_outside_family_chains": 0
   },
   "9v4z": {
    "status": "evaluated",
@@ -1299,7 +1363,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 7
+   "n_loops": 7,
+   "n_loops_outside_family_chains": 0
   },
   "9v50": {
    "status": "evaluated",
@@ -1315,7 +1380,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 5
+   "n_loops": 5,
+   "n_loops_outside_family_chains": 0
   },
   "9v51": {
    "status": "evaluated",
@@ -1331,7 +1397,8 @@
     "retrieved": "2026-10-15",
     "detail": ""
    },
-   "n_loops": 7
+   "n_loops": 7,
+   "n_loops_outside_family_chains": 0
   }
  },
  "motif_page_only": [],
@@ -158511,6 +158578,10 @@
    }
   }
  ],
+ "loops_outside_family_chains": {
+  "description": "loops of the same PDB entries with no nucleotide in a family chain (other molecules of the entry); kept as compact records without nucleotide-level data",
+  "loops": []
+ },
  "provenance": {
   "rfam_acc": "RF00167",
   "rfam_release": "15.1",
@@ -158519,7 +158590,7 @@
   "mapping_pipeline_version": "0.1.0",
   "mapping_generated": "2026-10-15T03:48:01+00:00",
   "annotation_pipeline_version": "0.1.0",
-  "annotation_config_version": "1.0",
-  "generated": "2026-10-15T06:34:41+00:00"
+  "annotation_config_version": "1.1",
+  "generated": "2026-10-18T08:10:20+00:00"
  }
 }

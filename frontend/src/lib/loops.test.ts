@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { instanceLoops, loopSelection, loopTooltip } from './loops'
+import { instanceLoops, loopSelection, loopTooltip, TRACK_OF, typeName } from './loops'
 import type { LoopNucleotide, LoopRecord } from '../types/backend'
 
 const nt = (id: number, pos: number | null, state = 'match', sn = 'x_1_A_A', coords = true): LoopNucleotide => ({ seq_name: sn, pdb_id: 'x', label_asym_id: sn.split('_')[3], auth_asym_id: sn.split('_')[2], label_seq_id: id,
@@ -66,5 +66,13 @@ describe('structured loop tooltip', () => {
   it('reports members in another chain', () => {
     const t = loopTooltip(instanceLoops([loop('IL_X_003', 'IL', [[nt(70, 30)], [nt(5, 50, 'match', 'x_1_C_C')]])], 'x_1_A_A')[0])
     expect(t.counts).toBe('2 nucleotides · 2 segments'); expect(t.otherChain).toBe('1 in another chain')
+  })
+})
+
+describe('loop type names', () => {
+  it('names every junction order, including higher-order junctions', () => {
+    expect(typeName('J3')).toBe('Three-way junction loop'); expect(typeName('J5')).toBe('Five-way junction loop')
+    expect(typeName('J7')).toBe('7-way junction loop'); expect(typeName('HL')).toBe('Hairpin loop'); expect(typeName('XX')).toBe('XX')
+    expect(TRACK_OF('J5')).toBe('JL')
   })
 })

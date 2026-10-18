@@ -9,7 +9,7 @@
   "index_type": "PDB polymer sequence index == label_seq_id (validated Milestone 3A)"
  },
  "classification": {
-  "config_version": "1.0",
+  "config_version": "1.1",
   "default_track_classes": [
    "ligand"
   ],
@@ -133,7 +133,8 @@
     "TLA",
     "PGO",
     "BCT",
-    "CO3"
+    "CO3",
+    "PUT"
    ]
   }
  },
@@ -13614,7 +13615,7 @@
   "mapping_pipeline_version": "0.1.0",
   "mapping_generated": "2026-10-17T16:05:41+00:00",
   "annotation_pipeline_version": "0.1.0",
-  "annotation_config_version": "1.0",
-  "generated": "2026-10-17T16:06:57+00:00"
+  "annotation_config_version": "1.1",
+  "generated": "2026-10-18T08:10:10+00:00"
  }
 }

@@ -1140,9 +1140,11 @@
       ],
       "n_instances": 35,
       "n_entries": 26,
-      "representative": "7tdc_1_A_A",
-      "representative_rule": "medoid",
-      "representative_mean_dissimilarity": 0.129832,
+      "representative": "9c6k_1_X_A",
+      "medoid": "7tdc_1_A_A",
+      "representative_rule": "medoid among members without internal coordinate gaps",
+      "representative_internal_gaps": [],
+      "representative_mean_dissimilarity": 0.144104,
       "leaf_range": [
        0,
        34
@@ -1171,7 +1173,17 @@
       "n_instances": 2,
       "n_entries": 1,
       "representative": "8f4o_1_A_A",
-      "representative_rule": "medoid",
+      "medoid": "8f4o_1_A_A",
+      "representative_rule": "medoid (every member has internal coordinate gaps)",
+      "representative_internal_gaps": [
+       "28",
+       "29",
+       "30",
+       "31",
+       "53",
+       "54",
+       "55"
+      ],
       "representative_mean_dissimilarity": 0.198516,
       "leaf_range": [
        35,
@@ -2367,9 +2379,11 @@
       ],
       "n_instances": 35,
       "n_entries": 26,
-      "representative": "7tda_1_A_A",
-      "representative_rule": "medoid",
-      "representative_mean_dissimilarity": 0.147601,
+      "representative": "4nya_1_A_A",
+      "medoid": "7tda_1_A_A",
+      "representative_rule": "medoid among members without internal coordinate gaps",
+      "representative_internal_gaps": [],
+      "representative_mean_dissimilarity": 0.180035,
       "leaf_range": [
        0,
        34
@@ -2398,7 +2412,17 @@
       "n_instances": 2,
       "n_entries": 1,
       "representative": "8f4o_1_A_A",
-      "representative_rule": "medoid",
+      "medoid": "8f4o_1_A_A",
+      "representative_rule": "medoid (every member has internal coordinate gaps)",
+      "representative_internal_gaps": [
+       "28",
+       "29",
+       "30",
+       "31",
+       "53",
+       "54",
+       "55"
+      ],
       "representative_mean_dissimilarity": 0.35689,
       "leaf_range": [
        35,
@@ -2530,7 +2554,7 @@
   "mapping_pipeline_version": "0.1.0",
   "mapping_generated": "2026-10-17T16:05:41+00:00",
   "pipeline_version": "0.1.0",
-  "generated": "2026-10-17T16:17:07+00:00",
+  "generated": "2026-10-18T08:24:56+00:00",
   "note": "pairwise values copied from the research run; no structural comparison was recomputed"
  }
 }

@@ -84,7 +84,8 @@ function loopTrack(id: 'HL' | 'IL' | 'JL', typeName: string, tracks: TracksDatas
       const k = d.n_positive_observable_and_evaluated, n = d.n_observable_and_evaluated
       const details = [`${p.n_loop_observations} loop observations on ${plural(p.n_instances, 'RNA instance', 'RNA instances')} in ${plural(p.n_entries, 'PDB entry', 'PDB entries')}`,
         `Not annotated as ${id} by the source in ${d.n_not_annotated_by_source} of ${n} RNA instances; source unavailable for ${d.n_source_unavailable}${d.n_positive_not_observable ? `; ${d.n_positive_not_observable} annotated instances without coordinates here are not counted` : ''}`]
-      if (id === 'JL') details.push(`J3: ${t.junction_loops_J3.n_instances} instances, J4: ${t.junction_loops_J4.n_instances} instances (union, never summed)`)
+      if (id === 'JL') { const bt = t.junction_loops_union.by_type_n_instances ?? { J3: t.junction_loops_J3.n_instances, J4: t.junction_loops_J4.n_instances }
+        details.push(`${Object.entries(bt).map(([k, v]) => `${k}: ${v} instances`).join(', ')} (union, never summed)`) }
       if ('by_motif_group' in p) details.push(`Motif groups: ${Object.entries(p.by_motif_group).map(([g, v]) => `${g} (${v.n_loops})`).join(', ') || 'none'}`)
       details.push(`${DETERMINABLE} BGSU loop classifications can overlap.`)
       return { value: p.frequency ?? 0, tip: { title: `Rfam residue ${pos}`, lines: [`${typeName} (${id})`, `Observed in ${k} of ${n} RNA instances (${pct(k, n)})`] }, details }

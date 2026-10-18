@@ -12,7 +12,7 @@
   "colour": "#5B78A8",
   "size_px": 240,
   "bytes": 8026,
-  "generated": "2026-10-18T06:17:15.985Z",
+  "generated": "2026-10-18T08:14:33.173Z",
   "generator": "frontend/scripts/make-thumbnails.mjs"
  },
  "RF00162": {
@@ -27,8 +27,8 @@
   "representation": "3Dmol.js cartoon: backbone tube with nucleotide ladders (all polymer atoms), principal-axes orientation",
   "colour": "#5B78A8",
   "size_px": 240,
-  "bytes": 9110,
-  "generated": "2026-10-18T06:17:16.798Z",
+  "bytes": 9158,
+  "generated": "2026-10-18T08:14:34.008Z",
   "generator": "frontend/scripts/make-thumbnails.mjs"
  },
  "RF00059": {
@@ -43,8 +43,8 @@
   "representation": "3Dmol.js cartoon: backbone tube with nucleotide ladders (all polymer atoms), principal-axes orientation",
   "colour": "#5B78A8",
   "size_px": 240,
-  "bytes": 8448,
-  "generated": "2026-10-18T06:17:17.588Z",
+  "bytes": 8494,
+  "generated": "2026-10-18T08:14:35.241Z",
   "generator": "frontend/scripts/make-thumbnails.mjs"
  },
  "RF00177": {
@@ -60,7 +60,23 @@
   "colour": "#5B78A8",
   "size_px": 240,
   "bytes": 12972,
-  "generated": "2026-10-18T06:17:20.455Z",
+  "generated": "2026-10-18T08:14:39.257Z",
+  "generator": "frontend/scripts/make-thumbnails.mjs"
+ },
+ "RF00005": {
+  "file": "RF00005.webp",
+  "seq_name": "1ehz_1_A_A",
+  "pdb_id": "1ehz",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "n_residues_drawn": 76,
+  "coordinate_source": "https://www.ebi.ac.uk/pdbe/model-server/v1/1ehz/atoms?label_asym_id=A&model_nums=1&encoding=cif",
+  "representation": "3Dmol.js cartoon: backbone tube with nucleotide ladders (all polymer atoms), principal-axes orientation",
+  "colour": "#5B78A8",
+  "size_px": 240,
+  "bytes": 5738,
+  "generated": "2026-10-18T08:14:53.138Z",
   "generator": "frontend/scripts/make-thumbnails.mjs"
  }
 }

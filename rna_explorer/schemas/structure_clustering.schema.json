@@ -191,7 +191,11 @@
             "type": "string"
            },
            "representative_rule": {
-            "const": "medoid"
+            "enum": [
+             "medoid",
+             "medoid among members without internal coordinate gaps",
+             "medoid (every member has internal coordinate gaps)"
+            ]
            },
            "representative_mean_dissimilarity": {
             "type": "number"
@@ -258,6 +262,17 @@
            },
            "instance_level_view": {
             "type": "boolean"
+           },
+           "medoid": {
+            "type": "string",
+            "description": "plain medoid of the group (may have internal coordinate gaps)"
+           },
+           "representative_internal_gaps": {
+            "type": [
+             "array",
+             "null"
+            ],
+            "description": "author numbers of the representative's unmodelled internal nucleotides (empty when its backbone is continuous)"
            }
           }
          },
@@ -407,7 +422,11 @@
             "type": "string"
            },
            "representative_rule": {
-            "const": "medoid"
+            "enum": [
+             "medoid",
+             "medoid among members without internal coordinate gaps",
+             "medoid (every member has internal coordinate gaps)"
+            ]
            },
            "representative_mean_dissimilarity": {
             "type": "number"
@@ -474,6 +493,17 @@
            },
            "instance_level_view": {
             "type": "boolean"
+           },
+           "medoid": {
+            "type": "string",
+            "description": "plain medoid of the group (may have internal coordinate gaps)"
+           },
+           "representative_internal_gaps": {
+            "type": [
+             "array",
+             "null"
+            ],
+            "description": "author numbers of the representative's unmodelled internal nucleotides (empty when its backbone is continuous)"
            }
           }
          },

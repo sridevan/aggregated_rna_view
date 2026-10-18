@@ -1,0 +1,1038 @@
+{
+ "rfam_acc": "RF00005",
+ "generated": "2026-10-18T08:10:13+00:00",
+ "n_instances": 60,
+ "n_entries": 59,
+ "reference_structural_elements": {
+  "n_consensus_positions_annotated": 0,
+  "reference": null,
+  "instance_transfer": {
+   "source": "BGSU correspondence/nucleotide_annotation per chain (labels transferred by BGSU)",
+   "n_instances": 60,
+   "n_instances_evaluated": 60,
+   "n_instances_unavailable": 0,
+   "unavailable_instances": [],
+   "n_nucleotide_labels": 3884,
+   "mapping_status_counts": {
+    "mapped": 3840,
+    "insert": 44
+   },
+   "n_labels_agree_with_family_track": 0,
+   "n_labels_disagree": 3840
+  },
+  "n_conflicts": 0,
+  "n_reference_nucleotides_not_on_consensus": 76
+ },
+ "loops": {
+  "n_loops": 295,
+  "n_with_motif_group": 156,
+  "motif_group_assignment_counts": {
+   "none": 139,
+   "geometric": 15,
+   "homologous": 65,
+   "member": 76
+  },
+  "n_problematic": 74,
+  "n_distinct_motif_groups": 47,
+  "by_type": {
+   "HL": {
+    "n_loops": 210,
+    "n_with_motif_group": 113,
+    "n_without_motif_group": 97,
+    "motif_group_assignment_counts": {
+     "none": 97,
+     "geometric": 13,
+     "member": 55,
+     "homologous": 45
+    },
+    "n_problematic": 53,
+    "n_distinct_motif_groups": 33,
+    "motif_groups": {
+     "HL_07480.3": {
+      "n_loops": 2,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_07480.3"
+     },
+     "HL_11447.1": {
+      "n_loops": 1,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_11447.1"
+     },
+     "HL_11974.5": {
+      "n_loops": 4,
+      "annotation_text": "tRNA anticodon loop",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_11974.5"
+     },
+     "HL_20490.1": {
+      "n_loops": 9,
+      "annotation_text": "tRNA D-loop",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_20490.1"
+     },
+     "HL_24179.1": {
+      "n_loops": 1,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_24179.1"
+     },
+     "HL_33487.2": {
+      "n_loops": 1,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_33487.2"
+     },
+     "HL_33597.8": {
+      "n_loops": 38,
+      "annotation_text": "T-loop with 2 stacked bulged bases",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_33597.8"
+     },
+     "HL_34245.2": {
+      "n_loops": 1,
+      "annotation_text": "tRNA anticodon loop",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_34245.2"
+     },
+     "HL_34789.7": {
+      "n_loops": 1,
+      "annotation_text": "GNRA",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_34789.7"
+     },
+     "HL_34964.1": {
+      "n_loops": 1,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_34964.1"
+     },
+     "HL_37569.4": {
+      "n_loops": 1,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_37569.4"
+     },
+     "HL_45175.1": {
+      "n_loops": 2,
+      "annotation_text": "tRNA D-loop",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_45175.1"
+     },
+     "HL_50006.6": {
+      "n_loops": 1,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_50006.6"
+     },
+     "HL_55043.2": {
+      "n_loops": 4,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_55043.2"
+     },
+     "HL_55735.1": {
+      "n_loops": 2,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_55735.1"
+     },
+     "HL_56131.4": {
+      "n_loops": 3,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_56131.4"
+     },
+     "HL_57684.1": {
+      "n_loops": 2,
+      "annotation_text": "tRNA D-loop",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_57684.1"
+     },
+     "HL_58224.1": {
+      "n_loops": 1,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_58224.1"
+     },
+     "HL_63054.2": {
+      "n_loops": 1,
+      "annotation_text": "tRNA D-loop",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_63054.2"
+     },
+     "HL_63894.5": {
+      "n_loops": 2,
+      "annotation_text": "tRNA anticodon loop with synthetase",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_63894.5"
+     },
+     "HL_67772.4": {
+      "n_loops": 1,
+      "annotation_text": "T-loop related",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_67772.4"
+     },
+     "HL_69186.3": {
+      "n_loops": 2,
+      "annotation_text": "tRNA anticodon loop with synthetase",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_69186.3"
+     },
+     "HL_69752.4": {
+      "n_loops": 2,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_69752.4"
+     },
+     "HL_72836.1": {
+      "n_loops": 2,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_72836.1"
+     },
+     "HL_75660.11": {
+      "n_loops": 1,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_75660.11"
+     },
+     "HL_76195.2": {
+      "n_loops": 1,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_76195.2"
+     },
+     "HL_78347.5": {
+      "n_loops": 2,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_78347.5"
+     },
+     "HL_81376.5": {
+      "n_loops": 17,
+      "annotation_text": "tRNA anticodon loop",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_81376.5"
+     },
+     "HL_87306.2": {
+      "n_loops": 2,
+      "annotation_text": "tRNA anticodon loop",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_87306.2"
+     },
+     "HL_88397.1": {
+      "n_loops": 1,
+      "annotation_text": "tRNA D-loop",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_88397.1"
+     },
+     "HL_89167.5": {
+      "n_loops": 1,
+      "annotation_text": "tRNA D-loop",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_89167.5"
+     },
+     "HL_91218.1": {
+      "n_loops": 1,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_91218.1"
+     },
+     "HL_91542.1": {
+      "n_loops": 2,
+      "annotation_text": "tRNA D-loop",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_91542.1"
+     }
+    },
+    "n_multi_chain_loops": 0,
+    "n_pdb_entries": 59,
+    "n_instances": 60
+   },
+   "IL": {
+    "n_loops": 17,
+    "n_with_motif_group": 4,
+    "n_without_motif_group": 13,
+    "motif_group_assignment_counts": {
+     "none": 13,
+     "member": 2,
+     "geometric": 2
+    },
+    "n_problematic": 9,
+    "n_distinct_motif_groups": 3,
+    "motif_groups": {
+     "IL_01003.7": {
+      "n_loops": 2,
+      "annotation_text": "Isolated non-canonical cWW pair",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_01003.7"
+     },
+     "IL_10004.1": {
+      "n_loops": 1,
+      "annotation_text": "Tandem non-canonical cWW pairs",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_10004.1"
+     },
+     "IL_25652.1": {
+      "n_loops": 1,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_25652.1"
+     }
+    },
+    "n_multi_chain_loops": 0,
+    "n_pdb_entries": 14,
+    "n_instances": 14
+   },
+   "J3": {
+    "n_loops": 1,
+    "n_with_motif_group": 1,
+    "n_without_motif_group": 0,
+    "motif_group_assignment_counts": {
+     "member": 1
+    },
+    "n_problematic": 0,
+    "n_distinct_motif_groups": 1,
+    "motif_groups": {
+     "J3_63687.1": {
+      "n_loops": 1,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/J3_63687.1"
+     }
+    },
+    "n_multi_chain_loops": 0,
+    "n_pdb_entries": 1,
+    "n_instances": 1
+   },
+   "J4": {
+    "n_loops": 62,
+    "n_with_motif_group": 34,
+    "n_without_motif_group": 28,
+    "motif_group_assignment_counts": {
+     "homologous": 19,
+     "member": 15,
+     "none": 28
+    },
+    "n_problematic": 12,
+    "n_distinct_motif_groups": 7,
+    "motif_groups": {
+     "J4_35610.2": {
+      "n_loops": 1,
+      "annotation_text": "tRNA junction",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/J4_35610.2"
+     },
+     "J4_36296.3": {
+      "n_loops": 5,
+      "annotation_text": "tRNA junction",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/J4_36296.3"
+     },
+     "J4_40477.2": {
+      "n_loops": 1,
+      "annotation_text": "tRNA junction",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/J4_40477.2"
+     },
+     "J4_51436.1": {
+      "n_loops": 1,
+      "annotation_text": "tRNA junction",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/J4_51436.1"
+     },
+     "J4_57344.1": {
+      "n_loops": 1,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/J4_57344.1"
+     },
+     "J4_82510.1": {
+      "n_loops": 2,
+      "annotation_text": "tRNA junction",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/J4_82510.1"
+     },
+     "J4_95067.3": {
+      "n_loops": 23,
+      "annotation_text": "tRNA junction",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/J4_95067.3"
+     }
+    },
+    "n_multi_chain_loops": 0,
+    "n_pdb_entries": 52,
+    "n_instances": 52
+   },
+   "J5": {
+    "n_loops": 5,
+    "n_with_motif_group": 4,
+    "n_without_motif_group": 1,
+    "motif_group_assignment_counts": {
+     "member": 3,
+     "none": 1,
+     "homologous": 1
+    },
+    "n_problematic": 0,
+    "n_distinct_motif_groups": 3,
+    "motif_groups": {
+     "J5_40900.1": {
+      "n_loops": 2,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/J5_40900.1"
+     },
+     "J5_87118.2": {
+      "n_loops": 1,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/J5_87118.2"
+     },
+     "J5_97113.2": {
+      "n_loops": 1,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/J5_97113.2"
+     }
+    },
+    "n_multi_chain_loops": 0,
+    "n_pdb_entries": 4,
+    "n_instances": 4
+   }
+  },
+  "n_pdb_entries_evaluated": 59,
+  "n_pdb_entries_unavailable": 0,
+  "nucleotide_mapping_status_counts": {
+   "mapped": 3074,
+   "insert": 155,
+   "local_end": 8
+  },
+  "n_motif_page_loops_missing_from_download": 0,
+  "n_loops_outside_family_chains": 6845
+ },
+ "ligands": {
+  "n_entry_entities_evaluated": 33,
+  "n_entry_entities_unavailable": 27,
+  "n_bound_molecule_records": 52,
+  "n_distinct_ccd_ids": 28,
+  "by_class": {
+   "ligand": 17,
+   "metal_ion": 6,
+   "additive": 5
+  },
+  "n_records_in_default_track": 6,
+  "n_entries_in_default_track": 5,
+  "n_records_flagged": 16,
+  "flag_counts": {
+   "contacts_only_polymer_termini": 16
+  },
+  "chain_attribution": {
+   "resolved": 52
+  },
+  "contact_mapping_status_counts": {
+   "outside_mapped_region": 27,
+   "mapped": 92,
+   "insert": 5
+  },
+  "default_track_pocket_positions_n_entries": {
+   "1": 1,
+   "2": 1,
+   "9": 2,
+   "26": 1,
+   "27": 1,
+   "48": 1,
+   "49": 1,
+   "54": 2,
+   "55": 1,
+   "56": 1,
+   "58": 1,
+   "70": 1,
+   "71": 2
+  }
+ },
+ "unresolved_identifiers": [
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|G|1",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|C|2",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|A|3",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|G|4",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|U|5",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|G|6",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|G|7",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|G|10",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|C|11",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|4AC|12",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|G|13",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|A|14",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|G|15",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|U|16",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|OMG|18",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|G|19",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|H2U|20",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|A|21",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|A|22",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|G|23",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|G|24",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|C|25",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|M2G|26",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|U|27",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|C|28",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|G|29",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|G|30",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|A|31",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|JMH|32",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|U|33",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|U|34",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|G|35",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|A|36",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|6IA|37",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|A|38",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|PSU|39",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|C|40",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|C|41",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|G|42",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|A|43",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|OMU|44",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|U|45",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|C|46",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|G|47",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|C|47|||A",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|U|47|||B",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|C|47|||C",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|U|47|||D",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|G|47|||E",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|C|47|||F",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|G|47|||G",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|A|47|||H",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|G|49",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|U|50",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|G|51",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|G|52",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|G|53",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|5MU|54",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|PSU|55",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|C|56",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|G|57",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|1MA|58",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|A|59",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|U|60",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|C|61",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|C|62",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|C|63",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|A|64",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|C|65",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|C|66",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|C|67",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|A|68",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|C|69",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|U|70",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|G|71",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  },
+  {
+   "source": "bgsu_reference_annotation",
+   "identifier": "8P7D|1|R|C|72",
+   "pdb_id": "8p7d",
+   "auth_asym_id": "R",
+   "reason": "chain not among family instances",
+   "context": "family reference file"
+  }
+ ],
+ "n_unresolved_identifiers": 76,
+ "file_sizes_bytes": {
+  "reference_structural_elements.json": 47335,
+  "loops.json": 4561304,
+  "loops_by_instance/ (total)": 2310359,
+  "ligands.json": 124254,
+  "tracks.json": 431119,
+  "annotations/ (total)": 2425680
+ },
+ "provenance": {
+  "rfam_acc": "RF00005",
+  "rfam_release": "15.1",
+  "cm_checksum": "1403477983",
+  "cm_clen": 71,
+  "mapping_pipeline_version": "0.1.0",
+  "mapping_generated": "2026-10-18T08:02:51+00:00",
+  "annotation_pipeline_version": "0.1.0",
+  "annotation_config_version": "1.1",
+  "generated": "2026-10-18T08:10:13+00:00"
+ }
+}

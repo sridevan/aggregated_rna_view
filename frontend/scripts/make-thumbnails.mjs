@@ -11,7 +11,7 @@ import { dirname, join } from 'node:path'
 
 const ROOT = dirname(dirname(fileURLToPath(import.meta.url)))
 const BASE = process.env.DEV_URL ?? 'http://127.0.0.1:5173'
-const ACCS = process.argv.slice(2).length ? process.argv.slice(2) : ['RF00167', 'RF00162', 'RF00059', 'RF00177']
+const ACCS = process.argv.slice(2).length ? process.argv.slice(2) : ['RF00167', 'RF00162', 'RF00059', 'RF00005', 'RF00177']
 const OUT_PX = 240, RENDER_PX = 480, COLOR = '#5B78A8'   // slate blue (one colour for all four thumbnails)
 
 const browser = await chromium.launch()
@@ -31,7 +31,8 @@ for (const acc of ACCS) {
     const drawn = atoms.filter((a) => !a.het)   // polymer residues only (label_seq_id set), bases included
     const c4 = drawn.filter((a) => a.name === "C4'")
     const o = av.principal(c4.map((a) => [a.x, a.y, a.z]))
-    const pdb = av.toPdb(drawn, o ? (p) => { const d = [p[0] - o.c[0], p[1] - o.c[1], p[2] - o.c[2]]; return [0, 1, 2].map((i) => o.R[i][0] * d[0] + o.R[i][1] * d[1] + o.R[i][2] * d[2]) } : undefined)
+    const pdb = av.toPdb(av.drawableNucleotides(drawn), o ?   // modified nucleotides drawn with their parent base name (continuous cartoon)
+      (p) => { const d = [p[0] - o.c[0], p[1] - o.c[1], p[2] - o.c[2]]; return [0, 1, 2].map((i) => o.R[i][0] * d[0] + o.R[i][1] * d[1] + o.R[i][2] * d[2]) } : undefined)
     const $3Dmol = await av.load3Dmol()
     document.body.innerHTML = ''
     const host = document.createElement('div'); host.style.cssText = `position:absolute;left:0;top:0;width:${RENDER_PX}px;height:${RENDER_PX}px`; document.body.appendChild(host)

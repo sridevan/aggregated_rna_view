@@ -65,6 +65,30 @@ def test_cache_retries_transient_download_failures(tmp_path, monkeypatch):
         cache_mod.Cache(tmp_path).fetch_bytes("https://example.org/y.cif", ".cif")
 
 
+def test_cache_retries_server_errors_not_client_errors(tmp_path, monkeypatch):
+    import requests
+    from rna_explorer import cache as cache_mod
+    monkeypatch.setattr(cache_mod, "RETRY_WAIT_S", 0)
+    class R:
+        def __init__(self, code): self.status_code, self.content = code, b"ok"
+        def raise_for_status(self):
+            if self.status_code >= 400: raise requests.HTTPError(f"{self.status_code}")
+    seq = iter([500, 503, 200]); calls = {"n": 0}
+    def server(*a, **k): calls["n"] += 1; return R(next(seq))
+    monkeypatch.setattr(cache_mod.requests, "request", server)
+    assert cache_mod.Cache(tmp_path).fetch_bytes("https://example.org/a.json", ".json").read_bytes() == b"ok" and calls["n"] == 3
+    calls["n"] = 0
+    monkeypatch.setattr(cache_mod.requests, "request", lambda *a, **k: (calls.__setitem__("n", calls["n"] + 1), R(500))[1])
+    with pytest.raises(requests.HTTPError):   # persistent 5xx: gives up after RETRIES attempts, nothing cached
+        cache_mod.Cache(tmp_path).fetch_bytes("https://example.org/b.json", ".json")
+    assert calls["n"] == cache_mod.RETRIES and not list(tmp_path.rglob("b.json*"))
+    calls["n"] = 0
+    monkeypatch.setattr(cache_mod.requests, "request", lambda *a, **k: (calls.__setitem__("n", calls["n"] + 1), R(404))[1])
+    with pytest.raises(requests.HTTPError):   # 4xx: not retried
+        cache_mod.Cache(tmp_path).fetch_bytes("https://example.org/c.json", ".json")
+    assert calls["n"] == 1
+
+
 def test_display_representative_override(tmp_path):
     import json
     from rna_explorer.pipeline import apply_display_override

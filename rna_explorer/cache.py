@@ -31,15 +31,21 @@ class Cache:
         if p.exists() and not force:
             return p
         headers = {"Content-Type": "application/x-www-form-urlencoded"} if data is not None else None
-        # transient transport failures (connection reset, response cut short) are retried; HTTP errors are not
+        # transient failures are retried: transport errors (connection reset, response cut short) and server errors (HTTP 5xx, e.g. the PDBe
+        # API's intermittent 500s); client errors (4xx) are not. The last attempt's error is raised.
         for attempt in range(RETRIES):
+            last = attempt == RETRIES - 1
             try:
                 r = requests.request(method, url, data=data, headers=headers, timeout=self.timeout)
-                break
             except (requests.ConnectionError, requests.exceptions.ChunkedEncodingError, requests.Timeout):
-                if attempt == RETRIES - 1:
+                if last:
                     raise
                 time.sleep(RETRY_WAIT_S * (attempt + 1))
+                continue
+            if getattr(r, "status_code", 200) >= 500 and not last:
+                time.sleep(RETRY_WAIT_S * (attempt + 1))
+                continue
+            break
         r.raise_for_status()
         tmp = p.with_suffix(p.suffix + ".part")
         tmp.write_bytes(r.content)

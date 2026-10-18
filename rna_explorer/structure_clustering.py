@@ -12,7 +12,9 @@ Method (ported from antibody_antigen_interface/app-react/src/groups/clustering.j
   * fixed cut: undo the k - 1 highest merges (k from structure_clustering_config.json); the stored height is midway between the
     lowest merge undone and the highest merge kept;
   * groups numbered by size (largest first), named "Structural group N"; no state labels;
-  * representative = medoid (smallest mean dissimilarity to the other members), ties to the earliest instance in matrix order.
+  * representative = medoid (smallest mean dissimilarity to the other members), ties to the earliest instance in matrix order, taken among
+    the members whose chain has no internal coordinate gap (no unmodelled nucleotide between its first and last modelled one), so the
+    displayed backbone is continuous; the plain medoid is used when every member has a gap, and is always recorded as `medoid`.
 """
 from __future__ import annotations
 import csv
@@ -126,12 +128,13 @@ def cut_tree(Z: list[list[float]], n: int, k: int) -> tuple[list[int], float, fl
     return parts, cut, lowest_split if lowest_split is not None else height[2 * n - 2], highest_kept
 
 
-def medoid(members: list[int], D: np.ndarray) -> tuple[int, float]:
-    """Member with the smallest mean dissimilarity to the other members; ties to the lowest matrix index."""
+def medoid(members: list[int], D: np.ndarray, candidates: Optional[list[int]] = None) -> tuple[int, float]:
+    """Member with the smallest mean dissimilarity to the other members; ties to the lowest matrix index. With `candidates`, only those
+    members can be chosen (their mean is still taken over all other members)."""
     if len(members) == 1:
         return members[0], 0.0
     best = None
-    for i in sorted(members):
+    for i in sorted(candidates if candidates else members):
         mean = float(np.mean([D[i, j] for j in members if j != i]))
         if best is None or mean < best[1] - 1e-15:
             best = (i, mean)
@@ -173,7 +176,17 @@ def partition(Z: list[list[float]], n: int, k: int, leaves: dict[int, list[int]]
 
 
 # ----------------------------------------------------------------------------- one metric
-def cluster_metric(ids: list[str], entries: dict[str, str], D: np.ndarray, k: int) -> dict[str, Any]:
+def internal_gaps(mapping: dict[str, Any]) -> list[Any]:
+    """Author numbers of the chain's unmodelled nucleotides that lie between its first and last modelled nucleotide (breaks in the
+    displayed backbone); terminal unmodelled nucleotides are not breaks."""
+    res = sorted(mapping["residues"], key=lambda r: r["polymer_seq_position"])
+    obs = [i for i, r in enumerate(res) if r["has_coordinates"]]
+    if not obs:
+        return []
+    return [f"{r['author_residue_number']}{r['author_insertion_code']}" for r in res[obs[0]:obs[-1] + 1] if not r["has_coordinates"]]
+
+
+def cluster_metric(ids: list[str], entries: dict[str, str], D: np.ndarray, k: int, gaps: Optional[dict[str, list[Any]]] = None) -> dict[str, Any]:
     n = len(ids)
     Z, order, leaves = average_linkage(D)
     parts, cut, lowest_split, highest_kept = cut_tree(Z, n, k)
@@ -183,7 +196,9 @@ def cluster_metric(ids: list[str], entries: dict[str, str], D: np.ndarray, k: in
     member_all = set(range(n))
     for gid, (_, node) in enumerate(ranked, start=1):
         mem = leaves[node]
-        med, med_mean = medoid(mem, D)
+        plain, _ = medoid(mem, D)
+        complete = [i for i in mem if not (gaps or {}).get(ids[i])] if gaps is not None else None
+        med, med_mean = medoid(mem, D, complete or None)
         within = [D[a, b] for i, a in enumerate(mem) for b in mem[i + 1:]]
         outside = sorted(member_all - set(mem))
         across = [D[a, b] for a in mem for b in outside]
@@ -191,7 +206,10 @@ def cluster_metric(ids: list[str], entries: dict[str, str], D: np.ndarray, k: in
         am = float(np.mean(across)) if across else None
         groups.append({"group_id": gid, "label": f"Structural group {gid}", "node": node, "members": [ids[i] for i in mem],
                        "n_instances": len(mem), "n_entries": len({entries[ids[i]] for i in mem}),
-                       "representative": ids[med], "representative_rule": "medoid", "representative_mean_dissimilarity": round(med_mean, 6),
+                       "representative": ids[med], "medoid": ids[plain],
+                       "representative_rule": "medoid" if gaps is None or (med == plain and not gaps.get(ids[med])) else "medoid among members without internal coordinate gaps" if complete else "medoid (every member has internal coordinate gaps)",
+                       "representative_internal_gaps": None if gaps is None else list(gaps.get(ids[med], [])),
+                       "representative_mean_dissimilarity": round(med_mean, 6),
                        "leaf_range": [pos[mem[0]], pos[mem[-1]]],
                        "within": {"mean": None if wm is None else round(wm, 6), "max": round(float(max(within)), 6) if within else None, "n_pairs": len(within)},
                        "across": {"mean": None if am is None else round(am, 6), "n_pairs": len(across)},
@@ -280,6 +298,7 @@ def build_structure_clustering(acc: str, out_dir: Path, research_root: Path, wri
     shared = [int(p) for p in man["shared_positions"]]
     check = verify_against_mappings(idx, ids, shared)
     entries = {sn: idx.by_seq[sn]["pdb_id"] for sn in ids}
+    gaps = {sn: internal_gaps(json.load(open(fam_dir / "mappings" / f"{sn}.json"))) for sn in ids}
     excluded = [{"seq_name": e["seq_name"], "pdb_id": idx.by_seq[e["seq_name"]]["pdb_id"], "n_observed": e.get("n_observed"), "reason": e.get("reason"),
                  "reason_text": f"{e.get('n_observed')} of the {man['threshold_min_observed']} required core positions observed"} for e in man.get("excluded", [])]
     if set(ids) | {e["seq_name"] for e in excluded} != set(idx.by_seq):
@@ -294,7 +313,7 @@ def build_structure_clustering(acc: str, out_dir: Path, research_root: Path, wri
         dist = 1.0 - M if key == "tm" else M
         np.fill_diagonal(dist, 0.0)
         mc = cfg["metrics"][key]
-        res = cluster_metric(ids, entries, dist, int(mc["k"]))
+        res = cluster_metric(ids, entries, dist, int(mc["k"]), gaps)
         iu = np.triu_indices(len(ids), 1)
         ev = research_evidence(summary, key)
         metrics[key] = {k: v for k, v in meta.items() if k != "file"} | {

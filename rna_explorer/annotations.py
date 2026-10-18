@@ -16,6 +16,7 @@ Counting rules (see docs in annotation_assessment/PROPOSED_ANNOTATION_SCHEMA.md)
 from __future__ import annotations
 import datetime as _dt
 import json
+import re
 import logging
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -459,6 +460,8 @@ class AnnotationBuilder:
                 "frequency": _frac(len(positive_obs & evaluated_inst), len(pos_obs_eval))}
 
     def build_tracks(self) -> dict[str, Any]:
+        # junction loop types: J3 and J4 always (separate tracks), plus any higher-order junction (J5, J6 ...) found in the loops
+        jtypes = tuple(sorted({L["loop_type"] for L in self.loops if re.fullmatch(r"J\d+", L["loop_type"])} | {"J3", "J4"}, key=lambda t: int(t[1:])))
         n_inst = len(self.idx.instances)
         loop_eval = {i["seq_name"] for i in self.idx.instances if self.loop_source.get(i["pdb_id"], {}).get("status") == "evaluated"}
         elem_eval = {sn for sn, s in self.inst_element_source.items() if s["status"] == "evaluated"}
@@ -478,9 +481,12 @@ class AnnotationBuilder:
             il = self._loop_track(pos, ("IL",), observable, loop_eval)
             j3 = self._loop_track(pos, ("J3",), observable, loop_eval)
             j4 = self._loop_track(pos, ("J4",), observable, loop_eval)
-            ju = self._loop_track(pos, ("J3", "J4"), observable, loop_eval)
+            # every junction type present (J3, J4 and higher-order J5, J6 ... from BGSU), so no junction loop is left out of the junction track
+            ju = self._loop_track(pos, jtypes, observable, loop_eval)
+            by_type = {"J3": j3["n_instances"], "J4": j4["n_instances"], **{t: self._loop_track(pos, (t,), observable, loop_eval)["n_instances"] for t in jtypes if t not in ("J3", "J4")}}
             junction_union = {"n_loop_observations": ju["n_loop_observations"], "n_instances": ju["n_instances"], "n_entries": ju["n_entries"],
-                              "denominators": ju["denominators"], "frequency": ju["frequency"], "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"}
+                              "denominators": ju["denominators"], "frequency": ju["frequency"], "loop_types": list(jtypes), "by_type_n_instances": by_type,
+                              "rule": f"set union of {', '.join(jtypes)} loops/instances/entries (not a sum)"}
             # ligands (entity level)
             obs_entities = {k for k, cs in entity_chains.items() if any(c in observable for c in cs)}
             recs = [r for r in self.ligands if pos in r["consensus_positions"]]
@@ -513,7 +519,7 @@ class AnnotationBuilder:
             "internal_loops": {"kind": "observed_3d_motif", "loop_types": ["IL"], "counting_unit": "loop observation / instance / pdb_entry", "denominator": "observable and source-evaluated instances"},
             "junction_loops_J3": {"kind": "observed_3d_motif", "loop_types": ["J3"], "counting_unit": "loop observation / instance / pdb_entry", "denominator": "observable and source-evaluated instances"},
             "junction_loops_J4": {"kind": "observed_3d_motif", "loop_types": ["J4"], "counting_unit": "loop observation / instance / pdb_entry", "denominator": "observable and source-evaluated instances"},
-            "junction_loops_union": {"kind": "derived_union", "loop_types": ["J3", "J4"], "rule": "set union; never the sum of J3 and J4 counts"},
+            "junction_loops_union": {"kind": "derived_union", "loop_types": list(jtypes), "rule": f"set union of all junction loop types present ({', '.join(jtypes)}); never the sum of the per-type counts"},
             "ligand_binding_sites": {"kind": "entity_level_contacts", "counting_unit": "pdb_entry_entity", "default_classes": self.config["default_track_classes"],
                                      "exclude_flagged_from_default_track": self.config.get("exclude_flagged_from_default_track", True),
                                      "denominator": "observable and source-evaluated (pdb_id, entity_id) pairs"},

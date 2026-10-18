@@ -1,0 +1,2317 @@
+{
+ "schema_version": "1.0",
+ "rfam_acc": "RF00005",
+ "clen": 71,
+ "track_id": "nonstandard_occurrence",
+ "category": "Nonstandard nucleotides",
+ "measurement": {
+  "name": "Occurrence",
+  "definition": "RNA instances with a nonstandard deposited component at the consensus position / RNA instances with a determined component there",
+  "unit": "fraction of RNA instances"
+ },
+ "aggregation_rules": {
+  "positive": "nonstandard component (not A/C/G/U) at the consensus match position",
+  "negative": "A, C, G or U at the position (coordinates not required)",
+  "missing_identity": "component cannot be established (microheterogeneity, unknown_component, sequence_record_conflict, coordinate_identity_conflict, mapping_identity_conflict, not_in_mapping); not in the denominator",
+  "no_residue": "no mapped residue at the position (deletion or outside the instance's mapped span); not in the denominator",
+  "source_unavailable": "mmCIF unavailable for the instance; not in the denominator",
+  "counting": "one count per RNA instance per position"
+ },
+ "summary": {
+  "n_instances": 60,
+  "n_instances_ok": 60,
+  "n_instances_source_unavailable": 0,
+  "n_entries": 59,
+  "n_polymer_residues": 4648,
+  "n_standard": 4466,
+  "n_nonstandard": 182,
+  "n_missing_identity": 0,
+  "missing_identity_reasons": {},
+  "n_residues_without_coordinates": 149,
+  "n_instances_with_nonstandard": 30,
+  "n_entries_with_nonstandard": 29,
+  "n_distinct_ccd": 27,
+  "n_on_consensus_axis": 170,
+  "n_off_axis": 12,
+  "off_axis_by_state": {
+   "insert": 10,
+   "not_submitted_flank": 2
+  },
+  "consensus_positions_with_nonstandard": [
+   1,
+   6,
+   8,
+   9,
+   10,
+   13,
+   16,
+   19,
+   20,
+   25,
+   26,
+   31,
+   33,
+   34,
+   36,
+   38,
+   39,
+   45,
+   46,
+   47,
+   48,
+   52,
+   53,
+   54,
+   56,
+   63
+  ],
+  "off_axis_observations": [
+   {
+    "observation_id": "1c0a_1_B_A:21",
+    "ccd_id": "H2U",
+    "alignment_state": "insert",
+    "is_5prime_terminal": false,
+    "is_3prime_terminal": false,
+    "has_coordinates": true
+   },
+   {
+    "observation_id": "1ehz_1_A_A:17",
+    "ccd_id": "H2U",
+    "alignment_state": "insert",
+    "is_5prime_terminal": false,
+    "is_3prime_terminal": false,
+    "has_coordinates": true
+   },
+   {
+    "observation_id": "1fir_1_A_A:47",
+    "ccd_id": "H2U",
+    "alignment_state": "insert",
+    "is_5prime_terminal": false,
+    "is_3prime_terminal": false,
+    "has_coordinates": true
+   },
+   {
+    "observation_id": "1qf6_1_B_A:17",
+    "ccd_id": "H2U",
+    "alignment_state": "insert",
+    "is_5prime_terminal": false,
+    "is_3prime_terminal": false,
+    "has_coordinates": true
+   },
+   {
+    "observation_id": "1ttt_1_D_A:17",
+    "ccd_id": "H2U",
+    "alignment_state": "insert",
+    "is_5prime_terminal": false,
+    "is_3prime_terminal": false,
+    "has_coordinates": true
+   },
+   {
+    "observation_id": "4rdx_2_C_B:1",
+    "ccd_id": "GTP",
+    "alignment_state": "not_submitted_flank",
+    "is_5prime_terminal": true,
+    "is_3prime_terminal": false,
+    "has_coordinates": true
+   },
+   {
+    "observation_id": "6y3g_1_F_A:47",
+    "ccd_id": "3AU",
+    "alignment_state": "insert",
+    "is_5prime_terminal": false,
+    "is_3prime_terminal": false,
+    "has_coordinates": true
+   },
+   {
+    "observation_id": "8cth_3_C_C:17",
+    "ccd_id": "H2U",
+    "alignment_state": "insert",
+    "is_5prime_terminal": false,
+    "is_3prime_terminal": false,
+    "has_coordinates": true
+   },
+   {
+    "observation_id": "8ppl_14_Iw_N:46",
+    "ccd_id": "H2U",
+    "alignment_state": "insert",
+    "is_5prime_terminal": false,
+    "is_3prime_terminal": false,
+    "has_coordinates": true
+   },
+   {
+    "observation_id": "9o3w_47_Pt_UA:20",
+    "ccd_id": "H2U",
+    "alignment_state": "insert",
+    "is_5prime_terminal": false,
+    "is_3prime_terminal": false,
+    "has_coordinates": true
+   },
+   {
+    "observation_id": "9q3r_23_w_W:74",
+    "ccd_id": "L3X",
+    "alignment_state": "not_submitted_flank",
+    "is_5prime_terminal": false,
+    "is_3prime_terminal": true,
+    "has_coordinates": true
+   },
+   {
+    "observation_id": "9sfq_2_T_B:20",
+    "ccd_id": "OMC",
+    "alignment_state": "insert",
+    "is_5prime_terminal": false,
+    "is_3prime_terminal": false,
+    "has_coordinates": true
+   }
+  ]
+ },
+ "components": {
+  "12A": {
+   "chem_comp_name": "2-METHYLTHIO-N6-(AMINOCARBONYL-L-THREONYL)-ADENOSINE-5'-MONOPHOSPHATE",
+   "chem_comp_type": "RNA linking",
+   "parent": "A",
+   "parent_source": "CCD",
+   "ccd_parent": "A",
+   "nakb_parent": [
+    "A"
+   ],
+   "nakb_change_locations": [
+    "base"
+   ],
+   "n_observations": 1,
+   "n_instances": 1,
+   "n_entries": 1,
+   "n_on_consensus_axis": 1,
+   "consensus_positions": [
+    36
+   ],
+   "pdbe_reported": 1
+  },
+  "1MA": {
+   "chem_comp_name": "6-HYDRO-1-METHYLADENOSINE-5'-MONOPHOSPHATE",
+   "chem_comp_type": "RNA linking",
+   "parent": "A",
+   "parent_source": "CCD",
+   "ccd_parent": "A",
+   "nakb_parent": [
+    "A"
+   ],
+   "nakb_change_locations": [
+    "base"
+   ],
+   "n_observations": 7,
+   "n_instances": 7,
+   "n_entries": 7,
+   "n_on_consensus_axis": 7,
+   "consensus_positions": [
+    9,
+    56
+   ],
+   "pdbe_reported": 7
+  },
+  "1MG": {
+   "chem_comp_name": "1N-METHYLGUANOSINE-5'-MONOPHOSPHATE",
+   "chem_comp_type": "RNA linking",
+   "parent": "G",
+   "parent_source": "CCD",
+   "ccd_parent": "G",
+   "nakb_parent": [
+    "G"
+   ],
+   "nakb_change_locations": [
+    "base"
+   ],
+   "n_observations": 3,
+   "n_instances": 3,
+   "n_entries": 3,
+   "n_on_consensus_axis": 3,
+   "consensus_positions": [
+    9,
+    36
+   ],
+   "pdbe_reported": 3
+  },
+  "2MG": {
+   "chem_comp_name": "2N-METHYLGUANOSINE-5'-MONOPHOSPHATE",
+   "chem_comp_type": "RNA linking",
+   "parent": "G",
+   "parent_source": "CCD",
+   "ccd_parent": "G",
+   "nakb_parent": [
+    "G"
+   ],
+   "nakb_change_locations": [
+    "base"
+   ],
+   "n_observations": 10,
+   "n_instances": 8,
+   "n_entries": 8,
+   "n_on_consensus_axis": 10,
+   "consensus_positions": [
+    6,
+    10,
+    25
+   ],
+   "pdbe_reported": 10
+  },
+  "2MU": {
+   "chem_comp_name": "2',5-DIMETHYLURIDINE-5'-MONOPHOSPHATE",
+   "chem_comp_type": "RNA linking",
+   "parent": "U",
+   "parent_source": "CCD",
+   "ccd_parent": "U",
+   "nakb_parent": [
+    "U"
+   ],
+   "nakb_change_locations": [
+    "base",
+    "ribose"
+   ],
+   "n_observations": 2,
+   "n_instances": 2,
+   "n_entries": 2,
+   "n_on_consensus_axis": 2,
+   "consensus_positions": [
+    52,
+    53
+   ],
+   "pdbe_reported": 2
+  },
+  "3AU": {
+   "chem_comp_name": "3-[(3S)-3-amino-3-carboxypropyl]uridine 5'-(dihydrogen phosphate)",
+   "chem_comp_type": "RNA linking",
+   "parent": "U",
+   "parent_source": "CCD",
+   "ccd_parent": "U",
+   "nakb_parent": [
+    "U"
+   ],
+   "nakb_change_locations": [
+    "base"
+   ],
+   "n_observations": 1,
+   "n_instances": 1,
+   "n_entries": 1,
+   "n_on_consensus_axis": 0,
+   "consensus_positions": [],
+   "pdbe_reported": 1
+  },
+  "4SU": {
+   "chem_comp_name": "4-THIOURIDINE-5'-MONOPHOSPHATE",
+   "chem_comp_type": "RNA linking",
+   "parent": "U",
+   "parent_source": "CCD",
+   "ccd_parent": "U",
+   "nakb_parent": [
+    "U"
+   ],
+   "nakb_change_locations": [
+    "base"
+   ],
+   "n_observations": 12,
+   "n_instances": 12,
+   "n_entries": 11,
+   "n_on_consensus_axis": 12,
+   "consensus_positions": [
+    8
+   ],
+   "pdbe_reported": 12
+  },
+  "5MC": {
+   "chem_comp_name": "5-METHYLCYTIDINE-5'-MONOPHOSPHATE",
+   "chem_comp_type": "RNA linking",
+   "parent": "C",
+   "parent_source": "CCD",
+   "ccd_parent": "C",
+   "nakb_parent": [
+    "C"
+   ],
+   "nakb_change_locations": [
+    "base"
+   ],
+   "n_observations": 12,
+   "n_instances": 8,
+   "n_entries": 8,
+   "n_on_consensus_axis": 12,
+   "consensus_positions": [
+    39,
+    46,
+    47,
+    48
+   ],
+   "pdbe_reported": 12
+  },
+  "5MU": {
+   "chem_comp_name": "5-METHYLURIDINE 5'-MONOPHOSPHATE",
+   "chem_comp_type": "RNA linking",
+   "parent": "U",
+   "parent_source": "CCD",
+   "ccd_parent": "U",
+   "nakb_parent": [
+    "U"
+   ],
+   "nakb_change_locations": [
+    "base"
+   ],
+   "n_observations": 17,
+   "n_instances": 17,
+   "n_entries": 16,
+   "n_on_consensus_axis": 17,
+   "consensus_positions": [
+    52
+   ],
+   "pdbe_reported": 17
+  },
+  "6MZ": {
+   "chem_comp_name": "N6-METHYLADENOSINE-5'-MONOPHOSPHATE",
+   "chem_comp_type": "RNA linking",
+   "parent": "A",
+   "parent_source": "CCD",
+   "ccd_parent": "A",
+   "nakb_parent": [
+    "A"
+   ],
+   "nakb_change_locations": [
+    "base",
+    "phosphate"
+   ],
+   "n_observations": 1,
+   "n_instances": 1,
+   "n_entries": 1,
+   "n_on_consensus_axis": 1,
+   "consensus_positions": [
+    36
+   ],
+   "pdbe_reported": 1
+  },
+  "70U": {
+   "chem_comp_name": "5-(O-METHYLACETO)-2-THIO-2-DEOXY-URIDINE-5'-MONOPHOSPHATE",
+   "chem_comp_type": "RNA linking",
+   "parent": "U",
+   "parent_source": "CCD",
+   "ccd_parent": "U",
+   "nakb_parent": [
+    "U"
+   ],
+   "nakb_change_locations": [
+    "base"
+   ],
+   "n_observations": 1,
+   "n_instances": 1,
+   "n_entries": 1,
+   "n_on_consensus_axis": 1,
+   "consensus_positions": [
+    33
+   ],
+   "pdbe_reported": 1
+  },
+  "7MG": {
+   "chem_comp_name": "7N-METHYL-8-HYDROGUANOSINE-5'-MONOPHOSPHATE",
+   "chem_comp_type": "RNA linking",
+   "parent": "G",
+   "parent_source": "CCD",
+   "ccd_parent": "G",
+   "nakb_parent": [
+    "G"
+   ],
+   "nakb_change_locations": [
+    "base"
+   ],
+   "n_observations": 4,
+   "n_instances": 4,
+   "n_entries": 4,
+   "n_on_consensus_axis": 4,
+   "consensus_positions": [
+    45
+   ],
+   "pdbe_reported": 4
+  },
+  "A1I9V": {
+   "chem_comp_name": "5-METHYL-2-THIO-URIDINE-5'-MONOPHOSPHATE",
+   "chem_comp_type": "RNA linking",
+   "parent": "U",
+   "parent_source": "CCD",
+   "ccd_parent": "U",
+   "nakb_parent": [
+    "U"
+   ],
+   "nakb_change_locations": [
+    "base"
+   ],
+   "n_observations": 2,
+   "n_instances": 2,
+   "n_entries": 2,
+   "n_on_consensus_axis": 2,
+   "consensus_positions": [
+    52
+   ],
+   "pdbe_reported": 2
+  },
+  "AET": {
+   "chem_comp_name": "N-[N-(9-B-D-RIBOFURANOSYLPURIN-6-YL)METHYLCARBAMOYL]THREONINE-5'-MONOPHOSPHATE",
+   "chem_comp_type": "RNA linking",
+   "parent": "A",
+   "parent_source": "CCD",
+   "ccd_parent": "A",
+   "nakb_parent": [
+    "A"
+   ],
+   "nakb_change_locations": [
+    "base"
+   ],
+   "n_observations": 1,
+   "n_instances": 1,
+   "n_entries": 1,
+   "n_on_consensus_axis": 1,
+   "consensus_positions": [
+    36
+   ],
+   "pdbe_reported": 1
+  },
+  "G7M": {
+   "chem_comp_name": "N7-METHYL-GUANOSINE-5'-MONOPHOSPHATE",
+   "chem_comp_type": "RNA linking",
+   "parent": "G",
+   "parent_source": "CCD",
+   "ccd_parent": "G",
+   "nakb_parent": [
+    "G"
+   ],
+   "nakb_change_locations": [
+    "base"
+   ],
+   "n_observations": 7,
+   "n_instances": 7,
+   "n_entries": 6,
+   "n_on_consensus_axis": 7,
+   "consensus_positions": [
+    45
+   ],
+   "pdbe_reported": 7
+  },
+  "GTP": {
+   "chem_comp_name": "GUANOSINE-5'-TRIPHOSPHATE",
+   "chem_comp_type": "non-polymer",
+   "parent": "G",
+   "parent_source": "CCD",
+   "ccd_parent": "G",
+   "nakb_parent": [
+    "G"
+   ],
+   "nakb_change_locations": [
+    "phosphate"
+   ],
+   "n_observations": 4,
+   "n_instances": 4,
+   "n_entries": 4,
+   "n_on_consensus_axis": 3,
+   "consensus_positions": [
+    1
+   ],
+   "pdbe_reported": 4
+  },
+  "H2U": {
+   "chem_comp_name": "5,6-DIHYDROURIDINE-5'-MONOPHOSPHATE",
+   "chem_comp_type": "RNA linking",
+   "parent": "U",
+   "parent_source": "CCD",
+   "ccd_parent": "U",
+   "nakb_parent": [
+    "U"
+   ],
+   "nakb_change_locations": [
+    "base"
+   ],
+   "n_observations": 29,
+   "n_instances": 16,
+   "n_entries": 16,
+   "n_on_consensus_axis": 21,
+   "consensus_positions": [
+    16,
+    19,
+    20
+   ],
+   "pdbe_reported": 29
+  },
+  "L3X": {
+   "chem_comp_name": "3'-deoxy-3'-(glycylamino)adenosine 5'-(dihydrogen phosphate)",
+   "chem_comp_type": "DNA OH 3 prime terminus",
+   "parent": "DA",
+   "parent_source": "CCD",
+   "ccd_parent": "DA",
+   "nakb_parent": [
+    "A"
+   ],
+   "nakb_change_locations": [
+    "ribose"
+   ],
+   "n_observations": 1,
+   "n_instances": 1,
+   "n_entries": 1,
+   "n_on_consensus_axis": 0,
+   "consensus_positions": [],
+   "pdbe_reported": 1
+  },
+  "M2G": {
+   "chem_comp_name": "N2-DIMETHYLGUANOSINE-5'-MONOPHOSPHATE",
+   "chem_comp_type": "RNA linking",
+   "parent": "G",
+   "parent_source": "CCD",
+   "ccd_parent": "G",
+   "nakb_parent": [
+    "G"
+   ],
+   "nakb_change_locations": [
+    "base"
+   ],
+   "n_observations": 3,
+   "n_instances": 3,
+   "n_entries": 3,
+   "n_on_consensus_axis": 3,
+   "consensus_positions": [
+    25
+   ],
+   "pdbe_reported": 3
+  },
+  "MIA": {
+   "chem_comp_name": "2-METHYLTHIO-N6-ISOPENTENYL-ADENOSINE-5'-MONOPHOSPHATE",
+   "chem_comp_type": "RNA linking",
+   "parent": "A",
+   "parent_source": "CCD",
+   "ccd_parent": "A",
+   "nakb_parent": [
+    "A"
+   ],
+   "nakb_change_locations": [
+    "base"
+   ],
+   "n_observations": 5,
+   "n_instances": 5,
+   "n_entries": 5,
+   "n_on_consensus_axis": 5,
+   "consensus_positions": [
+    36
+   ],
+   "pdbe_reported": 5
+  },
+  "OMC": {
+   "chem_comp_name": "O2'-METHYLYCYTIDINE-5'-MONOPHOSPHATE",
+   "chem_comp_type": "RNA linking",
+   "parent": "C",
+   "parent_source": "CCD",
+   "ccd_parent": "C",
+   "nakb_parent": [
+    "C"
+   ],
+   "nakb_change_locations": [
+    "ribose"
+   ],
+   "n_observations": 6,
+   "n_instances": 6,
+   "n_entries": 6,
+   "n_on_consensus_axis": 5,
+   "consensus_positions": [
+    31
+   ],
+   "pdbe_reported": 6
+  },
+  "OMG": {
+   "chem_comp_name": "O2'-METHYLGUANOSINE-5'-MONOPHOSPHATE",
+   "chem_comp_type": "RNA linking",
+   "parent": "G",
+   "parent_source": "CCD",
+   "ccd_parent": "G",
+   "nakb_parent": [
+    "G"
+   ],
+   "nakb_change_locations": [
+    "ribose"
+   ],
+   "n_observations": 3,
+   "n_instances": 3,
+   "n_entries": 3,
+   "n_on_consensus_axis": 3,
+   "consensus_positions": [
+    33
+   ],
+   "pdbe_reported": 3
+  },
+  "PSU": {
+   "chem_comp_name": "PSEUDOURIDINE-5'-MONOPHOSPHATE",
+   "chem_comp_type": "RNA linking",
+   "parent": "U",
+   "parent_source": "CCD",
+   "ccd_parent": "U",
+   "nakb_parent": [
+    "U"
+   ],
+   "nakb_change_locations": [
+    "base",
+    "ribose"
+   ],
+   "n_observations": 42,
+   "n_instances": 22,
+   "n_entries": 21,
+   "n_on_consensus_axis": 42,
+   "consensus_positions": [
+    13,
+    26,
+    31,
+    34,
+    38,
+    53,
+    54,
+    63
+   ],
+   "pdbe_reported": 42
+  },
+  "QUO": {
+   "chem_comp_name": "2-AMINO-7-DEAZA-(2'',3''-DIHYDROXY-CYCLOPENTYLAMINO)-GUANOSINE-5'-MONOPHOSPHATE",
+   "chem_comp_type": "RNA linking",
+   "parent": "G",
+   "parent_source": "CCD",
+   "ccd_parent": "G",
+   "nakb_parent": [
+    "G"
+   ],
+   "nakb_change_locations": [
+    "base"
+   ],
+   "n_observations": 1,
+   "n_instances": 1,
+   "n_entries": 1,
+   "n_on_consensus_axis": 1,
+   "consensus_positions": [
+    33
+   ],
+   "pdbe_reported": 1
+  },
+  "RSP": {
+   "chem_comp_name": "4-amino-1-(5-O-phosphono-beta-D-ribofuranosyl)pyrimidine-2(1H)-thione",
+   "chem_comp_type": "RNA linking",
+   "parent": "C",
+   "parent_source": "CCD",
+   "ccd_parent": "C",
+   "nakb_parent": [
+    "C"
+   ],
+   "nakb_change_locations": [
+    "base"
+   ],
+   "n_observations": 1,
+   "n_instances": 1,
+   "n_entries": 1,
+   "n_on_consensus_axis": 1,
+   "consensus_positions": [
+    31
+   ],
+   "pdbe_reported": 1
+  },
+  "T6A": {
+   "chem_comp_name": "N-[N-(9-B-D-RIBOFURANOSYLPURIN-6-YL)CARBAMOYL]THREONINE-5'-MONOPHOSPHATE",
+   "chem_comp_type": "RNA linking",
+   "parent": "A",
+   "parent_source": "CCD",
+   "ccd_parent": "A",
+   "nakb_parent": [
+    "A"
+   ],
+   "nakb_change_locations": [
+    "base"
+   ],
+   "n_observations": 2,
+   "n_instances": 2,
+   "n_entries": 2,
+   "n_on_consensus_axis": 2,
+   "consensus_positions": [
+    36
+   ],
+   "pdbe_reported": 2
+  },
+  "YYG": {
+   "chem_comp_name": "4-(3-[5-O-PHOSPHONORIBOFURANOSYL]-4,6-DIMETHYL-8-OXO-4,8-DIHYDRO-3H-1,3,4,5,7A-PENTAAZA-S-INDACEN-YLAMINO-BUTYRIC ACID METHYL ESTER",
+   "chem_comp_type": "RNA linking",
+   "parent": "G",
+   "parent_source": "CCD",
+   "ccd_parent": "G",
+   "nakb_parent": [
+    "G"
+   ],
+   "nakb_change_locations": [
+    "base"
+   ],
+   "n_observations": 4,
+   "n_instances": 4,
+   "n_entries": 4,
+   "n_on_consensus_axis": 4,
+   "consensus_positions": [
+    36
+   ],
+   "pdbe_reported": 4
+  }
+ },
+ "positions": [
+  {
+   "rfam_consensus_pos": 1,
+   "n_positive": 3,
+   "n_negative": 56,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 1,
+   "n_source_unavailable": 0,
+   "denominator": 59,
+   "frequency": 0.0508,
+   "n_supporting_entries": 3,
+   "n_denominator_without_coordinates": 2,
+   "ccd": [
+    {
+     "ccd_id": "GTP",
+     "n_instances": 3,
+     "n_entries": 3
+    }
+   ],
+   "supporting_observations": [
+    "5e6m_2_C_C:1",
+    "7xjz_2_B_B:1",
+    "7xk0_2_B_B:1"
+   ]
+  },
+  {
+   "rfam_consensus_pos": 2,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 3,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 4,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 5,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 6,
+   "n_positive": 2,
+   "n_negative": 58,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0333,
+   "n_supporting_entries": 2,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [
+    {
+     "ccd_id": "2MG",
+     "n_instances": 2,
+     "n_entries": 2
+    }
+   ],
+   "supporting_observations": [
+    "1fir_1_A_A:6",
+    "9sfq_2_T_B:6"
+   ]
+  },
+  {
+   "rfam_consensus_pos": 7,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 8,
+   "n_positive": 12,
+   "n_negative": 48,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.2,
+   "n_supporting_entries": 11,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [
+    {
+     "ccd_id": "4SU",
+     "n_instances": 12,
+     "n_entries": 11
+    }
+   ],
+   "supporting_observations": [
+    "1b23_1_R_A:8",
+    "1c0a_1_B_A:8",
+    "3cw5_1_A_A:8",
+    "6y3g_1_F_A:8",
+    "8cvl_57_1y_EB:8",
+    "8uu5_21_x_U:8",
+    "9q3r_23_w_W:8",
+    "9sfq_2_T_B:8",
+    "9sre_2_4_B:8",
+    "9ti5_13_D_M:8",
+    "9tnl_6_Y_F:8",
+    "9tnl_7_Z_G:8"
+   ]
+  },
+  {
+   "rfam_consensus_pos": 9,
+   "n_positive": 2,
+   "n_negative": 57,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 1,
+   "n_source_unavailable": 0,
+   "denominator": 59,
+   "frequency": 0.0339,
+   "n_supporting_entries": 2,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [
+    {
+     "ccd_id": "1MA",
+     "n_instances": 1,
+     "n_entries": 1
+    },
+    {
+     "ccd_id": "1MG",
+     "n_instances": 1,
+     "n_entries": 1
+    }
+   ],
+   "supporting_observations": [
+    "7qi4_36_B_JA:9",
+    "8ppl_14_Iw_N:9"
+   ]
+  },
+  {
+   "rfam_consensus_pos": 10,
+   "n_positive": 7,
+   "n_negative": 53,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.1167,
+   "n_supporting_entries": 7,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [
+    {
+     "ccd_id": "2MG",
+     "n_instances": 7,
+     "n_entries": 7
+    }
+   ],
+   "supporting_observations": [
+    "1ehz_1_A_A:10",
+    "1fir_1_A_A:10",
+    "1ttt_1_D_A:10",
+    "7qi4_36_B_JA:10",
+    "8cth_3_C_C:10",
+    "8ppl_14_Iw_N:10",
+    "9o3w_47_Pt_UA:10"
+   ]
+  },
+  {
+   "rfam_consensus_pos": 11,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 12,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 13,
+   "n_positive": 3,
+   "n_negative": 57,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.05,
+   "n_supporting_entries": 3,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [
+    {
+     "ccd_id": "PSU",
+     "n_instances": 3,
+     "n_entries": 3
+    }
+   ],
+   "supporting_observations": [
+    "1asy_1_R_A:13",
+    "2tra_1_A_A:13",
+    "9o3w_47_Pt_UA:13"
+   ]
+  },
+  {
+   "rfam_consensus_pos": 14,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 15,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 1,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 16,
+   "n_positive": 9,
+   "n_negative": 50,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 1,
+   "n_source_unavailable": 0,
+   "denominator": 59,
+   "frequency": 0.1525,
+   "n_supporting_entries": 9,
+   "n_denominator_without_coordinates": 9,
+   "ccd": [
+    {
+     "ccd_id": "H2U",
+     "n_instances": 9,
+     "n_entries": 9
+    }
+   ],
+   "supporting_observations": [
+    "1asy_1_R_A:16",
+    "1c0a_1_B_A:16",
+    "1ehz_1_A_A:16",
+    "1fir_1_A_A:16",
+    "1qf6_1_B_A:16",
+    "1ttt_1_D_A:16",
+    "2tra_1_A_A:16",
+    "6y3g_1_F_A:16",
+    "8cth_3_C_C:16"
+   ]
+  },
+  {
+   "rfam_consensus_pos": 17,
+   "n_positive": 0,
+   "n_negative": 55,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 5,
+   "n_source_unavailable": 0,
+   "denominator": 55,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 1,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 18,
+   "n_positive": 0,
+   "n_negative": 55,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 5,
+   "n_source_unavailable": 0,
+   "denominator": 55,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 19,
+   "n_positive": 11,
+   "n_negative": 41,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 8,
+   "n_source_unavailable": 0,
+   "denominator": 52,
+   "frequency": 0.2115,
+   "n_supporting_entries": 11,
+   "n_denominator_without_coordinates": 2,
+   "ccd": [
+    {
+     "ccd_id": "H2U",
+     "n_instances": 11,
+     "n_entries": 11
+    }
+   ],
+   "supporting_observations": [
+    "1asy_1_R_A:19",
+    "1b23_1_R_A:19",
+    "1c0a_1_B_A:20",
+    "1fir_1_A_A:20",
+    "1qf6_1_B_A:20",
+    "2tra_1_A_A:19",
+    "3cw5_1_A_A:21",
+    "6y3g_1_F_A:20",
+    "9q3r_23_w_W:19",
+    "9sre_2_4_B:21",
+    "9ti5_13_D_M:20"
+   ]
+  },
+  {
+   "rfam_consensus_pos": 20,
+   "n_positive": 1,
+   "n_negative": 59,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0167,
+   "n_supporting_entries": 1,
+   "n_denominator_without_coordinates": 3,
+   "ccd": [
+    {
+     "ccd_id": "H2U",
+     "n_instances": 1,
+     "n_entries": 1
+    }
+   ],
+   "supporting_observations": [
+    "1b23_1_R_A:20"
+   ]
+  },
+  {
+   "rfam_consensus_pos": 21,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 22,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 23,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 24,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 25,
+   "n_positive": 4,
+   "n_negative": 56,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0667,
+   "n_supporting_entries": 4,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [
+    {
+     "ccd_id": "M2G",
+     "n_instances": 3,
+     "n_entries": 3
+    },
+    {
+     "ccd_id": "2MG",
+     "n_instances": 1,
+     "n_entries": 1
+    }
+   ],
+   "supporting_observations": [
+    "1ehz_1_A_A:26",
+    "1ttt_1_D_A:26",
+    "8cth_3_C_C:26",
+    "8ppl_14_Iw_N:25"
+   ]
+  },
+  {
+   "rfam_consensus_pos": 26,
+   "n_positive": 1,
+   "n_negative": 59,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0167,
+   "n_supporting_entries": 1,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [
+    {
+     "ccd_id": "PSU",
+     "n_instances": 1,
+     "n_entries": 1
+    }
+   ],
+   "supporting_observations": [
+    "1fir_1_A_A:27"
+   ]
+  },
+  {
+   "rfam_consensus_pos": 27,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 28,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 29,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 30,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 31,
+   "n_positive": 12,
+   "n_negative": 48,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.2,
+   "n_supporting_entries": 12,
+   "n_denominator_without_coordinates": 1,
+   "ccd": [
+    {
+     "ccd_id": "PSU",
+     "n_instances": 6,
+     "n_entries": 6
+    },
+    {
+     "ccd_id": "OMC",
+     "n_instances": 5,
+     "n_entries": 5
+    },
+    {
+     "ccd_id": "RSP",
+     "n_instances": 1,
+     "n_entries": 1
+    }
+   ],
+   "supporting_observations": [
+    "1asy_1_R_A:32",
+    "1b23_1_R_A:31",
+    "1ehz_1_A_A:32",
+    "1ttt_1_D_A:32",
+    "2tra_1_A_A:32",
+    "3cw5_1_A_A:33",
+    "6y3g_1_F_A:32",
+    "8cvl_57_1y_EB:32",
+    "8uu5_21_x_U:32",
+    "9sre_2_4_B:33",
+    "9ti5_13_D_M:33",
+    "9tnl_7_Z_G:34"
+   ]
+  },
+  {
+   "rfam_consensus_pos": 32,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 1,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 33,
+   "n_positive": 5,
+   "n_negative": 55,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0833,
+   "n_supporting_entries": 5,
+   "n_denominator_without_coordinates": 1,
+   "ccd": [
+    {
+     "ccd_id": "OMG",
+     "n_instances": 3,
+     "n_entries": 3
+    },
+    {
+     "ccd_id": "70U",
+     "n_instances": 1,
+     "n_entries": 1
+    },
+    {
+     "ccd_id": "QUO",
+     "n_instances": 1,
+     "n_entries": 1
+    }
+   ],
+   "supporting_observations": [
+    "1c0a_1_B_A:35",
+    "1ehz_1_A_A:34",
+    "1fir_1_A_A:34",
+    "1ttt_1_D_A:34",
+    "8cth_3_C_C:34"
+   ]
+  },
+  {
+   "rfam_consensus_pos": 34,
+   "n_positive": 1,
+   "n_negative": 59,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0167,
+   "n_supporting_entries": 1,
+   "n_denominator_without_coordinates": 1,
+   "ccd": [
+    {
+     "ccd_id": "PSU",
+     "n_instances": 1,
+     "n_entries": 1
+    }
+   ],
+   "supporting_observations": [
+    "9sfq_2_T_B:36"
+   ]
+  },
+  {
+   "rfam_consensus_pos": 35,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 1,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 36,
+   "n_positive": 16,
+   "n_negative": 43,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 1,
+   "n_source_unavailable": 0,
+   "denominator": 59,
+   "frequency": 0.2712,
+   "n_supporting_entries": 16,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [
+    {
+     "ccd_id": "MIA",
+     "n_instances": 5,
+     "n_entries": 5
+    },
+    {
+     "ccd_id": "YYG",
+     "n_instances": 4,
+     "n_entries": 4
+    },
+    {
+     "ccd_id": "1MG",
+     "n_instances": 2,
+     "n_entries": 2
+    },
+    {
+     "ccd_id": "T6A",
+     "n_instances": 2,
+     "n_entries": 2
+    },
+    {
+     "ccd_id": "12A",
+     "n_instances": 1,
+     "n_entries": 1
+    },
+    {
+     "ccd_id": "6MZ",
+     "n_instances": 1,
+     "n_entries": 1
+    },
+    {
+     "ccd_id": "AET",
+     "n_instances": 1,
+     "n_entries": 1
+    }
+   ],
+   "supporting_observations": [
+    "1asy_1_R_A:37",
+    "1b23_1_R_A:36",
+    "1ehz_1_A_A:37",
+    "1fir_1_A_A:37",
+    "1qf6_1_B_A:37",
+    "1ttt_1_D_A:37",
+    "2tra_1_A_A:37",
+    "8ccs_14_Bb_N:37",
+    "8cdr_15_Bb_O:37",
+    "8cvl_57_1y_EB:37",
+    "8oin_4_B9_I:38",
+    "8ppl_14_Iw_N:36",
+    "8uu5_21_x_U:37",
+    "9sfq_2_T_B:38",
+    "9ti5_13_D_M:38",
+    "9tnl_6_Y_F:37"
+   ]
+  },
+  {
+   "rfam_consensus_pos": 37,
+   "n_positive": 0,
+   "n_negative": 59,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 1,
+   "n_source_unavailable": 0,
+   "denominator": 59,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 1,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 38,
+   "n_positive": 9,
+   "n_negative": 51,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.15,
+   "n_supporting_entries": 9,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [
+    {
+     "ccd_id": "PSU",
+     "n_instances": 9,
+     "n_entries": 9
+    }
+   ],
+   "supporting_observations": [
+    "1b23_1_R_A:38",
+    "1ehz_1_A_A:39",
+    "1fir_1_A_A:39",
+    "1ttt_1_D_A:39",
+    "6y3g_1_F_A:39",
+    "7qi4_36_B_JA:37",
+    "8cth_3_C_C:39",
+    "8cvl_57_1y_EB:39",
+    "8uu5_21_x_U:39"
+   ]
+  },
+  {
+   "rfam_consensus_pos": 39,
+   "n_positive": 3,
+   "n_negative": 57,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.05,
+   "n_supporting_entries": 3,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [
+    {
+     "ccd_id": "5MC",
+     "n_instances": 3,
+     "n_entries": 3
+    }
+   ],
+   "supporting_observations": [
+    "1ehz_1_A_A:40",
+    "1ttt_1_D_A:40",
+    "8cth_3_C_C:40"
+   ]
+  },
+  {
+   "rfam_consensus_pos": 40,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 41,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 42,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 43,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 44,
+   "n_positive": 0,
+   "n_negative": 56,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 4,
+   "n_source_unavailable": 0,
+   "denominator": 56,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 45,
+   "n_positive": 11,
+   "n_negative": 47,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 2,
+   "n_source_unavailable": 0,
+   "denominator": 58,
+   "frequency": 0.1897,
+   "n_supporting_entries": 10,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [
+    {
+     "ccd_id": "G7M",
+     "n_instances": 7,
+     "n_entries": 6
+    },
+    {
+     "ccd_id": "7MG",
+     "n_instances": 4,
+     "n_entries": 4
+    }
+   ],
+   "supporting_observations": [
+    "1c0a_1_B_A:47",
+    "1ehz_1_A_A:46",
+    "1fir_1_A_A:46",
+    "1qf6_1_B_A:46",
+    "1ttt_1_D_A:46",
+    "8cth_3_C_C:46",
+    "8cvl_57_1y_EB:46",
+    "8ppl_14_Iw_N:45",
+    "8uu5_21_x_U:46",
+    "9tnl_6_Y_F:46",
+    "9tnl_7_Z_G:48"
+   ]
+  },
+  {
+   "rfam_consensus_pos": 46,
+   "n_positive": 2,
+   "n_negative": 58,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0333,
+   "n_supporting_entries": 2,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [
+    {
+     "ccd_id": "5MC",
+     "n_instances": 2,
+     "n_entries": 2
+    }
+   ],
+   "supporting_observations": [
+    "1fir_1_A_A:48",
+    "8ppl_14_Iw_N:47"
+   ]
+  },
+  {
+   "rfam_consensus_pos": 47,
+   "n_positive": 6,
+   "n_negative": 54,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.1,
+   "n_supporting_entries": 6,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [
+    {
+     "ccd_id": "5MC",
+     "n_instances": 6,
+     "n_entries": 6
+    }
+   ],
+   "supporting_observations": [
+    "1asy_1_R_A:48",
+    "1ehz_1_A_A:49",
+    "1fir_1_A_A:49",
+    "1ttt_1_D_A:49",
+    "2tra_1_A_A:48",
+    "8cth_3_C_C:49"
+   ]
+  },
+  {
+   "rfam_consensus_pos": 48,
+   "n_positive": 1,
+   "n_negative": 59,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0167,
+   "n_supporting_entries": 1,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [
+    {
+     "ccd_id": "5MC",
+     "n_instances": 1,
+     "n_entries": 1
+    }
+   ],
+   "supporting_observations": [
+    "9o3w_47_Pt_UA:49"
+   ]
+  },
+  {
+   "rfam_consensus_pos": 49,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 50,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 51,
+   "n_positive": 0,
+   "n_negative": 59,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 1,
+   "n_source_unavailable": 0,
+   "denominator": 59,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 52,
+   "n_positive": 20,
+   "n_negative": 40,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.3333,
+   "n_supporting_entries": 19,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [
+    {
+     "ccd_id": "5MU",
+     "n_instances": 17,
+     "n_entries": 16
+    },
+    {
+     "ccd_id": "A1I9V",
+     "n_instances": 2,
+     "n_entries": 2
+    },
+    {
+     "ccd_id": "2MU",
+     "n_instances": 1,
+     "n_entries": 1
+    }
+   ],
+   "supporting_observations": [
+    "1asy_1_R_A:53",
+    "1b23_1_R_A:52",
+    "1c0a_1_B_A:55",
+    "1ehz_1_A_A:54",
+    "1fir_1_A_A:54",
+    "1qf6_1_B_A:54",
+    "1ttt_1_D_A:54",
+    "2tra_1_A_A:53",
+    "3cw5_1_A_A:55",
+    "6y3g_1_F_A:54",
+    "8cth_3_C_C:54",
+    "8cvl_57_1y_EB:54",
+    "8uu5_21_x_U:54",
+    "9q3r_23_w_W:52",
+    "9qrp_2_T_C:72",
+    "9sfq_2_T_B:64",
+    "9sre_2_4_B:55",
+    "9ti5_13_D_M:71",
+    "9tnl_6_Y_F:54",
+    "9tnl_7_Z_G:56"
+   ]
+  },
+  {
+   "rfam_consensus_pos": 53,
+   "n_positive": 21,
+   "n_negative": 38,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 1,
+   "n_source_unavailable": 0,
+   "denominator": 59,
+   "frequency": 0.3559,
+   "n_supporting_entries": 20,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [
+    {
+     "ccd_id": "PSU",
+     "n_instances": 20,
+     "n_entries": 19
+    },
+    {
+     "ccd_id": "2MU",
+     "n_instances": 1,
+     "n_entries": 1
+    }
+   ],
+   "supporting_observations": [
+    "1asy_1_R_A:54",
+    "1b23_1_R_A:53",
+    "1c0a_1_B_A:56",
+    "1ehz_1_A_A:55",
+    "1fir_1_A_A:55",
+    "1qf6_1_B_A:55",
+    "1ttt_1_D_A:55",
+    "2tra_1_A_A:54",
+    "3cw5_1_A_A:56",
+    "6y3g_1_F_A:55",
+    "8cth_3_C_C:55",
+    "8cvl_57_1y_EB:55",
+    "8uu5_21_x_U:55",
+    "9o3w_47_Pt_UA:54",
+    "9q3r_23_w_W:53",
+    "9qrp_2_T_C:73",
+    "9sfq_2_T_B:65",
+    "9sre_2_4_B:56",
+    "9ti5_13_D_M:72",
+    "9tnl_6_Y_F:55",
+    "9tnl_7_Z_G:57"
+   ]
+  },
+  {
+   "rfam_consensus_pos": 54,
+   "n_positive": 1,
+   "n_negative": 58,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 1,
+   "n_source_unavailable": 0,
+   "denominator": 59,
+   "frequency": 0.0169,
+   "n_supporting_entries": 1,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [
+    {
+     "ccd_id": "PSU",
+     "n_instances": 1,
+     "n_entries": 1
+    }
+   ],
+   "supporting_observations": [
+    "9o3w_47_Pt_UA:55"
+   ]
+  },
+  {
+   "rfam_consensus_pos": 55,
+   "n_positive": 0,
+   "n_negative": 59,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 1,
+   "n_source_unavailable": 0,
+   "denominator": 59,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 56,
+   "n_positive": 6,
+   "n_negative": 53,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 1,
+   "n_source_unavailable": 0,
+   "denominator": 59,
+   "frequency": 0.1017,
+   "n_supporting_entries": 6,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [
+    {
+     "ccd_id": "1MA",
+     "n_instances": 6,
+     "n_entries": 6
+    }
+   ],
+   "supporting_observations": [
+    "1ehz_1_A_A:58",
+    "1fir_1_A_A:58",
+    "1ttt_1_D_A:58",
+    "8cth_3_C_C:58",
+    "8ppl_14_Iw_N:57",
+    "9sfq_2_T_B:68"
+   ]
+  },
+  {
+   "rfam_consensus_pos": 57,
+   "n_positive": 0,
+   "n_negative": 57,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 3,
+   "n_source_unavailable": 0,
+   "denominator": 57,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 58,
+   "n_positive": 0,
+   "n_negative": 55,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 5,
+   "n_source_unavailable": 0,
+   "denominator": 55,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 59,
+   "n_positive": 0,
+   "n_negative": 59,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 1,
+   "n_source_unavailable": 0,
+   "denominator": 59,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 60,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 61,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 62,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 63,
+   "n_positive": 1,
+   "n_negative": 59,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0167,
+   "n_supporting_entries": 1,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [
+    {
+     "ccd_id": "PSU",
+     "n_instances": 1,
+     "n_entries": 1
+    }
+   ],
+   "supporting_observations": [
+    "1c0a_1_B_A:66"
+   ]
+  },
+  {
+   "rfam_consensus_pos": 64,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 65,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 66,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 67,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 68,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 69,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 70,
+   "n_positive": 0,
+   "n_negative": 60,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 0,
+   "n_source_unavailable": 0,
+   "denominator": 60,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 0,
+   "ccd": [],
+   "supporting_observations": []
+  },
+  {
+   "rfam_consensus_pos": 71,
+   "n_positive": 0,
+   "n_negative": 59,
+   "n_missing_identity": 0,
+   "missing_reasons": {},
+   "n_no_residue": 1,
+   "n_source_unavailable": 0,
+   "denominator": 59,
+   "frequency": 0.0,
+   "n_supporting_entries": 0,
+   "n_denominator_without_coordinates": 1,
+   "ccd": [],
+   "supporting_observations": []
+  }
+ ],
+ "method": {
+  "primary_source": "deposited RNA polymer sequence in the PDBe updated mmCIF (_pdbx_poly_seq_scheme.mon_id at label_asym_id + label_seq_id)",
+  "consistency_checks": [
+   "_entity_poly_seq",
+   "_atom_site (model 1, where coordinates exist)",
+   "residue_name of the validated family mapping"
+  ],
+  "standard_components": [
+   "A",
+   "C",
+   "G",
+   "U"
+  ],
+  "nonstandard_definition": "any other reliably identified component of the RNA polymer; components are not classified (natural, synthetic, engineered, post-transcriptional)",
+  "missing_identity_reasons": [
+   "microheterogeneity",
+   "unknown_component",
+   "sequence_record_conflict",
+   "coordinate_identity_conflict",
+   "mapping_identity_conflict",
+   "not_in_mapping"
+  ],
+  "consensus_positions": "validated family mapping only (match state); insert, local-end and outside-mapped-region residues have no consensus position",
+  "cross_validation": "PDBe modified_AA_or_NA (an absent PDBe record is not evidence of a standard nucleotide)",
+  "enrichment": "CCD parent (mon_nstd_parent_comp_id, wwPDB CCD); NAKB/BGSU standard_base and change locations (chemistry reference only)"
+ },
+ "provenance": {
+  "rfam_acc": "RF00005",
+  "rfam_release": "15.1",
+  "cm_checksum": "1403477983",
+  "cm_clen": 71,
+  "infernal_version": "INFERNAL 1.1.5 (Sep 2023)",
+  "mapping_pipeline_version": "0.1.0",
+  "mapping_generated": "2026-10-18T08:02:51+00:00",
+  "pipeline_version": "0.1.0",
+  "generated": "2026-10-18T08:06:37+00:00",
+  "mmcif_source": "https://www.ebi.ac.uk/pdbe/entry-files/download/<pdb>_updated.cif (PDBe updated mmCIF, pipeline cache; per-instance retrieval in instances[].mmcif_source)",
+  "pdbe_modified_AA_or_NA": {
+   "status": "checked",
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/modified_AA_or_NA",
+   "http_status": 200,
+   "retrieved_utc": "2026-10-18T08:07:51+00:00",
+   "n_entries_with_records": 37,
+   "n_records": 1702,
+   "cache_file": "pdbe_api_v2_pdb_entry_modified_AA_or_NA-c97fd673cb4f89ff.envelope.json",
+   "note": "cross-validation only; a missing PDBe record is not evidence of a standard nucleotide",
+   "n_family_chain_records_without_observation": 0,
+   "family_chain_records_without_observation": []
+  },
+  "nakb": {
+   "status": "used",
+   "url": "https://rna.bgsu.edu/modified/modified_to_change_data.json",
+   "reference_page": "https://www.nakb.org/modifiednt.html",
+   "retrieved_utc": "2026-10-16T17:30:06Z",
+   "last_modified": "Fri, 17 Apr 2026 22:31:29 GMT",
+   "etag": "\"1410c5-64faf8295f240\"",
+   "sha256": "66d2b2167a7e2fe4966ce0374929d28ec89aa705ddd8834d644be74baae31ab0",
+   "n_components": 874,
+   "note": "chemistry reference only (parent nucleotide, change locations); not evidence of occurrence in a chain"
+  },
+  "ccd": {
+   "url": "https://files.rcsb.org/ligands/view/{ccd}.cif",
+   "field": "_chem_comp.mon_nstd_parent_comp_id"
+  },
+  "investigation": "experiments/modifications_RF00167/REPORT.md"
+ }
+}

@@ -19,7 +19,9 @@ export interface InstanceLoop {
   nStrands: number; blocks: LoopBlock[]; lane: number
 }
 export const TRACK_OF = (t: string): LoopTrack => (t === 'HL' ? 'HL' : t === 'IL' ? 'IL' : 'JL')
-export const TYPE_NAME: Record<string, string> = { HL: 'Hairpin loop', IL: 'Internal loop', J3: 'Three-way junction loop', J4: 'Four-way junction loop' }
+export const TYPE_NAME: Record<string, string> = { HL: 'Hairpin loop', IL: 'Internal loop', J3: 'Three-way junction loop', J4: 'Four-way junction loop', J5: 'Five-way junction loop', J6: 'Six-way junction loop' }
+/** display name of a BGSU loop type; any higher-order junction "Jn" reads "n-way junction loop" */
+export const typeName = (t: string) => TYPE_NAME[t] ?? (/^J\d+$/.test(t) ? `${t.slice(1)}-way junction loop` : t)
 
 export function instanceLoops(loops: LoopRecord[], seqName: string): InstanceLoop[] {
   const out: InstanceLoop[] = []
@@ -31,7 +33,7 @@ export function instanceLoops(loops: LoopRecord[], seqName: string): InstanceLoo
       if (ps.length) blocks.push({ from: Math.min(...ps), to: Math.max(...ps), strand: k })
     })
     const inChain = l.nucleotides.filter((n) => n.seq_name === seqName)
-    out.push({ id: l.loop_id, type: l.loop_type, track: TRACK_OF(l.loop_type), typeName: TYPE_NAME[l.loop_type] ?? l.loop_type,
+    out.push({ id: l.loop_id, type: l.loop_type, track: TRACK_OF(l.loop_type), typeName: typeName(l.loop_type),
       motif: l.motif_group ? { group: l.motif_group, name: l.annotation_text ?? null, assignment: l.motif_group_assignment ?? null, via: l.motif_group_via_loop_id ?? null, release: l.source?.motif_atlas_release ?? null } : null, nucleotides: l.nucleotides, inChain,
       nOtherChain: l.nucleotides.length - inChain.length, nWithoutCoordinates: inChain.filter((n) => !n.has_coordinates).length, nStrands: l.strands.length, blocks, lane: 0 })
   }

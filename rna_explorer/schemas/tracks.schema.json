@@ -590,6 +590,22 @@
        },
        "rule": {
         "type": "string"
+       },
+       "loop_types": {
+        "type": "array",
+        "items": {
+         "type": "string",
+         "pattern": "^J[0-9]+$"
+        },
+        "description": "junction loop types in the union (J3, J4 and any higher-order type present)"
+       },
+       "by_type_n_instances": {
+        "type": "object",
+        "additionalProperties": {
+         "type": "integer",
+         "minimum": 0
+        },
+        "description": "instances per junction type at this position (informative; the union is not their sum)"
        }
       },
       "required": [

@@ -291,7 +291,7 @@ test('tooltips: short, metric-specific wording for both metrics; details moved t
     const b = (await p.boundingBox())!, vp = page.viewportSize()!; expect(b.x).toBeGreaterThanOrEqual(0); expect(b.x + b.width).toBeLessThanOrEqual(vp.width); expect(b.y).toBeGreaterThanOrEqual(0); expect(b.y + b.height).toBeLessThanOrEqual(vp.height)
     const t = (await p.textContent())!.replace(/\s+/g, ' ').trim(); await page.keyboard.press('Escape'); return t }
   expect(await tip('About clustering coverage')).toBe('76 of 84 RNA instances were clustered. Inclusion requires at least 64 core positions with complete base, C4′ and C3′ coordinates. Comparisons use 57 positions shared by all included instances.')
-  expect(await tip('About the representative')).toBe('The medoid: the RNA instance with the lowest average dissimilarity to other members of its structural group.')
+  expect(await tip('About the representative')).toBe('The medoid: the RNA instance with the lowest average dissimilarity to other members of its structural group, chosen among members without breaks in their 3D backbone.')
   expect(await tip('About within-group dissimilarity')).toBe('Mean pairwise geometric discrepancy between RNA instances in this group. Lower values indicate greater structural similarity.')
   expect(await tip('About across-group dissimilarity')).toBe("Mean pairwise geometric discrepancy between this group's RNA instances and all other clustered instances.")
   expect(await tip('About structural groups')).toContain('do not necessarily correspond to biological conformational states')

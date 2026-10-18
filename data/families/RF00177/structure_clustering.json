@@ -3862,9 +3862,11 @@
       ],
       "n_instances": 50,
       "n_entries": 48,
-      "representative": "8r8m_33_A_GA",
-      "representative_rule": "medoid",
-      "representative_mean_dissimilarity": 0.044261,
+      "representative": "4v9d_1_AA_A",
+      "medoid": "8r8m_33_A_GA",
+      "representative_rule": "medoid among members without internal coordinate gaps",
+      "representative_internal_gaps": [],
+      "representative_mean_dissimilarity": 0.045671,
       "leaf_range": [
        0,
        49
@@ -3901,7 +3903,9 @@
       "n_instances": 10,
       "n_entries": 10,
       "representative": "7otc_1_a_A",
+      "medoid": "7otc_1_a_A",
       "representative_rule": "medoid",
+      "representative_internal_gaps": [],
       "representative_mean_dissimilarity": 0.051879,
       "leaf_range": [
        50,
@@ -6302,7 +6306,9 @@
       "n_instances": 50,
       "n_entries": 48,
       "representative": "4v9d_1_AA_A",
+      "medoid": "4v9d_1_AA_A",
       "representative_rule": "medoid",
+      "representative_internal_gaps": [],
       "representative_mean_dissimilarity": 0.007104,
       "leaf_range": [
        0,
@@ -6340,7 +6346,9 @@
       "n_instances": 10,
       "n_entries": 10,
       "representative": "7otc_1_a_A",
+      "medoid": "7otc_1_a_A",
       "representative_rule": "medoid",
+      "representative_internal_gaps": [],
       "representative_mean_dissimilarity": 0.010349,
       "leaf_range": [
        50,
@@ -6467,7 +6475,7 @@
   "mapping_pipeline_version": "0.1.0",
   "mapping_generated": "2026-10-17T17:56:53+00:00",
   "pipeline_version": "0.1.0",
-  "generated": "2026-10-17T18:20:17+00:00",
+  "generated": "2026-10-18T08:24:58+00:00",
   "note": "pairwise values copied from the research run; no structural comparison was recomputed"
  }
 }

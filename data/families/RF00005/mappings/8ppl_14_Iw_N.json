@@ -1,0 +1,1549 @@
+{
+ "pdb_id": "8ppl",
+ "entity_id": 14,
+ "label_asym_id": "N",
+ "auth_asym_id": "Iw",
+ "rfam_acc": "RF00005",
+ "sequence_key": "dc682aaa6150895fd67f81f5102a3b76",
+ "mapped_region": {
+  "start": 1,
+  "end": 72
+ },
+ "alignment": {
+  "bit_score": 46.69,
+  "avg_pp": 0.996,
+  "trunc": "no",
+  "cm_from": 1,
+  "cm_to": 71
+ },
+ "summary": {
+  "mapped_region_len": 72,
+  "n_match": 71,
+  "n_insert": 1,
+  "n_local_end": 0,
+  "cons_span": [
+   1,
+   71
+  ],
+  "n_deleted_in_span": 0,
+  "n_uncovered_outside_span": 0,
+  "fraction_CLEN_matched": 1.0,
+  "n_insertion_sites": 1,
+  "longest_insertion": 1,
+  "longest_insertion_anchor": 45,
+  "pp_star_fraction": 0.9583,
+  "pp_below_0.7_count": 0,
+  "n_mapped_with_coordinates": 72,
+  "n_match_with_coordinates": 71,
+  "n_modified_in_mapped": 8,
+  "pp_category_counts": {
+   "high": 69,
+   "medium": 3
+  }
+ },
+ "residues": [
+  {
+   "polymer_seq_position": 1,
+   "author_residue_number": 1,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "nucleotide_parent": "A",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 1,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 2,
+   "author_residue_number": 2,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "nucleotide_parent": "G",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 2,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 3,
+   "author_residue_number": 3,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "nucleotide_parent": "C",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 3,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 4,
+   "author_residue_number": 4,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "nucleotide_parent": "A",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 4,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 5,
+   "author_residue_number": 5,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "nucleotide_parent": "G",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 5,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 6,
+   "author_residue_number": 6,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "nucleotide_parent": "A",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 6,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 7,
+   "author_residue_number": 7,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "nucleotide_parent": "G",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 7,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 8,
+   "author_residue_number": 8,
+   "author_insertion_code": "",
+   "residue_name": "U",
+   "nucleotide_parent": "U",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 8,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 9,
+   "author_residue_number": 9,
+   "author_insertion_code": "",
+   "residue_name": "1MG",
+   "nucleotide_parent": "G",
+   "is_modified": true,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 9,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 10,
+   "author_residue_number": 10,
+   "author_insertion_code": "",
+   "residue_name": "2MG",
+   "nucleotide_parent": "G",
+   "is_modified": true,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 10,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 11,
+   "author_residue_number": 11,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "nucleotide_parent": "C",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 11,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 12,
+   "author_residue_number": 12,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "nucleotide_parent": "G",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 12,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 13,
+   "author_residue_number": 13,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "nucleotide_parent": "C",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 13,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 14,
+   "author_residue_number": 14,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "nucleotide_parent": "A",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 14,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 15,
+   "author_residue_number": 15,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "nucleotide_parent": "G",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 15,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 16,
+   "author_residue_number": 16,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "nucleotide_parent": "C",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 16,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 17,
+   "author_residue_number": 17,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "nucleotide_parent": "G",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 17,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "9",
+   "posterior_prob": 0.9,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 18,
+   "author_residue_number": 18,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "nucleotide_parent": "G",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 18,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "9",
+   "posterior_prob": 0.9,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 19,
+   "author_residue_number": 19,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "nucleotide_parent": "A",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 19,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "9",
+   "posterior_prob": 0.9,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 20,
+   "author_residue_number": 20,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "nucleotide_parent": "A",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 20,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 21,
+   "author_residue_number": 21,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "nucleotide_parent": "G",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 21,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 22,
+   "author_residue_number": 22,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "nucleotide_parent": "C",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 22,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 23,
+   "author_residue_number": 23,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "nucleotide_parent": "G",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 23,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 24,
+   "author_residue_number": 24,
+   "author_insertion_code": "",
+   "residue_name": "U",
+   "nucleotide_parent": "U",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 24,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 25,
+   "author_residue_number": 25,
+   "author_insertion_code": "",
+   "residue_name": "2MG",
+   "nucleotide_parent": "G",
+   "is_modified": true,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 25,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 26,
+   "author_residue_number": 26,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "nucleotide_parent": "C",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 26,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 27,
+   "author_residue_number": 27,
+   "author_insertion_code": "",
+   "residue_name": "U",
+   "nucleotide_parent": "U",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 27,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 28,
+   "author_residue_number": 28,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "nucleotide_parent": "G",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 28,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 29,
+   "author_residue_number": 29,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "nucleotide_parent": "G",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 29,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 30,
+   "author_residue_number": 30,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "nucleotide_parent": "G",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 30,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 31,
+   "author_residue_number": 31,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "nucleotide_parent": "C",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 31,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 32,
+   "author_residue_number": 32,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "nucleotide_parent": "C",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 32,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 33,
+   "author_residue_number": 33,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "nucleotide_parent": "C",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 33,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 34,
+   "author_residue_number": 34,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "nucleotide_parent": "A",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 34,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 35,
+   "author_residue_number": 35,
+   "author_insertion_code": "",
+   "residue_name": "U",
+   "nucleotide_parent": "U",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 35,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 36,
+   "author_residue_number": 36,
+   "author_insertion_code": "",
+   "residue_name": "T6A",
+   "nucleotide_parent": "A",
+   "is_modified": true,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 36,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 37,
+   "author_residue_number": 37,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "nucleotide_parent": "A",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 37,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 38,
+   "author_residue_number": 38,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "nucleotide_parent": "C",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 38,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 39,
+   "author_residue_number": 39,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "nucleotide_parent": "C",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 39,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 40,
+   "author_residue_number": 40,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "nucleotide_parent": "C",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 40,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 41,
+   "author_residue_number": 41,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "nucleotide_parent": "A",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 41,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 42,
+   "author_residue_number": 42,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "nucleotide_parent": "G",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 42,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 43,
+   "author_residue_number": 43,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "nucleotide_parent": "A",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 43,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 44,
+   "author_residue_number": 44,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "nucleotide_parent": "G",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 44,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 45,
+   "author_residue_number": 45,
+   "author_insertion_code": "",
+   "residue_name": "G7M",
+   "nucleotide_parent": "G",
+   "is_modified": true,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 45,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 46,
+   "author_residue_number": 46,
+   "author_insertion_code": "",
+   "residue_name": "H2U",
+   "nucleotide_parent": "U",
+   "is_modified": true,
+   "alignment_state": "insert",
+   "rfam_consensus_pos": null,
+   "insertion_anchor": 45,
+   "insertion_offset": 1,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 47,
+   "author_residue_number": 47,
+   "author_insertion_code": "",
+   "residue_name": "5MC",
+   "nucleotide_parent": "C",
+   "is_modified": true,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 46,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 48,
+   "author_residue_number": 48,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "nucleotide_parent": "G",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 47,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 49,
+   "author_residue_number": 49,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "nucleotide_parent": "A",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 48,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 50,
+   "author_residue_number": 50,
+   "author_insertion_code": "",
+   "residue_name": "U",
+   "nucleotide_parent": "U",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 49,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 51,
+   "author_residue_number": 51,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "nucleotide_parent": "G",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 50,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 52,
+   "author_residue_number": 52,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "nucleotide_parent": "G",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 51,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 53,
+   "author_residue_number": 53,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "nucleotide_parent": "A",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 52,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 54,
+   "author_residue_number": 54,
+   "author_insertion_code": "",
+   "residue_name": "U",
+   "nucleotide_parent": "U",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 53,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 55,
+   "author_residue_number": 55,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "nucleotide_parent": "C",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 54,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 56,
+   "author_residue_number": 56,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "nucleotide_parent": "G",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 55,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 57,
+   "author_residue_number": 57,
+   "author_insertion_code": "",
+   "residue_name": "1MA",
+   "nucleotide_parent": "A",
+   "is_modified": true,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 56,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 58,
+   "author_residue_number": 58,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "nucleotide_parent": "A",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 57,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 59,
+   "author_residue_number": 59,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "nucleotide_parent": "A",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 58,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 60,
+   "author_residue_number": 60,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "nucleotide_parent": "C",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 59,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 61,
+   "author_residue_number": 61,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "nucleotide_parent": "C",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 60,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 62,
+   "author_residue_number": 62,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "nucleotide_parent": "A",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 61,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 63,
+   "author_residue_number": 63,
+   "author_insertion_code": "",
+   "residue_name": "U",
+   "nucleotide_parent": "U",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 62,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 64,
+   "author_residue_number": 64,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "nucleotide_parent": "C",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 63,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 65,
+   "author_residue_number": 65,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "nucleotide_parent": "C",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 64,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 66,
+   "author_residue_number": 66,
+   "author_insertion_code": "",
+   "residue_name": "U",
+   "nucleotide_parent": "U",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 65,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 67,
+   "author_residue_number": 67,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "nucleotide_parent": "C",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 66,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 68,
+   "author_residue_number": 68,
+   "author_insertion_code": "",
+   "residue_name": "U",
+   "nucleotide_parent": "U",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 67,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 69,
+   "author_residue_number": 69,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "nucleotide_parent": "G",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 68,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 70,
+   "author_residue_number": 70,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "nucleotide_parent": "C",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 69,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 71,
+   "author_residue_number": 71,
+   "author_insertion_code": "",
+   "residue_name": "U",
+   "nucleotide_parent": "U",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 70,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 72,
+   "author_residue_number": 72,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "nucleotide_parent": "A",
+   "is_modified": false,
+   "alignment_state": "match",
+   "rfam_consensus_pos": 71,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "*",
+   "posterior_prob": 0.975,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 73,
+   "author_residue_number": 73,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "nucleotide_parent": "C",
+   "is_modified": false,
+   "alignment_state": "not_submitted_flank",
+   "rfam_consensus_pos": null,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "",
+   "posterior_prob": null,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 74,
+   "author_residue_number": 74,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "nucleotide_parent": "C",
+   "is_modified": false,
+   "alignment_state": "not_submitted_flank",
+   "rfam_consensus_pos": null,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "",
+   "posterior_prob": null,
+   "has_coordinates": true
+  },
+  {
+   "polymer_seq_position": 75,
+   "author_residue_number": 75,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "nucleotide_parent": "A",
+   "is_modified": false,
+   "alignment_state": "not_submitted_flank",
+   "rfam_consensus_pos": null,
+   "insertion_anchor": null,
+   "insertion_offset": null,
+   "posterior_prob_char": "",
+   "posterior_prob": null,
+   "has_coordinates": true
+  }
+ ],
+ "consensus_columns": [
+  {
+   "rfam_consensus_pos": 1,
+   "state": "match",
+   "polymer_seq_position": 1
+  },
+  {
+   "rfam_consensus_pos": 2,
+   "state": "match",
+   "polymer_seq_position": 2
+  },
+  {
+   "rfam_consensus_pos": 3,
+   "state": "match",
+   "polymer_seq_position": 3
+  },
+  {
+   "rfam_consensus_pos": 4,
+   "state": "match",
+   "polymer_seq_position": 4
+  },
+  {
+   "rfam_consensus_pos": 5,
+   "state": "match",
+   "polymer_seq_position": 5
+  },
+  {
+   "rfam_consensus_pos": 6,
+   "state": "match",
+   "polymer_seq_position": 6
+  },
+  {
+   "rfam_consensus_pos": 7,
+   "state": "match",
+   "polymer_seq_position": 7
+  },
+  {
+   "rfam_consensus_pos": 8,
+   "state": "match",
+   "polymer_seq_position": 8
+  },
+  {
+   "rfam_consensus_pos": 9,
+   "state": "match",
+   "polymer_seq_position": 9
+  },
+  {
+   "rfam_consensus_pos": 10,
+   "state": "match",
+   "polymer_seq_position": 10
+  },
+  {
+   "rfam_consensus_pos": 11,
+   "state": "match",
+   "polymer_seq_position": 11
+  },
+  {
+   "rfam_consensus_pos": 12,
+   "state": "match",
+   "polymer_seq_position": 12
+  },
+  {
+   "rfam_consensus_pos": 13,
+   "state": "match",
+   "polymer_seq_position": 13
+  },
+  {
+   "rfam_consensus_pos": 14,
+   "state": "match",
+   "polymer_seq_position": 14
+  },
+  {
+   "rfam_consensus_pos": 15,
+   "state": "match",
+   "polymer_seq_position": 15
+  },
+  {
+   "rfam_consensus_pos": 16,
+   "state": "match",
+   "polymer_seq_position": 16
+  },
+  {
+   "rfam_consensus_pos": 17,
+   "state": "match",
+   "polymer_seq_position": 17
+  },
+  {
+   "rfam_consensus_pos": 18,
+   "state": "match",
+   "polymer_seq_position": 18
+  },
+  {
+   "rfam_consensus_pos": 19,
+   "state": "match",
+   "polymer_seq_position": 19
+  },
+  {
+   "rfam_consensus_pos": 20,
+   "state": "match",
+   "polymer_seq_position": 20
+  },
+  {
+   "rfam_consensus_pos": 21,
+   "state": "match",
+   "polymer_seq_position": 21
+  },
+  {
+   "rfam_consensus_pos": 22,
+   "state": "match",
+   "polymer_seq_position": 22
+  },
+  {
+   "rfam_consensus_pos": 23,
+   "state": "match",
+   "polymer_seq_position": 23
+  },
+  {
+   "rfam_consensus_pos": 24,
+   "state": "match",
+   "polymer_seq_position": 24
+  },
+  {
+   "rfam_consensus_pos": 25,
+   "state": "match",
+   "polymer_seq_position": 25
+  },
+  {
+   "rfam_consensus_pos": 26,
+   "state": "match",
+   "polymer_seq_position": 26
+  },
+  {
+   "rfam_consensus_pos": 27,
+   "state": "match",
+   "polymer_seq_position": 27
+  },
+  {
+   "rfam_consensus_pos": 28,
+   "state": "match",
+   "polymer_seq_position": 28
+  },
+  {
+   "rfam_consensus_pos": 29,
+   "state": "match",
+   "polymer_seq_position": 29
+  },
+  {
+   "rfam_consensus_pos": 30,
+   "state": "match",
+   "polymer_seq_position": 30
+  },
+  {
+   "rfam_consensus_pos": 31,
+   "state": "match",
+   "polymer_seq_position": 31
+  },
+  {
+   "rfam_consensus_pos": 32,
+   "state": "match",
+   "polymer_seq_position": 32
+  },
+  {
+   "rfam_consensus_pos": 33,
+   "state": "match",
+   "polymer_seq_position": 33
+  },
+  {
+   "rfam_consensus_pos": 34,
+   "state": "match",
+   "polymer_seq_position": 34
+  },
+  {
+   "rfam_consensus_pos": 35,
+   "state": "match",
+   "polymer_seq_position": 35
+  },
+  {
+   "rfam_consensus_pos": 36,
+   "state": "match",
+   "polymer_seq_position": 36
+  },
+  {
+   "rfam_consensus_pos": 37,
+   "state": "match",
+   "polymer_seq_position": 37
+  },
+  {
+   "rfam_consensus_pos": 38,
+   "state": "match",
+   "polymer_seq_position": 38
+  },
+  {
+   "rfam_consensus_pos": 39,
+   "state": "match",
+   "polymer_seq_position": 39
+  },
+  {
+   "rfam_consensus_pos": 40,
+   "state": "match",
+   "polymer_seq_position": 40
+  },
+  {
+   "rfam_consensus_pos": 41,
+   "state": "match",
+   "polymer_seq_position": 41
+  },
+  {
+   "rfam_consensus_pos": 42,
+   "state": "match",
+   "polymer_seq_position": 42
+  },
+  {
+   "rfam_consensus_pos": 43,
+   "state": "match",
+   "polymer_seq_position": 43
+  },
+  {
+   "rfam_consensus_pos": 44,
+   "state": "match",
+   "polymer_seq_position": 44
+  },
+  {
+   "rfam_consensus_pos": 45,
+   "state": "match",
+   "polymer_seq_position": 45
+  },
+  {
+   "rfam_consensus_pos": 46,
+   "state": "match",
+   "polymer_seq_position": 47
+  },
+  {
+   "rfam_consensus_pos": 47,
+   "state": "match",
+   "polymer_seq_position": 48
+  },
+  {
+   "rfam_consensus_pos": 48,
+   "state": "match",
+   "polymer_seq_position": 49
+  },
+  {
+   "rfam_consensus_pos": 49,
+   "state": "match",
+   "polymer_seq_position": 50
+  },
+  {
+   "rfam_consensus_pos": 50,
+   "state": "match",
+   "polymer_seq_position": 51
+  },
+  {
+   "rfam_consensus_pos": 51,
+   "state": "match",
+   "polymer_seq_position": 52
+  },
+  {
+   "rfam_consensus_pos": 52,
+   "state": "match",
+   "polymer_seq_position": 53
+  },
+  {
+   "rfam_consensus_pos": 53,
+   "state": "match",
+   "polymer_seq_position": 54
+  },
+  {
+   "rfam_consensus_pos": 54,
+   "state": "match",
+   "polymer_seq_position": 55
+  },
+  {
+   "rfam_consensus_pos": 55,
+   "state": "match",
+   "polymer_seq_position": 56
+  },
+  {
+   "rfam_consensus_pos": 56,
+   "state": "match",
+   "polymer_seq_position": 57
+  },
+  {
+   "rfam_consensus_pos": 57,
+   "state": "match",
+   "polymer_seq_position": 58
+  },
+  {
+   "rfam_consensus_pos": 58,
+   "state": "match",
+   "polymer_seq_position": 59
+  },
+  {
+   "rfam_consensus_pos": 59,
+   "state": "match",
+   "polymer_seq_position": 60
+  },
+  {
+   "rfam_consensus_pos": 60,
+   "state": "match",
+   "polymer_seq_position": 61
+  },
+  {
+   "rfam_consensus_pos": 61,
+   "state": "match",
+   "polymer_seq_position": 62
+  },
+  {
+   "rfam_consensus_pos": 62,
+   "state": "match",
+   "polymer_seq_position": 63
+  },
+  {
+   "rfam_consensus_pos": 63,
+   "state": "match",
+   "polymer_seq_position": 64
+  },
+  {
+   "rfam_consensus_pos": 64,
+   "state": "match",
+   "polymer_seq_position": 65
+  },
+  {
+   "rfam_consensus_pos": 65,
+   "state": "match",
+   "polymer_seq_position": 66
+  },
+  {
+   "rfam_consensus_pos": 66,
+   "state": "match",
+   "polymer_seq_position": 67
+  },
+  {
+   "rfam_consensus_pos": 67,
+   "state": "match",
+   "polymer_seq_position": 68
+  },
+  {
+   "rfam_consensus_pos": 68,
+   "state": "match",
+   "polymer_seq_position": 69
+  },
+  {
+   "rfam_consensus_pos": 69,
+   "state": "match",
+   "polymer_seq_position": 70
+  },
+  {
+   "rfam_consensus_pos": 70,
+   "state": "match",
+   "polymer_seq_position": 71
+  },
+  {
+   "rfam_consensus_pos": 71,
+   "state": "match",
+   "polymer_seq_position": 72
+  }
+ ],
+ "provenance": {
+  "rfam_acc": "RF00005",
+  "rfam_release": "15.1",
+  "cm_name": "tRNA",
+  "cm_checksum": "1403477983",
+  "cm_clen": 71,
+  "cm_build_date": "Thu Aug  1 15:47:01 2024",
+  "infernal_version": "INFERNAL 1.1.5 (Sep 2023)",
+  "cmalign_options": "--cpu 4",
+  "cmalign_mode": "local (default)",
+  "pipeline_version": "0.1.0",
+  "generated": "2026-10-18T08:02:51+00:00",
+  "pdbe_mapping_source": "PDBe API v2 nucleic_mappings/{pdb_id} (per entry)",
+  "rfam_hit_source": "rfam.org/family/RF00005/structures",
+  "selection": {
+   "file": "data/selections/RF00005_60_chains.csv",
+   "sha256": "6958581ed76e91912ce1056964f1bf8bd6f54e9528097d893f339a6d4ccacfed",
+   "n_chains": 60
+  },
+  "coordinate_source": "PDBe ModelServer per chain (first model); validation residue scheme from the PDBe residue_listing API"
+ }
+}

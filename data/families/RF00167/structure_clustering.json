@@ -3738,7 +3738,9 @@
       "n_instances": 72,
       "n_entries": 59,
       "representative": "6uc8_1_B_A",
+      "medoid": "6uc8_1_B_A",
       "representative_rule": "medoid",
+      "representative_internal_gaps": [],
       "representative_mean_dissimilarity": 0.17988,
       "leaf_range": [
        0,
@@ -3770,7 +3772,9 @@
       "n_instances": 4,
       "n_entries": 2,
       "representative": "5e54_1_B_B",
+      "medoid": "5e54_1_B_B",
       "representative_rule": "medoid",
+      "representative_internal_gaps": [],
       "representative_mean_dissimilarity": 0.233706,
       "leaf_range": [
        72,
@@ -3878,6 +3882,8 @@
     },
     "research_evidence": {
      "source": "/Users/sria/Desktop/aggregated_rna_clustering/experiments/rna_structural_clustering/results/rf00167/clustering/clustering_summary.json",
+     "layout": "per_threshold",
+     "primary": "T64",
      "noise_floor_p95": 0.12371289999999997,
      "noise_floor_n_pairs": 27,
      "cophenetic_correlation": 0.9845,
@@ -7466,7 +7472,9 @@
       "n_instances": 51,
       "n_entries": 44,
       "representative": "6uc8_1_B_A",
+      "medoid": "6uc8_1_B_A",
       "representative_rule": "medoid",
+      "representative_internal_gaps": [],
       "representative_mean_dissimilarity": 0.121981,
       "leaf_range": [
        0,
@@ -7511,7 +7519,9 @@
       "n_instances": 17,
       "n_entries": 14,
       "representative": "9v4v_1_A_A",
+      "medoid": "9v4v_1_A_A",
       "representative_rule": "medoid",
+      "representative_internal_gaps": [],
       "representative_mean_dissimilarity": 0.122328,
       "leaf_range": [
        59,
@@ -7543,7 +7553,9 @@
       "n_instances": 4,
       "n_entries": 2,
       "representative": "5e54_1_B_B",
+      "medoid": "5e54_1_B_B",
       "representative_rule": "medoid",
+      "representative_internal_gaps": [],
       "representative_mean_dissimilarity": 0.15027,
       "leaf_range": [
        51,
@@ -7575,7 +7587,9 @@
       "n_instances": 4,
       "n_entries": 1,
       "representative": "9ndd_1_A_A",
+      "medoid": "9ndd_1_A_A",
       "representative_rule": "medoid",
+      "representative_internal_gaps": [],
       "representative_mean_dissimilarity": 0.007853,
       "leaf_range": [
        55,
@@ -7683,6 +7697,8 @@
     },
     "research_evidence": {
      "source": "/Users/sria/Desktop/aggregated_rna_clustering/experiments/rna_structural_clustering/results/rf00167/clustering/clustering_summary.json",
+     "layout": "per_threshold",
+     "primary": "T64",
      "noise_floor_p95": 0.13106599999999993,
      "noise_floor_n_pairs": 27,
      "cophenetic_correlation": 0.9562,
@@ -7747,7 +7763,7 @@
   "mapping_pipeline_version": "0.1.0",
   "mapping_generated": "2026-10-15T03:48:01+00:00",
   "pipeline_version": "0.1.0",
-  "generated": "2026-10-16T20:25:24+00:00",
+  "generated": "2026-10-18T08:24:36+00:00",
   "note": "pairwise values copied from the research run; no structural comparison was recomputed"
  }
 }

@@ -1,0 +1,1682 @@
+{
+ "schema_version": "1.0",
+ "rfam_acc": "RF00005",
+ "seq_name": "1qtq_1_B_A",
+ "pdb_id": "1qtq",
+ "entity_id": 1,
+ "label_asym_id": "A",
+ "auth_asym_id": "B",
+ "mapping_file": "mappings/1qtq_1_B_A.json",
+ "sources": {
+  "reference_structural_elements": {
+   "status": "evaluated",
+   "url": "https://rna.bgsu.edu/correspondence/nucleotide_annotation?chain=1QTQ%7C1%7CB",
+   "retrieved": "2026-10-18",
+   "n_labelled_nucleotides": 64,
+   "reference": "8p7d|1|R",
+   "note": "labels transferred by BGSU from the reference chain; for highlighting only"
+  },
+  "motif_atlas_loops": {
+   "status": "evaluated",
+   "url": "https://rna.bgsu.edu/rna3dhub/loops/download/1QTQ",
+   "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/1QTQ/motifs",
+   "retrieved": "2026-10-18",
+   "n_loops_involving_chain": 5,
+   "motif_atlas_release": {
+    "HL": "4.15",
+    "IL": "4.15",
+    "J3": "4.15",
+    "J4": "4.15"
+   }
+  },
+  "pdbe_binding_sites": {
+   "status": "evaluated",
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/1qtq/1",
+   "retrieved": "2026-10-18",
+   "observation_level": "entity",
+   "n_entity_chains": 1,
+   "chain_attribution": "resolved"
+  }
+ },
+ "loops": [
+  {
+   "loop_id": "HL_1QTQ_001",
+   "loop_type": "HL",
+   "motif_group": "HL_55043.2",
+   "annotation_text": null,
+   "atlas_status": "valid",
+   "multi_chain": false,
+   "chains": [
+    "B"
+   ],
+   "consensus_positions": [
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+   ]
+  },
+  {
+   "loop_id": "HL_1QTQ_002",
+   "loop_type": "HL",
+   "motif_group": "HL_63894.5",
+   "annotation_text": "tRNA anticodon loop with synthetase",
+   "atlas_status": "valid",
+   "multi_chain": false,
+   "chains": [
+    "B"
+   ],
+   "consensus_positions": [
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+   ]
+  },
+  {
+   "loop_id": "HL_1QTQ_003",
+   "loop_type": "HL",
+   "motif_group": "HL_33597.8",
+   "annotation_text": "T-loop with 2 stacked bulged bases",
+   "atlas_status": "valid",
+   "multi_chain": false,
+   "chains": [
+    "B"
+   ],
+   "consensus_positions": [
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59
+   ]
+  },
+  {
+   "loop_id": "IL_1QTQ_001",
+   "loop_type": "IL",
+   "motif_group": null,
+   "annotation_text": null,
+   "atlas_status": "problematic",
+   "multi_chain": false,
+   "chains": [
+    "B"
+   ],
+   "consensus_positions": [
+    28,
+    29,
+    30,
+    38,
+    39,
+    40
+   ]
+  },
+  {
+   "loop_id": "J4_1QTQ_001",
+   "loop_type": "J4",
+   "motif_group": "J4_36296.3",
+   "annotation_text": "tRNA junction",
+   "atlas_status": "valid",
+   "multi_chain": false,
+   "chains": [
+    "B"
+   ],
+   "consensus_positions": [
+    7,
+    8,
+    9,
+    10,
+    24,
+    25,
+    26,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    63,
+    64
+   ]
+  }
+ ],
+ "bound_molecules": [
+  {
+   "ccd_id": "QSI",
+   "name": "5'-O-[N-(L-GLUTAMINYL)-SULFAMOYL]ADENOSINE",
+   "ligand_class": "ligand",
+   "bound_molecule_ids": [
+    "bm5"
+   ],
+   "attribution": "chain",
+   "is_best_chain": true,
+   "in_default_track": false,
+   "flags": [
+    "contacts_only_polymer_termini"
+   ],
+   "consensus_positions": []
+  }
+ ],
+ "residues": [
+  {
+   "label_seq_id": 1,
+   "author_residue_number": 901,
+   "author_insertion_code": "",
+   "residue_name": "U",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 1,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": false,
+   "reference_element": null,
+   "reference_element_unit_id": null,
+   "loops": [],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 2,
+   "author_residue_number": 902,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 2,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACC",
+   "reference_element_unit_id": "1QTQ|1|B|G|902",
+   "loops": [],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 3,
+   "author_residue_number": 903,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 3,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACC",
+   "reference_element_unit_id": "1QTQ|1|B|G|903",
+   "loops": [],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 4,
+   "author_residue_number": 904,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 4,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACC",
+   "reference_element_unit_id": "1QTQ|1|B|G|904",
+   "loops": [],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 5,
+   "author_residue_number": 905,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 5,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACC",
+   "reference_element_unit_id": "1QTQ|1|B|G|905",
+   "loops": [],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 6,
+   "author_residue_number": 906,
+   "author_insertion_code": "",
+   "residue_name": "U",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 6,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACC",
+   "reference_element_unit_id": "1QTQ|1|B|U|906",
+   "loops": [],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 7,
+   "author_residue_number": 907,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 7,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACC",
+   "reference_element_unit_id": "1QTQ|1|B|A|907",
+   "loops": [
+    {
+     "loop_id": "J4_1QTQ_001",
+     "loop_type": "J4",
+     "motif_group": "J4_36296.3",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 8,
+   "author_residue_number": 908,
+   "author_insertion_code": "",
+   "residue_name": "U",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 8,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": null,
+   "reference_element_unit_id": null,
+   "loops": [
+    {
+     "loop_id": "J4_1QTQ_001",
+     "loop_type": "J4",
+     "motif_group": "J4_36296.3",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 9,
+   "author_residue_number": 909,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 9,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": null,
+   "reference_element_unit_id": null,
+   "loops": [
+    {
+     "loop_id": "J4_1QTQ_001",
+     "loop_type": "J4",
+     "motif_group": "J4_36296.3",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 10,
+   "author_residue_number": 910,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 10,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix D",
+   "reference_element_unit_id": "1QTQ|1|B|G|910",
+   "loops": [
+    {
+     "loop_id": "J4_1QTQ_001",
+     "loop_type": "J4",
+     "motif_group": "J4_36296.3",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 11,
+   "author_residue_number": 911,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 11,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix D",
+   "reference_element_unit_id": "1QTQ|1|B|C|911",
+   "loops": [],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 12,
+   "author_residue_number": 912,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 12,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix D",
+   "reference_element_unit_id": "1QTQ|1|B|C|912",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_001",
+     "loop_type": "HL",
+     "motif_group": "HL_55043.2",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 13,
+   "author_residue_number": 913,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 13,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix D",
+   "reference_element_unit_id": "1QTQ|1|B|A|913",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_001",
+     "loop_type": "HL",
+     "motif_group": "HL_55043.2",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 14,
+   "author_residue_number": 914,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 14,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix D",
+   "reference_element_unit_id": "1QTQ|1|B|A|914",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_001",
+     "loop_type": "HL",
+     "motif_group": "HL_55043.2",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 15,
+   "author_residue_number": 915,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 15,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix D",
+   "reference_element_unit_id": "1QTQ|1|B|G|915",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_001",
+     "loop_type": "HL",
+     "motif_group": "HL_55043.2",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 16,
+   "author_residue_number": 916,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 16,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix D",
+   "reference_element_unit_id": "1QTQ|1|B|C|916",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_001",
+     "loop_type": "HL",
+     "motif_group": "HL_55043.2",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 17,
+   "author_residue_number": 918,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 17,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix D",
+   "reference_element_unit_id": "1QTQ|1|B|G|918",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_001",
+     "loop_type": "HL",
+     "motif_group": "HL_55043.2",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 18,
+   "author_residue_number": 919,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 18,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix D",
+   "reference_element_unit_id": "1QTQ|1|B|G|919",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_001",
+     "loop_type": "HL",
+     "motif_group": "HL_55043.2",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 19,
+   "author_residue_number": 920,
+   "author_insertion_code": "",
+   "residue_name": "U",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 19,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix D",
+   "reference_element_unit_id": "1QTQ|1|B|U|920",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_001",
+     "loop_type": "HL",
+     "motif_group": "HL_55043.2",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 20,
+   "author_residue_number": 921,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 20,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix D",
+   "reference_element_unit_id": "1QTQ|1|B|A|921",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_001",
+     "loop_type": "HL",
+     "motif_group": "HL_55043.2",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 21,
+   "author_residue_number": 922,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 21,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix D",
+   "reference_element_unit_id": "1QTQ|1|B|A|922",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_001",
+     "loop_type": "HL",
+     "motif_group": "HL_55043.2",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 22,
+   "author_residue_number": 923,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 22,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix D",
+   "reference_element_unit_id": "1QTQ|1|B|G|923",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_001",
+     "loop_type": "HL",
+     "motif_group": "HL_55043.2",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 23,
+   "author_residue_number": 924,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 23,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix D",
+   "reference_element_unit_id": "1QTQ|1|B|G|924",
+   "loops": [],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 24,
+   "author_residue_number": 925,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 24,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix D",
+   "reference_element_unit_id": "1QTQ|1|B|C|925",
+   "loops": [
+    {
+     "loop_id": "J4_1QTQ_001",
+     "loop_type": "J4",
+     "motif_group": "J4_36296.3",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 25,
+   "author_residue_number": 926,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 25,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACL",
+   "reference_element_unit_id": "1QTQ|1|B|A|926",
+   "loops": [
+    {
+     "loop_id": "J4_1QTQ_001",
+     "loop_type": "J4",
+     "motif_group": "J4_36296.3",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 26,
+   "author_residue_number": 927,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 26,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACL",
+   "reference_element_unit_id": "1QTQ|1|B|C|927",
+   "loops": [
+    {
+     "loop_id": "J4_1QTQ_001",
+     "loop_type": "J4",
+     "motif_group": "J4_36296.3",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 27,
+   "author_residue_number": 928,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 27,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACL",
+   "reference_element_unit_id": "1QTQ|1|B|C|928",
+   "loops": [],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 28,
+   "author_residue_number": 929,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 28,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACL",
+   "reference_element_unit_id": "1QTQ|1|B|G|929",
+   "loops": [
+    {
+     "loop_id": "IL_1QTQ_001",
+     "loop_type": "IL",
+     "motif_group": null,
+     "atlas_status": "problematic"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 29,
+   "author_residue_number": 930,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 29,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACL",
+   "reference_element_unit_id": "1QTQ|1|B|G|930",
+   "loops": [
+    {
+     "loop_id": "IL_1QTQ_001",
+     "loop_type": "IL",
+     "motif_group": null,
+     "atlas_status": "problematic"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 30,
+   "author_residue_number": 931,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 30,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACL",
+   "reference_element_unit_id": "1QTQ|1|B|A|931",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_002",
+     "loop_type": "HL",
+     "motif_group": "HL_63894.5",
+     "atlas_status": "valid"
+    },
+    {
+     "loop_id": "IL_1QTQ_001",
+     "loop_type": "IL",
+     "motif_group": null,
+     "atlas_status": "problematic"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 31,
+   "author_residue_number": 932,
+   "author_insertion_code": "",
+   "residue_name": "U",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 31,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACL",
+   "reference_element_unit_id": "1QTQ|1|B|U|932",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_002",
+     "loop_type": "HL",
+     "motif_group": "HL_63894.5",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 32,
+   "author_residue_number": 933,
+   "author_insertion_code": "",
+   "residue_name": "U",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 32,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACL",
+   "reference_element_unit_id": "1QTQ|1|B|U|933",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_002",
+     "loop_type": "HL",
+     "motif_group": "HL_63894.5",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 33,
+   "author_residue_number": 934,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 33,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACL",
+   "reference_element_unit_id": "1QTQ|1|B|C|934",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_002",
+     "loop_type": "HL",
+     "motif_group": "HL_63894.5",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 34,
+   "author_residue_number": 935,
+   "author_insertion_code": "",
+   "residue_name": "U",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 34,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACL",
+   "reference_element_unit_id": "1QTQ|1|B|U|935",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_002",
+     "loop_type": "HL",
+     "motif_group": "HL_63894.5",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 35,
+   "author_residue_number": 936,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 35,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACL",
+   "reference_element_unit_id": "1QTQ|1|B|G|936",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_002",
+     "loop_type": "HL",
+     "motif_group": "HL_63894.5",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 36,
+   "author_residue_number": 937,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 36,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACL",
+   "reference_element_unit_id": "1QTQ|1|B|A|937",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_002",
+     "loop_type": "HL",
+     "motif_group": "HL_63894.5",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 37,
+   "author_residue_number": 938,
+   "author_insertion_code": "",
+   "residue_name": "U",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 37,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACL",
+   "reference_element_unit_id": "1QTQ|1|B|U|938",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_002",
+     "loop_type": "HL",
+     "motif_group": "HL_63894.5",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 38,
+   "author_residue_number": 939,
+   "author_insertion_code": "",
+   "residue_name": "U",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 38,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACL",
+   "reference_element_unit_id": "1QTQ|1|B|U|939",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_002",
+     "loop_type": "HL",
+     "motif_group": "HL_63894.5",
+     "atlas_status": "valid"
+    },
+    {
+     "loop_id": "IL_1QTQ_001",
+     "loop_type": "IL",
+     "motif_group": null,
+     "atlas_status": "problematic"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 39,
+   "author_residue_number": 940,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 39,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACL",
+   "reference_element_unit_id": "1QTQ|1|B|C|940",
+   "loops": [
+    {
+     "loop_id": "IL_1QTQ_001",
+     "loop_type": "IL",
+     "motif_group": null,
+     "atlas_status": "problematic"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 40,
+   "author_residue_number": 941,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 40,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACL",
+   "reference_element_unit_id": "1QTQ|1|B|C|941",
+   "loops": [
+    {
+     "loop_id": "IL_1QTQ_001",
+     "loop_type": "IL",
+     "motif_group": null,
+     "atlas_status": "problematic"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 41,
+   "author_residue_number": 942,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 41,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACL",
+   "reference_element_unit_id": "1QTQ|1|B|G|942",
+   "loops": [],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 42,
+   "author_residue_number": 943,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 42,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACL",
+   "reference_element_unit_id": "1QTQ|1|B|G|943",
+   "loops": [
+    {
+     "loop_id": "J4_1QTQ_001",
+     "loop_type": "J4",
+     "motif_group": "J4_36296.3",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 43,
+   "author_residue_number": 944,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 43,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACL",
+   "reference_element_unit_id": "1QTQ|1|B|C|944",
+   "loops": [
+    {
+     "loop_id": "J4_1QTQ_001",
+     "loop_type": "J4",
+     "motif_group": "J4_36296.3",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 44,
+   "author_residue_number": 945,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 44,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": null,
+   "reference_element_unit_id": null,
+   "loops": [
+    {
+     "loop_id": "J4_1QTQ_001",
+     "loop_type": "J4",
+     "motif_group": "J4_36296.3",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 45,
+   "author_residue_number": 946,
+   "author_insertion_code": "",
+   "residue_name": "U",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 45,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": null,
+   "reference_element_unit_id": null,
+   "loops": [
+    {
+     "loop_id": "J4_1QTQ_001",
+     "loop_type": "J4",
+     "motif_group": "J4_36296.3",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 46,
+   "author_residue_number": 947,
+   "author_insertion_code": "",
+   "residue_name": "U",
+   "alignment_state": "insert",
+   "rfam_consensus_pos": null,
+   "insertion_anchor": 45,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": null,
+   "reference_element_unit_id": null,
+   "loops": [
+    {
+     "loop_id": "J4_1QTQ_001",
+     "loop_type": "J4",
+     "motif_group": "J4_36296.3",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 47,
+   "author_residue_number": 948,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 46,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": null,
+   "reference_element_unit_id": null,
+   "loops": [
+    {
+     "loop_id": "J4_1QTQ_001",
+     "loop_type": "J4",
+     "motif_group": "J4_36296.3",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 48,
+   "author_residue_number": 949,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 47,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix T",
+   "reference_element_unit_id": "1QTQ|1|B|C|949",
+   "loops": [
+    {
+     "loop_id": "J4_1QTQ_001",
+     "loop_type": "J4",
+     "motif_group": "J4_36296.3",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 49,
+   "author_residue_number": 950,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 48,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix T",
+   "reference_element_unit_id": "1QTQ|1|B|G|950",
+   "loops": [],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 50,
+   "author_residue_number": 951,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 49,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix T",
+   "reference_element_unit_id": "1QTQ|1|B|A|951",
+   "loops": [],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 51,
+   "author_residue_number": 952,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 50,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix T",
+   "reference_element_unit_id": "1QTQ|1|B|G|952",
+   "loops": [],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 52,
+   "author_residue_number": 953,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 51,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix T",
+   "reference_element_unit_id": "1QTQ|1|B|G|953",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_003",
+     "loop_type": "HL",
+     "motif_group": "HL_33597.8",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 53,
+   "author_residue_number": 954,
+   "author_insertion_code": "",
+   "residue_name": "U",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 52,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix T",
+   "reference_element_unit_id": "1QTQ|1|B|U|954",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_003",
+     "loop_type": "HL",
+     "motif_group": "HL_33597.8",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 54,
+   "author_residue_number": 955,
+   "author_insertion_code": "",
+   "residue_name": "U",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 53,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix T",
+   "reference_element_unit_id": "1QTQ|1|B|U|955",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_003",
+     "loop_type": "HL",
+     "motif_group": "HL_33597.8",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 55,
+   "author_residue_number": 956,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 54,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix T",
+   "reference_element_unit_id": "1QTQ|1|B|C|956",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_003",
+     "loop_type": "HL",
+     "motif_group": "HL_33597.8",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 56,
+   "author_residue_number": 957,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 55,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix T",
+   "reference_element_unit_id": "1QTQ|1|B|G|957",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_003",
+     "loop_type": "HL",
+     "motif_group": "HL_33597.8",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 57,
+   "author_residue_number": 958,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 56,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix T",
+   "reference_element_unit_id": "1QTQ|1|B|A|958",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_003",
+     "loop_type": "HL",
+     "motif_group": "HL_33597.8",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 58,
+   "author_residue_number": 959,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 57,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix T",
+   "reference_element_unit_id": "1QTQ|1|B|A|959",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_003",
+     "loop_type": "HL",
+     "motif_group": "HL_33597.8",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 59,
+   "author_residue_number": 960,
+   "author_insertion_code": "",
+   "residue_name": "U",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 58,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix T",
+   "reference_element_unit_id": "1QTQ|1|B|U|960",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_003",
+     "loop_type": "HL",
+     "motif_group": "HL_33597.8",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 60,
+   "author_residue_number": 961,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 59,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix T",
+   "reference_element_unit_id": "1QTQ|1|B|C|961",
+   "loops": [
+    {
+     "loop_id": "HL_1QTQ_003",
+     "loop_type": "HL",
+     "motif_group": "HL_33597.8",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 61,
+   "author_residue_number": 962,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 60,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix T",
+   "reference_element_unit_id": "1QTQ|1|B|C|962",
+   "loops": [],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 62,
+   "author_residue_number": 963,
+   "author_insertion_code": "",
+   "residue_name": "U",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 61,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix T",
+   "reference_element_unit_id": "1QTQ|1|B|U|963",
+   "loops": [],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 63,
+   "author_residue_number": 964,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 62,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix T",
+   "reference_element_unit_id": "1QTQ|1|B|C|964",
+   "loops": [],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 64,
+   "author_residue_number": 965,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 63,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix T",
+   "reference_element_unit_id": "1QTQ|1|B|G|965",
+   "loops": [
+    {
+     "loop_id": "J4_1QTQ_001",
+     "loop_type": "J4",
+     "motif_group": "J4_36296.3",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 65,
+   "author_residue_number": 966,
+   "author_insertion_code": "",
+   "residue_name": "U",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 64,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACC",
+   "reference_element_unit_id": "1QTQ|1|B|U|966",
+   "loops": [
+    {
+     "loop_id": "J4_1QTQ_001",
+     "loop_type": "J4",
+     "motif_group": "J4_36296.3",
+     "atlas_status": "valid"
+    }
+   ],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 66,
+   "author_residue_number": 967,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 65,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACC",
+   "reference_element_unit_id": "1QTQ|1|B|A|967",
+   "loops": [],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 67,
+   "author_residue_number": 968,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 66,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACC",
+   "reference_element_unit_id": "1QTQ|1|B|C|968",
+   "loops": [],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 68,
+   "author_residue_number": 969,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 67,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACC",
+   "reference_element_unit_id": "1QTQ|1|B|C|969",
+   "loops": [],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 69,
+   "author_residue_number": 970,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 68,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACC",
+   "reference_element_unit_id": "1QTQ|1|B|C|970",
+   "loops": [],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 70,
+   "author_residue_number": 971,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 69,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACC",
+   "reference_element_unit_id": "1QTQ|1|B|C|971",
+   "loops": [],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 71,
+   "author_residue_number": 972,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 70,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": "Helix ACC",
+   "reference_element_unit_id": "1QTQ|1|B|A|972",
+   "loops": [],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 72,
+   "author_residue_number": 973,
+   "author_insertion_code": "",
+   "residue_name": "G",
+   "alignment_state": "match",
+   "rfam_consensus_pos": 71,
+   "insertion_anchor": null,
+   "pp_char": "*",
+   "has_coordinates": true,
+   "reference_element": null,
+   "reference_element_unit_id": null,
+   "loops": [],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 73,
+   "author_residue_number": 974,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "alignment_state": "not_submitted_flank",
+   "rfam_consensus_pos": null,
+   "insertion_anchor": null,
+   "pp_char": "",
+   "has_coordinates": true,
+   "reference_element": null,
+   "reference_element_unit_id": null,
+   "loops": [],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 74,
+   "author_residue_number": 975,
+   "author_insertion_code": "",
+   "residue_name": "C",
+   "alignment_state": "not_submitted_flank",
+   "rfam_consensus_pos": null,
+   "insertion_anchor": null,
+   "pp_char": "",
+   "has_coordinates": true,
+   "reference_element": null,
+   "reference_element_unit_id": null,
+   "loops": [],
+   "bound_molecules": []
+  },
+  {
+   "label_seq_id": 75,
+   "author_residue_number": 976,
+   "author_insertion_code": "",
+   "residue_name": "A",
+   "alignment_state": "not_submitted_flank",
+   "rfam_consensus_pos": null,
+   "insertion_anchor": null,
+   "pp_char": "",
+   "has_coordinates": true,
+   "reference_element": null,
+   "reference_element_unit_id": null,
+   "loops": [],
+   "bound_molecules": [
+    {
+     "ccd_id": "QSI",
+     "ligand_class": "ligand",
+     "bound_molecule_ids": [
+      "bm5"
+     ],
+     "attribution": "chain",
+     "is_best_chain": true,
+     "in_default_track": false,
+     "flags": [
+      "contacts_only_polymer_termini"
+     ]
+    }
+   ]
+  }
+ ],
+ "provenance": {
+  "rfam_acc": "RF00005",
+  "rfam_release": "15.1",
+  "cm_checksum": "1403477983",
+  "cm_clen": 71,
+  "mapping_pipeline_version": "0.1.0",
+  "mapping_generated": "2026-10-18T08:02:51+00:00",
+  "annotation_pipeline_version": "0.1.0",
+  "annotation_config_version": "1.1",
+  "generated": "2026-10-18T08:10:13+00:00"
+ }
+}

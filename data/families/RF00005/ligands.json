@@ -1,0 +1,5344 @@
+{
+ "schema_version": "1.0",
+ "rfam_acc": "RF00005",
+ "clen": 71,
+ "source": {
+  "name": "PDBe API v2 binding_sites",
+  "url_template": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/{pdb_id}/{entity_id}",
+  "observation_level": "entity",
+  "index_type": "PDB polymer sequence index == label_seq_id (validated Milestone 3A)"
+ },
+ "classification": {
+  "config_version": "1.1",
+  "default_track_classes": [
+   "ligand"
+  ],
+  "exclude_flagged_from_default_track": true,
+  "artefact_rules": [
+   {
+    "id": "ccd_is_polymer_residue",
+    "description": "The bound-molecule CCD id is also a residue of the contacted RNA polymer sequence (e.g. a 5'-terminal GTP incorporated during in vitro transcription). PDBe reports such covalently attached components as bound molecules; they are retained with this flag and excluded from the default ligand track.",
+    "applies_to_classes": [
+     "ligand"
+    ],
+    "exclude_from_default_track": true
+   },
+   {
+    "id": "contacts_only_polymer_termini",
+    "description": "All contacted polymer positions lie within 'terminal_window' residues of a polymer terminus (e.g. GTP reported against the 5'-terminal G of in vitro transcribed RNA). Flagged as a possible terminal-nucleotide or crystallisation artefact and excluded from the default ligand track; retained in ligands.json and per-instance records. DECISION FOR SCIENTIFIC REVIEW: set to false to keep such molecules in the default track.",
+    "applies_to_classes": [
+     "ligand"
+    ],
+    "terminal_window": 2,
+    "exclude_from_default_track": true
+   }
+  ],
+  "classes": {
+   "water": [
+    "HOH",
+    "DOD",
+    "H2O",
+    "WAT"
+   ],
+   "metal_ion": [
+    "MG",
+    "NA",
+    "K",
+    "CA",
+    "MN",
+    "ZN",
+    "CO",
+    "NI",
+    "CD",
+    "SR",
+    "BA",
+    "CS",
+    "RB",
+    "TL",
+    "PB",
+    "IR",
+    "FE",
+    "FE2",
+    "CU",
+    "CU1",
+    "LI",
+    "HG",
+    "AU",
+    "PT",
+    "AG",
+    "OS",
+    "SM",
+    "LU",
+    "GD",
+    "EU",
+    "YB",
+    "TB",
+    "3CO",
+    "NCO",
+    "IRI",
+    "6MO",
+    "OS4",
+    "MN3"
+   ],
+   "additive": [
+    "CL",
+    "SO4",
+    "PO4",
+    "GOL",
+    "EDO",
+    "PEG",
+    "PGE",
+    "PG4",
+    "1PE",
+    "P6G",
+    "MPD",
+    "ACT",
+    "FMT",
+    "DMS",
+    "BME",
+    "TRS",
+    "EPE",
+    "MES",
+    "CAC",
+    "NH4",
+    "ACY",
+    "IPA",
+    "BR",
+    "IOD",
+    "SCN",
+    "NO3",
+    "SPM",
+    "SPD",
+    "SPK",
+    "BU3",
+    "PDO",
+    "MLI",
+    "CIT",
+    "OXL",
+    "TAR",
+    "BTB",
+    "IMD",
+    "GSH",
+    "MRD",
+    "2PE",
+    "HEZ",
+    "PE4",
+    "F",
+    "FLC",
+    "DTT",
+    "MOH",
+    "EOH",
+    "NHE",
+    "MPO",
+    "TLA",
+    "PGO",
+    "BCT",
+    "CO3",
+    "PUT"
+   ]
+  }
+ },
+ "counting_rules": {
+  "primary_unit": "pdb_entry_entity (pdb_id, entity_id)",
+  "contacts": "deduplicated per (entry, entity, ccd_id, label_seq_id); bound-molecule ids kept per contact",
+  "chain_attribution": "resolved only for single-chain entities; otherwise unresolved, bestChainId retained as metadata"
+ },
+ "counts": {
+  "n_entry_entities_evaluated": 33,
+  "n_entry_entities_unavailable": 27,
+  "n_bound_molecule_records": 52,
+  "n_distinct_ccd_ids": 28,
+  "by_class": {
+   "ligand": 17,
+   "metal_ion": 6,
+   "additive": 5
+  },
+  "n_records_in_default_track": 6,
+  "n_entries_in_default_track": 5,
+  "n_records_flagged": 16,
+  "flag_counts": {
+   "contacts_only_polymer_termini": 16
+  },
+  "chain_attribution": {
+   "resolved": 52
+  },
+  "contact_mapping_status_counts": {
+   "outside_mapped_region": 27,
+   "mapped": 92,
+   "insert": 5
+  },
+  "default_track_pocket_positions_n_entries": {
+   "1": 1,
+   "2": 1,
+   "9": 2,
+   "26": 1,
+   "27": 1,
+   "48": 1,
+   "49": 1,
+   "54": 2,
+   "55": 1,
+   "56": 1,
+   "58": 1,
+   "70": 1,
+   "71": 2
+  }
+ },
+ "entry_entity_sources": {
+  "1asy:1": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/1asy/1",
+   "status": "unavailable",
+   "retrieved": null,
+   "detail": "404 Client Error: Not Found for url: https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/1asy/1",
+   "response_status": "http_error",
+   "n_bound_molecules": 0
+  },
+  "1b23:1": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/1b23/1",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 2
+  },
+  "1c0a:1": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/1c0a/1",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 2
+  },
+  "1ehz:1": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/1ehz/1",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 2
+  },
+  "1fir:1": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/1fir/1",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 1
+  },
+  "1j2b:1": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/1j2b/1",
+   "status": "unavailable",
+   "retrieved": null,
+   "detail": "404 Client Error: Not Found for url: https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/1j2b/1",
+   "response_status": "http_error",
+   "n_bound_molecules": 0
+  },
+  "1n78:1": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/1n78/1",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 1
+  },
+  "1qf6:1": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/1qf6/1",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 1
+  },
+  "1qtq:1": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/1qtq/1",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 1
+  },
+  "1ttt:1": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/1ttt/1",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 1
+  },
+  "1u0b:1": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/1u0b/1",
+   "status": "unavailable",
+   "retrieved": null,
+   "detail": "404 Client Error: Not Found for url: https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/1u0b/1",
+   "response_status": "http_error",
+   "n_bound_molecules": 0
+  },
+  "2ake:1": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/2ake/1",
+   "status": "unavailable",
+   "retrieved": null,
+   "detail": "404 Client Error: Not Found for url: https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/2ake/1",
+   "response_status": "http_error",
+   "n_bound_molecules": 0
+  },
+  "2k4c:1": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/2k4c/1",
+   "status": "unavailable",
+   "retrieved": null,
+   "detail": "404 Client Error: Not Found for url: https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/2k4c/1",
+   "response_status": "http_error",
+   "n_bound_molecules": 0
+  },
+  "2tra:1": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/2tra/1",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 1
+  },
+  "2zm5:2": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/2zm5/2",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 1
+  },
+  "3a2k:2": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/3a2k/2",
+   "status": "unavailable",
+   "retrieved": null,
+   "detail": "404 Client Error: Not Found for url: https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/3a2k/2",
+   "response_status": "http_error",
+   "n_bound_molecules": 0
+  },
+  "3cw5:1": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/3cw5/1",
+   "status": "unavailable",
+   "retrieved": null,
+   "detail": "404 Client Error: Not Found for url: https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/3cw5/1",
+   "response_status": "http_error",
+   "n_bound_molecules": 0
+  },
+  "3l0u:1": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/3l0u/1",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 2
+  },
+  "3qsy:3": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/3qsy/3",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 1
+  },
+  "3wqy:2": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/3wqy/2",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 2
+  },
+  "4rdx:2": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/4rdx/2",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 2
+  },
+  "4yye:2": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/4yye/2",
+   "status": "unavailable",
+   "retrieved": null,
+   "detail": "404 Client Error: Not Found for url: https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/4yye/2",
+   "response_status": "http_error",
+   "n_bound_molecules": 0
+  },
+  "5ccb:3": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/5ccb/3",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 2
+  },
+  "5e6m:2": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/5e6m/2",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 2
+  },
+  "5ud5:2": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/5ud5/2",
+   "status": "unavailable",
+   "retrieved": null,
+   "detail": "404 Client Error: Not Found for url: https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/5ud5/2",
+   "response_status": "http_error",
+   "n_bound_molecules": 0
+  },
+  "6ahu:12": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/6ahu/12",
+   "status": "unavailable",
+   "retrieved": null,
+   "detail": "404 Client Error: Not Found for url: https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/6ahu/12",
+   "response_status": "http_error",
+   "n_bound_molecules": 0
+  },
+  "6ufg:1": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/6ufg/1",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 2
+  },
+  "6ugg:1": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/6ugg/1",
+   "status": "unavailable",
+   "retrieved": null,
+   "detail": "404 Client Error: Not Found for url: https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/6ugg/1",
+   "response_status": "http_error",
+   "n_bound_molecules": 0
+  },
+  "6y3g:1": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/6y3g/1",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 3
+  },
+  "6zm6:85": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/6zm6/85",
+   "status": "unavailable",
+   "retrieved": null,
+   "detail": "404 Client Error: Not Found for url: https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/6zm6/85",
+   "response_status": "http_error",
+   "n_bound_molecules": 0
+  },
+  "7k00:54": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/7k00/54",
+   "status": "unavailable",
+   "retrieved": null,
+   "detail": "404 Client Error: Not Found for url: https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/7k00/54",
+   "response_status": "http_error",
+   "n_bound_molecules": 0
+  },
+  "7onu:4": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/7onu/4",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 1
+  },
+  "7qi4:36": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/7qi4/36",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 1
+  },
+  "7xjz:2": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/7xjz/2",
+   "status": "unavailable",
+   "retrieved": null,
+   "detail": "404 Client Error: Not Found for url: https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/7xjz/2",
+   "response_status": "http_error",
+   "n_bound_molecules": 0
+  },
+  "7xk0:2": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/7xk0/2",
+   "status": "unavailable",
+   "retrieved": null,
+   "detail": "404 Client Error: Not Found for url: https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/7xk0/2",
+   "response_status": "http_error",
+   "n_bound_molecules": 0
+  },
+  "7zrz:5": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/7zrz/5",
+   "status": "unavailable",
+   "retrieved": null,
+   "detail": "404 Client Error: Not Found for url: https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/7zrz/5",
+   "response_status": "http_error",
+   "n_bound_molecules": 0
+  },
+  "8b0x:27": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/8b0x/27",
+   "status": "unavailable",
+   "retrieved": null,
+   "detail": "404 Client Error: Not Found for url: https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/8b0x/27",
+   "response_status": "http_error",
+   "n_bound_molecules": 0
+  },
+  "8cbm:4": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/8cbm/4",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 2
+  },
+  "8ccs:14": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/8ccs/14",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 1
+  },
+  "8cdr:15": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/8cdr/15",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 1
+  },
+  "8cth:3": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/8cth/3",
+   "status": "unavailable",
+   "retrieved": null,
+   "detail": "404 Client Error: Not Found for url: https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/8cth/3",
+   "response_status": "http_error",
+   "n_bound_molecules": 0
+  },
+  "8cvl:57": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/8cvl/57",
+   "status": "unavailable",
+   "retrieved": null,
+   "detail": "404 Client Error: Not Found for url: https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/8cvl/57",
+   "response_status": "http_error",
+   "n_bound_molecules": 0
+  },
+  "8oin:4": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/8oin/4",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 2
+  },
+  "8ppl:14": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/8ppl/14",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 1
+  },
+  "8uu5:21": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/8uu5/21",
+   "status": "unavailable",
+   "retrieved": null,
+   "detail": "404 Client Error: Not Found for url: https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/8uu5/21",
+   "response_status": "http_error",
+   "n_bound_molecules": 0
+  },
+  "8z1f:1": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/8z1f/1",
+   "status": "unavailable",
+   "retrieved": null,
+   "detail": "404 Client Error: Not Found for url: https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/8z1f/1",
+   "response_status": "http_error",
+   "n_bound_molecules": 0
+  },
+  "9dpa:2": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9dpa/2",
+   "status": "unavailable",
+   "retrieved": null,
+   "detail": "404 Client Error: Not Found for url: https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9dpa/2",
+   "response_status": "http_error",
+   "n_bound_molecules": 0
+  },
+  "9gch:3": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9gch/3",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 3
+  },
+  "9h3g:3": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9h3g/3",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 1
+  },
+  "9j4o:1": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9j4o/1",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 1
+  },
+  "9o3w:47": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9o3w/47",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 1
+  },
+  "9p7o:86": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9p7o/86",
+   "status": "unavailable",
+   "retrieved": null,
+   "detail": "404 Client Error: Not Found for url: https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9p7o/86",
+   "response_status": "http_error",
+   "n_bound_molecules": 0
+  },
+  "9p8b:5": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9p8b/5",
+   "status": "unavailable",
+   "retrieved": null,
+   "detail": "404 Client Error: Not Found for url: https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9p8b/5",
+   "response_status": "http_error",
+   "n_bound_molecules": 0
+  },
+  "9q3r:23": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9q3r/23",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 1
+  },
+  "9qrp:2": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9qrp/2",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 2
+  },
+  "9sfq:2": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9sfq/2",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 4
+  },
+  "9sre:2": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9sre/2",
+   "status": "unavailable",
+   "retrieved": null,
+   "detail": "404 Client Error: Not Found for url: https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9sre/2",
+   "response_status": "http_error",
+   "n_bound_molecules": 0
+  },
+  "9ti5:13": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9ti5/13",
+   "status": "unavailable",
+   "retrieved": null,
+   "detail": "404 Client Error: Not Found for url: https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9ti5/13",
+   "response_status": "http_error",
+   "n_bound_molecules": 0
+  },
+  "9tnl:6": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9tnl/6",
+   "status": "evaluated",
+   "retrieved": "2026-10-18",
+   "detail": "",
+   "response_status": "ok",
+   "n_bound_molecules": 1
+  },
+  "9tnl:7": {
+   "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9tnl/7",
+   "status": "unavailable",
+   "retrieved": null,
+   "detail": "404 Client Error: Not Found for url: https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9tnl/7",
+   "response_status": "http_error",
+   "n_bound_molecules": 0
+  }
+ },
+ "by_ccd": {
+  "1PE": {
+   "name": "PENTAETHYLENE GLYCOL",
+   "ligand_class": "additive",
+   "n_entry_entities": 1,
+   "n_entries": 1,
+   "entries": [
+    "9sfq"
+   ],
+   "n_bound_molecule_instances": 6,
+   "n_entries_in_default_track": 0,
+   "consensus_positions_n_entries": {
+    "68": 1
+   },
+   "flag_counts": {}
+  },
+  "A5A": {
+   "name": "'5'-O-(N-(L-ALANYL)-SULFAMOYL)ADENOSINE",
+   "ligand_class": "ligand",
+   "n_entry_entities": 1,
+   "n_entries": 1,
+   "entries": [
+    "3wqy"
+   ],
+   "n_bound_molecule_instances": 1,
+   "n_entries_in_default_track": 0,
+   "consensus_positions_n_entries": {},
+   "flag_counts": {
+    "contacts_only_polymer_termini": 1
+   }
+  },
+  "AMO": {
+   "name": "ASPARTYL-ADENOSINE-5'-MONOPHOSPHATE",
+   "ligand_class": "ligand",
+   "n_entry_entities": 1,
+   "n_entries": 1,
+   "entries": [
+    "1c0a"
+   ],
+   "n_bound_molecule_instances": 1,
+   "n_entries_in_default_track": 0,
+   "consensus_positions_n_entries": {},
+   "flag_counts": {
+    "contacts_only_polymer_termini": 1
+   }
+  },
+  "AMP": {
+   "name": "ADENOSINE MONOPHOSPHATE",
+   "ligand_class": "ligand",
+   "n_entry_entities": 2,
+   "n_entries": 2,
+   "entries": [
+    "1qf6",
+    "4rdx"
+   ],
+   "n_bound_molecule_instances": 3,
+   "n_entries_in_default_track": 0,
+   "consensus_positions_n_entries": {},
+   "flag_counts": {
+    "contacts_only_polymer_termini": 2
+   }
+  },
+  "CA": {
+   "name": "CALCIUM ION",
+   "ligand_class": "metal_ion",
+   "n_entry_entities": 1,
+   "n_entries": 1,
+   "entries": [
+    "6y3g"
+   ],
+   "n_bound_molecule_instances": 5,
+   "n_entries_in_default_track": 0,
+   "consensus_positions_n_entries": {
+    "6": 1,
+    "8": 1,
+    "9": 1,
+    "11": 1,
+    "19": 1,
+    "20": 1,
+    "31": 1,
+    "46": 1,
+    "48": 1,
+    "56": 1,
+    "57": 1
+   },
+   "flag_counts": {}
+  },
+  "CDP": {
+   "name": "CYTIDINE-5'-DIPHOSPHATE",
+   "ligand_class": "ligand",
+   "n_entry_entities": 1,
+   "n_entries": 1,
+   "entries": [
+    "8cbm"
+   ],
+   "n_bound_molecule_instances": 1,
+   "n_entries_in_default_track": 0,
+   "consensus_positions_n_entries": {
+    "71": 1
+   },
+   "flag_counts": {
+    "contacts_only_polymer_termini": 1
+   }
+  },
+  "CYS": {
+   "name": "CYSTEINE",
+   "ligand_class": "ligand",
+   "n_entry_entities": 1,
+   "n_entries": 1,
+   "entries": [
+    "1b23"
+   ],
+   "n_bound_molecule_instances": 1,
+   "n_entries_in_default_track": 0,
+   "consensus_positions_n_entries": {},
+   "flag_counts": {
+    "contacts_only_polymer_termini": 1
+   }
+  },
+  "GAI": {
+   "name": "GUANIDINE",
+   "ligand_class": "ligand",
+   "n_entry_entities": 1,
+   "n_entries": 1,
+   "entries": [
+    "6y3g"
+   ],
+   "n_bound_molecule_instances": 3,
+   "n_entries_in_default_track": 1,
+   "consensus_positions_n_entries": {
+    "26": 1,
+    "27": 1,
+    "48": 1,
+    "49": 1,
+    "54": 1,
+    "55": 1,
+    "58": 1
+   },
+   "flag_counts": {}
+  },
+  "GAP": {
+   "name": "GLYCYL-ADENOSINE-5'-PHOSPHATE",
+   "ligand_class": "ligand",
+   "n_entry_entities": 1,
+   "n_entries": 1,
+   "entries": [
+    "5e6m"
+   ],
+   "n_bound_molecule_instances": 2,
+   "n_entries_in_default_track": 0,
+   "consensus_positions_n_entries": {},
+   "flag_counts": {
+    "contacts_only_polymer_termini": 1
+   }
+  },
+  "GOL": {
+   "name": "GLYCEROL",
+   "ligand_class": "additive",
+   "n_entry_entities": 1,
+   "n_entries": 1,
+   "entries": [
+    "6y3g"
+   ],
+   "n_bound_molecule_instances": 1,
+   "n_entries_in_default_track": 0,
+   "consensus_positions_n_entries": {
+    "29": 1
+   },
+   "flag_counts": {}
+  },
+  "GOM": {
+   "name": "GLUTAMOL-AMP",
+   "ligand_class": "ligand",
+   "n_entry_entities": 1,
+   "n_entries": 1,
+   "entries": [
+    "1n78"
+   ],
+   "n_bound_molecule_instances": 1,
+   "n_entries_in_default_track": 0,
+   "consensus_positions_n_entries": {},
+   "flag_counts": {
+    "contacts_only_polymer_termini": 1
+   }
+  },
+  "GTP": {
+   "name": "GUANOSINE-5'-TRIPHOSPHATE",
+   "ligand_class": "ligand",
+   "n_entry_entities": 1,
+   "n_entries": 1,
+   "entries": [
+    "9gch"
+   ],
+   "n_bound_molecule_instances": 1,
+   "n_entries_in_default_track": 1,
+   "consensus_positions_n_entries": {
+    "2": 1,
+    "70": 1,
+    "71": 1
+   },
+   "flag_counts": {}
+  },
+  "HIS": {
+   "name": "HISTIDINE",
+   "ligand_class": "ligand",
+   "n_entry_entities": 1,
+   "n_entries": 1,
+   "entries": [
+    "4rdx"
+   ],
+   "n_bound_molecule_instances": 2,
+   "n_entries_in_default_track": 0,
+   "consensus_positions_n_entries": {},
+   "flag_counts": {
+    "contacts_only_polymer_termini": 1
+   }
+  },
+  "K": {
+   "name": "POTASSIUM ION",
+   "ligand_class": "metal_ion",
+   "n_entry_entities": 2,
+   "n_entries": 2,
+   "entries": [
+    "3l0u",
+    "6ufg"
+   ],
+   "n_bound_molecule_instances": 3,
+   "n_entries_in_default_track": 0,
+   "consensus_positions_n_entries": {
+    "9": 1,
+    "22": 1,
+    "23": 1,
+    "24": 1,
+    "43": 1,
+    "52": 1,
+    "53": 1,
+    "54": 1
+   },
+   "flag_counts": {}
+  },
+  "MET": {
+   "name": "METHIONINE",
+   "ligand_class": "ligand",
+   "n_entry_entities": 2,
+   "n_entries": 2,
+   "entries": [
+    "3qsy",
+    "8ppl"
+   ],
+   "n_bound_molecule_instances": 2,
+   "n_entries_in_default_track": 0,
+   "consensus_positions_n_entries": {},
+   "flag_counts": {
+    "contacts_only_polymer_termini": 2
+   }
+  },
+  "MG": {
+   "name": "MAGNESIUM ION",
+   "ligand_class": "metal_ion",
+   "n_entry_entities": 14,
+   "n_entries": 14,
+   "entries": [
+    "1b23",
+    "1ehz",
+    "2zm5",
+    "3l0u",
+    "3wqy",
+    "6ufg",
+    "7onu",
+    "8ccs",
+    "8cdr",
+    "8oin",
+    "9gch",
+    "9h3g",
+    "9o3w",
+    "9sfq"
+   ],
+   "n_bound_molecule_instances": 20,
+   "n_entries_in_default_track": 0,
+   "consensus_positions_n_entries": {
+    "1": 2,
+    "2": 1,
+    "6": 1,
+    "7": 2,
+    "9": 1,
+    "11": 1,
+    "12": 2,
+    "14": 2,
+    "19": 1,
+    "20": 1,
+    "26": 1,
+    "35": 1,
+    "36": 2,
+    "37": 1,
+    "38": 1,
+    "57": 1
+   },
+   "flag_counts": {}
+  },
+  "MN": {
+   "name": "MANGANESE (II) ION",
+   "ligand_class": "metal_ion",
+   "n_entry_entities": 2,
+   "n_entries": 2,
+   "entries": [
+    "1ehz",
+    "9qrp"
+   ],
+   "n_bound_molecule_instances": 4,
+   "n_entries_in_default_track": 0,
+   "consensus_positions_n_entries": {
+    "1": 2,
+    "15": 1,
+    "16": 1,
+    "18": 1
+   },
+   "flag_counts": {}
+  },
+  "MQH": {
+   "name": "Bottromycin A2",
+   "ligand_class": "ligand",
+   "n_entry_entities": 1,
+   "n_entries": 1,
+   "entries": [
+    "9q3r"
+   ],
+   "n_bound_molecule_instances": 1,
+   "n_entries_in_default_track": 1,
+   "consensus_positions_n_entries": {
+    "1": 1,
+    "71": 1
+   },
+   "flag_counts": {}
+  },
+  "NA": {
+   "name": "SODIUM ION",
+   "ligand_class": "metal_ion",
+   "n_entry_entities": 2,
+   "n_entries": 2,
+   "entries": [
+    "1fir",
+    "5ccb"
+   ],
+   "n_bound_molecule_instances": 3,
+   "n_entries_in_default_track": 0,
+   "consensus_positions_n_entries": {
+    "8": 1,
+    "9": 1,
+    "41": 1
+   },
+   "flag_counts": {}
+  },
+  "NI": {
+   "name": "NICKEL (II) ION",
+   "ligand_class": "metal_ion",
+   "n_entry_entities": 1,
+   "n_entries": 1,
+   "entries": [
+    "5e6m"
+   ],
+   "n_bound_molecule_instances": 2,
+   "n_entries_in_default_track": 0,
+   "consensus_positions_n_entries": {
+    "8": 1,
+    "9": 1,
+    "12": 1
+   },
+   "flag_counts": {}
+  },
+  "PEG": {
+   "name": "DI(HYDROXYETHYL)ETHER",
+   "ligand_class": "additive",
+   "n_entry_entities": 1,
+   "n_entries": 1,
+   "entries": [
+    "9sfq"
+   ],
+   "n_bound_molecule_instances": 8,
+   "n_entries_in_default_track": 0,
+   "consensus_positions_n_entries": {
+    "1": 1,
+    "4": 1,
+    "5": 1,
+    "6": 1,
+    "7": 1,
+    "36": 1,
+    "67": 1,
+    "68": 1
+   },
+   "flag_counts": {}
+  },
+  "PHE": {
+   "name": "PHENYLALANINE",
+   "ligand_class": "ligand",
+   "n_entry_entities": 2,
+   "n_entries": 2,
+   "entries": [
+    "1ttt",
+    "8oin"
+   ],
+   "n_bound_molecule_instances": 2,
+   "n_entries_in_default_track": 0,
+   "consensus_positions_n_entries": {},
+   "flag_counts": {
+    "contacts_only_polymer_termini": 2
+   }
+  },
+  "QSI": {
+   "name": "5'-O-[N-(L-GLUTAMINYL)-SULFAMOYL]ADENOSINE",
+   "ligand_class": "ligand",
+   "n_entry_entities": 1,
+   "n_entries": 1,
+   "entries": [
+    "1qtq"
+   ],
+   "n_bound_molecule_instances": 1,
+   "n_entries_in_default_track": 0,
+   "consensus_positions_n_entries": {},
+   "flag_counts": {
+    "contacts_only_polymer_termini": 1
+   }
+  },
+  "SAH": {
+   "name": "S-ADENOSYL-L-HOMOCYSTEINE",
+   "ligand_class": "ligand",
+   "n_entry_entities": 2,
+   "n_entries": 2,
+   "entries": [
+    "5ccb",
+    "8cbm"
+   ],
+   "n_bound_molecule_instances": 3,
+   "n_entries_in_default_track": 2,
+   "consensus_positions_n_entries": {
+    "9": 1,
+    "54": 1,
+    "56": 1
+   },
+   "flag_counts": {}
+  },
+  "SAM": {
+   "name": "S-ADENOSYLMETHIONINE",
+   "ligand_class": "ligand",
+   "n_entry_entities": 1,
+   "n_entries": 1,
+   "entries": [
+    "9gch"
+   ],
+   "n_bound_molecule_instances": 1,
+   "n_entries_in_default_track": 1,
+   "consensus_positions_n_entries": {
+    "9": 1
+   },
+   "flag_counts": {}
+  },
+  "SO4": {
+   "name": "SULFATE ION",
+   "ligand_class": "additive",
+   "n_entry_entities": 3,
+   "n_entries": 3,
+   "entries": [
+    "1c0a",
+    "9qrp",
+    "9sfq"
+   ],
+   "n_bound_molecule_instances": 4,
+   "n_entries_in_default_track": 0,
+   "consensus_positions_n_entries": {
+    "7": 1,
+    "47": 1,
+    "64": 1,
+    "65": 1,
+    "67": 1
+   },
+   "flag_counts": {}
+  },
+  "SPM": {
+   "name": "SPERMINE",
+   "ligand_class": "additive",
+   "n_entry_entities": 2,
+   "n_entries": 2,
+   "entries": [
+    "2tra",
+    "9j4o"
+   ],
+   "n_bound_molecule_instances": 2,
+   "n_entries_in_default_track": 0,
+   "consensus_positions_n_entries": {
+    "5": 1,
+    "6": 1,
+    "18": 1,
+    "19": 1,
+    "45": 1,
+    "46": 1,
+    "57": 1,
+    "58": 1,
+    "66": 1
+   },
+   "flag_counts": {}
+  },
+  "VAL": {
+   "name": "VALINE",
+   "ligand_class": "ligand",
+   "n_entry_entities": 2,
+   "n_entries": 2,
+   "entries": [
+    "7qi4",
+    "9tnl"
+   ],
+   "n_bound_molecule_instances": 2,
+   "n_entries_in_default_track": 0,
+   "consensus_positions_n_entries": {},
+   "flag_counts": {
+    "contacts_only_polymer_termini": 2
+   }
+  }
+ },
+ "bound_molecules": [
+  {
+   "pdb_id": "1b23",
+   "entity_id": 1,
+   "ccd_id": "CYS",
+   "name": "CYSTEINE",
+   "ligand_class": "ligand",
+   "class_rule": "default:ligand",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 1,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "A",
+   "best_chain_seq_name": "1b23_1_R_A",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "1b23_1_R_A"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm3"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 74,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm3"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": null,
+     "alignment_state": "not_submitted_flank",
+     "mapping_status": "outside_mapped_region",
+     "pp_char": "",
+     "pp_category": null,
+     "chains_with_coordinates": [
+      "A"
+     ]
+    }
+   ],
+   "n_contact_positions": 1,
+   "consensus_positions": [],
+   "flags": [
+    "contacts_only_polymer_termini"
+   ],
+   "in_default_track": false,
+   "exclusion_reason": "flag:contacts_only_polymer_termini",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/1b23/1",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "1b23",
+   "entity_id": 1,
+   "ccd_id": "MG",
+   "name": "MAGNESIUM ION",
+   "ligand_class": "metal_ion",
+   "class_rule": "listed:metal_ion",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 1,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "A",
+   "best_chain_seq_name": "1b23_1_R_A",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "1b23_1_R_A"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm1"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 74,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm1"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": null,
+     "alignment_state": "not_submitted_flank",
+     "mapping_status": "outside_mapped_region",
+     "pp_char": "",
+     "pp_category": null,
+     "chains_with_coordinates": [
+      "A"
+     ]
+    }
+   ],
+   "n_contact_positions": 1,
+   "consensus_positions": [],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:metal_ion",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/1b23/1",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "1c0a",
+   "entity_id": 1,
+   "ccd_id": "SO4",
+   "name": "SULFATE ION",
+   "ligand_class": "additive",
+   "class_rule": "listed:additive",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 2,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "A",
+   "best_chain_seq_name": "1c0a_1_B_A",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "1c0a_1_B_A"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm1"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 67,
+     "sequence_code": "C",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm1"
+     ],
+     "residue_name": "C",
+     "rfam_consensus_pos": 64,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 68,
+     "sequence_code": "C",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm1"
+     ],
+     "residue_name": "C",
+     "rfam_consensus_pos": 65,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    }
+   ],
+   "n_contact_positions": 2,
+   "consensus_positions": [
+    64,
+    65
+   ],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:additive",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/1c0a/1",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "1c0a",
+   "entity_id": 1,
+   "ccd_id": "AMO",
+   "name": "ASPARTYL-ADENOSINE-5'-MONOPHOSPHATE",
+   "ligand_class": "ligand",
+   "class_rule": "default:ligand",
+   "scaffold_id": "c1ncc2ncn([C@H]3CCCO3)c2n1",
+   "cofactor_id": null,
+   "residue_count_reported": 1,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "A",
+   "best_chain_seq_name": "1c0a_1_B_A",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "1c0a_1_B_A"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm3"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 77,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm3"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": null,
+     "alignment_state": "not_submitted_flank",
+     "mapping_status": "outside_mapped_region",
+     "pp_char": "",
+     "pp_category": null,
+     "chains_with_coordinates": [
+      "A"
+     ]
+    }
+   ],
+   "n_contact_positions": 1,
+   "consensus_positions": [],
+   "flags": [
+    "contacts_only_polymer_termini"
+   ],
+   "in_default_track": false,
+   "exclusion_reason": "flag:contacts_only_polymer_termini",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/1c0a/1",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "1ehz",
+   "entity_id": 1,
+   "ccd_id": "MN",
+   "name": "MANGANESE (II) ION",
+   "ligand_class": "metal_ion",
+   "class_rule": "listed:metal_ion",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 4,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "A",
+   "best_chain_seq_name": "1ehz_1_A_A",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "1ehz_1_A_A"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm2",
+    "bm4",
+    "bm9"
+   ],
+   "n_bound_molecule_instances": 3,
+   "contacts": [
+    {
+     "label_seq_id": 1,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm4"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 1,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 15,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm9"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 15,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 16,
+     "sequence_code": "H2U",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm2"
+     ],
+     "residue_name": "H2U",
+     "rfam_consensus_pos": 16,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 19,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm2"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 18,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "6",
+     "pp_category": "low",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    }
+   ],
+   "n_contact_positions": 4,
+   "consensus_positions": [
+    1,
+    15,
+    16,
+    18
+   ],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:metal_ion",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/1ehz/1",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "1ehz",
+   "entity_id": 1,
+   "ccd_id": "MG",
+   "name": "MAGNESIUM ION",
+   "ligand_class": "metal_ion",
+   "class_rule": "listed:metal_ion",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 6,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "A",
+   "best_chain_seq_name": "1ehz_1_A_A",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "1ehz_1_A_A"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm1",
+    "bm5",
+    "bm8"
+   ],
+   "n_bound_molecule_instances": 3,
+   "contacts": [
+    {
+     "label_seq_id": 7,
+     "sequence_code": "U",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm8"
+     ],
+     "residue_name": "U",
+     "rfam_consensus_pos": 7,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 14,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm8"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": 14,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 20,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm5"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 19,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "6",
+     "pp_category": "low",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 21,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm5"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": 20,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 37,
+     "sequence_code": "YYG",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm1"
+     ],
+     "residue_name": "YYG",
+     "rfam_consensus_pos": 36,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 38,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm1"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": 37,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    }
+   ],
+   "n_contact_positions": 6,
+   "consensus_positions": [
+    7,
+    14,
+    19,
+    20,
+    36,
+    37
+   ],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:metal_ion",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/1ehz/1",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "1fir",
+   "entity_id": 1,
+   "ccd_id": "NA",
+   "name": "SODIUM ION",
+   "ligand_class": "metal_ion",
+   "class_rule": "listed:metal_ion",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 1,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "A",
+   "best_chain_seq_name": "1fir_1_A_A",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "1fir_1_A_A"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm2"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 42,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm2"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 41,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    }
+   ],
+   "n_contact_positions": 1,
+   "consensus_positions": [
+    41
+   ],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:metal_ion",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/1fir/1",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "1n78",
+   "entity_id": 1,
+   "ccd_id": "GOM",
+   "name": "GLUTAMOL-AMP",
+   "ligand_class": "ligand",
+   "class_rule": "default:ligand",
+   "scaffold_id": "c1ncc2ncn([C@H]3CCCO3)c2n1",
+   "cofactor_id": null,
+   "residue_count_reported": 1,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "A",
+   "best_chain_seq_name": "1n78_1_C_A",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "1n78_1_C_A"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm2"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 75,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm2"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": null,
+     "alignment_state": "not_submitted_flank",
+     "mapping_status": "outside_mapped_region",
+     "pp_char": "",
+     "pp_category": null,
+     "chains_with_coordinates": [
+      "A"
+     ]
+    }
+   ],
+   "n_contact_positions": 1,
+   "consensus_positions": [],
+   "flags": [
+    "contacts_only_polymer_termini"
+   ],
+   "in_default_track": false,
+   "exclusion_reason": "flag:contacts_only_polymer_termini",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/1n78/1",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "1qf6",
+   "entity_id": 1,
+   "ccd_id": "AMP",
+   "name": "ADENOSINE MONOPHOSPHATE",
+   "ligand_class": "ligand",
+   "class_rule": "default:ligand",
+   "scaffold_id": "c1ncc2ncn([C@H]3CCCO3)c2n1",
+   "cofactor_id": null,
+   "residue_count_reported": 1,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "A",
+   "best_chain_seq_name": "1qf6_1_B_A",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "1qf6_1_B_A"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm2"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 76,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm2"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": null,
+     "alignment_state": "not_submitted_flank",
+     "mapping_status": "outside_mapped_region",
+     "pp_char": "",
+     "pp_category": null,
+     "chains_with_coordinates": [
+      "A"
+     ]
+    }
+   ],
+   "n_contact_positions": 1,
+   "consensus_positions": [],
+   "flags": [
+    "contacts_only_polymer_termini"
+   ],
+   "in_default_track": false,
+   "exclusion_reason": "flag:contacts_only_polymer_termini",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/1qf6/1",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "1qtq",
+   "entity_id": 1,
+   "ccd_id": "QSI",
+   "name": "5'-O-[N-(L-GLUTAMINYL)-SULFAMOYL]ADENOSINE",
+   "ligand_class": "ligand",
+   "class_rule": "default:ligand",
+   "scaffold_id": "c1ncc2ncn([C@H]3CCCO3)c2n1",
+   "cofactor_id": null,
+   "residue_count_reported": 1,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "A",
+   "best_chain_seq_name": "1qtq_1_B_A",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "1qtq_1_B_A"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm5"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 75,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm5"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": null,
+     "alignment_state": "not_submitted_flank",
+     "mapping_status": "outside_mapped_region",
+     "pp_char": "",
+     "pp_category": null,
+     "chains_with_coordinates": [
+      "A"
+     ]
+    }
+   ],
+   "n_contact_positions": 1,
+   "consensus_positions": [],
+   "flags": [
+    "contacts_only_polymer_termini"
+   ],
+   "in_default_track": false,
+   "exclusion_reason": "flag:contacts_only_polymer_termini",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/1qtq/1",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "1ttt",
+   "entity_id": 1,
+   "ccd_id": "PHE",
+   "name": "PHENYLALANINE",
+   "ligand_class": "ligand",
+   "class_rule": "default:ligand",
+   "scaffold_id": "c1ccccc1",
+   "cofactor_id": null,
+   "residue_count_reported": 1,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "A",
+   "best_chain_seq_name": "1ttt_1_D_A",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "1ttt_1_D_A"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm2"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 76,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm2"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": null,
+     "alignment_state": "not_submitted_flank",
+     "mapping_status": "outside_mapped_region",
+     "pp_char": "",
+     "pp_category": null,
+     "chains_with_coordinates": [
+      "A"
+     ]
+    }
+   ],
+   "n_contact_positions": 1,
+   "consensus_positions": [],
+   "flags": [
+    "contacts_only_polymer_termini"
+   ],
+   "in_default_track": false,
+   "exclusion_reason": "flag:contacts_only_polymer_termini",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/1ttt/1",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "2tra",
+   "entity_id": 1,
+   "ccd_id": "SPM",
+   "name": "SPERMINE",
+   "ligand_class": "additive",
+   "class_rule": "listed:additive",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 3,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "A",
+   "best_chain_seq_name": "2tra_1_A_A",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "2tra_1_A_A"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm1"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 5,
+     "sequence_code": "U",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm1"
+     ],
+     "residue_name": "U",
+     "rfam_consensus_pos": 5,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 6,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm1"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 6,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 67,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm1"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 66,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    }
+   ],
+   "n_contact_positions": 3,
+   "consensus_positions": [
+    5,
+    6,
+    66
+   ],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:additive",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/2tra/1",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "2zm5",
+   "entity_id": 2,
+   "ccd_id": "MG",
+   "name": "MAGNESIUM ION",
+   "ligand_class": "metal_ion",
+   "class_rule": "listed:metal_ion",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 1,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "C",
+   "best_chain_seq_name": "2zm5_2_C_C",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "2zm5_2_C_C"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm1"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 27,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm1"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 26,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "C"
+     ]
+    }
+   ],
+   "n_contact_positions": 1,
+   "consensus_positions": [
+    26
+   ],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:metal_ion",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/2zm5/2",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "3l0u",
+   "entity_id": 1,
+   "ccd_id": "MG",
+   "name": "MAGNESIUM ION",
+   "ligand_class": "metal_ion",
+   "class_rule": "listed:metal_ion",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 3,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "A",
+   "best_chain_seq_name": "3l0u_1_A_A",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "3l0u_1_A_A"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm2"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 6,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm2"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 6,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 7,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm2"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": 7,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 14,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm2"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": 14,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    }
+   ],
+   "n_contact_positions": 3,
+   "consensus_positions": [
+    6,
+    7,
+    14
+   ],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:metal_ion",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/3l0u/1",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "3l0u",
+   "entity_id": 1,
+   "ccd_id": "K",
+   "name": "POTASSIUM ION",
+   "ligand_class": "metal_ion",
+   "class_rule": "listed:metal_ion",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 5,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "A",
+   "best_chain_seq_name": "3l0u_1_A_A",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "3l0u_1_A_A"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm3"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 9,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm3"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": 9,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 23,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm3"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": 22,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 24,
+     "sequence_code": null,
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm3"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 23,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 25,
+     "sequence_code": "C",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm3"
+     ],
+     "residue_name": "C",
+     "rfam_consensus_pos": 24,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 44,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm3"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 43,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    }
+   ],
+   "n_contact_positions": 5,
+   "consensus_positions": [
+    9,
+    22,
+    23,
+    24,
+    43
+   ],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:metal_ion",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/3l0u/1",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "3qsy",
+   "entity_id": 3,
+   "ccd_id": "MET",
+   "name": "METHIONINE",
+   "ligand_class": "ligand",
+   "class_rule": "default:ligand",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 1,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "C",
+   "best_chain_seq_name": "3qsy_3_D_C",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "3qsy_3_D_C"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm2"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 77,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm2"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": null,
+     "alignment_state": "not_submitted_flank",
+     "mapping_status": "outside_mapped_region",
+     "pp_char": "",
+     "pp_category": null,
+     "chains_with_coordinates": [
+      "C"
+     ]
+    }
+   ],
+   "n_contact_positions": 1,
+   "consensus_positions": [],
+   "flags": [
+    "contacts_only_polymer_termini"
+   ],
+   "in_default_track": false,
+   "exclusion_reason": "flag:contacts_only_polymer_termini",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/3qsy/3",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "3wqy",
+   "entity_id": 2,
+   "ccd_id": "MG",
+   "name": "MAGNESIUM ION",
+   "ligand_class": "metal_ion",
+   "class_rule": "listed:metal_ion",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 3,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "C",
+   "best_chain_seq_name": "3wqy_2_C_C",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "3wqy_2_C_C"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm3",
+    "bm4",
+    "bm5"
+   ],
+   "n_bound_molecule_instances": 3,
+   "contacts": [
+    {
+     "label_seq_id": 12,
+     "sequence_code": "U",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm4"
+     ],
+     "residue_name": "U",
+     "rfam_consensus_pos": 12,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "C"
+     ]
+    },
+    {
+     "label_seq_id": 38,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm5"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 38,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "C"
+     ]
+    },
+    {
+     "label_seq_id": 58,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm3"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": 57,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "C"
+     ]
+    }
+   ],
+   "n_contact_positions": 3,
+   "consensus_positions": [
+    12,
+    38,
+    57
+   ],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:metal_ion",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/3wqy/2",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "3wqy",
+   "entity_id": 2,
+   "ccd_id": "A5A",
+   "name": "'5'-O-(N-(L-ALANYL)-SULFAMOYL)ADENOSINE",
+   "ligand_class": "ligand",
+   "class_rule": "default:ligand",
+   "scaffold_id": "c1ncc2ncn([C@H]3CCCO3)c2n1",
+   "cofactor_id": null,
+   "residue_count_reported": 1,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "C",
+   "best_chain_seq_name": "3wqy_2_C_C",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "3wqy_2_C_C"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm1"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 75,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm1"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": null,
+     "alignment_state": "not_submitted_flank",
+     "mapping_status": "outside_mapped_region",
+     "pp_char": "",
+     "pp_category": null,
+     "chains_with_coordinates": [
+      "C"
+     ]
+    }
+   ],
+   "n_contact_positions": 1,
+   "consensus_positions": [],
+   "flags": [
+    "contacts_only_polymer_termini"
+   ],
+   "in_default_track": false,
+   "exclusion_reason": "flag:contacts_only_polymer_termini",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/3wqy/2",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "4rdx",
+   "entity_id": 2,
+   "ccd_id": "HIS",
+   "name": "HISTIDINE",
+   "ligand_class": "ligand",
+   "class_rule": "default:ligand",
+   "scaffold_id": "c1c[nH+]c[nH]1",
+   "cofactor_id": null,
+   "residue_count_reported": 2,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "B",
+   "best_chain_seq_name": "4rdx_2_C_B",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "4rdx_2_C_B"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm3",
+    "bm4"
+   ],
+   "n_bound_molecule_instances": 2,
+   "contacts": [
+    {
+     "label_seq_id": 78,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm3",
+      "bm4"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": null,
+     "alignment_state": "not_submitted_flank",
+     "mapping_status": "outside_mapped_region",
+     "pp_char": "",
+     "pp_category": null,
+     "chains_with_coordinates": [
+      "B"
+     ]
+    }
+   ],
+   "n_contact_positions": 1,
+   "consensus_positions": [],
+   "flags": [
+    "contacts_only_polymer_termini"
+   ],
+   "in_default_track": false,
+   "exclusion_reason": "flag:contacts_only_polymer_termini",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/4rdx/2",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "4rdx",
+   "entity_id": 2,
+   "ccd_id": "AMP",
+   "name": "ADENOSINE MONOPHOSPHATE",
+   "ligand_class": "ligand",
+   "class_rule": "default:ligand",
+   "scaffold_id": "c1ncc2ncn([C@H]3CCCO3)c2n1",
+   "cofactor_id": null,
+   "residue_count_reported": 2,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "B",
+   "best_chain_seq_name": "4rdx_2_C_B",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "4rdx_2_C_B"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm1",
+    "bm2"
+   ],
+   "n_bound_molecule_instances": 2,
+   "contacts": [
+    {
+     "label_seq_id": 78,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm1",
+      "bm2"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": null,
+     "alignment_state": "not_submitted_flank",
+     "mapping_status": "outside_mapped_region",
+     "pp_char": "",
+     "pp_category": null,
+     "chains_with_coordinates": [
+      "B"
+     ]
+    }
+   ],
+   "n_contact_positions": 1,
+   "consensus_positions": [],
+   "flags": [
+    "contacts_only_polymer_termini"
+   ],
+   "in_default_track": false,
+   "exclusion_reason": "flag:contacts_only_polymer_termini",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/4rdx/2",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "5ccb",
+   "entity_id": 3,
+   "ccd_id": "NA",
+   "name": "SODIUM ION",
+   "ligand_class": "metal_ion",
+   "class_rule": "listed:metal_ion",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 4,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "C",
+   "best_chain_seq_name": "5ccb_3_N_C",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "5ccb_3_N_C"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm3",
+    "bm4"
+   ],
+   "n_bound_molecule_instances": 2,
+   "contacts": [
+    {
+     "label_seq_id": 9,
+     "sequence_code": "U",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm3",
+      "bm4"
+     ],
+     "residue_name": "U",
+     "rfam_consensus_pos": 8,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "C"
+     ]
+    },
+    {
+     "label_seq_id": 10,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm3",
+      "bm4"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": 9,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "C"
+     ]
+    }
+   ],
+   "n_contact_positions": 2,
+   "consensus_positions": [
+    8,
+    9
+   ],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:metal_ion",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/5ccb/3",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "5ccb",
+   "entity_id": 3,
+   "ccd_id": "SAH",
+   "name": "S-ADENOSYL-L-HOMOCYSTEINE",
+   "ligand_class": "ligand",
+   "class_rule": "default:ligand",
+   "scaffold_id": "c1ncc2ncn([C@H]3CCCO3)c2n1",
+   "cofactor_id": "18",
+   "residue_count_reported": 4,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "C",
+   "best_chain_seq_name": "5ccb_3_N_C",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "5ccb_3_N_C"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm1",
+    "bm2"
+   ],
+   "n_bound_molecule_instances": 2,
+   "contacts": [
+    {
+     "label_seq_id": 57,
+     "sequence_code": "C",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm1",
+      "bm2"
+     ],
+     "residue_name": "C",
+     "rfam_consensus_pos": 54,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "C"
+     ]
+    },
+    {
+     "label_seq_id": 59,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm1",
+      "bm2"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": 56,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "C"
+     ]
+    }
+   ],
+   "n_contact_positions": 2,
+   "consensus_positions": [
+    54,
+    56
+   ],
+   "flags": [],
+   "in_default_track": true,
+   "exclusion_reason": null,
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/5ccb/3",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "5e6m",
+   "entity_id": 2,
+   "ccd_id": "NI",
+   "name": "NICKEL (II) ION",
+   "ligand_class": "metal_ion",
+   "class_rule": "listed:metal_ion",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 6,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "C",
+   "best_chain_seq_name": "5e6m_2_C_C",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "5e6m_2_C_C"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm4",
+    "bm5"
+   ],
+   "n_bound_molecule_instances": 2,
+   "contacts": [
+    {
+     "label_seq_id": 8,
+     "sequence_code": "U",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm4",
+      "bm5"
+     ],
+     "residue_name": "U",
+     "rfam_consensus_pos": 8,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "C"
+     ]
+    },
+    {
+     "label_seq_id": 9,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm4",
+      "bm5"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 9,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "C"
+     ]
+    },
+    {
+     "label_seq_id": 12,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm4",
+      "bm5"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 12,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "C"
+     ]
+    }
+   ],
+   "n_contact_positions": 3,
+   "consensus_positions": [
+    8,
+    9,
+    12
+   ],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:metal_ion",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/5e6m/2",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "5e6m",
+   "entity_id": 2,
+   "ccd_id": "GAP",
+   "name": "GLYCYL-ADENOSINE-5'-PHOSPHATE",
+   "ligand_class": "ligand",
+   "class_rule": "default:ligand",
+   "scaffold_id": "c1ncc2ncn([C@H]3CCCO3)c2n1",
+   "cofactor_id": null,
+   "residue_count_reported": 2,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "C",
+   "best_chain_seq_name": "5e6m_2_C_C",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "5e6m_2_C_C"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm1",
+    "bm3"
+   ],
+   "n_bound_molecule_instances": 2,
+   "contacts": [
+    {
+     "label_seq_id": 74,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm1",
+      "bm3"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": null,
+     "alignment_state": "not_submitted_flank",
+     "mapping_status": "outside_mapped_region",
+     "pp_char": "",
+     "pp_category": null,
+     "chains_with_coordinates": [
+      "C"
+     ]
+    }
+   ],
+   "n_contact_positions": 1,
+   "consensus_positions": [],
+   "flags": [
+    "contacts_only_polymer_termini"
+   ],
+   "in_default_track": false,
+   "exclusion_reason": "flag:contacts_only_polymer_termini",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/5e6m/2",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "6ufg",
+   "entity_id": 1,
+   "ccd_id": "MG",
+   "name": "MAGNESIUM ION",
+   "ligand_class": "metal_ion",
+   "class_rule": "listed:metal_ion",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 2,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "A",
+   "best_chain_seq_name": "6ufg_1_B_A",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "6ufg_1_B_A"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm1",
+    "bm5"
+   ],
+   "n_bound_molecule_instances": 2,
+   "contacts": [
+    {
+     "label_seq_id": 12,
+     "sequence_code": "U",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm1"
+     ],
+     "residue_name": "U",
+     "rfam_consensus_pos": 12,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 77,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm5"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": null,
+     "alignment_state": "not_submitted_flank",
+     "mapping_status": "outside_mapped_region",
+     "pp_char": "",
+     "pp_category": null,
+     "chains_with_coordinates": [
+      "A"
+     ]
+    }
+   ],
+   "n_contact_positions": 2,
+   "consensus_positions": [
+    12
+   ],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:metal_ion",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/6ufg/1",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "6ufg",
+   "entity_id": 1,
+   "ccd_id": "K",
+   "name": "POTASSIUM ION",
+   "ligand_class": "metal_ion",
+   "class_rule": "listed:metal_ion",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 4,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "A",
+   "best_chain_seq_name": "6ufg_1_B_A",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "6ufg_1_B_A"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm3",
+    "bm4"
+   ],
+   "n_bound_molecule_instances": 2,
+   "contacts": [
+    {
+     "label_seq_id": 55,
+     "sequence_code": "U",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm4"
+     ],
+     "residue_name": "U",
+     "rfam_consensus_pos": 52,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 56,
+     "sequence_code": "U",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm3",
+      "bm4"
+     ],
+     "residue_name": "U",
+     "rfam_consensus_pos": 53,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 57,
+     "sequence_code": "C",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm3"
+     ],
+     "residue_name": "C",
+     "rfam_consensus_pos": 54,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    }
+   ],
+   "n_contact_positions": 3,
+   "consensus_positions": [
+    52,
+    53,
+    54
+   ],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:metal_ion",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/6ufg/1",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "6y3g",
+   "entity_id": 1,
+   "ccd_id": "CA",
+   "name": "CALCIUM ION",
+   "ligand_class": "metal_ion",
+   "class_rule": "listed:metal_ion",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 12,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "A",
+   "best_chain_seq_name": "6y3g_1_F_A",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "6y3g_1_F_A"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm10",
+    "bm11",
+    "bm5",
+    "bm6",
+    "bm7"
+   ],
+   "n_bound_molecule_instances": 5,
+   "contacts": [
+    {
+     "label_seq_id": 6,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm11"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 6,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 8,
+     "sequence_code": "4SU",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm6"
+     ],
+     "residue_name": "4SU",
+     "rfam_consensus_pos": 8,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 9,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm6"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": 9,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 11,
+     "sequence_code": "C",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm6"
+     ],
+     "residue_name": "C",
+     "rfam_consensus_pos": 11,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 20,
+     "sequence_code": "H2U",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm7"
+     ],
+     "residue_name": "H2U",
+     "rfam_consensus_pos": 19,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 21,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm7"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": 20,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 32,
+     "sequence_code": "PSU",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm10"
+     ],
+     "residue_name": "PSU",
+     "rfam_consensus_pos": 31,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 47,
+     "sequence_code": "3AU",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm5"
+     ],
+     "residue_name": "3AU",
+     "rfam_consensus_pos": null,
+     "alignment_state": "insert",
+     "mapping_status": "insert",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 48,
+     "sequence_code": "C",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm5"
+     ],
+     "residue_name": "C",
+     "rfam_consensus_pos": 46,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 50,
+     "sequence_code": "U",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm5"
+     ],
+     "residue_name": "U",
+     "rfam_consensus_pos": 48,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 58,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm7"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": 56,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 59,
+     "sequence_code": "U",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm7"
+     ],
+     "residue_name": "U",
+     "rfam_consensus_pos": 57,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    }
+   ],
+   "n_contact_positions": 12,
+   "consensus_positions": [
+    6,
+    8,
+    9,
+    11,
+    19,
+    20,
+    31,
+    46,
+    48,
+    56,
+    57
+   ],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:metal_ion",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/6y3g/1",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "6y3g",
+   "entity_id": 1,
+   "ccd_id": "GAI",
+   "name": "GUANIDINE",
+   "ligand_class": "ligand",
+   "class_rule": "default:ligand",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 7,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "A",
+   "best_chain_seq_name": "6y3g_1_F_A",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "6y3g_1_F_A"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm1",
+    "bm3",
+    "bm4"
+   ],
+   "n_bound_molecule_instances": 3,
+   "contacts": [
+    {
+     "label_seq_id": 27,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm4"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 26,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 28,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm4"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 27,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 50,
+     "sequence_code": "U",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm3"
+     ],
+     "residue_name": "U",
+     "rfam_consensus_pos": 48,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 51,
+     "sequence_code": "U",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm3"
+     ],
+     "residue_name": "U",
+     "rfam_consensus_pos": 49,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 56,
+     "sequence_code": "C",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm1"
+     ],
+     "residue_name": "C",
+     "rfam_consensus_pos": 54,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 57,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm1"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 55,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 60,
+     "sequence_code": "U",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm3"
+     ],
+     "residue_name": "U",
+     "rfam_consensus_pos": 58,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    }
+   ],
+   "n_contact_positions": 7,
+   "consensus_positions": [
+    26,
+    27,
+    48,
+    49,
+    54,
+    55,
+    58
+   ],
+   "flags": [],
+   "in_default_track": true,
+   "exclusion_reason": null,
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/6y3g/1",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "6y3g",
+   "entity_id": 1,
+   "ccd_id": "GOL",
+   "name": "GLYCEROL",
+   "ligand_class": "additive",
+   "class_rule": "listed:additive",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 1,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "A",
+   "best_chain_seq_name": "6y3g_1_F_A",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "6y3g_1_F_A"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm12"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 30,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm12"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 29,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    }
+   ],
+   "n_contact_positions": 1,
+   "consensus_positions": [
+    29
+   ],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:additive",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/6y3g/1",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "7onu",
+   "entity_id": 4,
+   "ccd_id": "MG",
+   "name": "MAGNESIUM ION",
+   "ligand_class": "metal_ion",
+   "class_rule": "listed:metal_ion",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 1,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "G",
+   "best_chain_seq_name": "7onu_4_T_G",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "7onu_4_T_G"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm6"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 39,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm6"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 1,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "G"
+     ]
+    }
+   ],
+   "n_contact_positions": 1,
+   "consensus_positions": [
+    1
+   ],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:metal_ion",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/7onu/4",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "7qi4",
+   "entity_id": 36,
+   "ccd_id": "VAL",
+   "name": "VALINE",
+   "ligand_class": "ligand",
+   "class_rule": "default:ligand",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 1,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "JA",
+   "best_chain_seq_name": "7qi4_36_B_JA",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "7qi4_36_B_JA"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm262"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 72,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm262"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": null,
+     "alignment_state": "not_submitted_flank",
+     "mapping_status": "outside_mapped_region",
+     "pp_char": "",
+     "pp_category": null,
+     "chains_with_coordinates": [
+      "JA"
+     ]
+    }
+   ],
+   "n_contact_positions": 1,
+   "consensus_positions": [],
+   "flags": [
+    "contacts_only_polymer_termini"
+   ],
+   "in_default_track": false,
+   "exclusion_reason": "flag:contacts_only_polymer_termini",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/7qi4/36",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "8cbm",
+   "entity_id": 4,
+   "ccd_id": "SAH",
+   "name": "S-ADENOSYL-L-HOMOCYSTEINE",
+   "ligand_class": "ligand",
+   "class_rule": "default:ligand",
+   "scaffold_id": "c1ncc2ncn([C@H]3CCCO3)c2n1",
+   "cofactor_id": "18",
+   "residue_count_reported": 1,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "G",
+   "best_chain_seq_name": "8cbm_4_T_G",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "8cbm_4_T_G"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm6"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 9,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm6"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 9,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "G"
+     ]
+    }
+   ],
+   "n_contact_positions": 1,
+   "consensus_positions": [
+    9
+   ],
+   "flags": [],
+   "in_default_track": true,
+   "exclusion_reason": null,
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/8cbm/4",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "8cbm",
+   "entity_id": 4,
+   "ccd_id": "CDP",
+   "name": "CYTIDINE-5'-DIPHOSPHATE",
+   "ligand_class": "ligand",
+   "class_rule": "default:ligand",
+   "scaffold_id": "O=c1ncccn1[C@H]1CCCO1",
+   "cofactor_id": null,
+   "residue_count_reported": 1,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "G",
+   "best_chain_seq_name": "8cbm_4_T_G",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "8cbm_4_T_G"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm5"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 69,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm5"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": 71,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "G"
+     ]
+    }
+   ],
+   "n_contact_positions": 1,
+   "consensus_positions": [
+    71
+   ],
+   "flags": [
+    "contacts_only_polymer_termini"
+   ],
+   "in_default_track": false,
+   "exclusion_reason": "flag:contacts_only_polymer_termini",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/8cbm/4",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "8ccs",
+   "entity_id": 14,
+   "ccd_id": "MG",
+   "name": "MAGNESIUM ION",
+   "ligand_class": "metal_ion",
+   "class_rule": "listed:metal_ion",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 1,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "N",
+   "best_chain_seq_name": "8ccs_14_Bb_N",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "8ccs_14_Bb_N"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm230"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 37,
+     "sequence_code": "YYG",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm230"
+     ],
+     "residue_name": "YYG",
+     "rfam_consensus_pos": 36,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "N"
+     ]
+    }
+   ],
+   "n_contact_positions": 1,
+   "consensus_positions": [
+    36
+   ],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:metal_ion",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/8ccs/14",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "8cdr",
+   "entity_id": 15,
+   "ccd_id": "MG",
+   "name": "MAGNESIUM ION",
+   "ligand_class": "metal_ion",
+   "class_rule": "listed:metal_ion",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 2,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "O",
+   "best_chain_seq_name": "8cdr_15_Bb_O",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "8cdr_15_Bb_O"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm229"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 75,
+     "sequence_code": "C",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm229"
+     ],
+     "residue_name": "C",
+     "rfam_consensus_pos": null,
+     "alignment_state": "not_submitted_flank",
+     "mapping_status": "outside_mapped_region",
+     "pp_char": "",
+     "pp_category": null,
+     "chains_with_coordinates": [
+      "O"
+     ]
+    },
+    {
+     "label_seq_id": 76,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm229"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": null,
+     "alignment_state": "not_submitted_flank",
+     "mapping_status": "outside_mapped_region",
+     "pp_char": "",
+     "pp_category": null,
+     "chains_with_coordinates": [
+      "O"
+     ]
+    }
+   ],
+   "n_contact_positions": 2,
+   "consensus_positions": [],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:metal_ion",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/8cdr/15",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "8oin",
+   "entity_id": 4,
+   "ccd_id": "MG",
+   "name": "MAGNESIUM ION",
+   "ligand_class": "metal_ion",
+   "class_rule": "listed:metal_ion",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 1,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "I",
+   "best_chain_seq_name": "8oin_4_B9_I",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "8oin_4_B9_I"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm219"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 37,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm219"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": 35,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "I"
+     ]
+    }
+   ],
+   "n_contact_positions": 1,
+   "consensus_positions": [
+    35
+   ],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:metal_ion",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/8oin/4",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "8oin",
+   "entity_id": 4,
+   "ccd_id": "PHE",
+   "name": "PHENYLALANINE",
+   "ligand_class": "ligand",
+   "class_rule": "default:ligand",
+   "scaffold_id": "c1ccccc1",
+   "cofactor_id": null,
+   "residue_count_reported": 1,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "I",
+   "best_chain_seq_name": "8oin_4_B9_I",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "8oin_4_B9_I"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm218"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 73,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm218"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": null,
+     "alignment_state": "not_submitted_flank",
+     "mapping_status": "outside_mapped_region",
+     "pp_char": "",
+     "pp_category": null,
+     "chains_with_coordinates": [
+      "I"
+     ]
+    }
+   ],
+   "n_contact_positions": 1,
+   "consensus_positions": [],
+   "flags": [
+    "contacts_only_polymer_termini"
+   ],
+   "in_default_track": false,
+   "exclusion_reason": "flag:contacts_only_polymer_termini",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/8oin/4",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "8ppl",
+   "entity_id": 14,
+   "ccd_id": "MET",
+   "name": "METHIONINE",
+   "ligand_class": "ligand",
+   "class_rule": "default:ligand",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 1,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "N",
+   "best_chain_seq_name": "8ppl_14_Iw_N",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "8ppl_14_Iw_N"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm4"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 75,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm4"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": null,
+     "alignment_state": "not_submitted_flank",
+     "mapping_status": "outside_mapped_region",
+     "pp_char": "",
+     "pp_category": null,
+     "chains_with_coordinates": [
+      "N"
+     ]
+    }
+   ],
+   "n_contact_positions": 1,
+   "consensus_positions": [],
+   "flags": [
+    "contacts_only_polymer_termini"
+   ],
+   "in_default_track": false,
+   "exclusion_reason": "flag:contacts_only_polymer_termini",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/8ppl/14",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "9gch",
+   "entity_id": 3,
+   "ccd_id": "GTP",
+   "name": "GUANOSINE-5'-TRIPHOSPHATE",
+   "ligand_class": "ligand",
+   "class_rule": "default:ligand",
+   "scaffold_id": "O=c1[nH]cnc2c1ncn2[C@H]1CCCO1",
+   "cofactor_id": null,
+   "residue_count_reported": 3,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "F",
+   "best_chain_seq_name": "9gch_3_T_F",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "9gch_3_T_F"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm2"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 1,
+     "sequence_code": "U",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm2"
+     ],
+     "residue_name": "U",
+     "rfam_consensus_pos": 2,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "F"
+     ]
+    },
+    {
+     "label_seq_id": 67,
+     "sequence_code": "C",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm2"
+     ],
+     "residue_name": "C",
+     "rfam_consensus_pos": 70,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "F"
+     ]
+    },
+    {
+     "label_seq_id": 68,
+     "sequence_code": "C",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm2"
+     ],
+     "residue_name": "C",
+     "rfam_consensus_pos": 71,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "F"
+     ]
+    }
+   ],
+   "n_contact_positions": 3,
+   "consensus_positions": [
+    2,
+    70,
+    71
+   ],
+   "flags": [],
+   "in_default_track": true,
+   "exclusion_reason": null,
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9gch/3",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "9gch",
+   "entity_id": 3,
+   "ccd_id": "MG",
+   "name": "MAGNESIUM ION",
+   "ligand_class": "metal_ion",
+   "class_rule": "listed:metal_ion",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 2,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "F",
+   "best_chain_seq_name": "9gch_3_T_F",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "9gch_3_T_F"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm3"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 8,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm3"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": 9,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "F"
+     ]
+    },
+    {
+     "label_seq_id": 10,
+     "sequence_code": "U",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm3"
+     ],
+     "residue_name": "U",
+     "rfam_consensus_pos": 11,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "F"
+     ]
+    }
+   ],
+   "n_contact_positions": 2,
+   "consensus_positions": [
+    9,
+    11
+   ],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:metal_ion",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9gch/3",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "9gch",
+   "entity_id": 3,
+   "ccd_id": "SAM",
+   "name": "S-ADENOSYLMETHIONINE",
+   "ligand_class": "ligand",
+   "class_rule": "default:ligand",
+   "scaffold_id": "c1ncc2ncn([C@H]3CCCO3)c2n1",
+   "cofactor_id": "18",
+   "residue_count_reported": 1,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "F",
+   "best_chain_seq_name": "9gch_3_T_F",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "9gch_3_T_F"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm1"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 8,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm1"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": 9,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "F"
+     ]
+    }
+   ],
+   "n_contact_positions": 1,
+   "consensus_positions": [
+    9
+   ],
+   "flags": [],
+   "in_default_track": true,
+   "exclusion_reason": null,
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9gch/3",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "9h3g",
+   "entity_id": 3,
+   "ccd_id": "MG",
+   "name": "MAGNESIUM ION",
+   "ligand_class": "metal_ion",
+   "class_rule": "listed:metal_ion",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 2,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "YB",
+   "best_chain_seq_name": null,
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "9h3g_3_i2_C"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm340"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 75,
+     "sequence_code": "C",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm340"
+     ],
+     "residue_name": "C",
+     "rfam_consensus_pos": null,
+     "alignment_state": "not_submitted_flank",
+     "mapping_status": "outside_mapped_region",
+     "pp_char": "",
+     "pp_category": null,
+     "chains_with_coordinates": [
+      "C"
+     ]
+    },
+    {
+     "label_seq_id": 76,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm340"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": null,
+     "alignment_state": "not_submitted_flank",
+     "mapping_status": "outside_mapped_region",
+     "pp_char": "",
+     "pp_category": null,
+     "chains_with_coordinates": [
+      "C"
+     ]
+    }
+   ],
+   "n_contact_positions": 2,
+   "consensus_positions": [],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:metal_ion",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9h3g/3",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "9j4o",
+   "entity_id": 1,
+   "ccd_id": "SPM",
+   "name": "SPERMINE",
+   "ligand_class": "additive",
+   "class_rule": "listed:additive",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 7,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "A",
+   "best_chain_seq_name": "9j4o_1_A_A",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "9j4o_1_A_A"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm1"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 19,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm1"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 18,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "9",
+     "pp_category": "medium",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 20,
+     "sequence_code": null,
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm1"
+     ],
+     "residue_name": "C",
+     "rfam_consensus_pos": 19,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "9",
+     "pp_category": "medium",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 21,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm1"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": null,
+     "alignment_state": "insert",
+     "mapping_status": "insert",
+     "pp_char": "9",
+     "pp_category": "medium",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 60,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm1"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 45,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "7",
+     "pp_category": "low",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 61,
+     "sequence_code": "U",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm1"
+     ],
+     "residue_name": "U",
+     "rfam_consensus_pos": 46,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 72,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm1"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 57,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    },
+    {
+     "label_seq_id": 73,
+     "sequence_code": "U",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm1"
+     ],
+     "residue_name": "U",
+     "rfam_consensus_pos": 58,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "A"
+     ]
+    }
+   ],
+   "n_contact_positions": 7,
+   "consensus_positions": [
+    18,
+    19,
+    45,
+    46,
+    57,
+    58
+   ],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:additive",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9j4o/1",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "9o3w",
+   "entity_id": 47,
+   "ccd_id": "MG",
+   "name": "MAGNESIUM ION",
+   "ligand_class": "metal_ion",
+   "class_rule": "listed:metal_ion",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 2,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "UA",
+   "best_chain_seq_name": "9o3w_47_Pt_UA",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "9o3w_47_Pt_UA"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm243"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 74,
+     "sequence_code": "C",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm243"
+     ],
+     "residue_name": "C",
+     "rfam_consensus_pos": null,
+     "alignment_state": "not_submitted_flank",
+     "mapping_status": "outside_mapped_region",
+     "pp_char": "",
+     "pp_category": null,
+     "chains_with_coordinates": [
+      "UA"
+     ]
+    },
+    {
+     "label_seq_id": 75,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm243"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": null,
+     "alignment_state": "not_submitted_flank",
+     "mapping_status": "outside_mapped_region",
+     "pp_char": "",
+     "pp_category": null,
+     "chains_with_coordinates": [
+      "UA"
+     ]
+    }
+   ],
+   "n_contact_positions": 2,
+   "consensus_positions": [],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:metal_ion",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9o3w/47",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "9q3r",
+   "entity_id": 23,
+   "ccd_id": "MQH",
+   "name": "Bottromycin A2",
+   "ligand_class": "ligand",
+   "class_rule": "default:ligand",
+   "scaffold_id": "O=C1CNC(=O)[C@@H]2CCCN2C(=O)CN/C(=N/CC(=O)N[C@@H](Cc2ccccc2)C(=O)NCc2nccs2)CN1",
+   "cofactor_id": null,
+   "residue_count_reported": 5,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "W",
+   "best_chain_seq_name": "9q3r_23_w_W",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "9q3r_23_w_W"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm228"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 1,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm228"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 1,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "W"
+     ]
+    },
+    {
+     "label_seq_id": 71,
+     "sequence_code": "U",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm228"
+     ],
+     "residue_name": "U",
+     "rfam_consensus_pos": 71,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "W"
+     ]
+    },
+    {
+     "label_seq_id": 72,
+     "sequence_code": null,
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm228"
+     ],
+     "residue_name": "C",
+     "rfam_consensus_pos": null,
+     "alignment_state": "not_submitted_flank",
+     "mapping_status": "outside_mapped_region",
+     "pp_char": "",
+     "pp_category": null,
+     "chains_with_coordinates": [
+      "W"
+     ]
+    },
+    {
+     "label_seq_id": 73,
+     "sequence_code": null,
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm228"
+     ],
+     "residue_name": "C",
+     "rfam_consensus_pos": null,
+     "alignment_state": "not_submitted_flank",
+     "mapping_status": "outside_mapped_region",
+     "pp_char": "",
+     "pp_category": null,
+     "chains_with_coordinates": [
+      "W"
+     ]
+    },
+    {
+     "label_seq_id": 74,
+     "sequence_code": "L3X",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm228"
+     ],
+     "residue_name": "L3X",
+     "rfam_consensus_pos": null,
+     "alignment_state": "not_submitted_flank",
+     "mapping_status": "outside_mapped_region",
+     "pp_char": "",
+     "pp_category": null,
+     "chains_with_coordinates": [
+      "W"
+     ]
+    }
+   ],
+   "n_contact_positions": 5,
+   "consensus_positions": [
+    1,
+    71
+   ],
+   "flags": [],
+   "in_default_track": true,
+   "exclusion_reason": null,
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9q3r/23",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "9qrp",
+   "entity_id": 2,
+   "ccd_id": "MN",
+   "name": "MANGANESE (II) ION",
+   "ligand_class": "metal_ion",
+   "class_rule": "listed:metal_ion",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 1,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "C",
+   "best_chain_seq_name": "9qrp_2_T_C",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "9qrp_2_T_C"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm13"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 1,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm13"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 1,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "C"
+     ]
+    }
+   ],
+   "n_contact_positions": 1,
+   "consensus_positions": [
+    1
+   ],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:metal_ion",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9qrp/2",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "9qrp",
+   "entity_id": 2,
+   "ccd_id": "SO4",
+   "name": "SULFATE ION",
+   "ligand_class": "additive",
+   "class_rule": "listed:additive",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 2,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "C",
+   "best_chain_seq_name": "9qrp_2_T_C",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "9qrp_2_T_C"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm4"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 7,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm4"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 7,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "C"
+     ]
+    },
+    {
+     "label_seq_id": 67,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm4"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 47,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "C"
+     ]
+    }
+   ],
+   "n_contact_positions": 2,
+   "consensus_positions": [
+    7,
+    47
+   ],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:additive",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9qrp/2",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "9sfq",
+   "entity_id": 2,
+   "ccd_id": "PEG",
+   "name": "DI(HYDROXYETHYL)ETHER",
+   "ligand_class": "additive",
+   "class_rule": "listed:additive",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 16,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "B",
+   "best_chain_seq_name": "9sfq_2_T_B",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "9sfq_2_T_B"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm13",
+    "bm14",
+    "bm31",
+    "bm32",
+    "bm33",
+    "bm34",
+    "bm35",
+    "bm36"
+   ],
+   "n_bound_molecule_instances": 8,
+   "contacts": [
+    {
+     "label_seq_id": 1,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm31",
+      "bm32"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 1,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "B"
+     ]
+    },
+    {
+     "label_seq_id": 4,
+     "sequence_code": "C",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm33",
+      "bm34"
+     ],
+     "residue_name": "C",
+     "rfam_consensus_pos": 4,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "B"
+     ]
+    },
+    {
+     "label_seq_id": 5,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm33",
+      "bm34"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": 5,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "B"
+     ]
+    },
+    {
+     "label_seq_id": 6,
+     "sequence_code": "2MG",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm35",
+      "bm36"
+     ],
+     "residue_name": "2MG",
+     "rfam_consensus_pos": 6,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "B"
+     ]
+    },
+    {
+     "label_seq_id": 7,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm35",
+      "bm36"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 7,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "B"
+     ]
+    },
+    {
+     "label_seq_id": 38,
+     "sequence_code": "MIA",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm13",
+      "bm14"
+     ],
+     "residue_name": "MIA",
+     "rfam_consensus_pos": 36,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "B"
+     ]
+    },
+    {
+     "label_seq_id": 79,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm33",
+      "bm34"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 67,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "B"
+     ]
+    },
+    {
+     "label_seq_id": 80,
+     "sequence_code": "C",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm33",
+      "bm34"
+     ],
+     "residue_name": "C",
+     "rfam_consensus_pos": 68,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "B"
+     ]
+    }
+   ],
+   "n_contact_positions": 8,
+   "consensus_positions": [
+    1,
+    4,
+    5,
+    6,
+    7,
+    36,
+    67,
+    68
+   ],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:additive",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9sfq/2",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "9sfq",
+   "entity_id": 2,
+   "ccd_id": "MG",
+   "name": "MAGNESIUM ION",
+   "ligand_class": "metal_ion",
+   "class_rule": "listed:metal_ion",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 4,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "B",
+   "best_chain_seq_name": "9sfq_2_T_B",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "9sfq_2_T_B"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm25",
+    "bm26"
+   ],
+   "n_bound_molecule_instances": 2,
+   "contacts": [
+    {
+     "label_seq_id": 1,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm25",
+      "bm26"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 1,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "B"
+     ]
+    },
+    {
+     "label_seq_id": 2,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm25",
+      "bm26"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 2,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "B"
+     ]
+    }
+   ],
+   "n_contact_positions": 2,
+   "consensus_positions": [
+    1,
+    2
+   ],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:metal_ion",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9sfq/2",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "9sfq",
+   "entity_id": 2,
+   "ccd_id": "1PE",
+   "name": "PENTAETHYLENE GLYCOL",
+   "ligand_class": "additive",
+   "class_rule": "listed:additive",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 10,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "B",
+   "best_chain_seq_name": "9sfq_2_T_B",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "9sfq_2_T_B"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm15",
+    "bm16",
+    "bm19",
+    "bm20",
+    "bm37",
+    "bm38"
+   ],
+   "n_bound_molecule_instances": 6,
+   "contacts": [
+    {
+     "label_seq_id": 49,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm37",
+      "bm38"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": null,
+     "alignment_state": "insert",
+     "mapping_status": "insert",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "B"
+     ]
+    },
+    {
+     "label_seq_id": 50,
+     "sequence_code": null,
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm37",
+      "bm38"
+     ],
+     "residue_name": "U",
+     "rfam_consensus_pos": null,
+     "alignment_state": "insert",
+     "mapping_status": "insert",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "B"
+     ]
+    },
+    {
+     "label_seq_id": 51,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm37",
+      "bm38"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": null,
+     "alignment_state": "insert",
+     "mapping_status": "insert",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "B"
+     ]
+    },
+    {
+     "label_seq_id": 80,
+     "sequence_code": "C",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm19",
+      "bm20"
+     ],
+     "residue_name": "C",
+     "rfam_consensus_pos": 68,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "B"
+     ]
+    },
+    {
+     "label_seq_id": 86,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm15",
+      "bm16"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": null,
+     "alignment_state": "not_submitted_flank",
+     "mapping_status": "outside_mapped_region",
+     "pp_char": "",
+     "pp_category": null,
+     "chains_with_coordinates": [
+      "B"
+     ]
+    }
+   ],
+   "n_contact_positions": 5,
+   "consensus_positions": [
+    68
+   ],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:additive",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9sfq/2",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "9sfq",
+   "entity_id": 2,
+   "ccd_id": "SO4",
+   "name": "SULFATE ION",
+   "ligand_class": "additive",
+   "class_rule": "listed:additive",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 2,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "B",
+   "best_chain_seq_name": "9sfq_2_T_B",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "9sfq_2_T_B"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm5",
+    "bm6"
+   ],
+   "n_bound_molecule_instances": 2,
+   "contacts": [
+    {
+     "label_seq_id": 79,
+     "sequence_code": "G",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm5",
+      "bm6"
+     ],
+     "residue_name": "G",
+     "rfam_consensus_pos": 67,
+     "alignment_state": "match",
+     "mapping_status": "mapped",
+     "pp_char": "*",
+     "pp_category": "high",
+     "chains_with_coordinates": [
+      "B"
+     ]
+    }
+   ],
+   "n_contact_positions": 1,
+   "consensus_positions": [
+    67
+   ],
+   "flags": [],
+   "in_default_track": false,
+   "exclusion_reason": "class:additive",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9sfq/2",
+    "retrieved": "2026-10-18"
+   }
+  },
+  {
+   "pdb_id": "9tnl",
+   "entity_id": 6,
+   "ccd_id": "VAL",
+   "name": "VALINE",
+   "ligand_class": "ligand",
+   "class_rule": "default:ligand",
+   "scaffold_id": null,
+   "cofactor_id": null,
+   "residue_count_reported": 1,
+   "observation_level": "entity",
+   "best_chain_label_asym_id": "F",
+   "best_chain_seq_name": "9tnl_6_Y_F",
+   "n_entity_chains": 1,
+   "entity_chains": [
+    "9tnl_6_Y_F"
+   ],
+   "chain_attribution": "resolved",
+   "attribution_note": null,
+   "bound_molecule_ids": [
+    "bm63"
+   ],
+   "n_bound_molecule_instances": 1,
+   "contacts": [
+    {
+     "label_seq_id": 76,
+     "sequence_code": "A",
+     "index_type": "PDB",
+     "bound_molecule_ids": [
+      "bm63"
+     ],
+     "residue_name": "A",
+     "rfam_consensus_pos": null,
+     "alignment_state": "not_submitted_flank",
+     "mapping_status": "outside_mapped_region",
+     "pp_char": "",
+     "pp_category": null,
+     "chains_with_coordinates": [
+      "F"
+     ]
+    }
+   ],
+   "n_contact_positions": 1,
+   "consensus_positions": [],
+   "flags": [
+    "contacts_only_polymer_termini"
+   ],
+   "in_default_track": false,
+   "exclusion_reason": "flag:contacts_only_polymer_termini",
+   "source": {
+    "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/binding_sites/9tnl/6",
+    "retrieved": "2026-10-18"
+   }
+  }
+ ],
+ "provenance": {
+  "rfam_acc": "RF00005",
+  "rfam_release": "15.1",
+  "cm_checksum": "1403477983",
+  "cm_clen": 71,
+  "mapping_pipeline_version": "0.1.0",
+  "mapping_generated": "2026-10-18T08:02:51+00:00",
+  "annotation_pipeline_version": "0.1.0",
+  "annotation_config_version": "1.1",
+  "generated": "2026-10-18T08:10:13+00:00"
+ }
+}

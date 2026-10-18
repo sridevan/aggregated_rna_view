@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/test'
 
 /* Home page: introduction, one card per available family with numbers read from that family's family.json, links to the family pages,
    and the app title on a family page links back home. */
-const ACCS = ['RF00167', 'RF00162', 'RF00059', 'RF00177']
+const ACCS = ['RF00167', 'RF00162', 'RF00059', 'RF00005', 'RF00177']
 
 test('home lists every family with its real numbers and opens the family page', async ({ page }) => {
   await page.goto('/')

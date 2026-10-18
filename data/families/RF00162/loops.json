@@ -208,7 +208,8 @@
    "local_end": 93,
    "insert": 12
   },
-  "n_motif_page_loops_missing_from_download": 0
+  "n_motif_page_loops_missing_from_download": 0,
+  "n_loops_outside_family_chains": 0
  },
  "entry_sources": {
   "2gis": {
@@ -225,7 +226,8 @@
     "retrieved": "2026-10-17",
     "detail": ""
    },
-   "n_loops": 8
+   "n_loops": 8,
+   "n_loops_outside_family_chains": 0
   },
   "2ydh": {
    "status": "evaluated",
@@ -241,7 +243,8 @@
     "retrieved": "2026-10-17",
     "detail": ""
    },
-   "n_loops": 16
+   "n_loops": 16,
+   "n_loops_outside_family_chains": 0
   },
   "2ygh": {
    "status": "evaluated",
@@ -257,7 +260,8 @@
     "retrieved": "2026-10-17",
     "detail": ""
    },
-   "n_loops": 16
+   "n_loops": 16,
+   "n_loops_outside_family_chains": 0
   },
   "3gx2": {
    "status": "evaluated",
@@ -273,7 +277,8 @@
     "retrieved": "2026-10-17",
     "detail": ""
    },
-   "n_loops": 7
+   "n_loops": 7,
+   "n_loops_outside_family_chains": 0
   },
   "3gx3": {
    "status": "evaluated",
@@ -289,7 +294,8 @@
     "retrieved": "2026-10-17",
     "detail": ""
    },
-   "n_loops": 8
+   "n_loops": 8,
+   "n_loops_outside_family_chains": 0
   },
   "3gx5": {
    "status": "evaluated",
@@ -305,7 +311,8 @@
     "retrieved": "2026-10-17",
     "detail": ""
    },
-   "n_loops": 8
+   "n_loops": 8,
+   "n_loops_outside_family_chains": 0
   },
   "3gx6": {
    "status": "evaluated",
@@ -321,7 +328,8 @@
     "retrieved": "2026-10-17",
     "detail": ""
    },
-   "n_loops": 7
+   "n_loops": 7,
+   "n_loops_outside_family_chains": 0
   },
   "3gx7": {
    "status": "evaluated",
@@ -337,7 +345,8 @@
     "retrieved": "2026-10-17",
     "detail": ""
    },
-   "n_loops": 8
+   "n_loops": 8,
+   "n_loops_outside_family_chains": 0
   },
   "3iqn": {
    "status": "evaluated",
@@ -353,7 +362,8 @@
     "retrieved": "2026-10-17",
     "detail": ""
    },
-   "n_loops": 17
+   "n_loops": 17,
+   "n_loops_outside_family_chains": 0
   },
   "3iqp": {
    "status": "evaluated",
@@ -369,7 +379,8 @@
     "retrieved": "2026-10-17",
     "detail": ""
    },
-   "n_loops": 16
+   "n_loops": 16,
+   "n_loops_outside_family_chains": 0
   },
   "3iqr": {
    "status": "evaluated",
@@ -385,7 +396,8 @@
     "retrieved": "2026-10-17",
     "detail": ""
    },
-   "n_loops": 18
+   "n_loops": 18,
+   "n_loops_outside_family_chains": 0
   },
   "3v7e": {
    "status": "evaluated",
@@ -401,7 +413,8 @@
     "retrieved": "2026-10-17",
     "detail": ""
    },
-   "n_loops": 18
+   "n_loops": 18,
+   "n_loops_outside_family_chains": 0
   },
   "4aob": {
    "status": "evaluated",
@@ -417,7 +430,8 @@
     "retrieved": "2026-10-17",
     "detail": ""
    },
-   "n_loops": 18
+   "n_loops": 18,
+   "n_loops_outside_family_chains": 0
   },
   "4b5r": {
    "status": "evaluated",
@@ -433,7 +447,8 @@
     "retrieved": "2026-10-17",
     "detail": ""
    },
-   "n_loops": 16
+   "n_loops": 16,
+   "n_loops_outside_family_chains": 0
   },
   "4kqy": {
    "status": "evaluated",
@@ -449,7 +464,8 @@
     "retrieved": "2026-10-17",
     "detail": ""
    },
-   "n_loops": 19
+   "n_loops": 19,
+   "n_loops_outside_family_chains": 0
   },
   "5fjc": {
    "status": "evaluated",
@@ -465,7 +481,8 @@
     "retrieved": "2026-10-17",
     "detail": ""
    },
-   "n_loops": 8
+   "n_loops": 8,
+   "n_loops_outside_family_chains": 0
   },
   "5fk1": {
    "status": "evaluated",
@@ -481,7 +498,8 @@
     "retrieved": "2026-10-17",
     "detail": ""
    },
-   "n_loops": 7
+   "n_loops": 7,
+   "n_loops_outside_family_chains": 0
   },
   "5fk2": {
    "status": "evaluated",
@@ -497,7 +515,8 @@
     "retrieved": "2026-10-17",
     "detail": ""
    },
-   "n_loops": 8
+   "n_loops": 8,
+   "n_loops_outside_family_chains": 0
   },
   "5fk3": {
    "status": "evaluated",
@@ -513,7 +532,8 @@
     "retrieved": "2026-10-17",
     "detail": ""
    },
-   "n_loops": 8
+   "n_loops": 8,
+   "n_loops_outside_family_chains": 0
   },
   "5fk4": {
    "status": "evaluated",
@@ -529,7 +549,8 @@
     "retrieved": "2026-10-17",
     "detail": ""
    },
-   "n_loops": 16
+   "n_loops": 16,
+   "n_loops_outside_family_chains": 0
   },
   "5fk5": {
    "status": "evaluated",
@@ -545,7 +566,8 @@
     "retrieved": "2026-10-17",
     "detail": ""
    },
-   "n_loops": 16
+   "n_loops": 16,
+   "n_loops_outside_family_chains": 0
   },
   "5fk6": {
    "status": "evaluated",
@@ -561,7 +583,8 @@
     "retrieved": "2026-10-17",
     "detail": ""
    },
-   "n_loops": 16
+   "n_loops": 16,
+   "n_loops_outside_family_chains": 0
   },
   "5fkd": {
    "status": "evaluated",
@@ -577,7 +600,8 @@
     "retrieved": "2026-10-17",
     "detail": ""
    },
-   "n_loops": 18
+   "n_loops": 18,
+   "n_loops_outside_family_chains": 0
   },
   "5fke": {
    "status": "evaluated",
@@ -593,7 +617,8 @@
     "retrieved": "2026-10-17",
     "detail": ""
    },
-   "n_loops": 16
+   "n_loops": 16,
+   "n_loops_outside_family_chains": 0
   },
   "5fkf": {
    "status": "evaluated",
@@ -609,7 +634,8 @@
     "retrieved": "2026-10-17",
     "detail": ""
    },
-   "n_loops": 14
+   "n_loops": 14,
+   "n_loops_outside_family_chains": 0
   },
   "5fkg": {
    "status": "evaluated",
@@ -625,7 +651,8 @@
     "retrieved": "2026-10-17",
     "detail": ""
    },
-   "n_loops": 8
+   "n_loops": 8,
+   "n_loops_outside_family_chains": 0
   },
   "5fkh": {
    "status": "evaluated",
@@ -641,7 +668,8 @@
     "retrieved": "2026-10-17",
     "detail": ""
    },
-   "n_loops": 8
+   "n_loops": 8,
+   "n_loops_outside_family_chains": 0
   },
   "7eaf": {
    "status": "evaluated",
@@ -657,7 +685,8 @@
     "retrieved": "2026-10-17",
     "detail": ""
    },
-   "n_loops": 8
+   "n_loops": 8,
+   "n_loops_outside_family_chains": 0
   }
  },
  "motif_page_only": [],
@@ -91706,6 +91735,10 @@
    }
   }
  ],
+ "loops_outside_family_chains": {
+  "description": "loops of the same PDB entries with no nucleotide in a family chain (other molecules of the entry); kept as compact records without nucleotide-level data",
+  "loops": []
+ },
  "provenance": {
   "rfam_acc": "RF00162",
   "rfam_release": "15.1",
@@ -91714,7 +91747,7 @@
   "mapping_pipeline_version": "0.1.0",
   "mapping_generated": "2026-10-17T15:09:20+00:00",
   "annotation_pipeline_version": "0.1.0",
-  "annotation_config_version": "1.0",
-  "generated": "2026-10-17T15:16:45+00:00"
+  "annotation_config_version": "1.1",
+  "generated": "2026-10-18T08:10:25+00:00"
  }
 }

@@ -83,9 +83,10 @@
    "kind": "derived_union",
    "loop_types": [
     "J3",
-    "J4"
+    "J4",
+    "J5"
    ],
-   "rule": "set union; never the sum of J3 and J4 counts"
+   "rule": "set union of all junction loop types present (J3, J4, J5); never the sum of the per-type counts"
   },
   "ligand_binding_sites": {
    "kind": "entity_level_contacts",
@@ -257,7 +258,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -418,7 +429,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -579,7 +600,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -740,7 +771,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": null,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -901,7 +942,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": null,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -1062,7 +1113,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -1225,7 +1286,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -1388,7 +1459,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -1560,7 +1641,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.069,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 2,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -1785,7 +1876,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.9459,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 35,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -1995,7 +2096,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.9459,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 35,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -2156,7 +2267,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -2319,7 +2440,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -2568,7 +2699,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -2817,7 +2958,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 26,
@@ -3142,7 +3293,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 9,
@@ -3423,7 +3584,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -3602,7 +3773,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -3813,7 +3994,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -4023,7 +4214,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -4243,7 +4444,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -4435,7 +4646,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -4635,7 +4856,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -4832,7 +5063,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -5032,7 +5273,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -5246,7 +5497,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -5453,7 +5714,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -5665,7 +5936,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -5877,7 +6158,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -6057,7 +6348,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -6313,7 +6614,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -6561,7 +6872,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 2,
@@ -6816,7 +7137,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 22,
@@ -7102,7 +7433,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -7350,7 +7691,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 26,
@@ -7643,7 +7994,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 26,
@@ -7935,7 +8296,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -8098,7 +8469,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": null,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -8259,7 +8640,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": null,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -8420,7 +8811,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": null,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -8581,7 +8982,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": null,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -8742,7 +9153,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": null,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -8903,7 +9324,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": null,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -9064,7 +9495,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": null,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -9225,7 +9666,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": null,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -9386,7 +9837,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": null,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -9547,7 +10008,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": null,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -9708,7 +10179,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": null,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -9987,7 +10468,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -10213,7 +10704,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -10460,7 +10961,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -10709,7 +11220,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -10870,7 +11391,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -11031,7 +11562,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -11241,7 +11782,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.9459,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 35,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -11453,7 +12004,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.9459,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 35,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -11665,7 +12226,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.9722,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 35,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -11872,7 +12443,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.8857,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 31,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -12074,7 +12655,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.7429,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 26,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -12286,7 +12877,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.9459,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 35,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -12498,7 +13099,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.9459,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 35,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 12,
@@ -12689,7 +13300,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 11,
@@ -12932,7 +13553,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -13156,7 +13787,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -13372,7 +14013,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -13583,7 +14234,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -13798,7 +14459,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -13984,7 +14655,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -14157,7 +14838,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -14375,7 +15066,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -14593,7 +15294,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -14810,7 +15521,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -15025,7 +15746,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -15242,7 +15973,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -15459,7 +16200,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -15675,7 +16426,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 18,
@@ -15922,7 +16683,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 12,
@@ -16116,7 +16887,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 1,
@@ -16308,7 +17089,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -16532,7 +17323,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 1,
@@ -16760,7 +17561,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 15,
@@ -17007,7 +17818,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 13,
@@ -17241,7 +18062,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -17465,7 +18296,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -17636,7 +18477,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -17848,7 +18699,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.9459,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 35,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -18060,7 +18921,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.9459,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 35,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -18273,7 +19144,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.9459,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 35,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -18498,7 +19379,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.9459,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 35,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -18670,7 +19561,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.069,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 2,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -18833,7 +19734,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -18996,7 +19907,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -19157,7 +20078,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -19320,7 +20251,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": null,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -19481,7 +20422,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": null,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -19642,7 +20593,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -19803,7 +20764,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -19964,7 +20935,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -20133,7 +21114,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -20302,7 +21293,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -20471,7 +21472,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -20640,7 +21651,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -20810,7 +21831,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -20981,7 +22012,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -21144,7 +22185,17 @@
      "n_positive_not_observable": 0
     },
     "frequency": 0.0,
-    "rule": "set union of J3 and J4 loops/instances/entries (not a sum)"
+    "loop_types": [
+     "J3",
+     "J4",
+     "J5"
+    ],
+    "by_type_n_instances": {
+     "J3": 0,
+     "J4": 0,
+     "J5": 0
+    },
+    "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
     "n_entry_entities": 0,
@@ -21181,7 +22232,7 @@
   "mapping_pipeline_version": "0.1.0",
   "mapping_generated": "2026-10-17T16:05:41+00:00",
   "annotation_pipeline_version": "0.1.0",
-  "annotation_config_version": "1.0",
-  "generated": "2026-10-17T16:06:57+00:00"
+  "annotation_config_version": "1.1",
+  "generated": "2026-10-18T08:10:10+00:00"
  }
 }

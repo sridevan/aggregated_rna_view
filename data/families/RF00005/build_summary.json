@@ -1,0 +1,9 @@
+{
+ "acc": "RF00005",
+ "entries": 59,
+ "instances": 60,
+ "unique_sequences": 43,
+ "validation_ok": 60,
+ "skipped": 0,
+ "out_dir": "/Users/sria/Desktop/aggregated_rna_view/data/families/RF00005"
+}

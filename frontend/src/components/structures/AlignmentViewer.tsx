@@ -53,6 +53,16 @@ export function parseAtomSite(cif: string): Atom[] {
   }
   return out
 }
+/** Copy of the atoms for drawing only: a modified nucleotide (PSU, 2MG, H2U, 4SU ...) gets its parent base name, inferred from its base atoms
+ *  (N9 + O6 -> G, N9 -> A, N4 -> C, else U), because 3Dmol only draws a continuous nucleic-acid cartoon through A/C/G/U residues.
+ *  Order and count are unchanged (serials stay aligned); hover labels keep the deposited names from the original atoms. */
+export function drawableNucleotides(atoms: Atom[]): Atom[] {
+  const names = new Map<string, Set<string>>()
+  for (const a of atoms) { const k = `${a.chain}|${a.resi}|${a.icode}`; (names.get(k) ?? names.set(k, new Set()).get(k)!).add(a.name) }
+  const parent = (n: Set<string>) => (n.has('N9') ? (n.has('O6') ? 'G' : 'A') : n.has('N4') ? 'C' : 'U')
+  return atoms.map((a) => (a.het || ['A', 'C', 'G', 'U'].includes(a.resn) ? a : { ...a, resn: parent(names.get(`${a.chain}|${a.resi}|${a.icode}`)!) }))
+}
+
 export function toPdb(atoms: Atom[], f: (p: [number, number, number]) => [number, number, number] = (p) => p): string {
   const pad = (s: string | number, n: number, left = false) => { const v = String(s); return v.length >= n ? v.slice(0, n) : left ? v.padEnd(n) : v.padStart(n) }
   return atoms.map((a, i) => {
@@ -156,7 +166,7 @@ export function AlignmentViewer({ entries, hidden, height, emphasis = null }: { 
           orientRef.current ??= principal(atoms.filter((a) => a.name === "C4'").map((a) => [a.x, a.y, a.z]))
           const o = orientRef.current
           const drawn = atoms.filter((a) => BACKBONE.has(a.name))
-          const scene = toPdb(drawn, o ? (p) => { const d = [p[0] - o.c[0], p[1] - o.c[1], p[2] - o.c[2]]; return [0, 1, 2].map((i) => o.R[i][0] * d[0] + o.R[i][1] * d[1] + o.R[i][2] * d[2]) as [number, number, number] } : undefined)
+          const scene = toPdb(drawableNucleotides(atoms).filter((a) => BACKBONE.has(a.name)), o ? (p) => { const d = [p[0] - o.c[0], p[1] - o.c[1], p[2] - o.c[2]]; return [0, 1, 2].map((i) => o.R[i][0] * d[0] + o.R[i][1] * d[1] + o.R[i][2] * d[2]) as [number, number, number] } : undefined)
           const model = v.addModel(scene, 'pdb')
           modelsRef.current.set(e.seqName, model)
           shownAtomsRef.current.set(model.getID(), { entry: e, atoms: drawn })

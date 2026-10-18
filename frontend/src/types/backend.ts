@@ -79,7 +79,9 @@ export interface LoopTrackPosition {
   by_motif_group: Record<string, { n_loops: number; n_instances: number; n_entries: number }>; n_loops_without_motif_group: number; loop_ids: string[]
   confidence: { high: number; medium: number; low: number }; denominators: LoopDenominators; frequency: number | null
 }
-export interface JunctionUnionPosition { n_loop_observations: number; n_instances: number; n_entries: number; denominators: LoopDenominators; frequency: number | null; rule: string }
+export interface JunctionUnionPosition { n_loop_observations: number; n_instances: number; n_entries: number; denominators: LoopDenominators; frequency: number | null; rule: string
+  /** junction types in the union and instances per type (absent in files built before J5 support) */
+  loop_types?: string[]; by_type_n_instances?: Record<string, number> }
 export interface LigandTrackPosition {
   n_entry_entities: number; n_entries: number; entry_entities: string[]; by_ccd_n_entry_entities: Record<string, number>; by_class_n_entry_entities: Record<string, number>
   n_entry_entities_excluded_from_default: number; confidence: { high: number; medium: number; low: number }
@@ -146,6 +148,8 @@ export interface ModificationTracksDataset {
 export type StructureMetricId = 'discrepancy' | 'tm'
 export interface StructureGroupRecord {
   group_id: number; label: string; node: number; members: string[]; n_instances: number; n_entries: number; representative: string; representative_rule: string
+  /** plain medoid (may differ when it has internal coordinate gaps) and the representative's unmodelled internal nucleotides; absent in older files */
+  medoid?: string; representative_internal_gaps?: string[] | null
   representative_mean_dissimilarity: number; leaf_range: [number, number]; within: { mean: number | null; max: number | null; n_pairs: number }
   across: { mean: number | null; n_pairs: number }; across_to_within_ratio: number | null; small: boolean; instance_level_view: boolean
 }
