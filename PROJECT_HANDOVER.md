@@ -1,8 +1,16 @@
 # Aggregated RNA 3D View: project handover
 
-Last updated: 2026-10-16 (Milestone 3C UI reorganisation done; chain-specific ligand investigation and Arpeggio pilot done). Owner: asridevan86@gmail.com. Working directory `/Users/sria/Desktop/aggregated_rna_view` (macOS arm64, Python 3.11.9 via pyenv, Node 20.14 via nvm). **Not yet a git repository** (see §7).
+Last updated: 2026-10-16 (Milestone 3C UI reorganisation done; chain-specific ligand investigation and Arpeggio pilot done). Owner: asridevan86@gmail.com. Working directory `/Users/sria/Desktop/aggregated_rna_view` (macOS arm64, Python 3.11.9 via pyenv, Node 20.14 via nvm). Git repository on `main` since 2026-10-18 (no remote yet; see §7). **Sections 2–6 describe the state on 2026-10-16; see §0 for what changed since.**
 
 Goal: a PDBe-KB-style aggregated view of experimentally determined RNA structures per Rfam family, using Rfam covariance-model (CM) match-state positions as the family coordinate system. RF00167 (purine riboswitch) is the development family; RF00177 (16S rRNA) was used in the proofs of concept.
+
+## 0. Status update (2026-10-18)
+Done since the sections below were written (details in the linked reports; facts per family in the auto-memory files):
+- Annotations milestone completed: `MILESTONE3D_VALIDATION.md`, `MILESTONE3E_VALIDATION.md`, `MILESTONE3F_VALIDATION.md` (SASA, fpocketR pockets, nonstandard nucleotides).
+- Milestone 4, structural clustering and the Structures tab: `MILESTONE4_STRUCTURES_VALIDATION.md` (also records the later UI sections: Annotations zoom, Position numbering). §6 below is superseded.
+- Further families, all live: RF00162 SAM-I, RF00059 TPP, RF00177 16S (curated 60 chains via `build --selection data/selections/RF00177_60_chains.csv`; ModelServer per-chain coordinates; no pockets). Reports in `experiments/rf00162_phase1/`, `experiments/rf00059_tpp/`, `experiments/rf00177_16s/`.
+- Deployed on Netlify: https://aggregated-rna-view.netlify.app/ (home page with representative thumbnails from `npm run thumbnails`) and /{rfam_acc} family pages; `cd frontend && npm run deploy`.
+- Mapping methodology and limitations: `docs/RFAM_PDB_MAPPING.md`.
 
 ## 1. Architecture
 
@@ -106,8 +114,7 @@ Structures tab still shows `PendingPanel` placeholders for similarity matrix, cl
 - Do this in a separate git worktree (§7) so the main app stays stable.
 
 ## 7. Pending technical tasks
-- `git init` the project; review `.gitignore` (currently `cache/`, `data/families/*/work/`, `__pycache__/`, `.pytest_cache/`; frontend has its own for `node_modules`, `dist`, `test-results`, `playwright-report`, `.vite`). Decide whether `data/families/` (15 MB, incl. 3B files ~9 MB), `tools/infernal-1.1.5/` (20 MB binary build), `annotation_assessment/cache/` and `docs/screenshots/` are committed; `.DS_Store` should be ignored.
-- First commit, then a separate worktree (e.g. `git worktree add ../aggregated_rna_view-clustering clustering`) for the clustering research.
+- Git: done 2026-10-18 (initial commit + `3b25c42`, on `main`, no remote). `.gitignore` excludes caches, scratch `work/` folders, downloaded structure files under `experiments/` (full mmCIFs are never stored), the regenerable RF00177 outputs over 10 MB (`loops.json`, `sasa.json`, `residue_mapping.csv`) and RF00177 `annotations/`. Still open: add a remote; optionally untrack files from the initial commit that the new rules exclude (RF00167 `work/`, POC mmCIFs under `poc_rf00167/`, `poc_rf00177/`).
 - `frontend/ARCHITECTURE.md` refresh (pdbe-molstar, PdbRnaViewer2D, SelectionContext details).
 
 ## 8. Important constraints
