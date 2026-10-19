@@ -1,0 +1,60 @@
+pdb_id,seq_name,title_A_site,ligands,A1492/A1493 stack,A1408-A1492 cWW,A1492->C518 ribose,A1493-G1494 cSH,G1491/A1492 stack,title
+4U20,4u20_1_CA_BB,,MG,present,absent,absent,absent,present,Crystal structure of the E. coli ribosome bound to flopristin.
+4U27,4u27_1_AA_A,,MG,present,absent,absent,absent,present,Crystal structure of the E. coli ribosome bound to flopristin and linopristin.
+4V4H,4v4h_1_AA_A,,"KSG,MG",present,absent,absent,absent,present,Crystal structure of the bacterial ribosome from Escherichia coli in complex with the antibiotic kasugamyin at 3.5A resolution.
+4V4Q,4v4q_1_CA_AB,,MG,absent,absent,absent,absent,absent,Crystal structure of the bacterial ribosome from Escherichia coli at 3.5 A resolution.
+4V53,4v53_1_AA_A,,"LLL,MG",present,absent,absent,absent,absent,Crystal structure of the bacterial ribosome from Escherichia coli in complex with gentamicin.
+4V64,4v64_1_AA_A,,"HYG,MG",absent,absent,absent,absent,absent,Crystal structure of the bacterial ribosome from Escherichia coli in complex with hygromycin B.
+4V7T,4v7t_1_AA_A,,MG,absent,absent,absent,absent,absent,Crystal structure of the E. coli ribosome bound to chloramphenicol.
+4V85,4v85_1_AA_A,,MG,present,absent,absent,absent,absent,Crystal Structure of Release Factor RF3 Trapped in the GTP State on a Rotated Conformation of the Ribosome.
+4V9C,4v9c_1_AA_A,,"MG,NMY",present,absent,absent,absent,absent,Allosteric control of the ribosome by small-molecule antibiotics
+4V9D,4v9d_1_AA_A,,MG,present,absent,absent,absent,present,Structures of the bacterial ribosome in classical and hybrid states of tRNA binding
+4V9D,4v9d_1_BA_Y,,MG,present,absent,absent,absent,present,Structures of the bacterial ribosome in classical and hybrid states of tRNA binding
+4V9O,4v9o_35_HA_PG,,MG,present,absent,absent,absent,absent,Control of ribosomal subunit rotation by elongation factor G
+4V9P,4v9p_33_DA_IC,,MG,absent,absent,absent,absent,absent,Control of ribosomal subunit rotation by elongation factor G
+4WF1,4wf1_1_CA_BB,,"MG,NEG",present,absent,absent,absent,present,Crystal structure of the E. coli ribosome bound to negamycin.
+4WOI,4woi_1_AA_A,,"MG,PAR",present,absent,absent,absent,absent,"4,5-linked aminoglycoside antibiotics regulate the bacterial ribosome by targeting dynamic conformational processes within intersubunit bridge B2"
+4YBB,4ybb_1_AA_A,,"MG,MPD,PEG,PG4,PUT",present,absent,absent,absent,absent,High-resolution structure of the Escherichia coli ribosome
+4YBB,4ybb_1_BA_V,,"MG,MPD,PEG,PG4,PUT",present,absent,absent,absent,present,High-resolution structure of the Escherichia coli ribosome
+5AFI,5afi_1_a_A,,MG,present,absent,absent,absent,absent,2.9A Structure of E. coli ribosome-EF-TU complex by cs-corrected cryo-EM
+5J5B,5j5b_1_AA_A,,"MG,MPD,PG4,PUT,TAC",present,absent,absent,absent,absent,Structure of the WT E coli ribosome bound to tetracycline
+5J91,5j91_1_AA_A,,"MG,MPD,PG4,PUT,T1C",present,absent,absent,absent,absent,Structure of the Wild-type 70S E coli ribosome bound to Tigecycline
+6LKQ,6lkq_51_s_BB,,,present,absent,absent,absent,absent,The Structural Basis for Inhibition of Ribosomal Translocation by Viomycin
+7ACR,7acr_2_2_B,,MG,absent,absent,absent,absent,present,Structure of post-translocated trans-translation complex on E. coli stalled ribosome.
+7B5K,7b5k_32_a_FA,A-site tRNA,"MG,SY5",present,absent,present,absent,absent,E. coli 70S containing suppressor tRNA in the A-site stabilized by a Negamycin analogue and P-site tRNA-nascent chain.
+7K00,7k00_1_A_A,,"MG,PAR,SPD",present,absent,absent,absent,absent,Structure of the Bacterial Ribosome at 2 Angstrom Resolution
+7K54,7k54_53_3_AB,,,absent,absent,absent,absent,absent,Mid-translocated +1-frameshifting(CCC-A) complex with EF-G and GDPCP (Structure II-FS)
+7N2C,7n2c_1_16_A,,"MG,PUT",absent,absent,absent,absent,present,Elongating 70S ribosome complex in a fusidic acid-stalled intermediate state of translocation bound to EF-G(GDP) (INT2)
+7N2V,7n2v_1_16_A,,"MG,PUT,SCM",absent,absent,absent,absent,present,"Elongating 70S ribosome complex in a spectinomycin-stalled intermediate state of translocation bound to EF-G in an active, GTP conformation (INT1)"
+7N30,7n30_1_16_A,,"MG,PUT",present,absent,absent,absent,absent,Elongating 70S ribosome complex in a hybrid-H2* pre-translocation (PRE-H2*) conformation
+7NSO,7nso_35_a_IA,,,absent,absent,absent,absent,absent,Structure of ErmDL-Erythromycin-stalled 70S E. coli ribosomal complex with P-tRNA
+7OTC,7otc_1_a_A,,MG,absent,absent,absent,absent,absent,Cryo-EM structure of an Escherichia coli 70S ribosome in complex with elongation factor G and the antibiotic Argyrin B
+7PJV,7pjv_34_a_HA,,"AM2,MG",present,absent,absent,absent,absent,Structure of the 70S-EF-G-GDP-Pi ribosome complex with tRNAs in hybrid state 1 (H1-EF-G-GDP-Pi)
+7PJY,7pjy_34_a_HA,,"AM2,MG",present,absent,absent,absent,absent,Structure of the 70S-EF-G-GDP ribosome complex with tRNAs in chimeric state 1 (CHI1-EF-G-GDP)
+7S1H,7s1h_4_C_D,,MG,absent,absent,absent,absent,absent,Wild-type Escherichia coli ribosome with antibiotic linezolid
+7SSD,7ssd_1_3_A,,,absent,absent,absent,absent,absent,Mid translocation intermediate with EF-G bound with GDP (Structure IV)
+7ST7,7st7_41_3_OA,,,present,absent,absent,absent,absent,Pre translocation intermediate stalled with viomycin and bound with EF-G in a GDP and Pi state (Structure III-vio)
+8AYE,8aye_7_A_G,,"MG,T8B",present,absent,absent,absent,absent,E. coli 70S ribosome bound to thermorubin and fMet-tRNA
+8B0X,8b0x_5_A_E,,"K,MG",present,present,absent,present,present,"Translating 70S ribosome in the unrotated state (P and E, tRNAs)"
+8BF7,8bf7_52_2_ZA,A-site tRNA,,present,absent,present,absent,absent,Elongating E. coli 70S ribosome containing deacylated tRNA(iMet) in the P-site and AAA mRNA codon with cognate dipeptidyl-tRNA(Lys) in the A-site
+8FZI,8fzi_1_a_A,,MG,absent,absent,absent,absent,absent,Cryo-EM structure of an E. coli rotated ribosome bound with RF3-GDPCP and p/E-tRNAPhe (Composite state II-B)
+8IFB,8ifb_1_A_A,,"84D,MG,SPD",present,absent,absent,absent,absent,Dibekacin-bound E.coli 70S ribosome in the PURE system
+8R6C,8r6c_7_A_G,A-site tRNA,"K,MG",present,absent,absent,absent,absent,70S Escherichia coli ribosome with Paenilamicin B2 bound with A- and P-site tRNA.
+8R8M,8r8m_33_A_GA,A/P hybrid,"K,MG",present,absent,absent,absent,absent,70S Escherichia coli ribosome with Paenilamicin B2 bound with hybrid A/P- and hybrid P/E-tRNA.
+8SYL,8syl_1_a_A,A-site tRNA,"AKN,MG",present,absent,present,absent,absent,"Cryo-EM structure of the Escherichia coli 70S ribosome in complex with amikacin, mRNA, and A-, P-, and E-site tRNAs"
+8UZ3,8uz3_2_2_B,,MG,absent,absent,absent,absent,absent,E. coli 70S ribosome with unmodified e*/E-tRNAPro(GGG) bound to slippery P-site CCC-C codon
+9B4Z,9b4z_1_AA_A,,"84G,MG",present,absent,present,absent,absent,E. coli 70S ribosome complex (N1-methylated 16S A1408 + arbekacin)
+9B51,9b51_1_AA_A,,"GET,MG",present,absent,present,absent,absent,E. coli 70S ribosome complex (N1-methylated 16S A1408 + G418)
+9G06,9g06_21_B_U,,"A1IC4,K,MG",absent,absent,absent,absent,absent,Structure of 30S-IF1-IF3-mRNA-fMet-tRNA-GE81112A complex
+9GHA,9gha_8_A_H,,"K,MG",absent,absent,absent,absent,absent,Fusidic acid-locked Escherichia coli 70S ribosome with Staphylococcus aureus EF-G and a tRNA in pe/E chimeric state (CHI)
+9GUP,9gup_1_A_A,,MG,nc,nc,nc,nc,nc,30S mRNA delivery complex (open head)
+9GUV,9guv_1_A_A,,MG,nc,nc,nc,nc,nc,30S mRNA delivery complex (closed-head)
+9O2Y,9o2y_1_A_A,A-site tRNA,"MG,PAR,SPD",present,absent,absent,absent,absent,"Structure of WT E.coli ribosome 70S subunit with complexed with mRNA, P-site fMet-NH-tRNAfMet and A-site (R) beta-2-hydroxy-BocLysine acid charged NH-tRNAPyl"
+9PIH,9pih_6_A_F,,"DXT,K,MG",present,present,absent,present,present,E. coli 70S ribosome bound to Doxycycline
+9PII,9pii_6_A_F,,"K,MG,V7A",present,absent,absent,present,present,E. coli 70S ribosome bound to Sarecycline
+9PIJ,9pij_6_A_F,,"K,MG,MIY",present,absent,absent,present,present,E. coli 70S ribosome bound to Minocycline
+9QQQ,9qqq_7_A_G,A-site tRNA,"A1JA7,MG",absent,absent,absent,absent,present,"Cryo-EM structure of SKM-70S ribosomal stalled complex in the major state (vacant A-site, canon)"
+9SRO,9sro_6_A_F,,"A1JAI,MG",absent,absent,absent,absent,present,Cryo-EM structure of SKM-70S ribosomal stalled complex in the rotated state with hybrid tRNAs
+9SX2,9sx2_2_A_B,,"DXT,K,MG",absent,present,absent,absent,present,30S Doxycycline Bound E. coli Ribosome
+9TMI,9tmi_52_A_ZA,A-site tRNA,"MG,SCM",present,absent,absent,absent,absent,E. coli 70S ribosome with A- and P-site tRNA
+9TNL,9tnl_2_A_B,A/P hybrid,"K,MG,SCM",present,absent,absent,absent,absent,E. coli 70S ribosome with A/P- and P/E-site tRNA

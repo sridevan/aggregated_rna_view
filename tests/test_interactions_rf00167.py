@@ -148,3 +148,23 @@ def test_rf00177_interactions_dataset():
     assert d["default_numbering_reference"]["seq_name"] == "4v9d_1_BA_Y" and d["clen"] == 1533
     n = len(d["pairs"])
     assert all(0 <= k < n for i in d["instances"] for ks in i["observed"].values() for k in ks)
+
+
+def test_annotation_gaps():
+    """incomplete source annotation: only RF00177 7PJS chain a (annotated up to nt ~650); its positions there are not eligible anywhere"""
+    from rna_explorer.interactions import annotation_gaps
+    assert annotation_gaps("E" * 40, set(range(1, 41))) == []
+    assert annotation_gaps("E" * 40, set(range(1, 21))) == [[21, 40]]           # 20 >= 15 positions and >= 8 % of 40
+    assert annotation_gaps("E" * 40, set(range(1, 30))) == []                    # 11 < 15
+    for acc in ("RF00167", "RF00059", "RF00162", "RF00005", "RF00177"):
+        p = ROOT / "data" / "families" / acc / "interactions.json"
+        if not p.exists():
+            continue
+        d = json.load(open(p))
+        gaps = {i["seq_name"]: i["annotation_gaps"] for i in d["instances"] if i["annotation_gaps"]}
+        assert gaps == ({"7pjs_34_a_HA": [[652, 1531]]} if acc == "RF00177" else {}), acc
+        if acc == "RF00177":
+            # every pair touching the gap counts 7PJS as annotation-unavailable, never as eligible
+            inst = {i["seq_name"]: i for i in d["instances"]}
+            for q in d["pairs"]:
+                assert q["n_eligible"] + q["n_missing"] + q["n_incomplete"] + q["n_unmapped"] + q["n_annotation_unavailable"] == len(inst)

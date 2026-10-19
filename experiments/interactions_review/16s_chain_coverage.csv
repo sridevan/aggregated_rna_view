@@ -1,0 +1,61 @@
+seq_name,pdb_id,method,resolution,group_discrepancy,helix_pairs_annotated,helix_pairs_evaluable,coverage,eligible_positions,n_interactions,title
+4u20_1_CA_BB,4U20,X-ray diffraction,2.9,1,397,441,0.9,1513,3338,Crystal structure of the E. coli ribosome bound to flopristin.
+4u27_1_AA_A,4U27,X-ray diffraction,2.8,1,409,441,0.927,1512,3362,Crystal structure of the E. coli ribosome bound to flopristin and linopristin.
+4v4h_1_AA_A,4V4H,X-ray diffraction,3.46,1,434,441,0.984,1504,3645,Crystal structure of the bacterial ribosome from Escherichia coli in complex with the antibiotic kasugamyin at 3.5A resolution.
+4v4q_1_CA_AB,4V4Q,X-ray diffraction,3.46,2,434,441,0.984,1504,3600,Crystal structure of the bacterial ribosome from Escherichia coli at 3.5 A resolution.
+4v53_1_AA_A,4V53,X-ray diffraction,3.54,1,435,441,0.986,1504,3713,Crystal structure of the bacterial ribosome from Escherichia coli in complex with gentamicin.
+4v64_1_AA_A,4V64,X-ray diffraction,3.5,1,430,441,0.975,1504,3723,Crystal structure of the bacterial ribosome from Escherichia coli in complex with hygromycin B.
+4v7t_1_AA_A,4V7T,X-ray diffraction,3.1942,1,431,441,0.977,1507,3520,Crystal structure of the E. coli ribosome bound to chloramphenicol.
+4v85_1_AA_A,4V85,X-ray diffraction,3.2,1,393,441,0.891,1506,3364,Crystal Structure of Release Factor RF3 Trapped in the GTP State on a Rotated Conformation of the Ribosome.
+4v9c_1_AA_A,4V9C,X-ray diffraction,3.3,1,327,441,0.741,1513,3270,Allosteric control of the ribosome by small-molecule antibiotics
+4v9d_1_AA_A,4V9D,X-ray diffraction,3.0,1,401,441,0.909,1512,3468,Structures of the bacterial ribosome in classical and hybrid states of tRNA binding
+4v9d_1_BA_Y,4V9D,X-ray diffraction,3.0,1,395,441,0.896,1513,3495,Structures of the bacterial ribosome in classical and hybrid states of tRNA binding
+4v9o_35_HA_PG,4V9O,X-ray diffraction,2.9,1,340,441,0.771,1507,3200,Control of ribosomal subunit rotation by elongation factor G
+4v9p_33_DA_IC,4V9P,X-ray diffraction,2.9,1,405,441,0.918,1507,3327,Control of ribosomal subunit rotation by elongation factor G
+4wf1_1_CA_BB,4WF1,X-ray diffraction,3.09,1,392,441,0.889,1513,3309,Crystal structure of the E. coli ribosome bound to negamycin.
+4woi_1_AA_A,4WOI,X-ray diffraction,3.0,1,397,441,0.9,1512,3296,"4,5-linked aminoglycoside antibiotics regulate the bacterial ribosome by targeting dynamic conformational processes within intersubunit bridge B2"
+4ybb_1_AA_A,4YBB,X-ray diffraction,2.1,1,408,441,0.925,1508,3307,High-resolution structure of the Escherichia coli ribosome
+4ybb_1_BA_V,4YBB,X-ray diffraction,2.1,1,397,441,0.9,1507,3253,High-resolution structure of the Escherichia coli ribosome
+5afi_1_a_A,5AFI,Electron Microscopy,2.9,1,416,441,0.943,1513,3361,2.9A Structure of E. coli ribosome-EF-TU complex by cs-corrected cryo-EM
+5j5b_1_AA_A,5J5B,X-ray diffraction,2.8,1,420,441,0.952,1508,3319,Structure of the WT E coli ribosome bound to tetracycline
+5j91_1_AA_A,5J91,X-ray diffraction,2.96,1,420,441,0.952,1508,3320,Structure of the Wild-type 70S E coli ribosome bound to Tigecycline
+6lkq_51_s_BB,6LKQ,X-ray diffraction,3.1,1,357,441,0.81,1506,3333,The Structural Basis for Inhibition of Ribosomal Translocation by Viomycin
+7acr_2_2_B,7ACR,Electron Microscopy,3.44,2,370,441,0.839,1508,3380,Structure of post-translocated trans-translation complex on E. coli stalled ribosome.
+7b5k_32_a_FA,7B5K,Electron Microscopy,2.9,1,429,441,0.973,1507,3318,E. coli 70S containing suppressor tRNA in the A-site stabilized by a Negamycin analogue and P-site tRNA-nascent chain.
+7k00_1_A_A,7K00,Electron Microscopy,1.98,1,427,441,0.968,1500,3457,Structure of the Bacterial Ribosome at 2 Angstrom Resolution
+7k54_53_3_AB,7K54,Electron Microscopy,3.2,2,401,441,0.909,1513,3360,Mid-translocated +1-frameshifting(CCC-A) complex with EF-G and GDPCP (Structure II-FS)
+7n2c_1_16_A,7N2C,Electron Microscopy,2.72,2,425,441,0.964,1508,3533,Elongating 70S ribosome complex in a fusidic acid-stalled intermediate state of translocation bound to EF-G(GDP) (INT2)
+7n2v_1_16_A,7N2V,Electron Microscopy,2.54,1,431,441,0.977,1508,3424,"Elongating 70S ribosome complex in a spectinomycin-stalled intermediate state of translocation bound to EF-G in an active, GTP conformation (INT1)"
+7n30_1_16_A,7N30,Electron Microscopy,2.66,1,428,439,0.975,1500,3397,Elongating 70S ribosome complex in a hybrid-H2* pre-translocation (PRE-H2*) conformation
+7nso_35_a_IA,7NSO,Electron Microscopy,2.9,1,425,441,0.964,1514,3341,Structure of ErmDL-Erythromycin-stalled 70S E. coli ribosomal complex with P-tRNA
+7otc_1_a_A,7OTC,Electron Microscopy,2.9,2,419,441,0.95,1507,3414,Cryo-EM structure of an Escherichia coli 70S ribosome in complex with elongation factor G and the antibiotic Argyrin B
+7pjs_34_a_HA,7PJS,Electron Microscopy,2.35,1,169,177,0.955,1514,1488,Structure of the 70S ribosome with tRNAs in the classical pre-translocation state and apramycin (C)
+7pjv_34_a_HA,7PJV,Electron Microscopy,3.1,1,413,441,0.937,1514,3491,Structure of the 70S-EF-G-GDP-Pi ribosome complex with tRNAs in hybrid state 1 (H1-EF-G-GDP-Pi)
+7pjy_34_a_HA,7PJY,Electron Microscopy,3.1,2,407,441,0.923,1514,3416,Structure of the 70S-EF-G-GDP ribosome complex with tRNAs in chimeric state 1 (CHI1-EF-G-GDP)
+7s1h_4_C_D,7S1H,Electron Microscopy,2.35,1,424,441,0.961,1514,3243,Wild-type Escherichia coli ribosome with antibiotic linezolid
+7ssd_1_3_A,7SSD,Electron Microscopy,3.3,2,359,441,0.814,1513,3108,Mid translocation intermediate with EF-G bound with GDP (Structure IV)
+7st7_41_3_OA,7ST7,Electron Microscopy,3.2,1,383,441,0.868,1513,3236,Pre translocation intermediate stalled with viomycin and bound with EF-G in a GDP and Pi state (Structure III-vio)
+8aye_7_A_G,8AYE,Electron Microscopy,1.96,1,426,441,0.966,1500,3438,E. coli 70S ribosome bound to thermorubin and fMet-tRNA
+8b0x_5_A_E,8B0X,Electron Microscopy,1.55,1,428,436,0.982,1481,3262,"Translating 70S ribosome in the unrotated state (P and E, tRNAs)"
+8bf7_52_2_ZA,8BF7,Electron Microscopy,2.33,1,396,441,0.898,1508,3079,Elongating E. coli 70S ribosome containing deacylated tRNA(iMet) in the P-site and AAA mRNA codon with cognate dipeptidyl-tRNA(Lys) in the A-site
+8fzi_1_a_A,8FZI,Electron Microscopy,3.1,1,411,441,0.932,1502,3287,Cryo-EM structure of an E. coli rotated ribosome bound with RF3-GDPCP and p/E-tRNAPhe (Composite state II-B)
+8ifb_1_A_A,8IFB,Electron Microscopy,2.43,1,429,441,0.973,1500,3433,Dibekacin-bound E.coli 70S ribosome in the PURE system
+8r6c_7_A_G,8R6C,Electron Microscopy,2.2,1,430,441,0.975,1500,3287,70S Escherichia coli ribosome with Paenilamicin B2 bound with A- and P-site tRNA.
+8r8m_33_A_GA,8R8M,Electron Microscopy,2.4,1,430,441,0.975,1500,3298,70S Escherichia coli ribosome with Paenilamicin B2 bound with hybrid A/P- and hybrid P/E-tRNA.
+8syl_1_a_A,8SYL,Electron Microscopy,2.9,1,425,441,0.964,1502,3459,"Cryo-EM structure of the Escherichia coli 70S ribosome in complex with amikacin, mRNA, and A-, P-, and E-site tRNAs"
+8uz3_2_2_B,8UZ3,Electron Microscopy,3.2,2,331,441,0.751,1513,3127,E. coli 70S ribosome with unmodified e*/E-tRNAPro(GGG) bound to slippery P-site CCC-C codon
+9b4z_1_AA_A,9B4Z,Electron Microscopy,2.2,1,432,441,0.98,1513,3370,E. coli 70S ribosome complex (N1-methylated 16S A1408 + arbekacin)
+9b51_1_AA_A,9B51,Electron Microscopy,2.4,1,429,441,0.973,1513,3367,E. coli 70S ribosome complex (N1-methylated 16S A1408 + G418)
+9g06_21_B_U,9G06,Electron Microscopy,2.85,1,415,435,0.954,1485,3304,Structure of 30S-IF1-IF3-mRNA-fMet-tRNA-GE81112A complex
+9gha_8_A_H,9GHA,Electron Microscopy,2.24,2,423,440,0.961,1500,3527,Fusidic acid-locked Escherichia coli 70S ribosome with Staphylococcus aureus EF-G and a tRNA in pe/E chimeric state (CHI)
+9gup_1_A_A,9GUP,Electron Microscopy,2.8,2,432,441,0.98,1513,3431,30S mRNA delivery complex (open head)
+9guv_1_A_A,9GUV,Electron Microscopy,3.0,1,430,441,0.975,1513,3449,30S mRNA delivery complex (closed-head)
+9o2y_1_A_A,9O2Y,Electron Microscopy,2.14,1,416,441,0.943,1500,3388,"Structure of WT E.coli ribosome 70S subunit with complexed with mRNA, P-site fMet-NH-tRNAfMet and A-site (R) beta-2-hydroxy-BocLysine acid charged NH-tRNAPyl"
+9pih_6_A_F,9PIH,Electron Microscopy,2.4,1,427,436,0.979,1481,3374,E. coli 70S ribosome bound to Doxycycline
+9pii_6_A_F,9PII,Electron Microscopy,2.4,1,429,436,0.984,1481,3388,E. coli 70S ribosome bound to Sarecycline
+9pij_6_A_F,9PIJ,Electron Microscopy,2.2,1,429,436,0.984,1481,3378,E. coli 70S ribosome bound to Minocycline
+9qqq_7_A_G,9QQQ,Electron Microscopy,2.26,1,427,436,0.979,1485,3254,"Cryo-EM structure of SKM-70S ribosomal stalled complex in the major state (vacant A-site, canon)"
+9sro_6_A_F,9SRO,Electron Microscopy,2.6,1,425,437,0.973,1485,3260,Cryo-EM structure of SKM-70S ribosomal stalled complex in the rotated state with hybrid tRNAs
+9sx2_2_A_B,9SX2,Electron Microscopy,2.08,1,425,441,0.964,1508,3358,30S Doxycycline Bound E. coli Ribosome
+9tmi_52_A_ZA,9TMI,Electron Microscopy,2.08,1,423,441,0.959,1500,3275,E. coli 70S ribosome with A- and P-site tRNA
+9tnl_2_A_B,9TNL,Electron Microscopy,2.11,1,421,441,0.955,1500,3275,E. coli 70S ribosome with A/P- and P/E-site tRNA

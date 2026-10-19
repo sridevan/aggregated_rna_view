@@ -223,3 +223,20 @@ describe('four BGSU categories, grouping, ordering, cutoff, default pair', () =>
     expect(ds.pairs.filter((q) => q.directional).every((q) => q.category === 'baseribose' || q.category === 'basephosphate')).toBe(true)
   })
 })
+
+describe('incomplete source annotation', () => {
+  it('positions in an annotation gap are not comparable (never absent), with the reason', () => {
+    const d = { ...toy, instances: toy.instances.map((i) => (i.seq_name === 'x' ? { ...i, annotation_gaps: [[5, 6]] } : i)) } as unknown as InteractionsDataset
+    const x = indexInstance(d, 'x')!
+    expect(statusIn(x, 'basepair', 2, 5)).toMatchObject({ state: 'not_comparable', reason: 'BGSU annotation incomplete for this chain (no annotation at Rfam 5–6)' })
+    expect(statusIn(x, 'basepair', 1, 3).state).toBe('absent')
+  })
+  it('RF00177: 7PJS chain a is marked incomplete beyond its annotated span; no other 16S chain is', () => {
+    const d = JSON.parse(readFileSync(new URL('../../../data/families/RF00177/interactions.json', import.meta.url), 'utf8')) as InteractionsDataset
+    const gaps = d.instances.filter((i) => (i.annotation_gaps ?? []).length).map((i) => [i.seq_name, i.annotation_gaps])
+    expect(gaps).toEqual([['7pjs_34_a_HA', [[652, 1531]]]])
+    const p = d.pairs.find((q) => q.category === 'basepair' && q.pos_1 > 700)!
+    expect(statusIn(indexInstance(d, '7pjs_34_a_HA')!, p.category, p.pos_1, p.pos_2).state).toBe('not_comparable')
+  })
+})
+

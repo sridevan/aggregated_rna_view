@@ -1,0 +1,39 @@
+seq_name,pdb_id,method,resolution,group_discrepancy,helix_pairs_annotated,helix_pairs_evaluable,coverage,eligible_positions,n_interactions,title
+2cky_1_A_A,2CKY,X-ray diffraction,2.9,1,18,18,1.0,68,156,Structure of the Arabidopsis thaliana thiamine pyrophosphate riboswitch with its regulatory ligand
+2cky_1_B_B,2CKY,X-ray diffraction,2.9,1,18,18,1.0,68,160,Structure of the Arabidopsis thaliana thiamine pyrophosphate riboswitch with its regulatory ligand
+2gdi_1_X_A,2GDI,X-ray diffraction,2.05,1,20,22,0.909,77,166,Crystal structure of thiamine pyrophosphate-specific riboswitch in complex with thiamine pyrophosphate
+2gdi_1_Y_B,2GDI,X-ray diffraction,2.05,1,20,22,0.909,77,165,Crystal structure of thiamine pyrophosphate-specific riboswitch in complex with thiamine pyrophosphate
+2hoj_1_A_A,2HOJ,X-ray diffraction,2.5,1,20,22,0.909,70,158,"Crystal structure of an E. coli thi-box riboswitch bound to thiamine pyrophosphate, manganese ions"
+2hok_1_A_A,2HOK,X-ray diffraction,3.2,1,20,22,0.909,69,160,"Crystal structure of an E. coli thi-box riboswitch bound to thiamine pyrophosphate, calcium ions"
+2hol_1_A_A,2HOL,X-ray diffraction,2.9,1,20,22,0.909,70,164,"Crystal structure of an E. coli thi-box riboswitch bound to thiamine pyrophosphate, barium ions"
+2hom_1_A_A,2HOM,X-ray diffraction,2.89,1,20,22,0.909,70,163,Crystal structure of an E. coli thi-box riboswitch bound to thiamine monophosphate
+2hoo_1_A_A,2HOO,X-ray diffraction,3.0,1,20,22,0.909,69,161,Crystal structure of an E. coli thi-box riboswitch bound to benfotiamine
+2hop_1_A_A,2HOP,X-ray diffraction,3.3,1,13,20,0.65,63,135,Crystal structure of an E. coli thi-box riboswitch bound to pyrithiamine
+3d2g_1_A_A,3D2G,X-ray diffraction,2.25,1,18,18,1.0,68,159,Structural basis of thiamine pyrophosphate analogues binding to the eukaryotic riboswitch
+3d2g_1_B_B,3D2G,X-ray diffraction,2.25,1,18,18,1.0,68,164,Structural basis of thiamine pyrophosphate analogues binding to the eukaryotic riboswitch
+3d2v_1_A_A,3D2V,X-ray diffraction,2.0,1,18,18,1.0,68,164,Structure of the eukaryotic TPP-specific riboswitch bound to the antibacterial compound pyrithiamine pyrophosphate
+3d2v_1_B_B,3D2V,X-ray diffraction,2.0,1,18,18,1.0,68,167,Structure of the eukaryotic TPP-specific riboswitch bound to the antibacterial compound pyrithiamine pyrophosphate
+3d2x_1_A_A,3D2X,X-ray diffraction,2.5,1,18,18,1.0,68,161,Structure of the thiamine pyrophosphate-specific riboswitch bound to oxythiamine pyrophosphate
+3d2x_1_B_B,3D2X,X-ray diffraction,2.5,1,18,18,1.0,68,166,Structure of the thiamine pyrophosphate-specific riboswitch bound to oxythiamine pyrophosphate
+3k0j_2_E_E,3K0J,X-ray diffraction,3.1,1,19,22,0.864,75,164,Crystal structure of the E. coli ThiM riboswitch in complex with thiamine pyrophosphate and the U1A crystallization module
+3k0j_2_F_F,3K0J,X-ray diffraction,3.1,1,20,22,0.909,74,169,Crystal structure of the E. coli ThiM riboswitch in complex with thiamine pyrophosphate and the U1A crystallization module
+4nya_1_A_A,4NYA,X-ray diffraction,2.65,1,20,22,0.909,75,161,Crystal structure of the E. coli thiM riboswitch in complex with 5-(azidomethyl)-2-methylpyrimidin-4-amine
+4nya_1_B_B,4NYA,X-ray diffraction,2.65,1,17,22,0.773,75,160,Crystal structure of the E. coli thiM riboswitch in complex with 5-(azidomethyl)-2-methylpyrimidin-4-amine
+4nyb_1_A_A,4NYB,X-ray diffraction,3.1,1,20,22,0.909,71,165,"Crystal structure of the E. coli thiM riboswitch in complex with (4-(1,2,3-thiadiazol-4-yl)phenyl)methanamine"
+4nyc_1_A_A,4NYC,X-ray diffraction,3.15,1,20,22,0.909,68,148,"Crystal structure of the E. coli thiM riboswitch in complex with thieno[2,3-b]pyrazin-7-amine"
+4nyd_1_A_A,4NYD,X-ray diffraction,2.9,1,20,22,0.909,70,157,Crystal structure of the E. coli thiM riboswitch in complex with hypoxanthine
+4nyg_1_A_A,4NYG,X-ray diffraction,3.05,1,15,19,0.789,64,130,Crystal structure of the E. coli thiM riboswitch in complex with thiamine
+7td7_1_A_A,7TD7,X-ray diffraction,2.95,1,20,21,0.952,68,159,"Crystal structure of an E. coli thiM riboswitch bound to thiamine, manganese ions"
+7tda_1_A_A,7TDA,X-ray diffraction,2.25,1,20,22,0.909,71,161,"Crystal structure of the E. coli thiM riboswitch in complex with thiamine pyrophosphate, manganese ions"
+7tdb_1_A_A,7TDB,X-ray diffraction,2.56,1,20,22,0.909,71,170,"Crystal structure of the E. coli thiM riboswitch in complex with thiamine bisphosphonate, manganese ions"
+7tdc_1_A_A,7TDC,X-ray diffraction,2.46,1,20,22,0.909,71,162,"Crystal structure of the E. coli thiM riboswitch in complex with thiamine bisphosphonate, calcium ions"
+7tzr_1_X_A,7TZR,X-ray diffraction,2.7,1,20,22,0.909,75,176,Crystal structure of the E. coli thiM riboswitch bound to N-methyl-1-(quinoxalin-6-yl)methanamine (compound 16)
+7tzr_1_Y_B,7TZR,X-ray diffraction,2.7,1,20,22,0.909,74,170,Crystal structure of the E. coli thiM riboswitch bound to N-methyl-1-(quinoxalin-6-yl)methanamine (compound 16)
+7tzs_1_X_A,7TZS,X-ray diffraction,2.21,1,20,22,0.909,75,167,Crystal structure of the E. coli thiM riboswitch in complex with quinoxalin-6-ylmethanamine (compound 17)
+7tzs_1_Y_B,7TZS,X-ray diffraction,2.21,1,20,22,0.909,76,168,Crystal structure of the E. coli thiM riboswitch in complex with quinoxalin-6-ylmethanamine (compound 17)
+7tzt_1_A_A,7TZT,X-ray diffraction,2.96,1,20,22,0.909,70,162,"Crystal structure of the E. coli thiM riboswitch in complex with N1,N1-dimethyl-N2-(quinoxalin-6-ylmethyl)ethane-1,2-diamine (linked compound 37)"
+7tzu_1_A_A,7TZU,X-ray diffraction,2.87,1,19,22,0.864,70,157,Crystal structure of the E. coli thiM riboswitch bound to 1-(4-(piperazin-1-yl)pyridin-3-yl)-N-(quinoxalin-6-ylmethyl)methanamine (linked compound 38)
+8f4o_1_A_A,8F4O,X-ray diffraction,3.1,2,19,20,0.95,69,141,Apo structure of the TPP riboswitch aptamer domain
+8f4o_1_B_B,8F4O,X-ray diffraction,3.1,2,17,18,0.944,64,131,Apo structure of the TPP riboswitch aptamer domain
+9c6j_1_A_A,9C6J,Electron Microscopy,2.41,,0,0,,13,893,Group IIC intron embedded with the TPP riboswitch
+9c6k_1_X_A,9C6K,Electron Microscopy,2.94,1,20,22,0.909,77,176,Cryo-EM structure of the TPP riboswitch embedded in an RNA scaffold bound to thiamine pyrophosphate

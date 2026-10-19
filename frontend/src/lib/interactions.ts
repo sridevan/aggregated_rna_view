@@ -83,6 +83,8 @@ const INCOMPLETE: Record<'base' | 'sugar' | 'phosphate', string> = { base: 'inco
  */
 export function statusIn(ix: InteractionIndexLike, cat: InteractionCategory, i: number, j: number): InstanceStatus {
   if (ix.inst.annotation !== 'available') return { state: 'not_comparable', classes: [], other: [], reason: `FR3D annotation unavailable (${ix.inst.annotation_note ?? 'no records'})` }
+  const gap = (ix.inst.annotation_gaps ?? []).find(([a, b]) => (i >= a && i <= b) || (j >= a && j <= b))
+  if (gap) return { state: 'not_comparable', classes: [], other: [], reason: `BGSU annotation incomplete for this chain (no annotation at Rfam ${gap[0]}–${gap[1]})` }
   const second = cat === 'baseribose' ? ix.inst.sugar_eligibility : cat === 'basephosphate' ? ix.inst.phosphate_eligibility : ix.inst.eligibility
   if (second == null || ix.inst.unavailable_categories?.includes(cat)) return { state: 'not_comparable', classes: [], other: [], reason: `${CATEGORY_TEXT[cat]} annotations unavailable for this chain` }
   const kind2 = cat === 'baseribose' ? 'sugar' : cat === 'basephosphate' ? 'phosphate' : 'base'

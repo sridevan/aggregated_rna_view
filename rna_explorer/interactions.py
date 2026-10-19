@@ -45,6 +45,25 @@ RING = frozenset("N1 C2 N3 C4 C5 C6".split())
 CANONICAL = {"AU", "UA", "GC", "CG", "GU", "UG"}
 # per-position eligibility codes of an instance (string of length clen)
 ELIGIBLE, INCOMPLETE, UNMODELLED, UNMAPPED = "E", "I", "M", "-"
+# incomplete source annotation: a run of consecutive eligible positions without any BGSU annotation (any category, near included) at least
+# this long is treated as "annotation unavailable" rather than as absence (e.g. RF00177 7PJS chain a, annotated only up to nt ~650)
+GAP_MIN_POSITIONS, GAP_MIN_FRACTION = 15, 0.08
+
+
+def annotation_gaps(eligibility: str, annotated: set[int]) -> list[list[int]]:
+    """[start, end] Rfam ranges of long runs of eligible positions that carry no annotation at all (incomplete source annotation)"""
+    el = [k + 1 for k, c in enumerate(eligibility) if c == ELIGIBLE]
+    if not el:
+        return []
+    need = max(GAP_MIN_POSITIONS, GAP_MIN_FRACTION * len(el))
+    gaps, run = [], []
+    for p in el + [None]:
+        if p is not None and p not in annotated:
+            run.append(p); continue
+        if len(run) >= need:
+            gaps.append([run[0], run[-1]])
+        run = []
+    return gaps
 
 
 def parse_unit(u: str) -> dict[str, Any]:
@@ -273,6 +292,11 @@ def build_interactions(acc: str, cache_dir: Path, out_dir: Path, seed_dir: Optio
                           "unavailable_categories": [c for c in KINDS.values() if ann != "available" or not files_ok[(inst["pdb_id"].upper(), c)]],
                           "nucleotides": "".join(nts), "n_interactions": len(observations[sn])})
     unavailable = {r["seq_name"]: set(r["unavailable_categories"]) for r in inst_rows}
+    # incomplete BGSU annotation of a chain (long unannotated runs of eligible positions): not comparable there, never absent
+    for r in inst_rows:
+        annotated_pos = {q for o in observations[r["seq_name"]] for q in (o[4], o[5]) if isinstance(q, int)}
+        r["annotation_gaps"] = annotation_gaps(r["eligibility"], annotated_pos) if r["annotation"] == "available" else []
+    in_gap = {r["seq_name"]: {q for a, b in r["annotation_gaps"] for q in range(a, b + 1)} for r in inst_rows}
     ann_ok = {r["seq_name"] for r in inst_rows if r["annotation"] == "available"}
 
     # family-wide consensus pairs
@@ -291,7 +315,7 @@ def build_interactions(acc: str, cache_dir: Path, out_dir: Path, seed_dir: Optio
 
     def eligibility(sn: str, cat: str, i: int, j: int) -> str:
         """i, j: the two endpoints (for directional categories i = base nucleotide, j = nucleotide whose ribose / phosphate is contacted)"""
-        if sn not in ann_ok or cat in unavailable[sn]:
+        if sn not in ann_ok or cat in unavailable[sn] or i in in_gap[sn] or j in in_gap[sn]:
             return "annotation_unavailable"
         a, b = elig[sn][i - 1], (backbone[sn][cat] if cat in DIRECTIONAL else elig[sn])[j - 1]
         if UNMAPPED in (a, b):
@@ -345,7 +369,7 @@ def build_interactions(acc: str, cache_dir: Path, out_dir: Path, seed_dir: Optio
     ref = family.get("display_representative") or family.get("representative")
     ref_sn = ref["seq_name"] if ref else None
     out = {
-        "schema_version": "1.2", "rfam_acc": acc, "clen": clen,
+        "schema_version": "1.3", "rfam_acc": acc, "clen": clen,
         "default_numbering_reference": {"seq_name": ref_sn, "rule": "family display representative (family.json display_representative)",
                                         "n_eligible_positions": elig.get(ref_sn, "").count(ELIGIBLE) if ref_sn else 0,
                                         "n_match_positions": sum(c != UNMAPPED for c in elig.get(ref_sn, "")) if ref_sn else 0},
@@ -362,6 +386,8 @@ def build_interactions(acc: str, cache_dir: Path, out_dir: Path, seed_dir: Optio
                         "O2'); base-phosphate: complete base and a complete phosphate (P OP1 OP2 O5') on the contacted nucleotide (model 1)",
             "sugar_eligibility": "per consensus position, ribose completeness (codes as eligibility, I = incomplete ribose)",
             "phosphate_eligibility": "per consensus position, phosphate completeness (codes as eligibility, I = incomplete phosphate, e.g. a 5'-terminal residue without P)",
+            "annotation_gaps": f"per chain, [start, end] Rfam ranges of >= {GAP_MIN_POSITIONS} (and >= {GAP_MIN_FRACTION:.0%} of the chain's eligible) consecutive eligible "
+                               "positions without any BGSU annotation (incomplete source annotation); interactions touching them count as annotation unavailable",
             "pair_id": "category:pos_1-pos_2; base pairs and stacking pos_1 < pos_2; base-ribose / base-phosphate pos_1 = base, pos_2 = contacted backbone",
             "observed": "a non-near FR3D interaction of the category between the two positions in an eligible instance; near ('n') classes are counted as near_only",
             "structure_class": "base pairs only: secondary = position pair of the Rfam SS_cons; tertiary = other pair between two different validated structural "

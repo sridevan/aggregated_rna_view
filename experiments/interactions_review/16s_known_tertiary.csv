@@ -1,0 +1,9 @@
+element,E.coli,rfam,observed,eligible,classes,in_rfam_ss_cons
+central pseudoknot (h2),U17-A918,17-908,58,59,"{""cWW"": 58}",False
+central pseudoknot (h2),C18-G917,18-907,59,59,"{""cWW"": 59}",False
+central pseudoknot (h2),A19-U916,19-906,57,59,"{""cWW"": 57}",False
+530-loop pseudoknot (h18),G505-C526,495-516,57,59,"{""cWW"": 58}",False
+530-loop pseudoknot (h18),G506-C525,496-515,58,59,"{""cWW"": 59}",False
+530-loop pseudoknot (h18),C507-G524,497-514,59,59,"{""cWW"": 60}",False
+570/866 long-range pairs,G570-C866,560-856,58,59,"{""cWW"": 58}",False
+570/866 long-range pairs,U571-A865,561-855,59,59,"{""cWW"": 59}",False

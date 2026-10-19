@@ -201,6 +201,9 @@ export interface InteractionInstance {
   eligibility: string
   /** ribose / phosphate completeness per consensus position (same codes; schema 1.1+). Base-ribose and base-phosphate are evaluated on them. */
   sugar_eligibility?: string; phosphate_eligibility?: string
+  /** schema 1.3+: [start, end] Rfam ranges where the chain's BGSU annotation is incomplete (long runs of eligible positions without any
+   *  annotation); interactions touching them are not comparable, never absent */
+  annotation_gaps?: [number, number][]
   /** categories whose annotations are not available for this chain (schema 1.1+) */
   unavailable_categories?: InteractionCategory[]
   /** parent nucleotide at each consensus position ('-' = none) */

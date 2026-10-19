@@ -814,3 +814,15 @@ retrieved for every entry.
 | RF00177 16S rRNA | 1533 | 60 / 58 | 200,197 | 3,919 | 688,932 / 688,932 | 4v9d_1_BA_Y | no |
 
 The only endpoint mismatches are RF00167's 6 (1Y27 C81, `CCC` in the mmCIF, see §8).
+
+### 13.10 Incomplete source annotation (schema 1.3)
+
+The scientific review (`experiments/interactions_review/REVIEW.md`) found that BGSU annotates RF00177 7PJS chain a only up to about
+nucleotide 650. The chain is fully modelled, so 2,343 interactions had been counted absent.
+- **Rule:** the build now stores `annotation_gaps` per chain: [start, end] Rfam runs of ≥ 15, and ≥ 8% of the chain's, consecutive
+  eligible positions without any annotation.
+- **Effect:** interactions touching a gap are annotation-unavailable for that chain. In the frontend they are not comparable, with the
+  reason "BGSU annotation incomplete for this chain (no annotation at Rfam a–b)".
+- **Scope:** only 7PJS chain a (Rfam 652–1531) has a gap. The RF00167, RF00059, RF00162 and RF00005 pairs are unchanged.
+- **RF00177:** 2,344 pairs were corrected, and 7PJS helix coverage went from 38% to 95.5% (169/177).
+- **Tests:** pytest and vitest.
