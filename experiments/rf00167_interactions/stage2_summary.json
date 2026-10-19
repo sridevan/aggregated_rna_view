@@ -1,0 +1,110 @@
+{
+ "pocket_positions": [
+  25,
+  26,
+  51,
+  55,
+  56,
+  80,
+  81
+ ],
+ "n_consensus_pairs": 199,
+ "insertion_or_flank_interactions": {
+  "basepair|outside_alignment": 290,
+  "stacking|outside_alignment": 698,
+  "basepair|insertion": 15,
+  "stacking|insertion": 34
+ },
+ "annotated_instances": 84,
+ "instances": 84,
+ "ss_cons_pairs": [
+  [
+   18,
+   88
+  ],
+  [
+   19,
+   87
+  ],
+  [
+   20,
+   86
+  ],
+  [
+   21,
+   85
+  ],
+  [
+   22,
+   84
+  ],
+  [
+   23,
+   83
+  ],
+  [
+   24,
+   82
+  ],
+  [
+   25,
+   81
+  ],
+  [
+   29,
+   49
+  ],
+  [
+   30,
+   48
+  ],
+  [
+   31,
+   47
+  ],
+  [
+   32,
+   46
+  ],
+  [
+   33,
+   45
+  ],
+  [
+   34,
+   44
+  ],
+  [
+   35,
+   43
+  ],
+  [
+   58,
+   78
+  ],
+  [
+   59,
+   77
+  ],
+  [
+   60,
+   76
+  ],
+  [
+   61,
+   75
+  ],
+  [
+   62,
+   74
+  ],
+  [
+   63,
+   73
+  ],
+  [
+   64,
+   72
+  ]
+ ]
+}

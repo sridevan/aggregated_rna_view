@@ -1,0 +1,1851 @@
+{
+ "https://rna.bgsu.edu/rna3dhub/pdb/1Y26/interactions/fr3d/basepairs/csv": {
+  "bytes": 2588,
+  "file": "bgsu/1Y26_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "9402172c66e3b25eb238eaca25ba4a324837641114ea91e68dc9266ced3f45ba",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/1Y26/interactions/fr3d/stacking/csv": {
+  "bytes": 6956,
+  "file": "bgsu/1Y26_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "e1afde4d1e3e74a9b50bfee733902473063689ecb09d1f496825eb6cb4d7ecf8",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/1Y27/interactions/fr3d/basepairs/csv": {
+  "bytes": 2508,
+  "file": "bgsu/1Y27_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "e558fb33725b3b9f73daaf9a7c2a36fea0045d02d82ce8c3371caac58f42d161",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/1Y27/interactions/fr3d/stacking/csv": {
+  "bytes": 6480,
+  "file": "bgsu/1Y27_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "1277f65954c8c60fc0f176e22909886c453e12c85906ed7fce7e34fc2cbd2b52",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2B57/interactions/fr3d/basepairs/csv": {
+  "bytes": 2436,
+  "file": "bgsu/2B57_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "80f1ef916a64e19c0598bad4a622b3891968b913f4c2226830f0d2526e854cd7",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2B57/interactions/fr3d/stacking/csv": {
+  "bytes": 6034,
+  "file": "bgsu/2B57_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "8d5929b95b1a7a1448905d6225dc8136a6a0027bcce5065618d11b8bd65db531",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2EES/interactions/fr3d/basepairs/csv": {
+  "bytes": 2512,
+  "file": "bgsu/2EES_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "77a23f6a8852cef892de0eb69852eebb40e411970bee4e2b4883fe8808b667a5",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2EES/interactions/fr3d/stacking/csv": {
+  "bytes": 6266,
+  "file": "bgsu/2EES_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "ff0458b1a45d34b54683be4396c0afb025c9b8636fffc1b40433257708f565f1",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2EET/interactions/fr3d/basepairs/csv": {
+  "bytes": 2512,
+  "file": "bgsu/2EET_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "5888a31a347717450c628116769c8428cd4889605faa5dca5ca34033911a132c",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2EET/interactions/fr3d/stacking/csv": {
+  "bytes": 6420,
+  "file": "bgsu/2EET_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "7d702a53926a1dd78b9f78f43984113a8e9cfc5920d4ae45218c26eff9a22325",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2EEU/interactions/fr3d/basepairs/csv": {
+  "bytes": 2512,
+  "file": "bgsu/2EEU_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "37a0b6ee9fe69d219580c14c5602489ad6111c0c92bf7f828f5f98b0087b85de",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2EEU/interactions/fr3d/stacking/csv": {
+  "bytes": 6188,
+  "file": "bgsu/2EEU_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "856b63c6f6735582c84b55205047bf559452be463136d599627f40d988bfc3f2",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2EEV/interactions/fr3d/basepairs/csv": {
+  "bytes": 2512,
+  "file": "bgsu/2EEV_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "1deec2f822d8e27088caeabb9e1e1beecd687e086821331d0b2e80a0536a37db",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2EEV/interactions/fr3d/stacking/csv": {
+  "bytes": 6262,
+  "file": "bgsu/2EEV_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "0e61cd57534c96c0c6647489dc81ebec192848a0cf138f54cfec819aea910ad8",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2EEW/interactions/fr3d/basepairs/csv": {
+  "bytes": 2512,
+  "file": "bgsu/2EEW_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "2d640b657ddb702a1e273a086eafde19d9f486d662d38652416ca85234c66827",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2EEW/interactions/fr3d/stacking/csv": {
+  "bytes": 6416,
+  "file": "bgsu/2EEW_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "8c3fddd6a7ec013f404f2893e3f1635d1a26bbc5a1037074525d94312f47059f",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2G9C/interactions/fr3d/basepairs/csv": {
+  "bytes": 2588,
+  "file": "bgsu/2G9C_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "fc4954d874a51111839acbd45588cdcdaebcdb9316628ed9773a356424f66181",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2G9C/interactions/fr3d/stacking/csv": {
+  "bytes": 6502,
+  "file": "bgsu/2G9C_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "dd4c7060199a71bad57a35c3ea0bd33ab92e67812f9f8cf39ce2f29a684a272a",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2XNW/interactions/fr3d/basepairs/csv": {
+  "bytes": 2364,
+  "file": "bgsu/2XNW_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "540726fb3866a03e7ddf9594f19d60e5a2bf1ba3969d2f87b75c50ecd9c582c4",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2XNW/interactions/fr3d/stacking/csv": {
+  "bytes": 5902,
+  "file": "bgsu/2XNW_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "26fd856e4734c7fa253241605f2f51e23af24b241684e9a47947dcbbb75aa77f",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2XNZ/interactions/fr3d/basepairs/csv": {
+  "bytes": 2516,
+  "file": "bgsu/2XNZ_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "017bbbcb098fdb6f8cb88129108672c4a07f67fe252f5c074d93c496cc7211ab",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2XNZ/interactions/fr3d/stacking/csv": {
+  "bytes": 6292,
+  "file": "bgsu/2XNZ_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "4f7d2108bb300d0edf3358ac8cea84ca0763bdd402be7cdf047a06abd3c82c33",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2XO0/interactions/fr3d/basepairs/csv": {
+  "bytes": 2460,
+  "file": "bgsu/2XO0_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "f14aa77e4e17fd87d099691b4546d9d1e2c09c9fa3f4fb42349d6bbf530122ae",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2XO0/interactions/fr3d/stacking/csv": {
+  "bytes": 6200,
+  "file": "bgsu/2XO0_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "58bc4cad463b8f6850fc0c981316c076fc67200174658f6017b7d8b7efd071d4",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2XO1/interactions/fr3d/basepairs/csv": {
+  "bytes": 2440,
+  "file": "bgsu/2XO1_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "7606cc2773eb91bee58ea50aba93116141d2582912af767cc1ec8764d0b65bdf",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2XO1/interactions/fr3d/stacking/csv": {
+  "bytes": 6054,
+  "file": "bgsu/2XO1_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "5614abd8ec86495bbffc2d3df63a6a51dff442a4f664fbe3f66f6622abc7e22b",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3DS7/interactions/fr3d/basepairs/csv": {
+  "bytes": 5404,
+  "file": "bgsu/3DS7_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "4363cbd7d4ab65f194beb4fbc5871ce8785c733ea795d2837530e7aafbedbc9d",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3DS7/interactions/fr3d/stacking/csv": {
+  "bytes": 12780,
+  "file": "bgsu/3DS7_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "c4feb335a09c8cc1b16de368c6c270302f61a71bf822bb7f01ac4bde6ef60105",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3FO4/interactions/fr3d/basepairs/csv": {
+  "bytes": 2356,
+  "file": "bgsu/3FO4_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "c389e33817ab0939a7ec52cb84c93125c5e5f7b6c3fdd2413ef056797c0aadb7",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3FO4/interactions/fr3d/stacking/csv": {
+  "bytes": 5960,
+  "file": "bgsu/3FO4_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "6a51598440e06d00be7434457e506efb9e3cf6acc361ad5d91afdd7e005f5029",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3FO6/interactions/fr3d/basepairs/csv": {
+  "bytes": 2508,
+  "file": "bgsu/3FO6_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "0ac8556caa7bfa2d8d8ffe44da516a128941fdf6aaea8e2ee09eb341085de050",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3FO6/interactions/fr3d/stacking/csv": {
+  "bytes": 6576,
+  "file": "bgsu/3FO6_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "41dc0014cec7ef1a67a7dce9af085b96bf92d4af615446477a2f6f1716e2a428",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3G4M/interactions/fr3d/basepairs/csv": {
+  "bytes": 2436,
+  "file": "bgsu/3G4M_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "b9125627393bd76379ef7f1674c02fcc77dbf2d500edd57bf48228eced03ac14",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3G4M/interactions/fr3d/stacking/csv": {
+  "bytes": 6420,
+  "file": "bgsu/3G4M_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "fceed3f4c5c6bd0c4dc887324539b9c9d4ee1183f860cea972328f1c1f236364",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3GAO/interactions/fr3d/basepairs/csv": {
+  "bytes": 2512,
+  "file": "bgsu/3GAO_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "0a6a2df1fe7f42c34d990f40ff1129428292c29b9ecef5ccc89c62023ef2ca7b",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3GAO/interactions/fr3d/stacking/csv": {
+  "bytes": 6340,
+  "file": "bgsu/3GAO_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "032d54778be98b8337bd46e862e8dcb5005319212b2613fc1cb8bc9a36de7d04",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3GER/interactions/fr3d/basepairs/csv": {
+  "bytes": 2588,
+  "file": "bgsu/3GER_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "5a6a3b1db75d32ba0b90675b42568742ab628cac493dacca42619f420ea2b28f",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3GER/interactions/fr3d/stacking/csv": {
+  "bytes": 6420,
+  "file": "bgsu/3GER_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "dd154e3026b56f999ccd7700672d2ac42504c0591e765414c3fbddb98f0a1b46",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3GES/interactions/fr3d/basepairs/csv": {
+  "bytes": 2432,
+  "file": "bgsu/3GES_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "1c375671b2bc237ede8c2ff6c19f5cbce7327225fd8f708e1546cb0bc5535843",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3GES/interactions/fr3d/stacking/csv": {
+  "bytes": 6340,
+  "file": "bgsu/3GES_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "7f4727d755d3e1393e0c2e157fd03b99ceab4c55f8cb2dcd03f8253afbfd52aa",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3GOG/interactions/fr3d/basepairs/csv": {
+  "bytes": 2512,
+  "file": "bgsu/3GOG_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "9b1852fb92c69616f0121a4290ce8c4be2906899682c82e25f06346c457ccbd1",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3GOG/interactions/fr3d/stacking/csv": {
+  "bytes": 6266,
+  "file": "bgsu/3GOG_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "e5b16af3f5ec159bd66553e3f87f33f3055ed0a7ca0fbe922ddb1fa366e5ffe4",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3GOT/interactions/fr3d/basepairs/csv": {
+  "bytes": 2436,
+  "file": "bgsu/3GOT_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "b9ab156c050e21bc65a6d57b871c73821f171a63d9a22a547dd588fae0004ea6",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3GOT/interactions/fr3d/stacking/csv": {
+  "bytes": 6342,
+  "file": "bgsu/3GOT_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "9bcb6818f66d6dd4a56b25be8d668eb416f5e2f589afa03c9a74f8ceb134c827",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3IVN/interactions/fr3d/basepairs/csv": {
+  "bytes": 4388,
+  "file": "bgsu/3IVN_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "a22f3fa7e9c66326106438f61c6246cd44c9a077c3a8a9854b1e7399d855de1d",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3IVN/interactions/fr3d/stacking/csv": {
+  "bytes": 13202,
+  "file": "bgsu/3IVN_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "492b1131e915e6d4cb3b0f0581d4ce329532456ff4a9a61ec6b80915154fb592",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3LA5/interactions/fr3d/basepairs/csv": {
+  "bytes": 2744,
+  "file": "bgsu/3LA5_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "bc895d8532ea816b3448eba2c6edff1f6aba616b1c65f2eb595ba8d0e0d3bc11",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3LA5/interactions/fr3d/stacking/csv": {
+  "bytes": 6718,
+  "file": "bgsu/3LA5_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "8a23d0bc9f672b722be3d84cb4a9284393dd3f13bc6784b8ec6ef2cb09080923",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3RKF/interactions/fr3d/basepairs/csv": {
+  "bytes": 9592,
+  "file": "bgsu/3RKF_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "2442e5928f31ab10a3124349cd1423adf5335dda8bed9baae63a290ca3d3c1ab",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3RKF/interactions/fr3d/stacking/csv": {
+  "bytes": 26842,
+  "file": "bgsu/3RKF_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "85bf9ee956e574e452568fe3fcd94ad1d1d80173da3452a8b428a3b3412d6f09",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4FE5/interactions/fr3d/basepairs/csv": {
+  "bytes": 2514,
+  "file": "bgsu/4FE5_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "7832817e8e1e30b5bcc63b3759495ddb10ea93f3aa6700243cf16698220e2147",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4FE5/interactions/fr3d/stacking/csv": {
+  "bytes": 6272,
+  "file": "bgsu/4FE5_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "173e540a167445941d80053030642a48f186432f95231f2a92246056b662019d",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4FEJ/interactions/fr3d/basepairs/csv": {
+  "bytes": 2514,
+  "file": "bgsu/4FEJ_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "a5d2c544157682776084708835615aa59f8d29565622605c252d29741dceac41",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4FEJ/interactions/fr3d/stacking/csv": {
+  "bytes": 6424,
+  "file": "bgsu/4FEJ_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "c39d78786b6ce181168dd288d7ae418732d597f42af70740839b38b40832ca41",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4FEL/interactions/fr3d/basepairs/csv": {
+  "bytes": 2514,
+  "file": "bgsu/4FEL_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "22259b07e2102e7579f1be31e6bffe98a9e5c3a4c857f1213af82104d3ff4060",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4FEL/interactions/fr3d/stacking/csv": {
+  "bytes": 6506,
+  "file": "bgsu/4FEL_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "ae09e77320d7340d87e3c8ff08686f24826f5fc0a3ba2b9ce5dfc5b53f668194",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4FEN/interactions/fr3d/basepairs/csv": {
+  "bytes": 2590,
+  "file": "bgsu/4FEN_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "385381ad8f10e011c8c02ec03d80f0cfe3ebee47151f45c83f5135e37d4c2ebf",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4FEN/interactions/fr3d/stacking/csv": {
+  "bytes": 6510,
+  "file": "bgsu/4FEN_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "9cf92cadee2c08d948635e7d5f8bda21748e170fb3e405fe3ba2c8c3a80d35c9",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4FEO/interactions/fr3d/basepairs/csv": {
+  "bytes": 2514,
+  "file": "bgsu/4FEO_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "16b5ac05baf5786eead2fa57b45e01a8d020ba7413ca26513a939d8f46ecbea6",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4FEO/interactions/fr3d/stacking/csv": {
+  "bytes": 6508,
+  "file": "bgsu/4FEO_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "e772ef2e702c60d38b9c6e4c76f89b1d9865713d618d2a0dce06d1bd27602119",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4FEP/interactions/fr3d/basepairs/csv": {
+  "bytes": 2590,
+  "file": "bgsu/4FEP_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "8987fbd3066bde1d89a264cfb5646eb400074e2b20004c7d97f12d3251b51c54",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4FEP/interactions/fr3d/stacking/csv": {
+  "bytes": 6510,
+  "file": "bgsu/4FEP_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "fca137dff340c1c45866611ccc5aa43c4454f1d7d226351a98ee83e18e4aa813",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4LX5/interactions/fr3d/basepairs/csv": {
+  "bytes": 2590,
+  "file": "bgsu/4LX5_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "5709dd9474fe2147d3d0f1e977940bbe7260592daadefaddc4b39ad38f9cfac3",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4LX5/interactions/fr3d/stacking/csv": {
+  "bytes": 6648,
+  "file": "bgsu/4LX5_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "bc3daeef5fb24cc23f7edaeaec21e6586bdfaa7a6693b67eab993acee52f45ea",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4LX6/interactions/fr3d/basepairs/csv": {
+  "bytes": 2590,
+  "file": "bgsu/4LX6_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "5e2a1c47a81ae0384283598b7ddbf4522e6d8df8668d6857c958fe6cfc358085",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4LX6/interactions/fr3d/stacking/csv": {
+  "bytes": 6644,
+  "file": "bgsu/4LX6_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "f386de1ba4ea7cbb25b344bd3eb8b7d77ce47ed19dd464f660cc52d76a64dbd8",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4TZX/interactions/fr3d/basepairs/csv": {
+  "bytes": 2590,
+  "file": "bgsu/4TZX_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "c838794b7b8bf3634a92c65d9874efe98f4748645e081b34765faf9ed2c3f3fa",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4TZX/interactions/fr3d/stacking/csv": {
+  "bytes": 6958,
+  "file": "bgsu/4TZX_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "48efc7a57dbd649869c30b17b5a5605f5140f74fab2e894ee1ba0eea87138dd5",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4TZY/interactions/fr3d/basepairs/csv": {
+  "bytes": 2666,
+  "file": "bgsu/4TZY_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "ccd28fe5a5ca32ea272d1cc26dc64843b88202f74a17fe330da1b1faf2321d03",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4TZY/interactions/fr3d/stacking/csv": {
+  "bytes": 7036,
+  "file": "bgsu/4TZY_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "cdb953ca7702e90c49037d351d4cddb6a144c01f41b98da5d9d745c9af63d7d5",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4XNR/interactions/fr3d/basepairs/csv": {
+  "bytes": 2590,
+  "file": "bgsu/4XNR_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "e983eab4bc6068112560052f71bc70a294af945efbb67dc24c5d287e955ec2fb",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4XNR/interactions/fr3d/stacking/csv": {
+  "bytes": 6958,
+  "file": "bgsu/4XNR_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "7f1a0fc7748550867692ae3333ac2c846d4297e6e21eee3b0a724fa2f63fcf7c",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/5C7U/interactions/fr3d/basepairs/csv": {
+  "bytes": 2362,
+  "file": "bgsu/5C7U_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "9f2a953664f4622a75f4a981679c0cbd7bc4b827c3bb25ed74bf948ab6997299",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/5C7U/interactions/fr3d/stacking/csv": {
+  "bytes": 6432,
+  "file": "bgsu/5C7U_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "2b05537d6bdc2c0103d6bf7f17fea4344577e51e123461dc13bddf3e80a8adae",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/5C7W/interactions/fr3d/basepairs/csv": {
+  "bytes": 2370,
+  "file": "bgsu/5C7W_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "81edb71ab880693b5d2b812038d3a0fa544e26989a46a672a057e8e85473b903",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/5C7W/interactions/fr3d/stacking/csv": {
+  "bytes": 6534,
+  "file": "bgsu/5C7W_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "19f11271d4339a906d42417d9f663283d8ef06e12d2df7270b91802e5ccf987d",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/5E54/interactions/fr3d/basepairs/csv": {
+  "bytes": 4560,
+  "file": "bgsu/5E54_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "b02d3b1025502c485d521bcd7a63bae08c978ef63f1901b0cd5f50f6b8c0994e",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/5E54/interactions/fr3d/stacking/csv": {
+  "bytes": 11876,
+  "file": "bgsu/5E54_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "99b9f3446388ad53f420f8548a6457b3c189a1a2967f8304d3d585e98805d3db",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/5SWD/interactions/fr3d/basepairs/csv": {
+  "bytes": 4502,
+  "file": "bgsu/5SWD_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "37ed2efe3035159e1e08ae6daba6c2bf5165ffebd039a149033c0c500b946766",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/5SWD/interactions/fr3d/stacking/csv": {
+  "bytes": 12612,
+  "file": "bgsu/5SWD_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "d162a0248c9d7c22482bfb44a3c0520b2ebedfc7aa6e6346cc34ad6326e13f06",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/5SWE/interactions/fr3d/basepairs/csv": {
+  "bytes": 2356,
+  "file": "bgsu/5SWE_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "e95682aa74e2b185792a315d5dbd30c6ff7c167d1bde182cd7cbf5a8dfc5c27d",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/5SWE/interactions/fr3d/stacking/csv": {
+  "bytes": 6960,
+  "file": "bgsu/5SWE_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "2a4d133e4bfe47feb467d9cf23f854fc5b08f202a869788d233b51eecc6ed27d",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/5UZA/interactions/fr3d/basepairs/csv": {
+  "bytes": 2594,
+  "file": "bgsu/5UZA_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "ceaba2843ee81157ed5c715857cce46700f55f049a85767ca2123e0b42a07b9e",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/5UZA/interactions/fr3d/stacking/csv": {
+  "bytes": 6892,
+  "file": "bgsu/5UZA_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "6934f9d855d1d1846842b529185786026eafa76ee58945697af64d40b9c73016",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/6P2H/interactions/fr3d/basepairs/csv": {
+  "bytes": 2524,
+  "file": "bgsu/6P2H_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "12be27a31a2083563f004b19934d884cd3d9a4689af1ef67d71f339902a18171",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/6P2H/interactions/fr3d/stacking/csv": {
+  "bytes": 6658,
+  "file": "bgsu/6P2H_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "b327f38cf45e6e5ffd85faf97cc76c83ea85cd8821f33557e843937d4b476127",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/6UBU/interactions/fr3d/basepairs/csv": {
+  "bytes": 2590,
+  "file": "bgsu/6UBU_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "4bf45b14315493a26c8a26e6ac8e8d83b03c5a1b12f526b5b26bfc2764d926e3",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/6UBU/interactions/fr3d/stacking/csv": {
+  "bytes": 6350,
+  "file": "bgsu/6UBU_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "5e990bdcec0f9ba629048499d160398376a1adac37a08bf04bf73ea21fc3fed3",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/6UC7/interactions/fr3d/basepairs/csv": {
+  "bytes": 2432,
+  "file": "bgsu/6UC7_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "071565c7367c960139b986cb20c6c2fe59cc0495a17304d57b5f1dad97c62588",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/6UC7/interactions/fr3d/stacking/csv": {
+  "bytes": 6510,
+  "file": "bgsu/6UC7_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "f566fef55fd88657dbe86e88bacd1536d608b93203edee596518d811828bf506",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/6UC8/interactions/fr3d/basepairs/csv": {
+  "bytes": 2514,
+  "file": "bgsu/6UC8_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "3adefb65d8693767526327fb43898931b1cafb262eb93913d79896d9acfc310a",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/6UC8/interactions/fr3d/stacking/csv": {
+  "bytes": 6276,
+  "file": "bgsu/6UC8_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "05e9d13d6aabe01b06376ae098b915a844652150dc6a22641920d079b7e15d97",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/6UC9/interactions/fr3d/basepairs/csv": {
+  "bytes": 2508,
+  "file": "bgsu/6UC9_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "674aafec0cd1573a5eddb52422273ffc2c1117b10a6f27bbe604ce7789158bc7",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/6UC9/interactions/fr3d/stacking/csv": {
+  "bytes": 6426,
+  "file": "bgsu/6UC9_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "2089a9aabc39cf37b827d4c2ded79deda9785cf10a77ed35f9f75036eb4d2a3b",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/6VWT/interactions/fr3d/basepairs/csv": {
+  "bytes": 5180,
+  "file": "bgsu/6VWT_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "0e6f139a4cb99b31f26ee9fc5cb4fd272395397bd5239279de3d0d945e104cd8",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/6VWT/interactions/fr3d/stacking/csv": {
+  "bytes": 13776,
+  "file": "bgsu/6VWT_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "3f029bb88657a561e1197a433b7718f35461beb79dea3e7687a6458fbd5a3de3",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/6VWV/interactions/fr3d/basepairs/csv": {
+  "bytes": 5028,
+  "file": "bgsu/6VWV_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "03a66b8389df96d6a4818f22d0a9f27ac24964eb9403ecbe06188afe1e7a09ca",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/6VWV/interactions/fr3d/stacking/csv": {
+  "bytes": 14078,
+  "file": "bgsu/6VWV_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "eb6c0c5f4372e8235dda99a9aba7849dc53592b21a09699560bcc7000dcf6b9d",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9IWF/interactions/fr3d/basepairs/csv": {
+  "bytes": 5008,
+  "file": "bgsu/9IWF_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "ae60458a65658c73b0c6ce563a83cecf495809002d7abf342c64c6df3053db01",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9IWF/interactions/fr3d/stacking/csv": {
+  "bytes": 13170,
+  "file": "bgsu/9IWF_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "613da9e157baf362064ed3d3da2c7a99fbb9117acb474bca2cf0dc8e6069d03f",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9IWG/interactions/fr3d/basepairs/csv": {
+  "bytes": 4780,
+  "file": "bgsu/9IWG_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "4612b0579b7babeb903e2e86a26933f7a4fc4985efc1c2ebd2f6e5a2cccd00c0",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9IWG/interactions/fr3d/stacking/csv": {
+  "bytes": 13028,
+  "file": "bgsu/9IWG_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "76e40c0e24c8c037f6af52103f1a0a4c740cad20a429af70cffc3fa1560213bd",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9LJN/interactions/fr3d/basepairs/csv": {
+  "bytes": 2346,
+  "file": "bgsu/9LJN_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "15a374c9361ce7dd749ac6f1e917d93ff8349781ee328fa885fbdea64bd888d3",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9LJN/interactions/fr3d/stacking/csv": {
+  "bytes": 6614,
+  "file": "bgsu/9LJN_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "d9fd942a2b96b5eaab90252da98c74b0b42290fae7e2cc966283cbee18b2085d",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9LKC/interactions/fr3d/basepairs/csv": {
+  "bytes": 2194,
+  "file": "bgsu/9LKC_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "feae06300d7352238d6464c4f334828d4b13ba5cacdb081d97f239d418357d53",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9LKC/interactions/fr3d/stacking/csv": {
+  "bytes": 6764,
+  "file": "bgsu/9LKC_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "9c734ccb4655c9382837130582fa1152c776da4e4290233c60b7704d4bf80444",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9LKE/interactions/fr3d/basepairs/csv": {
+  "bytes": 2498,
+  "file": "bgsu/9LKE_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "c3cf9e6d9dbf3090bec1802bb3b6d1e1b7b7cf6a5b3c71f71c9a2352efdf4b42",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9LKE/interactions/fr3d/stacking/csv": {
+  "bytes": 6852,
+  "file": "bgsu/9LKE_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "07d4476c385f7e71cb02870463259f0690649da5779d991db61f7222c351e7df",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9LKF/interactions/fr3d/basepairs/csv": {
+  "bytes": 2346,
+  "file": "bgsu/9LKF_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "78e45205dfee538cdba1707b5785c3ad3fe74799d8b2e80a351ce7c6ec7fbce0",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9LKF/interactions/fr3d/stacking/csv": {
+  "bytes": 6682,
+  "file": "bgsu/9LKF_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "c71d751baf4780ed7c450713f9295a3637f2dfd27753d0721fee2a8410b89f23",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9LMC/interactions/fr3d/basepairs/csv": {
+  "bytes": 3712,
+  "file": "bgsu/9LMC_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "24686cb76a56890991a029c9e77ba4f4d32de7dada017d6246cbc1c136035376",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9LMC/interactions/fr3d/stacking/csv": {
+  "bytes": 13312,
+  "file": "bgsu/9LMC_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "ce1884ba9f2f26e9bc548ee8d65ce957928d8414f3a4bb96d8cd1e872723f033",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9NBC/interactions/fr3d/basepairs/csv": {
+  "bytes": 1526,
+  "file": "bgsu/9NBC_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "9fef2cda56ca9d5167fc4a9490d816b37f4d4a1a3033db82b5a69b78a8278a6e",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9NBC/interactions/fr3d/stacking/csv": {
+  "bytes": 5506,
+  "file": "bgsu/9NBC_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "1ce6d54e23c6868e71c6c1fef97fb4dd64288570384942ed9937be9a055e1a87",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9NBH/interactions/fr3d/basepairs/csv": {
+  "bytes": 13024,
+  "file": "bgsu/9NBH_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "7ecfbba6de6d62cd26edc8dfee6653c61abc5f127ec552400ba2549052e23e3a",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9NBH/interactions/fr3d/stacking/csv": {
+  "bytes": 37884,
+  "file": "bgsu/9NBH_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "c9b713f75b3092893e4ff5941a3e0a3d8e89d45e02cd36cefdc715961ebe56a4",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/interactions/fr3d/basepairs/csv": {
+  "bytes": 20992,
+  "file": "bgsu/9NDD_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "fd7f8ff6e4c6a649d51de778c922ac6a56b068e8a7ca34fe9edb17527e3d2d62",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/interactions/fr3d/stacking/csv": {
+  "bytes": 65098,
+  "file": "bgsu/9NDD_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "c4e0d9d9f109e90a5b737beba2b613f652a1ffd530c302e817bb42527e177b0d",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9V4U/interactions/fr3d/basepairs/csv": {
+  "bytes": 2270,
+  "file": "bgsu/9V4U_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "0f9023d5d2495dfb03f079e213af746c1ffaef5e32e893bd11b07d8994f6684a",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9V4U/interactions/fr3d/stacking/csv": {
+  "bytes": 6528,
+  "file": "bgsu/9V4U_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "f1c9cfa9de74befa626fa8165f39fd656d07947d816b6c7ec18dfe4b1a160706",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9V4V/interactions/fr3d/basepairs/csv": {
+  "bytes": 2118,
+  "file": "bgsu/9V4V_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "1861644acbcee8e54a6a582157570af3daa48270f0788161fb4872d90bc6b94d",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9V4V/interactions/fr3d/stacking/csv": {
+  "bytes": 6456,
+  "file": "bgsu/9V4V_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "291f8c2c80f470a3a5b317d8bf3496ba6782920f4e9ff04fff864572d03f3834",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9V4X/interactions/fr3d/basepairs/csv": {
+  "bytes": 2044,
+  "file": "bgsu/9V4X_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "6ec5de5ea9220b1f04fa49412435a4274d036de45bb8661ebd5f5fd7930ee442",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9V4X/interactions/fr3d/stacking/csv": {
+  "bytes": 6532,
+  "file": "bgsu/9V4X_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "73a3f628739cfe09a72e21163351e38b0db7750ebf1f582f7f35e332e542bd6f",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9V4Y/interactions/fr3d/basepairs/csv": {
+  "bytes": 2194,
+  "file": "bgsu/9V4Y_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "f65ec21d0bd8c4d6bb91fd8faab342098fdec350fa21449ba1b91f69ae65d16f",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9V4Y/interactions/fr3d/stacking/csv": {
+  "bytes": 6854,
+  "file": "bgsu/9V4Y_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "430c2c96932e098c1e767a72441ecb57b6290fcc059d39152d9b0fe032ee41f3",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9V4Z/interactions/fr3d/basepairs/csv": {
+  "bytes": 2194,
+  "file": "bgsu/9V4Z_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "93517d7154d5b67aac98696675576b6251c57170868907b07aeb3bd3f62f95ff",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9V4Z/interactions/fr3d/stacking/csv": {
+  "bytes": 6614,
+  "file": "bgsu/9V4Z_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "472eb3981cdca875f8f58d18979f1ae99722212d10c3e6301657ec1be70465ba",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9V50/interactions/fr3d/basepairs/csv": {
+  "bytes": 1442,
+  "file": "bgsu/9V50_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "488fa76bcfaeb9313d5ae757f90eb07f808f506ad8e8f28ba448b3851ddc6950",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9V50/interactions/fr3d/stacking/csv": {
+  "bytes": 6330,
+  "file": "bgsu/9V50_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "8635d3dd31c853d90c8ee4e95c7a7d870d5987a2523aee1ca43e35a7781ccc43",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9V51/interactions/fr3d/basepairs/csv": {
+  "bytes": 2046,
+  "file": "bgsu/9V51_basepairs.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "8177d2dbf88ba4d7c49fad8106d0a21de8b095dd8f2ad49ea2a1e551f7ab5da9",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9V51/interactions/fr3d/stacking/csv": {
+  "bytes": 6386,
+  "file": "bgsu/9V51_stacking.csv.gz",
+  "retrieved": "2026-10-18",
+  "sha256": "df3fc1559c35be006dd18d54bdb84c283cd88ffb8addc1a1bc2226fe06004a72",
+  "status": 200
+ },
+ "_comment": "Copied (read-only source) from the research worktree aggregated_secondary_structure_investigation/raw/PROVENANCE.json on 2026-10-19; seeds the interactions command cache. Base-ribose and base-phosphate files fetched from BGSU on 2026-10-19 by this repository (rna_explorer interactions).",
+ "https://rna.bgsu.edu/rna3dhub/pdb/1Y26/interactions/fr3d/baseribose/csv": {
+  "bytes": 1206,
+  "file": "bgsu/1Y26_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "be2c0184afb84844910493568dc9f49e1f1fa7c8f40074fd2f6f76059ece9de4",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/1Y27/interactions/fr3d/baseribose/csv": {
+  "bytes": 928,
+  "file": "bgsu/1Y27_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "fbdc0b621516962eb6e2792018d6cdb3093ca10801188378c98b684b34fba72f",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2B57/interactions/fr3d/baseribose/csv": {
+  "bytes": 1086,
+  "file": "bgsu/2B57_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "f1d80adc1ae38cd30b2c71898832653a1fb355822a5b4fbdf1509d28999250b1",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2EES/interactions/fr3d/baseribose/csv": {
+  "bytes": 850,
+  "file": "bgsu/2EES_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "ef027ef18a2d15a5913bfca57ae7608c62b4f465d4db0fe74f2e2b243d4109f9",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2EET/interactions/fr3d/baseribose/csv": {
+  "bytes": 1046,
+  "file": "bgsu/2EET_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "47337c3424673f2854d8cfa851a0fcec810d1e764b03b3ac366430daee577222",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2EEU/interactions/fr3d/baseribose/csv": {
+  "bytes": 851,
+  "file": "bgsu/2EEU_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "d0dfce26e752abbfe42938c565ffd0c9a33ab60d881f1d17f1ed6b847a99511a",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2EEV/interactions/fr3d/baseribose/csv": {
+  "bytes": 1085,
+  "file": "bgsu/2EEV_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "c7d4351f49e1a6f57a454fe870459a60dbb2f00c67cc09c273a65fd693afaace",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2EEW/interactions/fr3d/baseribose/csv": {
+  "bytes": 1087,
+  "file": "bgsu/2EEW_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "5d363da0e1160c7a444a919e30cc438f47d59b482b0e906e3adb084acf3a101a",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2G9C/interactions/fr3d/baseribose/csv": {
+  "bytes": 733,
+  "file": "bgsu/2G9C_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "6eade9ca5d055ec3492539d6c10ab4b6fab8474baf8d9acc4cad48a6327a464a",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2XNW/interactions/fr3d/baseribose/csv": {
+  "bytes": 733,
+  "file": "bgsu/2XNW_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "b09127df20bc4d74662936f8556eb62f41452ca5596afb8d83b0bd57880c1beb",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2XNZ/interactions/fr3d/baseribose/csv": {
+  "bytes": 656,
+  "file": "bgsu/2XNZ_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "c3bd08cecad38fea538db219a06b6fd61ef76b4e5d3effe1fbddceda5f91262a",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2XO0/interactions/fr3d/baseribose/csv": {
+  "bytes": 773,
+  "file": "bgsu/2XO0_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "c8c3b62a504a4c81ebd555792fbe9a0be192b78c71c067023af023c24e801b9b",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2XO1/interactions/fr3d/baseribose/csv": {
+  "bytes": 891,
+  "file": "bgsu/2XO1_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "32404bc11852703fa3cff479b65262d6f95c9bb3fa8c40ed03065cdae4c9187e",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3DS7/interactions/fr3d/baseribose/csv": {
+  "bytes": 1595,
+  "file": "bgsu/3DS7_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "8d622a01d989f665d1981ac18946ab14ffa70e257b10d0df7694c87a152289cc",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3FO4/interactions/fr3d/baseribose/csv": {
+  "bytes": 850,
+  "file": "bgsu/3FO4_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "ae6541b86bf4422a499eae4801576bdf9d2be77708b58aea319919dd5a1d5fe4",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3FO6/interactions/fr3d/baseribose/csv": {
+  "bytes": 888,
+  "file": "bgsu/3FO6_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "2bd60760eeea4ce4f302b5414c7b908a2ca14017921fa833a3a040728c086cd3",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3G4M/interactions/fr3d/baseribose/csv": {
+  "bytes": 1046,
+  "file": "bgsu/3G4M_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "47627c61b4b5d279ddabecbb0223b5f50252084d734847148eab8eba3331a5db",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3GAO/interactions/fr3d/baseribose/csv": {
+  "bytes": 1046,
+  "file": "bgsu/3GAO_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "5d4ba30aa80229fa4c2d4ea45673ff77059af063e532e2681fa3f68b255a2971",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3GER/interactions/fr3d/baseribose/csv": {
+  "bytes": 967,
+  "file": "bgsu/3GER_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "7905e87e0269fd9c8e47841707098dfaf6281fcac13bb5ec17d6181f4637231e",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3GES/interactions/fr3d/baseribose/csv": {
+  "bytes": 929,
+  "file": "bgsu/3GES_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "a85351a18282f9ae09f861be1bb3211a0ab2cc55c05c8acdfb11245c9138009a",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3GOG/interactions/fr3d/baseribose/csv": {
+  "bytes": 1163,
+  "file": "bgsu/3GOG_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "2d5db84923284f103082e4d5c60621792fcccefee2e5702522ad79d550e2ec85",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3GOT/interactions/fr3d/baseribose/csv": {
+  "bytes": 970,
+  "file": "bgsu/3GOT_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "6522d9309054c32b7bf933f36d5f302b253b5daca8c8fcfd958b42f334acce30",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3IVN/interactions/fr3d/baseribose/csv": {
+  "bytes": 1860,
+  "file": "bgsu/3IVN_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "670bba3759719880da6c332a4f191984eda8764ae43f12bfde54e8d951c25faa",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3LA5/interactions/fr3d/baseribose/csv": {
+  "bytes": 735,
+  "file": "bgsu/3LA5_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "5d2ba62069e6170f1e1be8009c4b7f494b90e787f65f374123b17899dc2c751b",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3RKF/interactions/fr3d/baseribose/csv": {
+  "bytes": 5279,
+  "file": "bgsu/3RKF_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "69d568e8d8dc162ae9fbfdd79df4490706f3fbc7fe360565bb863cba00aa99bb",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4FE5/interactions/fr3d/baseribose/csv": {
+  "bytes": 1008,
+  "file": "bgsu/4FE5_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "04515fed4dc78bbdb16443df62d1f705feede39e1da552c4efdd0f86e196a3f3",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4FEJ/interactions/fr3d/baseribose/csv": {
+  "bytes": 774,
+  "file": "bgsu/4FEJ_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "bb7e6a408dc7df8a2a54b2f37506f87bc007b1c7b9e2ad5d8ed2990c2f23a894",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4FEL/interactions/fr3d/baseribose/csv": {
+  "bytes": 852,
+  "file": "bgsu/4FEL_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "dcdcd0e7fc4bfff9e31a00d0d524c89a0b81552f84395d9c4d51d82de2297127",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4FEN/interactions/fr3d/baseribose/csv": {
+  "bytes": 928,
+  "file": "bgsu/4FEN_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "d97ab9bcb6980171152d753271c2c40dd2260665b918226127a350e3915fd846",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4FEO/interactions/fr3d/baseribose/csv": {
+  "bytes": 932,
+  "file": "bgsu/4FEO_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "cd15756e68c2add990db49afe044a052c61ee41cd4f62fc0c06b29778cfe301b",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4FEP/interactions/fr3d/baseribose/csv": {
+  "bytes": 931,
+  "file": "bgsu/4FEP_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "a733aa48849e6e77cfa76de8516b68a014ddf48f285077dee8cd6d26ac6fdb1f",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4LX5/interactions/fr3d/baseribose/csv": {
+  "bytes": 930,
+  "file": "bgsu/4LX5_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "0f555350c7ba282a2206e44fc186c643f77938bd95b9ceadb2312e653624b078",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4LX6/interactions/fr3d/baseribose/csv": {
+  "bytes": 890,
+  "file": "bgsu/4LX6_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "0bd71050f04ba2c1a3399ddadb87e48362a686dd84951930a016cdbd4e1f20ff",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4TZX/interactions/fr3d/baseribose/csv": {
+  "bytes": 975,
+  "file": "bgsu/4TZX_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "40116d13bdd6656993fdc17ae835b03a004a71b8b776f5fadc451cf5cb421e9e",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4TZY/interactions/fr3d/baseribose/csv": {
+  "bytes": 1283,
+  "file": "bgsu/4TZY_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "411f21e35eabf39d40df85f3aec1956f2db73a947625a130c474dbf67f035ff2",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4XNR/interactions/fr3d/baseribose/csv": {
+  "bytes": 1052,
+  "file": "bgsu/4XNR_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "bf40a368fb77ce4c0b936c50db4a6de535847c67c6853154f540de9cc57f0466",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/5C7U/interactions/fr3d/baseribose/csv": {
+  "bytes": 1204,
+  "file": "bgsu/5C7U_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "5c5b3ecee7712a97736f83551cc61f67b71d2fb05d237f41b7cf0f43b08db0f7",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/5C7W/interactions/fr3d/baseribose/csv": {
+  "bytes": 1013,
+  "file": "bgsu/5C7W_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "a89faf100efb038c3ce9ab9cd5760658da746c6e7626f75aaab703d9dd5e31d3",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/5E54/interactions/fr3d/baseribose/csv": {
+  "bytes": 1318,
+  "file": "bgsu/5E54_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "4ca5cf3a244f8d8de655b44ad4d1a1e1c21f31c6ec24d7e528ad0b30abc56176",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/5SWD/interactions/fr3d/baseribose/csv": {
+  "bytes": 1810,
+  "file": "bgsu/5SWD_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "6efa4793845e57832332886de19ed1024421db2dd247e9dff4e3a2f55e5b2242",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/5SWE/interactions/fr3d/baseribose/csv": {
+  "bytes": 1520,
+  "file": "bgsu/5SWE_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "88353c0d4d5aa916d2f616897085a84c5c6b8085ca8022b3203e1c829c9ea0ae",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/5UZA/interactions/fr3d/baseribose/csv": {
+  "bytes": 896,
+  "file": "bgsu/5UZA_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "b2b65c34d9fc8a80626fa332b1a52afd59fdb4289a1032da4947186d78b7e711",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/6P2H/interactions/fr3d/baseribose/csv": {
+  "bytes": 1327,
+  "file": "bgsu/6P2H_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "85fcafe9c447b308d56a94e9c5537fcc0c683c4c183c835d691311f3041c1a0d",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/6UBU/interactions/fr3d/baseribose/csv": {
+  "bytes": 970,
+  "file": "bgsu/6UBU_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "5197bb67a7e1a9c7b6685160c96176c0429b8b153cb60a3ae38d025427d821b9",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/6UC7/interactions/fr3d/baseribose/csv": {
+  "bytes": 966,
+  "file": "bgsu/6UC7_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "1ce6e9fd9a76c548740981a25e5c8a7cebbb510a7e82a41f2d2ec9aed518f20a",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/6UC8/interactions/fr3d/baseribose/csv": {
+  "bytes": 1049,
+  "file": "bgsu/6UC8_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "e106f8e1637686ebe9842859a2439b5d0e1e707877096d131d1b34034700cc64",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/6UC9/interactions/fr3d/baseribose/csv": {
+  "bytes": 1007,
+  "file": "bgsu/6UC9_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "043b7bf37c14903354c92fefe7f98627e02d886b049f8924975d592270b891d3",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/6VWT/interactions/fr3d/baseribose/csv": {
+  "bytes": 3274,
+  "file": "bgsu/6VWT_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "aee30879d8309ccf1441c388d2353d1aa9b09b7084decfb71950da4e7a46c1cb",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/6VWV/interactions/fr3d/baseribose/csv": {
+  "bytes": 2180,
+  "file": "bgsu/6VWV_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "983848817f33bb07dd76c91174adcaf5ece8f146371ccb941d09ae1c9d71bcd4",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9IWF/interactions/fr3d/baseribose/csv": {
+  "bytes": 1970,
+  "file": "bgsu/9IWF_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "94a02e49544e2c4bdcf7bcabb7a74df6131dc5744dea44c74685dbad8a9807c0",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9IWG/interactions/fr3d/baseribose/csv": {
+  "bytes": 1813,
+  "file": "bgsu/9IWG_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "e9d44a72b3850d7553e3fe5124f8109619dc341a9ad7c10341a8bdda7f8ea9e0",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9LJN/interactions/fr3d/baseribose/csv": {
+  "bytes": 1193,
+  "file": "bgsu/9LJN_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "a855ea8211562374a055055ccd87c4aa38fa5dc06af1a52e2a7bf2f2242edd38",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9LKC/interactions/fr3d/baseribose/csv": {
+  "bytes": 1281,
+  "file": "bgsu/9LKC_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "005d2cfceaecda7f173a293500627bcbf122421ff5c64ecc4abf12ffe47d4c77",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9LKE/interactions/fr3d/baseribose/csv": {
+  "bytes": 928,
+  "file": "bgsu/9LKE_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "a10bc69f35d331bb52ec0e5d7a1af759ebdecd37f029fa57c27859b576b81d72",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9LKF/interactions/fr3d/baseribose/csv": {
+  "bytes": 1243,
+  "file": "bgsu/9LKF_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "aa3a00ceb9802b63391f68579bb39123804d6aa741ee05ad91d488bd21fbb8c7",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9LMC/interactions/fr3d/baseribose/csv": {
+  "bytes": 2004,
+  "file": "bgsu/9LMC_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "35c340585571f169cabb5559551f934b4cb5c2c96a92d80023fe7fbf06a61573",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9NBC/interactions/fr3d/baseribose/csv": {
+  "bytes": 1009,
+  "file": "bgsu/9NBC_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "ea7409463fa420ddb23facd55c0ef3a4b18f87b6b1aa5465c158fcacdf67260f",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9NBH/interactions/fr3d/baseribose/csv": {
+  "bytes": 6697,
+  "file": "bgsu/9NBH_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "77d7cc638620dff280785faa31ce23b5e31552b84e47da37baa56a24c3492950",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/interactions/fr3d/baseribose/csv": {
+  "bytes": 10601,
+  "file": "bgsu/9NDD_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "f5b117dcc63ae55909cdb16346d6610433b02111c3e46aa854b27918070531e4",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9V4U/interactions/fr3d/baseribose/csv": {
+  "bytes": 1006,
+  "file": "bgsu/9V4U_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "70a52137cd9afe63640ba2fe6caa524f1a2ab9c06fd265cce669798fe2f18d6a",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9V4V/interactions/fr3d/baseribose/csv": {
+  "bytes": 1152,
+  "file": "bgsu/9V4V_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "9979accc4edf48b7b22ec2fd16164671959ca1215f4c339241832076320ef78f",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9V4X/interactions/fr3d/baseribose/csv": {
+  "bytes": 961,
+  "file": "bgsu/9V4X_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "e3108d065704716bb9a554f7858470f366de2dc7cf66de50109854ad1bc9f69b",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9V4Y/interactions/fr3d/baseribose/csv": {
+  "bytes": 1001,
+  "file": "bgsu/9V4Y_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "f7b0794a626b7ecf03c912762f093bba7a6d6a55a604a6bbe6b10cf9a9ecd86b",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9V4Z/interactions/fr3d/baseribose/csv": {
+  "bytes": 1159,
+  "file": "bgsu/9V4Z_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "7632cc7fc2bbbaab9ae8d0660c30378333cbae83bb5a5278c8bab237e46a6b3f",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9V50/interactions/fr3d/baseribose/csv": {
+  "bytes": 968,
+  "file": "bgsu/9V50_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "683ae672f4dd0799334353cc70bf0f949e0e040a9df41044ec71b7ae929da34a",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9V51/interactions/fr3d/baseribose/csv": {
+  "bytes": 1515,
+  "file": "bgsu/9V51_baseribose.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "8e7aa755a95408de7e4e3bacd2015a0d2128e0c23e07f38e2a84eb3c3d815710",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/1Y26/interactions/fr3d/basephosphate/csv": {
+  "bytes": 157,
+  "file": "bgsu/1Y26_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "6fed8f6adc878f07d0bf78a6c78758a12c50bfd5e58fc337a7dd62e9ad26048d",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/1Y27/interactions/fr3d/basephosphate/csv": {
+  "bytes": 235,
+  "file": "bgsu/1Y27_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "32321abf0a59f536dec8f69eb24d0edc38e382dbce63cccdb749778f992f0c8a",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2B57/interactions/fr3d/basephosphate/csv": {
+  "bytes": 236,
+  "file": "bgsu/2B57_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "e063d839c595b6ddbe6676e8df19b5a37d98c835d3a116698714477b64cccf3a",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2EES/interactions/fr3d/basephosphate/csv": {
+  "bytes": 235,
+  "file": "bgsu/2EES_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "83d96f6d2df7ea4ebb6a31c77e28bdb74676a414d6cdc9cc8cfd81f9a78d16e7",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2EET/interactions/fr3d/basephosphate/csv": {
+  "bytes": 274,
+  "file": "bgsu/2EET_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "91100f8756269bec747079814487061ad52fbdaa625ccf637d8ed45b5a7f2435",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2EEU/interactions/fr3d/basephosphate/csv": {
+  "bytes": 236,
+  "file": "bgsu/2EEU_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "d5271ab4f49b781cf0d450cd294a4585555fb38e86af15cbbf1c281163e7790d",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2EEV/interactions/fr3d/basephosphate/csv": {
+  "bytes": 276,
+  "file": "bgsu/2EEV_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "6129b3f810ac6afa43aed70ecc9be4765c8ec627c68569bba25f169e32851705",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2EEW/interactions/fr3d/basephosphate/csv": {
+  "bytes": 195,
+  "file": "bgsu/2EEW_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "963ba0751ac494784553950e3ba77cac26f9336f46510e921c47396eabc296c7",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2G9C/interactions/fr3d/basephosphate/csv": {
+  "bytes": 236,
+  "file": "bgsu/2G9C_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "bfb3b83db1104d0c3d1c5725dbd92f9039c23b24a202e64bb7a9bfc641b3edf8",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2XNW/interactions/fr3d/basephosphate/csv": {
+  "bytes": 275,
+  "file": "bgsu/2XNW_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "c7351684f3156dea4fe4c1ce28bec35a49ee02d01768405304b3525ac9ca4ac0",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2XNZ/interactions/fr3d/basephosphate/csv": {
+  "bytes": 234,
+  "file": "bgsu/2XNZ_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "4bc56a721a17390bb124b0790ca8594325fbab399b07ac16384420da9947c8db",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2XO0/interactions/fr3d/basephosphate/csv": {
+  "bytes": 235,
+  "file": "bgsu/2XO0_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "c89eaaab5d15ee0e199fa7f9e62c7b3152064e31416bb1b3cc240ba17e967730",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/2XO1/interactions/fr3d/basephosphate/csv": {
+  "bytes": 234,
+  "file": "bgsu/2XO1_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "ad7fe3e814838e489f50612d210ac1d31f2aaa5ab10f7287a21d0c4d845294ec",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3DS7/interactions/fr3d/basephosphate/csv": {
+  "bytes": 486,
+  "file": "bgsu/3DS7_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "0114098870be59be562971555ec6d5c61281e3aeb0edc789cd33a6233fa8dca5",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3FO4/interactions/fr3d/basephosphate/csv": {
+  "bytes": 235,
+  "file": "bgsu/3FO4_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "b95191aab5bb5bdb291e28e5c80cbf8487793152a354527effd6787ff5fb693d",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3FO6/interactions/fr3d/basephosphate/csv": {
+  "bytes": 276,
+  "file": "bgsu/3FO6_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "84a482839309bca3a8629b5aeb4eeb3fd37f78180a6d475216ecf60157a3b718",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3G4M/interactions/fr3d/basephosphate/csv": {
+  "bytes": 276,
+  "file": "bgsu/3G4M_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "067ecb84aca1bf49fc70602e21cf7c6676cab7761504e4eb6fa2c3e507b45f30",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3GAO/interactions/fr3d/basephosphate/csv": {
+  "bytes": 234,
+  "file": "bgsu/3GAO_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "ac85b77d98cfb21fc03e9389ded3a2a47f79700afad925c34c08a223d3518113",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3GER/interactions/fr3d/basephosphate/csv": {
+  "bytes": 235,
+  "file": "bgsu/3GER_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "39e631667b1b872f8e775a21a95e50ccbf91ce602953aba088853d0b308cc3db",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3GES/interactions/fr3d/basephosphate/csv": {
+  "bytes": 237,
+  "file": "bgsu/3GES_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "e40080d0b5aff94f489a431d5ce84ece9baba1ac606ce82ae7ce5220a13ef082",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3GOG/interactions/fr3d/basephosphate/csv": {
+  "bytes": 275,
+  "file": "bgsu/3GOG_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "d00376a81ef54d5f9672fb2fabb74dc5ef1c54176f023f71f21233c1d79ab3d7",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3GOT/interactions/fr3d/basephosphate/csv": {
+  "bytes": 235,
+  "file": "bgsu/3GOT_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "8d5da9f6390ff166037e7854280b8974853dc974b7227f8ca890d282bbf2456c",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3IVN/interactions/fr3d/basephosphate/csv": {
+  "bytes": 432,
+  "file": "bgsu/3IVN_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "711fd3aaa3dec7151722ed6a5547e144959472d0034ad4d289df04bdd6c8fb51",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3LA5/interactions/fr3d/basephosphate/csv": {
+  "bytes": 196,
+  "file": "bgsu/3LA5_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "abbfa02f8848ed96b23de13a41fcac5e610b3d595857b1bf160b4b8d4248eaf7",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/3RKF/interactions/fr3d/basephosphate/csv": {
+  "bytes": 1148,
+  "file": "bgsu/3RKF_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "500a1f1a3d8d6089789716fcbe3ab53785f254a46b43257dbd92e3da70fe687d",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4FE5/interactions/fr3d/basephosphate/csv": {
+  "bytes": 235,
+  "file": "bgsu/4FE5_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "e94ff0e875f379ed481c477756bbb8d02af3f17582c26a3e645c33f111f91ae0",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4FEJ/interactions/fr3d/basephosphate/csv": {
+  "bytes": 235,
+  "file": "bgsu/4FEJ_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "17624951201b3460996bce34ea014ccd9eab7a0762f8ca47df5763906d771c36",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4FEL/interactions/fr3d/basephosphate/csv": {
+  "bytes": 235,
+  "file": "bgsu/4FEL_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "27cf290deb212ab5a7e0f14529da7bc9d87d1138a4d1bdca2166a4ebaff08746",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4FEN/interactions/fr3d/basephosphate/csv": {
+  "bytes": 235,
+  "file": "bgsu/4FEN_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "50ad476913635269e8c3daf1ba2fffd528bbfc097dac8d19b8a8c82f78f27253",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4FEO/interactions/fr3d/basephosphate/csv": {
+  "bytes": 235,
+  "file": "bgsu/4FEO_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "b253455d5cf0a6be1b6b9bf610a9c8a7efdcda3ccce9db5a5275e2b05a031c25",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4FEP/interactions/fr3d/basephosphate/csv": {
+  "bytes": 236,
+  "file": "bgsu/4FEP_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "0ac0ca610e4eed8d354254f963f28ebb3b182fcb54f278c138cc385c493a33bb",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4LX5/interactions/fr3d/basephosphate/csv": {
+  "bytes": 197,
+  "file": "bgsu/4LX5_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "d32e53eda47ed979e7b2e4b6fb99f31a43ea8e884b2a28d74fa8ad2d8cf0f556",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4LX6/interactions/fr3d/basephosphate/csv": {
+  "bytes": 236,
+  "file": "bgsu/4LX6_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "6cf3c683a6078cbfa8dc2e94b94295209b52492ccf70f5ffeb1061e854125c7e",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4TZX/interactions/fr3d/basephosphate/csv": {
+  "bytes": 157,
+  "file": "bgsu/4TZX_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "ebb1eb4fa5d85104307367e56095a5745c02cfd542a42b26476ac510709d1a67",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4TZY/interactions/fr3d/basephosphate/csv": {
+  "bytes": 157,
+  "file": "bgsu/4TZY_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "e15663bd50a9f9d0715ce0610916ff2da6e371e33ce9b6ca040a0cf1133f9387",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/4XNR/interactions/fr3d/basephosphate/csv": {
+  "bytes": 197,
+  "file": "bgsu/4XNR_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "a630cc3bcd83d8a98747e602ef93e9df9d6cef9f62e34ea39f4adb5d12c1c506",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/5C7U/interactions/fr3d/basephosphate/csv": {
+  "bytes": 197,
+  "file": "bgsu/5C7U_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "3927beb90dce7f685a2c7ae12ee340a11a0b85d1721fdaf22eef4b2b2c3dfa36",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/5C7W/interactions/fr3d/basephosphate/csv": {
+  "bytes": 196,
+  "file": "bgsu/5C7W_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "c1419cf4b79169366e2a1705c438c47255722780ba6d1edceafb868e1a5b74b1",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/5E54/interactions/fr3d/basephosphate/csv": {
+  "bytes": 511,
+  "file": "bgsu/5E54_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "8830a1e344cb0436f61d12e6a2453712f74909924278ff730c199bcea7d3d938",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/5SWD/interactions/fr3d/basephosphate/csv": {
+  "bytes": 605,
+  "file": "bgsu/5SWD_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "d7d93ff679e42dd55b8aa02998ef938d01b11be0c13d18c2c690016c02194afa",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/5SWE/interactions/fr3d/basephosphate/csv": {
+  "bytes": 158,
+  "file": "bgsu/5SWE_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "7f2ff4ed39425fe9f8e84eb00c9314e9f1798d972a85767d4d74b267df33ab38",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/5UZA/interactions/fr3d/basephosphate/csv": {
+  "bytes": 237,
+  "file": "bgsu/5UZA_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "11849a62ba1ded9cc32d7840a1cbcd278f580f3e03d84ce4c397860fdcfa6dc8",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/6P2H/interactions/fr3d/basephosphate/csv": {
+  "bytes": 361,
+  "file": "bgsu/6P2H_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "b954c2550038be05c5e35e22da144a1a07a9c6dce62645adea18a1fb76d27df1",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/6UBU/interactions/fr3d/basephosphate/csv": {
+  "bytes": 235,
+  "file": "bgsu/6UBU_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "345f4a0d59776c1c93d0e0ae576c53f8d2a62aed94ccd5c69cb4d2644f8ef095",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/6UC7/interactions/fr3d/basephosphate/csv": {
+  "bytes": 275,
+  "file": "bgsu/6UC7_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "882a41b135d4773009ef208c4f2be665474ddbeaf7ae9af30cf7a524ece45704",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/6UC8/interactions/fr3d/basephosphate/csv": {
+  "bytes": 236,
+  "file": "bgsu/6UC8_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "71e434ec2ddc6ca270f8264e039e59643ee025f7ee396bf5860ccb5ab61843a7",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/6UC9/interactions/fr3d/basephosphate/csv": {
+  "bytes": 236,
+  "file": "bgsu/6UC9_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "62713bbe0bd419fe7023a7b4fa7e6d97d4ec63c023c61b0c9f85047b417073e2",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/6VWT/interactions/fr3d/basephosphate/csv": {
+  "bytes": 316,
+  "file": "bgsu/6VWT_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "66e74c76ef37a8891b0ed83fe1f49c6f8c6273c3a676126c6c750cb001bdfeb0",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/6VWV/interactions/fr3d/basephosphate/csv": {
+  "bytes": 472,
+  "file": "bgsu/6VWV_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "59b5425b67873e737f40e41c88df3390889e495be788b126bed73d31dc712e4d",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9IWF/interactions/fr3d/basephosphate/csv": {
+  "bytes": 556,
+  "file": "bgsu/9IWF_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "f183967a43ac49c407be11e929f4066a1afbd61289610b2a38e15290e781be36",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9IWG/interactions/fr3d/basephosphate/csv": {
+  "bytes": 636,
+  "file": "bgsu/9IWG_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "7546cac08267b4c16fb74b26ebd56eb9e6458a80a5e03cd4ce7a1a43d4f1d972",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9LJN/interactions/fr3d/basephosphate/csv": {
+  "bytes": 198,
+  "file": "bgsu/9LJN_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "3c2ca33b915cef21e413c7308732753db985ad9317fcb9084d0979548ec5a018",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9LKC/interactions/fr3d/basephosphate/csv": {
+  "bytes": 197,
+  "file": "bgsu/9LKC_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "b78ea28045ef05b3133074b0cf6daae5cb2468fe643ae176684fd9b3e3530a27",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9LKE/interactions/fr3d/basephosphate/csv": {
+  "bytes": 198,
+  "file": "bgsu/9LKE_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "7e7378df8f2f941a62ab5afc99ba03eae08759d0a7d23619a1d6fdd6c0f4c326",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9LKF/interactions/fr3d/basephosphate/csv": {
+  "bytes": 241,
+  "file": "bgsu/9LKF_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "ec52923cf7b7c3e961b6b5978898d014407b9a5459a0d1bc95a6234c446f34f9",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9LMC/interactions/fr3d/basephosphate/csv": {
+  "bytes": 556,
+  "file": "bgsu/9LMC_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "009cc16facded6ecb959e25f3117b78d222e96962224144bb6b974f8bcc7652e",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9NBC/interactions/fr3d/basephosphate/csv": {
+  "bytes": 316,
+  "file": "bgsu/9NBC_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "87865eb6d1b3b4e29212193f72c0a11d37a666ffbc06733094e5d931876b2a88",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9NBH/interactions/fr3d/basephosphate/csv": {
+  "bytes": 1648,
+  "file": "bgsu/9NBH_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "5a2b42b1ef09202c139a62cd359b0f8b0c623fd27130c02f657be6cd7a8b0861",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/interactions/fr3d/basephosphate/csv": {
+  "bytes": 3413,
+  "file": "bgsu/9NDD_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "ac7c2a34f294f59b6a7876783973206adfab9ab0c2e4692b3e7b83ddd520d6cb",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9V4U/interactions/fr3d/basephosphate/csv": {
+  "bytes": 199,
+  "file": "bgsu/9V4U_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "4c795616f51e00e316bbf0a1f9b4a87402f995d5384443edc198eeb0a0d4d91b",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9V4V/interactions/fr3d/basephosphate/csv": {
+  "bytes": 198,
+  "file": "bgsu/9V4V_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "71344a6ffdd6c55b35d8b5d038d87a7136b369bb4bf1edf3a9abc5fe84c19c66",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9V4X/interactions/fr3d/basephosphate/csv": {
+  "bytes": 237,
+  "file": "bgsu/9V4X_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "6eca8b19e097d4d14dad65500ab8755c19cba3a39ba3255c638018f6c7c6ec9a",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9V4Y/interactions/fr3d/basephosphate/csv": {
+  "bytes": 319,
+  "file": "bgsu/9V4Y_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "e12458aee40ee47f39ab8d37df4490267556f0987e8d6d1f81eb8f7a02e6f70c",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9V4Z/interactions/fr3d/basephosphate/csv": {
+  "bytes": 278,
+  "file": "bgsu/9V4Z_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "2ba680ea70f7667b3daec841f5dbcf88968bc2ddd5f7c676348e4c437a4d0211",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9V50/interactions/fr3d/basephosphate/csv": {
+  "bytes": 437,
+  "file": "bgsu/9V50_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "8fa358e898b73d9b577d4a6cd06d772a2c1c246607f9056e0fba4556c063fc92",
+  "status": 200
+ },
+ "https://rna.bgsu.edu/rna3dhub/pdb/9V51/interactions/fr3d/basephosphate/csv": {
+  "bytes": 278,
+  "file": "bgsu/9V51_basephosphate.csv.gz",
+  "retrieved": "2026-10-19",
+  "sha256": "9c15acf732c3a5c4348b55a7fceabcfa38315f141c18b7b2fb60572a1ea1269a",
+  "status": 200
+ }
+}

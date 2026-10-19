@@ -1,0 +1,282 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "RNA-RNA interactions on Rfam consensus positions (BGSU FR3D base pairs and stacking)",
+ "type": "object",
+ "required": [
+  "schema_version",
+  "rfam_acc",
+  "clen",
+  "default_numbering_reference",
+  "position_regions",
+  "definitions",
+  "instances",
+  "pairs",
+  "excluded",
+  "summary",
+  "sources",
+  "provenance",
+  "observations_files"
+ ],
+ "properties": {
+  "schema_version": {
+   "enum": [
+    "1.0",
+    "1.1",
+    "1.2"
+   ]
+  },
+  "rfam_acc": {
+   "type": "string",
+   "pattern": "^RF\\d{5}$"
+  },
+  "clen": {
+   "type": "integer",
+   "minimum": 1
+  },
+  "default_numbering_reference": {
+   "type": "object",
+   "required": [
+    "seq_name",
+    "rule"
+   ],
+   "properties": {
+    "seq_name": {
+     "type": [
+      "string",
+      "null"
+     ]
+    }
+   }
+  },
+  "position_regions": {
+   "type": "array",
+   "items": {
+    "type": [
+     "string",
+     "null"
+    ]
+   }
+  },
+  "definitions": {
+   "type": "object"
+  },
+  "instances": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "seq_name",
+     "pdb_id",
+     "auth_asym_id",
+     "label_asym_id",
+     "annotation",
+     "annotation_note",
+     "eligibility",
+     "nucleotides",
+     "n_interactions",
+     "sugar_eligibility",
+     "phosphate_eligibility",
+     "unavailable_categories",
+     "observed",
+     "near",
+     "n_off_consensus"
+    ],
+    "properties": {
+     "annotation": {
+      "enum": [
+       "available",
+       "unavailable"
+      ]
+     },
+     "eligibility": {
+      "type": "string",
+      "pattern": "^[EIM-]*$"
+     },
+     "nucleotides": {
+      "type": "string"
+     },
+     "sugar_eligibility": {
+      "type": "string",
+      "pattern": "^[EIM-]*$"
+     },
+     "phosphate_eligibility": {
+      "type": "string",
+      "pattern": "^[EIM-]*$"
+     },
+     "unavailable_categories": {
+      "type": "array",
+      "items": {
+       "enum": [
+        "basepair",
+        "stacking",
+        "baseribose",
+        "basephosphate"
+       ]
+      }
+     },
+     "observed": {
+      "type": "object",
+      "additionalProperties": {
+       "type": "array",
+       "items": {
+        "type": "integer",
+        "minimum": 0
+       }
+      }
+     },
+     "near": {
+      "type": "array",
+      "items": {
+       "type": "array",
+       "minItems": 4,
+       "maxItems": 4
+      }
+     },
+     "n_off_consensus": {
+      "type": "integer",
+      "minimum": 0
+     }
+    }
+   }
+  },
+  "pairs": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "category",
+     "pos_1",
+     "pos_2",
+     "region_1",
+     "region_2",
+     "in_ss_cons",
+     "structure_class",
+     "n_observed",
+     "n_eligible",
+     "frequency",
+     "n_entries_observed",
+     "n_entries_eligible",
+     "classes",
+     "nt_pairs",
+     "n_canonical",
+     "n_near_only",
+     "n_not_annotated",
+     "n_missing",
+     "n_incomplete",
+     "n_unmapped",
+     "n_annotation_unavailable",
+     "n_observed_but_ineligible",
+     "directional"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^(basepair|stacking|baseribose|basephosphate):\\d+-\\d+$"
+     },
+     "category": {
+      "enum": [
+       "basepair",
+       "stacking",
+       "baseribose",
+       "basephosphate"
+      ]
+     },
+     "pos_1": {
+      "type": "integer",
+      "minimum": 1
+     },
+     "pos_2": {
+      "type": "integer",
+      "minimum": 1
+     },
+     "structure_class": {
+      "enum": [
+       "secondary",
+       "tertiary",
+       "unclassified",
+       null
+      ]
+     },
+     "n_observed": {
+      "type": "integer",
+      "minimum": 0
+     },
+     "n_eligible": {
+      "type": "integer",
+      "minimum": 0
+     },
+     "frequency": {
+      "type": [
+       "number",
+       "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+     },
+     "classes": {
+      "type": "object",
+      "additionalProperties": {
+       "type": "integer"
+      }
+     },
+     "nt_pairs": {
+      "type": "object",
+      "additionalProperties": {
+       "type": "integer"
+      }
+     },
+     "directional": {
+      "type": "boolean"
+     }
+    }
+   }
+  },
+  "excluded": {
+   "type": "object"
+  },
+  "summary": {
+   "type": "object"
+  },
+  "sources": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "pdb_id",
+     "kind",
+     "url",
+     "status"
+    ],
+    "properties": {
+     "status": {
+      "enum": [
+       "ok",
+       "unavailable"
+      ]
+     }
+    }
+   }
+  },
+  "provenance": {
+   "type": "object",
+   "required": [
+    "source",
+    "url_template",
+    "pipeline_version",
+    "generated"
+   ]
+  },
+  "observations_files": {
+   "type": "object",
+   "required": [
+    "path"
+   ],
+   "properties": {
+    "path": {
+     "type": "string"
+    }
+   }
+  }
+ }
+}

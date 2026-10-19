@@ -1,0 +1,117 @@
+{
+ "rows_in_files": {
+  "basepair": 5668,
+  "stacking": 15534
+ },
+ "endpoint_status": {
+  "non_polymer_in_rna_chain": 794,
+  "consensus": 37382,
+  "outside_alignment:not_submitted_flank": 4130,
+  "insertion": 98
+ },
+ "endpoint_verification_against_mmcif": {
+  "verified": 41604,
+  "mismatch": 6
+ },
+ "pair_kinds": {
+  "involves_non_polymer|unmapped_endpoint": 790,
+  "rna_rna|intra_chain": 20080,
+  "rna_rna|between_two_rf00167_chains": 332
+ },
+ "reverse_order_rows_present": {
+  "basepair|True": 5668,
+  "stacking|True": 15534
+ },
+ "n_intra_chain_interactions_after_normalisation": 9991,
+ "n_inter_chain_unique_rows": 332,
+ "examples": {
+  "non_polymer_in_rna_chain": [
+   {
+    "unit": "1Y26|1|X|ADE|90",
+    "class": "cWW",
+    "partner": "1Y26|1|X|U|74"
+   },
+   {
+    "unit": "1Y26|1|X|ADE|90",
+    "class": "cWW",
+    "partner": "1Y26|1|X|U|74"
+   },
+   {
+    "unit": "1Y26|1|X|ADE|90",
+    "class": "ns55",
+    "partner": "1Y26|1|X|U|75"
+   }
+  ],
+  "consensus": [
+   {
+    "unit": "1Y26|1|X|U|74",
+    "seq_name": "1y26_1_X_A",
+    "label_seq_id": 62,
+    "state": "match",
+    "rfam_pos": 80
+   },
+   {
+    "unit": "1Y26|1|X|C|15",
+    "seq_name": "1y26_1_X_A",
+    "label_seq_id": 3,
+    "state": "match",
+    "rfam_pos": 19
+   },
+   {
+    "unit": "1Y26|1|X|G|81",
+    "seq_name": "1y26_1_X_A",
+    "label_seq_id": 69,
+    "state": "match",
+    "rfam_pos": 87
+   }
+  ],
+  "outside_alignment:not_submitted_flank": [
+   {
+    "unit": "1Y26|1|X|C|13",
+    "seq_name": "1y26_1_X_A",
+    "label_seq_id": 1,
+    "state": "not_submitted_flank",
+    "rfam_pos": null
+   },
+   {
+    "unit": "1Y26|1|X|G|83",
+    "seq_name": "1y26_1_X_A",
+    "label_seq_id": 71,
+    "state": "not_submitted_flank",
+    "rfam_pos": null
+   },
+   {
+    "unit": "1Y26|1|X|G|14",
+    "seq_name": "1y26_1_X_A",
+    "label_seq_id": 2,
+    "state": "not_submitted_flank",
+    "rfam_pos": null
+   }
+  ],
+  "insertion": [
+   {
+    "unit": "9IWF|1|A|A|61",
+    "seq_name": "9iwf_1_A_A",
+    "label_seq_id": 60,
+    "state": "insert",
+    "rfam_pos": "77^2"
+   },
+   {
+    "unit": "9IWF|1|A|A|61",
+    "seq_name": "9iwf_1_A_A",
+    "label_seq_id": 60,
+    "state": "insert",
+    "rfam_pos": "77^2"
+   },
+   {
+    "unit": "9IWF|1|B|A|61",
+    "seq_name": "9iwf_1_B_B",
+    "label_seq_id": 60,
+    "state": "insert",
+    "rfam_pos": "77^2"
+   }
+  ]
+ },
+ "n_instances": 84,
+ "n_entries": 66
+}

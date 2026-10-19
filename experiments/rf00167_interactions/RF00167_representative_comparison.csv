@@ -1,0 +1,950 @@
+metric,group_a,rep_a,group_b,rep_b,category,rfam_pos_1,rfam_pos_2,context,status,classes_a,classes_b
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,19,87,SS_cons helix pair,only_1 (other not eligible: unmodelled),cWW,
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,20,86,SS_cons helix pair,conserved,cWW,cWW
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,21,85,SS_cons helix pair,conserved,cWW,cWW
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,22,84,SS_cons helix pair,conserved,cWW,cWW
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,23,83,SS_cons helix pair,conserved,cWW,cWW
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,24,82,SS_cons helix pair,conserved,cWW,cWW
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,25,81,SS_cons helix pair,conserved,cWW,cWW
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,26,56,J1/2 x J2/3,only_1,cWW,
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,27,50,J1/2 x J2/3,only_1,tWS,
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,27,80,J1/2 x J3/1,only_2,,tHW
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,29,49,SS_cons helix pair,conserved,cWW,cWW
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,30,48,SS_cons helix pair,only_2,,cWW
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,31,47,SS_cons helix pair,conserved,cWW,cWW
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,32,46,SS_cons helix pair,conserved,cWW,cWW
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,33,45,SS_cons helix pair,conserved,cWW,cWW
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,34,44,SS_cons helix pair,conserved,cWW,cWW
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,35,43,SS_cons helix pair,conserved,cWW,cWW
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,37,71,L2-L3 (loop-loop tertiary),conserved,tWH,tWH
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,38,70,L2-L3 (loop-loop tertiary),conserved,tWH,tWH
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,39,69,L2-L3 (loop-loop tertiary),conserved,tHW,tHW
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,41,66,L2-L3 (loop-loop tertiary),conserved,cWW,cWW
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,42,65,L2-L3 (loop-loop tertiary),conserved,cWW,cWW
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,42,71,L2-L3 (loop-loop tertiary),conserved,tSW,tSW
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,50,57,within J2/3,conserved,cWW,cWW
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,51,56,within J2/3,only_2,,cWW
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,52,81,J2/3 x Helix P1,only_2,,cWS
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,53,79,J2/3 x J3/1,only_2,,cWW
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,53,82,J2/3 x Helix P1,only_1,cWS,
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,54,81,J2/3 x Helix P1,only_1,cWS,
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,58,78,SS_cons helix pair,conserved,cWW,cWW
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,59,77,SS_cons helix pair,conserved,cWW,cWW
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,60,76,SS_cons helix pair,conserved,cWW,cWW
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,61,75,SS_cons helix pair,conserved,cWW,cWW
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,62,74,SS_cons helix pair,conserved,cWW,cWW
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,63,73,SS_cons helix pair,conserved,cWW,cWW
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,66,70,within L3,conserved,cSW,cSW
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,basepair,67,68,within L3,conserved,cSH,cSH
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,18,19,adjacent stack,only_2 (other not eligible: position_not_in_chain),,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,19,20,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,20,21,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,21,22,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,22,23,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,22,85,within Helix P1,only_2,,s55
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,23,24,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,23,84,within Helix P1,only_1,s55,
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,24,25,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,25,82,within Helix P1,conserved,s55,s55
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,26,27,adjacent stack,only_1,s53,
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,26,50,J1/2 x J2/3,only_1,s53,
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,27,29,J1/2 x Helix P2,only_1,s55,
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,27,52,J1/2 x J2/3,only_2,,s53
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,27,53,J1/2 x J2/3,only_2,,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,28,58,J1/2 x Helix P3,only_2,,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,28,78,J1/2 x Helix P3,conserved,s33,s33
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,28,79,J1/2 x J3/1,conserved,s55,s55
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,29,30,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,29,50,Helix P2 x J2/3,conserved,s55,s55
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,30,31,adjacent stack,only_2,,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,30,49,within Helix P2,only_2,,s55
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,31,32,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,31,48,within Helix P2,conserved,s55,s55
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,32,33,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,32,47,within Helix P2,only_2,,s55
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,33,34,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,33,46,within Helix P2,conserved,s55,s55
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,34,35,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,34,45,within Helix P2,only_2,,s55
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,35,36,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,35,44,within Helix P2,only_1,s55,
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,36,37,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,36,43,L2 x Helix P2,conserved,s55,s55
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,37,38,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,39,41,within L2,conserved,s55,s55
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,39,66,L2-L3 (loop-loop tertiary),conserved,s53,s53
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,39,67,L2-L3 (loop-loop tertiary),conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,39,68,L2-L3 (loop-loop tertiary),conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,41,42,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,42,73,L2 x Helix P3,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,43,44,adjacent stack,only_2,,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,44,45,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,45,46,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,46,47,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,47,48,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,48,49,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,49,50,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,50,51,adjacent stack,only_2,,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,50,56,within J2/3,only_1,s33,
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,51,54,within J2/3,only_2,,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,54,55,adjacent stack,only_1,s35,
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,54,56,within J2/3,only_2,,s55
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,55,56,adjacent stack,only_1,s35,
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,56,57,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,58,59,adjacent stack,only_2,,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,59,60,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,59,78,within Helix P3,conserved,s55,s55
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,60,61,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,60,77,within Helix P3,only_2,,s55
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,61,62,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,61,76,within Helix P3,conserved,s55,s55
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,62,63,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,63,65,Helix P3 x L3,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,63,74,within Helix P3,conserved,s55,s55
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,65,66,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,68,69,adjacent stack,conserved,s55,s55
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,69,70,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,70,71,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,71,73,L3 x Helix P3,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,73,74,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,74,75,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,75,76,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,76,77,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,77,78,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,79,80,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,80,81,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,81,82,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,82,83,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,83,84,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,84,85,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,85,86,adjacent stack,conserved,s35,s35
+discrepancy,1,6uc8_1_B_A,2,5e54_1_B_B,stacking,86,87,adjacent stack,only_1 (other not eligible: unmodelled),s35,
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,19,87,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,20,86,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,21,85,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,22,84,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,23,83,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,24,82,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,25,81,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,26,56,J1/2 x J2/3,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,27,50,J1/2 x J2/3,conserved,tWS,tWS
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,29,49,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,30,48,SS_cons helix pair,only_2,,cWW
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,31,47,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,32,46,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,33,45,SS_cons helix pair,only_1,cWW,
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,34,44,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,35,43,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,37,41,within L2,only_2,,cSS
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,37,71,L2-L3 (loop-loop tertiary),conserved,tWH,tWH
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,38,70,L2-L3 (loop-loop tertiary),only_1,tWH,
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,39,69,L2-L3 (loop-loop tertiary),only_1,tHW,
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,41,66,L2-L3 (loop-loop tertiary),conserved,cWW,cWW
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,42,65,L2-L3 (loop-loop tertiary),conserved,cWW,cWW
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,42,71,L2-L3 (loop-loop tertiary),only_1,tSW,
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,50,57,within J2/3,only_1,cWW,
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,53,82,J2/3 x Helix P1,conserved,cWS,cWS
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,54,81,J2/3 x Helix P1,conserved,cWS,cWS
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,57,78,J2/3 x Helix P3,only_2,,cWW
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,58,78,SS_cons helix pair,only_1 (other not eligible: position_not_in_chain),cWW,
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,59,77,SS_cons helix pair,only_1,cWW,
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,60,76,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,61,75,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,62,74,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,63,73,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,64,72,SS_cons helix pair,only_2 (other not eligible: position_not_in_chain),,cWW
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,66,70,within L3,only_1,cSW,
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,basepair,67,68,within L3,only_1,cSH,
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,19,20,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,20,21,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,20,87,within Helix P1,only_2,,s55
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,21,22,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,22,23,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,22,85,within Helix P1,only_2,,s55
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,23,24,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,23,84,within Helix P1,conserved,s55,s55
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,24,25,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,25,82,within Helix P1,conserved,s55,s55
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,26,27,adjacent stack,conserved,s53,s53
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,26,50,J1/2 x J2/3,conserved,s53,s53
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,27,29,J1/2 x Helix P2,conserved,s55,s55
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,28,57,J1/2 x J2/3,only_2,,s53
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,28,59,J1/2 x Helix P3,only_2,,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,28,78,J1/2 x Helix P3,reclassified,s33,s55
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,28,79,J1/2 x J3/1,only_1,s55,
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,29,30,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,29,50,Helix P2 x J2/3,conserved,s55,s55
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,30,31,adjacent stack,only_2,,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,31,32,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,31,48,within Helix P2,conserved,s55,s55
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,32,33,adjacent stack,only_1,s35,
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,32,47,within Helix P2,only_2,,s55
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,33,34,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,33,46,within Helix P2,conserved,s55,s55
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,34,35,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,35,36,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,35,44,within Helix P2,conserved,s55,s55
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,36,37,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,36,43,L2 x Helix P2,conserved,s55,s55
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,37,38,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,38,69,L2-L3 (loop-loop tertiary),only_2,,s33
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,39,41,within L2,conserved,s55,s55
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,39,66,L2-L3 (loop-loop tertiary),conserved,s53,s53
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,39,67,L2-L3 (loop-loop tertiary),conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,39,68,L2-L3 (loop-loop tertiary),only_1,s35,
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,41,42,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,42,66,L2-L3 (loop-loop tertiary),only_2,,s55
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,42,72,L2 x unassigned,only_2 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,42,73,L2 x Helix P3,only_1,s35,
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,43,44,adjacent stack,only_2,,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,44,45,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,45,46,adjacent stack,only_1,s35,
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,46,47,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,47,48,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,48,49,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,49,50,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,50,56,within J2/3,only_1,s33,
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,54,55,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,55,56,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,56,57,adjacent stack,only_1,s35,
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,57,79,J2/3 x J3/1,only_2,,s55
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,59,60,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,59,78,within Helix P3,only_1,s55,
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,60,61,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,61,62,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,61,76,within Helix P3,conserved,s55,s55
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,62,63,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,63,64,adjacent stack,only_2 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,63,65,Helix P3 x L3,only_1,s35,
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,63,74,within Helix P3,conserved,s55,s55
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,64,65,adjacent stack,only_2 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,64,73,unassigned x Helix P3,only_2 (other not eligible: position_not_in_chain),,s55
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,65,66,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,68,69,adjacent stack,reclassified,s55,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,69,70,adjacent stack,reclassified,s35,s33
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,70,71,adjacent stack,reclassified,s35,s55
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,71,72,adjacent stack,only_2 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,71,73,L3 x Helix P3,only_1,s35,
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,72,73,adjacent stack,only_2 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,73,74,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,74,75,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,75,76,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,76,77,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,77,78,adjacent stack,only_1,s35,
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,78,79,adjacent stack,only_2,,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,79,80,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,80,81,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,81,82,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,82,83,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,83,84,adjacent stack,only_1,s35,
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,84,85,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,85,86,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,2,9v4v_1_A_A,stacking,86,87,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,19,87,SS_cons helix pair,only_1 (other not eligible: unmodelled),cWW,
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,20,86,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,21,85,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,22,84,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,23,83,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,24,82,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,25,81,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,26,56,J1/2 x J2/3,only_1,cWW,
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,27,50,J1/2 x J2/3,only_1,tWS,
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,27,80,J1/2 x J3/1,only_3,,tHW
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,29,49,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,30,48,SS_cons helix pair,only_3,,cWW
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,31,47,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,32,46,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,33,45,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,34,44,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,35,43,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,37,71,L2-L3 (loop-loop tertiary),conserved,tWH,tWH
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,38,70,L2-L3 (loop-loop tertiary),conserved,tWH,tWH
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,39,69,L2-L3 (loop-loop tertiary),conserved,tHW,tHW
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,41,66,L2-L3 (loop-loop tertiary),conserved,cWW,cWW
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,42,65,L2-L3 (loop-loop tertiary),conserved,cWW,cWW
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,42,71,L2-L3 (loop-loop tertiary),conserved,tSW,tSW
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,50,57,within J2/3,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,51,56,within J2/3,only_3,,cWW
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,52,81,J2/3 x Helix P1,only_3,,cWS
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,53,79,J2/3 x J3/1,only_3,,cWW
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,53,82,J2/3 x Helix P1,only_1,cWS,
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,54,81,J2/3 x Helix P1,only_1,cWS,
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,58,78,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,59,77,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,60,76,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,61,75,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,62,74,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,63,73,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,66,70,within L3,conserved,cSW,cSW
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,basepair,67,68,within L3,conserved,cSH,cSH
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,18,19,adjacent stack,only_3 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,19,20,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,20,21,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,21,22,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,22,23,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,22,85,within Helix P1,only_3,,s55
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,23,24,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,23,84,within Helix P1,only_1,s55,
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,24,25,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,25,82,within Helix P1,conserved,s55,s55
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,26,27,adjacent stack,only_1,s53,
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,26,50,J1/2 x J2/3,only_1,s53,
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,27,29,J1/2 x Helix P2,only_1,s55,
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,27,52,J1/2 x J2/3,only_3,,s53
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,27,53,J1/2 x J2/3,only_3,,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,28,58,J1/2 x Helix P3,only_3,,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,28,78,J1/2 x Helix P3,conserved,s33,s33
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,28,79,J1/2 x J3/1,conserved,s55,s55
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,29,30,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,29,50,Helix P2 x J2/3,conserved,s55,s55
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,30,31,adjacent stack,only_3,,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,30,49,within Helix P2,only_3,,s55
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,31,32,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,31,48,within Helix P2,conserved,s55,s55
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,32,33,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,32,47,within Helix P2,only_3,,s55
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,33,34,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,33,46,within Helix P2,conserved,s55,s55
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,34,35,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,34,45,within Helix P2,only_3,,s55
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,35,36,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,35,44,within Helix P2,only_1,s55,
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,36,37,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,36,43,L2 x Helix P2,conserved,s55,s55
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,37,38,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,39,41,within L2,conserved,s55,s55
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,39,66,L2-L3 (loop-loop tertiary),conserved,s53,s53
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,39,67,L2-L3 (loop-loop tertiary),conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,39,68,L2-L3 (loop-loop tertiary),conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,41,42,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,42,73,L2 x Helix P3,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,43,44,adjacent stack,only_3,,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,44,45,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,45,46,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,46,47,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,47,48,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,48,49,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,49,50,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,50,51,adjacent stack,only_3,,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,50,56,within J2/3,only_1,s33,
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,51,54,within J2/3,only_3,,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,54,55,adjacent stack,only_1,s35,
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,54,56,within J2/3,only_3,,s55
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,55,56,adjacent stack,only_1,s35,
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,56,57,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,58,59,adjacent stack,only_3,,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,59,60,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,59,78,within Helix P3,conserved,s55,s55
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,60,61,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,60,77,within Helix P3,only_3,,s55
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,61,62,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,61,76,within Helix P3,conserved,s55,s55
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,62,63,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,63,65,Helix P3 x L3,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,63,74,within Helix P3,conserved,s55,s55
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,65,66,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,68,69,adjacent stack,conserved,s55,s55
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,69,70,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,70,71,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,71,73,L3 x Helix P3,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,73,74,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,74,75,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,75,76,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,76,77,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,77,78,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,79,80,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,80,81,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,81,82,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,82,83,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,83,84,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,84,85,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,85,86,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,3,5e54_1_B_B,stacking,86,87,adjacent stack,only_1 (other not eligible: unmodelled),s35,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,14,92,within unassigned,only_4 (other not eligible: position_not_in_chain),,cWW
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,15,91,within unassigned,only_4 (other not eligible: position_not_in_chain),,cWW
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,16,90,within unassigned,only_4 (other not eligible: position_not_in_chain),,cWW
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,17,89,within unassigned,only_4 (other not eligible: position_not_in_chain),,cWW
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,18,88,SS_cons helix pair,only_4 (other not eligible: position_not_in_chain),,cWW
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,19,87,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,20,86,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,21,85,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,22,84,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,23,83,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,24,82,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,25,81,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,26,56,J1/2 x J2/3,only_1,cWW,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,27,50,J1/2 x J2/3,only_1,tWS,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,29,49,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,30,48,SS_cons helix pair,only_4,,cWW
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,31,47,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,32,46,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,33,45,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,34,44,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,35,43,SS_cons helix pair,only_1,cWW,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,37,71,L2-L3 (loop-loop tertiary),only_1,tWH,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,38,70,L2-L3 (loop-loop tertiary),only_1,tWH,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,39,69,L2-L3 (loop-loop tertiary),only_1 (other not eligible: position_not_in_chain),tHW,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,41,66,L2-L3 (loop-loop tertiary),conserved,cWW,cWW
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,42,65,L2-L3 (loop-loop tertiary),only_1,cWW,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,42,71,L2-L3 (loop-loop tertiary),only_1,tSW,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,50,57,within J2/3,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,53,82,J2/3 x Helix P1,only_1,cWS,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,54,81,J2/3 x Helix P1,only_1,cWS,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,58,78,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,59,77,SS_cons helix pair,only_1,cWW,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,60,76,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,61,75,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,62,74,SS_cons helix pair,only_1,cWW,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,63,73,SS_cons helix pair,conserved,cWW,cWW
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,66,70,within L3,only_1,cSW,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,basepair,67,68,within L3,only_1 (other not eligible: base_incomplete),cSH,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,1,94,within unassigned,only_4 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,2,3,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,2,93,within unassigned,only_4 (other not eligible: position_not_in_chain),,s53
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,3,4,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,5,6,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,6,7,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,7,8,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,8,9,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,9,10,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,10,11,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,11,12,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,12,13,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,14,15,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,15,16,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,15,92,within unassigned,only_4 (other not eligible: position_not_in_chain),,s55
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,16,17,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,17,18,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,17,90,within unassigned,only_4 (other not eligible: position_not_in_chain),,s55
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,18,89,within unassigned,only_4 (other not eligible: position_not_in_chain),,s55
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,19,20,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,19,88,Helix P1 x unassigned,only_4 (other not eligible: position_not_in_chain),,s55
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,20,21,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,21,22,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,22,23,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,23,24,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,23,84,within Helix P1,conserved,s55,s55
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,24,25,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,25,82,within Helix P1,conserved,s55,s55
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,26,27,adjacent stack,only_1,s53,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,26,50,J1/2 x J2/3,conserved,s53,s53
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,27,29,J1/2 x Helix P2,only_1,s55,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,28,78,J1/2 x Helix P3,conserved,s33,s33
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,28,79,J1/2 x J3/1,conserved,s55,s55
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,29,30,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,29,50,Helix P2 x J2/3,only_1,s55,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,30,31,adjacent stack,only_4,,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,30,49,within Helix P2,only_4,,s55
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,31,32,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,31,48,within Helix P2,conserved,s55,s55
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,32,33,adjacent stack,only_1,s35,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,32,47,within Helix P2,only_4,,s55
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,33,34,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,33,46,within Helix P2,conserved,s55,s55
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,34,35,adjacent stack,only_1,s35,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,35,36,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,35,44,within Helix P2,only_1,s55,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,36,37,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,36,43,L2 x Helix P2,conserved,s55,s55
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,37,38,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,39,41,within L2,only_1 (other not eligible: position_not_in_chain),s55,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,39,66,L2-L3 (loop-loop tertiary),only_1 (other not eligible: position_not_in_chain),s53,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,39,67,L2-L3 (loop-loop tertiary),only_1 (other not eligible: position_not_in_chain),s35,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,39,68,L2-L3 (loop-loop tertiary),only_1 (other not eligible: position_not_in_chain),s35,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,41,42,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,42,71,L2-L3 (loop-loop tertiary),only_4,,s53
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,42,73,L2 x Helix P3,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,44,45,adjacent stack,only_1,s35,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,45,46,adjacent stack,only_1,s35,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,46,47,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,47,48,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,48,49,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,49,50,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,50,52,within J2/3,only_4,,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,50,56,within J2/3,only_1,s33,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,54,55,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,55,56,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,56,57,adjacent stack,only_1,s35,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,58,59,adjacent stack,only_4,,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,59,60,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,59,78,within Helix P3,conserved,s55,s55
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,60,61,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,60,77,within Helix P3,only_4,,s55
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,61,62,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,61,76,within Helix P3,conserved,s55,s55
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,62,63,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,62,75,within Helix P3,only_4,,s55
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,63,65,Helix P3 x L3,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,63,74,within Helix P3,only_1,s55,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,65,66,adjacent stack,only_1,s35,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,66,67,adjacent stack,only_4,,s33
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,68,69,adjacent stack,only_1 (other not eligible: base_incomplete),s55,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,69,70,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,70,71,adjacent stack,only_1,s35,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,71,73,L3 x Helix P3,only_1,s35,
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,73,74,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,74,75,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,75,76,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,76,77,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,77,78,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,79,80,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,80,81,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,81,82,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,82,83,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,83,84,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,84,85,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,85,86,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,86,87,adjacent stack,conserved,s35,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,88,89,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,89,90,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,90,91,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,91,92,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,94,95,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,95,96,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,96,97,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,97,98,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,98,99,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,99,100,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,100,102,within unassigned,only_4 (other not eligible: position_not_in_chain),,s33
+tm,1,6uc8_1_B_A,4,9ndd_1_A_A,stacking,101,102,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,19,87,SS_cons helix pair,only_2 (other not eligible: unmodelled),cWW,
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,20,86,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,21,85,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,22,84,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,23,83,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,24,82,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,25,81,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,26,56,J1/2 x J2/3,only_2,cWW,
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,27,50,J1/2 x J2/3,only_2,tWS,
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,27,80,J1/2 x J3/1,only_3,,tHW
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,29,49,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,30,48,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,31,47,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,32,46,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,33,45,SS_cons helix pair,only_3,,cWW
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,34,44,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,35,43,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,37,41,within L2,only_2,cSS,
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,37,71,L2-L3 (loop-loop tertiary),conserved,tWH,tWH
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,38,70,L2-L3 (loop-loop tertiary),only_3,,tWH
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,39,69,L2-L3 (loop-loop tertiary),only_3,,tHW
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,41,66,L2-L3 (loop-loop tertiary),conserved,cWW,cWW
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,42,65,L2-L3 (loop-loop tertiary),conserved,cWW,cWW
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,42,71,L2-L3 (loop-loop tertiary),only_3,,tSW
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,50,57,within J2/3,only_3,,cWW
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,51,56,within J2/3,only_3,,cWW
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,52,81,J2/3 x Helix P1,only_3,,cWS
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,53,79,J2/3 x J3/1,only_3,,cWW
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,53,82,J2/3 x Helix P1,only_2,cWS,
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,54,81,J2/3 x Helix P1,only_2,cWS,
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,57,78,J2/3 x Helix P3,only_2,cWW,
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,58,78,SS_cons helix pair,only_3 (other not eligible: position_not_in_chain),,cWW
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,59,77,SS_cons helix pair,only_3,,cWW
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,60,76,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,61,75,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,62,74,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,63,73,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,64,72,SS_cons helix pair,only_2 (other not eligible: position_not_in_chain),cWW,
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,66,70,within L3,only_3,,cSW
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,basepair,67,68,within L3,only_3,,cSH
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,18,19,adjacent stack,only_3 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,19,20,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,20,21,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,20,87,within Helix P1,only_2 (other not eligible: unmodelled),s55,
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,21,22,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,22,23,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,22,85,within Helix P1,conserved,s55,s55
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,23,24,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,23,84,within Helix P1,only_2,s55,
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,24,25,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,25,82,within Helix P1,conserved,s55,s55
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,26,27,adjacent stack,only_2,s53,
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,26,50,J1/2 x J2/3,only_2,s53,
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,27,29,J1/2 x Helix P2,only_2,s55,
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,27,52,J1/2 x J2/3,only_3,,s53
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,27,53,J1/2 x J2/3,only_3,,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,28,57,J1/2 x J2/3,only_2,s53,
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,28,58,J1/2 x Helix P3,only_3 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,28,59,J1/2 x Helix P3,only_2,s35,
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,28,78,J1/2 x Helix P3,reclassified,s55,s33
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,28,79,J1/2 x J3/1,only_3,,s55
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,29,30,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,29,50,Helix P2 x J2/3,conserved,s55,s55
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,30,31,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,30,49,within Helix P2,only_3,,s55
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,31,32,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,31,48,within Helix P2,conserved,s55,s55
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,32,33,adjacent stack,only_3,,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,32,47,within Helix P2,conserved,s55,s55
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,33,34,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,33,46,within Helix P2,conserved,s55,s55
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,34,35,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,34,45,within Helix P2,only_3,,s55
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,35,36,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,35,44,within Helix P2,only_2,s55,
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,36,37,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,36,43,L2 x Helix P2,conserved,s55,s55
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,37,38,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,38,69,L2-L3 (loop-loop tertiary),only_2,s33,
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,39,41,within L2,conserved,s55,s55
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,39,66,L2-L3 (loop-loop tertiary),conserved,s53,s53
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,39,67,L2-L3 (loop-loop tertiary),conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,39,68,L2-L3 (loop-loop tertiary),only_3,,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,41,42,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,42,66,L2-L3 (loop-loop tertiary),only_2,s55,
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,42,72,L2 x unassigned,only_2 (other not eligible: position_not_in_chain),s35,
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,42,73,L2 x Helix P3,only_3,,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,43,44,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,44,45,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,45,46,adjacent stack,only_3,,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,46,47,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,47,48,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,48,49,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,49,50,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,50,51,adjacent stack,only_3,,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,51,54,within J2/3,only_3,,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,54,55,adjacent stack,only_2,s35,
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,54,56,within J2/3,only_3,,s55
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,55,56,adjacent stack,only_2,s35,
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,56,57,adjacent stack,only_3,,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,57,79,J2/3 x J3/1,only_2,s55,
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,58,59,adjacent stack,only_3 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,59,60,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,59,78,within Helix P3,only_3,,s55
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,60,61,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,60,77,within Helix P3,only_3,,s55
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,61,62,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,61,76,within Helix P3,conserved,s55,s55
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,62,63,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,63,64,adjacent stack,only_2 (other not eligible: position_not_in_chain),s35,
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,63,65,Helix P3 x L3,only_3,,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,63,74,within Helix P3,conserved,s55,s55
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,64,65,adjacent stack,only_2 (other not eligible: position_not_in_chain),s35,
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,64,73,unassigned x Helix P3,only_2 (other not eligible: position_not_in_chain),s55,
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,65,66,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,68,69,adjacent stack,reclassified,s35,s55
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,69,70,adjacent stack,reclassified,s33,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,70,71,adjacent stack,reclassified,s55,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,71,72,adjacent stack,only_2 (other not eligible: position_not_in_chain),s35,
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,71,73,L3 x Helix P3,only_3,,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,72,73,adjacent stack,only_2 (other not eligible: position_not_in_chain),s35,
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,73,74,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,74,75,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,75,76,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,76,77,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,77,78,adjacent stack,only_3,,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,78,79,adjacent stack,only_2,s35,
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,79,80,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,80,81,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,81,82,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,82,83,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,83,84,adjacent stack,only_3,,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,84,85,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,85,86,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,3,5e54_1_B_B,stacking,86,87,adjacent stack,only_2 (other not eligible: unmodelled),s35,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,14,92,within unassigned,only_4 (other not eligible: position_not_in_chain),,cWW
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,15,91,within unassigned,only_4 (other not eligible: position_not_in_chain),,cWW
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,16,90,within unassigned,only_4 (other not eligible: position_not_in_chain),,cWW
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,17,89,within unassigned,only_4 (other not eligible: position_not_in_chain),,cWW
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,18,88,SS_cons helix pair,only_4 (other not eligible: position_not_in_chain),,cWW
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,19,87,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,20,86,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,21,85,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,22,84,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,23,83,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,24,82,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,25,81,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,26,56,J1/2 x J2/3,only_2,cWW,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,27,50,J1/2 x J2/3,only_2,tWS,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,29,49,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,30,48,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,31,47,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,32,46,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,33,45,SS_cons helix pair,only_4,,cWW
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,34,44,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,35,43,SS_cons helix pair,only_2,cWW,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,37,41,within L2,only_2,cSS,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,37,71,L2-L3 (loop-loop tertiary),only_2,tWH,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,41,66,L2-L3 (loop-loop tertiary),conserved,cWW,cWW
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,42,65,L2-L3 (loop-loop tertiary),only_2,cWW,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,50,57,within J2/3,only_4,,cWW
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,53,82,J2/3 x Helix P1,only_2,cWS,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,54,81,J2/3 x Helix P1,only_2,cWS,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,57,78,J2/3 x Helix P3,only_2,cWW,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,58,78,SS_cons helix pair,only_4 (other not eligible: position_not_in_chain),,cWW
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,60,76,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,61,75,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,62,74,SS_cons helix pair,only_2,cWW,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,63,73,SS_cons helix pair,conserved,cWW,cWW
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,basepair,64,72,SS_cons helix pair,only_2 (other not eligible: position_not_in_chain),cWW,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,1,94,within unassigned,only_4 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,2,3,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,2,93,within unassigned,only_4 (other not eligible: position_not_in_chain),,s53
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,3,4,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,5,6,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,6,7,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,7,8,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,8,9,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,9,10,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,10,11,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,11,12,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,12,13,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,14,15,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,15,16,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,15,92,within unassigned,only_4 (other not eligible: position_not_in_chain),,s55
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,16,17,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,17,18,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,17,90,within unassigned,only_4 (other not eligible: position_not_in_chain),,s55
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,18,89,within unassigned,only_4 (other not eligible: position_not_in_chain),,s55
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,19,20,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,19,88,Helix P1 x unassigned,only_4 (other not eligible: position_not_in_chain),,s55
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,20,21,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,20,87,within Helix P1,only_2,s55,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,21,22,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,22,23,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,22,85,within Helix P1,only_2,s55,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,23,24,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,23,84,within Helix P1,conserved,s55,s55
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,24,25,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,25,82,within Helix P1,conserved,s55,s55
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,26,27,adjacent stack,only_2,s53,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,26,50,J1/2 x J2/3,conserved,s53,s53
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,27,29,J1/2 x Helix P2,only_2,s55,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,28,57,J1/2 x J2/3,only_2,s53,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,28,59,J1/2 x Helix P3,only_2,s35,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,28,78,J1/2 x Helix P3,reclassified,s55,s33
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,28,79,J1/2 x J3/1,only_4,,s55
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,29,30,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,29,50,Helix P2 x J2/3,only_2,s55,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,30,31,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,30,49,within Helix P2,only_4,,s55
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,31,32,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,31,48,within Helix P2,conserved,s55,s55
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,32,47,within Helix P2,conserved,s55,s55
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,33,34,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,33,46,within Helix P2,conserved,s55,s55
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,34,35,adjacent stack,only_2,s35,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,35,36,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,35,44,within Helix P2,only_2,s55,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,36,37,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,36,43,L2 x Helix P2,conserved,s55,s55
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,37,38,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,38,69,L2-L3 (loop-loop tertiary),only_2,s33,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,39,41,within L2,only_2 (other not eligible: position_not_in_chain),s55,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,39,66,L2-L3 (loop-loop tertiary),only_2 (other not eligible: position_not_in_chain),s53,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,39,67,L2-L3 (loop-loop tertiary),only_2 (other not eligible: position_not_in_chain),s35,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,41,42,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,42,66,L2-L3 (loop-loop tertiary),only_2,s55,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,42,71,L2-L3 (loop-loop tertiary),only_4,,s53
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,42,72,L2 x unassigned,only_2 (other not eligible: position_not_in_chain),s35,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,42,73,L2 x Helix P3,only_4,,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,43,44,adjacent stack,only_2,s35,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,44,45,adjacent stack,only_2,s35,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,46,47,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,47,48,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,48,49,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,49,50,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,50,52,within J2/3,only_4,,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,54,55,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,55,56,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,57,79,J2/3 x J3/1,only_2,s55,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,58,59,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,59,60,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,59,78,within Helix P3,only_4,,s55
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,60,61,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,60,77,within Helix P3,only_4,,s55
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,61,62,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,61,76,within Helix P3,conserved,s55,s55
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,62,63,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,62,75,within Helix P3,only_4,,s55
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,63,64,adjacent stack,only_2 (other not eligible: position_not_in_chain),s35,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,63,65,Helix P3 x L3,only_4,,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,63,74,within Helix P3,only_2,s55,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,64,65,adjacent stack,only_2 (other not eligible: position_not_in_chain),s35,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,64,73,unassigned x Helix P3,only_2 (other not eligible: position_not_in_chain),s55,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,65,66,adjacent stack,only_2,s35,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,66,67,adjacent stack,only_4,,s33
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,68,69,adjacent stack,only_2 (other not eligible: base_incomplete),s35,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,69,70,adjacent stack,reclassified,s33,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,70,71,adjacent stack,only_2,s55,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,71,72,adjacent stack,only_2 (other not eligible: position_not_in_chain),s35,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,72,73,adjacent stack,only_2 (other not eligible: position_not_in_chain),s35,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,73,74,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,74,75,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,75,76,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,76,77,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,77,78,adjacent stack,only_4,,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,78,79,adjacent stack,only_2,s35,
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,79,80,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,80,81,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,81,82,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,82,83,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,83,84,adjacent stack,only_4,,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,84,85,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,85,86,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,86,87,adjacent stack,conserved,s35,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,88,89,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,89,90,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,90,91,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,91,92,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,94,95,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,95,96,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,96,97,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,97,98,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,98,99,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,99,100,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,100,102,within unassigned,only_4 (other not eligible: position_not_in_chain),,s33
+tm,2,9v4v_1_A_A,4,9ndd_1_A_A,stacking,101,102,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,14,92,within unassigned,only_4 (other not eligible: position_not_in_chain),,cWW
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,15,91,within unassigned,only_4 (other not eligible: position_not_in_chain),,cWW
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,16,90,within unassigned,only_4 (other not eligible: position_not_in_chain),,cWW
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,17,89,within unassigned,only_4 (other not eligible: position_not_in_chain),,cWW
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,18,88,SS_cons helix pair,only_4 (other not eligible: unmodelled),,cWW
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,19,87,SS_cons helix pair,only_4 (other not eligible: unmodelled),,cWW
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,20,86,SS_cons helix pair,conserved,cWW,cWW
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,21,85,SS_cons helix pair,conserved,cWW,cWW
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,22,84,SS_cons helix pair,conserved,cWW,cWW
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,23,83,SS_cons helix pair,conserved,cWW,cWW
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,24,82,SS_cons helix pair,conserved,cWW,cWW
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,25,81,SS_cons helix pair,conserved,cWW,cWW
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,27,80,J1/2 x J3/1,only_3,tHW,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,29,49,SS_cons helix pair,conserved,cWW,cWW
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,30,48,SS_cons helix pair,conserved,cWW,cWW
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,31,47,SS_cons helix pair,conserved,cWW,cWW
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,32,46,SS_cons helix pair,conserved,cWW,cWW
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,33,45,SS_cons helix pair,conserved,cWW,cWW
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,34,44,SS_cons helix pair,conserved,cWW,cWW
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,35,43,SS_cons helix pair,only_3,cWW,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,37,71,L2-L3 (loop-loop tertiary),only_3,tWH,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,38,70,L2-L3 (loop-loop tertiary),only_3,tWH,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,39,69,L2-L3 (loop-loop tertiary),only_3 (other not eligible: position_not_in_chain),tHW,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,41,66,L2-L3 (loop-loop tertiary),conserved,cWW,cWW
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,42,65,L2-L3 (loop-loop tertiary),only_3,cWW,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,42,71,L2-L3 (loop-loop tertiary),only_3,tSW,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,50,57,within J2/3,conserved,cWW,cWW
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,51,56,within J2/3,only_3 (other not eligible: position_not_in_chain),cWW,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,52,81,J2/3 x Helix P1,only_3,cWS,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,53,79,J2/3 x J3/1,only_3,cWW,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,58,78,SS_cons helix pair,conserved,cWW,cWW
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,59,77,SS_cons helix pair,only_3,cWW,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,60,76,SS_cons helix pair,conserved,cWW,cWW
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,61,75,SS_cons helix pair,conserved,cWW,cWW
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,62,74,SS_cons helix pair,only_3,cWW,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,63,73,SS_cons helix pair,conserved,cWW,cWW
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,66,70,within L3,only_3,cSW,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,basepair,67,68,within L3,only_3 (other not eligible: base_incomplete),cSH,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,1,94,within unassigned,only_4 (other not eligible: position_not_in_chain),,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,2,3,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,2,93,within unassigned,only_4 (other not eligible: position_not_in_chain),,s53
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,3,4,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,5,6,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,6,7,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,7,8,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,8,9,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,9,10,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,10,11,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,11,12,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,12,13,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,14,15,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,15,16,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,15,92,within unassigned,only_4 (other not eligible: position_not_in_chain),,s55
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,16,17,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,17,18,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,17,90,within unassigned,only_4 (other not eligible: position_not_in_chain),,s55
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,18,19,adjacent stack,only_3,s35,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,18,89,within unassigned,only_4 (other not eligible: position_not_in_chain),,s55
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,19,20,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,19,88,Helix P1 x unassigned,only_4 (other not eligible: unmodelled),,s55
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,20,21,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,21,22,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,22,23,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,22,85,within Helix P1,only_3,s55,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,23,24,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,23,84,within Helix P1,only_4,,s55
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,24,25,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,25,82,within Helix P1,conserved,s55,s55
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,26,50,J1/2 x J2/3,only_4,,s53
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,27,52,J1/2 x J2/3,only_3,s53,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,27,53,J1/2 x J2/3,only_3,s35,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,28,58,J1/2 x Helix P3,only_3,s35,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,28,78,J1/2 x Helix P3,conserved,s33,s33
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,28,79,J1/2 x J3/1,conserved,s55,s55
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,29,30,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,29,50,Helix P2 x J2/3,only_3,s55,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,30,31,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,30,49,within Helix P2,conserved,s55,s55
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,31,32,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,31,48,within Helix P2,conserved,s55,s55
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,32,33,adjacent stack,only_3,s35,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,32,47,within Helix P2,conserved,s55,s55
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,33,34,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,33,46,within Helix P2,conserved,s55,s55
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,34,35,adjacent stack,only_3,s35,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,34,45,within Helix P2,only_3,s55,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,35,36,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,36,37,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,36,43,L2 x Helix P2,conserved,s55,s55
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,37,38,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,39,41,within L2,only_3 (other not eligible: position_not_in_chain),s55,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,39,66,L2-L3 (loop-loop tertiary),only_3 (other not eligible: position_not_in_chain),s53,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,39,67,L2-L3 (loop-loop tertiary),only_3 (other not eligible: position_not_in_chain),s35,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,39,68,L2-L3 (loop-loop tertiary),only_3 (other not eligible: position_not_in_chain),s35,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,41,42,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,42,71,L2-L3 (loop-loop tertiary),only_4,,s53
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,42,73,L2 x Helix P3,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,43,44,adjacent stack,only_3,s35,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,44,45,adjacent stack,only_3,s35,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,45,46,adjacent stack,only_3,s35,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,46,47,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,47,48,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,48,49,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,49,50,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,50,51,adjacent stack,only_3 (other not eligible: position_not_in_chain),s35,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,50,52,within J2/3,only_4,,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,51,54,within J2/3,only_3 (other not eligible: position_not_in_chain),s35,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,54,55,adjacent stack,only_4,,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,54,56,within J2/3,only_3,s55,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,55,56,adjacent stack,only_4,,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,56,57,adjacent stack,only_3,s35,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,58,59,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,59,60,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,59,78,within Helix P3,conserved,s55,s55
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,60,61,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,60,77,within Helix P3,conserved,s55,s55
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,61,62,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,61,76,within Helix P3,conserved,s55,s55
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,62,63,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,62,75,within Helix P3,only_4,,s55
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,63,65,Helix P3 x L3,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,63,74,within Helix P3,only_3,s55,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,65,66,adjacent stack,only_3,s35,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,66,67,adjacent stack,only_4,,s33
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,68,69,adjacent stack,only_3 (other not eligible: base_incomplete),s55,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,69,70,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,70,71,adjacent stack,only_3,s35,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,71,73,L3 x Helix P3,only_3,s35,
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,73,74,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,74,75,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,75,76,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,76,77,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,77,78,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,79,80,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,80,81,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,81,82,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,82,83,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,83,84,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,84,85,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,85,86,adjacent stack,conserved,s35,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,86,87,adjacent stack,only_4 (other not eligible: unmodelled),,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,88,89,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,89,90,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,90,91,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,91,92,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,94,95,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,95,96,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,96,97,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,97,98,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,98,99,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,99,100,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,100,102,within unassigned,only_4 (other not eligible: position_not_in_chain),,s33
+tm,3,5e54_1_B_B,4,9ndd_1_A_A,stacking,101,102,adjacent stack,only_4 (other not eligible: position_not_in_chain),,s35

@@ -32,7 +32,9 @@ export function load3Dmol(): Promise<ThreeDmol> {
 export interface ViewerEntry { seqName: string; label: string; color: string; pdbId: string; labelAsymId: string; transform: OrientationTransform | null }
 
 /** One atom of the chain (from the mmCIF atom_site loop of the PDBe ModelServer response). */
-export interface Atom { het: boolean; name: string; resn: string; chain: string; resi: string; icode: string; x: number; y: number; z: number; occ: number; b: number; el: string }
+export interface Atom { het: boolean; name: string; resn: string; chain: string; resi: string; icode: string; x: number; y: number; z: number; occ: number; b: number; el: string
+  /** label_seq_id (polymer residues; the Interactions tab addresses residues by it) */
+  seq?: number }
 
 /** Parses the atom_site loop by its column names (first alternate location only). 3Dmol.js 2.5.2 does not read the ModelServer mmCIF, so
  *  the atoms are re-written as PDB records for it (toPdb). Polymer residues are written as ATOM (also nonstandard ones) so the ribbon is continuous. */
@@ -48,7 +50,7 @@ export function parseAtomSite(cif: string): Atom[] {
       const unq = (v: string | undefined) => { const x = v ?? ''; return x.length > 1 && (x[0] === '"' || x[0] === "'") && x[x.length - 1] === x[0] ? x.slice(1, -1) : x }   // only enclosing quotes (C4' keeps its prime)
       const seq = g('label_seq_id')
       out.push({ het: seq === '.' || seq === undefined, name: unq(g('auth_atom_id') ?? g('label_atom_id')), resn: unq(g('auth_comp_id') ?? g('label_comp_id')), chain: g('auth_asym_id') ?? g('label_asym_id') ?? 'A',
-        resi: g('auth_seq_id') ?? seq ?? '0', icode: (g('pdbx_PDB_ins_code') ?? '?').replace(/[?.]/, ''), x: +g('Cartn_x')!, y: +g('Cartn_y')!, z: +g('Cartn_z')!, occ: +(g('occupancy') ?? 1), b: +(g('B_iso_or_equiv') ?? 0), el: g('type_symbol') ?? '' })
+        resi: g('auth_seq_id') ?? seq ?? '0', icode: (g('pdbx_PDB_ins_code') ?? '?').replace(/[?.]/, ''), x: +g('Cartn_x')!, y: +g('Cartn_y')!, z: +g('Cartn_z')!, occ: +(g('occupancy') ?? 1), b: +(g('B_iso_or_equiv') ?? 0), el: g('type_symbol') ?? '', seq: seq && seq !== '.' && seq !== '?' ? +seq : undefined })
     } else if (cols.length && (l.startsWith('#') || l.startsWith('_') || l.startsWith('loop_'))) inLoop = false
   }
   return out
@@ -71,7 +73,7 @@ export function toPdb(atoms: Atom[], f: (p: [number, number, number]) => [number
     return `${a.het ? 'HETATM' : 'ATOM  '}${pad(i + 1, 5)} ${pad(name, 4, true)} ${pad(a.resn, 3)} ${pad(a.chain.slice(0, 1), 1)}${pad(a.resi, 4)}${pad(a.icode || ' ', 1)}   ${pad(x.toFixed(3), 8)}${pad(y.toFixed(3), 8)}${pad(z.toFixed(3), 8)}${pad(a.occ.toFixed(2), 6)}${pad(a.b.toFixed(2), 6)}          ${pad(a.el, 2)}`
   }).join('\n') + '\nEND\n'
 }
-const applyRT = (T: OrientationTransform) => (p: [number, number, number]): [number, number, number] => {
+export const applyRT = (T: OrientationTransform) => (p: [number, number, number]): [number, number, number] => {
   const R = T.rotation!, v = T.translation!
   return [0, 1, 2].map((i) => R[i][0] * p[0] + R[i][1] * p[1] + R[i][2] * p[2] + v[i]) as [number, number, number]
 }

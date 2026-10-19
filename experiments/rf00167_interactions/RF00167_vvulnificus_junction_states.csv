@@ -1,0 +1,15 @@
+seq_name,ligands,group_tm,U22-A52 (basepair; bound triple A73.(A52-U22)),U49-A76 (basepair; bound triple U49.(U20-A76)),C50-U75 (basepair; bound triple C50.(U75-A21)),A23-G46 (basepair; bound junction),U47-A52 (basepair; apo WC pair),U49-A73 (basepair; apo WC pair),G46-C53 (basepair; apo WC pair),C50/A52 (stacking; apo: C50 stacked on U47-A52),U47/C50 (stacking; apo: C50 stacked on U47-A52),A23-U74 (basepair; apo1: A23 Hoogsteen with U74),U48-U75 (basepair; apo1: U48-U75 wobble),U48-U74 (basepair; apo2: U48-U74 wobble)
+4tzx_1_X_A,ADE,1,1 [cWW],1 [cWS],1 [cWS],1 [tWS],0,0,1 [cWW],0,0,0,0,0
+4tzy_1_X_A,ADE,1,1 [cWW],1 [cWS],1 [cWS],1 [tWS],0,0,1 [cWW],0,0,0,0,0
+4xnr_1_X_A,ADE,1,1 [cWW],1 [cWS],1 [cWS],1 [tWS],0,0,1 [cWW],0,0,0,0,0
+5e54_1_A_A,none,3,0,0,0,0,1 [cWW],1 [cWW],1 [cWW],1 [s55],1 [s35],0,0,1 [cWW]
+5e54_1_B_B,none,3,0,0,0,0,1 [cWW],1 [cWW],1 [cWW],1 [s55],1 [s35],1 [tHW],1 [cWS],0
+5swd_1_A_A,ADE,3,0,0,0,0,1 [cWW],1 [cWW],1 [cWW],1 [s55],1 [s35],0,0,0
+5swd_1_B_B,ADE,3,0,0,0,0,1 [cWW],1 [cWW],1 [cWW],1 [s55],1 [s35],1 [tHW],1 [cWS],0
+5swe_1_X_A,ADE,1,1 [cWW],1 [cWS],1 [cWS],1 [tWS],0,0,1 [cWW],0,0,0,0,0
+5uza_1_X_A,ADE,1,1 [cWW],1 [cWS],1 [cWS],1 [tWS],0,0,1 [cWW],0,0,0,0,0
+6vwt_1_A_A,ADE,1,1 [cWW],0,1 [cWS],1 [tWS],0,0,1 [cWW],0,0,0,0,0
+6vwt_1_B_B,ADE,1,1 [cWW],0,1 [cWS],1 [tWS],0,0,1 [cWW],0,0,0,0,0
+6vwv_1_A_A,ADE,1,1 [cWW],0,1 [cWS],1 [tWS],0,0,1 [cWW],0,0,0,0,0
+6vwv_1_B_B,ADE,1,1 [cWW],0,1 [cWS],1 [tWS],0,0,1 [cWW],0,0,0,0,0
+1y26_1_X_A,ADE,1,1 [cWW],1 [cWS],1 [cWS],1 [tWS],0,0,1 [cWW],0,0,0,0,0

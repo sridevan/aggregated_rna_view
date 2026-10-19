@@ -1,0 +1,85 @@
+seq_name,pdb_id,organism,sequence_key,group_discrepancy,group_tm,ligands,annotated,seq_at_pocket,method,resolution
+1y26_1_X_A,1Y26,Vibrio vulnificus,b66180e500a475b49e939c8b564a2040,1,1,ADE,True,AUUUAUU,X-ray diffraction,2.1
+1y27_1_X_A,1Y27,Bacillus subtilis,745a81329e90a611721a34a4b351f048,1,1,GUN,True,AUUUACU,X-ray diffraction,2.4
+2b57_1_A_A,2B57,Bacillus subtilis,9627613c77df7a37f6d81fb8167d4103,1,1,6AP,True,AUUUAUU,X-ray diffraction,2.15
+2ees_1_A_A,2EES,Bacillus subtilis,ca69adae2af479674eaa77cbb8084caa,1,1,HPA,True,UUUUACA,X-ray diffraction,1.75
+2eet_1_A_A,2EET,Bacillus subtilis,a9b161eab14d7249b8e431d7b4aff4e7,1,1,HPA,True,GUUUACC,X-ray diffraction,1.95
+2eeu_1_A_A,2EEU,Bacillus subtilis,739951ae9ee57e055b2627388f3120e1,1,1,HPA,True,AAUUUCU,X-ray diffraction,1.95
+2eev_1_A_A,2EEV,Bacillus subtilis,b35a5bbc767b2e41c70703f2d758a0e6,1,1,HPA,True,ACUUGCU,X-ray diffraction,1.95
+2eew_1_A_A,2EEW,Bacillus subtilis,9577b48d791bc9bb4750ef8046d8f895,1,1,HPA,True,AUCUACU,X-ray diffraction,2.25
+2g9c_1_A_A,2G9C,Bacillus subtilis,60421d8670ce711351da2f4059a583d9,1,1,3AY,True,AUUUAUU,X-ray diffraction,1.7
+2xnw_1_A_A,2XNW,Bacillus subtilis,60421d8670ce711351da2f4059a583d9,1,1,ZZR,True,AUUUAUU,X-ray diffraction,1.5
+2xnz_1_A_A,2XNZ,Bacillus subtilis,60421d8670ce711351da2f4059a583d9,1,1,3AW,True,AUUUAUU,X-ray diffraction,1.59
+2xo0_1_A_A,2XO0,Bacillus subtilis,60421d8670ce711351da2f4059a583d9,1,1,ZZS,True,AUUUAUU,X-ray diffraction,1.7
+2xo1_1_A_A,2XO1,Bacillus subtilis,1855406397c243365492459d56014bc6,,,N6M,True,AUUUAUU,X-ray diffraction,1.6
+3ds7_1_A_A,3DS7,synthetic construct,80e8a3397276d02fb46b60ea69997c1b,1,1,GNG,True,ACACGCU,X-ray diffraction,1.85
+3ds7_1_B_B,3DS7,synthetic construct,80e8a3397276d02fb46b60ea69997c1b,1,1,GNG,True,ACACGCU,X-ray diffraction,1.85
+3fo4_1_A_A,3FO4,Bacillus subtilis,60421d8670ce711351da2f4059a583d9,,,6GU,True,AUUUAUU,X-ray diffraction,1.9
+3fo6_1_A_A,3FO6,Bacillus subtilis,54983aa4145ea2d4bd08c364aa3d6912,1,1,6GO,True,AUUUACU,X-ray diffraction,1.9
+3g4m_1_A_A,3G4M,Bacillus subtilis,54983aa4145ea2d4bd08c364aa3d6912,1,1,2BP,True,AUUUACU,X-ray diffraction,2.4
+3gao_1_A_A,3GAO,Bacillus subtilis,54983aa4145ea2d4bd08c364aa3d6912,1,1,XAN,True,AUUUACU,X-ray diffraction,1.9
+3ger_1_A_A,3GER,Bacillus subtilis,54983aa4145ea2d4bd08c364aa3d6912,1,1,6GU,True,AUUUACU,X-ray diffraction,1.7
+3ges_1_A_A,3GES,Bacillus subtilis,60421d8670ce711351da2f4059a583d9,1,1,6GO,True,AUUUAUU,X-ray diffraction,2.15
+3gog_1_A_A,3GOG,Bacillus subtilis,a9b161eab14d7249b8e431d7b4aff4e7,1,1,6GU,True,GUUUACC,X-ray diffraction,2.1
+3got_1_A_A,3GOT,Bacillus subtilis,60421d8670ce711351da2f4059a583d9,1,1,A2F,True,AUUUAUU,X-ray diffraction,1.95
+3ivn_1_A_A,3IVN,Bacillus subtilis,b2fc59aedbee2a69ef851ab1fc0db8dc,1,1,none,True,AUUUACU,X-ray diffraction,2.8
+3ivn_1_B_B,3IVN,Bacillus subtilis,b2fc59aedbee2a69ef851ab1fc0db8dc,1,1,none,True,AUUUACU,X-ray diffraction,2.8
+3la5_1_A_A,3LA5,Bacillus subtilis,5de1a14cc6e11107bc92db0244797344,1,1,5AZ,True,AUCCACU,X-ray diffraction,1.7
+3rkf_1_A_A,3RKF,Bacillus subtilis,173ac151d815437bc45d00fe2434e5e0,1,1,DX4,True,AUUUACU,X-ray diffraction,2.5
+3rkf_1_B_B,3RKF,Bacillus subtilis,173ac151d815437bc45d00fe2434e5e0,1,1,DX4,True,AUUUACU,X-ray diffraction,2.5
+3rkf_1_C_C,3RKF,Bacillus subtilis,173ac151d815437bc45d00fe2434e5e0,1,1,DX4,True,AUUUACU,X-ray diffraction,2.5
+3rkf_1_D_D,3RKF,Bacillus subtilis,173ac151d815437bc45d00fe2434e5e0,1,1,DX4,True,AUUUACU,X-ray diffraction,2.5
+4fe5_1_B_A,4FE5,Bacillus subtilis,54983aa4145ea2d4bd08c364aa3d6912,1,1,HPA,True,AUUUACU,X-ray diffraction,1.32
+4fej_1_B_A,4FEJ,Bacillus subtilis,c1e318adbc0788dcbdbfa847c3eb4c7c,1,1,HPA,True,AUUUACU,X-ray diffraction,1.5
+4fel_1_B_A,4FEL,Bacillus subtilis,f7c954d984f312fcc0a281c2b29a8e0a,1,1,HPA,True,AUUUACU,X-ray diffraction,1.6
+4fen_1_B_A,4FEN,Bacillus subtilis,d496565908a8cd59d3e4ad19f6906208,1,1,HPA,True,AUUUACU,X-ray diffraction,1.35
+4feo_1_B_A,4FEO,Bacillus subtilis,7b537c5724bec20113efc8d8ed7effeb,1,1,6AP,True,AUUUAUU,X-ray diffraction,1.6
+4fep_1_B_A,4FEP,Bacillus subtilis,193f2b5dfec2fc7a9713591e03efa3c5,1,1,6AP,True,AUUUAUU,X-ray diffraction,1.65
+4lx5_1_A_A,4LX5,Vibrio vulnificus,60e947ff7adbf223d0fc5ea632de924a,1,1,29G,True,AUCCAUU,X-ray diffraction,2.13
+4lx6_1_A_A,4LX6,Vibrio vulnificus,1f425b7c151dc9455345e3b7eb2664a2,1,1,29H,True,AUCCACU,X-ray diffraction,2.15
+4tzx_1_X_A,4TZX,Vibrio vulnificus,d491d5585cdbd37912090b3812e01398,1,1,ADE,True,AUUUAUU,X-ray diffraction,2.01
+4tzy_1_X_A,4TZY,Vibrio vulnificus,d491d5585cdbd37912090b3812e01398,1,1,ADE,True,AUUUAUU,X-ray diffraction,2.57
+4xnr_1_X_A,4XNR,Vibrio vulnificus,d491d5585cdbd37912090b3812e01398,1,1,ADE,True,AUUUAUU,X-ray diffraction,2.21
+5c7u_1_B_A,5C7U,Bacillus subtilis,54983aa4145ea2d4bd08c364aa3d6912,1,1,HPA,True,AUUUACU,X-ray diffraction,3.05
+5c7w_1_C_A,5C7W,synthetic construct,13b583600efbfa6e1fea217b0d0f9b6d,1,1,HPA,True,AUUUACU,X-ray diffraction,3.22
+5e54_1_A_A,5E54,Vibrio vulnificus,d491d5585cdbd37912090b3812e01398,2,3,none,True,AUUUAUU,X-ray diffraction,2.3
+5e54_1_B_B,5E54,Vibrio vulnificus,d491d5585cdbd37912090b3812e01398,2,3,none,True,AUUUAUU,X-ray diffraction,2.3
+5swd_1_A_A,5SWD,Vibrio vulnificus,d491d5585cdbd37912090b3812e01398,2,3,ADE,True,AUUUAUU,X-ray diffraction,2.5
+5swd_1_B_B,5SWD,Vibrio vulnificus,d491d5585cdbd37912090b3812e01398,2,3,ADE,True,AUUUAUU,X-ray diffraction,2.5
+5swe_1_X_A,5SWE,Vibrio vulnificus,d491d5585cdbd37912090b3812e01398,1,1,ADE,True,AUUUAUU,X-ray diffraction,3.0
+5uza_1_X_A,5UZA,Vibrio vulnificus,d491d5585cdbd37912090b3812e01398,1,1,ADE,True,AUUUAUU,X-ray diffraction,2.22
+6p2h_1_A_A,6P2H,synthetic construct,b62bb48d7253e75154af433c9cefb68e,,,GNG,True,-UCCAC-,X-ray diffraction,2.803
+6ubu_1_B_A,6UBU,Bacillus subtilis,54983aa4145ea2d4bd08c364aa3d6912,1,1,GUN,True,AUUUACU,X-ray diffraction,1.6
+6uc7_1_B_A,6UC7,Bacillus subtilis,54983aa4145ea2d4bd08c364aa3d6912,1,1,Q44,True,AUUUACU,X-ray diffraction,1.798
+6uc8_1_B_A,6UC8,Bacillus subtilis,54983aa4145ea2d4bd08c364aa3d6912,1,1,ANG,True,AUUUACU,X-ray diffraction,1.898
+6uc9_1_B_A,6UC9,Bacillus subtilis,54983aa4145ea2d4bd08c364aa3d6912,1,1,CMG,True,AUUUACU,X-ray diffraction,1.941
+6vwt_1_A_A,6VWT,Vibrio vulnificus,d491d5585cdbd37912090b3812e01398,1,1,ADE,True,AUUUAUU,X-ray diffraction,3.03
+6vwt_1_B_B,6VWT,Vibrio vulnificus,d491d5585cdbd37912090b3812e01398,1,1,ADE,True,AUUUAUU,X-ray diffraction,3.03
+6vwv_1_A_A,6VWV,Vibrio vulnificus,d491d5585cdbd37912090b3812e01398,1,1,ADE,True,AUUUAUU,X-ray diffraction,3.0
+6vwv_1_B_B,6VWV,Vibrio vulnificus,d491d5585cdbd37912090b3812e01398,1,1,ADE,True,AUUUAUU,X-ray diffraction,3.0
+9iwf_1_A_A,9IWF,Paenibacillus beijingensis,1408eddb7528ead1faac8070414867a4,1,2,XAN,True,AUUGACU,X-ray diffraction,2.06
+9iwf_1_B_B,9IWF,Paenibacillus beijingensis,1408eddb7528ead1faac8070414867a4,1,2,XAN,True,AUUGACU,X-ray diffraction,2.06
+9iwg_1_A_A,9IWG,Paenibacillus beijingensis,60928ccc4b68334b92bdae4e95e3ce62,1,2,XAN,True,AUUGACU,X-ray diffraction,2.48
+9iwg_1_B_B,9IWG,Paenibacillus beijingensis,60928ccc4b68334b92bdae4e95e3ce62,1,2,XAN,True,AUUGACU,X-ray diffraction,2.48
+9ljn_1_A_A,9LJN,Paenibacillus sp. FSL E2-0178,5fe93c8eee0073b6e41d1ecdb41bf13b,1,2,GUN,True,AUUUACU,X-ray diffraction,2.75
+9lkc_1_A_A,9LKC,Paenibacillus sp. FSL E2-0178,5fe93c8eee0073b6e41d1ecdb41bf13b,1,2,GNG,True,AUUUACU,X-ray diffraction,2.61
+9lke_1_A_A,9LKE,Paenibacillus sp. FSL E2-0178,5fe93c8eee0073b6e41d1ecdb41bf13b,1,2,HPA,True,AUUUACU,X-ray diffraction,2.26
+9lkf_1_A_A,9LKF,Paenibacillus sp. FSL E2-0178,5fe93c8eee0073b6e41d1ecdb41bf13b,1,2,GMP,True,AUUUACU,X-ray diffraction,2.83
+9lmc_1_A_A,9LMC,Paenibacillus sp. FSL E2-0178,5fe93c8eee0073b6e41d1ecdb41bf13b,1,2,GUN,True,AUUUACU,X-ray diffraction,2.97
+9lmc_1_B_B,9LMC,Paenibacillus sp. FSL E2-0178,5fe93c8eee0073b6e41d1ecdb41bf13b,1,2,GUN,True,AUUUACU,X-ray diffraction,2.97
+9nbc_1_A_A,9NBC,synthetic construct,e5c3e849a91244dfe04b20c74b796d21,,,OXG,True,AU-UACU,Electron Microscopy,2.87
+9nbh_1_A_A,9NBH,synthetic construct,e5c3e849a91244dfe04b20c74b796d21,,,none,True,AU-UACU,Electron Microscopy,2.52
+9nbh_1_B_B,9NBH,synthetic construct,e5c3e849a91244dfe04b20c74b796d21,,,none,True,AU-UACU,Electron Microscopy,2.52
+9nbh_1_C_C,9NBH,synthetic construct,e5c3e849a91244dfe04b20c74b796d21,,,none,True,AU-UACU,Electron Microscopy,2.52
+9nbh_1_D_D,9NBH,synthetic construct,e5c3e849a91244dfe04b20c74b796d21,,,none,True,AU-UACU,Electron Microscopy,2.52
+9ndd_1_A_A,9NDD,synthetic construct,e5c3e849a91244dfe04b20c74b796d21,1,4,OXG,True,AU-UACU,Electron Microscopy,2.67
+9ndd_1_B_B,9NDD,synthetic construct,e5c3e849a91244dfe04b20c74b796d21,1,4,OXG,True,AU-UACU,Electron Microscopy,2.67
+9ndd_1_C_C,9NDD,synthetic construct,e5c3e849a91244dfe04b20c74b796d21,1,4,OXG,True,AU-UACU,Electron Microscopy,2.67
+9ndd_1_D_D,9NDD,synthetic construct,e5c3e849a91244dfe04b20c74b796d21,1,4,OXG,True,AU-UACU,Electron Microscopy,2.67
+9v4u_1_A_A,9V4U,Staphylococcus aureus,5fe93c8eee0073b6e41d1ecdb41bf13b,1,2,NPR,True,AUUUACU,X-ray diffraction,2.54
+9v4v_1_A_A,9V4V,Staphylococcus aureus,5fe93c8eee0073b6e41d1ecdb41bf13b,1,2,7PD,True,AUUUACU,X-ray diffraction,3.12
+9v4x_1_A_A,9V4X,Staphylococcus aureus,5fe93c8eee0073b6e41d1ecdb41bf13b,1,2,9QC,True,AUUUACU,X-ray diffraction,2.92
+9v4y_1_A_A,9V4Y,Staphylococcus aureus,5fe93c8eee0073b6e41d1ecdb41bf13b,1,2,ANG,True,AUUUACU,X-ray diffraction,2.79
+9v4z_1_A_A,9V4Z,Staphylococcus aureus,5fe93c8eee0073b6e41d1ecdb41bf13b,1,2,OXG,True,AUUUACU,X-ray diffraction,2.74
+9v50_1_A_A,9V50,Staphylococcus aureus,5fe93c8eee0073b6e41d1ecdb41bf13b,1,2,A1LXN,True,AUUUACU,X-ray diffraction,3.25
+9v51_1_A_A,9V51,Staphylococcus aureus,5fe93c8eee0073b6e41d1ecdb41bf13b,1,2,H4B,True,AUUUACU,X-ray diffraction,3.23

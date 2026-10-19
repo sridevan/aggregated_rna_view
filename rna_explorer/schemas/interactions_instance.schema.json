@@ -1,0 +1,84 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "All intra-chain RNA-RNA interaction observations of one chain (BGSU FR3D, mapped)",
+ "type": "object",
+ "required": [
+  "schema_version",
+  "rfam_acc",
+  "seq_name",
+  "observation",
+  "observations"
+ ],
+ "properties": {
+  "schema_version": {
+   "type": "string"
+  },
+  "rfam_acc": {
+   "type": "string",
+   "pattern": "^RF\\d{5}$"
+  },
+  "seq_name": {
+   "type": "string"
+  },
+  "observation": {
+   "type": "string"
+  },
+  "observations": {
+   "type": "array",
+   "items": {
+    "type": "array",
+    "minItems": 10,
+    "maxItems": 10,
+    "prefixItems": [
+     {
+      "enum": [
+       "basepair",
+       "stacking",
+       "baseribose",
+       "basephosphate"
+      ]
+     },
+     {
+      "type": "string",
+      "pattern": "^n?([ct][WHS][WHS]|s[35][35]|\\d{1,2}BR|\\d{1,2}BPh)$"
+     },
+     {
+      "type": "integer"
+     },
+     {
+      "type": "integer"
+     },
+     {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     {
+      "type": "string"
+     },
+     {
+      "type": "string"
+     },
+     {
+      "enum": [
+       "verified",
+       "mismatch"
+      ]
+     },
+     {
+      "type": "string"
+     }
+    ]
+   }
+  }
+ }
+}

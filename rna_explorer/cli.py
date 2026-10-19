@@ -44,6 +44,11 @@ def main(argv: list[str] | None = None) -> int:
     sc.add_argument("acc"); sc.add_argument("--out", type=Path, default=DEFAULT_OUT_DIR)
     sc.add_argument("--research-root", type=Path, default=Path.home() / "Desktop/aggregated_rna_clustering", help="research worktree root (read-only)")
     sc.add_argument("-v", "--verbose", action="store_true")
+    it = sub.add_parser("interactions", help="BGSU/FR3D RNA-RNA base pairs and stacking mapped to consensus positions with eligibility (interactions.json)")
+    it.add_argument("acc"); it.add_argument("--out", type=Path, default=DEFAULT_OUT_DIR); it.add_argument("--cache", type=Path, default=DEFAULT_CACHE_DIR)
+    it.add_argument("--seed-dir", type=Path, default=None, help="directory with bgsu/{PDB}_{basepairs|stacking}.csv.gz and PROVENANCE.json used to seed the cache (e.g. experiments/rf00167_interactions/raw)")
+    it.add_argument("--offline", action="store_true", help="never contact the network; entries whose files are not cached are recorded as annotation unavailable")
+    it.add_argument("-v", "--verbose", action="store_true")
     a = p.parse_args(argv)
     logging.basicConfig(level=logging.INFO if getattr(a, "verbose", False) else logging.WARNING, format="%(levelname)s %(message)s")
     if a.cmd == "orient":
@@ -69,6 +74,11 @@ def main(argv: list[str] | None = None) -> int:
         print(json.dumps({"acc": a.acc, **{k: res["dataset"][k] for k in ("n_mapped_instances", "n_clustered_instances", "n_clustered_entries", "n_excluded_instances")},
                           **{m: {"k": v["clustering"]["cut"]["k"], "cut_height": v["clustering"]["cut"]["height"], "groups": [g["n_instances"] for g in v["clustering"]["groups"]],
                                  "representatives": [g["representative"] for g in v["clustering"]["groups"]]} for m, v in res["metrics"].items()}}, indent=1))
+        return 0
+    if a.cmd == "interactions":
+        from .interactions import build_interactions
+        res = build_interactions(a.acc, a.cache, a.out, a.seed_dir, a.offline)
+        print(json.dumps({"acc": a.acc, **res["summary"], "default_numbering_reference": res["default_numbering_reference"]}, indent=1))
         return 0
     if a.cmd == "modifications":
         from .modifications import build_modifications

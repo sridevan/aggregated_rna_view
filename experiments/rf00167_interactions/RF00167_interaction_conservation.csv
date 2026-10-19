@@ -1,0 +1,200 @@
+category,rfam_pos_1,rfam_pos_2,consensus_nt,region_1,region_2,context,in_ss_cons,ligand_contact_position,n_eligible,n_observed,frequency,n_near_only,n_not_annotated,n_entries_eligible,n_entries_observed,classes,n_missing_position,n_unmodelled,n_base_incomplete,n_annotation_unavailable,n_observed_but_ineligible,example_entries
+basepair,14,92,au,unassigned,unassigned,within unassigned,False,False,8,8,1.0,0,0,2,2,cWW:8,75,1,0,0,0,9NBH 9NDD
+basepair,15,91,au,unassigned,unassigned,within unassigned,False,False,4,4,1.0,0,0,1,1,cWW:4,75,5,0,0,0,9NDD
+basepair,16,90,ua,unassigned,unassigned,within unassigned,False,False,4,4,1.0,0,0,1,1,cWW:4,75,5,0,0,0,9NDD
+basepair,17,89,ua,unassigned,unassigned,within unassigned,False,False,4,4,1.0,0,0,1,1,cWW:4,75,5,0,0,0,9NDD
+basepair,18,88,cg,unassigned,unassigned,SS_cons helix pair,True,False,15,14,0.9333,0,1,9,9,cWW:14,60,9,0,0,0,3IVN 4TZX 4TZY 4XNR 5SWE 5UZA
+basepair,19,87,cg,Helix P1,Helix P1,SS_cons helix pair,True,False,63,54,0.8571,0,9,52,43,cWW:54,7,14,0,0,0,1Y26 1Y27 2EEU 2EEV 2EEW 2G9C
+basepair,20,86,cg,Helix P1,Helix P1,SS_cons helix pair,True,False,73,69,0.9452,0,4,60,57,cWW:69,2,7,2,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+basepair,21,85,ua,Helix P1,Helix P1,SS_cons helix pair,True,False,77,76,0.987,0,1,64,63,cWW:76,1,6,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+basepair,22,84,CG,Helix P1,Helix P1,SS_cons helix pair,True,False,77,77,1.0,0,0,64,64,cWW:77,1,6,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+basepair,23,83,gc,Helix P1,Helix P1,SS_cons helix pair,True,False,79,77,0.9747,0,2,64,63,cWW:77,1,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+basepair,24,82,UA,Helix P1,Helix P1,SS_cons helix pair,True,False,79,77,0.9747,0,2,64,63,cWW:77,1,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+basepair,25,81,AU,Helix P1,Helix P1,SS_cons helix pair,True,True,79,78,0.9873,0,1,64,63,cWW:78,1,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+basepair,26,56,UA,J1/2,J2/3,J1/2 x J2/3,False,True,80,73,0.9125,0,7,65,62,cWW:73,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+basepair,27,50,AG,J1/2,J2/3,J1/2 x J2/3,False,False,80,69,0.8625,0,11,65,59,tWS:69,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+basepair,27,80,AC,J1/2,J3/1,J1/2 x J3/1,False,True,80,2,0.025,0,78,65,2,tHW:2,0,4,0,0,0,5E54 5SWD
+basepair,28,79,AA,J1/2,J3/1,J1/2 x J3/1,False,False,80,1,0.0125,0,79,65,1,cHW:1,0,4,0,0,0,6P2H
+basepair,29,49,ua,Helix P2,Helix P2,SS_cons helix pair,True,False,80,79,0.9875,0,1,65,64,cWW:75;tHS:4,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+basepair,30,48,cg,Helix P2,Helix P2,SS_cons helix pair,True,False,80,67,0.8375,0,13,65,52,cWW:67,0,4,0,0,0,1Y26 1Y27 2EES 2EET 2G9C 2XNZ
+basepair,31,47,cg,Helix P2,Helix P2,SS_cons helix pair,True,False,80,78,0.975,0,2,65,65,cWW:78,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+basepair,32,46,cg,Helix P2,Helix P2,SS_cons helix pair,True,False,80,79,0.9875,0,1,65,64,cWW:79,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+basepair,33,45,gc,Helix P2,Helix P2,SS_cons helix pair,True,False,80,77,0.9625,0,3,65,62,cWW:77,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+basepair,34,44,gc,Helix P2,Helix P2,SS_cons helix pair,True,False,80,79,0.9875,0,1,65,64,cWW:79,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+basepair,35,43,gc,Helix P2,Helix P2,SS_cons helix pair,True,False,80,73,0.9125,0,7,65,62,cWW:73,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+basepair,37,41,AG,L2,L2,within L2,False,False,80,3,0.0375,0,77,65,2,cSS:3,0,4,0,0,0,6VWT 9V4V
+basepair,37,71,AA,L2,L3,L2-L3 (loop-loop tertiary),False,False,80,68,0.85,0,12,65,60,tWH:68,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+basepair,38,70,UA,L2,L3,L2-L3 (loop-loop tertiary),False,False,80,64,0.8,0,16,65,54,tWH:63;tWW:1,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+basepair,39,69,AA,L2,L3,L2-L3 (loop-loop tertiary),False,False,75,49,0.6533,0,26,63,42,tHW:49,9,0,0,0,0,1Y27 2B57 2EES 2EET 2EEU 2EEV
+basepair,41,66,GC,L2,L3,L2-L3 (loop-loop tertiary),False,False,80,80,1.0,0,0,65,65,cWW:80,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+basepair,42,65,GC,L2,L3,L2-L3 (loop-loop tertiary),False,False,80,75,0.9375,0,5,65,63,cWW:75,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+basepair,42,71,GA,L2,L3,L2-L3 (loop-loop tertiary),False,False,80,53,0.6625,0,27,65,47,tSW:53,0,4,0,0,0,1Y26 2B57 2EES 2EET 2EEU 2EEV
+basepair,50,57,GC,J2/3,J2/3,within J2/3,False,False,80,66,0.825,0,14,65,52,cWW:66,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+basepair,51,52,UU,J2/3,J2/3,within J2/3,False,True,75,1,0.0133,0,74,63,1,cSH:1,9,0,0,0,0,3DS7
+basepair,51,55,UU,J2/3,J2/3,within J2/3,False,True,75,1,0.0133,0,74,63,1,tWW:1,9,0,0,0,0,9IWF
+basepair,51,56,UA,J2/3,J2/3,within J2/3,False,True,75,4,0.0533,0,71,63,2,cWW:4,9,0,0,0,0,5E54 5SWD
+basepair,52,80,UC,J2/3,J3/1,J2/3 x J3/1,False,True,80,2,0.025,0,78,65,2,cWW:2,0,4,0,0,0,3IVN 5E54
+basepair,52,81,UU,J2/3,Helix P1,J2/3 x Helix P1,False,True,79,2,0.0253,0,77,64,2,cWS:2,1,4,0,0,0,5E54 5SWD
+basepair,53,79,UA,J2/3,J3/1,J2/3 x J3/1,False,False,80,4,0.05,0,76,65,2,cWW:4,0,4,0,0,0,5E54 5SWD
+basepair,53,82,UA,J2/3,Helix P1,J2/3 x Helix P1,False,False,79,56,0.7089,0,23,64,51,cWS:56,1,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+basepair,54,81,CU,J2/3,Helix P1,J2/3 x Helix P1,False,True,79,71,0.8987,0,8,64,61,cWS:71,1,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+basepair,57,78,CG,J2/3,Helix P3,J2/3 x Helix P3,False,False,80,13,0.1625,0,67,65,12,cWW:13,0,4,0,0,0,9LJN 9LKC 9LKE 9LKF 9LMC 9V4U
+basepair,58,78,CG,Helix P3,Helix P3,SS_cons helix pair,True,False,67,67,1.0,0,0,53,53,cWW:67,13,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+basepair,59,77,au,Helix P3,Helix P3,SS_cons helix pair,True,False,80,63,0.7875,0,17,65,54,cWW:59;tWW:4,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+basepair,60,76,gc,Helix P3,Helix P3,SS_cons helix pair,True,False,80,80,1.0,0,0,65,65,cWW:80,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+basepair,61,75,gc,Helix P3,Helix P3,SS_cons helix pair,True,False,80,79,0.9875,0,1,65,64,cWW:79,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+basepair,62,74,cg,Helix P3,Helix P3,SS_cons helix pair,True,False,80,76,0.95,0,4,65,64,cWW:76,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+basepair,63,73,au,Helix P3,Helix P3,SS_cons helix pair,True,False,80,77,0.9625,0,3,65,63,cWW:77,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+basepair,64,72,au,unassigned,unassigned,SS_cons helix pair,True,False,18,16,0.8889,0,2,15,13,cWW:16,66,0,0,0,0,9IWF 9IWG 9LJN 9LKC 9LKE 9LKF
+basepair,66,70,CA,L3,L3,within L3,False,False,80,59,0.7375,0,21,65,52,cSW:59,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+basepair,67,68,GU,L3,L3,within L3,False,False,75,49,0.6533,0,26,63,42,cSH:49,0,4,5,0,0,1Y27 2B57 2EES 2EET 2EEU 2EEV
+stacking,1,94,au,unassigned,unassigned,within unassigned,False,False,8,8,1.0,0,0,2,2,s35:8,75,1,0,0,0,9NBH 9NDD
+stacking,2,3,aa,unassigned,unassigned,adjacent stack,False,False,8,8,1.0,0,0,2,2,s35:8,75,1,0,0,0,9NBH 9NDD
+stacking,2,93,au,unassigned,unassigned,within unassigned,False,False,8,8,1.0,0,0,2,2,s53:8,75,1,0,0,0,9NBH 9NDD
+stacking,3,4,aa,unassigned,unassigned,adjacent stack,False,False,8,8,1.0,0,0,2,2,s35:8,75,1,0,0,0,9NBH 9NDD
+stacking,5,6,aa,unassigned,unassigned,adjacent stack,False,False,8,8,1.0,0,0,2,2,s35:8,75,1,0,0,0,9NBH 9NDD
+stacking,6,7,aa,unassigned,unassigned,adjacent stack,False,False,8,8,1.0,0,0,2,2,s35:8,75,1,0,0,0,9NBH 9NDD
+stacking,7,8,aa,unassigned,unassigned,adjacent stack,False,False,8,8,1.0,0,0,2,2,s35:8,75,1,0,0,0,9NBH 9NDD
+stacking,8,9,aa,unassigned,unassigned,adjacent stack,False,False,8,8,1.0,0,0,2,2,s35:8,75,1,0,0,0,9NBH 9NDD
+stacking,9,10,aa,unassigned,unassigned,adjacent stack,False,False,8,8,1.0,0,0,2,2,s35:8,75,1,0,0,0,9NBH 9NDD
+stacking,10,11,aa,unassigned,unassigned,adjacent stack,False,False,8,8,1.0,0,0,2,2,s35:8,75,1,0,0,0,9NBH 9NDD
+stacking,11,12,aa,unassigned,unassigned,adjacent stack,False,False,8,8,1.0,0,0,2,2,s35:8,75,1,0,0,0,9NBH 9NDD
+stacking,12,13,aa,unassigned,unassigned,adjacent stack,False,False,8,8,1.0,0,0,2,2,s35:8,75,1,0,0,0,9NBH 9NDD
+stacking,14,15,aa,unassigned,unassigned,adjacent stack,False,False,8,8,1.0,0,0,2,2,s35:8,75,1,0,0,0,9NBH 9NDD
+stacking,15,16,au,unassigned,unassigned,adjacent stack,False,False,4,4,1.0,0,0,1,1,s35:4,75,5,0,0,0,9NDD
+stacking,15,92,au,unassigned,unassigned,within unassigned,False,False,8,8,1.0,0,0,2,2,s55:8,75,1,0,0,0,9NBH 9NDD
+stacking,16,17,uu,unassigned,unassigned,adjacent stack,False,False,4,4,1.0,0,0,1,1,s35:4,75,5,0,0,0,9NDD
+stacking,17,18,uc,unassigned,unassigned,adjacent stack,False,False,4,4,1.0,0,0,1,1,s35:4,75,5,0,0,0,9NDD
+stacking,17,90,ua,unassigned,unassigned,within unassigned,False,False,4,4,1.0,0,0,1,1,s55:4,75,5,0,0,0,9NDD
+stacking,18,19,cc,unassigned,Helix P1,adjacent stack,False,False,19,15,0.7895,0,4,11,10,s35:15,60,5,0,0,0,3IVN 4TZX 4TZY 4XNR 5E54 5SWD
+stacking,18,89,ca,unassigned,unassigned,within unassigned,False,False,4,4,1.0,0,0,1,1,s55:4,75,5,0,0,0,9NDD
+stacking,19,20,cc,Helix P1,Helix P1,adjacent stack,False,False,67,67,1.0,0,0,54,54,s35:67,7,10,0,0,0,1Y26 1Y27 2EES 2EET 2EEU 2EEV
+stacking,19,88,cg,Helix P1,unassigned,Helix P1 x unassigned,False,False,15,15,1.0,0,0,9,9,s55:15,60,9,0,0,0,3IVN 4TZX 4TZY 4XNR 5SWE 5UZA
+stacking,20,21,cu,Helix P1,Helix P1,adjacent stack,False,False,77,77,1.0,0,0,62,62,s35:77,2,5,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,20,87,cg,Helix P1,Helix P1,within Helix P1,False,False,63,43,0.6825,10,10,52,37,s55:43,7,14,0,0,0,1Y26 2EES 2EEU 2EEV 2EEW 2G9C
+stacking,21,22,uC,Helix P1,Helix P1,adjacent stack,False,False,79,79,1.0,0,0,64,64,s35:79,1,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,21,86,ug,Helix P1,Helix P1,within Helix P1,False,False,73,13,0.1781,28,32,60,9,s55:13,2,7,2,0,0,3G4M 3IVN 4LX5 4LX6 4TZY 6VWT
+stacking,22,23,Cg,Helix P1,Helix P1,adjacent stack,False,False,79,76,0.962,3,0,64,62,s35:76,1,4,0,0,0,1Y27 2B57 2EES 2EET 2EEU 2EEV
+stacking,22,80,CC,Helix P1,J3/1,Helix P1 x J3/1,False,True,79,1,0.0127,0,78,64,1,s33:1,1,4,0,0,0,6UC7
+stacking,22,85,Ca,Helix P1,Helix P1,within Helix P1,False,False,77,32,0.4156,6,39,64,26,s55:32,1,6,0,0,0,1Y27 3IVN 3LA5 3RKF 4LX6 4TZX
+stacking,23,24,gU,Helix P1,Helix P1,adjacent stack,False,False,79,79,1.0,0,0,64,64,s35:79,1,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,23,84,gG,Helix P1,Helix P1,within Helix P1,False,False,77,69,0.8961,3,5,64,57,s55:69,1,6,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,24,25,UA,Helix P1,Helix P1,adjacent stack,False,True,79,79,1.0,0,0,64,64,s35:79,1,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,25,52,AU,Helix P1,J2/3,Helix P1 x J2/3,False,True,79,4,0.0506,0,75,64,3,s35:4,1,4,0,0,0,3IVN 5E54 5SWD
+stacking,25,82,AA,Helix P1,Helix P1,within Helix P1,False,True,79,78,0.9873,1,0,64,63,s55:78,1,4,0,0,0,1Y26 1Y27 2B57 2EET 2EEU 2EEV
+stacking,26,27,UA,J1/2,J1/2,adjacent stack,False,True,80,72,0.9,0,8,65,62,s53:71;s55:1,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,26,50,UG,J1/2,J2/3,J1/2 x J2/3,False,True,80,66,0.825,10,4,65,56,s53:66,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,26,51,UU,J1/2,J2/3,J1/2 x J2/3,False,True,75,1,0.0133,54,20,63,1,s35:1,9,0,0,0,0,2EEV
+stacking,26,52,UU,J1/2,J2/3,J1/2 x J2/3,False,True,80,2,0.025,0,78,65,1,s33:2,0,4,0,0,0,3IVN
+stacking,27,29,Au,J1/2,Helix P2,J1/2 x Helix P2,False,False,80,68,0.85,8,4,65,58,s55:67;s35:1,0,4,0,0,0,1Y26 1Y27 2B57 2EET 2EEU 2EEV
+stacking,27,52,AU,J1/2,J2/3,J1/2 x J2/3,False,False,80,2,0.025,0,78,65,2,s53:2,0,4,0,0,0,5E54 5SWD
+stacking,27,53,AU,J1/2,J2/3,J1/2 x J2/3,False,False,80,2,0.025,0,78,65,2,s35:2,0,4,0,0,0,5E54 5SWD
+stacking,27,81,AU,J1/2,Helix P1,J1/2 x Helix P1,False,True,79,1,0.0127,1,77,64,1,s55:1,1,4,0,0,0,5SWD
+stacking,28,57,AC,J1/2,J2/3,J1/2 x J2/3,False,False,80,13,0.1625,0,67,65,12,s53:13,0,4,0,0,0,9LJN 9LKC 9LKE 9LKF 9LMC 9V4U
+stacking,28,58,AC,J1/2,Helix P3,J1/2 x Helix P3,False,False,67,36,0.5373,27,4,53,30,s35:31;s53:4;s55:1,13,4,0,0,0,1Y26 1Y27 2B57 2EET 2EEU 2EEV
+stacking,28,59,Aa,J1/2,Helix P3,J1/2 x Helix P3,False,False,80,17,0.2125,0,63,65,14,s35:17,0,4,0,0,0,9IWF 9IWG 9LJN 9LKC 9LKE 9LKF
+stacking,28,78,AG,J1/2,Helix P3,J1/2 x Helix P3,False,False,80,79,0.9875,0,1,65,64,s33:61;s55:17;s53:1,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,28,79,AA,J1/2,J3/1,J1/2 x J3/1,False,False,80,62,0.775,0,18,65,50,s55:61;s35:1,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,29,30,uc,Helix P2,Helix P2,adjacent stack,False,False,80,80,1.0,0,0,65,65,s35:80,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,29,50,uG,Helix P2,J2/3,Helix P2 x J2/3,False,False,80,68,0.85,11,1,65,57,s55:68,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,30,31,cc,Helix P2,Helix P2,adjacent stack,False,False,80,47,0.5875,20,13,65,33,s35:47,0,4,0,0,0,1Y26 3DS7 3FO6 3IVN 3LA5 3RKF
+stacking,30,49,ca,Helix P2,Helix P2,within Helix P2,False,False,80,42,0.525,15,23,65,31,s55:42,0,4,0,0,0,2EES 2EET 2G9C 2XNZ 2XO1 3DS7
+stacking,31,32,cc,Helix P2,Helix P2,adjacent stack,False,False,80,80,1.0,0,0,65,65,s35:80,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,31,48,cg,Helix P2,Helix P2,within Helix P2,False,False,80,80,1.0,0,0,65,65,s55:80,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,32,33,cg,Helix P2,Helix P2,adjacent stack,False,False,80,57,0.7125,22,1,65,50,s35:57,0,4,0,0,0,1Y26 1Y27 2B57 2EET 2EEU 2EEV
+stacking,32,47,cg,Helix P2,Helix P2,within Helix P2,False,False,80,27,0.3375,12,41,65,20,s55:27,0,4,0,0,0,1Y26 3LA5 4LX5 4LX6 4TZX 4TZY
+stacking,33,34,gg,Helix P2,Helix P2,adjacent stack,False,False,80,80,1.0,0,0,65,65,s35:80,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,33,46,gg,Helix P2,Helix P2,within Helix P2,False,False,80,77,0.9625,1,2,65,62,s55:77,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,34,35,gg,Helix P2,Helix P2,adjacent stack,False,False,80,75,0.9375,5,0,65,63,s35:75,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,34,45,gc,Helix P2,Helix P2,within Helix P2,False,False,80,20,0.25,0,60,65,15,s55:20,0,4,0,0,0,1Y26 3IVN 3LA5 4LX5 4LX6 4TZX
+stacking,35,36,gA,Helix P2,L2,adjacent stack,False,False,80,64,0.8,10,6,65,53,s35:64,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,35,44,gc,Helix P2,Helix P2,within Helix P2,False,False,80,53,0.6625,6,21,65,46,s55:53,0,4,0,0,0,1Y27 2B57 2EES 2EET 2EEU 2EEV
+stacking,36,37,AA,L2,L2,adjacent stack,False,False,80,80,1.0,0,0,65,65,s35:80,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,36,43,Ac,L2,Helix P2,L2 x Helix P2,False,False,80,80,1.0,0,0,65,65,s55:80,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,37,38,AU,L2,L2,adjacent stack,False,False,80,80,1.0,0,0,65,65,s35:80,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,37,70,AA,L2,L3,L2-L3 (loop-loop tertiary),False,False,80,1,0.0125,6,73,65,1,s35:1,0,4,0,0,0,9LMC
+stacking,38,69,UA,L2,L3,L2-L3 (loop-loop tertiary),False,False,80,14,0.175,11,55,65,13,s33:10;s35:4,0,4,0,0,0,1Y26 5C7W 9LJN 9LKC 9LKE 9LKF
+stacking,39,41,AG,L2,L2,within L2,False,False,75,74,0.9867,0,1,63,62,s55:63;s35:11,9,0,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,39,66,AC,L2,L3,L2-L3 (loop-loop tertiary),False,False,75,75,1.0,0,0,63,63,s53:63;s33:12,9,0,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,39,67,AG,L2,L3,L2-L3 (loop-loop tertiary),False,False,75,61,0.8133,7,7,63,53,s35:49;s55:12,9,0,0,0,0,1Y27 2B57 2EES 2EET 2EEU 2EEV
+stacking,39,68,AU,L2,L3,L2-L3 (loop-loop tertiary),False,False,75,52,0.6933,7,16,63,46,s35:52,9,0,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,40,41,UG,L2,L2,adjacent stack,False,False,80,2,0.025,0,78,65,2,s35:2,0,4,0,0,0,9NBC 9NDD
+stacking,41,42,GG,L2,L2,adjacent stack,False,False,80,80,1.0,0,0,65,65,s35:80,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,42,63,Ga,L2,Helix P3,L2 x Helix P3,False,False,80,22,0.275,20,38,65,21,s33:22,0,4,0,0,0,1Y27 2B57 2EEU 2EEV 2EEW 2G9C
+stacking,42,66,GC,L2,L3,L2-L3 (loop-loop tertiary),False,False,80,2,0.025,74,4,65,2,s55:2,0,4,0,0,0,9V4V 9V51
+stacking,42,71,GA,L2,L3,L2-L3 (loop-loop tertiary),False,False,80,4,0.05,0,76,65,1,s53:4,0,4,0,0,0,9NDD
+stacking,42,72,Gu,L2,unassigned,L2 x unassigned,False,False,18,18,1.0,0,0,15,15,s35:18,66,0,0,0,0,6P2H 9IWF 9IWG 9LJN 9LKC 9LKE
+stacking,42,73,Gu,L2,Helix P3,L2 x Helix P3,False,False,80,60,0.75,1,19,65,49,s35:60,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,43,44,cc,Helix P2,Helix P2,adjacent stack,False,False,80,43,0.5375,33,4,65,32,s35:43,0,4,0,0,0,1Y26 1Y27 3IVN 3LA5 3RKF 4LX5
+stacking,44,45,cc,Helix P2,Helix P2,adjacent stack,False,False,80,76,0.95,0,4,65,64,s35:76,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,45,46,cg,Helix P2,Helix P2,adjacent stack,False,False,80,56,0.7,20,4,65,48,s35:56,0,4,0,0,0,1Y27 2B57 2EES 2EET 2EEU 2EEV
+stacking,46,47,gg,Helix P2,Helix P2,adjacent stack,False,False,80,80,1.0,0,0,65,65,s35:80,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,47,48,gg,Helix P2,Helix P2,adjacent stack,False,False,80,77,0.9625,3,0,65,62,s35:77,0,4,0,0,0,1Y26 2B57 2EES 2EET 2EEU 2EEV
+stacking,48,49,ga,Helix P2,Helix P2,adjacent stack,False,False,80,80,1.0,0,0,65,65,s35:80,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,49,50,aG,Helix P2,J2/3,adjacent stack,False,False,80,80,1.0,0,0,65,65,s35:80,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,50,51,GU,J2/3,J2/3,adjacent stack,False,True,75,4,0.0533,30,41,63,2,s35:4,9,0,0,0,0,5E54 5SWD
+stacking,50,52,GU,J2/3,J2/3,within J2/3,False,False,80,1,0.0125,3,76,65,1,s35:1,0,4,0,0,0,9NDD
+stacking,50,56,GA,J2/3,J2/3,within J2/3,False,True,80,45,0.5625,17,18,65,42,s33:45,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEW
+stacking,51,52,UU,J2/3,J2/3,adjacent stack,False,True,75,4,0.0533,0,71,63,4,s35:3;s33:1,9,0,0,0,0,3DS7 6P2H 9LKC 9LKF
+stacking,51,53,UU,J2/3,J2/3,within J2/3,False,True,75,2,0.0267,57,16,63,1,s35:2,9,0,0,0,0,3IVN
+stacking,51,54,UC,J2/3,J2/3,within J2/3,False,True,75,4,0.0533,0,71,63,2,s35:4,9,0,0,0,0,5E54 5SWD
+stacking,52,53,UU,J2/3,J2/3,adjacent stack,False,False,80,6,0.075,0,74,65,6,s33:2;s35:2;s53:2,0,4,0,0,0,3DS7 5E54 5SWD 6P2H 9LKC 9LKF
+stacking,52,56,UA,J2/3,J2/3,within J2/3,False,True,80,2,0.025,0,78,65,1,s35:2,0,4,0,0,0,3IVN
+stacking,52,81,UU,J2/3,Helix P1,J2/3 x Helix P1,False,True,79,4,0.0506,0,75,64,3,s55:4,1,4,0,0,0,3IVN 5E54 5SWD
+stacking,52,82,UA,J2/3,Helix P1,J2/3 x Helix P1,False,False,79,1,0.0127,2,76,64,1,s55:1,1,4,0,0,0,5SWD
+stacking,53,54,UC,J2/3,J2/3,adjacent stack,False,False,80,1,0.0125,8,71,65,1,s35:1,0,4,0,0,0,3RKF
+stacking,54,55,CU,J2/3,J2/3,adjacent stack,False,True,80,76,0.95,0,4,65,63,s35:72;s33:4,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,54,56,CA,J2/3,J2/3,within J2/3,False,True,80,4,0.05,0,76,65,2,s55:4,0,4,0,0,0,5E54 5SWD
+stacking,55,56,UA,J2/3,J2/3,adjacent stack,False,True,80,76,0.95,0,4,65,63,s35:72;s55:4,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,56,57,AC,J2/3,J2/3,adjacent stack,False,True,80,63,0.7875,4,13,65,52,s35:62;s33:1,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,57,79,CA,J2/3,J3/1,J2/3 x J3/1,False,False,80,13,0.1625,0,67,65,12,s55:13,0,4,0,0,0,9LJN 9LKC 9LKE 9LKF 9LMC 9V4U
+stacking,58,59,Ca,Helix P3,Helix P3,adjacent stack,False,False,67,32,0.4776,12,23,53,23,s35:32,13,4,0,0,0,1Y26 1Y27 3GES 3IVN 3LA5 3RKF
+stacking,58,79,CA,Helix P3,J3/1,Helix P3 x J3/1,False,False,67,4,0.0597,0,63,53,2,s55:4,13,4,0,0,0,9IWF 9IWG
+stacking,59,60,ag,Helix P3,Helix P3,adjacent stack,False,False,80,80,1.0,0,0,65,65,s35:80,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,59,78,aG,Helix P3,Helix P3,within Helix P3,False,False,80,63,0.7875,0,17,65,51,s55:63,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,60,61,gg,Helix P3,Helix P3,adjacent stack,False,False,80,80,1.0,0,0,65,65,s35:80,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,60,77,gu,Helix P3,Helix P3,within Helix P3,False,False,80,31,0.3875,30,19,65,23,s55:31,0,4,0,0,0,1Y27 2B57 2EES 2EET 2EEW 2XNZ
+stacking,61,62,gc,Helix P3,Helix P3,adjacent stack,False,False,80,79,0.9875,0,1,65,64,s35:79,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,61,76,gc,Helix P3,Helix P3,within Helix P3,False,False,80,73,0.9125,6,1,65,60,s55:73,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,62,63,ca,Helix P3,Helix P3,adjacent stack,False,False,80,80,1.0,0,0,65,65,s35:80,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,62,75,cc,Helix P3,Helix P3,within Helix P3,False,False,80,7,0.0875,12,61,65,4,s55:7,0,4,0,0,0,3IVN 6P2H 9NBC 9NDD
+stacking,63,64,aa,Helix P3,unassigned,adjacent stack,False,False,18,18,1.0,0,0,15,15,s35:18,66,0,0,0,0,6P2H 9IWF 9IWG 9LJN 9LKC 9LKE
+stacking,63,65,aC,Helix P3,L3,Helix P3 x L3,False,False,80,61,0.7625,1,18,65,49,s35:61,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,63,74,ag,Helix P3,Helix P3,within Helix P3,False,False,80,73,0.9125,2,5,65,62,s55:73,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,64,65,aC,unassigned,L3,adjacent stack,False,False,18,18,1.0,0,0,15,15,s35:18,66,0,0,0,0,6P2H 9IWF 9IWG 9LJN 9LKC 9LKE
+stacking,64,73,au,unassigned,Helix P3,unassigned x Helix P3,False,False,18,18,1.0,0,0,15,15,s55:18,66,0,0,0,0,6P2H 9IWF 9IWG 9LJN 9LKC 9LKE
+stacking,65,66,CC,L3,L3,adjacent stack,False,False,80,76,0.95,0,4,65,64,s35:76,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,66,67,CG,L3,L3,adjacent stack,False,False,80,4,0.05,0,76,65,1,s33:4,0,4,0,0,0,9NDD
+stacking,68,69,UA,L3,L3,adjacent stack,False,False,75,70,0.9333,2,3,63,62,s55:50;s35:9;s53:7;s33:4,0,4,5,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,69,70,AA,L3,L3,adjacent stack,False,False,80,80,1.0,0,0,65,65,s35:59;s55:12;s33:8;s53:1,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,70,71,AA,L3,L3,adjacent stack,False,False,80,76,0.95,4,0,65,64,s35:67;s55:7;s53:2,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,71,72,Au,L3,unassigned,adjacent stack,False,False,18,16,0.8889,1,1,15,14,s35:15;s55:1,66,0,0,0,0,6P2H 9IWF 9IWG 9LJN 9LKC 9LKE
+stacking,71,73,Au,L3,Helix P3,L3 x Helix P3,False,False,80,55,0.6875,6,19,65,47,s35:55,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,72,73,uu,unassigned,Helix P3,adjacent stack,False,False,18,18,1.0,0,0,15,15,s35:18,66,0,0,0,0,6P2H 9IWF 9IWG 9LJN 9LKC 9LKE
+stacking,73,74,ug,Helix P3,Helix P3,adjacent stack,False,False,80,71,0.8875,7,2,65,61,s35:71,0,4,0,0,0,1Y26 2B57 2EES 2EET 2EEU 2EEV
+stacking,74,75,gc,Helix P3,Helix P3,adjacent stack,False,False,80,79,0.9875,1,0,65,64,s35:79,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,75,76,cc,Helix P3,Helix P3,adjacent stack,False,False,80,80,1.0,0,0,65,65,s35:80,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,76,77,cu,Helix P3,Helix P3,adjacent stack,False,False,80,80,1.0,0,0,65,65,s35:71;s33:9,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,77,78,uG,Helix P3,Helix P3,adjacent stack,False,False,80,63,0.7875,0,17,65,51,s35:63,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,78,79,GA,Helix P3,J3/1,adjacent stack,False,False,80,18,0.225,0,62,65,15,s35:17;s33:1,0,4,0,0,0,6P2H 9IWF 9IWG 9LJN 9LKC 9LKE
+stacking,79,80,AC,J3/1,J3/1,adjacent stack,False,True,80,78,0.975,0,2,65,63,s35:78,0,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,80,81,CU,J3/1,Helix P1,adjacent stack,False,True,79,78,0.9873,0,1,64,63,s35:78,1,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,81,82,UA,Helix P1,Helix P1,adjacent stack,False,True,79,75,0.9494,4,0,64,62,s35:75,1,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,82,83,Ac,Helix P1,Helix P1,adjacent stack,False,False,79,79,1.0,0,0,64,64,s35:79,1,4,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,83,84,cG,Helix P1,Helix P1,adjacent stack,False,False,77,74,0.961,3,0,64,61,s35:74,1,6,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,84,85,Ga,Helix P1,Helix P1,adjacent stack,False,False,77,77,1.0,0,0,64,64,s35:77,1,6,0,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,85,86,ag,Helix P1,Helix P1,adjacent stack,False,False,73,73,1.0,0,0,60,60,s35:73,2,7,2,0,0,1Y26 1Y27 2B57 2EES 2EET 2EEU
+stacking,86,87,gg,Helix P1,Helix P1,adjacent stack,False,False,63,62,0.9841,1,0,52,52,s35:62,7,14,0,0,0,1Y26 1Y27 2EES 2EET 2EEU 2EEV
+stacking,87,88,gg,Helix P1,unassigned,adjacent stack,False,False,15,11,0.7333,4,0,9,8,s35:11,60,9,0,0,0,3IVN 4TZX 4TZY 4XNR 5SWE 5UZA
+stacking,88,89,ga,unassigned,unassigned,adjacent stack,False,False,4,4,1.0,0,0,1,1,s35:4,75,5,0,0,0,9NDD
+stacking,89,90,aa,unassigned,unassigned,adjacent stack,False,False,4,4,1.0,0,0,1,1,s35:4,75,5,0,0,0,9NDD
+stacking,90,91,au,unassigned,unassigned,adjacent stack,False,False,4,4,1.0,0,0,1,1,s35:4,75,5,0,0,0,9NDD
+stacking,91,92,uu,unassigned,unassigned,adjacent stack,False,False,4,4,1.0,0,0,1,1,s35:4,75,5,0,0,0,9NDD
+stacking,94,95,uu,unassigned,unassigned,adjacent stack,False,False,8,8,1.0,0,0,2,2,s35:8,75,1,0,0,0,9NBH 9NDD
+stacking,95,96,uu,unassigned,unassigned,adjacent stack,False,False,8,8,1.0,0,0,2,2,s35:8,75,1,0,0,0,9NBH 9NDD
+stacking,96,97,uu,unassigned,unassigned,adjacent stack,False,False,8,8,1.0,0,0,2,2,s35:8,75,1,0,0,0,9NBH 9NDD
+stacking,97,98,uu,unassigned,unassigned,adjacent stack,False,False,8,8,1.0,0,0,2,2,s35:8,75,1,0,0,0,9NBH 9NDD
+stacking,98,99,uu,unassigned,unassigned,adjacent stack,False,False,8,8,1.0,0,0,2,2,s35:8,75,1,0,0,0,9NBH 9NDD
+stacking,99,100,uu,unassigned,unassigned,adjacent stack,False,False,8,8,1.0,0,0,2,2,s35:8,75,1,0,0,0,9NBH 9NDD
+stacking,100,102,uu,unassigned,unassigned,within unassigned,False,False,8,2,0.25,5,1,2,1,s33:2,75,1,0,0,0,9NDD
+stacking,101,102,uu,unassigned,unassigned,adjacent stack,False,False,8,8,1.0,0,0,2,2,s35:8,75,1,0,0,0,9NBH 9NDD

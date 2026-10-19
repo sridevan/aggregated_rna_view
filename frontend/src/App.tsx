@@ -8,6 +8,7 @@ import { Tabs, type TabId } from './components/Tabs'
 import { FamilyOverview } from './components/FamilyOverview'
 import { StructuresTab } from './components/StructuresTab'
 import { AnnotationsTab } from './components/AnnotationsTab'
+import { InteractionsTab } from './components/InteractionsTab'
 import { HomePage } from './components/HomePage'
 
 import { AVAILABLE_ACCS, canonicalPath, FAMILY_NAMES } from './lib/route'
@@ -71,6 +72,7 @@ function Shell({ acc }: { acc: string }) {
         {tab === 'overview' && <FamilyOverview />}
         {tab === 'structures' && <StructuresTab />}
         {tab === 'annotations' && <AnnotationsTab />}
+        {tab === 'interactions' && <InteractionsTab />}
         </NavigationProvider>
         </NumberingProvider>
       </main>

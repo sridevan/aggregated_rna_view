@@ -81,3 +81,4 @@ data/families/RF00177/sasa.json
 data/families/RF00177/residue_mapping.csv
 # per-chain annotation records (not loaded by the app; regenerable with `annotate`)
 data/families/RF00177/annotations/
+data/families/RF00177/interactions_by_instance/

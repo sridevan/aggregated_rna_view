@@ -1,4 +1,4 @@
-import type { ChainMapping, ConsensusStats, FamilyOverview, InstanceRow, LigandsDataset, OrientationDataset, PocketTracksDataset, SasaTracksDataset, TracksDataset, ModificationTracksDataset, StructureClusteringDataset, ModificationsDataset, LoopsDataset } from '../types/backend'
+import type { ChainMapping, ConsensusStats, FamilyOverview, InstanceRow, LigandsDataset, OrientationDataset, PocketTracksDataset, SasaTracksDataset, TracksDataset, ModificationTracksDataset, StructureClusteringDataset, ModificationsDataset, LoopsDataset, InteractionsDataset } from '../types/backend'
 
 const BASE = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/families`
 
@@ -55,3 +55,5 @@ export const loadLoops = (acc: string) => memo(`${acc}/loops`, () => getJson<Loo
  *  the family-wide loops.json. */
 export const loadInstanceLoops = (acc: string, seqName: string) => memo(`${acc}/loops/${seqName}`, () =>
   getJson<{ loops: LoopsDataset['loops'] }>(`${BASE}/${acc}/loops_by_instance/${seqName}.json`).then((d) => d.loops).catch(() => loadLoops(acc).then((d) => d.loops)))
+/** Optional dataset of the Interactions tab (interactions.json); loaded when the tab is opened. */
+export const loadInteractions = (acc: string) => memo(`${acc}/interactions`, () => getJson<InteractionsDataset>(`${BASE}/${acc}/interactions.json`).catch(() => null))

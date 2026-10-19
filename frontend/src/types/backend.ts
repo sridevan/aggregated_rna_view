@@ -188,3 +188,50 @@ export interface LoopRecord { loop_id: string; pdb_id: string; loop_type: 'HL' |
   n_nucleotides: number; multi_chain: boolean; instances: string[]
   strands: { auth_asym_id: string; start_unit_id: string; end_unit_id: string; nucleotide_indices: [number, number]; n_nucleotides: number }[]; nucleotides: LoopNucleotide[] }
 export interface LoopsDataset { loops: LoopRecord[] }
+
+/** interactions.json (rna_explorer interactions): BGSU FR3D base pairs and stacking on consensus positions, with eligibility. */
+export type InteractionCategory = 'basepair' | 'stacking' | 'baseribose' | 'basephosphate'
+/** [category, fr3d_class, label_seq_id_1, label_seq_id_2, rfam_1, rfam_2, unit_id_1, unit_id_2, mapping_check, altlocs]; 5'->3' by label_seq_id;
+ *  rfam_k = consensus position (match), 'anchor^offset' (insertion) or null (outside the aligned region) */
+export type InteractionObservation = [InteractionCategory, string, number, number, number | string | null, number | string | null, string, string, 'verified' | 'mismatch', string]
+export interface InteractionInstance {
+  seq_name: string; pdb_id: string; auth_asym_id: string; label_asym_id: string
+  annotation: 'available' | 'unavailable'; annotation_note: string | null
+  /** per consensus position (index pos - 1): E eligible, I incomplete base, M not modelled, - no match residue */
+  eligibility: string
+  /** ribose / phosphate completeness per consensus position (same codes; schema 1.1+). Base-ribose and base-phosphate are evaluated on them. */
+  sugar_eligibility?: string; phosphate_eligibility?: string
+  /** categories whose annotations are not available for this chain (schema 1.1+) */
+  unavailable_categories?: InteractionCategory[]
+  /** parent nucleotide at each consensus position ('-' = none) */
+  nucleotides: string
+  n_interactions: number
+  /** schema 1.2+: indices into `pairs` of the chain's non-near observed consensus interactions, by FR3D class */
+  observed?: Record<string, number[]>
+  /** schema 1.2+: near annotations on consensus positions [category, class, pos_1, pos_2] */
+  near?: [InteractionCategory, string, number, number][]
+  /** schema 1.2+: interactions with an inserted / flanking nucleotide (kept in interactions_by_instance/<seq_name>.json) */
+  n_off_consensus?: number
+}
+export interface InteractionPair {
+  id: string; category: InteractionCategory; pos_1: number; pos_2: number; consensus_nt: string | null
+  /** base-ribose / base-phosphate: pos_1 = base nucleotide, pos_2 = nucleotide whose ribose / phosphate is contacted */
+  directional?: boolean
+  region_1: string | null; region_2: string | null; in_ss_cons: boolean; structure_class: 'secondary' | 'tertiary' | 'unclassified' | null
+  n_observed: number; n_eligible: number; frequency: number | null; n_entries_observed: number; n_entries_eligible: number
+  classes: Record<string, number>; nt_pairs: Record<string, number>; n_canonical: number
+  n_near_only: number; n_not_annotated: number; n_missing: number; n_incomplete: number; n_unmapped: number; n_annotation_unavailable: number; n_observed_but_ineligible: number
+}
+export interface InteractionsDataset {
+  schema_version: string; rfam_acc: string; clen: number
+  default_numbering_reference: { seq_name: string | null; rule: string; n_eligible_positions?: number; n_match_positions?: number }
+  position_regions: (string | null)[]
+  definitions: Record<string, unknown>
+  instances: InteractionInstance[]
+  /** schema <= 1.1 only: every observation inline (1.2+: interactions_by_instance/<seq_name>.json; the main file keeps the compact index) */
+  observations?: Record<string, InteractionObservation[]>
+  pairs: InteractionPair[]
+  summary: Record<string, unknown>
+  sources: { pdb_id: string; kind: string; url: string; status: string; retrieved?: string; sha256?: string }[]
+  provenance: Record<string, unknown>
+}
