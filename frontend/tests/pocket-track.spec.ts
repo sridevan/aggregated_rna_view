@@ -34,8 +34,8 @@ test('one pocket-occurrence track: marks, colours and tooltips follow pocket_tra
   await track.locator('rect[data-pos="56"]').click()
   // category popover with the caveats; no track-level icon; clicking does not collapse
   await page.getByTestId('category-header-pockets').getByTestId('info-tip').hover()
-  await expect(page.getByRole('tooltip')).toContainText('RNA pockets predicted using fpocketR and mapped to Rfam positions')
-  await expect(page.getByRole('tooltip')).toContainText('No prediction does not necessarily mean a binding pocket is absent')
+  await expect(page.getByRole('tooltip')).toContainText('fpocketR-predicted RNA pockets aggregated by Rfam position')
+  await expect(page.getByRole('tooltip')).toContainText('No predicted pocket does not establish absence of binding')
   await expect(page.getByTestId('category-pockets')).toHaveAttribute('data-open', 'true')
   await expect(page.locator('[data-testid="track-pocket-occurrence"] [data-testid="info-tip"]')).toHaveCount(0)
   await page.mouse.move(5, 5)

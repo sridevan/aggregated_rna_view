@@ -108,5 +108,27 @@
     "rationale": "The 1 - TM tree (fixed correspondence) has no dominant gap (k = 2-8 gaps 0.002-0.063 at T60) and low silhouettes (<= 0.23). k = 5 is the largest gap at T68 (0.085) and identical at T60 and T68 (ARI 1.0): the same four groups as discrepancy, plus 5CCB C (TRMT6/61A-bound tRNA-Lys3) split from the main group. No bootstrap or jackknife exists for TM: provisional. Chosen by the user on 2026-10-17."
    }
   }
+ },
+ "RF00011": {
+  "research_run": "experiments/rna_structural_clustering/results/rf00011_50/T362",
+  "research_summary": "experiments/rna_structural_clustering/results/rf00011_50/clustering/clustering_summary.json",
+  "research_reports": [
+   "RF00011_RNASEP_B_CLUSTERING_RESULTS.md",
+   "catalytic_rna_structural_diversity_investigation.md"
+  ],
+  "omit_floor": true,
+  "floor_note": "the 50-chain subset has no duplicate pairs (exact duplicate entries were collapsed when it was selected), so no noise floor exists; the nearest empirical reference is the apo 5 vs 10 mM Mg2+ pair 9OVB/9OVC (discrepancy 0.069, 3.7th percentile)",
+  "metrics": {
+   "discrepancy": {
+    "k": 2,
+    "validation": "stable",
+    "rationale": "Closed vs open S-domain (tetraloop docked into or released from its receptor): 29 vs 21 chains. Largest merge-height gap of the tree (0.311 to 0.463; the next gap is at most 0.025) and the best silhouette for k = 2-6 (0.554); position bootstrap ARI median and 5th percentile 1.00 (fraction >= 0.9: 1.00) and structural-element jackknife minimum ARI 1.00. The groups match an independent geometric readout exactly (tetraloop-receptor P-P distance 5.8-9.9 A in all 29 vs 28-51 A in all 21), and the same split is found in the full 101-chain research set. C4' RMSD gives the identical partition. Group sizes reflect the subset design (stratified selection), not populations. Chosen by the user on 2026-10-19."
+   },
+   "tm": {
+    "k": 2,
+    "validation": "provisional",
+    "rationale": "TM-score (US-align, fixed correspondence, normalised by the 362 shared positions) at k = 2 gives 42 vs 8: it does not reproduce the closed/open split and separates 8 conformers instead (silhouette 0.35); k = 4 (silhouette 0.44) isolates two four-chain conformer subgroups that have not been interpreted. No position bootstrap or jackknife exists for TM: provisional. Chosen by the user on 2026-10-19."
+   }
+  }
  }
 }

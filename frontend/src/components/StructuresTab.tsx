@@ -3,7 +3,7 @@ import { useFamily } from '../state/family'
 import { useSelection } from '../state/selection'
 import { useStructures } from '../state/structures'
 import { displayOrganism } from '../lib/format'
-import { familyFileUrl, loadLigands, loadModifications, loadStructureClustering } from '../api/data'
+import { familyFileUrl, loadLigandClasses, loadLigands, loadModifications, loadStructureClustering } from '../api/data'
 import { clusteringFor, dissimilarityMatrix, fmt, instanceLabel, structureColours, type Clustering } from '../lib/structureGroups'
 import type { InstanceRow, LigandsDataset, ModificationsDataset, StructureClusteringDataset, StructureMetricId } from '../types/backend'
 import { InstanceTable, type TableGroups } from './InstanceTable'
@@ -155,14 +155,17 @@ export function StructuresTab() {
 
 /** Structural Dissimilarity mode: the discrepancy matrix in TPPL seriation order (no groups, no dendrogram). */
 function DissimilarityPanel({ m, nShared, rowOf, shown, onSelectPair, onSelectOne }: { m: NonNullable<ReturnType<typeof dissimilarityMatrix>>; nShared: number; rowOf: (sn: string) => InstanceRow | undefined; shown: string[]; onSelectPair: (a: string, b: string) => void; onSelectOne: (sn: string) => void }) {
-  const info = `Pairwise geometric discrepancy between all ${m.ids.length} clustered RNA instances (${nShared} shared Rfam positions; lower values mean more similar structures). `
-    + `Rows and columns are ordered by tree-penalized path length seriation (TPPL; Aliyev & Zirbel 2023; ${m.seriation.repetitions} repetitions, seed ${m.seriation.seed}), so similar structures sit next to each other; `
-    + 'the order uses the matrix only, not the structural groups.'
+  const info = `Pairwise geometric discrepancy for ${m.ids.length} RNA instances at ${nShared} shared Rfam positions; lower means more similar. Rows and columns are ordered by tree-penalized path length seriation (TPPL), independently of structural groups.`
   return (
     <section className="flex min-w-0 flex-col rounded border border-stone-200 bg-white p-3" data-testid="dissimilarity-panel">
       <h2 className="flex items-center text-base font-semibold text-stone-900">Structural dissimilarity<InfoTip label="About the structural dissimilarity matrix" text={info} /></h2>
       <p className="text-xs text-stone-600" data-testid="dissimilarity-caption">{m.ids.length} RNA instances · geometric discrepancy · ordered by similarity (TPPL seriation)</p>
       <div className="mt-2 min-w-0"><DissimilarityHeatmap m={m} nShared={nShared} rowOf={rowOf} shown={shown} onSelectPair={onSelectPair} onSelectOne={onSelectOne} /></div>
+      {/* methods kept out of the info popover (short meaning only) */}
+      <details className="mt-2 text-xs text-stone-600" data-testid="dissimilarity-methods">
+        <summary className="cursor-pointer text-blue-700">Ordering method</summary>
+        <p className="mt-1">Tree-penalized path length seriation (TPPL; Aliyev &amp; Zirbel 2023), {m.seriation.repetitions} repetitions, seed {m.seriation.seed}. Similar structures are placed next to each other; the order uses the dissimilarity matrix only, not the structural groups.</p>
+      </details>
       <p className="mt-2 text-xs text-stone-500" data-testid="dissimilarity-hint">Click a diagonal cell to show that structure, or a cell below the diagonal to superpose the pair in 3D.</p>
     </section>
   )
@@ -188,8 +191,8 @@ function PairwisePanel({ c, data, groupId, onSelectGroup, metric, setMetric, sel
   const cl = c.metric.clustering
   // short meaning only; methods, cut rationale, thresholds and caveats are in Clustering details (Structural groups panel)
   const info = sim
-    ? 'TM-score measures overall 3D similarity at the shared Rfam positions (1 = identical). Groups and the dendrogram use 1 − TM-score, so lower values mean more similar structures; the dotted orange line marks the spread between duplicate structures.'
-    : 'Geometric discrepancy compares base positions and orientations at the shared Rfam positions; lower values mean more similar structures (0 = identical). The dotted orange line marks the spread between duplicate structures.'
+    ? 'TM-score measures 3D similarity at shared Rfam positions (1 = identical). Clustering uses 1 − TM-score, where lower values indicate greater similarity.'
+    : 'Geometric discrepancy compares nucleotide positions and orientations at shared Rfam positions. Lower values indicate greater similarity (0 = identical).'
   const dendroGroups = c.groups.map((g) => ({ id: g.group_id, label: g.label, color: g.color, node: g.nodeRef, from: g.from, to: g.to, size: g.n_instances }))
   const download = (name: string, text: string, type: string) => { const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([text], { type })); a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000) }
   const pairsCsv = () => { const rows = ['instance_a,instance_b,' + (sim ? 'tm_score,one_minus_tm' : 'geometric_discrepancy')]; for (let i = 0; i < n; i++) for (let j = i + 1; j < n; j++) rows.push(`${c.ids[i]},${c.ids[j]},` + (sim ? `${c.value[i][j]},${c.dist[i][j].toFixed(6)}` : `${c.dist[i][j]}`)); return rows.join('\n') }
@@ -315,7 +318,7 @@ function AlignmentPanel({ model, compareControl, c, group, acc, frameReference, 
         </div>
       )}
       {/* the viewer takes the vertical space the shared grid row gives the panel (equal outer heights with the pairwise panel) */}
-      <div className="mt-1.5 flex min-h-[320px] flex-1 flex-col lg:min-h-[340px]"><AlignmentViewer key={acc} entries={entries} hidden={[]} /></div>
+      <div className="mt-1.5 flex min-h-[320px] flex-1 flex-col lg:min-h-[340px]"><AlignmentViewer key={acc} entries={entries} hidden={[]} ligandClasses={() => loadLigandClasses(acc)} /></div>
       {/* read-only labels of what is displayed (colours as in the viewer) and Reset */}
       <div className="mt-1.5 flex flex-wrap items-center gap-1.5 text-[11px]" data-testid="viewer-labels" data-state={pairShown ? 'pair' : 'single'}>
         <span className="font-semibold text-stone-600">{pairShown ? 'Comparing:' : 'Displayed:'}</span>

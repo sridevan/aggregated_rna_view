@@ -425,3 +425,21 @@ test('an interaction with several FR3D classes expands into a per-class breakdow
   const one = ds.pairs.find((x) => x.category === 'basepair' && Object.keys((x as unknown as { classes: Record<string, number> }).classes).length === 1)!
   await expect(page.getByTestId(`iclass-toggle-${one.id}`)).toHaveCount(0)
 })
+
+test('compare context: resolution next to coverage; same RNA in different constructs is flagged (TPP 2GDI vs 2HOJ)', async ({ page }) => {
+  await page.goto('/RF00059'); await page.getByTestId('tab-interactions').click(); await expect(page.getByTestId('itable-box')).toBeVisible()
+  await page.getByTestId('imode-compare').click()
+  await page.getByTestId('icompare-a').selectOption('2gdi_1_X_A'); await page.getByTestId('icompare-b').selectOption('2hoj_1_A_A')
+  await expect(page.getByTestId('icompare-resolution-a')).toHaveText(' (X-ray, 2.05 Å)'); await expect(page.getByTestId('icompare-resolution-b')).toHaveText(' (X-ray, 2.5 Å)')
+  await expect(page.getByTestId('icompare-sequence')).toHaveAttribute('data-kind', 'construct')
+  await expect(page.getByTestId('icompare-sequence')).toContainText('same RNA on the consensus'); await expect(page.getByTestId('icompare-sequence')).toContainText('different constructs')
+  // short meaning in the info tip; the exact rules (terminal-construct exception, 1% threshold) in "Sequence classification rules"
+  await page.getByTestId('icompare-sequence').getByTestId('info-tip').click()
+  await expect(page.getByTestId('info-popover')).toContainText('Exact classification rules are in the methods.'); await page.keyboard.press('Escape')
+  const rules = page.getByTestId('icompare-sequence-methods'); await rules.locator('summary').click()
+  await expect(rules).toContainText('differ only at up to 3 positions within 5 positions of a chain end'); await expect(rules).toContainText('at most 1% of shared positions differ')
+  await page.getByTestId('icompare-b').selectOption('8f4o_1_A_A'); await page.getByTestId('icompare-a').selectOption('2hoj_1_A_A')
+  await expect(page.getByTestId('icompare-sequence')).toHaveAttribute('data-kind', 'identical')
+  await page.getByTestId('icompare-a').selectOption('2cky_1_A_A')
+  await expect(page.getByTestId('icompare-sequence')).toHaveAttribute('data-kind', 'different')
+})

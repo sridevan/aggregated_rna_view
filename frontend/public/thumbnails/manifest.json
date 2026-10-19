@@ -78,5 +78,21 @@
   "bytes": 5738,
   "generated": "2026-10-18T08:14:53.138Z",
   "generator": "frontend/scripts/make-thumbnails.mjs"
+ },
+ "RF00011": {
+  "file": "RF00011.webp",
+  "seq_name": "9owq_1_A_A",
+  "pdb_id": "9owq",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "n_residues_drawn": 417,
+  "coordinate_source": "https://www.ebi.ac.uk/pdbe/model-server/v1/9owq/atoms?label_asym_id=A&model_nums=1&encoding=cif",
+  "representation": "3Dmol.js cartoon: backbone tube with nucleotide ladders (all polymer atoms), principal-axes orientation",
+  "colour": "#5B78A8",
+  "size_px": 240,
+  "bytes": 8046,
+  "generated": "2026-10-19T18:30:38.333Z",
+  "generator": "frontend/scripts/make-thumbnails.mjs"
  }
 }

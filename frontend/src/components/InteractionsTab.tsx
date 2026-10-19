@@ -1,14 +1,15 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
-import { loadInteractions, loadStructureClustering } from '../api/data'
+import { loadInteractions, loadLigandClasses, loadStructureClustering } from '../api/data'
 import { useFamily } from '../state/family'
 import { useMapping } from '../state/useMapping'
 import { buildNumbering, chainAt, type Numbering } from '../lib/numbering'
 import { indexMapping, type MappingIndex } from '../lib/consensus'
 import {
   CATEGORIES, CATEGORY_CODE, CATEGORY_STYLE, CATEGORY_TEXT, categoryAvailability, categoryColor, circleLayout, compareInstances, COMPARE_TEXT, COMPARE_TIP, DEFAULT_FILTER,
-  classBreakdown, defaultComparePair, defaultFamilyOrder, DEFAULT_PAIR_MAX_RESOLUTION, helixCoverage, medianHelixCoverage, dominantClass, groupByEndpoints, groupId, groupOccurrence, indexInstance, matchesPositions, MULTI_RAMP, multiColor, pairIsCanonical,
+  classBreakdown, sequenceRelation, defaultComparePair, defaultFamilyOrder, DEFAULT_PAIR_MAX_RESOLUTION, helixCoverage, medianHelixCoverage, dominantClass, groupByEndpoints, groupId, groupOccurrence, indexInstance, matchesPositions, MULTI_RAMP, multiColor, pairIsCanonical,
   pairLabel, parseSearch, passes, positionLabel, showCircular, CIRCULAR_MAX_CLEN, STATE_TEXT, statusIn, supportingInstances, type CompareRow, type CompareStatus,
   type InstanceStatus, type InteractionFilter, type InteractionGroup, type SearchQuery,
+  CONSTRUCT_END_WINDOW, CONSTRUCT_MAX_END_DIFFS,
 } from '../lib/interactions'
 import type { InstanceRow, InteractionCategory, InteractionPair, InteractionsDataset } from '../types/backend'
 import { CircularDiagram, type DiagramArc } from './interactions/CircularDiagram'
@@ -53,8 +54,8 @@ const groupStatus = (ss: (InstanceStatus | null | undefined)[]): InstanceStatus[
   ss.some((s) => s?.state === 'present') ? 'present' : ss.some((s) => s?.state === 'absent') ? 'absent' : ss.some((s) => s) ? 'not_comparable' : null
 
 const TIP = {
-  diagram: 'Interactions between corresponding nucleotides across this RNA family. Arc colour indicates the fraction of eligible instances where each interaction is observed.',
-  frequency: 'Frequency is calculated from structures where both nucleotides are sufficiently resolved for interaction annotation.',
+  diagram: 'Interactions between corresponding Rfam positions. Arc colour shows the fraction of evaluable RNA instances with a recorded interaction.',
+  frequency: 'Frequency is the fraction of evaluable RNA instances with a recorded interaction.',
   klass: 'Interaction classifications follow BGSU/FR3D annotations. Codes describe the interaction geometry or contact type.\nBp: Leontis–Westhof family (cis/trans, edges W/H/S).\nBs: stacking face orientation (s35, s53, s33, s55).\nBr, Bph: base–ribose / base–phosphate class 0–9 (position of the base donor).\nn prefix: near interaction (not counted).',
   numbering: 'Residue labels use the selected reference structure. Equivalent nucleotides across RNA structures are identified using Rfam consensus positions. Changing the numbering reference changes labels only.',
   displayed: 'The structure shown in 3D. The “In displayed structure” column refers to it; it does not change the numbering or the family-wide frequencies.',
@@ -292,7 +293,7 @@ function FamilyMode({ ds, L, circular, labelFor, N, visiblePairs, selected, sele
           </div>
           {dRow && <PdbeMolstarViewer pdbId={dRow.pdb_id} labelAsymId={dRow.label_asym_id} authAsymId={dRow.auth_asym_id} region={{ start: dRow.map_start, end: dRow.map_end }}
             orientation={orientation?.transforms[dRow.seq_name] ?? null} selection={viewerSel.map((label_seq_id) => ({ label_seq_id }))} focusOnSelection structureColor={0x64748b}
-            onClearSelection={() => select(null)} canClear={!!selected} className="h-[460px]" />}
+            onClearSelection={() => select(null)} canClear={!!selected} ligandClasses={() => loadLigandClasses(acc)} className="h-[460px]" />}
           <ViewerCaption p={selected} status={selStatus} N={N} dRow={dRow} highlighted={viewerSel} />
         </section>
       </div>
@@ -583,7 +584,7 @@ function CompareMode({ ds, L, circular, labelFor, N, visiblePairs, pairById, sel
   const options = [...rowOf.values()]
   const sel = (v: string | null, set: (sn: string) => void, id: string, other: string | null) => <select value={v ?? ''} onChange={(e) => set(e.target.value)} data-testid={id} className="max-w-[15rem] rounded border border-stone-300 bg-white px-1 py-px">
     {!v && <option value="">Choose a chain…</option>}{options.map((i) => <option key={i.seq_name} value={i.seq_name} disabled={i.seq_name === other}>{instLabel(i)}{i.resolution != null ? ` · ${i.resolution} Å` : ''}</option>)}</select>
-  const fitDetails = fit.state === 'local' && fitPos != null ? `Chain B is superposed on chain A by a least-squares fit (quaternion method) of the base heavy atoms of ${labelFor(fitPos).text} (Rfam ${fitPos}) only: ${fit.nAtoms} corresponding atoms (by nucleotide identity), RMSD ${fit.rmsd?.toFixed(2)} Å. The partner nucleotide is not fitted, so its position relative to that base is preserved.` : ''
+  const fitDetails = fit.state === 'local' && fitPos != null ? `Structure B is aligned to A using ${fit.nAtoms} corresponding base heavy atoms of ${labelFor(fitPos).text} (Rfam ${fitPos}); RMSD ${fit.rmsd?.toFixed(2)} Å. The partner nucleotide is not fitted, preserving its relative position.` : ''
   return (
     <>
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs" data-testid="icompare-controls">
@@ -596,6 +597,7 @@ function CompareMode({ ds, L, circular, labelFor, N, visiblePairs, pairById, sel
         </div>
         {auto && a && b && <p className="basis-full text-stone-600" data-testid="icompare-auto">Showing the pair with the highest geometric discrepancy among eligible comparisons (both chains ≤ {DEFAULT_PAIR_MAX_RESOLUTION.toFixed(1)} Å).</p>}
         {a && b && <CoverageNote ds={ds} a={a} b={b} rowOf={rowOf} />}
+        {a && b && <SequenceNote ds={ds} a={a} b={b} rowOf={rowOf} />}
       </div>
       {!(rowA && rowB) ? <p className="rounded border border-dashed border-stone-300 bg-white p-4 text-sm text-stone-600" data-testid="icompare-choose">Choose two RNA chains to compare their interactions.</p> : <>
         {circular && <>
@@ -620,7 +622,7 @@ function CompareMode({ ds, L, circular, labelFor, N, visiblePairs, pairById, sel
           <CompareTable groups={groups} counts={counts} statuses={statuses} setStatuses={setStatuses} N={N} pairById={pairById} selectedId={selectedId} select={select} nOff={[ixA?.nOffConsensus ?? 0, ixB?.nOffConsensus ?? 0]} search={search} renderSearch={renderSearch} noTypes={noTypes} paging={paging} />
           <section className="grid min-w-0 content-start gap-y-1.5 lg:row-span-3 lg:grid-rows-subgrid" data-testid="icompare-viewer">
             <h3 className="self-end text-sm font-semibold text-stone-800">3D superposition</h3>
-            <InteractionPairViewer entries={entries} focus={viewerFocus} onFit={setFit} />
+            <InteractionPairViewer entries={entries} focus={viewerFocus} onFit={setFit} ligandClasses={() => loadLigandClasses(acc)} />
             <p className="text-xs text-stone-600" data-testid="icompare-fit" data-state={fit.state}>
               {fit.state === 'local' && fitPos != null ? <>Locally aligned on {labelFor(fitPos).text}{partner != null ? <> to compare the relative position of {labelFor(partner).text}</> : null}.<InfoTip text={fitDetails} label="Local superposition details" /></>
                 : fit.state === 'kept' ? <>No local alignment for this selection ({fit.message}); previous alignment kept.</>
@@ -643,11 +645,35 @@ function CoverageNote({ ds, a, b, rowOf }: { ds: InteractionsDataset; a: string;
     <p className="basis-full text-stone-600" data-testid="icompare-coverage">
       Helix base pairs annotated by FR3D:
       {cov.map((c, k) => { const low = c.fraction != null && c.fraction < 0.8; const r = rowOf.get(c.sn)
+        const res = r ? [r.experimental_method?.replace('X-ray diffraction', 'X-ray').replace('Electron Microscopy', 'cryo-EM'), r.resolution != null ? `${r.resolution} Å` : null].filter(Boolean).join(', ') : ''
         return <span key={c.sn} className={`ml-2 ${low ? 'font-medium text-amber-800' : ''}`} data-testid={`icompare-coverage-${k === 0 ? 'a' : 'b'}`} data-fraction={c.fraction ?? ''}>
-          {k === 0 ? 'A' : 'B'} {r ? instLabel(r) : c.sn}: {c.k} of {c.n} eligible ({pct(c.k, c.n)}){low ? ' — sparse annotation; “only in” differences may be annotation gaps' : ''}{k === 0 ? ' ·' : ''}</span> })}
+          {k === 0 ? 'A' : 'B'} {r ? instLabel(r) : c.sn}{res && <span data-testid={`icompare-resolution-${k === 0 ? 'a' : 'b'}`}> ({res})</span>}: {c.k} of {c.n} eligible ({pct(c.k, c.n)}){low ? ' — sparse annotation; “only in” differences may be annotation gaps' : ''}{k === 0 ? ' ·' : ''}</span> })}
       {med != null && <span className="ml-2 text-stone-500">family median {Math.round(100 * med)}%</span>}
       <InfoTip text="Of the Rfam consensus (SS_cons) helix base pairs that can be evaluated in the chain (both bases resolved and complete), how many BGSU/FR3D annotates. Distorted or moderate-resolution models can have paired nucleotides that FR3D does not annotate; BGSU exports no near base pairs." label="About annotation coverage" />
     </p>)
+}
+
+/** How the two compared RNAs relate in sequence: identical chains, the same RNA in different constructs (flagged: differences may be
+ *  construct or crystal-packing effects), or different sequences (differences may follow sequence). */
+function SequenceNote({ ds, a, b, rowOf }: { ds: InteractionsDataset; a: string; b: string; rowOf: Map<string, InstanceRow> }) {
+  const ra = rowOf.get(a), rb = rowOf.get(b)
+  const rel = useMemo(() => (ra && rb ? sequenceRelation(ds, ra, rb) : null), [ds, ra, rb])
+  if (!rel || !ra || !rb) return null
+  const labelOf = (p: number) => `Rfam ${p}`
+  return (<>
+    <p className={`basis-full ${rel.kind === 'construct' ? 'font-medium text-amber-800' : 'text-stone-600'}`} data-testid="icompare-sequence" data-kind={rel.kind}>
+      Sequence: {rel.kind === 'identical' ? <>identical chains ({ra.pdb_id.toUpperCase() === rb.pdb_id.toUpperCase() ? 'same entry' : 'same sequence, different entries'}).</>
+        : rel.kind === 'construct' ? <>same RNA on the consensus; the deposited sequences differ only {rel.diffs.length ? `near the ends (${rel.diffs.map(labelOf).join(', ')})` : 'outside the aligned region'} (different constructs or deposited sequences) — “only in” differences can reflect construct, crystal form or sample conditions rather than biology.</>
+          : rel.diffs.length <= Math.max(1, 0.01 * rel.shared) ? <>near-identical sequences ({rel.diffs.length} of {rel.shared} shared consensus positions differ: {rel.diffs.slice(0, 5).map(labelOf).join(', ')}{rel.diffs.length > 5 ? ', …' : ''}) — differences elsewhere do not follow sequence.</>
+            : <>different sequences ({rel.diffs.length} of {rel.shared} shared consensus positions differ) — differences can follow sequence.</>}
+      <InfoTip text="Sequence relationship across the mapped chains: identical; same RNA at shared Rfam positions (allowing limited terminal construct differences); near-identical (≤1% difference); or different. Exact classification rules are in the methods." label="About the sequence relation" />
+    </p>
+    {/* exact rules (the info tip gives the short meaning) */}
+    <details className="basis-full text-xs text-stone-600" data-testid="icompare-sequence-methods">
+      <summary className="cursor-pointer text-blue-700">Sequence classification rules</summary>
+      <p className="mt-1">Identical: the same chain sequence. Same RNA at shared Rfam positions: different deposited chain sequences that agree on every shared Rfam position, or differ only at up to {CONSTRUCT_MAX_END_DIFFS} positions within {CONSTRUCT_END_WINDOW} positions of a chain end (e.g. different constructs). Near-identical: at most 1% of shared positions differ (e.g. rRNA operon variants). Different: other sequence differences.</p>
+    </details>
+  </>)
 }
 
 function CompareTable({ groups, counts, statuses, setStatuses, N, pairById, selectedId, select, nOff, search, renderSearch, noTypes, paging }: { groups: CompareGroup[]; counts: Record<string, number>; statuses: Set<CompareStatus>; setStatuses: (s: Set<CompareStatus>) => void

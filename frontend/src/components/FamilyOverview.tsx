@@ -13,7 +13,7 @@ function RepCard({ rep, rule, testId, className = '' }: { rep: InstanceRow | nul
   const Row = ({ k, v, testId: t }: { k: string; v: React.ReactNode; testId?: string }) => <><dt className="text-xs text-stone-500">{k}</dt><dd className="text-right text-xs text-stone-900" data-testid={t}>{v}</dd></>
   return (
     <SectionCard eyebrow="Structure" title="Representative structure" testId={testId} className={className}
-      actions={<InfoTip label="How the representative is chosen" text={`Selection rule: ${rule}. The coverage-based representative (most matched residues with coordinates) is kept in the data as a fallback.`} />}
+      actions={<InfoTip label="How the representative is chosen" text={`Selected using ${rule}. A coverage-based representative is retained as fallback.`} />}
       description={rep ? undefined : 'None eligible.'}>
       {rep && o && (
         <>
@@ -56,10 +56,10 @@ function FamilySummary() {
   const Secondary = ({ value, label, testId }: { value: string | number; label: string; testId: string }) => (
     <span className="whitespace-nowrap" data-testid={`${testId}-card`}><span className="font-medium tabular-nums text-stone-800" data-testid={testId}>{value}</span> {label}</span>)
   const definitions = [
-    `RNA chain instances: ${family.counts.instances} Rfam-mapped RNA chains (${family.counts.instances_validation_ok} passed mapping validation); chains of one PDB entry are counted separately.`,
-    `Unique sequences: identical mapped regions deduplicated (${family.counts.unique_mapped_sequences}).`,
-    `Mean sequence occupancy: mean over ${family.clen} positions of the fraction of ${stats.sequence_level.n_unique_sequences} unique sequences with a residue.`,
-    `Mean structural occupancy: mean over ${family.clen} positions of the fraction of ${stats.structure_level.n_instances} instances with coordinates.`,
+    `RNA instances: ${family.counts.instances} mapped chains (${family.counts.instances_validation_ok} validated); chains from the same PDB entry count separately.`,
+    `Unique sequences: ${family.counts.unique_mapped_sequences} distinct mapped-region sequences.`,
+    `Mean sequence occupancy: average fraction of ${stats.sequence_level.n_unique_sequences} unique sequences with a residue across ${family.clen} Rfam positions.`,
+    `Mean structural occupancy: average fraction of ${stats.structure_level.n_instances} RNA instances with coordinates across ${family.clen} Rfam positions.`,
   ].join('\n\n')
   return (
     <SectionCard title="About this family" testId="family-description"
@@ -75,7 +75,7 @@ function FamilySummary() {
       <div className="mt-2 flex flex-wrap items-baseline gap-x-6 gap-y-1 border-t border-stone-100 pt-2" data-testid="stat-row">
         <Primary value={family.counts.pdb_entries} label="PDB entries" testId="stat-pdb-entries" />
         <Primary value={family.counts.instances} label="RNA chain instances" testId="stat-rna-instances" note={`${family.counts.instances_validation_ok} validated`} />
-        <Primary value={family.clen} label="Rfam consensus positions" testId="stat-model-length" title="consensus match positions of the Rfam covariance model" />
+        <Primary value={family.clen} label="Rfam consensus positions" testId="stat-model-length" title="Match-state positions in the Rfam covariance model." />
         <div className="flex flex-wrap items-center gap-x-4 gap-y-0.5 text-xs text-stone-600 lg:ml-auto" data-testid="stat-secondary">
           <Secondary value={family.counts.unique_mapped_sequences} label="unique sequences" testId="stat-unique-sequences" />
           <Secondary value={pct(family.coverage_summary.sequence_coverage_mean)} label="mean sequence occupancy" testId="stat-sequence-occupancy" />
@@ -108,7 +108,7 @@ export function FamilyOverview() {
           <RepCard rep={family.display_representative ?? family.representative} testId="display-representative"
             rule={family.display_representative?.selection_rule ?? 'coverage representative: clan-best instance with most consensus-matched residues with coordinates, then best resolution'} />
           <SectionCard eyebrow="Statistics" title="Experimental methods" testId="methods-card"
-            actions={<InfoTip label="How experimental methods are counted" text={`Counts RNA chain instances (${family.counts.instances} mapped chains), not PDB entries: an entry with several mapped chains contributes each chain. Percentages are of all chain instances. Sequence-level statistics elsewhere count each unique mapped sequence once (${stats.sequence_level.n_unique_sequences}).`} />}>
+            actions={<InfoTip label="How experimental methods are counted" text={`Counts ${family.counts.instances} mapped RNA chains, including multiple chains from one PDB entry. Percentages use RNA instances; sequence statistics use ${stats.sequence_level.n_unique_sequences} distinct mapped sequences.`} />}>
             <ul className="space-y-1" data-testid="methods-list">
               {methods.map(([m, n]) => (
                 <li key={m} className="grid grid-cols-[auto_1fr_auto] items-center gap-x-3">

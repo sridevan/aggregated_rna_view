@@ -36,9 +36,9 @@ export function InstanceTable({ rows, selected, onSelect, clen, groups, compact 
   const allCols = useMemo<Col[]>(() => [
     { key: 'pdb_id', label: 'PDB ID', get: (r) => r.pdb_id.toUpperCase(),
       render: (r) => <><ExtLink href={`https://pdbe.org/${r.pdb_id.toLowerCase()}`} title={`Open PDB entry ${r.pdb_id.toUpperCase()} at PDBe`} testId={`link-pdb-${r.seq_name}`}>{r.pdb_id.toUpperCase()}</ExtLink>{serIdx && !serIdx.has(r.seq_name) && <span className="ml-1 rounded border border-stone-300 px-0.5 text-[9px] text-stone-500" title="Not clustered: no pairwise geometric discrepancy, so not in the matrix and without a seriation position; listed after the ordered instances" data-testid="not-in-matrix">not in matrix</span>}</> },
-    { key: 'chain', label: 'Chain', get: (r) => r.auth_asym_id, tip: 'Author chain identifier. The label (mmCIF) asym id is kept internally for Mol* selections.',
+    { key: 'chain', label: 'Chain', get: (r) => r.auth_asym_id, tip: 'Deposited author chain identifier (auth_asym_id). The label asym ID identifies the chain internally.',
       render: (r) => <ExtLink href={`https://www.ebi.ac.uk/pdbe/entry/pdb/${r.pdb_id.toLowerCase()}?activeTab=macromolecules&entity=${r.entity_id}`} title={`Open molecule (entity ${r.entity_id}) of ${r.pdb_id.toUpperCase()} at PDBe`} testId={`link-chain-${r.seq_name}`}>{r.auth_asym_id}</ExtLink> },
-    ...(groups ? [{ key: 'group', label: 'Structural group', tip: 'Structural group of the RNA instance under the selected comparison metric (descriptive; not a biological state). Default order: the selected group first with its representative (medoid) at the top, then dendrogram order. Click a badge to select its group. Instances without enough observed core positions are not clustered.',
+    ...(groups ? [{ key: 'group', label: 'Structural group', tip: 'Groups RNA instances by 3D similarity under the selected metric; groups do not necessarily represent biological states. Select a badge to explore a group.',
       get: (r: InstanceRow) => groupRank(groups, r.seq_name), num: true,   // numeric rank (a string sort put 10 before 9)
       render: (r: InstanceRow) => { const g = groups.of(r.seq_name)
         if (!g) return '–'
@@ -50,13 +50,13 @@ export function InstanceTable({ rows, selected, onSelect, clen, groups, compact 
     { key: 'title', label: 'Title', get: (r) => r.title, render: (r) => <span className={`block truncate ${groups ? 'max-w-[11rem]' : 'max-w-[16rem]'}`} title={r.title ?? ''} data-testid="cell-title">{r.title ?? '–'}</span> },
     { key: 'organism', label: 'Organism', get: (r) => displayOrganism(r).name, render: (r) => { const o = displayOrganism(r); return o.name ? <span className={o.isSpecies ? 'italic' : ''} title={r.organism ?? ''} data-testid="cell-organism">{o.name}</span> : '–' } },
     { key: 'method', label: 'Method', get: (r) => shortMethod(r.experimental_method), render: (r) => <span title={r.experimental_method ?? ''} data-testid="cell-method">{shortMethod(r.experimental_method) ?? '–'}</span> },
-    { key: 'resolution', label: 'Res. (Å)', get: (r) => r.resolution, num: true, tip: 'Resolution in ångström (PDBe); lower is better. Not applicable to some cryo-EM entries.' },
+    { key: 'resolution', label: 'Res. (Å)', get: (r) => r.resolution, num: true, tip: 'Reported experimental resolution (Å), where available. Lower values generally indicate finer structural detail.' },
     { key: 'length', label: 'Length (nt)', get: (r) => r.mapped_length, num: true, tip: 'Length in nucleotides of the PDBe/Rfam-mapped RNA region (hover a value for its polymer label_seq_id range).',
       render: (r) => <span title={`RNA region: ${r.map_start}–${r.map_end}`} data-testid="cell-length">{r.mapped_length}</span> },
     { key: 'seqcov', label: 'Seq. cov. %', get: (r) => +(r.fraction_clen_matched * 100).toFixed(1), num: true, tip: `Consensus positions of the Rfam model to which this chain contributes a match-state residue, divided by the model length (${clen}). Insertions and local-end residues do not count.` },
     { key: 'strcov', label: 'Struct. cov. %', get: (r) => +((r.n_match_with_coordinates / clen) * 100).toFixed(1), num: true, tip: `Match-state residues that have experimental coordinates in this chain, divided by the model length (${clen}). Lower than sequence coverage when parts of the chain are unmodelled.` },
-    { key: 'avgpp', label: 'Avg PP', get: (r) => r.cmalign?.avg_pp ?? null, num: true, tip: 'Average Infernal (cmalign) posterior probability of the aligned residues of the mapped region, as reported by cmalign; 1.0 means every residue placement is near-certain under the model.' },
-    { key: 'bits', label: 'Rfam bits', get: (r) => r.rfam_bit_score, num: true, tip: 'Rfam cmsearch bit score of this chain against the family covariance model (from the Rfam structures endpoint). Higher = closer to the family model; it is not a resolution or quality measure.' },
+    { key: 'avgpp', label: 'Avg PP', get: (r) => r.cmalign?.avg_pp ?? null, num: true, tip: 'Mean cmalign posterior probability of residue placement in the family alignment. Higher values indicate greater alignment confidence.' },
+    { key: 'bits', label: 'Rfam bits', get: (r) => r.rfam_bit_score, num: true, tip: 'cmsearch bit score against the Rfam covariance model. Higher scores indicate stronger sequence–family match support; scores depend on alignment length.' },
   ], [clen, groups, serIdx])
   const cols = useMemo(() => (compact ? allCols.filter((c) => COMPACT.includes(c.key)) : allCols), [allCols, compact])
   const filtered = useMemo(() => {

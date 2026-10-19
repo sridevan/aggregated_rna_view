@@ -9,7 +9,7 @@ type H = { __rnaExplorer: { molstarColours?: Rep[]; focusRepresentation?: number
 const ready = async (page: Page, pdb: string) => { await expect(page.getByTestId('molstar-viewer')).toHaveAttribute('data-pdb', pdb); await expect(page.getByTestId('molstar-viewer')).toHaveAttribute('data-status', 'ready', { timeout: 60_000 }) }
 const reps = (page: Page) => page.evaluate(() => (window as unknown as H).__rnaExplorer.molstarColours ?? [])
 /** every visible polymer / region representation is uniform slate */
-const visibleRnaColours = async (page: Page) => (await reps(page)).filter((r) => !r.hidden && /Rfam-mapped region|Polymer/.test(r.component)).map((r) => [r.theme, r.value])
+const visibleRnaColours = async (page: Page) => (await reps(page)).filter((r) => !r.hidden && /Rfam-mapped region|Polymer|Selected RNA chain/.test(r.component)).map((r) => [r.theme, r.value])
 
 /** hue classes of the rendered molecule (central crop of the canvas: no overlay buttons, badge or axes) */
 const pixelClasses = async (page: Page) => {

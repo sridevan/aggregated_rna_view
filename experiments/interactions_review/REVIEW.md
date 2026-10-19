@@ -205,9 +205,9 @@ geometric checks are needed before biological claims.
 ## 3. Recommendations
 
 1. ~~Fix the 7PJS truncation (§2.1)~~: **done** (annotation gaps, schema 1.3).
-2. **Show annotation context wherever "only in" or "absent" is interpreted.** The coverage line in Compare two already does this; adding
+2. **Done (§13.11 of the validation file): annotation context wherever "only in" or "absent" is interpreted.** The coverage line in Compare two already does this; adding
    resolution next to coverage would help, since sparse annotation (2HOP, 4NYG, 4V9C, 8UZ3) explains part of the variation.
-3. **Warn about crystal-form or construct effects** when two chains share a sequence but come from different constructs (TPP §1.4). This
+3. **Done (§13.11): warn about crystal-form or construct effects** when two chains share a sequence but come from different constructs (TPP §1.4). This
    could be a note when the two compared chains have different `sequence_key`s, or the same sequence from different crystal forms.
 4. **Near base pairs (fr3d-python)** would help most in the 16S head and in TPP L5/J2/4, where strained minor-groove contacts drive the
    variation.

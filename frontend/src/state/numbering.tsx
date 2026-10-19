@@ -33,7 +33,7 @@ export function NumberingSelect() {
     <label className="flex items-center gap-1 text-[11px] text-stone-700" data-testid="numbering-control" data-state={state}>
       Position numbering
       <select data-testid="numbering-select" value={refSeq ?? ''} onChange={(e) => setRef(e.target.value || null)}
-        className="max-w-[16rem] rounded border border-stone-300 bg-white px-1 py-px text-[11px]" title="Labels only: positions, aggregation and selections stay on the Rfam consensus">
+        className="max-w-[16rem] rounded border border-stone-300 bg-white px-1 py-px text-[11px]" title="Changes residue labels only; alignment, aggregation and selections use Rfam consensus positions.">
         <option value="">Rfam consensus</option>
         {instances.map((i) => <option key={i.seq_name} value={i.seq_name}>{i.pdb_id.toUpperCase()} {i.auth_asym_id} · author numbering</option>)}
       </select>

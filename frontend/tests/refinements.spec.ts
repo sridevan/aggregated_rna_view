@@ -49,7 +49,7 @@ test('display structure follows the documented rule and loads first (4fe5/B, Rfa
   await page.getByTestId('unit-entries').click()
   await waitMolstar(page, d.pdb_id)
   await expect(page.getByTestId('molstar-viewer')).toHaveAttribute('data-mode', 'region')
-  const bg = await page.evaluate(() => getComputedStyle(document.querySelector('[data-testid="molstar-viewer"] > div')!).backgroundColor)
+  const bg = await page.evaluate(() => getComputedStyle(document.querySelector('[data-testid="molstar-canvas-area"] > div')!).backgroundColor)
   expect(bg).toBe('rgb(255, 255, 255)')
   expect(await page.locator('[data-testid="molstar-viewer"] .msp-layout-region-right, [data-testid="molstar-viewer"] .msp-layout-region-left').count()).toBe(0)
   // the viewer is fitted: the canvas fills the panel

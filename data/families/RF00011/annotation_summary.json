@@ -1,0 +1,297 @@
+{
+ "rfam_acc": "RF00011",
+ "generated": "2026-10-19T18:23:13+00:00",
+ "n_instances": 50,
+ "n_entries": 50,
+ "reference_structural_elements": {
+  "n_consensus_positions_annotated": 323,
+  "reference": "9owq_1_A_A",
+  "instance_transfer": {
+   "source": "BGSU correspondence/nucleotide_annotation per chain (labels transferred by BGSU)",
+   "n_instances": 50,
+   "n_instances_evaluated": 50,
+   "n_instances_unavailable": 0,
+   "unavailable_instances": [],
+   "n_nucleotide_labels": 17862,
+   "mapping_status_counts": {
+    "mapped": 16150,
+    "insert": 1692,
+    "outside_mapped_region": 20
+   },
+   "n_labels_agree_with_family_track": 16150,
+   "n_labels_disagree": 0
+  },
+  "n_conflicts": 0,
+  "n_reference_nucleotides_not_on_consensus": 55
+ },
+ "loops": {
+  "n_loops": 1303,
+  "n_with_motif_group": 454,
+  "motif_group_assignment_counts": {
+   "none": 849,
+   "geometric": 250,
+   "homologous": 204
+  },
+  "n_problematic": 514,
+  "n_distinct_motif_groups": 25,
+  "by_type": {
+   "HL": {
+    "n_loops": 500,
+    "n_with_motif_group": 109,
+    "n_without_motif_group": 391,
+    "motif_group_assignment_counts": {
+     "none": 391,
+     "geometric": 98,
+     "homologous": 11
+    },
+    "n_problematic": 285,
+    "n_distinct_motif_groups": 5,
+    "motif_groups": {
+     "HL_13999.6": {
+      "n_loops": 50,
+      "annotation_text": "T-loop with 1 bulged base",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_13999.6"
+     },
+     "HL_34789.7": {
+      "n_loops": 7,
+      "annotation_text": "GNRA",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_34789.7"
+     },
+     "HL_42760.1": {
+      "n_loops": 1,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_42760.1"
+     },
+     "HL_48408.1": {
+      "n_loops": 50,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_48408.1"
+     },
+     "HL_89167.5": {
+      "n_loops": 1,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/HL_89167.5"
+     }
+    },
+    "n_multi_chain_loops": 0,
+    "n_pdb_entries": 50,
+    "n_instances": 50
+   },
+   "IL": {
+    "n_loops": 554,
+    "n_with_motif_group": 253,
+    "n_without_motif_group": 301,
+    "motif_group_assignment_counts": {
+     "geometric": 150,
+     "homologous": 103,
+     "none": 301
+    },
+    "n_problematic": 227,
+    "n_distinct_motif_groups": 17,
+    "motif_groups": {
+     "IL_01003.7": {
+      "n_loops": 22,
+      "annotation_text": "Isolated non-canonical cWW pair",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_01003.7"
+     },
+     "IL_02666.4": {
+      "n_loops": 23,
+      "annotation_text": "7x6 Sarcin-Ricin; G-bulge",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_02666.4"
+     },
+     "IL_14190.5": {
+      "n_loops": 38,
+      "annotation_text": "Single bulged A",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_14190.5"
+     },
+     "IL_15190.5": {
+      "n_loops": 76,
+      "annotation_text": "Triple sheared",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_15190.5"
+     },
+     "IL_24466.1": {
+      "n_loops": 2,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_24466.1"
+     },
+     "IL_27134.1": {
+      "n_loops": 4,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_27134.1"
+     },
+     "IL_28265.2": {
+      "n_loops": 3,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_28265.2"
+     },
+     "IL_32983.4": {
+      "n_loops": 1,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_32983.4"
+     },
+     "IL_48076.11": {
+      "n_loops": 6,
+      "annotation_text": "Major groove platform",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_48076.11"
+     },
+     "IL_71421.6": {
+      "n_loops": 39,
+      "annotation_text": "Major groove intercalation",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_71421.6"
+     },
+     "IL_77710.2": {
+      "n_loops": 2,
+      "annotation_text": "Stack outside cWW",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_77710.2"
+     },
+     "IL_81485.1": {
+      "n_loops": 1,
+      "annotation_text": "Isolated non-canonical cWW pair",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_81485.1"
+     },
+     "IL_84409.1": {
+      "n_loops": 2,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_84409.1"
+     },
+     "IL_87720.3": {
+      "n_loops": 3,
+      "annotation_text": "Isolated non-canonical cWW contact",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_87720.3"
+     },
+     "IL_87767.5": {
+      "n_loops": 1,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_87767.5"
+     },
+     "IL_87975.2": {
+      "n_loops": 1,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_87975.2"
+     },
+     "IL_97561.9": {
+      "n_loops": 29,
+      "annotation_text": "Single bulged U",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/IL_97561.9"
+     }
+    },
+    "n_multi_chain_loops": 0,
+    "n_pdb_entries": 50,
+    "n_instances": 50
+   },
+   "J3": {
+    "n_loops": 149,
+    "n_with_motif_group": 43,
+    "n_without_motif_group": 106,
+    "motif_group_assignment_counts": {
+     "geometric": 2,
+     "none": 106,
+     "homologous": 41
+    },
+    "n_problematic": 2,
+    "n_distinct_motif_groups": 2,
+    "motif_groups": {
+     "J3_70464.1": {
+      "n_loops": 39,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/J3_70464.1"
+     },
+     "J3_82932.1": {
+      "n_loops": 4,
+      "annotation_text": null,
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/J3_82932.1"
+     }
+    },
+    "n_multi_chain_loops": 0,
+    "n_pdb_entries": 50,
+    "n_instances": 50
+   },
+   "J4": {
+    "n_loops": 50,
+    "n_with_motif_group": 49,
+    "n_without_motif_group": 1,
+    "motif_group_assignment_counts": {
+     "homologous": 49,
+     "none": 1
+    },
+    "n_problematic": 0,
+    "n_distinct_motif_groups": 1,
+    "motif_groups": {
+     "J4_86610.2": {
+      "n_loops": 49,
+      "annotation_text": "RNase P junction",
+      "url": "https://rna.bgsu.edu/rna3dhub/motif/view/J4_86610.2"
+     }
+    },
+    "n_multi_chain_loops": 0,
+    "n_pdb_entries": 50,
+    "n_instances": 50
+   },
+   "J6": {
+    "n_loops": 50,
+    "n_with_motif_group": 0,
+    "n_without_motif_group": 50,
+    "motif_group_assignment_counts": {
+     "none": 50
+    },
+    "n_problematic": 0,
+    "n_distinct_motif_groups": 0,
+    "motif_groups": {},
+    "n_multi_chain_loops": 0,
+    "n_pdb_entries": 50,
+    "n_instances": 50
+   }
+  },
+  "n_pdb_entries_evaluated": 50,
+  "n_pdb_entries_unavailable": 0,
+  "nucleotide_mapping_status_counts": {
+   "mapped": 13021,
+   "insert": 1417,
+   "outside_mapped_region": 39
+  },
+  "n_motif_page_loops_missing_from_download": 0,
+  "n_loops_outside_family_chains": 67
+ },
+ "ligands": {
+  "n_entry_entities_evaluated": 50,
+  "n_entry_entities_unavailable": 0,
+  "n_bound_molecule_records": 50,
+  "n_distinct_ccd_ids": 2,
+  "by_class": {
+   "metal_ion": 2
+  },
+  "n_records_in_default_track": 0,
+  "n_entries_in_default_track": 0,
+  "n_records_flagged": 0,
+  "flag_counts": {},
+  "chain_attribution": {
+   "resolved": 50
+  },
+  "contact_mapping_status_counts": {
+   "mapped": 1999,
+   "insert": 3
+  },
+  "default_track_pocket_positions_n_entries": {}
+ },
+ "unresolved_identifiers": [],
+ "n_unresolved_identifiers": 0,
+ "file_sizes_bytes": {
+  "reference_structural_elements.json": 133008,
+  "loops.json": 10228471,
+  "loops_by_instance/ (total)": 10206326,
+  "ligands.json": 826924,
+  "tracks.json": 1895935,
+  "annotations/ (total)": 10868742
+ },
+ "provenance": {
+  "rfam_acc": "RF00011",
+  "rfam_release": "15.1",
+  "cm_checksum": "2395317728",
+  "cm_clen": 365,
+  "mapping_pipeline_version": "0.1.0",
+  "mapping_generated": "2026-10-19T18:18:18+00:00",
+  "annotation_pipeline_version": "0.1.0",
+  "annotation_config_version": "1.1",
+  "generated": "2026-10-19T18:23:13+00:00"
+ }
+}

@@ -1,0 +1,5735 @@
+{
+ "schema_version": "1.0",
+ "rfam_acc": "RF00011",
+ "clen": 365,
+ "track_name": "reference_structural_elements",
+ "track_kind": "categorical_reference_transfer",
+ "interpretation": "Element labels of one curated reference chain transferred to Rfam consensus positions through the validated residue mapping. They are not independent observations of helices or loops in each RNA instance.",
+ "reference": {
+  "pdb_id": "9owq",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "entity_id": 1,
+  "seq_name": "9owq_1_A_A",
+  "model": 1,
+  "reference_chains_in_file": [
+   "9OWQ|1|A"
+  ],
+  "n_annotated_nucleotides": 378,
+  "citation": []
+ },
+ "source": {
+  "name": "BGSU nucleotide annotations (family file)",
+  "url": "https://rna.bgsu.edu/data/nucleotide_annotations/RF00011_annotations.txt",
+  "retrieved": "2026-10-19",
+  "status": "ok",
+  "annotation_identifier": "RF00011_annotations.txt"
+ },
+ "transfer_method": "reference unit id -> (pdb_id, label_asym_id, label_seq_id) by author number + insertion code -> rfam_consensus_pos of the reference chain mapping (rna_explorer mapping pipeline)",
+ "elements": [
+  {
+   "element": "Helix P1",
+   "spans": [
+    [
+     1,
+     7
+    ],
+    [
+     362,
+     365
+    ]
+   ],
+   "n_positions": 11
+  },
+  {
+   "element": "Helix P2",
+   "spans": [
+    [
+     8,
+     14
+    ],
+    [
+     314,
+     320
+    ]
+   ],
+   "n_positions": 14
+  },
+  {
+   "element": "Helix P3",
+   "spans": [
+    [
+     15,
+     24
+    ],
+    [
+     27,
+     35
+    ]
+   ],
+   "n_positions": 19
+  },
+  {
+   "element": "L3",
+   "spans": [
+    [
+     25,
+     26
+    ]
+   ],
+   "n_positions": 2
+  },
+  {
+   "element": "Helix P4",
+   "spans": [
+    [
+     41,
+     48
+    ],
+    [
+     352,
+     358
+    ]
+   ],
+   "n_positions": 15
+  },
+  {
+   "element": "Helix P5",
+   "spans": [
+    [
+     49,
+     53
+    ],
+    [
+     231,
+     235
+    ]
+   ],
+   "n_positions": 10
+  },
+  {
+   "element": "Helix P6",
+   "spans": [
+    [
+     54,
+     59
+    ],
+    [
+     66,
+     71
+    ]
+   ],
+   "n_positions": 12
+  },
+  {
+   "element": "L6",
+   "spans": [
+    [
+     60,
+     65
+    ]
+   ],
+   "n_positions": 6
+  },
+  {
+   "element": "Helix P7",
+   "spans": [
+    [
+     77,
+     81
+    ],
+    [
+     226,
+     230
+    ]
+   ],
+   "n_positions": 10
+  },
+  {
+   "element": "Helix P8",
+   "spans": [
+    [
+     82,
+     87
+    ],
+    [
+     98,
+     103
+    ]
+   ],
+   "n_positions": 12
+  },
+  {
+   "element": "L8",
+   "spans": [
+    [
+     88,
+     97
+    ]
+   ],
+   "n_positions": 10
+  },
+  {
+   "element": "Helix P9",
+   "spans": [
+    [
+     104,
+     110
+    ],
+    [
+     115,
+     122
+    ]
+   ],
+   "n_positions": 15
+  },
+  {
+   "element": "L9",
+   "spans": [
+    [
+     112,
+     113
+    ]
+   ],
+   "n_positions": 2
+  },
+  {
+   "element": "Helix P10",
+   "spans": [
+    [
+     123,
+     124
+    ],
+    [
+     224,
+     225
+    ]
+   ],
+   "n_positions": 4
+  },
+  {
+   "element": "Helix P10.1",
+   "spans": [
+    [
+     126,
+     143
+    ],
+    [
+     148,
+     165
+    ]
+   ],
+   "n_positions": 36
+  },
+  {
+   "element": "L10.1",
+   "spans": [
+    [
+     144,
+     147
+    ]
+   ],
+   "n_positions": 4
+  },
+  {
+   "element": "Helix P11",
+   "spans": [
+    [
+     171,
+     175
+    ],
+    [
+     217,
+     223
+    ]
+   ],
+   "n_positions": 12
+  },
+  {
+   "element": "IDTM",
+   "spans": [
+    [
+     176,
+     187
+    ],
+    [
+     208,
+     216
+    ]
+   ],
+   "n_positions": 21
+  },
+  {
+   "element": "Helix P12",
+   "spans": [
+    [
+     188,
+     195
+    ],
+    [
+     200,
+     207
+    ]
+   ],
+   "n_positions": 16
+  },
+  {
+   "element": "L12",
+   "spans": [
+    [
+     196,
+     199
+    ]
+   ],
+   "n_positions": 4
+  },
+  {
+   "element": "Helix P15",
+   "spans": [
+    [
+     239,
+     243
+    ],
+    [
+     251,
+     255
+    ]
+   ],
+   "n_positions": 10
+  },
+  {
+   "element": "L15",
+   "spans": [
+    [
+     244,
+     250
+    ]
+   ],
+   "n_positions": 7
+  },
+  {
+   "element": "Helix P15.1",
+   "spans": [
+    [
+     259,
+     270
+    ],
+    [
+     278,
+     281
+    ],
+    [
+     283,
+     289
+    ]
+   ],
+   "n_positions": 23
+  },
+  {
+   "element": "L15.1",
+   "spans": [
+    [
+     271,
+     277
+    ]
+   ],
+   "n_positions": 7
+  },
+  {
+   "element": "Helix P15.2",
+   "spans": [
+    [
+     290,
+     295
+    ],
+    [
+     297,
+     305
+    ]
+   ],
+   "n_positions": 15
+  },
+  {
+   "element": "L15.2",
+   "spans": [
+    [
+     296,
+     296
+    ]
+   ],
+   "n_positions": 1
+  },
+  {
+   "element": "Helix P19",
+   "spans": [
+    [
+     321,
+     345
+    ]
+   ],
+   "n_positions": 25
+  }
+ ],
+ "positions": [
+  {
+   "rfam_consensus_pos": 1,
+   "element": "Helix P1",
+   "all_labels": [
+    "Helix P1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|8",
+   "reference_label_seq_id": 8,
+   "reference_author_residue_number": 8,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 2,
+   "element": "Helix P1",
+   "all_labels": [
+    "Helix P1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|9",
+   "reference_label_seq_id": 9,
+   "reference_author_residue_number": 9,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 3,
+   "element": "Helix P1",
+   "all_labels": [
+    "Helix P1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|10",
+   "reference_label_seq_id": 10,
+   "reference_author_residue_number": 10,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 4,
+   "element": "Helix P1",
+   "all_labels": [
+    "Helix P1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|11",
+   "reference_label_seq_id": 11,
+   "reference_author_residue_number": 11,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 5,
+   "element": "Helix P1",
+   "all_labels": [
+    "Helix P1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|12",
+   "reference_label_seq_id": 12,
+   "reference_author_residue_number": 12,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 6,
+   "element": "Helix P1",
+   "all_labels": [
+    "Helix P1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|13",
+   "reference_label_seq_id": 13,
+   "reference_author_residue_number": 13,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 7,
+   "element": "Helix P1",
+   "all_labels": [
+    "Helix P1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|14",
+   "reference_label_seq_id": 14,
+   "reference_author_residue_number": 14,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 8,
+   "element": "Helix P2",
+   "all_labels": [
+    "Helix P2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|15",
+   "reference_label_seq_id": 15,
+   "reference_author_residue_number": 15,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 9,
+   "element": "Helix P2",
+   "all_labels": [
+    "Helix P2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|16",
+   "reference_label_seq_id": 16,
+   "reference_author_residue_number": 16,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 10,
+   "element": "Helix P2",
+   "all_labels": [
+    "Helix P2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|17",
+   "reference_label_seq_id": 17,
+   "reference_author_residue_number": 17,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 11,
+   "element": "Helix P2",
+   "all_labels": [
+    "Helix P2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|18",
+   "reference_label_seq_id": 18,
+   "reference_author_residue_number": 18,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 12,
+   "element": "Helix P2",
+   "all_labels": [
+    "Helix P2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|19",
+   "reference_label_seq_id": 19,
+   "reference_author_residue_number": 19,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 13,
+   "element": "Helix P2",
+   "all_labels": [
+    "Helix P2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|20",
+   "reference_label_seq_id": 20,
+   "reference_author_residue_number": 20,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 14,
+   "element": "Helix P2",
+   "all_labels": [
+    "Helix P2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|21",
+   "reference_label_seq_id": 21,
+   "reference_author_residue_number": 21,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 15,
+   "element": "Helix P3",
+   "all_labels": [
+    "Helix P3"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|22",
+   "reference_label_seq_id": 22,
+   "reference_author_residue_number": 22,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 16,
+   "element": "Helix P3",
+   "all_labels": [
+    "Helix P3"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|23",
+   "reference_label_seq_id": 23,
+   "reference_author_residue_number": 23,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 17,
+   "element": "Helix P3",
+   "all_labels": [
+    "Helix P3"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|24",
+   "reference_label_seq_id": 24,
+   "reference_author_residue_number": 24,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 18,
+   "element": "Helix P3",
+   "all_labels": [
+    "Helix P3"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|25",
+   "reference_label_seq_id": 25,
+   "reference_author_residue_number": 25,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 19,
+   "element": "Helix P3",
+   "all_labels": [
+    "Helix P3"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|26",
+   "reference_label_seq_id": 26,
+   "reference_author_residue_number": 26,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 20,
+   "element": "Helix P3",
+   "all_labels": [
+    "Helix P3"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|27",
+   "reference_label_seq_id": 27,
+   "reference_author_residue_number": 27,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 21,
+   "element": "Helix P3",
+   "all_labels": [
+    "Helix P3"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|28",
+   "reference_label_seq_id": 28,
+   "reference_author_residue_number": 28,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 22,
+   "element": "Helix P3",
+   "all_labels": [
+    "Helix P3"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|29",
+   "reference_label_seq_id": 29,
+   "reference_author_residue_number": 29,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "8",
+   "reference_pp_category": "medium",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 23,
+   "element": "Helix P3",
+   "all_labels": [
+    "Helix P3"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|30",
+   "reference_label_seq_id": 30,
+   "reference_author_residue_number": 30,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "8",
+   "reference_pp_category": "medium",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 24,
+   "element": "Helix P3",
+   "all_labels": [
+    "Helix P3"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|31",
+   "reference_label_seq_id": 31,
+   "reference_author_residue_number": 31,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "7",
+   "reference_pp_category": "low",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 25,
+   "element": "L3",
+   "all_labels": [
+    "L3"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|32",
+   "reference_label_seq_id": 32,
+   "reference_author_residue_number": 32,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "6",
+   "reference_pp_category": "low",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 26,
+   "element": "L3",
+   "all_labels": [
+    "L3"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|35",
+   "reference_label_seq_id": 35,
+   "reference_author_residue_number": 35,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "6",
+   "reference_pp_category": "low",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 27,
+   "element": "Helix P3",
+   "all_labels": [
+    "Helix P3"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|36",
+   "reference_label_seq_id": 36,
+   "reference_author_residue_number": 36,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "6",
+   "reference_pp_category": "low",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 28,
+   "element": "Helix P3",
+   "all_labels": [
+    "Helix P3"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|37",
+   "reference_label_seq_id": 37,
+   "reference_author_residue_number": 37,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "6",
+   "reference_pp_category": "low",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 29,
+   "element": "Helix P3",
+   "all_labels": [
+    "Helix P3"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|38",
+   "reference_label_seq_id": 38,
+   "reference_author_residue_number": 38,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "7",
+   "reference_pp_category": "low",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 30,
+   "element": "Helix P3",
+   "all_labels": [
+    "Helix P3"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|39",
+   "reference_label_seq_id": 39,
+   "reference_author_residue_number": 39,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 31,
+   "element": "Helix P3",
+   "all_labels": [
+    "Helix P3"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|40",
+   "reference_label_seq_id": 40,
+   "reference_author_residue_number": 40,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 32,
+   "element": "Helix P3",
+   "all_labels": [
+    "Helix P3"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|41",
+   "reference_label_seq_id": 41,
+   "reference_author_residue_number": 41,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 33,
+   "element": "Helix P3",
+   "all_labels": [
+    "Helix P3"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|42",
+   "reference_label_seq_id": 42,
+   "reference_author_residue_number": 42,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 34,
+   "element": "Helix P3",
+   "all_labels": [
+    "Helix P3"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|43",
+   "reference_label_seq_id": 43,
+   "reference_author_residue_number": 43,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 35,
+   "element": "Helix P3",
+   "all_labels": [
+    "Helix P3"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|44",
+   "reference_label_seq_id": 44,
+   "reference_author_residue_number": 44,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 41,
+   "element": "Helix P4",
+   "all_labels": [
+    "Helix P4"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|50",
+   "reference_label_seq_id": 50,
+   "reference_author_residue_number": 50,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 42,
+   "element": "Helix P4",
+   "all_labels": [
+    "Helix P4"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|51",
+   "reference_label_seq_id": 51,
+   "reference_author_residue_number": 51,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 43,
+   "element": "Helix P4",
+   "all_labels": [
+    "Helix P4"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|52",
+   "reference_label_seq_id": 52,
+   "reference_author_residue_number": 52,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 44,
+   "element": "Helix P4",
+   "all_labels": [
+    "Helix P4"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|53",
+   "reference_label_seq_id": 53,
+   "reference_author_residue_number": 53,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 45,
+   "element": "Helix P4",
+   "all_labels": [
+    "Helix P4"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|54",
+   "reference_label_seq_id": 54,
+   "reference_author_residue_number": 54,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 46,
+   "element": "Helix P4",
+   "all_labels": [
+    "Helix P4"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|55",
+   "reference_label_seq_id": 55,
+   "reference_author_residue_number": 55,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 47,
+   "element": "Helix P4",
+   "all_labels": [
+    "Helix P4"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|56",
+   "reference_label_seq_id": 56,
+   "reference_author_residue_number": 56,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 48,
+   "element": "Helix P4",
+   "all_labels": [
+    "Helix P4"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|57",
+   "reference_label_seq_id": 57,
+   "reference_author_residue_number": 57,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 49,
+   "element": "Helix P5",
+   "all_labels": [
+    "Helix P5"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|58",
+   "reference_label_seq_id": 58,
+   "reference_author_residue_number": 58,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 50,
+   "element": "Helix P5",
+   "all_labels": [
+    "Helix P5"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|59",
+   "reference_label_seq_id": 59,
+   "reference_author_residue_number": 59,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 51,
+   "element": "Helix P5",
+   "all_labels": [
+    "Helix P5"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|60",
+   "reference_label_seq_id": 60,
+   "reference_author_residue_number": 60,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 52,
+   "element": "Helix P5",
+   "all_labels": [
+    "Helix P5"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|61",
+   "reference_label_seq_id": 61,
+   "reference_author_residue_number": 61,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 53,
+   "element": "Helix P5",
+   "all_labels": [
+    "Helix P5"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|62",
+   "reference_label_seq_id": 62,
+   "reference_author_residue_number": 62,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 54,
+   "element": "Helix P6",
+   "all_labels": [
+    "Helix P6"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|63",
+   "reference_label_seq_id": 63,
+   "reference_author_residue_number": 63,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 55,
+   "element": "Helix P6",
+   "all_labels": [
+    "Helix P6"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|64",
+   "reference_label_seq_id": 64,
+   "reference_author_residue_number": 64,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 56,
+   "element": "Helix P6",
+   "all_labels": [
+    "Helix P6"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|65",
+   "reference_label_seq_id": 65,
+   "reference_author_residue_number": 65,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 57,
+   "element": "Helix P6",
+   "all_labels": [
+    "Helix P6"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|66",
+   "reference_label_seq_id": 66,
+   "reference_author_residue_number": 66,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 58,
+   "element": "Helix P6",
+   "all_labels": [
+    "Helix P6"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|68",
+   "reference_label_seq_id": 68,
+   "reference_author_residue_number": 68,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 59,
+   "element": "Helix P6",
+   "all_labels": [
+    "Helix P6"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|69",
+   "reference_label_seq_id": 69,
+   "reference_author_residue_number": 69,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 60,
+   "element": "L6",
+   "all_labels": [
+    "L6"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|70",
+   "reference_label_seq_id": 70,
+   "reference_author_residue_number": 70,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 61,
+   "element": "L6",
+   "all_labels": [
+    "L6"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|71",
+   "reference_label_seq_id": 71,
+   "reference_author_residue_number": 71,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 62,
+   "element": "L6",
+   "all_labels": [
+    "L6"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|72",
+   "reference_label_seq_id": 72,
+   "reference_author_residue_number": 72,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 63,
+   "element": "L6",
+   "all_labels": [
+    "L6"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|73",
+   "reference_label_seq_id": 73,
+   "reference_author_residue_number": 73,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 64,
+   "element": "L6",
+   "all_labels": [
+    "L6"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|74",
+   "reference_label_seq_id": 74,
+   "reference_author_residue_number": 74,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 65,
+   "element": "L6",
+   "all_labels": [
+    "L6"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|75",
+   "reference_label_seq_id": 75,
+   "reference_author_residue_number": 75,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 66,
+   "element": "Helix P6",
+   "all_labels": [
+    "Helix P6"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|76",
+   "reference_label_seq_id": 76,
+   "reference_author_residue_number": 76,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 67,
+   "element": "Helix P6",
+   "all_labels": [
+    "Helix P6"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|77",
+   "reference_label_seq_id": 77,
+   "reference_author_residue_number": 77,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 68,
+   "element": "Helix P6",
+   "all_labels": [
+    "Helix P6"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|78",
+   "reference_label_seq_id": 78,
+   "reference_author_residue_number": 78,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 69,
+   "element": "Helix P6",
+   "all_labels": [
+    "Helix P6"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|79",
+   "reference_label_seq_id": 79,
+   "reference_author_residue_number": 79,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 70,
+   "element": "Helix P6",
+   "all_labels": [
+    "Helix P6"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|80",
+   "reference_label_seq_id": 80,
+   "reference_author_residue_number": 80,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 71,
+   "element": "Helix P6",
+   "all_labels": [
+    "Helix P6"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|81",
+   "reference_label_seq_id": 81,
+   "reference_author_residue_number": 81,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 77,
+   "element": "Helix P7",
+   "all_labels": [
+    "Helix P7"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|87",
+   "reference_label_seq_id": 87,
+   "reference_author_residue_number": 87,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 78,
+   "element": "Helix P7",
+   "all_labels": [
+    "Helix P7"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|88",
+   "reference_label_seq_id": 88,
+   "reference_author_residue_number": 88,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 79,
+   "element": "Helix P7",
+   "all_labels": [
+    "Helix P7"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|89",
+   "reference_label_seq_id": 89,
+   "reference_author_residue_number": 89,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 80,
+   "element": "Helix P7",
+   "all_labels": [
+    "Helix P7"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|90",
+   "reference_label_seq_id": 90,
+   "reference_author_residue_number": 90,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 81,
+   "element": "Helix P7",
+   "all_labels": [
+    "Helix P7"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|91",
+   "reference_label_seq_id": 91,
+   "reference_author_residue_number": 91,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 82,
+   "element": "Helix P8",
+   "all_labels": [
+    "Helix P8"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|92",
+   "reference_label_seq_id": 92,
+   "reference_author_residue_number": 92,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 83,
+   "element": "Helix P8",
+   "all_labels": [
+    "Helix P8"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|93",
+   "reference_label_seq_id": 93,
+   "reference_author_residue_number": 93,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 84,
+   "element": "Helix P8",
+   "all_labels": [
+    "Helix P8"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|94",
+   "reference_label_seq_id": 94,
+   "reference_author_residue_number": 94,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 85,
+   "element": "Helix P8",
+   "all_labels": [
+    "Helix P8"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|95",
+   "reference_label_seq_id": 95,
+   "reference_author_residue_number": 95,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 86,
+   "element": "Helix P8",
+   "all_labels": [
+    "Helix P8"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|96",
+   "reference_label_seq_id": 96,
+   "reference_author_residue_number": 96,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 87,
+   "element": "Helix P8",
+   "all_labels": [
+    "Helix P8"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|97",
+   "reference_label_seq_id": 97,
+   "reference_author_residue_number": 97,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 88,
+   "element": "L8",
+   "all_labels": [
+    "L8"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|98",
+   "reference_label_seq_id": 98,
+   "reference_author_residue_number": 98,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 89,
+   "element": "L8",
+   "all_labels": [
+    "L8"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|99",
+   "reference_label_seq_id": 99,
+   "reference_author_residue_number": 99,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 90,
+   "element": "L8",
+   "all_labels": [
+    "L8"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|100",
+   "reference_label_seq_id": 100,
+   "reference_author_residue_number": 100,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 91,
+   "element": "L8",
+   "all_labels": [
+    "L8"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|101",
+   "reference_label_seq_id": 101,
+   "reference_author_residue_number": 101,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 92,
+   "element": "L8",
+   "all_labels": [
+    "L8"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|102",
+   "reference_label_seq_id": 102,
+   "reference_author_residue_number": 102,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 93,
+   "element": "L8",
+   "all_labels": [
+    "L8"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|103",
+   "reference_label_seq_id": 103,
+   "reference_author_residue_number": 103,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 94,
+   "element": "L8",
+   "all_labels": [
+    "L8"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|104",
+   "reference_label_seq_id": 104,
+   "reference_author_residue_number": 104,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 95,
+   "element": "L8",
+   "all_labels": [
+    "L8"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|105",
+   "reference_label_seq_id": 105,
+   "reference_author_residue_number": 105,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 96,
+   "element": "L8",
+   "all_labels": [
+    "L8"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|106",
+   "reference_label_seq_id": 106,
+   "reference_author_residue_number": 106,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 97,
+   "element": "L8",
+   "all_labels": [
+    "L8"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|107",
+   "reference_label_seq_id": 107,
+   "reference_author_residue_number": 107,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 98,
+   "element": "Helix P8",
+   "all_labels": [
+    "Helix P8"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|108",
+   "reference_label_seq_id": 108,
+   "reference_author_residue_number": 108,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 99,
+   "element": "Helix P8",
+   "all_labels": [
+    "Helix P8"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|109",
+   "reference_label_seq_id": 109,
+   "reference_author_residue_number": 109,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 100,
+   "element": "Helix P8",
+   "all_labels": [
+    "Helix P8"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|110",
+   "reference_label_seq_id": 110,
+   "reference_author_residue_number": 110,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 101,
+   "element": "Helix P8",
+   "all_labels": [
+    "Helix P8"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|111",
+   "reference_label_seq_id": 111,
+   "reference_author_residue_number": 111,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 102,
+   "element": "Helix P8",
+   "all_labels": [
+    "Helix P8"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|112",
+   "reference_label_seq_id": 112,
+   "reference_author_residue_number": 112,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 103,
+   "element": "Helix P8",
+   "all_labels": [
+    "Helix P8"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|113",
+   "reference_label_seq_id": 113,
+   "reference_author_residue_number": 113,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 104,
+   "element": "Helix P9",
+   "all_labels": [
+    "Helix P9"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|114",
+   "reference_label_seq_id": 114,
+   "reference_author_residue_number": 114,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 105,
+   "element": "Helix P9",
+   "all_labels": [
+    "Helix P9"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|115",
+   "reference_label_seq_id": 115,
+   "reference_author_residue_number": 115,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 106,
+   "element": "Helix P9",
+   "all_labels": [
+    "Helix P9"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|116",
+   "reference_label_seq_id": 116,
+   "reference_author_residue_number": 116,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 107,
+   "element": "Helix P9",
+   "all_labels": [
+    "Helix P9"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|117",
+   "reference_label_seq_id": 117,
+   "reference_author_residue_number": 117,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 108,
+   "element": "Helix P9",
+   "all_labels": [
+    "Helix P9"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|118",
+   "reference_label_seq_id": 118,
+   "reference_author_residue_number": 118,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 109,
+   "element": "Helix P9",
+   "all_labels": [
+    "Helix P9"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|119",
+   "reference_label_seq_id": 119,
+   "reference_author_residue_number": 119,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 110,
+   "element": "Helix P9",
+   "all_labels": [
+    "Helix P9"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|120",
+   "reference_label_seq_id": 120,
+   "reference_author_residue_number": 120,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 112,
+   "element": "L9",
+   "all_labels": [
+    "L9"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|125",
+   "reference_label_seq_id": 125,
+   "reference_author_residue_number": 125,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "3",
+   "reference_pp_category": "low",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 113,
+   "element": "L9",
+   "all_labels": [
+    "L9"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|126",
+   "reference_label_seq_id": 126,
+   "reference_author_residue_number": 126,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "3",
+   "reference_pp_category": "low",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 115,
+   "element": "Helix P9",
+   "all_labels": [
+    "Helix P9"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|131",
+   "reference_label_seq_id": 131,
+   "reference_author_residue_number": 131,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 116,
+   "element": "Helix P9",
+   "all_labels": [
+    "Helix P9"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|132",
+   "reference_label_seq_id": 132,
+   "reference_author_residue_number": 132,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 117,
+   "element": "Helix P9",
+   "all_labels": [
+    "Helix P9"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|133",
+   "reference_label_seq_id": 133,
+   "reference_author_residue_number": 133,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 118,
+   "element": "Helix P9",
+   "all_labels": [
+    "Helix P9"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|134",
+   "reference_label_seq_id": 134,
+   "reference_author_residue_number": 134,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 119,
+   "element": "Helix P9",
+   "all_labels": [
+    "Helix P9"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|135",
+   "reference_label_seq_id": 135,
+   "reference_author_residue_number": 135,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 120,
+   "element": "Helix P9",
+   "all_labels": [
+    "Helix P9"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|136",
+   "reference_label_seq_id": 136,
+   "reference_author_residue_number": 136,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 121,
+   "element": "Helix P9",
+   "all_labels": [
+    "Helix P9"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|137",
+   "reference_label_seq_id": 137,
+   "reference_author_residue_number": 137,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 122,
+   "element": "Helix P9",
+   "all_labels": [
+    "Helix P9"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|138",
+   "reference_label_seq_id": 138,
+   "reference_author_residue_number": 138,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 123,
+   "element": "Helix P10",
+   "all_labels": [
+    "Helix P10"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|139",
+   "reference_label_seq_id": 139,
+   "reference_author_residue_number": 139,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 124,
+   "element": "Helix P10",
+   "all_labels": [
+    "Helix P10"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|140",
+   "reference_label_seq_id": 140,
+   "reference_author_residue_number": 140,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 126,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|142",
+   "reference_label_seq_id": 142,
+   "reference_author_residue_number": 142,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 127,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|143",
+   "reference_label_seq_id": 143,
+   "reference_author_residue_number": 143,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 128,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|144",
+   "reference_label_seq_id": 144,
+   "reference_author_residue_number": 144,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 129,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|145",
+   "reference_label_seq_id": 145,
+   "reference_author_residue_number": 145,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 130,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|146",
+   "reference_label_seq_id": 146,
+   "reference_author_residue_number": 146,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 131,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|147",
+   "reference_label_seq_id": 147,
+   "reference_author_residue_number": 147,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 132,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|148",
+   "reference_label_seq_id": 148,
+   "reference_author_residue_number": 148,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 133,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|149",
+   "reference_label_seq_id": 149,
+   "reference_author_residue_number": 149,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 134,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|150",
+   "reference_label_seq_id": 150,
+   "reference_author_residue_number": 150,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 135,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|151",
+   "reference_label_seq_id": 151,
+   "reference_author_residue_number": 151,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 136,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|152",
+   "reference_label_seq_id": 152,
+   "reference_author_residue_number": 152,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 137,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|153",
+   "reference_label_seq_id": 153,
+   "reference_author_residue_number": 153,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 138,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|154",
+   "reference_label_seq_id": 154,
+   "reference_author_residue_number": 154,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 139,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|155",
+   "reference_label_seq_id": 155,
+   "reference_author_residue_number": 155,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 140,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|156",
+   "reference_label_seq_id": 156,
+   "reference_author_residue_number": 156,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 141,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|157",
+   "reference_label_seq_id": 157,
+   "reference_author_residue_number": 157,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 142,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|158",
+   "reference_label_seq_id": 158,
+   "reference_author_residue_number": 158,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 143,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|159",
+   "reference_label_seq_id": 159,
+   "reference_author_residue_number": 159,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 144,
+   "element": "L10.1",
+   "all_labels": [
+    "L10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|162",
+   "reference_label_seq_id": 162,
+   "reference_author_residue_number": 162,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "5",
+   "reference_pp_category": "low",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 145,
+   "element": "L10.1",
+   "all_labels": [
+    "L10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|163",
+   "reference_label_seq_id": 163,
+   "reference_author_residue_number": 163,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "5",
+   "reference_pp_category": "low",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 146,
+   "element": "L10.1",
+   "all_labels": [
+    "L10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|164",
+   "reference_label_seq_id": 164,
+   "reference_author_residue_number": 164,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "5",
+   "reference_pp_category": "low",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 147,
+   "element": "L10.1",
+   "all_labels": [
+    "L10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|165",
+   "reference_label_seq_id": 165,
+   "reference_author_residue_number": 165,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "5",
+   "reference_pp_category": "low",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 148,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|167",
+   "reference_label_seq_id": 167,
+   "reference_author_residue_number": 167,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 149,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|168",
+   "reference_label_seq_id": 168,
+   "reference_author_residue_number": 168,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 150,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|169",
+   "reference_label_seq_id": 169,
+   "reference_author_residue_number": 169,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 151,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|170",
+   "reference_label_seq_id": 170,
+   "reference_author_residue_number": 170,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 152,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|171",
+   "reference_label_seq_id": 171,
+   "reference_author_residue_number": 171,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 153,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|172",
+   "reference_label_seq_id": 172,
+   "reference_author_residue_number": 172,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 154,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|173",
+   "reference_label_seq_id": 173,
+   "reference_author_residue_number": 173,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 155,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|174",
+   "reference_label_seq_id": 174,
+   "reference_author_residue_number": 174,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 156,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|175",
+   "reference_label_seq_id": 175,
+   "reference_author_residue_number": 175,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 157,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|176",
+   "reference_label_seq_id": 176,
+   "reference_author_residue_number": 176,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 158,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|177",
+   "reference_label_seq_id": 177,
+   "reference_author_residue_number": 177,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 159,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|178",
+   "reference_label_seq_id": 178,
+   "reference_author_residue_number": 178,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 160,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|179",
+   "reference_label_seq_id": 179,
+   "reference_author_residue_number": 179,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 161,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|180",
+   "reference_label_seq_id": 180,
+   "reference_author_residue_number": 180,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 162,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|181",
+   "reference_label_seq_id": 181,
+   "reference_author_residue_number": 181,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 163,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|182",
+   "reference_label_seq_id": 182,
+   "reference_author_residue_number": 182,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 164,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|183",
+   "reference_label_seq_id": 183,
+   "reference_author_residue_number": 183,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 165,
+   "element": "Helix P10.1",
+   "all_labels": [
+    "Helix P10.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|184",
+   "reference_label_seq_id": 184,
+   "reference_author_residue_number": 184,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 171,
+   "element": "Helix P11",
+   "all_labels": [
+    "Helix P11"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|190",
+   "reference_label_seq_id": 190,
+   "reference_author_residue_number": 190,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 172,
+   "element": "Helix P11",
+   "all_labels": [
+    "Helix P11"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|191",
+   "reference_label_seq_id": 191,
+   "reference_author_residue_number": 191,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 173,
+   "element": "Helix P11",
+   "all_labels": [
+    "Helix P11"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|192",
+   "reference_label_seq_id": 192,
+   "reference_author_residue_number": 192,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 174,
+   "element": "Helix P11",
+   "all_labels": [
+    "Helix P11"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|193",
+   "reference_label_seq_id": 193,
+   "reference_author_residue_number": 193,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 175,
+   "element": "Helix P11",
+   "all_labels": [
+    "Helix P11"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|194",
+   "reference_label_seq_id": 194,
+   "reference_author_residue_number": 194,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 176,
+   "element": "IDTM",
+   "all_labels": [
+    "IDTM"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|195",
+   "reference_label_seq_id": 195,
+   "reference_author_residue_number": 195,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 177,
+   "element": "IDTM",
+   "all_labels": [
+    "IDTM"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|196",
+   "reference_label_seq_id": 196,
+   "reference_author_residue_number": 196,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 178,
+   "element": "IDTM",
+   "all_labels": [
+    "IDTM"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|197",
+   "reference_label_seq_id": 197,
+   "reference_author_residue_number": 197,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 179,
+   "element": "IDTM",
+   "all_labels": [
+    "IDTM"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|198",
+   "reference_label_seq_id": 198,
+   "reference_author_residue_number": 198,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 180,
+   "element": "IDTM",
+   "all_labels": [
+    "IDTM"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|199",
+   "reference_label_seq_id": 199,
+   "reference_author_residue_number": 199,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 181,
+   "element": "IDTM",
+   "all_labels": [
+    "IDTM"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|200",
+   "reference_label_seq_id": 200,
+   "reference_author_residue_number": 200,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 182,
+   "element": "IDTM",
+   "all_labels": [
+    "IDTM"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|201",
+   "reference_label_seq_id": 201,
+   "reference_author_residue_number": 201,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 183,
+   "element": "IDTM",
+   "all_labels": [
+    "IDTM"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|202",
+   "reference_label_seq_id": 202,
+   "reference_author_residue_number": 202,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 184,
+   "element": "IDTM",
+   "all_labels": [
+    "IDTM"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|203",
+   "reference_label_seq_id": 203,
+   "reference_author_residue_number": 203,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 185,
+   "element": "IDTM",
+   "all_labels": [
+    "IDTM"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|204",
+   "reference_label_seq_id": 204,
+   "reference_author_residue_number": 204,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 186,
+   "element": "IDTM",
+   "all_labels": [
+    "IDTM"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|205",
+   "reference_label_seq_id": 205,
+   "reference_author_residue_number": 205,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 187,
+   "element": "IDTM",
+   "all_labels": [
+    "IDTM"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|206",
+   "reference_label_seq_id": 206,
+   "reference_author_residue_number": 206,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 188,
+   "element": "Helix P12",
+   "all_labels": [
+    "Helix P12"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|207",
+   "reference_label_seq_id": 207,
+   "reference_author_residue_number": 207,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 189,
+   "element": "Helix P12",
+   "all_labels": [
+    "Helix P12"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|208",
+   "reference_label_seq_id": 208,
+   "reference_author_residue_number": 208,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 190,
+   "element": "Helix P12",
+   "all_labels": [
+    "Helix P12"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|209",
+   "reference_label_seq_id": 209,
+   "reference_author_residue_number": 209,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 191,
+   "element": "Helix P12",
+   "all_labels": [
+    "Helix P12"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|210",
+   "reference_label_seq_id": 210,
+   "reference_author_residue_number": 210,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 192,
+   "element": "Helix P12",
+   "all_labels": [
+    "Helix P12"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|211",
+   "reference_label_seq_id": 211,
+   "reference_author_residue_number": 211,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 193,
+   "element": "Helix P12",
+   "all_labels": [
+    "Helix P12"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|212",
+   "reference_label_seq_id": 212,
+   "reference_author_residue_number": 212,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 194,
+   "element": "Helix P12",
+   "all_labels": [
+    "Helix P12"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|213",
+   "reference_label_seq_id": 213,
+   "reference_author_residue_number": 213,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 195,
+   "element": "Helix P12",
+   "all_labels": [
+    "Helix P12"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|214",
+   "reference_label_seq_id": 214,
+   "reference_author_residue_number": 214,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 196,
+   "element": "L12",
+   "all_labels": [
+    "L12"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|215",
+   "reference_label_seq_id": 215,
+   "reference_author_residue_number": 215,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 197,
+   "element": "L12",
+   "all_labels": [
+    "L12"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|216",
+   "reference_label_seq_id": 216,
+   "reference_author_residue_number": 216,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 198,
+   "element": "L12",
+   "all_labels": [
+    "L12"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|217",
+   "reference_label_seq_id": 217,
+   "reference_author_residue_number": 217,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 199,
+   "element": "L12",
+   "all_labels": [
+    "L12"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|218",
+   "reference_label_seq_id": 218,
+   "reference_author_residue_number": 218,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 200,
+   "element": "Helix P12",
+   "all_labels": [
+    "Helix P12"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|219",
+   "reference_label_seq_id": 219,
+   "reference_author_residue_number": 219,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 201,
+   "element": "Helix P12",
+   "all_labels": [
+    "Helix P12"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|220",
+   "reference_label_seq_id": 220,
+   "reference_author_residue_number": 220,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 202,
+   "element": "Helix P12",
+   "all_labels": [
+    "Helix P12"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|221",
+   "reference_label_seq_id": 221,
+   "reference_author_residue_number": 221,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 203,
+   "element": "Helix P12",
+   "all_labels": [
+    "Helix P12"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|222",
+   "reference_label_seq_id": 222,
+   "reference_author_residue_number": 222,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 204,
+   "element": "Helix P12",
+   "all_labels": [
+    "Helix P12"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|223",
+   "reference_label_seq_id": 223,
+   "reference_author_residue_number": 223,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 205,
+   "element": "Helix P12",
+   "all_labels": [
+    "Helix P12"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|224",
+   "reference_label_seq_id": 224,
+   "reference_author_residue_number": 224,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 206,
+   "element": "Helix P12",
+   "all_labels": [
+    "Helix P12"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|225",
+   "reference_label_seq_id": 225,
+   "reference_author_residue_number": 225,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 207,
+   "element": "Helix P12",
+   "all_labels": [
+    "Helix P12"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|226",
+   "reference_label_seq_id": 226,
+   "reference_author_residue_number": 226,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 208,
+   "element": "IDTM",
+   "all_labels": [
+    "IDTM"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|227",
+   "reference_label_seq_id": 227,
+   "reference_author_residue_number": 227,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 209,
+   "element": "IDTM",
+   "all_labels": [
+    "IDTM"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|228",
+   "reference_label_seq_id": 228,
+   "reference_author_residue_number": 228,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 210,
+   "element": "IDTM",
+   "all_labels": [
+    "IDTM"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|229",
+   "reference_label_seq_id": 229,
+   "reference_author_residue_number": 229,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 211,
+   "element": "IDTM",
+   "all_labels": [
+    "IDTM"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|230",
+   "reference_label_seq_id": 230,
+   "reference_author_residue_number": 230,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 212,
+   "element": "IDTM",
+   "all_labels": [
+    "IDTM"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|231",
+   "reference_label_seq_id": 231,
+   "reference_author_residue_number": 231,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 213,
+   "element": "IDTM",
+   "all_labels": [
+    "IDTM"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|232",
+   "reference_label_seq_id": 232,
+   "reference_author_residue_number": 232,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 214,
+   "element": "IDTM",
+   "all_labels": [
+    "IDTM"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|233",
+   "reference_label_seq_id": 233,
+   "reference_author_residue_number": 233,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 215,
+   "element": "IDTM",
+   "all_labels": [
+    "IDTM"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|234",
+   "reference_label_seq_id": 234,
+   "reference_author_residue_number": 234,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 216,
+   "element": "IDTM",
+   "all_labels": [
+    "IDTM"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|235",
+   "reference_label_seq_id": 235,
+   "reference_author_residue_number": 235,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 217,
+   "element": "Helix P11",
+   "all_labels": [
+    "Helix P11"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|236",
+   "reference_label_seq_id": 236,
+   "reference_author_residue_number": 236,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 218,
+   "element": "Helix P11",
+   "all_labels": [
+    "Helix P11"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|237",
+   "reference_label_seq_id": 237,
+   "reference_author_residue_number": 237,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 219,
+   "element": "Helix P11",
+   "all_labels": [
+    "Helix P11"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|238",
+   "reference_label_seq_id": 238,
+   "reference_author_residue_number": 238,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 220,
+   "element": "Helix P11",
+   "all_labels": [
+    "Helix P11"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|239",
+   "reference_label_seq_id": 239,
+   "reference_author_residue_number": 239,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 221,
+   "element": "Helix P11",
+   "all_labels": [
+    "Helix P11"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|240",
+   "reference_label_seq_id": 240,
+   "reference_author_residue_number": 240,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 222,
+   "element": "Helix P11",
+   "all_labels": [
+    "Helix P11"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|241",
+   "reference_label_seq_id": 241,
+   "reference_author_residue_number": 241,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 223,
+   "element": "Helix P11",
+   "all_labels": [
+    "Helix P11"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|242",
+   "reference_label_seq_id": 242,
+   "reference_author_residue_number": 242,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 224,
+   "element": "Helix P10",
+   "all_labels": [
+    "Helix P10"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|243",
+   "reference_label_seq_id": 243,
+   "reference_author_residue_number": 243,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 225,
+   "element": "Helix P10",
+   "all_labels": [
+    "Helix P10"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|244",
+   "reference_label_seq_id": 244,
+   "reference_author_residue_number": 244,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 226,
+   "element": "Helix P7",
+   "all_labels": [
+    "Helix P7"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|245",
+   "reference_label_seq_id": 245,
+   "reference_author_residue_number": 245,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 227,
+   "element": "Helix P7",
+   "all_labels": [
+    "Helix P7"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|246",
+   "reference_label_seq_id": 246,
+   "reference_author_residue_number": 246,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 228,
+   "element": "Helix P7",
+   "all_labels": [
+    "Helix P7"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|247",
+   "reference_label_seq_id": 247,
+   "reference_author_residue_number": 247,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 229,
+   "element": "Helix P7",
+   "all_labels": [
+    "Helix P7"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|248",
+   "reference_label_seq_id": 248,
+   "reference_author_residue_number": 248,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 230,
+   "element": "Helix P7",
+   "all_labels": [
+    "Helix P7"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|249",
+   "reference_label_seq_id": 249,
+   "reference_author_residue_number": 249,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 231,
+   "element": "Helix P5",
+   "all_labels": [
+    "Helix P5"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|250",
+   "reference_label_seq_id": 250,
+   "reference_author_residue_number": 250,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 232,
+   "element": "Helix P5",
+   "all_labels": [
+    "Helix P5"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|251",
+   "reference_label_seq_id": 251,
+   "reference_author_residue_number": 251,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 233,
+   "element": "Helix P5",
+   "all_labels": [
+    "Helix P5"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|252",
+   "reference_label_seq_id": 252,
+   "reference_author_residue_number": 252,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 234,
+   "element": "Helix P5",
+   "all_labels": [
+    "Helix P5"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|253",
+   "reference_label_seq_id": 253,
+   "reference_author_residue_number": 253,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 235,
+   "element": "Helix P5",
+   "all_labels": [
+    "Helix P5"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|254",
+   "reference_label_seq_id": 254,
+   "reference_author_residue_number": 254,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 239,
+   "element": "Helix P15",
+   "all_labels": [
+    "Helix P15"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|258",
+   "reference_label_seq_id": 258,
+   "reference_author_residue_number": 258,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 240,
+   "element": "Helix P15",
+   "all_labels": [
+    "Helix P15"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|259",
+   "reference_label_seq_id": 259,
+   "reference_author_residue_number": 259,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 241,
+   "element": "Helix P15",
+   "all_labels": [
+    "Helix P15"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|260",
+   "reference_label_seq_id": 260,
+   "reference_author_residue_number": 260,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 242,
+   "element": "Helix P15",
+   "all_labels": [
+    "Helix P15"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|261",
+   "reference_label_seq_id": 261,
+   "reference_author_residue_number": 261,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 243,
+   "element": "Helix P15",
+   "all_labels": [
+    "Helix P15"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|262",
+   "reference_label_seq_id": 262,
+   "reference_author_residue_number": 262,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 244,
+   "element": "L15",
+   "all_labels": [
+    "L15"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|263",
+   "reference_label_seq_id": 263,
+   "reference_author_residue_number": 263,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 245,
+   "element": "L15",
+   "all_labels": [
+    "L15"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|264",
+   "reference_label_seq_id": 264,
+   "reference_author_residue_number": 264,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 246,
+   "element": "L15",
+   "all_labels": [
+    "L15"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|265",
+   "reference_label_seq_id": 265,
+   "reference_author_residue_number": 265,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 247,
+   "element": "L15",
+   "all_labels": [
+    "L15"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|266",
+   "reference_label_seq_id": 266,
+   "reference_author_residue_number": 266,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 248,
+   "element": "L15",
+   "all_labels": [
+    "L15"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|267",
+   "reference_label_seq_id": 267,
+   "reference_author_residue_number": 267,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 249,
+   "element": "L15",
+   "all_labels": [
+    "L15"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|268",
+   "reference_label_seq_id": 268,
+   "reference_author_residue_number": 268,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 250,
+   "element": "L15",
+   "all_labels": [
+    "L15"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|269",
+   "reference_label_seq_id": 269,
+   "reference_author_residue_number": 269,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 251,
+   "element": "Helix P15",
+   "all_labels": [
+    "Helix P15"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|270",
+   "reference_label_seq_id": 270,
+   "reference_author_residue_number": 270,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 252,
+   "element": "Helix P15",
+   "all_labels": [
+    "Helix P15"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|271",
+   "reference_label_seq_id": 271,
+   "reference_author_residue_number": 271,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 253,
+   "element": "Helix P15",
+   "all_labels": [
+    "Helix P15"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|272",
+   "reference_label_seq_id": 272,
+   "reference_author_residue_number": 272,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 254,
+   "element": "Helix P15",
+   "all_labels": [
+    "Helix P15"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|273",
+   "reference_label_seq_id": 273,
+   "reference_author_residue_number": 273,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 255,
+   "element": "Helix P15",
+   "all_labels": [
+    "Helix P15"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|274",
+   "reference_label_seq_id": 274,
+   "reference_author_residue_number": 274,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 259,
+   "element": "Helix P15.1",
+   "all_labels": [
+    "Helix P15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|278",
+   "reference_label_seq_id": 278,
+   "reference_author_residue_number": 278,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 260,
+   "element": "Helix P15.1",
+   "all_labels": [
+    "Helix P15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|279",
+   "reference_label_seq_id": 279,
+   "reference_author_residue_number": 279,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 261,
+   "element": "Helix P15.1",
+   "all_labels": [
+    "Helix P15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|280",
+   "reference_label_seq_id": 280,
+   "reference_author_residue_number": 280,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 262,
+   "element": "Helix P15.1",
+   "all_labels": [
+    "Helix P15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|281",
+   "reference_label_seq_id": 281,
+   "reference_author_residue_number": 281,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 263,
+   "element": "Helix P15.1",
+   "all_labels": [
+    "Helix P15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|282",
+   "reference_label_seq_id": 282,
+   "reference_author_residue_number": 282,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 264,
+   "element": "Helix P15.1",
+   "all_labels": [
+    "Helix P15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|283",
+   "reference_label_seq_id": 283,
+   "reference_author_residue_number": 283,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 265,
+   "element": "Helix P15.1",
+   "all_labels": [
+    "Helix P15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|284",
+   "reference_label_seq_id": 284,
+   "reference_author_residue_number": 284,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 266,
+   "element": "Helix P15.1",
+   "all_labels": [
+    "Helix P15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|285",
+   "reference_label_seq_id": 285,
+   "reference_author_residue_number": 285,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 267,
+   "element": "Helix P15.1",
+   "all_labels": [
+    "Helix P15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|286",
+   "reference_label_seq_id": 286,
+   "reference_author_residue_number": 286,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 268,
+   "element": "Helix P15.1",
+   "all_labels": [
+    "Helix P15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|287",
+   "reference_label_seq_id": 287,
+   "reference_author_residue_number": 287,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 269,
+   "element": "Helix P15.1",
+   "all_labels": [
+    "Helix P15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|288",
+   "reference_label_seq_id": 288,
+   "reference_author_residue_number": 288,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 270,
+   "element": "Helix P15.1",
+   "all_labels": [
+    "Helix P15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|289",
+   "reference_label_seq_id": 289,
+   "reference_author_residue_number": 289,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 271,
+   "element": "L15.1",
+   "all_labels": [
+    "L15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|290",
+   "reference_label_seq_id": 290,
+   "reference_author_residue_number": 290,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 272,
+   "element": "L15.1",
+   "all_labels": [
+    "L15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|291",
+   "reference_label_seq_id": 291,
+   "reference_author_residue_number": 291,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 273,
+   "element": "L15.1",
+   "all_labels": [
+    "L15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|292",
+   "reference_label_seq_id": 292,
+   "reference_author_residue_number": 292,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 274,
+   "element": "L15.1",
+   "all_labels": [
+    "L15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|293",
+   "reference_label_seq_id": 293,
+   "reference_author_residue_number": 293,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 275,
+   "element": "L15.1",
+   "all_labels": [
+    "L15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|294",
+   "reference_label_seq_id": 294,
+   "reference_author_residue_number": 294,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 276,
+   "element": "L15.1",
+   "all_labels": [
+    "L15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|295",
+   "reference_label_seq_id": 295,
+   "reference_author_residue_number": 295,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 277,
+   "element": "L15.1",
+   "all_labels": [
+    "L15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|296",
+   "reference_label_seq_id": 296,
+   "reference_author_residue_number": 296,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 278,
+   "element": "Helix P15.1",
+   "all_labels": [
+    "Helix P15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|297",
+   "reference_label_seq_id": 297,
+   "reference_author_residue_number": 297,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 279,
+   "element": "Helix P15.1",
+   "all_labels": [
+    "Helix P15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|298",
+   "reference_label_seq_id": 298,
+   "reference_author_residue_number": 298,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 280,
+   "element": "Helix P15.1",
+   "all_labels": [
+    "Helix P15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|299",
+   "reference_label_seq_id": 299,
+   "reference_author_residue_number": 299,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 281,
+   "element": "Helix P15.1",
+   "all_labels": [
+    "Helix P15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|300",
+   "reference_label_seq_id": 300,
+   "reference_author_residue_number": 300,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "9",
+   "reference_pp_category": "medium",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 283,
+   "element": "Helix P15.1",
+   "all_labels": [
+    "Helix P15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|301",
+   "reference_label_seq_id": 301,
+   "reference_author_residue_number": 301,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 284,
+   "element": "Helix P15.1",
+   "all_labels": [
+    "Helix P15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|302",
+   "reference_label_seq_id": 302,
+   "reference_author_residue_number": 302,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 285,
+   "element": "Helix P15.1",
+   "all_labels": [
+    "Helix P15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|303",
+   "reference_label_seq_id": 303,
+   "reference_author_residue_number": 303,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 286,
+   "element": "Helix P15.1",
+   "all_labels": [
+    "Helix P15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|304",
+   "reference_label_seq_id": 304,
+   "reference_author_residue_number": 304,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 287,
+   "element": "Helix P15.1",
+   "all_labels": [
+    "Helix P15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|305",
+   "reference_label_seq_id": 305,
+   "reference_author_residue_number": 305,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 288,
+   "element": "Helix P15.1",
+   "all_labels": [
+    "Helix P15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|306",
+   "reference_label_seq_id": 306,
+   "reference_author_residue_number": 306,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 289,
+   "element": "Helix P15.1",
+   "all_labels": [
+    "Helix P15.1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|307",
+   "reference_label_seq_id": 307,
+   "reference_author_residue_number": 307,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 290,
+   "element": "Helix P15.2",
+   "all_labels": [
+    "Helix P15.2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|308",
+   "reference_label_seq_id": 308,
+   "reference_author_residue_number": 308,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 291,
+   "element": "Helix P15.2",
+   "all_labels": [
+    "Helix P15.2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|309",
+   "reference_label_seq_id": 309,
+   "reference_author_residue_number": 309,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 292,
+   "element": "Helix P15.2",
+   "all_labels": [
+    "Helix P15.2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|310",
+   "reference_label_seq_id": 310,
+   "reference_author_residue_number": 310,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 293,
+   "element": "Helix P15.2",
+   "all_labels": [
+    "Helix P15.2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|311",
+   "reference_label_seq_id": 311,
+   "reference_author_residue_number": 311,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 294,
+   "element": "Helix P15.2",
+   "all_labels": [
+    "Helix P15.2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|312",
+   "reference_label_seq_id": 312,
+   "reference_author_residue_number": 312,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 295,
+   "element": "Helix P15.2",
+   "all_labels": [
+    "Helix P15.2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|313",
+   "reference_label_seq_id": 313,
+   "reference_author_residue_number": 313,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 296,
+   "element": "L15.2",
+   "all_labels": [
+    "L15.2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|320",
+   "reference_label_seq_id": 320,
+   "reference_author_residue_number": 320,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "6",
+   "reference_pp_category": "low",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 297,
+   "element": "Helix P15.2",
+   "all_labels": [
+    "Helix P15.2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|321",
+   "reference_label_seq_id": 321,
+   "reference_author_residue_number": 321,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "6",
+   "reference_pp_category": "low",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 298,
+   "element": "Helix P15.2",
+   "all_labels": [
+    "Helix P15.2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|322",
+   "reference_label_seq_id": 322,
+   "reference_author_residue_number": 322,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "6",
+   "reference_pp_category": "low",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 299,
+   "element": "Helix P15.2",
+   "all_labels": [
+    "Helix P15.2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|323",
+   "reference_label_seq_id": 323,
+   "reference_author_residue_number": 323,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "6",
+   "reference_pp_category": "low",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 300,
+   "element": "Helix P15.2",
+   "all_labels": [
+    "Helix P15.2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|324",
+   "reference_label_seq_id": 324,
+   "reference_author_residue_number": 324,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 301,
+   "element": "Helix P15.2",
+   "all_labels": [
+    "Helix P15.2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|325",
+   "reference_label_seq_id": 325,
+   "reference_author_residue_number": 325,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 302,
+   "element": "Helix P15.2",
+   "all_labels": [
+    "Helix P15.2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|326",
+   "reference_label_seq_id": 326,
+   "reference_author_residue_number": 326,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 303,
+   "element": "Helix P15.2",
+   "all_labels": [
+    "Helix P15.2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|327",
+   "reference_label_seq_id": 327,
+   "reference_author_residue_number": 327,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 304,
+   "element": "Helix P15.2",
+   "all_labels": [
+    "Helix P15.2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|328",
+   "reference_label_seq_id": 328,
+   "reference_author_residue_number": 328,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 305,
+   "element": "Helix P15.2",
+   "all_labels": [
+    "Helix P15.2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|329",
+   "reference_label_seq_id": 329,
+   "reference_author_residue_number": 329,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 314,
+   "element": "Helix P2",
+   "all_labels": [
+    "Helix P2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|338",
+   "reference_label_seq_id": 338,
+   "reference_author_residue_number": 338,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 315,
+   "element": "Helix P2",
+   "all_labels": [
+    "Helix P2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|339",
+   "reference_label_seq_id": 339,
+   "reference_author_residue_number": 339,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 316,
+   "element": "Helix P2",
+   "all_labels": [
+    "Helix P2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|340",
+   "reference_label_seq_id": 340,
+   "reference_author_residue_number": 340,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 317,
+   "element": "Helix P2",
+   "all_labels": [
+    "Helix P2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|341",
+   "reference_label_seq_id": 341,
+   "reference_author_residue_number": 341,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 318,
+   "element": "Helix P2",
+   "all_labels": [
+    "Helix P2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|342",
+   "reference_label_seq_id": 342,
+   "reference_author_residue_number": 342,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 319,
+   "element": "Helix P2",
+   "all_labels": [
+    "Helix P2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|343",
+   "reference_label_seq_id": 343,
+   "reference_author_residue_number": 343,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 320,
+   "element": "Helix P2",
+   "all_labels": [
+    "Helix P2"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|344",
+   "reference_label_seq_id": 344,
+   "reference_author_residue_number": 344,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 321,
+   "element": "Helix P19",
+   "all_labels": [
+    "Helix P19"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|345",
+   "reference_label_seq_id": 345,
+   "reference_author_residue_number": 345,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 322,
+   "element": "Helix P19",
+   "all_labels": [
+    "Helix P19"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|346",
+   "reference_label_seq_id": 346,
+   "reference_author_residue_number": 346,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 323,
+   "element": "Helix P19",
+   "all_labels": [
+    "Helix P19"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|347",
+   "reference_label_seq_id": 347,
+   "reference_author_residue_number": 347,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 324,
+   "element": "Helix P19",
+   "all_labels": [
+    "Helix P19"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|348",
+   "reference_label_seq_id": 348,
+   "reference_author_residue_number": 348,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 325,
+   "element": "Helix P19",
+   "all_labels": [
+    "Helix P19"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|349",
+   "reference_label_seq_id": 349,
+   "reference_author_residue_number": 349,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 326,
+   "element": "Helix P19",
+   "all_labels": [
+    "Helix P19"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|350",
+   "reference_label_seq_id": 350,
+   "reference_author_residue_number": 350,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 327,
+   "element": "Helix P19",
+   "all_labels": [
+    "Helix P19"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|351",
+   "reference_label_seq_id": 351,
+   "reference_author_residue_number": 351,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 328,
+   "element": "Helix P19",
+   "all_labels": [
+    "Helix P19"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|352",
+   "reference_label_seq_id": 352,
+   "reference_author_residue_number": 352,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 329,
+   "element": "Helix P19",
+   "all_labels": [
+    "Helix P19"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|353",
+   "reference_label_seq_id": 353,
+   "reference_author_residue_number": 353,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 330,
+   "element": "Helix P19",
+   "all_labels": [
+    "Helix P19"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|354",
+   "reference_label_seq_id": 354,
+   "reference_author_residue_number": 354,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 331,
+   "element": "Helix P19",
+   "all_labels": [
+    "Helix P19"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|355",
+   "reference_label_seq_id": 355,
+   "reference_author_residue_number": 355,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "9",
+   "reference_pp_category": "medium",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 332,
+   "element": "Helix P19",
+   "all_labels": [
+    "Helix P19"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|356",
+   "reference_label_seq_id": 356,
+   "reference_author_residue_number": 356,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "4",
+   "reference_pp_category": "low",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 333,
+   "element": "Helix P19",
+   "all_labels": [
+    "Helix P19"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|357",
+   "reference_label_seq_id": 357,
+   "reference_author_residue_number": 357,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "4",
+   "reference_pp_category": "low",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 334,
+   "element": "Helix P19",
+   "all_labels": [
+    "Helix P19"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|358",
+   "reference_label_seq_id": 358,
+   "reference_author_residue_number": 358,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "3",
+   "reference_pp_category": "low",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 335,
+   "element": "Helix P19",
+   "all_labels": [
+    "Helix P19"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|359",
+   "reference_label_seq_id": 359,
+   "reference_author_residue_number": 359,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "3",
+   "reference_pp_category": "low",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 336,
+   "element": "Helix P19",
+   "all_labels": [
+    "Helix P19"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|375",
+   "reference_label_seq_id": 375,
+   "reference_author_residue_number": 375,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 337,
+   "element": "Helix P19",
+   "all_labels": [
+    "Helix P19"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|376",
+   "reference_label_seq_id": 376,
+   "reference_author_residue_number": 376,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 338,
+   "element": "Helix P19",
+   "all_labels": [
+    "Helix P19"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|377",
+   "reference_label_seq_id": 377,
+   "reference_author_residue_number": 377,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 339,
+   "element": "Helix P19",
+   "all_labels": [
+    "Helix P19"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|378",
+   "reference_label_seq_id": 378,
+   "reference_author_residue_number": 378,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 340,
+   "element": "Helix P19",
+   "all_labels": [
+    "Helix P19"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|379",
+   "reference_label_seq_id": 379,
+   "reference_author_residue_number": 379,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 341,
+   "element": "Helix P19",
+   "all_labels": [
+    "Helix P19"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|380",
+   "reference_label_seq_id": 380,
+   "reference_author_residue_number": 380,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 342,
+   "element": "Helix P19",
+   "all_labels": [
+    "Helix P19"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|381",
+   "reference_label_seq_id": 381,
+   "reference_author_residue_number": 381,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 343,
+   "element": "Helix P19",
+   "all_labels": [
+    "Helix P19"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|382",
+   "reference_label_seq_id": 382,
+   "reference_author_residue_number": 382,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 344,
+   "element": "Helix P19",
+   "all_labels": [
+    "Helix P19"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|383",
+   "reference_label_seq_id": 383,
+   "reference_author_residue_number": 383,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 345,
+   "element": "Helix P19",
+   "all_labels": [
+    "Helix P19"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|384",
+   "reference_label_seq_id": 384,
+   "reference_author_residue_number": 384,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 352,
+   "element": "Helix P4",
+   "all_labels": [
+    "Helix P4"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|391",
+   "reference_label_seq_id": 391,
+   "reference_author_residue_number": 391,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 353,
+   "element": "Helix P4",
+   "all_labels": [
+    "Helix P4"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|392",
+   "reference_label_seq_id": 392,
+   "reference_author_residue_number": 392,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 354,
+   "element": "Helix P4",
+   "all_labels": [
+    "Helix P4"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|393",
+   "reference_label_seq_id": 393,
+   "reference_author_residue_number": 393,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 355,
+   "element": "Helix P4",
+   "all_labels": [
+    "Helix P4"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|394",
+   "reference_label_seq_id": 394,
+   "reference_author_residue_number": 394,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 356,
+   "element": "Helix P4",
+   "all_labels": [
+    "Helix P4"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|395",
+   "reference_label_seq_id": 395,
+   "reference_author_residue_number": 395,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 357,
+   "element": "Helix P4",
+   "all_labels": [
+    "Helix P4"
+   ],
+   "reference_unit_id": "9OWQ|1|A|C|396",
+   "reference_label_seq_id": 396,
+   "reference_author_residue_number": 396,
+   "reference_nucleotide": "C",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 358,
+   "element": "Helix P4",
+   "all_labels": [
+    "Helix P4"
+   ],
+   "reference_unit_id": "9OWQ|1|A|U|397",
+   "reference_label_seq_id": 397,
+   "reference_author_residue_number": 397,
+   "reference_nucleotide": "U",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 362,
+   "element": "Helix P1",
+   "all_labels": [
+    "Helix P1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|401",
+   "reference_label_seq_id": 401,
+   "reference_author_residue_number": 401,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 363,
+   "element": "Helix P1",
+   "all_labels": [
+    "Helix P1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|402",
+   "reference_label_seq_id": 402,
+   "reference_author_residue_number": 402,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 364,
+   "element": "Helix P1",
+   "all_labels": [
+    "Helix P1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|A|403",
+   "reference_label_seq_id": 403,
+   "reference_author_residue_number": 403,
+   "reference_nucleotide": "A",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  },
+  {
+   "rfam_consensus_pos": 365,
+   "element": "Helix P1",
+   "all_labels": [
+    "Helix P1"
+   ],
+   "reference_unit_id": "9OWQ|1|A|G|404",
+   "reference_label_seq_id": 404,
+   "reference_author_residue_number": 404,
+   "reference_nucleotide": "G",
+   "reference_pp_char": "*",
+   "reference_pp_category": "high",
+   "reference_has_coordinates": true
+  }
+ ],
+ "track": [
+  "Helix P1",
+  "Helix P1",
+  "Helix P1",
+  "Helix P1",
+  "Helix P1",
+  "Helix P1",
+  "Helix P1",
+  "Helix P2",
+  "Helix P2",
+  "Helix P2",
+  "Helix P2",
+  "Helix P2",
+  "Helix P2",
+  "Helix P2",
+  "Helix P3",
+  "Helix P3",
+  "Helix P3",
+  "Helix P3",
+  "Helix P3",
+  "Helix P3",
+  "Helix P3",
+  "Helix P3",
+  "Helix P3",
+  "Helix P3",
+  "L3",
+  "L3",
+  "Helix P3",
+  "Helix P3",
+  "Helix P3",
+  "Helix P3",
+  "Helix P3",
+  "Helix P3",
+  "Helix P3",
+  "Helix P3",
+  "Helix P3",
+  null,
+  null,
+  null,
+  null,
+  null,
+  "Helix P4",
+  "Helix P4",
+  "Helix P4",
+  "Helix P4",
+  "Helix P4",
+  "Helix P4",
+  "Helix P4",
+  "Helix P4",
+  "Helix P5",
+  "Helix P5",
+  "Helix P5",
+  "Helix P5",
+  "Helix P5",
+  "Helix P6",
+  "Helix P6",
+  "Helix P6",
+  "Helix P6",
+  "Helix P6",
+  "Helix P6",
+  "L6",
+  "L6",
+  "L6",
+  "L6",
+  "L6",
+  "L6",
+  "Helix P6",
+  "Helix P6",
+  "Helix P6",
+  "Helix P6",
+  "Helix P6",
+  "Helix P6",
+  null,
+  null,
+  null,
+  null,
+  null,
+  "Helix P7",
+  "Helix P7",
+  "Helix P7",
+  "Helix P7",
+  "Helix P7",
+  "Helix P8",
+  "Helix P8",
+  "Helix P8",
+  "Helix P8",
+  "Helix P8",
+  "Helix P8",
+  "L8",
+  "L8",
+  "L8",
+  "L8",
+  "L8",
+  "L8",
+  "L8",
+  "L8",
+  "L8",
+  "L8",
+  "Helix P8",
+  "Helix P8",
+  "Helix P8",
+  "Helix P8",
+  "Helix P8",
+  "Helix P8",
+  "Helix P9",
+  "Helix P9",
+  "Helix P9",
+  "Helix P9",
+  "Helix P9",
+  "Helix P9",
+  "Helix P9",
+  null,
+  "L9",
+  "L9",
+  null,
+  "Helix P9",
+  "Helix P9",
+  "Helix P9",
+  "Helix P9",
+  "Helix P9",
+  "Helix P9",
+  "Helix P9",
+  "Helix P9",
+  "Helix P10",
+  "Helix P10",
+  null,
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "L10.1",
+  "L10.1",
+  "L10.1",
+  "L10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  "Helix P10.1",
+  null,
+  null,
+  null,
+  null,
+  null,
+  "Helix P11",
+  "Helix P11",
+  "Helix P11",
+  "Helix P11",
+  "Helix P11",
+  "IDTM",
+  "IDTM",
+  "IDTM",
+  "IDTM",
+  "IDTM",
+  "IDTM",
+  "IDTM",
+  "IDTM",
+  "IDTM",
+  "IDTM",
+  "IDTM",
+  "IDTM",
+  "Helix P12",
+  "Helix P12",
+  "Helix P12",
+  "Helix P12",
+  "Helix P12",
+  "Helix P12",
+  "Helix P12",
+  "Helix P12",
+  "L12",
+  "L12",
+  "L12",
+  "L12",
+  "Helix P12",
+  "Helix P12",
+  "Helix P12",
+  "Helix P12",
+  "Helix P12",
+  "Helix P12",
+  "Helix P12",
+  "Helix P12",
+  "IDTM",
+  "IDTM",
+  "IDTM",
+  "IDTM",
+  "IDTM",
+  "IDTM",
+  "IDTM",
+  "IDTM",
+  "IDTM",
+  "Helix P11",
+  "Helix P11",
+  "Helix P11",
+  "Helix P11",
+  "Helix P11",
+  "Helix P11",
+  "Helix P11",
+  "Helix P10",
+  "Helix P10",
+  "Helix P7",
+  "Helix P7",
+  "Helix P7",
+  "Helix P7",
+  "Helix P7",
+  "Helix P5",
+  "Helix P5",
+  "Helix P5",
+  "Helix P5",
+  "Helix P5",
+  null,
+  null,
+  null,
+  "Helix P15",
+  "Helix P15",
+  "Helix P15",
+  "Helix P15",
+  "Helix P15",
+  "L15",
+  "L15",
+  "L15",
+  "L15",
+  "L15",
+  "L15",
+  "L15",
+  "Helix P15",
+  "Helix P15",
+  "Helix P15",
+  "Helix P15",
+  "Helix P15",
+  null,
+  null,
+  null,
+  "Helix P15.1",
+  "Helix P15.1",
+  "Helix P15.1",
+  "Helix P15.1",
+  "Helix P15.1",
+  "Helix P15.1",
+  "Helix P15.1",
+  "Helix P15.1",
+  "Helix P15.1",
+  "Helix P15.1",
+  "Helix P15.1",
+  "Helix P15.1",
+  "L15.1",
+  "L15.1",
+  "L15.1",
+  "L15.1",
+  "L15.1",
+  "L15.1",
+  "L15.1",
+  "Helix P15.1",
+  "Helix P15.1",
+  "Helix P15.1",
+  "Helix P15.1",
+  null,
+  "Helix P15.1",
+  "Helix P15.1",
+  "Helix P15.1",
+  "Helix P15.1",
+  "Helix P15.1",
+  "Helix P15.1",
+  "Helix P15.1",
+  "Helix P15.2",
+  "Helix P15.2",
+  "Helix P15.2",
+  "Helix P15.2",
+  "Helix P15.2",
+  "Helix P15.2",
+  "L15.2",
+  "Helix P15.2",
+  "Helix P15.2",
+  "Helix P15.2",
+  "Helix P15.2",
+  "Helix P15.2",
+  "Helix P15.2",
+  "Helix P15.2",
+  "Helix P15.2",
+  "Helix P15.2",
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  "Helix P2",
+  "Helix P2",
+  "Helix P2",
+  "Helix P2",
+  "Helix P2",
+  "Helix P2",
+  "Helix P2",
+  "Helix P19",
+  "Helix P19",
+  "Helix P19",
+  "Helix P19",
+  "Helix P19",
+  "Helix P19",
+  "Helix P19",
+  "Helix P19",
+  "Helix P19",
+  "Helix P19",
+  "Helix P19",
+  "Helix P19",
+  "Helix P19",
+  "Helix P19",
+  "Helix P19",
+  "Helix P19",
+  "Helix P19",
+  "Helix P19",
+  "Helix P19",
+  "Helix P19",
+  "Helix P19",
+  "Helix P19",
+  "Helix P19",
+  "Helix P19",
+  "Helix P19",
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  "Helix P4",
+  "Helix P4",
+  "Helix P4",
+  "Helix P4",
+  "Helix P4",
+  "Helix P4",
+  "Helix P4",
+  null,
+  null,
+  null,
+  "Helix P1",
+  "Helix P1",
+  "Helix P1",
+  "Helix P1"
+ ],
+ "n_consensus_positions_annotated": 323,
+ "reference_nucleotides_not_on_consensus": [
+  {
+   "unit_id": "9OWQ|1|A|G|1",
+   "labels": [
+    "Helix P1"
+   ],
+   "mapping_status": "outside_mapped_region",
+   "label_seq_id": 1
+  },
+  {
+   "unit_id": "9OWQ|1|A|U|2",
+   "labels": [
+    "Helix P1"
+   ],
+   "mapping_status": "outside_mapped_region",
+   "label_seq_id": 2
+  },
+  {
+   "unit_id": "9OWQ|1|A|U|3",
+   "labels": [
+    "Helix P1"
+   ],
+   "mapping_status": "outside_mapped_region",
+   "label_seq_id": 3
+  },
+  {
+   "unit_id": "9OWQ|1|A|A|4",
+   "labels": [
+    "Helix P1"
+   ],
+   "mapping_status": "outside_mapped_region",
+   "label_seq_id": 4
+  },
+  {
+   "unit_id": "9OWQ|1|A|A|5",
+   "labels": [
+    "Helix P1"
+   ],
+   "mapping_status": "outside_mapped_region",
+   "label_seq_id": 5
+  },
+  {
+   "unit_id": "9OWQ|1|A|U|6",
+   "labels": [
+    "Helix P1"
+   ],
+   "mapping_status": "outside_mapped_region",
+   "label_seq_id": 6
+  },
+  {
+   "unit_id": "9OWQ|1|A|C|7",
+   "labels": [
+    "Helix P1"
+   ],
+   "mapping_status": "outside_mapped_region",
+   "label_seq_id": 7
+  },
+  {
+   "unit_id": "9OWQ|1|A|U|33",
+   "labels": [
+    "L3"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 33
+  },
+  {
+   "unit_id": "9OWQ|1|A|U|34",
+   "labels": [
+    "L3"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 34
+  },
+  {
+   "unit_id": "9OWQ|1|A|U|67",
+   "labels": [
+    "Helix P6"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 67
+  },
+  {
+   "unit_id": "9OWQ|1|A|G|121",
+   "labels": [
+    "Helix P9"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 121
+  },
+  {
+   "unit_id": "9OWQ|1|A|G|122",
+   "labels": [
+    "Helix P9"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 122
+  },
+  {
+   "unit_id": "9OWQ|1|A|C|123",
+   "labels": [
+    "Helix P9"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 123
+  },
+  {
+   "unit_id": "9OWQ|1|A|U|124",
+   "labels": [
+    "L9"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 124
+  },
+  {
+   "unit_id": "9OWQ|1|A|G|127",
+   "labels": [
+    "L9"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 127
+  },
+  {
+   "unit_id": "9OWQ|1|A|G|128",
+   "labels": [
+    "Helix P9"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 128
+  },
+  {
+   "unit_id": "9OWQ|1|A|C|129",
+   "labels": [
+    "Helix P9"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 129
+  },
+  {
+   "unit_id": "9OWQ|1|A|U|130",
+   "labels": [
+    "Helix P9"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 130
+  },
+  {
+   "unit_id": "9OWQ|1|A|C|160",
+   "labels": [
+    "Helix P10.1"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 160
+  },
+  {
+   "unit_id": "9OWQ|1|A|G|161",
+   "labels": [
+    "L10.1"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 161
+  },
+  {
+   "unit_id": "9OWQ|1|A|G|166",
+   "labels": [
+    "Helix P10.1"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 166
+  },
+  {
+   "unit_id": "9OWQ|1|A|G|314",
+   "labels": [
+    "Helix P15.2"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 314
+  },
+  {
+   "unit_id": "9OWQ|1|A|G|315",
+   "labels": [
+    "Helix P15.2"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 315
+  },
+  {
+   "unit_id": "9OWQ|1|A|C|316",
+   "labels": [
+    "Helix P15.2"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 316
+  },
+  {
+   "unit_id": "9OWQ|1|A|G|317",
+   "labels": [
+    "L15.2"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 317
+  },
+  {
+   "unit_id": "9OWQ|1|A|C|318",
+   "labels": [
+    "L15.2"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 318
+  },
+  {
+   "unit_id": "9OWQ|1|A|A|319",
+   "labels": [
+    "L15.2"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 319
+  },
+  {
+   "unit_id": "9OWQ|1|A|G|360",
+   "labels": [
+    "L19"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 360
+  },
+  {
+   "unit_id": "9OWQ|1|A|C|361",
+   "labels": [
+    "L19"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 361
+  },
+  {
+   "unit_id": "9OWQ|1|A|A|362",
+   "labels": [
+    "L19"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 362
+  },
+  {
+   "unit_id": "9OWQ|1|A|A|363",
+   "labels": [
+    "L19"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 363
+  },
+  {
+   "unit_id": "9OWQ|1|A|A|364",
+   "labels": [
+    "L19"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 364
+  },
+  {
+   "unit_id": "9OWQ|1|A|G|365",
+   "labels": [
+    "Helix P19"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 365
+  },
+  {
+   "unit_id": "9OWQ|1|A|C|366",
+   "labels": [
+    "Helix P19"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 366
+  },
+  {
+   "unit_id": "9OWQ|1|A|C|367",
+   "labels": [
+    "Helix P19"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 367
+  },
+  {
+   "unit_id": "9OWQ|1|A|G|368",
+   "labels": [
+    "Helix P19"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 368
+  },
+  {
+   "unit_id": "9OWQ|1|A|C|369",
+   "labels": [
+    "Helix P19"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 369
+  },
+  {
+   "unit_id": "9OWQ|1|A|U|370",
+   "labels": [
+    "Helix P19"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 370
+  },
+  {
+   "unit_id": "9OWQ|1|A|U|371",
+   "labels": [
+    "Helix P19"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 371
+  },
+  {
+   "unit_id": "9OWQ|1|A|G|372",
+   "labels": [
+    "Helix P19"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 372
+  },
+  {
+   "unit_id": "9OWQ|1|A|C|373",
+   "labels": [
+    "Helix P19"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 373
+  },
+  {
+   "unit_id": "9OWQ|1|A|A|374",
+   "labels": [
+    "Helix P19"
+   ],
+   "mapping_status": "insert",
+   "label_seq_id": 374
+  },
+  {
+   "unit_id": "9OWQ|1|A|C|405",
+   "labels": [
+    "Helix P1"
+   ],
+   "mapping_status": "outside_mapped_region",
+   "label_seq_id": 405
+  },
+  {
+   "unit_id": "9OWQ|1|A|A|406",
+   "labels": [
+    "Helix P1"
+   ],
+   "mapping_status": "outside_mapped_region",
+   "label_seq_id": 406
+  },
+  {
+   "unit_id": "9OWQ|1|A|U|407",
+   "labels": [
+    "Helix P1"
+   ],
+   "mapping_status": "outside_mapped_region",
+   "label_seq_id": 407
+  },
+  {
+   "unit_id": "9OWQ|1|A|G|408",
+   "labels": [
+    "Helix P1"
+   ],
+   "mapping_status": "outside_mapped_region",
+   "label_seq_id": 408
+  },
+  {
+   "unit_id": "9OWQ|1|A|A|409",
+   "labels": [
+    "Helix P1"
+   ],
+   "mapping_status": "outside_mapped_region",
+   "label_seq_id": 409
+  },
+  {
+   "unit_id": "9OWQ|1|A|U|410",
+   "labels": [
+    "Helix P1"
+   ],
+   "mapping_status": "outside_mapped_region",
+   "label_seq_id": 410
+  },
+  {
+   "unit_id": "9OWQ|1|A|U|411",
+   "labels": [
+    "Helix P1"
+   ],
+   "mapping_status": "outside_mapped_region",
+   "label_seq_id": 411
+  },
+  {
+   "unit_id": "9OWQ|1|A|A|412",
+   "labels": [
+    "Helix P1"
+   ],
+   "mapping_status": "outside_mapped_region",
+   "label_seq_id": 412
+  },
+  {
+   "unit_id": "9OWQ|1|A|A|413",
+   "labels": [
+    "Helix P1"
+   ],
+   "mapping_status": "outside_mapped_region",
+   "label_seq_id": 413
+  },
+  {
+   "unit_id": "9OWQ|1|A|C|414",
+   "labels": [
+    "Helix P1"
+   ],
+   "mapping_status": "outside_mapped_region",
+   "label_seq_id": 414
+  },
+  {
+   "unit_id": "9OWQ|1|A|G|415",
+   "labels": [
+    "Helix P1"
+   ],
+   "mapping_status": "outside_mapped_region",
+   "label_seq_id": 415
+  },
+  {
+   "unit_id": "9OWQ|1|A|U|416",
+   "labels": [
+    "Helix P1"
+   ],
+   "mapping_status": "outside_mapped_region",
+   "label_seq_id": 416
+  },
+  {
+   "unit_id": "9OWQ|1|A|C|417",
+   "labels": [
+    "Helix P1"
+   ],
+   "mapping_status": "outside_mapped_region",
+   "label_seq_id": 417
+  }
+ ],
+ "conflicts": [],
+ "instance_transfer": {
+  "source": "BGSU correspondence/nucleotide_annotation per chain (labels transferred by BGSU)",
+  "n_instances": 50,
+  "n_instances_evaluated": 50,
+  "n_instances_unavailable": 0,
+  "unavailable_instances": [],
+  "n_nucleotide_labels": 17862,
+  "mapping_status_counts": {
+   "mapped": 16150,
+   "insert": 1692,
+   "outside_mapped_region": 20
+  },
+  "n_labels_agree_with_family_track": 16150,
+  "n_labels_disagree": 0,
+  "disagreements": []
+ },
+ "provenance": {
+  "rfam_acc": "RF00011",
+  "rfam_release": "15.1",
+  "cm_checksum": "2395317728",
+  "cm_clen": 365,
+  "mapping_pipeline_version": "0.1.0",
+  "mapping_generated": "2026-10-19T18:18:18+00:00",
+  "annotation_pipeline_version": "0.1.0",
+  "annotation_config_version": "1.1",
+  "generated": "2026-10-19T18:23:13+00:00"
+ }
+}

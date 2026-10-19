@@ -82,3 +82,7 @@ data/families/RF00177/residue_mapping.csv
 # per-chain annotation records (not loaded by the app; regenerable with `annotate`)
 data/families/RF00177/annotations/
 data/families/RF00177/interactions_by_instance/
+# RF00011 (50 RNase P chains of ~410 nt): regenerable outputs over 10 MB and the per-chain annotation records (not loaded by the app)
+data/families/RF00011/loops.json
+data/families/RF00011/sasa.json
+data/families/RF00011/annotations/

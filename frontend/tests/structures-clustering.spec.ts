@@ -182,7 +182,8 @@ test('panel layout: one-line caption, short note, details in the popover; equal-
   await expect(left).not.toContainText('do not necessarily correspond'); await expect(left).not.toContainText('Dotted orange line')
   await left.getByTestId('info-tip').first().click()
   const pop = page.getByTestId('info-popover')
-  for (const t of ['Geometric discrepancy compares base positions and orientations', 'dotted orange line marks the spread between duplicate structures']) await expect(pop).toContainText(t)
+  await expect(pop).toHaveText('Geometric discrepancy compares nucleotide positions and orientations at shared Rfam positions. Lower values indicate greater similarity (0 = identical).')
+  await expect(page.getByTestId('overview-floor').locator('title')).toHaveText(/^Duplicate floor /)   // the floor line explains itself (no longer in the metric tip)
   await expect(pop).not.toContainText('UPGMA')                                                        // methods live in Clustering details
   await page.keyboard.press('Escape')
   await viewerReady(page); await equal()
@@ -195,8 +196,9 @@ test('panel layout: one-line caption, short note, details in the popover; equal-
   await page.getByTestId('group-chip-2').click(); await page.getByTestId('drilldown-toggle').click(); await viewerReady(page)
   await expect(page.getByTestId('pairwise-note')).toHaveText('Pairwise geometric discrepancy within Structural group 2, in dendrogram order.')
   await equal()
-  const vb = (await viewer.boundingBox())!; expect(vb.height).toBeGreaterThan(h0)
-  await expect.poll(async () => { const c = await viewer.locator('canvas').first().boundingBox(); return c ? Math.abs(c.height - vb.height) < 3 && Math.abs(c.width - vb.width) < 3 : false }).toBe(true)
+  const vb = (await viewer.boundingBox())!; expect(vb.height).toBeGreaterThan(h0)   // canvas within the 1 px border (+ subpixel rounding)
+  const area = page.getByTestId('alignment-viewer-canvas-area')   // canvas below the viewer's toolbar
+  await expect.poll(async () => { const c = await viewer.locator('canvas').first().boundingBox(), ab = (await area.boundingBox())!; return c ? Math.abs(c.height - ab.height) < 3 && Math.abs(c.width - ab.width) < 3 && ab.height > vb.height - 60 : false }).toBe(true)
   // TM metric, collapsed and drill-down
   await page.getByTestId('metric-tm').click(); await viewerReady(page); await equal()
   await page.getByTestId('group-chip-2').click(); await page.getByTestId('drilldown-toggle').click(); await viewerReady(page); await equal()
@@ -285,9 +287,9 @@ test('tooltips: short, metric-specific wording for both metrics; details moved t
     const b = (await p.boundingBox())!, vp = page.viewportSize()!; expect(b.x).toBeGreaterThanOrEqual(0); expect(b.x + b.width).toBeLessThanOrEqual(vp.width); expect(b.y).toBeGreaterThanOrEqual(0); expect(b.y + b.height).toBeLessThanOrEqual(vp.height)
     const t = (await p.textContent())!.replace(/\s+/g, ' ').trim(); await page.keyboard.press('Escape'); return t }
   expect(await tip('About clustering coverage')).toBe('76 of 84 RNA instances were clustered. Inclusion requires at least 64 core positions with complete base, C4′ and C3′ coordinates. Comparisons use 57 positions shared by all included instances.')
-  expect(await tip('About the representative')).toBe('The medoid: the RNA instance with the lowest average dissimilarity to other members of its structural group, chosen among members without breaks in their 3D backbone.')
-  expect(await tip('About within-group dissimilarity')).toBe('Mean pairwise geometric discrepancy between RNA instances in this group. Lower values indicate greater structural similarity.')
-  expect(await tip('About across-group dissimilarity')).toBe("Mean pairwise geometric discrepancy between this group's RNA instances and all other clustered instances.")
+  expect(await tip('About the representative')).toBe('Group member with the lowest mean dissimilarity to the others, selected among chains without backbone breaks.')
+  expect(await tip('About within-group dissimilarity')).toBe('Mean pairwise geometric discrepancy within this group; lower indicates greater similarity.')
+  expect(await tip('About across-group dissimilarity')).toBe('Mean pairwise geometric discrepancy between this group and all other clustered instances.')
   expect(await tip('About structural groups')).toContain('do not necessarily correspond to biological conformational states')
   expect(await tip('About the 3D alignment')).toBe('3D alignmentSuperposition: each chain is fitted onto 4FE5 B using C4′ atoms at shared Rfam positions. Fit to the reference (C4′ RMSD): • 6UC8 B: good fit, RMSD 0.27 Å This visual superposition may differ from the alignment used to calculate the geometric discrepancy. Poor fits are flagged on the structure chips.')
   await page.getByRole('button', { name: 'About the 3D alignment' }).click()
@@ -298,9 +300,9 @@ test('tooltips: short, metric-specific wording for both metrics; details moved t
     const t = await tip(label); expect(t).not.toMatch(/\bD\b/); expect(t).not.toMatch(/pairs|statistical test/)
   }
   await page.getByTestId('metric-tm').click()
-  expect(await tip('About within-group dissimilarity')).toBe('Mean pairwise 1 − TM-score between RNA instances in this group. Lower values indicate greater structural similarity.')
-  expect(await tip('About across-group dissimilarity')).toBe("Mean pairwise 1 − TM-score between this group's RNA instances and all other clustered instances.")
-  expect(await tip('About the comparison metric')).toContain('Groups and the dendrogram use 1 − TM-score')
+  expect(await tip('About within-group dissimilarity')).toBe('Mean pairwise 1 − TM-score within this group; lower indicates greater similarity.')
+  expect(await tip('About across-group dissimilarity')).toBe('Mean pairwise 1 − TM-score between this group and all other clustered instances.')
+  expect(await tip('About the comparison metric')).toContain('Clustering uses 1 − TM-score')
   // the detail is kept in Clustering details
   await page.getByTestId('clustering-details').locator('summary').click()
   const det = page.getByTestId('clustering-details')

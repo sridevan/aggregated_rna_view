@@ -17,7 +17,7 @@ test('sequence and structural coverage: position, values and denominators unchan
   await open(page)
   const sl = S.sequence_level, st = S.structure_level
   await cell(page, 'seq', 41).hover()
-  expect(await tipText(page)).toEqual({ title: 'Sequence coverage · Position 41', main: `${sl.n_match[40]}/${sl.n_unique_sequences} unique sequences (${pct(sl.coverage[40]!)})`, secondary: null })
+  expect(await tipText(page)).toEqual({ title: 'Sequence coverage · Rfam 41', main: `${sl.n_match[40]}/${sl.n_unique_sequences} unique sequences (${pct(sl.coverage[40]!)})`, secondary: null })
   expect(sl.n_deletion[40] + sl.n_uncovered[40]).toBe(0)
   // a position with deletions or uncovered sequences gets the short secondary line
   const p = sl.coverage.findIndex((c, i) => c != null && c >= 0.5 && sl.n_deletion[i] + sl.n_uncovered[i] > 0) + 1
@@ -28,8 +28,8 @@ test('sequence and structural coverage: position, values and denominators unchan
   if (sl.n_uncovered[p - 1]) expect(t.secondary).toMatch(new RegExp(`not covered by the alignment in ${sl.n_uncovered[p - 1]}`, "i"))
   // structural coverage 40: 80/84 (95.2%), 84 contain the nucleotide in sequence
   await cell(page, 'str', 40).hover()
-  expect(await tipText(page)).toEqual({ title: 'Structural coverage · Position 40', main: `${st.n_match_with_coordinates[39]}/${st.n_instances} RNA instances (${pct(st.structural_coverage[39]!)})`, secondary: `${st.n_match[39]} instances contain the nucleotide in sequence` })
-  expect(await tipText(page)).toEqual({ title: 'Structural coverage · Position 40', main: '80/84 RNA instances (95.2%)', secondary: '84 instances contain the nucleotide in sequence' })
+  expect(await tipText(page)).toEqual({ title: 'Structural coverage · Rfam 40', main: `${st.n_match_with_coordinates[39]}/${st.n_instances} RNA instances (${pct(st.structural_coverage[39]!)})`, secondary: `${st.n_match[39]} instances contain the nucleotide in sequence` })
+  expect(await tipText(page)).toEqual({ title: 'Structural coverage · Rfam 40', main: '80/84 RNA instances (95.2%)', secondary: '84 instances contain the nucleotide in sequence' })
   const same = st.n_match.findIndex((n, i) => st.structural_coverage[i] != null && n === st.n_match_with_coordinates[i]) + 1
   await cell(page, 'str', same).hover(); expect((await tipText(page)).secondary).toBeNull()                               // no redundant detail
   await inViewport(page, 'track-tooltip')
@@ -70,7 +70,7 @@ test('information tooltips are short with a heading; details in Legend & help; l
   // RNA loop annotations (collapsed and expanded)
   await page.getByRole('button', { name: 'About the RNA loop annotations' }).hover()
   await expect(page.getByTestId('info-popover-title')).toHaveText('RNA loop annotations')
-  await expect(page.getByTestId('info-popover')).toHaveText('RNA loop annotationsBGSU hairpin, internal and junction loops in the selected RNA chain. Click a block to select the entire loop, including discontinuous segments, in 2D and 3D.')
+  await expect(page.getByTestId('info-popover')).toHaveText('RNA loop annotationsBGSU hairpin, internal and junction loops in this RNA chain. Select a block to highlight the full loop, including discontinuous segments.')
   await inViewport(page, 'info-popover'); await page.mouse.move(5, 5)
   await page.getByTestId('loops-toggle').click()
   await page.getByTestId('loop-block-HL_4FE5_002-0').hover()
@@ -79,7 +79,7 @@ test('information tooltips are short with a heading; details in Legend & help; l
   await page.mouse.move(5, 5)
   // Reference and alignment details: short popover in both states; RF / SS_cons / PP rows structured
   await page.getByRole('button', { name: 'About the reference and alignment details' }).click()
-  await expect(page.getByTestId('info-popover')).toHaveText('Reference and alignment detailsRfam consensus sequence, secondary-structure annotation and alignment confidence.')
+  await expect(page.getByTestId('info-popover')).toHaveText('Reference and alignment detailsRfam consensus sequence, reference secondary structure and alignment confidence.')
   await page.keyboard.press('Escape')
   await page.getByTestId('reference-toggle').click()
   const fam = await (await page.request.get('/families/RF00167/family.json')).json()
@@ -89,7 +89,7 @@ test('information tooltips are short with a heading; details in Legend & help; l
   expect(await tipText(page)).toEqual({ title: 'Secondary structure (SS_cons) · Position 30', main: fam.ss_cons[29], secondary: null })
   await cell(page, 'pp', 30, 'reference-tracks').hover()
   const pp = S.sequence_level.pp_mean[29]!
-  expect(await tipText(page)).toEqual({ title: 'Alignment confidence · Position 30', main: `Mean PP ${pp.toFixed(3)} (high)`, secondary: `${S.sequence_level.pp_n[29]} aligned unique sequences` })
+  expect(await tipText(page)).toEqual({ title: 'Alignment confidence · Rfam 30', main: `Mean cmalign PP ${pp.toFixed(3)} (high)`, secondary: `${S.sequence_level.pp_n[29]} aligned unique sequences` })
   // the right-most column at a narrow width stays inside the viewport
   await page.setViewportSize({ width: 700, height: 900 }); await cell(page, 'seq', 87).scrollIntoViewIfNeeded(); await cell(page, 'seq', 87).hover(); await inViewport(page, 'track-tooltip')
   await page.setViewportSize({ width: 1400, height: 1000 }); await page.mouse.move(5, 5)

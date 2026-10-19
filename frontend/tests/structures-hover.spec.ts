@@ -14,6 +14,7 @@ async function hoverResidue(page: Page, acc: string, target?: string) {
     await expect(viewer(page)).toHaveAttribute('data-status', 'ready', { timeout: 120_000 })
   }
   const sn = target ?? ((await viewer(page).getAttribute('data-structures')) ?? '').split(',')[0]
+  await viewer(page).evaluate((el) => el.scrollIntoView({ block: 'center' })); await page.waitForTimeout(300)   // probe points must lie inside the window
   const box = (await viewer(page).boundingBox())!
   const tip = page.getByTestId('viewer-residue-hover')
   // try a few residues along the chain (one may be hidden behind another part of the tube)
@@ -32,6 +33,8 @@ test('RF00167: hover label names PDB id, author chain, residue and author number
   const text = (await tip.textContent())!
   expect(text.startsWith(sn.split('_')[0].toUpperCase() + '.')).toBe(true)
   expect(text).toMatch(new RegExp(`^${sn.split('_')[0].toUpperCase()}\\.[A-Za-z0-9]+ [A-Z0-9]{1,3}-?\\d+[A-Z]? \\(author\\)$`))
+  // only this viewer's own label and controls: Mol*'s highlight box and canvas buttons stay hidden
+  for (const c of ['.msp-highlight-toast-wrapper', '.msp-viewport-controls']) for (const l of await viewer(page).locator(c).all()) await expect(l).toBeHidden()
   // label stays inside the viewer and disappears when the pointer leaves
   const t = (await tip.boundingBox())!; expect(t.x).toBeGreaterThanOrEqual(box.x); expect(t.x + t.width).toBeLessThanOrEqual(box.x + box.width + 1)
   await page.mouse.move(box.x - 20, box.y - 20)

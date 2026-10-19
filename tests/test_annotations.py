@@ -142,6 +142,8 @@ def test_parsers():
     rows, comments = parse_reference_annotations(REF_FILE)
     assert len(rows) == 6 and rows[0].labels == ["Helix P1"] and comments[0].startswith("following")
     assert parse_reference_annotations("X|1|A|G|1\tHelix P1; L1")[0][0].labels == ["Helix P1", "L1"]
+    # a nucleotide listed without an element (RF00011's file has 39 such rows) is no annotation, not an empty-label row
+    assert [r.unit_id for r in parse_reference_annotations("X|1|A|G|1\tHelix P1\nX|1|A|U|2\t\nX|1|A|C|3\t  \nX|1|A|G|4\tL1")[0]] == ["X|1|A|G|1", "X|1|A|G|4"]
     loops = parse_loops_csv(LOOPS_1ABC)
     assert [L.loop_id for L in loops] == ["HL_1ABC_001", "J3_1ABC_001", "J4_1ABC_001"] and loops[1].loop_type == "J3" and len(loops[1].units) == 4
     m = {x.loop_id: x for x in parse_motifs_html(MOTIFS_2XYZ)}

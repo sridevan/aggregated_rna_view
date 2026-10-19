@@ -826,3 +826,24 @@ nucleotide 650. The chain is fully modelled, so 2,343 interactions had been coun
 - **Scope:** only 7PJS chain a (Rfam 652–1531) has a gap. The RF00167, RF00059, RF00162 and RF00005 pairs are unchanged.
 - **RF00177:** 2,344 pairs were corrected, and 7PJS helix coverage went from 38% to 95.5% (169/177).
 - **Tests:** pytest and vitest.
+
+### 13.11 Compare two: resolution and sequence relation
+
+**Resolution.** The coverage line now shows each chain's method and resolution next to its helix-pair coverage, e.g. "A 2GDI X (X-ray,
+2.05 Å): 20 of 22 eligible (91%)".
+
+**Sequence relation** (`sequenceRelation` in `lib/interactions.ts`). A new line under the coverage classifies the pair:
+- **Identical chains:** the same `sequence_key` (same entry, or same sequence in different entries).
+- **Same RNA on the consensus:** different deposited chain sequences that agree on every shared Rfam position, or differ only at ≤ 3
+  positions within 5 positions of a chain end (`CONSTRUCT_MAX_END_DIFFS`, `CONSTRUCT_END_WINDOW`). It is flagged in amber: "only in"
+  differences can reflect construct, crystal form or sample conditions rather than biology. Example: TPP 2GDI vs 2HOJ, which differ only at
+  Rfam 6, 92, 93 (the P1 ends; review §1.4).
+- **Near-identical sequences:** ≤ 1% of shared positions differ; the positions are listed. Example: 16S rRNA operon variants at Rfam 76,
+  85, 86, 89, 131, 414. Differences elsewhere then do not follow sequence.
+- **Different sequences:** otherwise; differences can follow sequence.
+
+**Across the five families:** the "same RNA on the consensus" flag applies to 41 RF00167 pairs, 160 RF00059 pairs, 6 RF00005 pairs and
+1,083 RF00177 pairs (16S chains whose deposited sequences differ only outside the aligned region or at the ends).
+
+**Tests:** vitest (2GDI/2HOJ, 8F4O/2HOJ identical, 2GDI/2CKY different, 5E54/9V50 different) and Playwright (resolution text and the
+three kinds in the TPP compare view).

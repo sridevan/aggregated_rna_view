@@ -103,7 +103,10 @@ def parse_reference_annotations(text: str) -> tuple[list[ReferenceAnnotation], l
         else:
             # not a ``unit_id, label`` row (e.g. BGSU's plain-text "Could not find annotation file ..." reply): never a label
             continue
-        rows.append(ReferenceAnnotation(unit.strip(), _split_labels(label)))
+        labels = _split_labels(label)
+        if not labels:   # nucleotide listed without an element (e.g. 39 rows of RF00011's file): no annotation, not an element
+            continue
+        rows.append(ReferenceAnnotation(unit.strip(), labels))
     return rows, comments
 
 

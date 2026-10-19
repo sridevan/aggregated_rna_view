@@ -1,5 +1,5 @@
 // Static homepage thumbnails of each family's default (display) representative RNA chain.
-// Reuses the Structures-tab rendering code (src/components/structures/AlignmentViewer.tsx): the chain's coordinates from the PDBe ModelServer
+// Rendering helpers: scripts/thumbnail3dmol.ts (the former Structures-tab 3Dmol code): the chain's coordinates from the PDBe ModelServer
 // (label_asym_id, model 1; nothing stored), all polymer atoms of the chain (no water / ligands), 3Dmol.js cartoon with nucleotides drawn
 // as base ladders, principal-axes orientation, zoomTo fit.
 // Rendered at 2x in headless Chromium and downscaled to WebP; writes public/thumbnails/<ACC>.webp and manifest.json (provenance).
@@ -11,7 +11,7 @@ import { dirname, join } from 'node:path'
 
 const ROOT = dirname(dirname(fileURLToPath(import.meta.url)))
 const BASE = process.env.DEV_URL ?? 'http://127.0.0.1:5173'
-const ACCS = process.argv.slice(2).length ? process.argv.slice(2) : ['RF00167', 'RF00162', 'RF00059', 'RF00005', 'RF00177']
+const ACCS = process.argv.slice(2).length ? process.argv.slice(2) : ['RF00167', 'RF00162', 'RF00059', 'RF00005', 'RF00177', 'RF00011']
 const OUT_PX = 240, RENDER_PX = 480, COLOR = '#5B78A8'   // slate blue (one colour for all four thumbnails)
 
 const browser = await chromium.launch()
@@ -22,7 +22,7 @@ let manifest = {}
 try { manifest = JSON.parse(readFileSync(manifestPath, 'utf8')) } catch { /* new */ }
 for (const acc of ACCS) {
   const r = await page.evaluate(async ({ acc, OUT_PX, RENDER_PX, COLOR }) => {
-    const av = await import('/src/components/structures/AlignmentViewer.tsx')
+    const av = await import('/scripts/thumbnail3dmol.ts')
     const fam = await (await fetch(`/families/${acc}/family.json`)).json()
     const rep = fam.display_representative ?? fam.representative
     const url = `https://www.ebi.ac.uk/pdbe/model-server/v1/${rep.pdb_id}/atoms?label_asym_id=${encodeURIComponent(rep.label_asym_id)}&model_nums=1&encoding=cif`

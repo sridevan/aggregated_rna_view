@@ -148,8 +148,8 @@ export function ConsensusTracks({ stats, selected, onToggle, instanceStates, ins
   const [trackInfo, setTrackInfo] = useState<DOMRect | null>(null)
   // per-position tooltip (structured: heading, main value, optional muted detail), shared by every track row
   const [tip, setTip] = useState<(Tip & { rect: DOMRect }) | null>(null)
-  /** with a numbering reference, position tooltips name the Rfam position explicitly and add the reference residue (display only) */
-  const withRef = (t: Tip, pos: number): Tip => (!numbering ? t : { ...t, title: t.title.replace(/· Position (\d+)$/, '· Rfam position $1'),
+  /** with a numbering reference, position tooltips (titled "· Rfam {pos}") add the reference residue (display only) */
+  const withRef = (t: Tip, pos: number): Tip => (!numbering ? t : { ...t,
     rows: [...(t.rows ?? []), ...(t.rows?.some((r) => r.key === 'reference' || r.key === 'rfam') ? [] :   // the chain tooltip handles its own rows
       [{ key: 'reference', label: `${numbering.label} reference residue`, value: residueValue(chainAt(numbering.idx, pos)) }])] })
   const tipProps = (t0: Tip, pos?: number) => { const t = pos == null ? t0 : withRef(t0, pos); return { onMouseEnter: (e: MouseEvent<SVGElement>) => setTip({ ...t, rect: e.currentTarget.getBoundingClientRect() }), onMouseLeave: () => setTip(null) } }
@@ -203,7 +203,7 @@ export function ConsensusTracks({ stats, selected, onToggle, instanceStates, ins
               className="h-5 w-5 rounded border border-stone-300 bg-white leading-none text-stone-700 hover:bg-stone-50 disabled:opacity-40">−</button>
             <button type="button" onClick={() => zoomIn != null && setZoom(zoomIn)} disabled={zoomIn == null} aria-label="Zoom in" title="Zoom in" data-testid="zoom-in"
               className="h-5 w-5 rounded border border-stone-300 bg-white leading-none text-stone-700 hover:bg-stone-50 disabled:opacity-40">+</button>
-            <button type="button" onClick={() => setZoom(null)} disabled={atFit} title="Fit the whole consensus model in view" data-testid="zoom-fit"
+            <button type="button" onClick={() => setZoom(null)} disabled={atFit} title="Fit all Rfam positions" data-testid="zoom-fit"
               className="rounded border border-stone-300 bg-white px-1.5 py-px text-stone-700 hover:bg-stone-50 disabled:opacity-40">Fit all</button>
           </div>
         )}
@@ -224,11 +224,11 @@ export function ConsensusTracks({ stats, selected, onToggle, instanceStates, ins
       </>, <>
         {bars(rowY(0), ROWS[0], 'seq', (pos) => { const c = sl.coverage[pos - 1]; if (c == null) return null
           const del = sl.n_deletion[pos - 1], unc = sl.n_uncovered[pos - 1]
-          return { h: c, fill: C.seq, tip: { title: `Sequence coverage · Position ${pos}`, main: `${sl.n_match[pos - 1]}/${sl.n_unique_sequences} unique sequences (${pct(c)})`,
+          return { h: c, fill: C.seq, tip: { title: `Sequence coverage · Rfam ${pos}`, main: `${sl.n_match[pos - 1]}/${sl.n_unique_sequences} unique sequences (${pct(c)})`,
             secondary: del || unc ? [del ? `deleted in ${del}` : '', unc ? `not covered by the alignment in ${unc}` : ''].filter(Boolean).join(' · ').replace(/^./, (m) => m.toUpperCase()) : undefined } } })}
         {bars(rowY(1), ROWS[1], 'str', (pos) => { const c = st.structural_coverage[pos - 1]; if (c == null) return null
           const obs = st.n_match_with_coordinates[pos - 1], inSeq = st.n_match[pos - 1]
-          return { h: c, fill: C.str, tip: { title: `Structural coverage · Position ${pos}`, main: `${obs}/${st.n_instances} RNA instances (${pct(c)})`,
+          return { h: c, fill: C.str, tip: { title: `Structural coverage · Rfam ${pos}`, main: `${obs}/${st.n_instances} RNA instances (${pct(c)})`,
             secondary: inSeq !== obs ? `${inSeq} instance${inSeq === 1 ? '' : 's'} contain the nucleotide in sequence` : undefined } } })}
         {instanceStates && (() => {
           const y0 = rowY(2), ROW = ROWS[2]
@@ -296,7 +296,7 @@ export function ConsensusTracks({ stats, selected, onToggle, instanceStates, ins
           className="flex items-center gap-1.5 rounded px-1 py-0.5 text-left text-[11px] font-medium text-stone-800 hover:bg-stone-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
           <span aria-hidden="true" className={`inline-block text-[9px] text-stone-500 transition-transform ${loopsOpen ? 'rotate-90' : ''}`}>▶</span>RNA loop annotations
         </button>
-        <InfoTip label="About the RNA loop annotations" title="RNA loop annotations" text="BGSU hairpin, internal and junction loops in the selected RNA chain. Click a block to select the entire loop, including discontinuous segments, in 2D and 3D." />
+        <InfoTip label="About the RNA loop annotations" title="RNA loop annotations" text="BGSU hairpin, internal and junction loops in this RNA chain. Select a block to highlight the full loop, including discontinuous segments." />
       </div>
       {loopsOpen && (
         <div id={loopsId} data-testid="loops-body">
@@ -354,7 +354,7 @@ export function ConsensusTracks({ stats, selected, onToggle, instanceStates, ins
           className="flex items-center gap-1.5 rounded px-1 py-0.5 text-left text-[11px] font-medium text-stone-800 hover:bg-stone-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
           <span aria-hidden="true" className={`inline-block text-[9px] text-stone-500 transition-transform ${open ? 'rotate-90' : ''}`}>▶</span>Reference and alignment details
         </button>
-        <InfoTip label="About the reference and alignment details" title="Reference and alignment details" text="Rfam consensus sequence, secondary-structure annotation and alignment confidence." />
+        <InfoTip label="About the reference and alignment details" title="Reference and alignment details" text="Rfam consensus sequence, reference secondary structure and alignment confidence." />
       </div>
       {open && (
         <div id={bodyId} data-testid="reference-body">
@@ -362,7 +362,7 @@ export function ConsensusTracks({ stats, selected, onToggle, instanceStates, ins
             {label(refY(0), REF_ROWS[0], 'Alignment confidence', 'mean PP')}
             {reference && <>{label(refY(1), REF_ROWS[1], 'Consensus sequence (RF)', showLetters ? '' : 'zoom in to read')}{label(refY(2), REF_ROWS[2], 'Secondary structure (SS_cons)', showLetters ? '' : 'zoom in to read')}</>}
           </>, <>
-            {bars(refY(0), REF_ROWS[0], 'pp', (pos) => { const v = sl.pp_mean[pos - 1]; return v == null ? null : { h: v, fill: ppColor(v, thr), tip: { title: `Alignment confidence · Position ${pos}`, main: `Mean PP ${v.toFixed(3)} (${v >= thr.high ? 'high' : v >= thr.medium ? 'medium' : 'low'})`, secondary: `${sl.pp_n[pos - 1]} aligned unique sequences` } } })}
+            {bars(refY(0), REF_ROWS[0], 'pp', (pos) => { const v = sl.pp_mean[pos - 1]; return v == null ? null : { h: v, fill: ppColor(v, thr), tip: { title: `Alignment confidence · Rfam ${pos}`, main: `Mean cmalign PP ${v.toFixed(3)} (${v >= thr.high ? 'high' : v >= thr.medium ? 'medium' : 'low'})`, secondary: `${sl.pp_n[pos - 1]} aligned unique sequences` } } })}
             {reference && ([['rf', 'Consensus sequence (RF)', reference.rf], ['ss', 'Secondary structure (SS_cons)', reference.ssCons]] as const).map(([key, name, line], i) => {
               const y0 = refY(i + 1)
               return (

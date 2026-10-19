@@ -29,7 +29,7 @@ test('desktop layout: rows in order, compact family summary, 40/60 top-aligned m
     expect(await page.getByTestId(id).evaluate((e) => parseFloat(getComputedStyle(e).fontSize))).toBeLessThan(parseFloat(pFonts[0]))   // secondary row is lighter
   }
   await page.getByTestId('stat-secondary').getByTestId('info-tip').hover()
-  await expect(page.getByRole('tooltip')).toContainText('Mean structural occupancy: mean over 102 positions of the fraction of 84 instances with coordinates')
+  await expect(page.getByRole('tooltip')).toContainText('Mean structural occupancy: average fraction of 84 RNA instances with coordinates across 102 Rfam positions')
   await page.mouse.move(0, 0)
   // the molecular view starts much higher than with the previous About card + six stat cards (~500 px at this width)
   expect(viewer.y - about.y).toBeLessThan(260)
@@ -55,7 +55,7 @@ test('desktop layout: rows in order, compact family summary, 40/60 top-aligned m
   await expect(page.getByTestId('display-representative')).toContainText('X-ray diffraction'); await expect(page.getByTestId('display-representative')).toContainText('1.32 Å')
   await expect(page.getByTestId('display-representative')).toContainText('67 / 67'); await expect(page.getByTestId('display-representative')).toContainText('available')
   await page.getByTestId('display-representative').getByTestId('info-tip').hover()   // selection rule in the tooltip, not in the card body
-  await expect(page.getByRole('tooltip')).toContainText('Selection rule')
+  await expect(page.getByRole('tooltip')).toContainText('Selected using')
   // no horizontal overflow
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true)
 })

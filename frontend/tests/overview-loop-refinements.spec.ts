@@ -55,7 +55,9 @@ test('simplified Mol* display: water hidden, focus = selected loop nucleotides o
   // water exists in 4FE5 but is hidden by default, in both view modes (visibility only: the component is kept)
   await page.getByTestId('mode-complete').click(); await expect(page.getByTestId('molstar-viewer')).toHaveAttribute('data-mode', 'complete')
   await expect.poll(async () => (await hook(page)).comps.filter((c) => c.label === 'Water')).toEqual([{ label: 'Water', hidden: true }])
-  await expect.poll(async () => (await hook(page)).comps.filter((c) => c.label !== 'Water' && c.label !== 'Rfam-mapped region').every((c) => c.hidden === false)).toBe(true)  // the rest of the complete structure stays visible
+  // the rest of the complete structure stays visible; PDBe's default Polymer and Ligand components are replaced by the Complete-structure
+  // layers and the "Show ligands" layers (off by default)
+  await expect.poll(async () => (await hook(page)).comps.filter((c) => !['Water', 'Rfam-mapped region', 'Polymer', 'Ligand'].includes(c.label)).every((c) => c.hidden === false)).toBe(true)
   await page.getByTestId('mode-region').click(); await expect(page.getByTestId('molstar-viewer')).toHaveAttribute('data-mode', 'region')
   await expect.poll(async () => (await hook(page)).comps.find((c) => c.label === 'Water')?.hidden).toBe(true)
   // select the junction loop: the focus shows exactly its resolved members (no 5 Å surroundings) and no interaction lines

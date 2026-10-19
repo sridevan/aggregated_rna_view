@@ -1,0 +1,206 @@
+{
+ "rfam_acc": "RF00011",
+ "rfam_id": "RNaseP_bact_b",
+ "description": "Bacterial RNase P class B",
+ "comment": "Ribonuclease P (RNase P) is a ubiquitous endoribonuclease, found in archaea, bacteria and eukarya as well as chloroplasts and mitochondria. Its best characterised activity is the generation of mature 5'-ends of tRNAs by cleaving the 5'-leader elements of precursor-tRNAs. Cellular RNase Ps are ribonucleoproteins. RNA from bacterial RNase Ps retains its catalytic activity in the absence of the protein subunit, i.e. it is a ribozyme. Isolated eukaryotic and archaeal RNase P RNA has not been shown to retain its catalytic function, but is still essential for the catalytic activity of the holoenzyme. Although the archaeal and eukaryotic holoenzyme s have a much greater protein content than the bacterial ones, the RNA cores from all the three lineages are homologous -- helices corresponding to P1, P2, P3, P4, and P10/11 are common to all cellular RNase P RNAs. Yet, there is considerable sequence variation, particularly among the eukaryotic RNAs.",
+ "rfam_url": "https://rfam.org/family/RF00011",
+ "clen": 365,
+ "consensus_sequence": "auuuucgGguaaucGCugcguauuuuuuuacgcaGAGGAAAGUCCAuGCucGCaCgggCUGuGAUGcccGuAGUGUUcGuGCucggcgAAaaaAUAAgccgaGGcAcgccuuuaggcgUgACGGCgggcaAAacggCUAAggcuUuggcuAUGccguaauagcccUgAAAGUgCCACAGuGACGaAgcccuugggGAAAcccaaggggUGGAACGcGGuAAACCCCaCgAGCgaGaAACCCAAAuUUUGGUAGGGGcAcccggccuaugGAAaugAAcuaaaggccgggacgggcuuaagcccguAGAuAgAUgauuacCgccgccgggcauuuagcccggcggaACAaAACAUGGCUUAcagaa",
+ "ss_cons": ":::{{{{{{{{{{{,<<<<<<________>>>>>>,,,,,,,,,,,,,{{{{{<<<<<<______>>>>>>,,,,,[[[[[<<<<<<__________>>>>>><<<<<<<____>>>>>>->((,<<<<----<<<<---<<<____>>>-->>>>----->>>>,,,,,<<<<<------------<<<<<<<<____>>>>>>>>--------->>>-->>))]]]]]}}}}},,,<<<___________>>>,,,<<<<<<<_________________>>>>>>><<<<<<____>>>>>>,,,,,,,,}}}}}}},<<<<<<<<<_____>>>>>>>>>,,,,,,,,,,,,,,,,}-}}}",
+ "clan_members": [
+  "RF00009",
+  "RF00010",
+  "RF00011",
+  "RF00030",
+  "RF00373",
+  "RF01577",
+  "RF02357"
+ ],
+ "curation": {
+  "author": "Griffiths-Jones SR, Mifsud W, Gardner PP",
+  "seed_source": "Brown JW, The Ribonuclease P Database, 9847214",
+  "num_seed": 114,
+  "num_full": 955,
+  "num_species": 1009,
+  "type": "Gene; ribozyme;",
+  "structure_source": "Published; PMID:9847214"
+ },
+ "counts": {
+  "pdb_entries": 50,
+  "instances": 50,
+  "unique_mapped_sequences": 4,
+  "instances_clan_best": 50,
+  "instances_validation_ok": 50,
+  "skipped_segments": 0
+ },
+ "experimental_methods": {
+  "Electron Microscopy": 50
+ },
+ "representative": {
+  "pdb_id": "9owy",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "seq_name": "9owy_1_A_A",
+  "sequence_key": "a0368a49e3d059abd960a6638bf64ea4",
+  "mapping_file": "mappings/9owy_1_A_A.json",
+  "organism": "Geobacillus stearothermophilus",
+  "tax_id": 1422,
+  "organism_source": "pdbe_search",
+  "molecule_name": "RNase P RNA (417-MER)",
+  "experimental_method": "Electron Microscopy",
+  "resolution": 2.69,
+  "release_year": 2026,
+  "title": "Structure of Geobacillus stearothermophilus RNase P holoenzyme in complex with the precursor tRNA with loop-back 5' leader (sub-conformation 2 of tRNA anticodon arm tilted)",
+  "chain_length": 417,
+  "map_start": 8,
+  "map_end": 404,
+  "map_auth_start": 8,
+  "map_auth_end": 404,
+  "mapped_length": 397,
+  "n_modified_in_mapped": 0,
+  "rfam_bit_score": 328.5,
+  "rfam_evalue": "3.8e-99",
+  "rfam_cm_start": 1,
+  "rfam_cm_end": 365,
+  "clan_families_hit": [
+   {
+    "acc": "RF00011",
+    "bits": 328.5
+   }
+  ],
+  "clan_best_family": "RF00011",
+  "is_clan_best": true,
+  "cmalign": {
+   "name": "seq_a0368a49e3d059abd960a6638bf64ea4",
+   "length": 397,
+   "cm_from": 1,
+   "cm_to": 365,
+   "trunc": "no",
+   "bit_score": 312.99,
+   "avg_pp": 0.944
+  },
+  "n_match": 364,
+  "n_insert": 33,
+  "n_local_end": 0,
+  "n_deleted_in_span": 1,
+  "n_uncovered": 0,
+  "consensus_span": [
+   1,
+   365
+  ],
+  "fraction_clen_matched": 0.9973,
+  "n_mapped_with_coordinates": 397,
+  "n_match_with_coordinates": 364,
+  "pp_star_fraction": 0.8589,
+  "pp_category_counts": {
+   "high": 341,
+   "medium": 12,
+   "low": 44
+  },
+  "validation_ok": true,
+  "organism_species": "Geobacillus stearothermophilus",
+  "species_tax_id": "1422",
+  "organism_rank": "species",
+  "pdbe_2d_available": false
+ },
+ "display_representative": {
+  "pdb_id": "9owq",
+  "entity_id": 1,
+  "label_asym_id": "A",
+  "auth_asym_id": "A",
+  "seq_name": "9owq_1_A_A",
+  "sequence_key": "f59bf4c8ef915214236ba278f8e4673b",
+  "mapping_file": "mappings/9owq_1_A_A.json",
+  "organism": "Geobacillus stearothermophilus",
+  "tax_id": 1422,
+  "organism_source": "pdbe_search",
+  "molecule_name": "RNase P RNA (417-MER)",
+  "experimental_method": "Electron Microscopy",
+  "resolution": 2.78,
+  "release_year": 2026,
+  "title": "Structure of Geobacillus stearothermophilus RNase P ribozyme in complex with precursor tRNA with loop-back 5' leader",
+  "chain_length": 417,
+  "map_start": 8,
+  "map_end": 404,
+  "map_auth_start": 8,
+  "map_auth_end": 404,
+  "mapped_length": 397,
+  "n_modified_in_mapped": 0,
+  "rfam_bit_score": 327.7,
+  "rfam_evalue": "7e-99",
+  "rfam_cm_start": 1,
+  "rfam_cm_end": 365,
+  "clan_families_hit": [
+   {
+    "acc": "RF00011",
+    "bits": 327.7
+   }
+  ],
+  "clan_best_family": "RF00011",
+  "is_clan_best": true,
+  "cmalign": {
+   "name": "seq_f59bf4c8ef915214236ba278f8e4673b",
+   "length": 397,
+   "cm_from": 1,
+   "cm_to": 365,
+   "trunc": "no",
+   "bit_score": 312.27,
+   "avg_pp": 0.942
+  },
+  "n_match": 362,
+  "n_insert": 35,
+  "n_local_end": 0,
+  "n_deleted_in_span": 3,
+  "n_uncovered": 0,
+  "consensus_span": [
+   1,
+   365
+  ],
+  "fraction_clen_matched": 0.9918,
+  "n_mapped_with_coordinates": 397,
+  "n_match_with_coordinates": 362,
+  "pp_star_fraction": 0.8589,
+  "pp_category_counts": {
+   "high": 341,
+   "medium": 11,
+   "low": 45
+  },
+  "validation_ok": true,
+  "organism_species": "Geobacillus stearothermophilus",
+  "species_tax_id": "1422",
+  "organism_rank": "species",
+  "pdbe_2d_available": true,
+  "selection_rule": "override (user, 2026-10-19): all 50 chains are cryo-EM, so the automatic rule (X-ray first) finds no eligible chain; 9OWQ A (Lee et al. 2026, RNA alone + pre-tRNA, closed TL-TLR, 2.78 A) is the best-resolution chain with a PDBe 2D topology and a published study. The research orientation reference 9OVC A has no PDBe 2D topology; the best-resolution chain overall, 9OWY A (2.69 A), is unpublished and has none either.",
+  "automatic_choice": null
+ },
+ "coverage_summary": {
+  "sequence_coverage_mean": 0.9945,
+  "structural_coverage_mean": 0.995,
+  "positions_with_sequence_coverage": 364,
+  "positions_with_structural_coverage": 364,
+  "positions_clen": 365
+ },
+ "skipped": [],
+ "provenance": {
+  "rfam_acc": "RF00011",
+  "rfam_release": "15.1",
+  "cm_name": "RNaseP_bact_b",
+  "cm_checksum": "2395317728",
+  "cm_clen": 365,
+  "cm_build_date": "Mon Jul  8 00:49:47 2024",
+  "infernal_version": "INFERNAL 1.1.5 (Sep 2023)",
+  "cmalign_options": "--cpu 4",
+  "cmalign_mode": "local (default)",
+  "pipeline_version": "0.1.0",
+  "generated": "2026-10-19T18:18:18+00:00",
+  "pdbe_mapping_source": "PDBe API v2 nucleic_mappings/{pdb_id} (per entry)",
+  "rfam_hit_source": "rfam.org/family/RF00011/structures",
+  "selection": {
+   "file": "data/selections/RF00011_50_chains.csv",
+   "sha256": "53d649c7537667f193904954a533b363f533dac82503135f59bd746ac215b019",
+   "n_chains": 50
+  },
+  "coordinate_source": "PDBe ModelServer per chain (first model); validation residue scheme from the PDBe residue_listing API"
+ }
+}

@@ -66,8 +66,8 @@ test('concise tooltips with correct counts (overlapping classes at 53 kept); hea
   for (const banned of ['HL_', 'J3', 'J4', 'motif', 'PP', '/ ']) expect(await tip.textContent()).not.toContain(banned)
   // header popovers: visible when collapsed, do not toggle, not clipped
   await page.getByTestId('category-header-loops').getByTestId('info-tip').click()
-  await expect(page.getByRole('tooltip')).toContainText('Hairpin (HL), internal (IL) and junction (JL) loop annotations from the BGSU RNA 3D Motif Atlas')
-  await expect(page.getByRole('tooltip')).toContainText('Loop classifications may overlap and vary')
+  await expect(page.getByRole('tooltip')).toContainText('BGSU hairpin (HL), internal (IL) and junction (JL) loops mapped to Rfam positions')
+  await expect(page.getByRole('tooltip')).toContainText('Annotations may overlap or vary between structures')
   await expect(page.getByTestId('category-loops')).toHaveAttribute('data-open', 'true')   // click on ⓘ did not collapse
   let pop = (await page.getByRole('tooltip').boundingBox())!; const vp = page.viewportSize()!
   expect(pop.x).toBeGreaterThanOrEqual(0); expect(pop.x + pop.width).toBeLessThanOrEqual(vp.width); expect(pop.y + pop.height).toBeLessThanOrEqual(vp.height + 1)
@@ -76,8 +76,8 @@ test('concise tooltips with correct counts (overlapping classes at 53 kept); hea
   await expect(page.getByTestId('category-ligands')).toHaveAttribute('data-open', 'false')
   await expect(page.getByTestId('category-header-ligands').getByTestId('info-tip')).toBeVisible()   // still visible when collapsed
   await page.getByTestId('category-header-ligands').getByTestId('info-tip').focus()                // keyboard reachable
-  await expect(page.getByRole('tooltip')).toContainText('Ligand-binding residues from PDBe annotations')
-  await expect(page.getByRole('tooltip')).toContainText('entity-level and may not represent contacts in every RNA chain')
+  await expect(page.getByRole('tooltip')).toContainText('PDBe ligand-contact annotations aggregated by Rfam position and PDB entry')
+  await expect(page.getByRole('tooltip')).toContainText('Entity-level annotations may not apply to every RNA chain')
   pop = (await page.getByRole('tooltip').boundingBox())!; expect(pop.x + pop.width).toBeLessThanOrEqual(vp.width)
   await expect(page.getByTestId('category-ligands')).toHaveAttribute('data-open', 'false')
   await page.getByTestId('category-toggle-ligands').click()

@@ -69,11 +69,11 @@ const titleCase = (name: string | null) => (name ? (name === name.toUpperCase() 
 /** Category-level explanations (concise by design; the full methodology lives in the downloadable JSON and the milestone documents). */
 const POCKET_DEFAULT_FILTER = 'all_score_ge_0'   // fpocketR's published default (all pockets with fpocket Score >= 0); the other variants stay in the downloadable pocket_tracks.json
 const CATEGORY_INFO = {
-  pockets: 'RNA pockets predicted using fpocketR and mapped to Rfam positions.\n\nColours indicate pocket occurrence frequency. No prediction does not necessarily mean a binding pocket is absent.',
-  sasa: 'Per-nucleotide SASA calculated for isolated experimental RNA chains and aggregated by Rfam position.\n\nColours indicate median SASA (Å²), reflecting nucleotide exposure.',
-  modifications: 'Nonstandard nucleotide components in deposited RNA polymer sequences, mapped to Rfam residue positions.\n\nMarks indicate where nonstandard components have been observed. These do not necessarily represent naturally occurring RNA modifications.',
-  loops: 'Hairpin (HL), internal (IL) and junction (JL) loop annotations from the BGSU RNA 3D Motif Atlas, mapped to Rfam residue positions. Loop classifications may overlap and vary due to evolutionary or conformational differences, experimental limitations, and methodological criteria.',
-  ligands: 'Ligand-binding residues from PDBe annotations, mapped to Rfam residue positions and aggregated across PDB entries. Colours indicate contact frequency. Annotations are entity-level and may not represent contacts in every RNA chain.',
+  pockets: 'fpocketR-predicted RNA pockets aggregated by Rfam position. No predicted pocket does not establish absence of binding.',
+  sasa: 'Per-nucleotide solvent-accessible surface area (SASA) of isolated RNA chains, summarised by Rfam position (median Å²).',
+  modifications: 'Nonstandard nucleotide components in deposited RNA sequences, mapped to Rfam positions. These are not necessarily biological RNA modifications.',
+  loops: 'BGSU hairpin (HL), internal (IL) and junction (JL) loops mapped to Rfam positions. Annotations may overlap or vary between structures.',
+  ligands: 'PDBe ligand-contact annotations aggregated by Rfam position and PDB entry. Entity-level annotations may not apply to every RNA chain.',
 }
 
 /** "4 RNA instances: no observed nucleotide here; 1 RNA instance: source unavailable" (only non-zero parts), or "None" */
@@ -356,7 +356,7 @@ export function AnnotationsTab() {
         className="h-5 w-5 rounded border border-stone-300 bg-white leading-none text-stone-700 hover:bg-stone-50 disabled:opacity-40">−</button>
       <button type="button" onClick={() => zoomIn != null && setZoom(zoomIn)} disabled={zoomIn == null} aria-label="Zoom in" title="Zoom in" data-testid="annotations-zoom-in"
         className="h-5 w-5 rounded border border-stone-300 bg-white leading-none text-stone-700 hover:bg-stone-50 disabled:opacity-40">+</button>
-      <button type="button" onClick={() => setZoom(null)} disabled={atFit} title="Fit the whole consensus model in view" data-testid="annotations-zoom-fit"
+      <button type="button" onClick={() => setZoom(null)} disabled={atFit} title="Fit all Rfam positions" data-testid="annotations-zoom-fit"
         className="rounded border border-stone-300 bg-white px-1.5 py-px text-stone-700 hover:bg-stone-50 disabled:opacity-40">Fit all</button>
     </div>
     </div>
@@ -383,8 +383,8 @@ export function AnnotationsTab() {
           {Array.from({ length: s.bins }, (_, i) => <span key={i} className="inline-flex items-center gap-0.5"><span className={SW} style={{ background: scaleColor(s, (i + 0.5) / s.bins) }} /><span>{s.binLabels[i]}</span></span>)}
         </div>
       ))}
-      <div className="flex items-center gap-1" data-testid="legend-no-data" title="No RNA instance can be assessed at this position: no observed nucleotide, or the source data are unavailable (SASA: no qualifying measurement)"><span className={SW} style={{ background: UNEVAL }} /> No data</div>
-      <div className="flex items-center gap-1" data-testid="legend-no-annotation" title="Assessed, but nothing recorded at this position: no loop annotated by the source, no PDBe ligand contact, no predicted pocket, or a standard nucleotide. For loops, ligands and pockets this is not a confirmed absence."><span className={`${SW} bg-white ring-stone-300`} /> Not observed</div>
+      <div className="flex items-center gap-1" data-testid="legend-no-data" title="No assessable RNA instance at this position: residues or source data unavailable (SASA: no qualifying measurement)."><span className={SW} style={{ background: UNEVAL }} /> No data</div>
+      <div className="flex items-center gap-1" data-testid="legend-no-annotation" title="No annotation recorded at this position. Interpretation depends on the annotation type; for loops and ligands, non-detection does not establish absence."><span className={`${SW} bg-white ring-stone-300`} /> Not observed</div>
     </div>
   )
   // labels without "(JSON)" (the button says it); each description sits behind an info icon (checked against the files' contents)

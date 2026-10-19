@@ -66,7 +66,7 @@ test('RF00167: default Rfam numbering; a reference chain relabels the axis and t
   expect(expected(y26, 64).value).toBe('Not present'); expect(expected(y26, 5).value).toBe('Unmapped')   // deletion and outside-alignment in the reference
   // coverage tooltips name the Rfam position and add the reference residue
   await page.getByTestId('consensus-tracks').locator('[data-row="seq"][data-tip-pos="50"]').hover()
-  await expect(page.getByTestId('track-tooltip-title')).toHaveText('Sequence coverage · Rfam position 50'); await expect(row(page, 'reference')).toHaveText(expected(y26, 50).value)
+  await expect(page.getByTestId('track-tooltip-title')).toHaveText('Sequence coverage · Rfam 50'); await expect(row(page, 'reference')).toHaveText(expected(y26, 50).value)
 
   // 4. switch the active instance: the numbering reference stays; mapped-without-coordinates chain state
   await page.getByTestId('instance-select').selectOption('2xnw_1_A_A'); await ready(page, '2xnw')

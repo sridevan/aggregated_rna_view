@@ -24,7 +24,7 @@ test('default: three primary tracks, reference collapsed (heading only), one axi
   expect(await y('consensus-tracks')).toBeLessThan(await y('reference-section')); expect(await y('reference-section')).toBeLessThan(await y('consensus-axis'))
   // structured per-position tooltips kept (wording covered in overview-tooltips.spec.ts)
   await tracks.locator('rect[data-row="seq"][data-tip-pos="50"]').hover()
-  await expect(page.getByTestId('track-tooltip-title')).toHaveText('Sequence coverage · Position 50'); await expect(page.getByTestId('track-tooltip-main')).toHaveText('29/29 unique sequences (100%)')
+  await expect(page.getByTestId('track-tooltip-title')).toHaveText('Sequence coverage · Rfam 50'); await expect(page.getByTestId('track-tooltip-main')).toHaveText('29/29 unique sequences (100%)')
   await tracks.locator('rect[data-row="chain"][data-tip-pos="50"]').hover()
   await expect(page.getByTestId('track-tooltip-value-status')).toHaveText('Coordinates available')
 })
@@ -41,13 +41,13 @@ test('expanded: alignment confidence, RF and SS_cons on the same grid; collapse 
   const ref = page.getByTestId('reference-tracks')
   await expect(page.getByTestId('reference-tracks-labels')).toContainText('Alignment confidence')
   await ref.locator('rect[data-row="pp"][data-tip-pos="50"]').hover()
-  await expect(page.getByTestId('track-tooltip-title')).toHaveText('Alignment confidence · Position 50'); await expect(page.getByTestId('track-tooltip-secondary')).toHaveText('29 aligned unique sequences')
+  await expect(page.getByTestId('track-tooltip-title')).toHaveText('Alignment confidence · Rfam 50'); await expect(page.getByTestId('track-tooltip-secondary')).toHaveText('29 aligned unique sequences')
   // RF and SS_cons: exactly the family strings, one character per consensus position
   expect((await page.getByTestId('reference-row-rf').locator('text').allTextContents()).map((t) => t[0]).join('')).toBe(fam.consensus_sequence)
   expect((await page.getByTestId('reference-row-ss').locator('text').allTextContents()).map((t) => t[0]).join('')).toBe(fam.ss_cons)
   await expect(page.getByTestId('consensus-model')).toHaveCount(0)                                                // model line removed; kept in the info popup
   await page.getByRole('button', { name: 'About the reference and alignment details' }).click()
-  await expect(page.getByTestId('info-popover')).toContainText('Rfam consensus sequence, secondary-structure annotation and alignment confidence.'); await page.keyboard.press('Escape')
+  await expect(page.getByTestId('info-popover')).toContainText('Rfam consensus sequence, reference secondary structure and alignment confidence.'); await page.keyboard.press('Escape')
   await page.getByTestId('legend-toggle').click(); await expect(page.getByTestId('legend-reference')).toContainText('Rfam RF00167, Purine, 102 consensus match positions'); await page.getByTestId('legend-toggle').click()   // model metadata in Legend & help
   await expect(page.getByTestId('reference-tracks-labels')).toContainText('Consensus sequence (RF)'); await expect(page.getByTestId('reference-tracks-labels')).toContainText('Secondary structure (SS_cons)')
   // same grid: column centres of every strip coincide (selected column too) and the axis tick 50 lines up

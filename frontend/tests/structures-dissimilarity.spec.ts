@@ -231,3 +231,16 @@ test('narrow window: the matrix fits its panel, no horizontal page scroll', asyn
   expect(svg.x + svg.width).toBeLessThanOrEqual(panel.x + panel.width + 1)
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true)
 })
+
+test('info tip gives the short meaning; the ordering method (TPPL citation, repetitions, seed) is kept in "Ordering method"', async ({ page }) => {
+  await openStructures(page, 'RF00167')
+  const d = (await J(page, 'RF00167', 'structure_clustering.json')) as Clu
+  await page.getByTestId('dissimilarity-panel').getByTestId('info-tip').first().click()
+  await expect(page.getByTestId('info-popover')).toHaveText(`Pairwise geometric discrepancy for ${d.dataset.instances.length} RNA instances at ${d.dataset.n_shared_positions} shared Rfam positions; lower means more similar. Rows and columns are ordered by tree-penalized path length seriation (TPPL), independently of structural groups.`)
+  await page.keyboard.press('Escape')
+  const m = page.getByTestId('dissimilarity-methods')
+  await expect(m).not.toHaveAttribute('open', '')
+  await m.locator('summary').click()
+  await expect(m).toContainText(`Tree-penalized path length seriation (TPPL; Aliyev & Zirbel 2023), ${d.metrics.discrepancy.seriation.repetitions} repetitions, seed ${d.metrics.discrepancy.seriation.seed}.`)
+  await expect(m).toContainText('the order uses the dissimilarity matrix only, not the structural groups')
+})

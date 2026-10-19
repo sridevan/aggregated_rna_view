@@ -2,7 +2,6 @@ import { readFileSync, existsSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
 import { buildTree, clusteringFor, GROUP_COLORS, squareMatrix, UNPLACED, viridis, instanceLabel } from './structureGroups'
 import { categoricalRows, medianOf } from '../components/structures/AssociatedFeatures'
-import { parseAtomSite, toPdb } from '../components/structures/AlignmentViewer'
 import type { StructureClusteringDataset } from '../types/backend'
 
 describe('tree and matrix helpers', () => {
@@ -29,18 +28,6 @@ describe('associated features counting', () => {
   it('medians skip missing values and report how many instances contributed', () => {
     expect(medianOf(['a', 'b', 'c', 'd'], (s) => ({ a: 2, b: null, c: 4, d: 3 } as Record<string, number | null>)[s])).toEqual({ median: 3, n: 3 })
     expect(medianOf(['a'], () => null)).toEqual({ median: null, n: 0 })
-  })
-})
-
-describe('3D coordinate handling', () => {
-  const cif = ['data_X', 'loop_', '_atom_site.group_PDB', '_atom_site.id', '_atom_site.type_symbol', '_atom_site.label_atom_id', '_atom_site.label_comp_id', '_atom_site.label_seq_id', '_atom_site.label_alt_id',
-    '_atom_site.pdbx_PDB_ins_code', '_atom_site.label_asym_id', '_atom_site.Cartn_x', '_atom_site.Cartn_y', '_atom_site.Cartn_z', '_atom_site.occupancy', '_atom_site.B_iso_or_equiv', '_atom_site.auth_atom_id', '_atom_site.auth_comp_id', '_atom_site.auth_seq_id', '_atom_site.auth_asym_id',
-    "ATOM 1 C C4' G 1 . ? A 1.000 2.000 3.000 1 20.5 C4' G 15 B", "ATOM 2 C C4' G 2 B ? A 9.000 9.000 9.000 0.5 20.5 C4' G 16 B", "HETATM 3 C C4' GTP 3 A ? A 4.000 5.000 6.000 0.5 20.5 C4' GTP 17 B", '#', ''].join('\n')
-  it('parses atom_site by column name, keeps the first altloc, marks polymer residues as ATOM', () => {
-    const a = parseAtomSite(cif)
-    expect(a.map((x) => [x.name, x.resn, x.chain, x.resi, x.het])).toEqual([["C4'", 'G', 'B', '15', false], ["C4'", 'GTP', 'B', '17', false]])
-    const pdb = toPdb(a, ([x, y, z]) => [x + 1, y, z])
-    expect(pdb.split('\n')[0]).toBe("ATOM      1  C4'   G B  15       2.000   2.000   3.000  1.00 20.50           C")
   })
 })
 

@@ -24,7 +24,7 @@ export function SpeciesChart({ instances, className = '' }: { instances: Instanc
     <span data-testid="species-summary" className="flex flex-wrap items-center gap-x-2">
       <span><b className="text-base text-stone-900">{s.identifiedSpecies}</b> distinct identified species</span>
       <span>· {s.identifiedEntries} of {s.totals.entries} PDB entries have species-level assignments ({s.identifiedInstances} of {s.totals.instances} chain instances)</span>
-      <InfoTip label="About the species statistics" text={`Species come from the backend's NCBI Taxonomy resolution of each chain's source organism (strain and subspecies ids collapsed to the species rank); nothing is inferred from sequence. Synthetic constructs, tax ids without a species-rank name (unresolved) and chains without taxonomy (unknown) are shown separately. Counting units: PDB entries counts an entry once per species even when several of its chains share that species; RNA chain instances counts every mapped chain. Percentages are of all ${unit === 'entries' ? s.totals.entries + ' entries' : s.totals.instances + ' instances'}; the top 10 identified species are listed and the rest are grouped as "Other identified species".`} />
+      <InfoTip label="About the species statistics" text="Species are assigned from source-organism NCBI Taxonomy records, not inferred from RNA sequences. Strains and subspecies are grouped by species; synthetic, unresolved and unknown sources remain separate. Counts use PDB entries (once per species) or RNA instances; only the top 10 identified species are listed." />
     </span>
   )
   return (

@@ -430,3 +430,24 @@ export function classBreakdown(ds: InteractionsDataset, p: InteractionPair, pdbO
   }
   return [...by.entries()].map(([cls, v]) => ({ cls, chains: v.chains, entries: v.entries.size })).sort((a, b) => b.chains - a.chains || a.cls.localeCompare(b.cls))
 }
+
+/** Construct rule: chains whose consensus-position sequences differ only at a few positions near their ends are the same RNA in
+ *  different constructs (e.g. RF00059 thiM 2GDI vs 2HOJ: P1 ends). */
+export const CONSTRUCT_MAX_END_DIFFS = 3, CONSTRUCT_END_WINDOW = 5
+export type SequenceRelation = { kind: 'identical' | 'construct' | 'different'; shared: number; diffs: number[] }
+/**
+ * Sequence relation of two compared chains: 'identical' = the same chain sequence (sequence_key); 'construct' = a different chain sequence
+ * but the same nucleotides on every shared consensus position, or differing only at <= CONSTRUCT_MAX_END_DIFFS positions all within
+ * CONSTRUCT_END_WINDOW consensus positions of either chain's first or last matched position; 'different' otherwise.
+ */
+export function sequenceRelation(ds: InteractionsDataset, a: { seq_name: string; sequence_key: string }, b: { seq_name: string; sequence_key: string }): SequenceRelation {
+  const na = ds.instances.find((i) => i.seq_name === a.seq_name)?.nucleotides ?? '', nb = ds.instances.find((i) => i.seq_name === b.seq_name)?.nucleotides ?? ''
+  const shared: number[] = [], diffs: number[] = []
+  for (let k = 0; k < Math.min(na.length, nb.length); k++) if (na[k] !== '-' && nb[k] !== '-') { shared.push(k + 1); if (na[k] !== nb[k]) diffs.push(k + 1) }
+  if (a.sequence_key === b.sequence_key) return { kind: 'identical', shared: shared.length, diffs }
+  const ends = (s: string) => { const m = [...s].flatMap((c, k) => (c !== '-' ? [k + 1] : [])); return m.length ? [m[0], m[m.length - 1]] : [] }
+  const e = [...ends(na), ...ends(nb)]
+  const nearEnd = (p: number) => e.some((x) => Math.abs(p - x) <= CONSTRUCT_END_WINDOW)
+  const construct = shared.length > 0 && (diffs.length === 0 || (diffs.length <= CONSTRUCT_MAX_END_DIFFS && diffs.every(nearEnd)))
+  return { kind: construct ? 'construct' : 'different', shared: shared.length, diffs }
+}

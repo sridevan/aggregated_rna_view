@@ -73,7 +73,7 @@ test('category popover, collapse, downloads; other categories unchanged', async 
   const icon = page.getByTestId('category-header-modifications').getByTestId('info-tip')
   await icon.scrollIntoViewIfNeeded(); await icon.click()
   const pop = page.getByTestId('info-popover')
-  await expect(pop).toHaveText('Nonstandard nucleotide components in deposited RNA polymer sequences, mapped to Rfam residue positions. Marks indicate where nonstandard components have been observed. These do not necessarily represent naturally occurring RNA modifications.')
+  await expect(pop).toHaveText('Nonstandard nucleotide components in deposited RNA sequences, mapped to Rfam positions. These are not necessarily biological RNA modifications.')
   await expect(page.getByTestId('category-modifications')).toHaveAttribute('data-open', 'true')
   const b = (await pop.boundingBox())!; const vp = page.viewportSize()!
   expect(b.y + b.height).toBeLessThanOrEqual(vp.height); expect(b.x + b.width).toBeLessThanOrEqual(vp.width)

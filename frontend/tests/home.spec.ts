@@ -2,11 +2,11 @@ import { expect, test } from '@playwright/test'
 
 /* Home page: introduction, one card per available family with numbers read from that family's family.json, links to the family pages,
    and the app title on a family page links back home. */
-const ACCS = ['RF00167', 'RF00162', 'RF00059', 'RF00005', 'RF00177']
+const ACCS = ['RF00167', 'RF00162', 'RF00059', 'RF00005', 'RF00177', 'RF00011']
 
 test('home lists every family with its real numbers and opens the family page', async ({ page }) => {
   await page.goto('/')
-  await expect(page.getByTestId('home-intro')).toContainText('consensus positions')
+  await expect(page.getByTestId('home-intro')).toContainText('Rfam consensus coordinate system')
   await expect(page.getByTestId('family-cards').locator('[data-testid^="family-card-"]')).toHaveCount(ACCS.length)
   for (const acc of ACCS) {
     const f = await (await page.request.get(`/families/${acc}/family.json`)).json()
@@ -22,9 +22,25 @@ test('home lists every family with its real numbers and opens the family page', 
     // curated selection flagged only where the build used one (16S)
     await expect(card.getByTestId('card-curated')).toHaveCount(f.provenance.selection ? 1 : 0)
   }
-  await expect(page.getByTestId('family-card-RF00177').getByTestId('card-curated')).toHaveText('Curated selection of 60 chains')
+  // curated subsets: a small label with the explanation in its tooltip; the chain count comes from the data (provenance.selection)
+  for (const [acc, n] of [['RF00005', '60'], ['RF00177', '60'], ['RF00011', '50']]) {
+    const lab = page.getByTestId(`family-card-${acc}`).getByTestId('card-curated')
+    await expect(lab).toHaveText('Curated subset'); await expect(lab).toHaveAttribute('data-n-chains', n)
+    await expect(lab).toHaveAttribute('title', 'Selected experimental RNA structures; counts refer to the displayed dataset, not all available PDB structures for this family.')
+  }
+  await expect(page.getByText(/Curated selection of/)).toHaveCount(0)
+  await expect(page.getByTestId('family-card-RF00011').getByTestId('card-chains')).toHaveText('50')
   await expect(page.getByTestId('page-parts')).toContainText('Family Overview'); await expect(page.getByTestId('page-parts')).toContainText('Structures'); await expect(page.getByTestId('page-parts')).toContainText('Annotations')
   await expect(page.getByTestId('home-footer')).toContainText('Rfam 15.1')
+  // footer: data sources, then visualisation software, each linked
+  for (const [name, href] of [['Rfam 15.1', 'https://rfam.org'], ['PDBe', 'https://www.ebi.ac.uk/pdbe/'], ['BGSU RNA 3D Motif Atlas', 'http://rna.bgsu.edu/rna3dhub/motifs'],
+    ['PDBe Mol*', 'https://github.com/molstar/pdbe-molstar'], ['PDBe RNA Viewer', 'https://github.com/PDBeurope/pdb-rna-viewer']] as const)
+    await expect(page.getByTestId('home-footer').getByRole('link', { name, exact: true })).toHaveAttribute('href', href)
+  await expect(page.getByTestId('home-footer')).toHaveText(/^Data: .*Visualisation: /)
+  // tab cards and notes
+  await expect(page.getByRole('heading', { name: 'Explore an RNA family' })).toBeVisible()
+  await expect(page.getByTestId('home-notes').locator('li')).toHaveText([/^Rfam correspondence: /, /^Residue numbering: /, /^Structural groups: /])
+  await expect(page.getByTestId('family-card-RF00011')).toContainText('Catalytic RNA component of bacterial RNase P, which processes the 5′ ends of precursor tRNAs.')
   // only the four small family.json files are loaded on the home page
   // open a family, then come back via the app title
   await page.getByTestId('family-card-RF00059').click()
@@ -47,7 +63,8 @@ test('cards are whole-card links: click anywhere, keyboard Enter, visible focus,
   await page.goto('/')
   for (const acc of ACCS) await expect(page.getByTestId(`family-card-${acc}`)).toHaveAttribute('data-state', 'ready')
   await expect(page.getByText('Open family page')).toHaveCount(0)
-  await expect(page.getByTestId('home-intro')).toHaveText(/^Each page brings together experimentally determined RNA structures from an Rfam family\. Individual RNA chains are mapped to a shared set of Rfam consensus positions, enabling comparisons of sequence coverage, structural variation and residue-level annotations across structures\.$/)
+  await expect(page.getByTestId('home-intro')).toHaveText('Explore experimentally determined RNA structures organised by Rfam family. Compare structural variation, nucleotide interactions and residue-level annotations using a shared Rfam consensus coordinate system.')
+  await expect(page.getByTestId('page-parts').locator('h3')).toHaveText(['Family Overview', 'Structures', 'Interactions', 'Annotations'])   // in tab order
   await expect(page.getByTestId('home-intro').getByRole('link', { name: 'Rfam' })).toHaveAttribute('href', 'https://rfam.org')
   // intro as wide as the card grid (same container)
   const intro = (await page.getByTestId('home-intro').boundingBox())!, grid = (await page.getByTestId('family-cards').boundingBox())!

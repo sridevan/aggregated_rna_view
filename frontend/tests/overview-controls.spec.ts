@@ -122,3 +122,26 @@ test('3D controls: Clear selection replaces Focus selection; clears the nucleoti
   // a single nucleotide too
   await selectColumn(page, 76); await expect(btn).toBeEnabled(); await btn.click(); await expect.poll(async () => (await hook(page)).active).toBeNull()
 })
+
+test('3D viewer controls sit in a toolbar above the canvas, never over it (wide and narrow)', async ({ page }) => {
+  for (const width of [1400, 700]) {
+    await page.setViewportSize({ width, height: 1000 })
+    await page.goto('/RF00167'); await ready(page, '4fe5')
+    const viewer = page.getByTestId('molstar-viewer'), bar = page.getByTestId('molstar-toolbar')
+    for (const id of ['mode-region', 'mode-complete', 'show-ligands-control', 'reset-orientation', 'molstar-clear-selection']) await expect(bar.getByTestId(id)).toBeVisible()
+    const b = (await bar.boundingBox())!, c = (await viewer.locator('canvas').first().boundingBox())!, v = (await viewer.boundingBox())!
+    expect(c.y).toBeGreaterThanOrEqual(b.y + b.height - 1)                   // canvas starts below the toolbar
+    expect(c.y + c.height).toBeLessThanOrEqual(v.y + v.height + 1)           // and fills the rest of the viewer box
+    expect(Math.abs((b.height + c.height) - v.height)).toBeLessThan(6)   // borders (viewer 2 px, toolbar 1 px) and rounding
+    for (const id of ['mode-region', 'reset-orientation', 'molstar-clear-selection']) { const r = (await bar.getByTestId(id).boundingBox())!; expect(r.y + r.height).toBeLessThanOrEqual(c.y + 1) }
+  }
+  // desktop: ticking Show ligands (4FE5 B: hypoxanthine HPA nearby) keeps every control on one line
+  await page.setViewportSize({ width: 1400, height: 1000 }); await page.goto('/RF00167'); await ready(page, '4fe5')
+  const bar = page.getByTestId('molstar-toolbar'), h0 = (await bar.boundingBox())!.height
+  await page.getByTestId('show-ligands').check(); await expect(page.getByTestId('show-ligands-control')).toHaveAttribute('data-shown', /HPA/)
+  await expect(page.getByTestId('show-ligands-control')).toHaveText('Show ligands')                     // no ligand names next to the checkbox
+  await expect(page.getByTestId('show-ligands-control')).toHaveAttribute('title', /Shown: HPA/)
+  expect((await bar.boundingBox())!.height).toBeLessThanOrEqual(h0 + 1)
+  const top = (id: string) => bar.getByTestId(id).boundingBox().then((r) => Math.round(r!.y))
+  expect(Math.abs(await top('molstar-clear-selection') - await top('mode-region'))).toBeLessThanOrEqual(2)   // same row (the segmented control has its own border)
+})

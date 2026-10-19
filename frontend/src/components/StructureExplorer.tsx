@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
-import { loadInstanceLoops } from '../api/data'
+import { loadInstanceLoops, loadLigandClasses } from '../api/data'
 import { instanceLoops, loopSelection } from '../lib/loops'
 import { authorLabel, boundaryText, insertionMarkers, insertionRuns, insertionSelection, type InsertionMarker, type InsertionRun } from '../lib/insertions'
 import { HoverCard } from './InfoTip'
@@ -162,7 +162,7 @@ export function StructureExplorer() {
       <SelectionPanel translation={translation} instanceTargets={instanceTargets} mappingState={ms.state} compact={!!activeLoop} />
       <div className="grid gap-3 lg:grid-cols-2">
         {current && <PdbRnaViewer2D pdbId={current.pdb_id} entityId={current.entity_id} authAsymId={current.auth_asym_id} selection={viewerIds} resetKey={sel.viewReset} onResidueClick={onResidueClick} className="h-[560px]" />}
-        {current && <PdbeMolstarViewer pdbId={current.pdb_id} labelAsymId={current.label_asym_id} authAsymId={current.auth_asym_id} region={{ start: current.map_start, end: current.map_end }} orientation={orientation?.transforms[current.seq_name] ?? null} selection={viewerIds.map((label_seq_id) => ({ label_seq_id }))} focusOnSelection resetKey={sel.viewReset} structureColor={FAMILY_OVERVIEW_RNA_COLOR} onClearSelection={sel.clear} canClear={!!sel.active} onResidueClick={onResidueClick} className="h-[560px]" />}
+        {current && <PdbeMolstarViewer pdbId={current.pdb_id} labelAsymId={current.label_asym_id} authAsymId={current.auth_asym_id} region={{ start: current.map_start, end: current.map_end }} orientation={orientation?.transforms[current.seq_name] ?? null} selection={viewerIds.map((label_seq_id) => ({ label_seq_id }))} focusOnSelection resetKey={sel.viewReset} structureColor={FAMILY_OVERVIEW_RNA_COLOR} onClearSelection={sel.clear} canClear={!!sel.active} onResidueClick={onResidueClick} ligandClasses={() => loadLigandClasses(acc)} className="h-[560px]" />}
       </div>
       <details className="rounded border border-stone-200 bg-white text-xs text-stone-700" data-testid="viewer-details">
         <summary className="cursor-pointer select-none px-2 py-1 font-medium text-stone-800" data-testid="viewer-details-toggle">Viewer details</summary>

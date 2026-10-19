@@ -62,7 +62,7 @@ function Shell({ acc }: { acc: string }) {
             </label>
           )}
         </div>
-        <p className="mt-1 max-w-3xl text-sm text-stone-600">Explore aggregated RNA structures, conformational diversity and residue-level annotations.</p>
+        <p className="mt-1 max-w-3xl text-sm text-stone-600">Explore aggregated RNA structures, conformational diversity, RNA–RNA interactions and residue-level annotations.</p>
       </header>
       <Tabs value={tab} onChange={setTab} />
       <main className="mt-4">

@@ -1,0 +1,51 @@
+pdb_id,label_asym_id,auth_asym_id,seq_name,study,state,construct,tl_tlr_A,geometry,resolution,conformer_index,reason
+36uk,A,A,36uk_1_A_A,Degenhardt2026_Nature,holo+pre_tRNA,full_length,7.6,closed,2.8,,distinct functional condition (non-conformer series)
+9ov3,A,A,9ov3_1_A_A,Lee2026_NatCommun,rna_alone,full_length,8.0,closed,3.19,,distinct functional condition (non-conformer series)
+9ov6,A,A,9ov6_1_A_A,Lee2026_NatCommun,rna_alone,full_length,7.9,closed,3.46,sub1,distinct functional condition (non-conformer series)
+9ov7,A,A,9ov7_1_A_A,Lee2026_NatCommun,rna_alone,full_length,7.7,closed,3.27,sub2,distinct functional condition (non-conformer series)
+9ovb,A,A,9ovb_1_A_A,Lee2026_NatCommun,rna_alone,full_length,7.4,closed,3.21,,distinct functional condition (non-conformer series)
+9ovc,A,A,9ovc_1_A_A,Lee2026_NatCommun,rna_alone,full_length,7.3,closed,2.97,,distinct functional condition (non-conformer series)
+9owj,A,A,9owj_1_A_A,Lee2026_NatCommun,rna_alone+pre_tRNA,full_length,9.1,closed,2.94,,distinct functional condition (non-conformer series)
+9owk,A,A,9owk_1_A_A,Lee_unpublished_holo,rna_alone+pre_tRNA,full_length,8.6,closed,2.98,,distinct functional condition (non-conformer series)
+9owl,A,A,9owl_1_A_A,Lee2026_NatCommun,rna_alone+mature_tRNA,full_length,8.6,closed,2.99,,distinct functional condition (non-conformer series)
+9owm,A,A,9owm_1_A_A,Lee2026_NatCommun,rna_alone+mature_tRNA,full_length,9.0,closed,2.95,,distinct functional condition (non-conformer series)
+9own,A,A,9own_1_A_A,Lee2026_NatCommun,rna_alone+pre_tRNA,full_length,9.0,closed,2.86,,distinct functional condition (non-conformer series)
+9owo,A,A,9owo_1_A_A,Lee_unpublished_holo,rna_alone+pre_tRNA,full_length,7.8,closed,2.93,sub1,distinct functional condition (non-conformer series)
+9owp,A,A,9owp_1_A_A,Lee_unpublished_holo,rna_alone+pre_tRNA,full_length,6.9,closed,2.94,sub2,distinct functional condition (non-conformer series)
+9owq,A,A,9owq_1_A_A,Lee2026_NatCommun,rna_alone+pre_tRNA,full_length,8.1,closed,2.78,,distinct functional condition (non-conformer series)
+9ows,A,A,9ows_1_A_A,Lee_unpublished_holo,holo,full_length,8.0,closed,2.87,,distinct functional condition (non-conformer series)
+9owt,A,A,9owt_1_A_A,Lee_unpublished_holo,holo+pre_tRNA,full_length,6.5,closed,2.82,,distinct functional condition (non-conformer series)
+9owu,A,A,9owu_1_A_A,Lee_unpublished_holo,holo+pre_tRNA,full_length,6.8,closed,2.93,,distinct functional condition (non-conformer series)
+9owv,A,A,9owv_1_A_A,Lee_unpublished_holo,holo+mature_tRNA,full_length,7.3,closed,3.02,,distinct functional condition (non-conformer series)
+9oww,A,A,9oww_1_A_A,Lee_unpublished_holo,holo+pre_tRNA,full_length,6.8,closed,2.83,,distinct functional condition (non-conformer series)
+9owx,A,A,9owx_1_A_A,Lee_unpublished_holo,holo+pre_tRNA,full_length,6.0,closed,2.7,sub1,distinct functional condition (non-conformer series)
+9owy,A,A,9owy_1_A_A,Lee_unpublished_holo,holo+pre_tRNA,full_length,5.8,closed,2.69,sub2,distinct functional condition (non-conformer series)
+9oy2,A,A,9oy2_1_A_A,Lee2026_NatCommun,rna_alone,tetraloop_mutant,51.4,open,3.14,sub1,distinct functional condition (non-conformer series)
+9oy3,A,A,9oy3_1_A_A,Lee2026_NatCommun,rna_alone,tetraloop_mutant,50.2,open,3.13,sub2,distinct functional condition (non-conformer series)
+9oy4,A,A,9oy4_1_A_A,Lee2026_NatCommun,rna_alone,tetraloop_mutant,48.4,open,3.11,sub3,distinct functional condition (non-conformer series)
+9zh0,A,A,9zh0_1_A_A,Degenhardt2026_Nature,rna_alone,full_length,9.9,closed,2.9,18,"Degenhardt conformer, stratum rna_alone/closed, farthest-point pick"
+9zdv,A,A,9zdv_1_A_A,Degenhardt2026_Nature,rna_alone,full_length,8.3,closed,3.3,51,"Degenhardt conformer, stratum rna_alone/closed, farthest-point pick"
+9zhg,A,A,9zhg_1_A_A,Degenhardt2026_Nature,rna_alone,full_length,8.1,closed,2.9,30,"Degenhardt conformer, stratum rna_alone/closed, farthest-point pick"
+9zi4,A,A,9zi4_1_A_A,Degenhardt2026_Nature,rna_alone,full_length,8.7,closed,3.2,53,"Degenhardt conformer, stratum rna_alone/closed, farthest-point pick"
+9zgp,A,A,9zgp_1_A_A,Degenhardt2026_Nature,rna_alone,full_length,45.8,open,2.86,7,"Degenhardt conformer, stratum rna_alone/open, farthest-point pick"
+9zha,A,A,9zha_1_A_A,Degenhardt2026_Nature,rna_alone,full_length,43.4,open,3.0,24,"Degenhardt conformer, stratum rna_alone/open, farthest-point pick"
+9zi3,A,A,9zi3_1_A_A,Degenhardt2026_Nature,rna_alone,full_length,49.9,open,3.0,46,"Degenhardt conformer, stratum rna_alone/open, farthest-point pick"
+9zgu,A,A,9zgu_1_A_A,Degenhardt2026_Nature,rna_alone,full_length,43.8,open,3.3,12,"Degenhardt conformer, stratum rna_alone/open, farthest-point pick"
+9zhr,A,A,9zhr_1_A_A,Degenhardt2026_Nature,rna_alone,full_length,41.7,open,2.93,37,"Degenhardt conformer, stratum rna_alone/open, farthest-point pick"
+9zgt,A,A,9zgt_1_A_A,Degenhardt2026_Nature,rna_alone,full_length,35.5,open,3.0,11,"Degenhardt conformer, stratum rna_alone/open, farthest-point pick"
+9zf9,A,A,9zf9_1_A_A,Degenhardt2026_Nature,rna_alone,full_length,35.9,open,3.9,55,"Degenhardt conformer, stratum rna_alone/open, farthest-point pick"
+9zhx,A,A,9zhx_1_A_A,Degenhardt2026_Nature,rna_alone,full_length,43.3,open,3.14,43,"Degenhardt conformer, stratum rna_alone/open, farthest-point pick"
+9zi7,A,A,9zi7_1_A_A,Degenhardt2026_Nature,rna_alone,full_length,46.4,open,3.3,54,"Degenhardt conformer, stratum rna_alone/open, farthest-point pick"
+9zgx,A,A,9zgx_1_A_A,Degenhardt2026_Nature,rna_alone,full_length,42.8,open,2.9,15,"Degenhardt conformer, stratum rna_alone/open, farthest-point pick"
+9zhf,A,A,9zhf_1_A_A,Degenhardt2026_Nature,rna_alone,full_length,39.7,open,2.88,29,"Degenhardt conformer, stratum rna_alone/open, farthest-point pick"
+9zf3,A,A,9zf3_1_A_A,Degenhardt2026_Nature,rna_alone,full_length,40.6,open,3.0,48,"Degenhardt conformer, stratum rna_alone/open, farthest-point pick"
+9zgy,A,A,9zgy_1_A_A,Degenhardt2026_Nature,rna_alone,full_length,30.6,open,2.9,16,"Degenhardt conformer, stratum rna_alone/open, farthest-point pick"
+9zh2,A,A,9zh2_1_A_A,Degenhardt2026_Nature,rna_alone,full_length,40.2,open,3.0,20,"Degenhardt conformer, stratum rna_alone/open, farthest-point pick"
+9zif,A,A,9zif_1_A_A,Degenhardt2026_Nature,holo,full_length,47.9,open,3.0,7,"Degenhardt conformer, stratum holo/open, farthest-point pick"
+9zih,A,A,9zih_1_A_A,Degenhardt2026_Nature,holo,full_length,44.0,open,3.07,9,"Degenhardt conformer, stratum holo/open, farthest-point pick"
+9zi8,A,A,9zi8_1_A_A,Degenhardt2026_Nature,holo,full_length,38.2,open,3.18,1,"Degenhardt conformer, stratum holo/open, farthest-point pick"
+9zib,A,A,9zib_1_A_A,Degenhardt2026_Nature,holo,full_length,28.1,open,3.1,3,"Degenhardt conformer, stratum holo/open, farthest-point pick"
+9zil,A,A,9zil_1_A_A,Degenhardt2026_Nature,holo,full_length,6.9,closed,3.1,13,"Degenhardt conformer, stratum holo/closed, farthest-point pick"
+9ziu,A,A,9ziu_1_A_A,Degenhardt2026_Nature,holo,full_length,7.9,closed,3.45,16,"Degenhardt conformer, stratum holo/closed, farthest-point pick"
+9ziv,A,A,9ziv_1_A_A,Degenhardt2026_Nature,holo,full_length,7.2,closed,3.5,17,"Degenhardt conformer, stratum holo/closed, farthest-point pick"
+9ziy,A,A,9ziy_1_A_A,Degenhardt2026_Nature,holo,full_length,8.9,closed,3.3,21,"Degenhardt conformer, stratum holo/closed, farthest-point pick"

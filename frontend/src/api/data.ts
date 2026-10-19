@@ -57,3 +57,5 @@ export const loadInstanceLoops = (acc: string, seqName: string) => memo(`${acc}/
   getJson<{ loops: LoopsDataset['loops'] }>(`${BASE}/${acc}/loops_by_instance/${seqName}.json`).then((d) => d.loops).catch(() => loadLoops(acc).then((d) => d.loops)))
 /** Optional dataset of the Interactions tab (interactions.json); loaded when the tab is opened. */
 export const loadInteractions = (acc: string) => memo(`${acc}/interactions`, () => getJson<InteractionsDataset>(`${BASE}/${acc}/interactions.json`).catch(() => null))
+/** CCD id -> ligand class of a family (ligands.json by_ccd), for the Mol* "Show ligands" filter; loaded only when first needed. */
+export const loadLigandClasses = (acc: string) => loadLigands(acc).then((d) => Object.fromEntries(Object.entries(d.by_ccd).map(([k, v]) => [k, v.ligand_class])))

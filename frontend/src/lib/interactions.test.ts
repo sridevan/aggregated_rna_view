@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
-import { arcPath, baseCorrespondence, categoryAvailability, CATEGORY_STYLE, categoryColor, CIRCULAR_MAX_CLEN, defaultComparePair, DEFAULT_PAIR_MAX_RESOLUTION, helixCoverage, matchesPositions, medianHelixCoverage, multiColor, parseSearch, defaultFamilyOrder, groupByEndpoints, groupOccurrence, showCircular, circleLayout, compareInstances, indexInstance, kabsch, pairKey, pairLabel, passes, positionLabel, resolveLookup, statusIn, supportingInstances, DEFAULT_FILTER } from './interactions'
+import { arcPath, baseCorrespondence, categoryAvailability, CATEGORY_STYLE, categoryColor, CIRCULAR_MAX_CLEN, defaultComparePair, DEFAULT_PAIR_MAX_RESOLUTION, sequenceRelation, helixCoverage, matchesPositions, medianHelixCoverage, multiColor, parseSearch, defaultFamilyOrder, groupByEndpoints, groupOccurrence, showCircular, circleLayout, compareInstances, indexInstance, kabsch, pairKey, pairLabel, passes, positionLabel, resolveLookup, statusIn, supportingInstances, DEFAULT_FILTER } from './interactions'
 import { buildNumbering } from './numbering'
 import type { ChainMapping, InteractionsDataset, StructureClusteringDataset } from '../types/backend'
 
@@ -237,6 +237,23 @@ describe('incomplete source annotation', () => {
     expect(gaps).toEqual([['7pjs_34_a_HA', [[652, 1531]]]])
     const p = d.pairs.find((q) => q.category === 'basepair' && q.pos_1 > 700)!
     expect(statusIn(indexInstance(d, '7pjs_34_a_HA')!, p.category, p.pos_1, p.pos_2).state).toBe('not_comparable')
+  })
+})
+
+describe('sequence relation of compared chains', () => {
+  const load = (acc: string) => ({
+    ds: JSON.parse(readFileSync(new URL(`../../../data/families/${acc}/interactions.json`, import.meta.url), 'utf8')) as InteractionsDataset,
+    rows: new Map((JSON.parse(readFileSync(new URL(`../../../data/families/${acc}/instances.json`, import.meta.url), 'utf8')) as { seq_name: string; sequence_key: string }[]).map((r) => [r.seq_name, r])),
+  })
+  it('RF00059: 2GDI vs 2HOJ are the same RNA in different constructs (P1 ends); 8F4O vs 2HOJ identical chains; E. coli vs A. thaliana different', () => {
+    const { ds, rows } = load('RF00059'); const r = (s: string) => rows.get(s)!
+    const c = sequenceRelation(ds, r('2gdi_1_X_A'), r('2hoj_1_A_A')); expect(c.kind).toBe('construct'); expect(c.diffs.length).toBeLessThanOrEqual(3)
+    expect(sequenceRelation(ds, r('8f4o_1_A_A'), r('2hoj_1_A_A')).kind).toBe('identical')
+    expect(sequenceRelation(ds, r('2gdi_1_X_A'), r('2cky_1_A_A')).kind).toBe('different')
+  })
+  it('RF00167: 5E54 B vs 9V50 A are different sequences', () => {
+    const { ds, rows } = load('RF00167')
+    expect(sequenceRelation(ds, rows.get('5e54_1_B_B')!, rows.get('9v50_1_A_A')!).kind).toBe('different')
   })
 })
 

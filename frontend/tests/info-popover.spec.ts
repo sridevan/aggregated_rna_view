@@ -25,10 +25,10 @@ test('popovers stay in the viewport: below by default, flipped above near the bo
   await page.goto('/RF00167'); await page.getByTestId('tab-annotations').click(); await expect(page.getByTestId('category-sasa')).toBeVisible()
   // texts
   await page.getByTestId('category-header-sasa').getByTestId('info-tip').hover()
-  await expect(page.getByTestId('info-popover')).toHaveText('Per-nucleotide SASA calculated for isolated experimental RNA chains and aggregated by Rfam position. Colours indicate median SASA (Å²), reflecting nucleotide exposure.')
+  await expect(page.getByTestId('info-popover')).toHaveText('Per-nucleotide solvent-accessible surface area (SASA) of isolated RNA chains, summarised by Rfam position (median Å²).')
   await page.mouse.move(5, 5); await expect(page.getByTestId('info-popover')).toHaveCount(0)   // hover is transient
   await page.getByTestId('category-header-pockets').getByTestId('info-tip').hover()
-  await expect(page.getByTestId('info-popover')).toHaveText('RNA pockets predicted using fpocketR and mapped to Rfam positions. Colours indicate pocket occurrence frequency. No prediction does not necessarily mean a binding pocket is absent.')
+  await expect(page.getByTestId('info-popover')).toHaveText('fpocketR-predicted RNA pockets aggregated by Rfam position. No predicted pocket does not establish absence of binding.')
   await page.mouse.move(5, 5)
   for (const id of ['loops', 'ligands']) { await page.getByTestId(`category-header-${id}`).getByTestId('info-tip').hover(); await expect(page.getByTestId('info-popover')).toBeVisible(); await page.mouse.move(5, 5) }
   // near the top: below the icon

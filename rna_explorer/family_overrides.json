@@ -7,5 +7,13 @@
    "chosen_by": "user",
    "date": "2026-10-17"
   }
+ },
+ "RF00011": {
+  "display_representative": {
+   "seq_name": "9owq_1_A_A",
+   "reason": "all 50 chains are cryo-EM, so the automatic rule (X-ray first) finds no eligible chain; 9OWQ A (Lee et al. 2026, RNA alone + pre-tRNA, closed TL-TLR, 2.78 A) is the best-resolution chain with a PDBe 2D topology and a published study. The research orientation reference 9OVC A has no PDBe 2D topology; the best-resolution chain overall, 9OWY A (2.69 A), is unpublished and has none either.",
+   "chosen_by": "user",
+   "date": "2026-10-19"
+  }
  }
 }
