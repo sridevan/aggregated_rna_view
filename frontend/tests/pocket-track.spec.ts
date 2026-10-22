@@ -55,7 +55,7 @@ test('downloads for both pocket files; existing loop, ligand and SASA tracks unc
   expect(pk.counts.status_counts).toEqual({ pockets: 65, no_pockets: 19 }); expect(pk.instances[0].pockets.length === 0 || pk.instances[0].pockets[0]).toBeTruthy()
   await page.keyboard.press('Escape')
   await page.getByTestId('track-HL').locator('rect[data-pos="53"]').hover()
-  await expect(page.getByTestId('annotation-tooltip')).toHaveText('Rfam residue 53Hairpin loop (HL)Observed in 66 of 80 RNA instances (82.5%)')
+  await expect(page.getByTestId('annotation-tooltip')).toHaveText('Rfam residue 53Hairpin loop (HL)Observed in 8 of 80 RNA instances (10%)')
   await expect(page.locator('[data-testid^="track-lig-"]')).toHaveCount(29)
   await expect(page.getByTestId('track-sasa-median')).toBeVisible()
 })

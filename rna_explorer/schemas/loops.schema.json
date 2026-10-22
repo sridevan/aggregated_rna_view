@@ -91,13 +91,21 @@
     },
     "n_pdb_entries_unavailable": {
      "type": "integer"
+    },
+    "n_merged_loops": {
+     "type": "integer"
+    },
+    "n_superseded_loops": {
+     "type": "integer"
     }
    },
    "required": [
     "n_loops",
     "n_with_motif_group",
     "n_distinct_motif_groups",
-    "by_type"
+    "by_type",
+    "n_merged_loops",
+    "n_superseded_loops"
    ]
   },
   "entry_sources": {
@@ -388,6 +396,44 @@
        "string",
        "null"
       ]
+     },
+     "decomposition": {
+      "type": "object",
+      "description": "BGSU merged-loop relation inferred from nucleotide sets (loops.json counting_rules.merged_loops)",
+      "properties": {
+       "role": {
+        "enum": [
+         "single",
+         "merged"
+        ]
+       },
+       "merged_from": {
+        "type": "array",
+        "items": {
+         "type": "array",
+         "items": {
+          "type": "string"
+         },
+         "minItems": 2,
+         "maxItems": 2
+        }
+       },
+       "superseded_by": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "counted_in_tracks": {
+        "type": "boolean"
+       }
+      },
+      "required": [
+       "role",
+       "merged_from",
+       "superseded_by",
+       "counted_in_tracks"
+      ]
      }
     },
     "required": [
@@ -402,7 +448,8 @@
      "instances",
      "strands",
      "nucleotides",
-     "consensus_positions"
+     "consensus_positions",
+     "decomposition"
     ]
    }
   },

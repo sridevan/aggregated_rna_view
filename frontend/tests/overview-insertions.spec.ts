@@ -104,9 +104,9 @@ test('instance switching replaces the markers and clears details, tooltip and in
   const before = await loopGeom()
   await page.getByTestId('insertion-marker-77').click(); await page.getByTestId('insertion-view-77:59').click()
   await expect.poll(async () => (await hook(page)).active?.type).toBe('INS')
-  // the internal loop containing the inserted nucleotides keeps its full membership (59 and 60 included)
-  await page.locator('[data-testid^="loop-block-IL_9IWF_001-"]').first().click()
-  await expect.poll(async () => (await hook(page)).active?.id).toBe('IL_9IWF_001')
+  // the (merged) junction loop containing the inserted nucleotides keeps its full membership (59 and 60 included)
+  await page.locator('[data-testid^="loop-block-J3_9IWF_002-"]').first().click()
+  await expect.poll(async () => (await hook(page)).active?.id).toBe('J3_9IWF_002')
   expect((await hook(page)).v).toEqual(expect.arrayContaining([59, 60]))
   expect(await loopGeom()).toEqual(before)
   // open details + hovered marker, then a chain without insertions: no stale marker, tooltip, details or selection

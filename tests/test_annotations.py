@@ -453,3 +453,56 @@ def test_j5_junction_loops_are_in_the_junction_union(fam_dir):
     assert u["by_type_n_instances"] == {"J3": 1, "J4": 1, "J5": 1} and u["loop_types"] == ["J3", "J4", "J5"]
     assert "J5" in u["rule"]
     assert "J5_1ABC_001" in {L["loop_id"] for L in json.load(open(fam_dir / "loops.json"))["loops"]}
+
+
+# ----------------------------------------------------------------------------- merged loops
+def test_merged_loop_relations_inference():
+    from rna_explorer.annotations import merged_loop_relations
+    u = lambda *ns: frozenset(f"1ABC|1|A|N|{n}" for n in ns)
+    loops = [("HL_1", u(46, 47, 48, 53)), ("J4_1", u(21, 22, 46, 53, 54, 75)),
+             ("J3_1", u(21, 22, 46, 47, 48, 53, 54, 75)),                          # J3_1 = J4_1 + HL_1 across the 46-53 pair
+             ("IL_1", u(54, 75, 76, 80)), ("J3_2", u(21, 22, 46, 47, 48, 53, 54, 75, 76, 80)),   # nested: J3_2 = J3_1 + IL_1 across 54-75
+             ("HL_2", u(30, 31, 32)), ("IL_2", u(29, 30, 32, 33)), ("IL_3", u(29, 30, 31, 32, 33))]
+    r = merged_loop_relations(loops)
+    assert r["J3_1"]["merged_from"] == [["HL_1", "J4_1"]] and r["HL_1"]["superseded_by"] == ["J3_1"] and r["J4_1"]["superseded_by"] == ["J3_1"]
+    assert r["J3_2"]["merged_from"] == [["IL_1", "J3_1"]] and r["J3_1"]["superseded_by"] == ["J3_2"]     # an intermediate merged loop is itself superseded
+    assert r["J3_2"]["superseded_by"] == [] and r["IL_3"]["merged_from"] == [["HL_2", "IL_2"]]
+    # one shared nucleotide, or three, is not a shared closing pair
+    assert merged_loop_relations([("A", u(1, 2, 3)), ("B", u(3, 4, 5)), ("M", u(1, 2, 3, 4, 5))]) == {}
+    assert merged_loop_relations([("A", u(1, 2, 3, 4)), ("B", u(2, 3, 4, 5)), ("M", u(1, 2, 3, 4, 5))]) == {}
+
+
+LOOPS_1ABC_MERGED = ('"HL_1ABC_001","1ABC|1|A|G|12,1ABC|1|A|A|13,1ABC|1|A|U|14,1ABC|1|A|C|15"\n'
+                     '"J4_1ABC_001","1ABC|1|A|G|11,1ABC|1|A|G|12,1ABC|1|A|C|15,1ABC|1|A|C|16"\n'
+                     '"J3_1ABC_001","1ABC|1|A|G|11,1ABC|1|A|G|12,1ABC|1|A|A|13,1ABC|1|A|U|14,1ABC|1|A|C|15,1ABC|1|A|C|16"\n')
+
+
+class MergedFetcher(FakeFetcher):
+    def text(self, url, suffix, seed_name=None):
+        if "loops/download/1ABC" in url:
+            return LOOPS_1ABC_MERGED, SourceMeta(url, "ok", "2026-10-21")
+        return super().text(url, suffix, seed_name)
+
+
+def test_merged_loop_supersedes_parts_in_tracks(fam_dir):
+    AnnotationBuilder(fam_dir, MergedFetcher(), load_config()).run()
+    lj = json.load(open(fam_dir / "loops.json"))
+    validate_json(lj, "loops")
+    loops = {L["loop_id"]: L for L in lj["loops"]}
+    assert loops["J3_1ABC_001"]["decomposition"] == {"role": "merged", "merged_from": [["HL_1ABC_001", "J4_1ABC_001"]], "superseded_by": [], "counted_in_tracks": True}
+    for i in ("HL_1ABC_001", "J4_1ABC_001"):
+        assert loops[i]["decomposition"] == {"role": "single", "merged_from": [], "superseded_by": ["J3_1ABC_001"], "counted_in_tracks": False}
+    assert loops["HL_2XYZ_001"]["decomposition"]["counted_in_tracks"]                     # other entries are untouched
+    assert lj["counts"]["n_merged_loops"] == 1 and lj["counts"]["n_superseded_loops"] == 2
+    assert lj["counts"]["by_type"]["HL"]["n_superseded"] == 1 and lj["counts"]["by_type"]["J4"]["n_counted_in_tracks"] == 0
+    tr = json.load(open(fam_dir / "tracks.json")); validate_json(tr, "tracks")
+    p = tr["positions"][4]                                     # consensus 5: 1abc U|14 (HL and J3), 2xyz B|13 (HL_2XYZ_001)
+    assert p["hairpin_loops"]["loop_ids"] == ["HL_2XYZ_001"] and p["hairpin_loops"]["superseded_loop_ids"] == ["HL_1ABC_001"]
+    assert p["junction_loops_J3"]["loop_ids"] == ["J3_1ABC_001"] and p["junction_loops_J3"]["n_instances"] == 1
+    p = tr["positions"][2]                                     # consensus 3: G|11 in J4 (superseded) and J3
+    assert p["junction_loops_J4"]["n_instances"] == 0 and p["junction_loops_J4"]["superseded_loop_ids"] == ["J4_1ABC_001"]
+    assert p["junction_loops_union"]["n_loop_observations"] == 1 and p["junction_loops_union"]["superseded_loop_ids"] == ["J4_1ABC_001"]
+    inst = json.load(open(fam_dir / "annotations" / "1abc_1_A_A.json")); validate_json(inst, "annotation_instance")
+    assert {x["loop_id"]: x["counted_in_tracks"] for x in inst["residues"][0]["loops"]} == {"J4_1ABC_001": False, "J3_1ABC_001": True}
+    per = json.load(open(fam_dir / "loops_by_instance" / "1abc_1_A_A.json")); validate_json(per, "loops_instance")
+    assert sorted(L["loop_id"] for L in per["loops"]) == ["HL_1ABC_001", "J3_1ABC_001", "J4_1ABC_001"]   # superseded records are kept

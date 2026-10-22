@@ -36,10 +36,13 @@
  },
  "counting_rules": {
   "loop_observation": "one FR3D loop id = one observation, even when its nucleotides span several chains",
-  "junction": "J3 and J4 are separate categories; any combined junction summary is a set union of loops/instances/entries"
+  "junction": "J3 and J4 are separate categories; any combined junction summary is a set union of loops/instances/entries",
+  "merged_loops": "a loop whose nucleotide set is exactly the union of two other non-problematic loops of the same entry that share exactly two nucleotides (one closing pair) is a BGSU merged loop (decomposition.role = merged); its two parts are superseded (decomposition.superseded_by) and are not counted in the HL/IL/J tracks. Nested merges supersede every intermediate loop. All records are kept. Inferred from the BGSU download, which does not flag merged loops"
  },
  "counts": {
   "n_loops": 496,
+  "n_merged_loops": 88,
+  "n_superseded_loops": 176,
   "n_with_motif_group": 456,
   "motif_group_assignment_counts": {
    "member": 78,
@@ -62,6 +65,9 @@
     },
     "n_problematic": 19,
     "n_distinct_motif_groups": 10,
+    "n_merged": 0,
+    "n_superseded": 58,
+    "n_counted_in_tracks": 176,
     "motif_groups": {
      "HL_09122.3": {
       "n_loops": 72,
@@ -130,6 +136,9 @@
     },
     "n_problematic": 6,
     "n_distinct_motif_groups": 7,
+    "n_merged": 0,
+    "n_superseded": 30,
+    "n_counted_in_tracks": 52,
     "motif_groups": {
      "IL_01003.7": {
       "n_loops": 11,
@@ -183,6 +192,9 @@
     },
     "n_problematic": 4,
     "n_distinct_motif_groups": 9,
+    "n_merged": 88,
+    "n_superseded": 30,
+    "n_counted_in_tracks": 84,
     "motif_groups": {
      "J3_12765.1": {
       "n_loops": 1,
@@ -245,6 +257,9 @@
     },
     "n_problematic": 4,
     "n_distinct_motif_groups": 3,
+    "n_merged": 0,
+    "n_superseded": 58,
+    "n_counted_in_tracks": 8,
     "motif_groups": {
      "J4_07491.4": {
       "n_loops": 54,
@@ -1699,6 +1714,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/1Y26/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -1931,6 +1952,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/1Y26/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_1Y26_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -2185,6 +2214,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/1Y26/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -2679,6 +2714,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/1Y26/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_1Y26_002",
+      "J4_1Y26_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -3051,6 +3097,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/1Y26/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_1Y26_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -3305,6 +3359,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/1Y27/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -3537,6 +3597,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/1Y27/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_1Y27_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -3791,6 +3859,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/1Y27/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -3989,6 +4063,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/1Y27/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -4483,6 +4563,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/1Y27/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_1Y27_002",
+      "J4_1Y27_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -4855,6 +4946,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/1Y27/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_1Y27_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -5109,6 +5208,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2B57/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -5341,6 +5446,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2B57/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_2B57_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -5595,6 +5708,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2B57/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -5793,6 +5912,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2B57/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -6287,6 +6412,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2B57/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_2B57_002",
+      "J4_2B57_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -6659,6 +6795,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2B57/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_2B57_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -6913,6 +7057,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EES/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -7145,6 +7295,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EES/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_2EES_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -7399,6 +7557,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EES/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -7597,6 +7761,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EES/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -8091,6 +8261,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EES/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_2EES_002",
+      "J4_2EES_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -8463,6 +8644,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EES/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_2EES_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -8717,6 +8906,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EET/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -8949,6 +9144,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EET/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_2EET_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -9203,6 +9406,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EET/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -9401,6 +9610,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EET/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -9895,6 +10110,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EET/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_2EET_002",
+      "J4_2EET_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -10267,6 +10493,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EET/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_2EET_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -10521,6 +10755,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EEU/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -10753,6 +10993,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EEU/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_2EEU_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -11007,6 +11255,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EEU/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -11205,6 +11459,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EEU/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -11699,6 +11959,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EEU/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_2EEU_002",
+      "J4_2EEU_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -12071,6 +12342,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EEU/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_2EEU_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -12325,6 +12604,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EEV/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -12557,6 +12842,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EEV/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_2EEV_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -12811,6 +13104,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EEV/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -13009,6 +13308,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EEV/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -13503,6 +13808,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EEV/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_2EEV_002",
+      "J4_2EEV_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -13875,6 +14191,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EEV/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_2EEV_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -14129,6 +14453,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EEW/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -14361,6 +14691,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EEW/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_2EEW_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -14615,6 +14953,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EEW/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -14813,6 +15157,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EEW/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -15307,6 +15657,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EEW/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_2EEW_002",
+      "J4_2EEW_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -15679,6 +16040,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2EEW/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_2EEW_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -15933,6 +16302,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2G9C/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -16165,6 +16540,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2G9C/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_2G9C_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -16419,6 +16802,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2G9C/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -16617,6 +17006,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2G9C/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -17111,6 +17506,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2G9C/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_2G9C_002",
+      "J4_2G9C_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -17483,6 +17889,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2G9C/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_2G9C_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -17737,6 +18151,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2XNW/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -17969,6 +18389,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2XNW/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_2XNW_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -18223,6 +18651,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2XNW/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -18421,6 +18855,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2XNW/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -18915,6 +19355,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2XNW/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_2XNW_002",
+      "J4_2XNW_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -19287,6 +19738,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2XNW/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_2XNW_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -19541,6 +20000,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2XNZ/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -19773,6 +20238,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2XNZ/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_2XNZ_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -20027,6 +20500,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2XNZ/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -20225,6 +20704,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2XNZ/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -20719,6 +21204,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2XNZ/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_2XNZ_002",
+      "J4_2XNZ_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -21091,6 +21587,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2XNZ/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_2XNZ_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -21345,6 +21849,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2XO0/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -21577,6 +22087,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2XO0/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_2XO0_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -21831,6 +22349,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2XO0/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -22029,6 +22553,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2XO0/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -22523,6 +23053,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2XO0/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_2XO0_002",
+      "J4_2XO0_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -22895,6 +23436,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2XO0/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_2XO0_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -23149,6 +23698,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2XO1/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -23381,6 +23936,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2XO1/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_2XO1_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -23635,6 +24198,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2XO1/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -23833,6 +24402,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2XO1/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -24327,6 +24902,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2XO1/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_2XO1_002",
+      "J4_2XO1_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -24699,6 +25285,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/2XO1/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_2XO1_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -24953,6 +25547,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3DS7/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -25185,6 +25785,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3DS7/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3DS7_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -25439,6 +26047,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3DS7/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -25693,6 +26307,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3DS7/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -25925,6 +26545,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3DS7/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3DS7_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -26179,6 +26807,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3DS7/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -26377,6 +27011,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3DS7/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -26575,6 +27215,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3DS7/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -27069,6 +27715,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3DS7/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_3DS7_002",
+      "J4_3DS7_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -27563,6 +28220,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3DS7/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_3DS7_005",
+      "J4_3DS7_002"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -27935,6 +28603,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3DS7/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3DS7_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -28307,6 +28983,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3DS7/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3DS7_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -28561,6 +29245,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3FO4/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -28793,6 +29483,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3FO4/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3FO4_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -29047,6 +29745,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3FO4/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -29245,6 +29949,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3FO4/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -29739,6 +30449,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3FO4/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_3FO4_002",
+      "J4_3FO4_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -30111,6 +30832,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3FO4/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3FO4_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -30365,6 +31094,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3FO6/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -30597,6 +31332,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3FO6/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3FO6_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -30851,6 +31594,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3FO6/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -31049,6 +31798,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3FO6/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -31543,6 +32298,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3FO6/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_3FO6_002",
+      "J4_3FO6_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -31915,6 +32681,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3FO6/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3FO6_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -32169,6 +32943,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3G4M/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -32401,6 +33181,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3G4M/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3G4M_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -32655,6 +33443,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3G4M/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -32853,6 +33647,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3G4M/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -33347,6 +34147,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3G4M/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_3G4M_002",
+      "J4_3G4M_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -33719,6 +34530,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3G4M/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3G4M_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -33973,6 +34792,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GAO/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -34205,6 +35030,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GAO/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3GAO_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -34459,6 +35292,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GAO/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -34657,6 +35496,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GAO/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -35151,6 +35996,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GAO/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_3GAO_002",
+      "J4_3GAO_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -35523,6 +36379,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GAO/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3GAO_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -35777,6 +36641,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GER/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -36009,6 +36879,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GER/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3GER_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -36263,6 +37141,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GER/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -36461,6 +37345,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GER/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -36955,6 +37845,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GER/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_3GER_002",
+      "J4_3GER_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -37327,6 +38228,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GER/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3GER_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -37581,6 +38490,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GES/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -37813,6 +38728,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GES/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3GES_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -38067,6 +38990,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GES/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -38265,6 +39194,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GES/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -38759,6 +39694,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GES/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_3GES_002",
+      "J4_3GES_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -39131,6 +40077,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GES/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3GES_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -39385,6 +40339,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GOG/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -39617,6 +40577,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GOG/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3GOG_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -39871,6 +40839,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GOG/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -40069,6 +41043,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GOG/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -40563,6 +41543,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GOG/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_3GOG_002",
+      "J4_3GOG_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -40935,6 +41926,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GOG/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3GOG_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -41189,6 +42188,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GOT/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -41421,6 +42426,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GOT/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3GOT_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -41675,6 +42688,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GOT/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -41873,6 +42892,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GOT/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -42367,6 +43392,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GOT/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_3GOT_002",
+      "J4_3GOT_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -42739,6 +43775,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3GOT/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3GOT_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -43037,6 +44081,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3IVN/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -43269,6 +44319,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3IVN/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3IVN_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -43567,6 +44625,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3IVN/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -43865,6 +44929,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3IVN/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -44097,6 +45167,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3IVN/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3IVN_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -44395,6 +45473,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3IVN/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -44889,6 +45973,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3IVN/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_3IVN_002",
+      "J4_3IVN_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -45383,6 +46478,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3IVN/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_3IVN_005",
+      "J4_3IVN_002"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -45755,6 +46861,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3IVN/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3IVN_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -46127,6 +47241,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3IVN/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3IVN_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -46425,6 +47547,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3LA5/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -46657,6 +47785,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3LA5/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3LA5_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -46911,6 +48047,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3LA5/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -47109,6 +48251,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3LA5/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -47603,6 +48751,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3LA5/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_3LA5_002",
+      "J4_3LA5_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -47975,6 +49134,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3LA5/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3LA5_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -48229,6 +49396,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3RKF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -48461,6 +49634,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3RKF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3RKF_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -48715,6 +49896,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3RKF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -48969,6 +50156,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3RKF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -49201,6 +50394,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3RKF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3RKF_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -49455,6 +50656,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3RKF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -49709,6 +50916,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3RKF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -49941,6 +51154,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3RKF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3RKF_003"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -50195,6 +51416,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3RKF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -50449,6 +51676,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3RKF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -50681,6 +51914,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3RKF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3RKF_004"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -50935,6 +52176,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3RKF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -51429,6 +52676,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3RKF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_3RKF_002",
+      "J4_3RKF_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -51923,6 +53181,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3RKF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_3RKF_005",
+      "J4_3RKF_002"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -52417,6 +53686,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3RKF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_3RKF_008",
+      "J4_3RKF_003"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -52911,6 +54191,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3RKF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_3RKF_011",
+      "J4_3RKF_004"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -53283,6 +54574,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3RKF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3RKF_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -53655,6 +54954,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3RKF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3RKF_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -54027,6 +55334,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3RKF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3RKF_003"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -54399,6 +55714,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3RKF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3RKF_004"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -54653,6 +55976,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FE5/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -54885,6 +56214,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FE5/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_4FE5_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -55139,6 +56476,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FE5/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -55337,6 +56680,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FE5/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -55831,6 +57180,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FE5/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_4FE5_002",
+      "J4_4FE5_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -56203,6 +57563,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FE5/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_4FE5_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -56457,6 +57825,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FEJ/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -56689,6 +58063,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FEJ/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_4FEJ_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -56943,6 +58325,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FEJ/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -57141,6 +58529,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FEJ/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -57635,6 +59029,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FEJ/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_4FEJ_002",
+      "J4_4FEJ_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -58007,6 +59412,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FEJ/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_4FEJ_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -58261,6 +59674,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FEL/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -58493,6 +59912,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FEL/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_4FEL_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -58747,6 +60174,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FEL/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -59285,6 +60718,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FEL/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_4FEL_002",
+      "J4_4FEL_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -59701,6 +61145,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FEL/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_4FEL_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -59955,6 +61407,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FEN/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -60187,6 +61645,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FEN/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_4FEN_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -60441,6 +61907,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FEN/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -60979,6 +62451,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FEN/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_4FEN_002",
+      "J4_4FEN_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -61395,6 +62878,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FEN/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_4FEN_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -61649,6 +63140,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FEO/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -61881,6 +63378,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FEO/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_4FEO_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -62135,6 +63640,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FEO/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -62673,6 +64184,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FEO/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_4FEO_002",
+      "J4_4FEO_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -63089,6 +64611,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FEO/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_4FEO_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -63343,6 +64873,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FEP/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -63575,6 +65111,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FEP/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_4FEP_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -63829,6 +65373,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FEP/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -64367,6 +65917,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FEP/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_4FEP_002",
+      "J4_4FEP_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -64783,6 +66344,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4FEP/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_4FEP_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -65081,6 +66650,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4LX5/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -65313,6 +66888,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4LX5/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_4LX5_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -65567,6 +67150,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4LX5/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -66061,6 +67650,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4LX5/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_4LX5_002",
+      "J4_4LX5_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -66433,6 +68033,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4LX5/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_4LX5_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -66731,6 +68339,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4LX6/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -66963,6 +68577,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4LX6/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_4LX6_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -67217,6 +68839,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4LX6/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -67711,6 +69339,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4LX6/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_4LX6_002",
+      "J4_4LX6_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -68083,6 +69722,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4LX6/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_4LX6_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -68381,6 +70028,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4TZX/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -68613,6 +70266,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4TZX/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_4TZX_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -68867,6 +70528,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4TZX/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -69361,6 +71028,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4TZX/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_4TZX_002",
+      "J4_4TZX_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -69733,6 +71411,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4TZX/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_4TZX_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -70031,6 +71717,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4TZY/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -70263,6 +71955,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4TZY/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_4TZY_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -70517,6 +72217,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4TZY/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -71011,6 +72717,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4TZY/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_4TZY_002",
+      "J4_4TZY_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -71383,6 +73100,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4TZY/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_4TZY_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -71681,6 +73406,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4XNR/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -71913,6 +73644,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4XNR/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_4XNR_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -72167,6 +73906,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4XNR/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -72661,6 +74406,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4XNR/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_4XNR_002",
+      "J4_4XNR_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -73033,6 +74789,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/4XNR/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_4XNR_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -73287,6 +75051,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5C7U/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -73519,6 +75289,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5C7U/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_5C7U_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -73773,6 +75551,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5C7U/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -73971,6 +75755,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5C7U/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -74465,6 +76255,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5C7U/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_5C7U_002",
+      "J4_5C7U_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -74837,6 +76638,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5C7U/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_5C7U_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -75091,6 +76900,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5C7W/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -75323,6 +77138,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5C7W/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_5C7W_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -75577,6 +77400,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5C7W/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -75775,6 +77604,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5C7W/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -76269,6 +78104,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5C7W/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_5C7W_002",
+      "J4_5C7W_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -76641,6 +78487,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5C7W/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_5C7W_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -76939,6 +78793,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5E54/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -77127,6 +78987,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5E54/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -77381,6 +79247,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5E54/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -77679,6 +79551,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5E54/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -77867,6 +79745,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5E54/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -78121,6 +80005,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5E54/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -78493,6 +80383,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5E54/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -78865,6 +80761,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5E54/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -79163,6 +81065,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5SWD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -79351,6 +81259,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5SWD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -79605,6 +81519,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5SWD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -79903,6 +81823,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5SWD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -80091,6 +82017,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5SWD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -80345,6 +82277,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5SWD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -80717,6 +82655,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5SWD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -81089,6 +83033,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5SWD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -81387,6 +83337,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5SWE/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -81619,6 +83575,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5SWE/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_5SWE_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -81873,6 +83837,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5SWE/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -82367,6 +84337,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5SWE/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_5SWE_002",
+      "J4_5SWE_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -82739,6 +84720,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5SWE/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_5SWE_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -83037,6 +85026,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5UZA/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -83269,6 +85264,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5UZA/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_5UZA_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -83523,6 +85526,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5UZA/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -83721,6 +85730,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5UZA/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -84215,6 +86230,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5UZA/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_5UZA_002",
+      "J4_5UZA_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -84587,6 +86613,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/5UZA/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_5UZA_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -84841,6 +86875,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6P2H/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -85139,6 +87179,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6P2H/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -85469,6 +87515,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6P2H/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_6P2H_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -85784,6 +87838,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6P2H/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_6P2H_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -86319,6 +88381,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6P2H/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_6P2H_001",
+      "J3_6P2H_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -86573,6 +88646,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6UBU/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -86805,6 +88884,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6UBU/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_6UBU_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -87059,6 +89146,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6UBU/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -87257,6 +89350,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6UBU/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -87751,6 +89850,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6UBU/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_6UBU_002",
+      "J4_6UBU_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -88123,6 +90233,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6UBU/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_6UBU_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -88377,6 +90495,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6UC7/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -88609,6 +90733,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6UC7/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_6UC7_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -88863,6 +90995,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6UC7/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -89061,6 +91199,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6UC7/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -89555,6 +91699,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6UC7/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_6UC7_002",
+      "J4_6UC7_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -89927,6 +92082,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6UC7/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_6UC7_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -90181,6 +92344,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6UC8/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -90413,6 +92582,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6UC8/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_6UC8_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -90667,6 +92844,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6UC8/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -90865,6 +93048,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6UC8/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -91359,6 +93548,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6UC8/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_6UC8_002",
+      "J4_6UC8_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -91731,6 +93931,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6UC8/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_6UC8_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -91985,6 +94193,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6UC9/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -92217,6 +94431,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6UC9/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_6UC9_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -92471,6 +94693,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6UC9/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -92669,6 +94897,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6UC9/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -93163,6 +95397,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6UC9/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_6UC9_002",
+      "J4_6UC9_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -93535,6 +95780,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6UC9/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_6UC9_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -93833,6 +96086,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6VWT/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -94065,6 +96324,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6VWT/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_6VWT_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -94319,6 +96586,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6VWT/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -94617,6 +96890,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6VWT/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -94849,6 +97128,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6VWT/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_6VWT_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -95103,6 +97390,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6VWT/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -95597,6 +97890,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6VWT/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_6VWT_002",
+      "J4_6VWT_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -96091,6 +98395,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6VWT/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_6VWT_005",
+      "J4_6VWT_002"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -96463,6 +98778,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6VWT/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_6VWT_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -96835,6 +99158,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6VWT/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_6VWT_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -97133,6 +99464,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6VWV/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -97365,6 +99702,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6VWV/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_6VWV_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -97619,6 +99964,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6VWV/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -97917,6 +100268,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6VWV/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -98149,6 +100506,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6VWV/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_6VWV_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -98403,6 +100768,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6VWV/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -98897,6 +101268,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6VWV/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_6VWV_002",
+      "J4_6VWV_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -99391,6 +101773,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6VWV/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_6VWV_005",
+      "J4_6VWV_002"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -99763,6 +102156,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6VWV/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_6VWV_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -100135,6 +102536,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/6VWV/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_6VWV_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -100477,6 +102886,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9IWF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -100709,6 +103124,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9IWF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9IWF_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -100963,6 +103386,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9IWF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -101305,6 +103734,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9IWF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -101537,6 +103972,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9IWF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9IWF_003"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -101791,6 +104234,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9IWF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -102033,6 +104482,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9IWF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9IWF_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -102275,6 +104732,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9IWF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9IWF_004"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -102769,6 +105234,19 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9IWF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_9IWF_002",
+      "J4_9IWF_001"
+     ]
+    ],
+    "superseded_by": [
+     "J3_9IWF_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -103395,6 +105873,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9IWF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9IWF_001",
+      "J3_9IWF_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -103889,6 +106378,19 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9IWF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_9IWF_005",
+      "J4_9IWF_002"
+     ]
+    ],
+    "superseded_by": [
+     "J3_9IWF_004"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -104515,6 +107017,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9IWF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9IWF_002",
+      "J3_9IWF_003"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -104887,6 +107400,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9IWF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9IWF_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -105259,6 +107780,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9IWF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9IWF_003"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -105557,6 +108086,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9IWG/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -105789,6 +108324,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9IWG/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9IWG_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -106043,6 +108586,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9IWG/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -106341,6 +108890,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9IWG/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -106573,6 +109128,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9IWG/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9IWG_003"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -106827,6 +109390,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9IWG/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -107069,6 +109638,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9IWG/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9IWG_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -107311,6 +109888,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9IWG/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9IWG_004"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -107805,6 +110390,19 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9IWG/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_9IWG_002",
+      "J4_9IWG_001"
+     ]
+    ],
+    "superseded_by": [
+     "J3_9IWG_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -108431,6 +111029,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9IWG/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9IWG_001",
+      "J3_9IWG_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -108925,6 +111534,19 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9IWG/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_9IWG_005",
+      "J4_9IWG_002"
+     ]
+    ],
+    "superseded_by": [
+     "J3_9IWG_004"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -109551,6 +112173,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9IWG/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9IWG_002",
+      "J3_9IWG_003"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -109923,6 +112556,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9IWG/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9IWG_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -110295,6 +112936,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9IWG/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9IWG_003"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -110549,6 +113198,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LJN/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -110803,6 +113458,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LJN/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -111133,6 +113794,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LJN/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9LJN_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -111375,6 +114044,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LJN/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9LJN_003"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -111629,6 +114306,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LJN/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9LJN_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -112103,6 +114788,19 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LJN/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9LJN_001",
+      "J3_9LJN_001"
+     ]
+    ],
+    "superseded_by": [
+     "J3_9LJN_003"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -112708,6 +115406,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LJN/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9LJN_002",
+      "J3_9LJN_002"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -112962,6 +115671,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LKC/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -113216,6 +115931,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LKC/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -113546,6 +116267,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LKC/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9LKC_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -113788,6 +116517,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LKC/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9LKC_003"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -114042,6 +116779,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LKC/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9LKC_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -114516,6 +117261,19 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LKC/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9LKC_001",
+      "J3_9LKC_001"
+     ]
+    ],
+    "superseded_by": [
+     "J3_9LKC_003"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -115121,6 +117879,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LKC/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9LKC_002",
+      "J3_9LKC_002"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -115375,6 +118144,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LKE/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -115629,6 +118404,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LKE/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -115959,6 +118740,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LKE/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9LKE_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -116201,6 +118990,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LKE/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9LKE_003"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -116455,6 +119252,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LKE/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9LKE_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -116929,6 +119734,19 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LKE/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9LKE_001",
+      "J3_9LKE_001"
+     ]
+    ],
+    "superseded_by": [
+     "J3_9LKE_003"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -117534,6 +120352,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LKE/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9LKE_002",
+      "J3_9LKE_002"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -117788,6 +120617,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LKF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -118042,6 +120877,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LKF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -118372,6 +121213,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LKF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9LKF_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -118614,6 +121463,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LKF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9LKF_003"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -118868,6 +121725,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LKF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9LKF_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -119342,6 +122207,19 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LKF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9LKF_001",
+      "J3_9LKF_001"
+     ]
+    ],
+    "superseded_by": [
+     "J3_9LKF_003"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -119947,6 +122825,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LKF/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9LKF_002",
+      "J3_9LKF_002"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -120201,6 +123090,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LMC/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -120455,6 +123350,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LMC/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -120709,6 +123610,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LMC/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -120963,6 +123870,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LMC/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -121293,6 +124206,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LMC/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9LMC_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -121535,6 +124456,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LMC/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9LMC_003"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -121865,6 +124794,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LMC/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9LMC_005"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -122107,6 +125044,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LMC/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9LMC_006"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -122361,6 +125306,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LMC/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9LMC_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -122835,6 +125788,19 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LMC/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9LMC_001",
+      "J3_9LMC_001"
+     ]
+    ],
+    "superseded_by": [
+     "J3_9LMC_003"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -123440,6 +126406,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LMC/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9LMC_002",
+      "J3_9LMC_002"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -123694,6 +126671,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LMC/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9LMC_005"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -124168,6 +127153,19 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LMC/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9LMC_003",
+      "J3_9LMC_004"
+     ]
+    ],
+    "superseded_by": [
+     "J3_9LMC_006"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -124773,6 +127771,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9LMC/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9LMC_004",
+      "J3_9LMC_005"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -125181,6 +128190,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NBC/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -125392,6 +128407,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NBC/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9NBC_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -125646,6 +128669,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NBC/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -126119,6 +129148,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NBC/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_9NBC_002",
+      "J4_9NBC_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -126492,6 +129532,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NBC/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9NBC_001"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -126679,6 +129727,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NBH/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -126866,6 +129920,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NBH/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -127053,6 +130113,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NBH/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -127240,6 +130306,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NBH/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -127408,6 +130480,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NBH/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -127618,6 +130696,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NBH/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -127857,6 +130941,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NBH/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -128025,6 +131115,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NBH/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -128235,6 +131331,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NBH/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -128474,6 +131576,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NBH/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -128642,6 +131750,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NBH/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -128852,6 +131966,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NBH/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -129020,6 +132140,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NBH/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -129230,6 +132356,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NBH/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -129724,6 +132856,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NBH/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -130218,6 +133356,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NBH/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -130712,6 +133856,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NBH/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -131206,6 +134356,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NBH/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -131482,6 +134638,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -131693,6 +134855,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -131947,6 +135115,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -132134,6 +135308,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -132410,6 +135590,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -132621,6 +135807,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -132875,6 +136067,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -133062,6 +136260,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -133338,6 +136542,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -133549,6 +136759,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -133803,6 +137019,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -133990,6 +137212,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -134266,6 +137494,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -134477,6 +137711,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -134731,6 +137971,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -134918,6 +138164,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -135086,6 +138338,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -135296,6 +138554,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -135535,6 +138799,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -135703,6 +138973,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -135913,6 +139189,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -136152,6 +139434,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -136320,6 +139608,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -136530,6 +139824,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -136698,6 +139998,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -136908,6 +140214,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -137402,6 +140714,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -137875,6 +141193,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -138369,6 +141693,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -138842,6 +142172,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -139336,6 +142672,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -139809,6 +143151,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -140303,6 +143651,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -140776,6 +144130,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -141149,6 +144509,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -141522,6 +144888,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -141895,6 +145267,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -142268,6 +145646,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9NDD/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -142522,6 +145906,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4U/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -142776,6 +146166,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4U/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -143106,6 +146502,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4U/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9V4U_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -143348,6 +146752,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4U/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9V4U_003"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -143602,6 +147014,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4U/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9V4U_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -144076,6 +147496,19 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4U/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9V4U_001",
+      "J3_9V4U_001"
+     ]
+    ],
+    "superseded_by": [
+     "J3_9V4U_003"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -144681,6 +148114,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4U/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9V4U_002",
+      "J3_9V4U_002"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -144935,6 +148379,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4V/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -145189,6 +148639,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4V/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -145519,6 +148975,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4V/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9V4V_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -145761,6 +149225,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4V/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9V4V_003"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -146015,6 +149487,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4V/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9V4V_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -146489,6 +149969,19 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4V/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9V4V_001",
+      "J3_9V4V_001"
+     ]
+    ],
+    "superseded_by": [
+     "J3_9V4V_003"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -147094,6 +150587,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4V/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9V4V_002",
+      "J3_9V4V_002"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -147348,6 +150852,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4X/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -147602,6 +151112,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4X/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -147932,6 +151448,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4X/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9V4X_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -148174,6 +151698,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4X/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9V4X_003"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -148428,6 +151960,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4X/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9V4X_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -148902,6 +152442,19 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4X/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9V4X_001",
+      "J3_9V4X_001"
+     ]
+    ],
+    "superseded_by": [
+     "J3_9V4X_003"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -149507,6 +153060,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4X/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9V4X_002",
+      "J3_9V4X_002"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -149761,6 +153325,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4Y/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -150015,6 +153585,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4Y/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -150345,6 +153921,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4Y/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9V4Y_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -150587,6 +154171,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4Y/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9V4Y_003"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -150841,6 +154433,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4Y/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9V4Y_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -151315,6 +154915,19 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4Y/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9V4Y_001",
+      "J3_9V4Y_001"
+     ]
+    ],
+    "superseded_by": [
+     "J3_9V4Y_003"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -151920,6 +155533,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4Y/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9V4Y_002",
+      "J3_9V4Y_002"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -152174,6 +155798,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4Z/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -152428,6 +156058,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4Z/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -152758,6 +156394,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4Z/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9V4Z_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -153000,6 +156644,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4Z/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9V4Z_003"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -153254,6 +156906,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4Z/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9V4Z_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -153728,6 +157388,19 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4Z/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9V4Z_001",
+      "J3_9V4Z_001"
+     ]
+    ],
+    "superseded_by": [
+     "J3_9V4Z_003"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -154333,6 +158006,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V4Z/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9V4Z_002",
+      "J3_9V4Z_002"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -154587,6 +158271,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V50/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -154841,6 +158531,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V50/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -155083,6 +158779,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V50/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9V50_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -155557,6 +159261,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V50/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9V50_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -156162,6 +159874,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V50/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9V50_001",
+      "J3_9V50_001"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -156416,6 +160139,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V51/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -156670,6 +160399,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V51/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -157000,6 +160735,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V51/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9V51_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -157242,6 +160985,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V51/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9V51_003"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -157496,6 +161247,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V51/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_9V51_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -157970,6 +161729,19 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V51/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9V51_001",
+      "J3_9V51_001"
+     ]
+    ],
+    "superseded_by": [
+     "J3_9V51_003"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -158575,6 +162347,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/9V51/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "IL_9V51_002",
+      "J3_9V51_002"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   }
  ],
@@ -158591,6 +162374,6 @@
   "mapping_generated": "2026-10-15T03:48:01+00:00",
   "annotation_pipeline_version": "0.1.0",
   "annotation_config_version": "1.1",
-  "generated": "2026-10-18T08:10:20+00:00"
+  "generated": "2026-10-21T20:44:37+00:00"
  }
 }

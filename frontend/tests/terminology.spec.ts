@@ -19,7 +19,7 @@ test('annotation wording uses "X of Y RNA instances" / "X of Y PDB entries"; no 
   // visible tab text (description, legend, axis, labels)
   expect(await page.getByTestId('annotations-tab').innerText()).not.toMatch(BANNED)
   // one representative mark per category: tooltip + pinned details (expanded)
-  const marks: [string, number][] = [['track-HL', 53], ['track-JL', 53], ['track-IL', 53], ['track-lig-HPA', 26], ['track-pocket-occurrence', 53], ['track-sasa-median', 53], ['track-mod-CCC', 87]]
+  const marks: [string, number][] = [['track-HL', 53], ['track-JL', 53], ['track-IL', 30], ['track-lig-HPA', 26], ['track-pocket-occurrence', 53], ['track-sasa-median', 53], ['track-mod-CCC', 87]]
   for (const [id, pos] of marks) {
     const m = page.getByTestId(id).locator(`rect[data-pos="${pos}"]`)
     await m.scrollIntoViewIfNeeded(); await m.hover()

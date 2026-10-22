@@ -49,7 +49,13 @@
    "chains": [
     "A"
    ],
-   "consensus_positions": []
+   "consensus_positions": [],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "HL_9C6J_002",
@@ -61,7 +67,13 @@
    "chains": [
     "A"
    ],
-   "consensus_positions": []
+   "consensus_positions": [],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "HL_9C6J_003",
@@ -73,7 +85,13 @@
    "chains": [
     "A"
    ],
-   "consensus_positions": []
+   "consensus_positions": [],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "HL_9C6J_004",
@@ -85,7 +103,13 @@
    "chains": [
     "A"
    ],
-   "consensus_positions": []
+   "consensus_positions": [],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "HL_9C6J_005",
@@ -97,7 +121,13 @@
    "chains": [
     "A"
    ],
-   "consensus_positions": []
+   "consensus_positions": [],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "HL_9C6J_006",
@@ -109,7 +139,13 @@
    "chains": [
     "A"
    ],
-   "consensus_positions": []
+   "consensus_positions": [],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "HL_9C6J_007",
@@ -121,7 +157,13 @@
    "chains": [
     "A"
    ],
-   "consensus_positions": []
+   "consensus_positions": [],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "HL_9C6J_008",
@@ -133,7 +175,13 @@
    "chains": [
     "A"
    ],
-   "consensus_positions": []
+   "consensus_positions": [],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "IL_9C6J_001",
@@ -145,7 +193,13 @@
    "chains": [
     "A"
    ],
-   "consensus_positions": []
+   "consensus_positions": [],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "IL_9C6J_002",
@@ -157,7 +211,13 @@
    "chains": [
     "A"
    ],
-   "consensus_positions": []
+   "consensus_positions": [],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "IL_9C6J_003",
@@ -169,7 +229,13 @@
    "chains": [
     "A"
    ],
-   "consensus_positions": []
+   "consensus_positions": [],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "IL_9C6J_004",
@@ -181,7 +247,13 @@
    "chains": [
     "A"
    ],
-   "consensus_positions": []
+   "consensus_positions": [],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "IL_9C6J_005",
@@ -193,7 +265,13 @@
    "chains": [
     "A"
    ],
-   "consensus_positions": []
+   "consensus_positions": [],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "IL_9C6J_006",
@@ -205,7 +283,13 @@
    "chains": [
     "A"
    ],
-   "consensus_positions": []
+   "consensus_positions": [],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "IL_9C6J_007",
@@ -217,7 +301,13 @@
    "chains": [
     "A"
    ],
-   "consensus_positions": []
+   "consensus_positions": [],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "IL_9C6J_008",
@@ -229,7 +319,13 @@
    "chains": [
     "A"
    ],
-   "consensus_positions": []
+   "consensus_positions": [],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "IL_9C6J_009",
@@ -241,7 +337,13 @@
    "chains": [
     "A"
    ],
-   "consensus_positions": []
+   "consensus_positions": [],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "IL_9C6J_010",
@@ -253,7 +355,13 @@
    "chains": [
     "A"
    ],
-   "consensus_positions": []
+   "consensus_positions": [],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "IL_9C6J_011",
@@ -268,7 +376,13 @@
    "consensus_positions": [
     103,
     104
-   ]
+   ],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "IL_9C6J_012",
@@ -286,7 +400,13 @@
     101,
     102,
     103
-   ]
+   ],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "IL_9C6J_013",
@@ -298,7 +418,13 @@
    "chains": [
     "A"
    ],
-   "consensus_positions": []
+   "consensus_positions": [],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "IL_9C6J_014",
@@ -310,7 +436,13 @@
    "chains": [
     "A"
    ],
-   "consensus_positions": []
+   "consensus_positions": [],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "J3_9C6J_001",
@@ -322,7 +454,13 @@
    "chains": [
     "A"
    ],
-   "consensus_positions": []
+   "consensus_positions": [],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "J5_9C6J_001",
@@ -334,7 +472,13 @@
    "chains": [
     "A"
    ],
-   "consensus_positions": []
+   "consensus_positions": [],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   }
  ],
  "bound_molecules": [
@@ -621,7 +765,8 @@
      "loop_id": "IL_9C6J_001",
      "loop_type": "IL",
      "motif_group": "IL_99498.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -643,7 +788,8 @@
      "loop_id": "IL_9C6J_001",
      "loop_type": "IL",
      "motif_group": "IL_99498.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -665,7 +811,8 @@
      "loop_id": "IL_9C6J_001",
      "loop_type": "IL",
      "motif_group": "IL_99498.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -687,7 +834,8 @@
      "loop_id": "IL_9C6J_001",
      "loop_type": "IL",
      "motif_group": "IL_99498.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -709,7 +857,8 @@
      "loop_id": "IL_9C6J_001",
      "loop_type": "IL",
      "motif_group": "IL_99498.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -878,7 +1027,8 @@
      "loop_id": "J5_9C6J_001",
      "loop_type": "J5",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -900,7 +1050,8 @@
      "loop_id": "J5_9C6J_001",
      "loop_type": "J5",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -922,7 +1073,8 @@
      "loop_id": "J5_9C6J_001",
      "loop_type": "J5",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -944,7 +1096,8 @@
      "loop_id": "J5_9C6J_001",
      "loop_type": "J5",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -966,7 +1119,8 @@
      "loop_id": "J5_9C6J_001",
      "loop_type": "J5",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1003,7 +1157,8 @@
      "loop_id": "HL_9C6J_001",
      "loop_type": "HL",
      "motif_group": "HL_33597.8",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1025,7 +1180,8 @@
      "loop_id": "HL_9C6J_001",
      "loop_type": "HL",
      "motif_group": "HL_33597.8",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1047,7 +1203,8 @@
      "loop_id": "HL_9C6J_001",
      "loop_type": "HL",
      "motif_group": "HL_33597.8",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1069,7 +1226,8 @@
      "loop_id": "HL_9C6J_001",
      "loop_type": "HL",
      "motif_group": "HL_33597.8",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1091,7 +1249,8 @@
      "loop_id": "HL_9C6J_001",
      "loop_type": "HL",
      "motif_group": "HL_33597.8",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1113,7 +1272,8 @@
      "loop_id": "HL_9C6J_001",
      "loop_type": "HL",
      "motif_group": "HL_33597.8",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1135,7 +1295,8 @@
      "loop_id": "HL_9C6J_001",
      "loop_type": "HL",
      "motif_group": "HL_33597.8",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1157,7 +1318,8 @@
      "loop_id": "HL_9C6J_001",
      "loop_type": "HL",
      "motif_group": "HL_33597.8",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1179,7 +1341,8 @@
      "loop_id": "HL_9C6J_001",
      "loop_type": "HL",
      "motif_group": "HL_33597.8",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1216,7 +1379,8 @@
      "loop_id": "J5_9C6J_001",
      "loop_type": "J5",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1238,7 +1402,8 @@
      "loop_id": "J5_9C6J_001",
      "loop_type": "J5",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1260,7 +1425,8 @@
      "loop_id": "J5_9C6J_001",
      "loop_type": "J5",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1282,7 +1448,8 @@
      "loop_id": "J5_9C6J_001",
      "loop_type": "J5",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1349,7 +1516,8 @@
      "loop_id": "HL_9C6J_002",
      "loop_type": "HL",
      "motif_group": "HL_94488.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1371,7 +1539,8 @@
      "loop_id": "HL_9C6J_002",
      "loop_type": "HL",
      "motif_group": "HL_94488.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1393,7 +1562,8 @@
      "loop_id": "HL_9C6J_002",
      "loop_type": "HL",
      "motif_group": "HL_94488.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1415,7 +1585,8 @@
      "loop_id": "HL_9C6J_002",
      "loop_type": "HL",
      "motif_group": "HL_94488.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1437,7 +1608,8 @@
      "loop_id": "HL_9C6J_002",
      "loop_type": "HL",
      "motif_group": "HL_94488.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1459,7 +1631,8 @@
      "loop_id": "HL_9C6J_002",
      "loop_type": "HL",
      "motif_group": "HL_94488.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1481,7 +1654,8 @@
      "loop_id": "HL_9C6J_002",
      "loop_type": "HL",
      "motif_group": "HL_94488.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1503,7 +1677,8 @@
      "loop_id": "HL_9C6J_002",
      "loop_type": "HL",
      "motif_group": "HL_94488.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1525,7 +1700,8 @@
      "loop_id": "HL_9C6J_002",
      "loop_type": "HL",
      "motif_group": "HL_94488.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1547,7 +1723,8 @@
      "loop_id": "HL_9C6J_002",
      "loop_type": "HL",
      "motif_group": "HL_94488.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1569,7 +1746,8 @@
      "loop_id": "HL_9C6J_002",
      "loop_type": "HL",
      "motif_group": "HL_94488.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1591,7 +1769,8 @@
      "loop_id": "HL_9C6J_002",
      "loop_type": "HL",
      "motif_group": "HL_94488.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1613,7 +1792,8 @@
      "loop_id": "HL_9C6J_002",
      "loop_type": "HL",
      "motif_group": "HL_94488.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1635,7 +1815,8 @@
      "loop_id": "HL_9C6J_002",
      "loop_type": "HL",
      "motif_group": "HL_94488.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1657,7 +1838,8 @@
      "loop_id": "HL_9C6J_002",
      "loop_type": "HL",
      "motif_group": "HL_94488.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1724,7 +1906,8 @@
      "loop_id": "J5_9C6J_001",
      "loop_type": "J5",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1746,7 +1929,8 @@
      "loop_id": "J5_9C6J_001",
      "loop_type": "J5",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": [
@@ -1780,7 +1964,8 @@
      "loop_id": "J5_9C6J_001",
      "loop_type": "J5",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": [
@@ -1814,7 +1999,8 @@
      "loop_id": "J5_9C6J_001",
      "loop_type": "J5",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1851,7 +2037,8 @@
      "loop_id": "IL_9C6J_002",
      "loop_type": "IL",
      "motif_group": "IL_15190.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1873,7 +2060,8 @@
      "loop_id": "IL_9C6J_002",
      "loop_type": "IL",
      "motif_group": "IL_15190.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1895,7 +2083,8 @@
      "loop_id": "IL_9C6J_002",
      "loop_type": "IL",
      "motif_group": "IL_15190.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1917,7 +2106,8 @@
      "loop_id": "IL_9C6J_002",
      "loop_type": "IL",
      "motif_group": "IL_15190.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1939,7 +2129,8 @@
      "loop_id": "IL_9C6J_002",
      "loop_type": "IL",
      "motif_group": "IL_15190.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1976,7 +2167,8 @@
      "loop_id": "IL_9C6J_003",
      "loop_type": "IL",
      "motif_group": "IL_89312.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1998,7 +2190,8 @@
      "loop_id": "IL_9C6J_003",
      "loop_type": "IL",
      "motif_group": "IL_89312.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2020,7 +2213,8 @@
      "loop_id": "IL_9C6J_003",
      "loop_type": "IL",
      "motif_group": "IL_89312.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2042,7 +2236,8 @@
      "loop_id": "IL_9C6J_003",
      "loop_type": "IL",
      "motif_group": "IL_89312.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2094,7 +2289,8 @@
      "loop_id": "IL_9C6J_004",
      "loop_type": "IL",
      "motif_group": "IL_28408.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2116,7 +2312,8 @@
      "loop_id": "IL_9C6J_004",
      "loop_type": "IL",
      "motif_group": "IL_28408.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2138,7 +2335,8 @@
      "loop_id": "IL_9C6J_004",
      "loop_type": "IL",
      "motif_group": "IL_28408.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2220,7 +2418,8 @@
      "loop_id": "HL_9C6J_003",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2242,7 +2441,8 @@
      "loop_id": "HL_9C6J_003",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2264,7 +2464,8 @@
      "loop_id": "HL_9C6J_003",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2286,7 +2487,8 @@
      "loop_id": "HL_9C6J_003",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2308,7 +2510,8 @@
      "loop_id": "HL_9C6J_003",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2330,7 +2533,8 @@
      "loop_id": "HL_9C6J_003",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2412,7 +2616,8 @@
      "loop_id": "IL_9C6J_004",
      "loop_type": "IL",
      "motif_group": "IL_28408.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2434,7 +2639,8 @@
      "loop_id": "IL_9C6J_004",
      "loop_type": "IL",
      "motif_group": "IL_28408.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2486,7 +2692,8 @@
      "loop_id": "IL_9C6J_003",
      "loop_type": "IL",
      "motif_group": "IL_89312.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2508,7 +2715,8 @@
      "loop_id": "IL_9C6J_003",
      "loop_type": "IL",
      "motif_group": "IL_89312.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2530,7 +2738,8 @@
      "loop_id": "IL_9C6J_003",
      "loop_type": "IL",
      "motif_group": "IL_89312.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2552,7 +2761,8 @@
      "loop_id": "IL_9C6J_003",
      "loop_type": "IL",
      "motif_group": "IL_89312.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2574,7 +2784,8 @@
      "loop_id": "IL_9C6J_003",
      "loop_type": "IL",
      "motif_group": "IL_89312.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2596,7 +2807,8 @@
      "loop_id": "IL_9C6J_003",
      "loop_type": "IL",
      "motif_group": "IL_89312.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2618,7 +2830,8 @@
      "loop_id": "IL_9C6J_003",
      "loop_type": "IL",
      "motif_group": "IL_89312.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2640,7 +2853,8 @@
      "loop_id": "IL_9C6J_003",
      "loop_type": "IL",
      "motif_group": "IL_89312.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2662,7 +2876,8 @@
      "loop_id": "IL_9C6J_003",
      "loop_type": "IL",
      "motif_group": "IL_89312.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": [
@@ -2711,7 +2926,8 @@
      "loop_id": "IL_9C6J_002",
      "loop_type": "IL",
      "motif_group": "IL_15190.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2733,7 +2949,8 @@
      "loop_id": "IL_9C6J_002",
      "loop_type": "IL",
      "motif_group": "IL_15190.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2755,7 +2972,8 @@
      "loop_id": "IL_9C6J_002",
      "loop_type": "IL",
      "motif_group": "IL_15190.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2777,7 +2995,8 @@
      "loop_id": "IL_9C6J_002",
      "loop_type": "IL",
      "motif_group": "IL_15190.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2799,7 +3018,8 @@
      "loop_id": "IL_9C6J_002",
      "loop_type": "IL",
      "motif_group": "IL_15190.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2836,7 +3056,8 @@
      "loop_id": "J5_9C6J_001",
      "loop_type": "J5",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": [
@@ -2870,7 +3091,8 @@
      "loop_id": "J5_9C6J_001",
      "loop_type": "J5",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": [
@@ -2904,7 +3126,8 @@
      "loop_id": "J5_9C6J_001",
      "loop_type": "J5",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2926,7 +3149,8 @@
      "loop_id": "J5_9C6J_001",
      "loop_type": "J5",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2948,7 +3172,8 @@
      "loop_id": "J5_9C6J_001",
      "loop_type": "J5",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3030,7 +3255,8 @@
      "loop_id": "IL_9C6J_005",
      "loop_type": "IL",
      "motif_group": "IL_26685.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3052,7 +3278,8 @@
      "loop_id": "IL_9C6J_005",
      "loop_type": "IL",
      "motif_group": "IL_26685.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3119,7 +3346,8 @@
      "loop_id": "J3_9C6J_001",
      "loop_type": "J3",
      "motif_group": "J3_14360.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3141,7 +3369,8 @@
      "loop_id": "J3_9C6J_001",
      "loop_type": "J3",
      "motif_group": "J3_14360.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3163,13 +3392,15 @@
      "loop_id": "HL_9C6J_004",
      "loop_type": "HL",
      "motif_group": "HL_37569.4",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     },
     {
      "loop_id": "J3_9C6J_001",
      "loop_type": "J3",
      "motif_group": "J3_14360.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3191,7 +3422,8 @@
      "loop_id": "HL_9C6J_004",
      "loop_type": "HL",
      "motif_group": "HL_37569.4",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": [
@@ -3225,7 +3457,8 @@
      "loop_id": "HL_9C6J_004",
      "loop_type": "HL",
      "motif_group": "HL_37569.4",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3247,7 +3480,8 @@
      "loop_id": "HL_9C6J_004",
      "loop_type": "HL",
      "motif_group": "HL_37569.4",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3269,7 +3503,8 @@
      "loop_id": "HL_9C6J_004",
      "loop_type": "HL",
      "motif_group": "HL_37569.4",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3291,7 +3526,8 @@
      "loop_id": "HL_9C6J_004",
      "loop_type": "HL",
      "motif_group": "HL_37569.4",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3313,13 +3549,15 @@
      "loop_id": "HL_9C6J_004",
      "loop_type": "HL",
      "motif_group": "HL_37569.4",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     },
     {
      "loop_id": "J3_9C6J_001",
      "loop_type": "J3",
      "motif_group": "J3_14360.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3341,7 +3579,8 @@
      "loop_id": "J3_9C6J_001",
      "loop_type": "J3",
      "motif_group": "J3_14360.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3363,7 +3602,8 @@
      "loop_id": "J3_9C6J_001",
      "loop_type": "J3",
      "motif_group": "J3_14360.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3385,7 +3625,8 @@
      "loop_id": "J3_9C6J_001",
      "loop_type": "J3",
      "motif_group": "J3_14360.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3407,7 +3648,8 @@
      "loop_id": "J3_9C6J_001",
      "loop_type": "J3",
      "motif_group": "J3_14360.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": [
@@ -3486,7 +3728,8 @@
      "loop_id": "IL_9C6J_006",
      "loop_type": "IL",
      "motif_group": "IL_77045.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3508,7 +3751,8 @@
      "loop_id": "IL_9C6J_006",
      "loop_type": "IL",
      "motif_group": "IL_77045.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3530,7 +3774,8 @@
      "loop_id": "IL_9C6J_006",
      "loop_type": "IL",
      "motif_group": "IL_77045.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3552,7 +3797,8 @@
      "loop_id": "IL_9C6J_006",
      "loop_type": "IL",
      "motif_group": "IL_77045.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3574,7 +3820,8 @@
      "loop_id": "IL_9C6J_006",
      "loop_type": "IL",
      "motif_group": "IL_77045.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3596,7 +3843,8 @@
      "loop_id": "IL_9C6J_006",
      "loop_type": "IL",
      "motif_group": "IL_77045.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3618,7 +3866,8 @@
      "loop_id": "IL_9C6J_006",
      "loop_type": "IL",
      "motif_group": "IL_77045.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3640,7 +3889,8 @@
      "loop_id": "IL_9C6J_006",
      "loop_type": "IL",
      "motif_group": "IL_77045.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3677,7 +3927,8 @@
      "loop_id": "IL_9C6J_007",
      "loop_type": "IL",
      "motif_group": "IL_39691.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3699,7 +3950,8 @@
      "loop_id": "IL_9C6J_007",
      "loop_type": "IL",
      "motif_group": "IL_39691.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3721,7 +3973,8 @@
      "loop_id": "IL_9C6J_007",
      "loop_type": "IL",
      "motif_group": "IL_39691.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3743,7 +3996,8 @@
      "loop_id": "IL_9C6J_007",
      "loop_type": "IL",
      "motif_group": "IL_39691.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3855,7 +4109,8 @@
      "loop_id": "IL_9C6J_008",
      "loop_type": "IL",
      "motif_group": "IL_53787.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3877,7 +4132,8 @@
      "loop_id": "IL_9C6J_008",
      "loop_type": "IL",
      "motif_group": "IL_53787.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3929,7 +4185,8 @@
      "loop_id": "IL_9C6J_009",
      "loop_type": "IL",
      "motif_group": "IL_77691.8",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3951,7 +4208,8 @@
      "loop_id": "IL_9C6J_009",
      "loop_type": "IL",
      "motif_group": "IL_77691.8",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3973,7 +4231,8 @@
      "loop_id": "IL_9C6J_009",
      "loop_type": "IL",
      "motif_group": "IL_77691.8",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3995,7 +4254,8 @@
      "loop_id": "IL_9C6J_009",
      "loop_type": "IL",
      "motif_group": "IL_77691.8",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4047,7 +4307,8 @@
      "loop_id": "HL_9C6J_005",
      "loop_type": "HL",
      "motif_group": "HL_52651.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4069,7 +4330,8 @@
      "loop_id": "HL_9C6J_005",
      "loop_type": "HL",
      "motif_group": "HL_52651.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4091,7 +4353,8 @@
      "loop_id": "HL_9C6J_005",
      "loop_type": "HL",
      "motif_group": "HL_52651.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4113,7 +4376,8 @@
      "loop_id": "HL_9C6J_005",
      "loop_type": "HL",
      "motif_group": "HL_52651.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4135,7 +4399,8 @@
      "loop_id": "HL_9C6J_005",
      "loop_type": "HL",
      "motif_group": "HL_52651.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4157,7 +4422,8 @@
      "loop_id": "HL_9C6J_005",
      "loop_type": "HL",
      "motif_group": "HL_52651.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4179,7 +4445,8 @@
      "loop_id": "HL_9C6J_005",
      "loop_type": "HL",
      "motif_group": "HL_52651.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": [
@@ -4213,7 +4480,8 @@
      "loop_id": "HL_9C6J_005",
      "loop_type": "HL",
      "motif_group": "HL_52651.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4235,7 +4503,8 @@
      "loop_id": "HL_9C6J_005",
      "loop_type": "HL",
      "motif_group": "HL_52651.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": [
@@ -4269,7 +4538,8 @@
      "loop_id": "HL_9C6J_005",
      "loop_type": "HL",
      "motif_group": "HL_52651.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4321,7 +4591,8 @@
      "loop_id": "IL_9C6J_009",
      "loop_type": "IL",
      "motif_group": "IL_77691.8",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4343,7 +4614,8 @@
      "loop_id": "IL_9C6J_009",
      "loop_type": "IL",
      "motif_group": "IL_77691.8",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4365,7 +4637,8 @@
      "loop_id": "IL_9C6J_009",
      "loop_type": "IL",
      "motif_group": "IL_77691.8",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4387,7 +4660,8 @@
      "loop_id": "IL_9C6J_009",
      "loop_type": "IL",
      "motif_group": "IL_77691.8",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4409,7 +4683,8 @@
      "loop_id": "IL_9C6J_009",
      "loop_type": "IL",
      "motif_group": "IL_77691.8",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4461,7 +4736,8 @@
      "loop_id": "IL_9C6J_008",
      "loop_type": "IL",
      "motif_group": "IL_53787.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4483,7 +4759,8 @@
      "loop_id": "IL_9C6J_008",
      "loop_type": "IL",
      "motif_group": "IL_53787.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4505,7 +4782,8 @@
      "loop_id": "IL_9C6J_008",
      "loop_type": "IL",
      "motif_group": "IL_53787.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4527,7 +4805,8 @@
      "loop_id": "IL_9C6J_008",
      "loop_type": "IL",
      "motif_group": "IL_53787.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4549,7 +4828,8 @@
      "loop_id": "IL_9C6J_008",
      "loop_type": "IL",
      "motif_group": "IL_53787.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4571,7 +4851,8 @@
      "loop_id": "IL_9C6J_008",
      "loop_type": "IL",
      "motif_group": "IL_53787.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4593,7 +4874,8 @@
      "loop_id": "IL_9C6J_008",
      "loop_type": "IL",
      "motif_group": "IL_53787.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4615,7 +4897,8 @@
      "loop_id": "IL_9C6J_008",
      "loop_type": "IL",
      "motif_group": "IL_53787.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4637,7 +4920,8 @@
      "loop_id": "IL_9C6J_008",
      "loop_type": "IL",
      "motif_group": "IL_53787.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4659,7 +4943,8 @@
      "loop_id": "IL_9C6J_008",
      "loop_type": "IL",
      "motif_group": "IL_53787.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4681,7 +4966,8 @@
      "loop_id": "IL_9C6J_008",
      "loop_type": "IL",
      "motif_group": "IL_53787.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4703,7 +4989,8 @@
      "loop_id": "IL_9C6J_008",
      "loop_type": "IL",
      "motif_group": "IL_53787.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4725,7 +5012,8 @@
      "loop_id": "IL_9C6J_008",
      "loop_type": "IL",
      "motif_group": "IL_53787.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4837,7 +5125,8 @@
      "loop_id": "IL_9C6J_007",
      "loop_type": "IL",
      "motif_group": "IL_39691.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4859,7 +5148,8 @@
      "loop_id": "IL_9C6J_007",
      "loop_type": "IL",
      "motif_group": "IL_39691.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4881,7 +5171,8 @@
      "loop_id": "IL_9C6J_007",
      "loop_type": "IL",
      "motif_group": "IL_39691.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4903,7 +5194,8 @@
      "loop_id": "IL_9C6J_007",
      "loop_type": "IL",
      "motif_group": "IL_39691.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4940,7 +5232,8 @@
      "loop_id": "IL_9C6J_006",
      "loop_type": "IL",
      "motif_group": "IL_77045.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4962,7 +5255,8 @@
      "loop_id": "IL_9C6J_006",
      "loop_type": "IL",
      "motif_group": "IL_77045.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -4984,7 +5278,8 @@
      "loop_id": "IL_9C6J_006",
      "loop_type": "IL",
      "motif_group": "IL_77045.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -5006,7 +5301,8 @@
      "loop_id": "IL_9C6J_006",
      "loop_type": "IL",
      "motif_group": "IL_77045.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -5028,7 +5324,8 @@
      "loop_id": "IL_9C6J_006",
      "loop_type": "IL",
      "motif_group": "IL_77045.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -5095,7 +5392,8 @@
      "loop_id": "J3_9C6J_001",
      "loop_type": "J3",
      "motif_group": "J3_14360.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -5117,7 +5415,8 @@
      "loop_id": "J3_9C6J_001",
      "loop_type": "J3",
      "motif_group": "J3_14360.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -5184,7 +5483,8 @@
      "loop_id": "IL_9C6J_005",
      "loop_type": "IL",
      "motif_group": "IL_26685.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -5206,7 +5506,8 @@
      "loop_id": "IL_9C6J_005",
      "loop_type": "IL",
      "motif_group": "IL_26685.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -5228,7 +5529,8 @@
      "loop_id": "IL_9C6J_005",
      "loop_type": "IL",
      "motif_group": "IL_26685.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -5250,7 +5552,8 @@
      "loop_id": "IL_9C6J_005",
      "loop_type": "IL",
      "motif_group": "IL_26685.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -5272,7 +5575,8 @@
      "loop_id": "IL_9C6J_005",
      "loop_type": "IL",
      "motif_group": "IL_26685.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -5366,7 +5670,8 @@
      "loop_id": "J5_9C6J_001",
      "loop_type": "J5",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -5388,7 +5693,8 @@
      "loop_id": "J5_9C6J_001",
      "loop_type": "J5",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -5410,7 +5716,8 @@
      "loop_id": "J5_9C6J_001",
      "loop_type": "J5",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -5432,7 +5739,8 @@
      "loop_id": "J5_9C6J_001",
      "loop_type": "J5",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -5454,7 +5762,8 @@
      "loop_id": "J5_9C6J_001",
      "loop_type": "J5",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -5611,7 +5920,8 @@
      "loop_id": "IL_9C6J_001",
      "loop_type": "IL",
      "motif_group": "IL_99498.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -5633,7 +5943,8 @@
      "loop_id": "IL_9C6J_001",
      "loop_type": "IL",
      "motif_group": "IL_99498.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -5655,7 +5966,8 @@
      "loop_id": "IL_9C6J_001",
      "loop_type": "IL",
      "motif_group": "IL_99498.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -5677,7 +5989,8 @@
      "loop_id": "IL_9C6J_001",
      "loop_type": "IL",
      "motif_group": "IL_99498.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -5699,7 +6012,8 @@
      "loop_id": "IL_9C6J_001",
      "loop_type": "IL",
      "motif_group": "IL_99498.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -5721,7 +6035,8 @@
      "loop_id": "IL_9C6J_001",
      "loop_type": "IL",
      "motif_group": "IL_99498.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -5803,7 +6118,8 @@
      "loop_id": "IL_9C6J_010",
      "loop_type": "IL",
      "motif_group": "IL_96788.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -5825,7 +6141,8 @@
      "loop_id": "IL_9C6J_010",
      "loop_type": "IL",
      "motif_group": "IL_96788.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -5847,7 +6164,8 @@
      "loop_id": "IL_9C6J_010",
      "loop_type": "IL",
      "motif_group": "IL_96788.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": [
@@ -5881,7 +6199,8 @@
      "loop_id": "IL_9C6J_010",
      "loop_type": "IL",
      "motif_group": "IL_96788.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -5903,7 +6222,8 @@
      "loop_id": "IL_9C6J_010",
      "loop_type": "IL",
      "motif_group": "IL_96788.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -5955,7 +6275,8 @@
      "loop_id": "HL_9C6J_006",
      "loop_type": "HL",
      "motif_group": "HL_75660.11",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -5977,7 +6298,8 @@
      "loop_id": "HL_9C6J_006",
      "loop_type": "HL",
      "motif_group": "HL_75660.11",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -5999,7 +6321,8 @@
      "loop_id": "HL_9C6J_006",
      "loop_type": "HL",
      "motif_group": "HL_75660.11",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -6021,7 +6344,8 @@
      "loop_id": "HL_9C6J_006",
      "loop_type": "HL",
      "motif_group": "HL_75660.11",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -6043,7 +6367,8 @@
      "loop_id": "HL_9C6J_006",
      "loop_type": "HL",
      "motif_group": "HL_75660.11",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -6065,7 +6390,8 @@
      "loop_id": "HL_9C6J_006",
      "loop_type": "HL",
      "motif_group": "HL_75660.11",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -6117,7 +6443,8 @@
      "loop_id": "IL_9C6J_010",
      "loop_type": "IL",
      "motif_group": "IL_96788.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -6139,7 +6466,8 @@
      "loop_id": "IL_9C6J_010",
      "loop_type": "IL",
      "motif_group": "IL_96788.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -6161,7 +6489,8 @@
      "loop_id": "IL_9C6J_010",
      "loop_type": "IL",
      "motif_group": "IL_96788.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -6183,7 +6512,8 @@
      "loop_id": "IL_9C6J_010",
      "loop_type": "IL",
      "motif_group": "IL_96788.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -6205,7 +6535,8 @@
      "loop_id": "IL_9C6J_010",
      "loop_type": "IL",
      "motif_group": "IL_96788.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -6386,7 +6717,8 @@
      "loop_id": "IL_9C6J_011",
      "loop_type": "IL",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -6408,7 +6740,8 @@
      "loop_id": "IL_9C6J_011",
      "loop_type": "IL",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -6430,13 +6763,15 @@
      "loop_id": "IL_9C6J_011",
      "loop_type": "IL",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     },
     {
      "loop_id": "IL_9C6J_012",
      "loop_type": "IL",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -6458,7 +6793,8 @@
      "loop_id": "IL_9C6J_012",
      "loop_type": "IL",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -6480,7 +6816,8 @@
      "loop_id": "IL_9C6J_012",
      "loop_type": "IL",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -6502,7 +6839,8 @@
      "loop_id": "IL_9C6J_012",
      "loop_type": "IL",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -6524,7 +6862,8 @@
      "loop_id": "IL_9C6J_012",
      "loop_type": "IL",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -6546,7 +6885,8 @@
      "loop_id": "IL_9C6J_012",
      "loop_type": "IL",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -7918,7 +8258,8 @@
      "loop_id": "IL_9C6J_012",
      "loop_type": "IL",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -7940,7 +8281,8 @@
      "loop_id": "IL_9C6J_012",
      "loop_type": "IL",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -7962,7 +8304,8 @@
      "loop_id": "IL_9C6J_012",
      "loop_type": "IL",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -7984,7 +8327,8 @@
      "loop_id": "IL_9C6J_012",
      "loop_type": "IL",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -8006,13 +8350,15 @@
      "loop_id": "IL_9C6J_011",
      "loop_type": "IL",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     },
     {
      "loop_id": "IL_9C6J_012",
      "loop_type": "IL",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": [
@@ -8046,7 +8392,8 @@
      "loop_id": "IL_9C6J_011",
      "loop_type": "IL",
      "motif_group": null,
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": [
@@ -8230,7 +8577,8 @@
      "loop_id": "IL_9C6J_013",
      "loop_type": "IL",
      "motif_group": "IL_87739.2",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -8252,7 +8600,8 @@
      "loop_id": "IL_9C6J_013",
      "loop_type": "IL",
      "motif_group": "IL_87739.2",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -8274,7 +8623,8 @@
      "loop_id": "IL_9C6J_013",
      "loop_type": "IL",
      "motif_group": "IL_87739.2",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -8296,7 +8646,8 @@
      "loop_id": "IL_9C6J_013",
      "loop_type": "IL",
      "motif_group": "IL_87739.2",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -8348,7 +8699,8 @@
      "loop_id": "HL_9C6J_007",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -8370,7 +8722,8 @@
      "loop_id": "HL_9C6J_007",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -8392,7 +8745,8 @@
      "loop_id": "HL_9C6J_007",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -8414,7 +8768,8 @@
      "loop_id": "HL_9C6J_007",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -8436,7 +8791,8 @@
      "loop_id": "HL_9C6J_007",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -8458,7 +8814,8 @@
      "loop_id": "HL_9C6J_007",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -8510,7 +8867,8 @@
      "loop_id": "IL_9C6J_013",
      "loop_type": "IL",
      "motif_group": "IL_87739.2",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -8532,7 +8890,8 @@
      "loop_id": "IL_9C6J_013",
      "loop_type": "IL",
      "motif_group": "IL_87739.2",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -8554,7 +8913,8 @@
      "loop_id": "IL_9C6J_013",
      "loop_type": "IL",
      "motif_group": "IL_87739.2",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -8576,7 +8936,8 @@
      "loop_id": "IL_9C6J_013",
      "loop_type": "IL",
      "motif_group": "IL_87739.2",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -8598,7 +8959,8 @@
      "loop_id": "IL_9C6J_013",
      "loop_type": "IL",
      "motif_group": "IL_87739.2",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -8854,7 +9216,8 @@
      "loop_id": "IL_9C6J_014",
      "loop_type": "IL",
      "motif_group": "IL_44609.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -8876,7 +9239,8 @@
      "loop_id": "IL_9C6J_014",
      "loop_type": "IL",
      "motif_group": "IL_44609.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -8913,7 +9277,8 @@
      "loop_id": "HL_9C6J_008",
      "loop_type": "HL",
      "motif_group": "HL_64036.3",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -8935,7 +9300,8 @@
      "loop_id": "HL_9C6J_008",
      "loop_type": "HL",
      "motif_group": "HL_64036.3",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -8957,7 +9323,8 @@
      "loop_id": "HL_9C6J_008",
      "loop_type": "HL",
      "motif_group": "HL_64036.3",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -8979,7 +9346,8 @@
      "loop_id": "HL_9C6J_008",
      "loop_type": "HL",
      "motif_group": "HL_64036.3",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -9001,7 +9369,8 @@
      "loop_id": "HL_9C6J_008",
      "loop_type": "HL",
      "motif_group": "HL_64036.3",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": [
@@ -9035,7 +9404,8 @@
      "loop_id": "HL_9C6J_008",
      "loop_type": "HL",
      "motif_group": "HL_64036.3",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -9072,7 +9442,8 @@
      "loop_id": "IL_9C6J_014",
      "loop_type": "IL",
      "motif_group": "IL_44609.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -9094,7 +9465,8 @@
      "loop_id": "IL_9C6J_014",
      "loop_type": "IL",
      "motif_group": "IL_44609.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -9116,7 +9488,8 @@
      "loop_id": "IL_9C6J_014",
      "loop_type": "IL",
      "motif_group": "IL_44609.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -9138,7 +9511,8 @@
      "loop_id": "IL_9C6J_014",
      "loop_type": "IL",
      "motif_group": "IL_44609.5",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -9663,6 +10037,6 @@
   "mapping_generated": "2026-10-17T16:05:41+00:00",
   "annotation_pipeline_version": "0.1.0",
   "annotation_config_version": "1.1",
-  "generated": "2026-10-18T08:10:10+00:00"
+  "generated": "2026-10-21T20:44:44+00:00"
  }
 }

@@ -94,6 +94,8 @@ function loopTrack(id: 'HL' | 'IL' | 'JL', typeName: string, tracks: TracksDatas
       if (id === 'JL') { const bt = t.junction_loops_union.by_type_n_instances ?? { J3: t.junction_loops_J3.n_instances, J4: t.junction_loops_J4.n_instances }
         details.push(`${Object.entries(bt).map(([k, v]) => `${k}: ${v} instances`).join(', ')} (union, never summed)`) }
       if ('by_motif_group' in p) details.push(`Motif groups: ${Object.entries(p.by_motif_group).map(([g, v]) => `${g} (${v.n_loops})`).join(', ') || 'none'}`)
+      const sup = p.superseded_loop_ids ?? []
+      if (sup.length) details.push(`${plural(sup.length, 'loop', 'loops')} merged by BGSU into a larger loop not counted here.`)
       details.push(`${DETERMINABLE} BGSU loop classifications can overlap.`)
       // RNA instances that are not in n: no observed nucleotide at this position (deleted, outside the aligned region or no coordinates), or
       // an observed nucleotide whose instance has no record from the source; both counts come from the unchanged backend denominators

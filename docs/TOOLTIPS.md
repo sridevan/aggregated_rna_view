@@ -102,6 +102,15 @@ With a numbering reference, the title reads "Rfam position {pos}".
 **RNA loop annotations, ⓘ**
 > BGSU hairpin, internal and junction loops in this RNA chain. Select a block to highlight the full loop, including discontinuous segments.
 
+**Loop block, hover**
+> {loop type} ({HL | IL | J3 | J4 | Jn})
+> {BGSU loop id}
+> {n} nucleotides · {k} segments *(· {m} in another chain)*
+> Merged from {loop id} + {loop id} *(BGSU merged loops only)*
+> Motif: {group} ({BGSU annotation}) · Motif Atlas {release} · {loop is a group member | homologous/geometric assignment via {loop id}} *(only when BGSU assigns a group)*
+
+Loops that a BGSU merged loop supersedes are not drawn; the merged loop names them.
+
 **Reference and alignment details, ⓘ**
 > Rfam consensus sequence, reference secondary structure and alignment confidence.
 
@@ -379,6 +388,11 @@ conserved). Multiple interactions use the 'any' occurrence."
 **Track cell, hover** (title "Rfam residue {pos}"). With a numbering reference, each line is followed by "{reference} reference residue:
 {residue}".
 - Loops: "{loop type} ({HL | IL | JL})" · "Observed in {k} of {n} RNA instances ({percent})"
+
+**Track cell, click (pinned details), loops:** loop observations, instances and entries; "Not annotated as {HL | IL | JL} by the source in {k} of
+{n} RNA instances; source unavailable for {m}"; per-type junction counts (JL); motif groups; "{n} loop(s) merged by BGSU into a larger loop not
+counted here." *(only where such loops exist)*; "Frequencies are calculated from instances where annotation presence or absence can be
+determined. BGSU loop classifications can overlap."
 - SASA: "Median SASA: {value} Å²" · "Based on {n} RNA instance(s)"
 - Pockets: "Pocket occurrence: {k} of {n} RNA instances ({percent})"
 - Nonstandard nucleotide: "{CCD} — {name}" · "Observed in {k} of {n} RNA instances ({percent})"

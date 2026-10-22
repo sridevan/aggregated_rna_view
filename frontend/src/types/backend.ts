@@ -77,9 +77,12 @@ export interface LoopDenominators { n_observable_instances: number; n_source_eva
 export interface LoopTrackPosition {
   n_loop_observations: number; n_instances: number; n_entries: number; n_distinct_motif_groups: number
   by_motif_group: Record<string, { n_loops: number; n_instances: number; n_entries: number }>; n_loops_without_motif_group: number; loop_ids: string[]
+  /** loops at this position superseded by a BGSU merged loop: not counted (absent in older files) */
+  superseded_loop_ids?: string[]
   confidence: { high: number; medium: number; low: number }; denominators: LoopDenominators; frequency: number | null
 }
 export interface JunctionUnionPosition { n_loop_observations: number; n_instances: number; n_entries: number; denominators: LoopDenominators; frequency: number | null; rule: string
+  superseded_loop_ids?: string[]
   /** junction types in the union and instances per type (absent in files built before J5 support) */
   loop_types?: string[]; by_type_n_instances?: Record<string, number> }
 export interface LigandTrackPosition {
@@ -182,9 +185,12 @@ export interface ModificationsDataset { observations: ModificationObservation[];
 /** loops.json (rna_explorer/annotations.py): BGSU RNA 3D Motif Atlas loops with their complete nucleotide membership. */
 export interface LoopNucleotide { seq_name: string | null; pdb_id: string; label_asym_id: string; auth_asym_id: string; label_seq_id: number; author_residue_number: number | string; insertion_code: string; residue_name: string
   alignment_state: string; rfam_consensus_pos: number | null; has_coordinates: boolean; mapping_status: string; unit_id: string }
+export interface LoopDecomposition { role: 'single' | 'merged'; merged_from: [string, string][]; superseded_by: string[]; counted_in_tracks: boolean }
 export interface LoopRecord { loop_id: string; pdb_id: string; loop_type: 'HL' | 'IL' | 'J3' | 'J4' | string; motif_group: string | null
   /** BGSU assignment of the motif group (member of the release | homologous | geometric, i.e. mapped through another loop); BGSU annotation of the group */
   motif_group_assignment?: string | null; motif_group_via_loop_id?: string | null; annotation_text?: string | null; atlas_status?: string; source?: { motif_atlas_release?: string }
+  /** BGSU merged-loop relation inferred from nucleotide sets; a superseded loop (a part of a merged loop) is not counted or drawn. Absent in older files */
+  decomposition?: LoopDecomposition
   n_nucleotides: number; multi_chain: boolean; instances: string[]
   strands: { auth_asym_id: string; start_unit_id: string; end_unit_id: string; nucleotide_indices: [number, number]; n_nucleotides: number }[]; nucleotides: LoopNucleotide[] }
 export interface LoopsDataset { loops: LoopRecord[] }

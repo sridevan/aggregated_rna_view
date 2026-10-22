@@ -341,6 +341,7 @@ export function ConsensusTracks({ stats, selected, onToggle, instanceStates, ins
                   <div className="font-semibold" data-testid="loop-tooltip-title">{tip.title}</div>
                   <div className="font-mono text-[11px]" data-testid="loop-tooltip-id">{tip.id}</div>
                   <div className="text-stone-600" data-testid="loop-tooltip-counts">{tip.counts}{tip.otherChain ? ` · ${tip.otherChain}` : ''}</div>
+                  {tip.merged && <div className="text-stone-600" data-testid="loop-tooltip-merged">{tip.merged}</div>}
                   {tip.motif && <div className="mt-0.5" data-testid="loop-tooltip-motif">{tip.motif}{tip.motifNote && <div className="text-[10px] text-stone-500">{tip.motifNote}</div>}</div>}
                 </HoverCard> })()}
               {offGrid.length > 0 && <p className="sticky left-0 px-2 text-[10px] text-stone-500" style={{ width: viewW || undefined }} data-testid="loops-off-grid">Not on the consensus grid: {offGrid.map((l) => <button key={l.id} type="button" aria-pressed={l.id === selectedLoop} className={`mr-1 rounded px-0.5 underline ${l.id === selectedLoop ? 'outline outline-[1.5px] outline-[#d1202f]' : ''}`} onClick={() => onSelectLoop?.(l.id)}>{l.id}</button>)}</p>}

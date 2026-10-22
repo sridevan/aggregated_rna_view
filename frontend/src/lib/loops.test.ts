@@ -76,3 +76,18 @@ describe('loop type names', () => {
     expect(TRACK_OF('J5')).toBe('JL')
   })
 })
+
+describe('BGSU merged loops', () => {
+  const hl = { ...loop('HL_X_002', 'HL', [[nt(46, 50), nt(47, 51), nt(53, 57)]]), decomposition: { role: 'single' as const, merged_from: [], superseded_by: ['J3_X_001'], counted_in_tracks: false } }
+  const j4 = { ...loop('J4_X_001', 'J4', [[nt(21, 25)], [nt(46, 50)], [nt(53, 57)], [nt(75, 79)]]), decomposition: { role: 'single' as const, merged_from: [], superseded_by: ['J3_X_001'], counted_in_tracks: false } }
+  const j3 = { ...loop('J3_X_001', 'J3', [[nt(21, 25)], [nt(46, 50), nt(47, 51), nt(53, 57)], [nt(75, 79)]]),
+    decomposition: { role: 'merged' as const, merged_from: [['HL_X_002', 'J4_X_001']] as [string, string][], superseded_by: [], counted_in_tracks: true } }
+  it('superseded parts are not drawn; the merged loop and loops without the field are', () => {
+    expect(instanceLoops([hl, j4, j3, loop('HL_X_001', 'HL', [[nt(31, 35)]])], 'x_1_A_A').map((l) => l.id)).toEqual(['HL_X_001', 'J3_X_001'])
+  })
+  it('the merged loop names its two parts in the tooltip; a single loop has no merged line', () => {
+    const [m] = instanceLoops([j3], 'x_1_A_A')
+    expect(m.mergedFrom).toEqual([['HL_X_002', 'J4_X_001']]); expect(loopTooltip(m).merged).toBe('Merged from HL_X_002 + J4_X_001')
+    expect(loopTooltip(instanceLoops([loop('HL_X_001', 'HL', [[nt(31, 35)]])], 'x_1_A_A')[0]).merged).toBeNull()
+  })
+})

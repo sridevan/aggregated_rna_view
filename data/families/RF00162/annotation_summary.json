@@ -1,6 +1,6 @@
 {
  "rfam_acc": "RF00162",
- "generated": "2026-10-18T08:10:25+00:00",
+ "generated": "2026-10-21T20:44:41+00:00",
  "n_instances": 29,
  "n_entries": 28,
  "reference_structural_elements": {
@@ -52,6 +52,8 @@
  },
  "loops": {
   "n_loops": 351,
+  "n_merged_loops": 2,
+  "n_superseded_loops": 4,
   "n_with_motif_group": 269,
   "motif_group_assignment_counts": {
    "geometric": 123,
@@ -74,6 +76,9 @@
     },
     "n_problematic": 2,
     "n_distinct_motif_groups": 4,
+    "n_merged": 0,
+    "n_superseded": 0,
+    "n_counted_in_tracks": 129,
     "motif_groups": {
      "HL_30680.5": {
       "n_loops": 40,
@@ -112,6 +117,9 @@
     },
     "n_problematic": 5,
     "n_distinct_motif_groups": 12,
+    "n_merged": 0,
+    "n_superseded": 2,
+    "n_counted_in_tracks": 173,
     "motif_groups": {
      "IL_01003.7": {
       "n_loops": 1,
@@ -185,6 +193,9 @@
     "motif_group_assignment_counts": {},
     "n_problematic": 0,
     "n_distinct_motif_groups": 0,
+    "n_merged": 0,
+    "n_superseded": 0,
+    "n_counted_in_tracks": 0,
     "motif_groups": {},
     "n_multi_chain_loops": 0,
     "n_pdb_entries": 0,
@@ -201,6 +212,9 @@
     },
     "n_problematic": 2,
     "n_distinct_motif_groups": 1,
+    "n_merged": 2,
+    "n_superseded": 2,
+    "n_counted_in_tracks": 45,
     "motif_groups": {
      "J4_40439.2": {
       "n_loops": 19,
@@ -265,11 +279,11 @@
  "n_unresolved_identifiers": 0,
  "file_sizes_bytes": {
   "reference_structural_elements.json": 3308,
-  "loops.json": 2317520,
-  "loops_by_instance/ (total)": 2315917,
+  "loops.json": 2363480,
+  "loops_by_instance/ (total)": 2361065,
   "ligands.json": 460093,
-  "tracks.json": 564536,
-  "annotations/ (total)": 1858547
+  "tracks.json": 592888,
+  "annotations/ (total)": 2002967
  },
  "provenance": {
   "rfam_acc": "RF00162",
@@ -280,6 +294,6 @@
   "mapping_generated": "2026-10-17T15:09:20+00:00",
   "annotation_pipeline_version": "0.1.0",
   "annotation_config_version": "1.1",
-  "generated": "2026-10-18T08:10:25+00:00"
+  "generated": "2026-10-21T20:44:41+00:00"
  }
 }

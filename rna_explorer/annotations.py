@@ -8,6 +8,10 @@ Counting rules (see docs in annotation_assessment/PROPOSED_ANNOTATION_SCHEMA.md)
   * loops: one FR3D loop = one observation, whatever the number of chains it spans. Counting units at a consensus position are
     distinct loop ids, distinct instances (chains) and distinct PDB entries. J3 and J4 stay separate; the junction union is a
     set union, never a sum.
+  * merged loops: BGSU FR3D also emits a 'merged' loop where two loops share one canonical closing pair and are linked across it
+    (e.g. the RF00167 J3 = J4 + the J2/3 'hairpin' closed by G46-C53). The download does not flag them, so a loop whose nucleotide
+    set is exactly the union of two other loops of the entry that share exactly two nucleotides (one pair) is recorded as merged,
+    and its two parts as superseded. Every record is kept; the HL/IL/J tracks count only loops that are not superseded.
   * bound molecules: PDBe binding_sites are entity-level. Counting unit = (pdb_id, entity_id); chain attribution is only
     'resolved' when the entity has a single chain among the family instances.
   * denominators: for every position and source the numbers of observable instances (match residue with coordinates),
@@ -40,6 +44,26 @@ def load_config(path: Path = CONFIG_PATH) -> dict[str, Any]:
 
 def _frac(num: int, den: int) -> Optional[float]:
     return round(num / den, 4) if den else None
+
+
+def merged_loop_relations(loops: list[tuple[str, frozenset[str]]]) -> dict[str, dict[str, list]]:
+    """Infer BGSU merged loops within one PDB entry from nucleotide sets alone: loop M is merged from loops A and B when
+    A | B == M and A & B is exactly two nucleotides (the shared closing pair). Returns, per loop id, 'merged_from' (pairs of
+    part ids) and 'superseded_by' (ids of the merged loops built directly from it); loops without a relation are omitted."""
+    rel: dict[str, dict[str, list]] = {}
+    for mid, mu in loops:
+        parts = sorted((i, u) for i, u in loops if i != mid and u < mu)
+        for k, (aid, au) in enumerate(parts):
+            for bid, bu in parts[k + 1:]:
+                if len(au & bu) == 2 and au | bu == mu:
+                    rel.setdefault(mid, {"merged_from": [], "superseded_by": []})["merged_from"].append([aid, bid])
+                    for x in (aid, bid):
+                        sb = rel.setdefault(x, {"merged_from": [], "superseded_by": []})["superseded_by"]
+                        if mid not in sb:
+                            sb.append(mid)
+    for r in rel.values():
+        r["superseded_by"].sort()
+    return rel
 
 
 def _dump(path: Path, obj: Any) -> int:
@@ -193,6 +217,19 @@ class AnnotationBuilder:
             prev_chain, prev_num = u.auth_asym_id, num
         return strands
 
+    def _mark_merged_loops(self) -> None:
+        """Set L['decomposition'] on every loop: role single/merged, the part pairs of a merged loop, the merged loops that supersede a
+        part, and whether the loop is counted in the HL/IL/J tracks (not superseded). Problematic loops take no part in the inference."""
+        by_pdb: dict[str, list[dict[str, Any]]] = defaultdict(list)
+        for L in self.loops:
+            by_pdb[L["pdb_id"]].append(L)
+        for ls in by_pdb.values():
+            rel = merged_loop_relations([(L["loop_id"], frozenset(n["unit_id"] for n in L["nucleotides"])) for L in ls if L["atlas_status"] != "problematic"])
+            for L in ls:
+                r = rel.get(L["loop_id"], {"merged_from": [], "superseded_by": []})
+                L["decomposition"] = {"role": "merged" if r["merged_from"] else "single", "merged_from": r["merged_from"], "superseded_by": r["superseded_by"],
+                                      "counted_in_tracks": not r["superseded_by"]}
+
     def build_loops(self) -> dict[str, Any]:
         for t in LOOP_TYPES:
             rel, rmeta = fetch_motif_atlas_release(self.fetcher, t)
@@ -248,6 +285,7 @@ class AnnotationBuilder:
             for m in motifs:
                 if m.loop_id not in seen:
                     motif_page_only.append({"pdb_id": pdb, "loop_id": m.loop_id, "atlas_status": m.atlas_status, "motif_group": m.motif_group})
+        self._mark_merged_loops()
         by_type: dict[str, Any] = {}
         for t in sorted({L["loop_type"] for L in self.loops} | set(LOOP_TYPES)):
             ls = [L for L in self.loops if L["loop_type"] == t]
@@ -255,6 +293,9 @@ class AnnotationBuilder:
             by_type[t] = {"n_loops": len(ls), "n_with_motif_group": sum(1 for L in ls if L["motif_group"]), "n_without_motif_group": sum(1 for L in ls if not L["motif_group"]),
                           "motif_group_assignment_counts": dict(Counter(L["motif_group_assignment"] or "none" for L in ls)),
                           "n_problematic": sum(1 for L in ls if L["atlas_status"] == "problematic"), "n_distinct_motif_groups": len(groups),
+                          "n_merged": sum(1 for L in ls if L["decomposition"]["role"] == "merged"),
+                          "n_superseded": sum(1 for L in ls if not L["decomposition"]["counted_in_tracks"]),
+                          "n_counted_in_tracks": sum(1 for L in ls if L["decomposition"]["counted_in_tracks"]),
                           "motif_groups": {g: {"n_loops": n, "annotation_text": next((L["annotation_text"] for L in ls if L["motif_group"] == g and L["annotation_text"]), None),
                                                "url": BGSU_GROUP_URL.format(group=g)} for g, n in sorted(groups.items())},
                           "n_multi_chain_loops": sum(1 for L in ls if L["multi_chain"]), "n_pdb_entries": len({L["pdb_id"] for L in ls}),
@@ -266,8 +307,14 @@ class AnnotationBuilder:
                                    "Atlas with a reason and carry no motif group. Assignment types: 'member' = the loop is an instance of the group in the current "
                                    "release; 'homologous'/'geometric' = the loop is mapped to the group through a release loop (motif_group_via_loop_id)."},
                 "counting_rules": {"loop_observation": "one FR3D loop id = one observation, even when its nucleotides span several chains",
-                                   "junction": "J3 and J4 are separate categories; any combined junction summary is a set union of loops/instances/entries"},
-                "counts": {"n_loops": len(self.loops), "n_with_motif_group": sum(1 for L in self.loops if L["motif_group"]),
+                                   "junction": "J3 and J4 are separate categories; any combined junction summary is a set union of loops/instances/entries",
+                                   "merged_loops": "a loop whose nucleotide set is exactly the union of two other non-problematic loops of the same entry that share exactly "
+                                                   "two nucleotides (one closing pair) is a BGSU merged loop (decomposition.role = merged); its two parts are superseded "
+                                                   "(decomposition.superseded_by) and are not counted in the HL/IL/J tracks. Nested merges supersede every intermediate loop. "
+                                                   "All records are kept. Inferred from the BGSU download, which does not flag merged loops"},
+                "counts": {"n_loops": len(self.loops),
+                           "n_merged_loops": sum(1 for L in self.loops if L["decomposition"]["role"] == "merged"),
+                           "n_superseded_loops": sum(1 for L in self.loops if not L["decomposition"]["counted_in_tracks"]), "n_with_motif_group": sum(1 for L in self.loops if L["motif_group"]),
                            "motif_group_assignment_counts": dict(Counter(L["motif_group_assignment"] or "none" for L in self.loops)),
                            "n_problematic": sum(1 for L in self.loops if L["atlas_status"] == "problematic"),
                            "n_distinct_motif_groups": len({L["motif_group"] for L in self.loops if L["motif_group"]}), "by_type": by_type,
@@ -395,7 +442,8 @@ class AnnotationBuilder:
         for L in loops_here:
             for n in L["nucleotides"]:
                 if n["seq_name"] == sn and n["label_seq_id"] is not None:
-                    loop_by_res[n["label_seq_id"]].append({"loop_id": L["loop_id"], "loop_type": L["loop_type"], "motif_group": L["motif_group"], "atlas_status": L["atlas_status"]})
+                    loop_by_res[n["label_seq_id"]].append({"loop_id": L["loop_id"], "loop_type": L["loop_type"], "motif_group": L["motif_group"], "atlas_status": L["atlas_status"],
+                                                           "counted_in_tracks": L["decomposition"]["counted_in_tracks"]})
         ligs = [r for r in self.ligands if r["pdb_id"] == pdb and r["entity_id"] == entity]
         lig_by_res: dict[int, list[dict[str, Any]]] = defaultdict(list)
         for r in ligs:
@@ -427,7 +475,8 @@ class AnnotationBuilder:
                                                    "n_entity_chains": len(self.idx.by_entity[(pdb, entity)]),
                                                    "chain_attribution": "resolved" if len(self.idx.by_entity[(pdb, entity)]) == 1 else "unresolved"}},
                 "loops": [{"loop_id": L["loop_id"], "loop_type": L["loop_type"], "motif_group": L["motif_group"], "annotation_text": L["annotation_text"], "atlas_status": L["atlas_status"],
-                           "multi_chain": L["multi_chain"], "chains": [c["auth_asym_id"] for c in L["chains"]], "consensus_positions": L["consensus_positions"]} for L in loops_here],
+                           "multi_chain": L["multi_chain"], "chains": [c["auth_asym_id"] for c in L["chains"]], "consensus_positions": L["consensus_positions"],
+                           "decomposition": L["decomposition"]} for L in loops_here],
                 "bound_molecules": [{"ccd_id": r["ccd_id"], "name": r["name"], "ligand_class": r["ligand_class"], "bound_molecule_ids": r["bound_molecule_ids"],
                                      "attribution": "chain" if r["chain_attribution"] == "resolved" else "entity_unresolved", "is_best_chain": r["best_chain_seq_name"] == sn,
                                      "in_default_track": r["in_default_track"], "flags": r["flags"], "consensus_positions": r["consensus_positions"]} for r in ligs],
@@ -435,7 +484,8 @@ class AnnotationBuilder:
 
     # ------------------------------------------------------------------ 5. tracks
     def _loop_track(self, pos: int, loop_types: tuple[str, ...], observable: set[str], evaluated_inst: set[str]) -> dict[str, Any]:
-        hits = [L for L in self.loops if L["loop_type"] in loop_types and pos in L["consensus_positions"]]
+        here = [L for L in self.loops if L["loop_type"] in loop_types and pos in L["consensus_positions"]]
+        hits = [L for L in here if L["decomposition"]["counted_in_tracks"]]
         nts = [(L, n) for L in hits for n in L["nucleotides"] if n["rfam_consensus_pos"] == pos and n["mapping_status"] in ("mapped", "mapped_no_coordinates")]
         instances = {n["seq_name"] for _, n in nts}
         entries = {L["pdb_id"] for L in hits}
@@ -452,6 +502,7 @@ class AnnotationBuilder:
                 "by_motif_group": {g: {"n_loops": len(d["loops"]), "n_instances": len(d["instances"]), "n_entries": len(d["entries"])} for g, d in sorted(groups.items())},
                 "n_loops_without_motif_group": len(groups.get("unassigned", {}).get("loops", ())),
                 "loop_ids": sorted({L["loop_id"] for L in hits}),
+                "superseded_loop_ids": sorted({L["loop_id"] for L in here if not L["decomposition"]["counted_in_tracks"]}),
                 "confidence": {"high": conf.get("high", 0), "medium": conf.get("medium", 0), "low": conf.get("low", 0)},
                 "denominators": {"n_observable_instances": len(observable), "n_source_evaluated_instances": len(evaluated_inst), "n_observable_and_evaluated": len(pos_obs_eval),
                                  "n_positive": len(instances), "n_positive_observable_and_evaluated": len(positive_obs & evaluated_inst),
@@ -497,6 +548,7 @@ class AnnotationBuilder:
             by_type = {"J3": j3["n_instances"], "J4": j4["n_instances"], **{t: self._loop_track(pos, (t,), observable, loop_eval)["n_instances"] for t in jtypes if t not in ("J3", "J4")}}
             junction_union = {"n_loop_observations": ju["n_loop_observations"], "n_instances": ju["n_instances"], "n_entries": ju["n_entries"],
                               "denominators": ju["denominators"], "frequency": ju["frequency"], "loop_types": list(jtypes), "by_type_n_instances": by_type,
+                              "superseded_loop_ids": ju["superseded_loop_ids"],
                               "rule": f"set union of {', '.join(jtypes)} loops/instances/entries (not a sum)"}
             # ligands (entity level)
             obs_entities = {k for k, cs in entity_chains.items() if any(c in observable for c in cs)}
@@ -539,10 +591,14 @@ class AnnotationBuilder:
                               "junction_loops_union": junction_union, "ligand_binding_sites": lig})
         tracks_meta = {
             "reference_structural_elements": {"kind": "categorical_reference_transfer", "counting_unit": None, "source": self.reference["source"], "reference": self.reference["reference"]},
-            "hairpin_loops": {"kind": "observed_3d_motif", "loop_types": ["HL"], "counting_unit": "loop observation / instance / pdb_entry", "denominator": "observable and source-evaluated instances"},
-            "internal_loops": {"kind": "observed_3d_motif", "loop_types": ["IL"], "counting_unit": "loop observation / instance / pdb_entry", "denominator": "observable and source-evaluated instances"},
-            "junction_loops_J3": {"kind": "observed_3d_motif", "loop_types": ["J3"], "counting_unit": "loop observation / instance / pdb_entry", "denominator": "observable and source-evaluated instances"},
-            "junction_loops_J4": {"kind": "observed_3d_motif", "loop_types": ["J4"], "counting_unit": "loop observation / instance / pdb_entry", "denominator": "observable and source-evaluated instances"},
+            "hairpin_loops": {"kind": "observed_3d_motif", "loop_types": ["HL"], "counting_unit": "loop observation / instance / pdb_entry", "denominator": "observable and source-evaluated instances",
+                              "excludes": "loops superseded by a BGSU merged loop (loops.json counting_rules.merged_loops); listed in superseded_loop_ids"},
+            "internal_loops": {"kind": "observed_3d_motif", "loop_types": ["IL"], "counting_unit": "loop observation / instance / pdb_entry", "denominator": "observable and source-evaluated instances",
+                              "excludes": "loops superseded by a BGSU merged loop (loops.json counting_rules.merged_loops); listed in superseded_loop_ids"},
+            "junction_loops_J3": {"kind": "observed_3d_motif", "loop_types": ["J3"], "counting_unit": "loop observation / instance / pdb_entry", "denominator": "observable and source-evaluated instances",
+                              "excludes": "loops superseded by a BGSU merged loop (loops.json counting_rules.merged_loops); listed in superseded_loop_ids"},
+            "junction_loops_J4": {"kind": "observed_3d_motif", "loop_types": ["J4"], "counting_unit": "loop observation / instance / pdb_entry", "denominator": "observable and source-evaluated instances",
+                              "excludes": "loops superseded by a BGSU merged loop (loops.json counting_rules.merged_loops); listed in superseded_loop_ids"},
             "junction_loops_union": {"kind": "derived_union", "loop_types": list(jtypes), "rule": f"set union of all junction loop types present ({', '.join(jtypes)}); never the sum of the per-type counts"},
             "ligand_binding_sites": {"kind": "entity_level_contacts", "counting_unit": "pdb_entry_entity", "default_classes": self.config["default_track_classes"],
                                      "exclude_flagged_from_default_track": self.config.get("exclude_flagged_from_default_track", True),

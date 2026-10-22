@@ -44,18 +44,19 @@ test('two categories; HL/IL/JL and one track per default-track CCD; marks have i
   expect(Math.abs(axisTick!.x + axisTick!.width / 2 - (firstMark!.x + firstMark!.width / 2))).toBeLessThan(3)
 })
 
-test('concise tooltips with correct counts (overlapping classes at 53 kept); header popovers do not toggle the category; pinned details keep the evidence', async ({ page }) => {
+test('concise tooltips with correct counts (merged loops supersede their parts at 53); header popovers do not toggle the category; pinned details keep the evidence', async ({ page }) => {
   await open(page)
   const tr = await (await page.request.get('/families/RF00167/tracks.json')).json(); const lig = await (await page.request.get('/families/RF00167/ligands.json')).json()
   const tip = page.getByTestId('annotation-tooltip')
   const p53 = tr.positions[52]
-  expect(p53.hairpin_loops.n_instances).toBe(66); expect(p53.junction_loops_union.n_instances).toBe(76); expect(p53.internal_loops.n_instances).toBe(13)   // validated audit values
+  // loop records at 53 (audit): HL 66, IL 13, J3 76; the tracks count only loops not superseded by a BGSU merged loop: HL 8 (apo 5E54/5SWD, 9NDD), IL 0
+  expect(p53.hairpin_loops.n_instances).toBe(8); expect(p53.junction_loops_union.n_instances).toBe(76); expect(p53.internal_loops.n_instances).toBe(0)
+  expect(p53.hairpin_loops.superseded_loop_ids.length).toBe(58); expect(p53.internal_loops.superseded_loop_ids.length).toBe(13)
   await page.getByTestId('track-HL').locator('rect[data-pos="53"]').hover()
-  await expect(tip).toHaveText('Rfam residue 53Hairpin loop (HL)Observed in 66 of 80 RNA instances (82.5%)')
+  await expect(tip).toHaveText('Rfam residue 53Hairpin loop (HL)Observed in 8 of 80 RNA instances (10%)')
   await page.getByTestId('track-JL').locator('rect[data-pos="53"]').hover()
   await expect(tip).toHaveText('Rfam residue 53Junction loop (JL)Observed in 76 of 80 RNA instances (95%)')
-  await page.getByTestId('track-IL').locator('rect[data-pos="53"]').hover()
-  await expect(tip).toHaveText('Rfam residue 53Internal loop (IL)Observed in 13 of 80 RNA instances (16.3%)')
+  await expect(page.getByTestId('track-IL').locator('rect[data-pos="53"]')).toHaveCount(0)              // every IL here is part of a merged junction
   await page.getByTestId('track-HL').locator('rect[data-pos="37"]').hover()
   await expect(tip).toHaveText(`Rfam residue 37Hairpin loop (HL)Observed in ${tr.positions[36].hairpin_loops.denominators.n_positive_observable_and_evaluated} of ${tr.positions[36].hairpin_loops.denominators.n_observable_and_evaluated} RNA instances (${Math.round(1000 * tr.positions[36].hairpin_loops.frequency) / 10}%)`)
   const hpa = new Set(lig.bound_molecules.filter((b: { ccd_id: string; in_default_track: boolean; consensus_positions: number[] }) => b.ccd_id === 'HPA' && b.in_default_track && b.consensus_positions.includes(26)).map((b: { pdb_id: string }) => b.pdb_id))
@@ -86,7 +87,9 @@ test('concise tooltips with correct counts (overlapping classes at 53 kept); hea
   await page.getByTestId('track-HL').locator('rect[data-pos="53"]').click()
   await expect(page.getByTestId('annotation-inspect')).toContainText('Rfam residue 53')
   await page.getByTestId('annotation-inspect').locator('summary').click()
-  await expect(page.getByTestId('annotation-inspect')).toContainText('HL_56046.1')
+  await expect(page.getByTestId('annotation-inspect')).toContainText('HL_90436.7')
+  await expect(page.getByTestId('annotation-inspect')).not.toContainText('HL_56046.1')                          // the J2/3 'hairpin' is superseded
+  await expect(page.getByTestId('annotation-inspect')).toContainText('58 loops merged by BGSU into a larger loop not counted here.')
   await page.getByTestId('track-HL').locator('rect[data-pos="53"]').click()
   await expect(page.getByTestId('annotation-inspect')).toHaveCount(0)
 })
@@ -142,7 +145,7 @@ test('ligand category scrolls independently with a visible header; tooltips are 
   expect(loops.counts.by_type).toHaveProperty('J3'); expect(loops.counts.by_type).toHaveProperty('J4')
   expect(loops.loops.some((x: { loop_type: string }) => x.loop_type === 'HL') && loops.loops.some((x: { loop_type: string }) => x.loop_type === 'J3')).toBe(true)   // overlapping classes preserved
   const tracks = await (await page.request.get('/families/RF00167/tracks.json')).json()
-  expect(tracks.positions[52].hairpin_loops).toHaveProperty('denominators'); expect(tracks.positions[52].hairpin_loops.n_instances).toBe(66); expect(tracks).toHaveProperty('source_availability')
+  expect(tracks.positions[52].hairpin_loops).toHaveProperty('denominators'); expect(tracks.positions[52].hairpin_loops.n_instances).toBe(8); expect(tracks).toHaveProperty('source_availability')
 })
 
 test('narrow screen: no horizontal overflow, tracks still aligned', async ({ page }) => {

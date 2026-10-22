@@ -1,6 +1,6 @@
 {
  "rfam_acc": "RF00005",
- "generated": "2026-10-18T08:10:13+00:00",
+ "generated": "2026-10-21T20:44:48+00:00",
  "n_instances": 60,
  "n_entries": 59,
  "reference_structural_elements": {
@@ -25,6 +25,8 @@
  },
  "loops": {
   "n_loops": 295,
+  "n_merged_loops": 0,
+  "n_superseded_loops": 0,
   "n_with_motif_group": 156,
   "motif_group_assignment_counts": {
    "none": 139,
@@ -47,6 +49,9 @@
     },
     "n_problematic": 53,
     "n_distinct_motif_groups": 33,
+    "n_merged": 0,
+    "n_superseded": 0,
+    "n_counted_in_tracks": 210,
     "motif_groups": {
      "HL_07480.3": {
       "n_loops": 2,
@@ -229,6 +234,9 @@
     },
     "n_problematic": 9,
     "n_distinct_motif_groups": 3,
+    "n_merged": 0,
+    "n_superseded": 0,
+    "n_counted_in_tracks": 17,
     "motif_groups": {
      "IL_01003.7": {
       "n_loops": 2,
@@ -259,6 +267,9 @@
     },
     "n_problematic": 0,
     "n_distinct_motif_groups": 1,
+    "n_merged": 0,
+    "n_superseded": 0,
+    "n_counted_in_tracks": 1,
     "motif_groups": {
      "J3_63687.1": {
       "n_loops": 1,
@@ -281,6 +292,9 @@
     },
     "n_problematic": 12,
     "n_distinct_motif_groups": 7,
+    "n_merged": 0,
+    "n_superseded": 0,
+    "n_counted_in_tracks": 62,
     "motif_groups": {
      "J4_35610.2": {
       "n_loops": 1,
@@ -333,6 +347,9 @@
     },
     "n_problematic": 0,
     "n_distinct_motif_groups": 3,
+    "n_merged": 0,
+    "n_superseded": 0,
+    "n_counted_in_tracks": 5,
     "motif_groups": {
      "J5_40900.1": {
       "n_loops": 2,
@@ -1018,11 +1035,11 @@
  "n_unresolved_identifiers": 76,
  "file_sizes_bytes": {
   "reference_structural_elements.json": 47335,
-  "loops.json": 4561304,
-  "loops_by_instance/ (total)": 2310359,
-  "ligands.json": 124254,
-  "tracks.json": 431119,
-  "annotations/ (total)": 2425680
+  "loops.json": 4599947,
+  "loops_by_instance/ (total)": 2348119,
+  "ligands.json": 122113,
+  "tracks.json": 448525,
+  "annotations/ (total)": 2567024
  },
  "provenance": {
   "rfam_acc": "RF00005",
@@ -1033,6 +1050,6 @@
   "mapping_generated": "2026-10-18T08:02:51+00:00",
   "annotation_pipeline_version": "0.1.0",
   "annotation_config_version": "1.1",
-  "generated": "2026-10-18T08:10:13+00:00"
+  "generated": "2026-10-21T20:44:48+00:00"
  }
 }

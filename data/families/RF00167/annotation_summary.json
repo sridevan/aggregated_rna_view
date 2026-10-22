@@ -1,6 +1,6 @@
 {
  "rfam_acc": "RF00167",
- "generated": "2026-10-18T08:10:20+00:00",
+ "generated": "2026-10-21T20:44:37+00:00",
  "n_instances": 84,
  "n_entries": 66,
  "reference_structural_elements": {
@@ -29,6 +29,8 @@
  },
  "loops": {
   "n_loops": 496,
+  "n_merged_loops": 88,
+  "n_superseded_loops": 176,
   "n_with_motif_group": 456,
   "motif_group_assignment_counts": {
    "member": 78,
@@ -51,6 +53,9 @@
     },
     "n_problematic": 19,
     "n_distinct_motif_groups": 10,
+    "n_merged": 0,
+    "n_superseded": 58,
+    "n_counted_in_tracks": 176,
     "motif_groups": {
      "HL_09122.3": {
       "n_loops": 72,
@@ -119,6 +124,9 @@
     },
     "n_problematic": 6,
     "n_distinct_motif_groups": 7,
+    "n_merged": 0,
+    "n_superseded": 30,
+    "n_counted_in_tracks": 52,
     "motif_groups": {
      "IL_01003.7": {
       "n_loops": 11,
@@ -172,6 +180,9 @@
     },
     "n_problematic": 4,
     "n_distinct_motif_groups": 9,
+    "n_merged": 88,
+    "n_superseded": 30,
+    "n_counted_in_tracks": 84,
     "motif_groups": {
      "J3_12765.1": {
       "n_loops": 1,
@@ -234,6 +245,9 @@
     },
     "n_problematic": 4,
     "n_distinct_motif_groups": 3,
+    "n_merged": 0,
+    "n_superseded": 58,
+    "n_counted_in_tracks": 8,
     "motif_groups": {
      "J4_07491.4": {
       "n_loops": 54,
@@ -313,11 +327,11 @@
  "n_unresolved_identifiers": 0,
  "file_sizes_bytes": {
   "reference_structural_elements.json": 27578,
-  "loops.json": 3994975,
-  "loops_by_instance/ (total)": 4033210,
+  "loops.json": 4068962,
+  "loops_by_instance/ (total)": 4106890,
   "ligands.json": 701122,
-  "tracks.json": 606313,
-  "annotations/ (total)": 3975626
+  "tracks.json": 688486,
+  "annotations/ (total)": 4232200
  },
  "provenance": {
   "rfam_acc": "RF00167",
@@ -328,6 +342,6 @@
   "mapping_generated": "2026-10-15T03:48:01+00:00",
   "annotation_pipeline_version": "0.1.0",
   "annotation_config_version": "1.1",
-  "generated": "2026-10-18T08:10:20+00:00"
+  "generated": "2026-10-21T20:44:37+00:00"
  }
 }

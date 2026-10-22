@@ -5,7 +5,7 @@ import { colX, selectColumn } from './helpers'
    with the explicit BGSU motif group only, toggle-off of loops and nucleotides restoring the default 2D and 3D views, and a red inset outline
    on every block of the selected loop. Expected values come from loops.json. */
 type Nt = { seq_name: string | null; label_seq_id: number; alignment_state: string; has_coordinates: boolean }
-type Loop = { loop_id: string; loop_type: string; motif_group: string | null; annotation_text: string | null; strands: unknown[]; nucleotides: Nt[] }
+type Loop = { loop_id: string; loop_type: string; motif_group: string | null; annotation_text: string | null; strands: unknown[]; nucleotides: Nt[]; decomposition?: { counted_in_tracks: boolean } }
 type Cam = { position: number[]; target: number[] }
 type H = { __rnaExplorer: { viewerIds: number[]; rna2dSelected?: number[]; rna2dReset?: number; molstarReset?: number; lastMolstarSelection?: { labelSeqIds: number[] }; focusRepresentation?: number[]; focusComponents?: string[] | null; focusIgnoreHydrogens?: boolean | null
   molstarComponents?: { label?: string; hidden: boolean | null }[]; selection: { active: { kind: string; id?: string } | null; viewReset: number }; getCamera: () => Cam | null
@@ -76,20 +76,23 @@ test('simplified Mol* display: water hidden, focus = selected loop nucleotides o
 test('structured loop tooltip: category, BGSU loop id, counts; motif group only when BGSU assigns one; kept inside the viewport', async ({ page }) => {
   await open(page)
   await page.getByTestId('loops-toggle').click()
-  await page.getByTestId('loop-block-HL_4FE5_002-0').hover()
+  await page.getByTestId('loop-block-HL_4FE5_001-0').hover()
   const tip = page.getByTestId('loop-tooltip')
   await expect(page.getByTestId('loop-tooltip-title')).toHaveText('Hairpin loop (HL)')
-  await expect(page.getByTestId('loop-tooltip-id')).toHaveText('HL_4FE5_002')
-  await expect(page.getByTestId('loop-tooltip-counts')).toHaveText('8 nucleotides · 1 segment')
-  const hl = LOOPS.find((l) => l.loop_id === 'HL_4FE5_002')!
-  await expect(page.getByTestId('loop-tooltip-motif')).toContainText(`Motif: ${hl.motif_group} (${hl.annotation_text})`)
+  await expect(page.getByTestId('loop-tooltip-id')).toHaveText('HL_4FE5_001')
+  await expect(page.getByTestId('loop-tooltip-counts')).toHaveText('9 nucleotides · 1 segment')
+  const hl = LOOPS.find((l) => l.loop_id === 'HL_4FE5_001')!
+  await expect(page.getByTestId('loop-tooltip-motif')).toContainText(`Motif: ${hl.motif_group}${hl.annotation_text ? ` (${hl.annotation_text})` : ''}`)
+  await expect(page.getByTestId('loop-tooltip-merged')).toHaveCount(0)                                // a single loop has no merged line
   // discontinuous internal loop: segment count from the original strands; motif group id only (no name in the source)
   await page.getByTestId('loop-block-IL_4FE5_001-1').hover()
   await expect(page.getByTestId('loop-tooltip-title')).toHaveText('Internal loop (IL)'); await expect(page.getByTestId('loop-tooltip-counts')).toHaveText('6 nucleotides · 2 segments')
   const il = LOOPS.find((l) => l.loop_id === 'IL_4FE5_001')!
   await expect(page.getByTestId('loop-tooltip-motif')).toContainText(`Motif: ${il.motif_group}${il.annotation_text ? ` (${il.annotation_text})` : ''}`)
   await expect(page.getByTestId('loop-tooltip-motif')).not.toContainText('IL_4FE5')                     // loop ids never shown as a motif
-  await page.getByTestId('loop-block-J4_4FE5_001-0').hover(); await expect(page.getByTestId('loop-tooltip-title')).toHaveText('Four-way junction loop (J4)')
+  // BGSU merged loop: names the two loops it supersedes
+  await page.mouse.move(5, 5); await page.getByTestId('loop-block-J3_4FE5_001-0').hover(); await expect(page.getByTestId('loop-tooltip-title')).toHaveText('Three-way junction loop (J3)')
+  await expect(page.getByTestId('loop-tooltip-merged')).toHaveText('Merged from HL_4FE5_002 + J4_4FE5_001')
   // inside the viewport, also for the right-most block on a narrow window
   await page.setViewportSize({ width: 700, height: 900 })
   const last = page.locator('[data-testid^="loop-block-"]').last()
@@ -99,7 +102,7 @@ test('structured loop tooltip: category, BGSU loop id, counts; motif group only 
   expect(tb.x).toBeGreaterThanOrEqual(0); expect(tb.x + tb.width).toBeLessThanOrEqual(700); expect(tb.y).toBeGreaterThanOrEqual(0); expect(tb.y + tb.height).toBeLessThanOrEqual(900)
   await page.mouse.move(5, 5); await expect(tip).toHaveCount(0)
   // a loop without an explicit BGSU motif-group assignment: no motif line
-  const bare = LOOPS.find((l) => !l.motif_group && l.nucleotides.some((n) => n.seq_name && n.alignment_state === 'match'))!
+  const bare = LOOPS.find((l) => !l.motif_group && l.decomposition?.counted_in_tracks !== false && l.nucleotides.some((n) => n.seq_name && n.alignment_state === 'match'))!   // drawn loops only
   const sn = bare.nucleotides.find((n) => n.seq_name && n.alignment_state === 'match')!.seq_name!
   await page.setViewportSize({ width: 1400, height: 1000 })
   await page.getByTestId('instance-select').selectOption(sn); await ready(page, sn.split('_')[0])
@@ -119,8 +122,8 @@ test('loop toggle: complete membership; same loop again clears and restores defa
   await expect.poll(async () => dist((await hook(page)).cam.position, def.cam.position)).toBeGreaterThan(5)          // close-up
   // another loop replaces the selection: no intermediate reset of either view
   const r0 = await hook(page)
-  await page.getByTestId('loop-block-HL_4FE5_002-0').click()
-  await expect.poll(async () => sorted((await hook(page)).mol)).toEqual(members('HL_4FE5_002', SN))
+  await page.getByTestId('loop-block-HL_4FE5_001-0').click()
+  await expect.poll(async () => sorted((await hook(page)).mol)).toEqual(members('HL_4FE5_001', SN))
   const r1 = await hook(page); expect(r1.molReset).toBe(r0.molReset); expect(r1.d2Reset).toBe(r0.d2Reset)
   expect(await view2d(page)).toMatch(/scale\(1\.2/)                                                       // the user's 2D zoom is kept
   // the same loop again (any of its segments): cleared everywhere, both default views back
@@ -155,31 +158,31 @@ test('nucleotide toggle: clicking the selected column again clears it and restor
   expect((await hook(page)).active).toEqual({ kind: 'position', pos: 30 }); await expect(page.locator('[data-testid^="loop-outline-"]')).toHaveCount(0)
 })
 
-test('red outline on every segment of the selected loop only; geometry unchanged; hover distinct; overlaps selectable; instance change clears', async ({ page }) => {
+test('red outline on every segment of the selected loop only; geometry unchanged; hover distinct; a loop sharing nucleotides is selectable; instance change clears', async ({ page }) => {
   await open(page)
   await page.getByTestId('loops-toggle').click()
   // in consensus columns (divided by the shared cell width): a page-width change is not a geometry change
   const geom = () => page.locator('[data-testid^="loop-block-"]').evaluateAll((es) => { const cell = +(document.querySelector('[data-testid="loop-tracks"]')!.getAttribute('data-cell'))!
     return es.map((e) => [e.getAttribute('data-testid'), ((+e.getAttribute('x')! - 140) / cell).toFixed(2), (+e.getAttribute('width')! / cell).toFixed(2), e.getAttribute('y')].join(':')) })
   await expect(page.getByTestId('loop-block-J3_4FE5_001-1')).toBeVisible()   // loops are fetched on opening: wait before the reference geometry
-  const g0 = await geom()
+  const g0 = await geom(), fill0 = await page.getByTestId('loop-block-J3_4FE5_001-0').getAttribute('fill')
   await page.getByTestId('loop-block-J3_4FE5_001-1').click()
-  // all three segments of J3 outlined in solid red; the overlapping J4 and every other loop not outlined
+  // all three segments of J3 outlined in solid red; every other loop not outlined
   for (const k of [0, 1, 2]) { const o = page.getByTestId(`loop-outline-J3_4FE5_001-${k}`); await expect(o).toHaveAttribute('stroke', '#d1202f'); expect(await o.getAttribute('stroke-dasharray')).toBeNull() }
   await expect(page.locator('[data-testid^="loop-outline-"]')).toHaveCount(3)
-  await expect(page.getByTestId('loop-block-J3_4FE5_001-0')).toHaveAttribute('fill', await page.getByTestId('loop-block-J4_4FE5_001-0').getAttribute('fill') as string)   // category fill kept
+  await expect(page.getByTestId('loop-block-J3_4FE5_001-0')).toHaveAttribute('fill', fill0 as string)   // category fill kept
   expect(await geom()).toEqual(g0)                                                                       // widths and positions unchanged
   // outline drawn inside the block
   const blk = (await page.getByTestId('loop-block-J3_4FE5_001-0').boundingBox())!, out = (await page.getByTestId('loop-outline-J3_4FE5_001-0').boundingBox())!
   expect(out.x).toBeGreaterThanOrEqual(blk.x - 0.01); expect(out.x + out.width).toBeLessThanOrEqual(blk.x + blk.width + 0.01)
-  // hovering the overlapping J4 shows a dashed dark outline (not red); J3 stays outlined in red
-  await page.getByTestId('loop-block-J4_4FE5_001-0').hover()
-  const hv = page.getByTestId('loop-hover-J4_4FE5_001-0'); await expect(hv).toHaveAttribute('stroke-dasharray', /\d/); expect(await hv.getAttribute('stroke')).not.toBe('#d1202f')
+  // hovering the internal loop that shares nucleotides with J3 (U25, A45) shows a dashed dark outline (not red); J3 stays outlined in red
+  await page.getByTestId('loop-block-IL_4FE5_001-0').hover()
+  const hv = page.getByTestId('loop-hover-IL_4FE5_001-0'); await expect(hv).toHaveAttribute('stroke-dasharray', /\d/); expect(await hv.getAttribute('stroke')).not.toBe('#d1202f')
   await expect(page.locator('[data-testid^="loop-outline-"]')).toHaveCount(3)
-  // the overlapping loop is selectable and takes over the outline
-  await page.getByTestId('loop-block-J4_4FE5_001-0').click()
-  await expect(page.locator('[data-testid^="loop-outline-J4_4FE5_001-"]')).toHaveCount(4); await expect(page.locator('[data-testid^="loop-outline-J3_"]')).toHaveCount(0)
-  await expect.poll(async () => sorted((await hook(page)).v)).toEqual(members('J4_4FE5_001', SN))
+  // that loop is selectable and takes over the outline
+  await page.getByTestId('loop-block-IL_4FE5_001-0').click()
+  await expect(page.locator('[data-testid^="loop-outline-IL_4FE5_001-"]')).toHaveCount(2); await expect(page.locator('[data-testid^="loop-outline-J3_"]')).toHaveCount(0)
+  await expect.poll(async () => sorted((await hook(page)).v)).toEqual(members('IL_4FE5_001', SN))
   // instance change: incompatible loop cleared, no stale highlight in 2D or 3D, section stays open
   await page.getByTestId('instance-select').selectOption('1y26_1_X_A'); await ready(page, '1y26')
   await expect.poll(async () => (await hook(page)).active).toBeNull()

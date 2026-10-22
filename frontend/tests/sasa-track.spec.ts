@@ -64,7 +64,7 @@ test('concise SASA tooltip and pinned details; category info popover; downloads 
   // existing tracks unchanged
   const tr = await (await page.request.get('/families/RF00167/tracks.json')).json()
   await page.getByTestId('track-HL').locator('rect[data-pos="53"]').hover()
-  await expect(page.getByTestId('annotation-tooltip')).toHaveText('Rfam residue 53Hairpin loop (HL)Observed in 66 of 80 RNA instances (82.5%)')
+  await expect(page.getByTestId('annotation-tooltip')).toHaveText('Rfam residue 53Hairpin loop (HL)Observed in 8 of 80 RNA instances (10%)')
   expect(await page.getByTestId('track-HL').locator('rect[data-pos]').count()).toBe(tr.positions.filter((p: { hairpin_loops: { n_instances: number } }) => p.hairpin_loops.n_instances > 0).length)
   await expect(page.locator('[data-testid^="track-lig-"]')).toHaveCount(29)
 })

@@ -60,7 +60,13 @@
     42,
     43,
     44
-   ]
+   ],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "HL_9NDD_002",
@@ -80,7 +86,13 @@
     55,
     56,
     57
-   ]
+   ],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "HL_9NDD_003",
@@ -102,7 +114,13 @@
     70,
     71,
     73
-   ]
+   ],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "HL_9NDD_004",
@@ -119,7 +137,13 @@
     100,
     101,
     102
-   ]
+   ],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "IL_9NDD_001",
@@ -131,7 +155,13 @@
    "chains": [
     "A"
    ],
-   "consensus_positions": []
+   "consensus_positions": [],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "IL_9NDD_002",
@@ -143,7 +173,13 @@
    "chains": [
     "A"
    ],
-   "consensus_positions": []
+   "consensus_positions": [],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "IL_9NDD_003",
@@ -156,7 +192,13 @@
     "A",
     "C"
    ],
-   "consensus_positions": []
+   "consensus_positions": [],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "J3_9NDD_001",
@@ -186,7 +228,13 @@
     92,
     93,
     94
-   ]
+   ],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "J3_9NDD_002",
@@ -217,7 +265,13 @@
     79,
     80,
     81
-   ]
+   ],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   },
   {
    "loop_id": "J4_9NDD_001",
@@ -243,7 +297,13 @@
     79,
     80,
     81
-   ]
+   ],
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
+   }
   }
  ],
  "bound_molecules": [
@@ -322,7 +382,8 @@
      "loop_id": "IL_9NDD_001",
      "loop_type": "IL",
      "motif_group": "IL_48076.11",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -344,7 +405,8 @@
      "loop_id": "IL_9NDD_001",
      "loop_type": "IL",
      "motif_group": "IL_48076.11",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -426,7 +488,8 @@
      "loop_id": "IL_9NDD_002",
      "loop_type": "IL",
      "motif_group": "IL_49140.3",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -448,7 +511,8 @@
      "loop_id": "IL_9NDD_002",
      "loop_type": "IL",
      "motif_group": "IL_49140.3",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -470,7 +534,8 @@
      "loop_id": "IL_9NDD_002",
      "loop_type": "IL",
      "motif_group": "IL_49140.3",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -492,7 +557,8 @@
      "loop_id": "IL_9NDD_002",
      "loop_type": "IL",
      "motif_group": "IL_49140.3",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -559,7 +625,8 @@
      "loop_id": "J3_9NDD_001",
      "loop_type": "J3",
      "motif_group": "J3_21426.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -581,7 +648,8 @@
      "loop_id": "J3_9NDD_001",
      "loop_type": "J3",
      "motif_group": "J3_21426.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -603,7 +671,8 @@
      "loop_id": "J3_9NDD_001",
      "loop_type": "J3",
      "motif_group": "J3_21426.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -625,7 +694,8 @@
      "loop_id": "J3_9NDD_001",
      "loop_type": "J3",
      "motif_group": "J3_21426.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -647,7 +717,8 @@
      "loop_id": "J3_9NDD_001",
      "loop_type": "J3",
      "motif_group": "J3_21426.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -669,7 +740,8 @@
      "loop_id": "J3_9NDD_001",
      "loop_type": "J3",
      "motif_group": "J3_21426.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -691,7 +763,8 @@
      "loop_id": "J3_9NDD_001",
      "loop_type": "J3",
      "motif_group": "J3_21426.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -713,7 +786,8 @@
      "loop_id": "J3_9NDD_001",
      "loop_type": "J3",
      "motif_group": "J3_21426.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -735,7 +809,8 @@
      "loop_id": "J3_9NDD_001",
      "loop_type": "J3",
      "motif_group": "J3_21426.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -757,7 +832,8 @@
      "loop_id": "J3_9NDD_001",
      "loop_type": "J3",
      "motif_group": "J3_21426.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -779,7 +855,8 @@
      "loop_id": "J3_9NDD_001",
      "loop_type": "J3",
      "motif_group": "J3_21426.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -801,7 +878,8 @@
      "loop_id": "J3_9NDD_001",
      "loop_type": "J3",
      "motif_group": "J3_21426.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -823,7 +901,8 @@
      "loop_id": "J3_9NDD_001",
      "loop_type": "J3",
      "motif_group": "J3_21426.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -845,7 +924,8 @@
      "loop_id": "J3_9NDD_001",
      "loop_type": "J3",
      "motif_group": "J3_21426.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1017,13 +1097,15 @@
      "loop_id": "J3_9NDD_002",
      "loop_type": "J3",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     },
     {
      "loop_id": "J4_9NDD_001",
      "loop_type": "J4",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": [
@@ -1060,13 +1142,15 @@
      "loop_id": "J3_9NDD_002",
      "loop_type": "J3",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     },
     {
      "loop_id": "J4_9NDD_001",
      "loop_type": "J4",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": [
@@ -1103,13 +1187,15 @@
      "loop_id": "J3_9NDD_002",
      "loop_type": "J3",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     },
     {
      "loop_id": "J4_9NDD_001",
      "loop_type": "J4",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1131,13 +1217,15 @@
      "loop_id": "J3_9NDD_002",
      "loop_type": "J3",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     },
     {
      "loop_id": "J4_9NDD_001",
      "loop_type": "J4",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1159,13 +1247,15 @@
      "loop_id": "J3_9NDD_002",
      "loop_type": "J3",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     },
     {
      "loop_id": "J4_9NDD_001",
      "loop_type": "J4",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1247,7 +1337,8 @@
      "loop_id": "HL_9NDD_001",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1269,7 +1360,8 @@
      "loop_id": "HL_9NDD_001",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1291,7 +1383,8 @@
      "loop_id": "HL_9NDD_001",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1313,7 +1406,8 @@
      "loop_id": "HL_9NDD_001",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1335,7 +1429,8 @@
      "loop_id": "HL_9NDD_001",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1357,7 +1452,8 @@
      "loop_id": "HL_9NDD_001",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1379,7 +1475,8 @@
      "loop_id": "HL_9NDD_001",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1401,7 +1498,8 @@
      "loop_id": "HL_9NDD_001",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1423,7 +1521,8 @@
      "loop_id": "HL_9NDD_001",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1445,7 +1544,8 @@
      "loop_id": "HL_9NDD_001",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1527,13 +1627,15 @@
      "loop_id": "J3_9NDD_002",
      "loop_type": "J3",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     },
     {
      "loop_id": "J4_9NDD_001",
      "loop_type": "J4",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1555,19 +1657,22 @@
      "loop_id": "HL_9NDD_002",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     },
     {
      "loop_id": "J3_9NDD_002",
      "loop_type": "J3",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     },
     {
      "loop_id": "J4_9NDD_001",
      "loop_type": "J4",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1589,13 +1694,15 @@
      "loop_id": "HL_9NDD_002",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     },
     {
      "loop_id": "J3_9NDD_002",
      "loop_type": "J3",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": [
@@ -1632,13 +1739,15 @@
      "loop_id": "HL_9NDD_002",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     },
     {
      "loop_id": "J3_9NDD_002",
      "loop_type": "J3",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1660,13 +1769,15 @@
      "loop_id": "HL_9NDD_002",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     },
     {
      "loop_id": "J3_9NDD_002",
      "loop_type": "J3",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": [
@@ -1701,13 +1812,15 @@
      "loop_id": "HL_9NDD_002",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     },
     {
      "loop_id": "J3_9NDD_002",
      "loop_type": "J3",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": [
@@ -1744,13 +1857,15 @@
      "loop_id": "HL_9NDD_002",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     },
     {
      "loop_id": "J3_9NDD_002",
      "loop_type": "J3",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": [
@@ -1787,19 +1902,22 @@
      "loop_id": "HL_9NDD_002",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     },
     {
      "loop_id": "J3_9NDD_002",
      "loop_type": "J3",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     },
     {
      "loop_id": "J4_9NDD_001",
      "loop_type": "J4",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1821,13 +1939,15 @@
      "loop_id": "J3_9NDD_002",
      "loop_type": "J3",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     },
     {
      "loop_id": "J4_9NDD_001",
      "loop_type": "J4",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1909,7 +2029,8 @@
      "loop_id": "HL_9NDD_003",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1931,7 +2052,8 @@
      "loop_id": "HL_9NDD_003",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1953,7 +2075,8 @@
      "loop_id": "HL_9NDD_003",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1975,7 +2098,8 @@
      "loop_id": "HL_9NDD_003",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -1997,7 +2121,8 @@
      "loop_id": "HL_9NDD_003",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2019,7 +2144,8 @@
      "loop_id": "HL_9NDD_003",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2041,7 +2167,8 @@
      "loop_id": "HL_9NDD_003",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2063,7 +2190,8 @@
      "loop_id": "HL_9NDD_003",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2085,7 +2213,8 @@
      "loop_id": "HL_9NDD_003",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2167,13 +2296,15 @@
      "loop_id": "J3_9NDD_002",
      "loop_type": "J3",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     },
     {
      "loop_id": "J4_9NDD_001",
      "loop_type": "J4",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2195,13 +2326,15 @@
      "loop_id": "J3_9NDD_002",
      "loop_type": "J3",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     },
     {
      "loop_id": "J4_9NDD_001",
      "loop_type": "J4",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": [
@@ -2238,13 +2371,15 @@
      "loop_id": "J3_9NDD_002",
      "loop_type": "J3",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     },
     {
      "loop_id": "J4_9NDD_001",
      "loop_type": "J4",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": [
@@ -2281,13 +2416,15 @@
      "loop_id": "J3_9NDD_002",
      "loop_type": "J3",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     },
     {
      "loop_id": "J4_9NDD_001",
      "loop_type": "J4",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": [
@@ -2474,7 +2611,8 @@
      "loop_id": "J3_9NDD_001",
      "loop_type": "J3",
      "motif_group": "J3_21426.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2496,7 +2634,8 @@
      "loop_id": "J3_9NDD_001",
      "loop_type": "J3",
      "motif_group": "J3_21426.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2518,7 +2657,8 @@
      "loop_id": "J3_9NDD_001",
      "loop_type": "J3",
      "motif_group": "J3_21426.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2600,7 +2740,8 @@
      "loop_id": "HL_9NDD_004",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2622,7 +2763,8 @@
      "loop_id": "HL_9NDD_004",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2644,7 +2786,8 @@
      "loop_id": "HL_9NDD_004",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2666,7 +2809,8 @@
      "loop_id": "HL_9NDD_004",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2688,7 +2832,8 @@
      "loop_id": "HL_9NDD_004",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2710,7 +2855,8 @@
      "loop_id": "HL_9NDD_004",
      "loop_type": "HL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2792,7 +2938,8 @@
      "loop_id": "J3_9NDD_001",
      "loop_type": "J3",
      "motif_group": "J3_21426.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2814,7 +2961,8 @@
      "loop_id": "J3_9NDD_001",
      "loop_type": "J3",
      "motif_group": "J3_21426.1",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2881,7 +3029,8 @@
      "loop_id": "IL_9NDD_002",
      "loop_type": "IL",
      "motif_group": "IL_49140.3",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2903,7 +3052,8 @@
      "loop_id": "IL_9NDD_002",
      "loop_type": "IL",
      "motif_group": "IL_49140.3",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -2925,7 +3075,8 @@
      "loop_id": "IL_9NDD_002",
      "loop_type": "IL",
      "motif_group": "IL_49140.3",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3007,7 +3158,8 @@
      "loop_id": "IL_9NDD_001",
      "loop_type": "IL",
      "motif_group": "IL_48076.11",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3029,7 +3181,8 @@
      "loop_id": "IL_9NDD_001",
      "loop_type": "IL",
      "motif_group": "IL_48076.11",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3051,7 +3204,8 @@
      "loop_id": "IL_9NDD_001",
      "loop_type": "IL",
      "motif_group": "IL_48076.11",
-     "atlas_status": "valid"
+     "atlas_status": "valid",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3163,7 +3317,8 @@
      "loop_id": "IL_9NDD_003",
      "loop_type": "IL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3185,7 +3340,8 @@
      "loop_id": "IL_9NDD_003",
      "loop_type": "IL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3207,7 +3363,8 @@
      "loop_id": "IL_9NDD_003",
      "loop_type": "IL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3229,7 +3386,8 @@
      "loop_id": "IL_9NDD_003",
      "loop_type": "IL",
      "motif_group": null,
-     "atlas_status": "problematic"
+     "atlas_status": "problematic",
+     "counted_in_tracks": true
     }
    ],
    "bound_molecules": []
@@ -3484,6 +3642,6 @@
   "mapping_generated": "2026-10-15T03:48:01+00:00",
   "annotation_pipeline_version": "0.1.0",
   "annotation_config_version": "1.1",
-  "generated": "2026-10-18T08:10:20+00:00"
+  "generated": "2026-10-21T20:44:37+00:00"
  }
 }

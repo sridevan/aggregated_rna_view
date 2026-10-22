@@ -1,6 +1,6 @@
 {
  "rfam_acc": "RF00059",
- "generated": "2026-10-18T08:10:10+00:00",
+ "generated": "2026-10-21T20:44:44+00:00",
  "n_instances": 38,
  "n_entries": 28,
  "reference_structural_elements": {
@@ -61,6 +61,8 @@
  },
  "loops": {
   "n_loops": 284,
+  "n_merged_loops": 7,
+  "n_superseded_loops": 14,
   "n_with_motif_group": 157,
   "motif_group_assignment_counts": {
    "homologous": 80,
@@ -83,6 +85,9 @@
     },
     "n_problematic": 27,
     "n_distinct_motif_groups": 9,
+    "n_merged": 0,
+    "n_superseded": 0,
+    "n_counted_in_tracks": 83,
     "motif_groups": {
      "HL_33597.8": {
       "n_loops": 1,
@@ -146,6 +151,9 @@
     },
     "n_problematic": 40,
     "n_distinct_motif_groups": 20,
+    "n_merged": 7,
+    "n_superseded": 14,
+    "n_counted_in_tracks": 148,
     "motif_groups": {
      "IL_15190.5": {
       "n_loops": 1,
@@ -264,6 +272,9 @@
     },
     "n_problematic": 11,
     "n_distinct_motif_groups": 2,
+    "n_merged": 0,
+    "n_superseded": 0,
+    "n_counted_in_tracks": 38,
     "motif_groups": {
      "J3_04521.1": {
       "n_loops": 11,
@@ -287,6 +298,9 @@
     "motif_group_assignment_counts": {},
     "n_problematic": 0,
     "n_distinct_motif_groups": 0,
+    "n_merged": 0,
+    "n_superseded": 0,
+    "n_counted_in_tracks": 0,
     "motif_groups": {},
     "n_multi_chain_loops": 0,
     "n_pdb_entries": 0,
@@ -301,6 +315,9 @@
     },
     "n_problematic": 0,
     "n_distinct_motif_groups": 0,
+    "n_merged": 0,
+    "n_superseded": 0,
+    "n_counted_in_tracks": 1,
     "motif_groups": {},
     "n_multi_chain_loops": 0,
     "n_pdb_entries": 1,
@@ -361,11 +378,11 @@
  "n_unresolved_identifiers": 0,
  "file_sizes_bytes": {
   "reference_structural_elements.json": 3437,
-  "loops.json": 2053641,
-  "loops_by_instance/ (total)": 2054667,
+  "loops.json": 2091648,
+  "loops_by_instance/ (total)": 2091789,
   "ligands.json": 291658,
-  "tracks.json": 537760,
-  "annotations/ (total)": 2162909
+  "tracks.json": 581366,
+  "annotations/ (total)": 2290390
  },
  "provenance": {
   "rfam_acc": "RF00059",
@@ -376,6 +393,6 @@
   "mapping_generated": "2026-10-17T16:05:41+00:00",
   "annotation_pipeline_version": "0.1.0",
   "annotation_config_version": "1.1",
-  "generated": "2026-10-18T08:10:10+00:00"
+  "generated": "2026-10-21T20:44:44+00:00"
  }
 }

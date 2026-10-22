@@ -4,7 +4,7 @@ import { colX, selectColumn, stripGeom } from './helpers'
 /* Family Overview Phase 2: per-instance BGSU loop tracks (HL / IL / JL) with whole-loop selection in 2D and Mol*. Expected values come from
    loops.json (original BGSU membership and strands), not from the rendering. */
 type Nt = { seq_name: string; label_seq_id: number; alignment_state: string; rfam_consensus_pos: number | null; has_coordinates: boolean }
-type Loop = { loop_id: string; loop_type: string; strands: { nucleotide_indices: [number, number] }[]; nucleotides: Nt[] }
+type Loop = { loop_id: string; loop_type: string; strands: { nucleotide_indices: [number, number] }[]; nucleotides: Nt[]; decomposition?: { counted_in_tracks: boolean; superseded_by: string[] } }
 type H = { __rnaExplorer: { viewerIds: number[]; rna2dSelected?: number[]; lastMolstarSelection?: { labelSeqIds: number[] }; focusRepresentation?: number[]; lastFocus?: number[]; selection: { positions: number[]; active: { kind: string; id?: string } | null } } }
 const ready = async (page: Page, pdb: string) => { await expect(page.getByTestId('molstar-viewer')).toHaveAttribute('data-pdb', pdb); await expect(page.getByTestId('molstar-viewer')).toHaveAttribute('data-status', 'ready', { timeout: 60_000 }) }
 const hook = (page: Page) => page.evaluate(() => { const h = (window as unknown as H).__rnaExplorer; return { v: h.viewerIds, d2: h.rna2dSelected, mol: h.lastMolstarSelection?.labelSeqIds, focus: h.focusRepresentation, cam: h.lastFocus, pos: h.selection.positions, active: h.selection.active } })
@@ -26,19 +26,20 @@ test('default collapsed; tracks of the selected instance with blocks per origina
   await page.getByTestId('loops-toggle').click()
   await expect(page.getByTestId('loop-tracks')).toBeVisible()
   for (const t of ['HL', 'IL', 'JL']) await expect(page.getByTestId(`loop-track-${t}`)).toBeVisible()
-  // every loop of 4FE5 B, with one block per original strand spanning that strand's match positions
-  const sn = '4fe5_1_B_A', mine = LOOPS.filter((l) => l.nucleotides.some((n) => n.seq_name === sn))
+  // every loop of 4FE5 B that is not superseded by a BGSU merged loop, with one block per original strand spanning that strand's match positions
+  const sn = '4fe5_1_B_A', mine = LOOPS.filter((l) => l.nucleotides.some((n) => n.seq_name === sn) && l.decomposition?.counted_in_tracks !== false)
   const blocks = await page.locator('[data-testid^="loop-block-"]').evaluateAll((es) => es.map((e) => ({ id: e.getAttribute('data-loop-id'), from: +e.getAttribute('data-from')!, to: +e.getAttribute('data-to')!, lane: +e.getAttribute('data-lane')!, fill: e.getAttribute('fill') })))
   for (const l of mine) {
     const exp = l.strands.map((s) => l.nucleotides.slice(s.nucleotide_indices[0], s.nucleotide_indices[1] + 1).filter((n) => n.seq_name === sn && n.alignment_state === 'match').map((n) => n.rfam_consensus_pos!)).filter((p) => p.length).map((p) => [Math.min(...p), Math.max(...p)])
     expect(blocks.filter((b) => b.id === l.loop_id).map((b) => [b.from, b.to])).toEqual(exp)
   }
-  expect(new Set(blocks.map((b) => b.id))).toEqual(new Set(mine.map((l) => l.loop_id)))                            // no loop dropped
+  expect(new Set(blocks.map((b) => b.id))).toEqual(new Set(mine.map((l) => l.loop_id)))                            // no other loop dropped
   expect(blocks.filter((b) => b.id === 'IL_4FE5_001').length).toBe(2)                                               // discontinuous internal loop
-  expect(blocks.filter((b) => b.id === 'J3_4FE5_001').length).toBe(3); expect(blocks.filter((b) => b.id === 'J4_4FE5_001').length).toBe(4)
-  // overlap: J3 and J4 share nucleotides -> separate lanes, both selectable; colours per category only
-  expect(new Set(blocks.filter((b) => b.id?.startsWith('J')).map((b) => b.lane))).toEqual(new Set([0, 1]))
-  await expect(page.getByTestId('loop-track-JL')).toHaveAttribute('data-lanes', '2')
+  expect(blocks.filter((b) => b.id === 'J3_4FE5_001').length).toBe(3)
+  // the merged J3 (= J4 + the J2/3 'hairpin' across G46-C53) supersedes its parts: they are not drawn, so the JL track has one lane
+  expect(LOOPS.find((l) => l.loop_id === 'HL_4FE5_002')!.decomposition!.superseded_by).toEqual(['J3_4FE5_001'])
+  expect(blocks.filter((b) => b.id === 'HL_4FE5_002' || b.id === 'J4_4FE5_001')).toEqual([])
+  await expect(page.getByTestId('loop-track-JL')).toHaveAttribute('data-lanes', '1')
   expect(new Set(blocks.filter((b) => b.id?.startsWith('HL')).map((b) => b.fill)).size).toBe(1)
   // all blocks on the shared grid: block x of consensus 29 equals the column centre of the primary tracks
   const g = await stripGeom(page, 'loop-tracks'), half = g.cell / 2
@@ -81,18 +82,18 @@ test('whole-loop selection: exact membership in 2D and 3D, combined focus, 2D zo
   await expect(rna).toContainText('Selected Residues 11 - 13, 29 - 31')
   expect(await view2d()).toBe(before)                                                                               // 2D zoom and pan unchanged
   // hairpin replaces it; junction (3 segments) replaces that
-  await page.getByTestId('loop-block-HL_4FE5_002-0').click()
-  await expect.poll(async () => sorted((await hook(page)).v)).toEqual(members('HL_4FE5_002', sn))
-  await expect(page.getByTestId('selection-status')).toContainText('Hairpin loop · HL_4FE5_002 · 1 segment · 8 nucleotides')
+  await page.getByTestId('loop-block-HL_4FE5_001-0').click()
+  await expect.poll(async () => sorted((await hook(page)).v)).toEqual(members('HL_4FE5_001', sn))
+  await expect(page.getByTestId('selection-status')).toContainText('Hairpin loop · HL_4FE5_001 · 1 segment · 9 nucleotides')
   await page.getByTestId('loop-block-J3_4FE5_001-2').click()
   await expect.poll(async () => sorted((await hook(page)).mol ?? [])).toEqual(members('J3_4FE5_001', sn))
   await expect(page.getByTestId('selection-status')).toContainText('Three-way junction loop · J3_4FE5_001 · 3 segments')
-  // the overlapping J4 in the other lane is its own loop
-  await page.getByTestId('loop-block-J4_4FE5_001-0').click()
-  await expect.poll(async () => sorted((await hook(page)).v)).toEqual(members('J4_4FE5_001', sn))
+  // another hairpin replaces the junction
+  await page.getByTestId('loop-block-HL_4FE5_003-0').click()
+  await expect.poll(async () => sorted((await hook(page)).v)).toEqual(members('HL_4FE5_003', sn))
   // collapsing the section keeps the selection; clear removes it everywhere
   await page.getByTestId('loops-toggle').click(); await expect(page.getByTestId('loops-body')).toHaveCount(0)
-  expect((await hook(page)).active?.id).toBe('J4_4FE5_001')
+  expect((await hook(page)).active?.id).toBe('HL_4FE5_003')
   await page.getByTestId('clear-selection').click()
   await expect.poll(async () => (await hook(page)).v).toEqual([]); await expect.poll(async () => (await hook(page)).focus ?? []).toEqual([])
   // ordinary single-nucleotide selection is unchanged
@@ -104,15 +105,15 @@ test('instance switching clears the loop and shows the new chain\'s loops; inser
   await open(page)
   await page.getByTestId('loops-toggle').click(); await page.getByTestId('loop-block-HL_4FE5_001-0').click()
   await expect.poll(async () => (await hook(page)).active?.id).toBe('HL_4FE5_001')
-  // 9IWF A: the internal loop includes two inserted nucleotides (no consensus position): selected, sent to the viewers, no extra column
+  // 9IWF A: the merged junction J3_9IWF_002 (which absorbs IL_9IWF_001) includes two inserted nucleotides (no consensus position): selected, sent to the viewers, no extra column
   await page.getByTestId('instance-select').selectOption('9iwf_1_A_A'); await ready(page, '9iwf')
   expect((await hook(page)).active).toBeNull()                                                                       // incompatible loop cleared
   await expect(page.getByTestId('loops-section')).toHaveAttribute('data-open', 'true')                              // section state kept
   await expect(page.getByTestId('loop-block-HL_4FE5_001-0')).toHaveCount(0)
-  const ilIns = LOOPS.find((l) => l.loop_id === 'IL_9IWF_001')!
+  const ilIns = LOOPS.find((l) => l.loop_id === 'J3_9IWF_002')!
   expect(ilIns.nucleotides.filter((n) => n.alignment_state === 'insert').map((n) => n.label_seq_id)).toEqual([59, 60])
-  await page.locator('[data-testid^="loop-block-IL_9IWF_001-"]').first().click()
-  await expect.poll(async () => sorted((await hook(page)).v)).toEqual(members('IL_9IWF_001', '9iwf_1_A_A'))
+  await page.locator('[data-testid^="loop-block-J3_9IWF_002-"]').first().click()
+  await expect.poll(async () => sorted((await hook(page)).v)).toEqual(members('J3_9IWF_002', '9iwf_1_A_A'))
   expect((await hook(page)).v).toEqual(expect.arrayContaining([59, 60]))
   // 9NBH A: loops without any consensus position are listed and selectable; an inter-chain loop reports its other-chain members
   await page.getByTestId('instance-select').selectOption('9nbh_1_A_A'); await ready(page, '9nbh')

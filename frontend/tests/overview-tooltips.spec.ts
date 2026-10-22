@@ -73,9 +73,9 @@ test('information tooltips are short with a heading; details in Legend & help; l
   await expect(page.getByTestId('info-popover')).toHaveText('RNA loop annotationsBGSU hairpin, internal and junction loops in this RNA chain. Select a block to highlight the full loop, including discontinuous segments.')
   await inViewport(page, 'info-popover'); await page.mouse.move(5, 5)
   await page.getByTestId('loops-toggle').click()
-  await page.getByTestId('loop-block-HL_4FE5_002-0').hover()
-  await expect(page.getByTestId('loop-tooltip-title')).toHaveText('Hairpin loop (HL)'); await expect(page.getByTestId('loop-tooltip-counts')).toHaveText('8 nucleotides · 1 segment')
-  await expect(page.getByTestId('loop-tooltip-motif')).toContainText('Motif: HL_56046.1'); await inViewport(page, 'loop-tooltip')
+  await page.getByTestId('loop-block-HL_4FE5_001-0').hover()
+  await expect(page.getByTestId('loop-tooltip-title')).toHaveText('Hairpin loop (HL)'); await expect(page.getByTestId('loop-tooltip-counts')).toHaveText('9 nucleotides · 1 segment')
+  await expect(page.getByTestId('loop-tooltip-motif')).toContainText('Motif: HL_59138.3'); await inViewport(page, 'loop-tooltip')
   await page.mouse.move(5, 5)
   // Reference and alignment details: short popover in both states; RF / SS_cons / PP rows structured
   await page.getByRole('button', { name: 'About the reference and alignment details' }).click()

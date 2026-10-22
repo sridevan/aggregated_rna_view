@@ -95,7 +95,7 @@ test('category popover, collapse, downloads; other categories unchanged', async 
   await page.keyboard.press('Escape')
   // existing categories unchanged
   await page.getByTestId('track-HL').locator('rect[data-pos="53"]').hover()
-  await expect(page.getByTestId('annotation-tooltip')).toHaveText('Rfam residue 53Hairpin loop (HL)Observed in 66 of 80 RNA instances (82.5%)')
+  await expect(page.getByTestId('annotation-tooltip')).toHaveText('Rfam residue 53Hairpin loop (HL)Observed in 8 of 80 RNA instances (10%)')
   await expect(page.locator('[data-testid^="track-lig-"]')).toHaveCount(29)
   await expect(page.getByTestId('track-pocket-occurrence')).toBeVisible(); await expect(page.getByTestId('track-sasa-median')).toBeVisible()
   for (const id of ['legend-occurrence-frequency', 'legend-sasa-median', 'legend-no-data', 'legend-no-annotation']) await expect(page.getByTestId(id)).toBeVisible()

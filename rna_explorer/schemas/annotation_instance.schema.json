@@ -103,13 +103,52 @@
       "items": {
        "type": "integer"
       }
+     },
+     "decomposition": {
+      "type": "object",
+      "description": "BGSU merged-loop relation inferred from nucleotide sets (loops.json counting_rules.merged_loops)",
+      "properties": {
+       "role": {
+        "enum": [
+         "single",
+         "merged"
+        ]
+       },
+       "merged_from": {
+        "type": "array",
+        "items": {
+         "type": "array",
+         "items": {
+          "type": "string"
+         },
+         "minItems": 2,
+         "maxItems": 2
+        }
+       },
+       "superseded_by": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "counted_in_tracks": {
+        "type": "boolean"
+       }
+      },
+      "required": [
+       "role",
+       "merged_from",
+       "superseded_by",
+       "counted_in_tracks"
+      ]
      }
     },
     "required": [
      "loop_id",
      "loop_type",
      "motif_group",
-     "multi_chain"
+     "multi_chain",
+     "decomposition"
     ]
    }
   },
@@ -226,12 +265,16 @@
         },
         "atlas_status": {
          "type": "string"
+        },
+        "counted_in_tracks": {
+         "type": "boolean"
         }
        },
        "required": [
         "loop_id",
         "loop_type",
-        "motif_group"
+        "motif_group",
+        "counted_in_tracks"
        ]
       }
      },

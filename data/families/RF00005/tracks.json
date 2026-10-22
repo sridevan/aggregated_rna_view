@@ -55,7 +55,8 @@
     "HL"
    ],
    "counting_unit": "loop observation / instance / pdb_entry",
-   "denominator": "observable and source-evaluated instances"
+   "denominator": "observable and source-evaluated instances",
+   "excludes": "loops superseded by a BGSU merged loop (loops.json counting_rules.merged_loops); listed in superseded_loop_ids"
   },
   "internal_loops": {
    "kind": "observed_3d_motif",
@@ -63,7 +64,8 @@
     "IL"
    ],
    "counting_unit": "loop observation / instance / pdb_entry",
-   "denominator": "observable and source-evaluated instances"
+   "denominator": "observable and source-evaluated instances",
+   "excludes": "loops superseded by a BGSU merged loop (loops.json counting_rules.merged_loops); listed in superseded_loop_ids"
   },
   "junction_loops_J3": {
    "kind": "observed_3d_motif",
@@ -71,7 +73,8 @@
     "J3"
    ],
    "counting_unit": "loop observation / instance / pdb_entry",
-   "denominator": "observable and source-evaluated instances"
+   "denominator": "observable and source-evaluated instances",
+   "excludes": "loops superseded by a BGSU merged loop (loops.json counting_rules.merged_loops); listed in superseded_loop_ids"
   },
   "junction_loops_J4": {
    "kind": "observed_3d_motif",
@@ -79,7 +82,8 @@
     "J4"
    ],
    "counting_unit": "loop observation / instance / pdb_entry",
-   "denominator": "observable and source-evaluated instances"
+   "denominator": "observable and source-evaluated instances",
+   "excludes": "loops superseded by a BGSU merged loop (loops.json counting_rules.merged_loops); listed in superseded_loop_ids"
   },
   "junction_loops_union": {
    "kind": "derived_union",
@@ -154,6 +158,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -179,6 +184,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -204,6 +210,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -229,6 +236,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -271,6 +279,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -343,6 +352,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -376,6 +386,7 @@
     "loop_ids": [
      "IL_9P8B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -401,6 +412,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -426,6 +438,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -468,6 +481,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -539,6 +553,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -574,6 +589,7 @@
      "IL_8OIN_124",
      "IL_9P8B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 2,
      "medium": 0,
@@ -599,6 +615,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -624,6 +641,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -666,6 +684,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -721,6 +740,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -757,6 +777,7 @@
      "IL_9H3G_244",
      "IL_9P8B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 3,
      "medium": 0,
@@ -782,6 +803,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -807,6 +829,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -849,6 +872,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -906,6 +930,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -943,6 +968,7 @@
      "IL_8OIN_124",
      "IL_9H3G_244"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 4,
      "medium": 0,
@@ -968,6 +994,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -1003,6 +1030,7 @@
      "J4_6ZM6_012",
      "J4_8Z1F_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 2,
      "medium": 0,
@@ -1045,6 +1073,7 @@
      "J4": 2,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -1102,6 +1131,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -1138,6 +1168,7 @@
      "IL_8OIN_108",
      "IL_9H3G_244"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 4,
      "medium": 0,
@@ -1163,6 +1194,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -1199,6 +1231,7 @@
      "J4_8Z1F_001",
      "J4_9DPA_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 3,
      "medium": 0,
@@ -1241,6 +1274,7 @@
      "J4": 3,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -1299,6 +1333,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -1333,6 +1368,7 @@
      "IL_1FIR_001",
      "IL_3QSY_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 2,
      "medium": 0,
@@ -1366,6 +1402,7 @@
     "loop_ids": [
      "J3_1J2B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -1495,6 +1532,7 @@
      "J4_9Q3R_015",
      "J4_9SRE_013"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 52,
      "medium": 0,
@@ -1537,6 +1575,7 @@
      "J4": 52,
      "J5": 4
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -1595,6 +1634,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -1620,6 +1660,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -1653,6 +1694,7 @@
     "loop_ids": [
      "J3_1J2B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -1782,6 +1824,7 @@
      "J4_9Q3R_015",
      "J4_9SRE_013"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 52,
      "medium": 0,
@@ -1824,6 +1867,7 @@
      "J4": 52,
      "J5": 4
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -1881,6 +1925,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -1906,6 +1951,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -1939,6 +1985,7 @@
     "loop_ids": [
      "J3_1J2B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -2062,6 +2109,7 @@
      "J4_9Q3R_015",
      "J4_9SRE_013"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 51,
      "medium": 0,
@@ -2104,6 +2152,7 @@
      "J4": 51,
      "J5": 4
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -2185,6 +2234,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -2218,6 +2268,7 @@
     "loop_ids": [
      "IL_2AKE_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -2251,6 +2302,7 @@
     "loop_ids": [
      "J3_1J2B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -2380,6 +2432,7 @@
      "J4_9Q3R_015",
      "J4_9SRE_013"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 51,
      "medium": 1,
@@ -2422,6 +2475,7 @@
      "J4": 52,
      "J5": 4
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -2490,6 +2544,7 @@
      "HL_8Z1F_001",
      "HL_9P8B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 6,
      "medium": 0,
@@ -2524,6 +2579,7 @@
      "IL_1TTT_001",
      "IL_2AKE_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 2,
      "medium": 0,
@@ -2557,6 +2613,7 @@
     "loop_ids": [
      "J3_1J2B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -2590,6 +2647,7 @@
     "loop_ids": [
      "J4_3QSY_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -2632,6 +2690,7 @@
      "J4": 1,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -2741,6 +2800,7 @@
      "HL_9SFQ_005",
      "HL_9TI5_068"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 21,
      "medium": 0,
@@ -2775,6 +2835,7 @@
      "IL_1TTT_001",
      "IL_2AKE_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 2,
      "medium": 0,
@@ -2808,6 +2869,7 @@
     "loop_ids": [
      "J3_1J2B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -2841,6 +2903,7 @@
     "loop_ids": [
      "J4_3QSY_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -2883,6 +2946,7 @@
      "J4": 1,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -3072,6 +3136,7 @@
      "HL_9SRE_106",
      "HL_9TI5_068"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 53,
      "medium": 1,
@@ -3106,6 +3171,7 @@
      "IL_1TTT_001",
      "IL_2AKE_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 2,
      "medium": 0,
@@ -3139,6 +3205,7 @@
     "loop_ids": [
      "J3_1J2B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -3164,6 +3231,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -3206,6 +3274,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -3393,6 +3462,7 @@
      "HL_9SRE_106",
      "HL_9TI5_068"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 53,
      "medium": 1,
@@ -3418,6 +3488,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -3451,6 +3522,7 @@
     "loop_ids": [
      "J3_1J2B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -3476,6 +3548,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -3518,6 +3591,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -3706,6 +3780,7 @@
      "HL_9SRE_106",
      "HL_9TI5_068"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 50,
      "medium": 2,
@@ -3731,6 +3806,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -3764,6 +3840,7 @@
     "loop_ids": [
      "J3_1J2B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -3789,6 +3866,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -3831,6 +3909,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -4009,6 +4088,7 @@
      "HL_9SRE_106",
      "HL_9TI5_068"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 44,
      "medium": 3,
@@ -4034,6 +4114,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -4067,6 +4148,7 @@
     "loop_ids": [
      "J3_1J2B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -4092,6 +4174,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -4134,6 +4217,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -4319,6 +4403,7 @@
      "HL_9SRE_106",
      "HL_9TI5_068"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 27,
      "medium": 8,
@@ -4344,6 +4429,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -4377,6 +4463,7 @@
     "loop_ids": [
      "J3_1J2B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -4402,6 +4489,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -4444,6 +4532,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -4627,6 +4716,7 @@
      "HL_9SRE_106",
      "HL_9TI5_068"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 27,
      "medium": 8,
@@ -4652,6 +4742,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -4685,6 +4776,7 @@
     "loop_ids": [
      "J3_1J2B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -4710,6 +4802,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -4752,6 +4845,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -4930,6 +5024,7 @@
      "HL_9SRE_106",
      "HL_9TI5_068"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 26,
      "medium": 9,
@@ -4955,6 +5050,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -4988,6 +5084,7 @@
     "loop_ids": [
      "J3_1J2B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -5013,6 +5110,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -5055,6 +5153,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -5243,6 +5342,7 @@
      "HL_9SRE_106",
      "HL_9TI5_068"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 46,
      "medium": 5,
@@ -5268,6 +5368,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -5301,6 +5402,7 @@
     "loop_ids": [
      "J3_1J2B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -5326,6 +5428,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -5368,6 +5471,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -5557,6 +5661,7 @@
      "HL_9SRE_106",
      "HL_9TI5_068"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 53,
      "medium": 1,
@@ -5591,6 +5696,7 @@
      "IL_1TTT_001",
      "IL_2AKE_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 2,
      "medium": 0,
@@ -5624,6 +5730,7 @@
     "loop_ids": [
      "J3_1J2B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -5649,6 +5756,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -5691,6 +5799,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -5798,6 +5907,7 @@
      "HL_9SFQ_005",
      "HL_9TI5_068"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 21,
      "medium": 0,
@@ -5832,6 +5942,7 @@
      "IL_1TTT_001",
      "IL_2AKE_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 2,
      "medium": 0,
@@ -5865,6 +5976,7 @@
     "loop_ids": [
      "J3_1J2B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -5898,6 +6010,7 @@
     "loop_ids": [
      "J4_3QSY_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -5940,6 +6053,7 @@
      "J4": 1,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -6010,6 +6124,7 @@
      "HL_8Z1F_001",
      "HL_9P8B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 6,
      "medium": 0,
@@ -6044,6 +6159,7 @@
      "IL_1TTT_001",
      "IL_2AKE_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 2,
      "medium": 0,
@@ -6069,6 +6185,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -6102,6 +6219,7 @@
     "loop_ids": [
      "J4_3QSY_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -6144,6 +6262,7 @@
      "J4": 1,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -6201,6 +6320,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -6240,6 +6360,7 @@
      "IL_1J2B_001",
      "IL_2AKE_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 2,
      "medium": 0,
@@ -6265,6 +6386,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -6394,6 +6516,7 @@
      "J4_9Q3R_015",
      "J4_9SRE_013"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 51,
      "medium": 1,
@@ -6436,6 +6559,7 @@
      "J4": 52,
      "J5": 4
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -6493,6 +6617,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -6526,6 +6651,7 @@
     "loop_ids": [
      "IL_1J2B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -6551,6 +6677,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -6680,6 +6807,7 @@
      "J4_9Q3R_015",
      "J4_9SRE_013"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 51,
      "medium": 1,
@@ -6722,6 +6850,7 @@
      "J4": 52,
      "J5": 4
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -6777,6 +6906,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -6810,6 +6940,7 @@
     "loop_ids": [
      "IL_1J2B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -6835,6 +6966,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -6952,6 +7084,7 @@
      "J4_9Q3R_015",
      "J4_9SRE_013"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 50,
      "medium": 0,
@@ -6994,6 +7127,7 @@
      "J4": 50,
      "J5": 1
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -7074,6 +7208,7 @@
      "HL_1TTT_002",
      "HL_8Z1F_002"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 2,
      "medium": 0,
@@ -7113,6 +7248,7 @@
      "IL_1J2B_001",
      "IL_7QI4_104"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 2,
      "medium": 0,
@@ -7138,6 +7274,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -7184,6 +7321,7 @@
      "J4_8CBM_001",
      "J4_8Z1F_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 7,
      "medium": 0,
@@ -7226,6 +7364,7 @@
      "J4": 7,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -7307,6 +7446,7 @@
      "HL_8CTH_002",
      "HL_8Z1F_002"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 4,
      "medium": 0,
@@ -7346,6 +7486,7 @@
      "IL_1QTQ_001",
      "IL_7QI4_104"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 2,
      "medium": 0,
@@ -7371,6 +7512,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -7404,6 +7546,7 @@
     "loop_ids": [
      "J4_3QSY_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -7446,6 +7589,7 @@
      "J4": 1,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -7541,6 +7685,7 @@
      "HL_8Z1F_002",
      "HL_9P8B_002"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 14,
      "medium": 0,
@@ -7580,6 +7725,7 @@
      "IL_1QTQ_001",
      "IL_7QI4_104"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 2,
      "medium": 0,
@@ -7605,6 +7751,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -7630,6 +7777,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -7672,6 +7820,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -7880,6 +8029,7 @@
      "HL_9TNL_031",
      "HL_9TNL_033"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 56,
      "medium": 0,
@@ -7926,6 +8076,7 @@
      "IL_5CCB_002",
      "IL_7ZRZ_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 3,
      "medium": 0,
@@ -7951,6 +8102,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -7976,6 +8128,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -8018,6 +8171,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -8225,6 +8379,7 @@
      "HL_9TNL_031",
      "HL_9TNL_033"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 57,
      "medium": 0,
@@ -8270,6 +8425,7 @@
      "IL_5CCB_002",
      "IL_7ZRZ_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 2,
      "medium": 0,
@@ -8295,6 +8451,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -8320,6 +8477,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -8362,6 +8520,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -8574,6 +8733,7 @@
      "HL_9TNL_031",
      "HL_9TNL_033"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 58,
      "medium": 0,
@@ -8613,6 +8773,7 @@
      "IL_5CCB_001",
      "IL_5CCB_002"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -8638,6 +8799,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -8663,6 +8825,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -8705,6 +8868,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -8916,6 +9080,7 @@
      "HL_9TNL_031",
      "HL_9TNL_033"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 58,
      "medium": 1,
@@ -8941,6 +9106,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -8966,6 +9132,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -8991,6 +9158,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -9033,6 +9201,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -9244,6 +9413,7 @@
      "HL_9TNL_031",
      "HL_9TNL_033"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 58,
      "medium": 1,
@@ -9269,6 +9439,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -9294,6 +9465,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -9319,6 +9491,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -9361,6 +9534,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -9572,6 +9746,7 @@
      "HL_9TNL_031",
      "HL_9TNL_033"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 58,
      "medium": 0,
@@ -9597,6 +9772,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -9622,6 +9798,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -9647,6 +9824,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -9689,6 +9867,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -9901,6 +10080,7 @@
      "HL_9TNL_031",
      "HL_9TNL_033"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 58,
      "medium": 0,
@@ -9940,6 +10120,7 @@
      "IL_5CCB_001",
      "IL_5CCB_002"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -9965,6 +10146,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -9990,6 +10172,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -10032,6 +10215,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -10240,6 +10424,7 @@
      "HL_9TNL_031",
      "HL_9TNL_033"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 56,
      "medium": 0,
@@ -10279,6 +10464,7 @@
      "IL_5CCB_001",
      "IL_5CCB_002"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -10304,6 +10490,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -10329,6 +10516,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -10371,6 +10559,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -10579,6 +10768,7 @@
      "HL_9TNL_031",
      "HL_9TNL_033"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 56,
      "medium": 0,
@@ -10625,6 +10815,7 @@
      "IL_5CCB_002",
      "IL_7ZRZ_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 3,
      "medium": 0,
@@ -10650,6 +10841,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -10675,6 +10867,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -10717,6 +10910,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -10814,6 +11008,7 @@
      "HL_8Z1F_002",
      "HL_9P8B_002"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 14,
      "medium": 0,
@@ -10853,6 +11048,7 @@
      "IL_1QTQ_001",
      "IL_7QI4_104"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 2,
      "medium": 0,
@@ -10878,6 +11074,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -10903,6 +11100,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -10945,6 +11143,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -11011,6 +11210,7 @@
      "HL_8CTH_002",
      "HL_8Z1F_002"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 4,
      "medium": 0,
@@ -11050,6 +11250,7 @@
      "IL_1QTQ_001",
      "IL_7QI4_104"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 2,
      "medium": 0,
@@ -11075,6 +11276,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -11108,6 +11310,7 @@
     "loop_ids": [
      "J4_3QSY_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -11150,6 +11353,7 @@
      "J4": 1,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -11214,6 +11418,7 @@
      "HL_1TTT_002",
      "HL_8Z1F_002"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 2,
      "medium": 0,
@@ -11253,6 +11458,7 @@
      "IL_1J2B_001",
      "IL_7QI4_104"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 2,
      "medium": 0,
@@ -11278,6 +11484,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -11324,6 +11531,7 @@
      "J4_8CBM_001",
      "J4_8Z1F_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 7,
      "medium": 0,
@@ -11366,6 +11574,7 @@
      "J4": 7,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -11423,6 +11632,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -11456,6 +11666,7 @@
     "loop_ids": [
      "IL_1J2B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -11481,6 +11692,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -11598,6 +11810,7 @@
      "J4_9Q3R_015",
      "J4_9SRE_013"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 50,
      "medium": 0,
@@ -11640,6 +11853,7 @@
      "J4": 50,
      "J5": 1
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -11695,6 +11909,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -11728,6 +11943,7 @@
     "loop_ids": [
      "IL_1J2B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -11753,6 +11969,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -11876,6 +12093,7 @@
      "J4_9Q3R_015",
      "J4_9SRE_013"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 51,
      "medium": 0,
@@ -11918,6 +12136,7 @@
      "J4": 51,
      "J5": 4
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -11975,6 +12194,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -12008,6 +12228,7 @@
     "loop_ids": [
      "IL_1J2B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -12033,6 +12254,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -12162,6 +12384,7 @@
      "J4_9Q3R_015",
      "J4_9SRE_013"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 51,
      "medium": 1,
@@ -12204,6 +12427,7 @@
      "J4": 52,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -12259,6 +12483,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -12292,6 +12517,7 @@
     "loop_ids": [
      "IL_1J2B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -12317,6 +12543,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -12446,6 +12673,7 @@
      "J4_9Q3R_015",
      "J4_9SRE_013"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 52,
      "medium": 0,
@@ -12488,6 +12716,7 @@
      "J4": 52,
      "J5": 1
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -12545,6 +12774,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -12570,6 +12800,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -12603,6 +12834,7 @@
     "loop_ids": [
      "J3_1J2B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -12732,6 +12964,7 @@
      "J4_9Q3R_015",
      "J4_9SRE_013"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 52,
      "medium": 0,
@@ -12774,6 +13007,7 @@
      "J4": 52,
      "J5": 4
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -12832,6 +13066,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -12865,6 +13100,7 @@
     "loop_ids": [
      "IL_3QSY_002"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -12898,6 +13134,7 @@
     "loop_ids": [
      "J3_1J2B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -13027,6 +13264,7 @@
      "J4_9Q3R_015",
      "J4_9SRE_013"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 52,
      "medium": 0,
@@ -13069,6 +13307,7 @@
      "J4": 52,
      "J5": 4
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -13126,6 +13365,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -13160,6 +13400,7 @@
      "IL_3QSY_002",
      "IL_9GCH_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 2,
      "medium": 0,
@@ -13185,6 +13426,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -13222,6 +13464,7 @@
      "J4_7XK0_001",
      "J4_8Z1F_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 5,
      "medium": 0,
@@ -13264,6 +13507,7 @@
      "J4": 5,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -13345,6 +13589,7 @@
      "HL_8CCS_075",
      "HL_8CDR_077"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 3,
      "medium": 0,
@@ -13380,6 +13625,7 @@
      "IL_8CBM_001",
      "IL_9GCH_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 3,
      "medium": 0,
@@ -13405,6 +13651,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -13438,6 +13685,7 @@
     "loop_ids": [
      "J4_6ZM6_010"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -13480,6 +13728,7 @@
      "J4": 1,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -13562,6 +13811,7 @@
      "HL_8CDR_077",
      "HL_8OIN_067"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 3,
      "medium": 1,
@@ -13596,6 +13846,7 @@
      "IL_8CBM_001",
      "IL_9GCH_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 2,
      "medium": 0,
@@ -13621,6 +13872,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -13654,6 +13906,7 @@
     "loop_ids": [
      "J4_6ZM6_010"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -13696,6 +13949,7 @@
      "J4": 1,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -13853,6 +14107,7 @@
      "HL_9TNL_032",
      "HL_9TNL_034"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 58,
      "medium": 0,
@@ -13886,6 +14141,7 @@
     "loop_ids": [
      "IL_8CBM_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -13911,6 +14167,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -13936,6 +14193,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -13978,6 +14236,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -14136,6 +14395,7 @@
      "HL_9TNL_032",
      "HL_9TNL_034"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 57,
      "medium": 1,
@@ -14161,6 +14421,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -14186,6 +14447,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -14211,6 +14473,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -14253,6 +14516,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -14412,6 +14676,7 @@
      "HL_9TNL_032",
      "HL_9TNL_034"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 54,
      "medium": 4,
@@ -14437,6 +14702,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -14462,6 +14728,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -14487,6 +14754,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -14529,6 +14797,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -14688,6 +14957,7 @@
      "HL_9TNL_032",
      "HL_9TNL_034"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 54,
      "medium": 4,
@@ -14713,6 +14983,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -14738,6 +15009,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -14763,6 +15035,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -14805,6 +15078,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -14988,6 +15262,7 @@
      "HL_9TNL_032",
      "HL_9TNL_034"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 54,
      "medium": 2,
@@ -15013,6 +15288,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -15038,6 +15314,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -15063,6 +15340,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -15105,6 +15383,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -15277,6 +15556,7 @@
      "HL_9TNL_032",
      "HL_9TNL_034"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 54,
      "medium": 2,
@@ -15302,6 +15582,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -15327,6 +15608,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -15352,6 +15634,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -15394,6 +15677,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -15560,6 +15844,7 @@
      "HL_9TNL_032",
      "HL_9TNL_034"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 54,
      "medium": 2,
@@ -15585,6 +15870,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -15610,6 +15896,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -15635,6 +15922,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -15677,6 +15965,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -15828,6 +16117,7 @@
      "HL_9TNL_032",
      "HL_9TNL_034"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 54,
      "medium": 1,
@@ -15853,6 +16143,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -15878,6 +16169,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -15903,6 +16195,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -15945,6 +16238,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -16118,6 +16412,7 @@
      "HL_9TNL_032",
      "HL_9TNL_034"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 57,
      "medium": 1,
@@ -16151,6 +16446,7 @@
     "loop_ids": [
      "IL_8CBM_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -16176,6 +16472,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -16201,6 +16498,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -16243,6 +16541,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -16310,6 +16609,7 @@
      "HL_8CDR_077",
      "HL_8OIN_067"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 3,
      "medium": 1,
@@ -16344,6 +16644,7 @@
      "IL_8CBM_001",
      "IL_9GCH_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 2,
      "medium": 0,
@@ -16369,6 +16670,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -16402,6 +16704,7 @@
     "loop_ids": [
      "J4_6ZM6_010"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -16444,6 +16747,7 @@
      "J4": 1,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -16509,6 +16813,7 @@
      "HL_8CCS_075",
      "HL_8CDR_077"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 3,
      "medium": 0,
@@ -16544,6 +16849,7 @@
      "IL_8CBM_001",
      "IL_9GCH_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 3,
      "medium": 0,
@@ -16569,6 +16875,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -16602,6 +16909,7 @@
     "loop_ids": [
      "J4_6ZM6_010"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -16644,6 +16952,7 @@
      "J4": 1,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -16699,6 +17008,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -16733,6 +17043,7 @@
      "IL_3QSY_002",
      "IL_9GCH_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 2,
      "medium": 0,
@@ -16758,6 +17069,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -16795,6 +17107,7 @@
      "J4_7XK0_001",
      "J4_8Z1F_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 5,
      "medium": 0,
@@ -16837,6 +17150,7 @@
      "J4": 5,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -16892,6 +17206,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -16925,6 +17240,7 @@
     "loop_ids": [
      "IL_3QSY_002"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -16958,6 +17274,7 @@
     "loop_ids": [
      "J3_1J2B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -17087,6 +17404,7 @@
      "J4_9Q3R_015",
      "J4_9SRE_013"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 52,
      "medium": 0,
@@ -17129,6 +17447,7 @@
      "J4": 52,
      "J5": 4
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -17184,6 +17503,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -17218,6 +17538,7 @@
      "IL_1FIR_001",
      "IL_3QSY_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 2,
      "medium": 0,
@@ -17251,6 +17572,7 @@
     "loop_ids": [
      "J3_1J2B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -17380,6 +17702,7 @@
      "J4_9Q3R_015",
      "J4_9SRE_013"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 52,
      "medium": 0,
@@ -17422,6 +17745,7 @@
      "J4": 52,
      "J5": 4
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -17479,6 +17803,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -17515,6 +17840,7 @@
      "IL_8OIN_108",
      "IL_9H3G_244"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 4,
      "medium": 0,
@@ -17540,6 +17866,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -17576,6 +17903,7 @@
      "J4_8Z1F_001",
      "J4_9DPA_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 3,
      "medium": 0,
@@ -17618,6 +17946,7 @@
      "J4": 3,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -17675,6 +18004,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -17712,6 +18042,7 @@
      "IL_8OIN_124",
      "IL_9H3G_244"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 4,
      "medium": 0,
@@ -17737,6 +18068,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -17772,6 +18104,7 @@
      "J4_6ZM6_012",
      "J4_8Z1F_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 2,
      "medium": 0,
@@ -17814,6 +18147,7 @@
      "J4": 2,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -17871,6 +18205,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -17907,6 +18242,7 @@
      "IL_9H3G_244",
      "IL_9P8B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 3,
      "medium": 0,
@@ -17932,6 +18268,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -17957,6 +18294,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -17999,6 +18337,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -18056,6 +18395,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -18091,6 +18431,7 @@
      "IL_8OIN_124",
      "IL_9P8B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 2,
      "medium": 0,
@@ -18116,6 +18457,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -18141,6 +18483,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -18183,6 +18526,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -18240,6 +18584,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -18273,6 +18618,7 @@
     "loop_ids": [
      "IL_9P8B_001"
     ],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 1,
      "medium": 0,
@@ -18298,6 +18644,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -18323,6 +18670,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -18365,6 +18713,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -18420,6 +18769,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -18445,6 +18795,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -18470,6 +18821,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -18495,6 +18847,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -18537,6 +18890,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -18607,6 +18961,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -18632,6 +18987,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -18657,6 +19013,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -18682,6 +19039,7 @@
     "by_motif_group": {},
     "n_loops_without_motif_group": 0,
     "loop_ids": [],
+    "superseded_loop_ids": [],
     "confidence": {
      "high": 0,
      "medium": 0,
@@ -18724,6 +19082,7 @@
      "J4": 0,
      "J5": 0
     },
+    "superseded_loop_ids": [],
     "rule": "set union of J3, J4, J5 loops/instances/entries (not a sum)"
    },
    "ligand_binding_sites": {
@@ -18788,6 +19147,6 @@
   "mapping_generated": "2026-10-18T08:02:51+00:00",
   "annotation_pipeline_version": "0.1.0",
   "annotation_config_version": "1.1",
-  "generated": "2026-10-18T17:56:56+00:00"
+  "generated": "2026-10-21T20:44:48+00:00"
  }
 }

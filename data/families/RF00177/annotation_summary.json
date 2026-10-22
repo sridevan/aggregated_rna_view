@@ -1,6 +1,6 @@
 {
  "rfam_acc": "RF00177",
- "generated": "2026-10-18T08:11:07+00:00",
+ "generated": "2026-10-21T20:44:59+00:00",
  "n_instances": 60,
  "n_entries": 58,
  "reference_structural_elements": {
@@ -25,6 +25,8 @@
  },
  "loops": {
   "n_loops": 7601,
+  "n_merged_loops": 295,
+  "n_superseded_loops": 590,
   "n_with_motif_group": 1730,
   "motif_group_assignment_counts": {
    "none": 5871,
@@ -47,6 +49,9 @@
     },
     "n_problematic": 220,
     "n_distinct_motif_groups": 24,
+    "n_merged": 3,
+    "n_superseded": 5,
+    "n_counted_in_tracks": 1940,
     "motif_groups": {
      "HL_11447.1": {
       "n_loops": 7,
@@ -185,6 +190,9 @@
     },
     "n_problematic": 461,
     "n_distinct_motif_groups": 61,
+    "n_merged": 7,
+    "n_superseded": 298,
+    "n_counted_in_tracks": 3947,
     "motif_groups": {
      "IL_01003.7": {
       "n_loops": 41,
@@ -508,6 +516,9 @@
     },
     "n_problematic": 95,
     "n_distinct_motif_groups": 16,
+    "n_merged": 229,
+    "n_superseded": 231,
+    "n_counted_in_tracks": 820,
     "motif_groups": {
      "J3_01343.1": {
       "n_loops": 7,
@@ -605,6 +616,9 @@
     },
     "n_problematic": 3,
     "n_distinct_motif_groups": 2,
+    "n_merged": 0,
+    "n_superseded": 0,
+    "n_counted_in_tracks": 182,
     "motif_groups": {
      "J4_14595.4": {
       "n_loops": 4,
@@ -632,6 +646,9 @@
     },
     "n_problematic": 1,
     "n_distinct_motif_groups": 1,
+    "n_merged": 56,
+    "n_superseded": 56,
+    "n_counted_in_tracks": 122,
     "motif_groups": {
      "J5_58574.4": {
       "n_loops": 11,
@@ -13149,11 +13166,11 @@
  "n_unresolved_identifiers": 1540,
  "file_sizes_bytes": {
   "reference_structural_elements.json": 275805,
-  "loops.json": 61664196,
-  "loops_by_instance/ (total)": 55021743,
-  "ligands.json": 2389080,
-  "tracks.json": 8448362,
-  "annotations/ (total)": 49538961
+  "loops.json": 62670477,
+  "loops_by_instance/ (total)": 56027121,
+  "ligands.json": 2388601,
+  "tracks.json": 8853307,
+  "annotations/ (total)": 52976717
  },
  "provenance": {
   "rfam_acc": "RF00177",
@@ -13164,6 +13181,6 @@
   "mapping_generated": "2026-10-17T17:56:53+00:00",
   "annotation_pipeline_version": "0.1.0",
   "annotation_config_version": "1.1",
-  "generated": "2026-10-18T08:11:07+00:00"
+  "generated": "2026-10-21T20:44:59+00:00"
  }
 }

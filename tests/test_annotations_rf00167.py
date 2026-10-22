@@ -46,17 +46,20 @@ def test_tracks_traceable_to_loops(data):
     for p in data["tracks"]["positions"]:
         pos = p["rfam_consensus_pos"]
         for track, t in (("hairpin_loops", "HL"), ("internal_loops", "IL"), ("junction_loops_J3", "J3"), ("junction_loops_J4", "J4")):
-            expected = sorted(i for i, L in loops.items() if L["loop_type"] == t and pos in L["consensus_positions"])
+            here = [i for i, L in loops.items() if L["loop_type"] == t and pos in L["consensus_positions"]]
+            expected = sorted(i for i in here if loops[i]["decomposition"]["counted_in_tracks"])
             assert p[track]["loop_ids"] == expected
+            assert p[track]["superseded_loop_ids"] == sorted(i for i in here if not loops[i]["decomposition"]["counted_in_tracks"])
             inst = {n["seq_name"] for i in expected for n in loops[i]["nucleotides"] if n["rfam_consensus_pos"] == pos and n["mapping_status"] in ("mapped", "mapped_no_coordinates")}
             assert p[track]["n_instances"] == len(inst)
             groups = Counter(loops[i]["motif_group"] or "unassigned" for i in expected)
             assert {g: v["n_loops"] for g, v in p[track]["by_motif_group"].items()} == dict(groups)
         u = p["junction_loops_union"]
         assert max(p["junction_loops_J3"]["n_instances"], p["junction_loops_J4"]["n_instances"]) <= u["n_instances"] <= p["junction_loops_J3"]["n_instances"] + p["junction_loops_J4"]["n_instances"]
-    # the J2/3 strand: FR3D hairpin HL_56046.1 and J3 overlap at consensus 53 and are both kept
+    # the J2/3 strand: the FR3D hairpin HL_56046.1 closed by G46-C53 is a part of the merged J3 and is no longer counted, but its records are kept
     p = data["tracks"]["positions"][52]
-    assert "HL_56046.1" in p["hairpin_loops"]["by_motif_group"] and p["junction_loops_J3"]["n_instances"] > 60 and p["junction_loops_J4"]["n_instances"] == 0
+    assert "HL_56046.1" not in p["hairpin_loops"]["by_motif_group"] and p["junction_loops_J3"]["n_instances"] > 60 and p["junction_loops_J4"]["n_instances"] == 0
+    assert any(loops[i]["motif_group"] == "HL_56046.1" for i in p["hairpin_loops"]["superseded_loop_ids"])
 
 
 def test_ligand_track_traceable_and_entry_level(data):
@@ -92,9 +95,11 @@ def test_denominators_distinguish_missing_from_negative(data):
 
 
 def test_consensus_53_overlapping_loop_classes(data):
-    """Validated audit values (experiments/loop_overlap_pos53): HL 66, IL 13, J3 76, J4 0, JL 76, HL∩JL 62, any 80, evaluable 80 of 84."""
+    """Validated audit values on the loop records (experiments/loop_overlap_pos53): HL 66, IL 13, J3 76, J4 0, JL 76, HL∩JL 62, any 80,
+    evaluable 80 of 84. The tracks count only loops not superseded by a merged loop: HL 8 (apo 5E54/5SWD and the 9NDD scaffold), IL 0, J3 76."""
     p = data["tracks"]["positions"][52]
-    assert p["hairpin_loops"]["n_instances"] == 66 and p["internal_loops"]["n_instances"] == 13
+    assert p["hairpin_loops"]["n_instances"] == 8 and p["internal_loops"]["n_instances"] == 0
+    assert len(p["hairpin_loops"]["superseded_loop_ids"]) == 58 and len(p["internal_loops"]["superseded_loop_ids"]) == 13
     assert p["junction_loops_J3"]["n_instances"] == 76 and p["junction_loops_J4"]["n_instances"] == 0 and p["junction_loops_union"]["n_instances"] == 76
     assert p["hairpin_loops"]["denominators"]["n_observable_and_evaluated"] == 80 and data["tracks"]["n_instances"] == 84
     by = {"HL": set(), "IL": set(), "J3": set(), "J4": set()}
@@ -105,4 +110,20 @@ def test_consensus_53_overlapping_loop_classes(data):
     assert {k: len(v) for k, v in by.items()} == {"HL": 66, "IL": 13, "J3": 76, "J4": 0}
     jl = by["J3"] | by["J4"]
     assert len(by["HL"] & jl) == 62 and len(by["HL"] | by["IL"] | jl) == 80
-    assert p["junction_loops_J3"]["n_loop_observations"] == 93    # alternative J3 boundaries in the same chain: observations > instances
+    assert p["junction_loops_J3"]["n_loop_observations"] == 76 and len(p["junction_loops_J3"]["superseded_loop_ids"]) == 17   # one J3 per chain; nested merges superseded
+
+
+def test_merged_loop_decomposition(data):
+    """Loop composition per chain after merged loops supersede their parts (results/open_source_rna_motif_annotation_review, 2026-10-21)."""
+    loops = data["loops"]
+    assert loops["counts"]["n_merged_loops"] == 88 and loops["counts"]["n_superseded_loops"] == 176
+    by = {L["loop_id"]: L for L in loops["loops"]}
+    assert by["J3_4FE5_001"]["decomposition"]["merged_from"] == [["HL_4FE5_002", "J4_4FE5_001"]]
+    assert by["HL_4FE5_002"]["decomposition"]["superseded_by"] == ["J3_4FE5_001"] and not by["HL_4FE5_002"]["decomposition"]["counted_in_tracks"]
+    sig: dict[str, Counter] = {}
+    for L in loops["loops"]:
+        if L["decomposition"]["counted_in_tracks"] and L["atlas_status"] != "problematic" and len(L["instances"]) == 1:
+            sig.setdefault(L["instances"][0], Counter())[L["loop_type"]] += 1
+    patterns = Counter(" ".join(f"{n}{t}" for t, n in sorted(c.items())) for c in sig.values())
+    assert patterns == {"2HL 1J3": 42, "2HL 1IL 1J3": 30, "2IL 1J3": 7, "3HL 1J4": 4, "1HL 2IL 1J3": 1}
+    assert {s for s, c in sig.items() if c.get("J4")} == {"5e54_1_A_A", "5e54_1_B_B", "5swd_1_A_A", "5swd_1_B_B"}     # apo: real two-pair helix, no merge

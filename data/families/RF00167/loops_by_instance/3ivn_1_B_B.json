@@ -300,6 +300,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3IVN/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -532,6 +538,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3IVN/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3IVN_002"
+    ],
+    "counted_in_tracks": false
    }
   },
   {
@@ -830,6 +844,12 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3IVN/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -1324,6 +1344,17 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3IVN/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "merged",
+    "merged_from": [
+     [
+      "HL_3IVN_005",
+      "J4_3IVN_002"
+     ]
+    ],
+    "superseded_by": [],
+    "counted_in_tracks": true
    }
   },
   {
@@ -1696,6 +1727,14 @@
     "motifs_url": "https://rna.bgsu.edu/rna3dhub/pdb/3IVN/motifs",
     "retrieved": "2026-10-15",
     "motif_atlas_release": "4.15"
+   },
+   "decomposition": {
+    "role": "single",
+    "merged_from": [],
+    "superseded_by": [
+     "J3_3IVN_002"
+    ],
+    "counted_in_tracks": false
    }
   }
  ],
@@ -1708,6 +1747,6 @@
   "mapping_generated": "2026-10-15T03:48:01+00:00",
   "annotation_pipeline_version": "0.1.0",
   "annotation_config_version": "1.1",
-  "generated": "2026-10-18T08:10:20+00:00"
+  "generated": "2026-10-21T20:44:37+00:00"
  }
 }
