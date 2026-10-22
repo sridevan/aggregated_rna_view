@@ -44,8 +44,10 @@ test('Annotations and Interactions: no ligand tracks (metal ions only), no pocke
   expect(tr.tracks.junction_loops_union.loop_types).toContain('J6')
   expect(Object.values(lig.by_ccd).every((c) => (c as { ligand_class: string }).ligand_class === 'metal_ion')).toBe(true)
   expect(it.default_numbering_reference.seq_name).toBe('9owq_1_A_A'); expect(it.summary.n_instances_annotated).toBe(50)
-  await page.goto('/RF00011'); await page.getByTestId('tab-annotations').click()
+  await page.goto('/RF00011'); await page.getByTestId('tab-ligands').click()
   await expect(page.getByTestId('categories-unavailable')).toContainText('Predicted binding pockets')
+  await expect(page.getByTestId('ligand-gallery-empty')).toBeVisible(); await expect(page.locator('[data-testid^="track-lig-"]')).toHaveCount(0)
+  await page.getByTestId('tab-annotations').click()
   await expect(page.getByTestId('modifications-none')).toBeVisible()
   await page.getByTestId('tab-interactions').click()
   await expect(page.getByTestId('interactions-tab')).toHaveAttribute('data-circular', 'false')   // 365 positions: table and 3D only

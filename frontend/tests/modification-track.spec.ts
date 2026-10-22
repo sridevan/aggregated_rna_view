@@ -2,7 +2,7 @@ import { expect, test, type Page } from '@playwright/test'
 
 /* Nonstandard nucleotides category: one Occurrence track from modification_tracks.json, fixed-colour presence marks, exact counts in tooltips,
    pinned details, category popover, two downloads; optional dataset (missing file hides only this category). */
-const open = async (page: Page) => { await page.goto('/RF00167'); await page.getByTestId('tab-annotations').click(); await expect(page.getByTestId('category-ligands')).toBeVisible() }
+const open = async (page: Page) => { await page.goto('/RF00167'); await page.getByTestId('tab-annotations').click(); await expect(page.getByTestId('category-loops')).toBeVisible() }
 
 test('one row per on-axis component (like ligand rows): fixed-colour marks at the data positions, aligned; tooltips and pinned details from the data', async ({ page }) => {
   await open(page)
@@ -16,8 +16,8 @@ test('one row per on-axis component (like ligand rows): fixed-colour marks at th
   expect(await cat.locator('[data-testid^="track-"]').evaluateAll((rs) => rs.map((r) => r.getAttribute('data-testid')))).toEqual(onAxis.map((c) => `track-mod-${c}`))
   for (const c of ['GTP', 'GDP', '23G']) await expect(page.getByTestId(`track-mod-${c}`)).toHaveCount(0)
   await expect(page.getByTestId('track-mod-CCC')).toContainText('CCC'); await expect(page.getByTestId('track-mod-CCC')).toContainText('2 instances')
-  // category order: SASA, loops, nonstandard nucleotides, ligands, pockets
-  const ys = await Promise.all(['sasa', 'loops', 'modifications', 'ligands', 'pockets'].map(async (id) => (await page.getByTestId(`category-${id}`).boundingBox())!.y))
+  // category order: SASA, loops, nonstandard nucleotides (ligands and pockets are in the Ligands tab)
+  const ys = await Promise.all(['sasa', 'loops', 'modifications'].map(async (id) => (await page.getByTestId(`category-${id}`).boundingBox())!.y))
   expect(ys).toEqual([...ys].sort((a, b) => a - b))
   // marks per row exactly where the data has that component; one fixed colour; zero positions empty
   const expected: Record<string, number[]> = { CCC: [87], '50L': [84], '50N': [22], IU: [32, 35] }
@@ -84,7 +84,7 @@ test('category popover, collapse, downloads; other categories unchanged', async 
   await page.getByTestId('category-toggle-modifications').click()
   // downloads
   await page.getByTestId('download-button').click()
-  await expect(page.locator('[data-testid^="download-"][role="menuitem"]')).toHaveCount(9)
+  await expect(page.locator('[data-testid^="download-"][role="menuitem"]')).toHaveCount(6)
   for (const [id, file, label, key] of [['modifications', 'modifications.json', 'Nonstandard nucleotides · Detailed', 'observations'], ['modification-tracks', 'modification_tracks.json', 'Nonstandard nucleotides · Aggregated', 'positions']]) {
     const it = page.getByTestId(`download-${id}`); await expect(it).toContainText(label)
     const href = (await it.getAttribute('href'))!; expect(href.endsWith(`/families/RF00167/${file}`)).toBe(true); await expect(it).toHaveAttribute('download', `RF00167_${file}`)
@@ -96,8 +96,7 @@ test('category popover, collapse, downloads; other categories unchanged', async 
   // existing categories unchanged
   await page.getByTestId('track-HL').locator('rect[data-pos="53"]').hover()
   await expect(page.getByTestId('annotation-tooltip')).toHaveText('Rfam residue 53Hairpin loop (HL)Observed in 8 of 80 RNA instances (10%)')
-  await expect(page.locator('[data-testid^="track-lig-"]')).toHaveCount(29)
-  await expect(page.getByTestId('track-pocket-occurrence')).toBeVisible(); await expect(page.getByTestId('track-sasa-median')).toBeVisible()
+  await expect(page.getByTestId('track-sasa-median')).toBeVisible()
   for (const id of ['legend-occurrence-frequency', 'legend-sasa-median', 'legend-no-data', 'legend-no-annotation']) await expect(page.getByTestId(id)).toBeVisible()
 })
 
@@ -107,7 +106,7 @@ test('family without nonstandard-nucleotide data: category hidden, download disa
   await open(page)
   await expect(page.getByTestId('category-sasa')).toBeVisible()
   await expect(page.getByTestId('category-modifications')).toHaveCount(0)
-  await expect(page.locator('section[data-testid^="category-"]')).toHaveCount(4)
+  await expect(page.locator('section[data-testid^="category-"]')).toHaveCount(2)
   await expect(page.getByTestId('legend-nonstandard-presence')).toHaveCount(0)
   await page.getByTestId('download-button').click()
   await expect(page.getByTestId('download-modifications')).toHaveAttribute('aria-disabled', 'true')

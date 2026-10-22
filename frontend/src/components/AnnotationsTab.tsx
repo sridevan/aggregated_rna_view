@@ -5,7 +5,7 @@ import { familyFileUrl } from '../api/data'
 import { SectionCard } from './SectionCard'
 import { InfoTip } from './InfoTip'
 import { NumberingSelect, useNumbering } from '../state/numbering'
-import { useNavigation } from '../state/navigation'
+import { useNavigation, type NavigationOrigin } from '../state/navigation'
 import { chainAt, referenceTicks, residueValue } from '../lib/numbering'
 import type { LigandsDataset, LoopTrackPosition, ModificationTracksDataset, PocketTracksDataset, SasaTracksDataset, TracksDataset } from '../types/backend'
 
@@ -36,8 +36,8 @@ export function visibleRange(scrollX: number, viewW: number, cellPx: number, cle
 export interface ScaleDef { id: string; kind: 'frequency' | 'quantity' | 'presence'; label: string; light: string; dark: string; bins: number; binLabels: string[]; unit?: string; domainMin?: number; domainMax?: number }
 /** `summary`: rows of the pinned details panel (measured quantity, result with numerator / denominator / unit, absence wording, what was not
  *  counted and why). `details`: the longer evidence and provenance lines shown under "Evidence details". */
-interface Mark { value: number | null; tip: { title: string; lines: string[] }; summary: [string, string][]; details: string[] }
-interface TrackDef { id: string; label: string; sub: string; scale: ScaleDef; at: (pos: number) => Mark | 'unevaluable' | null }
+export interface Mark { value: number | null; tip: { title: string; lines: string[] }; summary: [string, string][]; details: string[] }
+export interface TrackDef { id: string; label: string; sub: string; scale: ScaleDef; at: (pos: number) => Mark | 'unevaluable' | null }
 
 const FREQ_BINS = ['<20%', '20–40%', '40–60%', '60–80%', '≥80%']
 /** Shared occurrence-frequency scale (teal) of RNA loops, ligand binding sites and predicted pockets: one colour per frequency bin whatever the source;
@@ -64,16 +64,14 @@ const plural = (n: number, one: string, many: string) => `${n} ${n === 1 ? one :
 /** user-facing wording for the backend's pocket missing-data reasons (keys stay unchanged in pocket_tracks.json) */
 const MISSING_REASON: Record<string, string> = { no_coordinates: 'no coordinates', failed_run: 'prediction failed', no_mapping: 'not mapped' }
 const DETERMINABLE = 'Frequencies are calculated from instances where annotation presence or absence can be determined.'
-const titleCase = (name: string | null) => (name ? (name === name.toUpperCase() ? name[0] + name.slice(1).toLowerCase() : name) : '')
+export const titleCase = (name: string | null) => (name ? (name === name.toUpperCase() ? name[0] + name.slice(1).toLowerCase() : name) : '')
 
 /** Category-level explanations (concise by design; the full methodology lives in the downloadable JSON and the milestone documents). */
-const POCKET_DEFAULT_FILTER = 'all_score_ge_0'   // fpocketR's published default (all pockets with fpocket Score >= 0); the other variants stay in the downloadable pocket_tracks.json
+export const POCKET_DEFAULT_FILTER = 'all_score_ge_0'   // fpocketR's published default (all pockets with fpocket Score >= 0); the other variants stay in the downloadable pocket_tracks.json
 const CATEGORY_INFO = {
-  pockets: 'fpocketR-predicted RNA pockets aggregated by Rfam position. No predicted pocket does not establish absence of binding.',
   sasa: 'Per-nucleotide solvent-accessible surface area (SASA) of isolated RNA chains, summarised by Rfam position (median Å²).',
   modifications: 'Nonstandard nucleotide components in deposited RNA sequences, mapped to Rfam positions. These are not necessarily biological RNA modifications.',
   loops: 'BGSU hairpin (HL), internal (IL) and junction (JL) loops mapped to Rfam positions. Annotations may overlap or vary between structures.',
-  ligands: 'PDBe ligand-contact annotations aggregated by Rfam position and PDB entry. Entity-level annotations may not apply to every RNA chain.',
 }
 
 /** "4 RNA instances: no observed nucleotide here; 1 RNA instance: source unavailable" (only non-zero parts), or "None" */
@@ -113,7 +111,7 @@ function loopTrack(id: 'HL' | 'IL' | 'JL', typeName: string, tracks: TracksDatas
 }
 
 /** Solvent accessibility: one quantitative track (median SASA, Å²). Colour domain = 0 .. max median rounded up to 50 Å² (from the dataset, documented in sasa_tracks.json). */
-function sasaTrack(sasa: SasaTracksDataset): TrackDef {
+export function sasaTrack(sasa: SasaTracksDataset): TrackDef {
   const measured = sasa.summary.n_instances_measured ?? 0
   const medians = sasa.positions.map((p) => p.median_sasa_A2).filter((v): v is number => v != null)
   const max = sasa.colour_domain_suggestion_A2?.max ?? (medians.length ? Math.ceil(Math.max(...medians) / 50) * 50 : 1)
@@ -140,7 +138,7 @@ function sasaTrack(sasa: SasaTracksDataset): TrackDef {
 }
 
 /** Predicted binding pockets: one frequency track (default filter). Grey = pocket presence/absence cannot be determined in any instance at the position; empty = determined, in no pocket. */
-function pocketTrack(pt: PocketTracksDataset): TrackDef | null {
+export function pocketTrack(pt: PocketTracksDataset): TrackDef | null {
   const positions = pt.tracks[POCKET_DEFAULT_FILTER]
   if (!positions) return null
   return {
@@ -171,7 +169,7 @@ function pocketTrack(pt: PocketTracksDataset): TrackDef | null {
  *  instance carries that component at the position (sparse data); grey = no instance with a determined component there; empty = none observed.
  *  Frequency = instances with this component at the position / instances with a determined component there. Exact counts in the tooltip. */
 const PARENT_SRC: Record<string, string> = { CCD: 'CCD', NAKB: 'NAKB' }
-function modificationTracks(md: ModificationTracksDataset): TrackDef[] {
+export function modificationTracks(md: ModificationTracksDataset): TrackDef[] {
   const comps = Object.entries(md.components).filter(([, c]) => c.n_on_consensus_axis > 0)
     .sort((a, b) => b[1].n_instances - a[1].n_instances || a[0].localeCompare(b[0]))
   return comps.map(([ccd, ci]) => {
@@ -205,16 +203,19 @@ function modificationTracks(md: ModificationTracksDataset): TrackDef[] {
   })
 }
 
-function buildTracks(tracks: TracksDataset, ligands: LigandsDataset) {
-  const structure: TrackDef[] = [loopTrack('HL', 'Hairpin loop', tracks), loopTrack('IL', 'Internal loop', tracks), loopTrack('JL', 'Junction loop', tracks)]
+export const loopTracks = (tracks: TracksDataset): TrackDef[] => [loopTrack('HL', 'Hairpin loop', tracks), loopTrack('IL', 'Internal loop', tracks), loopTrack('JL', 'Junction loop', tracks)]
+/** CCDs of the default ligand set (class "ligand", not flagged), in track order: most PDB entries first, then CCD id. Shared by the gallery and the tracks. */
+export const defaultLigandCcds = (ligands: LigandsDataset) => Object.entries(ligands.by_ccd).filter(([, v]) => v.n_entries_in_default_track > 0)
+  .sort((a, b) => b[1].n_entries_in_default_track - a[1].n_entries_in_default_track || a[0].localeCompare(b[0]))
+/** One residue track per default-set CCD (PDBe binding-site contacts on Rfam positions, counted per PDB entry; tracks.json by_ccd_entries). */
+export function ligandTracks(tracks: TracksDataset, ligands: LigandsDataset): TrackDef[] {
   const perCcdPos = new Map<string, Map<number, Set<string>>>()
   for (const bm of ligands.bound_molecules) {
     if (!bm.in_default_track) continue
     const m = perCcdPos.get(bm.ccd_id) ?? new Map<number, Set<string>>(); perCcdPos.set(bm.ccd_id, m)
     for (const pos of bm.consensus_positions) (m.get(pos) ?? m.set(pos, new Set()).get(pos)!).add(bm.pdb_id)
   }
-  const ccds = Object.entries(ligands.by_ccd).filter(([, v]) => v.n_entries_in_default_track > 0).sort((a, b) => b[1].n_entries_in_default_track - a[1].n_entries_in_default_track || a[0].localeCompare(b[0]))
-  const ligandTracks: TrackDef[] = ccds.map(([ccd, v]) => ({
+  return defaultLigandCcds(ligands).map(([ccd, v]) => ({
     id: `lig-${ccd}`, label: ccd, sub: `${titleCase(v.name)} · ${v.n_entries_in_default_track} ${v.n_entries_in_default_track === 1 ? 'entry' : 'entries'}`, scale: LIGAND_SCALE,
     at: (pos) => {
       const lp = tracks.positions[pos - 1].ligand_binding_sites
@@ -240,14 +241,21 @@ function buildTracks(tracks: TracksDataset, ligands: LigandsDataset) {
                   `Ligand-contact presence or absence can be determined at this position for ${lp.denominators.n_observable_and_evaluated} PDB entry entities (all ligands)`] }
     },
   }))
-  return { structure, ligandTracks }
 }
 
-/** Category order (user decision): Solvent accessibility, RNA loop annotations, Nonstandard nucleotides, Ligand binding sites, Predicted binding pockets.
- *  Compact PDBe-KB-style annotation viewer: fixed-size marks coloured by value, collapsible and independently scrollable categories, concise tooltips, click-to-pin details, download of the full evidence. */
-export function AnnotationsTab() {
+/** A titled group of tracks in the shared track browser. */
+export interface CategorySpec { id: string; title: string; info: string; tracks: TrackDef[]; empty?: string }
+
+/**
+ * Compact PDBe-KB-style track browser shared by the Annotations and Ligands tabs: fixed-size marks coloured by value on one Rfam consensus axis,
+ * position numbering, shared zoom and horizontal window, one legend built from the scales in use, collapsible and independently scrollable
+ * categories, concise tooltips, click-to-pin details. `highlight` (a track id) outlines that row and scrolls it into view; changing `revealKey`
+ * also re-opens its category. The numbering and legend ⓘ texts are optional per tab.
+ */
+export function TrackBrowser({ categories, origin, numberingInfo, legendInfo, highlight = null, revealKey = 0 }: {
+  categories: CategorySpec[]; origin: NavigationOrigin['from']; numberingInfo?: string; legendInfo?: string; highlight?: string | null; revealKey?: number
+}) {
   const { acc, family } = useFamily()
-  const st = useAnnotations(acc)
   const [inspect, setInspect] = useState<{ trackId: string; label: string; pos: number; title: string; summary: [string, string][]; details: string[] } | null>(null)
   const nav = useNavigation()
   const [tip, setTip] = useState<{ x: number; y: number; title: string; lines: string[] } | null>(null)
@@ -257,17 +265,16 @@ export function AnnotationsTab() {
   const { numbering } = useNumbering()
   const refLine = (pos: number) => (numbering ? [`${numbering.label} reference residue: ${residueValue(chainAt(numbering.idx, pos))}`] : [])
   // --- shared zoom + horizontal window (measured on the axis plot area; every row's plot area has the same width) ---
-  const plotRef = useRef<HTMLDivElement>(null), barRef = useRef<HTMLDivElement>(null)
+  const plotRef = useRef<HTMLDivElement>(null), barRef = useRef<HTMLDivElement>(null), rootRef = useRef<HTMLDivElement>(null)
   const [viewW, setViewW] = useState(0)
   const [zoomPx, setZoomPx] = useState<number | null>(null)   // px per position; null = Fit all
   const [scrollRaw, setScrollX] = useState(0)                 // px from the start of the consensus axis
-  const ready = st.state === 'ready'
   useLayoutEffect(() => {
     const el = plotRef.current; if (!el) return
     setViewW(el.clientWidth)
     if (typeof ResizeObserver === 'undefined') return
     const ro = new ResizeObserver(() => setViewW(el.clientWidth)); ro.observe(el); return () => ro.disconnect()
-  }, [ready])
+  }, [])
   const fitPx = fitCellPx(viewW, clen)
   const cellPx = zoomPx == null ? fitPx : Math.max(zoomPx, fitPx)
   const totalW = clen * cellPx
@@ -291,14 +298,14 @@ export function AnnotationsTab() {
     const dx = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.shiftKey ? e.deltaY : 0
     if (dx && totalW > viewW) setScrollX(Math.min(Math.max(0, scrollX + dx), totalW - viewW))
   }
-  const built = useMemo(() => (st.state === 'ready' ? buildTracks(st.tracks, st.ligands) : null), [st])
-  const sasa = useMemo(() => (st.state === 'ready' && st.sasa ? sasaTrack(st.sasa) : null), [st])
-  const pockets = useMemo(() => (st.state === 'ready' && st.pockets ? pocketTrack(st.pockets) : null), [st])
-  const mods = useMemo(() => (st.state === 'ready' && st.modifications ? modificationTracks(st.modifications) : null), [st])
-  const scales = useMemo(() => { const m = new Map<string, ScaleDef>(); for (const t of [...(sasa ? [sasa] : []), ...(built?.structure ?? []), ...(mods ?? []), ...(built?.ligandTracks ?? []), ...(pockets ? [pockets] : [])]) m.set(t.scale.id, t.scale); return [...m.values()] }, [built, sasa, pockets, mods])
+  // a highlighted track (e.g. chosen in the ligand gallery) is scrolled into view; the short delay lets a collapsed category re-open and render its rows first
+  useEffect(() => {
+    if (!highlight) return
+    const id = setTimeout(() => rootRef.current?.querySelector(`[data-testid="track-${CSS.escape(highlight)}"]`)?.scrollIntoView({ block: 'center', behavior: 'smooth' }), 60)
+    return () => clearTimeout(id)
+  }, [highlight, revealKey])
+  const scales = useMemo(() => { const m = new Map<string, ScaleDef>(); for (const c of categories) for (const t of c.tracks) m.set(t.scale.id, t.scale); return [...m.values()] }, [categories])
   const inspectedPos = inspect?.pos ?? null
-  if (typeof window !== 'undefined') window.__rnaExplorer = { ...(window.__rnaExplorer ?? {}), annotationTracks: built ? { structure: built.structure.map((t) => t.id), ligands: built.ligandTracks.map((t) => t.id), pockets: pockets ? [pockets.id] : [], sasa: sasa ? [sasa.id] : [], modifications: mods ? mods.map((t) => t.id) : [] } : null }
-
   const marksSvg = (t: TrackDef) => (
     <svg viewBox={`${vb.x0} 0 ${vb.w} ${ROW_PX}`} preserveAspectRatio="none" className="block w-full select-none" style={{ height: ROW_PX }} role="img" aria-label={t.label}>
       {inspectedPos != null && <rect x={x(inspectedPos)} y={0} width={CELL} height={ROW_PX} fill={SEL} opacity={0.16} />}
@@ -315,7 +322,7 @@ export function AnnotationsTab() {
     </svg>
   )
   const row = (t: TrackDef) => (
-    <div key={t.id} className="flex items-center" style={{ height: ROW_PX }} data-testid={`track-${t.id}`}>
+    <div key={t.id} className={`flex items-center ${t.id === highlight ? 'rounded bg-violet-50 ring-1 ring-inset ring-violet-300' : ''}`} style={{ height: ROW_PX }} data-testid={`track-${t.id}`} data-highlighted={t.id === highlight ? 'true' : undefined}>
       <div className="min-w-0 shrink-0 pr-2 leading-tight" style={{ width: LABEL_W }} title={`${t.label} — ${t.sub}`}>
         <div className="truncate text-[11px] text-stone-900">{t.label}</div><div className="truncate text-[9px] text-stone-500">{t.sub}</div>
       </div>
@@ -352,6 +359,7 @@ export function AnnotationsTab() {
   const zoomControls = (
     <div className="flex flex-wrap items-center gap-1 text-[11px]">
     <NumberingSelect />
+    {numberingInfo && <span data-testid="numbering-info"><InfoTip label="About position numbering" text={numberingInfo} /></span>}
     <div className="ml-auto flex items-center gap-1" role="group" aria-label="Zoom the Rfam position axis" data-testid="annotations-zoom-controls" data-cell-px={cellPx.toFixed(2)} data-fit={String(atFit)}>
       <span className="mr-1 text-[10px] text-stone-500">Zoom</span>
       <button type="button" onClick={() => setZoom(zoomOutTo != null && zoomOutTo > fitPx + 0.01 ? zoomOutTo : null)} disabled={atFit} aria-label="Zoom out" title="Zoom out" data-testid="annotations-zoom-out"
@@ -387,28 +395,12 @@ export function AnnotationsTab() {
       ))}
       <div className="flex items-center gap-1" data-testid="legend-no-data" title="No assessable RNA instance at this position: residues or source data unavailable (SASA: no qualifying measurement)."><span className={SW} style={{ background: UNEVAL }} /> No data</div>
       <div className="flex items-center gap-1" data-testid="legend-no-annotation" title="No annotation recorded at this position. Interpretation depends on the annotation type; for loops and ligands, non-detection does not establish absence."><span className={`${SW} bg-white ring-stone-300`} /> Not observed</div>
+      {legendInfo && <span data-testid="legend-info"><InfoTip label="About the frequency colours" text={legendInfo} /></span>}
     </div>
   )
-  // labels without "(JSON)" (the button says it); each description sits behind an info icon (checked against the files' contents)
-  const datasets: DownloadItem[] = [
-    { id: 'loops', label: 'RNA loop annotations', file: 'loops.json', detail: 'BGSU RNA 3D Motif Atlas loops (HL, IL, J3, J4) with motif-group assignments, nucleotide and segment membership and Rfam consensus mapping.' },
-    { id: 'ligands', label: 'Ligand binding annotations', file: 'ligands.json', detail: 'Bound molecules (CCD id, name, class), binding-site nucleotides, supporting entries and chains, and provenance.' },
-    { id: 'tracks', label: 'Aggregated annotation tracks', file: 'tracks.json', detail: 'Per-position annotation frequencies with numerators, denominators and missing-data counts.' },
-    { id: 'pockets', label: 'Predicted pockets · Per structure', file: 'pockets.json', detail: 'fpocketR pockets per RNA chain with scores, volumes, descriptors and lining nucleotides mapped to Rfam positions.' },
-    { id: 'pocket-tracks', label: 'Predicted pockets · Aggregated', file: 'pocket_tracks.json', detail: 'Per-position pocket frequencies for each of the three pocket filters.' },
-    { id: 'sasa', label: 'Solvent accessibility · Per nucleotide', file: 'sasa.json', detail: 'Per-chain nucleotide solvent accessibility (Å²) with atom completeness and calculation details.' },
-    { id: 'sasa-tracks', label: 'Solvent accessibility · Aggregated', file: 'sasa_tracks.json', detail: 'Per-position solvent accessibility summaries (median, quartiles) and contributing-chain counts.' },
-    { id: 'modifications', label: 'Nonstandard nucleotides · Detailed', file: 'modifications.json', detail: 'Nonstandard nucleotide identities, locations, parent nucleotides, Rfam mappings and source information.' },
-    { id: 'modification-tracks', label: 'Nonstandard nucleotides · Aggregated', file: 'modification_tracks.json', detail: 'Per-position nonstandard-nucleotide frequencies, counts and contributing components.' },
-  ]
   return (
-    <div className="space-y-3" data-testid="annotations-tab">
-      <SectionCard title="Annotations" actions={st.state === 'ready' ? <DownloadMenu acc={acc} items={datasets} /> : undefined}
-        description={<span data-testid="annotations-summary">Residue-level annotations across {family.counts.instances} RNA instances from {family.counts.pdb_entries} PDB entries.</span>}>
-        {st.state === 'loading' && <p className="text-sm text-stone-500" data-testid="annotations-loading">Loading annotation tracks…</p>}
-        {st.state === 'error' && <p className="text-sm text-red-700" data-testid="annotations-error">Annotation data not available: {st.message}</p>}
-        {st.state === 'ready' && built && (
-          <div className="space-y-2">
+    <>
+    <div ref={rootRef} className="space-y-2">
             {legend}
             {inspect && (
               <div className="rounded border border-violet-200 bg-violet-50 px-2 py-1.5 text-xs text-stone-800" data-testid="annotation-inspect">
@@ -420,7 +412,7 @@ export function AnnotationsTab() {
                 </dl>
                 {nav && (
                   <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-0.5">
-                    <button type="button" className="rounded border border-violet-300 bg-white px-1.5 py-px text-[11px] text-violet-800 hover:bg-violet-100" onClick={() => nav.viewInOverview(inspect.pos, `${inspect.label} at Rfam position ${inspect.pos}`)} data-testid="view-in-overview"
+                    <button type="button" className="rounded border border-violet-300 bg-white px-1.5 py-px text-[11px] text-violet-800 hover:bg-violet-100" onClick={() => nav.viewInOverview(inspect.pos, `${inspect.label} at Rfam position ${inspect.pos}`, origin)} data-testid="view-in-overview"
                       title="Select this Rfam position for the RNA instance shown in the Family Overview">View in Family Overview</button>
                     <span className="text-[10px] text-stone-500">Highlights Rfam position {inspect.pos} in the selected RNA instance; the annotation may not be present in that chain.</span>
                   </div>)}
@@ -430,14 +422,52 @@ export function AnnotationsTab() {
             {zoomControls}
             {axis}
             <div className="space-y-2 overscroll-x-contain" onWheel={onWheel} data-testid="annotation-categories">
-            {sasa && <Category id="sasa" title="Solvent accessibility" count={1} info={CATEGORY_INFO.sasa}>{row(sasa)}</Category>}
-            <Category id="loops" title="RNA loop annotations" count={built.structure.length} info={CATEGORY_INFO.loops}>{built.structure.map(row)}</Category>
-            {mods && mods.length > 0 && <Category id="modifications" title="Nonstandard nucleotides" count={mods.length} info={CATEGORY_INFO.modifications}>{mods.map(row)}</Category>}
-            <Category id="ligands" title="Ligand binding sites" count={built.ligandTracks.length} info={CATEGORY_INFO.ligands}>{built.ligandTracks.map(row)}</Category>
-            {pockets && <Category id="pockets" title="Predicted binding pockets" count={1} info={CATEGORY_INFO.pockets}>{row(pockets)}</Category>}
+              {categories.map((c) => (
+                <Category key={c.id} id={c.id} title={c.title} count={c.tracks.length} info={c.info} revealKey={c.tracks.some((t) => t.id === highlight) ? revealKey : 0}>
+                  {c.tracks.length ? c.tracks.map(row) : <p className="px-2 py-1 text-[11px] text-stone-500" data-testid={`category-empty-${c.id}`}>{c.empty ?? 'No tracks.'}</p>}
+                </Category>))}
             </div>
+    </div>
+    {/* fixed-position tooltip kept outside the spaced container: as a child of it, its space-y margin changed the page height under the pointer */}
+    {tip && <ResidueTooltip {...tip} />}
+    </>
+  )
+}
+
+/** Category order (user decision): Solvent accessibility, RNA loop annotations, Nonstandard nucleotides. Ligand-contact residues and predicted
+ *  binding pockets are in the Ligands tab (LigandsTab.tsx), which uses the same TrackBrowser. */
+export function AnnotationsTab() {
+  const { acc, family } = useFamily()
+  const st = useAnnotations(acc)
+  const loops = useMemo(() => (st.state === 'ready' ? loopTracks(st.tracks) : null), [st])
+  const sasa = useMemo(() => (st.state === 'ready' && st.sasa ? sasaTrack(st.sasa) : null), [st])
+  const mods = useMemo(() => (st.state === 'ready' && st.modifications ? modificationTracks(st.modifications) : null), [st])
+  if (typeof window !== 'undefined') window.__rnaExplorer = { ...(window.__rnaExplorer ?? {}), annotationTracks: loops ? { structure: loops.map((t) => t.id), sasa: sasa ? [sasa.id] : [], modifications: mods ? mods.map((t) => t.id) : [] } : null }
+  const categories = useMemo<CategorySpec[]>(() => !loops ? [] : [
+    ...(sasa ? [{ id: 'sasa', title: 'Solvent accessibility', info: CATEGORY_INFO.sasa, tracks: [sasa] }] : []),
+    { id: 'loops', title: 'RNA loop annotations', info: CATEGORY_INFO.loops, tracks: loops },
+    ...(mods && mods.length > 0 ? [{ id: 'modifications', title: 'Nonstandard nucleotides', info: CATEGORY_INFO.modifications, tracks: mods }] : []),
+  ], [loops, sasa, mods])
+  // labels without "(JSON)" (the button says it); each description sits behind an info icon (checked against the files' contents)
+  const datasets: DownloadItem[] = [
+    { id: 'loops', label: 'RNA loop annotations', file: 'loops.json', detail: 'BGSU RNA 3D Motif Atlas loops (HL, IL, J3, J4) with motif-group assignments, nucleotide and segment membership and Rfam consensus mapping.' },
+    { id: 'tracks', label: 'Aggregated annotation tracks', file: 'tracks.json', detail: 'Per-position annotation frequencies with numerators, denominators and missing-data counts.' },
+    { id: 'sasa', label: 'Solvent accessibility · Per nucleotide', file: 'sasa.json', detail: 'Per-chain nucleotide solvent accessibility (Å²) with atom completeness and calculation details.' },
+    { id: 'sasa-tracks', label: 'Solvent accessibility · Aggregated', file: 'sasa_tracks.json', detail: 'Per-position solvent accessibility summaries (median, quartiles) and contributing-chain counts.' },
+    { id: 'modifications', label: 'Nonstandard nucleotides · Detailed', file: 'modifications.json', detail: 'Nonstandard nucleotide identities, locations, parent nucleotides, Rfam mappings and source information.' },
+    { id: 'modification-tracks', label: 'Nonstandard nucleotides · Aggregated', file: 'modification_tracks.json', detail: 'Per-position nonstandard-nucleotide frequencies, counts and contributing components.' },
+  ]
+  return (
+    <div className="space-y-3" data-testid="annotations-tab">
+      <SectionCard title="Annotations" actions={st.state === 'ready' ? <DownloadMenu acc={acc} items={datasets} /> : undefined}
+        description={<span data-testid="annotations-summary">Residue-level annotations across {family.counts.instances} RNA instances from {family.counts.pdb_entries} PDB entries. Ligand contacts and predicted binding pockets are in the Ligands tab.</span>}>
+        {st.state === 'loading' && <p className="text-sm text-stone-500" data-testid="annotations-loading">Loading annotation tracks…</p>}
+        {st.state === 'error' && <p className="text-sm text-red-700" data-testid="annotations-error">Annotation data not available: {st.message}</p>}
+        {st.state === 'ready' && loops && (
+          <div className="space-y-2">
+            <TrackBrowser categories={categories} origin="annotations" />
             {/* categories without data for this family are named, never silently dropped */}
-            {(() => { const missing = [!sasa && 'Solvent accessibility', !mods && 'Nonstandard nucleotides', !pockets && 'Predicted binding pockets'].filter(Boolean)
+            {(() => { const missing = [!sasa && 'Solvent accessibility', !mods && 'Nonstandard nucleotides'].filter(Boolean)
               return <>
                 {missing.length > 0 && <p className="text-[11px] text-stone-500" data-testid="categories-unavailable">Not available for {acc}: {missing.join(', ')}.</p>}
                 {mods && mods.length === 0 && <p className="text-[11px] text-stone-500" data-testid="modifications-none">Nonstandard nucleotides: none observed at Rfam positions.</p>}
@@ -445,7 +475,6 @@ export function AnnotationsTab() {
           </div>
         )}
       </SectionCard>
-      {tip && <ResidueTooltip {...tip} />}
     </div>
   )
 }
@@ -469,8 +498,9 @@ function ResidueTooltip({ x, y, title, lines }: { x: number; y: number; title: s
 
 /** Collapsible category: header (toggle button + ⓘ popover, kept outside the body) above a body that scrolls vertically beyond MAX_BODY px (natural height below). */
 const MAX_BODY = 220
-function Category({ id, title, count, info, children }: { id: string; title: string; count: number; info: string; children: ReactNode }) {
+function Category({ id, title, count, info, revealKey = 0, children }: { id: string; title: string; count: number; info: string; revealKey?: number; children: ReactNode }) {
   const [open, setOpen] = useState(true)
+  useEffect(() => { if (revealKey) setOpen(true) }, [revealKey])
   return (
     <section className="rounded border border-stone-200" data-testid={`category-${id}`} data-open={String(open)}>
       <div className="flex items-center gap-1 bg-sky-50 pr-2" data-testid={`category-header-${id}`}>
@@ -486,8 +516,8 @@ function Category({ id, title, count, info, children }: { id: string; title: str
 
 /** Download dropdown: icon + label + chevron; items are plain download links of the family's static JSON files (no new endpoints). Unavailable files are
  *  detected with a HEAD request when the menu opens and shown disabled; Escape / outside click closes; arrow keys move between items. */
-interface DownloadItem { id: string; label: string; file: string; detail: string }
-function DownloadMenu({ acc, items }: { acc: string; items: DownloadItem[] }) {
+export interface DownloadItem { id: string; label: string; file: string; detail: string }
+export function DownloadMenu({ acc, items }: { acc: string; items: DownloadItem[] }) {
   const [open, setOpen] = useState(false)
   const [avail, setAvail] = useState<Record<string, boolean | null>>({})
   const root = useRef<HTMLDivElement>(null)

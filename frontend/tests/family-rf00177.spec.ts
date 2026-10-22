@@ -35,9 +35,9 @@ test('Structures: head-rotation groups 50 + 10 (provisional), no floor line; tab
   await expect(page.getByTestId('dendro-floor')).toHaveCount(0); await expect(page.getByTestId('overview-floor')).toHaveCount(0)
 })
 
-test('Annotations: readable axis (labels every 100), antibiotic rows without putrescine, no pocket category; pocket downloads unavailable', async ({ page }) => {
-  await page.goto('/RF00177'); await page.getByTestId('tab-annotations').click()
-  await expect(page.getByText('Ligand binding sites').first()).toBeVisible({ timeout: 60_000 })
+test('Ligands: readable axis (labels every 100), antibiotic rows without putrescine, no pocket category; pocket downloads unavailable', async ({ page }) => {
+  await page.goto('/RF00177'); await page.getByTestId('tab-ligands').click()
+  await expect(page.getByText('Ligand-contact residues').first()).toBeVisible({ timeout: 60_000 })
   const labels = (await page.getByTestId('annotation-axis').locator('span').allTextContents()).filter((t) => /^\d+$/.test(t)).map(Number)
   expect(labels.length).toBeLessThanOrEqual(17); expect(labels.slice(1).every((v) => v % 100 === 0)).toBe(true)
   await expect(page.getByText('Apramycin · 3 entries')).toBeVisible()
@@ -47,5 +47,5 @@ test('Annotations: readable axis (labels every 100), antibiotic rows without put
   await expect(page.getByTestId('categories-unavailable')).toHaveText('Not available for RF00177: Predicted binding pockets.')
   await page.getByTestId('download-button').click()
   await expect(page.getByTestId('download-pockets')).toHaveAttribute('aria-disabled', 'true')
-  await expect(page.getByTestId('download-loops')).toHaveAttribute('href', /\/families\/RF00177\/loops\.json$/)
+  await expect(page.getByTestId('download-ligands')).toHaveAttribute('href', /\/families\/RF00177\/ligands\.json$/)
 })

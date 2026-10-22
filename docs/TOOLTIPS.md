@@ -367,7 +367,52 @@ conserved). Multiple interactions use the 'any' occurrence."
 
 ---
 
+## Ligands
+
+The Ligands tab uses the Annotations track browser (axis, numbering, zoom, legend, track hover and pinned details as listed under
+Annotations below). Texts specific to this tab:
+
+**RNA-contacting ligands ⓘ (gallery heading)**
+> Ligands shown here have contacts reported by PDBe for RNA entities belonging to this Rfam family. Contacts are derived from Arpeggio
+> and may not represent every RNA chain or biological assembly in an entry.
+
+**Gallery description:** "Ligands with PDBe-reported contacts to RNA chains of this family, with the number of PDB entries in which a contact
+is recorded. Metal ions, crystallisation additives and flagged artefacts are not shown. Select a ligand to locate its residue track."
+
+**Gallery card:** CCD id · name · "Found in {n} PDB entr(y|ies)" (hover: "RNA contact recorded by PDBe in: {entries}") · "PDBe ligand page ↗".
+Depiction hover/alt: "2D structure of {CCD}"; when no image loads: "No depiction available". Image hover: "Locate the {CCD} residue track"
+(selected: "Clear the highlighted track"). Search placeholder: "Name or CCD id, e.g. adenine, HPA"; no match: "No ligand matches “{query}”."
+Empty family: "No ligands with PDBe-reported RNA contacts in the default ligand set for {ACC}."
+
+**Category headers, ⓘ**
+
+| Category | Text |
+|---|---|
+| Ligand-contact residues | Ligand-contact residues are obtained from PDBe binding-site annotations and mapped to Rfam consensus positions. The annotations are aggregated at RNA entity level rather than individual chain level. |
+| Predicted binding pockets | Computationally predicted RNA binding pockets identified using fpocketR. These annotations are independent of the PDBe ligand-contact data. |
+
+**Legend ⓘ (frequency)**
+> Contact frequency is the proportion of eligible PDB entries containing a ligand in which PDBe reports a contact at this position. Entries
+> with unobserved residues are excluded from the denominator. Pocket colours show the proportion of RNA instances with a predicted pocket.
+
+**Position numbering ⓘ**
+> Residue numbering is taken from the selected RNA chain. Ligand-contact annotations remain aggregated at RNA entity level and are not
+> necessarily specific to the selected chain. Switching numbering systems changes residue labels only; the underlying ligand contacts and
+> frequencies remain unchanged.
+
+**About these annotations (collapsed section):** Source · Contact identification · Annotation level · Coverage · Coordinate mapping ·
+Alternative numbering · Frequency unit · Limitation · Predicted pockets (one sentence each; see `frontend/src/components/LigandsTab.tsx`).
+
+**Family Overview note after "View in Family Overview":** "Opened from Ligands ({label}). Family-level evidence: not necessarily observed in {chain}."
+
+**Download menu:** ligands.json, tracks.json, pockets.json, pocket_tracks.json (texts as in the Annotations table below).
+
+---
+
 ## Annotations
+
+The Annotations tab shows Solvent accessibility, RNA loop annotations and Nonstandard nucleotides; its summary adds "Ligand contacts and
+predicted binding pockets are in the Ligands tab." Track hover, pinned-detail and download texts below also apply to the Ligands tab.
 
 **Category headers, ⓘ "About {category}"**
 
@@ -376,8 +421,6 @@ conserved). Multiple interactions use the 'any' occurrence."
 | Solvent accessibility | Per-nucleotide solvent-accessible surface area (SASA) of isolated RNA chains, summarised by Rfam position (median Å²). |
 | RNA loop annotations | BGSU hairpin (HL), internal (IL) and junction (JL) loops mapped to Rfam positions. Annotations may overlap or vary between structures. |
 | Nonstandard nucleotides | Nonstandard nucleotide components in deposited RNA sequences, mapped to Rfam positions. These are not necessarily biological RNA modifications. |
-| Ligand binding sites | PDBe ligand-contact annotations aggregated by Rfam position and PDB entry. Entity-level annotations may not apply to every RNA chain. |
-| Predicted binding pockets | fpocketR-predicted RNA pockets aggregated by Rfam position. No predicted pocket does not establish absence of binding. |
 
 **Legend swatches, hover**
 - No data: "No assessable RNA instance at this position: residues or source data unavailable (SASA: no qualifying measurement)."

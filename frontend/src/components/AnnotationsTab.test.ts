@@ -40,3 +40,29 @@ describe('annotation zoom window', () => {
     expect(visibleRange(0, 2000, 10, 102)).toEqual([1, 102])
   })
 })
+
+import { defaultLigandCcds } from './AnnotationsTab'
+import { depictionUrls, galleryItems, ligandPageUrl } from './LigandsTab'
+import type { LigandsDataset } from '../types/backend'
+describe('Ligands tab: default ligand set, gallery search and CCD depiction URLs', () => {
+  const s = (name: string, n: number) => ({ name, ligand_class: 'ligand', n_entry_entities: n, n_entries: n, entries: [], n_bound_molecule_instances: n, n_entries_in_default_track: n, consensus_positions_n_entries: {}, flag_counts: {} })
+  const bm = (pdb_id: string, ccd_id: string, in_default_track = true) => ({ pdb_id, entity_id: 1, ccd_id, name: null, ligand_class: 'ligand', chain_attribution: 'resolved', n_entity_chains: 1, consensus_positions: [25], flags: [], in_default_track, exclusion_reason: null })
+  const lig = { by_ccd: { ADE: s('ADENINE', 2), HPA: s('HYPOXANTHINE', 2), GUN: s('GUANINE', 5), GTP: { ...s("GUANOSINE-5'-TRIPHOSPHATE", 0), n_entries: 4 }, MG: { ...s('MAGNESIUM ION', 0), ligand_class: 'metal_ion' } },
+    bound_molecules: [bm('1abc', 'ADE'), bm('2abc', 'ADE'), bm('2abc', 'ADE'), bm('3abc', 'HPA'), bm('4abc', 'HPA'), bm('5abc', 'GUN'), bm('6abc', 'GTP', false)] } as unknown as LigandsDataset
+  it('the gallery is the default track set, in track order (entries desc, then CCD id), counting distinct PDB entries only', () => {
+    expect(defaultLigandCcds(lig).map(([c]) => c)).toEqual(['GUN', 'ADE', 'HPA'])
+    const g = galleryItems(lig)
+    expect(g.map((x) => x.ccd)).toEqual(['GUN', 'ADE', 'HPA'])
+    expect(g.find((x) => x.ccd === 'ADE')).toEqual({ ccd: 'ADE', name: 'Adenine', nEntries: 2, entries: ['1abc', '2abc'] })
+  })
+  it('search matches the CCD id or the name, case-insensitively; blank shows all', () => {
+    expect(galleryItems(lig, 'hpa').map((x) => x.ccd)).toEqual(['HPA'])
+    expect(galleryItems(lig, 'GUAN').map((x) => x.ccd)).toEqual(['GUN'])
+    expect(galleryItems(lig, '  ').length).toBe(3); expect(galleryItems(lig, 'xyz')).toEqual([])
+  })
+  it('PDBe chemistry image first, RCSB CCD image as fallback; PDBe ligand page', () => {
+    expect(depictionUrls('HPA')).toEqual(['https://www.ebi.ac.uk/pdbe/static/files/pdbechem_v2/HPA_200.svg', 'https://cdn.rcsb.org/images/ccd/unlabeled/H/HPA.svg'])
+    expect(depictionUrls('A1JAI')[1]).toBe('https://cdn.rcsb.org/images/ccd/unlabeled/A/A1JAI.svg')
+    expect(ligandPageUrl('6AP')).toBe('https://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/6AP')
+  })
+})

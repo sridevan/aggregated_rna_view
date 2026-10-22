@@ -36,9 +36,11 @@ test('Structures: apo vs bound groups (35 + 2), duplicate floor line drawn, 9C6J
   await expect(page.getByTestId('selected-not-clustered')).toContainText('13 of the 64 required core positions observed')
 })
 
-test('Annotations: TPP and analogue rows; additives not shown as ligands', async ({ page }) => {
-  await page.goto('/RF00059'); await page.getByTestId('tab-annotations').click()
+test('Ligands: TPP and analogue rows, pockets; additives not shown as ligands. Annotations: SASA, loops, the 5\' GTP', async ({ page }) => {
+  await page.goto('/RF00059'); await page.getByTestId('tab-ligands').click()
   await expect(page.getByText('Thiamine diphosphate · 9 entries', { exact: false }).first()).toBeVisible({ timeout: 30_000 })
-  for (const t of ['Median SASA', 'hairpin loops', 'Pocket occurrence', 'GTP']) await expect(page.getByText(t, { exact: false }).first()).toBeVisible()
+  await expect(page.getByTestId('ligand-card-TPP')).toBeVisible(); await expect(page.getByText('Pocket occurrence').first()).toBeVisible()
   await expect(page.getByText('TETRAETHYLENE GLYCOL', { exact: false })).toHaveCount(0)
+  await page.getByTestId('tab-annotations').click()
+  for (const t of ['Median SASA', 'hairpin loops', 'GTP']) await expect(page.getByText(t, { exact: false }).first()).toBeVisible({ timeout: 30_000 })
 })

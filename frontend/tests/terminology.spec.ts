@@ -19,8 +19,9 @@ test('annotation wording uses "X of Y RNA instances" / "X of Y PDB entries"; no 
   // visible tab text (description, legend, axis, labels)
   expect(await page.getByTestId('annotations-tab').innerText()).not.toMatch(BANNED)
   // one representative mark per category: tooltip + pinned details (expanded)
-  const marks: [string, number][] = [['track-HL', 53], ['track-JL', 53], ['track-IL', 30], ['track-lig-HPA', 26], ['track-pocket-occurrence', 53], ['track-sasa-median', 53], ['track-mod-CCC', 87]]
+  const marks: [string, number][] = [['track-HL', 53], ['track-JL', 53], ['track-IL', 30], ['track-sasa-median', 53], ['track-mod-CCC', 87], ['track-lig-HPA', 26], ['track-pocket-occurrence', 53]]
   for (const [id, pos] of marks) {
+    if (id === 'track-lig-HPA') { await page.getByTestId('tab-ligands').click(); expect(await page.getByTestId('ligands-tab').innerText()).not.toMatch(BANNED) }
     const m = page.getByTestId(id).locator(`rect[data-pos="${pos}"]`)
     await m.scrollIntoViewIfNeeded(); await m.hover()
     await expect(tip).toBeVisible(); expect(await tip.innerText()).not.toMatch(BANNED)
@@ -37,6 +38,7 @@ test('annotation wording uses "X of Y RNA instances" / "X of Y PDB entries"; no 
   await expect(inspect).toContainText('Frequencies are calculated from instances where annotation presence or absence can be determined.')
   await expect(inspect).toContainText('Successful predictions without a pocket here count as absent')
   await page.getByTestId('annotations-clear').click()
+  await page.getByTestId('tab-annotations').click()
   // loop details: source-specific wording kept (not annotated by the source / source unavailable / overlap)
   const hl = page.getByTestId('track-HL').locator('rect[data-pos="53"]'); await hl.click(); await inspect.locator('summary').click()
   await expect(inspect).toContainText(`Not annotated as HL by the source in ${tr.positions[52].hairpin_loops.denominators.n_not_annotated_by_source} of 80 RNA instances`)
@@ -49,13 +51,21 @@ test('annotation wording uses "X of Y RNA instances" / "X of Y PDB entries"; no 
   expect(await tip.innerText()).not.toMatch(/positive|negative|absent/i)
   // colour values unchanged: data-value still equals the backend frequency
   expect(await page.getByTestId('track-HL').locator('rect[data-pos="53"]').getAttribute('data-value')).toBe(tr.positions[52].hairpin_loops.frequency.toFixed(3))
-  expect(await page.getByTestId('track-pocket-occurrence').locator('rect[data-pos="56"]').getAttribute('data-value')).toBe(pk[55].frequency.toFixed(3))
   // category popovers and download menu
-  for (const c of ['sasa', 'loops', 'modifications', 'ligands', 'pockets']) {
+  for (const c of ['sasa', 'loops', 'modifications']) {
     await page.getByTestId(`category-header-${c}`).getByTestId('info-tip').click()
     expect(await page.getByTestId('info-popover').innerText()).not.toMatch(BANNED)
     await page.keyboard.press('Escape')
   }
   await page.getByTestId('download-button').click()
   expect(await page.getByRole('menu').innerText()).not.toMatch(BANNED)
+  await page.keyboard.press('Escape')
+  // Ligands tab: category, gallery, frequency and numbering popovers; pocket values unchanged
+  await page.getByTestId('tab-ligands').click(); await expect(page.getByTestId('category-ligands')).toBeVisible()
+  expect(await page.getByTestId('track-pocket-occurrence').locator('rect[data-pos="56"]').getAttribute('data-value')).toBe(pk[55].frequency.toFixed(3))
+  for (const loc of [page.getByTestId('category-header-ligands'), page.getByTestId('category-header-pockets'), page.getByTestId('ligand-gallery-section').locator('h2'), page.getByTestId('legend-info'), page.getByTestId('numbering-info')]) {
+    await loc.getByTestId('info-tip').click()
+    expect(await page.getByTestId('info-popover').innerText()).not.toMatch(BANNED)
+    await page.keyboard.press('Escape')
+  }
 })

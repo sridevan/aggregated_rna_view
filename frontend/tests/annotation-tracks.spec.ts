@@ -1,29 +1,29 @@
 import { expect, test, type Page } from '@playwright/test'
 import { selectColumn } from './helpers'
 
-/** Annotations tab (Milestone 3C refinement): PDBe-KB-style fixed-size marks coloured by frequency, scrollable categories, concise tooltips, info popovers, downloads; independent of Family Overview. */
-const open = async (page: Page) => { await page.goto('/RF00167'); await page.getByTestId('tab-annotations').click(); await expect(page.getByTestId('category-ligands')).toBeVisible() }
+/** Annotations tab (Milestone 3C refinement): PDBe-KB-style fixed-size marks coloured by frequency, scrollable categories, concise tooltips, info popovers, downloads; independent of Family Overview.
+ *  Ligand-contact residues and predicted pockets moved to the Ligands tab (ligands-tab.spec.ts), which uses the same track browser. */
+const open = async (page: Page) => { await page.goto('/RF00167'); await page.getByTestId('tab-annotations').click(); await expect(page.getByTestId('category-loops')).toBeVisible() }
 const lum = (rgb: string) => { const m = rgb.match(/\d+/g)!.map(Number); return 0.2126 * m[0] + 0.7152 * m[1] + 0.0722 * m[2] }
 
-test('two categories; HL/IL/JL and one track per default-track CCD; marks have identical size and colour follows frequency', async ({ page }) => {
+test('three categories; HL/IL/JL; no ligand or pocket tracks (Ligands tab); marks have identical size and colour follows frequency', async ({ page }) => {
   await open(page)
-  await expect(page.locator('section[data-testid^="category-"]')).toHaveCount(5)   // RNA loop annotations, Ligand binding sites, Predicted binding pockets, Solvent accessibility, Nonstandard nucleotides
+  await expect(page.locator('section[data-testid^="category-"]')).toHaveCount(3)   // Solvent accessibility, RNA loop annotations, Nonstandard nucleotides
   await expect(page.getByTestId('category-toggle-loops')).toContainText('RNA loop annotations')
-  await expect(page.getByTestId('category-toggle-ligands')).toContainText('Ligand binding sites')
+  await expect(page.getByTestId('category-ligands')).toHaveCount(0); await expect(page.getByTestId('category-pockets')).toHaveCount(0)
+  await expect(page.getByTestId('annotations-summary')).toContainText('Ligand contacts and predicted binding pockets are in the Ligands tab.')
   await expect(page.getByTestId('annotations-tab')).not.toContainText('RNA 2D structure')
-  // information icons only in the two category headers, none on tracks
-  await expect(page.getByTestId('annotations-tab').getByTestId('info-tip')).toHaveCount(5)
+  // information icons only in the category headers, none on tracks
+  await expect(page.getByTestId('annotations-tab').getByTestId('info-tip')).toHaveCount(3)
   await expect(page.locator('[data-testid^="track-"] [data-testid="info-tip"]')).toHaveCount(0)
   await expect(page.getByTestId('annotations-tab').getByTestId('instance-select')).toHaveCount(0)
   await expect(page.getByTestId('annotations-tab').getByTestId('molstar-viewer')).toHaveCount(0)
   for (const id of ['HL', 'IL', 'JL']) await expect(page.getByTestId(`track-${id}`)).toBeVisible()
-  const lig = await (await page.request.get('/families/RF00167/ligands.json')).json()
-  const ccds = Object.entries(lig.by_ccd as Record<string, { n_entries_in_default_track: number }>).filter(([, v]) => v.n_entries_in_default_track > 0).map(([k]) => k)
-  await expect(page.locator('[data-testid^="track-lig-"]')).toHaveCount(ccds.length)
+  await expect(page.locator('[data-testid^="track-lig-"]')).toHaveCount(0)
   // identical mark geometry across all tracks (viewBox units: width CELL-2, height MARK_H) and identical rendered heights
   const geo = await page.evaluate(() => [...document.querySelectorAll('[data-testid^="track-"] rect[data-pos]')].map((r) => `${r.getAttribute('width')}x${r.getAttribute('height')}`))
   expect(geo.length).toBeGreaterThan(100); expect(new Set(geo).size).toBe(1)
-  const px = await page.evaluate(() => [...document.querySelectorAll('[data-testid="track-HL"] rect[data-pos], [data-testid="track-lig-HPA"] rect[data-pos]')].map((r) => { const b = r.getBoundingClientRect(); return `${Math.round(b.width)}x${Math.round(b.height)}` }))
+  const px = await page.evaluate(() => [...document.querySelectorAll('[data-testid="track-HL"] rect[data-pos], [data-testid="track-JL"] rect[data-pos]')].map((r) => { const b = r.getBoundingClientRect(); return `${Math.round(b.width)}x${Math.round(b.height)}` }))
   expect(new Set(px).size).toBe(1)
   const h = +px[0].split('x')[1]; expect(h).toBeGreaterThanOrEqual(14); expect(h).toBeLessThanOrEqual(18)
   // row height 28-32 px
@@ -37,7 +37,7 @@ test('two categories; HL/IL/JL and one track per default-track CCD; marks have i
   // unevaluable positions (no observable instance) are grey marks, evaluated-but-unannotated positions are empty
   const unevalPos = tr.positions.find((p: { hairpin_loops: { denominators: { n_observable_and_evaluated: number } } }) => p.hairpin_loops.denominators.n_observable_and_evaluated === 0)
   if (unevalPos) await expect(page.locator(`[data-testid="track-HL"] rect[data-pos="${unevalPos.rfam_consensus_pos}"]`)).toHaveAttribute('data-state', 'unevaluable')
-  await expect(page.getByTestId('scale-legend')).toContainText('Occurrence frequency (0–100%)')   // one shared scale for loops, ligands, pockets
+  await expect(page.getByTestId('scale-legend')).toContainText('Occurrence frequency (0–100%)')   // one shared scale for loops (and, in the Ligands tab, ligands and pockets)
   // axis aligned with the marks: first tick (position 1) centred on the first cell of a track
   const axisTick = await page.getByTestId('annotation-axis').locator('span', { hasText: /^1$/ }).first().boundingBox()
   const firstMark = await page.locator('[data-testid="track-JL"] rect[data-pos="1"]').boundingBox()
@@ -46,7 +46,7 @@ test('two categories; HL/IL/JL and one track per default-track CCD; marks have i
 
 test('concise tooltips with correct counts (merged loops supersede their parts at 53); header popovers do not toggle the category; pinned details keep the evidence', async ({ page }) => {
   await open(page)
-  const tr = await (await page.request.get('/families/RF00167/tracks.json')).json(); const lig = await (await page.request.get('/families/RF00167/ligands.json')).json()
+  const tr = await (await page.request.get('/families/RF00167/tracks.json')).json()
   const tip = page.getByTestId('annotation-tooltip')
   const p53 = tr.positions[52]
   // loop records at 53 (audit): HL 66, IL 13, J3 76; the tracks count only loops not superseded by a BGSU merged loop: HL 8 (apo 5E54/5SWD, 9NDD), IL 0
@@ -59,11 +59,6 @@ test('concise tooltips with correct counts (merged loops supersede their parts a
   await expect(page.getByTestId('track-IL').locator('rect[data-pos="53"]')).toHaveCount(0)              // every IL here is part of a merged junction
   await page.getByTestId('track-HL').locator('rect[data-pos="37"]').hover()
   await expect(tip).toHaveText(`Rfam residue 37Hairpin loop (HL)Observed in ${tr.positions[36].hairpin_loops.denominators.n_positive_observable_and_evaluated} of ${tr.positions[36].hairpin_loops.denominators.n_observable_and_evaluated} RNA instances (${Math.round(1000 * tr.positions[36].hairpin_loops.frequency) / 10}%)`)
-  const hpa = new Set(lig.bound_molecules.filter((b: { ccd_id: string; in_default_track: boolean; consensus_positions: number[] }) => b.ccd_id === 'HPA' && b.in_default_track && b.consensus_positions.includes(26)).map((b: { pdb_id: string }) => b.pdb_id))
-  await page.getByTestId('track-lig-HPA').locator('rect[data-pos="26"]').hover()
-  const e26 = tr.positions[25].ligand_binding_sites.by_ccd_entries.HPA   // denominator: entries with bound HPA and an observed nucleotide here
-  expect(e26.n_positive_observable_and_evaluated).toBe(hpa.size)
-  await expect(tip).toHaveText(`Rfam residue 26HPA — HypoxanthineRecorded contact in ${hpa.size} of ${e26.n_observable_and_evaluated} observable PDB entries (${Math.round(1000 * hpa.size / e26.n_observable_and_evaluated) / 10}%)`)
   for (const banned of ['HL_', 'J3', 'J4', 'motif', 'PP', '/ ']) expect(await tip.textContent()).not.toContain(banned)
   // header popovers: visible when collapsed, do not toggle, not clipped
   await page.getByTestId('category-header-loops').getByTestId('info-tip').click()
@@ -73,16 +68,15 @@ test('concise tooltips with correct counts (merged loops supersede their parts a
   let pop = (await page.getByRole('tooltip').boundingBox())!; const vp = page.viewportSize()!
   expect(pop.x).toBeGreaterThanOrEqual(0); expect(pop.x + pop.width).toBeLessThanOrEqual(vp.width); expect(pop.y + pop.height).toBeLessThanOrEqual(vp.height + 1)
   await page.mouse.move(5, 5); await page.keyboard.press('Escape')
-  await page.getByTestId('category-toggle-ligands').click()
-  await expect(page.getByTestId('category-ligands')).toHaveAttribute('data-open', 'false')
-  await expect(page.getByTestId('category-header-ligands').getByTestId('info-tip')).toBeVisible()   // still visible when collapsed
-  await page.getByTestId('category-header-ligands').getByTestId('info-tip').focus()                // keyboard reachable
-  await expect(page.getByRole('tooltip')).toContainText('PDBe ligand-contact annotations aggregated by Rfam position and PDB entry')
-  await expect(page.getByRole('tooltip')).toContainText('Entity-level annotations may not apply to every RNA chain')
+  await page.getByTestId('category-toggle-modifications').click()
+  await expect(page.getByTestId('category-modifications')).toHaveAttribute('data-open', 'false')
+  await expect(page.getByTestId('category-header-modifications').getByTestId('info-tip')).toBeVisible()   // still visible when collapsed
+  await page.getByTestId('category-header-modifications').getByTestId('info-tip').focus()                // keyboard reachable
+  await expect(page.getByRole('tooltip')).toContainText('Nonstandard nucleotide components in deposited RNA sequences')
   pop = (await page.getByRole('tooltip').boundingBox())!; expect(pop.x + pop.width).toBeLessThanOrEqual(vp.width)
-  await expect(page.getByTestId('category-ligands')).toHaveAttribute('data-open', 'false')
-  await page.getByTestId('category-toggle-ligands').click()
-  await expect(page.getByTestId('category-ligands')).toHaveAttribute('data-open', 'true')
+  await expect(page.getByTestId('category-modifications')).toHaveAttribute('data-open', 'false')
+  await page.getByTestId('category-toggle-modifications').click()
+  await expect(page.getByTestId('category-modifications')).toHaveAttribute('data-open', 'true')
   // click-to-pin keeps the evidence (motif groups) out of the tooltip but available
   await page.getByTestId('track-HL').locator('rect[data-pos="53"]').click()
   await expect(page.getByTestId('annotation-inspect')).toContainText('Rfam residue 53')
@@ -94,39 +88,15 @@ test('concise tooltips with correct counts (merged loops supersede their parts a
   await expect(page.getByTestId('annotation-inspect')).toHaveCount(0)
 })
 
-test('ligand category scrolls independently with a visible header; tooltips are not clipped; collapse works; Download menu serves the detailed JSON', async ({ page }) => {
+test('Download menu serves the Annotations datasets (ligand and pocket files are in the Ligands tab)', async ({ page }) => {
   await open(page)
-  const body = page.getByTestId('category-body-ligands')
-  const dims = await body.evaluate((e) => ({ client: e.clientHeight, scroll: e.scrollHeight }))
-  expect(dims.client).toBeLessThanOrEqual(230); expect(dims.scroll).toBeGreaterThan(dims.client)
-  const small = await page.getByTestId('category-body-loops').evaluate((e) => ({ client: e.clientHeight, scroll: e.scrollHeight }))
-  expect(small.scroll).toBe(small.client); expect(small.client).toBeLessThan(120)   // natural height for a 3-track category
-  const headerBefore = (await page.getByTestId('category-ligands').getByRole('button').first().boundingBox())!
-  const firstRowBefore = (await page.getByTestId('track-lig-HPA').boundingBox())!
-  await body.evaluate((e) => { e.scrollTop = 150 })
-  await expect.poll(() => body.evaluate((e) => e.scrollTop)).toBe(150)
-  const headerAfter = (await page.getByTestId('category-ligands').getByRole('button').first().boundingBox())!
-  expect(headerAfter.y).toBe(headerBefore.y)                                        // header outside the scrolling area
-  expect((await page.getByTestId('track-lig-HPA').boundingBox())!.y).toBeLessThan(firstRowBefore.y)
-  expect(await page.getByTestId('category-body-loops').evaluate((e) => e.scrollTop)).toBe(0)   // other category unaffected
-  // a tooltip for a row near the bottom edge of the scroll box is rendered fixed, fully inside the viewport
-  const lastVisible = page.locator('[data-testid^="track-lig-"] rect[data-pos="25"]').nth(6)
-  await lastVisible.hover()
-  const tb = (await page.getByTestId('annotation-tooltip').boundingBox())!; const vp = page.viewportSize()!
-  expect(tb.x).toBeGreaterThanOrEqual(0); expect(tb.x + tb.width).toBeLessThanOrEqual(vp.width); expect(tb.height).toBeGreaterThan(20)
-  expect(await page.getByTestId('annotation-tooltip').evaluate((e) => getComputedStyle(e).position)).toBe('fixed')
-  // collapse / expand
-  await page.getByTestId('category-ligands').getByRole('button').first().click()
-  await expect(page.getByTestId('category-ligands')).toHaveAttribute('data-open', 'false')
-  await expect(page.locator('[data-testid^="track-lig-"]')).toHaveCount(0)
-  await page.getByTestId('category-ligands').getByRole('button').first().click()
-  await expect(page.locator('[data-testid^="track-lig-"]').first()).toBeVisible()
-  // Download dropdown: three datasets for the selected family, served from the existing static files
+  // Download dropdown: the Annotations datasets for the selected family, served from the existing static files
   await expect(page.getByTestId('download-items')).toHaveCount(0)
   await page.getByTestId('download-button').click()
   await expect(page.getByTestId('download-items')).toBeVisible()
-  await expect(page.getByTestId('download-items').getByRole('menuitem')).toHaveCount(9)   // loops, ligands, tracks, pockets x2, SASA x2, nonstandard nucleotides x2
-  for (const [id, file, label] of [['loops', 'loops.json', 'RNA loop annotations'], ['ligands', 'ligands.json', 'Ligand binding annotations'], ['tracks', 'tracks.json', 'Aggregated annotation tracks']]) {
+  await expect(page.getByTestId('download-items').getByRole('menuitem')).toHaveCount(6)   // loops, tracks, SASA x2, nonstandard nucleotides x2
+  await expect(page.getByTestId('download-ligands')).toHaveCount(0); await expect(page.getByTestId('download-pockets')).toHaveCount(0)
+  for (const [id, file, label] of [['loops', 'loops.json', 'RNA loop annotations'], ['tracks', 'tracks.json', 'Aggregated annotation tracks']]) {
     const it = page.getByTestId(`download-${id}`)
     await expect(it).toContainText(label)
     const href = (await it.getAttribute('href'))!
@@ -136,9 +106,9 @@ test('ligand category scrolls independently with a visible header; tooltips are 
   }
   await page.keyboard.press('Escape'); await expect(page.getByTestId('download-items')).toHaveCount(0)
   await page.getByTestId('download-button').click(); await page.getByTestId('download-items').getByRole('menuitem').first().focus(); await page.keyboard.press('ArrowDown')
-  await expect(page.getByTestId('download-ligands')).toBeFocused()
-  const dl = page.waitForEvent('download'); await page.getByTestId('download-ligands').click(); const d = await dl
-  expect(d.suggestedFilename()).toBe('RF00167_ligands.json'); await expect(page.getByTestId('download-items')).toHaveCount(0)   // menu closes after a selection
+  await expect(page.getByTestId('download-tracks')).toBeFocused()
+  const dl = page.waitForEvent('download'); await page.getByTestId('download-tracks').click(); const d = await dl
+  expect(d.suggestedFilename()).toBe('RF00167_tracks.json'); await expect(page.getByTestId('download-items')).toHaveCount(0)   // menu closes after a selection
   const loops = await (await page.request.get('/families/RF00167/loops.json')).json()
   const L = loops.loops[0]
   for (const k of ['loop_id', 'loop_type', 'motif_group', 'nucleotides', 'strands', 'consensus_positions', 'instances', 'pdb_id']) expect(L).toHaveProperty(k)
@@ -152,7 +122,7 @@ test('narrow screen: no horizontal overflow, tracks still aligned', async ({ pag
   await page.setViewportSize({ width: 390, height: 844 })
   await open(page)
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1)).toBe(true)
-  const a = (await page.locator('[data-testid="track-HL"] rect[data-pos="37"]').boundingBox())!, b = (await page.locator('[data-testid="track-lig-HPA"] rect[data-pos="25"]').boundingBox())!
+  const a = (await page.locator('[data-testid="track-HL"] rect[data-pos="37"]').boundingBox())!, b = (await page.locator('[data-testid="track-JL"] rect[data-pos="25"]').boundingBox())!
   const cell = a.width + 2 * (a.width / 8)   // mark = CELL-2 of CELL
   expect(Math.abs((b.x - a.x) - (25 - 37) * cell)).toBeLessThan(1.5)
 })

@@ -8,6 +8,7 @@ import { Tabs, type TabId } from './components/Tabs'
 import { FamilyOverview } from './components/FamilyOverview'
 import { StructuresTab } from './components/StructuresTab'
 import { AnnotationsTab } from './components/AnnotationsTab'
+import { LigandsTab } from './components/LigandsTab'
 import { InteractionsTab } from './components/InteractionsTab'
 import { HomePage } from './components/HomePage'
 
@@ -25,10 +26,10 @@ function Shell({ acc }: { acc: string }) {
   const status = useFamilyStatus()
   const sel = useSelection()
   const [tab, setTab] = useState<TabId>('overview')
-  // explicit "View in Family Overview" from the Annotations tab: select the Rfam position (current instance and numbering kept), open the tab
+  // explicit "View in Family Overview" from the Annotations or Ligands tab: select the Rfam position (current instance and numbering kept), open the tab
   const [origin, setOrigin] = useState<NavigationOrigin | null>(null)
   const { select } = sel
-  const viewInOverview = useCallback((pos: number, label: string) => { select(pos); setOrigin({ from: 'annotations', pos, label }); setTab('overview') }, [select])
+  const viewInOverview = useCallback((pos: number, label: string, from: NavigationOrigin['from'] = 'annotations') => { select(pos); setOrigin({ from, pos, label }); setTab('overview') }, [select])
   // the origin note belongs to that transferred selection only: any other selection (or clearing it) drops it
   const active = sel.active
   useEffect(() => { if (origin && !(active?.kind === 'position' && active.pos === origin.pos)) setOrigin(null) }, [active, origin])
@@ -66,11 +67,12 @@ function Shell({ acc }: { acc: string }) {
       </header>
       <Tabs value={tab} onChange={setTab} />
       <main className="mt-4">
-        {/* Position numbering is shared by the Family Overview and Annotations tabs (kept across tab switches) */}
+        {/* Position numbering is shared by the Family Overview, Ligands and Annotations tabs (kept across tab switches) */}
         <NumberingProvider>
         <NavigationProvider value={nav}>
         {tab === 'overview' && <FamilyOverview />}
         {tab === 'structures' && <StructuresTab />}
+        {tab === 'ligands' && <LigandsTab />}
         {tab === 'annotations' && <AnnotationsTab />}
         {tab === 'interactions' && <InteractionsTab />}
         </NavigationProvider>

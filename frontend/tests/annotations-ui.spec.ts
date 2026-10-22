@@ -2,7 +2,9 @@ import { expect, test, type Page } from '@playwright/test'
 
 /* Final Annotations UI: compact header with dynamic counts, one shared teal occurrence-frequency scale (loops, ligands, pockets), separate SASA
    quantity scale, solid magenta nonstandard-nucleotide presence, one compact legend; no change to values, tracks or order. */
-const open = async (page: Page) => { await page.goto('/RF00167'); await page.getByTestId('tab-annotations').click(); await expect(page.getByTestId('category-ligands')).toBeVisible() }
+const open = async (page: Page) => { await page.goto('/RF00167'); await page.getByTestId('tab-annotations').click(); await expect(page.getByTestId('category-loops')).toBeVisible() }
+/** ligand-contact residues and predicted pockets moved to the Ligands tab (same track browser and scale) */
+const openLigands = async (page: Page) => { await page.getByTestId('tab-ligands').click(); await expect(page.getByTestId('category-ligands')).toBeVisible() }
 const TEAL_LIGHT = '#d2ecef', TEAL_DARK = '#0a4f5c'
 const hex = (c: string) => [1, 3, 5].map((i) => parseInt(c.slice(i, i + 2), 16))
 /** expected fill of the shared frequency scale for a value (same rule as scaleColor) */
@@ -13,13 +15,13 @@ test('compact header: "Annotations", dynamic family counts, Download still at th
   const fam = await (await page.request.get('/families/RF00167/family.json')).json()
   const tab = page.getByTestId('annotations-tab')
   await expect(tab.locator('h2').first()).toHaveText('Annotations')
-  await expect(page.getByTestId('annotations-summary')).toHaveText(`Residue-level annotations across ${fam.counts.instances} RNA instances from ${fam.counts.pdb_entries} PDB entries.`)
+  await expect(page.getByTestId('annotations-summary')).toHaveText(`Residue-level annotations across ${fam.counts.instances} RNA instances from ${fam.counts.pdb_entries} PDB entries. Ligand contacts and predicted binding pockets are in the Ligands tab.`)
   expect(fam.counts.instances).toBe(84); expect(fam.counts.pdb_entries).toBe(66)
   for (const gone of ['Aggregated annotations on the Rfam consensus axis', 'Hover for a summary', 'click a mark to pin', 'independent of the Family Overview']) await expect(tab).not.toContainText(gone)
   await expect(tab.getByTestId('section-eyebrow')).toHaveCount(0)
   const h = (await tab.locator('h2').first().boundingBox())!, dl = (await page.getByTestId('download-button').boundingBox())!, card = (await tab.locator('section').first().boundingBox())!
   expect(Math.abs(dl.y + dl.height / 2 - (h.y + h.height / 2))).toBeLessThan(12); expect(card.x + card.width - (dl.x + dl.width)).toBeLessThan(24)
-  await page.getByTestId('download-button').click(); await expect(page.getByTestId('download-items').getByRole('menuitem')).toHaveCount(9); await page.keyboard.press('Escape')
+  await page.getByTestId('download-button').click(); await expect(page.getByTestId('download-items').getByRole('menuitem')).toHaveCount(6); await page.keyboard.press('Escape')
   // less vertical space above the tracks than before (header + legend + axis previously ended at ~380 px at 1400x1000)
   const axis = (await page.getByTestId('annotation-axis').boundingBox())!
   expect(axis.y - card.y).toBeLessThan(150)
@@ -29,9 +31,12 @@ test('one shared teal frequency scale for loops, ligands and pockets; SASA orang
   await open(page)
   const tr = await (await page.request.get('/families/RF00167/tracks.json')).json()
   const pk = (await (await page.request.get('/families/RF00167/pocket_tracks.json')).json()).tracks.all_score_ge_0
-  // every frequency mark in the three categories uses exactly the shared bin colour of its value
-  const marks = await page.evaluate(() => [...document.querySelectorAll('[data-testid="category-loops"] rect[data-value], [data-testid="category-ligands"] rect[data-value], [data-testid="category-pockets"] rect[data-value]')]
+  // every frequency mark in the three categories (loops here; ligands and pockets in the Ligands tab) uses exactly the shared bin colour of its value
+  const collect = () => page.evaluate(() => [...document.querySelectorAll('[data-testid="category-loops"] rect[data-value], [data-testid="category-ligands"] rect[data-value], [data-testid="category-pockets"] rect[data-value]')]
     .map((r) => ({ cat: r.closest('section')!.getAttribute('data-testid'), v: Number(r.getAttribute('data-value')), fill: r.getAttribute('fill') })))
+  const loopMarks = await collect()
+  await openLigands(page)
+  const marks = [...loopMarks, ...await collect()]
   expect(new Set(marks.map((m) => m.cat))).toEqual(new Set(['category-loops', 'category-ligands', 'category-pockets']))
   for (const m of marks) expect(m.fill).toBe(freqFill(m.v))
   // equal bins give equal colours across categories (e.g. >= 80 % in a loop, a ligand and the pocket track)
@@ -40,18 +45,20 @@ test('one shared teal frequency scale for loops, ligands and pockets; SASA orang
   const low = (cat: string) => new Set(marks.filter((m) => m.cat === cat && m.v > 0 && m.v < 0.2).map((m) => m.fill))
   expect(low('category-loops')).toEqual(low('category-pockets'))
   // values unchanged (data-value is still the backend frequency)
-  expect(await page.getByTestId('track-HL').locator('rect[data-pos="53"]').getAttribute('data-value')).toBe(tr.positions[52].hairpin_loops.frequency.toFixed(3))
   expect(await page.getByTestId('track-pocket-occurrence').locator('rect[data-pos="56"]').getAttribute('data-value')).toBe(pk[55].frequency.toFixed(3))
+  const tip = page.getByTestId('annotation-tooltip')
+  await page.getByTestId('track-pocket-occurrence').locator('rect[data-pos="56"]').hover()
+  await expect(tip).toHaveText('Rfam residue 56Pocket occurrence: 61 of 80 RNA instances (76.3%)')
+  await page.mouse.move(5, 5)
+  await page.getByTestId('tab-annotations').click(); await expect(page.getByTestId('category-loops')).toBeVisible()
+  expect(await page.getByTestId('track-HL').locator('rect[data-pos="53"]').getAttribute('data-value')).toBe(tr.positions[52].hairpin_loops.frequency.toFixed(3))
   // SASA keeps the orange quantity colours (not teal); nonstandard marks solid magenta
   const sasaFills = await page.getByTestId('track-sasa-median').locator('rect[data-value]').evaluateAll((rs) => rs.map((r) => r.getAttribute('fill')!))
   expect(sasaFills.length).toBe(102); expect(sasaFills.every((f) => { const [r, , b] = f.match(/\d+/g)!.map(Number); return r > b })).toBe(true)
   expect(new Set(await page.locator('[data-testid^="track-mod-"] rect[data-value]').evaluateAll((rs) => rs.map((r) => r.getAttribute('fill'))))).toEqual(new Set(['#c2185b']))
   // tooltips unchanged
-  const tip = page.getByTestId('annotation-tooltip')
   await page.getByTestId('track-mod-50N').locator('rect[data-pos="22"]').hover()
   await expect(tip).toContainText('Rfam residue 2250N — '); await expect(tip).toContainText('Observed in 1 of 83 RNA instances (1.2%)')
-  await page.getByTestId('track-pocket-occurrence').locator('rect[data-pos="56"]').hover()
-  await expect(tip).toHaveText('Rfam residue 56Pocket occurrence: 61 of 80 RNA instances (76.3%)')
 })
 
 test('compact legend: shared frequency, SASA, nonstandard presence, no data vs no annotation; tracks and order intact; narrow screen', async ({ page }) => {
@@ -73,8 +80,14 @@ test('compact legend: shared frequency, SASA, nonstandard presence, no data vs n
   expect((await legend.boundingBox())!.height).toBeLessThanOrEqual(40)
   // categories, order, track counts
   const ids = await page.locator('section[data-testid^="category-"]').evaluateAll((es) => es.map((e) => e.getAttribute('data-testid')))
-  expect(ids).toEqual(['category-sasa', 'category-loops', 'category-modifications', 'category-ligands', 'category-pockets'])
-  for (const [id, n] of [['sasa', 1], ['loops', 3], ['modifications', 4], ['ligands', 29], ['pockets', 1]] as const) await expect(page.getByTestId(`category-${id}`).locator('[data-testid^="track-"]')).toHaveCount(n)
+  expect(ids).toEqual(['category-sasa', 'category-loops', 'category-modifications'])
+  for (const [id, n] of [['sasa', 1], ['loops', 3], ['modifications', 4]] as const) await expect(page.getByTestId(`category-${id}`).locator('[data-testid^="track-"]')).toHaveCount(n)
+  // the Ligands tab: ligand-contact residues then predicted pockets, the shared frequency scale only
+  await openLigands(page)
+  expect(await page.locator('section[data-testid^="category-"]').evaluateAll((es) => es.map((e) => e.getAttribute('data-testid')))).toEqual(['category-ligands', 'category-pockets'])
+  for (const [id, n] of [['ligands', 29], ['pockets', 1]] as const) await expect(page.getByTestId(`category-${id}`).locator('[data-testid^="track-"]')).toHaveCount(n)
+  await expect(page.getByTestId('scale-legend').locator('[data-testid^="legend-"]').evaluateAll((es) => es.map((e) => e.getAttribute('data-testid')))).resolves.toEqual(['legend-occurrence-frequency', 'legend-no-data', 'legend-no-annotation', 'legend-info'])
+  await page.getByTestId('tab-annotations').click(); await expect(page.getByTestId('category-loops')).toBeVisible()
   // axis alignment: tick 50 centred on position 50 of each category
   const tick = (await page.getByTestId('annotation-axis').locator('span', { hasText: /^50$/ }).boundingBox())!
   for (const tr of ['track-sasa-median', 'track-JL']) { const m = (await page.getByTestId(tr).locator('rect[data-pos="50"]').boundingBox())!; expect(Math.abs(tick.x + tick.width / 2 - (m.x + m.width / 2))).toBeLessThan(3) }
@@ -93,7 +106,7 @@ test('no data (grey) and no annotation (empty) stay distinct with the shared sca
     const p = j.tracks.all_score_ge_0[0]; p.n_unevaluable_instances += p.n_evaluable_instances; p.n_evaluable_instances = 0; p.n_supporting_instances = 0; p.frequency = null
     await route.fulfill({ json: j })
   })
-  await open(page)
+  await open(page); await openLigands(page)
   const track = page.getByTestId('track-pocket-occurrence')
   await expect(track.locator('rect[data-pos="1"]')).toHaveAttribute('data-state', 'unevaluable')
   expect(await track.locator('rect[data-pos="1"]').getAttribute('fill')).toBe('#e4e2dc')

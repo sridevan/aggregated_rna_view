@@ -47,8 +47,11 @@ test('Structures: groups from structure_clustering.json, representative on top, 
   for (const g of tm.groups) await expect(page.getByTestId(`group-chip-${g.group_id}`)).toContainText(`${g.n_instances} RNA instance`)
 })
 
-test('Annotations: SAM / SAH / SFG ligand rows, the 5\' GTP, loops and pockets present', async ({ page }) => {
-  await page.goto('/RF00162'); await page.getByTestId('tab-annotations').click()
-  for (const t of ['SAM', 'SAH', 'SFG', 'GTP', 'Median SASA', 'hairpin loops', 'Pocket occurrence']) await expect(page.getByText(t, { exact: false }).first()).toBeVisible({ timeout: 30_000 })
+test('Ligands: SAM / SAH / SFG ligand rows and pockets; Annotations: the 5\' GTP and loops', async ({ page }) => {
+  await page.goto('/RF00162'); await page.getByTestId('tab-ligands').click()
+  for (const t of ['SAM', 'SAH', 'SFG', 'Pocket occurrence']) await expect(page.getByText(t, { exact: false }).first()).toBeVisible({ timeout: 30_000 })
   await expect(page.getByText('S-adenosylmethionine · 25 entries')).toBeVisible()
+  await expect(page.getByTestId('ligand-entries-SAM')).toHaveText('Found in 25 PDB entries')
+  await page.getByTestId('tab-annotations').click()
+  for (const t of ['GTP', 'Median SASA', 'hairpin loops']) await expect(page.getByText(t, { exact: false }).first()).toBeVisible({ timeout: 30_000 })
 })

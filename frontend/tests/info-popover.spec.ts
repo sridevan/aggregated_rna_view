@@ -27,10 +27,10 @@ test('popovers stay in the viewport: below by default, flipped above near the bo
   await page.getByTestId('category-header-sasa').getByTestId('info-tip').hover()
   await expect(page.getByTestId('info-popover')).toHaveText('Per-nucleotide solvent-accessible surface area (SASA) of isolated RNA chains, summarised by Rfam position (median Å²).')
   await page.mouse.move(5, 5); await expect(page.getByTestId('info-popover')).toHaveCount(0)   // hover is transient
-  await page.getByTestId('category-header-pockets').getByTestId('info-tip').hover()
-  await expect(page.getByTestId('info-popover')).toHaveText('fpocketR-predicted RNA pockets aggregated by Rfam position. No predicted pocket does not establish absence of binding.')
+  await page.getByTestId('category-header-modifications').getByTestId('info-tip').hover()
+  await expect(page.getByTestId('info-popover')).toHaveText('Nonstandard nucleotide components in deposited RNA sequences, mapped to Rfam positions. These are not necessarily biological RNA modifications.')
   await page.mouse.move(5, 5)
-  for (const id of ['loops', 'ligands']) { await page.getByTestId(`category-header-${id}`).getByTestId('info-tip').hover(); await expect(page.getByTestId('info-popover')).toBeVisible(); await page.mouse.move(5, 5) }
+  for (const id of ['loops']) { await page.getByTestId(`category-header-${id}`).getByTestId('info-tip').hover(); await expect(page.getByTestId('info-popover')).toBeVisible(); await page.mouse.move(5, 5) }
   // near the top: below the icon
   await page.evaluate(() => window.scrollTo(0, 0))
   let b = await openCat(page, 'loops'); const icon = (await page.getByTestId('category-header-loops').getByTestId('info-tip').boundingBox())!
@@ -50,9 +50,9 @@ test('popovers stay in the viewport: below by default, flipped above near the bo
   b = await openCat(page, 'sasa'); expect(b.y + b.height).toBeLessThanOrEqual(sasaIcon.y); await expect(page.getByTestId('info-popover')).toHaveAttribute('data-side', 'above')
   await page.keyboard.press('Escape'); await page.setViewportSize({ width: 1400, height: 1000 })
   // resizing repositions: a popover opened near the right edge moves left when the viewport narrows
-  b = await openCat(page, 'ligands'); const xWide = b.x
+  b = await openCat(page, 'modifications'); const xWide = b.x
   await page.setViewportSize({ width: 900, height: 1000 }); await page.waitForTimeout(100)
-  const bNarrow = await inside(page); expect(bNarrow.x).toBeLessThan(xWide); await adjacent(page, 'ligands'); await page.keyboard.press('Escape')
+  const bNarrow = await inside(page); expect(bNarrow.x).toBeLessThan(xWide); await adjacent(page, 'modifications'); await page.keyboard.press('Escape')
   await page.setViewportSize({ width: 1400, height: 1000 })
   // scrolling repositions: in a short viewport the page scrolls; the popover follows its icon
   await page.setViewportSize({ width: 1400, height: 520 }); await page.evaluate(() => window.scrollTo(0, 0))
@@ -62,20 +62,30 @@ test('popovers stay in the viewport: below by default, flipped above near the bo
   await inside(page); await adjacent(page, 'loops')                 // still attached to the (moved) icon after the page scrolled
   await page.keyboard.press('Escape'); await page.setViewportSize({ width: 1400, height: 1000 }); await page.evaluate(() => window.scrollTo(0, 0))
   // collapsed category: icon still works
+  await page.getByTestId('category-toggle-modifications').click(); await expect(page.getByTestId('category-modifications')).toHaveAttribute('data-open', 'false')
+  await openCat(page, 'modifications'); await page.keyboard.press('Escape'); await page.getByTestId('category-toggle-modifications').click()
+  // the Ligands tab uses the same category headers: pocket text, collapsed pocket category
+  await page.getByTestId('tab-ligands').click(); await expect(page.getByTestId('category-pockets')).toBeVisible()
+  await page.getByTestId('category-header-pockets').getByTestId('info-tip').hover()
+  await expect(page.getByTestId('info-popover')).toHaveText('Computationally predicted RNA binding pockets identified using fpocketR. These annotations are independent of the PDBe ligand-contact data.')
+  await page.mouse.move(5, 5)
   await page.getByTestId('category-toggle-pockets').click(); await expect(page.getByTestId('category-pockets')).toHaveAttribute('data-open', 'false')
   await openCat(page, 'pockets'); await page.keyboard.press('Escape'); await page.getByTestId('category-toggle-pockets').click()
   // right edge: the icons are at the right of the headers; popover is clamped inside
-  await page.evaluate(() => window.scrollTo(0, 0))
+  await page.getByTestId('category-header-ligands').scrollIntoViewIfNeeded()
   b = await openCat(page, 'ligands'); const vp = page.viewportSize()!; expect(b.x + b.width).toBeLessThanOrEqual(vp.width - PAD + 0.5); await page.keyboard.press('Escape')
 })
 
 test('narrow and short viewport: popover fits with internal scrolling and viewport padding', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 500 })
-  await page.goto('/RF00167'); await page.getByTestId('tab-annotations').click(); await expect(page.getByTestId('category-pockets')).toBeVisible()
-  for (const id of ['sasa', 'loops', 'modifications', 'ligands', 'pockets']) {
-    await page.getByTestId(`category-header-${id}`).scrollIntoViewIfNeeded()
-    const b = await openCat(page, id); expect(b.width).toBeLessThanOrEqual(390 - 2 * PAD + 1)
-    await page.keyboard.press('Escape'); await expect(page.getByTestId('info-popover')).toHaveCount(0)
+  await page.goto('/RF00167'); await page.getByTestId('tab-ligands').click(); await expect(page.getByTestId('category-pockets')).toBeVisible()
+  for (const [tab, ids] of [['ligands', ['ligands', 'pockets']], ['annotations', ['sasa', 'loops', 'modifications']]] as const) {
+    await page.getByTestId(`tab-${tab}`).click(); await expect(page.getByTestId(`category-${ids[0]}`)).toBeVisible()
+    for (const id of ids) {
+      await page.getByTestId(`category-header-${id}`).scrollIntoViewIfNeeded()
+      const b = await openCat(page, id); expect(b.width).toBeLessThanOrEqual(390 - 2 * PAD + 1)
+      await page.keyboard.press('Escape'); await expect(page.getByTestId('info-popover')).toHaveCount(0)
+    }
   }
   // keyboard: focus opens, Escape closes
   await page.getByTestId('category-header-loops').getByTestId('info-tip').focus(); await expect(page.getByTestId('info-popover')).toBeVisible(); await inside(page)

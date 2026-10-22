@@ -35,7 +35,7 @@ test('one SASA track with fixed-size marks, colour by median SASA, Å² legend, 
   expect(Math.abs(tick.x + tick.width / 2 - (mark.x + mark.width / 2))).toBeLessThan(3)
 })
 
-test('concise SASA tooltip and pinned details; category info popover; downloads for both SASA files; loop and ligand tracks unchanged', async ({ page }) => {
+test('concise SASA tooltip and pinned details; category info popover; downloads for both SASA files; loop tracks unchanged', async ({ page }) => {
   await open(page)
   const t = await (await page.request.get('/families/RF00167/sasa_tracks.json')).json(); const p53 = t.positions[52]
   await page.getByTestId('track-sasa-median').locator('rect[data-pos="53"]').hover()
@@ -66,5 +66,5 @@ test('concise SASA tooltip and pinned details; category info popover; downloads 
   await page.getByTestId('track-HL').locator('rect[data-pos="53"]').hover()
   await expect(page.getByTestId('annotation-tooltip')).toHaveText('Rfam residue 53Hairpin loop (HL)Observed in 8 of 80 RNA instances (10%)')
   expect(await page.getByTestId('track-HL').locator('rect[data-pos]').count()).toBe(tr.positions.filter((p: { hairpin_loops: { n_instances: number } }) => p.hairpin_loops.n_instances > 0).length)
-  await expect(page.locator('[data-testid^="track-lig-"]')).toHaveCount(29)
+  await expect(page.locator('[data-testid^="track-lig-"]')).toHaveCount(0)   // ligand tracks are in the Ligands tab
 })

@@ -31,7 +31,7 @@ test('screenshots of the three tabs', async ({ page }) => {
   await page.waitForTimeout(1000)
   await page.screenshot({ path: `${OUT}/m3c_structures.png`, fullPage: true })
   await page.getByTestId('tab-annotations').click()
-  await expect(page.getByTestId('category-ligands')).toBeVisible()
+  await expect(page.getByTestId('category-loops')).toBeVisible()
   await page.getByTestId('track-HL').locator('rect[data-pos="53"]').hover()
   await expect(page.getByTestId('annotation-tooltip')).toBeVisible()
   await page.screenshot({ path: `${OUT}/m3c_annotations.png`, fullPage: true })
@@ -41,6 +41,8 @@ test('screenshots of the three tabs', async ({ page }) => {
   await page.getByTestId('category-sasa').scrollIntoViewIfNeeded()
   await page.screenshot({ path: `${OUT}/m3d_annotations_sasa.png`, fullPage: true })
   await page.mouse.move(5, 5)
+  // predicted pockets are in the Ligands tab
+  await page.getByTestId('tab-ligands').click(); await expect(page.getByTestId('category-pockets')).toBeVisible()
   await page.getByTestId('track-pocket-occurrence').locator('rect[data-pos="56"]').hover()
   await expect(page.getByTestId('annotation-tooltip')).toContainText('Pocket occurrence: 61 of 80 RNA instances')
   await page.screenshot({ path: `${OUT}/m3e_annotations_pockets.png`, fullPage: true })
@@ -49,6 +51,7 @@ test('screenshots of the three tabs', async ({ page }) => {
   await expect(page.getByTestId('info-popover')).toBeVisible()
   await page.screenshot({ path: `${OUT}/m3e_popover_pockets.png`, fullPage: false })
   await page.keyboard.press('Escape')
+  await page.getByTestId('tab-annotations').click(); await expect(page.getByTestId('category-sasa')).toBeVisible()
   await page.getByTestId('category-header-sasa').scrollIntoViewIfNeeded()
   await page.getByTestId('category-header-sasa').getByTestId('info-tip').click()
   await expect(page.getByTestId('info-popover')).toBeVisible()
@@ -309,7 +312,7 @@ test('screenshots: compact Download JSON menu with an info tooltip', async ({ pa
   await page.getByTestId('download-button').click(); await expect(page.getByTestId('download-items')).toBeVisible()
   const card = (await page.getByTestId('download-menu').boundingBox())!
   await page.screenshot({ path: `${OUT}/m16_download_menu.png`, clip: { x: card.x + card.width - 520, y: card.y - 10, width: 540, height: 360 } })
-  await page.getByTestId('download-info-pockets').getByTestId('info-tip').hover(); await expect(page.getByTestId('info-popover')).toBeVisible(); await page.waitForTimeout(150)
+  await page.getByTestId('download-info-sasa').getByTestId('info-tip').hover(); await expect(page.getByTestId('info-popover')).toBeVisible(); await page.waitForTimeout(150)
   const vw = page.viewportSize()!.width
   await page.screenshot({ path: `${OUT}/m16_download_menu_tooltip.png`, clip: { x: card.x + card.width - 520, y: card.y - 10, width: Math.min(700, vw - (card.x + card.width - 520)), height: 360 } })
 })

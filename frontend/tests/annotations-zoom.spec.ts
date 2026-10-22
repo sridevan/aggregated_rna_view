@@ -24,7 +24,7 @@ test('RF00167 Annotations: Fit all default, zoom in/out keeps rows and axis alig
   for (let i = 0; i < 2; i++) await page.getByTestId('annotations-zoom-in').click()
   await expect(ctl).toHaveAttribute('data-fit', 'false')
   expect(await cellPx(page)).toBeGreaterThan(fit)
-  const xs = (await Promise.all(['track-sasa-median', 'track-HL', 'track-IL', 'track-JL', 'track-lig-HPA'].map((t) => markX(page, t, 50)))).filter((v): v is number => v != null)
+  const xs = (await Promise.all(['track-sasa-median', 'track-HL', 'track-IL', 'track-JL'].map((t) => markX(page, t, 50)))).filter((v): v is number => v != null)
   expect(xs.length).toBeGreaterThanOrEqual(2)                                  // tracks with a mark (or no-data mark) at 50
   for (const v of xs) expect(Math.abs(v - xs[0])).toBeLessThan(1.5)
   const tick = page.getByTestId('annotation-axis-plot').locator('span', { hasText: /^50$/ })
@@ -67,7 +67,7 @@ test('RF00167 Annotations: Fit all default, zoom in/out keeps rows and axis alig
 
 test('RF00177 Annotations: 1,533 positions zoom to readable marks with thinned axis labels', async ({ page }) => {
   await page.goto('/RF00177'); await page.getByTestId('tab-annotations').click()
-  await expect(page.getByText('Ligand binding sites').first()).toBeVisible({ timeout: 60_000 })
+  await expect(page.getByTestId('category-loops')).toBeVisible({ timeout: 60_000 })
   const axis = page.getByTestId('annotation-axis')
   await expect(axis).toHaveAttribute('data-last-pos', '1533')
   expect(await cellPx(page)).toBeLessThan(1)

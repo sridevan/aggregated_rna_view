@@ -60,8 +60,9 @@ test('selection hint: shown only while nothing is selected; nucleotide and loop 
 test('annotation details: measured quantity, numerator / denominator / unit, absence wording and missing data for every category', async ({ page }) => {
   const tr = await J(page, 'RF00167', 'tracks.json'), lig = await J(page, 'RF00167', 'ligands.json'), sasa = await J(page, 'RF00167', 'sasa_tracks.json')
   const pk = (await J(page, 'RF00167', 'pocket_tracks.json')).tracks.all_score_ge_0, md = await J(page, 'RF00167', 'modification_tracks.json')
-  await page.goto('/RF00167'); await page.getByTestId('tab-annotations').click(); await expect(page.getByTestId('category-ligands')).toBeVisible()
+  await page.goto('/RF00167'); await page.getByTestId('tab-annotations').click(); await expect(page.getByTestId('category-loops')).toBeVisible()
   const tip = page.getByTestId('annotation-tooltip')
+  const toTab = async (t: 'ligands' | 'annotations') => { await page.mouse.move(5, 5); await page.getByTestId(`tab-${t}`).click(); await expect(page.getByTestId(t === 'ligands' ? 'category-ligands' : 'category-loops')).toBeVisible() }
 
   // loops (unit: RNA chain instance): k of n, the rest "not annotated by the source", the 4 instances without an observed nucleotide not counted
   const hl = tr.positions[52].hairpin_loops.denominators
@@ -72,8 +73,9 @@ test('annotation details: measured quantity, numerator / denominator / unit, abs
   await expect(row(page, 'not-counted')).toHaveText(noObs ? `Not counted${noObs} RNA instances: no observed nucleotide at this position` : 'Not countedNone')
   await expect(row(page, 'counting-unit')).toContainText('RNA chain instance')
 
-  // ligands (unit: PDB entry): numerator and denominator are entries with bound HPA that have an observed nucleotide here (tracks.json by_ccd_entries);
+  // ligands (Ligands tab; unit: PDB entry): numerator and denominator are entries with bound HPA that have an observed nucleotide here (tracks.json by_ccd_entries);
   // the numerator equals the contacts recorded in ligands.json (no HPA entry lacks a nucleotide at 55)
+  await toTab('ligands')
   const hpa = new Set(lig.bound_molecules.filter((b: { in_default_track: boolean; ccd_id: string; consensus_positions: number[] }) => b.in_default_track && b.ccd_id === 'HPA' && b.consensus_positions.includes(55)).map((b: { pdb_id: string }) => b.pdb_id))
   const e55 = tr.positions[54].ligand_binding_sites.by_ccd_entries.HPA
   expect(e55.n_positive_observable_and_evaluated).toBe(hpa.size); expect(e55.n_observable_and_evaluated).toBe(lig.by_ccd.HPA.n_entries_in_default_track)
@@ -111,6 +113,7 @@ test('annotation details: measured quantity, numerator / denominator / unit, abs
   await expect(tip.locator('p')).toHaveCount(3)
 
   // SASA (continuous; unit Å²; median, IQR and contributing instances; no frequency wording)
+  await toTab('annotations')
   const s53 = sasa.positions[52]
   await pin(page, 'track-sasa-median', 53)
   await expect(row(page, 'median')).toHaveText(`Median${s53.median_sasa_A2.toFixed(1)} Å² (interquartile range ${s53.q1_sasa_A2.toFixed(1)}–${s53.q3_sasa_A2.toFixed(1)} Å²) over ${s53.n_contributing_instances} RNA instances`)
@@ -120,6 +123,7 @@ test('annotation details: measured quantity, numerator / denominator / unit, abs
   await expect(row(page, 'not-counted')).toContainText(sNo ? `${sNo} RNA instances: no observed nucleotide at this position` : 'None')
 
   // pockets (prediction: "no pocket" is not a confirmed absence; failed or missing instances not counted, with reasons)
+  await toTab('ligands')
   const p53 = pk[52]
   await pin(page, 'track-pocket-occurrence', 53)
   await expect(row(page, 'observed')).toContainText(`In a predicted pocket in ${p53.n_supporting_instances} of ${p53.n_evaluable_instances} RNA instances`)
@@ -127,6 +131,7 @@ test('annotation details: measured quantity, numerator / denominator / unit, abs
   await expect(row(page, 'not-counted')).toContainText(`${p53.unevaluable_reasons.no_coordinates} RNA instances: no coordinates`)
 
   // nonstandard nucleotides (deposited sequence: a standard nucleotide is a determined identity; no residue is not counted)
+  await toTab('annotations')
   const m87 = md.positions[86]
   const ccc = m87.ccd.find((x: { ccd_id: string }) => x.ccd_id === 'CCC')
   await pin(page, 'track-mod-CCC', 87)
@@ -145,7 +150,7 @@ test('View in Family Overview: transfers the Rfam position, keeps family, instan
   await page.goto('/RF00167'); await ready(page, '4fe5')
   await page.getByTestId('numbering-select').selectOption('1y26_1_X_A')
   await page.getByTestId('instance-select').selectOption('1y26_1_X_A'); await ready(page, '1y26')
-  await page.getByTestId('tab-annotations').click(); await expect(page.getByTestId('category-ligands')).toBeVisible()
+  await page.getByTestId('tab-annotations').click(); await expect(page.getByTestId('category-loops')).toBeVisible()
   await expect(page.getByTestId('numbering-select')).toHaveValue('1y26_1_X_A')
   // 1Y26 X has a deletion at Rfam 64 (tested elsewhere): the transfer selects 64 and the Overview says nothing is highlighted
   await pin(page, 'track-sasa-median', 64)
@@ -157,7 +162,7 @@ test('View in Family Overview: transfers the Rfam position, keeps family, instan
   await expect(page.getByTestId('selection-status')).toContainText('Rfam position 64 is deleted in 1Y26 X: nothing highlighted')
   await expect(page.getByTestId('selection-origin')).toContainText('Opened from Annotations (Median SASA (Å²) at Rfam position 64). Family-level evidence: not necessarily observed in 1Y26 X.')
   // a mapped position: highlighted, the origin note follows the transferred position only
-  await page.getByTestId('tab-annotations').click()
+  await page.getByTestId('tab-ligands').click()
   await pin(page, 'track-lig-HPA', 55)
   await page.getByTestId('view-in-overview').click()
   await expect(page.getByTestId('selection-status')).toContainText('Rfam position 55 → 1Y26 X')
@@ -174,7 +179,7 @@ test('View in Family Overview: transfers the Rfam position, keeps family, instan
 
 test('RF00177: View in Family Overview focuses the 2D on the transferred position; Clear returns to the whole 2D view', async ({ page }) => {
   await page.goto('/RF00177')
-  await page.getByTestId('tab-annotations').click(); await expect(page.getByTestId('category-ligands')).toBeVisible({ timeout: 60_000 })
+  await page.getByTestId('tab-annotations').click(); await expect(page.getByTestId('category-loops')).toBeVisible({ timeout: 60_000 })
   await pin(page, 'track-sasa-median', 700)
   await page.getByTestId('view-in-overview').click()
   await expect(page.getByTestId('selection-status')).toContainText('Rfam position 700 → 4V9D BA')

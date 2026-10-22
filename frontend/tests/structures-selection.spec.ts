@@ -53,7 +53,8 @@ test('viewer never stays blank: repeated tab switching always reaches ready, wit
   await page.goto('/RF00167')
   for (let i = 0; i < 3; i++) {
     await page.getByTestId('tab-structures').click(); await page.getByTestId('view-clustering').click(); await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-status', 'ready', { timeout: 60_000 })
-    await page.getByTestId('tab-annotations').click(); await expect(page.getByTestId('category-ligands')).toBeVisible()
+    await page.getByTestId('tab-annotations').click(); await expect(page.getByTestId('category-loops')).toBeVisible()
+    await page.getByTestId('tab-ligands').click(); await expect(page.getByTestId('category-ligands')).toBeVisible()
     await page.getByTestId('tab-overview').click(); await ready(page, '4fe5')
     const h = await page.evaluate(() => { const x = (window as unknown as { __rnaExplorer: { bgColor?: number; orientationApplied?: { fit_quality: string } | null } }).__rnaExplorer; return { bg: x.bgColor, q: x.orientationApplied?.fit_quality } })
     expect(h.bg).toBe(0xffffff); expect(h.q).toBe('good')

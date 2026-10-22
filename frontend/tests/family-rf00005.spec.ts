@@ -35,23 +35,26 @@ test('Structures: provisional groups 56 + 2 + 1 + 1 (discrepancy), no floor; the
   await expect.poll(async () => (await page.getByTestId('alignment-viewer').getAttribute('data-structures'))?.split(',')).toEqual(['1j2b_1_C_A'])
 })
 
-test('Annotations: J5 junctions in the junction track, nonstandard nucleotides, few ligands, no pockets', async ({ page }) => {
+test('Annotations: J5 junctions in the junction track, nonstandard nucleotides; Ligands: few ligands, no pockets', async ({ page }) => {
   const tr = await J(page, 'tracks.json')
   expect(tr.tracks.junction_loops_union.loop_types).toEqual(['J3', 'J4', 'J5'])
   const p7 = tr.positions[6].junction_loops_union
   expect(p7.by_type_n_instances.J5).toBeGreaterThan(0)
-  await page.goto('/RF00005'); await page.getByTestId('tab-annotations').click()
-  await expect(page.getByText('Ligand binding sites').first()).toBeVisible({ timeout: 30_000 })
-  for (const t of ['Median SASA', 'hairpin loops', 'junction loops', 'PSU', 'Bottromycin A2']) await expect(page.getByText(t, { exact: false }).first()).toBeVisible()
+  await page.goto('/RF00005'); await page.getByTestId('tab-ligands').click()
+  await expect(page.getByText('Ligand-contact residues').first()).toBeVisible({ timeout: 30_000 })
+  await expect(page.getByTestId('track-lig-MQH')).toContainText('Bottromycin A2')
   // pockets are not shown for tRNA (user decision): no category, but the page says the data are not available rather than dropping them silently
   await expect(page.getByTestId('category-pockets')).toHaveCount(0)
   await expect(page.getByTestId('categories-unavailable')).toHaveText('Not available for RF00005: Predicted binding pockets.')
+  await page.getByTestId('download-button').click()
+  await expect(page.getByTestId('download-pockets')).toContainText('not available for RF00005')
+  await page.keyboard.press('Escape')
+  await page.getByTestId('tab-annotations').click(); await expect(page.getByTestId('category-loops')).toBeVisible({ timeout: 30_000 })
+  for (const t of ['Median SASA', 'hairpin loops', 'junction loops', 'PSU']) await expect(page.getByText(t, { exact: false }).first()).toBeVisible()
   // the junction mark at consensus 7 counts the union and names J5 in its details
   await page.getByTestId('track-JL').locator('rect[data-pos="7"]').click()
   await expect(page.getByTestId('annotation-inspect')).toContainText(`J5: ${p7.by_type_n_instances.J5} instances`)
   await expect(page.getByTestId('annotation-inspect')).toContainText(`Observed in ${p7.denominators.n_positive_observable_and_evaluated} of ${p7.denominators.n_observable_and_evaluated} RNA instances`)
-  await page.getByTestId('download-button').click()
-  await expect(page.getByTestId('download-pockets')).toContainText('not available for RF00005')
 })
 
 test('Structures: group 1 representative has no internal gaps (6UFG B); the gapped overall medoid 9TNL Y is named', async ({ page }) => {
