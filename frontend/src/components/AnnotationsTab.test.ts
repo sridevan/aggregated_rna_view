@@ -66,3 +66,29 @@ describe('Ligands tab: default ligand set, gallery search and CCD depiction URLs
     expect(ligandPageUrl('6AP')).toBe('https://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/6AP')
   })
 })
+
+import { pageList, PAGE_SIZE } from './LigandsTab'
+import { checkIdealSdf, idealSdfUrls, principalAxes } from '../lib/idealLigand'
+describe('Ligands tab: gallery pages and ideal 3D coordinates', () => {
+  it('9 per page; page numbers with gaps only when there are more than 7 pages', () => {
+    expect(PAGE_SIZE).toBe(9)
+    expect(pageList(1, 4)).toEqual([1, 2, 3, 4])
+    expect(pageList(5, 10)).toEqual([1, '…', 4, 5, 6, '…', 10]); expect(pageList(1, 10)).toEqual([1, 2, '…', 10]); expect(pageList(10, 10)).toEqual([1, '…', 9, 10])
+  })
+  const mol = (atoms: number[][]) => ['X', '', '', `${String(atoms.length).padStart(3)}  0  0  0  0  0  0  0  0  0999 V2000`, ...atoms.map(([x, y, z]) => `${x.toFixed(4).padStart(10)}${y.toFixed(4).padStart(10)}${z.toFixed(4).padStart(10)} C   0  0`), 'M  END'].join('\n')
+  it('accepts an ideal molfile, reports all-zero coordinates as missing and anything else as invalid', () => {
+    expect(checkIdealSdf(mol([[0, 0, 0], [1.4, 0, 0], [0, 1.4, 0]]))).toMatchObject({ ok: true, nAtoms: 3 })
+    expect(checkIdealSdf(mol([[0, 0, 0], [0, 0, 0]]))).toEqual({ ok: false, reason: 'no_ideal_coordinates' })
+    expect(checkIdealSdf('<html>')).toEqual({ ok: false, reason: 'invalid' }); expect(checkIdealSdf(mol([[0, 0, 0]]).replace('M  END', ''))).toEqual({ ok: false, reason: 'invalid' })
+    const v3000 = ['X', '', '', '  0  0  0     0  0            999 V3000', 'M  V30 BEGIN CTAB', 'M  V30 COUNTS 2 1 0 0 0', 'M  V30 BEGIN ATOM', 'M  V30 1 C 0 0 0 0', 'M  V30 2 O 1.2 0 0 0', 'M  V30 END ATOM', 'M  V30 END CTAB', 'M  END'].join('\n')
+    expect(checkIdealSdf(v3000)).toMatchObject({ ok: true, nAtoms: 2 })
+  })
+  it('principal axes: a planar molecule is viewed along its normal, its longest extent first', () => {
+    const { centre, axes } = principalAxes([[0, 0, 5], [4, 0, 5], [0, 1, 5], [4, 1, 5], [2, 0.5, 5]])
+    expect(centre.map((v) => +v.toFixed(6))).toEqual([2, 0.5, 5])
+    expect(Math.abs(axes[0][0])).toBeCloseTo(1, 5); expect(Math.abs(axes[1][1])).toBeCloseTo(1, 5); expect(Math.abs(axes[2][2])).toBeCloseTo(1, 5)
+  })
+  it('RCSB ideal SDF first, the identical PDBe file as fallback', () => {
+    expect(idealSdfUrls('ADE')).toEqual(['https://files.rcsb.org/ligands/download/ADE_ideal.sdf', 'https://www.ebi.ac.uk/pdbe/static/files/pdbechem_v2/ADE_ideal.sdf'])
+  })
+})

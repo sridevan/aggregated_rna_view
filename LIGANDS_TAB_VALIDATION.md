@@ -111,3 +111,46 @@ All are listed in `docs/TOOLTIPS.md` § Ligands.
 - **Contacts are entity-level PDBe annotations of preferred-assembly ligand copies** (see the investigation report). Selecting an author numbering never filters to that chain.
 - **The terminus flag still excludes tRNA synthetase substrate analogues** from the default set, so they are not in the gallery either.
 - **Names come from PDBe** and use the existing title-casing, e.g. "9h-purine-2,6-diamine" for 9H-PURINE-2,6-DIAMINE.
+
+## Enhancement: gallery pages and ideal 3D viewer (2026-10-22)
+
+**Gallery**
+- Layout: 3 columns on desktop (2 on tablet, 1 on phone), 128 px depictions, full names, equal-height cards.
+- Order: unchanged (most PDB entries first).
+- Pagination: replaces "Show all".
+  - 9 per page; RF00167 has 29 ligands, so 4 pages.
+  - Controls: Previous / page numbers (with gaps beyond 7 pages) / Next, "Page k of n", "Showing a–b of n ligands".
+  - Pagination works on the search results, and every new query returns to page 1.
+- Links and actions, kept separate:
+  - The CCD id is now the external link to the PDBe chemical component page (new tab, ↗); the separate "PDBe ligand page" link was removed.
+  - The depiction and "Locate track" highlight the residue track.
+  - "View ideal 3D" opens the viewer. Neither the link nor View 3D selects the card.
+- The highlighted track persists across pages and searches. A chip ("Highlighted track: HPA ✕") names it and clears it.
+
+**Ideal 3D viewer** (`components/molstar/LigandIdealViewer.tsx`, pure helpers in `lib/idealLigand.ts`)
+- Coordinates:
+  - RCSB `files.rcsb.org/ligands/download/{CCD}_ideal.sdf` (the documented download on RCSB ligand pages).
+  - PDBe `pdbechem_v2/{CCD}_ideal.sdf` only when RCSB fails.
+  - Checked on 2026-10-22: both return valid V2000 SDF with identical atom and bond counts for all 72 gallery CCDs, with `Access-Control-Allow-Origin: *`.
+  - **MIY and TAC (16S tetracyclines) have all-zero ideal coordinates in the CCD.** The viewer reports "no ideal coordinates" instead of rendering. Model (experimental) coordinates are never substituted.
+- Mol*:
+  - The same PDBe Mol* plugin class as the other viewers, with a fresh mount, `RawData → TrajectoryFromSDF → Model → Structure` and ball-and-stick with element colours.
+  - The camera is set from the principal axes of the atoms, so planar molecules are seen face-on and centred. Mol*'s `orientAxes` left the canvas empty for these structures.
+  - Reset view repeats the fit. Atom hover shows "{element} · atom {n}" (SDF has no atom names).
+- Lifecycle:
+  - The viewer code is lazy-loaded on first use.
+  - One plugin while the modal is open, disposed on close (canvas count returns to its previous value).
+  - A new ligand clears the previous structure first; an AbortController and the shared queue drop stale loads.
+- Modal: `role="dialog"`, `aria-modal`, focus on Close, Tab kept inside, Escape or backdrop click closes, focus returns to the button that opened it, page scroll locked.
+- Errors: missing ideal coordinates, unreadable file, network failure on both sources. The modal stays usable and closable.
+
+**Tests**
+- vitest: 108 passed. New: pages, the SDF check (V2000, V3000, all-zero, invalid), principal axes, URLs.
+- `ligands-tab.spec.ts`: 11 passed. Covered:
+  - pages (every ligand reached once, controls, summaries);
+  - three per row;
+  - CCD link opens a popup and does not select;
+  - highlight persists across pages, chip, Locate track;
+  - search resets to page 1;
+  - viewer: title and subtitle, RCSB source, 15 ADE atoms, info text, reset, Escape and focus return, canvas disposed, rapid switching shows the last ligand, backdrop close;
+  - error states with routed fixtures (all-zero, unreadable, RCSB down → PDBe, both down).

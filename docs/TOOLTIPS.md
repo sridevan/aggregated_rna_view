@@ -377,12 +377,28 @@ Annotations below). Texts specific to this tab:
 > and may not represent every RNA chain or biological assembly in an entry.
 
 **Gallery description:** "Ligands with PDBe-reported contacts to RNA chains of this family, with the number of PDB entries in which a contact
-is recorded. Metal ions, crystallisation additives and flagged artefacts are not shown. Select a ligand to locate its residue track."
+is recorded. Metal ions, crystallisation additives and flagged artefacts are not shown. Select a structure image or “Locate track” to highlight
+its residue track; the CCD id opens the PDBe chemical component page."
 
-**Gallery card:** CCD id · name · "Found in {n} PDB entr(y|ies)" (hover: "RNA contact recorded by PDBe in: {entries}") · "PDBe ligand page ↗".
-Depiction hover/alt: "2D structure of {CCD}"; when no image loads: "No depiction available". Image hover: "Locate the {CCD} residue track"
-(selected: "Clear the highlighted track"). Search placeholder: "Name or CCD id, e.g. adenine, HPA"; no match: "No ligand matches “{query}”."
-Empty family: "No ligands with PDBe-reported RNA contacts in the default ligand set for {ACC}."
+**Gallery card:** 2D depiction (button; hover "Locate the {CCD} residue track", selected "Clear the highlighted track"; alt "2D structure of
+{CCD}"; "No depiction available" when no image loads) · CCD id as a link to the PDBe chemical component page, with ↗ (hover "PDBe chemical
+component page for {CCD} (opens in a new tab)") · full name · "Found in {n} PDB entr(y|ies)" (hover "RNA contact recorded by PDBe in:
+{entries}") · buttons "Locate track" / "Clear track highlight" and "View ideal 3D" (hover "Ideal 3D structure from the PDB Chemical Component
+Dictionary"). Highlighted-track chip: "Highlighted track: {CCD}" with ✕ ("Clear the highlighted {CCD} track").
+
+**Search and pages:** placeholder "Name or CCD id, e.g. adenine, HPA"; no match "No ligand matches “{query}”."; "Showing {a}–{b} of {n}
+ligands" (+ " matching “{query}”"); "‹ Previous", page numbers, "Next ›", "Page {k} of {pages}". Empty family: "No ligands with
+PDBe-reported RNA contacts in the default ligand set for {ACC}."
+
+**Ideal 3D viewer (modal)**
+- Title "{CCD} — {name}"; subtitle "Ideal 3D coordinates from the PDB Chemical Component Dictionary" with ⓘ: "This viewer displays
+  idealized coordinates from the PDB Chemical Component Dictionary. These coordinates represent a reference molecular geometry and may differ
+  from the ligand conformation observed in an experimental RNA complex."
+- Buttons "Close", "Reset view"; hint "Drag to rotate · scroll to zoom · right-drag to move · {n} atoms ({RCSB | PDBe})"; link "PDBe chemical
+  component page ↗"; atom hover "{element} · atom {n}".
+- States: "Loading 3D viewer…", "Loading ideal coordinates…"; "The Chemical Component Dictionary has no ideal coordinates for {CCD}, so no
+  ideal 3D structure is shown."; "The ideal coordinate file for {CCD} could not be read."; "Ideal coordinates for {CCD} could not be retrieved
+  from RCSB or PDBe. Check the connection and try again."
 
 **Category headers, ⓘ**
 

@@ -1,4 +1,6 @@
-import { useMemo, useState } from 'react'
+import { lazy, Suspense, useMemo, useState } from 'react'
+/** the Mol* viewer is loaded only when a user first opens an ideal 3D structure */
+const LigandIdealViewer = lazy(() => import('./molstar/LigandIdealViewer').then((m) => ({ default: m.LigandIdealViewer })))
 import { useFamily } from '../state/family'
 import { useAnnotations } from '../state/useAnnotations'
 import { SectionCard } from './SectionCard'
@@ -27,8 +29,14 @@ export const TEXT = {
   frequency: 'Contact frequency is the proportion of eligible PDB entries containing a ligand in which PDBe reports a contact at this position. Entries with unobserved residues are excluded from the denominator. Pocket colours show the proportion of RNA instances with a predicted pocket.',
   numbering: 'Residue numbering is taken from the selected RNA chain. Ligand-contact annotations remain aggregated at RNA entity level and are not necessarily specific to the selected chain. Switching numbering systems changes residue labels only; the underlying ligand contacts and frequencies remain unchanged.',
 }
-/** gallery cards shown before "Show all" (a search always shows every match) */
-export const GALLERY_INITIAL = 12
+/** gallery page size: 3 columns x 3 rows on desktop */
+export const PAGE_SIZE = 9
+/** page numbers to show: all when they fit, else first, last and the current page with its neighbours ('…' marks a gap) */
+export function pageList(page: number, pages: number): (number | '…')[] {
+  if (pages <= 7) return Array.from({ length: pages }, (_, i) => i + 1)
+  const keep = [...new Set([1, pages, page - 1, page, page + 1].filter((n) => n >= 1 && n <= pages))].sort((a, b) => a - b)
+  return keep.flatMap((n, i) => (i && n - keep[i - 1] > 1 ? ['…' as const, n] : [n]))
+}
 
 /** Default-set ligands in track order, with the PDB entries in which PDBe records an RNA contact; search by CCD id or name (case-insensitive). */
 export function galleryItems(ligands: LigandsDataset, query = '') {
@@ -59,14 +67,19 @@ export function LigandsTab() {
   const { acc, family } = useFamily()
   const st = useAnnotations(acc)
   const [query, setQuery] = useState('')
-  const [showAll, setShowAll] = useState(false)
+  const [page, setPage] = useState(1)
+  const [viewing, setViewing] = useState<{ ccd: string; name: string } | null>(null)
   const [selected, setSelected] = useState<string | null>(null)
   const [revealKey, setRevealKey] = useState(0)
   const ligTracks = useMemo(() => (st.state === 'ready' ? ligandTracks(st.tracks, st.ligands) : null), [st])
   const pockets = useMemo(() => (st.state === 'ready' && st.pockets ? pocketTrack(st.pockets) : null), [st])
   const all = useMemo(() => (st.state === 'ready' ? galleryItems(st.ligands) : []), [st])
   const items = useMemo(() => (st.state === 'ready' ? galleryItems(st.ligands, query) : []), [st, query])
-  const shown = query.trim() || showAll ? items : items.slice(0, GALLERY_INITIAL)
+  // pagination over the filtered list; a new query starts again at page 1
+  const pages = Math.max(1, Math.ceil(items.length / PAGE_SIZE))
+  const cur = Math.min(page, pages)
+  const shown = items.slice((cur - 1) * PAGE_SIZE, cur * PAGE_SIZE)
+  const onQuery = (q: string) => { setQuery(q); setPage(1) }
   if (typeof window !== 'undefined') window.__rnaExplorer = { ...(window.__rnaExplorer ?? {}), annotationTracks: ligTracks ? { ligands: ligTracks.map((t) => t.id), pockets: pockets ? [pockets.id] : [] } : null }
   const categories = useMemo<CategorySpec[]>(() => !ligTracks ? [] : [
     { id: 'ligands', title: 'Ligand-contact residues', info: TEXT.residues, tracks: ligTracks, empty: 'No ligand-contact residue tracks for this family.' },
@@ -87,32 +100,59 @@ export function LigandsTab() {
         {/* A. gallery */}
         <SectionCard testId="ligand-gallery-section" actions={<DownloadMenu acc={acc} items={datasets} />}
           title={<span className="inline-flex items-center gap-1.5">RNA-contacting ligands <span className="text-sm font-normal text-stone-500" data-testid="ligand-gallery-count">({all.length})</span><InfoTip label="About RNA-contacting ligands" text={TEXT.gallery} /></span>}
-          description={<span data-testid="ligand-gallery-summary">Ligands with PDBe-reported contacts to RNA chains of this family, with the number of PDB entries in which a contact is recorded. Metal ions, crystallisation additives and flagged artefacts are not shown. Select a ligand to locate its residue track.</span>}>
+          description={<span data-testid="ligand-gallery-summary">Ligands with PDBe-reported contacts to RNA chains of this family, with the number of PDB entries in which a contact is recorded. Metal ions, crystallisation additives and flagged artefacts are not shown. Select a structure image or “Locate track” to highlight its residue track; the CCD id opens the PDBe chemical component page.</span>}>
           {all.length === 0 ? <p className="text-xs text-stone-500" data-testid="ligand-gallery-empty">No ligands with PDBe-reported RNA contacts in the default ligand set for {acc}.</p> : <>
-            <label className="mb-2 flex max-w-sm items-center gap-2 text-[11px] text-stone-700">Filter
-              <input type="search" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Name or CCD id, e.g. adenine, HPA" data-testid="ligand-search"
-                className="min-w-0 flex-1 rounded border border-stone-300 bg-white px-1.5 py-0.5 text-xs placeholder:text-stone-400" />
-            </label>
+            <div className="mb-2 flex flex-wrap items-center gap-x-4 gap-y-1">
+              <label className="flex min-w-0 max-w-sm flex-1 items-center gap-2 text-[11px] text-stone-700">Filter
+                <input type="search" value={query} onChange={(e) => onQuery(e.target.value)} placeholder="Name or CCD id, e.g. adenine, HPA" data-testid="ligand-search"
+                  className="min-w-0 flex-1 rounded border border-stone-300 bg-white px-1.5 py-0.5 text-xs placeholder:text-stone-400" />
+              </label>
+              {/* the highlighted track stays highlighted on every gallery page and through searches until cleared */}
+              {selected && (
+                <span className="inline-flex items-center gap-1 rounded border border-violet-300 bg-violet-50 px-1.5 py-px text-[11px] text-violet-900" data-testid="ligand-selected-chip">
+                  Highlighted track: <span className="font-mono">{selected}</span>
+                  <button type="button" onClick={() => setSelected(null)} aria-label={`Clear the highlighted ${selected} track`} className="ml-0.5 rounded px-1 hover:bg-violet-100" data-testid="ligand-selected-clear">✕</button>
+                </span>)}
+            </div>
             {items.length === 0 && <p className="text-xs text-stone-500" data-testid="ligand-gallery-no-match">No ligand matches “{query}”.</p>}
-            <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" data-testid="ligand-gallery">
+            <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3" data-testid="ligand-gallery" data-page={cur} data-pages={pages}>
               {shown.map((it) => (
-                <li key={it.ccd} className={`flex gap-2 rounded border p-1.5 ${selected === it.ccd ? 'border-violet-400 bg-violet-50 ring-1 ring-violet-300' : 'border-stone-200 bg-white'}`} data-testid={`ligand-card-${it.ccd}`} data-selected={String(selected === it.ccd)}>
-                  <button type="button" onClick={() => choose(it.ccd)} aria-pressed={selected === it.ccd} title={selected === it.ccd ? 'Clear the highlighted track' : `Locate the ${it.ccd} residue track`}
-                    className="relative h-20 w-20 shrink-0 rounded border border-stone-200 bg-white p-0.5 hover:border-violet-400 focus:outline-none focus:ring-2 focus:ring-violet-500" data-testid={`ligand-select-${it.ccd}`}>
+                <li key={it.ccd} className={`flex h-full gap-3 rounded border p-2 ${selected === it.ccd ? 'border-violet-400 bg-violet-50 ring-1 ring-violet-300' : 'border-stone-200 bg-white'}`} data-testid={`ligand-card-${it.ccd}`} data-selected={String(selected === it.ccd)}>
+                  <button type="button" onClick={() => choose(it.ccd)} aria-pressed={selected === it.ccd} aria-label={selected === it.ccd ? `Clear the highlighted ${it.ccd} track` : `Locate the ${it.ccd} residue track`}
+                    title={selected === it.ccd ? 'Clear the highlighted track' : `Locate the ${it.ccd} residue track`}
+                    className="relative h-32 w-32 shrink-0 rounded border border-stone-200 bg-white p-1 hover:border-violet-400 focus:outline-none focus:ring-2 focus:ring-violet-500" data-testid={`ligand-select-${it.ccd}`}>
                     <Depiction ccd={it.ccd} />
                   </button>
-                  <div className="min-w-0 flex-1 text-xs leading-4">
-                    <button type="button" onClick={() => choose(it.ccd)} className="font-mono font-semibold text-stone-900 hover:text-violet-800 hover:underline" data-testid={`ligand-ccd-${it.ccd}`}>{it.ccd}</button>
-                    <p className="line-clamp-2 break-words text-stone-700" title={it.name} data-testid={`ligand-name-${it.ccd}`}>{it.name}</p>
+                  <div className="flex min-w-0 flex-1 flex-col text-xs leading-4">
+                    <a href={ligandPageUrl(it.ccd)} target="_blank" rel="noreferrer" title={`PDBe chemical component page for ${it.ccd} (opens in a new tab)`} data-testid={`ligand-ccd-${it.ccd}`}
+                      className="self-start rounded font-mono text-sm font-semibold text-blue-700 underline decoration-blue-300 underline-offset-2 hover:decoration-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">{it.ccd}<span aria-hidden="true" className="ml-0.5 text-[11px] no-underline">↗</span><span className="sr-only"> (opens the PDBe page in a new tab)</span></a>
+                    <p className="mt-0.5 break-words text-stone-800" data-testid={`ligand-name-${it.ccd}`}>{it.name}</p>
                     <p className="mt-0.5 text-stone-600" title={`RNA contact recorded by PDBe in: ${it.entries.map((e) => e.toUpperCase()).join(', ')}`} data-testid={`ligand-entries-${it.ccd}`}>
                       Found in {it.nEntries} PDB {it.nEntries === 1 ? 'entry' : 'entries'}</p>
-                    <a href={ligandPageUrl(it.ccd)} target="_blank" rel="noreferrer" className="text-[11px] text-blue-700 hover:underline" data-testid={`ligand-link-${it.ccd}`}>PDBe ligand page ↗</a>
+                    <div className="mt-auto flex flex-wrap gap-1.5 pt-1.5">
+                      <button type="button" onClick={() => choose(it.ccd)} aria-pressed={selected === it.ccd} data-testid={`ligand-locate-${it.ccd}`}
+                        className="rounded border border-stone-300 bg-white px-1.5 py-px text-[11px] text-stone-700 hover:bg-stone-50 focus:outline-none focus:ring-2 focus:ring-violet-500">{selected === it.ccd ? 'Clear track highlight' : 'Locate track'}</button>
+                      <button type="button" onClick={() => setViewing({ ccd: it.ccd, name: it.name })} data-testid={`ligand-view3d-${it.ccd}`} title="Ideal 3D structure from the PDB Chemical Component Dictionary"
+                        className="rounded border border-stone-300 bg-white px-1.5 py-px text-[11px] text-stone-700 hover:bg-stone-50 focus:outline-none focus:ring-2 focus:ring-blue-500">View ideal 3D</button>
+                    </div>
                   </div>
                 </li>))}
             </ul>
-            {!query.trim() && items.length > GALLERY_INITIAL && (
-              <button type="button" onClick={() => setShowAll((v) => !v)} className="mt-2 self-start rounded border border-stone-300 bg-white px-2 py-0.5 text-xs text-stone-700 hover:bg-stone-50" data-testid="ligand-gallery-toggle">
-                {showAll ? 'Show fewer' : `Show all ${items.length} ligands`}</button>)}
+            {items.length > 0 && (
+              <nav className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-stone-600" aria-label="Ligand gallery pages" data-testid="ligand-pagination">
+                <span data-testid="ligand-page-summary">Showing {(cur - 1) * PAGE_SIZE + 1}–{(cur - 1) * PAGE_SIZE + shown.length} of {items.length} {items.length === 1 ? 'ligand' : 'ligands'}{query.trim() ? ` matching “${query.trim()}”` : ''}</span>
+                {pages > 1 && (
+                  <span className="ml-auto flex items-center gap-1">
+                    <button type="button" onClick={() => setPage(cur - 1)} disabled={cur === 1} aria-label="Previous page" data-testid="ligand-page-prev"
+                      className="rounded border border-stone-300 bg-white px-1.5 py-px text-stone-700 hover:bg-stone-50 disabled:opacity-40">‹ Previous</button>
+                    {pageList(cur, pages).map((n, i) => n === '…' ? <span key={`gap-${i}`} className="px-0.5">…</span> : (
+                      <button key={n} type="button" onClick={() => setPage(n)} aria-current={n === cur ? 'page' : undefined} aria-label={`Page ${n}`} data-testid={`ligand-page-${n}`}
+                        className={`min-w-[1.5rem] rounded border px-1 py-px ${n === cur ? 'border-blue-600 bg-blue-50 font-medium text-blue-800' : 'border-stone-300 bg-white text-stone-700 hover:bg-stone-50'}`}>{n}</button>))}
+                    <button type="button" onClick={() => setPage(cur + 1)} disabled={cur === pages} aria-label="Next page" data-testid="ligand-page-next"
+                      className="rounded border border-stone-300 bg-white px-1.5 py-px text-stone-700 hover:bg-stone-50 disabled:opacity-40">Next ›</button>
+                    <span className="ml-1" data-testid="ligand-page-indicator">Page {cur} of {pages}</span>
+                  </span>)}
+              </nav>)}
           </>}
         </SectionCard>
 
@@ -122,6 +162,10 @@ export function LigandsTab() {
           <TrackBrowser categories={categories} origin="ligands" numberingInfo={TEXT.numbering} legendInfo={TEXT.frequency} highlight={selected ? `lig-${selected}` : null} revealKey={revealKey} />
           {!pockets && <p className="mt-2 text-[11px] text-stone-500" data-testid="categories-unavailable">Not available for {acc}: Predicted binding pockets.</p>}
         </SectionCard>
+
+        {/* ideal 3D structure of one chemical component, on demand (one Mol* plugin while open, disposed on close) */}
+        {viewing && <Suspense fallback={<div className="fixed inset-0 z-50 flex items-center justify-center bg-stone-900/40 text-sm text-white" data-testid="ligand-viewer-loading-code">Loading 3D viewer…</div>}>
+          <LigandIdealViewer ccd={viewing.ccd} name={viewing.name} pageUrl={ligandPageUrl(viewing.ccd)} onClose={() => setViewing(null)} /></Suspense>}
 
         {/* methodology, collapsed by default */}
         <SectionCard testId="ligand-methods" title="About these annotations" headingLevel={3} collapsible defaultOpen={false}>

@@ -15,18 +15,34 @@ test('tab order; gallery = default ligand set with names and PDB entry counts; P
   const lig = await (await page.request.get('/families/RF00167/ligands.json')).json()
   const set = defaultSet(lig.by_ccd)
   await expect(page.getByTestId('ligand-gallery-count')).toHaveText(`(${set.length})`)
-  // first 12 in track order, then "Show all"
+  // pages of 9 in track order (3 x 3 on desktop); every ligand reachable through the pages
   const cards = page.locator('[data-testid^="ligand-card-"]')
-  await expect(cards).toHaveCount(12)
-  expect(await cards.evaluateAll((es) => es.map((e) => e.getAttribute('data-testid')!.slice('ligand-card-'.length)))).toEqual(set.slice(0, 12).map(([c]) => c))
-  await page.getByTestId('ligand-gallery-toggle').click(); await expect(cards).toHaveCount(set.length)
+  const ids = () => cards.evaluateAll((es) => es.map((e) => e.getAttribute('data-testid')!.slice('ligand-card-'.length)))
+  const pages = Math.ceil(set.length / 9)
+  await expect(page.getByTestId('ligand-page-indicator')).toHaveText(`Page 1 of ${pages}`)
+  await expect(page.getByTestId('ligand-page-summary')).toHaveText(`Showing 1–9 of ${set.length} ligands`)
+  expect(await ids()).toEqual(set.slice(0, 9).map(([c]) => c))
+  const x = await cards.evaluateAll((es) => es.slice(0, 4).map((e) => Math.round(e.getBoundingClientRect().left)))
+  expect(new Set(x.slice(0, 3)).size).toBe(3); expect(x[3]).toBe(x[0])                                       // three per row
+  const seen: string[] = [...await ids()]
+  for (let k = 2; k <= pages; k++) { await page.getByTestId('ligand-page-next').click(); await expect(page.getByTestId('ligand-page-indicator')).toHaveText(`Page ${k} of ${pages}`); seen.push(...await ids()) }
+  expect(seen).toEqual(set.map(([c]) => c)); await expect(page.getByTestId('ligand-page-next')).toBeDisabled()
+  await expect(page.getByTestId('ligand-page-summary')).toHaveText(`Showing ${(pages - 1) * 9 + 1}–${set.length} of ${set.length} ligands`)
+  await page.getByTestId('ligand-page-1').click(); await expect(page.getByTestId('ligand-page-1')).toHaveAttribute('aria-current', 'page'); await expect(page.getByTestId('ligand-page-prev')).toBeDisabled()
   // HPA: name and distinct PDB entries with a recorded RNA contact (no ligand-copy counts anywhere)
   await expect(page.getByTestId('ligand-name-HPA')).toHaveText('Hypoxanthine')
   await expect(page.getByTestId('ligand-entries-HPA')).toHaveText(`Found in ${lig.by_ccd.HPA.n_entries_in_default_track} PDB entries`)
   const hpaEntries = [...new Set((lig.bound_molecules as Bm[]).filter((b) => b.ccd_id === 'HPA' && b.in_default_track).map((b) => b.pdb_id.toUpperCase()))].sort()
   await expect(page.getByTestId('ligand-entries-HPA')).toHaveAttribute('title', `RNA contact recorded by PDBe in: ${hpaEntries.join(', ')}`)
   await expect(page.getByTestId('ligand-gallery-section')).not.toContainText(/cop(y|ies)|instances? of the ligand/i)
-  await expect(page.getByTestId('ligand-link-HPA')).toHaveAttribute('href', 'https://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/HPA')
+  // the CCD id is the external PDBe link (new tab); the old separate link is gone
+  const link = page.getByTestId('ligand-ccd-HPA')
+  await expect(link).toHaveAttribute('href', 'https://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/HPA'); await expect(link).toHaveAttribute('target', '_blank')
+  await expect(link).toContainText('HPA'); await expect(link).toContainText('↗')
+  await expect(page.locator('[data-testid^="ligand-link-"]')).toHaveCount(0)
+  const [popup] = await Promise.all([page.waitForEvent('popup'), link.click()])
+  expect(popup.url()).toContain('/chemicalCompound/show/HPA'); await popup.close()
+  await expect(page.getByTestId('ligand-card-HPA')).toHaveAttribute('data-selected', 'false')            // the link never selects the card
   // authoritative depiction: the PDBe chemistry SVG for the CCD id, actually loaded
   const img = page.getByTestId('depiction-ADE')
   await expect(img).toHaveAttribute('src', 'https://www.ebi.ac.uk/pdbe/static/files/pdbechem_v2/ADE_200.svg'); await expect(img).toHaveAttribute('data-source', 'pdbe')
@@ -85,10 +101,10 @@ test('selecting a ligand highlights and reveals its track (even in a collapsed c
   const values = () => page.locator('[data-testid^="track-lig-"] rect[data-pos]').evaluateAll((es) => es.map((e) => `${e.closest('[data-testid^="track-"]')!.getAttribute('data-testid')}:${e.getAttribute('data-pos')}:${e.getAttribute('data-value')}`))
   const before = await values()
   await page.getByTestId('category-toggle-ligands').click(); await expect(page.getByTestId('category-ligands')).toHaveAttribute('data-open', 'false')
-  // a ligand far down the list: shown via "Show all", its card selected, the category re-opened, the row highlighted and scrolled into view
-  await page.getByTestId('ligand-gallery-toggle').click()
+  // a ligand on the last gallery page: its card selected, the category re-opened, the row highlighted and scrolled into view
   const lig = await (await page.request.get('/families/RF00167/ligands.json')).json(); const set = defaultSet(lig.by_ccd)
   const last = set[set.length - 1][0]
+  await page.getByTestId(`ligand-page-${Math.ceil(set.length / 9)}`).click()
   await page.getByTestId(`ligand-select-${last}`).click()
   await expect(page.getByTestId(`ligand-card-${last}`)).toHaveAttribute('data-selected', 'true')
   await expect(page.getByTestId('category-ligands')).toHaveAttribute('data-open', 'true')
@@ -97,16 +113,25 @@ test('selecting a ligand highlights and reveals its track (even in a collapsed c
   await expect.poll(async () => { const r = (await row.boundingBox())!, b = (await page.getByTestId('category-body-ligands').boundingBox())!; return r.y >= b.y - 1 && r.y + r.height <= b.y + b.height + 1 }).toBe(true)
   await expect(page.locator('[data-highlighted="true"]')).toHaveCount(1)
   expect(await values()).toEqual(before)                                    // highlight only: every mark and value unchanged
-  // selecting it again clears the highlight; selecting another moves it
-  await page.getByTestId(`ligand-ccd-${last}`).click(); await expect(page.locator('[data-highlighted="true"]')).toHaveCount(0)
-  await page.getByTestId('ligand-select-ADE').click(); await expect(page.getByTestId('track-lig-ADE')).toHaveAttribute('data-highlighted', 'true')
-  // search: name or CCD id, case-insensitive; every match shown; no match message
+  // the highlight survives a page change (the chip names it) and is cleared from the chip or by selecting the card again
+  await page.getByTestId('ligand-page-1').click()
+  await expect(page.getByTestId('ligand-selected-chip')).toContainText(`Highlighted track: ${last}`); await expect(row).toHaveAttribute('data-highlighted', 'true')
+  await page.getByTestId('ligand-selected-clear').click(); await expect(page.locator('[data-highlighted="true"]')).toHaveCount(0); await expect(page.getByTestId('ligand-selected-chip')).toHaveCount(0)
+  await page.getByTestId('ligand-locate-ADE').click(); await expect(page.getByTestId('track-lig-ADE')).toHaveAttribute('data-highlighted', 'true')
+  await expect(page.getByTestId('ligand-locate-ADE')).toHaveText('Clear track highlight')
+  await page.getByTestId('ligand-select-ADE').click(); await expect(page.locator('[data-highlighted="true"]')).toHaveCount(0)
+  await page.getByTestId('ligand-select-ADE').click()
+  // search: name or CCD id, case-insensitive; pagination over the matches, back to page 1 on every new query
+  await page.getByTestId('ligand-page-2').click()
   await page.getByTestId('ligand-search').fill('guanine')
+  const match = set.filter(([c, v]) => c.toLowerCase().includes('guanine') || (v.name ?? '').toLowerCase().includes('guanine')).map(([c]) => c)
   const shown = await page.locator('[data-testid^="ligand-card-"]').evaluateAll((es) => es.map((e) => e.getAttribute('data-testid')!.slice('ligand-card-'.length)))
-  expect(shown).toEqual(set.filter(([c, v]) => c.toLowerCase().includes('guanine') || (v.name ?? '').toLowerCase().includes('guanine')).map(([c]) => c))
-  expect(shown).toContain('GUN'); await expect(page.getByTestId('ligand-gallery-toggle')).toHaveCount(0)
+  expect(shown).toEqual(match.slice(0, 9)); expect(shown).toContain('GUN')
+  await expect(page.getByTestId('ligand-page-summary')).toHaveText(`Showing 1–${Math.min(9, match.length)} of ${match.length} ${match.length === 1 ? 'ligand' : 'ligands'} matching “guanine”`)
+  if (match.length <= 9) await expect(page.getByTestId('ligand-page-indicator')).toHaveCount(0)
   await page.getByTestId('ligand-search').fill('hpa'); await expect(page.locator('[data-testid^="ligand-card-"]')).toHaveCount(1)
-  await page.getByTestId('ligand-search').fill('zzzz-none'); await expect(page.getByTestId('ligand-gallery-no-match')).toBeVisible()
+  await page.getByTestId('ligand-search').fill('zzzz-none'); await expect(page.getByTestId('ligand-gallery-no-match')).toBeVisible(); await expect(page.getByTestId('ligand-pagination')).toHaveCount(0)
+  await expect(page.getByTestId('track-lig-ADE')).toHaveAttribute('data-highlighted', 'true')          // the gallery search never changes the tracks or the highlight
   await expect(page.locator('[data-testid^="track-lig-"]')).toHaveCount(set.length)   // the search filters the gallery only, never the tracks
 })
 
@@ -181,4 +206,64 @@ test('narrow screen: no horizontal overflow; gallery stacks; tracks aligned with
   expect(Math.abs(c[0] - c[1])).toBeLessThan(1)                             // one column
   const a = (await page.locator('[data-testid="track-lig-HPA"] rect[data-pos="25"]').boundingBox())!, b = (await page.locator('[data-testid="track-pocket-occurrence"] rect[data-pos="25"]').boundingBox())!
   expect(Math.abs(a.x - b.x)).toBeLessThan(1)
+})
+
+/** a valid V2000 molfile with the given coordinates (test fixture served in place of the remote SDF) */
+const sdf = (atoms: [string, number, number, number][]) => ['FIX', '  test', '', `${String(atoms.length).padStart(3)}  0  0  0  0  0  0  0  0  0999 V2000`,
+  ...atoms.map(([el, x, y, z]) => `${x.toFixed(4).padStart(10)}${y.toFixed(4).padStart(10)}${z.toFixed(4).padStart(10)} ${el.padEnd(3)} 0  0  0  0  0  0  0  0  0  0  0  0`), 'M  END', '$$$$'].join('\n')
+type LV = { __rnaExplorer: { ligandViewer?: { ccd: string; status: string; nAtoms?: number; source?: string; reason?: string } | null } }
+const viewer = (page: Page) => page.evaluate(() => (window as unknown as LV).__rnaExplorer.ligandViewer)
+
+test('View ideal 3D: modal with CCD id and name, RCSB ideal SDF in Mol* (ball-and-stick), provenance note, reset, Escape and focus return; no RNA viewer affected', async ({ page }) => {
+  await open(page)
+  const before = await page.locator('canvas').count()
+  await page.getByTestId('ligand-view3d-ADE').click()
+  const dlg = page.getByRole('dialog'); await expect(dlg).toBeVisible()
+  await expect(page.getByTestId('ligand-card-ADE')).toHaveAttribute('data-selected', 'false')            // View 3D never selects the card
+  await expect(page.getByTestId('ligand-viewer-title')).toHaveText('ADE — Adenine')
+  await expect(page.getByTestId('ligand-viewer-subtitle')).toContainText('Ideal 3D coordinates from the PDB Chemical Component Dictionary')
+  await expect(page.getByTestId('ligand-viewer-close')).toBeFocused()
+  await expect.poll(() => viewer(page).then((v) => v?.status), { timeout: 30_000 }).toBe('ready')
+  expect(await viewer(page)).toMatchObject({ ccd: 'ADE', nAtoms: 15, source: 'https://files.rcsb.org/ligands/download/ADE_ideal.sdf' })
+  await expect(page.getByTestId('ligand-viewer')).toHaveAttribute('data-status', 'ready')
+  await expect(page.getByTestId('ligand-viewer-link')).toHaveAttribute('href', 'https://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/ADE')
+  await page.getByTestId('ligand-viewer-subtitle').getByTestId('info-tip').click()
+  await expect(page.getByTestId('info-popover')).toHaveText('This viewer displays idealized coordinates from the PDB Chemical Component Dictionary. These coordinates represent a reference molecular geometry and may differ from the ligand conformation observed in an experimental RNA complex.')
+  await page.getByTestId('ligand-viewer-subtitle').getByTestId('info-tip').click(); await expect(page.getByTestId('info-popover')).toHaveCount(0)
+  await page.getByTestId('ligand-viewer-reset').click()
+  await expect(page.locator('canvas')).toHaveCount(before + 1)                                             // one viewer for the modal
+  await page.keyboard.press('Escape'); await expect(dlg).toHaveCount(0)
+  await expect(page.getByTestId('ligand-view3d-ADE')).toBeFocused()
+  await expect.poll(() => page.locator('canvas').count()).toBe(before)                                     // disposed on close
+  // reopening and quickly switching: the last ligand is the one shown, still a single extra canvas
+  for (const c of ['HPA', 'GUN']) { await page.getByTestId(`ligand-view3d-${c}`).click(); await page.getByTestId('ligand-viewer-close').click() }
+  await page.getByTestId('ligand-view3d-6AP').click()
+  await expect.poll(() => viewer(page).then((v) => v && `${v.ccd}:${v.status}`), { timeout: 30_000 }).toBe('6AP:ready')
+  await expect(page.getByTestId('ligand-viewer')).toHaveAttribute('data-ccd', '6AP'); await expect.poll(() => page.locator('canvas').count()).toBe(before + 1)
+  await page.getByTestId('ligand-viewer-backdrop').click({ position: { x: 5, y: 5 } }); await expect(dlg).toHaveCount(0)   // backdrop click closes
+})
+
+test('View ideal 3D: missing ideal coordinates, unreadable file and network failure are reported; PDBe is used when RCSB fails; no other coordinates substituted', async ({ page }) => {
+  await open(page)
+  // all-zero coordinates = the CCD has no ideal coordinates (as for MIY or TAC)
+  await page.route('https://files.rcsb.org/ligands/download/HPA_ideal.sdf', (r) => r.fulfill({ body: sdf([['C', 0, 0, 0], ['N', 0, 0, 0], ['O', 0, 0, 0]]) }))
+  await page.getByTestId('ligand-view3d-HPA').click()
+  await expect(page.getByTestId('ligand-viewer-error')).toHaveText('The Chemical Component Dictionary has no ideal coordinates for HPA, so no ideal 3D structure is shown.')
+  expect(await viewer(page)).toMatchObject({ ccd: 'HPA', status: 'error', reason: 'no_ideal_coordinates' })
+  await expect(page.getByTestId('ligand-viewer-reset')).toBeDisabled(); await page.getByTestId('ligand-viewer-close').click()
+  // unreadable file
+  await page.route('https://files.rcsb.org/ligands/download/GUN_ideal.sdf', (r) => r.fulfill({ body: '<html>not a molfile</html>' }))
+  await page.getByTestId('ligand-view3d-GUN').click()
+  await expect(page.getByTestId('ligand-viewer-error')).toHaveText('The ideal coordinate file for GUN could not be read.'); await page.getByTestId('ligand-viewer-close').click()
+  // RCSB down: the identical PDBe ideal SDF is used
+  await page.route('https://files.rcsb.org/ligands/download/ADE_ideal.sdf', (r) => r.abort())
+  await page.getByTestId('ligand-view3d-ADE').click()
+  await expect.poll(() => viewer(page).then((v) => v?.status), { timeout: 30_000 }).toBe('ready')
+  expect((await viewer(page))!.source).toBe('https://www.ebi.ac.uk/pdbe/static/files/pdbechem_v2/ADE_ideal.sdf'); await page.getByTestId('ligand-viewer-close').click()
+  // both down: a clear message, the modal still closes
+  await page.route('https://www.ebi.ac.uk/pdbe/static/files/pdbechem_v2/6AP_ideal.sdf', (r) => r.abort())
+  await page.route('https://files.rcsb.org/ligands/download/6AP_ideal.sdf', (r) => r.fulfill({ status: 404, body: 'not found' }))
+  await page.getByTestId('ligand-view3d-6AP').click()
+  await expect(page.getByTestId('ligand-viewer-error')).toHaveText('Ideal coordinates for 6AP could not be retrieved from RCSB or PDBe. Check the connection and try again.')
+  await page.getByTestId('ligand-viewer-close').click(); await expect(page.getByRole('dialog')).toHaveCount(0)
 })
