@@ -36,7 +36,9 @@ PDBE_FILES = "https://www.ebi.ac.uk/pdbe/entry-files/download"
 PDBE_MODS_URL = "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/modified_AA_or_NA"
 NAKB_URL = "https://rna.bgsu.edu/modified/modified_to_change_data.json"
 NAKB_PAGE = "https://www.nakb.org/modifiednt.html"
-CCD_URL = "https://files.rcsb.org/ligands/view/{ccd}.cif"
+#: wwPDB Chemical Component Dictionary definition: PDBe first, RCSB only when PDBe cannot provide it (same atoms, leaving flags and parents for
+#: all 41 components used so far, checked 2026-10-22)
+CCD_URLS = ("https://www.ebi.ac.uk/pdbe/static/files/pdbechem_v2/{ccd}.cif", "https://files.rcsb.org/ligands/view/{ccd}.cif")
 MISSING_REASONS = ("microheterogeneity", "unknown_component", "sequence_record_conflict", "coordinate_identity_conflict", "mapping_identity_conflict", "not_in_mapping")
 METHOD = {
     "primary_source": "deposited RNA polymer sequence in the PDBe updated mmCIF (_pdbx_poly_seq_scheme.mon_id at label_asym_id + label_seq_id)",
@@ -249,18 +251,23 @@ def load_nakb(cache: Cache, mode: str, seed_dir: Optional[Path] = None) -> dict[
 
 
 def ccd_parent(cache: Cache, ccd: str, offline: bool) -> dict[str, Any]:
-    """mon_nstd_parent_comp_id from the wwPDB CCD definition (cached RCSB ligand file)."""
+    """mon_nstd_parent_comp_id from the wwPDB CCD definition: PDBe file first, RCSB only when PDBe cannot provide it (cached)."""
     import gemmi
-    url = CCD_URL.format(ccd=ccd); p = cache._path(url, ".cif", "GET", None)
-    if offline and not p.exists():
-        return {"status": "unavailable", "parent": None}
-    try:
-        b = gemmi.cif.read_string(cache.fetch_text(url, ".cif")).sole_block()
-        v = b.find_value("_chem_comp.mon_nstd_parent_comp_id")
-        par = gemmi.cif.as_string(v) if v else None
-        return {"status": "used", "parent": None if par in (None, "", "?", ".") else par, "url": url, "retrieved_utc": _mtime(p)}
-    except Exception as e:
-        return {"status": "unavailable", "parent": None, "reason": str(e)}
+    reasons = []
+    for url in (u.format(ccd=ccd) for u in CCD_URLS):
+        p = cache._path(url, ".cif", "GET", None)
+        if offline and not p.exists():
+            reasons.append(f"{url}: offline and not cached"); continue
+        try:
+            b = gemmi.cif.read_string(cache.fetch_text(url, ".cif")).sole_block()
+            if b.find_value("_chem_comp.id") is None:
+                raise ValueError("no _chem_comp record")
+            v = b.find_value("_chem_comp.mon_nstd_parent_comp_id")
+            par = gemmi.cif.as_string(v) if v else None
+            return {"status": "used", "parent": None if par in (None, "", "?", ".") else par, "url": url, "retrieved_utc": _mtime(p)}
+        except Exception as e:
+            reasons.append(f"{url}: {e}")
+    return {"status": "unavailable", "parent": None, "reason": "; ".join(reasons)}
 
 
 def component_info(ccd: str, names: Counter, types: Counter, ccd_rec: dict[str, Any], nakb: dict[str, Any]) -> dict[str, Any]:
@@ -389,7 +396,7 @@ def build_modifications(acc: str, cache_dir: Path, out_dir: Path, pdbe: str = "c
     prov = {"rfam_acc": acc, "rfam_release": mp.get("rfam_release"), "cm_checksum": mp.get("cm_checksum"), "cm_clen": idx.clen, "infernal_version": mp.get("infernal_version"),
             "mapping_pipeline_version": mp.get("pipeline_version"), "mapping_generated": mp.get("generated"), "pipeline_version": __version__, "generated": generated,
             "mmcif_source": f"{PDBE_FILES}/<pdb>_updated.cif (PDBe updated mmCIF, pipeline cache; per-instance retrieval in instances[].mmcif_source)",
-            "pdbe_modified_AA_or_NA": pdbe_prov, "nakb": nakb_prov, "ccd": {"url": CCD_URL, "field": "_chem_comp.mon_nstd_parent_comp_id"},
+            "pdbe_modified_AA_or_NA": pdbe_prov, "nakb": nakb_prov, "ccd": {"urls_in_order": list(CCD_URLS), "rule": "PDBe first; RCSB only when PDBe cannot provide the definition", "field": "_chem_comp.mon_nstd_parent_comp_id"},
             "investigation": "experiments/modifications_RF00167/REPORT.md"}
     for r in records:
         r.pop("_status_by_seq", None); r.pop("_missing_reason_by_seq", None)

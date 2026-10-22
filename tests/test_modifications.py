@@ -165,3 +165,21 @@ def test_build_with_seeded_pdbe_and_nakb(tmp_path):
     assert o["1tst_1_A_A:3"]["parent"] == "U" and o["1tst_1_A_A:3"]["parent_source"] == "NAKB" and o["1tst_1_A_A:3"]["nakb_change_locations"] == ["base"]   # CCD unavailable offline
     assert d["components"]["GTP"]["nakb_in_reference"] is False and d["provenance"]["nakb"]["etag"] == '"abc"'
     assert len(d["observations"]) == 6
+
+
+def test_ccd_parent_from_pdbe_first_rcsb_only_as_fallback(tmp_path):
+    from rna_explorer.modifications import ccd_parent
+    DEF = "data_PSU\n_chem_comp.id PSU\n_chem_comp.mon_nstd_parent_comp_id U\n"
+    class Cache:
+        def __init__(self, pdbe_ok): self.pdbe_ok, self.seen = pdbe_ok, []
+        def _path(self, url, suffix, method, body):
+            f = tmp_path / url.replace("/", "_"); f.write_text("x"); return f
+        def fetch_text(self, url, suffix):
+            self.seen.append(url)
+            if "ebi.ac.uk" in url and not self.pdbe_ok:
+                raise OSError("PDBe down")
+            return DEF
+    c = Cache(True); r = ccd_parent(c, "PSU", offline=False)
+    assert r["parent"] == "U" and r["url"] == "https://www.ebi.ac.uk/pdbe/static/files/pdbechem_v2/PSU.cif" and len(c.seen) == 1
+    c = Cache(False); r = ccd_parent(c, "PSU", offline=False)
+    assert r["parent"] == "U" and r["url"] == "https://files.rcsb.org/ligands/view/PSU.cif" and len(c.seen) == 2

@@ -1,4 +1,5 @@
-import { lazy, Suspense, useMemo, useState } from 'react'
+import { lazy, Suspense, useEffect, useMemo, useState } from 'react'
+import { drugbankUrl, loadDrugbank, NAME_MAX, shortName, type DrugbankResult } from '../lib/drugbank'
 /** the Mol* viewer is loaded only when a user first opens an ideal 3D structure */
 const LigandIdealViewer = lazy(() => import('./molstar/LigandIdealViewer').then((m) => ({ default: m.LigandIdealViewer })))
 import { useFamily } from '../state/family'
@@ -60,6 +61,37 @@ function Depiction({ ccd }: { ccd: string }) {
       <img src={urls[k]} alt={`2D structure of ${ccd}`} loading="lazy" className={`h-full w-full object-contain ${loaded ? '' : 'opacity-0'}`} data-testid={`depiction-${ccd}`} data-source={k === 0 ? 'pdbe' : 'rcsb'}
         onLoad={() => setLoaded(true)} onError={() => { setLoaded(false); setK((i) => i + 1) }} />
     </>
+  )
+}
+
+/** Ligand name, shortened to NAME_MAX characters with a "Show full" toggle when longer (the full name is also the hover text). */
+function LigandName({ ccd, name }: { ccd: string; name: string }) {
+  const [full, setFull] = useState(false)
+  const long = name.length > NAME_MAX
+  return (
+    <p className="mt-0.5 break-words text-stone-800" title={name} data-testid={`ligand-name-${ccd}`} data-full={long ? String(full) : undefined}>
+      <span data-testid={`ligand-name-text-${ccd}`}>{full || !long ? name : shortName(name)}</span>
+      {long && <button type="button" onClick={() => setFull((f) => !f)} aria-expanded={full} className="ml-1 text-[11px] text-blue-700 hover:underline" data-testid={`ligand-name-toggle-${ccd}`}>{full ? 'Show less' : 'Show full'}</button>}
+    </p>
+  )
+}
+
+/** DrugBank cross-reference of the chemical component (chemical identity only; PDBe CCD file first, RCSB only when PDBe has no mapping). */
+function DrugbankLine({ ccd, name }: { ccd: string; name: string }) {
+  const [res, setRes] = useState<DrugbankResult | 'loading'>('loading')
+  useEffect(() => { let alive = true; setRes('loading'); void loadDrugbank(ccd).then((r) => { if (alive) setRes(r) }); return () => { alive = false } }, [ccd])
+  if (res === 'loading') return <p className="mt-0.5 text-[11px] text-stone-400" data-testid={`ligand-drugbank-${ccd}`} data-state="loading">DrugBank: checking…</p>
+  if (res.id === null) return <p className="mt-0.5 text-[11px] text-stone-500" data-testid={`ligand-drugbank-${ccd}`} data-state={res.checked.length ? 'none' : 'unavailable'}
+    title={res.checked.length ? `No DrugBank cross-reference in ${res.checked.join(' or ')}` : 'PDBe and RCSB could not be reached'}>{res.checked.length ? 'No DrugBank mapping' : 'DrugBank: not checked (source unavailable)'}</p>
+  const other = res.name && res.name.toLowerCase() !== name.toLowerCase() ? res.name : null
+  return (
+    <p className="mt-0.5 text-[11px] text-stone-700" data-testid={`ligand-drugbank-${ccd}`} data-state="mapped" data-source={res.source}>
+      DrugBank <a href={drugbankUrl(res.id)} target="_blank" rel="noreferrer" className="font-mono text-blue-700 underline decoration-blue-300 underline-offset-2 hover:decoration-blue-700"
+        title={`DrugBank ${res.id}${res.name ? ` (${res.name})` : ''}; cross-reference from ${res.source === 'PDBe' ? 'the PDBe chemical component file' : 'RCSB (no DrugBank record at PDBe)'}. Opens in a new tab.`}
+        data-testid={`ligand-drugbank-link-${ccd}`}>{res.id}<span aria-hidden="true" className="ml-0.5">↗</span></a>
+      {other && <span className="text-stone-500"> · {shortName(other, 28)}</span>}
+      {res.source === 'RCSB' && <span className="text-stone-500"> · via RCSB</span>}
+    </p>
   )
 }
 
@@ -126,9 +158,10 @@ export function LigandsTab() {
                   <div className="flex min-w-0 flex-1 flex-col text-xs leading-4">
                     <a href={ligandPageUrl(it.ccd)} target="_blank" rel="noreferrer" title={`PDBe chemical component page for ${it.ccd} (opens in a new tab)`} data-testid={`ligand-ccd-${it.ccd}`}
                       className="self-start rounded font-mono text-sm font-semibold text-blue-700 underline decoration-blue-300 underline-offset-2 hover:decoration-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">{it.ccd}<span aria-hidden="true" className="ml-0.5 text-[11px] no-underline">↗</span><span className="sr-only"> (opens the PDBe page in a new tab)</span></a>
-                    <p className="mt-0.5 break-words text-stone-800" data-testid={`ligand-name-${it.ccd}`}>{it.name}</p>
+                    <LigandName ccd={it.ccd} name={it.name} />
                     <p className="mt-0.5 text-stone-600" title={`RNA contact recorded by PDBe in: ${it.entries.map((e) => e.toUpperCase()).join(', ')}`} data-testid={`ligand-entries-${it.ccd}`}>
                       Found in {it.nEntries} PDB {it.nEntries === 1 ? 'entry' : 'entries'}</p>
+                    <DrugbankLine ccd={it.ccd} name={it.name} />
                     <div className="mt-auto flex flex-wrap gap-1.5 pt-1.5">
                       <button type="button" onClick={() => choose(it.ccd)} aria-pressed={selected === it.ccd} data-testid={`ligand-locate-${it.ccd}`}
                         className="rounded border border-stone-300 bg-white px-1.5 py-px text-[11px] text-stone-700 hover:bg-stone-50 focus:outline-none focus:ring-2 focus:ring-violet-500">{selected === it.ccd ? 'Clear track highlight' : 'Locate track'}</button>
@@ -179,6 +212,7 @@ export function LigandsTab() {
               ['Frequency unit', 'Distinct PDB entries containing the ligand, counted once whatever the number of RNA chains or ligand copies; entries without an observed nucleotide at a position are not counted there.'],
               ['Limitation', 'Contact attribution to individual RNA chains and ligand copies is not always available; ligand-copy counts are therefore not shown.'],
               ['Predicted pockets', 'fpocketR predictions on each RNA chain, independent of the PDBe contact data and never combined with it.'],
+              ['DrugBank', 'Cross-references of the chemical component (chemical identity) from the PDBe chemical component files, or from RCSB when PDBe has none. A DrugBank entry does not mean the compound acts on, or was developed for, this RNA; DrugBank targets are proteins and are not shown.'],
             ].map(([k, v]) => <div key={k} className="contents"><dt className="font-medium text-stone-900">{k}</dt><dd>{v}</dd></div>)}
           </dl>
         </SectionCard>

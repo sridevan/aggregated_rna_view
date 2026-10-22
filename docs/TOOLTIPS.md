@@ -384,7 +384,10 @@ its residue track; the CCD id opens the PDBe chemical component page."
 {CCD}"; "No depiction available" when no image loads) · CCD id as a link to the PDBe chemical component page, with ↗ (hover "PDBe chemical
 component page for {CCD} (opens in a new tab)") · full name · "Found in {n} PDB entr(y|ies)" (hover "RNA contact recorded by PDBe in:
 {entries}") · buttons "Locate track" / "Clear track highlight" and "View ideal 3D" (hover "Ideal 3D structure from the PDB Chemical Component
-Dictionary"). Highlighted-track chip: "Highlighted track: {CCD}" with ✕ ("Clear the highlighted {CCD} track").
+Dictionary"). Names longer than 20 characters end in "…" with a "Show full" / "Show less" toggle (hover: the full name). DrugBank line:
+"DrugBank {DBxxxxx} ↗" (+ " · {DrugBank name}" when it differs, + " · via RCSB" when PDBe has no mapping; hover "DrugBank {id} ({name});
+cross-reference from {the PDBe chemical component file | RCSB (no DrugBank record at PDBe)}. Opens in a new tab."), "No DrugBank mapping"
+(hover "No DrugBank cross-reference in {PDBe or RCSB}"), "DrugBank: not checked (source unavailable)", "DrugBank: checking…". Highlighted-track chip: "Highlighted track: {CCD}" with ✕ ("Clear the highlighted {CCD} track").
 
 **Search and pages:** placeholder "Name or CCD id, e.g. adenine, HPA"; no match "No ligand matches “{query}”."; "Showing {a}–{b} of {n}
 ligands" (+ " matching “{query}”"); "‹ Previous", page numbers, "Next ›", "Page {k} of {pages}". Empty family: "No ligands with
@@ -394,11 +397,11 @@ PDBe-reported RNA contacts in the default ligand set for {ACC}."
 - Title "{CCD} — {name}"; subtitle "Ideal 3D coordinates from the PDB Chemical Component Dictionary" with ⓘ: "This viewer displays
   idealized coordinates from the PDB Chemical Component Dictionary. These coordinates represent a reference molecular geometry and may differ
   from the ligand conformation observed in an experimental RNA complex."
-- Buttons "Close", "Reset view"; hint "Drag to rotate · scroll to zoom · right-drag to move · {n} atoms ({RCSB | PDBe})"; link "PDBe chemical
+- Buttons "Close", "Reset view"; hint "Drag to rotate · scroll to zoom · right-drag to move · {n} atoms · file from {PDBe | RCSB}"; link "PDBe chemical
   component page ↗"; atom hover "{element} · atom {n}".
 - States: "Loading 3D viewer…", "Loading ideal coordinates…"; "The Chemical Component Dictionary has no ideal coordinates for {CCD}, so no
   ideal 3D structure is shown."; "The ideal coordinate file for {CCD} could not be read."; "Ideal coordinates for {CCD} could not be retrieved
-  from RCSB or PDBe. Check the connection and try again."
+  from PDBe or RCSB. Check the connection and try again."
 
 **Category headers, ⓘ**
 
@@ -417,7 +420,7 @@ PDBe-reported RNA contacts in the default ligand set for {ACC}."
 > frequencies remain unchanged.
 
 **About these annotations (collapsed section):** Source · Contact identification · Annotation level · Coverage · Coordinate mapping ·
-Alternative numbering · Frequency unit · Limitation · Predicted pockets (one sentence each; see `frontend/src/components/LigandsTab.tsx`).
+Alternative numbering · Frequency unit · Limitation · Predicted pockets · DrugBank (one sentence each; see `frontend/src/components/LigandsTab.tsx`).
 
 **Family Overview note after "View in Family Overview":** "Opened from Ligands ({label}). Family-level evidence: not necessarily observed in {chain}."
 

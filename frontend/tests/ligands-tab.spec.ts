@@ -214,7 +214,7 @@ const sdf = (atoms: [string, number, number, number][]) => ['FIX', '  test', '',
 type LV = { __rnaExplorer: { ligandViewer?: { ccd: string; status: string; nAtoms?: number; source?: string; reason?: string } | null } }
 const viewer = (page: Page) => page.evaluate(() => (window as unknown as LV).__rnaExplorer.ligandViewer)
 
-test('View ideal 3D: modal with CCD id and name, RCSB ideal SDF in Mol* (ball-and-stick), provenance note, reset, Escape and focus return; no RNA viewer affected', async ({ page }) => {
+test('View ideal 3D: modal with CCD id and name, PDBe ideal SDF in Mol* (ball-and-stick), provenance note, reset, Escape and focus return; no RNA viewer affected', async ({ page }) => {
   await open(page)
   const before = await page.locator('canvas').count()
   await page.getByTestId('ligand-view3d-ADE').click()
@@ -224,7 +224,8 @@ test('View ideal 3D: modal with CCD id and name, RCSB ideal SDF in Mol* (ball-an
   await expect(page.getByTestId('ligand-viewer-subtitle')).toContainText('Ideal 3D coordinates from the PDB Chemical Component Dictionary')
   await expect(page.getByTestId('ligand-viewer-close')).toBeFocused()
   await expect.poll(() => viewer(page).then((v) => v?.status), { timeout: 30_000 }).toBe('ready')
-  expect(await viewer(page)).toMatchObject({ ccd: 'ADE', nAtoms: 15, source: 'https://files.rcsb.org/ligands/download/ADE_ideal.sdf' })
+  expect(await viewer(page)).toMatchObject({ ccd: 'ADE', nAtoms: 15, source: 'https://www.ebi.ac.uk/pdbe/static/files/pdbechem_v2/ADE_ideal.sdf' })
+  await expect(page.getByTestId('ligand-viewer')).toContainText('15 atoms · file from PDBe')
   await expect(page.getByTestId('ligand-viewer')).toHaveAttribute('data-status', 'ready')
   await expect(page.getByTestId('ligand-viewer-link')).toHaveAttribute('href', 'https://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/ADE')
   await page.getByTestId('ligand-viewer-subtitle').getByTestId('info-tip').click()
@@ -243,27 +244,58 @@ test('View ideal 3D: modal with CCD id and name, RCSB ideal SDF in Mol* (ball-an
   await page.getByTestId('ligand-viewer-backdrop').click({ position: { x: 5, y: 5 } }); await expect(dlg).toHaveCount(0)   // backdrop click closes
 })
 
-test('View ideal 3D: missing ideal coordinates, unreadable file and network failure are reported; PDBe is used when RCSB fails; no other coordinates substituted', async ({ page }) => {
+test('View ideal 3D: missing ideal coordinates, unreadable file and network failure are reported; RCSB is used only when PDBe fails; no other coordinates substituted', async ({ page }) => {
   await open(page)
   // all-zero coordinates = the CCD has no ideal coordinates (as for MIY or TAC)
-  await page.route('https://files.rcsb.org/ligands/download/HPA_ideal.sdf', (r) => r.fulfill({ body: sdf([['C', 0, 0, 0], ['N', 0, 0, 0], ['O', 0, 0, 0]]) }))
+  await page.route('https://www.ebi.ac.uk/pdbe/static/files/pdbechem_v2/HPA_ideal.sdf', (r) => r.fulfill({ body: sdf([['C', 0, 0, 0], ['N', 0, 0, 0], ['O', 0, 0, 0]]) }))
   await page.getByTestId('ligand-view3d-HPA').click()
   await expect(page.getByTestId('ligand-viewer-error')).toHaveText('The Chemical Component Dictionary has no ideal coordinates for HPA, so no ideal 3D structure is shown.')
   expect(await viewer(page)).toMatchObject({ ccd: 'HPA', status: 'error', reason: 'no_ideal_coordinates' })
   await expect(page.getByTestId('ligand-viewer-reset')).toBeDisabled(); await page.getByTestId('ligand-viewer-close').click()
   // unreadable file
-  await page.route('https://files.rcsb.org/ligands/download/GUN_ideal.sdf', (r) => r.fulfill({ body: '<html>not a molfile</html>' }))
+  await page.route('https://www.ebi.ac.uk/pdbe/static/files/pdbechem_v2/GUN_ideal.sdf', (r) => r.fulfill({ body: '<html>not a molfile</html>' }))
   await page.getByTestId('ligand-view3d-GUN').click()
   await expect(page.getByTestId('ligand-viewer-error')).toHaveText('The ideal coordinate file for GUN could not be read.'); await page.getByTestId('ligand-viewer-close').click()
-  // RCSB down: the identical PDBe ideal SDF is used
-  await page.route('https://files.rcsb.org/ligands/download/ADE_ideal.sdf', (r) => r.abort())
+  // PDBe down: the identical RCSB ideal SDF is used, and the footer says so
+  await page.route('https://www.ebi.ac.uk/pdbe/static/files/pdbechem_v2/ADE_ideal.sdf', (r) => r.abort())
   await page.getByTestId('ligand-view3d-ADE').click()
   await expect.poll(() => viewer(page).then((v) => v?.status), { timeout: 30_000 }).toBe('ready')
-  expect((await viewer(page))!.source).toBe('https://www.ebi.ac.uk/pdbe/static/files/pdbechem_v2/ADE_ideal.sdf'); await page.getByTestId('ligand-viewer-close').click()
+  expect((await viewer(page))!.source).toBe('https://files.rcsb.org/ligands/download/ADE_ideal.sdf')
+  await expect(page.getByTestId('ligand-viewer')).toContainText('15 atoms · file from RCSB'); await page.getByTestId('ligand-viewer-close').click()
   // both down: a clear message, the modal still closes
   await page.route('https://www.ebi.ac.uk/pdbe/static/files/pdbechem_v2/6AP_ideal.sdf', (r) => r.abort())
   await page.route('https://files.rcsb.org/ligands/download/6AP_ideal.sdf', (r) => r.fulfill({ status: 404, body: 'not found' }))
   await page.getByTestId('ligand-view3d-6AP').click()
-  await expect(page.getByTestId('ligand-viewer-error')).toHaveText('Ideal coordinates for 6AP could not be retrieved from RCSB or PDBe. Check the connection and try again.')
+  await expect(page.getByTestId('ligand-viewer-error')).toHaveText('Ideal coordinates for 6AP could not be retrieved from PDBe or RCSB. Check the connection and try again.')
   await page.getByTestId('ligand-viewer-close').click(); await expect(page.getByRole('dialog')).toHaveCount(0)
+})
+
+test('names longer than 20 characters are shortened with Show full / Show less; DrugBank cross-references: PDBe, RCSB fallback, none', async ({ page }) => {
+  await open(page)
+  // 6AP "9h-purine-2,6-diamine" (21 characters)
+  const n = page.getByTestId('ligand-name-text-6AP')
+  await expect(n).toHaveText('9h-purine-2,6-diamin…'); await expect(page.getByTestId('ligand-name-6AP')).toHaveAttribute('title', '9h-purine-2,6-diamine')
+  await page.getByTestId('ligand-name-toggle-6AP').click(); await expect(n).toHaveText('9h-purine-2,6-diamine'); await expect(page.getByTestId('ligand-name-toggle-6AP')).toHaveText('Show less')
+  await expect(page.getByTestId('ligand-card-6AP')).toHaveAttribute('data-selected', 'false')                // the toggle never selects
+  await expect(page.getByTestId('ligand-name-toggle-HPA')).toHaveCount(0); await expect(page.getByTestId('ligand-name-text-HPA')).toHaveText('Hypoxanthine')
+  // PDBe mapping (ADE), none in PDBe or RCSB (6GU)
+  const ade = page.getByTestId('ligand-drugbank-ADE')
+  await expect(ade).toHaveAttribute('data-state', 'mapped', { timeout: 20_000 }); await expect(ade).toHaveAttribute('data-source', 'PDBe')
+  await expect(page.getByTestId('ligand-drugbank-link-ADE')).toHaveAttribute('href', 'https://go.drugbank.com/drugs/DB00173')
+  await expect(page.getByTestId('ligand-drugbank-6GU')).toHaveAttribute('data-state', 'none', { timeout: 20_000 }); await expect(page.getByTestId('ligand-drugbank-6GU')).toHaveText('No DrugBank mapping')
+})
+
+test('DrugBank: RCSB is asked only when the PDBe file has no DrugBank record; unreachable sources are not reported as "no mapping"', async ({ page }) => {
+  const rcsb: string[] = []
+  page.on('request', (r) => { if (r.url().includes('data.rcsb.org')) rcsb.push(r.url()) })
+  await page.route('https://www.ebi.ac.uk/pdbe/static/files/pdbechem_v2/GUN.cif', (r) => r.fulfill({ body: 'data_GUN\n_chem_comp.id GUN\n' }))
+  await page.route('https://data.rcsb.org/rest/v1/core/chemcomp/GUN', (r) => r.fulfill({ json: { rcsb_chem_comp_related: [{ resource_name: 'DrugBank', resource_accession_code: 'DB99999' }] } }))
+  await page.route('https://www.ebi.ac.uk/pdbe/static/files/pdbechem_v2/6GU.cif', (r) => r.abort())
+  await page.route('https://data.rcsb.org/rest/v1/core/chemcomp/6GU', (r) => r.abort())
+  await open(page)
+  const gun = page.getByTestId('ligand-drugbank-GUN')
+  await expect(gun).toHaveAttribute('data-source', 'RCSB', { timeout: 20_000 }); await expect(gun).toContainText('DB99999'); await expect(gun).toContainText('via RCSB')
+  await expect(page.getByTestId('ligand-drugbank-6GU')).toHaveAttribute('data-state', 'unavailable', { timeout: 20_000 })
+  await expect(page.getByTestId('ligand-drugbank-ADE')).toHaveAttribute('data-source', 'PDBe', { timeout: 20_000 })
+  expect(rcsb.filter((u) => u.endsWith('/ADE'))).toEqual([])                                                  // PDBe had it: RCSB never asked
 })

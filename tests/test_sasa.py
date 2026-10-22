@@ -120,3 +120,21 @@ def test_ccd_expected_atoms_parsing(tmp_path):
     c = CcdExpectedAtoms(FakeCache())
     e = c.get("X")
     assert e["expected_atoms"] == ["C1'", "OP1", "P"] and e["leaving_atoms"] == ["OP3"] and e["parent"] == "G"
+
+
+def test_ccd_definition_from_pdbe_first_rcsb_only_as_fallback():
+    seen = []
+    DEF = ("data_X\n_chem_comp.type 'RNA LINKING'\n_chem_comp.mon_nstd_parent_comp_id G\nloop_\n_chem_comp_atom.atom_id\n_chem_comp_atom.type_symbol\n"
+           "_chem_comp_atom.pdbx_leaving_atom_flag\nP P N\nOP1 O N\n")
+    class Cache:
+        def __init__(self, pdbe_ok): self.pdbe_ok = pdbe_ok
+        def fetch_text(self, url, suffix):
+            seen.append(url)
+            if "ebi.ac.uk" in url and not self.pdbe_ok:
+                raise OSError("PDBe down")
+            return DEF
+    e = CcdExpectedAtoms(Cache(True)).get("X")
+    assert seen == ["https://www.ebi.ac.uk/pdbe/static/files/pdbechem_v2/X.cif"] and e["source_url"] == seen[0]
+    seen.clear(); e = CcdExpectedAtoms(Cache(False)).get("X")
+    assert seen == ["https://www.ebi.ac.uk/pdbe/static/files/pdbechem_v2/X.cif", "https://files.rcsb.org/ligands/view/X.cif"]
+    assert e["source_url"] == "https://files.rcsb.org/ligands/view/X.cif" and e["expected_atoms"] == ["OP1", "P"]

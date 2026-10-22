@@ -2,9 +2,11 @@
  * Ideal (CCD) ligand coordinates for the Ligands tab 3D viewer: source URLs, a minimal molfile check and the principal axes used to orient
  * the view. Pure functions (no Mol*), so they are unit-tested without a browser.
  */
+/** PDBe first (as every other data source of the app); RCSB's file only when PDBe cannot provide it. Same coordinates in both for all 72 gallery
+ *  CCDs (checked 2026-10-22; RCSB writes chlorine as "CL", PDBe as "Cl") */
 export const idealSdfUrls = (ccd: string) => [
-  `https://files.rcsb.org/ligands/download/${encodeURIComponent(ccd)}_ideal.sdf`,
   `https://www.ebi.ac.uk/pdbe/static/files/pdbechem_v2/${encodeURIComponent(ccd)}_ideal.sdf`,
+  `https://files.rcsb.org/ligands/download/${encodeURIComponent(ccd)}_ideal.sdf`,
 ]
 export const IDEAL_INFO = 'This viewer displays idealized coordinates from the PDB Chemical Component Dictionary. These coordinates represent a reference molecular geometry and may differ from the ligand conformation observed in an experimental RNA complex.'
 

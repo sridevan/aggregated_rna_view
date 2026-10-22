@@ -10,7 +10,7 @@ Method
   * Algorithm: FreeSASA Shrake-Rupley, probe radius 1.4 Å, 1000 test points per atom (freesasa.calcCoord: coordinates + radii only,
     so FreeSASA's protein-oriented residue classifiers are not involved).
   * Nucleotide SASA = sum of its atoms' SASA; chain total = sum over nucleotides (identity holds by construction and is tested).
-  * Completeness: expected heavy atoms per residue come from the wwPDB Chemical Component Dictionary (RCSB ligand CIF, cached),
+  * Completeness: expected heavy atoms per residue come from the wwPDB Chemical Component Dictionary (PDBe pdbechem_v2 CIF, RCSB ligand CIF only as fallback; cached),
     excluding atoms with pdbx_leaving_atom_flag = Y (OP3). Status: complete | incomplete (missing heavy atoms listed; the 5'-terminal
     phosphate is the usual case) | unsupported (CCD unavailable or atom element without radius) | no_coordinates (residue in the
     sequence but not in the model). Only 'complete' nucleotides enter the primary aggregated track.
@@ -36,7 +36,9 @@ SCHEMA_VERSION = "1.0"
 PROBE_RADIUS = 1.4
 N_POINTS = 1000
 RADII: dict[str, float] = {"C": 1.70, "N": 1.55, "O": 1.52, "P": 1.80, "S": 1.80, "SE": 1.90, "F": 1.47, "CL": 1.75, "BR": 1.85, "I": 1.98}
-CCD_URL = "https://files.rcsb.org/ligands/view/{ccd}.cif"
+#: wwPDB Chemical Component Dictionary definition: PDBe first, RCSB only when PDBe cannot provide it (same atoms, leaving flags and parents for
+#: all 41 components used so far, checked 2026-10-22)
+CCD_URLS = ("https://www.ebi.ac.uk/pdbe/static/files/pdbechem_v2/{ccd}.cif", "https://files.rcsb.org/ligands/view/{ccd}.cif")
 
 
 def method_record() -> dict[str, Any]:
@@ -51,7 +53,7 @@ def method_record() -> dict[str, Any]:
             "radii_A": RADII, "radii_source": "Bondi (1964) van der Waals radii; P 1.80 (NACCESS)", "hydrogens": "excluded",
             "altloc_policy": "per atom name within a residue keep the highest-occupancy alternate location (ties: first altloc label); other copies dropped",
             "chain_isolation": "polymer atoms of the selected label_asym_id only (gemmi subchain); no other chains, ligands, ions or water",
-            "model": "first model of the deposited/updated mmCIF", "completeness_reference": "wwPDB CCD heavy atoms minus pdbx_leaving_atom_flag=Y atoms (RCSB ligand CIF)",
+            "model": "first model of the deposited/updated mmCIF", "completeness_reference": "wwPDB CCD heavy atoms minus pdbx_leaving_atom_flag=Y atoms (PDBe pdbechem_v2 CIF; RCSB ligand CIF only when PDBe is unavailable)",
             "coordinate_source": "PDBe updated mmCIF (same files as the mapping pipeline)"}
 
 
@@ -66,18 +68,23 @@ class CcdExpectedAtoms:
         if ccd in self._memo:
             return self._memo[ccd]
         import gemmi
-        try:
-            text = self.cache.fetch_text(CCD_URL.format(ccd=ccd), ".cif")
-            block = gemmi.cif.read_string(text).sole_block()
-            tab = block.find("_chem_comp_atom.", ["atom_id", "type_symbol", "pdbx_leaving_atom_flag"])
-            atoms = [(gemmi.cif.as_string(r[0]), gemmi.cif.as_string(r[1]).upper(), gemmi.cif.as_string(r[2])) for r in tab]
-            heavy = [a for a in atoms if a[1] not in ("H", "D")]
-            res = {"ccd_id": ccd, "expected_atoms": sorted(a for a, _, lv in heavy if lv != "Y"), "leaving_atoms": sorted(a for a, _, lv in heavy if lv == "Y"),
-                   "elements": {a: e for a, e, _ in heavy}, "type": gemmi.cif.as_string(block.find_value("_chem_comp.type") or "?"),
-                   "parent": gemmi.cif.as_string(block.find_value("_chem_comp.mon_nstd_parent_comp_id") or "?")}
-        except Exception as e:   # network failure, unknown component, parse error
-            log.warning("CCD %s unavailable: %s", ccd, e)
-            res = None
+        res = None
+        for url in (u.format(ccd=ccd) for u in CCD_URLS):   # PDBe first; RCSB only when PDBe cannot provide a readable definition
+            try:
+                block = gemmi.cif.read_string(self.cache.fetch_text(url, ".cif")).sole_block()
+                tab = block.find("_chem_comp_atom.", ["atom_id", "type_symbol", "pdbx_leaving_atom_flag"])
+                atoms = [(gemmi.cif.as_string(r[0]), gemmi.cif.as_string(r[1]).upper(), gemmi.cif.as_string(r[2])) for r in tab]
+                if not atoms:
+                    raise ValueError("no _chem_comp_atom rows")
+                heavy = [a for a in atoms if a[1] not in ("H", "D")]
+                res = {"ccd_id": ccd, "expected_atoms": sorted(a for a, _, lv in heavy if lv != "Y"), "leaving_atoms": sorted(a for a, _, lv in heavy if lv == "Y"),
+                       "elements": {a: e for a, e, _ in heavy}, "type": gemmi.cif.as_string(block.find_value("_chem_comp.type") or "?"),
+                       "parent": gemmi.cif.as_string(block.find_value("_chem_comp.mon_nstd_parent_comp_id") or "?"), "source_url": url}
+                break
+            except Exception as e:   # network failure, unknown component, parse error: try the next source
+                log.warning("CCD %s unavailable from %s: %s", ccd, url, e)
+        if res is None:
+            log.warning("CCD %s unavailable from every source", ccd)
         self._memo[ccd] = res
         return res
 

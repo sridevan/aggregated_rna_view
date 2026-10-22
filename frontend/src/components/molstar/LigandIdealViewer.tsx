@@ -10,14 +10,14 @@ import 'pdbe-molstar/build/pdbe-molstar-light.css'
 import { checkIdealSdf, IDEAL_INFO, idealSdfUrls, principalAxes } from '../../lib/idealLigand'
 
 /*
- * Ideal 3D structure of one chemical component (CCD), on demand in a modal. Coordinates: the CCD ideal conformer as SDF from RCSB
- * (files.rcsb.org/ligands/download/{CCD}_ideal.sdf, the documented download of the RCSB ligand pages); PDBe's identical
- * pdbechem_v2/{CCD}_ideal.sdf only when the RCSB request fails. Both allow cross-origin requests (checked 2026-10-22 for all 72 gallery
+ * Ideal 3D structure of one chemical component (CCD), on demand in a modal. Coordinates: the CCD ideal conformer as SDF from PDBe
+ * (pdbechem_v2/{CCD}_ideal.sdf), the default source of the app; RCSB's identical files.rcsb.org/ligands/download/{CCD}_ideal.sdf only when
+ * the PDBe request fails. Both allow cross-origin requests (checked 2026-10-22 for all 72 gallery
  * CCDs). Model (experimental) coordinates are never substituted. The CCD records ideal coordinates as all zeros when they are missing
  * (e.g. MIY, TAC): reported as unavailable, not rendered. One Mol* plugin per open modal, disposed on close; a new CCD clears the
  * previous structure first and a request token drops stale loads.
  */
-/** Fetch the ideal SDF (RCSB, then PDBe on a network or HTTP failure). Returns the text and its source, or null when both fail. */
+/** Fetch the ideal SDF (PDBe, then RCSB on a network or HTTP failure). Returns the text and its source, or null when both fail. */
 async function fetchIdealSdf(ccd: string, signal: AbortSignal): Promise<{ text: string; url: string } | null> {
   for (const url of idealSdfUrls(ccd)) {
     try { const r = await fetch(url, { signal }); if (r.ok) return { text: await r.text(), url } } catch (e) { if (signal.aborted) throw e }
@@ -109,7 +109,7 @@ export function LigandIdealViewer({ ccd, name, pageUrl, onClose }: { ccd: string
       await p.clear(); coords.current = null
       const got = await fetchIdealSdf(ccd, ac.signal)
       if (ac.signal.aborted) return
-      if (!got) { setStatus({ state: 'error', message: `Ideal coordinates for ${ccd} could not be retrieved from RCSB or PDBe. Check the connection and try again.` }); expose({ status: 'error', reason: 'network' }); return }
+      if (!got) { setStatus({ state: 'error', message: `Ideal coordinates for ${ccd} could not be retrieved from PDBe or RCSB. Check the connection and try again.` }); expose({ status: 'error', reason: 'network' }); return }
       const chk = checkIdealSdf(got.text)
       if (!chk.ok) {
         setStatus({ state: 'error', message: chk.reason === 'no_ideal_coordinates'
@@ -127,7 +127,7 @@ export function LigandIdealViewer({ ccd, name, pageUrl, onClose }: { ccd: string
       coords.current = chk.xyz
       ctx.canvas3d?.setProps({ camera: { manualReset: true } })
       fitView(ctx, chk.xyz, 0)
-      const source = got.url.includes('rcsb.org') ? 'RCSB' : 'PDBe'
+      const source = got.url.includes('ebi.ac.uk') ? 'PDBe' : 'RCSB'
       setStatus({ state: 'ready', nAtoms: chk.nAtoms, source }); expose({ status: 'ready', nAtoms: chk.nAtoms, source: got.url })
     }).catch((e: unknown) => { if (!ac.signal.aborted) { setStatus({ state: 'error', message: `The ideal 3D structure of ${ccd} could not be displayed: ${String((e as Error)?.message ?? e)}` }); expose({ status: 'error', reason: 'render' }) } })
     return () => ac.abort()
@@ -152,7 +152,7 @@ export function LigandIdealViewer({ ccd, name, pageUrl, onClose }: { ccd: string
         </div>
         <footer className="flex flex-wrap items-center gap-2 border-t border-stone-200 px-4 py-2 text-xs text-stone-600">
           <button type="button" onClick={reset} disabled={status.state !== 'ready'} className="rounded border border-stone-300 bg-white px-2 py-0.5 text-stone-700 hover:bg-stone-50 disabled:opacity-40" data-testid="ligand-viewer-reset">Reset view</button>
-          <span className="text-[11px] text-stone-500">Drag to rotate · scroll to zoom · right-drag to move{status.state === 'ready' ? ` · ${status.nAtoms} atoms (${status.source})` : ''}</span>
+          <span className="text-[11px] text-stone-500">Drag to rotate · scroll to zoom · right-drag to move{status.state === 'ready' ? ` · ${status.nAtoms} atoms · file from ${status.source}` : ''}</span>
           <a href={pageUrl} target="_blank" rel="noreferrer" className="ml-auto text-blue-700 hover:underline" data-testid="ligand-viewer-link">PDBe chemical component page ↗</a>
         </footer>
       </div>

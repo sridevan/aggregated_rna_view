@@ -128,9 +128,10 @@ All are listed in `docs/TOOLTIPS.md` § Ligands.
 - The highlighted track persists across pages and searches. A chip ("Highlighted track: HPA ✕") names it and clears it.
 
 **Ideal 3D viewer** (`components/molstar/LigandIdealViewer.tsx`, pure helpers in `lib/idealLigand.ts`)
-- Coordinates:
-  - RCSB `files.rcsb.org/ligands/download/{CCD}_ideal.sdf` (the documented download on RCSB ligand pages).
-  - PDBe `pdbechem_v2/{CCD}_ideal.sdf` only when RCSB fails.
+- Coordinates (PDBe is the default source, RCSB only a fallback; user decision, 2026-10-22):
+  - PDBe `pdbechem_v2/{CCD}_ideal.sdf`.
+  - RCSB `files.rcsb.org/ligands/download/{CCD}_ideal.sdf` only when PDBe fails. The footer says which file was used ("file from PDBe | RCSB").
+  - Same coordinates in both for all 72 CCDs; RCSB writes chlorine as "CL", PDBe as "Cl".
   - Checked on 2026-10-22: both return valid V2000 SDF with identical atom and bond counts for all 72 gallery CCDs, with `Access-Control-Allow-Origin: *`.
   - **MIY and TAC (16S tetracyclines) have all-zero ideal coordinates in the CCD.** The viewer reports "no ideal coordinates" instead of rendering. Model (experimental) coordinates are never substituted.
 - Mol*:
@@ -154,3 +155,35 @@ All are listed in `docs/TOOLTIPS.md` § Ligands.
   - search resets to page 1;
   - viewer: title and subtitle, RCSB source, 15 ADE atoms, info text, reset, Escape and focus return, canvas disposed, rapid switching shows the last ligand, backdrop close;
   - error states with routed fixtures (all-zero, unreadable, RCSB down → PDBe, both down).
+
+## Names and DrugBank cross-references (2026-10-22)
+
+**Names**
+- Names longer than 20 characters end in "…" with a "Show full" / "Show less" toggle; the full name is also the hover text.
+- Example: 6AP "9h-purine-2,6-diamine".
+
+**DrugBank** (`lib/drugbank.ts`)
+- Source order (user rule: PDBe first):
+  1. the PDBe chemical component file `pdbechem_v2/{CCD}.cif`, category `_pdbe_chem_comp_drugbank_details`;
+  2. the RCSB chem comp record (`data.rcsb.org/rest/v1/core/chemcomp/{CCD}`, `rcsb_chem_comp_related`, DrugBank), only when PDBe has no mapping or can't be reached.
+- Fetched in the browser for the cards on screen and memoised. Both sources allow cross-origin requests; PDBe's JSON compound API does not, so the CIF is used.
+- Survey of the 72 gallery CCDs on 2026-10-22:
+  - PDBe maps 27, each to one DrugBank ID.
+  - RCSB agrees on all 27 and adds SAM (DB00118), TAC (DB00759), MIY (DB01017) and TPS (DB03416).
+  - The other 41 have no mapping in either source, e.g. TPP and most purine analogues.
+- Shown on the card:
+  - the DrugBank ID, linking to go.drugbank.com;
+  - DrugBank's name when it differs, e.g. NMY "Framycetin";
+  - "via RCSB" for fallback mappings;
+  - "No DrugBank mapping", or "not checked" when neither source could be reached.
+- Not shown: DrugBank targets (proteins, UniProt). They would say nothing about the RNA. The methods section adds that a DrugBank entry does not mean the compound acts on, or was developed for, this RNA.
+
+**Tests**
+- vitest 112: parsers, source order, unreachable sources, name shortening.
+- `ligands-tab.spec.ts` 13:
+  - name toggle;
+  - PDBe mapping (ADE);
+  - no mapping (6GU);
+  - RCSB fallback and "via RCSB" (routed fixture);
+  - unreachable sources reported as "not checked";
+  - RCSB never requested when PDBe has the mapping.

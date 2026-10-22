@@ -88,7 +88,7 @@ describe('Ligands tab: gallery pages and ideal 3D coordinates', () => {
     expect(centre.map((v) => +v.toFixed(6))).toEqual([2, 0.5, 5])
     expect(Math.abs(axes[0][0])).toBeCloseTo(1, 5); expect(Math.abs(axes[1][1])).toBeCloseTo(1, 5); expect(Math.abs(axes[2][2])).toBeCloseTo(1, 5)
   })
-  it('RCSB ideal SDF first, the identical PDBe file as fallback', () => {
-    expect(idealSdfUrls('ADE')).toEqual(['https://files.rcsb.org/ligands/download/ADE_ideal.sdf', 'https://www.ebi.ac.uk/pdbe/static/files/pdbechem_v2/ADE_ideal.sdf'])
+  it('PDBe ideal SDF first, the identical RCSB file only as fallback', () => {
+    expect(idealSdfUrls('ADE')).toEqual(['https://www.ebi.ac.uk/pdbe/static/files/pdbechem_v2/ADE_ideal.sdf', 'https://files.rcsb.org/ligands/download/ADE_ideal.sdf'])
   })
 })
