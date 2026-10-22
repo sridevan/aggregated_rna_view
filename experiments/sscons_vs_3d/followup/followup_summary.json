@@ -1,0 +1,312 @@
+{
+ "RF00167": {
+  "n_pairs": 22,
+  "n_evaluable_pairs": 22,
+  "f_any_bp_ge_0.9": 18,
+  "f_cww_ge_0.9": 18,
+  "f_canonical_ge_0.9": 17,
+  "seqw_cww_ge_0.9": 17,
+  "clusw_cww_ge_0.9": 19,
+  "speciesw_cww_ge_0.9": 19,
+  "f_any_bp_lt_0.5": 0,
+  "f_cww_lt_0.5": 0,
+  "f_canonical_lt_0.5": 0,
+  "seqw_cww_lt_0.5": 0,
+  "clusw_cww_lt_0.5": 0,
+  "speciesw_cww_lt_0.5": 1,
+  "pooled_any_bp": 0.953,
+  "pooled_cww": 0.948,
+  "pooled_canonical": 0.921,
+  "pairs_changing_band_seq_weighted": [
+   "19-87 0.857->0.93"
+  ],
+  "unpaired_causes": {
+   "both annotated, neither base-paired": 74,
+   "one paired elsewhere": 1
+  },
+  "unpaired_with_short_unannotated_run_3_14": 0,
+  "unpaired_with_modified_end": 0,
+  "ss_pair_chain_eligibility": {
+   "--": 140,
+   "EE": 1587,
+   "EM": 14,
+   "MM": 92,
+   "EI": 2,
+   "-E": 13
+  },
+  "modified_end_cww": {
+   "modified=False cWW=True": 1499,
+   "modified=False cWW=False": 83,
+   "modified=True cWW=True": 5
+  }
+ },
+ "RF00162": {
+  "n_pairs": 33,
+  "n_evaluable_pairs": 33,
+  "f_any_bp_ge_0.9": 24,
+  "f_cww_ge_0.9": 24,
+  "f_canonical_ge_0.9": 24,
+  "seqw_cww_ge_0.9": 25,
+  "clusw_cww_ge_0.9": 23,
+  "speciesw_cww_ge_0.9": 26,
+  "f_any_bp_lt_0.5": 3,
+  "f_cww_lt_0.5": 4,
+  "f_canonical_lt_0.5": 4,
+  "seqw_cww_lt_0.5": 4,
+  "clusw_cww_lt_0.5": 4,
+  "speciesw_cww_lt_0.5": 5,
+  "pooled_any_bp": 0.932,
+  "pooled_cww": 0.9,
+  "pooled_canonical": 0.9,
+  "pairs_changing_band_seq_weighted": [
+   "81-97 0.966->0.833"
+  ],
+  "unpaired_causes": {
+   "both annotated, neither base-paired": 29,
+   "one paired elsewhere": 26,
+   "residue without any BGSU annotation": 1
+  },
+  "unpaired_with_short_unannotated_run_3_14": 0,
+  "unpaired_with_modified_end": 0,
+  "ss_pair_chain_eligibility": {
+   "EE": 822,
+   "E-": 28,
+   "I-": 1,
+   "--": 78,
+   "-E": 28
+  },
+  "modified_end_cww": {
+   "modified=False cWW=True": 739,
+   "modified=True cWW=True": 1,
+   "modified=False cWW=False": 82
+  }
+ },
+ "RF00059": {
+  "n_pairs": 28,
+  "n_evaluable_pairs": 23,
+  "f_any_bp_ge_0.9": 20,
+  "f_cww_ge_0.9": 19,
+  "f_canonical_ge_0.9": 19,
+  "seqw_cww_ge_0.9": 19,
+  "clusw_cww_ge_0.9": 19,
+  "speciesw_cww_ge_0.9": 19,
+  "f_any_bp_lt_0.5": 3,
+  "f_cww_lt_0.5": 3,
+  "f_canonical_lt_0.5": 3,
+  "seqw_cww_lt_0.5": 3,
+  "clusw_cww_lt_0.5": 3,
+  "speciesw_cww_lt_0.5": 2,
+  "pooled_any_bp": 0.887,
+  "pooled_cww": 0.876,
+  "pooled_canonical": 0.874,
+  "pairs_changing_band_seq_weighted": [],
+  "unpaired_causes": {
+   "both annotated, neither base-paired": 43,
+   "one paired elsewhere": 15,
+   "both paired elsewhere": 10,
+   "residue without any BGSU annotation": 22
+  },
+  "unpaired_with_short_unannotated_run_3_14": 0,
+  "unpaired_with_modified_end": 0,
+  "ss_pair_chain_eligibility": {
+   "--": 222,
+   "EE": 793,
+   "ME": 8,
+   "MM": 23,
+   "IE": 4,
+   "EI": 13,
+   "EM": 1
+  },
+  "modified_end_cww": {
+   "modified=True cWW=True": 8,
+   "modified=False cWW=True": 687,
+   "modified=False cWW=False": 98
+  }
+ },
+ "RF00005": {
+  "n_pairs": 21,
+  "n_evaluable_pairs": 21,
+  "f_any_bp_ge_0.9": 17,
+  "f_cww_ge_0.9": 17,
+  "f_canonical_ge_0.9": 16,
+  "seqw_cww_ge_0.9": 15,
+  "clusw_cww_ge_0.9": 18,
+  "speciesw_cww_ge_0.9": 13,
+  "f_any_bp_lt_0.5": 0,
+  "f_cww_lt_0.5": 0,
+  "f_canonical_lt_0.5": 0,
+  "seqw_cww_lt_0.5": 0,
+  "clusw_cww_lt_0.5": 0,
+  "speciesw_cww_lt_0.5": 0,
+  "pooled_any_bp": 0.92,
+  "pooled_cww": 0.916,
+  "pooled_canonical": 0.908,
+  "pairs_changing_band_seq_weighted": [
+   "30-38 0.85->0.9"
+  ],
+  "unpaired_causes": {
+   "residue without any BGSU annotation": 5,
+   "both annotated, neither base-paired": 87,
+   "one paired elsewhere": 8
+  },
+  "unpaired_with_short_unannotated_run_3_14": 0,
+  "unpaired_with_modified_end": 6,
+  "ss_pair_chain_eligibility": {
+   "EE": 1256,
+   "ME": 2,
+   "-E": 1,
+   "--": 1
+  },
+  "modified_end_cww": {
+   "modified=False cWW=True": 1120,
+   "modified=False cWW=False": 100,
+   "modified=True cWW=True": 30,
+   "modified=True cWW=False": 6
+  }
+ },
+ "RF00011": {
+  "n_pairs": 97,
+  "n_evaluable_pairs": 97,
+  "f_any_bp_ge_0.9": 73,
+  "f_cww_ge_0.9": 72,
+  "f_canonical_ge_0.9": 72,
+  "seqw_cww_ge_0.9": 74,
+  "clusw_cww_ge_0.9": 72,
+  "speciesw_cww_ge_0.9": 72,
+  "f_any_bp_lt_0.5": 4,
+  "f_cww_lt_0.5": 8,
+  "f_canonical_lt_0.5": 8,
+  "seqw_cww_lt_0.5": 10,
+  "clusw_cww_lt_0.5": 8,
+  "speciesw_cww_lt_0.5": 8,
+  "pooled_any_bp": 0.898,
+  "pooled_cww": 0.865,
+  "pooled_canonical": 0.865,
+  "pairs_changing_band_seq_weighted": [],
+  "unpaired_causes": {
+   "both annotated, neither base-paired": 393,
+   "one paired elsewhere": 87,
+   "both paired elsewhere": 10,
+   "residue without any BGSU annotation": 4
+  },
+  "unpaired_with_short_unannotated_run_3_14": 0,
+  "unpaired_with_modified_end": 0,
+  "ss_pair_chain_eligibility": {
+   "EE": 4850
+  },
+  "modified_end_cww": {
+   "modified=False cWW=True": 4195,
+   "modified=False cWW=False": 655
+  }
+ },
+ "RF00177": {
+  "n_pairs": 462,
+  "n_evaluable_pairs": 455,
+  "f_any_bp_ge_0.9": 376,
+  "f_cww_ge_0.9": 375,
+  "f_canonical_ge_0.9": 366,
+  "seqw_cww_ge_0.9": 373,
+  "clusw_cww_ge_0.9": 375,
+  "speciesw_cww_ge_0.9": 375,
+  "f_any_bp_lt_0.5": 29,
+  "f_cww_lt_0.5": 32,
+  "f_canonical_lt_0.5": 45,
+  "seqw_cww_lt_0.5": 31,
+  "clusw_cww_lt_0.5": 32,
+  "speciesw_cww_lt_0.5": 64,
+  "pooled_any_bp": 0.906,
+  "pooled_cww": 0.898,
+  "pooled_canonical": 0.87,
+  "pairs_changing_band_seq_weighted": [],
+  "unpaired_causes": {
+   "both paired elsewhere": 283,
+   "one paired elsewhere": 575,
+   "both annotated, neither base-paired": 1673,
+   "residue without any BGSU annotation": 19
+  },
+  "unpaired_with_short_unannotated_run_3_14": 2,
+  "unpaired_with_modified_end": 3,
+  "ss_pair_chain_eligibility": {
+   "EE": 27262,
+   "E-": 2,
+   "EM": 5,
+   "MM": 31,
+   "--": 420
+  },
+  "modified_end_cww": {
+   "modified=False cWW=True": 24143,
+   "modified=False cWW=False": 2747,
+   "modified=True cWW=True": 94,
+   "modified=True cWW=False": 3
+  }
+ },
+ "extra_pair_overlap": {
+  "RF00167": {
+   "n": 17,
+   "with_more_than_one_of_4_attributes": 8,
+   "old_vs_proposed": {
+    "tertiary (nested) -> nested, outside SS_cons helices": 8,
+    "helix_extension -> helix extension": 1,
+    "pseudoknot (crosses SS_cons) -> crossing (pseudoknot-like)": 6,
+    "pseudoknot (crosses SS_cons) -> base triple / bifurcation with an SS_cons pair": 1,
+    "tertiary (nested) -> base triple / bifurcation with an SS_cons pair": 1
+   }
+  },
+  "RF00162": {
+   "n": 12,
+   "with_more_than_one_of_4_attributes": 10,
+   "old_vs_proposed": {
+    "pseudoknot (crosses SS_cons) -> base triple / bifurcation with an SS_cons pair": 4,
+    "tertiary (nested) -> nested, outside SS_cons helices": 2,
+    "pseudoknot (crosses SS_cons) -> crossing (pseudoknot-like)": 4,
+    "tertiary (nested) -> base triple / bifurcation with an SS_cons pair": 1,
+    "shift -> alternative partner (replaces an SS_cons pair)": 1
+   }
+  },
+  "RF00059": {
+   "n": 14,
+   "with_more_than_one_of_4_attributes": 10,
+   "old_vs_proposed": {
+    "pseudoknot (crosses SS_cons) -> base triple / bifurcation with an SS_cons pair": 7,
+    "pseudoknot (crosses SS_cons) -> crossing (pseudoknot-like)": 1,
+    "helix_extension -> helix extension": 1,
+    "shift -> alternative partner (replaces an SS_cons pair)": 2,
+    "tertiary (nested) -> nested, outside SS_cons helices": 3
+   }
+  },
+  "RF00005": {
+   "n": 7,
+   "with_more_than_one_of_4_attributes": 6,
+   "old_vs_proposed": {
+    "pseudoknot (crosses SS_cons) -> crossing (pseudoknot-like)": 4,
+    "pseudoknot (crosses SS_cons) -> base triple / bifurcation with an SS_cons pair": 1,
+    "helix_extension -> helix extension": 1,
+    "tertiary (nested) -> nested, outside SS_cons helices": 1
+   }
+  },
+  "RF00011": {
+   "n": 46,
+   "with_more_than_one_of_4_attributes": 27,
+   "old_vs_proposed": {
+    "shift -> alternative partner (replaces an SS_cons pair)": 1,
+    "tertiary (nested) -> base triple / bifurcation with an SS_cons pair": 3,
+    "helix_extension -> helix extension": 3,
+    "tertiary (nested) -> nested, outside SS_cons helices": 19,
+    "pseudoknot (crosses SS_cons) -> crossing (pseudoknot-like)": 18,
+    "pseudoknot (crosses SS_cons) -> base triple / bifurcation with an SS_cons pair": 2
+   }
+  },
+  "RF00177": {
+   "n": 211,
+   "with_more_than_one_of_4_attributes": 135,
+   "old_vs_proposed": {
+    "pseudoknot (crosses SS_cons) -> base triple / bifurcation with an SS_cons pair": 48,
+    "shift -> alternative partner (replaces an SS_cons pair)": 21,
+    "pseudoknot (crosses SS_cons) -> crossing (pseudoknot-like)": 33,
+    "tertiary (nested) -> nested, outside SS_cons helices": 84,
+    "tertiary (nested) -> base triple / bifurcation with an SS_cons pair": 15,
+    "helix_extension -> helix extension": 10
+   }
+  }
+ }
+}

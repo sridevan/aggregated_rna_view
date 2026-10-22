@@ -86,3 +86,7 @@ data/families/RF00177/interactions_by_instance/
 data/families/RF00011/loops.json
 data/families/RF00011/sasa.json
 data/families/RF00011/annotations/
+
+# Pinned fr3d-python checkout and its interpreter for `rna_explorer near` (reproducible: docs/NEAR_BASEPAIRS_METHOD.md)
+tools/fr3d-python/
+tools/fr3d-env/

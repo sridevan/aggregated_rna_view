@@ -11,8 +11,8 @@ import { HoverCard } from '../InfoTip'
 export interface DiagramArc { id: string; i: number; j: number; color: string; width: number; dash?: string; opacity?: number; order: number
   /** several interactions between the same two nucleotides: drawn as one double-line arc */
   multi?: boolean
-  /** category (or 'multiple') and comparison status, exposed as data attributes */
-  category?: string; status?: string }
+  /** category (or 'multiple'), comparison status and Rfam consensus status (base pairs), exposed as data attributes */
+  category?: string; status?: string; consensus?: string }
 export interface DiagramLabel { short: string; text: string; fromReference: boolean }
 const REGION_COLORS = ['#e7e5e4', '#d6d3d1']
 
@@ -59,7 +59,7 @@ export const CircularDiagram = memo(function CircularDiagram({ L, size, arcs, la
   const base = useMemo(() => (
     <g data-testid={`${testId}-arcs`}>
       {sorted.map((a) => <g key={a.id}><path d={arcPath(L, a.i, a.j)} fill="none" stroke={a.color} strokeWidth={a.multi ? a.width + 1.6 : a.width} strokeDasharray={a.dash} strokeOpacity={a.opacity ?? 0.9} strokeLinecap="round"
-        data-testid={`${testId}-arc-${a.id}`} data-i={a.i} data-j={a.j} data-color={a.color} data-multi={a.multi ? 'true' : undefined} data-category={a.category} data-status={a.status} data-dash={a.dash ?? ''} />
+        data-testid={`${testId}-arc-${a.id}`} data-i={a.i} data-j={a.j} data-color={a.color} data-multi={a.multi ? 'true' : undefined} data-category={a.category} data-status={a.status} data-consensus={a.consensus} data-dash={a.dash ?? ''} />
         {a.multi && <path d={arcPath(L, a.i, a.j)} fill="none" stroke="white" strokeWidth={0.8} strokeOpacity={a.opacity ?? 0.9} />}</g>)}
     </g>), [sorted, L, testId])
   const hits = useMemo(() => (

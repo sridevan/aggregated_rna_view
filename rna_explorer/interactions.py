@@ -15,7 +15,12 @@ s35 <-> s53), de-duplicated over the two row orders and alternate locations. FR3
 Eligibility of an instance for a consensus position pair (i, j): the chain has FR3D annotations, both positions are match-state residues
 with coordinates and a complete base (FR3D standard base heavy atoms; for modified residues the six pyrimidine-ring atoms), model 1.
 Observed = at least one non-near FR3D interaction of the category between i and j in an eligible instance. Near interactions (FR3D 'n'
-prefix) are counted separately and never as observed. Insertion and flank endpoints are kept in the per-instance observations but are not
+prefix) are counted separately and never as observed. BGSU's base-pair files contain no near base pairs; they are added from
+near_basepairs.json (pinned local fr3d-python run, `rna_explorer near`) when present, tagged with their source and never used to decide
+whether BGSU annotated a chain (annotation availability and gaps are BGSU-only).
+
+Base pairs: paired = observed or near only (any class); `consensus` compares the position pair with the Rfam SS_cons: both = SS_cons pair
+paired in at least one eligible chain, 2d = SS_cons pair paired in none (it gets a row even then), 3d = observed pair not in SS_cons. Insertion and flank endpoints are kept in the per-instance observations but are not
 aggregated on consensus pairs. Missing, incomplete or unmapped nucleotides and unannotated chains are never counted as absence.
 """
 from __future__ import annotations
@@ -28,6 +33,7 @@ import requests
 from . import __version__
 from .cache import Cache
 from .export import validate_json
+from .near_basepairs import load_near_basepairs
 from .pdbe import family_uses_chain_files, instance_cif
 
 log = logging.getLogger(__name__)
@@ -142,6 +148,9 @@ def chain_residues(cif_path: Path, label_asym_id: str) -> dict[int, dict[str, An
     return out
 
 
+SOURCE_BGSU, SOURCE_LOCAL = "bgsu", "fr3d_local"
+
+
 # ----------------------------------------------------------------------------- build
 def build_interactions(acc: str, cache_dir: Path, out_dir: Path, seed_dir: Optional[Path] = None, offline: bool = False, write: bool = True) -> dict[str, Any]:
     fam_dir = Path(out_dir) / "families" / acc
@@ -154,6 +163,8 @@ def build_interactions(acc: str, cache_dir: Path, out_dir: Path, seed_dir: Optio
     cache = Cache(cache_dir)
     chain_files = family_uses_chain_files(fam_dir)
     src = BgsuSource(cache, seed_dir, offline)
+    near_file = load_near_basepairs(fam_dir)
+    near_entries = (near_file or {}).get("entries", {})
 
     by_sn = {i["seq_name"]: i for i in instances}
     by_chain: dict[tuple[str, str], list[dict[str, Any]]] = collections.defaultdict(list)
@@ -198,69 +209,86 @@ def build_interactions(acc: str, cache_dir: Path, out_dir: Path, seed_dir: Optio
             return "not_in_rna_polymer", inst, None
         return "mapped", inst, r
 
+    local_endpoints: dict[str, collections.Counter[str]] = collections.defaultdict(collections.Counter)
+    local_verification: dict[str, collections.Counter[str]] = collections.defaultdict(collections.Counter)
+    local_kinds: dict[str, collections.Counter[str]] = collections.defaultdict(collections.Counter)
+
+    def ingest(cat: str, raws: Any, source: str) -> int:
+        """map and record BGSU-style rows (unit id, class, unit id) of one category; returns the number of rows read"""
+        n_rows = 0
+        for raw in raws:
+            if len(raw) < 3:
+                continue
+            n_rows += 1
+            if source == SOURCE_BGSU:
+                rows_in_files[cat] += 1
+            u1, cls, u2 = raw[0], raw[1], raw[2]
+            ends = []
+            for u in (u1, u2):
+                p = parse_unit(u)
+                st, inst, r = resolve(p)
+                e = {"p": p, "inst": inst, "r": r, "status": st, "loc": None}
+                if st == "mapped":
+                    c = coords[inst["seq_name"]].get(r["polymer_seq_position"])
+                    ok = c is not None and c["chain"] == p["chain"] and c["num"] == p["num"] and c["ins"] == p["ins"] and c["name"] == p["resname"]
+                    e["check"] = "verified" if ok else "mismatch"
+                    state = r["alignment_state"]
+                    e["loc"] = r["rfam_consensus_pos"] if state == "match" else (f"{r['insertion_anchor']}^{r['insertion_offset']}" if state == "insert" else None)
+                    st = {"match": "consensus", "insert": "insertion"}.get(state, "outside_alignment")
+                (endpoint_status if source == SOURCE_BGSU else local_endpoints)[cat][st] += 1
+                if "check" in e:
+                    (verification if source == SOURCE_BGSU else local_verification)[cat][e["check"]] += 1
+                ends.append(e)
+            a, b = ends
+            if a["r"] is None or b["r"] is None:
+                (pair_kinds if source == SOURCE_BGSU else local_kinds)[cat]["unmapped_endpoint"] += 1
+                continue
+            if a["inst"]["seq_name"] != b["inst"]["seq_name"]:
+                (pair_kinds if source == SOURCE_BGSU else local_kinds)[cat]["between_family_chains"] += 1
+                k = (tuple(sorted((a["p"]["unit"], b["p"]["unit"]))) if cat not in DIRECTIONAL else (a["p"]["unit"], b["p"]["unit"])) + (cat, cls)
+                if source == SOURCE_BGSU:
+                    inter_chain.setdefault(k, {"category": cat, "fr3d_class": cls, "unit_1": a["p"]["unit"], "unit_2": b["p"]["unit"]})
+                continue
+            (pair_kinds if source == SOURCE_BGSU else local_kinds)[cat]["intra_chain"] += 1
+            if cat not in DIRECTIONAL and a["r"]["polymer_seq_position"] > b["r"]["polymer_seq_position"]:
+                a, b, cls = b, a, flip(cls)
+            sn = a["inst"]["seq_name"]
+            if cat not in DIRECTIONAL and source == SOURCE_BGSU:
+                annotated.add(sn)
+            k = (sn, cat, a["r"]["polymer_seq_position"], b["r"]["polymer_seq_position"], cls)
+            rec = obs.get(k)
+            if rec is None:
+                obs[k] = {"seq_name": sn, "category": cat, "fr3d_class": cls, "a": a, "b": b, "alts": set(), "source": source}
+                rec = obs[k]
+            alt = a["p"]["alt"] or b["p"]["alt"]
+            if alt:
+                rec["alts"].add(alt)
+        return n_rows
+
+    near_status: dict[str, str] = {}
     for pdb in sorted({i["pdb_id"].upper() for i in instances}):
         ok_all = True
         for kind, cat in KINDS.items():
             text, meta = src.get(pdb, kind)
-            n_rows = 0
             files_ok[(pdb, cat)] = text is not None
+            n_rows = 0
             if text is None:
                 ok_all = ok_all and cat in DIRECTIONAL
             else:
-                for raw in csv.reader(io.StringIO(text)):
-                    if len(raw) < 3:
-                        continue
-                    n_rows += 1
-                    rows_in_files[cat] += 1
-                    u1, cls, u2 = raw[0], raw[1], raw[2]
-                    ends = []
-                    for u in (u1, u2):
-                        p = parse_unit(u)
-                        st, inst, r = resolve(p)
-                        e = {"p": p, "inst": inst, "r": r, "status": st, "loc": None}
-                        if st == "mapped":
-                            c = coords[inst["seq_name"]].get(r["polymer_seq_position"])
-                            ok = c is not None and c["chain"] == p["chain"] and c["num"] == p["num"] and c["ins"] == p["ins"] and c["name"] == p["resname"]
-                            e["check"] = "verified" if ok else "mismatch"
-                            state = r["alignment_state"]
-                            e["loc"] = r["rfam_consensus_pos"] if state == "match" else (f"{r['insertion_anchor']}^{r['insertion_offset']}" if state == "insert" else None)
-                            st = {"match": "consensus", "insert": "insertion"}.get(state, "outside_alignment")
-                        endpoint_status[cat][st] += 1
-                        if "check" in e:
-                            verification[cat][e["check"]] += 1
-                        ends.append(e)
-                    a, b = ends
-                    if a["r"] is None or b["r"] is None:
-                        pair_kinds[cat]["unmapped_endpoint"] += 1
-                        continue
-                    if a["inst"]["seq_name"] != b["inst"]["seq_name"]:
-                        pair_kinds[cat]["between_family_chains"] += 1
-                        k = (tuple(sorted((a["p"]["unit"], b["p"]["unit"]))) if cat not in DIRECTIONAL else (a["p"]["unit"], b["p"]["unit"])) + (cat, cls)
-                        inter_chain.setdefault(k, {"category": cat, "fr3d_class": cls, "unit_1": a["p"]["unit"], "unit_2": b["p"]["unit"]})
-                        continue
-                    pair_kinds[cat]["intra_chain"] += 1
-                    if cat not in DIRECTIONAL and a["r"]["polymer_seq_position"] > b["r"]["polymer_seq_position"]:
-                        a, b, cls = b, a, flip(cls)
-                    sn = a["inst"]["seq_name"]
-                    if cat not in DIRECTIONAL:
-                        annotated.add(sn)
-                    k = (sn, cat, a["r"]["polymer_seq_position"], b["r"]["polymer_seq_position"], cls)
-                    rec = obs.get(k)
-                    if rec is None:
-                        obs[k] = {"seq_name": sn, "category": cat, "fr3d_class": cls, "a": a, "b": b, "alts": set()}
-                        rec = obs[k]
-                    alt = a["p"]["alt"] or b["p"]["alt"]
-                    if alt:
-                        rec["alts"].add(alt)
+                n_rows = ingest(cat, csv.reader(io.StringIO(text)), SOURCE_BGSU)
             sources.append({**meta, "n_rows": n_rows})
         entries_ok[pdb] = ok_all
+        ne = near_entries.get(pdb)
+        near_status[pdb] = "available" if ne and ne["status"] == "ok" else "unavailable"
+        if ne and ne["status"] == "ok":
+            ingest("basepair", [r for r in ne["rows"] if r[1].startswith("n")], SOURCE_LOCAL)
 
     # per-instance observations (all intra-chain interactions, including insertion and flank endpoints)
     observations: dict[str, list[list[Any]]] = {sn: [] for sn in sorted(by_sn)}
     for (sn, cat, l1, l2, cls), rec in sorted(obs.items(), key=lambda kv: (kv[0][0], kv[0][1], kv[0][2], kv[0][3], kv[0][4])):
         a, b = rec["a"], rec["b"]
         observations[sn].append([cat, cls, l1, l2, a["loc"], b["loc"], a["p"]["unit"], b["p"]["unit"],
-                                 "verified" if a["check"] == b["check"] == "verified" else "mismatch", ";".join(sorted(rec["alts"]))])
+                                 "verified" if a["check"] == b["check"] == "verified" else "mismatch", ";".join(sorted(rec["alts"])), rec["source"]])
 
     # per-instance eligibility and nucleotide identity on consensus positions
     inst_rows = []
@@ -290,25 +318,26 @@ def build_interactions(acc: str, cache_dir: Path, out_dir: Path, seed_dir: Optio
         inst_rows.append({"seq_name": sn, "pdb_id": inst["pdb_id"].upper(), "auth_asym_id": inst["auth_asym_id"], "label_asym_id": inst["label_asym_id"],
                           "annotation": ann, "annotation_note": note, "eligibility": elig[sn], "sugar_eligibility": backbone[sn]["baseribose"], "phosphate_eligibility": backbone[sn]["basephosphate"],
                           "unavailable_categories": [c for c in KINDS.values() if ann != "available" or not files_ok[(inst["pdb_id"].upper(), c)]],
-                          "nucleotides": "".join(nts), "n_interactions": len(observations[sn])})
+                          "nucleotides": "".join(nts), "n_interactions": len(observations[sn]),
+                          "near_basepairs": near_status[inst["pdb_id"].upper()]})
     unavailable = {r["seq_name"]: set(r["unavailable_categories"]) for r in inst_rows}
     # incomplete BGSU annotation of a chain (long unannotated runs of eligible positions): not comparable there, never absent
     for r in inst_rows:
-        annotated_pos = {q for o in observations[r["seq_name"]] for q in (o[4], o[5]) if isinstance(q, int)}
+        annotated_pos = {q for o in observations[r["seq_name"]] if o[10] == SOURCE_BGSU for q in (o[4], o[5]) if isinstance(q, int)}
         r["annotation_gaps"] = annotation_gaps(r["eligibility"], annotated_pos) if r["annotation"] == "available" else []
     in_gap = {r["seq_name"]: {q for a, b in r["annotation_gaps"] for q in range(a, b + 1)} for r in inst_rows}
     ann_ok = {r["seq_name"] for r in inst_rows if r["annotation"] == "available"}
 
     # family-wide consensus pairs
     cons: dict[tuple[str, int, int], dict[str, list[str]]] = collections.defaultdict(lambda: collections.defaultdict(list))
-    near: dict[tuple[str, int, int], set[str]] = collections.defaultdict(set)
+    near: dict[tuple[str, int, int], dict[str, set[str]]] = collections.defaultdict(lambda: collections.defaultdict(set))
     for sn, rows in observations.items():
         for cat, cls, _l1, _l2, p1, p2, *_ in rows:
             if not (isinstance(p1, int) and isinstance(p2, int)) or p1 == p2:
                 continue
             k = (cat, p1, p2)
             if cls.startswith("n"):
-                near[k].add(sn)
+                near[k][sn].add(cls)
             else:
                 cons[k][sn].append(cls)
     nt = {r["seq_name"]: r["nucleotides"] for r in inst_rows}
@@ -326,10 +355,15 @@ def build_interactions(acc: str, cache_dir: Path, out_dir: Path, seed_dir: Optio
             return "incomplete"
         return "eligible"
 
+    # every SS_cons position pair gets a base-pair row, also when it is paired (true or near) in no chain ("2d")
+    for i, j in ss:
+        cons[("basepair", i, j)]
     pairs = []
     for (cat, i, j), per in sorted(cons.items()):
         st: collections.Counter[str] = collections.Counter()
         classes: collections.Counter[str] = collections.Counter()
+        near_classes: collections.Counter[str] = collections.Counter()
+        ent_p = set()
         nt_pairs: collections.Counter[str] = collections.Counter()
         ent_e, ent_o = set(), set()
         n_canonical = obs_inel = 0
@@ -351,17 +385,25 @@ def build_interactions(acc: str, cache_dir: Path, out_dir: Path, seed_dir: Optio
                 n_canonical += "cWW" in cl and pair_nt in CANONICAL
             elif sn in near[(cat, i, j)]:
                 st["near_only"] += 1
+                for c in sorted(near[(cat, i, j)][sn]):
+                    near_classes[c] += 1
+                if cat == "basepair":
+                    ent_p.add(by_sn[sn]["pdb_id"].upper())
             else:
                 st["not_annotated"] += 1
         n, k = st["eligible"], st["observed"]
         ri, rj = region[i - 1], region[j - 1]
         in_ss = cat in ("basepair", "stacking") and (i, j) in ss
         structure_class = None if cat != "basepair" else "secondary" if in_ss else "tertiary" if (ri and rj and ri != rj) else "unclassified"
+        kp = k + (st["near_only"] if cat == "basepair" else 0)
+        consensus = None if cat != "basepair" else ("both" if kp else "2d") if in_ss else "3d"
         pairs.append({"id": f"{cat}:{i}-{j}", "category": cat, "pos_1": i, "pos_2": j, "directional": cat in DIRECTIONAL,
                       "consensus_nt": f"{family['consensus_sequence'][i - 1]}{family['consensus_sequence'][j - 1]}" if family.get("consensus_sequence") else None,
                       "region_1": ri, "region_2": rj, "in_ss_cons": in_ss, "structure_class": structure_class,
                       "n_observed": k, "n_eligible": n, "frequency": round(k / n, 4) if n else None,
                       "n_entries_observed": len(ent_o), "n_entries_eligible": len(ent_e),
+                      "consensus": consensus, "n_paired": kp, "frequency_paired": round(kp / n, 4) if n else None,
+                      "n_entries_paired": len(ent_o | ent_p) if cat == "basepair" else len(ent_o), "near_classes": dict(near_classes.most_common()),
                       "classes": dict(classes.most_common()), "nt_pairs": dict(nt_pairs.most_common()), "n_canonical": n_canonical,
                       "n_near_only": st["near_only"], "n_not_annotated": st["not_annotated"], "n_missing": st["missing"], "n_incomplete": st["incomplete"],
                       "n_unmapped": st["unmapped"], "n_annotation_unavailable": st["annotation_unavailable"], "n_observed_but_ineligible": obs_inel})
@@ -369,7 +411,7 @@ def build_interactions(acc: str, cache_dir: Path, out_dir: Path, seed_dir: Optio
     ref = family.get("display_representative") or family.get("representative")
     ref_sn = ref["seq_name"] if ref else None
     out = {
-        "schema_version": "1.3", "rfam_acc": acc, "clen": clen,
+        "schema_version": "1.4", "rfam_acc": acc, "clen": clen,
         "default_numbering_reference": {"seq_name": ref_sn, "rule": "family display representative (family.json display_representative)",
                                         "n_eligible_positions": elig.get(ref_sn, "").count(ELIGIBLE) if ref_sn else 0,
                                         "n_match_positions": sum(c != UNMAPPED for c in elig.get(ref_sn, "")) if ref_sn else 0},
@@ -393,6 +435,14 @@ def build_interactions(acc: str, cache_dir: Path, out_dir: Path, seed_dir: Optio
             "structure_class": "base pairs only: secondary = position pair of the Rfam SS_cons; tertiary = other pair between two different validated structural "
                                "elements; unclassified = otherwise",
             "canonical": "n_canonical = observed instances annotated cWW with an AU, GC or GU nucleotide pair",
+            "paired": "base pairs only: n_paired = observed + near only (an FR3D base pair of any class, true or near, between the two positions in an "
+                      "eligible chain); other categories: n_paired = n_observed (near never counted)",
+            "consensus": "base pairs only: both = Rfam SS_cons position pair paired in at least one eligible chain; 2d = SS_cons pair paired in no "
+                         "eligible chain; 3d = observed base pair that is not an SS_cons pair; null for other categories",
+            "near_classes": "near-only eligible chains per near FR3D class",
+            "near_basepairs": "per chain: available = near base pairs computed by the pinned local fr3d-python run for its entry (near_basepairs.json); "
+                              "unavailable = not computed (near base pairs cannot be observed there)",
+            "observation_source": f"last observation field: {SOURCE_BGSU} (BGSU RNA 3D Hub file) or {SOURCE_LOCAL} (near base pair, local fr3d-python)",
         },
         "instances": inst_rows,
         "observations_files": {"path": "interactions_by_instance/{seq_name}.json", "content": "every intra-chain observation of the chain (definitions.observation)"},
@@ -400,17 +450,23 @@ def build_interactions(acc: str, cache_dir: Path, out_dir: Path, seed_dir: Optio
         "excluded": {"between_family_chains": sorted(inter_chain.values(), key=lambda r: (r["unit_1"], r["unit_2"], r["category"]))},
         "summary": {"rows_in_files": dict(rows_in_files),
                     "by_category": {c: {"rows_in_files": rows_in_files[c], "endpoint_status": dict(endpoint_status[c]), "endpoint_verification_against_mmcif": dict(verification[c]),
-                                        "pair_kinds": dict(pair_kinds[c]), "n_intra_chain_interactions": sum(1 for v in observations.values() for o in v if o[0] == c),
+                                        "pair_kinds": dict(pair_kinds[c]), "n_intra_chain_interactions": sum(1 for v in observations.values() for o in v if o[0] == c and o[10] == SOURCE_BGSU),
                                         "n_consensus_pairs": sum(1 for q in pairs if q["category"] == c),
                                         "n_entries_with_file": sum(1 for (e, cc), ok in files_ok.items() if cc == c and ok)} for c in KINDS.values()},
-                    "n_intra_chain_interactions": sum(len(v) for v in observations.values()), "n_consensus_pairs": len(pairs),
-                    "n_instances": len(by_sn), "n_instances_annotated": len(ann_ok), "n_entries": len(entries_ok)},
+                    "n_intra_chain_interactions": sum(1 for v in observations.values() for o in v if o[10] == SOURCE_BGSU), "n_consensus_pairs": len(pairs),
+                    "n_instances": len(by_sn), "n_instances_annotated": len(ann_ok), "n_entries": len(entries_ok),
+                    "consensus": dict(collections.Counter(q["consensus"] for q in pairs if q["consensus"])),
+                    "near_basepairs_local": {"n_intra_chain_observations": sum(1 for v in observations.values() for o in v if o[10] == SOURCE_LOCAL),
+                                             "endpoint_status": dict(local_endpoints["basepair"]), "endpoint_verification_against_mmcif": dict(local_verification["basepair"]),
+                                             "pair_kinds": dict(local_kinds["basepair"])}},
         "sources": sources,
         "provenance": {"source": "BGSU RNA 3D Hub FR3D annotations (base pairs, base stacking, base-ribose, base-phosphate)", "url_template": BGSU_URL,
                        "coordinates": "PDBe ModelServer chain files" if chain_files else "PDBe updated mmCIF (model 1)",
                        "rfam_release": family.get("provenance", {}).get("rfam_release"), "mapping_generated": family.get("provenance", {}).get("generated"),
                        "pipeline_version": __version__, "generated": _dt.datetime.now(_dt.timezone.utc).isoformat(timespec="seconds"),
-                       "method": "experiments/rf00167_interactions (RF00167 investigation, 2026-10-18)"},
+                       "method": "experiments/rf00167_interactions (RF00167 investigation, 2026-10-18)",
+                       "near_basepairs": None if near_file is None else {"file": "near_basepairs.json", **{k: near_file["provenance"][k] for k in ("tool", "repository", "commit", "commit_date", "licence", "generated")},
+                                                                         "n_entries_available": sum(v == "available" for v in near_status.values()), "n_entries": len(near_status)}},
     }
     # compact per-chain view for the frontend (the main file stays small for large RNAs): indices into `pairs` of every non-near observed
     # consensus interaction by class, near annotations on consensus positions, and the number of off-consensus interactions; the full
@@ -432,7 +488,8 @@ def build_interactions(acc: str, cache_dir: Path, out_dir: Path, seed_dir: Optio
         r["near"] = near_rows
         r["n_off_consensus"] = off
     validate_json(out, "interactions")
-    per_instance = {sn: {"schema_version": out["schema_version"], "rfam_acc": acc, "seq_name": sn, "observation": out["definitions"]["observation"], "observations": rows}
+    per_instance = {sn: {"schema_version": out["schema_version"], "rfam_acc": acc, "seq_name": sn, "observation": out["definitions"]["observation"] + "; " + out["definitions"]["observation_source"],
+                         "observations": rows}
                     for sn, rows in observations.items()}
     for v in per_instance.values():
         validate_json(v, "interactions_instance")

@@ -1,0 +1,22 @@
+label_seq_id_1	label_seq_id_2	rfam_1	rfam_2	class
+1	73	1	70	cWW
+2	72	2	69	cWW
+3	71	3	68	cWW
+4	70	4	67	cWW
+5	69	5	66	cWW
+6	68	6	65	cWW
+7	67	7	64	cWW
+24	49	22	46	cWW
+25	48	23		cWW
+26	47	24	45	cWW
+29	43	27	41	cWW
+30	42	28	40	cWW
+31	41	29	39	cWW
+32	40	30	38	cWW
+33	39	31	37	cWW
+50	66	47	63	cWW
+51	65	48	62	cWW
+52	64	49	61	cWW
+53	63	50	60	cWW
+54	62	51	59	cWW
+55	59	52	56	tWH

@@ -53,6 +53,13 @@ def main(argv: list[str] | None = None) -> int:
     it.add_argument("--seed-dir", type=Path, default=None, help="directory with bgsu/{PDB}_{basepairs|stacking}.csv.gz and PROVENANCE.json used to seed the cache (e.g. experiments/rf00167_interactions/raw)")
     it.add_argument("--offline", action="store_true", help="never contact the network; entries whose files are not cached are recorded as annotation unavailable")
     it.add_argument("-v", "--verbose", action="store_true")
+    nb = sub.add_parser("near", help="near base pairs of the family chains from a pinned local fr3d-python run (near_basepairs.json; read by `interactions`)")
+    nb.add_argument("acc"); nb.add_argument("--out", type=Path, default=DEFAULT_OUT_DIR)
+    nb.add_argument("--fr3d", type=Path, default=Path("tools/fr3d-python"), help="clean fr3d-python checkout at a fixed commit (recorded in the provenance)")
+    nb.add_argument("--python", default="tools/fr3d-env/bin/python", help="interpreter with numpy, scipy, biopython and mmcif-pdbx")
+    nb.add_argument("--workers", type=int, default=4); nb.add_argument("--tmp", type=Path, default=None, help="directory for the temporary mmCIFs (deleted after each entry)")
+    nb.add_argument("--force", action="store_true", help="re-annotate every entry (default: reuse entries annotated with the same commit and chains)")
+    nb.add_argument("-v", "--verbose", action="store_true")
     a = p.parse_args(argv)
     logging.basicConfig(level=logging.INFO if getattr(a, "verbose", False) else logging.WARNING, format="%(levelname)s %(message)s")
     if a.cmd == "orient":
@@ -79,6 +86,11 @@ def main(argv: list[str] | None = None) -> int:
                           **{m: {"k": v["clustering"]["cut"]["k"], "cut_height": v["clustering"]["cut"]["height"], "groups": [g["n_instances"] for g in v["clustering"]["groups"]],
                                  "representatives": [g["representative"] for g in v["clustering"]["groups"]]} for m, v in res["metrics"].items()}}, indent=1))
         return 0
+    if a.cmd == "near":
+        from .near_basepairs import build_near_basepairs
+        res = build_near_basepairs(a.acc, a.out, a.fr3d.resolve(), str(Path(a.python).absolute()), a.workers, a.tmp, a.force)
+        print(json.dumps({"acc": a.acc, "commit": res["provenance"]["commit"], **res["summary"]}, indent=1))
+        return 0 if not res["summary"]["n_failed"] else 1
     if a.cmd == "interactions":
         from .interactions import build_interactions
         res = build_interactions(a.acc, a.cache, a.out, a.seed_dir, a.offline)

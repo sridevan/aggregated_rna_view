@@ -1,0 +1,125 @@
+{
+ "inputs": [
+  "followup/near/ss_cons_near.csv",
+  "data/families/<ACC>/interactions_by_instance (BGSU FR3D)"
+ ],
+ "families": {
+  "RF00167": {
+   "evaluable_observations": 1587,
+   "true_bp": 1512,
+   "without_true_bp": {
+    "near_pair": 54,
+    "nothing": 20,
+    "local_true_pair": 1
+   },
+   "support_true_bp": 0.953,
+   "support_plus_near_bp": 0.987,
+   "support_plus_BR_BPh_true": 0.987,
+   "support_plus_BR_BPh_near": 0.987,
+   "pairs_gaining_from_BR_BPh": []
+  },
+  "RF00162": {
+   "evaluable_observations": 822,
+   "true_bp": 766,
+   "without_true_bp": {
+    "near_pair": 23,
+    "nothing": 33
+   },
+   "support_true_bp": 0.932,
+   "support_plus_near_bp": 0.96,
+   "support_plus_BR_BPh_true": 0.96,
+   "support_plus_BR_BPh_near": 0.96,
+   "pairs_gaining_from_BR_BPh": []
+  },
+  "RF00059": {
+   "evaluable_observations": 793,
+   "true_bp": 703,
+   "without_true_bp": {
+    "near_pair": 17,
+    "nothing": 73
+   },
+   "support_true_bp": 0.887,
+   "support_plus_near_bp": 0.908,
+   "support_plus_BR_BPh_true": 0.908,
+   "support_plus_BR_BPh_near": 0.908,
+   "pairs_gaining_from_BR_BPh": []
+  },
+  "RF00005": {
+   "evaluable_observations": 1256,
+   "true_bp": 1156,
+   "without_true_bp": {
+    "nothing": 33,
+    "near_pair": 64,
+    "stacking_only": 1,
+    "local_true_pair": 2
+   },
+   "support_true_bp": 0.92,
+   "support_plus_near_bp": 0.973,
+   "support_plus_BR_BPh_true": 0.973,
+   "support_plus_BR_BPh_near": 0.973,
+   "pairs_gaining_from_BR_BPh": []
+  },
+  "RF00011": {
+   "evaluable_observations": 4850,
+   "true_bp": 4356,
+   "without_true_bp": {
+    "near_pair": 193,
+    "near_BR_or_BPh_only": 37,
+    "nothing": 237,
+    "stacking_only": 14,
+    "true_BR_or_BPh": 13
+   },
+   "support_true_bp": 0.898,
+   "support_plus_near_bp": 0.938,
+   "support_plus_BR_BPh_true": 0.941,
+   "support_plus_BR_BPh_near": 0.948,
+   "pairs_gaining_from_BR_BPh": [
+    "127-164:1/50",
+    "129-162:4/50",
+    "136-154:2/50",
+    "137-153:3/50",
+    "141-150:1/50",
+    "142-149:1/50",
+    "173-219:1/50",
+    "194-201:1/50",
+    "324-342:1/50",
+    "325-341:9/50",
+    "326-340:21/50",
+    "327-339:3/50",
+    "7-361:2/50"
+   ]
+  },
+  "RF00177": {
+   "evaluable_observations": 26987,
+   "true_bp": 24437,
+   "without_true_bp": {
+    "stacking_only": 71,
+    "nothing": 1095,
+    "near_pair": 1218,
+    "near_BR_or_BPh_only": 31,
+    "local_true_pair": 17,
+    "true_BR_or_BPh": 118
+   },
+   "support_true_bp": 0.906,
+   "support_plus_near_bp": 0.951,
+   "support_plus_BR_BPh_true": 0.956,
+   "support_plus_BR_BPh_near": 0.957,
+   "pairs_gaining_from_BR_BPh": [
+    "1017-1024:1/59",
+    "1018-1023:1/55",
+    "1238-1281:1/59",
+    "37-537:14/60",
+    "416-421:1/60",
+    "572-748:56/59",
+    "596-622:60/60",
+    "73-88:1/58",
+    "75-86:4/54",
+    "76-85:2/53",
+    "78-83:1/52",
+    "986-1035:5/59",
+    "996-1013:1/59",
+    "997-1012:1/59"
+   ]
+  }
+ }
+}

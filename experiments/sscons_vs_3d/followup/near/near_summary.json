@@ -1,0 +1,159 @@
+{
+ "fr3d_python_commit": "3feb9b93e179187f45e1b79f3842d1a0ca19d797",
+ "coordinates": "PDBe updated mmCIF, model 1",
+ "families": {
+  "RF00167": {
+   "chains_annotated": 84,
+   "chains_total": 84,
+   "true_pairs_local": 2398,
+   "true_pairs_bgsu": 2397,
+   "true_pairs_shared": 2397,
+   "chains_identical_true_pairs": 83,
+   "ss_obs_without_bgsu_pair": {
+    "near_pair": 54,
+    "no_pair": 20,
+    "local_true_pair": 1
+   },
+   "by_geometry": {
+    "wc_like": {
+     "near_pair": 22,
+     "no_pair": 1,
+     "local_true_pair": 1
+    },
+    "distorted": {
+     "no_pair": 13,
+     "near_pair": 29
+    },
+    "apart": {
+     "no_pair": 6,
+     "near_pair": 3
+    }
+   }
+  },
+  "RF00162": {
+   "chains_annotated": 29,
+   "chains_total": 29,
+   "true_pairs_local": 1091,
+   "true_pairs_bgsu": 1091,
+   "true_pairs_shared": 1091,
+   "chains_identical_true_pairs": 29,
+   "ss_obs_without_bgsu_pair": {
+    "near_pair": 23,
+    "no_pair": 33
+   },
+   "by_geometry": {
+    "distorted": {
+     "near_pair": 7,
+     "no_pair": 4
+    },
+    "wc_like": {
+     "near_pair": 14
+    },
+    "apart": {
+     "no_pair": 29,
+     "near_pair": 2
+    }
+   }
+  },
+  "RF00059": {
+   "chains_annotated": 38,
+   "chains_total": 38,
+   "true_pairs_local": 1134,
+   "true_pairs_bgsu": 1135,
+   "true_pairs_shared": 1134,
+   "chains_identical_true_pairs": 37,
+   "ss_obs_without_bgsu_pair": {
+    "near_pair": 17,
+    "no_pair": 73
+   },
+   "by_geometry": {
+    "distorted": {
+     "near_pair": 8,
+     "no_pair": 9
+    },
+    "wc_like": {
+     "near_pair": 6
+    },
+    "apart": {
+     "no_pair": 64,
+     "near_pair": 3
+    }
+   }
+  },
+  "RF00005": {
+   "chains_annotated": 60,
+   "chains_total": 60,
+   "true_pairs_local": 1538,
+   "true_pairs_bgsu": 1537,
+   "true_pairs_shared": 1536,
+   "chains_identical_true_pairs": 57,
+   "ss_obs_without_bgsu_pair": {
+    "no_pair": 34,
+    "near_pair": 64,
+    "local_true_pair": 2
+   },
+   "by_geometry": {
+    "apart": {
+     "no_pair": 20,
+     "near_pair": 4
+    },
+    "distorted": {
+     "near_pair": 33,
+     "no_pair": 10
+    },
+    "wc_like": {
+     "near_pair": 27,
+     "no_pair": 4,
+     "local_true_pair": 2
+    }
+   }
+  },
+  "RF00011": {
+   "chains_annotated": 50,
+   "chains_total": 50,
+   "true_pairs_local": 6954,
+   "true_pairs_bgsu": 6954,
+   "true_pairs_shared": 6954,
+   "chains_identical_true_pairs": 50,
+   "ss_obs_without_bgsu_pair": {
+    "near_pair": 193,
+    "no_pair": 301
+   },
+   "by_geometry": {
+    "wc_like": {
+     "near_pair": 77,
+     "no_pair": 22
+    },
+    "apart": {
+     "near_pair": 50,
+     "no_pair": 210
+    },
+    "distorted": {
+     "near_pair": 66,
+     "no_pair": 69
+    }
+   }
+  },
+  "RF00177": {
+   "chains_annotated": 60,
+   "chains_total": 60,
+   "true_pairs_local": 36135,
+   "true_pairs_bgsu": 35733,
+   "true_pairs_shared": 35729,
+   "chains_identical_true_pairs": 42,
+   "ss_obs_without_bgsu_pair": {
+    "no_pair": 1315,
+    "near_pair": 1218,
+    "local_true_pair": 17
+   },
+   "by_geometry": {
+    "not_measured": {
+     "no_pair": 1315,
+     "near_pair": 1218,
+     "local_true_pair": 17
+    }
+   }
+  }
+ },
+ "failures": []
+}

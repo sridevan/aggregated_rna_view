@@ -1,0 +1,7 @@
+acc,n_chains,n_entries,n_unique_sequences,n_seq_clusters_95,n_species,largest_cluster_chains,species,methods
+RF00167,84,66,29,15,6,23,Bacillus subtilis:38; Vibrio vulnificus:16; synthetic construct:13; Staphylococcus aureus:7; Paenibacillus sp. FSL E2-0178:6; Paenibacillus beijingensis:4,X-ray diffraction:75; Electron Microscopy:9
+RF00162,29,28,23,6,3,13,Caldanaerobacter subterraneus:27; None:1; Bacillus subtilis:1,X-ray diffraction:29
+RF00059,38,28,5,4,3,18,Escherichia coli:29; Arabidopsis thaliana:8; Oceanobacillus iheyensis:1,X-ray diffraction:36; Electron Microscopy:2
+RF00005,60,59,43,38,14,5,Escherichia coli:20; Homo sapiens:15; Saccharomyces cerevisiae:8; Thermus thermophilus:4; Bos taurus:2; Bacillus subtilis:2; Oryza sativa:2; Pyrococcus horikoshii:1; Archaeoglobus fulgidus:1; Methanosarcina mazei:1; Mycobacterium tuberculosis:1; Sus scrofa:1; Arabidopsis thaliana:1; Pyrococcus abyssi:1,X-ray diffraction:31; Electron Microscopy:28; Solution NMR:1
+RF00011,50,50,4,1,1,50,Geobacillus stearothermophilus:50,Electron Microscopy:50
+RF00177,60,58,15,1,2,60,Escherichia coli:59; None:1,Electron Microscopy:40; X-ray diffraction:20

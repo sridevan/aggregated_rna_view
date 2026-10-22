@@ -1,0 +1,308 @@
+acc,pos_1,pos_2,main_class,classes,frequency,n_eligible,crosses_ss_cons,shares_position_with_ss_pair,shares_position_with_low_support_ss_pair,stacks_on_ss_pair,both_positions_unpaired_in_ss_cons,main_class_cww,multiple_classes,coexists_with_sharing_ss_pair,replaces_sharing_ss_pair,n_true_of_first4,sharing_ss_pairs_both_onlyX_onlySS_neither,old_kind,proposed_primary
+RF00167,14,92,cWW,"{""cWW"": 8}",1.0,8,0,0,0,0,1,1,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00167,15,91,cWW,"{""cWW"": 4}",1.0,4,0,0,0,0,1,1,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00167,16,90,cWW,"{""cWW"": 4}",1.0,4,0,0,0,0,1,1,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00167,17,89,cWW,"{""cWW"": 4}",1.0,4,0,0,0,1,1,1,0,0,0,2,,helix_extension,helix extension
+RF00167,26,56,cWW,"{""cWW"": 73}",0.9125,80,0,0,0,0,1,1,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00167,27,50,tWS,"{""tWS"": 69}",0.8625,80,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00167,37,71,tWH,"{""tWH"": 68}",0.85,80,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00167,38,70,tWH,"{""tWH"": 63, ""tWW"": 1}",0.8,80,1,0,0,0,1,0,1,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00167,39,69,tHW,"{""tHW"": 49}",0.6533,75,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00167,41,66,cWW,"{""cWW"": 80}",1.0,80,1,0,0,0,1,1,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00167,42,65,cWW,"{""cWW"": 75}",0.9375,80,1,0,0,0,1,1,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00167,42,71,tSW,"{""tSW"": 53}",0.6625,80,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00167,50,57,cWW,"{""cWW"": 66}",0.825,80,0,0,0,0,1,1,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00167,53,82,cWS,"{""cWS"": 56}",0.7089,79,1,1,0,0,0,0,0,1,0,2,24-82:56/0/21/2,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00167,54,81,cWS,"{""cWS"": 71}",0.8987,79,0,1,0,0,0,0,0,1,0,1,25-81:70/1/8/0,tertiary (nested),base triple / bifurcation with an SS_cons pair
+RF00167,66,70,cSW,"{""cSW"": 59}",0.7375,80,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00167,67,68,cSH,"{""cSH"": 49}",0.6533,75,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00162,12,44,cSS,"{""cSS"": 28}",0.9655,29,1,1,0,0,0,0,0,1,0,2,44-71:28/0/1/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00162,12,71,tSS,"{""tSS"": 26}",0.8966,29,1,1,0,0,0,0,0,1,0,2,44-71:26/0/3/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00162,18,37,tSH,"{""tSH"": 14, ""cWW"": 2}",0.5517,29,0,0,0,1,1,0,1,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00162,20,35,tHS,"{""tHS"": 23}",0.7931,29,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00162,23,74,tSW,"{""tSW"": 22}",0.7586,29,1,1,0,0,0,0,0,1,0,2,23-29:22/0/7/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00162,25,80,cWW,"{""cWW"": 24}",0.8276,29,1,0,0,0,1,1,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00162,26,79,cWW,"{""cWW"": 27}",0.931,29,1,0,0,0,1,1,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00162,27,78,cWW,"{""cWW"": 29}",1.0,29,1,0,0,0,1,1,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00162,28,77,cWW,"{""cWW"": 29}",1.0,29,1,0,0,0,1,1,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00162,30,73,cSW,"{""cSW"": 25}",0.8621,29,1,1,0,0,0,0,0,1,0,2,22-30:25/0/4/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00162,47,48,cSH,"{""cSH"": 21}",0.7241,29,0,1,0,0,0,0,0,1,0,1,48-68:21/0/8/0,tertiary (nested),base triple / bifurcation with an SS_cons pair
+RF00162,50,66,cWW,"{""cWW"": 26}",0.963,27,0,1,1,1,0,1,0,0,1,2,50-64:0/25/1/0,shift,alternative partner (replaces an SS_cons pair)
+RF00059,12,88,cSS,"{""cSS"": 30}",0.8108,37,1,1,0,0,0,0,0,1,0,2,12-54:30/0/7/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00059,13,60,tSS,"{""tSS"": 34}",0.9189,37,1,1,0,0,0,0,0,1,0,2,13-53:34/0/3/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00059,15,35,tSS,"{""tSS"": 35}",0.9459,37,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00059,15,51,cWW,"{""cWW"": 29}",0.7838,37,0,0,0,1,1,1,0,0,0,2,,helix_extension,helix extension
+RF00059,17,75,cSS,"{""cSS"": 21}",0.5833,36,1,1,0,0,0,0,0,1,0,2,17-31:21/0/14/1,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00059,18,74,cSS,"{""cSS"": 30}",0.8333,36,1,1,0,0,0,0,0,1,0,2,18-30:30/0/6/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00059,22,27,cWW,"{""cWW"": 11}",0.55,20,0,1,1,0,0,1,0,0,1,1,21-27:0/11/9/0,shift,alternative partner (replaces an SS_cons pair)
+RF00059,23,26,cWW,"{""cWW"": 11, ""cWH"": 8}",0.95,20,0,0,0,0,1,1,1,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00059,32,36,tWH,"{""tWH"": 36}",0.973,37,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00059,53,60,cSS,"{""cSS"": 25}",0.6757,37,1,1,0,0,0,0,0,1,0,2,13-53:25/0/12/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00059,54,88,tSS,"{""tSS"": 34}",0.9189,37,1,1,0,0,0,0,0,1,0,2,12-54:34/0/3/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00059,59,84,tWH,"{""tWH"": 8}",0.5714,14,1,1,0,0,0,0,0,1,0,2,63-84:8/0/6/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00059,60,87,tHS,"{""tHS"": 34}",0.9189,37,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00059,64,82,cWH,"{""cWH"": 33}",0.9429,35,0,1,1,0,0,0,0,0,1,1,64-83:0/21/0/2,shift,alternative partner (replaces an SS_cons pair)
+RF00005,8,14,tWH,"{""tWH"": 42}",0.7,60,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00005,8,20,tSS,"{""tSS"": 32, ""tWW"": 1}",0.5789,57,1,0,0,0,1,0,1,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00005,15,46,tWW,"{""tWW"": 34}",0.5763,59,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00005,18,54,cWW,"{""cWW"": 31}",0.5636,55,1,0,0,0,1,1,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00005,21,45,tHW,"{""tHW"": 35}",0.6034,58,1,1,0,0,0,0,0,1,0,2,13-21:33/2/7/16,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00005,25,43,cWW,"{""cWW"": 36, ""tWW"": 1}",0.6167,60,0,0,0,1,1,1,1,0,0,2,,helix_extension,helix extension
+RF00005,52,56,tWH,"{""tWH"": 42, ""tSW"": 1}",0.7288,59,0,0,0,0,1,0,1,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00011,7,362,tSH,"{""tSH"": 50}",1.0,50,0,1,1,1,0,0,0,0,1,2,7-361:0/50/0/0,shift,alternative partner (replaces an SS_cons pair)
+RF00011,16,312,cSS,"{""cSS"": 47}",0.94,50,0,1,0,0,0,0,0,1,0,1,16-35:47/0/3/0,tertiary (nested),base triple / bifurcation with an SS_cons pair
+RF00011,22,29,cWW,"{""cWW"": 50}",1.0,50,0,0,0,1,1,1,0,0,0,2,,helix_extension,helix extension
+RF00011,23,28,cWW,"{""cWW"": 50}",1.0,50,0,0,0,0,1,1,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00011,24,27,cWW,"{""cWW"": 50}",1.0,50,0,0,0,0,1,1,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00011,35,312,tSS,"{""tSS"": 48}",0.96,50,0,1,0,0,0,0,0,1,0,1,16-35:48/0/2/0,tertiary (nested),base triple / bifurcation with an SS_cons pair
+RF00011,37,347,cWW,"{""cWW"": 50}",1.0,50,1,0,0,0,1,1,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00011,39,359,tHW,"{""tHW"": 35, ""tWW"": 2}",0.74,50,1,0,0,0,1,0,1,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00011,40,348,cWS,"{""cWS"": 35}",0.7,50,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00011,41,358,cWW,"{""cWW"": 47}",0.94,50,1,0,0,0,1,1,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00011,42,357,cWW,"{""cWW"": 50}",1.0,50,1,0,0,0,1,1,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00011,44,356,cWW,"{""cWW"": 50}",1.0,50,1,0,0,0,1,1,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00011,45,97,cSS,"{""cSS"": 49}",0.98,50,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00011,45,355,cWW,"{""cWW"": 50}",1.0,50,1,0,0,0,1,1,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00011,46,354,cWW,"{""cWW"": 50}",1.0,50,1,0,0,0,1,1,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00011,47,90,tSS,"{""tSS"": 50}",1.0,50,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00011,47,353,cWW,"{""cWW"": 50}",1.0,50,1,0,0,0,1,1,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00011,48,352,cWW,"{""cWW"": 50}",1.0,50,1,0,0,0,1,1,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00011,59,277,cSS,"{""cSS"": 43}",0.86,50,1,1,0,0,0,0,0,1,0,2,59-66:43/0/7/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00011,60,64,tWH,"{""tWH"": 50}",1.0,50,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00011,61,272,tSW,"{""tSW"": 49}",0.98,50,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00011,64,271,cWS,"{""cWS"": 40}",0.8,50,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00011,66,277,tSS,"{""tSS"": 50}",1.0,50,1,1,0,0,0,0,0,1,0,2,59-66:50/0/0/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00011,71,72,cSH,"{""cSH"": 35}",0.7,50,0,1,0,0,0,0,0,1,0,1,54-71:35/0/15/0,tertiary (nested),base triple / bifurcation with an SS_cons pair
+RF00011,88,97,tSH,"{""tSH"": 50}",1.0,50,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00011,89,95,tHW,"{""tHW"": 48}",0.96,50,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00011,89,354,cSS,"{""cSS"": 50}",1.0,50,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00011,90,94,tHW,"{""tHW"": 44}",0.88,50,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00011,91,93,cSH,"{""cSH"": 41}",0.82,50,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00011,97,355,tSS,"{""tSS"": 40}",0.8,50,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00011,132,158,tHS,"{""tHS"": 27, ""cWS"": 1}",0.56,50,0,0,0,0,1,0,1,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00011,133,157,cWW,"{""cWW"": 40}",0.8,50,0,0,0,1,1,1,0,0,0,2,,helix_extension,helix extension
+RF00011,166,170,tWW,"{""tWW"": 37}",0.74,50,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00011,196,199,tSH,"{""tSH"": 27, ""tSW"": 1}",0.56,50,0,0,0,1,1,0,1,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00011,238,256,tHS,"{""tHS"": 43}",0.86,50,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00011,266,281,tSH,"{""tSH"": 32}",0.64,50,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00011,267,280,tHS,"{""tHS"": 47}",0.94,50,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00011,268,279,tHS,"{""tHS"": 50}",1.0,50,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00011,269,278,cWW,"{""cWW"": 50}",1.0,50,0,0,0,0,1,1,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00011,270,277,tSH,"{""tSH"": 49}",0.98,50,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00011,272,276,tHW,"{""tHW"": 41}",0.82,50,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00011,306,312,cSW,"{""cSW"": 45}",0.9,50,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00011,312,351,tHW,"{""tHW"": 47}",0.94,50,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00011,313,350,tWH,"{""tWH"": 45}",0.9,50,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00011,321,345,cWW,"{""cWW"": 46}",0.92,50,0,0,0,1,1,1,0,0,0,2,,helix_extension,helix extension
+RF00011,347,360,cSS,"{""cSS"": 47}",0.94,50,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,3,618,tSS,"{""tSS"": 47}",0.8393,56,1,1,0,0,0,0,0,1,0,2,602-618:47/0/9/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,13,20,tHW,"{""tHW"": 50}",0.8333,60,0,1,1,0,0,0,0,0,1,1,13-21:0/50/0/10,shift,alternative partner (replaces an SS_cons pair)
+RF00177,13,905,cWH,"{""cWH"": 56}",0.9492,59,1,1,1,0,0,0,0,0,1,2,13-21:0/56/0/3,shift,alternative partner (replaces an SS_cons pair)
+RF00177,15,910,cWW,"{""cWW"": 55}",0.9322,59,1,0,0,0,1,1,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,16,909,cWW,"{""cWW"": 55}",0.9322,59,1,0,0,0,1,1,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,16,1070,cSS,"{""cSS"": 38}",0.6441,59,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,17,908,cWW,"{""cWW"": 58}",0.9831,59,1,0,0,0,1,1,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,17,1069,cSS,"{""cSS"": 48}",0.8136,59,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,18,907,cWW,"{""cWW"": 59}",1.0,59,1,0,0,0,1,1,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,19,906,cWW,"{""cWW"": 57}",0.9661,59,1,0,0,0,1,1,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,21,904,tSH,"{""tSH"": 59}",1.0,59,1,1,1,0,0,0,0,0,1,2,13-21:0/59/0/0,shift,alternative partner (replaces an SS_cons pair)
+RF00177,26,548,tHS,"{""tHS"": 60}",1.0,60,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,37,394,tWW,"{""tWW"": 58}",0.9667,60,1,1,1,0,0,0,0,0,1,2,37-537:0/58/0/2,shift,alternative partner (replaces an SS_cons pair)
+RF00177,42,612,tSS,"{""tSS"": 58}",0.9667,60,1,1,0,0,0,0,0,1,0,2,42-397:58/0/2/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,49,359,cWS,"{""cWS"": 44}",0.7333,60,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,49,362,tHW,"{""tHW"": 32}",0.5333,60,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,51,107,cHS,"{""cHS"": 48}",0.8,60,1,1,0,0,0,0,0,1,0,2,107-310:48/0/12/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,55,354,tHS,"{""tHS"": 50}",0.8333,60,0,1,0,1,0,0,0,1,0,2,54-354:50/0/10/0,tertiary (nested),base triple / bifurcation with an SS_cons pair
+RF00177,55,365,tWW,"{""tWW"": 49}",0.8167,60,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,64,68,cWH,"{""cWH"": 54}",0.9,60,1,1,0,0,0,0,0,1,0,2,68-94:52/2/5/1,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,67,165,cSS,"{""cSS"": 51}",0.85,60,1,1,0,0,0,0,0,1,0,2,67-95:50/1/9/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,69,93,tSH,"{""tSH"": 40}",0.6667,60,0,1,0,1,0,0,0,1,0,2,69-92:40/0/19/1,tertiary (nested),base triple / bifurcation with an SS_cons pair
+RF00177,95,145,cSS,"{""cSS"": 41}",0.6833,60,1,1,0,0,0,0,0,1,0,2,67-95:41/0/18/1,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,102,321,tHS,"{""tHS"": 54}",0.9,60,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,105,312,cWW,"{""cWW"": 54}",0.9,60,0,0,0,1,1,1,0,0,0,2,,helix_extension,helix extension
+RF00177,106,350,cSS,"{""cSS"": 53}",0.8833,60,0,1,0,0,0,0,0,1,0,1,106-311:53/0/7/0,tertiary (nested),base triple / bifurcation with an SS_cons pair
+RF00177,112,284,tHW,"{""tHW"": 59}",0.9833,60,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,125,259,cSS,"{""cSS"": 38}",0.6333,60,1,1,0,0,0,0,0,1,0,2,125-228:38/0/21/1,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,127,226,cWW,"{""cWW"": 57}",0.95,60,0,0,0,1,1,1,0,0,0,2,,helix_extension,helix extension
+RF00177,136,204,tSS,"{""tSS"": 53}",0.8833,60,0,1,0,0,0,0,0,1,0,1,136-218:52/1/7/0,tertiary (nested),base triple / bifurcation with an SS_cons pair
+RF00177,142,168,cWW,"{""cWW"": 57}",0.95,60,0,0,0,1,1,1,0,0,0,2,,helix_extension,helix extension
+RF00177,142,1437,cSS,"{""cSS"": 47}",0.7966,59,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,143,166,tWH,"{""tWH"": 41}",0.6833,60,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,144,165,tWH,"{""tWH"": 55}",0.9167,60,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,145,164,tHW,"{""tHW"": 51}",0.85,60,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,154,344,tWS,"{""tWS"": 49}",0.8167,60,1,1,0,0,0,0,0,1,0,2,339-344:48/1/11/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,169,1438,tSS,"{""tSS"": 47}",0.7966,59,1,1,0,0,0,0,0,1,0,2,141-169:47/0/12/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,173,204,tWH,"{""tWH"": 33}",0.55,60,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,174,203,tWH,"{""tWH"": 50}",0.8333,60,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,176,202,tHW,"{""tHW"": 40, ""tWW"": 3}",0.7167,60,0,0,0,0,1,0,1,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,229,260,tSS,"{""tSS"": 31}",0.5167,60,1,1,0,0,0,0,0,1,0,2,122-229:28/3/28/1,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,240,279,tWH,"{""tWH"": 55}",0.9167,60,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,241,883,cWW,"{""cWW"": 55}",0.9322,59,1,0,0,0,1,1,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,243,278,tHS,"{""tHS"": 30}",0.5,60,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,248,251,cWH,"{""cWH"": 50}",0.8333,60,1,1,0,0,0,0,0,1,0,2,251-269:50/0/10/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,252,263,cHW,"{""cHW"": 47}",0.7833,60,1,1,0,0,0,0,0,1,0,2,252-268:47/0/12/1,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,289,598,tSW,"{""tSW"": 57}",0.95,60,1,1,0,0,0,0,0,1,0,2,289-305:57/0/3/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,296,556,cWH,"{""cWH"": 58}",0.9667,60,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,297,555,cSW,"{""cSW"": 50}",0.8333,60,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,306,597,cSW,"{""cSW"": 58}",0.9667,60,1,1,0,0,0,0,0,1,0,2,288-306:58/0/2/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,319,326,tWH,"{""tWH"": 48}",0.8,60,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,320,324,tWH,"{""tWH"": 59}",0.9833,60,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,332,1424,cSS,"{""cSS"": 52}",0.8814,59,1,1,0,0,0,0,0,1,0,2,315-332:52/0/7/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,335,348,cWW,"{""cWW"": 48}",0.8,60,0,0,0,1,1,1,0,0,0,2,,helix_extension,helix extension
+RF00177,340,343,tSW,"{""tSW"": 51}",0.85,60,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,363,391,cSW,"{""cSW"": 55}",0.9167,60,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,367,472,cSS,"{""cSS"": 44}",0.7333,60,1,1,0,0,0,0,0,1,0,2,367-388:44/0/16/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,368,370,cSH,"{""cSH"": 46}",0.7667,60,0,1,0,0,0,0,0,1,0,1,368-387:46/0/13/1,tertiary (nested),base triple / bifurcation with an SS_cons pair
+RF00177,369,386,tWH,"{""tWH"": 51}",0.85,60,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,370,388,cWS,"{""cWS"": 44}",0.7333,60,1,1,0,0,0,0,0,1,0,2,367-388:44/0/16/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,371,387,cWS,"{""cWS"": 53}",0.8833,60,0,1,0,0,0,0,0,1,0,1,368-387:53/0/6/1,tertiary (nested),base triple / bifurcation with an SS_cons pair
+RF00177,372,386,cWW,"{""cWW"": 60}",1.0,60,0,1,1,0,0,1,0,0,1,1,372-385:0/60/0/0,shift,alternative partner (replaces an SS_cons pair)
+RF00177,397,612,cSS,"{""cSS"": 42}",0.7,60,1,1,0,0,0,0,0,1,0,2,42-397:42/0/18/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,398,611,cSS,"{""cSS"": 49}",0.8167,60,1,1,0,0,0,0,0,1,0,2,41-398:49/0/11/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,401,488,tSS,"{""tSS"": 40}",0.6667,60,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,402,489,cWH,"{""cWH"": 40}",0.6667,60,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,407,429,tSH,"{""tSH"": 58}",0.9667,60,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,408,427,tWH,"{""tWH"": 50}",0.8333,60,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,410,425,tSS,"{""tSS"": 42}",0.7,60,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,411,427,tHW,"{""tHW"": 50}",0.8333,60,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,412,425,tHH,"{""tHH"": 50}",0.8333,60,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,417,420,tSW,"{""tSW"": 43}",0.7167,60,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,426,428,cWH,"{""cWH"": 51}",0.85,60,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,434,485,tWH,"{""tWH"": 54}",0.9,60,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,435,486,tWH,"{""tWH"": 46}",0.7667,60,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,444,477,tSH,"{""tSH"": 57}",0.95,60,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,445,476,tHW,"{""tHW"": 55}",0.9167,60,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,446,474,tWW,"{""tWW"": 52}",0.8667,60,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,449,470,tWW,"{""tWW"": 35, ""tHW"": 5}",0.6667,60,0,0,0,0,1,0,1,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,452,468,cWW,"{""cWW"": 47}",0.7833,60,0,0,0,1,1,1,0,0,0,2,,helix_extension,helix extension
+RF00177,456,464,cWW,"{""cWW"": 52}",0.8667,60,0,0,0,1,1,1,0,0,0,2,,helix_extension,helix extension
+RF00177,457,463,cWW,"{""cWW"": 49}",0.8167,60,0,0,0,0,1,1,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,458,462,cWW,"{""cWW"": 48}",0.8,60,0,0,0,0,1,1,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,493,500,tSS,"{""tSS"": 41}",0.6833,60,1,1,0,0,0,0,0,1,0,2,493-532:41/0/19/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,495,516,cWW,"{""cWW"": 58}",0.9667,60,1,0,0,0,1,1,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,496,515,cWW,"{""cWW"": 59}",0.9833,60,1,0,0,0,1,1,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,497,514,cWW,"{""cWW"": 60}",1.0,60,1,0,0,0,1,1,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,500,532,cSS,"{""cSS"": 38}",0.6333,60,1,1,0,0,0,0,0,1,0,2,493-532:38/0/22/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,506,509,cSW,"{""cSW"": 32}",0.5333,60,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,506,523,tWH,"{""tWH"": 53}",0.8833,60,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,510,519,tHS,"{""tHS"": 39}",0.65,60,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,517,525,tSS,"{""tSS"": 39}",0.65,60,1,1,0,0,0,0,0,1,0,2,512-517:39/0/20/1,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,553,874,tWW,"{""tWW"": 55}",0.9322,59,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,558,564,tSS,"{""tSS"": 54}",0.9,60,1,1,0,0,0,0,0,1,0,2,558-872:53/0/6/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,560,856,cWW,"{""cWW"": 58}",0.9831,59,1,0,0,0,1,1,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,561,855,cWW,"{""cWW"": 59}",1.0,59,1,0,0,0,1,1,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,567,719,cSS,"{""cSS"": 36}",0.6102,59,1,1,0,0,0,0,0,1,0,2,567-754:36/0/23/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,568,718,cSS,"{""cSS"": 55}",0.9322,59,1,1,0,0,0,0,0,1,0,2,568-753:55/0/3/1,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,571,750,tSH,"{""tSH"": 55}",0.9322,59,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,572,749,tWH,"{""tWH"": 58}",0.9831,59,0,1,1,0,0,0,0,0,1,1,572-748:0/58/0/1,shift,alternative partner (replaces an SS_cons pair)
+RF00177,573,748,tHS,"{""tHS"": 50}",0.8475,59,0,1,1,1,0,0,0,0,1,2,572-748:0/50/0/9,shift,alternative partner (replaces an SS_cons pair)
+RF00177,585,586,cSH,"{""cSH"": 38}",0.6333,60,0,1,0,0,0,0,0,1,0,1,586-634:38/0/20/2,tertiary (nested),base triple / bifurcation with an SS_cons pair
+RF00177,631,632,cSH,"{""cSH"": 39}",0.65,60,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,642,743,tWH,"{""tWH"": 55}",0.9322,59,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,644,742,tHS,"{""tHS"": 53}",0.8983,59,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,644,744,cWW,"{""cWW"": 58}",0.9831,59,0,0,0,0,1,1,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,648,738,cWW,"{""cWW"": 57}",0.9661,59,0,1,1,1,0,1,0,0,1,2,648-737:0/57/0/2,shift,alternative partner (replaces an SS_cons pair)
+RF00177,649,737,cWW,"{""cWW"": 30}",0.5085,59,0,1,1,0,0,1,0,0,1,1,648-737:0/30/0/29; 649-736:0/30/23/6,shift,alternative partner (replaces an SS_cons pair)
+RF00177,654,731,cWW,"{""cWW"": 44}",0.7458,59,0,0,0,1,1,1,0,0,0,2,,helix_extension,helix extension
+RF00177,655,714,cHW,"{""cHW"": 55}",0.9322,59,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,666,704,cWW,"{""cWW"": 58}",0.9831,59,0,0,0,1,1,1,0,0,0,2,,helix_extension,helix extension
+RF00177,675,695,tSH,"{""tSH"": 59}",1.0,59,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,676,694,tWH,"{""tWH"": 44}",0.7458,59,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,677,693,tHS,"{""tHS"": 40}",0.678,59,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,681,686,tSH,"{""tSH"": 53}",0.8983,59,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,686,787,tSS,"{""tSS"": 40}",0.678,59,1,1,0,0,0,0,0,1,0,2,775-787:40/0/18/1,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,687,775,cSS,"{""cSS"": 31}",0.5254,59,1,1,1,0,0,0,0,1,1,2,680-687:0/31/0/28; 775-787:31/0/27/1,shift,alternative partner (replaces an SS_cons pair)
+RF00177,756,803,tHW,"{""tHW"": 56}",0.9492,59,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,756,1516,cSS,"{""cSS"": 32}",0.5424,59,1,1,0,0,0,0,0,1,0,2,1501-1516:32/0/27/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,757,1515,cSS,"{""cSS"": 53}",0.8983,59,1,1,0,0,0,0,0,1,0,2,1502-1515:53/0/6/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,760,889,cSW,"{""cSW"": 48}",0.8136,59,1,1,0,0,0,0,0,1,0,2,760-799:48/0/11/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,770,792,tSH,"{""tSH"": 56}",0.9492,59,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,771,791,tHW,"{""tHW"": 55}",0.9322,59,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,772,790,tHS,"{""tHS"": 58}",0.9831,59,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,800,889,cSH,"{""cSH"": 42}",0.7119,59,1,1,0,0,0,0,0,1,0,2,759-800:42/0/17/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,807,1520,cWW,"{""cWW"": 59}",1.0,59,1,1,1,0,0,1,0,0,1,2,1497-1520:0/59/0/0,shift,alternative partner (replaces an SS_cons pair)
+RF00177,810,863,cWH,"{""cWH"": 52}",0.8814,59,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,817,862,tWW,"{""tWW"": 50}",0.8475,59,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,818,848,tHS,"{""tHS"": 53}",0.8983,59,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,850,859,tHS,"{""tHS"": 54}",0.9153,59,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,854,907,tSS,"{""tSS"": 56}",0.9492,59,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,857,863,tSS,"{""tSS"": 52}",0.8814,59,1,1,0,0,0,0,0,1,0,2,852-857:52/0/7/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,878,899,tSH,"{""tSH"": 59}",1.0,59,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,879,898,tHH,"{""tHH"": 52}",0.8814,59,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,880,881,cSH,"{""cSH"": 54}",0.9153,59,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,881,897,tWH,"{""tWH"": 55}",0.9322,59,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,882,896,tHS,"{""tHS"": 55}",0.9322,59,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,899,1404,cSS,"{""cSS"": 37}",0.6271,59,1,1,0,0,0,0,0,1,0,2,1404-1478:37/0/20/2,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,909,1070,tSS,"{""tSS"": 46}",0.7797,59,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,912,1389,tSS,"{""tSS"": 57}",0.9661,59,1,1,0,0,0,0,0,1,0,2,912-1386:57/0/2/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,914,1493,tSS,"{""tSS"": 42}",0.7119,59,1,1,0,0,0,0,0,1,0,2,914-1383:42/0/17/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,925,1374,cSW,"{""cSW"": 49, ""cSH"": 1}",0.8475,59,0,1,0,0,0,0,1,1,0,1,925-1371:48/2/8/1,tertiary (nested),base triple / bifurcation with an SS_cons pair
+RF00177,927,1369,tSH,"{""tSH"": 34}",0.5763,59,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,928,1367,cSS,"{""cSS"": 51}",0.8644,59,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,929,1366,cSS,"{""cSS"": 45}",0.7627,59,0,1,0,0,0,0,0,1,0,1,929-1335:45/0/12/2,tertiary (nested),base triple / bifurcation with an SS_cons pair
+RF00177,934,1330,tSH,"{""tSH"": 53}",0.8983,59,0,1,1,1,0,0,0,0,1,2,934-1228:0/53/0/6,shift,alternative partner (replaces an SS_cons pair)
+RF00177,936,1324,cSS,"{""cSS"": 40}",0.678,59,1,1,0,0,0,0,0,1,0,2,936-1226:39/1/13/6,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,946,950,tWW,"{""tWW"": 49}",0.8305,59,0,1,1,0,0,0,0,0,1,1,950-965:0/49/0/10,shift,alternative partner (replaces an SS_cons pair)
+RF00177,949,1212,tSS,"{""tSS"": 53}",0.8983,59,0,1,0,0,0,0,0,1,0,1,974-1212:50/3/6/0,tertiary (nested),base triple / bifurcation with an SS_cons pair
+RF00177,968,1307,tWS,"{""tWS"": 48}",0.8136,59,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,968,1351,tHW,"{""tHW"": 41}",0.6949,59,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,981,1204,tWH,"{""tWH"": 45}",0.7627,59,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,982,1034,tWH,"{""tWH"": 43}",0.7288,59,1,1,0,0,0,0,0,1,0,2,987-1034:42/1/11/5,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,983,1035,cWW,"{""cWW"": 55}",0.9322,59,0,1,1,0,0,1,0,0,1,1,986-1035:0/55/0/4,shift,alternative partner (replaces an SS_cons pair)
+RF00177,1005,1209,cSS,"{""cSS"": 35}",0.5932,59,1,1,0,0,0,0,0,1,0,2,977-1209:35/0/19/5,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,1006,1208,cSS,"{""cSS"": 31}",0.5254,59,1,1,0,0,0,0,0,1,0,2,978-1208:30/1/23/5,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,1043,1047,cWH,"{""cWH"": 56}",0.9492,59,1,1,1,0,0,0,0,1,1,2,1043-1196:0/56/0/3; 1047-1194:56/0/3/0,shift,alternative partner (replaces an SS_cons pair)
+RF00177,1045,1191,tHW,"{""tHW"": 44}",0.7458,59,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,1048,1193,tSH,"{""tSH"": 55}",0.9322,59,0,1,0,1,0,0,0,1,0,2,1048-1190:54/1/4/0,tertiary (nested),base triple / bifurcation with an SS_cons pair
+RF00177,1054,1181,tSS,"{""tSS"": 48}",0.8136,59,0,1,1,0,0,0,0,0,1,1,1054-1183:0/48/0/11,shift,alternative partner (replaces an SS_cons pair)
+RF00177,1056,1182,tWH,"{""tWH"": 44}",0.7458,59,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,1061,1075,tHH,"{""tHH"": 52}",0.8814,59,1,1,0,0,0,0,0,1,0,2,1061-1094:52/0/7/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,1062,1074,tHS,"{""tHS"": 44}",0.7458,59,1,1,0,0,0,0,0,1,0,2,1062-1093:44/0/15/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,1079,1161,tSS,"{""tSS"": 46}",0.7797,59,1,1,0,0,0,0,0,1,0,2,1079-1086:45/1/13/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,1080,1085,cWW,"{""cWW"": 54}",0.9153,59,0,0,0,1,1,1,0,0,0,2,,helix_extension,helix extension
+RF00177,1083,1099,cSS,"{""cSS"": 32}",0.5424,59,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,1086,1161,cSS,"{""cSS"": 47}",0.7966,59,1,1,0,0,0,0,0,1,0,2,1079-1086:47/0/11/1,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,1087,1160,cSS,"{""cSS"": 42}",0.7119,59,1,1,0,0,0,0,0,1,0,2,1078-1087:42/0/17/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,1114,1115,cSH,"{""cSH"": 52}",0.8814,59,0,1,0,0,0,0,0,1,0,1,1114-1140:48/4/4/3,tertiary (nested),base triple / bifurcation with an SS_cons pair
+RF00177,1115,1271,cWH,"{""cWH"": 43}",0.7288,59,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,1117,1136,cWW,"{""cWW"": 45}",0.7627,59,0,0,0,1,1,1,0,0,0,2,,helix_extension,helix extension
+RF00177,1117,1139,tSH,"{""tSH"": 42}",0.7119,59,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,1119,1120,cSH,"{""cSH"": 31}",0.5254,59,0,1,0,0,0,0,0,1,0,1,1119-1134:31/0/26/2,tertiary (nested),base triple / bifurcation with an SS_cons pair
+RF00177,1140,1271,cSW,"{""cSW"": 44}",0.7458,59,1,1,0,0,0,0,0,1,0,2,1114-1140:42/2/10/5,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,1147,1170,tSW,"{""tSW"": 47}",0.7966,59,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,1148,1169,tWS,"{""tWS"": 51}",0.8644,59,0,1,1,0,0,0,0,0,1,1,1149-1169:0/51/0/8,shift,alternative partner (replaces an SS_cons pair)
+RF00177,1149,1172,cWW,"{""cWW"": 57}",0.9661,59,0,1,1,0,0,1,0,0,1,1,1149-1169:0/57/0/2,shift,alternative partner (replaces an SS_cons pair)
+RF00177,1150,1152,cSH,"{""cSH"": 33}",0.5593,59,1,1,1,0,0,0,0,1,1,2,1150-1168:0/33/0/26; 1152-1166:32/1/22/4,shift,alternative partner (replaces an SS_cons pair)
+RF00177,1151,1173,cHW,"{""cHW"": 48}",0.8136,59,1,1,0,0,0,0,0,1,0,2,1151-1167:40/8/6/5,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,1157,1161,tSH,"{""tSH"": 49}",0.8305,59,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,1168,1172,tWH,"{""tWH"": 51}",0.8644,59,1,1,1,0,0,0,0,0,1,2,1150-1168:0/51/0/8,shift,alternative partner (replaces an SS_cons pair)
+RF00177,1228,1328,cWW,"{""cWW"": 58}",0.9831,59,0,1,1,0,0,1,0,0,1,1,934-1228:0/58/0/1,shift,alternative partner (replaces an SS_cons pair)
+RF00177,1229,1232,cSS,"{""cSS"": 31}",0.5254,59,0,1,0,0,0,0,0,1,0,1,1232-1287:29/2/25/3,tertiary (nested),base triple / bifurcation with an SS_cons pair
+RF00177,1229,1292,tHW,"{""tHW"": 45}",0.7627,59,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,1240,1279,tWH,"{""tWH"": 50}",0.8475,59,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,1243,1276,tWW,"{""tWW"": 53}",0.8983,59,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,1246,1249,cSS,"{""cSS"": 42}",0.7119,59,0,1,0,0,0,0,0,1,0,1,1246-1273:42/0/15/2; 1249-1268:42/0/16/1,tertiary (nested),base triple / bifurcation with an SS_cons pair
+RF00177,1251,1266,tSH,"{""tSH"": 52}",0.8814,59,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,1252,1265,tHS,"{""tHS"": 34, ""tSS"": 1}",0.5932,59,0,0,0,0,1,0,1,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,1259,1317,cSS,"{""cSS"": 31}",0.5254,59,1,1,0,0,0,0,0,1,0,2,1302-1317:28/3/24/4,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,1260,1303,tSS,"{""tSS"": 54}",0.9153,59,1,1,0,0,0,0,0,1,0,2,1303-1316:54/0/3/2,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,1288,1289,cSH,"{""cSH"": 30}",0.5085,59,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,1291,1292,cSH,"{""cSH"": 43}",0.7288,59,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,1295,1324,tSH,"{""tSH"": 52}",0.8814,59,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,1297,1322,tHS,"{""tHS"": 34}",0.5763,59,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,1306,1310,tWH,"{""tWH"": 48}",0.8136,59,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,1310,1352,tWS,"{""tWS"": 40}",0.678,59,1,0,0,0,1,0,0,0,0,2,,pseudoknot (crosses SS_cons),crossing (pseudoknot-like)
+RF00177,1336,1367,tWW,"{""tWW"": 52}",0.8814,59,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,1337,1366,tHH,"{""tHH"": 50}",0.8475,59,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,1338,1339,cSH,"{""cSH"": 48}",0.8136,59,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,1339,1365,tWH,"{""tWH"": 50}",0.8475,59,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,1340,1364,tHS,"{""tHS"": 57}",0.9661,59,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,1349,1354,tWW,"{""tWW"": 44, ""tWH"": 1}",0.7627,59,0,0,0,0,1,0,1,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,1394,1490,cSW,"{""cSW"": 48, ""cWW"": 1}",0.8305,59,0,0,0,1,1,0,1,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,1395,1510,cSS,"{""cSS"": 35}",0.5932,59,1,1,0,0,0,0,0,1,0,2,1395-1488:35/0/24/0,pseudoknot (crosses SS_cons),base triple / bifurcation with an SS_cons pair
+RF00177,1398,1485,cWW,"{""cWW"": 59}",1.0,59,0,0,0,0,1,1,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,1408,1474,tSH,"{""tSH"": 55}",0.9322,59,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,1409,1473,tHS,"{""tHS"": 56}",0.9492,59,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,1423,1459,tSH,"{""tSH"": 40}",0.678,59,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,1441,1444,tSW,"{""tSW"": 48}",0.8136,59,0,0,0,1,1,0,0,0,0,2,,tertiary (nested),"nested, outside SS_cons helices"
+RF00177,1489,1490,cSH,"{""cSH"": 48}",0.8136,59,0,0,0,0,1,0,0,0,0,1,,tertiary (nested),"nested, outside SS_cons helices"

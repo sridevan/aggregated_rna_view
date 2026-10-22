@@ -6,6 +6,8 @@ import type { Numbering } from './numbering'
  * `rna_explorer interactions` (interactions.json); here only per-instance status and two-instance comparisons are derived from the same
  * per-instance observations and eligibility codes, with the same definitions: an interaction is evaluated in an instance only when its chain
  * is FR3D-annotated and both positions are match residues with coordinates and complete bases; otherwise it is "not comparable", never absent.
+ * Base pairs (schema 1.4+): "paired" = a true or a near FR3D base pair of any class (near pairs from the pinned local fr3d-python run, BGSU
+ * exports none); a near-only pair has its own state ("Near") and keeps its near class, it is never shown as a true pair.
  * Identifiers are Rfam-position based (`${category}:${pos_1}-${pos_2}`); displayed labels never identify anything.
  */
 
@@ -31,11 +33,25 @@ export function categoryAvailability(ds: InteractionsDataset, c: InteractionCate
   return ds.pairs.some((p) => p.category === c) ? 'ok' : 'empty'
 }
 
+/** Rfam SS_cons comparison of a base pair (schema 1.4+): in the Rfam consensus secondary structure (2D) and paired in 3D, 2D only, 3D only */
+export type ConsensusStatus = 'both' | '2d' | '3d'
+export const CONSENSUS_TEXT: Record<ConsensusStatus, string> = { both: 'Both', '2d': '2D', '3d': '3D' }
+export const CONSENSUS_TIP: Record<ConsensusStatus, string> = {
+  both: 'In the Rfam consensus secondary structure (2D) and paired in 3D (true or near FR3D base pair) in at least one evaluable chain',
+  '2d': 'In the Rfam consensus secondary structure (2D) but not paired (no true or near FR3D base pair) in any evaluable chain',
+  '3d': 'Base pair observed in 3D that is not in the Rfam consensus secondary structure',
+}
+/** Family-wide "paired" counts of an interaction: base pairs count true or near pairs (schema 1.4+); other categories and older files the
+ *  observed (non-near) interactions only. */
+export const paired = (p: InteractionPair) => ({ k: p.n_paired ?? p.n_observed, f: p.frequency_paired !== undefined ? p.frequency_paired : p.frequency, entries: p.n_entries_paired ?? p.n_entries_observed })
+
 /** One instance's interactions on consensus position pairs. */
 export interface InstanceIndex {
   inst: InteractionInstance
   /** pairKey -> non-near FR3D classes (sorted) */
   byKey: Map<string, string[]>
+  /** pairKey -> near base-pair classes (sorted; base pairs only) */
+  nearByKey: Map<string, string[]>
   /** endpointKey -> every annotation between the two positions ("Bs s35", "Bp ncWW", "Br 9BR"), near ones included */
   byPos: Map<string, string[]>
   /** interactions with an inserted or flanking (non-consensus) endpoint: kept in the data, not compared on consensus positions */
@@ -46,7 +62,7 @@ export function indexInstance(ds: InteractionsDataset, seqName: string): Instanc
   let m = indexCache.get(ds); if (!m) { m = new Map(); indexCache.set(ds, m) }
   const hit = m.get(seqName); if (hit) return hit
   const inst = ds.instances.find((x) => x.seq_name === seqName); if (!inst) return null
-  const byKey = new Map<string, string[]>(), byPos = new Map<string, string[]>(); let off = 0
+  const byKey = new Map<string, string[]>(), nearByKey = new Map<string, string[]>(), byPos = new Map<string, string[]>(); let off = 0
   // schema 1.2+: compact per-chain index (observed pair indices by class + near annotations); older files: every observation inline
   const rows: [InteractionCategory, string, number | string | null, number | string | null][] = ds.observations
     ? (ds.observations[seqName] ?? []).map((o) => [o[0], o[1], o[4], o[5]])
@@ -56,19 +72,23 @@ export function indexInstance(ds: InteractionsDataset, seqName: string): Instanc
   for (const [cat, cls, p1, p2] of rows) {
     if (typeof p1 !== 'number' || typeof p2 !== 'number') { off++; continue }
     const pk = endpointKey(p1, p2); (byPos.get(pk) ?? byPos.set(pk, []).get(pk)!).push(`${CATEGORY_CODE[cat]} ${cls}`)
-    if (cls.startsWith('n')) continue
-    const k = pairKey(cat, p1, p2), l = byKey.get(k) ?? byKey.set(k, []).get(k)!
+    const near = cls.startsWith('n')
+    if (near && cat !== 'basepair') continue
+    const into = near ? nearByKey : byKey, k = pairKey(cat, p1, p2), l = into.get(k) ?? into.set(k, []).get(k)!
     if (!l.includes(cls)) { l.push(cls); l.sort() }
   }
-  const ix = { inst, byKey, byPos, nOffConsensus: off }; m.set(seqName, ix); return ix
+  const ix = { inst, byKey, nearByKey, byPos, nOffConsensus: off }; m.set(seqName, ix); return ix
 }
 
-type InteractionIndexLike = Pick<InstanceIndex, 'inst' | 'byKey' | 'byPos'>
-export type InstanceState = 'present' | 'absent' | 'not_comparable'
-export const STATE_TEXT: Record<InstanceState, string> = { present: 'Present', absent: 'Absent', not_comparable: 'Not comparable' }
+type InteractionIndexLike = Pick<InstanceIndex, 'inst' | 'byKey' | 'byPos'> & Partial<Pick<InstanceIndex, 'nearByKey'>>
+/** 'near': base pairs only, a near FR3D base pair (no true pair) between the two positions */
+export type InstanceState = 'present' | 'near' | 'absent' | 'not_comparable'
+export const STATE_TEXT: Record<InstanceState, string> = { present: 'Present', near: 'Near', absent: 'Absent', not_comparable: 'Not comparable' }
+/** an interaction that counts as formed: present, or (base pairs) near */
+export const isPaired = (s: InstanceState | null | undefined) => s === 'present' || s === 'near'
 export interface InstanceStatus {
   state: InstanceState
-  /** FR3D classes of the interaction in this instance (present only) */
+  /** FR3D classes of the interaction in this instance (present: true classes; near: the near classes) */
   classes: string[]
   /** other FR3D annotations between the same two positions (other category, or near), shown with an absent interaction */
   other: string[]
@@ -91,9 +111,11 @@ export function statusIn(ix: InteractionIndexLike, cat: InteractionCategory, i: 
   const bad = ([[i, ix.inst.eligibility[i - 1] ?? '-', 'base'], [j, second[j - 1] ?? '-', kind2]] as const).filter(([, c]) => c !== 'E')
   if (bad.length) return { state: 'not_comparable', classes: [], other: [], reason: bad.map(([p, c, k]) => `Rfam ${p}: ${c === 'I' ? INCOMPLETE[k] : CODE_REASON[c] ?? c}`).join('; ') }
   const classes = ix.byKey.get(pairKey(cat, i, j)) ?? []
-  const own = (s: string) => s.startsWith(`${CATEGORY_CODE[cat]} `) && classes.includes(s.slice(CATEGORY_CODE[cat].length + 1))
+  const near = classes.length ? [] : ix.nearByKey?.get(pairKey(cat, i, j)) ?? []
+  const mine = classes.length ? classes : near
+  const own = (s: string) => s.startsWith(`${CATEGORY_CODE[cat]} `) && mine.includes(s.slice(CATEGORY_CODE[cat].length + 1))
   const other = (ix.byPos.get(endpointKey(i, j)) ?? []).filter((s) => !own(s))
-  return classes.length ? { state: 'present', classes, other, reason: null } : { state: 'absent', classes: [], other, reason: null }
+  return classes.length ? { state: 'present', classes, other, reason: null } : near.length ? { state: 'near', classes: near, other, reason: null } : { state: 'absent', classes: [], other, reason: null }
 }
 
 /** canonical Watson-Crick or wobble pair: cWW with AU, GC or GU */
@@ -104,15 +126,17 @@ export const pairIsCanonical = (p: InteractionPair) => p.category === 'basepair'
 export const dominantClass = (p: InteractionPair) => Object.keys(p.classes)[0] ?? ''
 
 /** Interaction filters (shared by both modes): one switch per BGSU category (Bp only by default), and base-pair-only refinements. */
-export interface InteractionFilter { basepair: boolean; stacking: boolean; baseribose: boolean; basephosphate: boolean; canonical: 'all' | 'canonical' | 'noncanonical'; structure: 'all' | 'secondary' | 'tertiary'; region: string | null }
-export const DEFAULT_FILTER: InteractionFilter = { basepair: true, stacking: false, baseribose: false, basephosphate: false, canonical: 'all', structure: 'all', region: null }
-export function passes(f: InteractionFilter, p: Pick<InteractionPair, 'category' | 'structure_class' | 'region_1' | 'region_2'>, canonical: boolean): boolean {
+export interface InteractionFilter { basepair: boolean; stacking: boolean; baseribose: boolean; basephosphate: boolean; canonical: 'all' | 'canonical' | 'noncanonical'; structure: 'all' | 'secondary' | 'tertiary'; consensus: 'all' | ConsensusStatus; region: string | null }
+export const DEFAULT_FILTER: InteractionFilter = { basepair: true, stacking: false, baseribose: false, basephosphate: false, canonical: 'all', structure: 'all', consensus: 'all', region: null }
+export function passes(f: InteractionFilter, p: Pick<InteractionPair, 'category' | 'structure_class' | 'region_1' | 'region_2'> & Partial<Pick<InteractionPair, 'consensus'>>, canonical: boolean): boolean {
   if (!f[p.category]) return false
+  const consensus = f.consensus ?? 'all'
   if (p.category === 'basepair') {
     if (f.canonical === 'canonical' && !canonical) return false
     if (f.canonical === 'noncanonical' && canonical) return false
     if (f.structure !== 'all' && p.structure_class !== f.structure) return false
-  } else if (f.canonical !== 'all' || f.structure !== 'all') return false   // canonical / secondary / tertiary describe base pairs only (other categories are hidden while they are set)
+    if (consensus !== 'all' && p.consensus !== consensus) return false
+  } else if (f.canonical !== 'all' || f.structure !== 'all' || consensus !== 'all') return false   // canonical / context / Rfam consensus describe base pairs only (other categories are hidden while they are set)
   if (f.region && p.region_1 !== f.region && p.region_2 !== f.region) return false
   return true
 }
@@ -122,31 +146,31 @@ export type CompareStatus = 'shared' | 'only_a' | 'only_b' | 'reclassified' | 'n
 export const COMPARE_TEXT: Record<CompareStatus, string> = { shared: 'Shared', only_a: 'Only in A', only_b: 'Only in B', reclassified: 'Different class', not_comparable: 'Not comparable' }
 /** short explanations (chip and legend tooltips); 'reclassified' is the internal key of "Different class" */
 export const COMPARE_TIP: Record<CompareStatus, string> = {
-  shared: 'Same interaction type and FR3D class in both structures', only_a: 'Annotated in A; both nucleotides eligible in B but not annotated there',
-  only_b: 'Annotated in B; both nucleotides eligible in A but not annotated there', reclassified: 'Same interaction type, different FR3D class (e.g. cWW in A, tWW in B)',
+  shared: 'Same interaction type and FR3D class in both structures (base pairs: true or near)', only_a: 'Annotated in A; both nucleotides eligible in B but not annotated there',
+  only_b: 'Annotated in B; both nucleotides eligible in A but not annotated there', reclassified: 'Same interaction type, different FR3D class (e.g. cWW in A, tWW or near ncWW in B)',
   not_comparable: 'Cannot be evaluated in one structure (missing, incomplete or unmapped nucleotide, or no annotation)' }
 export interface CompareRow { id: string; category: InteractionCategory; pos_1: number; pos_2: number; status: CompareStatus; a: InstanceStatus; b: InstanceStatus }
 export function compareInstances(a: InstanceIndex, b: InstanceIndex): CompareRow[] {
-  const keys = new Set([...a.byKey.keys(), ...b.byKey.keys()])
+  const keys = new Set([...a.byKey.keys(), ...b.byKey.keys(), ...a.nearByKey.keys(), ...b.nearByKey.keys()])
   const rows: CompareRow[] = []
   for (const k of keys) {
     const [cat, rest] = k.split(':') as [InteractionCategory, string]; const [i, j] = rest.split('-').map(Number)
     const sa = statusIn(a, cat, i, j), sb = statusIn(b, cat, i, j)
     const status: CompareStatus = sa.state === 'not_comparable' || sb.state === 'not_comparable' ? 'not_comparable'
-      : sa.state === 'present' && sb.state === 'present' ? (sa.classes.join() === sb.classes.join() ? 'shared' : 'reclassified')
-        : sa.state === 'present' ? 'only_a' : 'only_b'
+      : isPaired(sa.state) && isPaired(sb.state) ? (sa.classes.join() === sb.classes.join() ? 'shared' : 'reclassified')
+        : isPaired(sa.state) ? 'only_a' : 'only_b'
     rows.push({ id: k, category: cat, pos_1: i, pos_2: j, status, a: sa, b: sb })
   }
   return rows.sort((x, y) => x.pos_1 - y.pos_1 || x.pos_2 - y.pos_2 || x.category.localeCompare(y.category))
 }
 
-/** Instances in which a family-wide interaction is observed (eligible, non-near), best supported first: the given preferred instances
- *  (e.g. the numbering reference), then by resolution. */
+/** Instances in which a family-wide interaction is formed (eligible; base pairs true or near), best supported first: the given preferred
+ *  instances (e.g. the numbering reference), then by resolution. */
 export function supportingInstances(ds: InteractionsDataset, p: InteractionPair, resolution: (sn: string) => number | null, preferred: string[] = []): { seqName: string; classes: string[] }[] {
   const out: { seqName: string; classes: string[] }[] = []
   for (const inst of ds.instances) {
     const ix = indexInstance(ds, inst.seq_name)!; const s = statusIn(ix, p.category, p.pos_1, p.pos_2)
-    if (s.state === 'present') out.push({ seqName: inst.seq_name, classes: s.classes })
+    if (isPaired(s.state)) out.push({ seqName: inst.seq_name, classes: s.classes })
   }
   const rank = (sn: string) => { const k = preferred.indexOf(sn); return k < 0 ? preferred.length : k }
   return out.sort((x, y) => rank(x.seqName) - rank(y.seqName) || (resolution(x.seqName) ?? 99) - (resolution(y.seqName) ?? 99) || x.seqName.localeCompare(y.seqName))
@@ -296,7 +320,7 @@ export function groupOccurrence(ds: InteractionsDataset, members: InteractionPai
   let k = 0, n = 0
   for (const inst of ds.instances) {
     const ix = indexInstance(ds, inst.seq_name)!; let el = false, pr = false
-    for (const p of members) { const s = statusIn(ix, p.category, p.pos_1, p.pos_2); if (s.state !== 'not_comparable') el = true; if (s.state === 'present') pr = true }
+    for (const p of members) { const s = statusIn(ix, p.category, p.pos_1, p.pos_2); if (s.state !== 'not_comparable') el = true; if (isPaired(s.state)) pr = true }
     if (el) { n++; if (pr) k++ }
   }
   return { k, n, frequency: n ? k / n : null }
@@ -394,9 +418,9 @@ export function kabsch(mobile: V3[], target: V3[]): { R: number[][]; t: V3; rmsd
 }
 
 /**
- * Annotation coverage of a chain: of the Rfam consensus helix base pairs (SS_cons position pairs observed in the family) that can be evaluated
- * in the chain (both bases eligible), how many FR3D annotates (any base-pair class). Low coverage flags chains whose models FR3D annotates
- * sparsely (e.g. distorted geometry at moderate resolution), so that "only in A/B" differences are read with care.
+ * Annotation coverage of a chain: of the Rfam consensus helix base pairs (SS_cons position pairs with a base-pair row) that can be evaluated
+ * in the chain (both bases eligible), how many FR3D annotates as paired (any class, true or near). Low coverage flags chains whose models
+ * FR3D annotates sparsely, so that "only in A/B" differences are read with care.
  */
 export function helixCoverage(ds: InteractionsDataset, seqName: string): { k: number; n: number; fraction: number | null } {
   const ix = indexInstance(ds, seqName); if (!ix) return { k: 0, n: 0, fraction: null }
@@ -405,7 +429,7 @@ export function helixCoverage(ds: InteractionsDataset, seqName: string): { k: nu
     if (p.category !== 'basepair' || !p.in_ss_cons) continue
     const st = statusIn(ix, 'basepair', p.pos_1, p.pos_2)
     if (st.state === 'not_comparable') continue
-    n++; if (st.state === 'present') k++
+    n++; if (isPaired(st.state)) k++
   }
   return { k, n, fraction: n ? k / n : null }
 }
@@ -418,14 +442,14 @@ export function medianHelixCoverage(ds: InteractionsDataset): number | null {
 
 /**
  * Per-class breakdown of one family interaction whose chains carry different FR3D classes: for each class, the chains (and their PDB entries)
- * in which it is annotated, out of the interaction's eligible chains. A chain with two annotated classes (e.g. alternate locations) counts in
+ * in which it is annotated, out of the interaction's eligible chains. Base pairs include near classes (chains with a near pair only). A chain with two annotated classes (e.g. alternate locations) counts in
  * both, so the class counts can sum to more than the observed count.
  */
 export function classBreakdown(ds: InteractionsDataset, p: InteractionPair, pdbOf: (sn: string) => string): { cls: string; chains: number; entries: number }[] {
   const by = new Map<string, { chains: number; entries: Set<string> }>()
   for (const inst of ds.instances) {
     const s = statusIn(indexInstance(ds, inst.seq_name)!, p.category, p.pos_1, p.pos_2)
-    if (s.state !== 'present') continue
+    if (!isPaired(s.state)) continue
     for (const c of s.classes) { const e = by.get(c) ?? by.set(c, { chains: 0, entries: new Set() }).get(c)!; e.chains++; e.entries.add(pdbOf(inst.seq_name)) }
   }
   return [...by.entries()].map(([cls, v]) => ({ cls, chains: v.chains, entries: v.entries.size })).sort((a, b) => b.chains - a.chains || a.cls.localeCompare(b.cls))

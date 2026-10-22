@@ -1,0 +1,108 @@
+acc,seq_name,helix,pos_1,pos_2,elig,res_i,res_j,nts,pp,class,partners_i,partners_j,annotated_i_j,method,resolution,title
+RF00005,3qsy_3_D_C,1-70,1,70,EE,C1,A72,CA,**,-,,,01,X-ray diffraction,3.2,Recognition of the methionylated initiator tRNA by the translation initiation factor 2 in 
+RF00005,3qsy_3_D_C,1-70,2,69,EE,G2,C71,GC,**,-,,,00,X-ray diffraction,3.2,Recognition of the methionylated initiator tRNA by the translation initiation factor 2 in 
+RF00005,3qsy_3_D_C,1-70,3,68,EE,C3,G70,CG,**,-,,,11,X-ray diffraction,3.2,Recognition of the methionylated initiator tRNA by the translation initiation factor 2 in 
+RF00005,3qsy_3_D_C,1-70,4,67,EE,G4,C69,GC,**,-,,,11,X-ray diffraction,3.2,Recognition of the methionylated initiator tRNA by the translation initiation factor 2 in 
+RF00005,3qsy_3_D_C,1-70,5,66,EE,G5,C68,GC,**,cWW,66:cWW,5:cWW,11,X-ray diffraction,3.2,Recognition of the methionylated initiator tRNA by the translation initiation factor 2 in 
+RF00005,3qsy_3_D_C,1-70,6,65,EE,G6,C67,GC,**,cWW,65:cWW,6:cWW,11,X-ray diffraction,3.2,Recognition of the methionylated initiator tRNA by the translation initiation factor 2 in 
+RF00005,3qsy_3_D_C,1-70,7,64,EE,G7,C66,GC,**,cWW,64:cWW,7:cWW,11,X-ray diffraction,3.2,Recognition of the methionylated initiator tRNA by the translation initiation factor 2 in 
+RF00005,3qsy_3_D_C,10-24,10,24,EE,G10,C25,GC,**,-,,,11,X-ray diffraction,3.2,Recognition of the methionylated initiator tRNA by the translation initiation factor 2 in 
+RF00005,3qsy_3_D_C,10-24,11,23,EE,A11,U24,AU,**,-,,,11,X-ray diffraction,3.2,Recognition of the methionylated initiator tRNA by the translation initiation factor 2 in 
+RF00005,3qsy_3_D_C,10-24,12,22,EE,G12,C23,GC,**,cWW,22:cWW,12:cWW,11,X-ray diffraction,3.2,Recognition of the methionylated initiator tRNA by the translation initiation factor 2 in 
+RF00005,3qsy_3_D_C,10-24,13,21,EE,C13,G22,CG,**,-,,,11,X-ray diffraction,3.2,Recognition of the methionylated initiator tRNA by the translation initiation factor 2 in 
+RF00005,3qsy_3_D_C,26-42,26,42,EE,U27,A43,UA,**,-,,,11,X-ray diffraction,3.2,Recognition of the methionylated initiator tRNA by the translation initiation factor 2 in 
+RF00005,3qsy_3_D_C,26-42,27,41,EE,C28,G42,CG,**,-,,,11,X-ray diffraction,3.2,Recognition of the methionylated initiator tRNA by the translation initiation factor 2 in 
+RF00005,3qsy_3_D_C,26-42,28,40,EE,G29,C41,GC,**,cWW,40:cWW,28:cWW,11,X-ray diffraction,3.2,Recognition of the methionylated initiator tRNA by the translation initiation factor 2 in 
+RF00005,3qsy_3_D_C,26-42,29,39,EE,G30,C40,GC,**,cWW,39:cWW,29:cWW,11,X-ray diffraction,3.2,Recognition of the methionylated initiator tRNA by the translation initiation factor 2 in 
+RF00005,3qsy_3_D_C,26-42,30,38,EE,G31,C39,GC,**,cWW,38:cWW,30:cWW,11,X-ray diffraction,3.2,Recognition of the methionylated initiator tRNA by the translation initiation factor 2 in 
+RF00005,3qsy_3_D_C,47-63,47,63,EE,G49,C65,GC,**,cWW,63:cWW,47:cWW,11,X-ray diffraction,3.2,Recognition of the methionylated initiator tRNA by the translation initiation factor 2 in 
+RF00005,3qsy_3_D_C,47-63,48,62,EE,U50,G64,UG,**,-,,,11,X-ray diffraction,3.2,Recognition of the methionylated initiator tRNA by the translation initiation factor 2 in 
+RF00005,3qsy_3_D_C,47-63,49,61,EE,C51,G63,CG,**,cWW,61:cWW,49:cWW,11,X-ray diffraction,3.2,Recognition of the methionylated initiator tRNA by the translation initiation factor 2 in 
+RF00005,3qsy_3_D_C,47-63,50,60,EE,G52,C62,GC,**,-,,,11,X-ray diffraction,3.2,Recognition of the methionylated initiator tRNA by the translation initiation factor 2 in 
+RF00005,3qsy_3_D_C,47-63,51,59,EE,G53,C61,GC,**,-,,,11,X-ray diffraction,3.2,Recognition of the methionylated initiator tRNA by the translation initiation factor 2 in 
+RF00005,6ahu_12_T_M,1-70,1,70,EE,G1,C72,GC,**,-,,,11,Electron Microscopy,3.66,Cryo-EM structure of human Ribonuclease P with mature tRNA
+RF00005,6ahu_12_T_M,1-70,2,69,EE,U2,A71,UA,**,-,,,11,Electron Microscopy,3.66,Cryo-EM structure of human Ribonuclease P with mature tRNA
+RF00005,6ahu_12_T_M,1-70,3,68,EE,U3,A70,UA,**,cWW,68:cWW,3:cWW,11,Electron Microscopy,3.66,Cryo-EM structure of human Ribonuclease P with mature tRNA
+RF00005,6ahu_12_T_M,1-70,4,67,EE,U4,A69,UA,**,-,,,11,Electron Microscopy,3.66,Cryo-EM structure of human Ribonuclease P with mature tRNA
+RF00005,6ahu_12_T_M,1-70,5,66,EE,C5,G68,CG,**,-,,,11,Electron Microscopy,3.66,Cryo-EM structure of human Ribonuclease P with mature tRNA
+RF00005,6ahu_12_T_M,1-70,6,65,EE,C6,G67,CG,**,cWW,65:cWW,6:cWW,11,Electron Microscopy,3.66,Cryo-EM structure of human Ribonuclease P with mature tRNA
+RF00005,6ahu_12_T_M,1-70,7,64,EE,G7,C66,GC,**,-,,,11,Electron Microscopy,3.66,Cryo-EM structure of human Ribonuclease P with mature tRNA
+RF00005,6ahu_12_T_M,10-24,10,24,EE,G10,C25,GC,**,cWW,24:cWW,10:cWW,11,Electron Microscopy,3.66,Cryo-EM structure of human Ribonuclease P with mature tRNA
+RF00005,6ahu_12_T_M,10-24,11,23,EE,U11,A24,UA,**,-,,,11,Electron Microscopy,3.66,Cryo-EM structure of human Ribonuclease P with mature tRNA
+RF00005,6ahu_12_T_M,10-24,12,22,EE,G12,C23,GC,**,-,,,11,Electron Microscopy,3.66,Cryo-EM structure of human Ribonuclease P with mature tRNA
+RF00005,6ahu_12_T_M,10-24,13,21,EE,U13,U22,UU,**,-,,,11,Electron Microscopy,3.66,Cryo-EM structure of human Ribonuclease P with mature tRNA
+RF00005,6ahu_12_T_M,26-42,26,42,EE,U27,A43,UA,**,-,,,11,Electron Microscopy,3.66,Cryo-EM structure of human Ribonuclease P with mature tRNA
+RF00005,6ahu_12_T_M,26-42,27,41,EE,U28,A42,UA,**,-,,,11,Electron Microscopy,3.66,Cryo-EM structure of human Ribonuclease P with mature tRNA
+RF00005,6ahu_12_T_M,26-42,28,40,EE,C29,G41,CG,**,cWW,40:cWW,28:cWW,11,Electron Microscopy,3.66,Cryo-EM structure of human Ribonuclease P with mature tRNA
+RF00005,6ahu_12_T_M,26-42,29,39,EE,G30,C40,GC,**,-,,,11,Electron Microscopy,3.66,Cryo-EM structure of human Ribonuclease P with mature tRNA
+RF00005,6ahu_12_T_M,26-42,30,38,EE,C31,G39,CG,**,cWW,38:cWW,30:cWW,11,Electron Microscopy,3.66,Cryo-EM structure of human Ribonuclease P with mature tRNA
+RF00005,6ahu_12_T_M,47-63,47,63,EE,C49,G65,CG,**,cWW,63:cWW,47:cWW,11,Electron Microscopy,3.66,Cryo-EM structure of human Ribonuclease P with mature tRNA
+RF00005,6ahu_12_T_M,47-63,48,62,EE,C50,G64,CG,**,cWW,62:cWW,48:cWW,11,Electron Microscopy,3.66,Cryo-EM structure of human Ribonuclease P with mature tRNA
+RF00005,6ahu_12_T_M,47-63,49,61,EE,C51,G63,CG,**,cWW,61:cWW,49:cWW,11,Electron Microscopy,3.66,Cryo-EM structure of human Ribonuclease P with mature tRNA
+RF00005,6ahu_12_T_M,47-63,50,60,EE,G52,C62,GC,**,cWW,60:cWW,50:cWW,11,Electron Microscopy,3.66,Cryo-EM structure of human Ribonuclease P with mature tRNA
+RF00005,6ahu_12_T_M,47-63,51,59,EE,G53,C61,GC,**,cWW,59:cWW,51:cWW,11,Electron Microscopy,3.66,Cryo-EM structure of human Ribonuclease P with mature tRNA
+RF00005,1j2b_1_C_A,1-70,1,70,EE,G901,C973,GC,**,cWW,70:cWW,1:cWW,11,X-ray diffraction,3.3,Crystal Structure Of Archaeosine tRNA-Guanine Transglycosylase Complexed With lambda-form 
+RF00005,1j2b_1_C_A,1-70,2,69,EE,G902,C972,GC,**,cWW,69:cWW,2:cWW,11,X-ray diffraction,3.3,Crystal Structure Of Archaeosine tRNA-Guanine Transglycosylase Complexed With lambda-form 
+RF00005,1j2b_1_C_A,1-70,3,68,EE,G903,C971,GC,**,cWW,68:cWW,3:cWW,11,X-ray diffraction,3.3,Crystal Structure Of Archaeosine tRNA-Guanine Transglycosylase Complexed With lambda-form 
+RF00005,1j2b_1_C_A,1-70,4,67,EE,C904,G970,CG,**,cWW,67:cWW,4:cWW,11,X-ray diffraction,3.3,Crystal Structure Of Archaeosine tRNA-Guanine Transglycosylase Complexed With lambda-form 
+RF00005,1j2b_1_C_A,1-70,5,66,EE,C905,G969,CG,**,cWW,66:cWW,5:cWW,11,X-ray diffraction,3.3,Crystal Structure Of Archaeosine tRNA-Guanine Transglycosylase Complexed With lambda-form 
+RF00005,1j2b_1_C_A,1-70,6,65,EE,C906,G968,CG,**,cWW,65:cWW,6:cWW,11,X-ray diffraction,3.3,Crystal Structure Of Archaeosine tRNA-Guanine Transglycosylase Complexed With lambda-form 
+RF00005,1j2b_1_C_A,1-70,7,64,EE,G907,C967,GC,**,cWW,64:cWW,7:cWW,11,X-ray diffraction,3.3,Crystal Structure Of Archaeosine tRNA-Guanine Transglycosylase Complexed With lambda-form 
+RF00005,1j2b_1_C_A,10-24,10,24,EE,G910,C926,GC,**,-,,45:cWW,11,X-ray diffraction,3.3,Crystal Structure Of Archaeosine tRNA-Guanine Transglycosylase Complexed With lambda-form 
+RF00005,1j2b_1_C_A,10-24,11,23,EE,U911,A925,UA,**,-,,45^1:cWW,11,X-ray diffraction,3.3,Crystal Structure Of Archaeosine tRNA-Guanine Transglycosylase Complexed With lambda-form 
+RF00005,1j2b_1_C_A,10-24,12,22,EE,C912,G924,CG,**,-,,46:cWW,11,X-ray diffraction,3.3,Crystal Structure Of Archaeosine tRNA-Guanine Transglycosylase Complexed With lambda-form 
+RF00005,1j2b_1_C_A,10-24,13,21,EE,U913,U923,UU,**,-,,,11,X-ray diffraction,3.3,Crystal Structure Of Archaeosine tRNA-Guanine Transglycosylase Complexed With lambda-form 
+RF00005,1j2b_1_C_A,26-42,26,42,EE,C928,G944,CG,**,-,,,11,X-ray diffraction,3.3,Crystal Structure Of Archaeosine tRNA-Guanine Transglycosylase Complexed With lambda-form 
+RF00005,1j2b_1_C_A,26-42,27,41,EE,C929,G943,CG,**,cWW,41:cWW,27:cWW,11,X-ray diffraction,3.3,Crystal Structure Of Archaeosine tRNA-Guanine Transglycosylase Complexed With lambda-form 
+RF00005,1j2b_1_C_A,26-42,28,40,EE,G930,C942,GC,**,cWW,40:cWW,28:cWW,11,X-ray diffraction,3.3,Crystal Structure Of Archaeosine tRNA-Guanine Transglycosylase Complexed With lambda-form 
+RF00005,1j2b_1_C_A,26-42,29,39,EE,C931,G941,CG,**,cWW,39:cWW,29:cWW,11,X-ray diffraction,3.3,Crystal Structure Of Archaeosine tRNA-Guanine Transglycosylase Complexed With lambda-form 
+RF00005,1j2b_1_C_A,26-42,30,38,EE,C932,G940,CG,**,cWW,38:cWW,30:cWW,11,X-ray diffraction,3.3,Crystal Structure Of Archaeosine tRNA-Guanine Transglycosylase Complexed With lambda-form 
+RF00005,1j2b_1_C_A,47-63,47,63,EE,C950,G966,CG,**,cWW,63:cWW,47:cWW,11,X-ray diffraction,3.3,Crystal Structure Of Archaeosine tRNA-Guanine Transglycosylase Complexed With lambda-form 
+RF00005,1j2b_1_C_A,47-63,48,62,EE,G951,C965,GC,**,cWW,62:cWW,48:cWW,11,X-ray diffraction,3.3,Crystal Structure Of Archaeosine tRNA-Guanine Transglycosylase Complexed With lambda-form 
+RF00005,1j2b_1_C_A,47-63,49,61,EE,G952,C964,GC,**,cWW,61:cWW,49:cWW,11,X-ray diffraction,3.3,Crystal Structure Of Archaeosine tRNA-Guanine Transglycosylase Complexed With lambda-form 
+RF00005,1j2b_1_C_A,47-63,50,60,EE,G953,C963,GC,**,cWW,60:cWW,50:cWW,11,X-ray diffraction,3.3,Crystal Structure Of Archaeosine tRNA-Guanine Transglycosylase Complexed With lambda-form 
+RF00005,1j2b_1_C_A,47-63,51,59,EE,G954,C962,GC,**,cWW,59:cWW,51:cWW,11,X-ray diffraction,3.3,Crystal Structure Of Archaeosine tRNA-Guanine Transglycosylase Complexed With lambda-form 
+RF00167,9v50_1_A_A,18-88,18,88,--,-,-,,,-,,,00,X-ray diffraction,3.25,Crystal structure of Guanine-II riboswitch in complex with 8-methylguanine
+RF00167,9v50_1_A_A,18-88,19,87,EE,G2,C71,GC,**,cWW,87:cWW,19:cWW,11,X-ray diffraction,3.25,Crystal structure of Guanine-II riboswitch in complex with 8-methylguanine
+RF00167,9v50_1_A_A,18-88,20,86,EE,G3,U70,GU,**,-,,,11,X-ray diffraction,3.25,Crystal structure of Guanine-II riboswitch in complex with 8-methylguanine
+RF00167,9v50_1_A_A,18-88,21,85,EE,U4,A69,UA,**,cWW,85:cWW,21:cWW,11,X-ray diffraction,3.25,Crystal structure of Guanine-II riboswitch in complex with 8-methylguanine
+RF00167,9v50_1_A_A,18-88,22,84,EE,U5,A68,UA,**,cWW,84:cWW,22:cWW,11,X-ray diffraction,3.25,Crystal structure of Guanine-II riboswitch in complex with 8-methylguanine
+RF00167,9v50_1_A_A,18-88,23,83,EE,G6,C67,GC,**,cWW,83:cWW,23:cWW,11,X-ray diffraction,3.25,Crystal structure of Guanine-II riboswitch in complex with 8-methylguanine
+RF00167,9v50_1_A_A,18-88,24,82,EE,U7,A66,UA,**,cWW,82:cWW,24:cWW,11,X-ray diffraction,3.25,Crystal structure of Guanine-II riboswitch in complex with 8-methylguanine
+RF00167,9v50_1_A_A,18-88,25,81,EE,A8,U65,AU,**,cWW,81:cWW,25:cWW 54:cWS,11,X-ray diffraction,3.25,Crystal structure of Guanine-II riboswitch in complex with 8-methylguanine
+RF00167,9v50_1_A_A,29-49,29,49,EE,G12,C32,GC,**,-,,,11,X-ray diffraction,3.25,Crystal structure of Guanine-II riboswitch in complex with 8-methylguanine
+RF00167,9v50_1_A_A,29-49,30,48,EE,C13,G31,CG,**,cWW,48:cWW,30:cWW,11,X-ray diffraction,3.25,Crystal structure of Guanine-II riboswitch in complex with 8-methylguanine
+RF00167,9v50_1_A_A,29-49,31,47,EE,U14,A30,UA,**,cWW,47:cWW,31:cWW,11,X-ray diffraction,3.25,Crystal structure of Guanine-II riboswitch in complex with 8-methylguanine
+RF00167,9v50_1_A_A,29-49,32,46,EE,C15,G29,CG,**,cWW,46:cWW,32:cWW,11,X-ray diffraction,3.25,Crystal structure of Guanine-II riboswitch in complex with 8-methylguanine
+RF00167,9v50_1_A_A,29-49,33,45,EE,G16,U28,GU,**,-,,,11,X-ray diffraction,3.25,Crystal structure of Guanine-II riboswitch in complex with 8-methylguanine
+RF00167,9v50_1_A_A,29-49,34,44,EE,U17,A27,UA,**,cWW,44:cWW,34:cWW,11,X-ray diffraction,3.25,Crystal structure of Guanine-II riboswitch in complex with 8-methylguanine
+RF00167,9v50_1_A_A,29-49,35,43,EE,U18,A26,UA,**,-,,,11,X-ray diffraction,3.25,Crystal structure of Guanine-II riboswitch in complex with 8-methylguanine
+RF00167,9v50_1_A_A,58-78,58,78,-E,-,G62,,8,-,,57:cWW,01,X-ray diffraction,3.25,Crystal structure of Guanine-II riboswitch in complex with 8-methylguanine
+RF00167,9v50_1_A_A,58-78,59,77,EE,A41,C59,AC,67,-,,,11,X-ray diffraction,3.25,Crystal structure of Guanine-II riboswitch in complex with 8-methylguanine
+RF00167,9v50_1_A_A,58-78,60,76,EE,G42,C58,GC,99,cWW,76:cWW,60:cWW,11,X-ray diffraction,3.25,Crystal structure of Guanine-II riboswitch in complex with 8-methylguanine
+RF00167,9v50_1_A_A,58-78,61,75,EE,G43,C57,GC,99,cWW,75:cWW,61:cWW,11,X-ray diffraction,3.25,Crystal structure of Guanine-II riboswitch in complex with 8-methylguanine
+RF00167,9v50_1_A_A,58-78,62,74,EE,C44,G56,CG,**,cWW,74:cWW,62:cWW,11,X-ray diffraction,3.25,Crystal structure of Guanine-II riboswitch in complex with 8-methylguanine
+RF00167,9v50_1_A_A,58-78,63,73,EE,A45,U55,AU,**,-,,,11,X-ray diffraction,3.25,Crystal structure of Guanine-II riboswitch in complex with 8-methylguanine
+RF00167,9v50_1_A_A,58-78,64,72,EE,A46,U54,AU,**,-,,,11,X-ray diffraction,3.25,Crystal structure of Guanine-II riboswitch in complex with 8-methylguanine
+RF00167,9nbc_1_A_A,18-88,18,88,MM,U33,G99,UG,**,-,,,00,Electron Microscopy,2.87,RNA scaffold attached to 8-oxoguanine riboswitch aptamer
+RF00167,9nbc_1_A_A,18-88,19,87,MM,G34,C98,GC,**,-,,,00,Electron Microscopy,2.87,RNA scaffold attached to 8-oxoguanine riboswitch aptamer
+RF00167,9nbc_1_A_A,18-88,20,86,EE,U35,A97,UA,**,-,,,11,Electron Microscopy,2.87,RNA scaffold attached to 8-oxoguanine riboswitch aptamer
+RF00167,9nbc_1_A_A,18-88,21,85,EE,U36,A96,UA,**,cWW,85:cWW,21:cWW,11,Electron Microscopy,2.87,RNA scaffold attached to 8-oxoguanine riboswitch aptamer
+RF00167,9nbc_1_A_A,18-88,22,84,EE,C37,G95,CG,**,cWW,84:cWW,22:cWW,11,Electron Microscopy,2.87,RNA scaffold attached to 8-oxoguanine riboswitch aptamer
+RF00167,9nbc_1_A_A,18-88,23,83,EE,G38,C94,GC,**,cWW,83:cWW,23:cWW,11,Electron Microscopy,2.87,RNA scaffold attached to 8-oxoguanine riboswitch aptamer
+RF00167,9nbc_1_A_A,18-88,24,82,EE,U39,A93,UA,**,cWW,82:cWW,24:cWW 53:cWS,11,Electron Microscopy,2.87,RNA scaffold attached to 8-oxoguanine riboswitch aptamer
+RF00167,9nbc_1_A_A,18-88,25,81,EE,A40,U92,AU,**,cWW,81:cWW,25:cWW 54:cWS,11,Electron Microscopy,2.87,RNA scaffold attached to 8-oxoguanine riboswitch aptamer
+RF00167,9nbc_1_A_A,29-49,29,49,EE,C44,G63,CG,*9,cWW,49:cWW,29:cWW,11,Electron Microscopy,2.87,RNA scaffold attached to 8-oxoguanine riboswitch aptamer
+RF00167,9nbc_1_A_A,29-49,30,48,EE,C45,G62,CG,**,cWW,48:cWW,30:cWW,11,Electron Microscopy,2.87,RNA scaffold attached to 8-oxoguanine riboswitch aptamer
+RF00167,9nbc_1_A_A,29-49,31,47,EE,C46,G61,CG,**,cWW,47:cWW,31:cWW,11,Electron Microscopy,2.87,RNA scaffold attached to 8-oxoguanine riboswitch aptamer
+RF00167,9nbc_1_A_A,29-49,32,46,EE,C47,G60,CG,**,-,,,11,Electron Microscopy,2.87,RNA scaffold attached to 8-oxoguanine riboswitch aptamer
+RF00167,9nbc_1_A_A,29-49,33,45,EE,G48,C59,GC,**,-,,,11,Electron Microscopy,2.87,RNA scaffold attached to 8-oxoguanine riboswitch aptamer
+RF00167,9nbc_1_A_A,29-49,34,44,EE,A49,U58,AU,**,-,,,11,Electron Microscopy,2.87,RNA scaffold attached to 8-oxoguanine riboswitch aptamer
+RF00167,9nbc_1_A_A,29-49,35,43,EE,U50,U57,UU,**,-,,,11,Electron Microscopy,2.87,RNA scaffold attached to 8-oxoguanine riboswitch aptamer
+RF00167,9nbc_1_A_A,58-78,58,78,EE,U71,A89,UA,**,cWW,78:cWW,58:cWW,11,Electron Microscopy,2.87,RNA scaffold attached to 8-oxoguanine riboswitch aptamer
+RF00167,9nbc_1_A_A,58-78,59,77,EE,G72,U88,GU,**,cWW,77:cWW,59:cWW,11,Electron Microscopy,2.87,RNA scaffold attached to 8-oxoguanine riboswitch aptamer
+RF00167,9nbc_1_A_A,58-78,60,76,EE,G73,C87,GC,**,cWW,76:cWW,60:cWW,11,Electron Microscopy,2.87,RNA scaffold attached to 8-oxoguanine riboswitch aptamer
+RF00167,9nbc_1_A_A,58-78,61,75,EE,G74,C86,GC,**,-,,,11,Electron Microscopy,2.87,RNA scaffold attached to 8-oxoguanine riboswitch aptamer
+RF00167,9nbc_1_A_A,58-78,62,74,EE,G75,U85,GU,**,cWW,74:cWW,62:cWW,11,Electron Microscopy,2.87,RNA scaffold attached to 8-oxoguanine riboswitch aptamer
+RF00167,9nbc_1_A_A,58-78,63,73,EE,U76,A84,UA,**,cWW,73:cWW,63:cWW,11,Electron Microscopy,2.87,RNA scaffold attached to 8-oxoguanine riboswitch aptamer
+RF00167,9nbc_1_A_A,58-78,64,72,--,-,-,,,-,,,00,Electron Microscopy,2.87,RNA scaffold attached to 8-oxoguanine riboswitch aptamer

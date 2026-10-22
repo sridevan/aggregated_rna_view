@@ -284,12 +284,15 @@ set."
 **Arc, hover**
 > {residue pair}{ · Multiple interactions}
 > Rfam {i}–{j}
-> {code} {class} · {k}/{n} ({percent}) · {Present | Absent | Not comparable} in {displayed chain} *(one line per interaction)*
+> {code} {class} · {k}/{n} ({percent}){ incl. {m} near} · {Present | Near | Absent | Not comparable} in {displayed chain} *(one line per interaction; base pairs count true or near pairs)*
 > Any: {k}/{n} ({percent}) *(multiple interactions only)*
+> Rfam consensus: {Both | 2D | 3D}{ · not evaluable in any chain} *(base pairs only)*
 
 **Legend:** "Multiple interactions" has a hover, "More than one interaction type between the same two nucleotides". The legend note
 (visible text) reads: "Each type has its own scale: colour intensity = observed / eligible chain instances (lighter = rarer, darker = more
-conserved). Multiple interactions use the 'any' occurrence."
+conserved); base pairs count true or near FR3D pairs. Multiple interactions use the 'any' occurrence. Use **More filters › Rfam consensus**
+to show Both, 2D or 3D base pairs." A legend row "2D" (grey dashed line) has the hover of the 2D value below and the text "Rfam consensus
+pair, not paired in any chain".
 
 **Table header icons**
 - Interaction class ⓘ:
@@ -297,8 +300,19 @@ conserved). Multiple interactions use the 'any' occurrence."
   > Bp: Leontis–Westhof family (cis/trans, edges W/H/S).
   > Bs: stacking face orientation (s35, s53, s33, s55).
   > Br, Bph: base–ribose / base–phosphate class 0–9 (position of the base donor).
-  > n prefix: near interaction (not counted).
-- Conservation ⓘ: "Frequency is the fraction of evaluable RNA instances with a recorded interaction."
+  > n prefix: near interaction, close to but outside FR3D's cutoffs. Near base pairs count as paired and are shown separately; other near interactions are not counted.
+- Conservation ⓘ: "Frequency is the fraction of evaluable RNA instances with a recorded interaction. Base pairs: a true or near FR3D base
+  pair of any class (near pairs are listed separately in the class breakdown)."
+- Rfam consensus ⓘ (also in More filters):
+  > Comparison with the Rfam consensus secondary structure (2D; Rfam SS_cons), base pairs only.
+  > Both: in the Rfam 2D structure and paired in 3D (true or near FR3D base pair) in at least one evaluable chain.
+  > 2D: in the Rfam 2D structure, not paired in any evaluable chain.
+  > 3D: paired in 3D, not in the Rfam 2D structure.
+  > The Rfam 2D structure says which positions pair, not the base-pair type.
+
+  Cell hovers: Both "In the Rfam consensus secondary structure (2D) and paired in 3D (true or near FR3D base pair) in at least one evaluable
+  chain"; 2D "In the Rfam consensus secondary structure (2D) but not paired (no true or near FR3D base pair) in any evaluable chain"; 3D
+  "Base pair observed in 3D that is not in the Rfam consensus secondary structure"; "–" (other types) "Base pairs only".
 
 **Table cell hovers**
 - Interaction: "Rfam {i}–{j} · {region}" (→ instead of – for base–ribose and base–phosphate).
@@ -306,6 +320,7 @@ conserved). Multiple interactions use the 'any' occurrence."
 - Interaction class: the class distribution, e.g. "cWW 76 · tHS 4".
 - In displayed structure:
   - *Present*: "Annotated: {classes}"
+  - *Near* (base pairs): "Near base pair (close to but outside FR3D's cutoffs): {near classes}"
   - *Absent*: "Resolved and eligible; not annotated." followed by " Other: {other annotations}" when there are any
   - *Not comparable*: the reason, one of:
     - "Rfam {pos}: nucleotide not modelled | incomplete base | incomplete ribose | incomplete or absent phosphate | no residue at this
@@ -318,6 +333,9 @@ conserved). Multiple interactions use the 'any' occurrence."
 - Multiple interactions ⓘ: "More than one interaction annotation between the same two nucleotides. Each keeps its own class and
   frequency; 'any' counts chains with at least one of them among chains where at least one can be evaluated."
 - "Not evaluated" row, hover: "Chains where this interaction cannot be evaluated; never counted as absent"
+- "Rfam consensus" row (base pairs): the value and its meaning; for a consensus pair that no chain can evaluate, "in the Rfam consensus
+  secondary structure (2D); not evaluable in any chain (positions missing, incomplete or unmapped everywhere)".
+- Status box, *Near*: "Near base pair: close to but outside FR3D's cutoffs for a true pair."
 
 **Displayed structure, ⓘ**
 > The structure shown in 3D. The "In displayed structure" column refers to it; it does not change the numbering or the family-wide
@@ -325,10 +343,10 @@ conserved). Multiple interactions use the 'any' occurrence."
 
 ### Compare two
 
-**Annotation coverage, ⓘ**
-> Of the Rfam consensus (SS_cons) helix base pairs that can be evaluated in the chain (both bases resolved and complete), how many
-> BGSU/FR3D annotates. Distorted or moderate-resolution models can have paired nucleotides that FR3D does not annotate; BGSU exports no
-> near base pairs.
+**Annotation coverage, ⓘ** (visible label "Helix base pairs paired (true or near) in FR3D:")
+> Of the Rfam consensus (SS_cons) helix base pairs that can be evaluated in the chain (both bases resolved and complete), how many FR3D
+> annotates as paired (true or near base pair, any class). Near base pairs come from a pinned local fr3d-python run, because BGSU exports
+> none.
 
 **Sequence relation, ⓘ**
 > Sequence relationship across the mapped chains: identical; same RNA at shared Rfam positions (allowing limited terminal construct differences); near-identical (≤1% difference); or different. Exact classification rules are in the methods.
@@ -342,10 +360,10 @@ conserved). Multiple interactions use the 'any' occurrence."
 
 | Status | Text |
 |---|---|
-| Shared | Same interaction type and FR3D class in both structures |
+| Shared | Same interaction type and FR3D class in both structures (base pairs: true or near) |
 | Only in A | Annotated in A; both nucleotides eligible in B but not annotated there |
 | Only in B | Annotated in B; both nucleotides eligible in A but not annotated there |
-| Different class | Same interaction type, different FR3D class (e.g. cWW in A, tWW in B) |
+| Different class | Same interaction type, different FR3D class (e.g. cWW in A, tWW or near ncWW in B) |
 | Not comparable | Cannot be evaluated in one structure (missing, incomplete or unmapped nucleotide, or no annotation) |
 
 **Arc, hover**

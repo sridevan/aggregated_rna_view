@@ -56,8 +56,12 @@ def test_family_pairs_reproduce_investigation(data):
         r = inv[(p["category"], p["pos_1"], p["pos_2"])]
         assert (p["n_observed"], p["n_eligible"], p["n_entries_observed"], p["n_entries_eligible"]) == \
                (int(r["n_observed"]), int(r["n_eligible"]), int(r["n_entries_observed"]), int(r["n_entries_eligible"])), p["id"]
-        assert (p["n_near_only"], p["n_unmapped"], p["n_missing"], p["n_incomplete"]) == \
-               (int(r["n_near_only"]), int(r["n_missing_position"]), int(r["n_unmodelled"]), int(r["n_base_incomplete"])), p["id"]
+        assert (p["n_unmapped"], p["n_missing"], p["n_incomplete"]) == (int(r["n_missing_position"]), int(r["n_unmodelled"]), int(r["n_base_incomplete"])), p["id"]
+        if p["category"] == "stacking":
+            assert p["n_near_only"] == int(r["n_near_only"]), p["id"]
+        else:
+            # BGSU exports no near base pairs (investigation: 0); near-only chains now come from the local fr3d-python run and were "not annotated"
+            assert int(r["n_near_only"]) == 0 and p["n_near_only"] + p["n_not_annotated"] == p["n_eligible"] - p["n_observed"], p["id"]
         assert ";".join(f"{c}:{v}" for c, v in p["classes"].items()) == r["classes"], p["id"]
 
 
@@ -168,3 +172,55 @@ def test_annotation_gaps():
             inst = {i["seq_name"]: i for i in d["instances"]}
             for q in d["pairs"]:
                 assert q["n_eligible"] + q["n_missing"] + q["n_incomplete"] + q["n_unmapped"] + q["n_annotation_unavailable"] == len(inst)
+
+
+def test_near_basepairs_file():
+    """near_basepairs.json: pinned commit, every entry annotated, near classes only, both residues in family chains"""
+    d = json.load(open(FAM / "near_basepairs.json"))
+    validate_json(d, "near_basepairs")
+    assert len(d["provenance"]["commit"]) == 40 and d["provenance"]["categories"] == "basepair,near"
+    insts = json.load(open(FAM / "instances.json"))
+    chains = {}
+    for i in insts:
+        chains.setdefault(i["pdb_id"].upper(), set()).add(i["auth_asym_id"])
+    assert set(d["entries"]) == set(chains) and all(e["status"] == "ok" for e in d["entries"].values())
+    for pdb, e in d["entries"].items():
+        assert set(e["chains"]) == chains[pdb]
+        assert all(r[1].startswith("n") and r[0].split("|")[2] in chains[pdb] and r[2].split("|")[2] in chains[pdb] for r in e["rows"])
+    assert d["summary"]["n_near_rows"] == sum(len(e["rows"]) for e in d["entries"].values()) > 0
+
+
+def test_local_near_basepairs_in_observations(data):
+    """local rows are near base pairs only, tagged with their source; BGSU rows keep their source; a near pair never counts as observed"""
+    srcs = {o[10] for rows in data["observations"].values() for o in rows}
+    assert srcs == {"bgsu", "fr3d_local"}
+    local = [o for rows in data["observations"].values() for o in rows if o[10] == "fr3d_local"]
+    assert local and all(o[0] == "basepair" and o[1].startswith("n") for o in local)
+    assert not any(o[0] == "basepair" and o[1].startswith("n") for rows in data["observations"].values() for o in rows if o[10] == "bgsu")
+    assert data["summary"]["near_basepairs_local"]["n_intra_chain_observations"] == len(local)
+    assert data["summary"]["near_basepairs_local"]["endpoint_verification_against_mmcif"].get("mismatch", 0) == 0
+    assert all(i["near_basepairs"] == "available" for i in data["instances"])
+    assert data["provenance"]["near_basepairs"]["commit"] == json.load(open(FAM / "near_basepairs.json"))["provenance"]["commit"]
+
+
+def test_consensus_status_and_paired(data):
+    """every SS_cons pair has a base-pair row; both / 2d / 3d follow the definitions; paired = observed + near only (base pairs only)"""
+    fam = json.load(open(FAM / "family.json"))
+    ss = ss_cons_pairs(fam["ss_cons"])
+    bp = {(p["pos_1"], p["pos_2"]): p for p in data["pairs"] if p["category"] == "basepair"}
+    assert ss <= set(bp)
+    for (i, j), p in bp.items():
+        assert p["n_paired"] == p["n_observed"] + p["n_near_only"]
+        assert p["frequency_paired"] == (round(p["n_paired"] / p["n_eligible"], 4) if p["n_eligible"] else None)
+        assert p["consensus"] == (("both" if p["n_paired"] else "2d") if (i, j) in ss else "3d")
+        assert p["n_entries_observed"] <= p["n_entries_paired"] <= p["n_entries_eligible"]
+        assert sum(p["near_classes"].values()) >= p["n_near_only"] and all(c.startswith("n") for c in p["near_classes"])
+        if (i, j) not in ss:
+            assert p["n_observed"] > 0           # 3D-only rows need a true base pair; near-only non-consensus pairs get no row
+    for p in data["pairs"]:
+        if p["category"] != "basepair":
+            assert p["consensus"] is None and p["n_paired"] == p["n_observed"]   # near never counted outside base pairs (near_classes still listed)
+    # RF00167: every consensus pair is paired somewhere; pooled paired support as in experiments/sscons_vs_3d/NEAR_CHECK.md (0.987)
+    cons = [p for p in bp.values() if p["consensus"] != "3d"]
+    assert len(cons) == 22 and all(p["consensus"] == "both" for p in cons)
+    assert round(sum(p["n_paired"] for p in cons) / sum(p["n_eligible"] for p in cons), 3) == 0.987

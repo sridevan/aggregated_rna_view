@@ -234,6 +234,8 @@ export interface InteractionInstance {
   near?: [InteractionCategory, string, number, number][]
   /** schema 1.2+: interactions with an inserted / flanking nucleotide (kept in interactions_by_instance/<seq_name>.json) */
   n_off_consensus?: number
+  /** schema 1.4+: near base pairs computed for this chain's entry by the pinned local fr3d-python run (BGSU exports none) */
+  near_basepairs?: 'available' | 'unavailable'
 }
 export interface InteractionPair {
   id: string; category: InteractionCategory; pos_1: number; pos_2: number; consensus_nt: string | null
@@ -243,6 +245,13 @@ export interface InteractionPair {
   n_observed: number; n_eligible: number; frequency: number | null; n_entries_observed: number; n_entries_eligible: number
   classes: Record<string, number>; nt_pairs: Record<string, number>; n_canonical: number
   n_near_only: number; n_not_annotated: number; n_missing: number; n_incomplete: number; n_unmapped: number; n_annotation_unavailable: number; n_observed_but_ineligible: number
+  /** schema 1.4+, base pairs only: Rfam SS_cons comparison (both = SS_cons pair paired in >= 1 eligible chain; 2d = SS_cons pair paired in
+   *  none; 3d = observed pair not in SS_cons); null for other categories */
+  consensus?: 'both' | '2d' | '3d' | null
+  /** schema 1.4+: base pairs = observed + near only (true or near FR3D base pair, any class); other categories = n_observed */
+  n_paired?: number; frequency_paired?: number | null; n_entries_paired?: number
+  /** schema 1.4+: near-only eligible chains per near FR3D class */
+  near_classes?: Record<string, number>
 }
 export interface InteractionsDataset {
   schema_version: string; rfam_acc: string; clen: number

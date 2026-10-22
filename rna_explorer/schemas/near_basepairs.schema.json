@@ -1,0 +1,41 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Near base pairs of the family chains from a pinned local fr3d-python run",
+ "type": "object",
+ "required": ["schema_version", "rfam_acc", "definitions", "provenance", "summary", "entries"],
+ "properties": {
+  "schema_version": {"type": "string"},
+  "rfam_acc": {"type": "string", "pattern": "^RF\\d{5}$"},
+  "definitions": {"type": "object"},
+  "provenance": {
+   "type": "object",
+   "required": ["tool", "repository", "commit", "categories", "environment", "licence", "coordinates", "url_template", "generated"],
+   "properties": {"commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"}}
+  },
+  "summary": {
+   "type": "object",
+   "required": ["n_entries", "n_ok", "n_failed", "n_near_rows"]
+  },
+  "entries": {
+   "type": "object",
+   "patternProperties": {
+    "^[0-9A-Z]{4}$": {
+     "type": "object",
+     "required": ["chains", "status", "rows"],
+     "properties": {
+      "chains": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+      "status": {"enum": ["ok", "failed"]},
+      "rows": {
+       "type": "array",
+       "items": {
+        "type": "array", "minItems": 3, "maxItems": 3,
+        "prefixItems": [{"type": "string"}, {"type": "string", "pattern": "^n[ct][WHS][WHS]$"}, {"type": "string"}]
+       }
+      }
+     }
+    }
+   },
+   "additionalProperties": false
+  }
+ }
+}

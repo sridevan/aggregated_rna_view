@@ -9,7 +9,7 @@ import {
   classBreakdown, sequenceRelation, defaultComparePair, defaultFamilyOrder, DEFAULT_PAIR_MAX_RESOLUTION, helixCoverage, medianHelixCoverage, dominantClass, groupByEndpoints, groupId, groupOccurrence, indexInstance, matchesPositions, MULTI_RAMP, multiColor, pairIsCanonical,
   pairLabel, parseSearch, passes, positionLabel, showCircular, CIRCULAR_MAX_CLEN, STATE_TEXT, statusIn, supportingInstances, type CompareRow, type CompareStatus,
   type InstanceStatus, type InteractionFilter, type InteractionGroup, type SearchQuery,
-  CONSTRUCT_END_WINDOW, CONSTRUCT_MAX_END_DIFFS,
+  CONSTRUCT_END_WINDOW, CONSTRUCT_MAX_END_DIFFS, CONSENSUS_TEXT, CONSENSUS_TIP, isPaired, paired, type ConsensusStatus,
 } from '../lib/interactions'
 import type { InstanceRow, InteractionCategory, InteractionPair, InteractionsDataset } from '../types/backend'
 import { CircularDiagram, type DiagramArc } from './interactions/CircularDiagram'
@@ -27,6 +27,9 @@ import { InfoTip } from './InfoTip'
  * default pair has the highest valid geometric discrepancy.
  * Interactions between the same two nucleotides are shown together as "Multiple interactions" (display grouping; every member keeps its
  * own id, class and frequency). Two separate choices: the numbering reference (labels only) and the displayed structure (3D and status).
+ * Base pairs (schema 1.4+): conservation counts true or near FR3D base pairs ("paired"); near pairs keep their near class and the "Near"
+ * state; the "Rfam consensus" column compares each base pair with the Rfam SS_cons (Both / 2D / 3D), and SS_cons pairs paired in no chain
+ * ("2D") are drawn as grey dashed arcs.
  */
 const SIZE = 560, RADIUS = 204, ARC_WIDTH = 1.8
 const COLOR_A = '#0072B2', COLOR_B = '#E69F00'
@@ -35,9 +38,11 @@ const COMPARE_COLORS: Record<CompareStatus, { color: string; order: number }> = 
   reclassified: { color: '#CC79A7', order: 2 }, only_a: { color: '#D55E00', order: 3 }, only_b: { color: '#D55E00', order: 3 },
 }
 const COMPARE_ORDER: CompareStatus[] = ['only_a', 'only_b', 'reclassified', 'not_comparable', 'shared']
-const STATE_STYLE: Record<string, string> = { present: 'text-emerald-800', absent: 'text-stone-700', not_comparable: 'text-amber-800' }
-const STATE_ICON: Record<string, string> = { present: '●', absent: '○', not_comparable: '–' }
-const STATE_RANK = { present: 0, absent: 1, not_comparable: 2 }
+const STATE_STYLE: Record<string, string> = { present: 'text-emerald-800', near: 'text-sky-800', absent: 'text-stone-700', not_comparable: 'text-amber-800' }
+const STATE_ICON: Record<string, string> = { present: '●', near: '◐', absent: '○', not_comparable: '–' }
+const STATE_RANK = { present: 0, near: 1, absent: 2, not_comparable: 3 }
+/** "2D" arcs (Rfam SS_cons pairs paired in no evaluable chain): neutral grey, short dashes, drawn under the observed arcs */
+const ARC_2D = { color: '#a8a29e', dash: '2 3', width: 1.4 }
 const NO_POS: number[] = []
 /** rows (top-level interactions) per table page; 0 = all */
 const PAGE_SIZES = [15, 50, 0]
@@ -51,12 +56,15 @@ const regionText = (p: Pick<InteractionPair, 'region_1' | 'region_2'>) => (!p.re
 const interactionLabel = (p: { category: InteractionCategory; pos_1: number; pos_2: number }, N: Numbering | null) =>
   p.category === 'baseribose' || p.category === 'basephosphate' ? `${positionLabel(p.pos_1, N).text}→${positionLabel(p.pos_2, N).text}` : pairLabel(p.pos_1, p.pos_2, N)
 const groupStatus = (ss: (InstanceStatus | null | undefined)[]): InstanceStatus['state'] | null =>
-  ss.some((s) => s?.state === 'present') ? 'present' : ss.some((s) => s?.state === 'absent') ? 'absent' : ss.some((s) => s) ? 'not_comparable' : null
+  ss.some((s) => s?.state === 'present') ? 'present' : ss.some((s) => s?.state === 'near') ? 'near' : ss.some((s) => s?.state === 'absent') ? 'absent' : ss.some((s) => s) ? 'not_comparable' : null
+/** FR3D classes of a family interaction with the near-only classes (base pairs), e.g. {cWW: 70, ncWW: 3} */
+const allClasses = (p: InteractionPair): Record<string, number> => ({ ...p.classes, ...(p.category === 'basepair' ? p.near_classes ?? {} : {}) })
 
 const TIP = {
   diagram: 'Interactions between corresponding Rfam positions. Arc colour shows the fraction of evaluable RNA instances with a recorded interaction.',
-  frequency: 'Frequency is the fraction of evaluable RNA instances with a recorded interaction.',
-  klass: 'Interaction classifications follow BGSU/FR3D annotations. Codes describe the interaction geometry or contact type.\nBp: Leontis–Westhof family (cis/trans, edges W/H/S).\nBs: stacking face orientation (s35, s53, s33, s55).\nBr, Bph: base–ribose / base–phosphate class 0–9 (position of the base donor).\nn prefix: near interaction (not counted).',
+  frequency: 'Frequency is the fraction of evaluable RNA instances with a recorded interaction. Base pairs: a true or near FR3D base pair of any class (near pairs are listed separately in the class breakdown).',
+  klass: 'Interaction classifications follow BGSU/FR3D annotations. Codes describe the interaction geometry or contact type.\nBp: Leontis–Westhof family (cis/trans, edges W/H/S).\nBs: stacking face orientation (s35, s53, s33, s55).\nBr, Bph: base–ribose / base–phosphate class 0–9 (position of the base donor).\nn prefix: near interaction, close to but outside FR3D\u2019s cutoffs. Near base pairs count as paired and are shown separately; other near interactions are not counted.',
+  consensus: 'Comparison with the Rfam consensus secondary structure (2D; Rfam SS_cons), base pairs only.\nBoth: in the Rfam 2D structure and paired in 3D (true or near FR3D base pair) in at least one evaluable chain.\n2D: in the Rfam 2D structure, not paired in any evaluable chain.\n3D: paired in 3D, not in the Rfam 2D structure.\nThe Rfam 2D structure says which positions pair, not the base-pair type.',
   numbering: 'Residue labels use the selected reference structure. Equivalent nucleotides across RNA structures are identified using Rfam consensus positions. Changing the numbering reference changes labels only.',
   displayed: 'The structure shown in 3D. The “In displayed structure” column refers to it; it does not change the numbering or the family-wide frequencies.',
   multiple: 'More than one interaction annotation between the same two nucleotides. Each keeps its own class and frequency; “any” counts chains with at least one of them among chains where at least one can be evaluated.',
@@ -125,6 +133,7 @@ function InteractionsView({ ds }: { ds: InteractionsDataset }) {
   const terms = useMemo(() => [...new Set(ds.position_regions.filter((r): r is string => !!r)), ...CATEGORIES.map((c) => CATEGORY_TEXT[c])], [ds])
   const search = useMemo(() => parseSearch(query, N, ds.clen, terms), [query, N, ds.clen, terms])
   const refRow = refSeq ? rowOf.get(refSeq) : null
+  const nearProv = ds.provenance.near_basepairs as { commit: string; n_entries_available: number; n_entries: number } | null | undefined
 
   const header = (
     <div className="flex flex-wrap items-center gap-x-4 gap-y-2 rounded border border-stone-200 bg-stone-50 px-3 py-2 text-xs" data-testid="interactions-controls">
@@ -161,7 +170,7 @@ function InteractionsView({ ds }: { ds: InteractionsDataset }) {
         ? <FamilyMode {...common} displayed={displayed} setDisplayed={setDisplayed} defaultRef={defaultRef} />
         : <CompareMode {...common} a={cmp.a} b={cmp.b} auto={cmp.auto} setPair={(a, b) => setCmp({ a, b, auto: false })} onBack={() => setMode('family')} />}
       <p className="text-[11px] text-stone-500" data-testid="interactions-provenance">
-        BGSU RNA 3D Hub FR3D annotations mapped through the validated Rfam {String(ds.provenance.rfam_release ?? '')} mappings ·
+        BGSU RNA 3D Hub FR3D annotations{nearProv ? <span data-testid="interactions-provenance-near"> and near base pairs from fr3d-python {nearProv.commit.slice(0, 7)} ({nearProv.n_entries_available}/{nearProv.n_entries} entries)</span> : null} mapped through the validated Rfam {String(ds.provenance.rfam_release ?? '')} mappings ·
         {' '}{ds.summary.n_intra_chain_interactions as number} interactions in {ds.instances.length} chains of {ds.summary.n_entries as number} entries · Rfam {family.rfam_acc}.
       </p>
     </div>
@@ -201,7 +210,7 @@ function TypeDropdown({ ds, filter, setFilter }: { ds: InteractionsDataset; filt
 
 function MoreFilters({ filter, setFilter, regions }: { filter: InteractionFilter; setFilter: (f: InteractionFilter) => void; regions: (string | null)[] }) {
   const names = useMemo(() => [...new Set(regions.filter((r): r is string => !!r))], [regions])
-  const active = (filter.canonical !== 'all' ? 1 : 0) + (filter.structure !== 'all' ? 1 : 0) + (filter.region !== null ? 1 : 0)
+  const active = (filter.canonical !== 'all' ? 1 : 0) + (filter.structure !== 'all' ? 1 : 0) + (filter.consensus !== 'all' ? 1 : 0) + (filter.region !== null ? 1 : 0)
   const [open, setOpen] = useState(false)
   const sel = 'rounded border border-stone-300 bg-white px-1 py-px'
   return (
@@ -214,11 +223,14 @@ function MoreFilters({ filter, setFilter, regions }: { filter: InteractionFilter
         <label className="flex items-center justify-between gap-2">Context
           <select className={sel} value={filter.structure} onChange={(e) => setFilter({ ...filter, structure: e.target.value as InteractionFilter['structure'] })} data-testid="ifilter-structure">
             <option value="all">All</option><option value="secondary">Secondary (Rfam SS_cons)</option><option value="tertiary">Tertiary (between elements)</option></select></label>
-        <p className="text-[10px] text-stone-500">Type and context apply to base pairs only; other categories are hidden while they are set.</p>
+        <label className="flex items-center justify-between gap-2">Rfam consensus<InfoTip text={TIP.consensus} label="About the Rfam consensus comparison" />
+          <select className={`${sel} ml-auto`} value={filter.consensus} onChange={(e) => setFilter({ ...filter, consensus: e.target.value as InteractionFilter['consensus'] })} data-testid="ifilter-consensus">
+            <option value="all">All</option>{(['both', '2d', '3d'] as const).map((c) => <option key={c} value={c}>{CONSENSUS_TEXT[c]}</option>)}</select></label>
+        <p className="text-[10px] text-stone-500">Type, context and Rfam consensus apply to base pairs only; other categories are hidden while they are set.</p>
         <label className="flex items-center justify-between gap-2">Region
           <select className={sel} value={filter.region ?? ''} onChange={(e) => setFilter({ ...filter, region: e.target.value || null })} data-testid="ifilter-region">
             <option value="">All</option>{names.map((n) => <option key={n} value={n}>{n}</option>)}</select></label>
-        <div className="flex justify-between"><button type="button" className="text-stone-500 hover:text-stone-800" onClick={() => setFilter({ ...filter, canonical: 'all', structure: 'all', region: null })} data-testid="ifilter-reset">Reset</button>
+        <div className="flex justify-between"><button type="button" className="text-stone-500 hover:text-stone-800" onClick={() => setFilter({ ...filter, canonical: 'all', structure: 'all', consensus: 'all', region: null })} data-testid="ifilter-reset">Reset</button>
           <button type="button" className="text-stone-500 hover:text-stone-800" onClick={() => setOpen(false)}>Close</button></div>
       </div>}
     </div>)
@@ -232,8 +244,9 @@ interface CommonProps {
 }
 
 function StatusBadge({ s, testId, compact = false }: { s: InstanceStatus; testId?: string; compact?: boolean }) {
-  const title = s.state === 'not_comparable' ? s.reason ?? '' : s.state === 'absent' ? `Resolved and eligible; not annotated.${s.other.length ? ` Other: ${s.other.join(', ')}` : ''}` : `Annotated: ${s.classes.join(', ')}`
-  return <span className={`whitespace-nowrap ${STATE_STYLE[s.state]}`} title={title} data-testid={testId} data-state={s.state}><span aria-hidden className="mr-1">{STATE_ICON[s.state]}</span>{STATE_TEXT[s.state]}{s.state === 'present' && !compact && <span className="ml-1 font-mono text-[10px] text-stone-500">{s.classes.join(',')}</span>}</span>
+  const title = s.state === 'not_comparable' ? s.reason ?? '' : s.state === 'absent' ? `Resolved and eligible; not annotated.${s.other.length ? ` Other: ${s.other.join(', ')}` : ''}`
+    : s.state === 'near' ? `Near base pair (close to but outside FR3D\u2019s cutoffs): ${s.classes.join(', ')}` : `Annotated: ${s.classes.join(', ')}`
+  return <span className={`whitespace-nowrap ${STATE_STYLE[s.state]}`} title={title} data-testid={testId} data-state={s.state}><span aria-hidden className="mr-1">{STATE_ICON[s.state]}</span>{STATE_TEXT[s.state]}{isPaired(s.state) && !compact && <span className="ml-1 font-mono text-[10px] text-stone-500">{s.classes.join(',')}</span>}</span>
 }
 const TypeCell = ({ cats }: { cats: InteractionCategory[] }) => cats.length === 1
   ? <span title={CATEGORY_TEXT[cats[0]]}>{CATEGORY_CODE[cats[0]]}</span>
@@ -241,6 +254,8 @@ const TypeCell = ({ cats }: { cats: InteractionCategory[] }) => cats.length === 
 
 // ===================================================================================================== family conservation
 interface FamilyGroup { group: InteractionGroup<InteractionPair>; id: string; members: InteractionPair[]; frequency: number | null; k: number; n: number; entries: number; state: InstanceStatus['state'] | null }
+/** the default-order key of a family interaction: paired counts (base pairs: true or near) */
+const famOrderKey = (p: InteractionPair) => { const c = paired(p); return { entries: c.entries, frequency: c.f, n: p.n_eligible, i: p.pos_1, j: p.pos_2 } }
 
 function FamilyMode({ ds, L, circular, labelFor, N, visiblePairs, selected, selectedId, select, search, renderSearch, noTypes, paging, rowOf, orientation, displayed, setDisplayed, defaultRef }: CommonProps & {
   displayed: string | null; setDisplayed: (sn: string) => void; defaultRef: string | null }) {
@@ -252,21 +267,26 @@ function FamilyMode({ ds, L, circular, labelFor, N, visiblePairs, selected, sele
   const statusOf = useMemo(() => new Map(ds.pairs.map((p) => [p.id, dIx ? statusIn(dIx, p.category, p.pos_1, p.pos_2) : null])), [ds, dIx])
   const rows = visiblePairs
   const groups = useMemo<FamilyGroup[]>(() => groupByEndpoints(rows).map((g) => {
-    const members = [...g.members].sort((a, b) => defaultFamilyOrder({ entries: a.n_entries_observed, frequency: a.frequency, n: a.n_eligible, i: a.pos_1, j: a.pos_2 }, { entries: b.n_entries_observed, frequency: b.frequency, n: b.n_eligible, i: b.pos_1, j: b.pos_2 }) || CATEGORIES.indexOf(a.category) - CATEGORIES.indexOf(b.category))
-    const occ = members.length === 1 ? { k: members[0].n_observed, n: members[0].n_eligible, frequency: members[0].frequency } : groupOccurrence(ds, members)
-    return { group: g, id: groupId(g), members, frequency: occ.frequency, k: occ.k, n: occ.n, entries: Math.max(...members.map((m) => m.n_entries_observed)), state: null }
+    const members = [...g.members].sort((a, b) => defaultFamilyOrder(famOrderKey(a), famOrderKey(b)) || CATEGORIES.indexOf(a.category) - CATEGORIES.indexOf(b.category))
+    const occ = members.length === 1 ? { k: paired(members[0]).k, n: members[0].n_eligible, frequency: paired(members[0]).f } : groupOccurrence(ds, members)
+    return { group: g, id: groupId(g), members, frequency: occ.frequency, k: occ.k, n: occ.n, entries: Math.max(...members.map((m) => paired(m).entries)), state: null }
   }), [rows, ds])
   const groupsWithStatus = useMemo(() => groups.map((g) => ({ ...g, state: groupStatus(g.members.map((m) => statusOf.get(m.id))) })), [groups, statusOf])
   const selGroup = selectedId ? groupsWithStatus.find((g) => g.members.some((m) => m.id === selectedId)) ?? null : null
   const selectGroup = useCallback((id: string) => { const g = groups.find((x) => x.id === id); select(g ? g.members[0].id : id) }, [groups, select])
-  const arcs = useMemo<DiagramArc[]>(() => groups.map((g) => ({ id: g.id, i: g.members.length === 1 ? g.members[0].pos_1 : g.group.i, j: g.members.length === 1 ? g.members[0].pos_2 : g.group.j,
-    ...(g.members.length === 1 ? { color: categoryColor(g.members[0].category, g.frequency), dash: CATEGORY_STYLE[g.members[0].category].dash, category: g.members[0].category } : { color: multiColor(g.frequency), multi: true, category: 'multiple' }),
-    width: ARC_WIDTH, order: (g.frequency ?? 0) + (g.members.some((m) => m.category === 'basepair') ? 0.001 : 0) })), [groups])
+  const arcs = useMemo<DiagramArc[]>(() => groups.map((g) => { const one = g.members.length === 1 ? g.members[0] : null, only2d = !!one && one.consensus === '2d'
+    const cons = g.members.find((m) => m.category === 'basepair')?.consensus ?? undefined
+    return { id: g.id, i: one ? one.pos_1 : g.group.i, j: one ? one.pos_2 : g.group.j, consensus: cons ?? undefined,
+      ...(only2d ? { color: ARC_2D.color, dash: ARC_2D.dash, category: one.category, width: ARC_2D.width, order: -1 }
+        : { ...(one ? { color: categoryColor(one.category, g.frequency), dash: CATEGORY_STYLE[one.category].dash, category: one.category } : { color: multiColor(g.frequency), multi: true, category: 'multiple' }),
+          width: ARC_WIDTH, order: (g.frequency ?? 0) + (g.members.some((m) => m.category === 'basepair') ? 0.001 : 0) }) } }), [groups])
   const tooltip = useCallback((id: string) => { const g = groups.find((x) => x.id === id); if (!g) return null; const s = (m: InteractionPair) => statusOf.get(m.id)
     return <div data-testid="iarc-tooltip" className="space-y-0.5">
       <p className="font-semibold">{pairLabel(g.group.i, g.group.j, N)}{g.members.length > 1 ? ' · Multiple interactions' : ''}</p>
       <p className="text-stone-600">Rfam {g.group.i}–{g.group.j}</p>
-      {g.members.map((m) => <p key={m.id}><span className="font-mono">{CATEGORY_CODE[m.category]} {dominantClass(m)}</span> · {m.n_observed}/{m.n_eligible} ({pct(m.n_observed, m.n_eligible)}){dRow && s(m) ? ` · ${STATE_TEXT[s(m)!.state]} in ${instLabel(dRow)}` : ''}</p>)}
+      {g.members.map((m) => { const c = paired(m)
+        return <p key={m.id}><span className="font-mono">{CATEGORY_CODE[m.category]} {dominantClass(m) || (Object.keys(m.near_classes ?? {})[0] ?? '–')}</span> · {c.k}/{m.n_eligible} ({pct(c.k, m.n_eligible)}){m.category === 'basepair' && m.n_near_only ? ` incl. ${m.n_near_only} near` : ''}{dRow && s(m) ? ` · ${STATE_TEXT[s(m)!.state]} in ${instLabel(dRow)}` : ''}</p> })}
+      {g.members.filter((m) => m.consensus).map((m) => <p key={`c${m.id}`} className="text-stone-600" data-testid="iarc-tooltip-consensus">Rfam consensus: {CONSENSUS_TEXT[m.consensus!]}{m.n_eligible === 0 ? ' · not evaluable in any chain' : ''}</p>)}
       {g.members.length > 1 && <p className="text-stone-600">Any: {g.k}/{g.n} ({pct(g.k, g.n)})</p>}</div> }, [groups, statusOf, N, dRow])
   const focus = useMemo(() => (selected ? [selected.pos_1, selected.pos_2] : NO_POS), [selected])
   const viewerSel = focus.map((p) => labelSeqAt(dIdx, p)).filter((x): x is number => x != null)
@@ -320,9 +340,11 @@ function FamilyLegend() {
         {CATEGORIES.map((c) => <li key={c} className={row}><LineSample cat={c} /><span className="font-medium">{CATEGORY_CODE[c]}</span><span className="text-stone-500">{CATEGORY_TEXT[c]}</span><RampBar ramp={CATEGORY_STYLE[c].ramp} testId={`ilegend-ramp-${c}`} /></li>)}
         <li className={row}><svg width="30" height="8" aria-hidden className="shrink-0" data-testid="ilegend-multiple"><line x1="2" y1="4" x2="28" y2="4" stroke={MULTI_RAMP[2]} strokeWidth={3.4} strokeLinecap="round" /><line x1="2" y1="4" x2="28" y2="4" stroke="white" strokeWidth={0.9} /></svg>
           <span /><span className="text-stone-500" title="More than one interaction type between the same two nucleotides">Multiple interactions</span><RampBar ramp={MULTI_RAMP} testId="ilegend-ramp-multiple" /></li>
+        <li className={row}><svg width="30" height="8" aria-hidden className="shrink-0" data-testid="ilegend-2d"><line x1="2" y1="4" x2="28" y2="4" stroke={ARC_2D.color} strokeWidth={ARC_2D.width + 0.4} strokeDasharray={ARC_2D.dash} /></svg>
+          <span className="font-medium">2D</span><span className="text-stone-500" title={CONSENSUS_TIP['2d']}>Rfam consensus pair, not paired in any chain</span><span /></li>
         <li className={row}><svg width="30" height="10" aria-hidden><circle cx="15" cy="5" r="3.5" fill="#f59e0b" stroke="#1c1917" strokeWidth="0.8" /></svg><span /><span className="text-stone-500">Selected nucleotide</span><span /></li>
       </ul>
-      <p className="mt-1.5 text-stone-500" data-testid="ilegend-scale">Each type has its own scale: colour intensity = observed / eligible chain instances (lighter = rarer, darker = more conserved). Multiple interactions use the “any” occurrence.</p>
+      <p className="mt-1.5 text-stone-500" data-testid="ilegend-scale">Each type has its own scale: colour intensity = observed / eligible chain instances (lighter = rarer, darker = more conserved); base pairs count true or near FR3D pairs. Multiple interactions use the “any” occurrence. Use <b>More filters › Rfam consensus</b> to show Both, 2D or 3D base pairs.</p>
     </section>)
 }
 function NoTypes() {
@@ -356,27 +378,29 @@ function SelectedDetails({ ds, p, group, statusOf, N, rowOf, displayed, defaultR
   const nc = p.n_missing + p.n_incomplete + p.n_unmapped + p.n_annotation_unavailable
   return (
     <section className="space-y-2 self-start rounded border border-stone-200 bg-white p-3 text-xs text-stone-800" data-testid="idetails" data-id={p.id}>
-      <div className="flex items-start justify-between gap-2"><h3 className="text-sm font-semibold" data-testid="idetails-title">{interactionLabel(p, N)} · {CATEGORY_CODE[p.category]} {status?.state === 'present' ? status.classes.join(', ') : dominantClass(p)}</h3>
+      <div className="flex items-start justify-between gap-2"><h3 className="text-sm font-semibold" data-testid="idetails-title">{interactionLabel(p, N)} · {CATEGORY_CODE[p.category]} {isPaired(status?.state) ? status!.classes.join(', ') : dominantClass(p) || Object.keys(allClasses(p))[0] || ''}</h3>
         <button type="button" className="text-stone-500 hover:text-stone-800" onClick={() => select(null)} aria-label="Clear selection" data-testid="idetails-clear">×</button></div>
       {group && group.members.length > 1 && <div data-testid="idetails-multiple"><p className="font-medium">Multiple interactions <InfoTip text={TIP.multiple} label="About multiple interactions" /> <span className="font-normal text-stone-500">any: {group.k}/{group.n} ({pct(group.k, group.n)})</span></p>
         <ul className="mt-0.5 space-y-0.5">{group.members.map((m) => { const s = statusOf.get(m.id)
           return <li key={m.id}><button type="button" onClick={() => select(m.id)} aria-pressed={m.id === p.id} data-testid={`idetails-member-${m.id}`}
-            className={`w-full rounded px-1 text-left ${m.id === p.id ? 'bg-amber-100' : 'hover:bg-stone-100'}`}><span className="font-mono">{CATEGORY_CODE[m.category]} {Object.keys(m.classes).join('/')}</span> · {m.n_observed}/{m.n_eligible} ({pct(m.n_observed, m.n_eligible)}){s ? ` · ${STATE_TEXT[s.state]}` : ''}</button></li> })}</ul></div>}
+            className={`w-full rounded px-1 text-left ${m.id === p.id ? 'bg-amber-100' : 'hover:bg-stone-100'}`}><span className="font-mono">{CATEGORY_CODE[m.category]} {Object.keys(allClasses(m)).join('/')}</span> · {paired(m).k}/{m.n_eligible} ({pct(paired(m).k, m.n_eligible)}){s ? ` · ${STATE_TEXT[s.state]}` : ''}</button></li> })}</ul></div>}
       <dl className="grid grid-cols-[7rem_1fr] gap-x-2 gap-y-0.5">
         <dt className="text-stone-500">Rfam positions</dt><dd data-testid="idetails-rfam">{p.pos_1}{p.directional ? '→' : '–'}{p.pos_2}{p.directional ? ' (base → backbone)' : ''}</dd>
         <dt className="text-stone-500">Type</dt><dd>{CATEGORY_TEXT[p.category]} ({CATEGORY_CODE[p.category]}){p.structure_class && p.structure_class !== 'unclassified' ? ` · ${p.structure_class}` : ''}</dd>
-        <dt className="text-stone-500">Interaction class</dt><dd className="font-mono" data-testid="idetails-classes">{classText(p.classes)}</dd>
-        <dt className="text-stone-500">Conservation</dt><dd data-testid="idetails-conservation">{p.n_observed}/{p.n_eligible} eligible chains ({pct(p.n_observed, p.n_eligible)})</dd>
-        <dt className="text-stone-500">PDB entries</dt><dd>{p.n_entries_observed} of {p.n_entries_eligible} eligible</dd>
+        {p.consensus && <><dt className="text-stone-500">Rfam consensus</dt><dd data-testid="idetails-consensus" data-consensus={p.consensus} title={CONSENSUS_TIP[p.consensus]}>{CONSENSUS_TEXT[p.consensus]} · {p.n_eligible === 0 ? 'in the Rfam consensus secondary structure (2D); not evaluable in any chain (positions missing, incomplete or unmapped everywhere)' : CONSENSUS_TIP[p.consensus].replace(/^In /, 'in ').replace(/^Base pair observed/, 'observed')}</dd></>}
+        <dt className="text-stone-500">Interaction class</dt><dd className="font-mono" data-testid="idetails-classes">{classText(allClasses(p)) || '–'}</dd>
+        <dt className="text-stone-500">Conservation</dt><dd data-testid="idetails-conservation">{paired(p).k}/{p.n_eligible} eligible chains ({pct(paired(p).k, p.n_eligible)}){p.category === 'basepair' && p.n_near_only ? <span className="text-stone-500"> · {p.n_observed} true, {p.n_near_only} near</span> : null}</dd>
+        <dt className="text-stone-500">PDB entries</dt><dd>{paired(p).entries} of {p.n_entries_eligible} eligible</dd>
         <dt className="text-stone-500">Region</dt><dd>{regionText(p)}</dd>
-        <dt className="text-stone-500">Not evaluated</dt><dd title="Chains where this interaction cannot be evaluated; never counted as absent">{nc} chains{p.n_near_only ? ` · ${p.n_near_only} near only` : ''}</dd>
+        <dt className="text-stone-500">Not evaluated</dt><dd title="Chains where this interaction cannot be evaluated; never counted as absent">{nc} chains{p.n_near_only && p.category !== 'basepair' ? ` · ${p.n_near_only} near only (not counted)` : ''}</dd>
       </dl>
-      {status && dRow && <div className={`rounded border px-2 py-1.5 ${status.state === 'present' ? 'border-emerald-200 bg-emerald-50' : status.state === 'absent' ? 'border-stone-300 bg-stone-50' : 'border-amber-200 bg-amber-50'}`} data-testid="idetails-status" data-state={status.state}>
-        <p><b>{STATE_TEXT[status.state]}</b> in displayed structure ({instLabel(dRow)}){status.state === 'present' ? `: ${status.classes.join(', ')}` : ''}</p>
+      {status && dRow && <div className={`rounded border px-2 py-1.5 ${status.state === 'present' ? 'border-emerald-200 bg-emerald-50' : status.state === 'near' ? 'border-sky-200 bg-sky-50' : status.state === 'absent' ? 'border-stone-300 bg-stone-50' : 'border-amber-200 bg-amber-50'}`} data-testid="idetails-status" data-state={status.state}>
+        <p><b>{STATE_TEXT[status.state]}</b> in displayed structure ({instLabel(dRow)}){isPaired(status.state) ? `: ${status.classes.join(', ')}` : ''}</p>
+        {status.state === 'near' && <p>Near base pair: close to but outside FR3D’s cutoffs for a true pair.</p>}
         {status.state === 'absent' && <p>Resolved and eligible; not annotated.{status.other.length > 0 && <> Other: <span className="font-mono" data-testid="idetails-other">{status.other.join(', ')}</span></>}</p>}
         {status.state === 'not_comparable' && <p data-testid="idetails-reason">{status.reason}</p>}
       </div>}
-      {status && status.state !== 'present' && <label className="flex flex-col gap-0.5" data-testid="isupport">
+      {status && !isPaired(status.state) && <label className="flex flex-col gap-0.5" data-testid="isupport">
         <span className="font-medium">Inspect in another structure <span className="font-normal text-stone-500">({support.length} with this interaction)</span></span>
         <select className="rounded border border-stone-300 bg-white px-1 py-0.5" value="" onChange={(e) => e.target.value && setDisplayed(e.target.value)} data-testid="isupport-select">
           <option value="">Choose a chain…</option>
@@ -392,13 +416,14 @@ function ViewerCaption({ p, status, N, dRow, highlighted }: { p: InteractionPair
   if (p && status) {
     const lab = interactionLabel(p, N)
     text = status.state === 'present' ? <>{lab}: present in {who} ({status.classes.join(', ')}).</>
+      : status.state === 'near' ? <>{lab}: <b>near base pair</b> in {who} ({status.classes.join(', ')}; close to but outside FR3D’s cutoffs).</>
       : status.state === 'absent' ? <>{lab}: <b>not annotated</b> in {who}. Both nucleotides are highlighted; no interaction is implied.</>
         : <>{lab}: not comparable in {who} ({status.reason}).{highlighted.length ? ` ${highlighted.length === 1 ? 'The modelled nucleotide is' : 'The modelled nucleotides are'} highlighted.` : ''}</>
   }
   return <p className="text-xs text-stone-600" data-testid="iviewer-caption" data-highlighted={highlighted.join(',')}>{text}</p>
 }
 
-type SortKey = 'default' | 'pos' | 'type' | 'class' | 'cons' | 'entries' | 'region' | 'status'
+type SortKey = 'default' | 'pos' | 'type' | 'class' | 'cons' | 'entries' | 'region' | 'status' | 'consensus'
 function useSort<T>(rows: T[], key: (r: T, k: SortKey) => string | number, byDefault: (a: T, b: T) => number) {
   const [sort, setSort] = useState<{ k: SortKey; dir: 1 | -1 }>({ k: 'default', dir: 1 })
   const sorted = useMemo(() => [...rows].sort((a, b) => { if (sort.k === 'default') return byDefault(a, b); const x = key(a, sort.k), y = key(b, sort.k); return (x < y ? -1 : x > y ? 1 : 0) * sort.dir || byDefault(a, b) }), [rows, sort, key, byDefault])
@@ -456,6 +481,14 @@ function useExpanded(selectedId: string | null, groups: { id: string; members: {
   return { isOpen, toggle }
 }
 
+const CONSENSUS_RANK: Record<ConsensusStatus, number> = { both: 0, '2d': 1, '3d': 2 }
+/** Rfam consensus status of a family row: its base-pair member's (null when it has none) */
+const groupConsensus = (g: FamilyGroup) => g.members.find((m) => m.category === 'basepair')?.consensus ?? null
+function ConsensusCell({ c, testId }: { c: ConsensusStatus | null | undefined; testId: string }) {
+  return <td className="px-1.5 py-1 whitespace-nowrap" data-testid={testId} data-consensus={c ?? ''}>{c
+    ? <span title={CONSENSUS_TIP[c]} className={c === '2d' ? 'rounded bg-stone-100 px-1 text-stone-700' : c === '3d' ? 'text-stone-700' : 'text-stone-800'}>{CONSENSUS_TEXT[c]}</span>
+    : <span className="text-stone-400" title="Base pairs only">–</span>}</td>
+}
 const famDefault = (a: FamilyGroup, b: FamilyGroup) => defaultFamilyOrder({ entries: a.entries, frequency: a.frequency, n: a.n, i: a.group.i, j: a.group.j }, { entries: b.entries, frequency: b.frequency, n: b.n, i: b.group.i, j: b.group.j })
 function FamilyTable({ ds, groups, statusOf, N, selectedId, select, displayedLabel, search, renderSearch, noTypes, paging }: { groups: FamilyGroup[]; statusOf: Map<string, InstanceStatus | null>; N: Numbering | null
   selectedId: string | null; select: (id: string) => void; displayedLabel: string; search: SearchQuery; renderSearch: (onEnter: () => void) => ReactNode; noTypes: boolean; paging: Paging
@@ -464,37 +497,38 @@ function FamilyTable({ ds, groups, statusOf, N, selectedId, select, displayedLab
   // interactions annotated with different FR3D classes in different chains: per-class breakdown rows on demand
   const [classOpen, setClassOpen] = useState<Set<string>>(new Set())
   const toggleClasses = (id: string) => setClassOpen((o) => { const n = new Set(o); if (n.has(id)) n.delete(id); else n.add(id); return n })
-  const text = useCallback((g: FamilyGroup) => g.members.map((p) => `${interactionLabel(p, N)} rfam ${p.pos_1}-${p.pos_2} ${CATEGORY_TEXT[p.category]} ${CATEGORY_CODE[p.category]} ${Object.keys(p.classes).join(' ')} ${regionText(p)}`).join(' ').toLowerCase(), [N])
+  const text = useCallback((g: FamilyGroup) => g.members.map((p) => `${interactionLabel(p, N)} rfam ${p.pos_1}-${p.pos_2} ${CATEGORY_TEXT[p.category]} ${CATEGORY_CODE[p.category]} ${Object.keys(allClasses(p)).join(' ')} ${regionText(p)}${p.consensus ? ` rfam consensus ${CONSENSUS_TEXT[p.consensus]}` : ''}`).join(' ').toLowerCase(), [N])
   const shown = useMemo(() => (search.kind === 'none' ? groups : search.kind === 'error' ? [] : search.kind === 'residue' ? groups.filter((g) => matchesPositions({ pos_1: g.group.i, pos_2: g.group.j }, search.positions))
     : groups.filter((g) => text(g).includes(search.text))), [groups, search, text])
   const key = useCallback((g: FamilyGroup, k: SortKey): string | number => { const p = g.members[0]
     return k === 'pos' ? g.group.i * 10000 + g.group.j : k === 'type' ? (g.members.length > 1 ? 'zz' : CATEGORY_CODE[p.category]) : k === 'class' ? dominantClass(p) : k === 'cons' ? (g.frequency ?? -1) * 1e6 + g.n
-      : k === 'entries' ? g.entries : k === 'region' ? regionText(p) : STATE_RANK[g.state ?? 'not_comparable'] }, [])
+      : k === 'entries' ? g.entries : k === 'region' ? regionText(p) : k === 'consensus' ? (() => { const c = groupConsensus(g); return c ? CONSENSUS_RANK[c] : 9 })() : STATE_RANK[g.state ?? 'not_comparable'] }, [])
   const { sorted, th, reset, sortKey } = useSort(shown, key, famDefault)
   const { visible, pager, fill } = usePaged(sorted, selectedId, paging, `${sortKey}|${JSON.stringify(search)}|${groups.length}`)
   const box = useScrollToSelected(selectedId)
   const { isOpen, toggle } = useExpanded(selectedId, groups)
-  const memberRow = (p: InteractionPair, sub: boolean) => { const s = statusOf.get(p.id), on = p.id === selectedId
-    return <tr key={p.id} data-row-id={p.id} data-testid={`irow-${p.id}`} data-status={s?.state ?? ''} data-frequency={p.frequency ?? ''} aria-selected={on} onClick={() => select(p.id)}
+  const memberRow = (p: InteractionPair, sub: boolean) => { const s = statusOf.get(p.id), on = p.id === selectedId, c = paired(p), cls = Object.keys(allClasses(p))
+    return <tr key={p.id} data-row-id={p.id} data-testid={`irow-${p.id}`} data-status={s?.state ?? ''} data-frequency={c.f ?? ''} data-consensus={p.consensus ?? ''} aria-selected={on} onClick={() => select(p.id)}
       className={`cursor-pointer border-t border-stone-100 ${on ? 'bg-amber-100' : sub ? 'bg-stone-50/60 hover:bg-stone-100' : 'hover:bg-stone-50'}`}>
       <td className={`py-1 pr-1.5 whitespace-nowrap ${sub ? 'pl-5' : 'pl-1.5'}`} title={`Rfam ${p.pos_1}${p.directional ? '→' : '–'}${p.pos_2} · ${regionText(p)}`}><span className="font-medium">{interactionLabel(p, N)}</span>{N && <span className="ml-1 text-[10px] text-stone-400">{p.pos_1}{p.directional ? '→' : '–'}{p.pos_2}</span>}</td>
       <td className="px-1.5 py-1"><TypeCell cats={[p.category]} /></td>
-      <td className="px-1.5 py-1 font-mono whitespace-nowrap" title={classText(p.classes)}>{Object.keys(p.classes).length > 1
+      <td className="px-1.5 py-1 font-mono whitespace-nowrap" title={classText(allClasses(p))}>{cls.length > 1
         ? <button type="button" className="text-left hover:text-blue-700" aria-expanded={classOpen.has(p.id)} aria-label={`${classOpen.has(p.id) ? 'Hide' : 'Show'} the per-class breakdown`} data-testid={`iclass-toggle-${p.id}`}
-            onClick={(e) => { e.stopPropagation(); toggleClasses(p.id) }}><span className="mr-0.5 font-sans text-stone-500">{classOpen.has(p.id) ? '▾' : '▸'}</span>{Object.keys(p.classes).slice(0, 2).join(', ')}{Object.keys(p.classes).length > 2 ? ` +${Object.keys(p.classes).length - 2}` : ''}</button>
-        : Object.keys(p.classes)[0]}</td>
-      <ConsCell k={p.n_observed} n={p.n_eligible} f={p.frequency} testId={`icons-${p.id}`} cat={p.category} />
-      <td className="px-1.5 py-1 text-right">{p.n_entries_observed}</td>
+            onClick={(e) => { e.stopPropagation(); toggleClasses(p.id) }}><span className="mr-0.5 font-sans text-stone-500">{classOpen.has(p.id) ? '▾' : '▸'}</span>{cls.slice(0, 2).join(', ')}{cls.length > 2 ? ` +${cls.length - 2}` : ''}</button>
+        : cls[0] ?? <span className="font-sans text-stone-400" title="Not paired in any evaluable chain">–</span>}</td>
+      <ConsCell k={c.k} n={p.n_eligible} f={c.f} testId={`icons-${p.id}`} cat={p.category} faint={p.consensus === '2d'} />
+      <td className="px-1.5 py-1 text-right">{c.entries}</td>
+      <ConsensusCell c={p.consensus} testId={`iconsensus-${p.id}`} />
       <td className="px-1.5 py-1">{s ? <StatusBadge s={s} testId={`istatus-${p.id}`} compact /> : '–'}</td>
     </tr> }
   /** one row per FR3D class of an interaction: chains with that class / eligible chains, its PDB entries, and the displayed chain's class */
   const classRows = (p: InteractionPair, sub: boolean) => !classOpen.has(p.id) ? [] : classBreakdown(ds, p, pdbOf).map((c) => { const s = statusOf.get(p.id)
-    const here = s?.state === 'present' ? (s.classes.includes(c.cls) ? 'present' : 'other') : s?.state ?? null
+    const here = isPaired(s?.state) ? (s!.classes.includes(c.cls) ? 'present' : 'other') : s?.state ?? null
     return <tr key={`${p.id}#${c.cls}`} className="border-t border-stone-100 bg-stone-50 text-stone-700" data-testid={`iclass-row-${p.id}-${c.cls}`}>
       <td className={`py-0.5 pr-1.5 text-[11px] text-stone-500 ${sub ? 'pl-9' : 'pl-5'}`}>class</td><td />
       <td className="px-1.5 py-0.5 font-mono">{c.cls}</td>
       <td className="px-1.5 py-0.5 whitespace-nowrap" data-testid={`iclass-cons-${p.id}-${c.cls}`}>{c.chains}/{p.n_eligible} <span className="text-stone-500">{pct(c.chains, p.n_eligible)}</span></td>
-      <td className="px-1.5 py-0.5 text-right">{c.entries}</td>
+      <td className="px-1.5 py-0.5 text-right">{c.entries}</td><td />
       <td className="px-1.5 py-0.5 text-[11px]">{here === 'present' ? <span className="text-emerald-800">● this class</span> : here === 'other' ? <span className="text-stone-500">other class ({s!.classes.join(', ')})</span> : here ? <span className="text-stone-500">{STATE_TEXT[here]}</span> : ''}</td>
     </tr> })
   return (
@@ -506,7 +540,7 @@ function FamilyTable({ ds, groups, statusOf, N, selectedId, select, displayedLab
       <div ref={box} className="h-[460px] overflow-auto rounded border border-stone-200 bg-white" data-testid="itable-box">
         <table className={`w-full text-xs ${fill ? 'h-full' : ''}`} data-fill={fill ? 'true' : 'false'}>
           <thead className="sticky top-0 z-10 bg-stone-100 text-stone-700"><tr className="h-8">
-            {th('pos', 'Interaction')}{th('type', 'Type')}{th('class', 'Interaction class', '', <InfoTip text={TIP.klass} label="About interaction classes" />)}{th('cons', 'Conservation', '', <InfoTip text={TIP.frequency} label="About conservation" />)}{th('entries', 'Entries', 'text-right')}{th('status', 'In displayed structure')}
+            {th('pos', 'Interaction')}{th('type', 'Type')}{th('class', 'Interaction class', '', <InfoTip text={TIP.klass} label="About interaction classes" />)}{th('cons', 'Conservation', '', <InfoTip text={TIP.frequency} label="About conservation" />)}{th('entries', 'Entries', 'text-right')}{th('consensus', 'Rfam consensus', '', <InfoTip text={TIP.consensus} label="About the Rfam consensus comparison" />)}{th('status', 'In displayed structure')}
           </tr></thead>
           <tbody data-testid="ifamily-tbody">
             {visible.flatMap((g) => g.members.length === 1 ? [memberRow(g.members[0], false), ...classRows(g.members[0], false)] : [
@@ -516,21 +550,22 @@ function FamilyTable({ ds, groups, statusOf, N, selectedId, select, displayedLab
                 <td className="px-1.5 py-1 whitespace-nowrap" title={`Rfam ${g.group.i}–${g.group.j} · ${regionText(g.members[0])}`}><button type="button" className="mr-1 text-stone-500" aria-label={isOpen(g.id) ? 'Collapse' : 'Expand'} onClick={(e) => { e.stopPropagation(); toggle(g.id) }} data-testid={`igroup-toggle-${g.id}`}>{isOpen(g.id) ? '▾' : '▸'}</button>
                   <span className="font-medium">{pairLabel(g.group.i, g.group.j, N)}</span>{N && <span className="ml-1 text-[10px] text-stone-400">{g.group.i}–{g.group.j}</span>}</td>
                 <td className="px-1.5 py-1"><TypeCell cats={g.members.map((m) => m.category)} /></td>
-                <td className="px-1.5 py-1 font-mono text-[11px]">{g.members.map((m) => `${CATEGORY_CODE[m.category]} ${dominantClass(m)}`).join(' · ')}</td>
+                <td className="px-1.5 py-1 font-mono text-[11px]">{g.members.map((m) => `${CATEGORY_CODE[m.category]} ${dominantClass(m) || Object.keys(allClasses(m))[0] || '–'}`).join(' · ')}</td>
                 <ConsCell k={g.k} n={g.n} f={g.frequency} testId={`icons-${g.id}`} cat="multiple" />
                 <td className="px-1.5 py-1 text-right">{g.entries}</td>
+                <ConsensusCell c={groupConsensus(g)} testId={`iconsensus-${g.id}`} />
                 <td className="px-1.5 py-1 whitespace-nowrap">{g.state && <span className={STATE_STYLE[g.state]} data-state={g.state}><span aria-hidden className="mr-1">{STATE_ICON[g.state]}</span>{g.state === 'present' ? 'Present (any)' : STATE_TEXT[g.state]}</span>}</td>
               </tr>,
               ...(isOpen(g.id) ? g.members.flatMap((m) => [memberRow(m, true), ...classRows(m, true)]) : [])])}
-            {!sorted.length && <tr><td colSpan={6} className="px-2 py-3 text-center text-stone-500">{noTypes ? 'No interaction types selected.' : search.kind !== 'none' ? 'No interaction matches the search in the selected types.' : 'No interactions match the filters.'}</td></tr>}
+            {!sorted.length && <tr><td colSpan={7} className="px-2 py-3 text-center text-stone-500">{noTypes ? 'No interaction types selected.' : search.kind !== 'none' ? 'No interaction matches the search in the selected types.' : 'No interactions match the filters.'}</td></tr>}
           </tbody>
         </table>
       </div>
-      <div className="flex flex-col gap-1">{pager}<p className="text-[11px] text-stone-500">Conservation: chains with the interaction / eligible chains. “In displayed structure”: {displayedLabel}.</p></div>
+      <div className="flex flex-col gap-1">{pager}<p className="text-[11px] text-stone-500">Conservation: chains with the interaction / eligible chains (base pairs: true or near). Rfam consensus: Both, 2D (consensus only) or 3D (structures only). “In displayed structure”: {displayedLabel}.</p></div>
     </section>)
 }
-function ConsCell({ k, n, f, testId, cat }: { k: number; n: number; f: number | null; testId: string; cat: InteractionCategory | 'multiple' }) {
-  const any = cat === 'multiple', color = any ? multiColor(f) : categoryColor(cat, f)
+function ConsCell({ k, n, f, testId, cat, faint = false }: { k: number; n: number; f: number | null; testId: string; cat: InteractionCategory | 'multiple'; faint?: boolean }) {
+  const any = cat === 'multiple', color = faint ? ARC_2D.color : any ? multiColor(f) : categoryColor(cat, f)
   return <td className="px-1.5 py-1 whitespace-nowrap" data-testid={testId} data-color={color}>
     <span className="mr-1 inline-block h-2 w-2 rounded-sm align-middle" style={{ background: color }} aria-hidden />{any && <span className="text-stone-500">any </span>}{k}/{n} <span className="text-stone-500">{pct(k, n)}</span></td>
 }
@@ -556,7 +591,7 @@ function CompareMode({ ds, L, circular, labelFor, N, visiblePairs, pairById, sel
   const groups = useMemo<CompareGroup[]>(() => groupByEndpoints(rows).map((g) => ({ group: g, id: groupId(g), members: g.members, status: worst(g.members) })), [rows])
   const counts = useMemo(() => { const c: Record<string, number> = {}; for (const r of rows) c[r.status] = (c[r.status] ?? 0) + 1; return c }, [rows])
   const arcsFor = useCallback((side: 'a' | 'b') => groups.flatMap<DiagramArc>((g) => {
-    const here = g.members.filter((r) => r[side].state === 'present'); if (!here.length) return []
+    const here = g.members.filter((r) => isPaired(r[side].state)); if (!here.length) return []
     const status = worst(here), st = COMPARE_COLORS[status], muted = status === 'shared' || status === 'not_comparable', one = g.members.length === 1
     // colour = comparison status; line pattern = category (single interactions); double line = multiple interactions
     return [{ id: g.id, i: one ? g.members[0].pos_1 : g.group.i, j: one ? g.members[0].pos_2 : g.group.j, color: st.color, dash: one ? CATEGORY_STYLE[g.members[0].category].dash : undefined,
@@ -565,7 +600,7 @@ function CompareMode({ ds, L, circular, labelFor, N, visiblePairs, pairById, sel
   const absentOf = (sn: string | null) => { const i = sn ? ds.instances.find((x) => x.seq_name === sn) : null; return new Set(i ? [...i.eligibility].flatMap((c, k) => (c === 'E' ? [] : [k + 1])) : []) }
   const absentA = useMemo(() => absentOf(a), [a, ds]), absentB = useMemo(() => absentOf(b), [b, ds])   // eslint-disable-line react-hooks/exhaustive-deps
   const tooltip = useCallback((id: string) => { const g = groups.find((x) => x.id === id); if (!g) return null
-    const cls = (s: InstanceStatus) => (s.state === 'present' ? s.classes.join(', ') : STATE_TEXT[s.state])
+    const cls = (s: InstanceStatus) => (isPaired(s.state) ? s.classes.join(', ') : STATE_TEXT[s.state])
     return <div data-testid="icmp-tooltip" className="space-y-0.5"><p className="font-semibold">{pairLabel(g.group.i, g.group.j, N)}{g.members.length > 1 ? ' · Multiple interactions' : ''}</p><p className="text-stone-600">Rfam {g.group.i}–{g.group.j}</p>
       {g.members.map((r) => <p key={r.id}><span className="font-mono">{CATEGORY_CODE[r.category]}</span> <b>{COMPARE_TEXT[r.status]}</b> · A: {cls(r.a)} · B: {cls(r.b)}</p>)}</div> }, [groups, N])
   const selGroup = selectedId ? groups.find((g) => g.members.some((m) => m.id === selectedId)) ?? null : null
@@ -643,13 +678,13 @@ function CoverageNote({ ds, a, b, rowOf }: { ds: InteractionsDataset; a: string;
   const cov = useMemo(() => [a, b].map((sn) => ({ sn, ...helixCoverage(ds, sn) })), [ds, a, b])
   return (
     <p className="basis-full text-stone-600" data-testid="icompare-coverage">
-      Helix base pairs annotated by FR3D:
+      Helix base pairs paired (true or near) in FR3D:
       {cov.map((c, k) => { const low = c.fraction != null && c.fraction < 0.8; const r = rowOf.get(c.sn)
         const res = r ? [r.experimental_method?.replace('X-ray diffraction', 'X-ray').replace('Electron Microscopy', 'cryo-EM'), r.resolution != null ? `${r.resolution} Å` : null].filter(Boolean).join(', ') : ''
         return <span key={c.sn} className={`ml-2 ${low ? 'font-medium text-amber-800' : ''}`} data-testid={`icompare-coverage-${k === 0 ? 'a' : 'b'}`} data-fraction={c.fraction ?? ''}>
           {k === 0 ? 'A' : 'B'} {r ? instLabel(r) : c.sn}{res && <span data-testid={`icompare-resolution-${k === 0 ? 'a' : 'b'}`}> ({res})</span>}: {c.k} of {c.n} eligible ({pct(c.k, c.n)}){low ? ' — sparse annotation; “only in” differences may be annotation gaps' : ''}{k === 0 ? ' ·' : ''}</span> })}
       {med != null && <span className="ml-2 text-stone-500">family median {Math.round(100 * med)}%</span>}
-      <InfoTip text="Of the Rfam consensus (SS_cons) helix base pairs that can be evaluated in the chain (both bases resolved and complete), how many BGSU/FR3D annotates. Distorted or moderate-resolution models can have paired nucleotides that FR3D does not annotate; BGSU exports no near base pairs." label="About annotation coverage" />
+      <InfoTip text="Of the Rfam consensus (SS_cons) helix base pairs that can be evaluated in the chain (both bases resolved and complete), how many FR3D annotates as paired (true or near base pair, any class). Near base pairs come from a pinned local fr3d-python run, because BGSU exports none." label="About annotation coverage" />
     </p>)
 }
 
@@ -689,7 +724,7 @@ function CompareTable({ groups, counts, statuses, setStatuses, N, pairById, sele
   const box = useScrollToSelected(selectedId)
   const { isOpen, toggle } = useExpanded(selectedId, shown)
   const toggleStatus = (s: CompareStatus) => { const n = new Set(statuses); if (n.has(s)) n.delete(s); else n.add(s); setStatuses(n) }
-  const cls = (s: InstanceStatus) => (s.state === 'present' ? <span className="font-mono">{s.classes.join(', ')}</span> : <span className={STATE_STYLE[s.state]} title={s.reason ?? (s.other.length ? `Other: ${s.other.join(', ')}` : 'not annotated')}>{s.state === 'absent' ? '—' : 'n/c'}</span>)
+  const cls = (s: InstanceStatus) => (isPaired(s.state) ? <span className="font-mono" title={s.state === 'near' ? 'Near base pair' : undefined} data-state={s.state}>{s.classes.join(', ')}</span> : <span className={STATE_STYLE[s.state]} title={s.reason ?? (s.other.length ? `Other: ${s.other.join(', ')}` : 'not annotated')}>{s.state === 'absent' ? '—' : 'n/c'}</span>)
   const statusCell = (st: CompareStatus) => <><span className="mr-1 inline-block h-2 w-2 rounded-full align-middle" style={{ background: COMPARE_COLORS[st].color }} />{COMPARE_TEXT[st]}</>
   const memberRow = (r: CompareRow, sub: boolean) => { const on = r.id === selectedId, p = pairById.get(r.id)
     return <tr key={r.id} data-row-id={r.id} data-testid={`icmp-row-${r.id}`} data-status={r.status} aria-selected={on} onClick={() => select(r.id)} className={`cursor-pointer border-t border-stone-100 ${on ? 'bg-amber-100' : sub ? 'bg-stone-50/60 hover:bg-stone-100' : 'hover:bg-stone-50'}`}>

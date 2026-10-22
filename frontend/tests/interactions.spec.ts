@@ -4,8 +4,10 @@ import type { InteractionsDataset, StructureClusteringDataset } from '../src/typ
 
 /* Interactions tab (RF00167): family-wide conservation from interactions.json, status in the displayed structure, numbering reference vs
    displayed structure, lookup, supporting-structure inspection, and the two-instance comparison with its local superposition. */
-type Pair = { id: string; category: string; pos_1: number; pos_2: number; n_observed: number; n_eligible: number; n_entries_observed: number; frequency: number | null }
-type Inst = { seq_name: string; eligibility: string; observed: Record<string, number[]> }
+type Pair = { id: string; category: string; pos_1: number; pos_2: number; n_observed: number; n_eligible: number; n_entries_observed: number; frequency: number | null
+  /** schema 1.4: base pairs count true or near pairs ("paired"); Rfam SS_cons comparison */
+  n_paired: number; frequency_paired: number | null; n_entries_paired: number; n_near_only: number; near_classes: Record<string, number>; consensus: 'both' | '2d' | '3d' | null }
+type Inst = { seq_name: string; eligibility: string; observed: Record<string, number[]>; near: [string, string, number, number][] }
 type DS = { pairs: Pair[]; instances: Inst[]; default_numbering_reference: { seq_name: string } }
 let ds: DS
 const REF = '4fe5_1_B_A'
@@ -20,13 +22,15 @@ const labelSeqs = async (page: Page, sn: string, positions: number[]) => {
   const m = await (await page.request.get(`/families/RF00167/mappings/${sn}.json`)).json() as { consensus_columns: { rfam_consensus_pos: number; polymer_seq_position: number | null }[] }
   return positions.map((p) => m.consensus_columns.find((c) => c.rfam_consensus_pos === p)!.polymer_seq_position)
 }
-/** independent expectation from the data file (base pairs: both bases eligible; observed index of the chain) */
+/** independent expectation from the data file (base pairs: both bases eligible; observed index of the chain; else a near base pair) */
 const statusIn = (sn: string, p: Pair) => {
   const inst = ds.instances.find((i) => i.seq_name === sn)!, e = inst.eligibility
   if (e[p.pos_1 - 1] !== 'E' || e[p.pos_2 - 1] !== 'E') return 'not_comparable'
   const k = ds.pairs.indexOf(p)
-  return Object.values(inst.observed).some((ks) => ks.includes(k)) ? 'present' : 'absent'
+  if (Object.values(inst.observed).some((ks) => ks.includes(k))) return 'present'
+  return p.category === 'basepair' && inst.near.some(([c, , i, j]) => c === 'basepair' && i === p.pos_1 && j === p.pos_2) ? 'near' : 'absent'
 }
+const famOrder = (a: Pair, b: Pair) => b.n_entries_paired - a.n_entries_paired || (b.frequency_paired ?? -1) - (a.frequency_paired ?? -1) || b.n_eligible - a.n_eligible || a.pos_1 - b.pos_1 || a.pos_2 - b.pos_2
 
 test('family-wide table: every family interaction (not only the reference), stored numerators and denominators, status in the displayed structure', async ({ page }) => {
   await open(page)
@@ -36,8 +40,9 @@ test('family-wide table: every family interaction (not only the reference), stor
   // interactions absent from or not comparable in the reference are listed too
   expect(bps.some((p) => statusIn(REF, p) !== 'present')).toBe(true)
   for (const p of bps) {
-    await expect(page.getByTestId(`icons-${p.id}`)).toContainText(`${p.n_observed}/${p.n_eligible}`)
+    await expect(page.getByTestId(`icons-${p.id}`)).toContainText(`${p.n_paired}/${p.n_eligible}`)
     await expect(page.getByTestId(`irow-${p.id}`)).toHaveAttribute('data-status', statusIn(REF, p))
+    await expect(page.getByTestId(`iconsensus-${p.id}`)).toHaveAttribute('data-consensus', p.consensus ?? '')
   }
   // kissing loop: conserved in every eligible chain; labels in the default reference numbering
   await expect(page.getByTestId(`irow-${KL}`)).toContainText('G37–C61'); await expect(page.getByTestId(`icons-${KL}`)).toContainText('80/80')
@@ -45,7 +50,7 @@ test('family-wide table: every family interaction (not only the reference), stor
   await expect(page.getByTestId('irow-basepair:18-88')).toHaveAttribute('data-status', 'not_comparable')
   await expect(page.getByTestId('istatus-basepair:18-88')).toHaveAttribute('title', /Rfam 18: no residue/)
   // conservation colour follows the numeric frequency (continuous scale)
-  for (const p of bps.slice(0, 10)) await expect(page.getByTestId(`icons-${p.id}`)).toHaveAttribute('data-color', categoryColor('basepair', p.frequency))
+  for (const p of bps.slice(0, 10)) await expect(page.getByTestId(`icons-${p.id}`)).toHaveAttribute('data-color', categoryColor('basepair', p.frequency_paired))
 })
 
 test('interaction types: Bp only by default; several categories together; multiple interactions grouped with their own frequencies', async ({ page }) => {
@@ -67,7 +72,7 @@ test('interaction types: Bp only by default; several categories together; multip
   const [k, members] = multi[0]
   await expect(page.getByTestId(`idiagram-arc-multi:${k}`)).toHaveAttribute('data-multi', 'true')
   await page.getByTestId(`igroup-toggle-multi:${k}`).click()
-  for (const m of members) await expect(page.getByTestId(`icons-${m.id}`)).toContainText(`${m.n_observed}/${m.n_eligible}`)
+  for (const m of members) await expect(page.getByTestId(`icons-${m.id}`)).toContainText(`${m.n_paired}/${m.n_eligible}`)
   // the group row states an explicit "any" occurrence, never a sum of member counts
   await expect(page.getByTestId(`icons-multi:${k}`)).toContainText('any')
   // grouped arc: neutral double line coloured by the explicit "any" occurrence, never by one category's colour
@@ -80,7 +85,7 @@ test('interaction types: Bp only by default; several categories together; multip
   await expect(page.getByTestId('idetails-multiple')).toBeVisible()
   await page.getByTestId(`irow-${members[1].id}`).click()
   await expect(page.getByTestId('idetails-multiple')).toBeVisible()
-  for (const m of members) await expect(page.getByTestId(`idetails-member-${m.id}`)).toContainText(`${m.n_observed}/${m.n_eligible}`)
+  for (const m of members) await expect(page.getByTestId(`idetails-member-${m.id}`)).toContainText(`${m.n_paired}/${m.n_eligible}`)
   await expect(page.getByTestId(`idetails-member-${members[1].id}`)).toHaveAttribute('aria-pressed', 'true')
 })
 
@@ -95,7 +100,7 @@ test('category encoding: colour family and line pattern per type, intensity from
     const p = singles.find((x) => x.category === c)!
     const arc = page.getByTestId(`idiagram-arc-${p.id}`)
     await expect(arc).toHaveAttribute('data-category', c); await expect(arc).toHaveAttribute('data-dash', CATEGORY_STYLE[c].dash ?? '')
-    await expect(arc).toHaveAttribute('data-color', categoryColor(c, p.frequency))
+    await expect(arc).toHaveAttribute('data-color', categoryColor(c, p.frequency_paired))
     await expect(page.getByTestId(`ilegend-${c}`)).toHaveAttribute('data-dash', CATEGORY_STYLE[c].dash ?? '')
     await expect(page.getByTestId(`ilegend-ramp-${c}`)).toHaveAttribute('data-ramp', CATEGORY_STYLE[c].ramp.join(','))   // one intensity scale per type
   }
@@ -113,7 +118,7 @@ test('category encoding: colour family and line pattern per type, intensity from
 test('default order: PDB entries, then frequency, eligible chains, positions; header sorting and reset', async ({ page }) => {
   await open(page)
   const bps = ds.pairs.filter((p) => p.category === 'basepair')
-  const expected = [...bps].sort((a, b) => b.n_entries_observed - a.n_entries_observed || (b.frequency ?? -1) - (a.frequency ?? -1) || b.n_eligible - a.n_eligible || a.pos_1 - b.pos_1 || a.pos_2 - b.pos_2).map((p) => `irow-${p.id}`)
+  const expected = [...bps].sort(famOrder).map((p) => `irow-${p.id}`)
   const ids = () => page.getByTestId('ifamily-tbody').locator('tr').evaluateAll((rs) => rs.map((r) => r.getAttribute('data-testid')))
   expect(await ids()).toEqual(expected)
   await page.getByTestId('isort-pos').click()
@@ -165,7 +170,7 @@ test('absent interaction: residues highlighted without a contact; inspect a supp
   await expect(page.getByTestId(`irow-${p.id}`)).toHaveAttribute('data-status', 'present')
   await expect(page.getByTestId('idetails-status')).toHaveAttribute('data-state', 'present')
   await expect(page.getByTestId('inumbering-select')).toHaveValue(numbering)
-  await expect(page.getByTestId(`icons-${p.id}`)).toContainText(`${p.n_observed}/${p.n_eligible}`)
+  await expect(page.getByTestId(`icons-${p.id}`)).toContainText(`${p.n_paired}/${p.n_eligible}`)
   await expect(page.getByTestId('interactions-tab')).toHaveAttribute('data-mode', 'family')   // not switched to comparison
   // every status column entry follows the new displayed structure
   for (const q of ds.pairs.filter((x) => x.category === 'basepair')) await expect(page.getByTestId(`irow-${q.id}`)).toHaveAttribute('data-status', statusIn(opts[0], q))
@@ -201,7 +206,8 @@ test('unified table search: residues, pairs, Rfam positions and class codes filt
   await search.fill('Rfam 41-66'); await expect(rows).toHaveCount(1)
   await expect(page.getByTestId('idiagram')).toHaveAttribute('data-selected', KL)
   // class codes and regions are text
-  await search.fill('cWW'); await expect(rows).toHaveCount(ds.pairs.filter((p) => p.category === 'basepair' && Object.keys((p as unknown as { classes: Record<string, number> }).classes).includes('cWW')).length)
+  // (text match: near "ncWW" classes match too)
+  await search.fill('cWW'); await expect(rows).toHaveCount(ds.pairs.filter((p) => p.category === 'basepair' && [...Object.keys((p as unknown as { classes: Record<string, number> }).classes), ...Object.keys(p.near_classes)].some((c) => c.includes('cWW'))).length)
   // invalid / non-existent residues: explicit message, empty table
   await search.fill('A37'); await expect(page.getByTestId('isearch-error')).toContainText('is G37'); await expect(rows).toHaveCount(0)
   await search.fill('9999'); await expect(page.getByTestId('isearch-error')).toContainText('No residue 9999')
@@ -342,7 +348,7 @@ test('table and 3D viewer share width, height and top edge in both modes', async
 test('pagination: 15 rows per page by default; first/previous/next/last and a typed page; paging keeps the selection; a selection elsewhere shows its page', async ({ page }) => {
   await open(page, false)
   const bps = ds.pairs.filter((p) => p.category === 'basepair'), n = Math.ceil(bps.length / 15)
-  const order = [...bps].sort((a, b) => b.n_entries_observed - a.n_entries_observed || (b.frequency ?? -1) - (a.frequency ?? -1) || b.n_eligible - a.n_eligible || a.pos_1 - b.pos_1 || a.pos_2 - b.pos_2)
+  const order = [...bps].sort(famOrder)
   const rows = page.locator('[data-testid^="irow-"]'), cur = page.getByTestId('ipage-input')
   await expect(rows).toHaveCount(15); await expect(cur).toHaveValue('1'); await expect(page.getByTestId('ipage-count')).toHaveText(String(n))
   await expect(page.getByTestId('ipage-first')).toBeDisabled(); await expect(page.getByTestId('ipage-prev')).toBeDisabled()
@@ -402,14 +408,19 @@ test('16S (RF00177, 1,533 consensus positions): table and 3D only, paged; search
   await expect(page.getByTestId('interaction-pair-viewer')).toHaveAttribute('data-polymer-style', 'cartoon')   // the thin trace is for the Structures tab only
 })
 
-test('annotation coverage flags a sparsely annotated chain (9V50 A, 3.25 Å) in the comparison', async ({ page }) => {
+test('annotation coverage counts near base pairs (9V50 A, 3.25 Å: 13 true + 6 near of 20) and flags a sparsely paired chain (tRNA 1J2B C)', async ({ page }) => {
   await open(page)
   await page.getByTestId('imode-compare').click()
   await page.getByTestId('icompare-a').selectOption('5e54_1_B_B'); await page.getByTestId('icompare-b').selectOption('9v50_1_A_A')
   await expect(page.getByTestId('icompare-coverage-a')).toContainText('19 of 19 eligible (100%)')
-  await expect(page.getByTestId('icompare-coverage-b')).toContainText('13 of 20 eligible (65%)')
-  await expect(page.getByTestId('icompare-coverage-b')).toContainText('sparse annotation'); await expect(page.getByTestId('icompare-coverage-a')).not.toContainText('sparse')
-  await expect(page.getByTestId('icompare-coverage')).toContainText('family median 95%')
+  await expect(page.getByTestId('icompare-coverage-b')).toContainText('19 of 20 eligible (95%)')
+  await expect(page.getByTestId('icompare-coverage')).not.toContainText('sparse'); await expect(page.getByTestId('icompare-coverage')).toContainText('family median 100%')
+  // a near pair is "Near" in that chain and counts as paired in the comparison (never as missing)
+  await expect(page.getByTestId('icmp-row-basepair:20-86')).toHaveAttribute('data-status', 'reclassified')   // cWW in A, ncWW in B
+  await page.goto('/RF00005'); await page.getByTestId('tab-interactions').click(); await expect(page.getByTestId('itable-box')).toBeVisible()
+  await page.getByTestId('imode-compare').click()
+  await page.getByTestId('icompare-a').selectOption('1ehz_1_A_A'); await page.getByTestId('icompare-b').selectOption('1j2b_1_C_A')
+  await expect(page.getByTestId('icompare-coverage-b')).toContainText('16 of 21 eligible (76%)'); await expect(page.getByTestId('icompare-coverage-b')).toContainText('sparse annotation')
 })
 
 test('an interaction with several FR3D classes expands into a per-class breakdown', async ({ page }) => {
@@ -423,7 +434,7 @@ test('an interaction with several FR3D classes expands into a per-class breakdow
   await page.getByTestId(`iclass-toggle-${p.id}`).click()
   await expect(page.locator(`[data-testid^="iclass-row-${p.id}-"]`)).toHaveCount(0)
   // single-class interactions have no toggle
-  const one = ds.pairs.find((x) => x.category === 'basepair' && Object.keys((x as unknown as { classes: Record<string, number> }).classes).length === 1)!
+  const one = ds.pairs.find((x) => x.category === 'basepair' && Object.keys((x as unknown as { classes: Record<string, number> }).classes).length === 1 && !Object.keys(x.near_classes).length)!
   await expect(page.getByTestId(`iclass-toggle-${one.id}`)).toHaveCount(0)
 })
 
@@ -443,4 +454,50 @@ test('compare context: resolution next to coverage; same RNA in different constr
   await expect(page.getByTestId('icompare-sequence')).toHaveAttribute('data-kind', 'identical')
   await page.getByTestId('icompare-a').selectOption('2cky_1_A_A')
   await expect(page.getByTestId('icompare-sequence')).toHaveAttribute('data-kind', 'different')
+})
+
+test('near base pairs: counted as paired, listed as their own class, "Near" in the displayed structure', async ({ page }) => {
+  await open(page)
+  const p = ds.pairs.find((x) => x.id === 'basepair:20-86')!
+  expect(p.n_near_only).toBeGreaterThan(0)
+  await expect(page.getByTestId(`icons-${p.id}`)).toContainText(`${p.n_observed + p.n_near_only}/${p.n_eligible}`)
+  await page.getByTestId(`iclass-toggle-${p.id}`).click()
+  await expect(page.getByTestId(`iclass-cons-${p.id}-ncWW`)).toHaveText(new RegExp(`^${p.near_classes.ncWW}/${p.n_eligible} `))
+  await page.getByTestId('idisplayed-select').selectOption('9v50_1_A_A')
+  await expect(page.getByTestId(`irow-${p.id}`)).toHaveAttribute('data-status', 'near')
+  await page.getByTestId(`irow-${p.id}`).click()
+  await expect(page.getByTestId('idetails-status')).toHaveAttribute('data-state', 'near'); await expect(page.getByTestId('idetails-status')).toContainText('ncWW')
+  await expect(page.getByTestId('idetails-conservation')).toContainText(`${p.n_observed} true, ${p.n_near_only} near`)
+  await expect(page.getByTestId('iviewer-caption')).toContainText('near base pair')
+  await expect(page.getByTestId('interactions-provenance-near')).toContainText('fr3d-python 3feb9b9')
+})
+
+test('Rfam consensus column and filter: Both / 2D / 3D; 2D pairs get a row and a grey dashed arc (TPP 64-83)', async ({ page }) => {
+  const tpp = await (await page.request.get('/families/RF00059/interactions.json')).json() as DS
+  await page.goto('/RF00059'); await page.getByTestId('tab-interactions').click(); await expect(page.getByTestId('idiagram')).toBeVisible()
+  await page.getByTestId('ipage-size').selectOption('0')
+  const bps = tpp.pairs.filter((p) => p.category === 'basepair'), by = (c: string) => bps.filter((p) => p.consensus === c)
+  expect(by('2d').length).toBeGreaterThan(0); expect(by('both').length + by('2d').length + by('3d').length).toBe(bps.length)
+  await expect(page.getByTestId('iconsensus-basepair:64-83')).toHaveAttribute('data-consensus', '2d')
+  await expect(page.getByTestId('icons-basepair:64-83')).toContainText(`0/${tpp.pairs.find((p) => p.id === 'basepair:64-83')!.n_eligible}`)
+  const arc = page.getByTestId('idiagram-arc-basepair:64-83')
+  await expect(arc).toHaveAttribute('data-consensus', '2d'); await expect(arc).toHaveAttribute('data-dash', '2 3'); await expect(arc).toHaveAttribute('data-color', '#a8a29e')
+  await expect(page.getByTestId('ilegend-2d')).toBeVisible()
+  await page.getByTestId('ifilter-more-toggle').click()
+  for (const c of ['2d', 'both', '3d'] as const) {
+    await page.getByTestId('ifilter-consensus').selectOption(c)
+    await expect(page.locator('[data-testid^="irow-"]')).toHaveCount(by(c).length)
+    await expect(page.getByTestId('idiagram')).toHaveAttribute('data-arc-count', String(by(c).length))
+  }
+  // the filter applies to base pairs only: other categories are hidden while it is set
+  await page.getByTestId('itypes-toggle').click(); await page.getByTestId('itypes-all').click(); await page.getByTestId('itypes-toggle').click()
+  await expect(page.locator('[data-testid^="irow-"]')).toHaveCount(by('3d').length)
+  await page.getByTestId('ifilter-reset').click()   // the More filters panel is still open
+  await page.getByTestId('irow-basepair:64-83').click()
+  await expect(page.getByTestId('idetails-consensus')).toHaveAttribute('data-consensus', '2d')
+  // sort by the column: Both, then 2D, then 3D
+  await page.getByTestId('itypes-toggle').click(); await page.getByTestId('itypes-reset').click(); await page.getByTestId('itypes-toggle').click()
+  await page.getByTestId('isort-consensus').click()
+  const order = await page.locator('[data-testid^="iconsensus-"]').evaluateAll((es) => es.map((e) => e.getAttribute('data-consensus')))
+  expect(order).toEqual([...order].sort((a, b) => ['both', '2d', '3d'].indexOf(a!) - ['both', '2d', '3d'].indexOf(b!)))
 })

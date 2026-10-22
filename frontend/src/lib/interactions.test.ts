@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
-import { arcPath, baseCorrespondence, categoryAvailability, CATEGORY_STYLE, categoryColor, CIRCULAR_MAX_CLEN, defaultComparePair, DEFAULT_PAIR_MAX_RESOLUTION, sequenceRelation, helixCoverage, matchesPositions, medianHelixCoverage, multiColor, parseSearch, defaultFamilyOrder, groupByEndpoints, groupOccurrence, showCircular, circleLayout, compareInstances, indexInstance, kabsch, pairKey, pairLabel, passes, positionLabel, resolveLookup, statusIn, supportingInstances, DEFAULT_FILTER } from './interactions'
+import { arcPath, baseCorrespondence, CONSENSUS_TEXT, isPaired, paired, categoryAvailability, CATEGORY_STYLE, categoryColor, CIRCULAR_MAX_CLEN, defaultComparePair, DEFAULT_PAIR_MAX_RESOLUTION, sequenceRelation, helixCoverage, matchesPositions, medianHelixCoverage, multiColor, parseSearch, defaultFamilyOrder, groupByEndpoints, groupOccurrence, showCircular, circleLayout, compareInstances, indexInstance, kabsch, pairKey, pairLabel, passes, positionLabel, resolveLookup, statusIn, supportingInstances, DEFAULT_FILTER } from './interactions'
 import { buildNumbering } from './numbering'
 import type { ChainMapping, InteractionsDataset, StructureClusteringDataset } from '../types/backend'
 
@@ -18,11 +18,41 @@ const toy = {
   ],
   observations: {
     x: [['basepair', 'cWW', 1, 6, 1, 6, 'u', 'v', 'verified', ''], ['basepair', 'cWW', 2, 5, 2, 5, 'u', 'v', 'verified', ''], ['stacking', 's35', 1, 2, 1, 2, 'u', 'v', 'verified', ''], ['basepair', 'tWW', 3, 9, 3, '3^1', 'u', 'v', 'verified', '']],
-    y: [['basepair', 'tWW', 1, 6, 1, 6, 'u', 'v', 'verified', ''], ['stacking', 'ns35', 1, 2, 1, 2, 'u', 'v', 'verified', '']],
+    y: [['basepair', 'tWW', 1, 6, 1, 6, 'u', 'v', 'verified', ''], ['stacking', 'ns35', 1, 2, 1, 2, 'u', 'v', 'verified', ''], ['basepair', 'ncWW', 3, 4, 3, 4, 'u', 'v', 'verified', '', 'fr3d_local']],
     z: [],
   },
   pairs: [],
 } as unknown as InteractionsDataset
+
+describe('near base pairs and the Rfam consensus comparison', () => {
+  const x = indexInstance(toy, 'x')!, y = indexInstance(toy, 'y')!
+  it('a near base pair has its own state and class; it counts as paired, never as present', () => {
+    expect(statusIn(y, 'basepair', 3, 4)).toMatchObject({ state: 'near', classes: ['ncWW'], other: [] })
+    expect(statusIn(x, 'basepair', 3, 4)).toMatchObject({ state: 'absent' })
+    expect(isPaired('near') && isPaired('present') && !isPaired('absent') && !isPaired('not_comparable')).toBe(true)
+    // near only in B: "Only in B"; never a near stacking (other categories keep near as "other")
+    expect(compareInstances(x, y).find((r) => r.id === 'basepair:3-4')?.status).toBe('only_b')
+    expect(statusIn(y, 'stacking', 1, 2).state).toBe('absent')
+  })
+  it('RF00167: every Rfam consensus pair is paired somewhere (Both); 3D-only pairs need a true base pair; paired counts include near', () => {
+    const bp = ds.pairs.filter((q) => q.category === 'basepair')
+    expect(bp.filter((q) => q.consensus === 'both')).toHaveLength(22)
+    expect(bp.filter((q) => q.consensus === '2d')).toHaveLength(0)
+    expect(bp.filter((q) => q.consensus === '3d').every((q) => q.n_observed > 0 && !q.in_ss_cons)).toBe(true)
+    expect(ds.pairs.filter((q) => q.category !== 'basepair').every((q) => q.consensus == null)).toBe(true)
+    const p = ds.pairs.find((q) => q.id === 'basepair:19-87')!
+    expect(paired(p)).toEqual({ k: p.n_observed + p.n_near_only, f: p.frequency_paired, entries: p.n_entries_paired })
+    expect(p.n_near_only).toBeGreaterThan(0); expect(p.near_classes).toHaveProperty('ncWW')
+    expect(CONSENSUS_TEXT).toEqual({ both: 'Both', '2d': '2D', '3d': '3D' })
+  })
+  it('the Rfam consensus filter applies to base pairs and hides other categories while set', () => {
+    const f = { ...DEFAULT_FILTER, stacking: true, consensus: '2d' as const }
+    expect(passes(f, { category: 'basepair', structure_class: 'secondary', region_1: null, region_2: null, consensus: '2d' }, true)).toBe(true)
+    expect(passes(f, { category: 'basepair', structure_class: 'secondary', region_1: null, region_2: null, consensus: 'both' }, true)).toBe(false)
+    expect(passes(f, { category: 'stacking', structure_class: null, region_1: null, region_2: null, consensus: null }, false)).toBe(false)
+    expect(passes({ ...f, consensus: 'all' }, { category: 'stacking', structure_class: null, region_1: null, region_2: null, consensus: null }, false)).toBe(true)
+  })
+})
 
 describe('instance status', () => {
   const x = indexInstance(toy, 'x')!, y = indexInstance(toy, 'y')!, z = indexInstance(toy, 'z')!
@@ -38,7 +68,7 @@ describe('instance status', () => {
   })
   it('comparison: reclassified (cWW vs tWW), only A, not comparable (missing nucleotide is never a loss)', () => {
     const rows = Object.fromEntries(compareInstances(x, y).map((r) => [r.id, r.status]))
-    expect(rows).toEqual({ [pairKey('basepair', 1, 6)]: 'reclassified', [pairKey('basepair', 2, 5)]: 'not_comparable', [pairKey('stacking', 1, 2)]: 'only_a' })
+    expect(rows).toEqual({ [pairKey('basepair', 1, 6)]: 'reclassified', [pairKey('basepair', 3, 4)]: 'only_b', [pairKey('basepair', 2, 5)]: 'not_comparable', [pairKey('stacking', 1, 2)]: 'only_a' })
     expect(compareInstances(x, x).every((r) => r.status === 'shared')).toBe(true)
     expect(compareInstances(x, z).every((r) => r.status === 'not_comparable')).toBe(true)
   })
@@ -214,8 +244,9 @@ describe('four BGSU categories, grouping, ordering, cutoff, default pair', () =>
   })
   it('helix coverage: consensus helix base pairs annotated / eligible per chain; the family median', () => {
     expect(helixCoverage(ds, '5e54_1_B_B')).toEqual({ k: 19, n: 19, fraction: 1 })
-    expect(helixCoverage(ds, '9v50_1_A_A')).toEqual({ k: 13, n: 20, fraction: 0.65 })
-    expect(medianHelixCoverage(ds)).toBe(0.95)
+    // 9V50 A (3.25 Å): 13 true + 6 near cWW of 20 (near base pairs from the local fr3d-python run; 13 / 20 with true pairs only)
+    expect(helixCoverage(ds, '9v50_1_A_A')).toEqual({ k: 19, n: 20, fraction: 0.95 })
+    expect(medianHelixCoverage(ds)).toBe(1)
   })
   it('RF00167: base-pair and stacking pairs are unchanged; four categories present', () => {
     expect(ds.pairs.filter((q) => q.category === 'basepair' || q.category === 'stacking')).toHaveLength(199)

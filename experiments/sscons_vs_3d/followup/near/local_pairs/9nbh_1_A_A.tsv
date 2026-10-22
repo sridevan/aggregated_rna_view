@@ -1,0 +1,37 @@
+label_seq_id_1	label_seq_id_2	rfam_1	rfam_2	class
+1	136			cWW
+2	135			cWW
+3	134			cWW
+4	132			cWW
+5	131			cWW
+6	130			cWW
+7	129			cWW
+8	128			cWW
+9	127			cWW
+10	126			ncWW
+12	125			cWW
+13	124			cWW
+14	123			cWW
+15	122			cWW
+16	121	1		cWW
+17	151	2		cWW
+18	150	3		cWW
+19	149	4		cWW
+20	160	5		cWW
+21	159	6		cWW
+22	158	7		cWW
+23	157	8		cWW
+24	156	9		cWW
+25	155	10		cWW
+26	154	11		cWW
+27	153	12		cWW
+28	152	13		cWW
+29	103	14	92	cWW
+105	120	94		cWW
+106	119	95		cWW
+107	118	96		cWW
+108	117	97		cWW
+109	116	98		cWW
+110	115	99		cWW
+111	114	100		ntSH
+133	134			cSH

@@ -1,0 +1,102 @@
+=== RF00162 SS_cons 50-64 vs observed 50-66 ===
+-- consensus 46..54 (centre 50); columns incl. inserts
+     SS_cons <-<<<<<<_
+          RF AACCccccu
+ 20 seq(s)   AACCA----   PP ****4....
+  1 seq(s)   AGCCA----   PP ****4....
+  1 seq(s)   AACCACUAG   PP ****88887
+  1 seq(s)   AACCGGUGU   PP *******99
+-- consensus 60..68 (centre 64); columns incl. inserts
+     SS_cons _~~~~~~~~~~~~~~~~~~~~~~~~~~>>>>-->>
+          RF a~~~~~~~~~~~~~~~~~~~~~~~~~~ggggAaGG
+ 20 seq(s)   -g........................a---AAUGG   PP .2........................2...167**
+  1 seq(s)   -agcgucagcuucggcugacgcuaggcUAGU--GG   PP .566666677777777777777777667888..**
+  1 seq(s)   A..........................----AUGG   PP 2..............................67**
+  1 seq(s)   U..........................GACCAAGG   PP 7..........................9*******
+-- consensus 62..70 (centre 66); columns incl. inserts
+     SS_cons >>>-->>>>
+          RF gggAaGGUG
+ 20 seq(s)   --AAUGGUG   PP ..167****
+  1 seq(s)   AGU--GGUG   PP 888..****
+  1 seq(s)   ---AUGGUG   PP ...67****
+  1 seq(s)   ACCAAGGUG   PP *********
+=== RF00059 SS_cons 64-83 vs observed 64-82 ===
+-- consensus 60..68 (centre 64); columns incl. inserts
+     SS_cons ,<<<<--<<
+          RF ACCUgAUcc
+  4 seq(s)   ACCUGAUCU   PP *********
+  1 seq(s)   ACCUGAACA   PP *********
+-- consensus 78..86 (centre 82); columns incl. inserts
+     SS_cons >>>-->>>>
+          RF CggCGuAGG
+  4 seq(s)   CAGCGUAGG   PP *********
+  1 seq(s)   CUGCGCAGG   PP *********
+-- consensus 79..87 (centre 83); columns incl. inserts
+     SS_cons >>-->>>>,
+          RF ggCGuAGGG
+  4 seq(s)   AGCGUAGGG   PP *********
+  1 seq(s)   UGCGCAGGG   PP *********
+=== RF00177 SS_cons 372-385 vs observed 372-386 ===
+-- consensus 368..376 (centre 372); columns incl. inserts
+     SS_cons <---<<<<<
+          RF gCAAugGgc
+ 15 seq(s)   ACAAUGGGC   PP *********
+-- consensus 381..389 (centre 385); columns incl. inserts
+     SS_cons >>>>>->>>
+          RF gcCugAcgc
+ 15 seq(s)   GCCUGAUGC   PP *********
+-- consensus 382..390 (centre 386); columns incl. inserts
+     SS_cons >>>>->>>>
+          RF cCugAcgca
+ 15 seq(s)   CCUGAUGCA   PP *********
+=== RF00177 SS_cons 648-737 vs observed 648-738 ===
+-- consensus 644..652 (centre 648); columns incl. inserts
+     SS_cons ,((((((((
+          RF GaGuccggc
+ 15 seq(s)   GAGUCUCGU   PP *********
+-- consensus 733..741 (centre 737); columns incl. inserts
+     SS_cons )))))-)))
+          RF gccgguaCu
+ 15 seq(s)   ACGAAGACU   PP *********
+-- consensus 734..742 (centre 738); columns incl. inserts
+     SS_cons ))))-))),
+          RF ccgguaCuG
+ 15 seq(s)   CGAAGACUG   PP *********
+=== RF00059 SS_cons 21-27 vs observed 22-27 ===
+-- consensus 17..25 (centre 21); columns incl. inserts
+     SS_cons <<<<<___........_
+          RF GCcccuaa........a
+  3 seq(s)   GCCCUUCUg.....cgU   PP *****9999.....999
+  1 seq(s)   GCUUGUUC........-   PP *****999.........
+  1 seq(s)   GCCCUCCAuugcacucC   PP **988777788888877
+-- consensus 18..26 (centre 22); columns incl. inserts
+     SS_cons <<<<___........__
+          RF Ccccuaa........aa
+  3 seq(s)   CCCUUCUg.....cgUG   PP ****9999.....9999
+  1 seq(s)   CUUGUUC........-A   PP ****999.........9
+  1 seq(s)   CCCUCCAuugcacucCG   PP *9887777888888777
+-- consensus 23..31 (centre 27); columns incl. inserts
+     SS_cons __........__>>>>>
+          RF aa........aagggGC
+  3 seq(s)   CUg.....cgUGAAGGC   PP 999.....9999*****
+  1 seq(s)   UC........-ACAGGC   PP 99.........9*****
+  1 seq(s)   CAuugcacucCGGAGGC   PP 77788888877799***
+=== RF00059 SS_cons 20-28 vs observed 21-28 ===
+-- consensus 16..24 (centre 20); columns incl. inserts
+     SS_cons (<<<<<___
+          RF uGCcccuaa
+  3 seq(s)   UGCCCUUCU   PP ******999
+  1 seq(s)   UGCUUGUUC   PP ******999
+  1 seq(s)   UGCCCUCCA   PP ***988777
+-- consensus 17..25 (centre 21); columns incl. inserts
+     SS_cons <<<<<___........_
+          RF GCcccuaa........a
+  3 seq(s)   GCCCUUCUg.....cgU   PP *****9999.....999
+  1 seq(s)   GCUUGUUC........-   PP *****999.........
+  1 seq(s)   GCCCUCCAuugcacucC   PP **988777788888877
+-- consensus 24..32 (centre 28); columns incl. inserts
+     SS_cons _........__>>>>>,
+          RF a........aagggGCU
+  3 seq(s)   Ug.....cgUGAAGGCU   PP 99.....9999******
+  1 seq(s)   C........-ACAGGCU   PP 9.........9******
+  1 seq(s)   AuugcacucCGGAGGCU   PP 7788888877799****

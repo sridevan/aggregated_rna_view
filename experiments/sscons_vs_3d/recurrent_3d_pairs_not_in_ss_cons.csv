@@ -1,0 +1,308 @@
+acc,pos_1,pos_2,regions,frequency,n_observed,n_eligible,main_class,classes,nt_pairs,kind,span
+RF00167,14,92,None / None,1.0,8,8,cWW,"{""cWW"": 8}","{""CG"": 8}",tertiary (nested),78
+RF00167,15,91,None / None,1.0,4,4,cWW,"{""cWW"": 4}","{""UA"": 4}",tertiary (nested),76
+RF00167,16,90,None / None,1.0,4,4,cWW,"{""cWW"": 4}","{""CG"": 4}",tertiary (nested),74
+RF00167,17,89,None / None,1.0,4,4,cWW,"{""cWW"": 4}","{""CG"": 4}",helix_extension,72
+RF00167,26,56,J1/2 / J2/3,0.9125,73,80,cWW,"{""cWW"": 73}","{""UA"": 69, ""CG"": 3, ""AU"": 1}",tertiary (nested),30
+RF00167,27,50,J1/2 / J2/3,0.8625,69,80,tWS,"{""tWS"": 69}","{""AG"": 69}",tertiary (nested),23
+RF00167,37,71,L2 / L3,0.85,68,80,tWH,"{""tWH"": 68}","{""AA"": 68}",pseudoknot (crosses SS_cons),34
+RF00167,38,70,L2 / L3,0.8,64,80,tWH,"{""tWH"": 63, ""tWW"": 1}","{""UA"": 64}",pseudoknot (crosses SS_cons),32
+RF00167,39,69,L2 / L3,0.6533,49,75,tHW,"{""tHW"": 49}","{""AA"": 49}",pseudoknot (crosses SS_cons),30
+RF00167,41,66,L2 / L3,1.0,80,80,cWW,"{""cWW"": 80}","{""GC"": 76, ""AU"": 4}",pseudoknot (crosses SS_cons),25
+RF00167,42,65,L2 / L3,0.9375,75,80,cWW,"{""cWW"": 75}","{""GC"": 75}",pseudoknot (crosses SS_cons),23
+RF00167,42,71,L2 / L3,0.6625,53,80,tSW,"{""tSW"": 53}","{""GA"": 53}",pseudoknot (crosses SS_cons),29
+RF00167,50,57,J2/3 / J2/3,0.825,66,80,cWW,"{""cWW"": 66}","{""GC"": 66}",tertiary (nested),7
+RF00167,53,82,J2/3 / Helix P1,0.7089,56,79,cWS,"{""cWS"": 56}","{""UA"": 56}",pseudoknot (crosses SS_cons),29
+RF00167,54,81,J2/3 / Helix P1,0.8987,71,79,cWS,"{""cWS"": 71}","{""CU"": 68, ""CC"": 2, ""CA"": 1}",tertiary (nested),27
+RF00167,66,70,L3 / L3,0.7375,59,80,cSW,"{""cSW"": 59}","{""CA"": 57, ""UA"": 2}",tertiary (nested),4
+RF00167,67,68,L3 / L3,0.6533,49,75,cSH,"{""cSH"": 49}","{""GU"": 41, ""UU"": 8}",tertiary (nested),1
+RF00162,12,44,None / None,0.9655,28,29,cSS,"{""cSS"": 28}","{""AG"": 28}",pseudoknot (crosses SS_cons),32
+RF00162,12,71,None / None,0.8966,26,29,tSS,"{""tSS"": 26}","{""AC"": 26}",pseudoknot (crosses SS_cons),59
+RF00162,18,37,None / None,0.5517,16,29,tSH,"{""tSH"": 14, ""cWW"": 2}","{""GA"": 13, ""GG"": 1, ""UU"": 1, ""UG"": 1}",tertiary (nested),19
+RF00162,20,35,None / None,0.7931,23,29,tHS,"{""tHS"": 23}","{""AG"": 23}",tertiary (nested),15
+RF00162,23,74,None / None,0.7586,22,29,tSW,"{""tSW"": 22}","{""GA"": 22}",pseudoknot (crosses SS_cons),51
+RF00162,25,80,None / None,0.8276,24,29,cWW,"{""cWW"": 24}","{""CG"": 24}",pseudoknot (crosses SS_cons),55
+RF00162,26,79,None / None,0.931,27,29,cWW,"{""cWW"": 27}","{""UU"": 26, ""UA"": 1}",pseudoknot (crosses SS_cons),53
+RF00162,27,78,None / None,1.0,29,29,cWW,"{""cWW"": 29}","{""GC"": 29}",pseudoknot (crosses SS_cons),51
+RF00162,28,77,None / None,1.0,29,29,cWW,"{""cWW"": 29}","{""GC"": 29}",pseudoknot (crosses SS_cons),49
+RF00162,30,73,None / None,0.8621,25,29,cSW,"{""cSW"": 25}","{""CA"": 14, ""GA"": 10, ""UA"": 1}",pseudoknot (crosses SS_cons),43
+RF00162,47,48,None / None,0.7241,21,29,cSH,"{""cSH"": 21}","{""AC"": 20, ""GC"": 1}",tertiary (nested),1
+RF00162,50,66,None / None,0.963,26,27,cWW,"{""cWW"": 26}","{""AU"": 26}",shift,16
+RF00059,12,88,None / None,0.8108,30,37,cSS,"{""cSS"": 30}","{""GA"": 30}",pseudoknot (crosses SS_cons),76
+RF00059,13,60,None / None,0.9189,34,37,tSS,"{""tSS"": 34}","{""GA"": 34}",pseudoknot (crosses SS_cons),47
+RF00059,15,35,None / None,0.9459,35,37,tSS,"{""tSS"": 35}","{""GG"": 35}",pseudoknot (crosses SS_cons),20
+RF00059,15,51,None / None,0.7838,29,37,cWW,"{""cWW"": 29}","{""GA"": 29}",helix_extension,36
+RF00059,17,75,None / None,0.5833,21,36,cSS,"{""cSS"": 21}","{""GU"": 21}",pseudoknot (crosses SS_cons),58
+RF00059,18,74,None / None,0.8333,30,36,cSS,"{""cSS"": 30}","{""CA"": 30}",pseudoknot (crosses SS_cons),56
+RF00059,22,27,None / None,0.55,11,20,cWW,"{""cWW"": 11}","{""UA"": 9, ""CG"": 2}",shift,5
+RF00059,23,26,None / None,0.95,19,20,cWW,"{""cWW"": 11, ""cWH"": 8}","{""CG"": 11, ""UA"": 8}",tertiary (nested),3
+RF00059,32,36,None / None,0.973,36,37,tWH,"{""tWH"": 36}","{""UA"": 36}",tertiary (nested),4
+RF00059,53,60,None / None,0.6757,25,37,cSS,"{""cSS"": 25}","{""CA"": 25}",pseudoknot (crosses SS_cons),7
+RF00059,54,88,None / None,0.9189,34,37,tSS,"{""tSS"": 34}","{""CA"": 34}",pseudoknot (crosses SS_cons),34
+RF00059,59,84,None / None,0.5714,8,14,tWH,"{""tWH"": 8}","{""AA"": 8}",pseudoknot (crosses SS_cons),25
+RF00059,60,87,None / None,0.9189,34,37,tHS,"{""tHS"": 34}","{""AG"": 34}",tertiary (nested),27
+RF00059,64,82,None / None,0.9429,33,35,cWH,"{""cWH"": 33}","{""GG"": 33}",shift,18
+RF00005,8,14,None / None,0.7,42,60,tWH,"{""tWH"": 42}","{""UA"": 42}",pseudoknot (crosses SS_cons),6
+RF00005,8,20,None / None,0.5789,33,57,tSS,"{""tSS"": 32, ""tWW"": 1}","{""UA"": 33}",pseudoknot (crosses SS_cons),12
+RF00005,15,46,None / None,0.5763,34,59,tWW,"{""tWW"": 34}","{""GC"": 28, ""AU"": 6}",pseudoknot (crosses SS_cons),31
+RF00005,18,54,None / None,0.5636,31,55,cWW,"{""cWW"": 31}","{""GC"": 30, ""UA"": 1}",pseudoknot (crosses SS_cons),36
+RF00005,21,45,None / None,0.6034,35,58,tHW,"{""tHW"": 35}","{""GG"": 29, ""GA"": 5, ""AA"": 1}",pseudoknot (crosses SS_cons),24
+RF00005,25,43,None / None,0.6167,37,60,cWW,"{""cWW"": 36, ""tWW"": 1}","{""GA"": 18, ""AG"": 8, ""AA"": 5, ""AC"": 2, ""GU"": 2, ""GC"": 1, ""UC"": 1}",helix_extension,18
+RF00005,52,56,None / None,0.7288,43,59,tWH,"{""tWH"": 42, ""tSW"": 1}","{""UA"": 42, ""UG"": 1}",tertiary (nested),4
+RF00011,7,362,None / None,1.0,50,50,tSH,"{""tSH"": 50}","{""GA"": 50}",shift,355
+RF00011,16,312,None / None,0.94,47,50,cSS,"{""cSS"": 47}","{""CA"": 47}",tertiary (nested),296
+RF00011,22,29,None / None,1.0,50,50,cWW,"{""cWW"": 50}","{""CG"": 50}",helix_extension,7
+RF00011,23,28,None / None,1.0,50,50,cWW,"{""cWW"": 50}","{""CG"": 50}",tertiary (nested),5
+RF00011,24,27,None / None,1.0,50,50,cWW,"{""cWW"": 50}","{""GC"": 50}",tertiary (nested),3
+RF00011,35,312,None / None,0.96,48,50,tSS,"{""tSS"": 48}","{""GA"": 48}",tertiary (nested),277
+RF00011,37,347,None / None,1.0,50,50,cWW,"{""cWW"": 50}","{""GC"": 50}",pseudoknot (crosses SS_cons),310
+RF00011,39,359,None / None,0.74,37,50,tHW,"{""tHW"": 35, ""tWW"": 2}","{""AU"": 37}",pseudoknot (crosses SS_cons),320
+RF00011,40,348,None / None,0.7,35,50,cWS,"{""cWS"": 35}","{""AA"": 35}",pseudoknot (crosses SS_cons),308
+RF00011,41,358,None / None,0.94,47,50,cWW,"{""cWW"": 47}","{""AU"": 47}",pseudoknot (crosses SS_cons),317
+RF00011,42,357,None / None,1.0,50,50,cWW,"{""cWW"": 50}","{""GC"": 50}",pseudoknot (crosses SS_cons),315
+RF00011,44,356,None / None,1.0,50,50,cWW,"{""cWW"": 50}","{""CG"": 50}",pseudoknot (crosses SS_cons),312
+RF00011,45,97,None / None,0.98,49,50,cSS,"{""cSS"": 49}","{""CA"": 49}",pseudoknot (crosses SS_cons),52
+RF00011,45,355,None / None,1.0,50,50,cWW,"{""cWW"": 50}","{""CG"": 50}",pseudoknot (crosses SS_cons),310
+RF00011,46,354,None / None,1.0,50,50,cWW,"{""cWW"": 50}","{""AU"": 50}",pseudoknot (crosses SS_cons),308
+RF00011,47,90,None / None,1.0,50,50,tSS,"{""tSS"": 50}","{""UA"": 50}",pseudoknot (crosses SS_cons),43
+RF00011,47,353,None / None,1.0,50,50,cWW,"{""cWW"": 50}","{""UA"": 50}",pseudoknot (crosses SS_cons),306
+RF00011,48,352,None / None,1.0,50,50,cWW,"{""cWW"": 50}","{""GC"": 50}",pseudoknot (crosses SS_cons),304
+RF00011,59,277,None / None,0.86,43,50,cSS,"{""cSS"": 43}","{""CA"": 43}",pseudoknot (crosses SS_cons),218
+RF00011,60,64,None / None,1.0,50,50,tWH,"{""tWH"": 50}","{""UA"": 50}",tertiary (nested),4
+RF00011,61,272,None / None,0.98,49,50,tSW,"{""tSW"": 49}","{""GA"": 49}",pseudoknot (crosses SS_cons),211
+RF00011,64,271,None / None,0.8,40,50,cWS,"{""cWS"": 40}","{""AA"": 40}",pseudoknot (crosses SS_cons),207
+RF00011,66,277,None / None,1.0,50,50,tSS,"{""tSS"": 50}","{""GA"": 50}",pseudoknot (crosses SS_cons),211
+RF00011,71,72,None / None,0.7,35,50,cSH,"{""cSH"": 35}","{""UA"": 35}",tertiary (nested),1
+RF00011,88,97,None / None,1.0,50,50,tSH,"{""tSH"": 50}","{""GA"": 50}",tertiary (nested),9
+RF00011,89,95,None / None,0.96,48,50,tHW,"{""tHW"": 48}","{""AU"": 48}",tertiary (nested),6
+RF00011,89,354,None / None,1.0,50,50,cSS,"{""cSS"": 50}","{""AU"": 50}",pseudoknot (crosses SS_cons),265
+RF00011,90,94,None / None,0.88,44,50,tHW,"{""tHW"": 44}","{""AA"": 44}",tertiary (nested),4
+RF00011,91,93,None / None,0.82,41,50,cSH,"{""cSH"": 41}","{""UC"": 41}",tertiary (nested),2
+RF00011,97,355,None / None,0.8,40,50,tSS,"{""tSS"": 40}","{""AG"": 40}",pseudoknot (crosses SS_cons),258
+RF00011,132,158,None / None,0.56,28,50,tHS,"{""tHS"": 27, ""cWS"": 1}","{""AG"": 28}",tertiary (nested),26
+RF00011,133,157,None / None,0.8,40,50,cWW,"{""cWW"": 40}","{""GC"": 40}",helix_extension,24
+RF00011,166,170,None / None,0.74,37,50,tWW,"{""tWW"": 37}","{""UA"": 37}",tertiary (nested),4
+RF00011,196,199,None / None,0.56,28,50,tSH,"{""tSH"": 27, ""tSW"": 1}","{""GA"": 28}",tertiary (nested),3
+RF00011,238,256,None / None,0.86,43,50,tHS,"{""tHS"": 43}","{""AG"": 43}",tertiary (nested),18
+RF00011,266,281,None / None,0.64,32,50,tSH,"{""tSH"": 32}","{""GA"": 32}",tertiary (nested),15
+RF00011,267,280,None / None,0.94,47,50,tHS,"{""tHS"": 47}","{""AG"": 47}",tertiary (nested),13
+RF00011,268,279,None / None,1.0,50,50,tHS,"{""tHS"": 50}","{""AG"": 50}",tertiary (nested),11
+RF00011,269,278,None / None,1.0,50,50,cWW,"{""cWW"": 50}","{""GC"": 50}",tertiary (nested),9
+RF00011,270,277,None / None,0.98,49,50,tSH,"{""tSH"": 49}","{""GA"": 49}",tertiary (nested),7
+RF00011,272,276,None / None,0.82,41,50,tHW,"{""tHW"": 41}","{""AA"": 41}",tertiary (nested),4
+RF00011,306,312,None / None,0.9,45,50,cSW,"{""cSW"": 45}","{""AA"": 45}",tertiary (nested),6
+RF00011,312,351,None / None,0.94,47,50,tHW,"{""tHW"": 47}","{""AA"": 47}",pseudoknot (crosses SS_cons),39
+RF00011,313,350,None / None,0.9,45,50,tWH,"{""tWH"": 45}","{""UA"": 45}",pseudoknot (crosses SS_cons),37
+RF00011,321,345,None / None,0.92,46,50,cWW,"{""cWW"": 46}","{""GU"": 46}",helix_extension,24
+RF00011,347,360,None / None,0.94,47,50,cSS,"{""cSS"": 47}","{""CA"": 47}",tertiary (nested),13
+RF00177,3,618,None / None,0.8393,47,56,tSS,"{""tSS"": 47}","{""AG"": 47}",pseudoknot (crosses SS_cons),615
+RF00177,13,20,None / None,0.8333,50,60,tHW,"{""tHW"": 50}","{""UU"": 50}",shift,7
+RF00177,13,905,None / None,0.9492,56,59,cWH,"{""cWH"": 56}","{""UA"": 56}",shift,892
+RF00177,15,910,None / None,0.9322,55,59,cWW,"{""cWW"": 55}","{""GU"": 55}",pseudoknot (crosses SS_cons),895
+RF00177,16,909,None / None,0.9322,55,59,cWW,"{""cWW"": 55}","{""AA"": 55}",pseudoknot (crosses SS_cons),893
+RF00177,16,1070,None / None,0.6441,38,59,cSS,"{""cSS"": 38}","{""AA"": 38}",pseudoknot (crosses SS_cons),1054
+RF00177,17,908,None / None,0.9831,58,59,cWW,"{""cWW"": 58}","{""UA"": 58}",pseudoknot (crosses SS_cons),891
+RF00177,17,1069,None / None,0.8136,48,59,cSS,"{""cSS"": 48}","{""UG"": 48}",pseudoknot (crosses SS_cons),1052
+RF00177,18,907,None / None,1.0,59,59,cWW,"{""cWW"": 59}","{""CG"": 59}",pseudoknot (crosses SS_cons),889
+RF00177,19,906,None / None,0.9661,57,59,cWW,"{""cWW"": 57}","{""AU"": 57}",pseudoknot (crosses SS_cons),887
+RF00177,21,904,None / None,1.0,59,59,tSH,"{""tSH"": 59}","{""GA"": 59}",shift,883
+RF00177,26,548,None / None,1.0,60,60,tHS,"{""tHS"": 60}","{""AG"": 60}",tertiary (nested),522
+RF00177,37,394,None / None,0.9667,58,60,tWW,"{""tWW"": 58}","{""UA"": 58}",shift,357
+RF00177,42,612,None / None,0.9667,58,60,tSS,"{""tSS"": 58}","{""GA"": 58}",pseudoknot (crosses SS_cons),570
+RF00177,49,359,None / None,0.7333,44,60,cWS,"{""cWS"": 44}","{""UG"": 44}",pseudoknot (crosses SS_cons),310
+RF00177,49,362,None / None,0.5333,32,60,tHW,"{""tHW"": 32}","{""UU"": 32}",pseudoknot (crosses SS_cons),313
+RF00177,51,107,None / None,0.8,48,60,cHS,"{""cHS"": 48}","{""AU"": 48}",pseudoknot (crosses SS_cons),56
+RF00177,55,354,None / None,0.8333,50,60,tHS,"{""tHS"": 50}","{""AG"": 50}",tertiary (nested),299
+RF00177,55,365,None / None,0.8167,49,60,tWW,"{""tWW"": 49}","{""AU"": 49}",pseudoknot (crosses SS_cons),310
+RF00177,64,68,None / None,0.9,54,60,cWH,"{""cWH"": 54}","{""GG"": 54}",pseudoknot (crosses SS_cons),4
+RF00177,67,165,None / None,0.85,51,60,cSS,"{""cSS"": 51}","{""CA"": 51}",pseudoknot (crosses SS_cons),98
+RF00177,69,93,None / None,0.6667,40,60,tSH,"{""tSH"": 40}","{""GG"": 40}",tertiary (nested),24
+RF00177,95,145,None / None,0.6833,41,60,cSS,"{""cSS"": 41}","{""GA"": 41}",pseudoknot (crosses SS_cons),50
+RF00177,102,321,None / None,0.9,54,60,tHS,"{""tHS"": 54}","{""AG"": 54}",pseudoknot (crosses SS_cons),219
+RF00177,105,312,None / None,0.9,54,60,cWW,"{""cWW"": 54}","{""GA"": 54}",helix_extension,207
+RF00177,106,350,None / None,0.8833,53,60,cSS,"{""cSS"": 53}","{""GA"": 53}",tertiary (nested),244
+RF00177,112,284,None / None,0.9833,59,60,tHW,"{""tHW"": 59}","{""AU"": 59}",tertiary (nested),172
+RF00177,125,259,None / None,0.6333,38,60,cSS,"{""cSS"": 38}","{""AA"": 38}",pseudoknot (crosses SS_cons),134
+RF00177,127,226,None / None,0.95,57,60,cWW,"{""cWW"": 57}","{""UU"": 57}",helix_extension,99
+RF00177,136,204,None / None,0.8833,53,60,tSS,"{""tSS"": 53}","{""GA"": 53}",tertiary (nested),68
+RF00177,142,168,None / None,0.95,57,60,cWW,"{""cWW"": 57}","{""GA"": 57}",helix_extension,26
+RF00177,142,1437,None / None,0.7966,47,59,cSS,"{""cSS"": 47}","{""GA"": 47}",pseudoknot (crosses SS_cons),1295
+RF00177,143,166,None / None,0.6833,41,60,tWH,"{""tWH"": 41}","{""AA"": 41}",tertiary (nested),23
+RF00177,144,165,None / None,0.9167,55,60,tWH,"{""tWH"": 55}","{""UA"": 55}",tertiary (nested),21
+RF00177,145,164,None / None,0.85,51,60,tHW,"{""tHW"": 51}","{""AU"": 51}",tertiary (nested),19
+RF00177,154,344,None / None,0.8167,49,60,tWS,"{""tWS"": 49}","{""AG"": 49}",pseudoknot (crosses SS_cons),190
+RF00177,169,1438,None / None,0.7966,47,59,tSS,"{""tSS"": 47}","{""CA"": 47}",pseudoknot (crosses SS_cons),1269
+RF00177,173,204,None / None,0.55,33,60,tWH,"{""tWH"": 33}","{""AA"": 33}",tertiary (nested),31
+RF00177,174,203,None / None,0.8333,50,60,tWH,"{""tWH"": 50}","{""UA"": 50}",tertiary (nested),29
+RF00177,176,202,None / None,0.7167,43,60,tHW,"{""tHW"": 40, ""tWW"": 3}","{""AC"": 43}",tertiary (nested),26
+RF00177,229,260,None / None,0.5167,31,60,tSS,"{""tSS"": 31}","{""GA"": 31}",pseudoknot (crosses SS_cons),31
+RF00177,240,279,None / None,0.9167,55,60,tWH,"{""tWH"": 55}","{""AA"": 55}",pseudoknot (crosses SS_cons),39
+RF00177,241,883,None / None,0.9322,55,59,cWW,"{""cWW"": 55}","{""UC"": 55}",pseudoknot (crosses SS_cons),642
+RF00177,243,278,None / None,0.5,30,60,tHS,"{""tHS"": 30}","{""AG"": 30}",tertiary (nested),35
+RF00177,248,251,None / None,0.8333,50,60,cWH,"{""cWH"": 50}","{""GG"": 50}",pseudoknot (crosses SS_cons),3
+RF00177,252,263,None / None,0.7833,47,60,cHW,"{""cHW"": 47}","{""GG"": 47}",pseudoknot (crosses SS_cons),11
+RF00177,289,598,None / None,0.95,57,60,tSW,"{""tSW"": 57}","{""GA"": 57}",pseudoknot (crosses SS_cons),309
+RF00177,296,556,None / None,0.9667,58,60,cWH,"{""cWH"": 58}","{""GG"": 58}",pseudoknot (crosses SS_cons),260
+RF00177,297,555,None / None,0.8333,50,60,cSW,"{""cSW"": 50}","{""AU"": 50}",pseudoknot (crosses SS_cons),258
+RF00177,306,597,None / None,0.9667,58,60,cSW,"{""cSW"": 58}","{""AA"": 58}",pseudoknot (crosses SS_cons),291
+RF00177,319,326,None / None,0.8,48,60,tWH,"{""tWH"": 48}","{""CA"": 48}",tertiary (nested),7
+RF00177,320,324,None / None,0.9833,59,60,tWH,"{""tWH"": 59}","{""UA"": 59}",tertiary (nested),4
+RF00177,332,1424,None / None,0.8814,52,59,cSS,"{""cSS"": 52}","{""CA"": 52}",pseudoknot (crosses SS_cons),1092
+RF00177,335,348,None / None,0.8,48,60,cWW,"{""cWW"": 48}","{""AG"": 48}",helix_extension,13
+RF00177,340,343,None / None,0.85,51,60,tSW,"{""tSW"": 51}","{""UG"": 51}",tertiary (nested),3
+RF00177,363,391,None / None,0.9167,55,60,cSW,"{""cSW"": 55}","{""AG"": 55}",tertiary (nested),28
+RF00177,367,472,None / None,0.7333,44,60,cSS,"{""cSS"": 44}","{""CA"": 44}",pseudoknot (crosses SS_cons),105
+RF00177,368,370,None / None,0.7667,46,60,cSH,"{""cSH"": 46}","{""AA"": 46}",tertiary (nested),2
+RF00177,369,386,None / None,0.85,51,60,tWH,"{""tWH"": 51}","{""CA"": 51}",tertiary (nested),17
+RF00177,370,388,None / None,0.7333,44,60,cWS,"{""cWS"": 44}","{""AG"": 44}",pseudoknot (crosses SS_cons),18
+RF00177,371,387,None / None,0.8833,53,60,cWS,"{""cWS"": 53}","{""AU"": 53}",tertiary (nested),16
+RF00177,372,386,None / None,1.0,60,60,cWW,"{""cWW"": 60}","{""UA"": 60}",shift,14
+RF00177,397,612,None / None,0.7,42,60,cSS,"{""cSS"": 42}","{""CA"": 42}",pseudoknot (crosses SS_cons),215
+RF00177,398,611,None / None,0.8167,49,60,cSS,"{""cSS"": 49}","{""CA"": 49}",pseudoknot (crosses SS_cons),213
+RF00177,401,488,None / None,0.6667,40,60,tSS,"{""tSS"": 40}","{""GA"": 40}",tertiary (nested),87
+RF00177,402,489,None / None,0.6667,40,60,cWH,"{""cWH"": 40}","{""UA"": 40}",tertiary (nested),87
+RF00177,407,429,None / None,0.9667,58,60,tSH,"{""tSH"": 58}","{""GA"": 58}",tertiary (nested),22
+RF00177,408,427,None / None,0.8333,50,60,tWH,"{""tWH"": 50}","{""AA"": 50}",tertiary (nested),19
+RF00177,410,425,None / None,0.7,42,60,tSS,"{""tSS"": 42}","{""GG"": 42}",tertiary (nested),15
+RF00177,411,427,None / None,0.8333,50,60,tHW,"{""tHW"": 50}","{""AA"": 50}",tertiary (nested),16
+RF00177,412,425,None / None,0.8333,50,60,tHH,"{""tHH"": 50}","{""AG"": 50}",tertiary (nested),13
+RF00177,417,420,None / None,0.7167,43,60,tSW,"{""tSW"": 43}","{""UG"": 43}",tertiary (nested),3
+RF00177,426,428,None / None,0.85,51,60,cWH,"{""cWH"": 51}","{""UA"": 51}",tertiary (nested),2
+RF00177,434,485,None / None,0.9,54,60,tWH,"{""tWH"": 54}","{""UA"": 54}",pseudoknot (crosses SS_cons),51
+RF00177,435,486,None / None,0.7667,46,60,tWH,"{""tWH"": 46}","{""UA"": 46}",pseudoknot (crosses SS_cons),51
+RF00177,444,477,None / None,0.95,57,60,tSH,"{""tSH"": 57}","{""GA"": 57}",tertiary (nested),33
+RF00177,445,476,None / None,0.9167,55,60,tHW,"{""tHW"": 55}","{""AU"": 55}",tertiary (nested),31
+RF00177,446,474,None / None,0.8667,52,60,tWW,"{""tWW"": 52}","{""GG"": 52}",tertiary (nested),28
+RF00177,449,470,None / None,0.6667,40,60,tWW,"{""tWW"": 35, ""tHW"": 5}","{""AU"": 40}",tertiary (nested),21
+RF00177,452,468,None / None,0.7833,47,60,cWW,"{""cWW"": 47}","{""GA"": 47}",helix_extension,16
+RF00177,456,464,None / None,0.8667,52,60,cWW,"{""cWW"": 52}","{""UG"": 52}",helix_extension,8
+RF00177,457,463,None / None,0.8167,49,60,cWW,"{""cWW"": 49}","{""AU"": 49}",tertiary (nested),6
+RF00177,458,462,None / None,0.8,48,60,cWW,"{""cWW"": 48}","{""AU"": 48}",tertiary (nested),4
+RF00177,493,500,None / None,0.6833,41,60,tSS,"{""tSS"": 41}","{""CA"": 41}",pseudoknot (crosses SS_cons),7
+RF00177,495,516,None / None,0.9667,58,60,cWW,"{""cWW"": 58}","{""GC"": 58}",pseudoknot (crosses SS_cons),21
+RF00177,496,515,None / None,0.9833,59,60,cWW,"{""cWW"": 59}","{""GC"": 59}",pseudoknot (crosses SS_cons),19
+RF00177,497,514,None / None,1.0,60,60,cWW,"{""cWW"": 60}","{""CG"": 60}",pseudoknot (crosses SS_cons),17
+RF00177,500,532,None / None,0.6333,38,60,cSS,"{""cSS"": 38}","{""AG"": 38}",pseudoknot (crosses SS_cons),32
+RF00177,506,509,None / None,0.5333,32,60,cSW,"{""cSW"": 32}","{""UC"": 32}",tertiary (nested),3
+RF00177,506,523,None / None,0.8833,53,60,tWH,"{""tWH"": 53}","{""UA"": 53}",tertiary (nested),17
+RF00177,510,519,None / None,0.65,39,60,tHS,"{""tHS"": 39}","{""AG"": 39}",tertiary (nested),9
+RF00177,517,525,None / None,0.65,39,60,tSS,"{""tSS"": 39}","{""GA"": 39}",pseudoknot (crosses SS_cons),8
+RF00177,553,874,None / None,0.9322,55,59,tWW,"{""tWW"": 55}","{""AU"": 55}",tertiary (nested),321
+RF00177,558,564,None / None,0.9,54,60,tSS,"{""tSS"": 54}","{""GA"": 54}",pseudoknot (crosses SS_cons),6
+RF00177,560,856,None / None,0.9831,58,59,cWW,"{""cWW"": 58}","{""GC"": 58}",pseudoknot (crosses SS_cons),296
+RF00177,561,855,None / None,1.0,59,59,cWW,"{""cWW"": 59}","{""UA"": 59}",pseudoknot (crosses SS_cons),294
+RF00177,567,719,None / None,0.6102,36,59,cSS,"{""cSS"": 36}","{""GA"": 36}",pseudoknot (crosses SS_cons),152
+RF00177,568,718,None / None,0.9322,55,59,cSS,"{""cSS"": 55}","{""CA"": 55}",pseudoknot (crosses SS_cons),150
+RF00177,571,750,None / None,0.9322,55,59,tSH,"{""tSH"": 55}","{""GG"": 55}",tertiary (nested),179
+RF00177,572,749,None / None,0.9831,58,59,tWH,"{""tWH"": 58}","{""CA"": 58}",shift,177
+RF00177,573,748,None / None,0.8475,50,59,tHS,"{""tHS"": 50}","{""AC"": 50}",shift,175
+RF00177,585,586,None / None,0.6333,38,60,cSH,"{""cSH"": 38}","{""AA"": 38}",tertiary (nested),1
+RF00177,631,632,None / None,0.65,39,60,cSH,"{""cSH"": 39}","{""UA"": 39}",tertiary (nested),1
+RF00177,642,743,None / None,0.9322,55,59,tWH,"{""tWH"": 55}","{""UA"": 55}",tertiary (nested),101
+RF00177,644,742,None / None,0.8983,53,59,tHS,"{""tHS"": 53}","{""GG"": 53}",tertiary (nested),98
+RF00177,644,744,None / None,0.9831,58,59,cWW,"{""cWW"": 58}","{""GC"": 58}",tertiary (nested),100
+RF00177,648,738,None / None,0.9661,57,59,cWW,"{""cWW"": 57}","{""CG"": 57}",shift,90
+RF00177,649,737,None / None,0.5085,30,59,cWW,"{""cWW"": 30}","{""UA"": 30}",shift,88
+RF00177,654,731,None / None,0.7458,44,59,cWW,"{""cWW"": 44}","{""GG"": 44}",helix_extension,77
+RF00177,655,714,None / None,0.9322,55,59,cHW,"{""cHW"": 55}","{""AG"": 55}",pseudoknot (crosses SS_cons),59
+RF00177,666,704,None / None,0.9831,58,59,cWW,"{""cWW"": 58}","{""AG"": 58}",helix_extension,38
+RF00177,675,695,None / None,1.0,59,59,tSH,"{""tSH"": 59}","{""GG"": 59}",tertiary (nested),20
+RF00177,676,694,None / None,0.7458,44,59,tWH,"{""tWH"": 44}","{""UA"": 44}",tertiary (nested),18
+RF00177,677,693,None / None,0.678,40,59,tHS,"{""tHS"": 40}","{""AG"": 40}",tertiary (nested),16
+RF00177,681,686,None / None,0.8983,53,59,tSH,"{""tSH"": 53}","{""GA"": 53}",tertiary (nested),5
+RF00177,686,787,None / None,0.678,40,59,tSS,"{""tSS"": 40}","{""AC"": 40}",pseudoknot (crosses SS_cons),101
+RF00177,687,775,None / None,0.5254,31,59,cSS,"{""cSS"": 31}","{""UG"": 31}",shift,88
+RF00177,756,803,None / None,0.9492,56,59,tHW,"{""tHW"": 56}","{""AU"": 56}",tertiary (nested),47
+RF00177,756,1516,None / None,0.5424,32,59,cSS,"{""cSS"": 32}","{""AG"": 32}",pseudoknot (crosses SS_cons),760
+RF00177,757,1515,None / None,0.8983,53,59,cSS,"{""cSS"": 53}","{""AC"": 53}",pseudoknot (crosses SS_cons),758
+RF00177,760,889,None / None,0.8136,48,59,cSW,"{""cSW"": 48}","{""CC"": 48}",pseudoknot (crosses SS_cons),129
+RF00177,770,792,None / None,0.9492,56,59,tSH,"{""tSH"": 56}","{""AA"": 56}",tertiary (nested),22
+RF00177,771,791,None / None,0.9322,55,59,tHW,"{""tHW"": 55}","{""AU"": 55}",tertiary (nested),20
+RF00177,772,790,None / None,0.9831,58,59,tHS,"{""tHS"": 58}","{""AG"": 58}",tertiary (nested),18
+RF00177,800,889,None / None,0.7119,42,59,cSH,"{""cSH"": 42}","{""CC"": 42}",pseudoknot (crosses SS_cons),89
+RF00177,807,1520,None / None,1.0,59,59,cWW,"{""cWW"": 59}","{""CG"": 59}",shift,713
+RF00177,810,863,None / None,0.8814,52,59,cWH,"{""cWH"": 52}","{""UA"": 52}",pseudoknot (crosses SS_cons),53
+RF00177,817,862,None / None,0.8475,50,59,tWW,"{""tWW"": 50}","{""UA"": 50}",tertiary (nested),45
+RF00177,818,848,None / None,0.8983,53,59,tHS,"{""tHS"": 53}","{""UG"": 53}",tertiary (nested),30
+RF00177,850,859,None / None,0.9153,54,59,tHS,"{""tHS"": 54}","{""AG"": 54}",tertiary (nested),9
+RF00177,854,907,None / None,0.9492,56,59,tSS,"{""tSS"": 56}","{""AG"": 56}",pseudoknot (crosses SS_cons),53
+RF00177,857,863,None / None,0.8814,52,59,tSS,"{""tSS"": 52}","{""GA"": 52}",pseudoknot (crosses SS_cons),6
+RF00177,878,899,None / None,1.0,59,59,tSH,"{""tSH"": 59}","{""GA"": 59}",tertiary (nested),21
+RF00177,879,898,None / None,0.8814,52,59,tHH,"{""tHH"": 52}","{""AA"": 52}",tertiary (nested),19
+RF00177,880,881,None / None,0.9153,54,59,cSH,"{""cSH"": 54}","{""GU"": 54}",tertiary (nested),1
+RF00177,881,897,None / None,0.9322,55,59,tWH,"{""tWH"": 55}","{""UA"": 55}",tertiary (nested),16
+RF00177,882,896,None / None,0.9322,55,59,tHS,"{""tHS"": 55}","{""AA"": 55}",tertiary (nested),14
+RF00177,899,1404,None / None,0.6271,37,59,cSS,"{""cSS"": 37}","{""AA"": 37}",pseudoknot (crosses SS_cons),505
+RF00177,909,1070,None / None,0.7797,46,59,tSS,"{""tSS"": 46}","{""AA"": 46}",pseudoknot (crosses SS_cons),161
+RF00177,912,1389,None / None,0.9661,57,59,tSS,"{""tSS"": 57}","{""GA"": 57}",pseudoknot (crosses SS_cons),477
+RF00177,914,1493,None / None,0.7119,42,59,tSS,"{""tSS"": 42}","{""CA"": 42}",pseudoknot (crosses SS_cons),579
+RF00177,925,1374,None / None,0.8475,50,59,cSW,"{""cSW"": 49, ""cSH"": 1}","{""AC"": 50}",tertiary (nested),449
+RF00177,927,1369,None / None,0.5763,34,59,tSH,"{""tSH"": 34}","{""AC"": 34}",tertiary (nested),442
+RF00177,928,1367,None / None,0.8644,51,59,cSS,"{""cSS"": 51}","{""AU"": 51}",tertiary (nested),439
+RF00177,929,1366,None / None,0.7627,45,59,cSS,"{""cSS"": 45}","{""GA"": 45}",tertiary (nested),437
+RF00177,934,1330,None / None,0.8983,53,59,tSH,"{""tSH"": 53}","{""GA"": 53}",shift,396
+RF00177,936,1324,None / None,0.678,40,59,cSS,"{""cSS"": 40}","{""AA"": 40}",pseudoknot (crosses SS_cons),388
+RF00177,946,950,None / None,0.8305,49,59,tWW,"{""tWW"": 49}","{""UU"": 49}",shift,4
+RF00177,949,1212,None / None,0.8983,53,59,tSS,"{""tSS"": 53}","{""AG"": 53}",tertiary (nested),263
+RF00177,968,1307,None / None,0.8136,48,59,tWS,"{""tWS"": 48}","{""AG"": 48}",pseudoknot (crosses SS_cons),339
+RF00177,968,1351,None / None,0.6949,41,59,tHW,"{""tHW"": 41}","{""AA"": 41}",pseudoknot (crosses SS_cons),383
+RF00177,981,1204,None / None,0.7627,45,59,tWH,"{""tWH"": 45}","{""UA"": 45}",tertiary (nested),223
+RF00177,982,1034,None / None,0.7288,43,59,tWH,"{""tWH"": 43}","{""UA"": 43}",pseudoknot (crosses SS_cons),52
+RF00177,983,1035,None / None,0.9322,55,59,cWW,"{""cWW"": 55}","{""GC"": 55}",shift,52
+RF00177,1005,1209,None / None,0.5932,35,59,cSS,"{""cSS"": 35}","{""GC"": 35}",pseudoknot (crosses SS_cons),204
+RF00177,1006,1208,None / None,0.5254,31,59,cSS,"{""cSS"": 31}","{""AC"": 31}",pseudoknot (crosses SS_cons),202
+RF00177,1043,1047,None / None,0.9492,56,59,cWH,"{""cWH"": 56}","{""GG"": 56}",shift,4
+RF00177,1045,1191,None / None,0.7458,44,59,tHW,"{""tHW"": 44}","{""AC"": 44}",pseudoknot (crosses SS_cons),146
+RF00177,1048,1193,None / None,0.9322,55,59,tSH,"{""tSH"": 55}","{""GU"": 55}",tertiary (nested),145
+RF00177,1054,1181,None / None,0.8136,48,59,tSS,"{""tSS"": 48}","{""GG"": 48}",shift,127
+RF00177,1056,1182,None / None,0.7458,44,59,tWH,"{""tWH"": 44}","{""CA"": 44}",tertiary (nested),126
+RF00177,1061,1075,None / None,0.8814,52,59,tHH,"{""tHH"": 52}","{""CU"": 52}",pseudoknot (crosses SS_cons),14
+RF00177,1062,1074,None / None,0.7458,44,59,tHS,"{""tHS"": 44}","{""GG"": 44}",pseudoknot (crosses SS_cons),12
+RF00177,1079,1161,None / None,0.7797,46,59,tSS,"{""tSS"": 46}","{""GA"": 46}",pseudoknot (crosses SS_cons),82
+RF00177,1080,1085,None / None,0.9153,54,59,cWW,"{""cWW"": 54}","{""UU"": 54}",helix_extension,5
+RF00177,1083,1099,None / None,0.5424,32,59,cSS,"{""cSS"": 32}","{""AC"": 32}",pseudoknot (crosses SS_cons),16
+RF00177,1086,1161,None / None,0.7966,47,59,cSS,"{""cSS"": 47}","{""CA"": 47}",pseudoknot (crosses SS_cons),75
+RF00177,1087,1160,None / None,0.7119,42,59,cSS,"{""cSS"": 42}","{""CA"": 42}",pseudoknot (crosses SS_cons),73
+RF00177,1114,1115,None / None,0.8814,52,59,cSH,"{""cSH"": 52}","{""GU"": 52}",tertiary (nested),1
+RF00177,1115,1271,None / None,0.7288,43,59,cWH,"{""cWH"": 43}","{""UA"": 43}",pseudoknot (crosses SS_cons),156
+RF00177,1117,1136,None / None,0.7627,45,59,cWW,"{""cWW"": 45}","{""GA"": 45}",helix_extension,19
+RF00177,1117,1139,None / None,0.7119,42,59,tSH,"{""tSH"": 42}","{""GU"": 42}",tertiary (nested),22
+RF00177,1119,1120,None / None,0.5254,31,59,cSH,"{""cSH"": 31}","{""CA"": 31}",tertiary (nested),1
+RF00177,1140,1271,None / None,0.7458,44,59,cSW,"{""cSW"": 44}","{""CA"": 44}",pseudoknot (crosses SS_cons),131
+RF00177,1147,1170,None / None,0.7966,47,59,tSW,"{""tSW"": 47}","{""GA"": 47}",tertiary (nested),23
+RF00177,1148,1169,None / None,0.8644,51,59,tWS,"{""tWS"": 51}","{""AG"": 51}",shift,21
+RF00177,1149,1172,None / None,0.9661,57,59,cWW,"{""cWW"": 57}","{""CG"": 57}",shift,23
+RF00177,1150,1152,None / None,0.5593,33,59,cSH,"{""cSH"": 33}","{""UC"": 33}",shift,2
+RF00177,1151,1173,None / None,0.8136,48,59,cHW,"{""cHW"": 48}","{""GG"": 48}",pseudoknot (crosses SS_cons),22
+RF00177,1157,1161,None / None,0.8305,49,59,tSH,"{""tSH"": 49}","{""GA"": 49}",tertiary (nested),4
+RF00177,1168,1172,None / None,0.8644,51,59,tWH,"{""tWH"": 51}","{""GG"": 51}",shift,4
+RF00177,1228,1328,None / None,0.9831,58,59,cWW,"{""cWW"": 58}","{""CG"": 58}",shift,100
+RF00177,1229,1232,None / None,0.5254,31,59,cSS,"{""cSS"": 31}","{""AG"": 31}",tertiary (nested),3
+RF00177,1229,1292,None / None,0.7627,45,59,tHW,"{""tHW"": 45}","{""AU"": 45}",tertiary (nested),63
+RF00177,1240,1279,None / None,0.8475,50,59,tWH,"{""tWH"": 50}","{""CA"": 50}",tertiary (nested),39
+RF00177,1243,1276,None / None,0.8983,53,59,tWW,"{""tWW"": 53}","{""AA"": 53}",tertiary (nested),33
+RF00177,1246,1249,None / None,0.7119,42,59,cSS,"{""cSS"": 42}","{""GG"": 42}",tertiary (nested),3
+RF00177,1251,1266,None / None,0.8814,52,59,tSH,"{""tSH"": 52}","{""GA"": 52}",tertiary (nested),15
+RF00177,1252,1265,None / None,0.5932,35,59,tHS,"{""tHS"": 34, ""tSS"": 1}","{""AA"": 35}",tertiary (nested),13
+RF00177,1259,1317,None / None,0.5254,31,59,cSS,"{""cSS"": 31}","{""GU"": 31}",pseudoknot (crosses SS_cons),58
+RF00177,1260,1303,None / None,0.9153,54,59,tSS,"{""tSS"": 54}","{""AG"": 54}",pseudoknot (crosses SS_cons),43
+RF00177,1288,1289,None / None,0.5085,30,59,cSH,"{""cSH"": 30}","{""GU"": 30}",tertiary (nested),1
+RF00177,1291,1292,None / None,0.7288,43,59,cSH,"{""cSH"": 43}","{""GU"": 43}",tertiary (nested),1
+RF00177,1295,1324,None / None,0.8814,52,59,tSH,"{""tSH"": 52}","{""GA"": 52}",tertiary (nested),29
+RF00177,1297,1322,None / None,0.5763,34,59,tHS,"{""tHS"": 34}","{""AG"": 34}",tertiary (nested),25
+RF00177,1306,1310,None / None,0.8136,48,59,tWH,"{""tWH"": 48}","{""UA"": 48}",tertiary (nested),4
+RF00177,1310,1352,None / None,0.678,40,59,tWS,"{""tWS"": 40}","{""AG"": 40}",pseudoknot (crosses SS_cons),42
+RF00177,1336,1367,None / None,0.8814,52,59,tWW,"{""tWW"": 52}","{""UU"": 52}",tertiary (nested),31
+RF00177,1337,1366,None / None,0.8475,50,59,tHH,"{""tHH"": 50}","{""AA"": 50}",tertiary (nested),29
+RF00177,1338,1339,None / None,0.8136,48,59,cSH,"{""cSH"": 48}","{""GU"": 48}",tertiary (nested),1
+RF00177,1339,1365,None / None,0.8475,50,59,tWH,"{""tWH"": 50}","{""UA"": 50}",tertiary (nested),26
+RF00177,1340,1364,None / None,0.9661,57,59,tHS,"{""tHS"": 57}","{""AG"": 57}",tertiary (nested),24
+RF00177,1349,1354,None / None,0.7627,45,59,tWW,"{""tWW"": 44, ""tWH"": 1}","{""UA"": 45}",tertiary (nested),5
+RF00177,1394,1490,None / None,0.8305,49,59,cSW,"{""cSW"": 48, ""cWW"": 1}","{""CA"": 49}",tertiary (nested),96
+RF00177,1395,1510,None / None,0.5932,35,59,cSS,"{""cSS"": 35}","{""CA"": 35}",pseudoknot (crosses SS_cons),115
+RF00177,1398,1485,None / None,1.0,59,59,cWW,"{""cWW"": 59}","{""CG"": 59}",tertiary (nested),87
+RF00177,1408,1474,None / None,0.9322,55,59,tSH,"{""tSH"": 55}","{""GA"": 55}",tertiary (nested),66
+RF00177,1409,1473,None / None,0.9492,56,59,tHS,"{""tHS"": 56}","{""AG"": 56}",tertiary (nested),64
+RF00177,1423,1459,None / None,0.678,40,59,tSH,"{""tSH"": 40}","{""GA"": 40}",tertiary (nested),36
+RF00177,1441,1444,None / None,0.8136,48,59,tSW,"{""tSW"": 48}","{""UG"": 48}",tertiary (nested),3
+RF00177,1489,1490,None / None,0.8136,48,59,cSH,"{""cSH"": 48}","{""UA"": 48}",tertiary (nested),1

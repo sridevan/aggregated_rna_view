@@ -27,8 +27,8 @@
    "type": "array",
    "items": {
     "type": "array",
-    "minItems": 10,
-    "maxItems": 10,
+    "minItems": 11,
+    "maxItems": 11,
     "prefixItems": [
      {
       "enum": [
@@ -76,6 +76,12 @@
      },
      {
       "type": "string"
+     },
+     {
+      "enum": [
+       "bgsu",
+       "fr3d_local"
+      ]
      }
     ]
    }
