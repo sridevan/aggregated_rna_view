@@ -13,6 +13,7 @@ import { OrderedSet } from 'molstar/lib/mol-data/int'
 import type { OrientationTransform } from '../../types/backend'
 import { isApplicable, toMat4 } from '../../lib/orientation'
 import 'pdbe-molstar/build/pdbe-molstar-light.css'
+import { traceTypeParams, TRACE_SIZE, TRACE_SIZE_EMPHASIS } from '../../lib/molstarStyle'
 import { chainBytes, surroundingsBytes, residueLabel, sceneFetchCount, type SceneApi, type SceneAtom, type SceneEntry, type SceneHooks } from '../../lib/molstarScene'
 
 export type { SceneApi, SceneAtom, SceneEntry, SceneHooks }
@@ -130,7 +131,7 @@ export function MolstarSuperposition({ entries, emphasis = null, extra = {}, foc
   const chainExpr = (asym: string) => MS.struct.generator.atomGroups({ 'chain-test': MS.core.rel.eq([MS.struct.atomProperty.macromolecular.label_asym_id(), asym]) })
   /** cartoon of a chain: emphasised = thicker; faded (another structure is emphasised) or residues focused = semi-transparent */
   const cartoonParams = (color: string, mode: 'normal' | 'emphasis' | 'faded') => createStructureRepresentationParams(plugin.current!.plugin, undefined, {
-    type: 'cartoon', typeParams: { sizeFactor: mode === 'emphasis' ? 0.32 : 0.22, alpha: focusRef.current ? 0.3 : mode === 'faded' ? 0.35 : 1 }, color: 'uniform', colorParams: { value: hexColor(color) } })
+    type: 'cartoon', typeParams: { ...traceTypeParams(mode === 'emphasis' ? TRACE_SIZE_EMPHASIS : TRACE_SIZE), alpha: focusRef.current ? 0.3 : mode === 'faded' ? 0.35 : 1 }, color: 'uniform', colorParams: { value: hexColor(color) } })
   const modeOf = (sn: string) => (!emphasisRef.current ? 'normal' : sn === emphasisRef.current ? 'emphasis' : 'faded') as 'normal' | 'emphasis' | 'faded'
   const emphasisRef = useRef(emphasised); emphasisRef.current = emphasised
   const matrixFor = (e: SceneEntry) => { const o = orientationMat(e.transform), x = extraRef.current[e.seqName]; return x ? Mat4.mul(Mat4(), x, o) : o }

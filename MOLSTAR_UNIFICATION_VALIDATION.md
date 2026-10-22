@@ -107,3 +107,34 @@ Load times on a local dev server (Playwright, Chromium):
 - The Complete-structure layers exist only in the Family Overview viewer; the superposition viewer shows chains and, on request, their
   nearby ligands. The two viewers share the engine and conventions, not one component.
 - The static home-page thumbnails were rendered offline with 3Dmol.js. `thumbnails/manifest.json` keeps that as provenance.
+
+## Thin backbone trace (2026-10-22)
+
+**What changed.** All RNA viewers now draw polymers as a thin round backbone trace, like the PDBe-KB superposition viewer. This applies to the Family Overview (Rfam region and the Complete-structure layers), the Structures superposition and the Interactions comparison. Before, they used Mol*'s default flat nucleic-acid ribbon.
+
+**Settings** (`frontend/src/lib/molstarStyle.ts`, Mol* cartoon):
+- visuals: `polymer-trace` and `polymer-gap` only;
+- `aspectRatio` 1 (round) and `nucleicProfile` elliptical;
+- `sizeFactor` 0.35, or 0.5 for the emphasised structure of a comparison (previously 0.22 and 0.32 on the flat ribbon).
+
+**What stays the same:**
+- Colours, transparency and emphasis.
+- Selected nucleotides and loops are still ball-and-stick on top; ligands keep their own representation.
+
+**How it was chosen** (user decision: all viewers, 0.35 / 0.5). Candidates were rendered on 4FE5 B + 1Y27 X (RF00167) and 16S 4V9D Y + 4U27 A:
+- current cartoon;
+- trace-only cartoon;
+- putty with uniform size;
+- backbone cylinders.
+
+**Results:**
+- Trace-only cartoon and uniform putty look the same. The cartoon keeps the existing code path; putty would need its default B-factor sizing turned off.
+- Backbone cylinders look angular.
+- At 0.2 the 16S trace becomes hairlines; at 0.35 it stays readable at full view.
+
+**Images:**
+- `docs/screenshots/m20_rna_style_candidates.png`;
+- `m20_rna_trace_thickness.png`;
+- `m20_rna_trace_in_app.png`: Overview, selected loop, Structures RF00167 and 16S, RNase P complete structure.
+
+**Tests:** the 3D-viewer Playwright specs pass (87): Overview, Structures, Interactions, colour, camera framing and selection.
