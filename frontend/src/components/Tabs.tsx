@@ -1,5 +1,5 @@
-export type TabId = 'overview' | 'structures' | 'interactions' | 'ligands' | 'annotations'
-const TABS: { id: TabId; label: string }[] = [{ id: 'overview', label: 'Family Overview' }, { id: 'structures', label: 'Structures' }, { id: 'interactions', label: 'Interactions' }, { id: 'ligands', label: 'Ligands' }, { id: 'annotations', label: 'Annotations' }]
+export type TabId = 'overview' | 'structures' | 'ligands' | 'interactions' | 'annotations'
+const TABS: { id: TabId; label: string }[] = [{ id: 'overview', label: 'Family Overview' }, { id: 'structures', label: 'Structures' }, { id: 'ligands', label: 'Ligands' }, { id: 'interactions', label: 'Interactions' }, { id: 'annotations', label: 'Annotations' }]
 export function Tabs({ value, onChange }: { value: TabId; onChange: (t: TabId) => void }) {
   return (
     <nav className="flex gap-1 overflow-x-auto border-b border-stone-200" role="tablist">

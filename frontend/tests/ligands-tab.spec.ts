@@ -11,7 +11,7 @@ const defaultSet = (byCcd: ByCcd) => Object.entries(byCcd).filter(([, v]) => v.n
 
 test('tab order; gallery = default ligand set with names and PDB entry counts; PDBe depictions; tracks moved unchanged', async ({ page }) => {
   await open(page)
-  await expect(page.getByRole('tab')).toHaveText(['Family Overview', 'Structures', 'Interactions', 'Ligands', 'Annotations'])
+  await expect(page.getByRole('tab')).toHaveText(['Family Overview', 'Structures', 'Ligands', 'Interactions', 'Annotations'])
   const lig = await (await page.request.get('/families/RF00167/ligands.json')).json()
   const set = defaultSet(lig.by_ccd)
   await expect(page.getByTestId('ligand-gallery-count')).toHaveText(`(${set.length})`)

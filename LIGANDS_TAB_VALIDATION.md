@@ -1,6 +1,6 @@
 # Ligands tab (2026-10-22)
 
-A dedicated **Ligands** tab between Interactions and Annotations. It holds:
+A dedicated **Ligands** tab after Structures. It holds:
 - a PDBe-KB-style gallery of RNA-contacting ligands;
 - the per-ligand contact-residue tracks;
 - the fpocketR predicted-pocket track, moved out of the Annotations tab.
@@ -9,7 +9,7 @@ The change is frontend only. No backend code, data file, schema or calculation w
 
 ## Layout
 
-**Tab order:** Family Overview · Structures · Interactions · **Ligands** · Annotations.
+**Tab order:** Family Overview · Structures · **Ligands** · Interactions · Annotations (Ligands moved before Interactions on 2026-10-22, user request).
 
 ### A. RNA-contacting ligands (`LigandsTab.tsx`)
 

@@ -73,8 +73,8 @@ function Shell({ acc }: { acc: string }) {
         {tab === 'overview' && <FamilyOverview />}
         {tab === 'structures' && <StructuresTab />}
         {tab === 'ligands' && <LigandsTab />}
-        {tab === 'annotations' && <AnnotationsTab />}
         {tab === 'interactions' && <InteractionsTab />}
+        {tab === 'annotations' && <AnnotationsTab />}
         </NavigationProvider>
         </NumberingProvider>
       </main>
