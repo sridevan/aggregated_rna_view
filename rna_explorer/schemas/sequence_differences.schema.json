@@ -1,0 +1,218 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Reported sequence differences of the family RNA chains (mmCIF _struct_ref_seq_dif), mapped to Rfam consensus positions (sequence_differences.json)",
+ "type": "object",
+ "required": [
+  "schema_version",
+  "rfam_acc",
+  "clen",
+  "method",
+  "counts",
+  "classifications",
+  "observations",
+  "unresolved_rows",
+  "inconsistent_copies",
+  "entry_sources",
+  "provenance"
+ ],
+ "properties": {
+  "schema_version": {
+   "const": "1.0"
+  },
+  "rfam_acc": {
+   "type": "string"
+  },
+  "clen": {
+   "type": "integer"
+  },
+  "method": {
+   "type": "object"
+  },
+  "counts": {
+   "type": "object",
+   "required": [
+    "n_entries",
+    "n_entries_evaluated",
+    "n_observations",
+    "n_on_consensus_axis",
+    "n_off_axis",
+    "n_unresolved_rows"
+   ]
+  },
+  "classifications": {
+   "type": "object"
+  },
+  "observations": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "observation_id",
+     "pdb_id",
+     "entity_id",
+     "auth_asym_id",
+     "label_asym_id",
+     "seq_name",
+     "label_seq_id",
+     "deposited",
+     "reference",
+     "classification",
+     "change_kind",
+     "reference_sequence",
+     "mapping_status",
+     "rfam_consensus_pos"
+    ],
+    "properties": {
+     "observation_id": {
+      "type": "string"
+     },
+     "pdb_id": {
+      "type": "string"
+     },
+     "entity_id": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "polymer_type": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "auth_asym_id": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "label_asym_id": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "seq_name": {
+      "type": "string"
+     },
+     "label_seq_id": {
+      "type": [
+       "integer",
+       "null"
+      ]
+     },
+     "author_residue_number": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "author_insertion_code": {
+      "type": "string"
+     },
+     "deposited": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "reference": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "reference_seq_num": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "classification": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "change_kind": {
+      "enum": [
+       "substitution",
+       "added_residue",
+       "absent_residue"
+      ]
+     },
+     "reference_sequence": {
+      "type": "object",
+      "properties": {
+       "db_name": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "db_code": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "accession": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     },
+     "chain_status": {
+      "type": "string"
+     },
+     "scheme_check": {
+      "type": "string"
+     },
+     "alignment_state": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "has_coordinates": {
+      "type": [
+       "boolean",
+       "null"
+      ]
+     },
+     "rfam_consensus_pos": {
+      "type": [
+       "integer",
+       "null"
+      ]
+     },
+     "mapping_status": {
+      "type": "string",
+      "description": "mapped | no_consensus_position:<state> | no_deposited_residue | not_in_mapping | not_in_scheme | identity_conflict | author_number_conflict | mapping_identity_conflict | mapping_author_conflict"
+     }
+    }
+   }
+  },
+  "unresolved_rows": {
+   "type": "array"
+  },
+  "inconsistent_copies": {
+   "type": "array"
+  },
+  "entry_sources": {
+   "type": "object"
+  },
+  "provenance": {
+   "type": "object",
+   "required": [
+    "rfam_acc",
+    "generated",
+    "pipeline_version",
+    "method_document"
+   ]
+  }
+ }
+}

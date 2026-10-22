@@ -28,8 +28,9 @@ function Shell({ acc }: { acc: string }) {
   const [tab, setTab] = useState<TabId>('overview')
   // explicit "View in Family Overview" from the Annotations or Ligands tab: select the Rfam position (current instance and numbering kept), open the tab
   const [origin, setOrigin] = useState<NavigationOrigin | null>(null)
-  const { select } = sel
-  const viewInOverview = useCallback((pos: number, label: string, from: NavigationOrigin['from'] = 'annotations') => { select(pos); setOrigin({ from, pos, label }); setTab('overview') }, [select])
+  const { select, setInstance } = sel
+  // with a seqName (a chain-level observation), that RNA chain becomes the Family Overview instance first; the consensus position survives the switch
+  const viewInOverview = useCallback((pos: number, label: string, from: NavigationOrigin['from'] = 'annotations', seqName?: string) => { if (seqName) setInstance(seqName); select(pos); setOrigin({ from, pos, label, seqName }); setTab('overview') }, [select, setInstance])
   // the origin note belongs to that transferred selection only: any other selection (or clearing it) drops it
   const active = sel.active
   useEffect(() => { if (origin && !(active?.kind === 'position' && active.pos === origin.pos)) setOrigin(null) }, [active, origin])

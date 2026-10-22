@@ -40,6 +40,10 @@ def main(argv: list[str] | None = None) -> int:
     md.add_argument("--seed-dir", type=Path, default=None, help="investigation raw directory (pdbe/batch_all_entries.json, nakb/...) used to seed the cache instead of new requests")
     md.add_argument("--offline", action="store_true", help="never contact the network; unavailable optional sources are recorded as such")
     md.add_argument("-v", "--verbose", action="store_true")
+    sd = sub.add_parser("seqdiff", help="reported sequence differences of the family RNA chains (mmCIF _struct_ref_seq_dif) mapped to consensus positions (sequence_differences.json, sequence_difference_tracks.json)")
+    sd.add_argument("acc"); sd.add_argument("--out", type=Path, default=DEFAULT_OUT_DIR); sd.add_argument("--cache", type=Path, default=DEFAULT_CACHE_DIR)
+    sd.add_argument("--offline", action="store_true", help="never contact the network; entries whose mmCIF is not cached are recorded as source unavailable")
+    sd.add_argument("-v", "--verbose", action="store_true")
     sc = sub.add_parser("clustering", help="structural groups for the Structures tab from precomputed research matrices (structure_clustering.json); no comparison is recomputed")
     sc.add_argument("acc"); sc.add_argument("--out", type=Path, default=DEFAULT_OUT_DIR)
     sc.add_argument("--research-root", type=Path, default=Path.home() / "Desktop/aggregated_rna_clustering", help="research worktree root (read-only)")
@@ -79,6 +83,11 @@ def main(argv: list[str] | None = None) -> int:
         from .interactions import build_interactions
         res = build_interactions(a.acc, a.cache, a.out, a.seed_dir, a.offline)
         print(json.dumps({"acc": a.acc, **res["summary"], "default_numbering_reference": res["default_numbering_reference"]}, indent=1))
+        return 0
+    if a.cmd == "seqdiff":
+        from .sequence_differences import build_sequence_differences
+        res = build_sequence_differences(a.acc, a.cache, a.out, a.offline)
+        print(json.dumps({"acc": res["acc"], "counts": res["counts"]}, indent=1))
         return 0
     if a.cmd == "modifications":
         from .modifications import build_modifications

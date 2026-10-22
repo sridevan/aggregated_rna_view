@@ -14,6 +14,8 @@ const ITEMS: Item[] = [
   ['tracks', 'tracks.json', 'Aggregated annotation tracks', /Per-position annotation frequencies/],
   ['sasa', 'sasa.json', 'Solvent accessibility · Per nucleotide', /nucleotide solvent accessibility \(Å²\)/],
   ['sasa-tracks', 'sasa_tracks.json', 'Solvent accessibility · Aggregated', /median, quartiles/],
+  ['seqdiff', 'sequence_differences.json', 'Sequence differences · Detailed', /_struct_ref_seq_dif row of the family RNA chains/],
+  ['seqdiff-tracks', 'sequence_difference_tracks.json', 'Sequence differences · Aggregated', /reported sequence differences by deposited classification/],
   ['modifications', 'modifications.json', 'Nonstandard nucleotides · Detailed', /Nonstandard nucleotide identities/],
   ['modification-tracks', 'modification_tracks.json', 'Nonstandard nucleotides · Aggregated', /Per-position nonstandard-nucleotide frequencies/],
 ]

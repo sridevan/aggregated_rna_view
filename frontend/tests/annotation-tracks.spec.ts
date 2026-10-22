@@ -6,15 +6,15 @@ import { selectColumn } from './helpers'
 const open = async (page: Page) => { await page.goto('/RF00167'); await page.getByTestId('tab-annotations').click(); await expect(page.getByTestId('category-loops')).toBeVisible() }
 const lum = (rgb: string) => { const m = rgb.match(/\d+/g)!.map(Number); return 0.2126 * m[0] + 0.7152 * m[1] + 0.0722 * m[2] }
 
-test('three categories; HL/IL/JL; no ligand or pocket tracks (Ligands tab); marks have identical size and colour follows frequency', async ({ page }) => {
+test('four categories; HL/IL/JL; no ligand or pocket tracks (Ligands tab); marks have identical size and colour follows frequency', async ({ page }) => {
   await open(page)
-  await expect(page.locator('section[data-testid^="category-"]')).toHaveCount(3)   // Solvent accessibility, RNA loop annotations, Nonstandard nucleotides
+  await expect(page.locator('section[data-testid^="category-"]')).toHaveCount(4)   // Solvent accessibility, RNA loop annotations, Reported sequence differences, Nonstandard nucleotides
   await expect(page.getByTestId('category-toggle-loops')).toContainText('RNA loop annotations')
   await expect(page.getByTestId('category-ligands')).toHaveCount(0); await expect(page.getByTestId('category-pockets')).toHaveCount(0)
   await expect(page.getByTestId('annotations-summary')).toContainText('Ligand contacts and predicted binding pockets are in the Ligands tab.')
   await expect(page.getByTestId('annotations-tab')).not.toContainText('RNA 2D structure')
   // information icons only in the category headers, none on tracks
-  await expect(page.getByTestId('annotations-tab').getByTestId('info-tip')).toHaveCount(3)
+  await expect(page.getByTestId('annotations-tab').getByTestId('info-tip')).toHaveCount(4)
   await expect(page.locator('[data-testid^="track-"] [data-testid="info-tip"]')).toHaveCount(0)
   await expect(page.getByTestId('annotations-tab').getByTestId('instance-select')).toHaveCount(0)
   await expect(page.getByTestId('annotations-tab').getByTestId('molstar-viewer')).toHaveCount(0)
@@ -94,7 +94,7 @@ test('Download menu serves the Annotations datasets (ligand and pocket files are
   await expect(page.getByTestId('download-items')).toHaveCount(0)
   await page.getByTestId('download-button').click()
   await expect(page.getByTestId('download-items')).toBeVisible()
-  await expect(page.getByTestId('download-items').getByRole('menuitem')).toHaveCount(6)   // loops, tracks, SASA x2, nonstandard nucleotides x2
+  await expect(page.getByTestId('download-items').getByRole('menuitem')).toHaveCount(8)   // loops, tracks, SASA x2, sequence differences x2, nonstandard nucleotides x2
   await expect(page.getByTestId('download-ligands')).toHaveCount(0); await expect(page.getByTestId('download-pockets')).toHaveCount(0)
   for (const [id, file, label] of [['loops', 'loops.json', 'RNA loop annotations'], ['tracks', 'tracks.json', 'Aggregated annotation tracks']]) {
     const it = page.getByTestId(`download-${id}`)

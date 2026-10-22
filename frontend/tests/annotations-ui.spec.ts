@@ -21,7 +21,7 @@ test('compact header: "Annotations", dynamic family counts, Download still at th
   await expect(tab.getByTestId('section-eyebrow')).toHaveCount(0)
   const h = (await tab.locator('h2').first().boundingBox())!, dl = (await page.getByTestId('download-button').boundingBox())!, card = (await tab.locator('section').first().boundingBox())!
   expect(Math.abs(dl.y + dl.height / 2 - (h.y + h.height / 2))).toBeLessThan(12); expect(card.x + card.width - (dl.x + dl.width)).toBeLessThan(24)
-  await page.getByTestId('download-button').click(); await expect(page.getByTestId('download-items').getByRole('menuitem')).toHaveCount(6); await page.keyboard.press('Escape')
+  await page.getByTestId('download-button').click(); await expect(page.getByTestId('download-items').getByRole('menuitem')).toHaveCount(8); await page.keyboard.press('Escape')
   // less vertical space above the tracks than before (header + legend + axis previously ended at ~380 px at 1400x1000)
   const axis = (await page.getByTestId('annotation-axis').boundingBox())!
   expect(axis.y - card.y).toBeLessThan(150)
@@ -65,7 +65,7 @@ test('compact legend: shared frequency, SASA, nonstandard presence, no data vs n
   await open(page)
   const legend = page.getByTestId('scale-legend')
   await expect(legend.locator('[data-testid^="legend-"]').evaluateAll((es) => es.map((e) => e.getAttribute('data-testid')))).resolves.toEqual(
-    ['legend-occurrence-frequency', 'legend-sasa-median', 'legend-gradient-sasa-median', 'legend-nonstandard-presence', 'legend-no-data', 'legend-no-annotation'])
+    ['legend-occurrence-frequency', 'legend-sasa-median', 'legend-gradient-sasa-median', 'legend-seqdiff-engineered-mutation', 'legend-seqdiff-variant', 'legend-seqdiff-conflict', 'legend-nonstandard-presence', 'legend-no-data', 'legend-no-annotation'])
   await expect(page.getByTestId('legend-occurrence-frequency')).toContainText('Occurrence frequency (0–100%)')
   for (const b of ['<20%', '20–40%', '40–60%', '60–80%', '≥80%']) await expect(page.getByTestId('legend-occurrence-frequency')).toContainText(b)
   for (const old of ['RNA loop frequency', 'Ligand contact frequency', 'Predicted pocket occurrence']) await expect(legend).not.toContainText(old)
@@ -80,7 +80,7 @@ test('compact legend: shared frequency, SASA, nonstandard presence, no data vs n
   expect((await legend.boundingBox())!.height).toBeLessThanOrEqual(40)
   // categories, order, track counts
   const ids = await page.locator('section[data-testid^="category-"]').evaluateAll((es) => es.map((e) => e.getAttribute('data-testid')))
-  expect(ids).toEqual(['category-sasa', 'category-loops', 'category-modifications'])
+  expect(ids).toEqual(['category-sasa', 'category-loops', 'category-seqdiff', 'category-modifications'])
   for (const [id, n] of [['sasa', 1], ['loops', 3], ['modifications', 4]] as const) await expect(page.getByTestId(`category-${id}`).locator('[data-testid^="track-"]')).toHaveCount(n)
   // the Ligands tab: ligand-contact residues then predicted pockets, the shared frequency scale only
   await openLigands(page)

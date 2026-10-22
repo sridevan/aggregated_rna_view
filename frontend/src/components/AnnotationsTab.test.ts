@@ -92,3 +92,41 @@ describe('Ligands tab: gallery pages and ideal 3D coordinates', () => {
     expect(idealSdfUrls('ADE')).toEqual(['https://www.ebi.ac.uk/pdbe/static/files/pdbechem_v2/ADE_ideal.sdf', 'https://files.rcsb.org/ligands/download/ADE_ideal.sdf'])
   })
 })
+
+import { seqDiffLabel, seqDiffTracks } from './AnnotationsTab'
+import type { SequenceDifferenceTracksDataset } from '../types/backend'
+describe('reported sequence differences (mmCIF _struct_ref_seq_dif)', () => {
+  const o = (pdb: string, ch: string, ref: string | null, dep: string | null, auth: string, kind: 'substitution' | 'added_residue' | 'absent_residue', cls: string) =>
+    ({ pdb_id: pdb, auth_asym_id: ch, label_asym_id: ch, seq_name: `${pdb}_1_${ch}_${ch}`, label_seq_id: 1, author_residue_number: auth, author_insertion_code: '', reference: ref, deposited: dep, change_kind: kind, classification: cls })
+  const sd = {
+    rfam_acc: 'RFX', clen: 3, category: 'Reported sequence differences',
+    classifications: { 'Engineered mutation': { n_observations: 3, n_on_consensus_axis: 3, n_instances: 3, n_entries: 2, change_kinds: {}, consensus_positions: [2] },
+                       Conflict: { n_observations: 1, n_on_consensus_axis: 1, n_instances: 1, n_entries: 1, change_kinds: {}, consensus_positions: [3] },
+                       'SEE REMARK 999': { n_observations: 2, n_on_consensus_axis: 0, n_instances: 1, n_entries: 1, change_kinds: {}, consensus_positions: [] } },
+    positions: [{ rfam_consensus_pos: 1, classifications: {} },
+                { rfam_consensus_pos: 2, classifications: { 'Engineered mutation': { n_observations: 3, n_instances: 3, n_entries: 2, changes: { 'C>U': 2, 'U>C': 1 }, change_kinds: { substitution: 3 }, observation_ids: ['a', 'b', 'c'] } } },
+                { rfam_consensus_pos: 3, classifications: { Conflict: { n_observations: 1, n_instances: 1, n_entries: 1, changes: { 'A>G': 1 }, change_kinds: { substitution: 1 }, observation_ids: ['d'] } } }],
+    off_axis: [], counts: { n_entries: 3, n_entries_evaluated: 3, n_instances_evaluated: 4, n_observations: 6, n_on_consensus_axis: 4, n_off_axis: 2, n_unresolved_rows: 0 },
+    observations: { a: o('3fo4', 'A', 'C', 'U', '74', 'substitution', 'Engineered mutation'), b: o('2b57', 'A', 'C', 'U', '74', 'substitution', 'Engineered mutation'),
+                    c: o('2b57', 'B', 'U', 'C', '74', 'substitution', 'Engineered mutation'), d: o('5c7u', 'B', 'A', 'G', '15', 'substitution', 'Conflict') },
+  } as unknown as SequenceDifferenceTracksDataset
+  it('one track per classification on the axis (verbatim labels), most instances first; fixed colour per label', () => {
+    const t = seqDiffTracks(sd)
+    expect(t.map((x) => x.label)).toEqual(['Engineered mutation', 'Conflict'])                    // SEE REMARK 999 is off-axis only: no track
+    expect(t[0].scale.dark).toBe('#6d28d9'); expect(t[1].scale.dark).toBe('#b45309'); expect(t[0].scale.kind).toBe('presence')
+  })
+  it('marks only where a difference is recorded (absence is not a negative); tooltip, details and per-chain observations from the data', () => {
+    const [em] = seqDiffTracks(sd)
+    expect(em.at(1)).toBeNull(); expect(em.at(3)).toBeNull()
+    const m = em.at(2) as Exclude<ReturnType<typeof em.at>, null | 'unevaluable'>
+    expect(m.tip.lines).toEqual(['Engineered mutation: C→U ×2, U→C', 'Reported in 3 RNA instances (2 PDB entries)', '3FO4 A C74U', '2B57 A C74U', '2B57 B U74C'])
+    expect(m.observations).toEqual([{ label: '3FO4 A C74U', seqName: '3fo4_1_A_A' }, { label: '2B57 A C74U', seqName: '2b57_1_A_A' }, { label: '2B57 B U74C', seqName: '2b57_1_B_B' }])
+    expect(m.summary.find(([k]) => k === 'Reference')![1]).toContain('not the Rfam consensus')
+  })
+  it('labels substitutions, added and absent residues', () => {
+    expect(seqDiffLabel(o('2b57', 'A', null, 'G', '16', 'added_residue', 'Engineered mutation'))).toBe('2B57 A G16 added')
+    expect(seqDiffLabel(o('4kqy', 'A', 'U', null, '', 'absent_residue', 'deletion'))).toBe('4KQY A U absent')
+    expect(seqDiffLabel({ ...o('9xyz', 'A', 'C', 'U', '74', 'substitution', 'x'), author_insertion_code: 'A' })).toBe('9XYZ A C74A→U')
+    expect(seqDiffLabel(o('1ehz', 'A', 'U', 'H2U', '16', 'substitution', 'modified residue'))).toBe('1EHZ A U16→H2U')
+  })
+})

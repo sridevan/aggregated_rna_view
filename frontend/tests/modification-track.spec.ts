@@ -84,7 +84,7 @@ test('category popover, collapse, downloads; other categories unchanged', async 
   await page.getByTestId('category-toggle-modifications').click()
   // downloads
   await page.getByTestId('download-button').click()
-  await expect(page.locator('[data-testid^="download-"][role="menuitem"]')).toHaveCount(6)
+  await expect(page.locator('[data-testid^="download-"][role="menuitem"]')).toHaveCount(8)
   for (const [id, file, label, key] of [['modifications', 'modifications.json', 'Nonstandard nucleotides · Detailed', 'observations'], ['modification-tracks', 'modification_tracks.json', 'Nonstandard nucleotides · Aggregated', 'positions']]) {
     const it = page.getByTestId(`download-${id}`); await expect(it).toContainText(label)
     const href = (await it.getAttribute('href'))!; expect(href.endsWith(`/families/RF00167/${file}`)).toBe(true); await expect(it).toHaveAttribute('download', `RF00167_${file}`)
@@ -106,7 +106,7 @@ test('family without nonstandard-nucleotide data: category hidden, download disa
   await open(page)
   await expect(page.getByTestId('category-sasa')).toBeVisible()
   await expect(page.getByTestId('category-modifications')).toHaveCount(0)
-  await expect(page.locator('section[data-testid^="category-"]')).toHaveCount(2)
+  await expect(page.locator('section[data-testid^="category-"]')).toHaveCount(3)
   await expect(page.getByTestId('legend-nonstandard-presence')).toHaveCount(0)
   await page.getByTestId('download-button').click()
   await expect(page.getByTestId('download-modifications')).toHaveAttribute('aria-disabled', 'true')

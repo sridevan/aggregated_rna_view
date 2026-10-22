@@ -1,0 +1,591 @@
+{
+ "schema_version": "1.0",
+ "rfam_acc": "RF00177",
+ "clen": 1533,
+ "method": {
+  "source": "PDBe updated mmCIF, category _struct_ref_seq_dif (deposited vs reference sequence of each polymer entity)",
+  "why_not_api": "PDBe API mutated_AA_or_NA covers protein chains only at present (endpoint description); no RNA records for any family",
+  "entity_join": "_struct_ref_seq_dif.align_id -> _struct_ref_seq.ref_id -> _struct_ref.entity_id (reference db_name, db_code, pdbx_db_accession kept)",
+  "chain_join": "author strand (pdbx_pdb_strand_id, else _struct_ref_seq.pdbx_strand_id) + entity -> label asym id via _pdbx_poly_seq_scheme",
+  "residue": "seq_num = label_seq_id; mon_id = deposited residue; db_mon_id = reference residue",
+  "change_kinds": {
+   "substitution": "deposited and reference residues present",
+   "added_residue": "deposited residue without a reference residue",
+   "absent_residue": "reference residue without a deposited residue (no seq_num)"
+  },
+  "classification": "the deposited _struct_ref_seq_dif.details text, verbatim (case and wording preserved)",
+  "checks": [
+   "deposited residue = _pdbx_poly_seq_scheme.mon_id at label_seq_id",
+   "author number + insertion code = _pdbx_poly_seq_scheme.pdb_seq_num/pdb_ins_code",
+   "deposited residue = residue_name of the validated family mapping",
+   "copies of one entity report the same differences"
+  ],
+  "consensus_positions": "validated family mapping only (match state); insert, flank, local-end, absent and conflicting rows keep a null position",
+  "counting": "one observation per row; per position and classification: distinct RNA chain instances and PDB entries",
+  "absence": "not a negative: most RNA entities reference their own PDB sequence and cannot record differences"
+ },
+ "counts": {
+  "n_entries": 58,
+  "n_entries_evaluated": 58,
+  "n_entries_source_unavailable": 0,
+  "n_instances": 60,
+  "n_instances_evaluated": 60,
+  "n_observations": 0,
+  "n_on_consensus_axis": 0,
+  "n_off_axis": 0,
+  "n_unresolved_rows": 0,
+  "n_instances_with_differences": 0,
+  "n_entries_with_differences": 0,
+  "mapping_status": {},
+  "change_kinds": {},
+  "classifications": {},
+  "reference_databases": {},
+  "rows_on_other_entities_by_polymer_type": {
+   "polypeptide(L)": 99,
+   "polyribonucleotide": 36
+  },
+  "n_entities_with_inconsistent_copies": 0
+ },
+ "classifications": {},
+ "observations": [],
+ "unresolved_rows": [],
+ "inconsistent_copies": [],
+ "entry_sources": {
+  "4u20": {
+   "status": "evaluated",
+   "n_rows_all_entities": 0,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/4u20_updated.cif",
+   "retrieved_utc": "2026-10-22T07:18:34+00:00",
+   "bytes": 34678333,
+   "md5": "7091422e6d1ef89522f1ec528c8569f5",
+   "kept": false
+  },
+  "4u27": {
+   "status": "evaluated",
+   "n_rows_all_entities": 0,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/4u27_updated.cif",
+   "retrieved_utc": "2026-10-22T07:18:38+00:00",
+   "bytes": 34667785,
+   "md5": "78ef96b45df957a329e687d648d192ec",
+   "kept": false
+  },
+  "4v4h": {
+   "status": "evaluated",
+   "n_rows_all_entities": 0,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/4v4h_updated.cif",
+   "retrieved_utc": "2026-10-22T07:18:47+00:00",
+   "bytes": 34920400,
+   "md5": "0fad625aa5a671bd8c3ea985d2bd7366",
+   "kept": false
+  },
+  "4v4q": {
+   "status": "evaluated",
+   "n_rows_all_entities": 0,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/4v4q_updated.cif",
+   "retrieved_utc": "2026-10-22T07:18:51+00:00",
+   "bytes": 34881801,
+   "md5": "f599e95dcaed707ce370af7bc4369e42",
+   "kept": false
+  },
+  "4v53": {
+   "status": "evaluated",
+   "n_rows_all_entities": 0,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/4v53_updated.cif",
+   "retrieved_utc": "2026-10-22T07:18:57+00:00",
+   "bytes": 34269674,
+   "md5": "3fcbad1a49b9e8b6ddf31373baf07d38",
+   "kept": false
+  },
+  "4v64": {
+   "status": "evaluated",
+   "n_rows_all_entities": 0,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/4v64_updated.cif",
+   "retrieved_utc": "2026-10-22T07:19:00+00:00",
+   "bytes": 34241809,
+   "md5": "3fcd461a1dc008e3151900b462ccdde9",
+   "kept": false
+  },
+  "4v7t": {
+   "status": "evaluated",
+   "n_rows_all_entities": 0,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/4v7t_updated.cif",
+   "retrieved_utc": "2026-10-22T07:19:11+00:00",
+   "bytes": 38703166,
+   "md5": "84441002f386c8b67db5162520548423",
+   "kept": false
+  },
+  "4v85": {
+   "status": "evaluated",
+   "n_rows_all_entities": 7,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/4v85_updated.cif",
+   "retrieved_utc": "2026-10-22T07:19:13+00:00",
+   "bytes": 17661822,
+   "md5": "857cf945ebd9cd9b767dd7934bece70c",
+   "kept": false
+  },
+  "4v9c": {
+   "status": "evaluated",
+   "n_rows_all_entities": 2,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/4v9c_updated.cif",
+   "retrieved_utc": "2026-10-22T07:19:17+00:00",
+   "bytes": 35290401,
+   "md5": "a74bf45da1d94232953fa8a153e27040",
+   "kept": false
+  },
+  "4v9d": {
+   "status": "evaluated",
+   "n_rows_all_entities": 1,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/4v9d_updated.cif",
+   "retrieved_utc": "2026-10-22T07:19:21+00:00",
+   "bytes": 35225430,
+   "md5": "09aacb5c25408c9ed1d556e77b60ea08",
+   "kept": false
+  },
+  "4v9o": {
+   "status": "evaluated",
+   "n_rows_all_entities": 0,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/4v9o_updated.cif",
+   "retrieved_utc": "2026-10-22T07:19:28+00:00",
+   "bytes": 70179383,
+   "md5": "2bdfc6c10b18c07574b0e628f22b8ae3",
+   "kept": false
+  },
+  "4v9p": {
+   "status": "evaluated",
+   "n_rows_all_entities": 0,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/4v9p_updated.cif",
+   "retrieved_utc": "2026-10-22T07:19:37+00:00",
+   "bytes": 69977933,
+   "md5": "26c48b69e1625dd4d645428a8b4522e5",
+   "kept": false
+  },
+  "4wf1": {
+   "status": "evaluated",
+   "n_rows_all_entities": 0,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/4wf1_updated.cif",
+   "retrieved_utc": "2026-10-22T07:19:41+00:00",
+   "bytes": 34663258,
+   "md5": "7faf05d42d6f6ba8f9ee4a49011a5a01",
+   "kept": false
+  },
+  "4woi": {
+   "status": "evaluated",
+   "n_rows_all_entities": 0,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/4woi_updated.cif",
+   "retrieved_utc": "2026-10-22T07:19:45+00:00",
+   "bytes": 35401424,
+   "md5": "aa6cce86124df99c655da66226c40088",
+   "kept": false
+  },
+  "4ybb": {
+   "status": "evaluated",
+   "n_rows_all_entities": 6,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/4ybb_updated.cif",
+   "retrieved_utc": "2026-10-22T07:19:50+00:00",
+   "bytes": 39810138,
+   "md5": "0f729f632bf878a494b76f3bd2446dd0",
+   "kept": false
+  },
+  "5afi": {
+   "status": "evaluated",
+   "n_rows_all_entities": 1,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/5afi_updated.cif",
+   "retrieved_utc": "2026-10-22T07:19:53+00:00",
+   "bytes": 25975025,
+   "md5": "3d6026502c4d8d27ea8c9a8a74cf56d6",
+   "kept": false
+  },
+  "5j5b": {
+   "status": "evaluated",
+   "n_rows_all_entities": 20,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/5j5b_updated.cif",
+   "retrieved_utc": "2026-10-22T07:20:00+00:00",
+   "bytes": 60364198,
+   "md5": "e60c2033dea8d21dcb4581bca9d8e27b",
+   "kept": false
+  },
+  "5j91": {
+   "status": "evaluated",
+   "n_rows_all_entities": 4,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/5j91_updated.cif",
+   "retrieved_utc": "2026-10-22T07:20:08+00:00",
+   "bytes": 60327833,
+   "md5": "48c078ffbd62f59ef982d5e5e09398b6",
+   "kept": false
+  },
+  "6lkq": {
+   "status": "evaluated",
+   "n_rows_all_entities": 2,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/6lkq_updated.cif",
+   "retrieved_utc": "2026-10-22T07:20:10+00:00",
+   "bytes": 16314871,
+   "md5": "04d2e31d38272bbb18555987ac70654e",
+   "kept": false
+  },
+  "7acr": {
+   "status": "evaluated",
+   "n_rows_all_entities": 0,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/7acr_updated.cif",
+   "retrieved_utc": "2026-10-22T07:20:12+00:00",
+   "bytes": 19051222,
+   "md5": "ea81622f0201bb4cd9359a2661f13fd3",
+   "kept": false
+  },
+  "7b5k": {
+   "status": "evaluated",
+   "n_rows_all_entities": 1,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/7b5k_updated.cif",
+   "retrieved_utc": "2026-10-22T07:20:13+00:00",
+   "bytes": 17473179,
+   "md5": "65b5f818a5979d89fb566df566c6a59a",
+   "kept": false
+  },
+  "7k00": {
+   "status": "evaluated",
+   "n_rows_all_entities": 2,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/7k00_updated.cif",
+   "retrieved_utc": "2026-10-22T07:20:15+00:00",
+   "bytes": 18014591,
+   "md5": "ae2c4456d0b94696cda0790f6f6d418d",
+   "kept": false
+  },
+  "7k54": {
+   "status": "evaluated",
+   "n_rows_all_entities": 10,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/7k54_updated.cif",
+   "retrieved_utc": "2026-10-22T07:20:17+00:00",
+   "bytes": 17965836,
+   "md5": "1c7c37689bc4fd0d20b0684f7925e922",
+   "kept": false
+  },
+  "7n2c": {
+   "status": "evaluated",
+   "n_rows_all_entities": 1,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/7n2c_updated.cif",
+   "retrieved_utc": "2026-10-22T07:20:19+00:00",
+   "bytes": 20018012,
+   "md5": "d93fd6c1c97a0fea63e941cb442208a7",
+   "kept": false
+  },
+  "7n2v": {
+   "status": "evaluated",
+   "n_rows_all_entities": 1,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/7n2v_updated.cif",
+   "retrieved_utc": "2026-10-22T07:20:21+00:00",
+   "bytes": 19882665,
+   "md5": "fe2c8b4fa2775e2a1fb3df946ff48bf8",
+   "kept": false
+  },
+  "7n30": {
+   "status": "evaluated",
+   "n_rows_all_entities": 0,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/7n30_updated.cif",
+   "retrieved_utc": "2026-10-22T07:20:23+00:00",
+   "bytes": 18755768,
+   "md5": "debd1dd61e1c0dd65dd2577c0ca437a8",
+   "kept": false
+  },
+  "7nso": {
+   "status": "evaluated",
+   "n_rows_all_entities": 0,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/7nso_updated.cif",
+   "retrieved_utc": "2026-10-22T07:20:24+00:00",
+   "bytes": 16084478,
+   "md5": "bd13887664c10620c788031b2c5b18e4",
+   "kept": false
+  },
+  "7otc": {
+   "status": "evaluated",
+   "n_rows_all_entities": 7,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/7otc_updated.cif",
+   "retrieved_utc": "2026-10-22T07:20:27+00:00",
+   "bytes": 14949411,
+   "md5": "02c0f5f645cf71c4ab7c793e4dd74d27",
+   "kept": false
+  },
+  "7pjs": {
+   "status": "evaluated",
+   "n_rows_all_entities": 1,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/7pjs_updated.cif",
+   "retrieved_utc": "2026-10-22T07:20:29+00:00",
+   "bytes": 18671151,
+   "md5": "104b97cdc85012fdcb0257e771eae6da",
+   "kept": false
+  },
+  "7pjv": {
+   "status": "evaluated",
+   "n_rows_all_entities": 1,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/7pjv_updated.cif",
+   "retrieved_utc": "2026-10-22T07:20:31+00:00",
+   "bytes": 17972789,
+   "md5": "0216c05c922cd9f03353c3a969c12fbb",
+   "kept": false
+  },
+  "7pjy": {
+   "status": "evaluated",
+   "n_rows_all_entities": 1,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/7pjy_updated.cif",
+   "retrieved_utc": "2026-10-22T07:20:33+00:00",
+   "bytes": 17950832,
+   "md5": "7ed134dfb9e7f5c4eab976f572830c9c",
+   "kept": false
+  },
+  "7s1h": {
+   "status": "evaluated",
+   "n_rows_all_entities": 0,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/7s1h_updated.cif",
+   "retrieved_utc": "2026-10-22T07:20:35+00:00",
+   "bytes": 26508227,
+   "md5": "ab69c832ee06b634bce65f1eaaa009f5",
+   "kept": false
+  },
+  "7ssd": {
+   "status": "evaluated",
+   "n_rows_all_entities": 2,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/7ssd_updated.cif",
+   "retrieved_utc": "2026-10-22T07:20:37+00:00",
+   "bytes": 17610936,
+   "md5": "2188b1f701148e63613896f8cd22a9d6",
+   "kept": false
+  },
+  "7st7": {
+   "status": "evaluated",
+   "n_rows_all_entities": 2,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/7st7_updated.cif",
+   "retrieved_utc": "2026-10-22T07:20:39+00:00",
+   "bytes": 17814822,
+   "md5": "30109598c9df665b588c10cd174988c5",
+   "kept": false
+  },
+  "8aye": {
+   "status": "evaluated",
+   "n_rows_all_entities": 2,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/8aye_updated.cif",
+   "retrieved_utc": "2026-10-22T07:20:41+00:00",
+   "bytes": 16445095,
+   "md5": "ec6f195ee8ec71583940f369bcd6a47c",
+   "kept": false
+  },
+  "8b0x": {
+   "status": "evaluated",
+   "n_rows_all_entities": 4,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/8b0x_updated.cif",
+   "retrieved_utc": "2026-10-22T07:20:43+00:00",
+   "bytes": 18955912,
+   "md5": "55dff934a9490284f9a12f3ba2d9fe21",
+   "kept": false
+  },
+  "8bf7": {
+   "status": "evaluated",
+   "n_rows_all_entities": 0,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/8bf7_updated.cif",
+   "retrieved_utc": "2026-10-22T07:20:45+00:00",
+   "bytes": 26575987,
+   "md5": "2da02fab19099999d26f20bacbf652b8",
+   "kept": false
+  },
+  "8fzi": {
+   "status": "evaluated",
+   "n_rows_all_entities": 2,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/8fzi_updated.cif",
+   "retrieved_utc": "2026-10-22T07:20:47+00:00",
+   "bytes": 17622482,
+   "md5": "191c0774c473b3fc80b841dd42b5a218",
+   "kept": false
+  },
+  "8ifb": {
+   "status": "evaluated",
+   "n_rows_all_entities": 2,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/8ifb_updated.cif",
+   "retrieved_utc": "2026-10-22T07:20:49+00:00",
+   "bytes": 18184214,
+   "md5": "886cecf0684cc34bffc342bb34014197",
+   "kept": false
+  },
+  "8r6c": {
+   "status": "evaluated",
+   "n_rows_all_entities": 2,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/8r6c_updated.cif",
+   "retrieved_utc": "2026-10-22T07:20:51+00:00",
+   "bytes": 17382717,
+   "md5": "f5c85d471a24e113e7d509f75ec88855",
+   "kept": false
+  },
+  "8r8m": {
+   "status": "evaluated",
+   "n_rows_all_entities": 2,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/8r8m_updated.cif",
+   "retrieved_utc": "2026-10-22T07:20:53+00:00",
+   "bytes": 16722977,
+   "md5": "cd1c73e426a8016979199ebef5573f9b",
+   "kept": false
+  },
+  "8syl": {
+   "status": "evaluated",
+   "n_rows_all_entities": 2,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/8syl_updated.cif",
+   "retrieved_utc": "2026-10-22T07:20:55+00:00",
+   "bytes": 16978368,
+   "md5": "6c0921ad338b36df82ccfcb9d6ba91f7",
+   "kept": false
+  },
+  "8uz3": {
+   "status": "evaluated",
+   "n_rows_all_entities": 2,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/8uz3_updated.cif",
+   "retrieved_utc": "2026-10-22T07:20:58+00:00",
+   "bytes": 16773598,
+   "md5": "e46b970892a045fc154631ee7fc22277",
+   "kept": false
+  },
+  "9b4z": {
+   "status": "evaluated",
+   "n_rows_all_entities": 0,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/9b4z_updated.cif",
+   "retrieved_utc": "2026-10-22T07:21:00+00:00",
+   "bytes": 17338966,
+   "md5": "4aa9e00bef193be68c37fd3e5537713d",
+   "kept": false
+  },
+  "9b51": {
+   "status": "evaluated",
+   "n_rows_all_entities": 1,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/9b51_updated.cif",
+   "retrieved_utc": "2026-10-22T07:21:02+00:00",
+   "bytes": 17324340,
+   "md5": "293f940b940a91bd6b88f8efcaea6549",
+   "kept": false
+  },
+  "9g06": {
+   "status": "evaluated",
+   "n_rows_all_entities": 31,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/9g06_updated.cif",
+   "retrieved_utc": "2026-10-22T07:21:03+00:00",
+   "bytes": 6431220,
+   "md5": "d2b8d8a23891388533aa2ee42a528d3b",
+   "kept": false
+  },
+  "9gha": {
+   "status": "evaluated",
+   "n_rows_all_entities": 2,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/9gha_updated.cif",
+   "retrieved_utc": "2026-10-22T07:21:05+00:00",
+   "bytes": 16926209,
+   "md5": "ea6b4ef28ce75b4cf80e416d3c595d9a",
+   "kept": false
+  },
+  "9gup": {
+   "status": "evaluated",
+   "n_rows_all_entities": 0,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/9gup_updated.cif",
+   "retrieved_utc": "2026-10-22T07:21:05+00:00",
+   "bytes": 6310642,
+   "md5": "fd2fda8dc48b166593548ade3e52f3ea",
+   "kept": false
+  },
+  "9guv": {
+   "status": "evaluated",
+   "n_rows_all_entities": 1,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/9guv_updated.cif",
+   "retrieved_utc": "2026-10-22T07:21:08+00:00",
+   "bytes": 6598509,
+   "md5": "4181959c43a98199fd568bef45b6ffd7",
+   "kept": false
+  },
+  "9o2y": {
+   "status": "evaluated",
+   "n_rows_all_entities": 4,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/9o2y_updated.cif",
+   "retrieved_utc": "2026-10-22T07:21:10+00:00",
+   "bytes": 17256261,
+   "md5": "7d29e2d3a6fd42aa543613e1f6bc1238",
+   "kept": false
+  },
+  "9pih": {
+   "status": "evaluated",
+   "n_rows_all_entities": 0,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/9pih_updated.cif",
+   "retrieved_utc": "2026-10-22T07:21:12+00:00",
+   "bytes": 16638911,
+   "md5": "272863f2508c67f80f44909df38931fa",
+   "kept": false
+  },
+  "9pii": {
+   "status": "evaluated",
+   "n_rows_all_entities": 0,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/9pii_updated.cif",
+   "retrieved_utc": "2026-10-22T07:21:15+00:00",
+   "bytes": 16614554,
+   "md5": "03b5b88409fb5dbaf8c18bd861522822",
+   "kept": false
+  },
+  "9pij": {
+   "status": "evaluated",
+   "n_rows_all_entities": 0,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/9pij_updated.cif",
+   "retrieved_utc": "2026-10-22T07:21:17+00:00",
+   "bytes": 16738054,
+   "md5": "e81cfa636884ab68edf6f6d56e4ac2a7",
+   "kept": false
+  },
+  "9qqq": {
+   "status": "evaluated",
+   "n_rows_all_entities": 1,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/9qqq_updated.cif",
+   "retrieved_utc": "2026-10-22T07:21:20+00:00",
+   "bytes": 18126007,
+   "md5": "c4c573617150391c7e922a4f718d7bec",
+   "kept": false
+  },
+  "9sro": {
+   "status": "evaluated",
+   "n_rows_all_entities": 2,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/9sro_updated.cif",
+   "retrieved_utc": "2026-10-22T07:21:22+00:00",
+   "bytes": 16576380,
+   "md5": "b917d3acdd4f1fa58707d56e5305e537",
+   "kept": false
+  },
+  "9sx2": {
+   "status": "evaluated",
+   "n_rows_all_entities": 1,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/9sx2_updated.cif",
+   "retrieved_utc": "2026-10-22T07:21:23+00:00",
+   "bytes": 6489370,
+   "md5": "b18829f5e3f9419c0fb32ac8fa539125",
+   "kept": false
+  },
+  "9tmi": {
+   "status": "evaluated",
+   "n_rows_all_entities": 1,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/9tmi_updated.cif",
+   "retrieved_utc": "2026-10-22T07:21:25+00:00",
+   "bytes": 17847533,
+   "md5": "1cb88edaa55da747088ff58c95faeeda",
+   "kept": false
+  },
+  "9tnl": {
+   "status": "evaluated",
+   "n_rows_all_entities": 1,
+   "url": "https://www.ebi.ac.uk/pdbe/entry-files/download/9tnl_updated.cif",
+   "retrieved_utc": "2026-10-22T07:21:27+00:00",
+   "bytes": 17583848,
+   "md5": "d7cb24b717a28d7442da06a6b778117e",
+   "kept": false
+  }
+ },
+ "provenance": {
+  "rfam_acc": "RF00177",
+  "rfam_release": "15.1",
+  "cm_checksum": "2093381478",
+  "cm_clen": 1533,
+  "infernal_version": "INFERNAL 1.1.5 (Sep 2023)",
+  "mapping_pipeline_version": "0.1.0",
+  "mapping_generated": "2026-10-17T17:56:53+00:00",
+  "pipeline_version": "0.1.0",
+  "generated": "2026-10-22T07:18:16+00:00",
+  "mmcif_source": "https://www.ebi.ac.uk/pdbe/entry-files/download/<pdb>_updated.cif (PDBe updated mmCIF; per-entry retrieval in entry_sources)",
+  "method_document": "docs/SEQUENCE_DIFFERENCES_METHOD.md",
+  "investigation": "experiments/mutations_investigation/REPORT.md"
+ }
+}

@@ -1,0 +1,570 @@
+{
+ "schema_version": "1.0",
+ "rfam_acc": "RF00162",
+ "clen": 108,
+ "category": "Reported sequence differences",
+ "measurement": {
+  "name": "Reported sequence difference",
+  "definition": "a _struct_ref_seq_dif row of a family RNA chain at the consensus position, per deposited classification",
+  "unit": "RNA chain instances and PDB entries (no frequency: absence of a row is not evidence of an unchanged nucleotide)"
+ },
+ "classifications": {
+  "Conflict": {
+   "n_observations": 1,
+   "n_on_consensus_axis": 0,
+   "n_instances": 1,
+   "n_entries": 1,
+   "change_kinds": {
+    "substitution": 1
+   },
+   "consensus_positions": []
+  },
+  "deletion": {
+   "n_observations": 1,
+   "n_on_consensus_axis": 0,
+   "n_instances": 1,
+   "n_entries": 1,
+   "change_kinds": {
+    "absent_residue": 1
+   },
+   "consensus_positions": []
+  }
+ },
+ "positions": [
+  {
+   "rfam_consensus_pos": 1,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 2,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 3,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 4,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 5,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 6,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 7,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 8,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 9,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 10,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 11,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 12,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 13,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 14,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 15,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 16,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 17,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 18,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 19,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 20,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 21,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 22,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 23,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 24,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 25,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 26,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 27,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 28,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 29,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 30,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 31,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 32,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 33,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 34,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 35,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 36,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 37,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 38,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 39,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 40,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 41,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 42,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 43,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 44,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 45,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 46,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 47,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 48,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 49,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 50,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 51,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 52,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 53,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 54,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 55,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 56,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 57,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 58,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 59,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 60,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 61,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 62,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 63,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 64,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 65,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 66,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 67,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 68,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 69,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 70,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 71,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 72,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 73,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 74,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 75,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 76,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 77,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 78,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 79,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 80,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 81,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 82,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 83,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 84,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 85,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 86,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 87,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 88,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 89,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 90,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 91,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 92,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 93,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 94,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 95,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 96,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 97,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 98,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 99,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 100,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 101,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 102,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 103,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 104,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 105,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 106,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 107,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 108,
+   "classifications": {}
+  }
+ ],
+ "off_axis": [
+  {
+   "observation_id": "4kqy|A|ref2894698|1",
+   "pdb_id": "4kqy",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "4kqy_1_A_A",
+   "label_seq_id": null,
+   "author_residue_number": null,
+   "author_insertion_code": "",
+   "reference": "U",
+   "deposited": null,
+   "change_kind": "absent_residue",
+   "classification": "deletion",
+   "alignment_state": null,
+   "mapping_status": "no_deposited_residue"
+  },
+  {
+   "observation_id": "4kqy|A|64|2",
+   "pdb_id": "4kqy",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "4kqy_1_A_A",
+   "label_seq_id": 64,
+   "author_residue_number": "63",
+   "author_insertion_code": "",
+   "reference": "C",
+   "deposited": "A",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "insert",
+   "mapping_status": "no_consensus_position:insert"
+  }
+ ],
+ "observations": {},
+ "counts": {
+  "n_entries": 28,
+  "n_entries_evaluated": 28,
+  "n_entries_source_unavailable": 0,
+  "n_instances": 29,
+  "n_instances_evaluated": 29,
+  "n_observations": 2,
+  "n_on_consensus_axis": 0,
+  "n_off_axis": 2,
+  "n_unresolved_rows": 0,
+  "n_instances_with_differences": 1,
+  "n_entries_with_differences": 1,
+  "mapping_status": {
+   "no_deposited_residue": 1,
+   "no_consensus_position:insert": 1
+  },
+  "change_kinds": {
+   "absent_residue": 1,
+   "substitution": 1
+  },
+  "classifications": {
+   "deletion": 1,
+   "Conflict": 1
+  },
+  "reference_databases": {
+   "GB": 2
+  },
+  "rows_on_other_entities_by_polymer_type": {
+   "polypeptide(L)": 2
+  },
+  "n_entities_with_inconsistent_copies": 0
+ },
+ "method": {
+  "source": "PDBe updated mmCIF, category _struct_ref_seq_dif (deposited vs reference sequence of each polymer entity)",
+  "why_not_api": "PDBe API mutated_AA_or_NA covers protein chains only at present (endpoint description); no RNA records for any family",
+  "entity_join": "_struct_ref_seq_dif.align_id -> _struct_ref_seq.ref_id -> _struct_ref.entity_id (reference db_name, db_code, pdbx_db_accession kept)",
+  "chain_join": "author strand (pdbx_pdb_strand_id, else _struct_ref_seq.pdbx_strand_id) + entity -> label asym id via _pdbx_poly_seq_scheme",
+  "residue": "seq_num = label_seq_id; mon_id = deposited residue; db_mon_id = reference residue",
+  "change_kinds": {
+   "substitution": "deposited and reference residues present",
+   "added_residue": "deposited residue without a reference residue",
+   "absent_residue": "reference residue without a deposited residue (no seq_num)"
+  },
+  "classification": "the deposited _struct_ref_seq_dif.details text, verbatim (case and wording preserved)",
+  "checks": [
+   "deposited residue = _pdbx_poly_seq_scheme.mon_id at label_seq_id",
+   "author number + insertion code = _pdbx_poly_seq_scheme.pdb_seq_num/pdb_ins_code",
+   "deposited residue = residue_name of the validated family mapping",
+   "copies of one entity report the same differences"
+  ],
+  "consensus_positions": "validated family mapping only (match state); insert, flank, local-end, absent and conflicting rows keep a null position",
+  "counting": "one observation per row; per position and classification: distinct RNA chain instances and PDB entries",
+  "absence": "not a negative: most RNA entities reference their own PDB sequence and cannot record differences"
+ },
+ "provenance": {
+  "rfam_acc": "RF00162",
+  "rfam_release": "15.1",
+  "cm_checksum": "4205982682",
+  "cm_clen": 108,
+  "infernal_version": "INFERNAL 1.1.5 (Sep 2023)",
+  "mapping_pipeline_version": "0.1.0",
+  "mapping_generated": "2026-10-17T15:09:20+00:00",
+  "pipeline_version": "0.1.0",
+  "generated": "2026-10-22T07:16:46+00:00",
+  "mmcif_source": "https://www.ebi.ac.uk/pdbe/entry-files/download/<pdb>_updated.cif (PDBe updated mmCIF; per-entry retrieval in entry_sources)",
+  "method_document": "docs/SEQUENCE_DIFFERENCES_METHOD.md",
+  "investigation": "experiments/mutations_investigation/REPORT.md"
+ }
+}

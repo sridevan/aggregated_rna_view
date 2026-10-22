@@ -144,6 +144,19 @@ export interface ModificationComponent {
   chem_comp_name: string | null; chem_comp_type: string | null; parent: string | null; parent_source: 'CCD' | 'NAKB' | null; ccd_parent: string | null; nakb_parent: string[] | null
   nakb_change_locations: string[] | null; n_observations: number; n_instances: number; n_entries: number; n_on_consensus_axis: number; consensus_positions: number[]; pdbe_reported: number | null
 }
+/** sequence_difference_tracks.json (rna_explorer/sequence_differences.py): mmCIF _struct_ref_seq_dif rows of family RNA chains per consensus
+ *  position and deposited classification (verbatim). Counts only: the absence of a row is not evidence of an unchanged nucleotide. */
+export interface SeqDiffObservation { pdb_id: string; auth_asym_id: string | null; label_asym_id: string | null; seq_name: string; label_seq_id: number | null
+  author_residue_number: string | null; author_insertion_code: string; reference: string | null; deposited: string | null
+  change_kind: 'substitution' | 'added_residue' | 'absent_residue'; classification: string | null; rfam_consensus_pos?: number | null; alignment_state?: string | null; mapping_status?: string }
+export interface SeqDiffClassAtPos { n_observations: number; n_instances: number; n_entries: number; changes: Record<string, number>; change_kinds: Record<string, number>; observation_ids: string[] }
+export interface SeqDiffClassSummary { n_observations: number; n_on_consensus_axis: number; n_instances: number; n_entries: number; change_kinds: Record<string, number>; consensus_positions: number[] }
+export interface SequenceDifferenceTracksDataset {
+  rfam_acc: string; clen: number; category: string; classifications: Record<string, SeqDiffClassSummary>
+  positions: { rfam_consensus_pos: number; classifications: Record<string, SeqDiffClassAtPos> }[]
+  off_axis: (SeqDiffObservation & { observation_id: string })[]; observations: Record<string, SeqDiffObservation>
+  counts: { n_entries: number; n_entries_evaluated: number; n_instances_evaluated: number; n_observations: number; n_on_consensus_axis: number; n_off_axis: number; n_unresolved_rows: number }
+}
 export interface ModificationTracksDataset {
   schema_version: string; rfam_acc: string; clen: number; track_id: string; category: string; measurement: { name: string; definition: string; unit?: string }
   aggregation_rules: Record<string, string>; summary: { n_instances: number; n_instances_ok?: number; n_nonstandard: number; n_on_consensus_axis: number; n_off_axis: number; off_axis_observations: unknown[] }

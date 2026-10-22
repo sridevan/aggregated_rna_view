@@ -151,7 +151,7 @@ export function StructureExplorer() {
         {status && <span className={`text-xs ${status.ok ? 'text-stone-600' : 'text-amber-700'}`} data-testid="selection-status" data-ok={String(status.ok)} title={'title' in status ? (status as { title?: string }).title : undefined}>{status.text}</span>}
         {/* a position transferred from the Annotations or Ligands tab: the evidence there is family-level, not an observation in this chain */}
         {origin && sel.active?.kind === 'position' && sel.active.pos === origin.pos && (
-          <span className="basis-full text-[11px] text-stone-500" data-testid="selection-origin">Opened from {origin.from === 'ligands' ? 'Ligands' : 'Annotations'} ({origin.label}). Family-level evidence: not necessarily observed in {chainLabel}.</span>)}
+          <span className="basis-full text-[11px] text-stone-500" data-testid="selection-origin">Opened from {origin.from === 'ligands' ? 'Ligands' : 'Annotations'} ({origin.label}).{origin.seqName && origin.seqName === current?.seq_name ? ` Recorded for this RNA chain (${chainLabel}).` : ` Family-level evidence: not necessarily observed in ${chainLabel}.`}</span>)}
       </div>
       <ConsensusTracks stats={stats} selected={sel.positions} onToggle={onToggle} instanceStates={states} insertionMarkers={insMarkers} openInsertion={insOpen?.id ?? null} selectedInsertionRun={activeInsRun?.id ?? null} onInsertionClick={onInsertionClick} instanceLabel={current ? `${current.pdb_id.toUpperCase()} ${current.auth_asym_id}` : undefined}
         reference={{ rfamAcc: family.rfam_acc, rfamId: family.rfam_id, rf: family.consensus_sequence, ssCons: family.ss_cons, clanMembers: family.clan_members }}

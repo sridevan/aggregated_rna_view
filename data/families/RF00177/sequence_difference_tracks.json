@@ -1,0 +1,6206 @@
+{
+ "schema_version": "1.0",
+ "rfam_acc": "RF00177",
+ "clen": 1533,
+ "category": "Reported sequence differences",
+ "measurement": {
+  "name": "Reported sequence difference",
+  "definition": "a _struct_ref_seq_dif row of a family RNA chain at the consensus position, per deposited classification",
+  "unit": "RNA chain instances and PDB entries (no frequency: absence of a row is not evidence of an unchanged nucleotide)"
+ },
+ "classifications": {},
+ "positions": [
+  {
+   "rfam_consensus_pos": 1,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 2,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 3,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 4,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 5,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 6,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 7,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 8,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 9,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 10,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 11,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 12,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 13,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 14,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 15,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 16,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 17,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 18,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 19,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 20,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 21,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 22,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 23,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 24,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 25,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 26,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 27,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 28,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 29,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 30,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 31,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 32,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 33,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 34,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 35,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 36,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 37,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 38,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 39,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 40,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 41,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 42,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 43,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 44,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 45,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 46,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 47,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 48,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 49,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 50,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 51,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 52,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 53,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 54,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 55,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 56,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 57,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 58,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 59,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 60,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 61,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 62,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 63,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 64,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 65,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 66,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 67,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 68,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 69,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 70,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 71,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 72,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 73,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 74,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 75,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 76,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 77,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 78,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 79,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 80,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 81,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 82,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 83,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 84,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 85,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 86,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 87,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 88,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 89,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 90,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 91,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 92,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 93,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 94,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 95,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 96,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 97,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 98,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 99,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 100,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 101,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 102,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 103,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 104,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 105,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 106,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 107,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 108,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 109,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 110,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 111,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 112,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 113,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 114,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 115,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 116,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 117,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 118,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 119,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 120,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 121,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 122,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 123,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 124,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 125,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 126,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 127,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 128,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 129,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 130,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 131,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 132,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 133,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 134,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 135,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 136,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 137,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 138,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 139,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 140,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 141,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 142,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 143,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 144,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 145,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 146,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 147,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 148,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 149,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 150,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 151,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 152,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 153,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 154,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 155,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 156,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 157,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 158,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 159,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 160,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 161,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 162,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 163,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 164,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 165,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 166,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 167,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 168,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 169,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 170,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 171,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 172,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 173,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 174,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 175,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 176,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 177,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 178,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 179,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 180,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 181,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 182,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 183,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 184,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 185,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 186,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 187,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 188,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 189,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 190,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 191,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 192,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 193,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 194,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 195,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 196,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 197,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 198,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 199,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 200,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 201,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 202,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 203,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 204,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 205,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 206,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 207,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 208,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 209,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 210,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 211,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 212,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 213,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 214,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 215,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 216,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 217,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 218,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 219,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 220,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 221,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 222,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 223,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 224,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 225,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 226,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 227,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 228,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 229,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 230,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 231,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 232,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 233,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 234,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 235,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 236,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 237,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 238,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 239,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 240,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 241,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 242,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 243,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 244,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 245,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 246,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 247,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 248,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 249,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 250,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 251,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 252,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 253,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 254,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 255,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 256,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 257,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 258,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 259,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 260,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 261,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 262,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 263,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 264,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 265,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 266,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 267,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 268,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 269,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 270,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 271,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 272,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 273,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 274,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 275,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 276,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 277,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 278,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 279,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 280,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 281,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 282,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 283,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 284,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 285,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 286,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 287,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 288,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 289,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 290,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 291,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 292,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 293,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 294,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 295,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 296,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 297,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 298,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 299,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 300,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 301,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 302,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 303,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 304,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 305,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 306,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 307,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 308,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 309,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 310,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 311,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 312,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 313,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 314,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 315,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 316,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 317,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 318,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 319,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 320,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 321,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 322,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 323,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 324,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 325,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 326,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 327,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 328,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 329,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 330,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 331,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 332,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 333,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 334,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 335,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 336,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 337,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 338,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 339,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 340,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 341,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 342,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 343,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 344,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 345,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 346,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 347,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 348,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 349,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 350,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 351,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 352,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 353,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 354,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 355,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 356,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 357,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 358,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 359,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 360,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 361,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 362,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 363,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 364,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 365,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 366,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 367,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 368,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 369,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 370,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 371,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 372,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 373,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 374,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 375,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 376,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 377,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 378,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 379,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 380,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 381,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 382,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 383,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 384,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 385,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 386,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 387,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 388,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 389,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 390,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 391,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 392,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 393,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 394,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 395,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 396,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 397,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 398,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 399,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 400,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 401,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 402,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 403,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 404,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 405,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 406,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 407,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 408,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 409,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 410,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 411,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 412,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 413,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 414,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 415,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 416,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 417,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 418,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 419,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 420,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 421,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 422,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 423,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 424,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 425,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 426,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 427,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 428,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 429,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 430,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 431,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 432,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 433,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 434,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 435,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 436,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 437,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 438,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 439,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 440,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 441,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 442,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 443,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 444,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 445,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 446,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 447,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 448,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 449,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 450,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 451,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 452,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 453,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 454,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 455,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 456,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 457,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 458,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 459,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 460,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 461,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 462,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 463,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 464,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 465,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 466,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 467,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 468,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 469,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 470,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 471,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 472,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 473,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 474,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 475,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 476,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 477,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 478,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 479,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 480,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 481,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 482,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 483,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 484,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 485,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 486,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 487,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 488,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 489,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 490,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 491,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 492,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 493,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 494,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 495,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 496,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 497,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 498,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 499,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 500,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 501,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 502,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 503,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 504,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 505,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 506,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 507,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 508,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 509,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 510,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 511,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 512,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 513,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 514,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 515,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 516,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 517,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 518,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 519,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 520,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 521,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 522,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 523,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 524,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 525,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 526,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 527,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 528,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 529,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 530,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 531,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 532,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 533,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 534,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 535,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 536,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 537,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 538,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 539,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 540,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 541,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 542,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 543,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 544,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 545,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 546,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 547,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 548,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 549,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 550,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 551,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 552,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 553,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 554,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 555,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 556,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 557,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 558,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 559,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 560,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 561,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 562,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 563,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 564,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 565,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 566,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 567,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 568,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 569,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 570,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 571,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 572,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 573,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 574,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 575,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 576,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 577,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 578,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 579,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 580,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 581,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 582,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 583,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 584,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 585,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 586,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 587,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 588,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 589,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 590,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 591,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 592,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 593,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 594,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 595,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 596,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 597,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 598,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 599,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 600,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 601,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 602,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 603,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 604,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 605,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 606,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 607,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 608,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 609,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 610,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 611,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 612,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 613,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 614,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 615,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 616,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 617,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 618,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 619,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 620,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 621,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 622,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 623,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 624,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 625,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 626,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 627,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 628,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 629,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 630,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 631,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 632,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 633,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 634,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 635,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 636,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 637,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 638,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 639,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 640,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 641,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 642,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 643,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 644,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 645,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 646,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 647,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 648,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 649,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 650,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 651,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 652,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 653,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 654,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 655,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 656,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 657,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 658,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 659,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 660,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 661,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 662,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 663,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 664,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 665,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 666,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 667,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 668,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 669,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 670,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 671,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 672,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 673,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 674,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 675,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 676,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 677,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 678,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 679,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 680,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 681,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 682,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 683,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 684,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 685,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 686,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 687,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 688,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 689,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 690,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 691,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 692,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 693,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 694,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 695,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 696,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 697,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 698,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 699,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 700,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 701,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 702,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 703,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 704,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 705,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 706,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 707,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 708,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 709,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 710,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 711,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 712,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 713,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 714,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 715,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 716,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 717,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 718,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 719,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 720,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 721,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 722,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 723,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 724,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 725,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 726,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 727,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 728,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 729,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 730,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 731,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 732,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 733,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 734,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 735,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 736,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 737,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 738,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 739,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 740,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 741,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 742,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 743,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 744,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 745,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 746,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 747,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 748,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 749,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 750,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 751,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 752,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 753,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 754,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 755,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 756,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 757,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 758,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 759,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 760,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 761,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 762,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 763,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 764,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 765,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 766,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 767,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 768,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 769,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 770,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 771,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 772,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 773,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 774,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 775,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 776,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 777,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 778,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 779,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 780,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 781,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 782,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 783,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 784,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 785,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 786,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 787,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 788,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 789,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 790,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 791,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 792,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 793,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 794,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 795,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 796,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 797,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 798,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 799,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 800,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 801,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 802,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 803,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 804,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 805,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 806,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 807,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 808,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 809,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 810,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 811,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 812,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 813,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 814,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 815,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 816,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 817,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 818,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 819,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 820,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 821,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 822,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 823,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 824,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 825,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 826,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 827,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 828,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 829,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 830,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 831,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 832,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 833,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 834,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 835,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 836,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 837,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 838,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 839,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 840,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 841,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 842,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 843,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 844,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 845,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 846,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 847,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 848,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 849,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 850,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 851,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 852,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 853,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 854,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 855,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 856,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 857,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 858,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 859,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 860,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 861,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 862,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 863,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 864,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 865,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 866,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 867,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 868,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 869,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 870,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 871,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 872,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 873,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 874,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 875,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 876,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 877,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 878,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 879,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 880,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 881,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 882,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 883,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 884,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 885,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 886,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 887,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 888,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 889,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 890,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 891,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 892,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 893,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 894,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 895,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 896,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 897,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 898,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 899,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 900,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 901,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 902,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 903,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 904,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 905,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 906,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 907,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 908,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 909,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 910,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 911,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 912,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 913,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 914,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 915,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 916,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 917,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 918,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 919,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 920,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 921,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 922,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 923,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 924,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 925,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 926,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 927,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 928,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 929,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 930,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 931,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 932,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 933,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 934,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 935,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 936,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 937,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 938,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 939,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 940,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 941,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 942,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 943,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 944,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 945,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 946,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 947,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 948,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 949,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 950,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 951,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 952,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 953,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 954,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 955,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 956,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 957,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 958,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 959,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 960,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 961,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 962,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 963,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 964,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 965,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 966,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 967,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 968,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 969,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 970,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 971,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 972,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 973,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 974,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 975,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 976,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 977,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 978,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 979,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 980,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 981,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 982,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 983,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 984,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 985,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 986,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 987,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 988,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 989,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 990,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 991,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 992,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 993,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 994,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 995,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 996,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 997,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 998,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 999,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1000,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1001,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1002,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1003,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1004,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1005,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1006,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1007,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1008,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1009,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1010,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1011,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1012,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1013,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1014,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1015,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1016,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1017,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1018,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1019,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1020,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1021,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1022,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1023,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1024,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1025,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1026,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1027,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1028,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1029,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1030,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1031,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1032,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1033,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1034,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1035,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1036,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1037,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1038,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1039,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1040,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1041,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1042,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1043,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1044,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1045,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1046,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1047,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1048,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1049,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1050,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1051,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1052,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1053,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1054,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1055,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1056,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1057,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1058,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1059,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1060,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1061,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1062,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1063,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1064,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1065,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1066,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1067,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1068,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1069,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1070,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1071,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1072,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1073,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1074,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1075,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1076,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1077,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1078,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1079,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1080,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1081,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1082,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1083,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1084,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1085,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1086,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1087,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1088,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1089,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1090,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1091,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1092,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1093,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1094,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1095,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1096,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1097,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1098,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1099,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1100,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1101,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1102,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1103,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1104,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1105,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1106,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1107,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1108,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1109,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1110,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1111,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1112,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1113,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1114,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1115,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1116,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1117,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1118,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1119,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1120,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1121,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1122,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1123,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1124,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1125,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1126,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1127,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1128,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1129,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1130,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1131,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1132,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1133,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1134,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1135,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1136,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1137,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1138,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1139,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1140,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1141,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1142,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1143,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1144,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1145,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1146,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1147,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1148,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1149,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1150,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1151,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1152,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1153,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1154,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1155,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1156,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1157,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1158,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1159,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1160,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1161,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1162,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1163,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1164,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1165,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1166,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1167,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1168,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1169,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1170,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1171,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1172,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1173,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1174,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1175,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1176,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1177,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1178,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1179,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1180,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1181,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1182,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1183,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1184,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1185,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1186,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1187,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1188,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1189,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1190,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1191,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1192,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1193,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1194,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1195,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1196,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1197,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1198,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1199,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1200,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1201,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1202,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1203,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1204,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1205,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1206,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1207,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1208,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1209,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1210,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1211,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1212,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1213,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1214,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1215,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1216,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1217,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1218,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1219,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1220,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1221,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1222,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1223,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1224,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1225,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1226,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1227,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1228,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1229,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1230,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1231,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1232,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1233,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1234,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1235,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1236,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1237,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1238,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1239,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1240,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1241,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1242,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1243,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1244,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1245,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1246,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1247,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1248,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1249,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1250,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1251,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1252,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1253,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1254,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1255,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1256,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1257,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1258,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1259,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1260,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1261,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1262,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1263,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1264,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1265,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1266,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1267,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1268,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1269,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1270,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1271,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1272,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1273,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1274,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1275,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1276,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1277,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1278,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1279,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1280,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1281,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1282,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1283,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1284,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1285,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1286,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1287,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1288,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1289,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1290,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1291,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1292,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1293,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1294,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1295,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1296,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1297,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1298,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1299,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1300,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1301,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1302,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1303,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1304,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1305,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1306,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1307,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1308,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1309,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1310,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1311,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1312,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1313,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1314,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1315,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1316,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1317,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1318,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1319,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1320,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1321,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1322,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1323,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1324,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1325,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1326,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1327,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1328,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1329,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1330,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1331,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1332,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1333,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1334,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1335,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1336,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1337,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1338,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1339,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1340,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1341,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1342,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1343,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1344,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1345,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1346,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1347,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1348,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1349,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1350,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1351,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1352,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1353,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1354,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1355,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1356,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1357,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1358,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1359,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1360,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1361,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1362,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1363,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1364,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1365,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1366,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1367,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1368,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1369,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1370,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1371,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1372,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1373,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1374,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1375,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1376,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1377,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1378,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1379,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1380,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1381,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1382,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1383,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1384,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1385,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1386,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1387,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1388,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1389,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1390,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1391,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1392,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1393,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1394,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1395,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1396,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1397,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1398,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1399,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1400,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1401,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1402,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1403,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1404,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1405,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1406,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1407,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1408,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1409,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1410,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1411,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1412,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1413,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1414,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1415,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1416,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1417,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1418,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1419,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1420,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1421,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1422,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1423,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1424,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1425,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1426,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1427,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1428,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1429,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1430,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1431,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1432,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1433,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1434,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1435,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1436,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1437,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1438,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1439,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1440,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1441,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1442,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1443,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1444,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1445,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1446,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1447,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1448,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1449,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1450,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1451,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1452,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1453,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1454,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1455,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1456,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1457,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1458,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1459,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1460,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1461,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1462,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1463,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1464,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1465,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1466,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1467,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1468,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1469,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1470,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1471,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1472,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1473,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1474,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1475,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1476,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1477,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1478,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1479,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1480,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1481,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1482,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1483,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1484,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1485,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1486,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1487,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1488,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1489,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1490,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1491,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1492,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1493,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1494,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1495,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1496,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1497,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1498,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1499,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1500,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1501,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1502,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1503,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1504,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1505,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1506,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1507,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1508,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1509,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1510,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1511,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1512,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1513,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1514,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1515,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1516,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1517,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1518,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1519,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1520,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1521,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1522,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1523,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1524,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1525,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1526,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1527,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1528,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1529,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1530,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1531,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1532,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 1533,
+   "classifications": {}
+  }
+ ],
+ "off_axis": [],
+ "observations": {},
+ "counts": {
+  "n_entries": 58,
+  "n_entries_evaluated": 58,
+  "n_entries_source_unavailable": 0,
+  "n_instances": 60,
+  "n_instances_evaluated": 60,
+  "n_observations": 0,
+  "n_on_consensus_axis": 0,
+  "n_off_axis": 0,
+  "n_unresolved_rows": 0,
+  "n_instances_with_differences": 0,
+  "n_entries_with_differences": 0,
+  "mapping_status": {},
+  "change_kinds": {},
+  "classifications": {},
+  "reference_databases": {},
+  "rows_on_other_entities_by_polymer_type": {
+   "polypeptide(L)": 99,
+   "polyribonucleotide": 36
+  },
+  "n_entities_with_inconsistent_copies": 0
+ },
+ "method": {
+  "source": "PDBe updated mmCIF, category _struct_ref_seq_dif (deposited vs reference sequence of each polymer entity)",
+  "why_not_api": "PDBe API mutated_AA_or_NA covers protein chains only at present (endpoint description); no RNA records for any family",
+  "entity_join": "_struct_ref_seq_dif.align_id -> _struct_ref_seq.ref_id -> _struct_ref.entity_id (reference db_name, db_code, pdbx_db_accession kept)",
+  "chain_join": "author strand (pdbx_pdb_strand_id, else _struct_ref_seq.pdbx_strand_id) + entity -> label asym id via _pdbx_poly_seq_scheme",
+  "residue": "seq_num = label_seq_id; mon_id = deposited residue; db_mon_id = reference residue",
+  "change_kinds": {
+   "substitution": "deposited and reference residues present",
+   "added_residue": "deposited residue without a reference residue",
+   "absent_residue": "reference residue without a deposited residue (no seq_num)"
+  },
+  "classification": "the deposited _struct_ref_seq_dif.details text, verbatim (case and wording preserved)",
+  "checks": [
+   "deposited residue = _pdbx_poly_seq_scheme.mon_id at label_seq_id",
+   "author number + insertion code = _pdbx_poly_seq_scheme.pdb_seq_num/pdb_ins_code",
+   "deposited residue = residue_name of the validated family mapping",
+   "copies of one entity report the same differences"
+  ],
+  "consensus_positions": "validated family mapping only (match state); insert, flank, local-end, absent and conflicting rows keep a null position",
+  "counting": "one observation per row; per position and classification: distinct RNA chain instances and PDB entries",
+  "absence": "not a negative: most RNA entities reference their own PDB sequence and cannot record differences"
+ },
+ "provenance": {
+  "rfam_acc": "RF00177",
+  "rfam_release": "15.1",
+  "cm_checksum": "2093381478",
+  "cm_clen": 1533,
+  "infernal_version": "INFERNAL 1.1.5 (Sep 2023)",
+  "mapping_pipeline_version": "0.1.0",
+  "mapping_generated": "2026-10-17T17:56:53+00:00",
+  "pipeline_version": "0.1.0",
+  "generated": "2026-10-22T07:18:16+00:00",
+  "mmcif_source": "https://www.ebi.ac.uk/pdbe/entry-files/download/<pdb>_updated.cif (PDBe updated mmCIF; per-entry retrieval in entry_sources)",
+  "method_document": "docs/SEQUENCE_DIFFERENCES_METHOD.md",
+  "investigation": "experiments/mutations_investigation/REPORT.md"
+ }
+}

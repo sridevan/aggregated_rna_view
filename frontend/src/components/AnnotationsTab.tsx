@@ -7,7 +7,7 @@ import { InfoTip } from './InfoTip'
 import { NumberingSelect, useNumbering } from '../state/numbering'
 import { useNavigation, type NavigationOrigin } from '../state/navigation'
 import { chainAt, referenceTicks, residueValue } from '../lib/numbering'
-import type { LigandsDataset, LoopTrackPosition, ModificationTracksDataset, PocketTracksDataset, SasaTracksDataset, TracksDataset } from '../types/backend'
+import type { LigandsDataset, LoopTrackPosition, ModificationTracksDataset, PocketTracksDataset, SasaTracksDataset, SeqDiffObservation, SequenceDifferenceTracksDataset, TracksDataset } from '../types/backend'
 
 /*
  * PDBe-KB-style residue annotation tracks on the Rfam consensus axis.
@@ -36,7 +36,9 @@ export function visibleRange(scrollX: number, viewW: number, cellPx: number, cle
 export interface ScaleDef { id: string; kind: 'frequency' | 'quantity' | 'presence'; label: string; light: string; dark: string; bins: number; binLabels: string[]; unit?: string; domainMin?: number; domainMax?: number }
 /** `summary`: rows of the pinned details panel (measured quantity, result with numerator / denominator / unit, absence wording, what was not
  *  counted and why). `details`: the longer evidence and provenance lines shown under "Evidence details". */
-export interface Mark { value: number | null; tip: { title: string; lines: string[] }; summary: [string, string][]; details: string[] }
+export interface Mark { value: number | null; tip: { title: string; lines: string[] }; summary: [string, string][]; details: string[]
+  /** individual chain-level observations behind the mark: each can be shown in its own RNA chain in the Family Overview */
+  observations?: { label: string; seqName: string }[] }
 export interface TrackDef { id: string; label: string; sub: string; scale: ScaleDef; at: (pos: number) => Mark | 'unevaluable' | null }
 
 const FREQ_BINS = ['<20%', '20–40%', '40–60%', '60–80%', '≥80%']
@@ -71,6 +73,7 @@ export const POCKET_DEFAULT_FILTER = 'all_score_ge_0'   // fpocketR's published 
 const CATEGORY_INFO = {
   sasa: 'Per-nucleotide solvent-accessible surface area (SASA) of isolated RNA chains, summarised by Rfam position (median Å²).',
   modifications: 'Nonstandard nucleotide components in deposited RNA sequences, mapped to Rfam positions. These are not necessarily biological RNA modifications.',
+  seqdiff: 'Differences between each RNA chain\'s deposited sequence and the reference sequence recorded in its PDB entry (mmCIF), with the classification given in the entry. Most entries record none, so an empty position does not mean the nucleotide is unchanged.',
   loops: 'BGSU hairpin (HL), internal (IL) and junction (JL) loops mapped to Rfam positions. Annotations may overlap or vary between structures.',
 }
 
@@ -203,6 +206,49 @@ export function modificationTracks(md: ModificationTracksDataset): TrackDef[] {
   })
 }
 
+/** Fixed colour per deposited classification (colour follows the label, never its rank); other labels take the remaining colours in name order. */
+const SEQDIFF_COLOURS: Record<string, string> = { 'engineered mutation': '#6d28d9', conflict: '#b45309', variant: '#0e7490', insertion: '#15803d', deletion: '#475569', 'see remark 999': '#78716c' }
+const SEQDIFF_SPARE = ['#9d174d', '#1d4ed8', '#4d7c0f', '#7c2d12']
+/** "4LX6 A U74C", "2B57 A G16 added", "4KQY A U absent", with an insertion code or a modified residue "9XYZ A C74A→U", "1EHZ A U16→H2U" */
+export function seqDiffLabel(o: SeqDiffObservation): string {
+  const where = `${o.author_residue_number ?? ''}${o.author_insertion_code}`
+  // an arrow keeps the notation unambiguous with an insertion code or a multi-letter code (C74A→U, U16→H2U); otherwise the usual C74U
+  const arrow = !!o.author_insertion_code || (o.reference ?? '').length > 1 || (o.deposited ?? '').length > 1
+  const change = o.change_kind === 'substitution' ? `${o.reference}${where}${arrow ? '→' : ''}${o.deposited}` : o.change_kind === 'added_residue' ? `${o.deposited}${where} added` : `${o.reference ?? '?'} absent`
+  return `${o.pdb_id.toUpperCase()} ${o.auth_asym_id ?? '?'} ${change}`
+}
+/** One presence track per deposited classification that occurs on the consensus axis (kept verbatim), most RNA instances first. No frequency:
+ *  the absence of a recorded difference is not evidence of an unchanged nucleotide, so empty positions draw nothing. */
+export function seqDiffTracks(sd: SequenceDifferenceTracksDataset): TrackDef[] {
+  const classes = Object.entries(sd.classifications).filter(([, c]) => c.n_on_consensus_axis > 0).sort((a, b) => b[1].n_instances - a[1].n_instances || a[0].localeCompare(b[0]))
+  const spare = Object.keys(sd.classifications).filter((c) => !SEQDIFF_COLOURS[c.toLowerCase()]).sort()
+  return classes.map(([cls, ci]) => {
+    const colour = SEQDIFF_COLOURS[cls.toLowerCase()] ?? SEQDIFF_SPARE[spare.indexOf(cls) % SEQDIFF_SPARE.length]
+    const scale: ScaleDef = { id: `seqdiff-${cls.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`, kind: 'presence', label: cls, light: colour, dark: colour, bins: 1, binLabels: ['reported'] }
+    return {
+      id: `seqdiff-${cls.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`, label: cls, sub: `Reported in ${plural(ci.n_instances, 'instance', 'instances')} · ${plural(ci.n_entries, 'entry', 'entries')}`, scale,
+      at: (pos) => {
+        const c = sd.positions[pos - 1]?.classifications[cls]
+        if (!c) return null
+        const obs = c.observation_ids.map((id) => sd.observations[id]).filter(Boolean)
+        const changes = Object.entries(c.changes).map(([k, n]) => `${k.replace('>', '→')}${n > 1 ? ` ×${n}` : ''}`).join(', ')
+        const shown = obs.slice(0, 3).map(seqDiffLabel)
+        const summary: [string, string][] = [
+          ['Classification', `${cls} (as recorded in the PDB entry)`],
+          ['Change', `${changes} (reference → deposited)`],
+          ['Reported in', `${plural(c.n_instances, 'RNA instance', 'RNA instances')} in ${plural(c.n_entries, 'PDB entry', 'PDB entries')}`],
+          ['Reference', 'each entry\'s own reference sequence (GenBank or PDB), not the Rfam consensus'],
+          ['Counting unit', 'RNA chain instance; no frequency (entries without a recorded difference are not counted as unchanged)'],
+        ]
+        return { value: 1, summary, observations: obs.map((o) => ({ label: seqDiffLabel(o), seqName: o.seq_name })),
+          tip: { title: `Rfam residue ${pos}`, lines: [`${cls}: ${changes}`, `Reported in ${plural(c.n_instances, 'RNA instance', 'RNA instances')} (${plural(c.n_entries, 'PDB entry', 'PDB entries')})`, ...shown, ...(obs.length > 3 ? [`+${obs.length - 3} more (click for all)`] : [])] },
+          details: [...obs.map((o) => `${seqDiffLabel(o)} · author residue ${o.author_residue_number ?? '?'}${o.author_insertion_code} · label_seq_id ${o.label_seq_id ?? '–'}`),
+                    'Source: mmCIF _struct_ref_seq_dif of the PDBe updated mmCIF (the PDBe API mutated_AA_or_NA does not yet cover nucleic acids). Classification text as deposited.'] }
+      },
+    }
+  })
+}
+
 export const loopTracks = (tracks: TracksDataset): TrackDef[] => [loopTrack('HL', 'Hairpin loop', tracks), loopTrack('IL', 'Internal loop', tracks), loopTrack('JL', 'Junction loop', tracks)]
 /** CCDs of the default ligand set (class "ligand", not flagged), in track order: most PDB entries first, then CCD id. Shared by the gallery and the tracks. */
 export const defaultLigandCcds = (ligands: LigandsDataset) => Object.entries(ligands.by_ccd).filter(([, v]) => v.n_entries_in_default_track > 0)
@@ -256,7 +302,7 @@ export function TrackBrowser({ categories, origin, numberingInfo, legendInfo, hi
   categories: CategorySpec[]; origin: NavigationOrigin['from']; numberingInfo?: string; legendInfo?: string; highlight?: string | null; revealKey?: number
 }) {
   const { acc, family } = useFamily()
-  const [inspect, setInspect] = useState<{ trackId: string; label: string; pos: number; title: string; summary: [string, string][]; details: string[] } | null>(null)
+  const [inspect, setInspect] = useState<{ trackId: string; label: string; pos: number; title: string; summary: [string, string][]; details: string[]; observations?: { label: string; seqName: string }[] } | null>(null)
   const nav = useNavigation()
   const [tip, setTip] = useState<{ x: number; y: number; title: string; lines: string[] } | null>(null)
   const clen = family.clen
@@ -317,7 +363,7 @@ export function TrackBrowser({ categories, origin, numberingInfo, legendInfo, hi
         if (m === 'unevaluable') return <rect key={pos} x={x(pos) + pad} y={y} width={CELL - 2 * pad} height={MARK_H} fill={UNEVAL} data-pos={pos} data-state="unevaluable" />
         return <rect key={pos} x={x(pos) + pad} y={y} width={CELL - 2 * pad} height={MARK_H} fill={scaleColor(t.scale, m.value ?? 0)} data-pos={pos} data-value={(m.value ?? 0).toFixed(3)} className="cursor-pointer"
           onMouseEnter={(e) => setTip({ x: e.clientX, y: e.clientY, title: m.tip.title, lines: [...m.tip.lines, ...refLine(pos)] })} onMouseMove={(e) => setTip((s) => (s ? { ...s, x: e.clientX, y: e.clientY } : s))} onMouseLeave={() => setTip(null)}
-          onClick={() => setInspect((cur) => (cur && cur.trackId === t.id && cur.pos === pos ? null : { trackId: t.id, label: t.label, pos, title: `${t.label} · ${m.tip.title}`, summary: m.summary, details: m.details }))} />
+          onClick={() => setInspect((cur) => (cur && cur.trackId === t.id && cur.pos === pos ? null : { trackId: t.id, label: t.label, pos, title: `${t.label} · ${m.tip.title}`, summary: m.summary, details: m.details, observations: m.observations }))} />
       })}
     </svg>
   )
@@ -416,6 +462,14 @@ export function TrackBrowser({ categories, origin, numberingInfo, legendInfo, hi
                       title="Select this Rfam position for the RNA instance shown in the Family Overview">View in Family Overview</button>
                     <span className="text-[10px] text-stone-500">Highlights Rfam position {inspect.pos} in the selected RNA instance; the annotation may not be present in that chain.</span>
                   </div>)}
+                {nav && inspect.observations && inspect.observations.length > 0 && (
+                  <div className="mt-1 flex flex-wrap items-center gap-1" data-testid="annotation-observations">
+                    <span className="text-[10px] text-stone-500">Show in its RNA chain:</span>
+                    {inspect.observations.map((o, k) => (
+                      <button key={k} type="button" onClick={() => nav.viewInOverview(inspect.pos, `${inspect.label}: ${o.label}`, origin, o.seqName)} data-testid={`annotation-observation-${k}`} data-seq-name={o.seqName}
+                        title={`Open ${o.label} in the Family Overview: selects that RNA chain and highlights Rfam position ${inspect.pos} in it`}
+                        className="rounded border border-violet-300 bg-white px-1.5 py-px font-mono text-[10px] text-violet-800 hover:bg-violet-100">{o.label}</button>))}
+                  </div>)}
                 <details className="mt-1"><summary className="cursor-pointer text-[11px] text-stone-600">Evidence details</summary>{inspect.details.map((l, i) => <p key={i} className="mt-0.5 text-[11px] leading-4 text-stone-700">{l}</p>)}</details>
               </div>
             )}
@@ -442,18 +496,22 @@ export function AnnotationsTab() {
   const loops = useMemo(() => (st.state === 'ready' ? loopTracks(st.tracks) : null), [st])
   const sasa = useMemo(() => (st.state === 'ready' && st.sasa ? sasaTrack(st.sasa) : null), [st])
   const mods = useMemo(() => (st.state === 'ready' && st.modifications ? modificationTracks(st.modifications) : null), [st])
-  if (typeof window !== 'undefined') window.__rnaExplorer = { ...(window.__rnaExplorer ?? {}), annotationTracks: loops ? { structure: loops.map((t) => t.id), sasa: sasa ? [sasa.id] : [], modifications: mods ? mods.map((t) => t.id) : [] } : null }
+  const seqdiff = useMemo(() => (st.state === 'ready' && st.seqdiff ? seqDiffTracks(st.seqdiff) : null), [st])
+  if (typeof window !== 'undefined') window.__rnaExplorer = { ...(window.__rnaExplorer ?? {}), annotationTracks: loops ? { structure: loops.map((t) => t.id), sasa: sasa ? [sasa.id] : [], seqdiff: seqdiff ? seqdiff.map((t) => t.id) : [], modifications: mods ? mods.map((t) => t.id) : [] } : null }
   const categories = useMemo<CategorySpec[]>(() => !loops ? [] : [
     ...(sasa ? [{ id: 'sasa', title: 'Solvent accessibility', info: CATEGORY_INFO.sasa, tracks: [sasa] }] : []),
     { id: 'loops', title: 'RNA loop annotations', info: CATEGORY_INFO.loops, tracks: loops },
+    ...(seqdiff && seqdiff.length > 0 ? [{ id: 'seqdiff', title: 'Reported sequence differences', info: CATEGORY_INFO.seqdiff, tracks: seqdiff }] : []),
     ...(mods && mods.length > 0 ? [{ id: 'modifications', title: 'Nonstandard nucleotides', info: CATEGORY_INFO.modifications, tracks: mods }] : []),
-  ], [loops, sasa, mods])
+  ], [loops, sasa, mods, seqdiff])
   // labels without "(JSON)" (the button says it); each description sits behind an info icon (checked against the files' contents)
   const datasets: DownloadItem[] = [
     { id: 'loops', label: 'RNA loop annotations', file: 'loops.json', detail: 'BGSU RNA 3D Motif Atlas loops (HL, IL, J3, J4) with motif-group assignments, nucleotide and segment membership and Rfam consensus mapping.' },
     { id: 'tracks', label: 'Aggregated annotation tracks', file: 'tracks.json', detail: 'Per-position annotation frequencies with numerators, denominators and missing-data counts.' },
     { id: 'sasa', label: 'Solvent accessibility · Per nucleotide', file: 'sasa.json', detail: 'Per-chain nucleotide solvent accessibility (Å²) with atom completeness and calculation details.' },
     { id: 'sasa-tracks', label: 'Solvent accessibility · Aggregated', file: 'sasa_tracks.json', detail: 'Per-position solvent accessibility summaries (median, quartiles) and contributing-chain counts.' },
+    { id: 'seqdiff', label: 'Sequence differences · Detailed', file: 'sequence_differences.json', detail: 'Every mmCIF _struct_ref_seq_dif row of the family RNA chains: chain, residue identifiers, reference and deposited nucleotides, deposited classification, checks and Rfam mapping.' },
+    { id: 'seqdiff-tracks', label: 'Sequence differences · Aggregated', file: 'sequence_difference_tracks.json', detail: 'Per-position reported sequence differences by deposited classification, with the chains behind each count.' },
     { id: 'modifications', label: 'Nonstandard nucleotides · Detailed', file: 'modifications.json', detail: 'Nonstandard nucleotide identities, locations, parent nucleotides, Rfam mappings and source information.' },
     { id: 'modification-tracks', label: 'Nonstandard nucleotides · Aggregated', file: 'modification_tracks.json', detail: 'Per-position nonstandard-nucleotide frequencies, counts and contributing components.' },
   ]
@@ -467,8 +525,11 @@ export function AnnotationsTab() {
           <div className="space-y-2">
             <TrackBrowser categories={categories} origin="annotations" />
             {/* categories without data for this family are named, never silently dropped */}
-            {(() => { const missing = [!sasa && 'Solvent accessibility', !mods && 'Nonstandard nucleotides'].filter(Boolean)
+            {(() => { const missing = [!sasa && 'Solvent accessibility', !st.seqdiff && 'Reported sequence differences', !mods && 'Nonstandard nucleotides'].filter(Boolean)
+              const sd = st.seqdiff
               return <>
+                {sd && seqdiff && seqdiff.length === 0 && <p className="text-[11px] text-stone-500" data-testid="seqdiff-none">Reported sequence differences: {sd.counts.n_observations ? `none at Rfam positions (${plural(sd.counts.n_observations, 'difference has', 'differences have')} no Rfam position: flanks, insertions or absent residues)` : 'none recorded in the PDB entries of this family'}.</p>}
+                {sd && seqdiff && seqdiff.length > 0 && sd.counts.n_off_axis > 0 && <p className="text-[11px] text-stone-500" data-testid="seqdiff-off-axis">{plural(sd.counts.n_off_axis, 'reported sequence difference has', 'reported sequence differences have')} no Rfam position (flanks, insertions or absent residues): {sd.off_axis.slice(0, 6).map(seqDiffLabel).join(', ')}{sd.off_axis.length > 6 ? ', …' : ''} (all in sequence_differences.json).</p>}
                 {missing.length > 0 && <p className="text-[11px] text-stone-500" data-testid="categories-unavailable">Not available for {acc}: {missing.join(', ')}.</p>}
                 {mods && mods.length === 0 && <p className="text-[11px] text-stone-500" data-testid="modifications-none">Nonstandard nucleotides: none observed at Rfam positions.</p>}
               </> })()}

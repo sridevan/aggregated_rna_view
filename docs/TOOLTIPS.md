@@ -439,6 +439,7 @@ predicted binding pockets are in the Ligands tab." Track hover, pinned-detail an
 |---|---|
 | Solvent accessibility | Per-nucleotide solvent-accessible surface area (SASA) of isolated RNA chains, summarised by Rfam position (median Å²). |
 | RNA loop annotations | BGSU hairpin (HL), internal (IL) and junction (JL) loops mapped to Rfam positions. Annotations may overlap or vary between structures. |
+| Reported sequence differences | Differences between each RNA chain's deposited sequence and the reference sequence recorded in its PDB entry (mmCIF), with the classification given in the entry. Most entries record none, so an empty position does not mean the nucleotide is unchanged. |
 | Nonstandard nucleotides | Nonstandard nucleotide components in deposited RNA sequences, mapped to Rfam positions. These are not necessarily biological RNA modifications. |
 
 **Legend swatches, hover**
@@ -457,6 +458,13 @@ counted here." *(only where such loops exist)*; "Frequencies are calculated from
 determined. BGSU loop classifications can overlap."
 - SASA: "Median SASA: {value} Å²" · "Based on {n} RNA instance(s)"
 - Pockets: "Pocket occurrence: {k} of {n} RNA instances ({percent})"
+- Reported sequence difference: "{classification}: {ref→dep changes}" · "Reported in {k} RNA instances ({m} PDB entries)" · up to three
+  observations "{PDB} {chain} {change}" (e.g. "3FO4 A C74U", "2B57 A G16 added", "1EHZ A U16→H2U") · "+{n} more (click for all)". Pinned details:
+  Classification / Change / Reported in / Reference ("each entry's own reference sequence (GenBank or PDB), not the Rfam consensus") / Counting
+  unit, and "Show in its RNA chain:" buttons (hover "Open {observation} in the Family Overview: selects that RNA chain and highlights Rfam
+  position {pos} in it"); the Overview note then ends "Recorded for this RNA chain ({chain})." Notes under the categories: "{n} reported
+  sequence differences have no Rfam position (flanks, insertions or absent residues): …" and "Reported sequence differences: none at Rfam
+  positions (…)" / "… none recorded in the PDB entries of this family."
 - Nonstandard nucleotide: "{CCD} — {name}" · "Observed in {k} of {n} RNA instances ({percent})"
 - Ligand: "{CCD} — {name}" · "Recorded contact in {k} of {n} observable PDB entries ({percent})"
 
@@ -474,6 +482,8 @@ determined. BGSU loop classifications can overlap."
 | Predicted pockets · Aggregated (pocket_tracks.json) | Per-position pocket frequencies for each of the three pocket filters. |
 | Solvent accessibility · Per nucleotide (sasa.json) | Per-chain nucleotide solvent accessibility (Å²) with atom completeness and calculation details. |
 | Solvent accessibility · Aggregated (sasa_tracks.json) | Per-position solvent accessibility summaries (median, quartiles) and contributing-chain counts. |
+| Sequence differences · Detailed (sequence_differences.json) | Every mmCIF _struct_ref_seq_dif row of the family RNA chains: chain, residue identifiers, reference and deposited nucleotides, deposited classification, checks and Rfam mapping. |
+| Sequence differences · Aggregated (sequence_difference_tracks.json) | Per-position reported sequence differences by deposited classification, with the chains behind each count. |
 | Nonstandard nucleotides · Detailed (modifications.json) | Nonstandard nucleotide identities, locations, parent nucleotides, Rfam mappings and source information. |
 | Nonstandard nucleotides · Aggregated (modification_tracks.json) | Per-position nonstandard-nucleotide frequencies, counts and contributing components. |
 

@@ -1,0 +1,67 @@
+{
+ "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/mutated_AA_or_NA",
+ "method": "POST",
+ "request_ids": [
+  "2gis",
+  "2ydh",
+  "2ygh",
+  "3gx2",
+  "3gx3",
+  "3gx5",
+  "3gx6",
+  "3gx7",
+  "3iqn",
+  "3iqp",
+  "3iqr",
+  "3v7e",
+  "4aob",
+  "4b5r",
+  "4kqy",
+  "5fjc",
+  "5fk1",
+  "5fk2",
+  "5fk3",
+  "5fk4",
+  "5fk5",
+  "5fk6",
+  "5fkd",
+  "5fke",
+  "5fkf",
+  "5fkg",
+  "5fkh",
+  "7eaf"
+ ],
+ "retrieved_utc": "2026-10-22T06:59:50+00:00",
+ "body": {
+  "3v7e": [
+   {
+    "entity_id": 1,
+    "chain_id": "A",
+    "author_residue_number": null,
+    "author_insertion_code": "",
+    "chem_comp_id": "GLY",
+    "struct_asym_id": "A",
+    "residue_number": 1,
+    "mutation_details": {
+     "from": null,
+     "to": "G",
+     "type": "Expression tag"
+    }
+   },
+   {
+    "entity_id": 1,
+    "chain_id": "B",
+    "author_residue_number": null,
+    "author_insertion_code": "",
+    "chem_comp_id": "GLY",
+    "struct_asym_id": "B",
+    "residue_number": 1,
+    "mutation_details": {
+     "from": null,
+     "to": "G",
+     "type": "Expression tag"
+    }
+   }
+  ]
+ }
+}

@@ -1,4 +1,4 @@
-import type { ChainMapping, ConsensusStats, FamilyOverview, InstanceRow, LigandsDataset, OrientationDataset, PocketTracksDataset, SasaTracksDataset, TracksDataset, ModificationTracksDataset, StructureClusteringDataset, ModificationsDataset, LoopsDataset, InteractionsDataset } from '../types/backend'
+import type { ChainMapping, ConsensusStats, FamilyOverview, InstanceRow, LigandsDataset, OrientationDataset, PocketTracksDataset, SasaTracksDataset, TracksDataset, ModificationTracksDataset, SequenceDifferenceTracksDataset, StructureClusteringDataset, ModificationsDataset, LoopsDataset, InteractionsDataset } from '../types/backend'
 
 const BASE = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/families`
 
@@ -42,6 +42,7 @@ export const loadSasaTracks = (acc: string) => memo(`${acc}/sasa_tracks`, () => 
 /** URL of a file of the family data directory (used for download links). */
 export const familyFileUrl = (acc: string, file: string) => `${BASE}/${acc}/${file}`
 /** Optional dataset: a family without nonstandard-nucleotide data shows no Nonstandard nucleotides category. */
+export const loadSeqDiffTracks = (acc: string) => memo(`${acc}/sequence_difference_tracks`, () => getJson<SequenceDifferenceTracksDataset>(`${BASE}/${acc}/sequence_difference_tracks.json`).catch(() => null))
 export const loadModificationTracks = (acc: string) => memo(`${acc}/modification_tracks`, () => getJson<ModificationTracksDataset>(`${BASE}/${acc}/modification_tracks.json`).catch(() => null))
 /** Optional dataset: a family without pocket predictions shows no Predicted binding pockets category. */
 export const loadPocketTracks = (acc: string) => memo(`${acc}/pocket_tracks`, () => getJson<PocketTracksDataset>(`${BASE}/${acc}/pocket_tracks.json`).catch(() => null))

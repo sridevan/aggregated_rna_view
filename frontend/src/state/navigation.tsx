@@ -6,8 +6,8 @@ import { createContext, useContext, type ReactNode } from 'react'
  * (the instance and the position numbering are left as they are) and opens the tab. `origin` records where the position came from, so
  * the Overview can say that the annotation is family-level evidence and not necessarily present in the selected chain.
  */
-export interface NavigationOrigin { from: 'annotations' | 'ligands'; pos: number; label: string }
-export interface NavigationApi { viewInOverview: (pos: number, label: string, from?: NavigationOrigin['from']) => void; origin: NavigationOrigin | null }
+export interface NavigationOrigin { from: 'annotations' | 'ligands'; pos: number; label: string; /** set when the evidence belongs to one RNA chain (opened in that chain) */ seqName?: string }
+export interface NavigationApi { viewInOverview: (pos: number, label: string, from?: NavigationOrigin['from'], seqName?: string) => void; origin: NavigationOrigin | null }
 const Ctx = createContext<NavigationApi | null>(null)
 export function NavigationProvider({ value, children }: { value: NavigationApi; children: ReactNode }) {
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>

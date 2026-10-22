@@ -1,0 +1,151 @@
+{
+ "url": "https://www.ebi.ac.uk/pdbe/api/v2/pdb/entry/mutated_AA_or_NA",
+ "method": "POST",
+ "request_ids": [
+  "2cky",
+  "2gdi",
+  "2hoj",
+  "2hok",
+  "2hol",
+  "2hom",
+  "2hoo",
+  "2hop",
+  "3d2g",
+  "3d2v",
+  "3d2x",
+  "3k0j",
+  "4nya",
+  "4nyb",
+  "4nyc",
+  "4nyd",
+  "4nyg",
+  "7td7",
+  "7tda",
+  "7tdb",
+  "7tdc",
+  "7tzr",
+  "7tzs",
+  "7tzt",
+  "7tzu",
+  "8f4o",
+  "9c6j",
+  "9c6k"
+ ],
+ "retrieved_utc": "2026-10-22T06:59:50+00:00",
+ "body": {
+  "3k0j": [
+   {
+    "entity_id": 1,
+    "chain_id": "A",
+    "author_residue_number": 231,
+    "author_insertion_code": "",
+    "chem_comp_id": "HIS",
+    "struct_asym_id": "A",
+    "residue_number": 30,
+    "mutation_details": {
+     "from": "Y",
+     "to": "H",
+     "type": "Engineered mutation"
+    }
+   },
+   {
+    "entity_id": 1,
+    "chain_id": "A",
+    "author_residue_number": 236,
+    "author_insertion_code": "",
+    "chem_comp_id": "ARG",
+    "struct_asym_id": "A",
+    "residue_number": 35,
+    "mutation_details": {
+     "from": "Q",
+     "to": "R",
+     "type": "Engineered mutation"
+    }
+   },
+   {
+    "entity_id": 1,
+    "chain_id": "B",
+    "author_residue_number": 331,
+    "author_insertion_code": "",
+    "chem_comp_id": "HIS",
+    "struct_asym_id": "B",
+    "residue_number": 30,
+    "mutation_details": {
+     "from": "Y",
+     "to": "H",
+     "type": "Engineered mutation"
+    }
+   },
+   {
+    "entity_id": 1,
+    "chain_id": "B",
+    "author_residue_number": 336,
+    "author_insertion_code": "",
+    "chem_comp_id": "ARG",
+    "struct_asym_id": "B",
+    "residue_number": 35,
+    "mutation_details": {
+     "from": "Q",
+     "to": "R",
+     "type": "Engineered mutation"
+    }
+   },
+   {
+    "entity_id": 1,
+    "chain_id": "C",
+    "author_residue_number": 431,
+    "author_insertion_code": "",
+    "chem_comp_id": "HIS",
+    "struct_asym_id": "C",
+    "residue_number": 30,
+    "mutation_details": {
+     "from": "Y",
+     "to": "H",
+     "type": "Engineered mutation"
+    }
+   },
+   {
+    "entity_id": 1,
+    "chain_id": "C",
+    "author_residue_number": 436,
+    "author_insertion_code": "",
+    "chem_comp_id": "ARG",
+    "struct_asym_id": "C",
+    "residue_number": 35,
+    "mutation_details": {
+     "from": "Q",
+     "to": "R",
+     "type": "Engineered mutation"
+    }
+   },
+   {
+    "entity_id": 1,
+    "chain_id": "D",
+    "author_residue_number": 531,
+    "author_insertion_code": "",
+    "chem_comp_id": "HIS",
+    "struct_asym_id": "D",
+    "residue_number": 30,
+    "mutation_details": {
+     "from": "Y",
+     "to": "H",
+     "type": "Engineered mutation"
+    }
+   },
+   {
+    "entity_id": 1,
+    "chain_id": "D",
+    "author_residue_number": 536,
+    "author_insertion_code": "",
+    "chem_comp_id": "ARG",
+    "struct_asym_id": "D",
+    "residue_number": 35,
+    "mutation_details": {
+     "from": "Q",
+     "to": "R",
+     "type": "Engineered mutation"
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,108 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Per-position reported sequence differences by deposited classification (sequence_difference_tracks.json)",
+ "type": "object",
+ "required": [
+  "schema_version",
+  "rfam_acc",
+  "clen",
+  "category",
+  "measurement",
+  "classifications",
+  "positions",
+  "off_axis",
+  "observations",
+  "counts",
+  "provenance"
+ ],
+ "properties": {
+  "schema_version": {
+   "const": "1.0"
+  },
+  "rfam_acc": {
+   "type": "string"
+  },
+  "clen": {
+   "type": "integer"
+  },
+  "category": {
+   "type": "string"
+  },
+  "measurement": {
+   "type": "object"
+  },
+  "classifications": {
+   "type": "object"
+  },
+  "positions": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "rfam_consensus_pos",
+     "classifications"
+    ],
+    "properties": {
+     "rfam_consensus_pos": {
+      "type": "integer"
+     },
+     "classifications": {
+      "type": "object",
+      "additionalProperties": {
+       "type": "object",
+       "required": [
+        "n_observations",
+        "n_instances",
+        "n_entries",
+        "changes",
+        "change_kinds",
+        "observation_ids"
+       ],
+       "properties": {
+        "n_observations": {
+         "type": "integer"
+        },
+        "n_instances": {
+         "type": "integer"
+        },
+        "n_entries": {
+         "type": "integer"
+        },
+        "changes": {
+         "type": "object"
+        },
+        "change_kinds": {
+         "type": "object"
+        },
+        "observation_ids": {
+         "type": "array",
+         "items": {
+          "type": "string"
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "off_axis": {
+   "type": "array"
+  },
+  "observations": {
+   "type": "object"
+  },
+  "counts": {
+   "type": "object"
+  },
+  "provenance": {
+   "type": "object",
+   "required": [
+    "rfam_acc",
+    "generated",
+    "pipeline_version",
+    "method_document"
+   ]
+  }
+ }
+}

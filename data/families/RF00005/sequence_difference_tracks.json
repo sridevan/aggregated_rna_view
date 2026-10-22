@@ -1,0 +1,1050 @@
+{
+ "schema_version": "1.0",
+ "rfam_acc": "RF00005",
+ "clen": 71,
+ "category": "Reported sequence differences",
+ "measurement": {
+  "name": "Reported sequence difference",
+  "definition": "a _struct_ref_seq_dif row of a family RNA chain at the consensus position, per deposited classification",
+  "unit": "RNA chain instances and PDB entries (no frequency: absence of a row is not evidence of an unchanged nucleotide)"
+ },
+ "classifications": {
+  "Conflict": {
+   "n_observations": 4,
+   "n_on_consensus_axis": 2,
+   "n_instances": 2,
+   "n_entries": 2,
+   "change_kinds": {
+    "substitution": 4
+   },
+   "consensus_positions": [
+    33,
+    35
+   ]
+  },
+  "Engineered mutation": {
+   "n_observations": 2,
+   "n_on_consensus_axis": 2,
+   "n_instances": 1,
+   "n_entries": 1,
+   "change_kinds": {
+    "substitution": 2
+   },
+   "consensus_positions": [
+    3,
+    68
+   ]
+  },
+  "Expression tag": {
+   "n_observations": 1,
+   "n_on_consensus_axis": 0,
+   "n_instances": 1,
+   "n_entries": 1,
+   "change_kinds": {
+    "added_residue": 1
+   },
+   "consensus_positions": []
+  },
+  "Insertion": {
+   "n_observations": 3,
+   "n_on_consensus_axis": 0,
+   "n_instances": 1,
+   "n_entries": 1,
+   "change_kinds": {
+    "added_residue": 3
+   },
+   "consensus_positions": []
+  },
+  "modified residue": {
+   "n_observations": 14,
+   "n_on_consensus_axis": 13,
+   "n_instances": 1,
+   "n_entries": 1,
+   "change_kinds": {
+    "substitution": 14
+   },
+   "consensus_positions": [
+    10,
+    16,
+    25,
+    31,
+    33,
+    36,
+    38,
+    39,
+    45,
+    47,
+    52,
+    53,
+    56
+   ]
+  }
+ },
+ "positions": [
+  {
+   "rfam_consensus_pos": 1,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 2,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 3,
+   "classifications": {
+    "Engineered mutation": {
+     "n_observations": 1,
+     "n_instances": 1,
+     "n_entries": 1,
+     "changes": {
+      "C>G": 1
+     },
+     "change_kinds": {
+      "substitution": 1
+     },
+     "observation_ids": [
+      "3l0u|A|3|1"
+     ]
+    }
+   }
+  },
+  {
+   "rfam_consensus_pos": 4,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 5,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 6,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 7,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 8,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 9,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 10,
+   "classifications": {
+    "modified residue": {
+     "n_observations": 1,
+     "n_instances": 1,
+     "n_entries": 1,
+     "changes": {
+      "G>2MG": 1
+     },
+     "change_kinds": {
+      "substitution": 1
+     },
+     "observation_ids": [
+      "1ehz|A|10|1"
+     ]
+    }
+   }
+  },
+  {
+   "rfam_consensus_pos": 11,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 12,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 13,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 14,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 15,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 16,
+   "classifications": {
+    "modified residue": {
+     "n_observations": 1,
+     "n_instances": 1,
+     "n_entries": 1,
+     "changes": {
+      "U>H2U": 1
+     },
+     "change_kinds": {
+      "substitution": 1
+     },
+     "observation_ids": [
+      "1ehz|A|16|2"
+     ]
+    }
+   }
+  },
+  {
+   "rfam_consensus_pos": 17,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 18,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 19,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 20,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 21,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 22,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 23,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 24,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 25,
+   "classifications": {
+    "modified residue": {
+     "n_observations": 1,
+     "n_instances": 1,
+     "n_entries": 1,
+     "changes": {
+      "G>M2G": 1
+     },
+     "change_kinds": {
+      "substitution": 1
+     },
+     "observation_ids": [
+      "1ehz|A|26|4"
+     ]
+    }
+   }
+  },
+  {
+   "rfam_consensus_pos": 26,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 27,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 28,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 29,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 30,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 31,
+   "classifications": {
+    "modified residue": {
+     "n_observations": 1,
+     "n_instances": 1,
+     "n_entries": 1,
+     "changes": {
+      "C>OMC": 1
+     },
+     "change_kinds": {
+      "substitution": 1
+     },
+     "observation_ids": [
+      "1ehz|A|32|5"
+     ]
+    }
+   }
+  },
+  {
+   "rfam_consensus_pos": 32,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 33,
+   "classifications": {
+    "Conflict": {
+     "n_observations": 1,
+     "n_instances": 1,
+     "n_entries": 1,
+     "changes": {
+      "C>U": 1
+     },
+     "change_kinds": {
+      "substitution": 1
+     },
+     "observation_ids": [
+      "8b0x|AA|35|2"
+     ]
+    },
+    "modified residue": {
+     "n_observations": 1,
+     "n_instances": 1,
+     "n_entries": 1,
+     "changes": {
+      "G>OMG": 1
+     },
+     "change_kinds": {
+      "substitution": 1
+     },
+     "observation_ids": [
+      "1ehz|A|34|6"
+     ]
+    }
+   }
+  },
+  {
+   "rfam_consensus_pos": 34,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 35,
+   "classifications": {
+    "Conflict": {
+     "n_observations": 1,
+     "n_instances": 1,
+     "n_entries": 1,
+     "changes": {
+      "U>C": 1
+     },
+     "change_kinds": {
+      "substitution": 1
+     },
+     "observation_ids": [
+      "8b0x|AA|37|3"
+     ]
+    }
+   }
+  },
+  {
+   "rfam_consensus_pos": 36,
+   "classifications": {
+    "modified residue": {
+     "n_observations": 1,
+     "n_instances": 1,
+     "n_entries": 1,
+     "changes": {
+      "G>YYG": 1
+     },
+     "change_kinds": {
+      "substitution": 1
+     },
+     "observation_ids": [
+      "1ehz|A|37|7"
+     ]
+    }
+   }
+  },
+  {
+   "rfam_consensus_pos": 37,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 38,
+   "classifications": {
+    "modified residue": {
+     "n_observations": 1,
+     "n_instances": 1,
+     "n_entries": 1,
+     "changes": {
+      "U>PSU": 1
+     },
+     "change_kinds": {
+      "substitution": 1
+     },
+     "observation_ids": [
+      "1ehz|A|39|8"
+     ]
+    }
+   }
+  },
+  {
+   "rfam_consensus_pos": 39,
+   "classifications": {
+    "modified residue": {
+     "n_observations": 1,
+     "n_instances": 1,
+     "n_entries": 1,
+     "changes": {
+      "C>5MC": 1
+     },
+     "change_kinds": {
+      "substitution": 1
+     },
+     "observation_ids": [
+      "1ehz|A|40|9"
+     ]
+    }
+   }
+  },
+  {
+   "rfam_consensus_pos": 40,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 41,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 42,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 43,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 44,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 45,
+   "classifications": {
+    "modified residue": {
+     "n_observations": 1,
+     "n_instances": 1,
+     "n_entries": 1,
+     "changes": {
+      "G>7MG": 1
+     },
+     "change_kinds": {
+      "substitution": 1
+     },
+     "observation_ids": [
+      "1ehz|A|46|10"
+     ]
+    }
+   }
+  },
+  {
+   "rfam_consensus_pos": 46,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 47,
+   "classifications": {
+    "modified residue": {
+     "n_observations": 1,
+     "n_instances": 1,
+     "n_entries": 1,
+     "changes": {
+      "C>5MC": 1
+     },
+     "change_kinds": {
+      "substitution": 1
+     },
+     "observation_ids": [
+      "1ehz|A|49|11"
+     ]
+    }
+   }
+  },
+  {
+   "rfam_consensus_pos": 48,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 49,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 50,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 51,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 52,
+   "classifications": {
+    "modified residue": {
+     "n_observations": 1,
+     "n_instances": 1,
+     "n_entries": 1,
+     "changes": {
+      "U>5MU": 1
+     },
+     "change_kinds": {
+      "substitution": 1
+     },
+     "observation_ids": [
+      "1ehz|A|54|12"
+     ]
+    }
+   }
+  },
+  {
+   "rfam_consensus_pos": 53,
+   "classifications": {
+    "modified residue": {
+     "n_observations": 1,
+     "n_instances": 1,
+     "n_entries": 1,
+     "changes": {
+      "U>PSU": 1
+     },
+     "change_kinds": {
+      "substitution": 1
+     },
+     "observation_ids": [
+      "1ehz|A|55|13"
+     ]
+    }
+   }
+  },
+  {
+   "rfam_consensus_pos": 54,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 55,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 56,
+   "classifications": {
+    "modified residue": {
+     "n_observations": 1,
+     "n_instances": 1,
+     "n_entries": 1,
+     "changes": {
+      "A>1MA": 1
+     },
+     "change_kinds": {
+      "substitution": 1
+     },
+     "observation_ids": [
+      "1ehz|A|58|14"
+     ]
+    }
+   }
+  },
+  {
+   "rfam_consensus_pos": 57,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 58,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 59,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 60,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 61,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 62,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 63,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 64,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 65,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 66,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 67,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 68,
+   "classifications": {
+    "Engineered mutation": {
+     "n_observations": 1,
+     "n_instances": 1,
+     "n_entries": 1,
+     "changes": {
+      "G>C": 1
+     },
+     "change_kinds": {
+      "substitution": 1
+     },
+     "observation_ids": [
+      "3l0u|A|70|2"
+     ]
+    }
+   }
+  },
+  {
+   "rfam_consensus_pos": 69,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 70,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 71,
+   "classifications": {}
+  }
+ ],
+ "off_axis": [
+  {
+   "observation_id": "1ehz|A|17|3",
+   "pdb_id": "1ehz",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "1ehz_1_A_A",
+   "label_seq_id": 17,
+   "author_residue_number": "17",
+   "author_insertion_code": "",
+   "reference": "U",
+   "deposited": "H2U",
+   "change_kind": "substitution",
+   "classification": "modified residue",
+   "alignment_state": "insert",
+   "mapping_status": "no_consensus_position:insert"
+  },
+  {
+   "observation_id": "4rdx|B|78|3",
+   "pdb_id": "4rdx",
+   "auth_asym_id": "C",
+   "label_asym_id": "B",
+   "seq_name": "4rdx_2_C_B",
+   "label_seq_id": 78,
+   "author_residue_number": "76",
+   "author_insertion_code": "",
+   "reference": null,
+   "deposited": "A",
+   "change_kind": "added_residue",
+   "classification": "Expression tag",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "5ccb|C|75|1",
+   "pdb_id": "5ccb",
+   "auth_asym_id": "N",
+   "label_asym_id": "C",
+   "seq_name": "5ccb_3_N_C",
+   "label_seq_id": 75,
+   "author_residue_number": "74",
+   "author_insertion_code": "",
+   "reference": null,
+   "deposited": "C",
+   "change_kind": "added_residue",
+   "classification": "Insertion",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "5ccb|C|76|2",
+   "pdb_id": "5ccb",
+   "auth_asym_id": "N",
+   "label_asym_id": "C",
+   "seq_name": "5ccb_3_N_C",
+   "label_seq_id": 76,
+   "author_residue_number": "75",
+   "author_insertion_code": "",
+   "reference": null,
+   "deposited": "C",
+   "change_kind": "added_residue",
+   "classification": "Insertion",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "5ccb|C|77|3",
+   "pdb_id": "5ccb",
+   "auth_asym_id": "N",
+   "label_asym_id": "C",
+   "seq_name": "5ccb_3_N_C",
+   "label_seq_id": 77,
+   "author_residue_number": "76",
+   "author_insertion_code": "",
+   "reference": null,
+   "deposited": "A",
+   "change_kind": "added_residue",
+   "classification": "Insertion",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "7qi4|JA|70|5",
+   "pdb_id": "7qi4",
+   "auth_asym_id": "B",
+   "label_asym_id": "JA",
+   "seq_name": "7qi4_36_B_JA",
+   "label_seq_id": 70,
+   "author_residue_number": "74",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "7qi4|JA|72|6",
+   "pdb_id": "7qi4",
+   "auth_asym_id": "B",
+   "label_asym_id": "JA",
+   "seq_name": "7qi4_36_B_JA",
+   "label_seq_id": 72,
+   "author_residue_number": "76",
+   "author_insertion_code": "",
+   "reference": "U",
+   "deposited": "A",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  }
+ ],
+ "observations": {
+  "1ehz|A|10|1": {
+   "pdb_id": "1ehz",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "1ehz_1_A_A",
+   "label_seq_id": 10,
+   "author_residue_number": "10",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "2MG",
+   "change_kind": "substitution",
+   "classification": "modified residue",
+   "rfam_consensus_pos": 10
+  },
+  "1ehz|A|16|2": {
+   "pdb_id": "1ehz",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "1ehz_1_A_A",
+   "label_seq_id": 16,
+   "author_residue_number": "16",
+   "author_insertion_code": "",
+   "reference": "U",
+   "deposited": "H2U",
+   "change_kind": "substitution",
+   "classification": "modified residue",
+   "rfam_consensus_pos": 16
+  },
+  "1ehz|A|26|4": {
+   "pdb_id": "1ehz",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "1ehz_1_A_A",
+   "label_seq_id": 26,
+   "author_residue_number": "26",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "M2G",
+   "change_kind": "substitution",
+   "classification": "modified residue",
+   "rfam_consensus_pos": 25
+  },
+  "1ehz|A|32|5": {
+   "pdb_id": "1ehz",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "1ehz_1_A_A",
+   "label_seq_id": 32,
+   "author_residue_number": "32",
+   "author_insertion_code": "",
+   "reference": "C",
+   "deposited": "OMC",
+   "change_kind": "substitution",
+   "classification": "modified residue",
+   "rfam_consensus_pos": 31
+  },
+  "1ehz|A|34|6": {
+   "pdb_id": "1ehz",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "1ehz_1_A_A",
+   "label_seq_id": 34,
+   "author_residue_number": "34",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "OMG",
+   "change_kind": "substitution",
+   "classification": "modified residue",
+   "rfam_consensus_pos": 33
+  },
+  "1ehz|A|37|7": {
+   "pdb_id": "1ehz",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "1ehz_1_A_A",
+   "label_seq_id": 37,
+   "author_residue_number": "37",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "YYG",
+   "change_kind": "substitution",
+   "classification": "modified residue",
+   "rfam_consensus_pos": 36
+  },
+  "1ehz|A|39|8": {
+   "pdb_id": "1ehz",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "1ehz_1_A_A",
+   "label_seq_id": 39,
+   "author_residue_number": "39",
+   "author_insertion_code": "",
+   "reference": "U",
+   "deposited": "PSU",
+   "change_kind": "substitution",
+   "classification": "modified residue",
+   "rfam_consensus_pos": 38
+  },
+  "1ehz|A|40|9": {
+   "pdb_id": "1ehz",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "1ehz_1_A_A",
+   "label_seq_id": 40,
+   "author_residue_number": "40",
+   "author_insertion_code": "",
+   "reference": "C",
+   "deposited": "5MC",
+   "change_kind": "substitution",
+   "classification": "modified residue",
+   "rfam_consensus_pos": 39
+  },
+  "1ehz|A|46|10": {
+   "pdb_id": "1ehz",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "1ehz_1_A_A",
+   "label_seq_id": 46,
+   "author_residue_number": "46",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "7MG",
+   "change_kind": "substitution",
+   "classification": "modified residue",
+   "rfam_consensus_pos": 45
+  },
+  "1ehz|A|49|11": {
+   "pdb_id": "1ehz",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "1ehz_1_A_A",
+   "label_seq_id": 49,
+   "author_residue_number": "49",
+   "author_insertion_code": "",
+   "reference": "C",
+   "deposited": "5MC",
+   "change_kind": "substitution",
+   "classification": "modified residue",
+   "rfam_consensus_pos": 47
+  },
+  "1ehz|A|54|12": {
+   "pdb_id": "1ehz",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "1ehz_1_A_A",
+   "label_seq_id": 54,
+   "author_residue_number": "54",
+   "author_insertion_code": "",
+   "reference": "U",
+   "deposited": "5MU",
+   "change_kind": "substitution",
+   "classification": "modified residue",
+   "rfam_consensus_pos": 52
+  },
+  "1ehz|A|55|13": {
+   "pdb_id": "1ehz",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "1ehz_1_A_A",
+   "label_seq_id": 55,
+   "author_residue_number": "55",
+   "author_insertion_code": "",
+   "reference": "U",
+   "deposited": "PSU",
+   "change_kind": "substitution",
+   "classification": "modified residue",
+   "rfam_consensus_pos": 53
+  },
+  "1ehz|A|58|14": {
+   "pdb_id": "1ehz",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "1ehz_1_A_A",
+   "label_seq_id": 58,
+   "author_residue_number": "58",
+   "author_insertion_code": "",
+   "reference": "A",
+   "deposited": "1MA",
+   "change_kind": "substitution",
+   "classification": "modified residue",
+   "rfam_consensus_pos": 56
+  },
+  "3l0u|A|3|1": {
+   "pdb_id": "3l0u",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "3l0u_1_A_A",
+   "label_seq_id": 3,
+   "author_residue_number": "3",
+   "author_insertion_code": "",
+   "reference": "C",
+   "deposited": "G",
+   "change_kind": "substitution",
+   "classification": "Engineered mutation",
+   "rfam_consensus_pos": 3
+  },
+  "3l0u|A|70|2": {
+   "pdb_id": "3l0u",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "3l0u_1_A_A",
+   "label_seq_id": 70,
+   "author_residue_number": "70",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Engineered mutation",
+   "rfam_consensus_pos": 68
+  },
+  "8b0x|AA|35|2": {
+   "pdb_id": "8b0x",
+   "auth_asym_id": "Z",
+   "label_asym_id": "AA",
+   "seq_name": "8b0x_27_Z_AA",
+   "label_seq_id": 35,
+   "author_residue_number": "34",
+   "author_insertion_code": "",
+   "reference": "C",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "rfam_consensus_pos": 33
+  },
+  "8b0x|AA|37|3": {
+   "pdb_id": "8b0x",
+   "auth_asym_id": "Z",
+   "label_asym_id": "AA",
+   "seq_name": "8b0x_27_Z_AA",
+   "label_seq_id": 37,
+   "author_residue_number": "36",
+   "author_insertion_code": "",
+   "reference": "U",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "rfam_consensus_pos": 35
+  }
+ },
+ "counts": {
+  "n_entries": 59,
+  "n_entries_evaluated": 59,
+  "n_entries_source_unavailable": 0,
+  "n_instances": 60,
+  "n_instances_evaluated": 60,
+  "n_observations": 24,
+  "n_on_consensus_axis": 17,
+  "n_off_axis": 7,
+  "n_unresolved_rows": 0,
+  "n_instances_with_differences": 6,
+  "n_entries_with_differences": 6,
+  "mapping_status": {
+   "mapped": 17,
+   "no_consensus_position:insert": 1,
+   "no_consensus_position:not_submitted_flank": 6
+  },
+  "change_kinds": {
+   "substitution": 20,
+   "added_residue": 4
+  },
+  "classifications": {
+   "modified residue": 14,
+   "Engineered mutation": 2,
+   "Expression tag": 1,
+   "Insertion": 3,
+   "Conflict": 4
+  },
+  "reference_databases": {
+   "GB": 24
+  },
+  "rows_on_other_entities_by_polymer_type": {
+   "polypeptide(L)": 412,
+   "polyribonucleotide": 16
+  },
+  "n_entities_with_inconsistent_copies": 0
+ },
+ "method": {
+  "source": "PDBe updated mmCIF, category _struct_ref_seq_dif (deposited vs reference sequence of each polymer entity)",
+  "why_not_api": "PDBe API mutated_AA_or_NA covers protein chains only at present (endpoint description); no RNA records for any family",
+  "entity_join": "_struct_ref_seq_dif.align_id -> _struct_ref_seq.ref_id -> _struct_ref.entity_id (reference db_name, db_code, pdbx_db_accession kept)",
+  "chain_join": "author strand (pdbx_pdb_strand_id, else _struct_ref_seq.pdbx_strand_id) + entity -> label asym id via _pdbx_poly_seq_scheme",
+  "residue": "seq_num = label_seq_id; mon_id = deposited residue; db_mon_id = reference residue",
+  "change_kinds": {
+   "substitution": "deposited and reference residues present",
+   "added_residue": "deposited residue without a reference residue",
+   "absent_residue": "reference residue without a deposited residue (no seq_num)"
+  },
+  "classification": "the deposited _struct_ref_seq_dif.details text, verbatim (case and wording preserved)",
+  "checks": [
+   "deposited residue = _pdbx_poly_seq_scheme.mon_id at label_seq_id",
+   "author number + insertion code = _pdbx_poly_seq_scheme.pdb_seq_num/pdb_ins_code",
+   "deposited residue = residue_name of the validated family mapping",
+   "copies of one entity report the same differences"
+  ],
+  "consensus_positions": "validated family mapping only (match state); insert, flank, local-end, absent and conflicting rows keep a null position",
+  "counting": "one observation per row; per position and classification: distinct RNA chain instances and PDB entries",
+  "absence": "not a negative: most RNA entities reference their own PDB sequence and cannot record differences"
+ },
+ "provenance": {
+  "rfam_acc": "RF00005",
+  "rfam_release": "15.1",
+  "cm_checksum": "1403477983",
+  "cm_clen": 71,
+  "infernal_version": "INFERNAL 1.1.5 (Sep 2023)",
+  "mapping_pipeline_version": "0.1.0",
+  "mapping_generated": "2026-10-18T08:02:51+00:00",
+  "pipeline_version": "0.1.0",
+  "generated": "2026-10-22T07:16:49+00:00",
+  "mmcif_source": "https://www.ebi.ac.uk/pdbe/entry-files/download/<pdb>_updated.cif (PDBe updated mmCIF; per-entry retrieval in entry_sources)",
+  "method_document": "docs/SEQUENCE_DIFFERENCES_METHOD.md",
+  "investigation": "experiments/mutations_investigation/REPORT.md"
+ }
+}

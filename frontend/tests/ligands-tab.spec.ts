@@ -12,6 +12,8 @@ const defaultSet = (byCcd: ByCcd) => Object.entries(byCcd).filter(([, v]) => v.n
 test('tab order; gallery = default ligand set with names and PDB entry counts; PDBe depictions; tracks moved unchanged', async ({ page }) => {
   await open(page)
   await expect(page.getByRole('tab')).toHaveText(['Family Overview', 'Structures', 'Ligands', 'Interactions', 'Annotations'])
+  // the tab bar shows no scrollbar (only its 1 px bottom border around the content box)
+  expect(await page.getByTestId('tab-bar').evaluate((e) => [getComputedStyle(e).overflowY, e.offsetHeight - e.clientHeight, e.offsetWidth - e.clientWidth])).toEqual(['hidden', 1, 0])
   const lig = await (await page.request.get('/families/RF00167/ligands.json')).json()
   const set = defaultSet(lig.by_ccd)
   await expect(page.getByTestId('ligand-gallery-count')).toHaveText(`(${set.length})`)
@@ -201,6 +203,10 @@ test('other families: no hardcoded data; empty states when PDBe reports no ligan
 test('narrow screen: no horizontal overflow; gallery stacks; tracks aligned with the pocket track', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 })
   await open(page)
+  // tabs still scroll sideways on a phone, without a visible scrollbar
+  const bar = page.getByTestId('tab-bar')
+  expect(await bar.evaluate((e) => e.scrollWidth > e.clientWidth && e.offsetHeight - e.clientHeight === 1)).toBe(true)
+  await bar.evaluate((e) => { e.scrollLeft = 150 }); expect(await bar.evaluate((e) => e.scrollLeft)).toBeGreaterThan(0)
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1)).toBe(true)
   const c = await page.locator('[data-testid^="ligand-card-"]').evaluateAll((es) => es.slice(0, 2).map((e) => e.getBoundingClientRect().left))
   expect(Math.abs(c[0] - c[1])).toBeLessThan(1)                             // one column

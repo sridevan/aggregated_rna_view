@@ -1,0 +1,2792 @@
+{
+ "schema_version": "1.0",
+ "rfam_acc": "RF00011",
+ "clen": 365,
+ "category": "Reported sequence differences",
+ "measurement": {
+  "name": "Reported sequence difference",
+  "definition": "a _struct_ref_seq_dif row of a family RNA chain at the consensus position, per deposited classification",
+  "unit": "RNA chain instances and PDB entries (no frequency: absence of a row is not evidence of an unchanged nucleotide)"
+ },
+ "classifications": {
+  "Conflict": {
+   "n_observations": 46,
+   "n_on_consensus_axis": 20,
+   "n_instances": 28,
+   "n_entries": 28,
+   "change_kinds": {
+    "substitution": 46
+   },
+   "consensus_positions": [
+    113
+   ]
+  },
+  "Engineered mutation": {
+   "n_observations": 24,
+   "n_on_consensus_axis": 12,
+   "n_instances": 12,
+   "n_entries": 12,
+   "change_kinds": {
+    "substitution": 24
+   },
+   "consensus_positions": [
+    196,
+    197,
+    198,
+    199
+   ]
+  },
+  "Expression tag": {
+   "n_observations": 3,
+   "n_on_consensus_axis": 0,
+   "n_instances": 3,
+   "n_entries": 3,
+   "change_kinds": {
+    "added_residue": 3
+   },
+   "consensus_positions": []
+  }
+ },
+ "positions": [
+  {
+   "rfam_consensus_pos": 1,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 2,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 3,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 4,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 5,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 6,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 7,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 8,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 9,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 10,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 11,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 12,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 13,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 14,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 15,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 16,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 17,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 18,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 19,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 20,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 21,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 22,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 23,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 24,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 25,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 26,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 27,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 28,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 29,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 30,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 31,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 32,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 33,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 34,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 35,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 36,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 37,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 38,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 39,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 40,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 41,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 42,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 43,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 44,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 45,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 46,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 47,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 48,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 49,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 50,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 51,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 52,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 53,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 54,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 55,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 56,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 57,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 58,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 59,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 60,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 61,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 62,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 63,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 64,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 65,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 66,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 67,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 68,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 69,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 70,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 71,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 72,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 73,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 74,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 75,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 76,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 77,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 78,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 79,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 80,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 81,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 82,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 83,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 84,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 85,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 86,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 87,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 88,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 89,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 90,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 91,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 92,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 93,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 94,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 95,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 96,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 97,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 98,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 99,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 100,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 101,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 102,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 103,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 104,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 105,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 106,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 107,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 108,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 109,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 110,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 111,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 112,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 113,
+   "classifications": {
+    "Conflict": {
+     "n_observations": 20,
+     "n_instances": 20,
+     "n_entries": 20,
+     "changes": {
+      "C>U": 20
+     },
+     "change_kinds": {
+      "substitution": 20
+     },
+     "observation_ids": [
+      "9oy2|A|126|1",
+      "9oy3|A|126|1",
+      "9zdv|A|126|1",
+      "9zf9|A|126|1",
+      "9zgt|A|126|1",
+      "9zgx|A|126|1",
+      "9zh0|A|126|1",
+      "9zh2|A|126|1",
+      "9zha|A|126|1",
+      "9zhg|A|126|1",
+      "9zi3|A|126|1",
+      "9zi4|A|126|1",
+      "9zi7|A|126|1",
+      "9zi8|A|126|1",
+      "9zib|A|126|1",
+      "9zif|A|126|1",
+      "9zih|A|126|1",
+      "9zil|A|126|1",
+      "9ziu|A|126|1",
+      "9ziv|A|126|1"
+     ]
+    }
+   }
+  },
+  {
+   "rfam_consensus_pos": 114,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 115,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 116,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 117,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 118,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 119,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 120,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 121,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 122,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 123,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 124,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 125,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 126,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 127,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 128,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 129,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 130,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 131,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 132,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 133,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 134,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 135,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 136,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 137,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 138,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 139,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 140,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 141,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 142,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 143,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 144,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 145,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 146,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 147,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 148,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 149,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 150,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 151,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 152,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 153,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 154,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 155,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 156,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 157,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 158,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 159,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 160,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 161,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 162,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 163,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 164,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 165,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 166,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 167,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 168,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 169,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 170,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 171,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 172,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 173,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 174,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 175,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 176,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 177,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 178,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 179,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 180,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 181,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 182,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 183,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 184,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 185,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 186,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 187,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 188,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 189,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 190,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 191,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 192,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 193,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 194,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 195,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 196,
+   "classifications": {
+    "Engineered mutation": {
+     "n_observations": 3,
+     "n_instances": 3,
+     "n_entries": 3,
+     "changes": {
+      "G>U": 3
+     },
+     "change_kinds": {
+      "substitution": 3
+     },
+     "observation_ids": [
+      "9oy2|A|215|2",
+      "9oy3|A|215|2",
+      "9oy4|A|215|1"
+     ]
+    }
+   }
+  },
+  {
+   "rfam_consensus_pos": 197,
+   "classifications": {
+    "Engineered mutation": {
+     "n_observations": 3,
+     "n_instances": 3,
+     "n_entries": 3,
+     "changes": {
+      "A>U": 3
+     },
+     "change_kinds": {
+      "substitution": 3
+     },
+     "observation_ids": [
+      "9oy2|A|216|3",
+      "9oy3|A|216|3",
+      "9oy4|A|216|2"
+     ]
+    }
+   }
+  },
+  {
+   "rfam_consensus_pos": 198,
+   "classifications": {
+    "Engineered mutation": {
+     "n_observations": 3,
+     "n_instances": 3,
+     "n_entries": 3,
+     "changes": {
+      "A>U": 3
+     },
+     "change_kinds": {
+      "substitution": 3
+     },
+     "observation_ids": [
+      "9oy2|A|217|4",
+      "9oy3|A|217|4",
+      "9oy4|A|217|3"
+     ]
+    }
+   }
+  },
+  {
+   "rfam_consensus_pos": 199,
+   "classifications": {
+    "Engineered mutation": {
+     "n_observations": 3,
+     "n_instances": 3,
+     "n_entries": 3,
+     "changes": {
+      "A>U": 3
+     },
+     "change_kinds": {
+      "substitution": 3
+     },
+     "observation_ids": [
+      "9oy2|A|218|5",
+      "9oy3|A|218|5",
+      "9oy4|A|218|4"
+     ]
+    }
+   }
+  },
+  {
+   "rfam_consensus_pos": 200,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 201,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 202,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 203,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 204,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 205,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 206,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 207,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 208,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 209,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 210,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 211,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 212,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 213,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 214,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 215,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 216,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 217,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 218,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 219,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 220,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 221,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 222,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 223,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 224,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 225,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 226,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 227,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 228,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 229,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 230,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 231,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 232,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 233,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 234,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 235,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 236,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 237,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 238,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 239,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 240,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 241,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 242,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 243,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 244,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 245,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 246,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 247,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 248,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 249,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 250,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 251,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 252,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 253,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 254,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 255,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 256,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 257,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 258,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 259,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 260,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 261,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 262,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 263,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 264,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 265,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 266,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 267,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 268,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 269,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 270,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 271,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 272,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 273,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 274,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 275,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 276,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 277,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 278,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 279,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 280,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 281,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 282,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 283,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 284,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 285,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 286,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 287,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 288,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 289,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 290,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 291,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 292,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 293,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 294,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 295,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 296,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 297,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 298,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 299,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 300,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 301,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 302,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 303,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 304,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 305,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 306,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 307,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 308,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 309,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 310,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 311,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 312,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 313,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 314,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 315,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 316,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 317,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 318,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 319,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 320,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 321,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 322,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 323,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 324,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 325,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 326,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 327,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 328,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 329,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 330,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 331,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 332,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 333,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 334,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 335,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 336,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 337,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 338,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 339,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 340,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 341,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 342,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 343,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 344,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 345,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 346,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 347,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 348,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 349,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 350,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 351,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 352,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 353,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 354,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 355,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 356,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 357,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 358,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 359,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 360,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 361,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 362,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 363,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 364,
+   "classifications": {}
+  },
+  {
+   "rfam_consensus_pos": 365,
+   "classifications": {}
+  }
+ ],
+ "off_axis": [
+  {
+   "observation_id": "36uk|A|417|1",
+   "pdb_id": "36uk",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "36uk_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9ov3|A|417|1",
+   "pdb_id": "9ov3",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9ov3_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Engineered mutation",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9ov6|A|417|1",
+   "pdb_id": "9ov6",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9ov6_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Engineered mutation",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9ov7|A|417|1",
+   "pdb_id": "9ov7",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9ov7_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Engineered mutation",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9ovb|A|417|1",
+   "pdb_id": "9ovb",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9ovb_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Engineered mutation",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9ovc|A|417|1",
+   "pdb_id": "9ovc",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9ovc_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Engineered mutation",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9owj|A|417|1",
+   "pdb_id": "9owj",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9owj_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Engineered mutation",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9owk|A|417|1",
+   "pdb_id": "9owk",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9owk_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Engineered mutation",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9owl|A|417|1",
+   "pdb_id": "9owl",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9owl_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Engineered mutation",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9owm|A|417|1",
+   "pdb_id": "9owm",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9owm_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Engineered mutation",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9own|A|417|1",
+   "pdb_id": "9own",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9own_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": null,
+   "deposited": "C",
+   "change_kind": "added_residue",
+   "classification": "Expression tag",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9owq|A|417|1",
+   "pdb_id": "9owq",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9owq_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": null,
+   "deposited": "C",
+   "change_kind": "added_residue",
+   "classification": "Expression tag",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9oy2|A|417|6",
+   "pdb_id": "9oy2",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9oy2_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Engineered mutation",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9oy3|A|417|6",
+   "pdb_id": "9oy3",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9oy3_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Engineered mutation",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9oy4|A|417|5",
+   "pdb_id": "9oy4",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9oy4_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Engineered mutation",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9zdv|A|417|2",
+   "pdb_id": "9zdv",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zdv_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9zf3|A|417|1",
+   "pdb_id": "9zf3",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zf3_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9zf9|A|417|2",
+   "pdb_id": "9zf9",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zf9_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9zgp|A|417|1",
+   "pdb_id": "9zgp",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zgp_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9zgt|A|417|2",
+   "pdb_id": "9zgt",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zgt_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9zgu|A|417|1",
+   "pdb_id": "9zgu",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zgu_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9zgx|A|417|2",
+   "pdb_id": "9zgx",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zgx_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9zgy|A|417|1",
+   "pdb_id": "9zgy",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zgy_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9zh0|A|417|2",
+   "pdb_id": "9zh0",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zh0_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9zh2|A|417|2",
+   "pdb_id": "9zh2",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zh2_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9zha|A|417|2",
+   "pdb_id": "9zha",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zha_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9zhf|A|417|1",
+   "pdb_id": "9zhf",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zhf_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": null,
+   "deposited": "C",
+   "change_kind": "added_residue",
+   "classification": "Expression tag",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9zhg|A|417|2",
+   "pdb_id": "9zhg",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zhg_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9zhr|A|417|1",
+   "pdb_id": "9zhr",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zhr_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9zhx|A|417|1",
+   "pdb_id": "9zhx",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zhx_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9zi3|A|417|2",
+   "pdb_id": "9zi3",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zi3_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9zi4|A|417|2",
+   "pdb_id": "9zi4",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zi4_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9zi7|A|417|2",
+   "pdb_id": "9zi7",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zi7_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9zi8|A|417|2",
+   "pdb_id": "9zi8",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zi8_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9zib|A|417|2",
+   "pdb_id": "9zib",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zib_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9zif|A|417|2",
+   "pdb_id": "9zif",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zif_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9zih|A|417|2",
+   "pdb_id": "9zih",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zih_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9zil|A|417|2",
+   "pdb_id": "9zil",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zil_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9ziu|A|417|2",
+   "pdb_id": "9ziu",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9ziu_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9ziv|A|417|2",
+   "pdb_id": "9ziv",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9ziv_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  },
+  {
+   "observation_id": "9ziy|A|417|1",
+   "pdb_id": "9ziy",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9ziy_1_A_A",
+   "label_seq_id": 417,
+   "author_residue_number": "417",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "C",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "alignment_state": "not_submitted_flank",
+   "mapping_status": "no_consensus_position:not_submitted_flank"
+  }
+ ],
+ "observations": {
+  "9oy2|A|126|1": {
+   "pdb_id": "9oy2",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9oy2_1_A_A",
+   "label_seq_id": 126,
+   "author_residue_number": "126",
+   "author_insertion_code": "",
+   "reference": "C",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "rfam_consensus_pos": 113
+  },
+  "9oy2|A|215|2": {
+   "pdb_id": "9oy2",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9oy2_1_A_A",
+   "label_seq_id": 215,
+   "author_residue_number": "215",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Engineered mutation",
+   "rfam_consensus_pos": 196
+  },
+  "9oy2|A|216|3": {
+   "pdb_id": "9oy2",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9oy2_1_A_A",
+   "label_seq_id": 216,
+   "author_residue_number": "216",
+   "author_insertion_code": "",
+   "reference": "A",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Engineered mutation",
+   "rfam_consensus_pos": 197
+  },
+  "9oy2|A|217|4": {
+   "pdb_id": "9oy2",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9oy2_1_A_A",
+   "label_seq_id": 217,
+   "author_residue_number": "217",
+   "author_insertion_code": "",
+   "reference": "A",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Engineered mutation",
+   "rfam_consensus_pos": 198
+  },
+  "9oy2|A|218|5": {
+   "pdb_id": "9oy2",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9oy2_1_A_A",
+   "label_seq_id": 218,
+   "author_residue_number": "218",
+   "author_insertion_code": "",
+   "reference": "A",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Engineered mutation",
+   "rfam_consensus_pos": 199
+  },
+  "9oy3|A|126|1": {
+   "pdb_id": "9oy3",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9oy3_1_A_A",
+   "label_seq_id": 126,
+   "author_residue_number": "126",
+   "author_insertion_code": "",
+   "reference": "C",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "rfam_consensus_pos": 113
+  },
+  "9oy3|A|215|2": {
+   "pdb_id": "9oy3",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9oy3_1_A_A",
+   "label_seq_id": 215,
+   "author_residue_number": "215",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Engineered mutation",
+   "rfam_consensus_pos": 196
+  },
+  "9oy3|A|216|3": {
+   "pdb_id": "9oy3",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9oy3_1_A_A",
+   "label_seq_id": 216,
+   "author_residue_number": "216",
+   "author_insertion_code": "",
+   "reference": "A",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Engineered mutation",
+   "rfam_consensus_pos": 197
+  },
+  "9oy3|A|217|4": {
+   "pdb_id": "9oy3",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9oy3_1_A_A",
+   "label_seq_id": 217,
+   "author_residue_number": "217",
+   "author_insertion_code": "",
+   "reference": "A",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Engineered mutation",
+   "rfam_consensus_pos": 198
+  },
+  "9oy3|A|218|5": {
+   "pdb_id": "9oy3",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9oy3_1_A_A",
+   "label_seq_id": 218,
+   "author_residue_number": "218",
+   "author_insertion_code": "",
+   "reference": "A",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Engineered mutation",
+   "rfam_consensus_pos": 199
+  },
+  "9oy4|A|215|1": {
+   "pdb_id": "9oy4",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9oy4_1_A_A",
+   "label_seq_id": 215,
+   "author_residue_number": "215",
+   "author_insertion_code": "",
+   "reference": "G",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Engineered mutation",
+   "rfam_consensus_pos": 196
+  },
+  "9oy4|A|216|2": {
+   "pdb_id": "9oy4",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9oy4_1_A_A",
+   "label_seq_id": 216,
+   "author_residue_number": "216",
+   "author_insertion_code": "",
+   "reference": "A",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Engineered mutation",
+   "rfam_consensus_pos": 197
+  },
+  "9oy4|A|217|3": {
+   "pdb_id": "9oy4",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9oy4_1_A_A",
+   "label_seq_id": 217,
+   "author_residue_number": "217",
+   "author_insertion_code": "",
+   "reference": "A",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Engineered mutation",
+   "rfam_consensus_pos": 198
+  },
+  "9oy4|A|218|4": {
+   "pdb_id": "9oy4",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9oy4_1_A_A",
+   "label_seq_id": 218,
+   "author_residue_number": "218",
+   "author_insertion_code": "",
+   "reference": "A",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Engineered mutation",
+   "rfam_consensus_pos": 199
+  },
+  "9zdv|A|126|1": {
+   "pdb_id": "9zdv",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zdv_1_A_A",
+   "label_seq_id": 126,
+   "author_residue_number": "126",
+   "author_insertion_code": "",
+   "reference": "C",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "rfam_consensus_pos": 113
+  },
+  "9zf9|A|126|1": {
+   "pdb_id": "9zf9",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zf9_1_A_A",
+   "label_seq_id": 126,
+   "author_residue_number": "126",
+   "author_insertion_code": "",
+   "reference": "C",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "rfam_consensus_pos": 113
+  },
+  "9zgt|A|126|1": {
+   "pdb_id": "9zgt",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zgt_1_A_A",
+   "label_seq_id": 126,
+   "author_residue_number": "126",
+   "author_insertion_code": "",
+   "reference": "C",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "rfam_consensus_pos": 113
+  },
+  "9zgx|A|126|1": {
+   "pdb_id": "9zgx",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zgx_1_A_A",
+   "label_seq_id": 126,
+   "author_residue_number": "126",
+   "author_insertion_code": "",
+   "reference": "C",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "rfam_consensus_pos": 113
+  },
+  "9zh0|A|126|1": {
+   "pdb_id": "9zh0",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zh0_1_A_A",
+   "label_seq_id": 126,
+   "author_residue_number": "126",
+   "author_insertion_code": "",
+   "reference": "C",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "rfam_consensus_pos": 113
+  },
+  "9zh2|A|126|1": {
+   "pdb_id": "9zh2",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zh2_1_A_A",
+   "label_seq_id": 126,
+   "author_residue_number": "126",
+   "author_insertion_code": "",
+   "reference": "C",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "rfam_consensus_pos": 113
+  },
+  "9zha|A|126|1": {
+   "pdb_id": "9zha",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zha_1_A_A",
+   "label_seq_id": 126,
+   "author_residue_number": "126",
+   "author_insertion_code": "",
+   "reference": "C",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "rfam_consensus_pos": 113
+  },
+  "9zhg|A|126|1": {
+   "pdb_id": "9zhg",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zhg_1_A_A",
+   "label_seq_id": 126,
+   "author_residue_number": "126",
+   "author_insertion_code": "",
+   "reference": "C",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "rfam_consensus_pos": 113
+  },
+  "9zi3|A|126|1": {
+   "pdb_id": "9zi3",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zi3_1_A_A",
+   "label_seq_id": 126,
+   "author_residue_number": "126",
+   "author_insertion_code": "",
+   "reference": "C",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "rfam_consensus_pos": 113
+  },
+  "9zi4|A|126|1": {
+   "pdb_id": "9zi4",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zi4_1_A_A",
+   "label_seq_id": 126,
+   "author_residue_number": "126",
+   "author_insertion_code": "",
+   "reference": "C",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "rfam_consensus_pos": 113
+  },
+  "9zi7|A|126|1": {
+   "pdb_id": "9zi7",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zi7_1_A_A",
+   "label_seq_id": 126,
+   "author_residue_number": "126",
+   "author_insertion_code": "",
+   "reference": "C",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "rfam_consensus_pos": 113
+  },
+  "9zi8|A|126|1": {
+   "pdb_id": "9zi8",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zi8_1_A_A",
+   "label_seq_id": 126,
+   "author_residue_number": "126",
+   "author_insertion_code": "",
+   "reference": "C",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "rfam_consensus_pos": 113
+  },
+  "9zib|A|126|1": {
+   "pdb_id": "9zib",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zib_1_A_A",
+   "label_seq_id": 126,
+   "author_residue_number": "126",
+   "author_insertion_code": "",
+   "reference": "C",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "rfam_consensus_pos": 113
+  },
+  "9zif|A|126|1": {
+   "pdb_id": "9zif",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zif_1_A_A",
+   "label_seq_id": 126,
+   "author_residue_number": "126",
+   "author_insertion_code": "",
+   "reference": "C",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "rfam_consensus_pos": 113
+  },
+  "9zih|A|126|1": {
+   "pdb_id": "9zih",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zih_1_A_A",
+   "label_seq_id": 126,
+   "author_residue_number": "126",
+   "author_insertion_code": "",
+   "reference": "C",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "rfam_consensus_pos": 113
+  },
+  "9zil|A|126|1": {
+   "pdb_id": "9zil",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9zil_1_A_A",
+   "label_seq_id": 126,
+   "author_residue_number": "126",
+   "author_insertion_code": "",
+   "reference": "C",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "rfam_consensus_pos": 113
+  },
+  "9ziu|A|126|1": {
+   "pdb_id": "9ziu",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9ziu_1_A_A",
+   "label_seq_id": 126,
+   "author_residue_number": "126",
+   "author_insertion_code": "",
+   "reference": "C",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "rfam_consensus_pos": 113
+  },
+  "9ziv|A|126|1": {
+   "pdb_id": "9ziv",
+   "auth_asym_id": "A",
+   "label_asym_id": "A",
+   "seq_name": "9ziv_1_A_A",
+   "label_seq_id": 126,
+   "author_residue_number": "126",
+   "author_insertion_code": "",
+   "reference": "C",
+   "deposited": "U",
+   "change_kind": "substitution",
+   "classification": "Conflict",
+   "rfam_consensus_pos": 113
+  }
+ },
+ "counts": {
+  "n_entries": 50,
+  "n_entries_evaluated": 50,
+  "n_entries_source_unavailable": 0,
+  "n_instances": 50,
+  "n_instances_evaluated": 50,
+  "n_observations": 73,
+  "n_on_consensus_axis": 32,
+  "n_off_axis": 41,
+  "n_unresolved_rows": 0,
+  "n_instances_with_differences": 41,
+  "n_entries_with_differences": 41,
+  "mapping_status": {
+   "no_consensus_position:not_submitted_flank": 41,
+   "mapped": 32
+  },
+  "change_kinds": {
+   "substitution": 70,
+   "added_residue": 3
+  },
+  "classifications": {
+   "Conflict": 46,
+   "Engineered mutation": 24,
+   "Expression tag": 3
+  },
+  "reference_databases": {
+   "GB": 73
+  },
+  "rows_on_other_entities_by_polymer_type": {
+   "polypeptide(L)": 32,
+   "polyribonucleotide": 40
+  },
+  "n_entities_with_inconsistent_copies": 0
+ },
+ "method": {
+  "source": "PDBe updated mmCIF, category _struct_ref_seq_dif (deposited vs reference sequence of each polymer entity)",
+  "why_not_api": "PDBe API mutated_AA_or_NA covers protein chains only at present (endpoint description); no RNA records for any family",
+  "entity_join": "_struct_ref_seq_dif.align_id -> _struct_ref_seq.ref_id -> _struct_ref.entity_id (reference db_name, db_code, pdbx_db_accession kept)",
+  "chain_join": "author strand (pdbx_pdb_strand_id, else _struct_ref_seq.pdbx_strand_id) + entity -> label asym id via _pdbx_poly_seq_scheme",
+  "residue": "seq_num = label_seq_id; mon_id = deposited residue; db_mon_id = reference residue",
+  "change_kinds": {
+   "substitution": "deposited and reference residues present",
+   "added_residue": "deposited residue without a reference residue",
+   "absent_residue": "reference residue without a deposited residue (no seq_num)"
+  },
+  "classification": "the deposited _struct_ref_seq_dif.details text, verbatim (case and wording preserved)",
+  "checks": [
+   "deposited residue = _pdbx_poly_seq_scheme.mon_id at label_seq_id",
+   "author number + insertion code = _pdbx_poly_seq_scheme.pdb_seq_num/pdb_ins_code",
+   "deposited residue = residue_name of the validated family mapping",
+   "copies of one entity report the same differences"
+  ],
+  "consensus_positions": "validated family mapping only (match state); insert, flank, local-end, absent and conflicting rows keep a null position",
+  "counting": "one observation per row; per position and classification: distinct RNA chain instances and PDB entries",
+  "absence": "not a negative: most RNA entities reference their own PDB sequence and cannot record differences"
+ },
+ "provenance": {
+  "rfam_acc": "RF00011",
+  "rfam_release": "15.1",
+  "cm_checksum": "2395317728",
+  "cm_clen": 365,
+  "infernal_version": "INFERNAL 1.1.5 (Sep 2023)",
+  "mapping_pipeline_version": "0.1.0",
+  "mapping_generated": "2026-10-19T18:18:18+00:00",
+  "pipeline_version": "0.1.0",
+  "generated": "2026-10-22T07:18:00+00:00",
+  "mmcif_source": "https://www.ebi.ac.uk/pdbe/entry-files/download/<pdb>_updated.cif (PDBe updated mmCIF; per-entry retrieval in entry_sources)",
+  "method_document": "docs/SEQUENCE_DIFFERENCES_METHOD.md",
+  "investigation": "experiments/mutations_investigation/REPORT.md"
+ }
+}
