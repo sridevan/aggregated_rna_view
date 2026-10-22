@@ -39,8 +39,10 @@ interface Nodes { entry: SceneEntry; data: string; structure: string; transform:
 /** ligands near one chain: a separate ModelServer surroundings structure, placed with the chain's matrix */
 interface LigNodes { data: string; transform: string; shown: string[] }
 
-export function MolstarSuperposition({ entries, emphasis = null, extra = {}, focus = null, onApi, onStatus, onHooks, ligandClasses, children, testId, className = '', style, dataAttrs = {} }: {
+export function MolstarSuperposition({ entries, emphasis = null, extra = {}, focus = null, onApi, onStatus, onHooks, ligandClasses, children, testId, className = '', style, dataAttrs = {}, polymerStyle = 'cartoon' }: {
   entries: SceneEntry[]
+  /** 'trace': thin round backbone trace (Structures tab); 'cartoon': the Mol* cartoon (Interactions comparison) */
+  polymerStyle?: 'cartoon' | 'trace'
   /** seq_name drawn thicker and opaque while the others are faded (only with more than one structure) */
   emphasis?: string | null
   /** extra rigid transform (column-major 4x4) applied in the family frame after the orientation, per seq_name */
@@ -131,7 +133,7 @@ export function MolstarSuperposition({ entries, emphasis = null, extra = {}, foc
   const chainExpr = (asym: string) => MS.struct.generator.atomGroups({ 'chain-test': MS.core.rel.eq([MS.struct.atomProperty.macromolecular.label_asym_id(), asym]) })
   /** cartoon of a chain: emphasised = thicker; faded (another structure is emphasised) or residues focused = semi-transparent */
   const cartoonParams = (color: string, mode: 'normal' | 'emphasis' | 'faded') => createStructureRepresentationParams(plugin.current!.plugin, undefined, {
-    type: 'cartoon', typeParams: { ...traceTypeParams(mode === 'emphasis' ? TRACE_SIZE_EMPHASIS : TRACE_SIZE), alpha: focusRef.current ? 0.3 : mode === 'faded' ? 0.35 : 1 }, color: 'uniform', colorParams: { value: hexColor(color) } })
+    type: 'cartoon', typeParams: { ...(polymerStyle === 'trace' ? traceTypeParams(mode === 'emphasis' ? TRACE_SIZE_EMPHASIS : TRACE_SIZE) : { sizeFactor: mode === 'emphasis' ? 0.32 : 0.22 }), alpha: focusRef.current ? 0.3 : mode === 'faded' ? 0.35 : 1 }, color: 'uniform', colorParams: { value: hexColor(color) } })
   const modeOf = (sn: string) => (!emphasisRef.current ? 'normal' : sn === emphasisRef.current ? 'emphasis' : 'faded') as 'normal' | 'emphasis' | 'faded'
   const emphasisRef = useRef(emphasised); emphasisRef.current = emphasised
   const matrixFor = (e: SceneEntry) => { const o = orientationMat(e.transform), x = extraRef.current[e.seqName]; return x ? Mat4.mul(Mat4(), x, o) : o }
@@ -368,7 +370,7 @@ export function MolstarSuperposition({ entries, emphasis = null, extra = {}, foc
     + (showLigands && ligCodes.length ? `\nShown: ${ligCodes.join(', ')}` : '')
   return (
     <div ref={outer} className={`relative flex flex-col overflow-hidden rounded border border-stone-200 bg-white [&_.msp-highlight-toast-wrapper]:hidden [&_.msp-viewport-controls]:hidden ${className}`} style={style} data-testid={testId} data-status={shownStatus}
-      data-structures={entries.map((e) => e.seqName).join(',')} data-colors={entries.map((e) => e.color).join(',')} data-emphasis={emphasised ?? ''} data-engine="molstar" {...dataAttrs}>
+      data-structures={entries.map((e) => e.seqName).join(',')} data-colors={entries.map((e) => e.color).join(',')} data-emphasis={emphasised ?? ''} data-polymer-style={polymerStyle} data-engine="molstar" {...dataAttrs}>
       {/* controls in a toolbar above the canvas (as the Family Overview viewer), never over the structures */}
       <div className="flex shrink-0 flex-wrap items-center gap-1.5 border-b border-stone-200 bg-stone-50 px-2 py-1.5 text-xs" data-testid="viewer-toolbar">
         <label className="flex items-center gap-1 rounded border border-stone-300 bg-white px-2 py-0.5 text-stone-700" title={ligTitle} data-testid="viewer-show-ligands-control"

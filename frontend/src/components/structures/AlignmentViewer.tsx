@@ -22,7 +22,7 @@ export function AlignmentViewer({ entries, hidden, height, emphasis = null, liga
   const cls = height ? '' : 'min-h-[320px] flex-1 lg:min-h-[340px]'
   return (
     <Suspense fallback={<div className={`relative rounded border border-stone-200 bg-white ${cls}`} style={height ? { height } : undefined} data-testid="alignment-viewer" data-status="loading" data-structures={shown.map((e) => e.seqName).join(',')} />}>
-    <MolstarSuperposition entries={shown} emphasis={emphasis} ligandClasses={ligandClasses} testId="alignment-viewer"
+    <MolstarSuperposition entries={shown} emphasis={emphasis} ligandClasses={ligandClasses} testId="alignment-viewer" polymerStyle="trace"
       className={cls} style={height ? { height } : undefined}
       onHooks={(h) => { window.__rnaExplorer = { ...(window.__rnaExplorer ?? {}), alignment: { loaded: h.loaded, transformed: h.transformed }, alignmentProbe: h.probe } }} />
     </Suspense>

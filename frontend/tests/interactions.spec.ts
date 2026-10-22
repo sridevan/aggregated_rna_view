@@ -399,6 +399,7 @@ test('16S (RF00177, 1,533 consensus positions): table and 3D only, paged; search
   await expect(page.getByTestId('icompare-auto')).toBeVisible(); await expect(page.getByTestId('icompare-diagrams')).toHaveCount(0)
   await expect(page.getByTestId('icompare-tbody').locator('tr')).toHaveCount(15)
   await expect(page.getByTestId('interaction-pair-viewer')).toHaveAttribute('data-structures', /^[^,]+,[^,]+$/)
+  await expect(page.getByTestId('interaction-pair-viewer')).toHaveAttribute('data-polymer-style', 'cartoon')   // the thin trace is for the Structures tab only
 })
 
 test('annotation coverage flags a sparsely annotated chain (9V50 A, 3.25 Å) in the comparison', async ({ page }) => {

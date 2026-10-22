@@ -103,6 +103,17 @@ export function groupShade(hex: string, k: number): string {
 }
 /** 3D colour of each displayed structure: a group's representative takes its group colour; other members take shades of their own
  *  group's colour, numbered per group in display order. */
+/** Superposition is always a pair: a fixed contrasting pair (violet, dark amber), by display order, so the two traces are always told apart
+ *  (also two members of one group) and never read as a structural group or a dissimilarity value. Chosen 2026-10-22 by an sRGB search away
+ *  from the reserved colours of the Structures tab: GROUP_COLORS, UNPLACED, the selection blue #1d4ed8 and the viridis heatmap ramp.
+ *  Violet is >= dE 20 (OKLab x100) from all of them (>= 10 under deutan/protan/tritan simulation); amber >= 12.6 (5.0 to the coral group
+ *  colour under deutan simulation, so the swatch + label beside each structure stays the second cue). The pair: dE 33, >= 12.6 under every
+ *  simulation, both >= 3:1 on white; all dataviz palette-validator checks pass. (Vermilion/blue was rejected: dE 7.5 to the coral group,
+ *  5.9 to viridis.) One structure keeps its group colour (structureColours). */
+export const SUPERPOSE_COLOURS = ['#a569ff', '#bf8400'] as const
+export function viewerColours(displayed: string[], c: Pick<Clustering, 'groups' | 'groupOf'>): Record<string, string> {
+  return displayed.length > 1 ? Object.fromEntries(displayed.map((sn, k) => [sn, SUPERPOSE_COLOURS[k % SUPERPOSE_COLOURS.length]])) : structureColours(displayed, c)
+}
 export function structureColours(displayed: string[], c: Pick<Clustering, 'groups' | 'groupOf'>): Record<string, string> {
   const seen: Record<number, number> = {}, out: Record<string, string> = {}
   for (const sn of displayed) {

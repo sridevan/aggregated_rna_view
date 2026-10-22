@@ -3,7 +3,6 @@ import { PDBeMolstarPlugin } from 'pdbe-molstar/lib/viewer'
 import { MolScriptBuilder as MS } from 'molstar/lib/mol-script/language/builder'
 import { StateTransforms } from 'molstar/lib/mol-plugin-state/transforms'
 import { createStructureRepresentationParams } from 'molstar/lib/mol-plugin-state/helpers/structure-representation-params'
-import { traceTypeParams } from '../lib/molstarStyle'
 import { PluginCommands } from 'molstar/lib/mol-plugin/commands'
 import { setSubtreeVisibility } from 'molstar/lib/mol-plugin/behavior/static/state'
 import { StructureFocusRepresentation } from 'molstar/lib/mol-plugin/behavior/dynamic/selection/structure-focus-representation'
@@ -150,7 +149,7 @@ export function PdbeMolstarViewer({ pdbId, labelAsymId, authAsymId, region, sele
     const layer = (expression: Expression, label: string, color: number | null, alpha: number) => {
       const sel = update.to(parentRef).apply(StateTransforms.Model.StructureSelectionFromExpression, { expression, label })
       sel.apply(StateTransforms.Representation.StructureRepresentation3D, createStructureRepresentationParams(ctx, structureData, {
-        type: 'cartoon', typeParams: { ...traceTypeParams(), alpha }, ...(color != null ? { color: 'uniform' as const, colorParams: { value: Color(color) } } : {}) }))
+        type: 'cartoon', typeParams: { alpha }, ...(color != null ? { color: 'uniform' as const, colorParams: { value: Color(color) } } : {}) }))
       refs.push(sel.ref)
     }
     layer(chain, CHAIN_LABEL, structureColor ?? null, 1)
@@ -236,8 +235,8 @@ export function PdbeMolstarViewer({ pdbId, labelAsymId, authAsymId, region, sele
         if (structureData) {
           const update = ctx.build()
           const sel = update.to(parentRef).apply(StateTransforms.Model.StructureSelectionFromExpression, { expression: expr, label: REGION_LABEL })
-          // thin backbone trace (lib/molstarStyle): the selected nucleotide then stands out in its atom-level focus representation
-          sel.apply(StateTransforms.Representation.StructureRepresentation3D, createStructureRepresentationParams(ctx, structureData, { type: 'cartoon', typeParams: traceTypeParams(), ...uniformColor() }))
+          // cartoon only (Mol* draws the bases as rings/ladders): the selected nucleotide then stands out in its atom-level focus representation
+          sel.apply(StateTransforms.Representation.StructureRepresentation3D, createStructureRepresentationParams(ctx, structureData, { type: 'cartoon', ...uniformColor() }))
           await update.commit()
           regionRef.current = sel.ref
         } else {

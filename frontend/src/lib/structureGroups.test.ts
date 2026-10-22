@@ -46,7 +46,7 @@ describe.skipIf(!existsSync(FILE))('RF00167 clustering file', () => {
   })
 })
 
-import { groupShade, pathBetween, structureColours } from './structureGroups'
+import { groupShade, pathBetween, structureColours, viewerColours, SUPERPOSE_COLOURS } from './structureGroups'
 describe('comparison route and structure colours', () => {
   it('route goes up to the lowest common ancestor and down again', () => {
     const t = buildTree([[0, 1, 1, 2], [2, 3, 1.5, 2], [4, 5, 3, 4]], 4)          // ((0,1),(2,3))
@@ -58,6 +58,12 @@ describe('comparison route and structure colours', () => {
     const col = structureColours(['a', 'b', 'c', 'x', 'y'], c)
     expect(col.a).toBe('#e8685a'); expect(col.x).toBe('#b0327a')
     expect(new Set(Object.values(col)).size).toBe(5); expect(col.b).toBe(groupShade('#e8685a', 0)); expect(col.y).toBe(groupShade('#b0327a', 0))
+  })
+  it('viewer: one structure keeps its group colour; a superposed pair always takes the fixed contrasting pair, also within one group', () => {
+    const c = { groups: [{ group_id: 1, representative: 'a', color: '#e8685a' }, { group_id: 2, representative: 'x', color: '#b0327a' }], groupOf: { a: 1, b: 1, x: 2 } } as never
+    expect(viewerColours(['b'], c)).toEqual({ b: groupShade('#e8685a', 0) }); expect(viewerColours(['a'], c)).toEqual({ a: '#e8685a' })
+    expect(viewerColours(['x', 'a'], c)).toEqual({ x: '#a569ff', a: '#bf8400' }); expect(viewerColours(['a', 'b'], c)).toEqual({ a: '#a569ff', b: '#bf8400' })
+    expect(SUPERPOSE_COLOURS).toEqual(['#a569ff', '#bf8400'])
   })
 })
 

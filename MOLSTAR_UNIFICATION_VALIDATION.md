@@ -108,33 +108,58 @@ Load times on a local dev server (Playwright, Chromium):
   nearby ligands. The two viewers share the engine and conventions, not one component.
 - The static home-page thumbnails were rendered offline with 3Dmol.js. `thumbnails/manifest.json` keeps that as provenance.
 
-## Thin backbone trace (2026-10-22)
+## Structures tab: thin backbone trace and a contrasting pair of colours (2026-10-22)
 
-**What changed.** All RNA viewers now draw polymers as a thin round backbone trace, like the PDBe-KB superposition viewer. This applies to the Family Overview (Rfam region and the Complete-structure layers), the Structures superposition and the Interactions comparison. Before, they used Mol*'s default flat nucleic-acid ribbon.
+**Scope** (user decision, revising the first version of the same day):
+- Only the **Structures tab** 3D viewer draws polymers as a thin round backbone trace, like the PDBe-KB superposition viewer.
+- The Family Overview viewer and the Interactions comparison are restored to the Mol* cartoon used before.
+- `MolstarSuperposition` takes `polymerStyle`: 'cartoon' by default, 'trace' from `AlignmentViewer`, exposed as `data-polymer-style`.
 
-**Settings** (`frontend/src/lib/molstarStyle.ts`, Mol* cartoon):
+**Trace settings** (`frontend/src/lib/molstarStyle.ts`, Mol* cartoon):
 - visuals: `polymer-trace` and `polymer-gap` only;
-- `aspectRatio` 1 (round) and `nucleicProfile` elliptical;
-- `sizeFactor` 0.35, or 0.5 for the emphasised structure of a comparison (previously 0.22 and 0.32 on the flat ribbon).
+- `aspectRatio` 1 and `nucleicProfile` elliptical;
+- `sizeFactor` 0.35 (0.5 emphasis).
 
-**What stays the same:**
-- Colours, transparency and emphasis.
-- Selected nucleotides and loops are still ball-and-stick on top; ligands keep their own representation.
+**How the trace was chosen:**
+- Candidates were rendered on 4FE5 B + 1Y27 X (RF00167) and 16S 4V9D Y + 4U27 A: current cartoon, trace-only cartoon, uniform putty and backbone cylinders.
+- Trace-only cartoon and uniform putty look the same; backbone cylinders look angular.
+- At size 0.2 the 16S trace becomes hairlines.
+- Images: `docs/screenshots/m20_rna_style_candidates.png`, `m20_rna_trace_thickness.png`.
 
-**How it was chosen** (user decision: all viewers, 0.35 / 0.5). Candidates were rendered on 4FE5 B + 1Y27 X (RF00167) and 16S 4V9D Y + 4U27 A:
-- current cartoon;
-- trace-only cartoon;
-- putty with uniform size;
-- backbone cylinders.
+### Colours of a superposed pair
 
-**Results:**
-- Trace-only cartoon and uniform putty look the same. The cartoon keeps the existing code path; putty would need its default B-factor sizing turned off.
-- Backbone cylinders look angular.
-- At 0.2 the 16S trace becomes hairlines; at 0.35 it stays readable at full view.
+**The rule** (`viewerColours`, `lib/structureGroups.ts`):
+- Superposition in the Structures tab is always a pair, so the pair takes a fixed contrasting pair by display order: **violet `#a569ff`** and **dark amber `#bf8400`**.
+- This applies to two group representatives, two members of one group, and a pair picked in the dissimilarity heatmap.
+- A single structure keeps its group colour (representative) or group shade (member).
+- The "Comparing" swatches under the viewer use the same colours.
 
-**Images:**
-- `docs/screenshots/m20_rna_style_candidates.png`;
-- `m20_rna_trace_thickness.png`;
-- `m20_rna_trace_in_app.png`: Overview, selected loop, Structures RF00167 and 16S, RNase P complete structure.
+**Why these colours.** The pair must not read as a structural group or as a dissimilarity value. It was chosen by an sRGB search for colours away from every colour already used in the tab:
+- the group colours `#E8685A`, `#B0327A`, `#8C4A1E`, `#3FA7D6`;
+- unplaced `#6b7480`;
+- the heatmap selection blue `#1d4ed8`;
+- the viridis ramp of the dissimilarity heatmap.
 
-**Tests:** the 3D-viewer Playwright specs pass (87): Overview, Structures, Interactions, colour, camera framing and selection.
+**Distances** (OKLab ×100; colour-blindness simulated with Machado 2009):
+
+| | To the reserved colours | Under deutan / protan / tritan simulation |
+|---|---|---|
+| Violet | ≥ 20 | ≥ 10 |
+| Amber | ≥ 12.6 | 5.0 to the coral group colour under deutan |
+| The pair itself | 33 | ≥ 12.6 |
+
+- The amber/coral case is covered by the swatch and label beside each structure.
+- Both colours have ≥ 3:1 contrast on white, and all dataviz palette-validator checks pass.
+
+**Rejected pairs:**
+- vermilion/blue: ΔE 7.5 to the coral group, 5.9 to viridis;
+- black/amber: black fails the lightness and chroma checks.
+
+**Images:** `docs/screenshots/m20_structures_pair_compare.png` (group 2 vs group 1 with group chips and dendrogram) and `m20_structures_pair_heatmap.png` (a pair picked in the heatmap).
+
+**Tests:**
+- vitest: `viewerColours`.
+- Playwright (86 passed: Structures, Interactions, Family Overview and family specs):
+  - pairs take `#a569ff,#bf8400` and the trace style;
+  - a single structure keeps its group colour;
+  - the Interactions comparison stays `cartoon`.

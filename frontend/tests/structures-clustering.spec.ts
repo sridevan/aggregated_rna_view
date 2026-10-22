@@ -311,7 +311,7 @@ test('tooltips: short, metric-specific wording for both metrics; details moved t
   await expect(page.getByTestId('details-excluded')).toContainText('9NBH A (26 of the 64 required core positions observed)')
 })
 
-test('representative comparison highlights the stored dendrogram route; 3D colours follow the group colours in every mode', async ({ page }) => {
+test('representative comparison highlights the stored dendrogram route; one structure in its group colour, a superposed pair in the fixed contrasting pair; thin trace', async ({ page }) => {
   await open(page)
   const d = await (await page.request.get('/families/RF00167/structure_clustering.json')).json()
   const hex = (rgb: string) => '#' + rgb.match(/\d+/g)!.slice(0, 3).map((v) => (+v).toString(16).padStart(2, '0')).join('')
@@ -337,9 +337,10 @@ test('representative comparison highlights the stored dendrogram route; 3D colou
   // 2. Group 2: its representative alone in the exact group colour; a member of it in a distinguishable shade
   await page.getByTestId('group-chip-2').click(); await viewerReady(page)
   expect(await colours()).toEqual([g2]); await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-structures', '5e54_1_B_B')
-  // 3-4. compare group 2 with group 1: both representatives in their group colours, the stored route highlighted
+  // 3-4. compare group 2 with group 1: the pair in the fixed contrasting colours (violet, amber), the stored route highlighted
   await page.getByTestId('compare-select').selectOption('1'); await page.getByTestId('compare-on').click(); await viewerReady(page)
-  expect(await colours()).toEqual([g2, g1])
+  expect(await colours()).toEqual(['#a569ff', '#bf8400'])
+  await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-polymer-style', 'trace')
   await expect(page.getByTestId('overview-route')).toHaveAttribute('data-nodes', route('discrepancy', 2, 1))
   await expect(page.getByTestId('overview-compare-mark-1')).toBeVisible(); await expect(page.getByTestId('overview-compare-mark-2')).toBeVisible()
   await expect(page.getByTestId('group-chip-2')).toHaveAttribute('aria-pressed', 'true')                   // comparison does not change the selected group
@@ -352,12 +353,12 @@ test('representative comparison highlights the stored dendrogram route; 3D colou
   expect((await page.getByTestId('swatch-5swd_1_A_A').getAttribute('data-color'))!.toLowerCase()).toBe(shade)
   // 9. camera still works
   await page.getByTestId('viewer-centre').click(); await expect(page.getByTestId('alignment-viewer')).toHaveAttribute('data-status', 'ready')
-  // 6-7. TM-score: four groups, arbitrary comparisons follow the TM tree and TM group colours
+  // 6-7. TM-score: four groups, arbitrary comparisons follow the TM tree; one structure in the TM group colour, pairs in the fixed pair
   await page.getByTestId('metric-tm').click(); await viewerReady(page)
   const t1 = await groupColour(1); expect(await colours()).toEqual([t1])
   for (const [a, b] of [[1, 4], [3, 2], [2, 4]]) {
     await page.getByTestId(`group-chip-${a}`).click(); await page.getByTestId('compare-select').selectOption(String(b)); await page.getByTestId('compare-on').click(); await viewerReady(page)
-    expect(await colours()).toEqual([await groupColour(a), await groupColour(b)])
+    expect(await colours()).toEqual(['#a569ff', '#bf8400'])
     await expect(page.getByTestId('overview-route')).toHaveAttribute('data-nodes', route('tm', a, b))
     await page.getByTestId('compare-off').click()
   }

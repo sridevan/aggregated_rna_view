@@ -4,7 +4,7 @@ import { useSelection } from '../state/selection'
 import { useStructures } from '../state/structures'
 import { displayOrganism } from '../lib/format'
 import { familyFileUrl, loadLigandClasses, loadLigands, loadModifications, loadStructureClustering } from '../api/data'
-import { clusteringFor, dissimilarityMatrix, fmt, instanceLabel, structureColours, type Clustering } from '../lib/structureGroups'
+import { clusteringFor, dissimilarityMatrix, fmt, instanceLabel, viewerColours, type Clustering } from '../lib/structureGroups'
 import type { InstanceRow, LigandsDataset, ModificationsDataset, StructureClusteringDataset, StructureMetricId } from '../types/backend'
 import { InstanceTable, type TableGroups } from './InstanceTable'
 import { InfoTip } from './InfoTip'
@@ -295,7 +295,7 @@ function AlignmentPanel({ model, compareControl, c, group, acc, frameReference, 
   const displayed = model.displayed.slice(0, 2)
   const pairShown = displayed.length === 2
   // a group's representative always takes its group colour (as in the dendrogram, groups panel and table); other members take shades of their group colour
-  const colours = structureColours(displayed, c)
+  const colours = viewerColours(displayed, c)
   const entries: ViewerEntry[] = displayed.map((sn) => { const r = instanceRow(sn)!; return { seqName: sn, label: instanceLabel(sn), color: colours[sn], pdbId: r.pdb_id, labelAsymId: r.label_asym_id, transform: transforms[sn] ?? null } })
   const quality = (sn: string): string => transforms[sn]?.fit_quality ?? 'missing'
   const others = c.groups.filter((g) => g.group_id !== group.group_id)
