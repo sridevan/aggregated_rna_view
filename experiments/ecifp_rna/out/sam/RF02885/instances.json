@@ -1,0 +1,194 @@
+[
+ {
+  "pdb_id": "6las",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "6las_1_A_A",
+  "segment": [
+   1,
+   55
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "RNA (55-MER)",
+  "fit": {
+   "bits": 39.63,
+   "avg_pp": 0.857,
+   "cm": [
+    4,
+    60
+   ]
+  },
+  "states": {
+   "match": 45,
+   "local_end": 10
+  }
+ },
+ {
+  "pdb_id": "6las",
+  "auth_asym_id": "B",
+  "label_asym_id": "B",
+  "seq_name": "6las_1_B_B",
+  "segment": [
+   1,
+   55
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "RNA (55-MER)",
+  "fit": {
+   "bits": 39.63,
+   "avg_pp": 0.857,
+   "cm": [
+    4,
+    60
+   ]
+  },
+  "states": {
+   "match": 45,
+   "local_end": 10
+  }
+ },
+ {
+  "pdb_id": "6lau",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "6lau_1_A_A",
+  "segment": [
+   1,
+   55
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "RNA (54-MER)",
+  "fit": {
+   "bits": 39.63,
+   "avg_pp": 0.857,
+   "cm": [
+    4,
+    60
+   ]
+  },
+  "states": {
+   "match": 45,
+   "local_end": 10
+  }
+ },
+ {
+  "pdb_id": "6lau",
+  "auth_asym_id": "B",
+  "label_asym_id": "B",
+  "seq_name": "6lau_1_B_B",
+  "segment": [
+   1,
+   55
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "RNA (54-MER)",
+  "fit": {
+   "bits": 39.63,
+   "avg_pp": 0.857,
+   "cm": [
+    4,
+    60
+   ]
+  },
+  "states": {
+   "match": 45,
+   "local_end": 10
+  }
+ },
+ {
+  "pdb_id": "6lax",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "6lax_1_A_A",
+  "segment": [
+   1,
+   55
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "RNA (55-MER)",
+  "fit": {
+   "bits": 38.45,
+   "avg_pp": 0.856,
+   "cm": [
+    4,
+    60
+   ]
+  },
+  "states": {
+   "match": 45,
+   "local_end": 10
+  }
+ },
+ {
+  "pdb_id": "6lax",
+  "auth_asym_id": "B",
+  "label_asym_id": "E",
+  "seq_name": "6lax_1_B_E",
+  "segment": [
+   1,
+   55
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "RNA (55-MER)",
+  "fit": {
+   "bits": 38.45,
+   "avg_pp": 0.856,
+   "cm": [
+    4,
+    60
+   ]
+  },
+  "states": {
+   "match": 45,
+   "local_end": 10
+  }
+ },
+ {
+  "pdb_id": "6laz",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "6laz_1_A_A",
+  "segment": [
+   1,
+   55
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "RNA (55-MER)",
+  "fit": {
+   "bits": 39.63,
+   "avg_pp": 0.857,
+   "cm": [
+    4,
+    60
+   ]
+  },
+  "states": {
+   "match": 45,
+   "local_end": 10
+  }
+ },
+ {
+  "pdb_id": "6laz",
+  "auth_asym_id": "B",
+  "label_asym_id": "B",
+  "seq_name": "6laz_1_B_B",
+  "segment": [
+   1,
+   55
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "RNA (55-MER)",
+  "fit": {
+   "bits": 39.63,
+   "avg_pp": 0.857,
+   "cm": [
+    4,
+    60
+   ]
+  },
+  "states": {
+   "match": 45,
+   "local_end": 10
+  }
+ }
+]

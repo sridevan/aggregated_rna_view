@@ -1,0 +1,482 @@
+[
+ {
+  "pdb_id": "3ski",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "3ski_1_A_A",
+  "segment": [
+   3,
+   66
+  ],
+  "fit_main": {
+   "bits": 12.03,
+   "avg_pp": 0.899,
+   "cm": [
+    19,
+    87
+   ]
+  },
+  "fit_own": {
+   "bits": 75.83,
+   "avg_pp": 0.998,
+   "cm": [
+    1,
+    63
+   ]
+  },
+  "states": {
+   "not_submitted_flank": 4,
+   "match": 64
+  }
+ },
+ {
+  "pdb_id": "3ski",
+  "auth_asym_id": "B",
+  "label_asym_id": "B",
+  "seq_name": "3ski_2_B_B",
+  "segment": [
+   3,
+   66
+  ],
+  "fit_main": {
+   "bits": 12.03,
+   "avg_pp": 0.899,
+   "cm": [
+    19,
+    87
+   ]
+  },
+  "fit_own": {
+   "bits": 75.83,
+   "avg_pp": 0.998,
+   "cm": [
+    1,
+    63
+   ]
+  },
+  "states": {
+   "not_submitted_flank": 4,
+   "match": 64
+  }
+ },
+ {
+  "pdb_id": "3skl",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "3skl_1_A_A",
+  "segment": [
+   2,
+   65
+  ],
+  "fit_main": {
+   "bits": 9.78,
+   "avg_pp": 0.898,
+   "cm": [
+    19,
+    87
+   ]
+  },
+  "fit_own": {
+   "bits": 74.66,
+   "avg_pp": 0.998,
+   "cm": [
+    1,
+    63
+   ]
+  },
+  "states": {
+   "not_submitted_flank": 2,
+   "match": 64
+  }
+ },
+ {
+  "pdb_id": "3skl",
+  "auth_asym_id": "B",
+  "label_asym_id": "B",
+  "seq_name": "3skl_1_B_B",
+  "segment": [
+   2,
+   65
+  ],
+  "fit_main": {
+   "bits": 9.78,
+   "avg_pp": 0.898,
+   "cm": [
+    19,
+    87
+   ]
+  },
+  "fit_own": {
+   "bits": 74.66,
+   "avg_pp": 0.998,
+   "cm": [
+    1,
+    63
+   ]
+  },
+  "states": {
+   "not_submitted_flank": 2,
+   "match": 64
+  }
+ },
+ {
+  "pdb_id": "3skr",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "3skr_1_A_A",
+  "segment": [
+   2,
+   65
+  ],
+  "fit_main": {
+   "bits": 9.78,
+   "avg_pp": 0.898,
+   "cm": [
+    19,
+    87
+   ]
+  },
+  "fit_own": {
+   "bits": 74.66,
+   "avg_pp": 0.998,
+   "cm": [
+    1,
+    63
+   ]
+  },
+  "states": {
+   "not_submitted_flank": 2,
+   "match": 64
+  }
+ },
+ {
+  "pdb_id": "3skr",
+  "auth_asym_id": "B",
+  "label_asym_id": "B",
+  "seq_name": "3skr_1_B_B",
+  "segment": [
+   2,
+   65
+  ],
+  "fit_main": {
+   "bits": 9.78,
+   "avg_pp": 0.898,
+   "cm": [
+    19,
+    87
+   ]
+  },
+  "fit_own": {
+   "bits": 74.66,
+   "avg_pp": 0.998,
+   "cm": [
+    1,
+    63
+   ]
+  },
+  "states": {
+   "not_submitted_flank": 2,
+   "match": 64
+  }
+ },
+ {
+  "pdb_id": "3skt",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "3skt_1_A_A",
+  "segment": [
+   2,
+   65
+  ],
+  "fit_main": {
+   "bits": 9.78,
+   "avg_pp": 0.898,
+   "cm": [
+    19,
+    87
+   ]
+  },
+  "fit_own": {
+   "bits": 74.66,
+   "avg_pp": 0.998,
+   "cm": [
+    1,
+    63
+   ]
+  },
+  "states": {
+   "not_submitted_flank": 2,
+   "match": 64
+  }
+ },
+ {
+  "pdb_id": "3skt",
+  "auth_asym_id": "B",
+  "label_asym_id": "B",
+  "seq_name": "3skt_1_B_B",
+  "segment": [
+   2,
+   65
+  ],
+  "fit_main": {
+   "bits": 9.78,
+   "avg_pp": 0.898,
+   "cm": [
+    19,
+    87
+   ]
+  },
+  "fit_own": {
+   "bits": 74.66,
+   "avg_pp": 0.998,
+   "cm": [
+    1,
+    63
+   ]
+  },
+  "states": {
+   "not_submitted_flank": 2,
+   "match": 64
+  }
+ },
+ {
+  "pdb_id": "3skw",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "3skw_1_A_A",
+  "segment": [
+   2,
+   65
+  ],
+  "fit_main": {
+   "bits": 9.78,
+   "avg_pp": 0.898,
+   "cm": [
+    19,
+    87
+   ]
+  },
+  "fit_own": {
+   "bits": 74.66,
+   "avg_pp": 0.998,
+   "cm": [
+    1,
+    63
+   ]
+  },
+  "states": {
+   "not_submitted_flank": 2,
+   "match": 64
+  }
+ },
+ {
+  "pdb_id": "3skw",
+  "auth_asym_id": "B",
+  "label_asym_id": "B",
+  "seq_name": "3skw_1_B_B",
+  "segment": [
+   2,
+   65
+  ],
+  "fit_main": {
+   "bits": 9.78,
+   "avg_pp": 0.898,
+   "cm": [
+    19,
+    87
+   ]
+  },
+  "fit_own": {
+   "bits": 74.66,
+   "avg_pp": 0.998,
+   "cm": [
+    1,
+    63
+   ]
+  },
+  "states": {
+   "not_submitted_flank": 2,
+   "match": 64
+  }
+ },
+ {
+  "pdb_id": "3skz",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "3skz_1_A_A",
+  "segment": [
+   3,
+   66
+  ],
+  "fit_main": {
+   "bits": 12.03,
+   "avg_pp": 0.899,
+   "cm": [
+    19,
+    87
+   ]
+  },
+  "fit_own": {
+   "bits": 75.83,
+   "avg_pp": 0.998,
+   "cm": [
+    1,
+    63
+   ]
+  },
+  "states": {
+   "not_submitted_flank": 4,
+   "match": 64
+  }
+ },
+ {
+  "pdb_id": "3skz",
+  "auth_asym_id": "B",
+  "label_asym_id": "B",
+  "seq_name": "3skz_1_B_B",
+  "segment": [
+   3,
+   66
+  ],
+  "fit_main": {
+   "bits": 12.03,
+   "avg_pp": 0.899,
+   "cm": [
+    19,
+    87
+   ]
+  },
+  "fit_own": {
+   "bits": 75.83,
+   "avg_pp": 0.998,
+   "cm": [
+    1,
+    63
+   ]
+  },
+  "states": {
+   "not_submitted_flank": 4,
+   "match": 64
+  }
+ },
+ {
+  "pdb_id": "3slm",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "3slm_1_A_A",
+  "segment": [
+   3,
+   66
+  ],
+  "fit_main": {
+   "bits": 12.03,
+   "avg_pp": 0.899,
+   "cm": [
+    19,
+    87
+   ]
+  },
+  "fit_own": {
+   "bits": 75.83,
+   "avg_pp": 0.998,
+   "cm": [
+    1,
+    63
+   ]
+  },
+  "states": {
+   "not_submitted_flank": 4,
+   "match": 64
+  }
+ },
+ {
+  "pdb_id": "3slm",
+  "auth_asym_id": "B",
+  "label_asym_id": "B",
+  "seq_name": "3slm_1_B_B",
+  "segment": [
+   3,
+   66
+  ],
+  "fit_main": {
+   "bits": 12.03,
+   "avg_pp": 0.899,
+   "cm": [
+    19,
+    87
+   ]
+  },
+  "fit_own": {
+   "bits": 75.83,
+   "avg_pp": 0.998,
+   "cm": [
+    1,
+    63
+   ]
+  },
+  "states": {
+   "not_submitted_flank": 4,
+   "match": 64
+  }
+ },
+ {
+  "pdb_id": "3slq",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "3slq_1_A_A",
+  "segment": [
+   3,
+   66
+  ],
+  "fit_main": {
+   "bits": 12.03,
+   "avg_pp": 0.899,
+   "cm": [
+    19,
+    87
+   ]
+  },
+  "fit_own": {
+   "bits": 75.83,
+   "avg_pp": 0.998,
+   "cm": [
+    1,
+    63
+   ]
+  },
+  "states": {
+   "not_submitted_flank": 4,
+   "match": 64
+  }
+ },
+ {
+  "pdb_id": "3slq",
+  "auth_asym_id": "B",
+  "label_asym_id": "B",
+  "seq_name": "3slq_1_B_B",
+  "segment": [
+   3,
+   66
+  ],
+  "fit_main": {
+   "bits": 12.03,
+   "avg_pp": 0.899,
+   "cm": [
+    19,
+    87
+   ]
+  },
+  "fit_own": {
+   "bits": 75.83,
+   "avg_pp": 0.998,
+   "cm": [
+    1,
+    63
+   ]
+  },
+  "states": {
+   "not_submitted_flank": 4,
+   "match": 64
+  }
+ }
+]

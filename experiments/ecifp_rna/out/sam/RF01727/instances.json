@@ -1,0 +1,1589 @@
+[
+ {
+  "pdb_id": "6hag",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "6hag_1_A_A",
+  "segment": [
+   1,
+   43
+  ],
+  "segment_source": "pdbe_nucleic_mappings",
+  "molecule_name": "SAM Riboswitch",
+  "fit": {
+   "bits": 49.76,
+   "avg_pp": 0.983,
+   "cm": [
+    6,
+    49
+   ]
+  },
+  "states": {
+   "match": 43
+  }
+ },
+ {
+  "pdb_id": "6yl5",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "6yl5_1_A_A",
+  "segment": [
+   1,
+   35
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,B,C,D,E,F,G,H,I,J,K,L",
+  "fit": {
+   "bits": 34.82,
+   "avg_pp": 0.882,
+   "cm": [
+    5,
+    49
+   ]
+  },
+  "states": {
+   "match": 35
+  }
+ },
+ {
+  "pdb_id": "6yl5",
+  "auth_asym_id": "B",
+  "label_asym_id": "B",
+  "seq_name": "6yl5_1_B_B",
+  "segment": [
+   1,
+   35
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,B,C,D,E,F,G,H,I,J,K,L",
+  "fit": {
+   "bits": 34.82,
+   "avg_pp": 0.882,
+   "cm": [
+    5,
+    49
+   ]
+  },
+  "states": {
+   "match": 35
+  }
+ },
+ {
+  "pdb_id": "6yl5",
+  "auth_asym_id": "C",
+  "label_asym_id": "C",
+  "seq_name": "6yl5_1_C_C",
+  "segment": [
+   1,
+   35
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,B,C,D,E,F,G,H,I,J,K,L",
+  "fit": {
+   "bits": 34.82,
+   "avg_pp": 0.882,
+   "cm": [
+    5,
+    49
+   ]
+  },
+  "states": {
+   "match": 35
+  }
+ },
+ {
+  "pdb_id": "6yl5",
+  "auth_asym_id": "D",
+  "label_asym_id": "D",
+  "seq_name": "6yl5_1_D_D",
+  "segment": [
+   1,
+   35
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,B,C,D,E,F,G,H,I,J,K,L",
+  "fit": {
+   "bits": 34.82,
+   "avg_pp": 0.882,
+   "cm": [
+    5,
+    49
+   ]
+  },
+  "states": {
+   "match": 35
+  }
+ },
+ {
+  "pdb_id": "6yl5",
+  "auth_asym_id": "E",
+  "label_asym_id": "E",
+  "seq_name": "6yl5_1_E_E",
+  "segment": [
+   1,
+   35
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,B,C,D,E,F,G,H,I,J,K,L",
+  "fit": {
+   "bits": 34.82,
+   "avg_pp": 0.882,
+   "cm": [
+    5,
+    49
+   ]
+  },
+  "states": {
+   "match": 35
+  }
+ },
+ {
+  "pdb_id": "6yl5",
+  "auth_asym_id": "F",
+  "label_asym_id": "F",
+  "seq_name": "6yl5_1_F_F",
+  "segment": [
+   1,
+   35
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,B,C,D,E,F,G,H,I,J,K,L",
+  "fit": {
+   "bits": 34.82,
+   "avg_pp": 0.882,
+   "cm": [
+    5,
+    49
+   ]
+  },
+  "states": {
+   "match": 35
+  }
+ },
+ {
+  "pdb_id": "6yl5",
+  "auth_asym_id": "G",
+  "label_asym_id": "G",
+  "seq_name": "6yl5_1_G_G",
+  "segment": [
+   1,
+   35
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,B,C,D,E,F,G,H,I,J,K,L",
+  "fit": {
+   "bits": 34.82,
+   "avg_pp": 0.882,
+   "cm": [
+    5,
+    49
+   ]
+  },
+  "states": {
+   "match": 35
+  }
+ },
+ {
+  "pdb_id": "6yl5",
+  "auth_asym_id": "H",
+  "label_asym_id": "H",
+  "seq_name": "6yl5_1_H_H",
+  "segment": [
+   1,
+   35
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,B,C,D,E,F,G,H,I,J,K,L",
+  "fit": {
+   "bits": 34.82,
+   "avg_pp": 0.882,
+   "cm": [
+    5,
+    49
+   ]
+  },
+  "states": {
+   "match": 35
+  }
+ },
+ {
+  "pdb_id": "6yl5",
+  "auth_asym_id": "I",
+  "label_asym_id": "I",
+  "seq_name": "6yl5_1_I_I",
+  "segment": [
+   1,
+   35
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,B,C,D,E,F,G,H,I,J,K,L",
+  "fit": {
+   "bits": 34.82,
+   "avg_pp": 0.882,
+   "cm": [
+    5,
+    49
+   ]
+  },
+  "states": {
+   "match": 35
+  }
+ },
+ {
+  "pdb_id": "6yl5",
+  "auth_asym_id": "J",
+  "label_asym_id": "J",
+  "seq_name": "6yl5_1_J_J",
+  "segment": [
+   1,
+   35
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,B,C,D,E,F,G,H,I,J,K,L",
+  "fit": {
+   "bits": 34.82,
+   "avg_pp": 0.882,
+   "cm": [
+    5,
+    49
+   ]
+  },
+  "states": {
+   "match": 35
+  }
+ },
+ {
+  "pdb_id": "6yl5",
+  "auth_asym_id": "K",
+  "label_asym_id": "K",
+  "seq_name": "6yl5_1_K_K",
+  "segment": [
+   1,
+   35
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,B,C,D,E,F,G,H,I,J,K,L",
+  "fit": {
+   "bits": 34.82,
+   "avg_pp": 0.882,
+   "cm": [
+    5,
+    49
+   ]
+  },
+  "states": {
+   "match": 35
+  }
+ },
+ {
+  "pdb_id": "6yl5",
+  "auth_asym_id": "L",
+  "label_asym_id": "L",
+  "seq_name": "6yl5_1_L_L",
+  "segment": [
+   1,
+   35
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,B,C,D,E,F,G,H,I,J,K,L",
+  "fit": {
+   "bits": 34.82,
+   "avg_pp": 0.882,
+   "cm": [
+    5,
+    49
+   ]
+  },
+  "states": {
+   "match": 35
+  }
+ },
+ {
+  "pdb_id": "6ylb",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "6ylb_1_A_A",
+  "segment": [
+   1,
+   26
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,C,F,I,M,O",
+  "fit": {
+   "bits": 31.09,
+   "avg_pp": 1.0,
+   "cm": [
+    5,
+    30
+   ]
+  },
+  "states": {
+   "match": 26
+  }
+ },
+ {
+  "pdb_id": "6ylb",
+  "auth_asym_id": "C",
+  "label_asym_id": "C",
+  "seq_name": "6ylb_1_C_C",
+  "segment": [
+   1,
+   26
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,C,F,I,M,O",
+  "fit": {
+   "bits": 31.09,
+   "avg_pp": 1.0,
+   "cm": [
+    5,
+    30
+   ]
+  },
+  "states": {
+   "match": 26
+  }
+ },
+ {
+  "pdb_id": "6ylb",
+  "auth_asym_id": "F",
+  "label_asym_id": "E",
+  "seq_name": "6ylb_1_F_E",
+  "segment": [
+   1,
+   26
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,C,F,I,M,O",
+  "fit": {
+   "bits": 31.09,
+   "avg_pp": 1.0,
+   "cm": [
+    5,
+    30
+   ]
+  },
+  "states": {
+   "match": 26
+  }
+ },
+ {
+  "pdb_id": "6ylb",
+  "auth_asym_id": "I",
+  "label_asym_id": "G",
+  "seq_name": "6ylb_1_I_G",
+  "segment": [
+   1,
+   26
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,C,F,I,M,O",
+  "fit": {
+   "bits": 31.09,
+   "avg_pp": 1.0,
+   "cm": [
+    5,
+    30
+   ]
+  },
+  "states": {
+   "match": 26
+  }
+ },
+ {
+  "pdb_id": "6ylb",
+  "auth_asym_id": "M",
+  "label_asym_id": "I",
+  "seq_name": "6ylb_1_M_I",
+  "segment": [
+   1,
+   26
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,C,F,I,M,O",
+  "fit": {
+   "bits": 31.09,
+   "avg_pp": 1.0,
+   "cm": [
+    5,
+    30
+   ]
+  },
+  "states": {
+   "match": 26
+  }
+ },
+ {
+  "pdb_id": "6ylb",
+  "auth_asym_id": "O",
+  "label_asym_id": "K",
+  "seq_name": "6ylb_1_O_K",
+  "segment": [
+   1,
+   26
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,C,F,I,M,O",
+  "fit": {
+   "bits": 31.09,
+   "avg_pp": 1.0,
+   "cm": [
+    5,
+    30
+   ]
+  },
+  "states": {
+   "match": 26
+  }
+ },
+ {
+  "pdb_id": "6ylb",
+  "auth_asym_id": "B",
+  "label_asym_id": "B",
+  "seq_name": "6ylb_2_B_B",
+  "segment": [
+   1,
+   9
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: B,D,G,J,N,P",
+  "fit": {
+   "bits": 7.46,
+   "avg_pp": 1.0,
+   "cm": [
+    41,
+    49
+   ]
+  },
+  "states": {
+   "match": 9
+  }
+ },
+ {
+  "pdb_id": "6ylb",
+  "auth_asym_id": "D",
+  "label_asym_id": "D",
+  "seq_name": "6ylb_2_D_D",
+  "segment": [
+   1,
+   9
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: B,D,G,J,N,P",
+  "fit": {
+   "bits": 7.46,
+   "avg_pp": 1.0,
+   "cm": [
+    41,
+    49
+   ]
+  },
+  "states": {
+   "match": 9
+  }
+ },
+ {
+  "pdb_id": "6ylb",
+  "auth_asym_id": "G",
+  "label_asym_id": "F",
+  "seq_name": "6ylb_2_G_F",
+  "segment": [
+   1,
+   9
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: B,D,G,J,N,P",
+  "fit": {
+   "bits": 7.46,
+   "avg_pp": 1.0,
+   "cm": [
+    41,
+    49
+   ]
+  },
+  "states": {
+   "match": 9
+  }
+ },
+ {
+  "pdb_id": "6ylb",
+  "auth_asym_id": "J",
+  "label_asym_id": "H",
+  "seq_name": "6ylb_2_J_H",
+  "segment": [
+   1,
+   9
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: B,D,G,J,N,P",
+  "fit": {
+   "bits": 7.46,
+   "avg_pp": 1.0,
+   "cm": [
+    41,
+    49
+   ]
+  },
+  "states": {
+   "match": 9
+  }
+ },
+ {
+  "pdb_id": "6ylb",
+  "auth_asym_id": "N",
+  "label_asym_id": "J",
+  "seq_name": "6ylb_2_N_J",
+  "segment": [
+   1,
+   9
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: B,D,G,J,N,P",
+  "fit": {
+   "bits": 7.46,
+   "avg_pp": 1.0,
+   "cm": [
+    41,
+    49
+   ]
+  },
+  "states": {
+   "match": 9
+  }
+ },
+ {
+  "pdb_id": "6ylb",
+  "auth_asym_id": "P",
+  "label_asym_id": "L",
+  "seq_name": "6ylb_2_P_L",
+  "segment": [
+   1,
+   9
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: B,D,G,J,N,P",
+  "fit": {
+   "bits": 7.46,
+   "avg_pp": 1.0,
+   "cm": [
+    41,
+    49
+   ]
+  },
+  "states": {
+   "match": 9
+  }
+ },
+ {
+  "pdb_id": "6ymi",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "6ymi_1_A_A",
+  "segment": [
+   1,
+   26
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,C,F,I,M,O",
+  "fit": {
+   "bits": 31.09,
+   "avg_pp": 1.0,
+   "cm": [
+    5,
+    30
+   ]
+  },
+  "states": {
+   "match": 26
+  }
+ },
+ {
+  "pdb_id": "6ymi",
+  "auth_asym_id": "C",
+  "label_asym_id": "C",
+  "seq_name": "6ymi_1_C_C",
+  "segment": [
+   1,
+   26
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,C,F,I,M,O",
+  "fit": {
+   "bits": 31.09,
+   "avg_pp": 1.0,
+   "cm": [
+    5,
+    30
+   ]
+  },
+  "states": {
+   "match": 26
+  }
+ },
+ {
+  "pdb_id": "6ymi",
+  "auth_asym_id": "F",
+  "label_asym_id": "E",
+  "seq_name": "6ymi_1_F_E",
+  "segment": [
+   1,
+   26
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,C,F,I,M,O",
+  "fit": {
+   "bits": 31.09,
+   "avg_pp": 1.0,
+   "cm": [
+    5,
+    30
+   ]
+  },
+  "states": {
+   "match": 26
+  }
+ },
+ {
+  "pdb_id": "6ymi",
+  "auth_asym_id": "I",
+  "label_asym_id": "G",
+  "seq_name": "6ymi_1_I_G",
+  "segment": [
+   1,
+   26
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,C,F,I,M,O",
+  "fit": {
+   "bits": 31.09,
+   "avg_pp": 1.0,
+   "cm": [
+    5,
+    30
+   ]
+  },
+  "states": {
+   "match": 26
+  }
+ },
+ {
+  "pdb_id": "6ymi",
+  "auth_asym_id": "M",
+  "label_asym_id": "I",
+  "seq_name": "6ymi_1_M_I",
+  "segment": [
+   1,
+   26
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,C,F,I,M,O",
+  "fit": {
+   "bits": 31.09,
+   "avg_pp": 1.0,
+   "cm": [
+    5,
+    30
+   ]
+  },
+  "states": {
+   "match": 26
+  }
+ },
+ {
+  "pdb_id": "6ymi",
+  "auth_asym_id": "O",
+  "label_asym_id": "K",
+  "seq_name": "6ymi_1_O_K",
+  "segment": [
+   1,
+   26
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,C,F,I,M,O",
+  "fit": {
+   "bits": 31.09,
+   "avg_pp": 1.0,
+   "cm": [
+    5,
+    30
+   ]
+  },
+  "states": {
+   "match": 26
+  }
+ },
+ {
+  "pdb_id": "6ymi",
+  "auth_asym_id": "B",
+  "label_asym_id": "B",
+  "seq_name": "6ymi_2_B_B",
+  "segment": [
+   1,
+   9
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: B,D,G,J,N,P",
+  "fit": {
+   "bits": 7.46,
+   "avg_pp": 1.0,
+   "cm": [
+    41,
+    49
+   ]
+  },
+  "states": {
+   "match": 9
+  }
+ },
+ {
+  "pdb_id": "6ymi",
+  "auth_asym_id": "D",
+  "label_asym_id": "D",
+  "seq_name": "6ymi_2_D_D",
+  "segment": [
+   1,
+   9
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: B,D,G,J,N,P",
+  "fit": {
+   "bits": 7.46,
+   "avg_pp": 1.0,
+   "cm": [
+    41,
+    49
+   ]
+  },
+  "states": {
+   "match": 9
+  }
+ },
+ {
+  "pdb_id": "6ymi",
+  "auth_asym_id": "G",
+  "label_asym_id": "F",
+  "seq_name": "6ymi_2_G_F",
+  "segment": [
+   1,
+   9
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: B,D,G,J,N,P",
+  "fit": {
+   "bits": 7.46,
+   "avg_pp": 1.0,
+   "cm": [
+    41,
+    49
+   ]
+  },
+  "states": {
+   "match": 9
+  }
+ },
+ {
+  "pdb_id": "6ymi",
+  "auth_asym_id": "J",
+  "label_asym_id": "H",
+  "seq_name": "6ymi_2_J_H",
+  "segment": [
+   1,
+   9
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: B,D,G,J,N,P",
+  "fit": {
+   "bits": 7.46,
+   "avg_pp": 1.0,
+   "cm": [
+    41,
+    49
+   ]
+  },
+  "states": {
+   "match": 9
+  }
+ },
+ {
+  "pdb_id": "6ymi",
+  "auth_asym_id": "N",
+  "label_asym_id": "J",
+  "seq_name": "6ymi_2_N_J",
+  "segment": [
+   1,
+   9
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: B,D,G,J,N,P",
+  "fit": {
+   "bits": 7.46,
+   "avg_pp": 1.0,
+   "cm": [
+    41,
+    49
+   ]
+  },
+  "states": {
+   "match": 9
+  }
+ },
+ {
+  "pdb_id": "6ymi",
+  "auth_asym_id": "P",
+  "label_asym_id": "L",
+  "seq_name": "6ymi_2_P_L",
+  "segment": [
+   1,
+   9
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: B,D,G,J,N,P",
+  "fit": {
+   "bits": 7.46,
+   "avg_pp": 1.0,
+   "cm": [
+    41,
+    49
+   ]
+  },
+  "states": {
+   "match": 9
+  }
+ },
+ {
+  "pdb_id": "6ymj",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "6ymj_1_A_A",
+  "segment": [
+   1,
+   26
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,C,F,I,M,O",
+  "fit": {
+   "bits": 31.09,
+   "avg_pp": 1.0,
+   "cm": [
+    5,
+    30
+   ]
+  },
+  "states": {
+   "match": 26
+  }
+ },
+ {
+  "pdb_id": "6ymj",
+  "auth_asym_id": "C",
+  "label_asym_id": "C",
+  "seq_name": "6ymj_1_C_C",
+  "segment": [
+   1,
+   26
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,C,F,I,M,O",
+  "fit": {
+   "bits": 31.09,
+   "avg_pp": 1.0,
+   "cm": [
+    5,
+    30
+   ]
+  },
+  "states": {
+   "match": 26
+  }
+ },
+ {
+  "pdb_id": "6ymj",
+  "auth_asym_id": "F",
+  "label_asym_id": "E",
+  "seq_name": "6ymj_1_F_E",
+  "segment": [
+   1,
+   26
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,C,F,I,M,O",
+  "fit": {
+   "bits": 31.09,
+   "avg_pp": 1.0,
+   "cm": [
+    5,
+    30
+   ]
+  },
+  "states": {
+   "match": 26
+  }
+ },
+ {
+  "pdb_id": "6ymj",
+  "auth_asym_id": "I",
+  "label_asym_id": "G",
+  "seq_name": "6ymj_1_I_G",
+  "segment": [
+   1,
+   26
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,C,F,I,M,O",
+  "fit": {
+   "bits": 31.09,
+   "avg_pp": 1.0,
+   "cm": [
+    5,
+    30
+   ]
+  },
+  "states": {
+   "match": 26
+  }
+ },
+ {
+  "pdb_id": "6ymj",
+  "auth_asym_id": "M",
+  "label_asym_id": "I",
+  "seq_name": "6ymj_1_M_I",
+  "segment": [
+   1,
+   26
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,C,F,I,M,O",
+  "fit": {
+   "bits": 31.09,
+   "avg_pp": 1.0,
+   "cm": [
+    5,
+    30
+   ]
+  },
+  "states": {
+   "match": 26
+  }
+ },
+ {
+  "pdb_id": "6ymj",
+  "auth_asym_id": "O",
+  "label_asym_id": "K",
+  "seq_name": "6ymj_1_O_K",
+  "segment": [
+   1,
+   26
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,C,F,I,M,O",
+  "fit": {
+   "bits": 31.09,
+   "avg_pp": 1.0,
+   "cm": [
+    5,
+    30
+   ]
+  },
+  "states": {
+   "match": 26
+  }
+ },
+ {
+  "pdb_id": "6ymj",
+  "auth_asym_id": "B",
+  "label_asym_id": "B",
+  "seq_name": "6ymj_2_B_B",
+  "segment": [
+   1,
+   9
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: B,D,G,J,N,P",
+  "fit": {
+   "bits": 7.46,
+   "avg_pp": 1.0,
+   "cm": [
+    41,
+    49
+   ]
+  },
+  "states": {
+   "match": 9
+  }
+ },
+ {
+  "pdb_id": "6ymj",
+  "auth_asym_id": "D",
+  "label_asym_id": "D",
+  "seq_name": "6ymj_2_D_D",
+  "segment": [
+   1,
+   9
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: B,D,G,J,N,P",
+  "fit": {
+   "bits": 7.46,
+   "avg_pp": 1.0,
+   "cm": [
+    41,
+    49
+   ]
+  },
+  "states": {
+   "match": 9
+  }
+ },
+ {
+  "pdb_id": "6ymj",
+  "auth_asym_id": "G",
+  "label_asym_id": "F",
+  "seq_name": "6ymj_2_G_F",
+  "segment": [
+   1,
+   9
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: B,D,G,J,N,P",
+  "fit": {
+   "bits": 7.46,
+   "avg_pp": 1.0,
+   "cm": [
+    41,
+    49
+   ]
+  },
+  "states": {
+   "match": 9
+  }
+ },
+ {
+  "pdb_id": "6ymj",
+  "auth_asym_id": "J",
+  "label_asym_id": "H",
+  "seq_name": "6ymj_2_J_H",
+  "segment": [
+   1,
+   9
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: B,D,G,J,N,P",
+  "fit": {
+   "bits": 7.46,
+   "avg_pp": 1.0,
+   "cm": [
+    41,
+    49
+   ]
+  },
+  "states": {
+   "match": 9
+  }
+ },
+ {
+  "pdb_id": "6ymj",
+  "auth_asym_id": "N",
+  "label_asym_id": "J",
+  "seq_name": "6ymj_2_N_J",
+  "segment": [
+   1,
+   9
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: B,D,G,J,N,P",
+  "fit": {
+   "bits": 7.46,
+   "avg_pp": 1.0,
+   "cm": [
+    41,
+    49
+   ]
+  },
+  "states": {
+   "match": 9
+  }
+ },
+ {
+  "pdb_id": "6ymj",
+  "auth_asym_id": "P",
+  "label_asym_id": "L",
+  "seq_name": "6ymj_2_P_L",
+  "segment": [
+   1,
+   9
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: B,D,G,J,N,P",
+  "fit": {
+   "bits": 7.46,
+   "avg_pp": 1.0,
+   "cm": [
+    41,
+    49
+   ]
+  },
+  "states": {
+   "match": 9
+  }
+ },
+ {
+  "pdb_id": "6ymk",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "6ymk_1_A_A",
+  "segment": [
+   1,
+   26
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,C,F,I,M,O",
+  "fit": {
+   "bits": 31.09,
+   "avg_pp": 1.0,
+   "cm": [
+    5,
+    30
+   ]
+  },
+  "states": {
+   "match": 26
+  }
+ },
+ {
+  "pdb_id": "6ymk",
+  "auth_asym_id": "C",
+  "label_asym_id": "C",
+  "seq_name": "6ymk_1_C_C",
+  "segment": [
+   1,
+   26
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,C,F,I,M,O",
+  "fit": {
+   "bits": 31.09,
+   "avg_pp": 1.0,
+   "cm": [
+    5,
+    30
+   ]
+  },
+  "states": {
+   "match": 26
+  }
+ },
+ {
+  "pdb_id": "6ymk",
+  "auth_asym_id": "F",
+  "label_asym_id": "E",
+  "seq_name": "6ymk_1_F_E",
+  "segment": [
+   1,
+   26
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,C,F,I,M,O",
+  "fit": {
+   "bits": 31.09,
+   "avg_pp": 1.0,
+   "cm": [
+    5,
+    30
+   ]
+  },
+  "states": {
+   "match": 26
+  }
+ },
+ {
+  "pdb_id": "6ymk",
+  "auth_asym_id": "I",
+  "label_asym_id": "G",
+  "seq_name": "6ymk_1_I_G",
+  "segment": [
+   1,
+   26
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,C,F,I,M,O",
+  "fit": {
+   "bits": 31.09,
+   "avg_pp": 1.0,
+   "cm": [
+    5,
+    30
+   ]
+  },
+  "states": {
+   "match": 26
+  }
+ },
+ {
+  "pdb_id": "6ymk",
+  "auth_asym_id": "M",
+  "label_asym_id": "I",
+  "seq_name": "6ymk_1_M_I",
+  "segment": [
+   1,
+   26
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,C,F,I,M,O",
+  "fit": {
+   "bits": 31.09,
+   "avg_pp": 1.0,
+   "cm": [
+    5,
+    30
+   ]
+  },
+  "states": {
+   "match": 26
+  }
+ },
+ {
+  "pdb_id": "6ymk",
+  "auth_asym_id": "O",
+  "label_asym_id": "K",
+  "seq_name": "6ymk_1_O_K",
+  "segment": [
+   1,
+   26
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,C,F,I,M,O",
+  "fit": {
+   "bits": 31.09,
+   "avg_pp": 1.0,
+   "cm": [
+    5,
+    30
+   ]
+  },
+  "states": {
+   "match": 26
+  }
+ },
+ {
+  "pdb_id": "6ymk",
+  "auth_asym_id": "B",
+  "label_asym_id": "B",
+  "seq_name": "6ymk_2_B_B",
+  "segment": [
+   1,
+   9
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: B,D,G,J,N,P",
+  "fit": {
+   "bits": 7.46,
+   "avg_pp": 1.0,
+   "cm": [
+    41,
+    49
+   ]
+  },
+  "states": {
+   "match": 9
+  }
+ },
+ {
+  "pdb_id": "6ymk",
+  "auth_asym_id": "D",
+  "label_asym_id": "D",
+  "seq_name": "6ymk_2_D_D",
+  "segment": [
+   1,
+   9
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: B,D,G,J,N,P",
+  "fit": {
+   "bits": 7.46,
+   "avg_pp": 1.0,
+   "cm": [
+    41,
+    49
+   ]
+  },
+  "states": {
+   "match": 9
+  }
+ },
+ {
+  "pdb_id": "6ymk",
+  "auth_asym_id": "G",
+  "label_asym_id": "F",
+  "seq_name": "6ymk_2_G_F",
+  "segment": [
+   1,
+   9
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: B,D,G,J,N,P",
+  "fit": {
+   "bits": 7.46,
+   "avg_pp": 1.0,
+   "cm": [
+    41,
+    49
+   ]
+  },
+  "states": {
+   "match": 9
+  }
+ },
+ {
+  "pdb_id": "6ymk",
+  "auth_asym_id": "J",
+  "label_asym_id": "H",
+  "seq_name": "6ymk_2_J_H",
+  "segment": [
+   1,
+   9
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: B,D,G,J,N,P",
+  "fit": {
+   "bits": 7.46,
+   "avg_pp": 1.0,
+   "cm": [
+    41,
+    49
+   ]
+  },
+  "states": {
+   "match": 9
+  }
+ },
+ {
+  "pdb_id": "6ymk",
+  "auth_asym_id": "N",
+  "label_asym_id": "J",
+  "seq_name": "6ymk_2_N_J",
+  "segment": [
+   1,
+   9
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: B,D,G,J,N,P",
+  "fit": {
+   "bits": 7.46,
+   "avg_pp": 1.0,
+   "cm": [
+    41,
+    49
+   ]
+  },
+  "states": {
+   "match": 9
+  }
+ },
+ {
+  "pdb_id": "6ymk",
+  "auth_asym_id": "P",
+  "label_asym_id": "L",
+  "seq_name": "6ymk_2_P_L",
+  "segment": [
+   1,
+   9
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: B,D,G,J,N,P",
+  "fit": {
+   "bits": 7.46,
+   "avg_pp": 1.0,
+   "cm": [
+    41,
+    49
+   ]
+  },
+  "states": {
+   "match": 9
+  }
+ },
+ {
+  "pdb_id": "6yml",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "6yml_1_A_A",
+  "segment": [
+   1,
+   26
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,C",
+  "fit": {
+   "bits": 31.09,
+   "avg_pp": 1.0,
+   "cm": [
+    5,
+    30
+   ]
+  },
+  "states": {
+   "match": 26
+  }
+ },
+ {
+  "pdb_id": "6yml",
+  "auth_asym_id": "C",
+  "label_asym_id": "C",
+  "seq_name": "6yml_1_C_C",
+  "segment": [
+   1,
+   26
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A,C",
+  "fit": {
+   "bits": 31.09,
+   "avg_pp": 1.0,
+   "cm": [
+    5,
+    30
+   ]
+  },
+  "states": {
+   "match": 26
+  }
+ },
+ {
+  "pdb_id": "6yml",
+  "auth_asym_id": "B",
+  "label_asym_id": "B",
+  "seq_name": "6yml_2_B_B",
+  "segment": [
+   1,
+   9
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: B,D",
+  "fit": {
+   "bits": 7.46,
+   "avg_pp": 1.0,
+   "cm": [
+    41,
+    49
+   ]
+  },
+  "states": {
+   "match": 9
+  }
+ },
+ {
+  "pdb_id": "6yml",
+  "auth_asym_id": "D",
+  "label_asym_id": "D",
+  "seq_name": "6yml_2_D_D",
+  "segment": [
+   1,
+   9
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: B,D",
+  "fit": {
+   "bits": 7.46,
+   "avg_pp": 1.0,
+   "cm": [
+    41,
+    49
+   ]
+  },
+  "states": {
+   "match": 9
+  }
+ },
+ {
+  "pdb_id": "6ymm",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "6ymm_1_A_A",
+  "segment": [
+   1,
+   26
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A",
+  "fit": {
+   "bits": 31.09,
+   "avg_pp": 1.0,
+   "cm": [
+    5,
+    30
+   ]
+  },
+  "states": {
+   "match": 26
+  }
+ },
+ {
+  "pdb_id": "6ymm",
+  "auth_asym_id": "C",
+  "label_asym_id": "C",
+  "seq_name": "6ymm_1_C_C",
+  "segment": [
+   1,
+   26
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: A",
+  "fit": {
+   "bits": 31.09,
+   "avg_pp": 1.0,
+   "cm": [
+    5,
+    30
+   ]
+  },
+  "states": {
+   "match": 26
+  }
+ },
+ {
+  "pdb_id": "6ymm",
+  "auth_asym_id": "B",
+  "label_asym_id": "B",
+  "seq_name": "6ymm_2_B_B",
+  "segment": [
+   1,
+   9
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: B,D",
+  "fit": {
+   "bits": 7.46,
+   "avg_pp": 1.0,
+   "cm": [
+    41,
+    49
+   ]
+  },
+  "states": {
+   "match": 9
+  }
+ },
+ {
+  "pdb_id": "6ymm",
+  "auth_asym_id": "D",
+  "label_asym_id": "D",
+  "seq_name": "6ymm_2_D_D",
+  "segment": [
+   1,
+   9
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "Chains: B,D",
+  "fit": {
+   "bits": 7.46,
+   "avg_pp": 1.0,
+   "cm": [
+    41,
+    49
+   ]
+  },
+  "states": {
+   "match": 9
+  }
+ }
+]

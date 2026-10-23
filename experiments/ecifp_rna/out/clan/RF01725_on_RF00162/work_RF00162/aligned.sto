@@ -1,0 +1,10 @@
+# STOCKHOLM 1.0
+#=GF AU Infernal 1.1.5
+
+seq_0c392f045937aa20c519be2eb049093d         ---GGAUCACGAGGGGGA----------ga----------CCCCGGCAACCUGGGACGGACACCCAA-GGUGCUCACACCGGAGACGGU----ggauccggcccga.......gagggcaacgaaguCCGU-------------
+#=GR seq_0c392f045937aa20c519be2eb049093d PP ...*****9999***955..........65..........788**********************99.******999999888888876....5789*********.......*********999877888.............
+seq_50449a9d27dbd315e0e8145082760685         ---GGAUCACGAGGGGGA----------ga----------CCCCGGCAACCUGGGACGGACACCCAA-GGUGCUCACACCGG-----------agacgguggauccggcccgagagggcaacgaagg------U----------
+#=GR seq_50449a9d27dbd315e0e8145082760685 PP ...**8775555***955..........65..........788**********************99.******55554444...........5666777888889999999999888888887653......0..........
+#=GC SS_cons                                 ((((((((,,,,<<<<<---<<<_____~~>>>------>>>>><<<<-<<<<<<_______>>>>-->>>>>>,,,<----<<<<<<_____~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>>>>>>-->))))))))
+#=GC RF                                      cucUuAUcaAGAGgGGcgGAGGGAcuGG~~CCCuaUGAAgCCcCgGCAACCccccuuuuuaaggggAaGGUGCcAAuuCCugCgggccauaau~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ggcccGaaagAUaAgag
+//

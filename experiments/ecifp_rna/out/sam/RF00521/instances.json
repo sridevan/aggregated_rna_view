@@ -1,0 +1,71 @@
+[
+ {
+  "pdb_id": "2qwy",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "2qwy_1_A_A",
+  "segment": [
+   1,
+   52
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "SAM-II riboswitch",
+  "fit": {
+   "bits": 24.04,
+   "avg_pp": 0.964,
+   "cm": [
+    9,
+    64
+   ]
+  },
+  "states": {
+   "match": 52
+  }
+ },
+ {
+  "pdb_id": "2qwy",
+  "auth_asym_id": "B",
+  "label_asym_id": "B",
+  "seq_name": "2qwy_1_B_B",
+  "segment": [
+   1,
+   52
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "SAM-II riboswitch",
+  "fit": {
+   "bits": 24.04,
+   "avg_pp": 0.964,
+   "cm": [
+    9,
+    64
+   ]
+  },
+  "states": {
+   "match": 52
+  }
+ },
+ {
+  "pdb_id": "2qwy",
+  "auth_asym_id": "C",
+  "label_asym_id": "C",
+  "seq_name": "2qwy_1_C_C",
+  "segment": [
+   1,
+   52
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "SAM-II riboswitch",
+  "fit": {
+   "bits": 24.04,
+   "avg_pp": 0.964,
+   "cm": [
+    9,
+    64
+   ]
+  },
+  "states": {
+   "match": 52
+  }
+ }
+]

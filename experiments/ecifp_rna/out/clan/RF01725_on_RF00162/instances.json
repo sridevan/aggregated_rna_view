@@ -1,0 +1,63 @@
+[
+ {
+  "pdb_id": "4l81",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "4l81_1_A_A",
+  "segment": [
+   1,
+   96
+  ],
+  "fit_main": {
+   "bits": 9.25,
+   "avg_pp": 0.896,
+   "cm": [
+    4,
+    95
+   ]
+  },
+  "fit_own": {
+   "bits": 42.56,
+   "avg_pp": 0.845,
+   "cm": [
+    6,
+    95
+   ]
+  },
+  "states": {
+   "match": 67,
+   "local_end": 29
+  }
+ },
+ {
+  "pdb_id": "4oqu",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "4oqu_1_A_A",
+  "segment": [
+   1,
+   93
+  ],
+  "fit_main": {
+   "bits": 7.29,
+   "avg_pp": 0.785,
+   "cm": [
+    4,
+    98
+   ]
+  },
+  "fit_own": {
+   "bits": 43.71,
+   "avg_pp": 0.835,
+   "cm": [
+    6,
+    92
+   ]
+  },
+  "states": {
+   "match": 57,
+   "local_end": 36,
+   "not_submitted_flank": 4
+  }
+ }
+]

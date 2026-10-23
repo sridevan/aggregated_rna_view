@@ -1,0 +1,5 @@
+#                                                                                                      running time (s)                 
+#                                                                                               -------------------------------          
+# idx  seq name                              length  cm from    cm to  trunc    bit sc  avg pp  band calc  alignment      total  mem (Mb)
+# ---  ------------------------------------  ------  -------  -------  -----  --------  ------  ---------  ---------  ---------  --------
+    1  seq_b3d258037bb5e26df1bc4901d8ff5ea7     119        1      116     no    105.99   0.973       0.00       0.01       0.01      0.83

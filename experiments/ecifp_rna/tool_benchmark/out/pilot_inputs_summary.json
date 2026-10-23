@@ -1,0 +1,98 @@
+{
+ "1y26_X_90_ADE": {
+  "residues": 60,
+  "atoms": 547,
+  "atoms_H": 844,
+  "ligand_atoms_H": 15,
+  "removed_phosphate_H": 23,
+  "family": "RF00167"
+ },
+ "4fe5_B_101_HPA": {
+  "residues": 128,
+  "atoms": 615,
+  "atoms_H": 1086,
+  "ligand_atoms_H": 14,
+  "removed_phosphate_H": 24,
+  "family": "RF00167"
+ },
+ "2gis_A_301_SAM": {
+  "residues": 54,
+  "atoms": 793,
+  "atoms_H": 1234,
+  "ligand_atoms_H": 49,
+  "removed_phosphate_H": 33,
+  "family": "RF00162"
+ },
+ "2qwy_A_100_SAM": {
+  "residues": 53,
+  "atoms": 670,
+  "atoms_H": 1053,
+  "ligand_atoms_H": 49,
+  "removed_phosphate_H": 29,
+  "family": "RF00521"
+ },
+ "3e5c_A_216_SAM": {
+  "residues": 76,
+  "atoms": 659,
+  "atoms_H": 1054,
+  "ligand_atoms_H": 49,
+  "removed_phosphate_H": 25,
+  "family": "RF01767"
+ },
+ "6fz0_A_104_SAM": {
+  "residues": 43,
+  "atoms": 645,
+  "atoms_H": 987,
+  "ligand_atoms_H": 49,
+  "removed_phosphate_H": 27,
+  "family": "RF01826"
+ },
+ "6las_A_101_SAM": {
+  "residues": 41,
+  "atoms": 803,
+  "atoms_H": 1228,
+  "ligand_atoms_H": 49,
+  "removed_phosphate_H": 36,
+  "family": "RF02885"
+ },
+ "3npq_A_55_SAH": {
+  "residues": 93,
+  "atoms": 672,
+  "atoms_H": 1125,
+  "ligand_atoms_H": 46,
+  "removed_phosphate_H": 27,
+  "family": "RF01057"
+ },
+ "2gdi_X_100_TPP": {
+  "residues": 158,
+  "atoms": 1146,
+  "atoms_H": 1832,
+  "ligand_atoms_H": 43,
+  "removed_phosphate_H": 47,
+  "family": "RF00059"
+ },
+ "1fjg_A_1545_PAR": {
+  "residues": 39,
+  "atoms": 858,
+  "atoms_H": 1328,
+  "ligand_atoms_H": 87,
+  "removed_phosphate_H": 38,
+  "family": "RF00177"
+ },
+ "1fjg_A_1634_SRY": {
+  "residues": 56,
+  "atoms": 1122,
+  "atoms_H": 1728,
+  "ligand_atoms_H": 79,
+  "removed_phosphate_H": 50,
+  "family": "RF00177"
+ },
+ "1fjg_A_1633_SCM": {
+  "residues": 42,
+  "atoms": 875,
+  "atoms_H": 1351,
+  "ligand_atoms_H": 47,
+  "removed_phosphate_H": 40,
+  "family": "RF00177"
+ }
+}

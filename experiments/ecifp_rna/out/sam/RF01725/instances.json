@@ -1,0 +1,51 @@
+[
+ {
+  "pdb_id": "4l81",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "4l81_1_A_A",
+  "segment": [
+   1,
+   96
+  ],
+  "segment_source": "pdbe_nucleic_mappings",
+  "molecule_name": "SAM-I/IV variant riboswitch aptamer domain",
+  "fit": {
+   "bits": 42.56,
+   "avg_pp": 0.845,
+   "cm": [
+    6,
+    95
+   ]
+  },
+  "states": {
+   "match": 81,
+   "insert": 15
+  }
+ },
+ {
+  "pdb_id": "4oqu",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "4oqu_1_A_A",
+  "segment": [
+   1,
+   93
+  ],
+  "segment_source": "pdbe_nucleic_mappings",
+  "molecule_name": "SAM-I/IV riboswitch",
+  "fit": {
+   "bits": 43.71,
+   "avg_pp": 0.835,
+   "cm": [
+    6,
+    92
+   ]
+  },
+  "states": {
+   "match": 78,
+   "insert": 15,
+   "not_submitted_flank": 4
+  }
+ }
+]

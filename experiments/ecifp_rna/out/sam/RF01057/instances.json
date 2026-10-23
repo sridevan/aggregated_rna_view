@@ -1,0 +1,98 @@
+[
+ {
+  "pdb_id": "3npn",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "3npn_1_A_A",
+  "segment": [
+   1,
+   54
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "S-ADENOSYLHOMOCYSTEINE RIBOSWITCH",
+  "fit": {
+   "bits": 28.27,
+   "avg_pp": 0.945,
+   "cm": [
+    3,
+    72
+   ]
+  },
+  "states": {
+   "match": 50,
+   "local_end": 4
+  }
+ },
+ {
+  "pdb_id": "3npq",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "3npq_1_A_A",
+  "segment": [
+   1,
+   54
+  ],
+  "segment_source": "pdbe_nucleic_mappings",
+  "molecule_name": "S-ADENOSYLHOMOCYSTEINE RIBOSWITCH",
+  "fit": {
+   "bits": 37.44,
+   "avg_pp": 0.95,
+   "cm": [
+    3,
+    72
+   ]
+  },
+  "states": {
+   "match": 50,
+   "local_end": 4
+  }
+ },
+ {
+  "pdb_id": "3npq",
+  "auth_asym_id": "B",
+  "label_asym_id": "B",
+  "seq_name": "3npq_1_B_B",
+  "segment": [
+   1,
+   54
+  ],
+  "segment_source": "pdbe_nucleic_mappings",
+  "molecule_name": "S-ADENOSYLHOMOCYSTEINE RIBOSWITCH",
+  "fit": {
+   "bits": 37.44,
+   "avg_pp": 0.95,
+   "cm": [
+    3,
+    72
+   ]
+  },
+  "states": {
+   "match": 50,
+   "local_end": 4
+  }
+ },
+ {
+  "pdb_id": "3npq",
+  "auth_asym_id": "C",
+  "label_asym_id": "C",
+  "seq_name": "3npq_1_C_C",
+  "segment": [
+   1,
+   54
+  ],
+  "segment_source": "pdbe_nucleic_mappings",
+  "molecule_name": "S-ADENOSYLHOMOCYSTEINE RIBOSWITCH",
+  "fit": {
+   "bits": 37.44,
+   "avg_pp": 0.95,
+   "cm": [
+    3,
+    72
+   ]
+  },
+  "states": {
+   "match": 50,
+   "local_end": 4
+  }
+ }
+]

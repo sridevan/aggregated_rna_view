@@ -1,0 +1,117 @@
+[
+ {
+  "pdb_id": "3e5c",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "3e5c_1_A_A",
+  "segment": [
+   1,
+   53
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "SMK box (SAM-III) Riboswitch",
+  "fit": {
+   "bits": 39.79,
+   "avg_pp": 0.955,
+   "cm": [
+    13,
+    74
+   ]
+  },
+  "states": {
+   "match": 53
+  }
+ },
+ {
+  "pdb_id": "3e5e",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "3e5e_1_A_A",
+  "segment": [
+   1,
+   53
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "SMK box (SAM-III) Riboswitch for RNA",
+  "fit": {
+   "bits": 39.79,
+   "avg_pp": 0.955,
+   "cm": [
+    13,
+    74
+   ]
+  },
+  "states": {
+   "match": 53
+  }
+ },
+ {
+  "pdb_id": "3e5f",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "3e5f_1_A_A",
+  "segment": [
+   1,
+   53
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "SMK box (SAM-III) Riboswitch for RNA",
+  "fit": {
+   "bits": 39.79,
+   "avg_pp": 0.955,
+   "cm": [
+    13,
+    74
+   ]
+  },
+  "states": {
+   "match": 53
+  }
+ },
+ {
+  "pdb_id": "6c27",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "6c27_1_A_A",
+  "segment": [
+   1,
+   47
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "SAM-III riboswitch",
+  "fit": {
+   "bits": 20.53,
+   "avg_pp": 0.935,
+   "cm": [
+    5,
+    54
+   ]
+  },
+  "states": {
+   "match": 47
+  }
+ },
+ {
+  "pdb_id": "6c27",
+  "auth_asym_id": "B",
+  "label_asym_id": "B",
+  "seq_name": "6c27_1_B_B",
+  "segment": [
+   1,
+   47
+  ],
+  "segment_source": "whole_chain_cmscan",
+  "molecule_name": "SAM-III riboswitch",
+  "fit": {
+   "bits": 20.53,
+   "avg_pp": 0.935,
+   "cm": [
+    5,
+    54
+   ]
+  },
+  "states": {
+   "match": 47
+  }
+ }
+]

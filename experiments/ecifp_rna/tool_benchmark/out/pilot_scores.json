@@ -1,0 +1,2611 @@
+{
+ "copies": [
+  "1fjg_A_1545_PAR",
+  "1fjg_A_1633_SCM",
+  "1fjg_A_1634_SRY",
+  "1y26_X_90_ADE",
+  "2gdi_X_100_TPP",
+  "2gis_A_301_SAM",
+  "2qwy_A_100_SAM",
+  "3e5c_A_216_SAM",
+  "3npq_A_55_SAH",
+  "4fe5_B_101_HPA",
+  "6fz0_A_104_SAM",
+  "6las_A_101_SAM"
+ ],
+ "reference_counts": {
+  "polar": 59,
+  "stacking": 20,
+  "water": 1,
+  "metal": 3
+ },
+ "reference_atoms": 51,
+ "reference_unmatched": 5,
+ "recall": {
+  "arpeggio_api": {
+   "polar": {
+    "found": 48,
+    "of": 59,
+    "missed": [
+     [
+      "1fjg_A_1545_PAR",
+      "A:1490"
+     ],
+     [
+      "1fjg_A_1545_PAR",
+      "A:1494"
+     ],
+     [
+      "1fjg_A_1545_PAR",
+      "A:1495"
+     ],
+     [
+      "1fjg_A_1634_SRY",
+      "A:526"
+     ],
+     [
+      "2gis_A_301_SAM",
+      "A:7"
+     ],
+     [
+      "2qwy_A_100_SAM",
+      "A:11"
+     ],
+     [
+      "2qwy_A_100_SAM",
+      "A:21"
+     ],
+     [
+      "3npq_A_55_SAH",
+      "A:47"
+     ],
+     [
+      "6fz0_A_104_SAM",
+      "A:20"
+     ],
+     [
+      "6fz0_A_104_SAM",
+      "A:9"
+     ],
+     [
+      "6las_A_101_SAM",
+      "A:6"
+     ]
+    ]
+   },
+   "stacking": {
+    "found": 14,
+    "of": 20,
+    "missed": [
+     [
+      "1fjg_A_1545_PAR",
+      "A:1491"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:50"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:52"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:73"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:75"
+     ],
+     [
+      "6las_A_101_SAM",
+      "A:7"
+     ]
+    ]
+   },
+   "water": {
+    "found": 0,
+    "of": 1,
+    "missed": [
+     [
+      "3e5c_A_216_SAM",
+      "A:39"
+     ]
+    ]
+   },
+   "metal": {
+    "found": 0,
+    "of": 3,
+    "missed": [
+     [
+      "2gdi_X_100_TPP",
+      "X:60"
+     ],
+     [
+      "2gdi_X_100_TPP",
+      "X:78"
+     ],
+     [
+      "6fz0_A_104_SAM",
+      "A:10"
+     ]
+    ]
+   }
+  },
+  "arpeggio_local": {
+   "polar": {
+    "found": 26,
+    "of": 59,
+    "missed": [
+     [
+      "1fjg_A_1545_PAR",
+      "A:1405"
+     ],
+     [
+      "1fjg_A_1545_PAR",
+      "A:1491"
+     ],
+     [
+      "1fjg_A_1545_PAR",
+      "A:1495"
+     ],
+     [
+      "1fjg_A_1634_SRY",
+      "A:14"
+     ],
+     [
+      "1fjg_A_1634_SRY",
+      "A:526"
+     ],
+     [
+      "1fjg_A_1634_SRY",
+      "A:913"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:22"
+     ],
+     [
+      "2gdi_X_100_TPP",
+      "X:40"
+     ],
+     [
+      "2gdi_X_100_TPP",
+      "X:77"
+     ],
+     [
+      "2gis_A_301_SAM",
+      "A:45"
+     ],
+     [
+      "2gis_A_301_SAM",
+      "A:47"
+     ],
+     [
+      "2gis_A_301_SAM",
+      "A:57"
+     ],
+     [
+      "2gis_A_301_SAM",
+      "A:7"
+     ],
+     [
+      "2gis_A_301_SAM",
+      "A:88"
+     ],
+     [
+      "2qwy_A_100_SAM",
+      "A:11"
+     ],
+     [
+      "2qwy_A_100_SAM",
+      "A:44"
+     ],
+     [
+      "3e5c_A_216_SAM",
+      "A:36"
+     ],
+     [
+      "3e5c_A_216_SAM",
+      "A:37"
+     ],
+     [
+      "3e5c_A_216_SAM",
+      "A:38"
+     ],
+     [
+      "3e5c_A_216_SAM",
+      "A:47"
+     ],
+     [
+      "3e5c_A_216_SAM",
+      "A:7"
+     ],
+     [
+      "3npq_A_55_SAH",
+      "A:15"
+     ],
+     [
+      "3npq_A_55_SAH",
+      "A:47"
+     ],
+     [
+      "4fe5_B_101_HPA",
+      "B:22"
+     ],
+     [
+      "4fe5_B_101_HPA",
+      "B:47"
+     ],
+     [
+      "4fe5_B_101_HPA",
+      "B:51"
+     ],
+     [
+      "6fz0_A_104_SAM",
+      "A:20"
+     ],
+     [
+      "6fz0_A_104_SAM",
+      "A:47"
+     ],
+     [
+      "6fz0_A_104_SAM",
+      "A:9"
+     ],
+     [
+      "6las_A_101_SAM",
+      "A:36"
+     ],
+     [
+      "6las_A_101_SAM",
+      "A:37"
+     ],
+     [
+      "6las_A_101_SAM",
+      "A:6"
+     ],
+     [
+      "6las_A_101_SAM",
+      "A:8"
+     ]
+    ]
+   },
+   "stacking": {
+    "found": 0,
+    "of": 20,
+    "missed": [
+     [
+      "1fjg_A_1545_PAR",
+      "A:1491"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:21"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:22"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:50"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:52"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:73"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:75"
+     ],
+     [
+      "2gdi_X_100_TPP",
+      "X:42"
+     ],
+     [
+      "2gdi_X_100_TPP",
+      "X:43"
+     ],
+     [
+      "2gis_A_301_SAM",
+      "A:47"
+     ],
+     [
+      "3e5c_A_216_SAM",
+      "A:37"
+     ],
+     [
+      "3e5c_A_216_SAM",
+      "A:48"
+     ],
+     [
+      "3npq_A_55_SAH",
+      "A:16"
+     ],
+     [
+      "3npq_A_55_SAH",
+      "A:29"
+     ],
+     [
+      "6fz0_A_104_SAM",
+      "A:21"
+     ],
+     [
+      "6fz0_A_104_SAM",
+      "A:48"
+     ],
+     [
+      "6las_A_101_SAM",
+      "A:32"
+     ],
+     [
+      "6las_A_101_SAM",
+      "A:33"
+     ],
+     [
+      "6las_A_101_SAM",
+      "A:7"
+     ],
+     [
+      "6las_A_101_SAM",
+      "A:9"
+     ]
+    ]
+   },
+   "water": {
+    "found": 0,
+    "of": 1,
+    "missed": [
+     [
+      "3e5c_A_216_SAM",
+      "A:39"
+     ]
+    ]
+   },
+   "metal": {
+    "found": 0,
+    "of": 3,
+    "missed": [
+     [
+      "2gdi_X_100_TPP",
+      "X:60"
+     ],
+     [
+      "2gdi_X_100_TPP",
+      "X:78"
+     ],
+     [
+      "6fz0_A_104_SAM",
+      "A:10"
+     ]
+    ]
+   }
+  },
+  "plip": {
+   "polar": {
+    "found": 46,
+    "of": 59,
+    "missed": [
+     [
+      "1fjg_A_1545_PAR",
+      "A:1493"
+     ],
+     [
+      "1fjg_A_1634_SRY",
+      "A:526"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:47"
+     ],
+     [
+      "2gis_A_301_SAM",
+      "A:47"
+     ],
+     [
+      "2qwy_A_100_SAM",
+      "A:11"
+     ],
+     [
+      "2qwy_A_100_SAM",
+      "A:21"
+     ],
+     [
+      "3e5c_A_216_SAM",
+      "A:36"
+     ],
+     [
+      "3e5c_A_216_SAM",
+      "A:37"
+     ],
+     [
+      "4fe5_B_101_HPA",
+      "B:22"
+     ],
+     [
+      "4fe5_B_101_HPA",
+      "B:47"
+     ],
+     [
+      "6fz0_A_104_SAM",
+      "A:20"
+     ],
+     [
+      "6fz0_A_104_SAM",
+      "A:9"
+     ],
+     [
+      "6las_A_101_SAM",
+      "A:6"
+     ]
+    ]
+   },
+   "stacking": {
+    "found": 11,
+    "of": 20,
+    "missed": [
+     [
+      "1fjg_A_1545_PAR",
+      "A:1491"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:21"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:50"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:52"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:73"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:75"
+     ],
+     [
+      "6las_A_101_SAM",
+      "A:32"
+     ],
+     [
+      "6las_A_101_SAM",
+      "A:7"
+     ],
+     [
+      "6las_A_101_SAM",
+      "A:9"
+     ]
+    ]
+   },
+   "water": {
+    "found": 1,
+    "of": 1,
+    "missed": []
+   },
+   "metal": {
+    "found": 0,
+    "of": 3,
+    "missed": [
+     [
+      "2gdi_X_100_TPP",
+      "X:60"
+     ],
+     [
+      "2gdi_X_100_TPP",
+      "X:78"
+     ],
+     [
+      "6fz0_A_104_SAM",
+      "A:10"
+     ]
+    ]
+   }
+  },
+  "plip_H": {
+   "polar": {
+    "found": 49,
+    "of": 59,
+    "missed": [
+     [
+      "1fjg_A_1545_PAR",
+      "A:1490"
+     ],
+     [
+      "1fjg_A_1545_PAR",
+      "A:1491"
+     ],
+     [
+      "1fjg_A_1634_SRY",
+      "A:526"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:47"
+     ],
+     [
+      "2qwy_A_100_SAM",
+      "A:11"
+     ],
+     [
+      "2qwy_A_100_SAM",
+      "A:21"
+     ],
+     [
+      "3e5c_A_216_SAM",
+      "A:36"
+     ],
+     [
+      "6fz0_A_104_SAM",
+      "A:20"
+     ],
+     [
+      "6fz0_A_104_SAM",
+      "A:9"
+     ],
+     [
+      "6las_A_101_SAM",
+      "A:6"
+     ]
+    ]
+   },
+   "stacking": {
+    "found": 11,
+    "of": 20,
+    "missed": [
+     [
+      "1fjg_A_1545_PAR",
+      "A:1491"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:21"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:50"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:52"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:73"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:75"
+     ],
+     [
+      "6las_A_101_SAM",
+      "A:32"
+     ],
+     [
+      "6las_A_101_SAM",
+      "A:7"
+     ],
+     [
+      "6las_A_101_SAM",
+      "A:9"
+     ]
+    ]
+   },
+   "water": {
+    "found": 1,
+    "of": 1,
+    "missed": []
+   },
+   "metal": {
+    "found": 0,
+    "of": 3,
+    "missed": [
+     [
+      "2gdi_X_100_TPP",
+      "X:60"
+     ],
+     [
+      "2gdi_X_100_TPP",
+      "X:78"
+     ],
+     [
+      "6fz0_A_104_SAM",
+      "A:10"
+     ]
+    ]
+   }
+  },
+  "fingernat_H": {
+   "polar": {
+    "found": 55,
+    "of": 59,
+    "missed": [
+     [
+      "2qwy_A_100_SAM",
+      "A:11"
+     ],
+     [
+      "4fe5_B_101_HPA",
+      "B:47"
+     ],
+     [
+      "6fz0_A_104_SAM",
+      "A:9"
+     ],
+     [
+      "6las_A_101_SAM",
+      "A:6"
+     ]
+    ]
+   },
+   "stacking": {
+    "found": 10,
+    "of": 20,
+    "missed": [
+     [
+      "1fjg_A_1545_PAR",
+      "A:1491"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:21"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:22"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:50"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:52"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:73"
+     ],
+     [
+      "1y26_X_90_ADE",
+      "X:75"
+     ],
+     [
+      "6las_A_101_SAM",
+      "A:32"
+     ],
+     [
+      "6las_A_101_SAM",
+      "A:7"
+     ],
+     [
+      "6las_A_101_SAM",
+      "A:9"
+     ]
+    ]
+   },
+   "water": {
+    "found": 0,
+    "of": 1,
+    "missed": [
+     [
+      "3e5c_A_216_SAM",
+      "A:39"
+     ]
+    ]
+   },
+   "metal": {
+    "found": 2,
+    "of": 3,
+    "missed": [
+     [
+      "6fz0_A_104_SAM",
+      "A:10"
+     ]
+    ]
+   }
+  }
+ },
+ "atom_recall": {
+  "arpeggio_api": {
+   "found": 36,
+   "of": 51,
+   "missed": [
+    [
+     "1fjg_A_1545_PAR",
+     "A:1494",
+     "N7"
+    ],
+    [
+     "2gis_A_301_SAM",
+     "A:45",
+     "N1"
+    ],
+    [
+     "2gis_A_301_SAM",
+     "A:7",
+     "O2"
+    ],
+    [
+     "2gis_A_301_SAM",
+     "A:88",
+     "O2"
+    ],
+    [
+     "2qwy_A_100_SAM",
+     "A:11",
+     "O4"
+    ],
+    [
+     "2qwy_A_100_SAM",
+     "A:21",
+     "O4"
+    ],
+    [
+     "2qwy_A_100_SAM",
+     "A:47",
+     "N1"
+    ],
+    [
+     "3e5c_A_216_SAM",
+     "A:37",
+     "O4"
+    ],
+    [
+     "3npq_A_55_SAH",
+     "A:30",
+     "N3"
+    ],
+    [
+     "3npq_A_55_SAH",
+     "A:47",
+     "O2'"
+    ],
+    [
+     "6fz0_A_104_SAM",
+     "A:20",
+     "O4"
+    ],
+    [
+     "6fz0_A_104_SAM",
+     "A:50",
+     "N1"
+    ],
+    [
+     "6fz0_A_104_SAM",
+     "A:9",
+     "O4"
+    ],
+    [
+     "6las_A_101_SAM",
+     "A:6",
+     "O4"
+    ],
+    [
+     "6las_A_101_SAM",
+     "A:8",
+     "O4"
+    ]
+   ]
+  },
+  "arpeggio_local": {
+   "found": 13,
+   "of": 51,
+   "missed": [
+    [
+     "1fjg_A_1545_PAR",
+     "A:1491",
+     "N7"
+    ],
+    [
+     "1fjg_A_1545_PAR",
+     "A:1494",
+     "N7"
+    ],
+    [
+     "1fjg_A_1633_SCM",
+     "A:1064",
+     "O6"
+    ],
+    [
+     "1y26_X_90_ADE",
+     "X:22",
+     "O2'"
+    ],
+    [
+     "1y26_X_90_ADE",
+     "X:74",
+     "N3"
+    ],
+    [
+     "2gis_A_301_SAM",
+     "A:45",
+     "N1"
+    ],
+    [
+     "2gis_A_301_SAM",
+     "A:45",
+     "O2'"
+    ],
+    [
+     "2gis_A_301_SAM",
+     "A:57",
+     "N3"
+    ],
+    [
+     "2gis_A_301_SAM",
+     "A:57",
+     "O4"
+    ],
+    [
+     "2gis_A_301_SAM",
+     "A:7",
+     "O2"
+    ],
+    [
+     "2gis_A_301_SAM",
+     "A:88",
+     "O2"
+    ],
+    [
+     "2qwy_A_100_SAM",
+     "A:11",
+     "O4"
+    ],
+    [
+     "2qwy_A_100_SAM",
+     "A:21",
+     "O4"
+    ],
+    [
+     "2qwy_A_100_SAM",
+     "A:44",
+     "N3"
+    ],
+    [
+     "2qwy_A_100_SAM",
+     "A:44",
+     "O2"
+    ],
+    [
+     "2qwy_A_100_SAM",
+     "A:47",
+     "N6"
+    ],
+    [
+     "3e5c_A_216_SAM",
+     "A:36",
+     "O2'"
+    ],
+    [
+     "3e5c_A_216_SAM",
+     "A:37",
+     "O4"
+    ],
+    [
+     "3e5c_A_216_SAM",
+     "A:38",
+     "N6"
+    ],
+    [
+     "3e5c_A_216_SAM",
+     "A:47",
+     "N7"
+    ],
+    [
+     "3e5c_A_216_SAM",
+     "A:7",
+     "N2"
+    ],
+    [
+     "3e5c_A_216_SAM",
+     "A:7",
+     "N3"
+    ],
+    [
+     "3e5c_A_216_SAM",
+     "A:7",
+     "O2'"
+    ],
+    [
+     "3npq_A_55_SAH",
+     "A:30",
+     "N3"
+    ],
+    [
+     "3npq_A_55_SAH",
+     "A:31",
+     "O2'"
+    ],
+    [
+     "3npq_A_55_SAH",
+     "A:47",
+     "O2'"
+    ],
+    [
+     "4fe5_B_101_HPA",
+     "B:22",
+     "O2'"
+    ],
+    [
+     "6fz0_A_104_SAM",
+     "A:20",
+     "O4"
+    ],
+    [
+     "6fz0_A_104_SAM",
+     "A:47",
+     "N3"
+    ],
+    [
+     "6fz0_A_104_SAM",
+     "A:47",
+     "O2"
+    ],
+    [
+     "6fz0_A_104_SAM",
+     "A:50",
+     "N6"
+    ],
+    [
+     "6fz0_A_104_SAM",
+     "A:9",
+     "O4"
+    ],
+    [
+     "6las_A_101_SAM",
+     "A:36",
+     "N6"
+    ],
+    [
+     "6las_A_101_SAM",
+     "A:37",
+     "N1"
+    ],
+    [
+     "6las_A_101_SAM",
+     "A:6",
+     "O4"
+    ],
+    [
+     "6las_A_101_SAM",
+     "A:8",
+     "N3"
+    ],
+    [
+     "6las_A_101_SAM",
+     "A:8",
+     "O2"
+    ],
+    [
+     "6las_A_101_SAM",
+     "A:8",
+     "O4"
+    ]
+   ]
+  },
+  "plip": {
+   "found": 31,
+   "of": 51,
+   "missed": [
+    [
+     "1fjg_A_1545_PAR",
+     "A:1408",
+     "N1"
+    ],
+    [
+     "1fjg_A_1633_SCM",
+     "A:1064",
+     "O6"
+    ],
+    [
+     "1fjg_A_1633_SCM",
+     "A:1192",
+     "N3"
+    ],
+    [
+     "1y26_X_90_ADE",
+     "X:47",
+     "O2"
+    ],
+    [
+     "1y26_X_90_ADE",
+     "X:74",
+     "O4"
+    ],
+    [
+     "2gis_A_301_SAM",
+     "A:11",
+     "N1"
+    ],
+    [
+     "2gis_A_301_SAM",
+     "A:45",
+     "N1"
+    ],
+    [
+     "2gis_A_301_SAM",
+     "A:57",
+     "O4"
+    ],
+    [
+     "2gis_A_301_SAM",
+     "A:7",
+     "O2"
+    ],
+    [
+     "2gis_A_301_SAM",
+     "A:88",
+     "O2"
+    ],
+    [
+     "2qwy_A_100_SAM",
+     "A:11",
+     "O4"
+    ],
+    [
+     "2qwy_A_100_SAM",
+     "A:21",
+     "O4"
+    ],
+    [
+     "3e5c_A_216_SAM",
+     "A:36",
+     "O2'"
+    ],
+    [
+     "3e5c_A_216_SAM",
+     "A:37",
+     "O4"
+    ],
+    [
+     "4fe5_B_101_HPA",
+     "B:22",
+     "O2'"
+    ],
+    [
+     "6fz0_A_104_SAM",
+     "A:20",
+     "O4"
+    ],
+    [
+     "6fz0_A_104_SAM",
+     "A:50",
+     "N1"
+    ],
+    [
+     "6fz0_A_104_SAM",
+     "A:9",
+     "O4"
+    ],
+    [
+     "6las_A_101_SAM",
+     "A:6",
+     "O4"
+    ],
+    [
+     "6las_A_101_SAM",
+     "A:8",
+     "O2"
+    ]
+   ]
+  },
+  "plip_H": {
+   "found": 29,
+   "of": 51,
+   "missed": [
+    [
+     "1fjg_A_1545_PAR",
+     "A:1408",
+     "N1"
+    ],
+    [
+     "1fjg_A_1545_PAR",
+     "A:1491",
+     "N7"
+    ],
+    [
+     "1fjg_A_1633_SCM",
+     "A:1064",
+     "N7"
+    ],
+    [
+     "1fjg_A_1633_SCM",
+     "A:1192",
+     "N3"
+    ],
+    [
+     "1y26_X_90_ADE",
+     "X:47",
+     "O2"
+    ],
+    [
+     "1y26_X_90_ADE",
+     "X:74",
+     "O4"
+    ],
+    [
+     "2gis_A_301_SAM",
+     "A:45",
+     "N1"
+    ],
+    [
+     "2gis_A_301_SAM",
+     "A:57",
+     "O4"
+    ],
+    [
+     "2gis_A_301_SAM",
+     "A:7",
+     "O2"
+    ],
+    [
+     "2gis_A_301_SAM",
+     "A:88",
+     "O2"
+    ],
+    [
+     "2qwy_A_100_SAM",
+     "A:11",
+     "O4"
+    ],
+    [
+     "2qwy_A_100_SAM",
+     "A:21",
+     "O4"
+    ],
+    [
+     "2qwy_A_100_SAM",
+     "A:47",
+     "N1"
+    ],
+    [
+     "3e5c_A_216_SAM",
+     "A:36",
+     "O2'"
+    ],
+    [
+     "3e5c_A_216_SAM",
+     "A:37",
+     "O4"
+    ],
+    [
+     "3e5c_A_216_SAM",
+     "A:7",
+     "O2'"
+    ],
+    [
+     "3npq_A_55_SAH",
+     "A:30",
+     "N3"
+    ],
+    [
+     "6fz0_A_104_SAM",
+     "A:20",
+     "O4"
+    ],
+    [
+     "6fz0_A_104_SAM",
+     "A:50",
+     "N1"
+    ],
+    [
+     "6fz0_A_104_SAM",
+     "A:9",
+     "O4"
+    ],
+    [
+     "6las_A_101_SAM",
+     "A:6",
+     "O4"
+    ],
+    [
+     "6las_A_101_SAM",
+     "A:8",
+     "O2"
+    ]
+   ]
+  },
+  "fingernat_H": {
+   "found": 35,
+   "of": 51,
+   "missed": [
+    [
+     "1fjg_A_1633_SCM",
+     "A:1068",
+     "O2'"
+    ],
+    [
+     "1y26_X_90_ADE",
+     "X:22",
+     "O2'"
+    ],
+    [
+     "2gdi_X_100_TPP",
+     "X:19",
+     "O2'"
+    ],
+    [
+     "2gis_A_301_SAM",
+     "A:45",
+     "N1"
+    ],
+    [
+     "2gis_A_301_SAM",
+     "A:45",
+     "O2'"
+    ],
+    [
+     "2qwy_A_100_SAM",
+     "A:11",
+     "O4"
+    ],
+    [
+     "2qwy_A_100_SAM",
+     "A:21",
+     "O4"
+    ],
+    [
+     "3e5c_A_216_SAM",
+     "A:36",
+     "O2'"
+    ],
+    [
+     "3e5c_A_216_SAM",
+     "A:37",
+     "O4"
+    ],
+    [
+     "3e5c_A_216_SAM",
+     "A:7",
+     "O2'"
+    ],
+    [
+     "3npq_A_55_SAH",
+     "A:31",
+     "O2'"
+    ],
+    [
+     "3npq_A_55_SAH",
+     "A:47",
+     "O2'"
+    ],
+    [
+     "4fe5_B_101_HPA",
+     "B:22",
+     "O2'"
+    ],
+    [
+     "6fz0_A_104_SAM",
+     "A:20",
+     "O4"
+    ],
+    [
+     "6fz0_A_104_SAM",
+     "A:9",
+     "O4"
+    ],
+    [
+     "6las_A_101_SAM",
+     "A:6",
+     "O4"
+    ]
+   ]
+  }
+ },
+ "unsupported": {
+  "arpeggio_api": {
+   "polar": 21,
+   "stacking": 21,
+   "water": 0,
+   "metal": 0
+  },
+  "arpeggio_local": {
+   "polar": 13,
+   "stacking": 0,
+   "water": 0,
+   "metal": 0
+  },
+  "plip": {
+   "polar": 24,
+   "stacking": 3,
+   "water": 12,
+   "metal": 0
+  },
+  "plip_H": {
+   "polar": 22,
+   "stacking": 3,
+   "water": 13,
+   "metal": 0
+  },
+  "fingernat_H": {
+   "polar": 42,
+   "stacking": 3,
+   "water": 1,
+   "metal": 0
+  }
+ },
+ "jaccard": {
+  "polar": {
+   "arpeggio_api|arpeggio_local": 0.37,
+   "arpeggio_api|plip": 0.62,
+   "arpeggio_api|plip_H": 0.69,
+   "arpeggio_api|fingernat_H": 0.69,
+   "arpeggio_local|plip": 0.35,
+   "arpeggio_local|plip_H": 0.39,
+   "arpeggio_local|fingernat_H": 0.37,
+   "plip|plip_H": 0.76,
+   "plip|fingernat_H": 0.65,
+   "plip_H|fingernat_H": 0.68
+  },
+  "stacking": {
+   "arpeggio_api|arpeggio_local": 0.0,
+   "arpeggio_api|plip": 0.4,
+   "arpeggio_api|plip_H": 0.4,
+   "arpeggio_api|fingernat_H": 0.37,
+   "arpeggio_local|plip": 0.0,
+   "arpeggio_local|plip_H": 0.0,
+   "arpeggio_local|fingernat_H": 0.0,
+   "plip|plip_H": 1.0,
+   "plip|fingernat_H": 0.93,
+   "plip_H|fingernat_H": 0.93
+  },
+  "water": {
+   "arpeggio_api|arpeggio_local": 0.0,
+   "arpeggio_api|plip": 0.0,
+   "arpeggio_api|plip_H": 0.0,
+   "arpeggio_api|fingernat_H": 0.0,
+   "arpeggio_local|plip": 0.0,
+   "arpeggio_local|plip_H": 0.0,
+   "arpeggio_local|fingernat_H": 0.0,
+   "plip|plip_H": 0.5,
+   "plip|fingernat_H": 0.0,
+   "plip_H|fingernat_H": 0.0
+  },
+  "metal": {
+   "arpeggio_api|arpeggio_local": 0.0,
+   "arpeggio_api|plip": 0.0,
+   "arpeggio_api|plip_H": 0.0,
+   "arpeggio_api|fingernat_H": 0.0,
+   "arpeggio_local|plip": 0.0,
+   "arpeggio_local|plip_H": 0.0,
+   "arpeggio_local|fingernat_H": 0.0,
+   "plip|plip_H": 0.0,
+   "plip|fingernat_H": 0.0,
+   "plip_H|fingernat_H": 0.0
+  },
+  "charge_pi": {
+   "arpeggio_api|arpeggio_local": 0.0,
+   "arpeggio_api|plip": 0.0,
+   "arpeggio_api|plip_H": 0.0,
+   "arpeggio_api|fingernat_H": 0.0,
+   "arpeggio_local|plip": 0.0,
+   "arpeggio_local|plip_H": 0.0,
+   "arpeggio_local|fingernat_H": 0.0,
+   "plip|plip_H": 1.0,
+   "plip|fingernat_H": 1.0,
+   "plip_H|fingernat_H": 1.0
+  }
+ },
+ "per_copy": {
+  "1fjg_A_1545_PAR": {
+   "arpeggio_api": {
+    "polar": [
+     "A:1405",
+     "A:1407",
+     "A:1408",
+     "A:1491",
+     "A:1492",
+     "A:1493"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "arpeggio_local": {
+    "polar": [
+     "A:1406",
+     "A:1408",
+     "A:1490",
+     "A:1493",
+     "A:1494"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "plip": {
+    "polar": [
+     "A:1405",
+     "A:1407",
+     "A:1408",
+     "A:1409",
+     "A:1490",
+     "A:1491",
+     "A:1492",
+     "A:1494",
+     "A:1495"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "plip_H": {
+    "polar": [
+     "A:1405",
+     "A:1406",
+     "A:1407",
+     "A:1408",
+     "A:1492",
+     "A:1493",
+     "A:1494",
+     "A:1495"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "fingernat_H": {
+    "polar": [
+     "A:1405",
+     "A:1406",
+     "A:1407",
+     "A:1408",
+     "A:1409",
+     "A:1490",
+     "A:1491",
+     "A:1492",
+     "A:1493",
+     "A:1494",
+     "A:1495"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "reference": {
+    "polar": [
+     "A:1405",
+     "A:1408",
+     "A:1490",
+     "A:1491",
+     "A:1493",
+     "A:1494",
+     "A:1495"
+    ],
+    "stacking": [
+     "A:1491"
+    ],
+    "water": [],
+    "metal": []
+   }
+  },
+  "1fjg_A_1633_SCM": {
+   "arpeggio_api": {
+    "polar": [
+     "A:1064",
+     "A:1066",
+     "A:1068",
+     "A:1191",
+     "A:1192",
+     "A:1193"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "arpeggio_local": {
+    "polar": [
+     "A:1064",
+     "A:1066",
+     "A:1068",
+     "A:1069",
+     "A:1192",
+     "A:1387"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "plip": {
+    "polar": [
+     "A:1064",
+     "A:1066",
+     "A:1068",
+     "A:1069",
+     "A:1191",
+     "A:1192",
+     "A:1193",
+     "A:1387"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "plip_H": {
+    "polar": [
+     "A:1064",
+     "A:1066",
+     "A:1068",
+     "A:1069",
+     "A:1191",
+     "A:1192",
+     "A:1193"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "fingernat_H": {
+    "polar": [
+     "A:1063",
+     "A:1064",
+     "A:1066",
+     "A:1068",
+     "A:1069",
+     "A:1191",
+     "A:1192",
+     "A:1193"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "reference": {
+    "polar": [
+     "A:1064",
+     "A:1066",
+     "A:1068",
+     "A:1192"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": []
+   }
+  },
+  "1fjg_A_1634_SRY": {
+   "arpeggio_api": {
+    "polar": [
+     "A:14",
+     "A:1490",
+     "A:1491",
+     "A:527",
+     "A:913",
+     "A:914"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "arpeggio_local": {
+    "polar": [
+     "A:1490",
+     "A:1491",
+     "A:527",
+     "A:914",
+     "A:915"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "plip": {
+    "polar": [
+     "A:14",
+     "A:1490",
+     "A:1491",
+     "A:527",
+     "A:912",
+     "A:913",
+     "A:914",
+     "A:915"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "plip_H": {
+    "polar": [
+     "A:14",
+     "A:1490",
+     "A:1491",
+     "A:527",
+     "A:912",
+     "A:913",
+     "A:914",
+     "A:915"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "fingernat_H": {
+    "polar": [
+     "A:14",
+     "A:1490",
+     "A:1491",
+     "A:526",
+     "A:527",
+     "A:912",
+     "A:913",
+     "A:914",
+     "A:915"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "reference": {
+    "polar": [
+     "A:14",
+     "A:1490",
+     "A:1491",
+     "A:526",
+     "A:527",
+     "A:913",
+     "A:914"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": []
+   }
+  },
+  "1y26_X_90_ADE": {
+   "arpeggio_api": {
+    "polar": [
+     "X:22",
+     "X:47",
+     "X:51",
+     "X:74"
+    ],
+    "stacking": [
+     "X:21",
+     "X:22",
+     "X:51"
+    ],
+    "water": [],
+    "metal": [],
+    "charge_pi": [
+     "X:21"
+    ]
+   },
+   "arpeggio_local": {
+    "polar": [
+     "X:21",
+     "X:47",
+     "X:51",
+     "X:74"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "plip": {
+    "polar": [
+     "X:22",
+     "X:50",
+     "X:51",
+     "X:73",
+     "X:74"
+    ],
+    "stacking": [
+     "X:22"
+    ],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "plip_H": {
+    "polar": [
+     "X:22",
+     "X:50",
+     "X:51",
+     "X:73",
+     "X:74"
+    ],
+    "stacking": [
+     "X:22"
+    ],
+    "water": [
+     "X:21"
+    ],
+    "metal": [],
+    "charge_pi": []
+   },
+   "fingernat_H": {
+    "polar": [
+     "X:21",
+     "X:22",
+     "X:47",
+     "X:51",
+     "X:52",
+     "X:73",
+     "X:74",
+     "X:75"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "reference": {
+    "polar": [
+     "X:22",
+     "X:47",
+     "X:51",
+     "X:74"
+    ],
+    "stacking": [
+     "X:21",
+     "X:22",
+     "X:50",
+     "X:52",
+     "X:73",
+     "X:75"
+    ],
+    "water": [],
+    "metal": []
+   }
+  },
+  "2gdi_X_100_TPP": {
+   "arpeggio_api": {
+    "polar": [
+     "X:19",
+     "X:40",
+     "X:42",
+     "X:43",
+     "X:72",
+     "X:77",
+     "X:78"
+    ],
+    "stacking": [
+     "X:40",
+     "X:42",
+     "X:43"
+    ],
+    "water": [],
+    "metal": [],
+    "charge_pi": [
+     "X:43"
+    ]
+   },
+   "arpeggio_local": {
+    "polar": [
+     "X:19",
+     "X:78"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "plip": {
+    "polar": [
+     "X:19",
+     "X:39",
+     "X:40",
+     "X:72",
+     "X:77",
+     "X:78"
+    ],
+    "stacking": [
+     "X:42",
+     "X:43"
+    ],
+    "water": [
+     "X:41",
+     "X:58",
+     "X:72",
+     "X:74",
+     "X:75",
+     "X:76"
+    ],
+    "metal": [],
+    "charge_pi": []
+   },
+   "plip_H": {
+    "polar": [
+     "X:19",
+     "X:40",
+     "X:77",
+     "X:78"
+    ],
+    "stacking": [
+     "X:42",
+     "X:43"
+    ],
+    "water": [
+     "X:41",
+     "X:58",
+     "X:59",
+     "X:60",
+     "X:72",
+     "X:75"
+    ],
+    "metal": [],
+    "charge_pi": []
+   },
+   "fingernat_H": {
+    "polar": [
+     "X:19",
+     "X:40",
+     "X:42",
+     "X:43",
+     "X:57",
+     "X:72",
+     "X:73",
+     "X:77",
+     "X:78"
+    ],
+    "stacking": [
+     "X:42",
+     "X:43"
+    ],
+    "water": [],
+    "metal": [
+     "X:60",
+     "X:78"
+    ],
+    "charge_pi": []
+   },
+   "reference": {
+    "polar": [
+     "X:19",
+     "X:40",
+     "X:77",
+     "X:78"
+    ],
+    "stacking": [
+     "X:42",
+     "X:43"
+    ],
+    "water": [],
+    "metal": [
+     "X:60",
+     "X:78"
+    ]
+   }
+  },
+  "2gis_A_301_SAM": {
+   "arpeggio_api": {
+    "polar": [
+     "A:11",
+     "A:45",
+     "A:47",
+     "A:57",
+     "A:58",
+     "A:59",
+     "A:88"
+    ],
+    "stacking": [
+     "A:47",
+     "A:57",
+     "A:58"
+    ],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "arpeggio_local": {
+    "polar": [
+     "A:11",
+     "A:12",
+     "A:58"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "plip": {
+    "polar": [
+     "A:11",
+     "A:45",
+     "A:57",
+     "A:58",
+     "A:7",
+     "A:88"
+    ],
+    "stacking": [
+     "A:47"
+    ],
+    "water": [
+     "A:47"
+    ],
+    "metal": [],
+    "charge_pi": []
+   },
+   "plip_H": {
+    "polar": [
+     "A:11",
+     "A:45",
+     "A:47",
+     "A:57",
+     "A:58",
+     "A:7",
+     "A:88"
+    ],
+    "stacking": [
+     "A:47"
+    ],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "fingernat_H": {
+    "polar": [
+     "A:11",
+     "A:45",
+     "A:47",
+     "A:57",
+     "A:58",
+     "A:59",
+     "A:7",
+     "A:88"
+    ],
+    "stacking": [
+     "A:47"
+    ],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "reference": {
+    "polar": [
+     "A:11",
+     "A:45",
+     "A:47",
+     "A:57",
+     "A:58",
+     "A:7",
+     "A:88"
+    ],
+    "stacking": [
+     "A:47"
+    ],
+    "water": [],
+    "metal": []
+   }
+  },
+  "2qwy_A_100_SAM": {
+   "arpeggio_api": {
+    "polar": [
+     "A:22",
+     "A:44",
+     "A:45",
+     "A:47"
+    ],
+    "stacking": [
+     "A:11",
+     "A:21",
+     "A:22",
+     "A:44",
+     "A:45"
+    ],
+    "water": [],
+    "metal": [],
+    "charge_pi": [
+     "A:22",
+     "A:45"
+    ]
+   },
+   "arpeggio_local": {
+    "polar": [
+     "A:18",
+     "A:21",
+     "A:22",
+     "A:47"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "plip": {
+    "polar": [
+     "A:44",
+     "A:45",
+     "A:47",
+     "A:9"
+    ],
+    "stacking": [
+     "A:22",
+     "A:45"
+    ],
+    "water": [
+     "A:23",
+     "A:45",
+     "A:8"
+    ],
+    "metal": [],
+    "charge_pi": []
+   },
+   "plip_H": {
+    "polar": [
+     "A:18",
+     "A:22",
+     "A:44",
+     "A:45",
+     "A:47",
+     "A:9"
+    ],
+    "stacking": [
+     "A:22",
+     "A:45"
+    ],
+    "water": [
+     "A:22",
+     "A:23",
+     "A:45",
+     "A:8"
+    ],
+    "metal": [],
+    "charge_pi": []
+   },
+   "fingernat_H": {
+    "polar": [
+     "A:18",
+     "A:19",
+     "A:21",
+     "A:22",
+     "A:44",
+     "A:45",
+     "A:47",
+     "A:9"
+    ],
+    "stacking": [
+     "A:22",
+     "A:45"
+    ],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "reference": {
+    "polar": [
+     "A:11",
+     "A:21",
+     "A:44",
+     "A:47"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": []
+   }
+  },
+  "3e5c_A_216_SAM": {
+   "arpeggio_api": {
+    "polar": [
+     "A:30",
+     "A:36",
+     "A:37",
+     "A:38",
+     "A:47",
+     "A:48",
+     "A:7"
+    ],
+    "stacking": [
+     "A:37",
+     "A:48"
+    ],
+    "water": [],
+    "metal": [],
+    "charge_pi": [
+     "A:48"
+    ]
+   },
+   "arpeggio_local": {
+    "polar": [
+     "A:48"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "plip": {
+    "polar": [
+     "A:30",
+     "A:38",
+     "A:47",
+     "A:48",
+     "A:7"
+    ],
+    "stacking": [
+     "A:37",
+     "A:48"
+    ],
+    "water": [
+     "A:39"
+    ],
+    "metal": [],
+    "charge_pi": [
+     "A:36"
+    ]
+   },
+   "plip_H": {
+    "polar": [
+     "A:30",
+     "A:37",
+     "A:38",
+     "A:47",
+     "A:48",
+     "A:7"
+    ],
+    "stacking": [
+     "A:37",
+     "A:48"
+    ],
+    "water": [
+     "A:39"
+    ],
+    "metal": [],
+    "charge_pi": [
+     "A:36"
+    ]
+   },
+   "fingernat_H": {
+    "polar": [
+     "A:30",
+     "A:36",
+     "A:37",
+     "A:38",
+     "A:47",
+     "A:48",
+     "A:7"
+    ],
+    "stacking": [
+     "A:37",
+     "A:48"
+    ],
+    "water": [],
+    "metal": [],
+    "charge_pi": [
+     "A:36"
+    ]
+   },
+   "reference": {
+    "polar": [
+     "A:36",
+     "A:37",
+     "A:38",
+     "A:47",
+     "A:7"
+    ],
+    "stacking": [
+     "A:37",
+     "A:48"
+    ],
+    "water": [
+     "A:39"
+    ],
+    "metal": []
+   }
+  },
+  "3npq_A_55_SAH": {
+   "arpeggio_api": {
+    "polar": [
+     "A:14",
+     "A:15",
+     "A:16",
+     "A:29",
+     "A:30",
+     "A:31"
+    ],
+    "stacking": [
+     "A:16",
+     "A:29",
+     "A:31"
+    ],
+    "water": [],
+    "metal": [],
+    "charge_pi": [
+     "A:16",
+     "A:29"
+    ]
+   },
+   "arpeggio_local": {
+    "polar": [
+     "A:16",
+     "A:30",
+     "A:31"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "plip": {
+    "polar": [
+     "A:15",
+     "A:30",
+     "A:31",
+     "A:47"
+    ],
+    "stacking": [
+     "A:16",
+     "A:29"
+    ],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "plip_H": {
+    "polar": [
+     "A:15",
+     "A:30",
+     "A:31",
+     "A:32",
+     "A:47"
+    ],
+    "stacking": [
+     "A:16",
+     "A:29"
+    ],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "fingernat_H": {
+    "polar": [
+     "A:14",
+     "A:15",
+     "A:16",
+     "A:29",
+     "A:30",
+     "A:31",
+     "A:32",
+     "A:47"
+    ],
+    "stacking": [
+     "A:16",
+     "A:29"
+    ],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "reference": {
+    "polar": [
+     "A:15",
+     "A:30",
+     "A:31",
+     "A:47"
+    ],
+    "stacking": [
+     "A:16",
+     "A:29"
+    ],
+    "water": [],
+    "metal": []
+   }
+  },
+  "4fe5_B_101_HPA": {
+   "arpeggio_api": {
+    "polar": [
+     "B:22",
+     "B:47",
+     "B:51",
+     "B:73",
+     "B:74",
+     "B:75"
+    ],
+    "stacking": [
+     "B:21",
+     "B:22",
+     "B:47",
+     "B:51",
+     "B:52",
+     "B:74",
+     "B:75"
+    ],
+    "water": [],
+    "metal": [],
+    "charge_pi": [
+     "B:21",
+     "B:52"
+    ]
+   },
+   "arpeggio_local": {
+    "polar": [
+     "B:74",
+     "B:75"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "plip": {
+    "polar": [
+     "B:50",
+     "B:51",
+     "B:73",
+     "B:74"
+    ],
+    "stacking": [
+     "B:22"
+    ],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "plip_H": {
+    "polar": [
+     "B:22",
+     "B:47",
+     "B:50",
+     "B:51",
+     "B:74"
+    ],
+    "stacking": [
+     "B:22"
+    ],
+    "water": [
+     "B:49"
+    ],
+    "metal": [],
+    "charge_pi": []
+   },
+   "fingernat_H": {
+    "polar": [
+     "B:21",
+     "B:22",
+     "B:51",
+     "B:73",
+     "B:74",
+     "B:75"
+    ],
+    "stacking": [
+     "B:22"
+    ],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "reference": {
+    "polar": [
+     "B:22",
+     "B:47",
+     "B:51",
+     "B:74"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": []
+   }
+  },
+  "6fz0_A_104_SAM": {
+   "arpeggio_api": {
+    "polar": [
+     "A:21",
+     "A:47",
+     "A:48",
+     "A:50",
+     "A:7"
+    ],
+    "stacking": [
+     "A:20",
+     "A:21",
+     "A:47",
+     "A:48",
+     "A:9"
+    ],
+    "water": [],
+    "metal": [],
+    "charge_pi": [
+     "A:21",
+     "A:48"
+    ]
+   },
+   "arpeggio_local": {
+    "polar": [
+     "A:21",
+     "A:50"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "plip": {
+    "polar": [
+     "A:11",
+     "A:17",
+     "A:47",
+     "A:48",
+     "A:50",
+     "A:7"
+    ],
+    "stacking": [
+     "A:21",
+     "A:48"
+    ],
+    "water": [
+     "A:15"
+    ],
+    "metal": [],
+    "charge_pi": []
+   },
+   "plip_H": {
+    "polar": [
+     "A:21",
+     "A:47",
+     "A:48",
+     "A:50",
+     "A:7"
+    ],
+    "stacking": [
+     "A:21",
+     "A:48"
+    ],
+    "water": [
+     "A:15"
+    ],
+    "metal": [],
+    "charge_pi": []
+   },
+   "fingernat_H": {
+    "polar": [
+     "A:11",
+     "A:17",
+     "A:18",
+     "A:20",
+     "A:21",
+     "A:47",
+     "A:48",
+     "A:50",
+     "A:7"
+    ],
+    "stacking": [
+     "A:21",
+     "A:48"
+    ],
+    "water": [
+     "A:18"
+    ],
+    "metal": [],
+    "charge_pi": []
+   },
+   "reference": {
+    "polar": [
+     "A:20",
+     "A:47",
+     "A:50",
+     "A:9"
+    ],
+    "stacking": [
+     "A:21",
+     "A:48"
+    ],
+    "water": [],
+    "metal": [
+     "A:10"
+    ]
+   }
+  },
+  "6las_A_101_SAM": {
+   "arpeggio_api": {
+    "polar": [
+     "A:33",
+     "A:36",
+     "A:37",
+     "A:8",
+     "A:9"
+    ],
+    "stacking": [
+     "A:32",
+     "A:33",
+     "A:8",
+     "A:9"
+    ],
+    "water": [],
+    "metal": [],
+    "charge_pi": [
+     "A:33",
+     "A:9"
+    ]
+   },
+   "arpeggio_local": {
+    "polar": [
+     "A:33",
+     "A:9"
+    ],
+    "stacking": [],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "plip": {
+    "polar": [
+     "A:33",
+     "A:36",
+     "A:37",
+     "A:8",
+     "A:9"
+    ],
+    "stacking": [
+     "A:33"
+    ],
+    "water": [
+     "A:5"
+    ],
+    "metal": [],
+    "charge_pi": []
+   },
+   "plip_H": {
+    "polar": [
+     "A:33",
+     "A:36",
+     "A:37",
+     "A:8",
+     "A:9"
+    ],
+    "stacking": [
+     "A:33"
+    ],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "fingernat_H": {
+    "polar": [
+     "A:32",
+     "A:33",
+     "A:36",
+     "A:37",
+     "A:8",
+     "A:9"
+    ],
+    "stacking": [
+     "A:33"
+    ],
+    "water": [],
+    "metal": [],
+    "charge_pi": []
+   },
+   "reference": {
+    "polar": [
+     "A:33",
+     "A:36",
+     "A:37",
+     "A:6",
+     "A:8"
+    ],
+    "stacking": [
+     "A:32",
+     "A:33",
+     "A:7",
+     "A:9"
+    ],
+    "water": [],
+    "metal": []
+   }
+  }
+ }
+}

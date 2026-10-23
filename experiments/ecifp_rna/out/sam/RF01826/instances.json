@@ -1,0 +1,26 @@
+[
+ {
+  "pdb_id": "6fz0",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "6fz0_1_A_A",
+  "segment": [
+   5,
+   53
+  ],
+  "segment_source": "pdbe_nucleic_mappings",
+  "molecule_name": "metY SAM V (53-MER)",
+  "fit": {
+   "bits": 59.97,
+   "avg_pp": 0.987,
+   "cm": [
+    12,
+    60
+   ]
+  },
+  "states": {
+   "not_submitted_flank": 4,
+   "match": 49
+  }
+ }
+]

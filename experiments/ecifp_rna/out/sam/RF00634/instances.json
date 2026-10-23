@@ -1,0 +1,98 @@
+[
+ {
+  "pdb_id": "6ues",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "6ues_1_A_A",
+  "segment": [
+   1,
+   119
+  ],
+  "segment_source": "pdbe_nucleic_mappings",
+  "molecule_name": "RNA (119-MER)",
+  "fit": {
+   "bits": 105.99,
+   "avg_pp": 0.973,
+   "cm": [
+    1,
+    116
+   ]
+  },
+  "states": {
+   "match": 116,
+   "insert": 3
+  }
+ },
+ {
+  "pdb_id": "6uet",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "6uet_1_A_A",
+  "segment": [
+   1,
+   119
+  ],
+  "segment_source": "pdbe_nucleic_mappings",
+  "molecule_name": "RNA (119-MER)",
+  "fit": {
+   "bits": 105.99,
+   "avg_pp": 0.973,
+   "cm": [
+    1,
+    116
+   ]
+  },
+  "states": {
+   "match": 116,
+   "insert": 3
+  }
+ },
+ {
+  "pdb_id": "6wlq",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "6wlq_1_A_A",
+  "segment": [
+   1,
+   119
+  ],
+  "segment_source": "pdbe_nucleic_mappings",
+  "molecule_name": "RNA (119-MER)",
+  "fit": {
+   "bits": 105.99,
+   "avg_pp": 0.973,
+   "cm": [
+    1,
+    116
+   ]
+  },
+  "states": {
+   "match": 116,
+   "insert": 3
+  }
+ },
+ {
+  "pdb_id": "6wlr",
+  "auth_asym_id": "A",
+  "label_asym_id": "A",
+  "seq_name": "6wlr_1_A_A",
+  "segment": [
+   1,
+   119
+  ],
+  "segment_source": "pdbe_nucleic_mappings",
+  "molecule_name": "RNA (119-MER)",
+  "fit": {
+   "bits": 105.99,
+   "avg_pp": 0.973,
+   "cm": [
+    1,
+    116
+   ]
+  },
+  "states": {
+   "match": 116,
+   "insert": 3
+  }
+ }
+]
