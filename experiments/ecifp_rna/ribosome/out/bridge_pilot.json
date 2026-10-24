@@ -1,0 +1,1754 @@
+{
+ "set": [
+  [
+   "7k00",
+   "A",
+   "bacterial",
+   "E. coli",
+   "RF00177"
+  ],
+  [
+   "2vqe",
+   "A",
+   "bacterial",
+   "T. thermophilus",
+   "RF00177"
+  ],
+  [
+   "9vxm",
+   "AA",
+   "mitochondrial",
+   "H. sapiens 12S",
+   "RF00177"
+  ],
+  [
+   "9vxn",
+   "S2",
+   "cytosolic",
+   "H. sapiens 18S",
+   "RF01960"
+  ],
+  [
+   "5ndv",
+   "2",
+   "cytosolic",
+   "S. cerevisiae",
+   "RF01960"
+  ],
+  [
+   "9fxo",
+   "S1",
+   "cytosolic",
+   "L. major",
+   "RF01960"
+  ],
+  [
+   "9g6j",
+   "A",
+   "cytosolic",
+   "C. albicans",
+   "RF01960"
+  ],
+  [
+   "9sul",
+   "AA",
+   "cytosolic",
+   "T. brucei",
+   "RF01960"
+  ]
+ ],
+ "reference": [
+  "7k00",
+  "A"
+ ],
+ "determinants_ecoli": [
+  1405,
+  1406,
+  1407,
+  1408,
+  1409,
+  1410,
+  1490,
+  1491,
+  1492,
+  1493,
+  1494,
+  1495,
+  1496
+ ],
+ "sources": "PDBe residue_listing/molecules/ModelServer chains; Rfam CMs RF00177, RF01960 (cmalign via the pipeline); US-align; PDBe bound_ligand_interactions (inventory cache); retrieved 2026-10-24",
+ "rows": [
+  {
+   "pdb": "7k00",
+   "chain": "A",
+   "group": "bacterial",
+   "species": "E. coli",
+   "own_family": "RF00177",
+   "own_fit": {
+    "bits": 1571.54,
+    "avg_pp": 0.99,
+    "cm": [
+     1,
+     1533
+    ]
+   },
+   "own_states": {
+    "match": 1516,
+    "insert": 26
+   },
+   "cross_fit": null,
+   "cross_states": null,
+   "usalign": {
+    "tm": [
+     "1.00000",
+     "1.00000"
+    ],
+    "paired_within_4A": 1508,
+    "chain_residues": 1508
+   },
+   "route_agreement": {
+    "both": 1489,
+    "same": 1489,
+    "within_1": 1489
+   },
+   "determinants": {
+    "1405": {
+     "pos": 1396,
+     "cm": "G1405",
+     "usalign": "G1405"
+    },
+    "1406": {
+     "pos": 1397,
+     "cm": "U1406",
+     "usalign": "U1406"
+    },
+    "1407": {
+     "pos": 1398,
+     "cm": "5MC1407",
+     "usalign": null
+    },
+    "1408": {
+     "pos": 1399,
+     "cm": "A1408",
+     "usalign": "A1408"
+    },
+    "1409": {
+     "pos": 1400,
+     "cm": "C1409",
+     "usalign": "C1409"
+    },
+    "1410": {
+     "pos": 1401,
+     "cm": "A1410",
+     "usalign": "A1410"
+    },
+    "1490": {
+     "pos": 1481,
+     "cm": "U1490",
+     "usalign": "U1490"
+    },
+    "1491": {
+     "pos": 1482,
+     "cm": "G1491",
+     "usalign": "G1491"
+    },
+    "1492": {
+     "pos": 1483,
+     "cm": "A1492",
+     "usalign": "A1492"
+    },
+    "1493": {
+     "pos": 1484,
+     "cm": "A1493",
+     "usalign": "A1493"
+    },
+    "1494": {
+     "pos": 1485,
+     "cm": "G1494",
+     "usalign": "G1494"
+    },
+    "1495": {
+     "pos": 1486,
+     "cm": "U1495",
+     "usalign": "U1495"
+    },
+    "1496": {
+     "pos": 1487,
+     "cm": "C1496",
+     "usalign": "C1496"
+    }
+   },
+   "copies": [
+    {
+     "ccd": "PAR",
+     "copy": "7k00_A_1601",
+     "own": [
+      "1405",
+      "1406",
+      "1407",
+      "1408",
+      "1490",
+      "1491",
+      "1492",
+      "1493",
+      "1494",
+      "1495",
+      "1808",
+      "1862",
+      "2447",
+      "2512",
+      "2679",
+      "2712",
+      "2831",
+      "3010",
+      "3043",
+      "3088",
+      "3422",
+      "3571"
+     ],
+     "ecoli_via_cm": [
+      1405,
+      1406,
+      1407,
+      1408,
+      1490,
+      1491,
+      1492,
+      1493,
+      1494,
+      1495
+     ],
+     "ecoli_via_usalign": [
+      1405,
+      1406,
+      1408,
+      1490,
+      1491,
+      1492,
+      1493,
+      1494,
+      1495
+     ],
+     "unmapped_cm": [
+      "1808",
+      "1862",
+      "2447",
+      "2512",
+      "2679",
+      "2712",
+      "2831",
+      "3010",
+      "3043",
+      "3088",
+      "3422",
+      "3571"
+     ],
+     "decoding_site": true
+    }
+   ]
+  },
+  {
+   "pdb": "2vqe",
+   "chain": "A",
+   "group": "bacterial",
+   "species": "T. thermophilus",
+   "own_family": "RF00177",
+   "own_fit": {
+    "bits": 1566.35,
+    "avg_pp": 0.985,
+    "cm": [
+     1,
+     1533
+    ]
+   },
+   "own_states": {
+    "insert": 10,
+    "match": 1512
+   },
+   "cross_fit": null,
+   "cross_states": null,
+   "usalign": {
+    "tm": [
+     "0.96024",
+     "0.96339"
+    ],
+    "paired_within_4A": 1395,
+    "chain_residues": 1513
+   },
+   "route_agreement": {
+    "both": 1390,
+    "same": 1368,
+    "within_1": 1376
+   },
+   "determinants": {
+    "1405": {
+     "pos": 1396,
+     "cm": "G1405",
+     "usalign": "G1405"
+    },
+    "1406": {
+     "pos": 1397,
+     "cm": "U1406",
+     "usalign": "U1406"
+    },
+    "1407": {
+     "pos": 1398,
+     "cm": "C1407",
+     "usalign": null
+    },
+    "1408": {
+     "pos": 1399,
+     "cm": "A1408",
+     "usalign": "A1408"
+    },
+    "1409": {
+     "pos": 1400,
+     "cm": "C1409",
+     "usalign": "C1409"
+    },
+    "1410": {
+     "pos": 1401,
+     "cm": "G1410",
+     "usalign": "G1410"
+    },
+    "1490": {
+     "pos": 1481,
+     "cm": "C1490",
+     "usalign": "C1490"
+    },
+    "1491": {
+     "pos": 1482,
+     "cm": "G1491",
+     "usalign": "G1491"
+    },
+    "1492": {
+     "pos": 1483,
+     "cm": "A1492",
+     "usalign": "A1492"
+    },
+    "1493": {
+     "pos": 1484,
+     "cm": "A1493",
+     "usalign": "A1493"
+    },
+    "1494": {
+     "pos": 1485,
+     "cm": "G1494",
+     "usalign": "G1494"
+    },
+    "1495": {
+     "pos": 1486,
+     "cm": "U1495",
+     "usalign": "U1495"
+    },
+    "1496": {
+     "pos": 1487,
+     "cm": "C1496",
+     "usalign": "C1496"
+    }
+   },
+   "copies": [
+    {
+     "ccd": "PAR",
+     "copy": "2vqe_A_1854",
+     "own": [
+      "1405",
+      "1407",
+      "1408",
+      "1491",
+      "1492",
+      "1493",
+      "1494",
+      "1495"
+     ],
+     "ecoli_via_cm": [
+      1405,
+      1407,
+      1408,
+      1491,
+      1492,
+      1493,
+      1494,
+      1495
+     ],
+     "ecoli_via_usalign": [
+      1405,
+      1408,
+      1491,
+      1492,
+      1493,
+      1494,
+      1495
+     ],
+     "unmapped_cm": [],
+     "decoding_site": true
+    }
+   ]
+  },
+  {
+   "pdb": "9vxm",
+   "chain": "AA",
+   "group": "mitochondrial",
+   "species": "H. sapiens 12S",
+   "own_family": "RF00177",
+   "own_fit": {
+    "bits": 260.33,
+    "avg_pp": 0.887,
+    "cm": [
+     7,
+     1528
+    ]
+   },
+   "own_states": {
+    "match": 702,
+    "local_end": 249,
+    "insert": 3
+   },
+   "cross_fit": null,
+   "cross_states": null,
+   "usalign": {
+    "tm": [
+     "0.95166",
+     "0.60621"
+    ],
+    "paired_within_4A": 807,
+    "chain_residues": 949
+   },
+   "route_agreement": {
+    "both": 640,
+    "same": 614,
+    "within_1": 632
+   },
+   "determinants": {
+    "1405": {
+     "pos": 1396,
+     "cm": "G1489",
+     "usalign": null
+    },
+    "1406": {
+     "pos": 1397,
+     "cm": "U1490",
+     "usalign": null
+    },
+    "1407": {
+     "pos": 1398,
+     "cm": "C1491",
+     "usalign": null
+    },
+    "1408": {
+     "pos": 1399,
+     "cm": "A1492",
+     "usalign": "A1492"
+    },
+    "1409": {
+     "pos": 1400,
+     "cm": "C1493",
+     "usalign": "C1493"
+    },
+    "1410": {
+     "pos": 1401,
+     "cm": "C1494",
+     "usalign": "C1494"
+    },
+    "1490": {
+     "pos": 1481,
+     "cm": "A1555",
+     "usalign": "A1555"
+    },
+    "1491": {
+     "pos": 1482,
+     "cm": "C1556",
+     "usalign": "C1556"
+    },
+    "1492": {
+     "pos": 1483,
+     "cm": "A1557",
+     "usalign": "A1557"
+    },
+    "1493": {
+     "pos": 1484,
+     "cm": "A1558",
+     "usalign": "A1558"
+    },
+    "1494": {
+     "pos": 1485,
+     "cm": "G1559",
+     "usalign": "G1559"
+    },
+    "1495": {
+     "pos": 1486,
+     "cm": "U1560",
+     "usalign": "U1560"
+    },
+    "1496": {
+     "pos": 1487,
+     "cm": "C1561",
+     "usalign": "C1561"
+    }
+   },
+   "copies": [
+    {
+     "ccd": "NMY",
+     "copy": "9vxm_AA_1783",
+     "own": [
+      "1178",
+      "1179",
+      "1180",
+      "1182",
+      "1469",
+      "1470",
+      "1471",
+      "1472",
+      "1473",
+      "1474"
+     ],
+     "ecoli_via_cm": [
+      925,
+      926,
+      927,
+      929,
+      1385,
+      1386,
+      1387,
+      1388,
+      1389,
+      1390
+     ],
+     "ecoli_via_usalign": [
+      925,
+      926,
+      927,
+      929,
+      1385,
+      1390
+     ],
+     "unmapped_cm": [],
+     "decoding_site": false
+    },
+    {
+     "ccd": "NMY",
+     "copy": "9vxm_AA_1784",
+     "own": [
+      "1490",
+      "1491",
+      "1555",
+      "1556",
+      "1557",
+      "1558",
+      "1559"
+     ],
+     "ecoli_via_cm": [
+      1406,
+      1407,
+      1490,
+      1491,
+      1492,
+      1493,
+      1494
+     ],
+     "ecoli_via_usalign": [
+      1490,
+      1491,
+      1492,
+      1493,
+      1494
+     ],
+     "unmapped_cm": [],
+     "decoding_site": true
+    },
+    {
+     "ccd": "NMY",
+     "copy": "9vxm_AA_1785",
+     "own": [
+      "656",
+      "899",
+      "1167",
+      "1480",
+      "1481",
+      "1486",
+      "1487"
+     ],
+     "ecoli_via_cm": [
+      14,
+      527,
+      914,
+      1396,
+      1397,
+      1402,
+      1403
+     ],
+     "ecoli_via_usalign": [
+      14,
+      914,
+      1396,
+      1397,
+      1403
+     ],
+     "unmapped_cm": [],
+     "decoding_site": false
+    },
+    {
+     "ccd": "NMY",
+     "copy": "9vxm_AA_1786",
+     "own": [
+      "1079",
+      "1081"
+     ],
+     "ecoli_via_cm": [
+      791,
+      793
+     ],
+     "ecoli_via_usalign": [
+      791,
+      793
+     ],
+     "unmapped_cm": [],
+     "decoding_site": false
+    }
+   ]
+  },
+  {
+   "pdb": "9vxn",
+   "chain": "S2",
+   "group": "cytosolic",
+   "species": "H. sapiens 18S",
+   "own_family": "RF01960",
+   "own_fit": {
+    "bits": 1661.41,
+    "avg_pp": 0.969,
+    "cm": [
+     1,
+     1831
+    ]
+   },
+   "own_states": {
+    "match": 1811,
+    "insert": 58
+   },
+   "cross_fit": {
+    "bits": 428.97,
+    "avg_pp": 0.911,
+    "cm": [
+     6,
+     1528
+    ]
+   },
+   "cross_states": {
+    "match": 1249,
+    "insert": 24,
+    "local_end": 596
+   },
+   "usalign": {
+    "tm": [
+     "0.81593",
+     "0.87186"
+    ],
+    "paired_within_4A": 1115,
+    "chain_residues": 1614
+   },
+   "route_agreement": {
+    "both": 985,
+    "same": 928,
+    "within_1": 939
+   },
+   "determinants": {
+    "1405": {
+     "pos": 1396,
+     "cm": "G1706",
+     "usalign": "G1706"
+    },
+    "1406": {
+     "pos": 1397,
+     "cm": "U1707",
+     "usalign": "U1707"
+    },
+    "1407": {
+     "pos": 1398,
+     "cm": "C1708",
+     "usalign": null
+    },
+    "1408": {
+     "pos": 1399,
+     "cm": "G1709",
+     "usalign": "G1709"
+    },
+    "1409": {
+     "pos": 1400,
+     "cm": "C1710",
+     "usalign": "C1710"
+    },
+    "1410": {
+     "pos": 1401,
+     "cm": "U1711",
+     "usalign": "U1711"
+    },
+    "1490": {
+     "pos": 1481,
+     "cm": "A1822",
+     "usalign": "A1822"
+    },
+    "1491": {
+     "pos": 1482,
+     "cm": "A1823",
+     "usalign": "A1823"
+    },
+    "1492": {
+     "pos": 1483,
+     "cm": "A1824",
+     "usalign": "A1824"
+    },
+    "1493": {
+     "pos": 1484,
+     "cm": "A1825",
+     "usalign": "A1825"
+    },
+    "1494": {
+     "pos": 1485,
+     "cm": "G1826",
+     "usalign": "G1826"
+    },
+    "1495": {
+     "pos": 1486,
+     "cm": "U1827",
+     "usalign": "U1827"
+    },
+    "1496": {
+     "pos": 1487,
+     "cm": "C1828",
+     "usalign": "C1828"
+    }
+   },
+   "copies": [
+    {
+     "ccd": "NMY",
+     "copy": "9vxn_S2_1902",
+     "own": [
+      "1214",
+      "1215",
+      "1343",
+      "1369",
+      "1386",
+      "1479",
+      "1480"
+     ],
+     "ecoli_via_cm": [
+      933,
+      1066,
+      1092,
+      1109,
+      1186,
+      1187
+     ],
+     "ecoli_via_usalign": [
+      933,
+      934,
+      1066,
+      1092,
+      1109,
+      1186,
+      1187
+     ],
+     "unmapped_cm": [
+      "1215"
+     ],
+     "decoding_site": false
+    },
+    {
+     "ccd": "NMY",
+     "copy": "9vxn_S2_1945",
+     "own": [
+      "437",
+      "1726",
+      "1727",
+      "1728",
+      "1806"
+     ],
+     "ecoli_via_cm": [
+      317,
+      1424,
+      1425,
+      1426,
+      1474
+     ],
+     "ecoli_via_usalign": [
+      317,
+      1424
+     ],
+     "unmapped_cm": [],
+     "decoding_site": false
+    },
+    {
+     "ccd": "NMY",
+     "copy": "9vxn_S2_1966",
+     "own": [
+      "1706",
+      "1709",
+      "1821",
+      "1823",
+      "1824",
+      "1825",
+      "1826"
+     ],
+     "ecoli_via_cm": [
+      1405,
+      1408,
+      1489,
+      1491,
+      1492,
+      1493,
+      1494
+     ],
+     "ecoli_via_usalign": [
+      1405,
+      1408,
+      1489,
+      1491,
+      1492,
+      1493,
+      1494
+     ],
+     "unmapped_cm": [],
+     "decoding_site": true
+    },
+    {
+     "ccd": "NMY",
+     "copy": "9vxn_S2_1975",
+     "own": [
+      "1039",
+      "1049",
+      "1070",
+      "1846",
+      "1919"
+     ],
+     "ecoli_via_cm": [
+      771,
+      781,
+      802,
+      1514
+     ],
+     "ecoli_via_usalign": [
+      771,
+      781,
+      802,
+      1514
+     ],
+     "unmapped_cm": [
+      "1919"
+     ],
+     "decoding_site": false
+    }
+   ]
+  },
+  {
+   "pdb": "5ndv",
+   "chain": "2",
+   "group": "cytosolic",
+   "species": "S. cerevisiae",
+   "own_family": "RF01960",
+   "own_fit": {
+    "bits": 1806.6,
+    "avg_pp": 0.968,
+    "cm": [
+     1,
+     1831
+    ]
+   },
+   "own_states": {
+    "match": 1795,
+    "insert": 5
+   },
+   "cross_fit": {
+    "bits": 533.57,
+    "avg_pp": 0.895,
+    "cm": [
+     6,
+     1528
+    ]
+   },
+   "cross_states": {
+    "match": 1357,
+    "insert": 32,
+    "local_end": 411
+   },
+   "usalign": {
+    "tm": [
+     "0.78191",
+     "0.88280"
+    ],
+    "paired_within_4A": 948,
+    "chain_residues": 1712
+   },
+   "route_agreement": {
+    "both": 877,
+    "same": 838,
+    "within_1": 856
+   },
+   "determinants": {
+    "1405": {
+     "pos": 1396,
+     "cm": "G1642",
+     "usalign": "G1642"
+    },
+    "1406": {
+     "pos": 1397,
+     "cm": "U1643",
+     "usalign": "U1643"
+    },
+    "1407": {
+     "pos": 1398,
+     "cm": "C1644",
+     "usalign": null
+    },
+    "1408": {
+     "pos": 1399,
+     "cm": "G1645",
+     "usalign": "G1645"
+    },
+    "1409": {
+     "pos": 1400,
+     "cm": "C1646",
+     "usalign": "C1646"
+    },
+    "1410": {
+     "pos": 1401,
+     "cm": "U1647",
+     "usalign": "U1647"
+    },
+    "1490": {
+     "pos": 1481,
+     "cm": "A1753",
+     "usalign": "A1753"
+    },
+    "1491": {
+     "pos": 1482,
+     "cm": "A1754",
+     "usalign": "A1754"
+    },
+    "1492": {
+     "pos": 1483,
+     "cm": "A1755",
+     "usalign": "A1755"
+    },
+    "1493": {
+     "pos": 1484,
+     "cm": "A1756",
+     "usalign": "A1756"
+    },
+    "1494": {
+     "pos": 1485,
+     "cm": "G1757",
+     "usalign": "G1757"
+    },
+    "1495": {
+     "pos": 1486,
+     "cm": "U1758",
+     "usalign": "U1758"
+    },
+    "1496": {
+     "pos": 1487,
+     "cm": "C1759",
+     "usalign": "C1759"
+    }
+   },
+   "copies": [
+    {
+     "ccd": "PAR",
+     "copy": "5ndv_1_3408",
+     "own": [
+      "984"
+     ],
+     "ecoli_via_cm": [
+      773
+     ],
+     "ecoli_via_usalign": [
+      773
+     ],
+     "unmapped_cm": [],
+     "decoding_site": false
+    },
+    {
+     "ccd": "PAR",
+     "copy": "5ndv_2_1901",
+     "own": [
+      "1001",
+      "1003",
+      "1150",
+      "1761",
+      "1768",
+      "1769"
+     ],
+     "ecoli_via_cm": [
+      790,
+      792,
+      926,
+      1498,
+      1505,
+      1506
+     ],
+     "ecoli_via_usalign": [
+      790,
+      792,
+      926,
+      1505,
+      1506
+     ],
+     "unmapped_cm": [],
+     "decoding_site": false
+    },
+    {
+     "ccd": "PAR",
+     "copy": "5ndv_2_1902",
+     "own": [
+      "101",
+      "102",
+      "357",
+      "358",
+      "390",
+      "1662",
+      "1663",
+      "1741"
+     ],
+     "ecoli_via_cm": [
+      117,
+      118,
+      286,
+      287,
+      318,
+      1424,
+      1425,
+      1478
+     ],
+     "ecoli_via_usalign": [
+      117,
+      118,
+      286,
+      287,
+      318
+     ],
+     "unmapped_cm": [],
+     "decoding_site": false
+    },
+    {
+     "ccd": "PAR",
+     "copy": "5ndv_2_1903",
+     "own": [
+      "311",
+      "312",
+      "352",
+      "1106",
+      "1131",
+      "1132"
+     ],
+     "ecoli_via_cm": [
+      242,
+      243,
+      281,
+      882,
+      907,
+      908
+     ],
+     "ecoli_via_usalign": [
+      242,
+      243,
+      281,
+      882,
+      907,
+      908
+     ],
+     "unmapped_cm": [],
+     "decoding_site": false
+    },
+    {
+     "ccd": "PAR",
+     "copy": "5ndv_2_1904",
+     "own": [
+      "1042",
+      "1043",
+      "1044",
+      "1045",
+      "1069",
+      "1071",
+      "1074"
+     ],
+     "ecoli_via_cm": [
+      831,
+      832,
+      833,
+      834,
+      848,
+      850,
+      853
+     ],
+     "ecoli_via_usalign": [
+      831,
+      832,
+      833,
+      834,
+      848,
+      850,
+      853
+     ],
+     "unmapped_cm": [],
+     "decoding_site": false
+    },
+    {
+     "ccd": "PAR",
+     "copy": "5ndv_2_1905",
+     "own": [
+      "1642",
+      "1644",
+      "1645",
+      "1752",
+      "1753",
+      "1754",
+      "1756",
+      "1757"
+     ],
+     "ecoli_via_cm": [
+      1405,
+      1407,
+      1408,
+      1489,
+      1490,
+      1491,
+      1493,
+      1494
+     ],
+     "ecoli_via_usalign": [
+      1405,
+      1408,
+      1489,
+      1490,
+      1491,
+      1493,
+      1494
+     ],
+     "unmapped_cm": [],
+     "decoding_site": true
+    }
+   ]
+  },
+  {
+   "pdb": "9fxo",
+   "chain": "S1",
+   "group": "cytosolic",
+   "species": "L. major",
+   "own_family": "RF01960",
+   "own_fit": {
+    "bits": 1223.53,
+    "avg_pp": 0.907,
+    "cm": [
+     1,
+     1831
+    ]
+   },
+   "own_states": {
+    "match": 1770,
+    "insert": 333,
+    "local_end": 101
+   },
+   "cross_fit": {
+    "bits": 440.48,
+    "avg_pp": 0.895,
+    "cm": [
+     6,
+     1529
+    ]
+   },
+   "cross_states": {
+    "match": 1303,
+    "insert": 27,
+    "local_end": 874
+   },
+   "usalign": {
+    "tm": [
+     "0.75200",
+     "0.89284"
+    ],
+    "paired_within_4A": 1118,
+    "chain_residues": 1798
+   },
+   "route_agreement": {
+    "both": 992,
+    "same": 941,
+    "within_1": 963
+   },
+   "determinants": {
+    "1405": {
+     "pos": 1396,
+     "cm": "G2062",
+     "usalign": null
+    },
+    "1406": {
+     "pos": 1397,
+     "cm": "U2063",
+     "usalign": null
+    },
+    "1407": {
+     "pos": 1398,
+     "cm": "C2064",
+     "usalign": null
+    },
+    "1408": {
+     "pos": 1399,
+     "cm": "G2065",
+     "usalign": "G2065"
+    },
+    "1409": {
+     "pos": 1400,
+     "cm": "U2066",
+     "usalign": "U2066"
+    },
+    "1410": {
+     "pos": 1401,
+     "cm": "U2067",
+     "usalign": "U2067"
+    },
+    "1490": {
+     "pos": 1481,
+     "cm": "A2156",
+     "usalign": "A2156"
+    },
+    "1491": {
+     "pos": 1482,
+     "cm": "A2157",
+     "usalign": "A2157"
+    },
+    "1492": {
+     "pos": 1483,
+     "cm": "A2158",
+     "usalign": "A2158"
+    },
+    "1493": {
+     "pos": 1484,
+     "cm": "A2159",
+     "usalign": "A2159"
+    },
+    "1494": {
+     "pos": 1485,
+     "cm": "G2160",
+     "usalign": "G2160"
+    },
+    "1495": {
+     "pos": 1486,
+     "cm": "U2161",
+     "usalign": "U2161"
+    },
+    "1496": {
+     "pos": 1487,
+     "cm": "C2162",
+     "usalign": "C2162"
+    }
+   },
+   "copies": [
+    {
+     "ccd": "PAR",
+     "copy": "9fxo_L2_1729",
+     "own": [
+      "2182",
+      "2183"
+     ],
+     "ecoli_via_cm": [
+      1516,
+      1517
+     ],
+     "ecoli_via_usalign": [
+      1517
+     ],
+     "unmapped_cm": [],
+     "decoding_site": false
+    },
+    {
+     "ccd": "PAR",
+     "copy": "9fxo_S1_2445",
+     "own": [
+      "2064",
+      "2065",
+      "2155",
+      "2157",
+      "2158",
+      "2159",
+      "2160",
+      "2441",
+      "2699",
+      "2985"
+     ],
+     "ecoli_via_cm": [
+      1407,
+      1408,
+      1489,
+      1491,
+      1492,
+      1493,
+      1494
+     ],
+     "ecoli_via_usalign": [
+      1408,
+      1489,
+      1491,
+      1492,
+      1493,
+      1494
+     ],
+     "unmapped_cm": [
+      "2441",
+      "2699",
+      "2985"
+     ],
+     "decoding_site": true
+    },
+    {
+     "ccd": "PAR",
+     "copy": "9fxo_S1_2446",
+     "own": [
+      "2067",
+      "2068",
+      "2069",
+      "2149",
+      "2150",
+      "2152",
+      "2153",
+      "2154",
+      "2586"
+     ],
+     "ecoli_via_cm": [
+      1410,
+      1411,
+      1412,
+      1483,
+      1484,
+      1486,
+      1487,
+      1488
+     ],
+     "ecoli_via_usalign": [
+      1410,
+      1411,
+      1412,
+      1483,
+      1484,
+      1486,
+      1487,
+      1488
+     ],
+     "unmapped_cm": [
+      "2586"
+     ],
+     "decoding_site": false
+    }
+   ]
+  },
+  {
+   "pdb": "9g6j",
+   "chain": "A",
+   "group": "cytosolic",
+   "species": "C. albicans",
+   "own_family": "RF01960",
+   "own_fit": {
+    "bits": 1815.9,
+    "avg_pp": 0.978,
+    "cm": [
+     1,
+     1831
+    ]
+   },
+   "own_states": {
+    "match": 1783,
+    "insert": 4
+   },
+   "cross_fit": {
+    "bits": 535.11,
+    "avg_pp": 0.891,
+    "cm": [
+     6,
+     1528
+    ]
+   },
+   "cross_states": {
+    "match": 1293,
+    "insert": 32,
+    "local_end": 462
+   },
+   "usalign": {
+    "tm": [
+     "0.82071",
+     "0.91861"
+    ],
+    "paired_within_4A": 1212,
+    "chain_residues": 1692
+   },
+   "route_agreement": {
+    "both": 1108,
+    "same": 1076,
+    "within_1": 1084
+   },
+   "determinants": {
+    "1405": {
+     "pos": 1396,
+     "cm": "G1629",
+     "usalign": "G1629"
+    },
+    "1406": {
+     "pos": 1397,
+     "cm": "U1630",
+     "usalign": "U1630"
+    },
+    "1407": {
+     "pos": 1398,
+     "cm": "C1631",
+     "usalign": null
+    },
+    "1408": {
+     "pos": 1399,
+     "cm": "G1632",
+     "usalign": "G1632"
+    },
+    "1409": {
+     "pos": 1400,
+     "cm": "C1633",
+     "usalign": "C1633"
+    },
+    "1410": {
+     "pos": 1401,
+     "cm": "U1634",
+     "usalign": "U1634"
+    },
+    "1490": {
+     "pos": 1481,
+     "cm": "A1740",
+     "usalign": "A1740"
+    },
+    "1491": {
+     "pos": 1482,
+     "cm": "A1741",
+     "usalign": "A1741"
+    },
+    "1492": {
+     "pos": 1483,
+     "cm": "A1742",
+     "usalign": "A1742"
+    },
+    "1493": {
+     "pos": 1484,
+     "cm": "A1743",
+     "usalign": "A1743"
+    },
+    "1494": {
+     "pos": 1485,
+     "cm": "G1744",
+     "usalign": "G1744"
+    },
+    "1495": {
+     "pos": 1486,
+     "cm": "U1745",
+     "usalign": "U1745"
+    },
+    "1496": {
+     "pos": 1487,
+     "cm": "C1746",
+     "usalign": "C1746"
+    }
+   },
+   "copies": [
+    {
+     "ccd": "GET",
+     "copy": "9g6j_A_1801",
+     "own": [
+      "1629",
+      "1630",
+      "1631",
+      "1632",
+      "1741",
+      "1742",
+      "1743",
+      "1744"
+     ],
+     "ecoli_via_cm": [
+      1405,
+      1406,
+      1407,
+      1408,
+      1491,
+      1492,
+      1493,
+      1494
+     ],
+     "ecoli_via_usalign": [
+      1405,
+      1406,
+      1408,
+      1491,
+      1492,
+      1493,
+      1494
+     ],
+     "unmapped_cm": [],
+     "decoding_site": true
+    },
+    {
+     "ccd": "GET",
+     "copy": "9g6j_A_1802",
+     "own": [
+      "1630",
+      "1631",
+      "1737",
+      "1738"
+     ],
+     "ecoli_via_cm": [
+      1406,
+      1407,
+      1487,
+      1488
+     ],
+     "ecoli_via_usalign": [
+      1406,
+      1487,
+      1488
+     ],
+     "unmapped_cm": [],
+     "decoding_site": false
+    },
+    {
+     "ccd": "GET",
+     "copy": "9g6j_A_1803",
+     "own": [
+      "310",
+      "311",
+      "350",
+      "1115"
+     ],
+     "ecoli_via_cm": [
+      243,
+      244,
+      281,
+      906
+     ],
+     "ecoli_via_usalign": [
+      243,
+      244,
+      281,
+      906
+     ],
+     "unmapped_cm": [],
+     "decoding_site": false
+    }
+   ]
+  },
+  {
+   "pdb": "9sul",
+   "chain": "AA",
+   "group": "cytosolic",
+   "species": "T. brucei",
+   "own_family": "RF01960",
+   "own_fit": {
+    "bits": 1199.59,
+    "avg_pp": 0.925,
+    "cm": [
+     13,
+     1831
+    ]
+   },
+   "own_states": {
+    "match": 1779,
+    "local_end": 161,
+    "insert": 340
+   },
+   "cross_fit": {
+    "bits": 420.53,
+    "avg_pp": 0.9,
+    "cm": [
+     4,
+     1529
+    ]
+   },
+   "cross_states": {
+    "match": 1334,
+    "local_end": 909,
+    "insert": 37
+   },
+   "usalign": {
+    "tm": [
+     "0.74186",
+     "0.89941"
+    ],
+    "paired_within_4A": 1126,
+    "chain_residues": 1837
+   },
+   "route_agreement": {
+    "both": 992,
+    "same": 932,
+    "within_1": 963
+   },
+   "determinants": {
+    "1405": {
+     "pos": 1396,
+     "cm": "G2137",
+     "usalign": "G2137"
+    },
+    "1406": {
+     "pos": 1397,
+     "cm": "U2138",
+     "usalign": "U2138"
+    },
+    "1407": {
+     "pos": 1398,
+     "cm": "C2139",
+     "usalign": null
+    },
+    "1408": {
+     "pos": 1399,
+     "cm": "G2140",
+     "usalign": "G2140"
+    },
+    "1409": {
+     "pos": 1400,
+     "cm": "U2141",
+     "usalign": "U2141"
+    },
+    "1410": {
+     "pos": 1401,
+     "cm": "U2142",
+     "usalign": "U2142"
+    },
+    "1490": {
+     "pos": 1481,
+     "cm": "A2232",
+     "usalign": "A2232"
+    },
+    "1491": {
+     "pos": 1482,
+     "cm": "A2233",
+     "usalign": "A2233"
+    },
+    "1492": {
+     "pos": 1483,
+     "cm": "A2234",
+     "usalign": "A2234"
+    },
+    "1493": {
+     "pos": 1484,
+     "cm": "A2235",
+     "usalign": "A2235"
+    },
+    "1494": {
+     "pos": 1485,
+     "cm": "G2236",
+     "usalign": "G2236"
+    },
+    "1495": {
+     "pos": 1486,
+     "cm": "U2237",
+     "usalign": "U2237"
+    },
+    "1496": {
+     "pos": 1487,
+     "cm": "C2238",
+     "usalign": "C2238"
+    }
+   },
+   "copies": [
+    {
+     "ccd": "GET",
+     "copy": "9sul_AA_2304",
+     "own": [
+      "1690",
+      "1691",
+      "1692",
+      "1717",
+      "1734",
+      "1735",
+      "1881",
+      "1884",
+      "1888"
+     ],
+     "ecoli_via_cm": [
+      1065,
+      1066,
+      1067,
+      1092,
+      1109,
+      1110,
+      1183,
+      1186,
+      1190
+     ],
+     "ecoli_via_usalign": [
+      1065,
+      1066,
+      1067,
+      1092,
+      1109,
+      1110,
+      1183,
+      1186,
+      1190
+     ],
+     "unmapped_cm": [],
+     "decoding_site": false
+    },
+    {
+     "ccd": "GET",
+     "copy": "9sul_AA_2370",
+     "own": [
+      "2137",
+      "2138",
+      "2139",
+      "2140",
+      "2233",
+      "2234",
+      "2235",
+      "2236"
+     ],
+     "ecoli_via_cm": [
+      1405,
+      1406,
+      1407,
+      1408,
+      1491,
+      1492,
+      1493,
+      1494
+     ],
+     "ecoli_via_usalign": [
+      1405,
+      1406,
+      1408,
+      1491,
+      1492,
+      1493,
+      1494
+     ],
+     "unmapped_cm": [],
+     "decoding_site": true
+    },
+    {
+     "ccd": "GET",
+     "copy": "9sul_AA_2372",
+     "own": [
+      "410",
+      "439",
+      "440",
+      "441",
+      "443"
+     ],
+     "ecoli_via_cm": [
+      247,
+      274,
+      275,
+      276,
+      278
+     ],
+     "ecoli_via_usalign": [
+      247,
+      274,
+      275,
+      276,
+      278
+     ],
+     "unmapped_cm": [],
+     "decoding_site": false
+    }
+   ]
+  }
+ ]
+}

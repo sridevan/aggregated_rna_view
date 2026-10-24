@@ -32,6 +32,7 @@
 | `experiments/ecifp_rna/sam_recognition.py` | SAM recognition across classes: contacts by ligand moiety × RNA edge, SAM conformation (χ, N6–CA), sulfonium environment, water and ion bridges, cross-class ECIFP. Output `out/sam_recognition.json` |
 | `experiments/ecifp_rna/literature/reports/RNA ligand interaction annotation tools.md` | Survey of RNA–ligand interaction tools and resources (Arpeggio, PLIP, fingeRNAt, ProLIF, Mol*, DSSR, HARIBOSS …) with a shortlist and benchmark design |
 | `experiments/ecifp_rna/tool_benchmark/` | Pilot benchmark (12 ligand copies): `prepare.py` (crops, common hydrogens), `run_tools.py` (Arpeggio API/local, PLIP, fingeRNAt → one schema), `score.py`, literature reference in `reference/`, results in `REPORT.md` and `out/` |
+| `experiments/ecifp_rna/ribosome/` | Ribosome–drug inventory (`inventory.py`, `out/inventory.json`, `REPORT.md`): drug classes, usable PDBe contacts, species and resolution; first look at contacts with resistance-modified nucleotides; methylated-vs-unmethylated drug complexes from the PDB (`methylated.py`) |
 | `experiments/ecifp_rna/out/` | Results: `<ACC>.json` (fingerprints, sites, modes, matrices), `<ACC>_edges.json`, `RF00167_poses.json`, `clan/` (cross mappings, `clan_RF00167.json`, `clan_RF00162.json`) |
 | `experiments/ecifp_rna/literature/reports/RNA small molecule 3D interactions.md` | Literature review with citations and 11 prioritised improvements |
 | `experiments/ecifp_rna/literature/research_notes/RNA small molecule 3D interactions/` | Five research-note files behind the review |
@@ -160,6 +161,37 @@ Covers SAM-I, -II, -III, -IV, -V, -VI, SAM-I/IV and SAM/SAH, plus the SAH ribosw
 - **No tool sees the SAM sulfonium–carbonyl contact,** the electrostatic contact that makes the riboswitch select SAM over SAH. A project-side rule is needed.
 - **The local pip pdbe-arpeggio sees no aromatic rings in RNA,** so it reports no stacking, unlike PDBe production.
 - **Recommendation:** keep the API contacts and add bridges and the cation–carbonyl rule from coordinates.
+
+### Ribosome–drug inventory (`ribosome/REPORT.md`)
+- **Scale:** 2,948 rRNA entries in PDBe; 612 contain a classed drug, giving 1,330 ligand copies.
+  - 1,179 copies are usable (with rRNA contacts), in 568 entries.
+  - 133 copies have no PDBe contacts, nearly all of them cryo-EM structures released from 2021 on.
+- **Large classes:** 2-DOS aminoglycosides (599 usable copies, about 270 bacterial and 320 eukaryotic) and tetracyclines (124). The 50S drug classes range from 16 to 80 copies each.
+- **Resistance nucleotides:** contacts with the nucleotides that resistance enzymes modify (Erm A2058, Cfr A2503, NpmA A1408, ArmA/RmtB G1405) partly match the MLS_B and PhLOPSA resistance groups, but contacts alone don't predict resistance.
+  - **Missed:** Cfr confers resistance to oxazolidinones and streptogramin A, which have no C8 contact.
+  - **Over-predicted:** Cfr gives no resistance to 14- and 15-membered macrolides, which do contact C8.
+- **Methylated ribosomes already in the PDB** (2026-10-24, `ribosome/methylated.py`, `out/methylated_pairs.json`):
+  - **Entries:** 7 Erm (m⁶₂A2058), 7 Cfr (m²,⁸A2503) and 2 NpmA (m¹A1408). 12 have a drug, and 11 of those have an unmethylated twin with the same drug.
+  - **The methyl-clash model is dropped.** Ideal methyls match the deposited ones (≤ 0.3 Å), but a clash on the unmethylated complex gets resistance backwards:
+    - macrolides don't clash with Erm's methyls (3.0–3.7 Å);
+    - the drugs designed to escape Erm and Cfr (iboxamycin, cresomycin) clash hardest (about 1.5 Å).
+  - **The ribosome makes room:** the methylated base moves (A2058 1.6–2.3 Å; A2503 0.3–1.0 Å).
+  - **Every drug still binds:** samples use high concentrations. The only sign of weaker binding is a higher drug-to-pocket B ratio for the drugs each enzyme defeats.
+  - **Model issue:** in 8FC4 copy 2, erythromycin O8 sits 1.38 Å from methyl C9.
+  - **No structures yet:** classic Cfr targets (phenicols, oxazolidinones other than radezolid, pleuromutilins, streptogramin A), and ArmA/RmtB with a drug.
+
+- **Novelty review for a ribosome paper** (2026-10-24, `literature/reports/Ribosome drug sites across kingdoms.md`):
+  - **Not new:** the inventory itself (HARIBOSS++, SPIRAL, FURNA and DrugPred_RNA each hold hundreds of ribosome sites), clustering fingerprints by drug class (SPIRAL), and sequence-based drug-site variation (Melnikov lab, Cell Rep 2025).
+  - **The gap:** every structure placed on one rRNA coordinate system, compared across kingdoms (mitochondria and parasites included), with Motif Atlas links.
+  - **Main risk:** Rfam's families are separate for bacteria and eukaryotes, so a bridge between them must be built and validated.
+  - **Next checks:** RiboVision2 and RNA 3D Hub for any ligand layer; the methods of SPIRAL and the bacterial Melnikov paper; a cross-family bridge test.
+
+- **Bridge pilot** (2026-10-24, `ribosome/bridge_pilot.py`, `out/bridge_pilot.json`): the blocking risk is cleared.
+  - **8 SSU chains** (2 bacterial, 1 human mitochondrial, 5 cytosolic: human, yeast, Candida, Leishmania, T. brucei), two routes to E. coli numbering (cross-family cmalign and US-align onto 7K00 A).
+  - **Determinants recovered in all 8 with no hand-fixing:** 1408 is A in bacteria and mitochondria, G in the cytosolic chains; 1490 and 1491 give the mitochondrial A1555 and C1556.
+  - **The routes agree on 94–98%** of jointly mapped residues.
+  - **Weaknesses:** the cross-family fit is weak for cytosolic chains (420–535 bits vs about 1,570), mitochondrial 12S fits at only 260 bits, and 1407 gets no structural partner anywhere.
+  - **First result:** each eukaryotic chain has one decoding-site copy plus 2–5 secondary ones; two secondary sites recur across species (1066/1092/1109/1186 and 243/281).
 
 ### Edges (`base_edges.py`)
 Examples, as copies with the contact out of copies at the site:
