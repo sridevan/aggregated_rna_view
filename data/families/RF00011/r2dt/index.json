@@ -1,0 +1,921 @@
+{
+ "family": "RF00011",
+ "provenance": {
+  "tool": "R2DT pdb_2d_3d",
+  "r2dt_repo": "https://github.com/r2dt-bio/R2DT",
+  "r2dt_branch": "2d-3d-viewer",
+  "r2dt_commit": "191a13d9099eeddf20e963e714d6dbadbfc6c69e",
+  "docker_image": "rnacentral/r2dt@sha256:098154a40f98429292458dae752a9b1e85af2ad063ce9f647af7f3b50ae8f831",
+  "mode": "auto",
+  "structure_format": "cif (downloaded by R2DT)",
+  "generated": "2026-10-30",
+  "acceptance": "every drawn position equals the mapping residue at the same label_seq_id (base, author number when observed, observed flag); modified nucleotides drawn as N or X allowed"
+ },
+ "counts": {
+  "accepted": 50,
+  "rejected": 0,
+  "failed": 0
+ },
+ "chains": [
+  {
+   "seq_name": "36uk_1_A_A",
+   "pdb_id": "36uk",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9ov3_1_A_A",
+   "pdb_id": "9ov3",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9ov6_1_A_A",
+   "pdb_id": "9ov6",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9ov7_1_A_A",
+   "pdb_id": "9ov7",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9ovb_1_A_A",
+   "pdb_id": "9ovb",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9ovc_1_A_A",
+   "pdb_id": "9ovc",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9owj_1_A_A",
+   "pdb_id": "9owj",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9owk_1_A_A",
+   "pdb_id": "9owk",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9owl_1_A_A",
+   "pdb_id": "9owl",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9owm_1_A_A",
+   "pdb_id": "9owm",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9own_1_A_A",
+   "pdb_id": "9own",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9owo_1_A_A",
+   "pdb_id": "9owo",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9owp_1_A_A",
+   "pdb_id": "9owp",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9owq_1_A_A",
+   "pdb_id": "9owq",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9ows_1_A_A",
+   "pdb_id": "9ows",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9owt_1_A_A",
+   "pdb_id": "9owt",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9owu_1_A_A",
+   "pdb_id": "9owu",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9owv_1_A_A",
+   "pdb_id": "9owv",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9oww_1_A_A",
+   "pdb_id": "9oww",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9owx_1_A_A",
+   "pdb_id": "9owx",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9owy_1_A_A",
+   "pdb_id": "9owy",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9oy2_1_A_A",
+   "pdb_id": "9oy2",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9oy3_1_A_A",
+   "pdb_id": "9oy3",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9oy4_1_A_A",
+   "pdb_id": "9oy4",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9zh0_1_A_A",
+   "pdb_id": "9zh0",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9zdv_1_A_A",
+   "pdb_id": "9zdv",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9zhg_1_A_A",
+   "pdb_id": "9zhg",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9zi4_1_A_A",
+   "pdb_id": "9zi4",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9zgp_1_A_A",
+   "pdb_id": "9zgp",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9zha_1_A_A",
+   "pdb_id": "9zha",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9zi3_1_A_A",
+   "pdb_id": "9zi3",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9zgu_1_A_A",
+   "pdb_id": "9zgu",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9zhr_1_A_A",
+   "pdb_id": "9zhr",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9zgt_1_A_A",
+   "pdb_id": "9zgt",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9zf9_1_A_A",
+   "pdb_id": "9zf9",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9zhx_1_A_A",
+   "pdb_id": "9zhx",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9zi7_1_A_A",
+   "pdb_id": "9zi7",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9zgx_1_A_A",
+   "pdb_id": "9zgx",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9zhf_1_A_A",
+   "pdb_id": "9zhf",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9zf3_1_A_A",
+   "pdb_id": "9zf3",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9zgy_1_A_A",
+   "pdb_id": "9zgy",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9zh2_1_A_A",
+   "pdb_id": "9zh2",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9zif_1_A_A",
+   "pdb_id": "9zif",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9zih_1_A_A",
+   "pdb_id": "9zih",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9zi8_1_A_A",
+   "pdb_id": "9zi8",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9zib_1_A_A",
+   "pdb_id": "9zib",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9zil_1_A_A",
+   "pdb_id": "9zil",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9ziu_1_A_A",
+   "pdb_id": "9ziu",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9ziv_1_A_A",
+   "pdb_id": "9ziv",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9ziy_1_A_A",
+   "pdb_id": "9ziy",
+   "auth_asym_id": "A",
+   "template": "RNAseP_b_G_stearothermophilus_3D",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 417,
+    "n_chain": 417,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  }
+ ]
+}

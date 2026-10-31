@@ -60,3 +60,10 @@ export const loadInstanceLoops = (acc: string, seqName: string) => memo(`${acc}/
 export const loadInteractions = (acc: string) => memo(`${acc}/interactions`, () => getJson<InteractionsDataset>(`${BASE}/${acc}/interactions.json`).catch(() => null))
 /** CCD id -> ligand class of a family (ligands.json by_ccd), for the Mol* "Show ligands" filter; loaded only when first needed. */
 export const loadLigandClasses = (acc: string) => loadLigands(acc).then((d) => Object.fromEntries(Object.entries(d.by_ccd).map(([k, v]) => [k, v.ligand_class])))
+
+/** R2DT 2D layouts (exploration, branch explore/r2dt-2d-3d-viewer): per-family index of chains whose R2DT viewer data passed validation
+ *  against the mapping; absent for families without R2DT output. */
+export interface R2dtChain { seq_name: string; status: 'accepted' | 'rejected' | 'failed'; template: string | null; layout: 'templated' | 'templatefree' | null; reason?: string }
+export interface R2dtIndex { family: string; provenance: Record<string, string>; counts: Record<string, number>; chains: R2dtChain[] }
+export const loadR2dtIndex = (acc: string) => memo(`${acc}/r2dt`, () => getJson<R2dtIndex>(`${BASE}/${acc}/r2dt/index.json`).catch(() => null))
+export const r2dtLayoutUrl = (acc: string, seqName: string) => `${BASE}/${acc}/r2dt/${seqName}`

@@ -10,6 +10,9 @@ interface Props {
   onResidueClick?: (labelSeqId: number) => void
   /** changes on every explicit deselection: clear the highlight and restore the default fitted view (zoom and pan reset) */
   resetKey?: number
+  /** folder with R2DT-generated viewer data (`api.json`, `fr3d.json`, same contract as the PDBe static files, label_seq_id based);
+   *  when set it replaces the PDBe topology and FR3D files */
+  layoutUrl?: string | null
   className?: string
 }
 interface RnaViewerEvent extends Event { eventData?: { pdbId: string; entityId: string; label_seq_ids?: number[]; label_seq_id?: number } }
@@ -90,7 +93,7 @@ function nucleotideGeometry(svg: SVGSVGElement, pdbId: string, ids: number[]): {
 }
 
 /** Wrapper around the vendored PDBe RNA Viewer. One instance at a time; React state is authoritative (subscribeEvents is off). */
-export function PdbRnaViewer2D({ pdbId, entityId, authAsymId, selection, onResidueClick, resetKey = 0, className = '' }: Props) {
+export function PdbRnaViewer2D({ pdbId, entityId, authAsymId, selection, onResidueClick, resetKey = 0, layoutUrl = null, className = '' }: Props) {
   const host = useRef<HTMLDivElement>(null)
   const inst = useRef<PdbRnaViewerPluginInstance | null>(null)
   const ready = useRef<PdbRnaViewerPluginInstance | null>(null)   // the instance whose render() has completed
@@ -124,7 +127,9 @@ export function PdbRnaViewer2D({ pdbId, entityId, authAsymId, selection, onResid
     el.addEventListener('PDB.RNA.viewer.click', handler)
     // Fetch the two PDBe static inputs ourselves: a missing topology or FR3D file means "no 2D available" (the plugin throws on missing FR3D data).
     const base = 'https://www.ebi.ac.uk/pdbe/static/entry'
-    Promise.all([fetch(`${base}/${pdbId}_${entityId}_${authAsymId.toUpperCase()}.json`), fetch(`${base}/${pdbId}_${authAsymId.toUpperCase()}_basepair.json`)])
+    const urls = layoutUrl ? [`${layoutUrl}/api.json`, `${layoutUrl}/fr3d.json`]
+      : [`${base}/${pdbId}_${entityId}_${authAsymId.toUpperCase()}.json`, `${base}/${pdbId}_${authAsymId.toUpperCase()}_basepair.json`]
+    Promise.all(urls.map((u) => fetch(u)))
       .then(async ([a, b]) => {
         if (!a.ok || !b.ok) { if (alive) setStatus('unavailable'); return }
         const [apiData, FR3DData] = await Promise.all([a.json(), b.json()])
@@ -146,7 +151,7 @@ export function PdbRnaViewer2D({ pdbId, entityId, authAsymId, selection, onResid
       ready.current = null
       box.remove()
     }
-  }, [pdbId, entityId, authAsymId])
+  }, [pdbId, entityId, authAsymId, layoutUrl])
 
   const key = [...selection].sort((a, b) => a - b).join(',')
   useEffect(() => {
@@ -211,10 +216,10 @@ export function PdbRnaViewer2D({ pdbId, entityId, authAsymId, selection, onResid
   }, [resetKey, status])
 
   return (
-    <div className={`relative rounded border border-stone-200 bg-white ${className}`} data-testid="rna2d-viewer" data-pdb={pdbId} data-status={status} data-focused={String(focused)}>
+    <div className={`relative rounded border border-stone-200 bg-white ${className}`} data-testid="rna2d-viewer" data-pdb={pdbId} data-status={status} data-focused={String(focused)} data-layout={layoutUrl ? 'r2dt' : 'pdbe'}>
       <div ref={host} className="absolute inset-0" />
       {status === 'loading' && <div className="pointer-events-none absolute left-2 top-2 rounded bg-white/80 px-2 py-0.5 text-xs text-stone-600">Loading 2D for {pdbId.toUpperCase()} {authAsymId}…</div>}
-      {status === 'unavailable' && <div className="absolute inset-0 flex items-center justify-center p-4 text-center text-sm text-stone-500">No PDBe 2D topology available for {pdbId.toUpperCase()} chain {authAsymId}.</div>}
+      {status === 'unavailable' && <div className="absolute inset-0 flex items-center justify-center p-4 text-center text-sm text-stone-500">No {layoutUrl ? 'R2DT 2D layout' : 'PDBe 2D topology'} available for {pdbId.toUpperCase()} chain {authAsymId}.</div>}
       {status === 'error' && <div className="absolute left-2 top-2 rounded bg-red-50 px-2 py-0.5 text-xs text-red-700">2D viewer failed to load.</div>}
     </div>
   )

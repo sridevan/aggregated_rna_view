@@ -1,0 +1,448 @@
+[
+ {
+  "family": "RF00167",
+  "chains": 84,
+  "status": {
+   "accepted": 70,
+   "rejected": 14
+  },
+  "accepted_layout": {
+   "templated": 68,
+   "templatefree": 2
+  },
+  "templates": {
+   "RF00167": 68
+  },
+  "accepted_on_family_template": 68,
+  "rejection_reasons": {
+   "R2DT warned 'could not map to full sequence'; positions shifted": 10,
+   "more positions drawn than the chain has, no R2DT warning": 4
+  },
+  "modified_drawn_as_N_chains": 5,
+  "accepted_with_matched_positions_not_drawn": {},
+  "no_pdbe_2d": 24,
+  "no_pdbe_2d_covered_by_r2dt_template": 10,
+  "layout_consistency": {
+   "RF00167": {
+    "chains": 68,
+    "pairs": 2278,
+    "nt_spacing": 30.24,
+    "median_of_pair_medians": 5.5,
+    "pairs_median_below_1px": 588,
+    "pairs_median_above_1_spacing": 67,
+    "max_pair_median": 197.26,
+    "outlier_chains": {
+     "9nbc_1_A_A": 185.2
+    },
+    "without_outliers": {
+     "pairs": 2211,
+     "median_of_pair_medians": 5.5,
+     "max_pair_median": 26.74,
+     "pairs_median_below_half_spacing": 1950
+    }
+   }
+  },
+  "provenance": {
+   "tool": "R2DT pdb_2d_3d",
+   "r2dt_repo": "https://github.com/r2dt-bio/R2DT",
+   "r2dt_branch": "2d-3d-viewer",
+   "r2dt_commit": "191a13d9099eeddf20e963e714d6dbadbfc6c69e",
+   "docker_image": "rnacentral/r2dt@sha256:098154a40f98429292458dae752a9b1e85af2ad063ce9f647af7f3b50ae8f831",
+   "mode": "auto",
+   "structure_format": "cif (downloaded by R2DT)",
+   "generated": "2026-10-30",
+   "acceptance": "every drawn position equals the mapping residue at the same label_seq_id (base, author number when observed, observed flag); modified nucleotides drawn as N or X allowed"
+  }
+ },
+ {
+  "family": "RF00162",
+  "chains": 29,
+  "status": {
+   "accepted": 26,
+   "rejected": 3
+  },
+  "accepted_layout": {
+   "templated": 26
+  },
+  "templates": {
+   "RF00162": 26
+  },
+  "accepted_on_family_template": 26,
+  "rejection_reasons": {
+   "more positions drawn than the chain has, no R2DT warning": 3
+  },
+  "modified_drawn_as_N_chains": 0,
+  "accepted_with_matched_positions_not_drawn": {},
+  "no_pdbe_2d": 0,
+  "no_pdbe_2d_covered_by_r2dt_template": 0,
+  "layout_consistency": {
+   "RF00162": {
+    "chains": 26,
+    "pairs": 325,
+    "nt_spacing": 30.24,
+    "median_of_pair_medians": 0.0,
+    "pairs_median_below_1px": 276,
+    "pairs_median_above_1_spacing": 0,
+    "max_pair_median": 6.43,
+    "outlier_chains": {},
+    "without_outliers": {
+     "pairs": 325,
+     "median_of_pair_medians": 0.0,
+     "max_pair_median": 6.43,
+     "pairs_median_below_half_spacing": 325
+    }
+   }
+  },
+  "provenance": {
+   "tool": "R2DT pdb_2d_3d",
+   "r2dt_repo": "https://github.com/r2dt-bio/R2DT",
+   "r2dt_branch": "2d-3d-viewer",
+   "r2dt_commit": "191a13d9099eeddf20e963e714d6dbadbfc6c69e",
+   "docker_image": "rnacentral/r2dt@sha256:098154a40f98429292458dae752a9b1e85af2ad063ce9f647af7f3b50ae8f831",
+   "mode": "auto",
+   "structure_format": "cif (downloaded by R2DT)",
+   "generated": "2026-10-30",
+   "acceptance": "every drawn position equals the mapping residue at the same label_seq_id (base, author number when observed, observed flag); modified nucleotides drawn as N allowed"
+  }
+ },
+ {
+  "family": "RF00059",
+  "chains": 38,
+  "status": {
+   "accepted": 26,
+   "rejected": 12
+  },
+  "accepted_layout": {
+   "templated": 26
+  },
+  "templates": {
+   "RF00059": 26
+  },
+  "accepted_on_family_template": 26,
+  "rejection_reasons": {
+   "R2DT warned 'could not map to full sequence'; positions shifted": 10,
+   "fewer positions drawn and shifted, no R2DT warning": 2
+  },
+  "modified_drawn_as_N_chains": 0,
+  "accepted_with_matched_positions_not_drawn": {},
+  "no_pdbe_2d": 0,
+  "no_pdbe_2d_covered_by_r2dt_template": 0,
+  "layout_consistency": {
+   "RF00059": {
+    "chains": 26,
+    "pairs": 325,
+    "nt_spacing": 19.63,
+    "median_of_pair_medians": 0.41,
+    "pairs_median_below_1px": 181,
+    "pairs_median_above_1_spacing": 0,
+    "max_pair_median": 2.98,
+    "outlier_chains": {},
+    "without_outliers": {
+     "pairs": 325,
+     "median_of_pair_medians": 0.41,
+     "max_pair_median": 2.98,
+     "pairs_median_below_half_spacing": 325
+    }
+   }
+  },
+  "provenance": {
+   "tool": "R2DT pdb_2d_3d",
+   "r2dt_repo": "https://github.com/r2dt-bio/R2DT",
+   "r2dt_branch": "2d-3d-viewer",
+   "r2dt_commit": "191a13d9099eeddf20e963e714d6dbadbfc6c69e",
+   "docker_image": "rnacentral/r2dt@sha256:098154a40f98429292458dae752a9b1e85af2ad063ce9f647af7f3b50ae8f831",
+   "mode": "auto",
+   "structure_format": "cif (downloaded by R2DT)",
+   "generated": "2026-10-30",
+   "acceptance": "every drawn position equals the mapping residue at the same label_seq_id (base, author number when observed, observed flag); modified nucleotides drawn as N or X allowed"
+  }
+ },
+ {
+  "family": "RF00005",
+  "chains": 60,
+  "status": {
+   "accepted": 39,
+   "rejected": 21
+  },
+  "accepted_layout": {
+   "templated": 39
+  },
+  "templates": {
+   "E_Phe": 9,
+   "A_iMet": 3,
+   "RF00005": 2,
+   "B_Cys": 2,
+   "E_Lys": 2,
+   "E_Val": 2,
+   "B_Val": 1,
+   "B_Asp": 1,
+   "B_Leu": 1,
+   "B_Ile": 1,
+   "E_Asp": 1,
+   "A_Glu": 1,
+   "B_Thr": 1,
+   "E_Trp": 1,
+   "A_Ala": 1,
+   "A_Met": 1,
+   "E_Glu": 1,
+   "B_Ser": 1,
+   "A_Val": 1,
+   "B_Ile2": 1,
+   "E_Thr": 1,
+   "M_Arg": 1,
+   "M_Val": 1,
+   "M_Phe": 1,
+   "M_Tyr": 1
+  },
+  "accepted_on_family_template": 2,
+  "rejection_reasons": {
+   "more positions drawn than the chain has, no R2DT warning": 2,
+   "fewer positions drawn and shifted, no R2DT warning": 18,
+   "base or author number differs: 16: base G != C; 16: auth 15 != 16": 1
+  },
+  "modified_drawn_as_N_chains": 9,
+  "accepted_with_matched_positions_not_drawn": {},
+  "no_pdbe_2d": 14,
+  "no_pdbe_2d_covered_by_r2dt_template": 9,
+  "layout_consistency": {
+   "E_Phe": {
+    "chains": 9,
+    "pairs": 36,
+    "nt_spacing": 30.25,
+    "median_of_pair_medians": 0.0,
+    "pairs_median_below_1px": 28,
+    "pairs_median_above_1_spacing": 0,
+    "max_pair_median": 3.86,
+    "outlier_chains": {},
+    "without_outliers": {
+     "pairs": 36,
+     "median_of_pair_medians": 0.0,
+     "max_pair_median": 3.86,
+     "pairs_median_below_half_spacing": 36
+    }
+   },
+   "A_iMet": {
+    "chains": 3,
+    "pairs": 3,
+    "nt_spacing": 30.24,
+    "median_of_pair_medians": 0.28,
+    "pairs_median_below_1px": 3,
+    "pairs_median_above_1_spacing": 0,
+    "max_pair_median": 0.28,
+    "outlier_chains": {},
+    "without_outliers": {
+     "pairs": 3,
+     "median_of_pair_medians": 0.28,
+     "max_pair_median": 0.28,
+     "pairs_median_below_half_spacing": 3
+    }
+   },
+   "RF00005": {
+    "chains": 2,
+    "pairs": 1,
+    "nt_spacing": 30.24,
+    "median_of_pair_medians": 0.79,
+    "pairs_median_below_1px": 1,
+    "pairs_median_above_1_spacing": 0,
+    "max_pair_median": 0.79,
+    "outlier_chains": {},
+    "without_outliers": {
+     "pairs": 1,
+     "median_of_pair_medians": 0.79,
+     "max_pair_median": 0.79,
+     "pairs_median_below_half_spacing": 1
+    }
+   },
+   "B_Cys": {
+    "chains": 2,
+    "pairs": 1,
+    "nt_spacing": 30.24,
+    "median_of_pair_medians": 0.0,
+    "pairs_median_below_1px": 1,
+    "pairs_median_above_1_spacing": 0,
+    "max_pair_median": 0.0,
+    "outlier_chains": {},
+    "without_outliers": {
+     "pairs": 1,
+     "median_of_pair_medians": 0.0,
+     "max_pair_median": 0.0,
+     "pairs_median_below_half_spacing": 1
+    }
+   },
+   "E_Lys": {
+    "chains": 2,
+    "pairs": 1,
+    "nt_spacing": 30.25,
+    "median_of_pair_medians": 0.69,
+    "pairs_median_below_1px": 1,
+    "pairs_median_above_1_spacing": 0,
+    "max_pair_median": 0.69,
+    "outlier_chains": {},
+    "without_outliers": {
+     "pairs": 1,
+     "median_of_pair_medians": 0.69,
+     "max_pair_median": 0.69,
+     "pairs_median_below_half_spacing": 1
+    }
+   },
+   "E_Val": {
+    "chains": 2,
+    "pairs": 1,
+    "nt_spacing": 30.24,
+    "median_of_pair_medians": 2.0,
+    "pairs_median_below_1px": 0,
+    "pairs_median_above_1_spacing": 0,
+    "max_pair_median": 2.0,
+    "outlier_chains": {},
+    "without_outliers": {
+     "pairs": 1,
+     "median_of_pair_medians": 2.0,
+     "max_pair_median": 2.0,
+     "pairs_median_below_half_spacing": 1
+    }
+   }
+  },
+  "provenance": {
+   "tool": "R2DT pdb_2d_3d",
+   "r2dt_repo": "https://github.com/r2dt-bio/R2DT",
+   "r2dt_branch": "2d-3d-viewer",
+   "r2dt_commit": "191a13d9099eeddf20e963e714d6dbadbfc6c69e",
+   "docker_image": "rnacentral/r2dt@sha256:098154a40f98429292458dae752a9b1e85af2ad063ce9f647af7f3b50ae8f831",
+   "mode": "auto",
+   "structure_format": "cif (downloaded by R2DT)",
+   "generated": "2026-10-30",
+   "acceptance": "every drawn position equals the mapping residue at the same label_seq_id (base, author number when observed, observed flag); modified nucleotides drawn as N or X allowed"
+  }
+ },
+ {
+  "family": "RF00011",
+  "chains": 50,
+  "status": {
+   "accepted": 50
+  },
+  "accepted_layout": {
+   "templated": 50
+  },
+  "templates": {
+   "RNAseP_b_G_stearothermophilus_3D": 50
+  },
+  "accepted_on_family_template": 0,
+  "rejection_reasons": {},
+  "modified_drawn_as_N_chains": 0,
+  "accepted_with_matched_positions_not_drawn": {},
+  "no_pdbe_2d": 26,
+  "no_pdbe_2d_covered_by_r2dt_template": 26,
+  "layout_consistency": {
+   "RNAseP_b_G_stearothermophilus_3D": {
+    "chains": 50,
+    "pairs": 1225,
+    "nt_spacing": 11.8,
+    "median_of_pair_medians": 0.0,
+    "pairs_median_below_1px": 1225,
+    "pairs_median_above_1_spacing": 0,
+    "max_pair_median": 0.0,
+    "outlier_chains": {},
+    "without_outliers": {
+     "pairs": 1225,
+     "median_of_pair_medians": 0.0,
+     "max_pair_median": 0.0,
+     "pairs_median_below_half_spacing": 1225
+    }
+   }
+  },
+  "provenance": {
+   "tool": "R2DT pdb_2d_3d",
+   "r2dt_repo": "https://github.com/r2dt-bio/R2DT",
+   "r2dt_branch": "2d-3d-viewer",
+   "r2dt_commit": "191a13d9099eeddf20e963e714d6dbadbfc6c69e",
+   "docker_image": "rnacentral/r2dt@sha256:098154a40f98429292458dae752a9b1e85af2ad063ce9f647af7f3b50ae8f831",
+   "mode": "auto",
+   "structure_format": "cif (downloaded by R2DT)",
+   "generated": "2026-10-30",
+   "acceptance": "every drawn position equals the mapping residue at the same label_seq_id (base, author number when observed, observed flag); modified nucleotides drawn as N or X allowed"
+  }
+ },
+ {
+  "family": "RF00177",
+  "chains": 60,
+  "status": {
+   "accepted": 29,
+   "rejected": 31
+  },
+  "accepted_layout": {
+   "templated": 29
+  },
+  "templates": {
+   "EC_SSU_3D": 29
+  },
+  "accepted_on_family_template": 0,
+  "rejection_reasons": {
+   "fewer positions drawn and shifted, no R2DT warning": 31
+  },
+  "modified_drawn_as_N_chains": 13,
+  "accepted_with_matched_positions_not_drawn": {
+   "4u27_1_AA_A": [
+    1539
+   ],
+   "4v85_1_AA_A": [
+    1533
+   ],
+   "4v9d_1_AA_A": [
+    1539
+   ],
+   "8bf7_52_2_ZA": [
+    1535,
+    1536,
+    1537,
+    1538,
+    1539,
+    1540,
+    1541,
+    1542
+   ],
+   "7pjs_34_a_HA": [
+    1541,
+    1542
+   ],
+   "7pjv_34_a_HA": [
+    1541,
+    1542
+   ],
+   "7pjy_34_a_HA": [
+    1541,
+    1542
+   ]
+  },
+  "no_pdbe_2d": 12,
+  "no_pdbe_2d_covered_by_r2dt_template": 8,
+  "layout_consistency": {
+   "EC_SSU_3D": {
+    "chains": 29,
+    "pairs": 406,
+    "nt_spacing": 5.44,
+    "median_of_pair_medians": 0.01,
+    "pairs_median_below_1px": 406,
+    "pairs_median_above_1_spacing": 0,
+    "max_pair_median": 0.04,
+    "outlier_chains": {},
+    "without_outliers": {
+     "pairs": 406,
+     "median_of_pair_medians": 0.01,
+     "max_pair_median": 0.04,
+     "pairs_median_below_half_spacing": 406
+    }
+   }
+  },
+  "provenance": {
+   "tool": "R2DT pdb_2d_3d",
+   "r2dt_repo": "https://github.com/r2dt-bio/R2DT",
+   "r2dt_branch": "2d-3d-viewer",
+   "r2dt_commit": "191a13d9099eeddf20e963e714d6dbadbfc6c69e",
+   "docker_image": "rnacentral/r2dt@sha256:098154a40f98429292458dae752a9b1e85af2ad063ce9f647af7f3b50ae8f831",
+   "mode": "auto",
+   "structure_format": "cif (downloaded by R2DT)",
+   "generated": "2026-10-30",
+   "acceptance": "every drawn position equals the mapping residue at the same label_seq_id (base, author number when observed, observed flag); modified nucleotides drawn as N or X allowed"
+  }
+ }
+]

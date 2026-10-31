@@ -1,0 +1,1880 @@
+{
+ "family": "RF00005",
+ "provenance": {
+  "tool": "R2DT pdb_2d_3d",
+  "r2dt_repo": "https://github.com/r2dt-bio/R2DT",
+  "r2dt_branch": "2d-3d-viewer",
+  "r2dt_commit": "191a13d9099eeddf20e963e714d6dbadbfc6c69e",
+  "docker_image": "rnacentral/r2dt@sha256:098154a40f98429292458dae752a9b1e85af2ad063ce9f647af7f3b50ae8f831",
+  "mode": "auto",
+  "structure_format": "cif (downloaded by R2DT)",
+  "generated": "2026-10-30",
+  "acceptance": "every drawn position equals the mapping residue at the same label_seq_id (base, author number when observed, observed flag); modified nucleotides drawn as N or X allowed"
+ },
+ "counts": {
+  "accepted": 39,
+  "rejected": 21,
+  "failed": 0
+ },
+ "chains": [
+  {
+   "seq_name": "1ehz_1_A_A",
+   "pdb_id": "1ehz",
+   "auth_asym_id": "A",
+   "template": "E_Phe",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 73,
+    "n_chain": 76,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [
+     37
+    ],
+    "not_drawn": [
+     74,
+     75,
+     76
+    ],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "1fir_1_A_A",
+   "pdb_id": "1fir",
+   "auth_asym_id": "A",
+   "template": "RF00005",
+   "layout": "templated",
+   "status": "rejected",
+   "validation": {
+    "ok": false,
+    "n_drawn": 78,
+    "n_chain": 76,
+    "problems": [
+     "20: base G != U",
+     "20: auth 19 != 20",
+     "21: base U != A",
+     "21: auth 20 != 21",
+     "22: base U != G",
+     "22: auth 20 != 22",
+     "23: auth 21 != 23",
+     "24: auth 22 != 24",
+     "25: base A != C",
+     "25: auth 23 != 25",
+     "26: base G != A",
+     "26: auth 24 != 26",
+     "27: base C != U",
+     "27: auth 25 != 27",
+     "28: base A != C",
+     "28: auth 26 != 28",
+     "29: base U != A",
+     "29: auth 27 != 29",
+     "30: base C != G",
+     "30: auth 28 != 30"
+    ],
+    "n_problems": 102,
+    "modified_drawn_as_N": [
+     39
+    ],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "2k4c_1_A_A",
+   "pdb_id": "2k4c",
+   "auth_asym_id": "A",
+   "template": "B_Val",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 76,
+    "n_chain": 76,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "2tra_1_A_A",
+   "pdb_id": "2tra",
+   "auth_asym_id": "A",
+   "template": "E_Thr",
+   "layout": "templated",
+   "status": "rejected",
+   "validation": {
+    "ok": false,
+    "n_drawn": 77,
+    "n_chain": 75,
+    "problems": [
+     "19: base G != U",
+     "19: auth 18 != 19",
+     "20: base U != C",
+     "20: auth 19 != 20",
+     "21: base C != A",
+     "21: auth 20 != 21",
+     "22: base A != G",
+     "22: auth 21 != 22",
+     "23: base G != A",
+     "23: auth 22 != 23",
+     "24: auth 23 != 24",
+     "25: base A != U",
+     "25: auth 24 != 25",
+     "26: base U != G",
+     "26: auth 25 != 26",
+     "27: auth 26 != 27",
+     "28: auth 27 != 28",
+     "29: base G != C",
+     "29: auth 28 != 29",
+     "30: base C != G"
+    ],
+    "n_problems": 98,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "3cw5_1_A_A",
+   "pdb_id": "3cw5",
+   "auth_asym_id": "A",
+   "template": "A_iMet",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 77,
+    "n_chain": 77,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "3l0u_1_A_A",
+   "pdb_id": "3l0u",
+   "auth_asym_id": "A",
+   "template": "E_Phe",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 73,
+    "n_chain": 76,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     74,
+     75,
+     76
+    ],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "6ugg_1_A_A",
+   "pdb_id": "6ugg",
+   "auth_asym_id": "A",
+   "template": "B_Asp",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 77,
+    "n_chain": 77,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "6y3g_1_F_A",
+   "pdb_id": "6y3g",
+   "auth_asym_id": "F",
+   "template": "E_Phe",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 73,
+    "n_chain": 76,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [
+     47
+    ],
+    "not_drawn": [
+     74,
+     75,
+     76
+    ],
+    "not_drawn_consensus_matched": []
+   },
+   "r2dt_warning": "Could not map to full sequence"
+  },
+  {
+   "seq_name": "9j4o_1_A_A",
+   "pdb_id": "9j4o",
+   "auth_asym_id": "A",
+   "template": "B_Leu",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 89,
+    "n_chain": 89,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "6ufg_1_B_A",
+   "pdb_id": "6ufg",
+   "auth_asym_id": "B",
+   "template": "B_Ile",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 77,
+    "n_chain": 77,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "1asy_1_R_A",
+   "pdb_id": "1asy",
+   "auth_asym_id": "R",
+   "template": "E_Asp",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 72,
+    "n_chain": 75,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     73,
+     74,
+     75
+    ],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "1c0a_1_B_A",
+   "pdb_id": "1c0a",
+   "auth_asym_id": "B",
+   "template": "RF00005",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 77,
+    "n_chain": 77,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [
+     35,
+     47
+    ],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "1n78_1_C_A",
+   "pdb_id": "1n78",
+   "auth_asym_id": "C",
+   "template": "A_Glu",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 75,
+    "n_chain": 75,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "1qf6_1_B_A",
+   "pdb_id": "1qf6",
+   "auth_asym_id": "B",
+   "template": "B_Thr",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 76,
+    "n_chain": 76,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [
+     37,
+     46
+    ],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "1qtq_1_B_A",
+   "pdb_id": "1qtq",
+   "auth_asym_id": "B",
+   "template": "B_Gln",
+   "layout": "templated",
+   "status": "rejected",
+   "validation": {
+    "ok": false,
+    "n_drawn": 74,
+    "n_chain": 75,
+    "problems": [
+     "1: base G != U",
+     "1: auth 902 != 901",
+     "1: observed flag differs",
+     "2: auth 903 != 902",
+     "3: auth 904 != 903",
+     "4: auth 905 != 904",
+     "5: base U != G",
+     "5: auth 906 != 905",
+     "6: base A != U",
+     "6: auth 907 != 906",
+     "7: base U != A",
+     "7: auth 908 != 907",
+     "8: base C != U",
+     "8: auth 909 != 908",
+     "9: base G != C",
+     "9: auth 910 != 909",
+     "10: base C != G",
+     "10: auth 911 != 910",
+     "11: auth 912 != 911",
+     "12: base A != C"
+    ],
+    "n_problems": 125,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     75
+    ],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "1u0b_1_A_A",
+   "pdb_id": "1u0b",
+   "auth_asym_id": "A",
+   "template": "B_Cys",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 74,
+    "n_chain": 74,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "2ake_1_B_A",
+   "pdb_id": "2ake",
+   "auth_asym_id": "B",
+   "template": "E_Trp",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 72,
+    "n_chain": 72,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "3wqy_2_C_C",
+   "pdb_id": "3wqy",
+   "auth_asym_id": "C",
+   "template": "A_Ala",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 75,
+    "n_chain": 75,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "4rdx_2_C_B",
+   "pdb_id": "4rdx",
+   "auth_asym_id": "C",
+   "template": "RF00005",
+   "layout": "templated",
+   "status": "rejected",
+   "validation": {
+    "ok": false,
+    "n_drawn": 76,
+    "n_chain": 78,
+    "problems": [
+     "1: auth 1 != -1",
+     "2: base U != G",
+     "2: auth 2 != 1",
+     "3: base G != U",
+     "3: auth 3 != 2",
+     "4: base A != G",
+     "4: auth 4 != 3",
+     "5: base G != A",
+     "5: auth 5 != 4",
+     "6: base C != G",
+     "6: auth 6 != 5",
+     "7: base G != C",
+     "7: auth 7 != 6",
+     "8: base U != G",
+     "8: auth 8 != 7",
+     "9: base A != U",
+     "9: auth 9 != 8",
+     "10: base G != A",
+     "10: auth 10 != 9",
+     "11: base C != G"
+    ],
+    "n_problems": 135,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     77,
+     78
+    ],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "5e6m_2_C_C",
+   "pdb_id": "5e6m",
+   "auth_asym_id": "C",
+   "template": "B_Gly",
+   "layout": "templated",
+   "status": "rejected",
+   "validation": {
+    "ok": false,
+    "n_drawn": 73,
+    "n_chain": 74,
+    "problems": [
+     "1: base C != G",
+     "1: auth 2 != 1",
+     "2: base G != C",
+     "2: auth 3 != 2",
+     "3: base C != G",
+     "3: auth 4 != 3",
+     "4: auth 5 != 4",
+     "5: base G != C",
+     "5: auth 6 != 5",
+     "6: base C != G",
+     "6: auth 7 != 6",
+     "7: base U != C",
+     "7: auth 8 != 7",
+     "8: base G != U",
+     "8: auth 9 != 8",
+     "9: auth 10 != 9",
+     "10: base U != G",
+     "10: auth 11 != 10",
+     "11: base G != U",
+     "11: auth 12 != 11"
+    ],
+    "n_problems": 125,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     74
+    ],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "5ud5_2_C_C",
+   "pdb_id": "5ud5",
+   "auth_asym_id": "C",
+   "template": "RF00005",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 70,
+    "n_chain": 72,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     71,
+     72
+    ],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9dpa_2_C_C",
+   "pdb_id": "9dpa",
+   "auth_asym_id": "C",
+   "template": "E_Lys",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 73,
+    "n_chain": 76,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     74,
+     75,
+     76
+    ],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9qrp_2_T_C",
+   "pdb_id": "9qrp",
+   "auth_asym_id": "T",
+   "template": "RF00005",
+   "layout": "templated",
+   "status": "rejected",
+   "validation": {
+    "ok": false,
+    "n_drawn": 90,
+    "n_chain": 94,
+    "problems": [
+     "33: base A != C",
+     "33: auth 38 != 33",
+     "33: observed flag differs",
+     "34: base A != U",
+     "34: auth 39 != 34",
+     "34: observed flag differs",
+     "35: base U != G",
+     "35: auth 40 != 35",
+     "35: observed flag differs",
+     "36: base C != G",
+     "36: auth 41 != 36",
+     "36: observed flag differs",
+     "37: base G != A",
+     "37: auth 42 != 37",
+     "37: observed flag differs",
+     "38: base U != A",
+     "38: auth 43 != 38",
+     "39: base G != A",
+     "39: auth 44 != 39",
+     "40: auth 45 != 40"
+    ],
+    "n_problems": 101,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     91,
+     92,
+     93,
+     94
+    ],
+    "not_drawn_consensus_matched": [
+     91
+    ]
+   }
+  },
+  {
+   "seq_name": "9sfq_2_T_B",
+   "pdb_id": "9sfq",
+   "auth_asym_id": "T",
+   "template": "A_Tyr",
+   "layout": "templated",
+   "status": "rejected",
+   "validation": {
+    "ok": false,
+    "n_drawn": 86,
+    "n_chain": 86,
+    "problems": [
+     "16: base G != C",
+     "16: auth 15 != 16",
+     "17: base C != G",
+     "17: auth 16 != 17",
+     "18: base C != G",
+     "18: auth 16 != 18",
+     "19: base G != C",
+     "19: auth 17 != 19",
+     "20: base G != C",
+     "20: auth 17 != 20",
+     "21: base G != A",
+     "21: auth 18 != 21",
+     "22: base C != A",
+     "22: auth 19 != 22",
+     "23: base C != A",
+     "23: auth 20 != 23",
+     "24: base A != G",
+     "24: auth 21 != 24",
+     "25: base A != G",
+     "25: auth 22 != 25"
+    ],
+    "n_problems": 130,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "7k00_54_Y_BB",
+   "pdb_id": "7k00",
+   "auth_asym_id": "Y",
+   "template": "B_Val",
+   "layout": "templated",
+   "status": "rejected",
+   "validation": {
+    "ok": false,
+    "n_drawn": 74,
+    "n_chain": 76,
+    "problems": [
+     "16: base G != C",
+     "16: auth 18 != 16",
+     "16: observed flag differs",
+     "17: base G != U",
+     "17: auth 19 != 17",
+     "17: observed flag differs",
+     "18: auth 20 != 18",
+     "19: base A != G",
+     "19: auth 21 != 19",
+     "20: auth 22 != 20",
+     "21: auth 23 != 21",
+     "22: auth 24 != 22",
+     "23: base C != A",
+     "23: auth 25 != 23",
+     "24: base A != G",
+     "24: auth 26 != 24",
+     "25: auth 27 != 25",
+     "26: base C != A",
+     "26: auth 28 != 26",
+     "27: base U != C"
+    ],
+    "n_problems": 103,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     75,
+     76
+    ],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "8b0x_27_Z_AA",
+   "pdb_id": "8b0x",
+   "auth_asym_id": "Z",
+   "template": "B_Val",
+   "layout": "templated",
+   "status": "rejected",
+   "validation": {
+    "ok": false,
+    "n_drawn": 75,
+    "n_chain": 77,
+    "problems": [
+     "1: auth 2 != 1",
+     "1: observed flag differs",
+     "2: base C != G",
+     "2: auth 3 != 2",
+     "3: base G != C",
+     "3: auth 4 != 3",
+     "4: auth 5 != 4",
+     "5: auth 6 != 5",
+     "6: auth 7 != 6",
+     "7: base U != G",
+     "7: auth 8 != 7",
+     "8: base G != U",
+     "8: auth 9 != 8",
+     "9: auth 10 != 9",
+     "10: base A != G",
+     "10: auth 11 != 10",
+     "11: base G != A",
+     "11: auth 12 != 11",
+     "12: base C != G",
+     "12: auth 13 != 12"
+    ],
+    "n_problems": 131,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     76,
+     77
+    ],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "8ccs_14_Bb_N",
+   "pdb_id": "8ccs",
+   "auth_asym_id": "Bb",
+   "template": "E_Phe",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 73,
+    "n_chain": 76,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [
+     37
+    ],
+    "not_drawn": [
+     74,
+     75,
+     76
+    ],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "8cdr_15_Bb_O",
+   "pdb_id": "8cdr",
+   "auth_asym_id": "Bb",
+   "template": "E_Phe",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 73,
+    "n_chain": 76,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [
+     37
+    ],
+    "not_drawn": [
+     74,
+     75,
+     76
+    ],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "8cvl_57_1y_EB",
+   "pdb_id": "8cvl",
+   "auth_asym_id": "1y",
+   "template": "B_Phe",
+   "layout": "templated",
+   "status": "rejected",
+   "validation": {
+    "ok": false,
+    "n_drawn": 74,
+    "n_chain": 76,
+    "problems": [
+     "16: base G != U",
+     "16: auth 18 != 16",
+     "16: observed flag differs",
+     "17: base G != C",
+     "17: auth 19 != 17",
+     "17: observed flag differs",
+     "18: base U != G",
+     "18: auth 20 != 18",
+     "19: base A != G",
+     "19: auth 21 != 19",
+     "20: base G != U",
+     "20: auth 22 != 20",
+     "21: auth 23 != 21",
+     "22: auth 24 != 22",
+     "23: base C != A",
+     "23: auth 25 != 23",
+     "24: base A != G",
+     "24: auth 26 != 24",
+     "25: base G != C",
+     "25: auth 27 != 25"
+    ],
+    "n_problems": 108,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     75,
+     76
+    ],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "8ppl_14_Iw_N",
+   "pdb_id": "8ppl",
+   "auth_asym_id": "Iw",
+   "template": "A_Met",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 75,
+    "n_chain": 75,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [
+     45
+    ],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "8uu5_21_x_U",
+   "pdb_id": "8uu5",
+   "auth_asym_id": "x",
+   "template": "B_Phe",
+   "layout": "templated",
+   "status": "rejected",
+   "validation": {
+    "ok": false,
+    "n_drawn": 74,
+    "n_chain": 76,
+    "problems": [
+     "16: base G != U",
+     "16: auth 18 != 16",
+     "16: observed flag differs",
+     "17: base G != C",
+     "17: auth 19 != 17",
+     "17: observed flag differs",
+     "18: base U != G",
+     "18: auth 20 != 18",
+     "19: base A != G",
+     "19: auth 21 != 19",
+     "20: base G != U",
+     "20: auth 22 != 20",
+     "21: auth 23 != 21",
+     "22: auth 24 != 22",
+     "23: base C != A",
+     "23: auth 25 != 23",
+     "24: base A != G",
+     "24: auth 26 != 24",
+     "25: base G != C",
+     "25: auth 27 != 25"
+    ],
+    "n_problems": 108,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     75,
+     76
+    ],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9h3g_3_i2_C",
+   "pdb_id": "9h3g",
+   "auth_asym_id": "i2",
+   "template": "E_Phe",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 73,
+    "n_chain": 76,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     74,
+     75,
+     76
+    ],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9o3w_47_Pt_UA",
+   "pdb_id": "9o3w",
+   "auth_asym_id": "Pt",
+   "template": "E_Glu",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 72,
+    "n_chain": 75,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     73,
+     74,
+     75
+    ],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9p7o_86_Zt_HC",
+   "pdb_id": "9p7o",
+   "auth_asym_id": "Zt",
+   "template": "E_Lys",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 72,
+    "n_chain": 75,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     73,
+     74,
+     75
+    ],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9p8b_5_AT_E",
+   "pdb_id": "9p8b",
+   "auth_asym_id": "AT",
+   "template": "E_Val",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 73,
+    "n_chain": 76,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     74,
+     75,
+     76
+    ],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9q3r_23_w_W",
+   "pdb_id": "9q3r",
+   "auth_asym_id": "w",
+   "template": "B_Gly",
+   "layout": "templated",
+   "status": "rejected",
+   "validation": {
+    "ok": false,
+    "n_drawn": 70,
+    "n_chain": 74,
+    "problems": [
+     "19: base A != U",
+     "19: auth 21 != 20",
+     "19: observed flag differs",
+     "20: base G != A",
+     "20: auth 22 != 21",
+     "21: base A != G",
+     "21: auth 23 != 22",
+     "22: auth 24 != 23",
+     "23: base C != A",
+     "23: auth 25 != 24",
+     "24: base G != C",
+     "24: auth 26 != 25",
+     "25: base A != G",
+     "25: auth 27 != 26",
+     "26: base G != A",
+     "26: auth 28 != 27",
+     "27: base A != G",
+     "27: auth 29 != 28",
+     "28: base G != A",
+     "28: auth 30 != 29"
+    ],
+    "n_problems": 91,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     71,
+     72,
+     73,
+     74
+    ],
+    "not_drawn_consensus_matched": [
+     71
+    ]
+   }
+  },
+  {
+   "seq_name": "9sre_2_4_B",
+   "pdb_id": "9sre",
+   "auth_asym_id": "4",
+   "template": "A_iMet",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 77,
+    "n_chain": 77,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9ti5_13_D_M",
+   "pdb_id": "9ti5",
+   "auth_asym_id": "D",
+   "template": "B_Ser",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 93,
+    "n_chain": 93,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [
+     33
+    ],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9tnl_6_Y_F",
+   "pdb_id": "9tnl",
+   "auth_asym_id": "Y",
+   "template": "B_Val",
+   "layout": "templated",
+   "status": "rejected",
+   "validation": {
+    "ok": false,
+    "n_drawn": 72,
+    "n_chain": 76,
+    "problems": [
+     "16: base G != C",
+     "16: auth 18 != 16",
+     "16: observed flag differs",
+     "17: base G != U",
+     "17: auth 19 != 17",
+     "17: observed flag differs",
+     "18: base A != G",
+     "18: auth 21 != 18",
+     "19: auth 22 != 19",
+     "20: base A != G",
+     "20: auth 23 != 20",
+     "20: observed flag differs",
+     "21: base G != A",
+     "21: auth 24 != 21",
+     "22: base C != G",
+     "22: auth 25 != 22",
+     "23: auth 26 != 23",
+     "24: base C != G",
+     "24: auth 27 != 24",
+     "25: auth 28 != 25"
+    ],
+    "n_problems": 97,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     73,
+     74,
+     75,
+     76
+    ],
+    "not_drawn_consensus_matched": [
+     73
+    ]
+   }
+  },
+  {
+   "seq_name": "9tnl_7_Z_G",
+   "pdb_id": "9tnl",
+   "auth_asym_id": "Z",
+   "template": "B_fMet",
+   "layout": "templated",
+   "status": "rejected",
+   "validation": {
+    "ok": false,
+    "n_drawn": 72,
+    "n_chain": 78,
+    "problems": [
+     "16: base G != C",
+     "16: auth 18 != 15",
+     "16: observed flag differs",
+     "17: base G != C",
+     "17: auth 19 != 15",
+     "17: observed flag differs",
+     "18: base A != U",
+     "18: auth 21 != 15",
+     "18: observed flag differs",
+     "19: auth 22 != 15",
+     "19: observed flag differs",
+     "20: base C != G",
+     "20: auth 23 != 18",
+     "21: base U != G",
+     "21: auth 24 != 19",
+     "22: base C != A",
+     "22: auth 25 != 20",
+     "22: observed flag differs",
+     "23: base G != A",
+     "23: auth 26 != 21"
+    ],
+    "n_problems": 106,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     73,
+     74,
+     75,
+     76,
+     77,
+     78
+    ],
+    "not_drawn_consensus_matched": [
+     73,
+     74,
+     75
+    ]
+   }
+  },
+  {
+   "seq_name": "1b23_1_R_A",
+   "pdb_id": "1b23",
+   "auth_asym_id": "R",
+   "template": "B_Cys",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 74,
+    "n_chain": 74,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "1ttt_1_D_A",
+   "pdb_id": "1ttt",
+   "auth_asym_id": "D",
+   "template": "E_Phe",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 73,
+    "n_chain": 76,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [
+     37
+    ],
+    "not_drawn": [
+     74,
+     75,
+     76
+    ],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "3qsy_3_D_C",
+   "pdb_id": "3qsy",
+   "auth_asym_id": "D",
+   "template": "A_iMet",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 77,
+    "n_chain": 77,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "6ahu_12_T_M",
+   "pdb_id": "6ahu",
+   "auth_asym_id": "T",
+   "template": "E_Val",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 72,
+    "n_chain": 72,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "7zrz_5_ZN1_E",
+   "pdb_id": "7zrz",
+   "auth_asym_id": "ZN1",
+   "template": "E_Arg",
+   "layout": "templated",
+   "status": "rejected",
+   "validation": {
+    "ok": false,
+    "n_drawn": 77,
+    "n_chain": 89,
+    "problems": [
+     "37: auth 45 != 37",
+     "37: observed flag differs",
+     "38: auth 46 != 38",
+     "38: observed flag differs",
+     "39: auth 47 != 39",
+     "39: observed flag differs",
+     "40: base G != U",
+     "40: auth 48 != 40",
+     "40: observed flag differs",
+     "41: auth 49 != 41",
+     "41: observed flag differs",
+     "42: base A != G",
+     "42: auth 50 != 42",
+     "42: observed flag differs",
+     "43: base A != U",
+     "43: auth 51 != 43",
+     "43: observed flag differs",
+     "44: auth 52 != 44",
+     "44: observed flag differs",
+     "45: base U != A"
+    ],
+    "n_problems": 77,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     78,
+     79,
+     80,
+     81,
+     82,
+     83,
+     84,
+     85,
+     86,
+     87,
+     88,
+     89
+    ],
+    "not_drawn_consensus_matched": [
+     78,
+     79,
+     80,
+     81,
+     82,
+     83,
+     84,
+     85,
+     86
+    ]
+   }
+  },
+  {
+   "seq_name": "1j2b_1_C_A",
+   "pdb_id": "1j2b",
+   "auth_asym_id": "C",
+   "template": "A_Val",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 77,
+    "n_chain": 77,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "2zm5_2_C_C",
+   "pdb_id": "2zm5",
+   "auth_asym_id": "C",
+   "template": "E_Phe",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 73,
+    "n_chain": 76,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     74,
+     75,
+     76
+    ],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "3a2k_2_C_C",
+   "pdb_id": "3a2k",
+   "auth_asym_id": "C",
+   "template": "B_Ile2",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 77,
+    "n_chain": 77,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "5ccb_3_N_C",
+   "pdb_id": "5ccb",
+   "auth_asym_id": "N",
+   "template": "E_Lys",
+   "layout": "templated",
+   "status": "rejected",
+   "validation": {
+    "ok": false,
+    "n_drawn": 74,
+    "n_chain": 77,
+    "problems": [
+     "2: base C != G",
+     "5: base G != C",
+     "7: base A != G",
+     "8: base U != A",
+     "9: base A != U",
+     "10: base G != A",
+     "11: base C != G",
+     "12: base U != C",
+     "13: base C != U",
+     "14: base A != C",
+     "15: base G != A",
+     "16: base U != G",
+     "17: base C != U",
+     "18: base G != C",
+     "20: base U != G",
+     "21: base A != U",
+     "22: base G != A",
+     "23: base A != G",
+     "24: base G != A",
+     "25: base C != G"
+    ],
+    "n_problems": 57,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     75,
+     76,
+     77
+    ],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "8cth_3_C_C",
+   "pdb_id": "8cth",
+   "auth_asym_id": "C",
+   "template": "E_Phe",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 73,
+    "n_chain": 76,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     74,
+     75,
+     76
+    ],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "4yye_2_C_C",
+   "pdb_id": "4yye",
+   "auth_asym_id": "C",
+   "template": "E_Thr",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 73,
+    "n_chain": 76,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     74,
+     75,
+     76
+    ],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "6zm6_85_w_LC",
+   "pdb_id": "6zm6",
+   "auth_asym_id": "w",
+   "template": "M_Arg",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 65,
+    "n_chain": 68,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     66,
+     67,
+     68
+    ],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "7onu_4_T_G",
+   "pdb_id": "7onu",
+   "auth_asym_id": "T",
+   "template": "M_Tyr",
+   "layout": "templated",
+   "status": "rejected",
+   "validation": {
+    "ok": false,
+    "n_drawn": 64,
+    "n_chain": 128,
+    "problems": [
+     "1: auth -1 != -37",
+     "1: observed flag differs",
+     "2: base G != A",
+     "2: auth 0 != -36",
+     "2: observed flag differs",
+     "3: base U != G",
+     "3: auth 1 != -35",
+     "3: observed flag differs",
+     "4: auth 2 != -34",
+     "4: observed flag differs",
+     "5: auth 3 != -33",
+     "5: observed flag differs",
+     "6: base A != U",
+     "6: auth 4 != -32",
+     "6: observed flag differs",
+     "7: auth 5 != -31",
+     "7: observed flag differs",
+     "8: base U != G",
+     "8: auth 6 != -30",
+     "8: observed flag differs"
+    ],
+    "n_problems": 154,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     65,
+     66,
+     67,
+     68,
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75,
+     76,
+     77,
+     78,
+     79,
+     80,
+     81,
+     82,
+     83,
+     84,
+     85,
+     86,
+     87,
+     88,
+     89,
+     90,
+     91,
+     92,
+     93,
+     94,
+     95,
+     96,
+     97,
+     98,
+     99,
+     100,
+     101,
+     102,
+     103,
+     104,
+     105,
+     106,
+     107,
+     108,
+     109,
+     110,
+     111,
+     112,
+     113,
+     114,
+     115,
+     116,
+     117,
+     118,
+     119,
+     120,
+     121,
+     122,
+     123,
+     124,
+     125,
+     126,
+     127,
+     128
+    ],
+    "not_drawn_consensus_matched": [
+     65,
+     66,
+     67,
+     68,
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75,
+     76,
+     77,
+     78,
+     79,
+     80,
+     81,
+     82,
+     83,
+     84,
+     85,
+     86,
+     87,
+     88,
+     89,
+     90,
+     91,
+     92,
+     93,
+     94,
+     95,
+     96,
+     97,
+     98,
+     99,
+     100,
+     101,
+     102,
+     103,
+     104
+    ]
+   }
+  },
+  {
+   "seq_name": "7qi4_36_B_JA",
+   "pdb_id": "7qi4",
+   "auth_asym_id": "B",
+   "template": "M_Val",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 69,
+    "n_chain": 72,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     70,
+     71,
+     72
+    ],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "8cbm_4_T_G",
+   "pdb_id": "8cbm",
+   "auth_asym_id": "T",
+   "template": "M_Ile",
+   "layout": "templated",
+   "status": "rejected",
+   "validation": {
+    "ok": false,
+    "n_drawn": 66,
+    "n_chain": 69,
+    "problems": [
+     "15: base A != U",
+     "15: auth 18 != 15",
+     "15: observed flag differs",
+     "16: auth 19 != 16",
+     "16: observed flag differs",
+     "17: base G != A",
+     "17: auth 20 != 17",
+     "17: observed flag differs",
+     "18: auth 21 != 18",
+     "19: base G != A",
+     "19: auth 22 != 19",
+     "20: base U != G",
+     "20: auth 23 != 20",
+     "21: base U != A",
+     "21: auth 24 != 21",
+     "22: base A != G",
+     "22: auth 25 != 22",
+     "23: base C != U",
+     "23: auth 26 != 23",
+     "24: auth 27 != 24"
+    ],
+    "n_problems": 92,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     67,
+     68,
+     69
+    ],
+    "not_drawn_consensus_matched": [
+     67,
+     68,
+     69
+    ]
+   }
+  },
+  {
+   "seq_name": "8oin_4_B9_I",
+   "pdb_id": "8oin",
+   "auth_asym_id": "B9",
+   "template": "M_Phe",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 70,
+    "n_chain": 73,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     71,
+     72,
+     73
+    ],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "8z1f_1_T_A",
+   "pdb_id": "8z1f",
+   "auth_asym_id": "T",
+   "template": "M_Tyr",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 66,
+    "n_chain": 86,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     67,
+     68,
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75,
+     76,
+     77,
+     78,
+     79,
+     80,
+     81,
+     82,
+     83,
+     84,
+     85,
+     86
+    ],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "9gch_3_T_F",
+   "pdb_id": "9gch",
+   "auth_asym_id": "T",
+   "template": "M_His",
+   "layout": "templated",
+   "status": "rejected",
+   "validation": {
+    "ok": false,
+    "n_drawn": 64,
+    "n_chain": 71,
+    "problems": [
+     "15: base A != C",
+     "15: auth 19 != 16",
+     "15: observed flag differs",
+     "16: base A != C",
+     "16: auth 20 != 17",
+     "16: observed flag differs",
+     "17: auth 21 != 18",
+     "17: observed flag differs",
+     "18: base C != A",
+     "18: auth 22 != 19",
+     "19: auth 23 != 20",
+     "20: base U != A",
+     "20: auth 24 != 21",
+     "21: auth 25 != 22",
+     "22: auth 26 != 23",
+     "23: base G != U",
+     "23: auth 27 != 24",
+     "24: base A != C",
+     "24: auth 28 != 25",
+     "25: base U != A"
+    ],
+    "n_problems": 89,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     65,
+     66,
+     67,
+     68,
+     69,
+     70,
+     71
+    ],
+    "not_drawn_consensus_matched": [
+     65,
+     66,
+     67,
+     68
+    ]
+   }
+  },
+  {
+   "seq_name": "7xjz_2_B_B",
+   "pdb_id": "7xjz",
+   "auth_asym_id": "B",
+   "template": "B_Gly",
+   "layout": "templated",
+   "status": "rejected",
+   "validation": {
+    "ok": false,
+    "n_drawn": 70,
+    "n_chain": 74,
+    "problems": [
+     "1: base C != G",
+     "1: auth 2 != 1",
+     "2: base G != C",
+     "2: auth 3 != 2",
+     "3: base A != G",
+     "3: auth 4 != 3",
+     "4: base G != A",
+     "4: auth 5 != 4",
+     "5: base C != G",
+     "5: auth 6 != 5",
+     "6: base G != C",
+     "6: auth 7 != 6",
+     "7: base U != G",
+     "7: auth 8 != 7",
+     "8: base A != U",
+     "8: auth 9 != 8",
+     "9: base G != A",
+     "9: auth 10 != 9",
+     "10: base U != G",
+     "10: auth 11 != 10"
+    ],
+    "n_problems": 120,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     71,
+     72,
+     73,
+     74
+    ],
+    "not_drawn_consensus_matched": [
+     71
+    ]
+   }
+  },
+  {
+   "seq_name": "7xk0_2_B_B",
+   "pdb_id": "7xk0",
+   "auth_asym_id": "B",
+   "template": "B_Gly",
+   "layout": "templated",
+   "status": "rejected",
+   "validation": {
+    "ok": false,
+    "n_drawn": 70,
+    "n_chain": 74,
+    "problems": [
+     "1: base C != G",
+     "1: auth 2 != 1",
+     "2: base G != C",
+     "2: auth 3 != 2",
+     "3: base A != G",
+     "3: auth 4 != 3",
+     "4: base G != A",
+     "4: auth 5 != 4",
+     "5: base C != G",
+     "5: auth 6 != 5",
+     "6: base G != C",
+     "6: auth 7 != 6",
+     "7: base U != G",
+     "7: auth 8 != 7",
+     "8: base A != U",
+     "8: auth 9 != 8",
+     "9: base G != A",
+     "9: auth 10 != 9",
+     "10: base U != G",
+     "10: auth 11 != 10"
+    ],
+    "n_problems": 120,
+    "modified_drawn_as_N": [],
+    "not_drawn": [
+     71,
+     72,
+     73,
+     74
+    ],
+    "not_drawn_consensus_matched": [
+     71
+    ]
+   }
+  }
+ ]
+}

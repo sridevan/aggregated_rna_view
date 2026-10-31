@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
-import { loadInstanceLoops, loadLigandClasses } from '../api/data'
+import { loadInstanceLoops, loadLigandClasses, loadR2dtIndex, r2dtLayoutUrl, type R2dtIndex } from '../api/data'
 import { instanceLoops, loopSelection } from '../lib/loops'
 import { authorLabel, boundaryText, insertionMarkers, insertionRuns, insertionSelection, type InsertionMarker, type InsertionRun } from '../lib/insertions'
 import { HoverCard } from './InfoTip'
@@ -33,6 +33,12 @@ export function StructureExplorer() {
   const sel = useSelection()
   const current = instances.find((i) => i.seq_name === sel.instance) ?? family.display_representative ?? family.representative ?? null
   const ms = useMapping(acc, current)
+  // 2D layout source (exploration): PDBe topology by default, or the R2DT layout when this chain's R2DT output passed validation
+  const [r2dt, setR2dt] = useState<R2dtIndex | null>(null)
+  const [layout, setLayout] = useState<'pdbe' | 'r2dt'>('pdbe')
+  useEffect(() => { let alive = true; setR2dt(null); loadR2dtIndex(acc).then((d) => { if (alive) setR2dt(d) }); return () => { alive = false } }, [acc])
+  const r2dtChain = r2dt?.chains.find((c) => c.seq_name === current?.seq_name) ?? null
+  const r2dtUrl = layout === 'r2dt' && current && r2dtChain?.status === 'accepted' ? r2dtLayoutUrl(acc, current.seq_name) : null
   const mapping = ms.state === 'ready' ? ms.mapping : null
   const idx = useMemo(() => (mapping ? indexMapping(mapping) : null), [mapping])
   const translation = useMemo(() => (mapping && idx ? translateConsensus(mapping, sel.positions, idx) : null), [mapping, idx, sel.positions])
@@ -145,6 +151,15 @@ export function StructureExplorer() {
         <label className="flex min-w-0 max-w-full items-center gap-1">Instance <select data-testid="instance-select" value={current?.seq_name ?? ''} onChange={(e) => sel.setInstance(e.target.value)} className="min-w-0 max-w-[calc(100vw-7rem)] rounded border border-stone-300 px-1 py-0.5 sm:max-w-md">
           {instances.map((i) => <option key={i.seq_name} value={i.seq_name}>{i.pdb_id.toUpperCase()} {i.auth_asym_id} · {displayOrganism(i).name} · {i.experimental_method?.split(' ')[0]} {i.resolution ?? ''}{i.pdbe_2d_available === false ? ' · no 2D' : ''}</option>)}
         </select></label>
+        {r2dt && (
+          <span className="flex items-center gap-1 text-xs" data-testid="layout-2d">2D layout
+            {(['pdbe', 'r2dt'] as const).map((k) => (
+              <button key={k} data-testid={`layout-2d-${k}`} aria-pressed={layout === k} onClick={() => setLayout(k)}
+                className={`rounded border px-1.5 py-0.5 ${layout === k ? 'border-stone-600 bg-stone-700 text-white' : 'border-stone-300 bg-white text-stone-700'}`}>{k === 'pdbe' ? 'PDBe' : 'R2DT'}</button>))}
+            {layout === 'r2dt' && <span className="text-stone-500" data-testid="layout-2d-note">{r2dtChain?.status === 'accepted'
+              ? (r2dtChain.layout === 'templated' ? `template ${r2dtChain.template}` : 'template-free layout')
+              : `not available for this chain${r2dtChain?.status ? ` (${r2dtChain.status})` : ''}; showing PDBe`}</span>}
+          </span>)}
         <button data-testid="clear-selection" onClick={sel.clear} disabled={!sel.active} className="rounded border border-stone-300 px-2 py-0.5 disabled:cursor-default disabled:opacity-40">Clear selection</button>
         {/* one short hint while nothing is selected; the concise summary of the active selection replaces it */}
         {!status && <span className="text-xs text-stone-500" data-testid="selection-hint">Click a nucleotide or loop to highlight it in 2D and 3D.</span>}
@@ -161,7 +176,7 @@ export function StructureExplorer() {
       <TrackLegend stats={stats} instanceLabel={current ? `${current.pdb_id.toUpperCase()} ${current.auth_asym_id}` : undefined} reference={{ rfamAcc: family.rfam_acc, rfamId: family.rfam_id, rf: family.consensus_sequence, ssCons: family.ss_cons, clanMembers: family.clan_members }} />
       <SelectionPanel translation={translation} instanceTargets={instanceTargets} mappingState={ms.state} compact={!!activeLoop} />
       <div className="grid gap-3 lg:grid-cols-2">
-        {current && <PdbRnaViewer2D pdbId={current.pdb_id} entityId={current.entity_id} authAsymId={current.auth_asym_id} selection={viewerIds} resetKey={sel.viewReset} onResidueClick={onResidueClick} className="h-[560px]" />}
+        {current && <PdbRnaViewer2D pdbId={current.pdb_id} entityId={current.entity_id} authAsymId={current.auth_asym_id} selection={viewerIds} resetKey={sel.viewReset} onResidueClick={onResidueClick} layoutUrl={r2dtUrl} className="h-[560px]" />}
         {current && <PdbeMolstarViewer pdbId={current.pdb_id} labelAsymId={current.label_asym_id} authAsymId={current.auth_asym_id} region={{ start: current.map_start, end: current.map_end }} orientation={orientation?.transforms[current.seq_name] ?? null} selection={viewerIds.map((label_seq_id) => ({ label_seq_id }))} focusOnSelection resetKey={sel.viewReset} structureColor={FAMILY_OVERVIEW_RNA_COLOR} onClearSelection={sel.clear} canClear={!!sel.active} onResidueClick={onResidueClick} ligandClasses={() => loadLigandClasses(acc)} className="h-[560px]" />}
       </div>
       <details className="rounded border border-stone-200 bg-white text-xs text-stone-700" data-testid="viewer-details">

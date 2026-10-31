@@ -1,0 +1,606 @@
+{
+ "family": "RF00162",
+ "provenance": {
+  "tool": "R2DT pdb_2d_3d",
+  "r2dt_repo": "https://github.com/r2dt-bio/R2DT",
+  "r2dt_branch": "2d-3d-viewer",
+  "r2dt_commit": "191a13d9099eeddf20e963e714d6dbadbfc6c69e",
+  "docker_image": "rnacentral/r2dt@sha256:098154a40f98429292458dae752a9b1e85af2ad063ce9f647af7f3b50ae8f831",
+  "mode": "auto",
+  "structure_format": "cif (downloaded by R2DT)",
+  "generated": "2026-10-30",
+  "acceptance": "every drawn position equals the mapping residue at the same label_seq_id (base, author number when observed, observed flag); modified nucleotides drawn as N allowed"
+ },
+ "counts": {
+  "accepted": 26,
+  "rejected": 3,
+  "failed": 0
+ },
+ "chains": [
+  {
+   "seq_name": "2gis_1_A_A",
+   "pdb_id": "2gis",
+   "auth_asym_id": "A",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 94,
+    "n_chain": 94,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "2ydh_1_A_A",
+   "pdb_id": "2ydh",
+   "auth_asym_id": "A",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 94,
+    "n_chain": 94,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "2ygh_1_A_A",
+   "pdb_id": "2ygh",
+   "auth_asym_id": "A",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 95,
+    "n_chain": 95,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "3gx2_1_A_A",
+   "pdb_id": "3gx2",
+   "auth_asym_id": "A",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 94,
+    "n_chain": 94,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "3gx3_1_A_A",
+   "pdb_id": "3gx3",
+   "auth_asym_id": "A",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 94,
+    "n_chain": 94,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "3gx5_1_A_A",
+   "pdb_id": "3gx5",
+   "auth_asym_id": "A",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 94,
+    "n_chain": 94,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "3gx6_1_A_A",
+   "pdb_id": "3gx6",
+   "auth_asym_id": "A",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 94,
+    "n_chain": 94,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "3gx7_1_A_A",
+   "pdb_id": "3gx7",
+   "auth_asym_id": "A",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 94,
+    "n_chain": 94,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "3iqn_1_A_A",
+   "pdb_id": "3iqn",
+   "auth_asym_id": "A",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 94,
+    "n_chain": 94,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "3iqp_1_A_A",
+   "pdb_id": "3iqp",
+   "auth_asym_id": "A",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 94,
+    "n_chain": 94,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "3iqr_1_A_A",
+   "pdb_id": "3iqr",
+   "auth_asym_id": "A",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 94,
+    "n_chain": 94,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "3v7e_2_C_C",
+   "pdb_id": "3v7e",
+   "auth_asym_id": "C",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 126,
+    "n_chain": 126,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "3v7e_2_D_D",
+   "pdb_id": "3v7e",
+   "auth_asym_id": "D",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 126,
+    "n_chain": 126,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "4aob_1_A_A",
+   "pdb_id": "4aob",
+   "auth_asym_id": "A",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 94,
+    "n_chain": 94,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "4b5r_1_A_A",
+   "pdb_id": "4b5r",
+   "auth_asym_id": "A",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 94,
+    "n_chain": 94,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "4kqy_1_A_A",
+   "pdb_id": "4kqy",
+   "auth_asym_id": "A",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 119,
+    "n_chain": 119,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "5fjc_1_A_A",
+   "pdb_id": "5fjc",
+   "auth_asym_id": "A",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "rejected",
+   "validation": {
+    "ok": false,
+    "n_drawn": 96,
+    "n_chain": 94,
+    "problems": [
+     "1: auth 2 != 1",
+     "2: base C != G",
+     "2: auth 3 != 2",
+     "3: base U != C",
+     "3: auth 4 != 3",
+     "4: auth 5 != 4",
+     "5: base A != U",
+     "5: auth 6 != 5",
+     "6: base U != A",
+     "6: auth 7 != 6",
+     "7: base C != U",
+     "7: auth 8 != 7",
+     "8: base A != C",
+     "8: auth 9 != 8",
+     "9: auth 10 != 9",
+     "10: base G != A",
+     "10: auth 11 != 10",
+     "11: base A != G",
+     "11: auth 12 != 11",
+     "12: base G != A"
+    ],
+    "n_problems": 135,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "5fk1_1_A_A",
+   "pdb_id": "5fk1",
+   "auth_asym_id": "A",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 94,
+    "n_chain": 94,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "5fk2_1_A_A",
+   "pdb_id": "5fk2",
+   "auth_asym_id": "A",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 94,
+    "n_chain": 94,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "5fk3_1_A_A",
+   "pdb_id": "5fk3",
+   "auth_asym_id": "A",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "rejected",
+   "validation": {
+    "ok": false,
+    "n_drawn": 95,
+    "n_chain": 94,
+    "problems": [
+     "10: auth 9 != 10",
+     "11: base A != G",
+     "11: auth 10 != 11",
+     "12: base G != A",
+     "12: auth 11 != 12",
+     "13: base A != G",
+     "13: auth 12 != 13",
+     "14: base G != A",
+     "14: auth 13 != 14",
+     "15: base A != G",
+     "15: auth 14 != 15",
+     "16: auth 15 != 16",
+     "17: auth 16 != 17",
+     "18: base G != C",
+     "18: auth 17 != 18",
+     "19: base C != G",
+     "19: auth 18 != 19",
+     "20: base G != A",
+     "20: auth 19 != 20",
+     "21: base A != G"
+    ],
+    "n_problems": 145,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "5fk4_1_A_A",
+   "pdb_id": "5fk4",
+   "auth_asym_id": "A",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 93,
+    "n_chain": 93,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "5fk5_1_A_A",
+   "pdb_id": "5fk5",
+   "auth_asym_id": "A",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 94,
+    "n_chain": 94,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "5fk6_1_A_A",
+   "pdb_id": "5fk6",
+   "auth_asym_id": "A",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 94,
+    "n_chain": 94,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "5fkd_1_A_A",
+   "pdb_id": "5fkd",
+   "auth_asym_id": "A",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 94,
+    "n_chain": 94,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "5fke_1_A_A",
+   "pdb_id": "5fke",
+   "auth_asym_id": "A",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 94,
+    "n_chain": 94,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "5fkf_1_A_A",
+   "pdb_id": "5fkf",
+   "auth_asym_id": "A",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 94,
+    "n_chain": 94,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "5fkg_1_A_A",
+   "pdb_id": "5fkg",
+   "auth_asym_id": "A",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 94,
+    "n_chain": 94,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "5fkh_1_A_A",
+   "pdb_id": "5fkh",
+   "auth_asym_id": "A",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "accepted",
+   "validation": {
+    "ok": true,
+    "n_drawn": 94,
+    "n_chain": 94,
+    "problems": [],
+    "n_problems": 0,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  },
+  {
+   "seq_name": "7eaf_1_A_A",
+   "pdb_id": "7eaf",
+   "auth_asym_id": "A",
+   "template": "RF00162",
+   "layout": "templated",
+   "status": "rejected",
+   "validation": {
+    "ok": false,
+    "n_drawn": 95,
+    "n_chain": 94,
+    "problems": [
+     "10: auth 9 != 10",
+     "11: base A != G",
+     "11: auth 10 != 11",
+     "12: base G != A",
+     "12: auth 11 != 12",
+     "13: base A != G",
+     "13: auth 12 != 13",
+     "14: base G != A",
+     "14: auth 13 != 14",
+     "15: base A != G",
+     "15: auth 14 != 15",
+     "16: auth 15 != 16",
+     "17: auth 16 != 17",
+     "18: base G != C",
+     "18: auth 17 != 18",
+     "19: base C != G",
+     "19: auth 18 != 19",
+     "20: base G != A",
+     "20: auth 19 != 20",
+     "21: base A != G"
+    ],
+    "n_problems": 142,
+    "modified_drawn_as_N": [],
+    "not_drawn": [],
+    "not_drawn_consensus_matched": []
+   }
+  }
+ ]
+}
